@@ -48,6 +48,7 @@ for i in (egrep '<p><strong>Figure [0-9][0-9]?\.' FILE.html | wc)
 	do
 	touch $filename_plaincaptions.txt
 	sed '$iq;d' captions.txt | awk -vRS="</span>" '/<span>/{gsub(/.*<span>|\n+/,"");print;exit}' >> $filename_plaincaptions.txt 
+	done
 ```
 
 get just text INSIDE span, i.e. the full plaintext of the figure caption
