@@ -1,0 +1,19 @@
+
+<h5>Step 2–Orient Protein.</h5><a id="article1.body1.sec2.sec1.sec2.p1" name="article1.body1.sec2.sec1.sec2.p1"></a><p>In general, a membrane protein structure from PDB database <a href="#pone.0000880-Berman1">[14]</a> does not have proper information on relative disposition of the protein in a membrane bilayer. In Membrane Builder, one can place the protein appropriately in a lipid bilayer by aligning its principal axis or a vector between two specific C<sub>α</sub> atoms along the <em>Z</em>-axis, by translating the protein along the <em>Z</em>-axis, and by rotating it around the <em>X</em>-axis. It is assumed that the membrane normal is parallel to the <em>Z</em>-axis and its center is located at <em>Z = </em>0 Å. Alignment with the principal axis is useful for the proteins that have a symmetric shape. The usage of a vector defined by specific two residues is useful for irregular-shaped proteins if one can identify two residues that are parallel to the <em>Z</em>-axis. In the case that the protein structure is not easily aligned with the available options, one should align it in a local machine and then upload it. One can skip the alignment step for the protein structures from OPM database <a href="#pone.0000880-Lomize1">[25]</a> or pre-oriented structures.</p>
+<a id="article1.body1.sec2.sec1.sec2.p2" name="article1.body1.sec2.sec1.sec2.p2"></a><p>After alignment, Membrane Builder generates pore water, if specified, and calculates the protein cross-sectional area along the <em>Z</em>-axis. We have developed a new method to generate water molecules inside pores with any kind of shapes and numbers (see Pore Water Generation for details). The cross-sectional area profile is used to determine protein areas that correspond to the maximum values at 10 Å&lt;<em>Z</em>&lt;20 Å and −20 Å&lt;<em>Z</em>&lt;−10 Å, respectively. <a href="#pone-0000880-g002">Figure 2</a> shows the calculated profile for PDB:2HAC (ζ-ζ transmembrane dimer). The protein areas in the top and bottom lipid leaflets are used to determine the system size in the next step. The cross-sectional area of pore water, if generated, is incorporated into the protein area so that the system size in the <em>XY</em> plane is determined as the sum of the protein area and the lipid area (see below).</p>
+<div class="figure" id="pone-0000880-g002"><div class="img"><a name="pone-0000880-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000880.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000880" data-uri="info:doi/10.1371/journal.pone.0000880.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000880.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000880.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000880.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000880.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000880.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000880.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000880.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000880.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000880.g002.TIF"></span>)

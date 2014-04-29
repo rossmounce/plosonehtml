@@ -1,0 +1,691 @@
+
+
+<h4>Controllability</h4>
+<a id="article1.body1.sec4.sec10.p1" name="article1.body1.sec4.sec10.p1"></a><p>A dynamic system is called controllable, if there is an admissible control function, which can change the system from any given initial state to any finite state or to the origin of the state space in the finite time. Define the controllability matrix of the system as <em>H</em> = [<em>B</em>, <em>AB</em>, …, <em>A<sup>n</sup></em><sup>−1</sup><em>B</em>], where <em>A</em> and <em>B</em> are the state transition matrix and input to the state matrix in the linear dynamic system, respectively. If rank (<em>H</em>) = <em>n</em>, i.e., the rank of the controllability matrix is equal to the number of the state variables of the system, then the genetic network is completely controllable.</p>
+<a id="article1.body1.sec4.sec10.p2" name="article1.body1.sec4.sec10.p2"></a><p>We use the condition number of the controllability matrix to measure the degree of the controllability of the system. The condition number of the controllability matrix is defined as <a href="#pone.0001693-Wei1">[45]</a><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001693.e026&amp;representation=PNG" class="inline-graphic"></span><br>where <em>H</em><sup>−</sup> is a generalized inverse of the matrix <em>H</em> and ||.|| denotes a matrix norm. This can be justified by the following arguments. The general solution of the discrete linear system is given by <a href="#pone.0001693-Ogata1">[13]</a><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001693.e027&amp;representation=PNG" class="inline-graphic"><span class="note">(13)</span></span><br>By definition, if the system is controllable, then at some time <em>t<sub>k</sub></em>, we have <em>x<sub>k</sub></em> = 0, which implies that<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001693.e028&amp;representation=PNG" class="inline-graphic"><span class="note">(14)</span></span><br></p>
+<a id="article1.body1.sec4.sec10.p3" name="article1.body1.sec4.sec10.p3"></a><p>Equation (14) can be reduced to<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001693.e029&amp;representation=PNG" class="inline-graphic"></span><br>Or<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001693.e030&amp;representation=PNG" class="inline-graphic"><span class="note">(15)</span></span><br>where <em>u</em> is a control vector. Solving the equation (15) yields<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001693.e031&amp;representation=PNG" class="inline-graphic"><span class="note">(16)</span></span><br>The norm of the control vector represents the amount of control efforts required to change the states from initial value to the desired value and hence measures the degree of the controllability. From equation (16), we note that the norm of the control vector ||<em>u</em>|| is proportional to the condition number: <em>κ</em>(<em>H</em>) = ||<em>H</em><sup>−</sup>||||<em>H</em>||. Therefore, we can use the condition number of the controllability matrix to measure the degree of controllability.</p>
+
+</div>
+
+
+
+<div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: XZ MX. Performed the experiments: XG. Analyzed the data: MX HX. Contributed reagents/materials/analysis tools: XZ. Wrote the paper: XZ MX FA.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001693-Herrero1" id="pone.0001693-Herrero1"></a>Herrero J, Vaquerizas JM, Al-Shahrour F, Conde L, Mateos A, et al.  (2004) New challenges in gene expression data analysis and the extended GEPAS. Nucleic Acids Res  32: W485–91.  <ul class="find" data-citedArticleID="1064410" data-doi="10.1093/nar/gkh421"><li><a href="http://dx.doi.org/10.1093/nar/gkh421" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=New+challenges+in+gene+expression+data+analysis+and+the+extended+GEPAS." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22New+challenges+in+gene+expression+data+analysis+and+the+extended+GEPAS.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001693-Assmus1" id="pone.0001693-Assmus1"></a>Assmus HE, Herwig R, Kwang-Hyun Cho K-H, Wolkenhauer O (2006) Dynamics of biological systems: role of systems biology in medical research. Expert Review of Molecular Diagnostics  6: 891–902.  <ul class="find" data-citedArticleID="1064386" data-doi="10.1586/14737159.6.6.891"><li><a href="http://dx.doi.org/10.1586/14737159.6.6.891" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamics+of+biological+systems%3A+role+of+systems+biology+in+medical+research." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamics+of+biological+systems%3A+role+of+systems+biology+in+medical+research.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001693-Barabsi1" id="pone.0001693-Barabsi1"></a>Barabási A-L, Oltvai ZN (2004) Network biology: understanding the cell's functional organization. Nature Reviews Genetics  5: 101–113.  <ul class="find" data-citedArticleID="1064388" data-doi="10.1038/nrg1272"><li><a href="http://dx.doi.org/10.1038/nrg1272" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Network+biology%3A+understanding+the+cell%27s+functional+organization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Network+biology%3A+understanding+the+cell%27s+functional+organization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001693-Wolkenhauer1" id="pone.0001693-Wolkenhauer1"></a>Wolkenhauer O, Ullah M, Wellstead P, Cho KH (2005) The dynamic systems approach to control and regulation of intracellular networks. FEBS Lett  579: 1846–53.  <ul class="find" data-citedArticleID="1064460" data-doi="10.1016/j.febslet.2005.02.008"><li><a href="http://dx.doi.org/10.1016/j.febslet.2005.02.008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+dynamic+systems+approach+to+control+and+regulation+of+intracellular+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+dynamic+systems+approach+to+control+and+regulation+of+intracellular+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001693-Akutsu1" id="pone.0001693-Akutsu1"></a>Akutsu T, Miyano S, Kuhara S (1999) Identification of genetic networks from a small number of gene expression patterns under the Boolean network model. Pacific Symposium on Biocomputing 17–28.  <ul class="find" data-citedArticleID="1064380" data-doi="10.1142/9789814447300_0003"><li><a href="http://dx.doi.org/10.1142/9789814447300_0003" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+genetic+networks+from+a+small+number+of+gene+expression+patterns+under+the+Boolean+network+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+genetic+networks+from+a+small+number+of+gene+expression+patterns+under+the+Boolean+network+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001693-Kauffman1" id="pone.0001693-Kauffman1"></a>Kauffman S, Peterson C, Samuelsson B, Troein C (2003) Random Boolean network models and the yeast transcriptional network. Proc Natl Acad Sci U S A  100: 14796–14799.  <ul class="find" data-citedArticleID="1064418" data-doi="10.1073/pnas.2036429100"><li><a href="http://dx.doi.org/10.1073/pnas.2036429100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Random+Boolean+network+models+and+the+yeast+transcriptional+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Random+Boolean+network+models+and+the+yeast+transcriptional+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001693-Martin1" id="pone.0001693-Martin1"></a>Martin S, Zhang Z, Martino A, Faulon JL (2007) Boolean Dynamics of Genetic Regulatory Networks Inferred from Microarray Time Series Data. Bioinformatics  23: 866–874.  <ul class="find" data-citedArticleID="1064430" data-doi="10.1093/bioinformatics/btm021"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btm021" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Boolean+Dynamics+of+Genetic+Regulatory+Networks+Inferred+from+Microarray+Time+Series+Data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Boolean+Dynamics+of+Genetic+Regulatory+Networks+Inferred+from+Microarray+Time+Series+Data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001693-deJong1" id="pone.0001693-deJong1"></a>de Jong H (2002) Modeling and simulation of genetic regulatory systems: a literature review. J Comput Biol  9: 67–103.  <ul class="find" data-citedArticleID="1064468" data-doi="10.1089/10665270252833208"><li><a href="http://dx.doi.org/10.1089/10665270252833208" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+and+simulation+of+genetic+regulatory+systems%3A+a+literature+review." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+and+simulation+of+genetic+regulatory+systems%3A+a+literature+review.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001693-Beal1" id="pone.0001693-Beal1"></a>Beal MJ, Falciani F, Ghahramani Z, Rangel C, Wild DL (2005) A Bayesian approach to reconstructing genetic regulatory networks with hidden factors. Bioinformatics  21: 349–356.  <ul class="find" data-citedArticleID="1064390" data-doi="10.1093/bioinformatics/bti014"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti014" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Bayesian+approach+to+reconstructing+genetic+regulatory+networks+with+hidden+factors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Bayesian+approach+to+reconstructing+genetic+regulatory+networks+with+hidden+factors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001693-Dojer1" id="pone.0001693-Dojer1"></a>Dojer N, Gambin A, Mizera A, Wilczynski B, Tiuryn J (2006) Applying dynamic Bayesian networks to perturbed gene expression data. BMC Bioinformatics  7: 249.  <ul class="find" data-citedArticleID="1064404" data-doi="10.1186/1471-2105-7-249"><li><a href="http://dx.doi.org/10.1186/1471-2105-7-249" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Applying+dynamic+Bayesian+networks+to+perturbed+gene+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Applying+dynamic+Bayesian+networks+to+perturbed+gene+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001693-Werhli1" id="pone.0001693-Werhli1"></a>Werhli A, Husmeier D (2007) Reconstructing gene regulatory networks with bayesian networks by combining expression data with multiple sources of prior knowledge. Stat Appl Genet Mol Biol  6: 15.  <ul class="find" data-citedArticleID="1064458" data-doi="10.2202/1544-6115.1282"><li><a href="http://dx.doi.org/10.2202/1544-6115.1282" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reconstructing+gene+regulatory+networks+with+bayesian+networks+by+combining+expression+data+with+multiple+sources+of+prior+knowledge." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reconstructing+gene+regulatory+networks+with+bayesian+networks+by+combining+expression+data+with+multiple+sources+of+prior+knowledge.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001693-Nachman1" id="pone.0001693-Nachman1"></a>Nachman I, Regeve A, Friedman N (2004) Inferring quantitative models of regulatory networks from expression data. Bioinformatics  20: Suppl. 1248–1256.  <ul class="find" data-citedArticleID="1064434" data-doi="10.1093/bioinformatics/bth941"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth941" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inferring+quantitative+models+of+regulatory+networks+from+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inferring+quantitative+models+of+regulatory+networks+from+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001693-Ogata1" id="pone.0001693-Ogata1"></a>Ogata K (1998) System dynamics. Third Edition. Upper Saddle Rive, New Jersey: Prentice Hall.   <ul class="find-nolinks"></ul></li><li><span class="label">14.
+              </span><a name="pone.0001693-Rangel1" id="pone.0001693-Rangel1"></a>Rangel C, Wild DL, Falciani F, Ghahramani Z, Gaiba A (2001) Modeling biological responses using gene expression profiling and linear dynamical systems. Proceedings of the 2nd International Conference on Systems Biology. Omipress 248–256.  <ul class="find" data-citedArticleID="1064444"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Modeling+biological+responses+using+gene+expression+profiling+and+linear+dynamical+systems.+Proceedings+of+the+2nd+International+Conference+on+Systems+Biology.&amp;auth=&amp;atitle=Modeling+biological+responses+using+gene+expression+profiling+and+linear+dynamical+systems.+Proceedings+of+the+2nd+International+Conference+on+Systems+Biology." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+biological+responses+using+gene+expression+profiling+and+linear+dynamical+systems.+Proceedings+of+the+2nd+International+Conference+on+Systems+Biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+biological+responses+using+gene+expression+profiling+and+linear+dynamical+systems.+Proceedings+of+the+2nd+International+Conference+on+Systems+Biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001693-Dempster1" id="pone.0001693-Dempster1"></a>Dempster A, Laird N, Rubin D (1977) maximum likelihood from incomplete data via the EM algorithm. Journal of the Royal Statistical Society,  Seres B 39: 1–38.  <ul class="find" data-citedArticleID="1064400"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=maximum+likelihood+from+incomplete+data+via+the+EM+algorithm.&amp;auth=&amp;atitle=maximum+likelihood+from+incomplete+data+via+the+EM+algorithm." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=maximum+likelihood+from+incomplete+data+via+the+EM+algorithm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22maximum+likelihood+from+incomplete+data+via+the+EM+algorithm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001693-Gibson1" id="pone.0001693-Gibson1"></a>Gibson S, Ninness B (2005) Robust Maximum-Likelihood Estimation of Multivariable Dynamic Systems. Automatica  41: 1667–1682.  <ul class="find" data-citedArticleID="1064408" data-doi="10.1016/j.automatica.2005.05.008"><li><a href="http://dx.doi.org/10.1016/j.automatica.2005.05.008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robust+Maximum-Likelihood+Estimation+of+Multivariable+Dynamic+Systems." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robust+Maximum-Likelihood+Estimation+of+Multivariable+Dynamic+Systems.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001693-Voit1" id="pone.0001693-Voit1"></a>Voit EO, Schwacke JH (2007)  Understanding through modeling – A historical perspective and review of biochemical system theory as a powerful tool for systems biology. In: Konpopka AK, editor. Systems biology: principles, methods and concepts. CRC Press.   <ul class="find-nolinks"></ul></li><li><span class="label">18.
+              </span><a name="pone.0001693-Prill1" id="pone.0001693-Prill1"></a>Prill RJ, Iglesias PA, Levchenko A (2005) Dynamic properties of network motifs contribute to biological network organization. PLoS Biol  3: e343.  <ul class="find" data-citedArticleID="1064440" data-doi="10.1371/journal.pbio.0030343"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0030343" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamic+properties+of+network+motifs+contribute+to+biological+network+organization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamic+properties+of+network+motifs+contribute+to+biological+network+organization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001693-Stelling1" id="pone.0001693-Stelling1"></a>Stelling J, Sauer U, Szallasi Z, Doyle FJ 3rd, Doyle J (2004) Robustness of cellular functions. Cell  118: 675–85.  <ul class="find" data-citedArticleID="1064446" data-doi="10.1016/j.cell.2004.09.008"><li><a href="http://dx.doi.org/10.1016/j.cell.2004.09.008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+of+cellular+functions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+of+cellular+functions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001693-Martins1" id="pone.0001693-Martins1"></a>Martins NC, Dahleh MA, Elia N (2006) Feedback stabilization of uncertain systems in the presence of a direct link. IEEE Transactions on Automatic Control  51: 438–447.  <ul class="find" data-citedArticleID="1064432" data-doi="10.1109/tac.2006.871940"><li><a href="http://dx.doi.org/10.1109/tac.2006.871940" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Feedback+stabilization+of+uncertain+systems+in+the+presence+of+a+direct+link." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Feedback+stabilization+of+uncertain+systems+in+the+presence+of+a+direct+link.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001693-Kremling1" id="pone.0001693-Kremling1"></a>Kremling A, Saez-Rodriguez J (2007) Systems biology-An engineering perspective. J Biotechnol  129: 329–351.  <ul class="find" data-citedArticleID="1064422" data-doi="10.1016/j.jbiotec.2007.02.009"><li><a href="http://dx.doi.org/10.1016/j.jbiotec.2007.02.009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systems+biology-An+engineering+perspective." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systems+biology-An+engineering+perspective.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001693-Claman1" id="pone.0001693-Claman1"></a>Claman HN, Giorno RC, Seibold JR (1991) Endothelial and fibroblastic activation in scleroderma. The myth of the “uninvolved skin”. Arthritis Rheum  34: 1495–1501.  <ul class="find" data-citedArticleID="1064398" data-doi="10.1002/art.1780341204"><li><a href="http://dx.doi.org/10.1002/art.1780341204" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Endothelial+and+fibroblastic+activation+in+scleroderma.+The+myth+of+the+%E2%80%9Cuninvolved+skin%E2%80%9D." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Endothelial+and+fibroblastic+activation+in+scleroderma.+The+myth+of+the+%E2%80%9Cuninvolved+skin%E2%80%9D.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001693-Cabral1" id="pone.0001693-Cabral1"></a>Cabral AR, Alcocer-Varela J, Orozco-Topete R, Reyes E, Fernandez-Dominguez L, et al.  (1994) Clinical, histopathological, immunological and fibroblast studies in 30 patients with subcutaneous injections of modelants including silicone and mineral oils. Rev Invest Clin  46: 257–66.  <ul class="find" data-citedArticleID="1064394"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Clinical%2C+histopathological%2C+immunological+and+fibroblast+studies+in+30+patients+with+subcutaneous+injections+of+modelants+including+silicone+and+mineral+oils.&amp;auth=&amp;atitle=Clinical%2C+histopathological%2C+immunological+and+fibroblast+studies+in+30+patients+with+subcutaneous+injections+of+modelants+including+silicone+and+mineral+oils." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Clinical%2C+histopathological%2C+immunological+and+fibroblast+studies+in+30+patients+with+subcutaneous+injections+of+modelants+including+silicone+and+mineral+oils." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Clinical%2C+histopathological%2C+immunological+and+fibroblast+studies+in+30+patients+with+subcutaneous+injections+of+modelants+including+silicone+and+mineral+oils.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001693-Gerriets1" id="pone.0001693-Gerriets1"></a>Gerriets JE, Reiser KM, Last JA (1996) Lung collagen cross-links in rats with experimentally induced pulmonary fibrosis. Biochim Biophys Acta  1316: 121–31.  <ul class="find" data-citedArticleID="1064406" data-doi="10.1016/0925-4439(96)00019-1"><li><a href="http://dx.doi.org/10.1016/0925-4439(96)00019-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Lung+collagen+cross-links+in+rats+with+experimentally+induced+pulmonary+fibrosis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Lung+collagen+cross-links+in+rats+with+experimentally+induced+pulmonary+fibrosis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001693-Kim1" id="pone.0001693-Kim1"></a>Kim KA, Kim YH, Seok Seo M, Kyu Lee W, Won Kim S, et al.  (2002) Mechanism of silica-induced ROS generation in Rat2 fibroblast cells. Toxicol Lett  135: 185–91.  <ul class="find" data-citedArticleID="1064420" data-doi="10.1016/s0378-4274(02)00237-0"><li><a href="http://dx.doi.org/10.1016/s0378-4274(02)00237-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mechanism+of+silica-induced+ROS+generation+in+Rat2+fibroblast+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mechanism+of+silica-induced+ROS+generation+in+Rat2+fibroblast+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001693-Arcangeli1" id="pone.0001693-Arcangeli1"></a>Arcangeli G, Cupelli V, Giuliano G (2001) Effects of silica on human lung fibroblast in culture. Sci Total Environ  270: 135–9.  <ul class="find" data-citedArticleID="1064384" data-doi="10.1016/s0048-9697(00)00781-6"><li><a href="http://dx.doi.org/10.1016/s0048-9697(00)00781-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effects+of+silica+on+human+lung+fibroblast+in+culture." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effects+of+silica+on+human+lung+fibroblast+in+culture.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001693-Pan1" id="pone.0001693-Pan1"></a>Pan Y, Durfee T, Bockhorst J, Craven M (2007) Connecting quantitative regulatory-network models to the genome. Bioinformatics  23: 1367–1376.  <ul class="find" data-citedArticleID="1064438" data-doi="10.1093/bioinformatics/btm228"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btm228" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Connecting+quantitative+regulatory-network+models+to+the+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Connecting+quantitative+regulatory-network+models+to+the+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001693-Steuer1" id="pone.0001693-Steuer1"></a>Steuer R, Gross T, Selbig J, Blasius B (2006) Structural kinetic modeling of metabolic networks. <em>Proc. Natl Acad. Sci.</em> USA  103: 11868–11873.  <ul class="find" data-citedArticleID="1064448" data-doi="10.1073/pnas.0600013103"><li><a href="http://dx.doi.org/10.1073/pnas.0600013103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Structural+kinetic+modeling+of+metabolic+networks.+Proc.+Natl+Acad.+Sci." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Structural+kinetic+modeling+of+metabolic+networks.+Proc.+Natl+Acad.+Sci.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001693-Zhou1" id="pone.0001693-Zhou1"></a>Zhou XD, Xiong MM, Tan FK, Guo XJ, Arnett FC (2006) SPARC, an upstream regulator of CTGF in response to TGF-β stimulation. Arthritis &amp; Rheum  54: 3885–3889.  <ul class="find" data-citedArticleID="1064466" data-doi="10.1002/art.22249"><li><a href="http://dx.doi.org/10.1002/art.22249" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SPARC%2C+an+upstream+regulator+of+CTGF+in+response+to+TGF-%CE%B2+stimulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SPARC%2C+an+upstream+regulator+of+CTGF+in+response+to+TGF-%CE%B2+stimulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001693-Xiong1" id="pone.0001693-Xiong1"></a>Xiong M, Feghali-Bostwick CA, Arnett FC, Zhou X (2005) A systems biology approach to genetic studies of complex diseases. FEBS Lett  579: 5325–5332.  <ul class="find" data-citedArticleID="1064464" data-doi="10.1016/j.febslet.2005.08.058"><li><a href="http://dx.doi.org/10.1016/j.febslet.2005.08.058" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+systems+biology+approach+to+genetic+studies+of+complex+diseases." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+systems+biology+approach+to+genetic+studies+of+complex+diseases.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001693-Derynck1" id="pone.0001693-Derynck1"></a>Derynck R, Zhang YE (2003) Smad-dependent and Smad-independent pathways in TGF-beta family signalling. Nature  425: 577–584.  <ul class="find" data-citedArticleID="1064402" data-doi="10.1038/nature02006"><li><a href="http://dx.doi.org/10.1038/nature02006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Smad-dependent+and+Smad-independent+pathways+in+TGF-beta+family+signalling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Smad-dependent+and+Smad-independent+pathways+in+TGF-beta+family+signalling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001693-Jinnin1" id="pone.0001693-Jinnin1"></a>Jinnin M, Ihn H, Mimura Y, Asano Y, Tamaki K (2006) Potential regulatory elements of the constitutive up-regulated α2(I) collagen gene in scleroderma dermal fibroblasts. Biochem Biophys Res Commun.  343: 904–909.  <ul class="find" data-citedArticleID="1064414" data-doi="10.1016/j.bbrc.2006.03.037"><li><a href="http://dx.doi.org/10.1016/j.bbrc.2006.03.037" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Potential+regulatory+elements+of+the+constitutive+up-regulated+%CE%B12%28I%29+collagen+gene+in+scleroderma+dermal+fibroblasts." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Potential+regulatory+elements+of+the+constitutive+up-regulated+%CE%B12%28I%29+collagen+gene+in+scleroderma+dermal+fibroblasts.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001693-Jimenez1" id="pone.0001693-Jimenez1"></a>Jimenez SA, Feldman G, Bashey RL, Bienkowski R, Rosenbloom J (1986) Co-ordinate increase in the expression of type I and type III collagen genes in progressive systemic sclerosis. Biochem J  237: 837–843.  <ul class="find" data-citedArticleID="1064412"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Co-ordinate+increase+in+the+expression+of+type+I+and+type+III+collagen+genes+in+progressive+systemic+sclerosis.&amp;auth=&amp;atitle=Co-ordinate+increase+in+the+expression+of+type+I+and+type+III+collagen+genes+in+progressive+systemic+sclerosis." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Co-ordinate+increase+in+the+expression+of+type+I+and+type+III+collagen+genes+in+progressive+systemic+sclerosis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Co-ordinate+increase+in+the+expression+of+type+I+and+type+III+collagen+genes+in+progressive+systemic+sclerosis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001693-LeRoy1" id="pone.0001693-LeRoy1"></a>LeRoy EC (1974) Increased collagen synthesis by scleroderma skin fibroblasts in vitro: a possible defect in the regulation or activation of the scleroderma fibroblast. J Clin Invest  54: 880–889.  <ul class="find" data-citedArticleID="1064426" data-doi="10.1172/jci107827"><li><a href="http://dx.doi.org/10.1172/jci107827" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Increased+collagen+synthesis+by+scleroderma+skin+fibroblasts+in+vitro%3A+a+possible+defect+in+the+regulation+or+activation+of+the+scleroderma+fibroblast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Increased+collagen+synthesis+by+scleroderma+skin+fibroblasts+in+vitro%3A+a+possible+defect+in+the+regulation+or+activation+of+the+scleroderma+fibroblast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001693-Chen1" id="pone.0001693-Chen1"></a>Chen L, Aihara K (2002) Stability of genetic regulatory networks with time delay. IEEE Transactions on Circuits and Systems-I: Fundamental Theory and Applications  49: 602–608.  <ul class="find" data-citedArticleID="1064396" data-doi="10.1109/tcsi.2002.1001949"><li><a href="http://dx.doi.org/10.1109/tcsi.2002.1001949" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stability+of+genetic+regulatory+networks+with+time+delay." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stability+of+genetic+regulatory+networks+with+time+delay.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001693-Prill2" id="pone.0001693-Prill2"></a>Prill RJ, Iglesias PA, Levchenko A (2005) Dynamic Properties of Network Motifs Contribute to Biological Network Organization. PLoS Biol  3(11): e343.  <ul class="find" data-citedArticleID="1064442" data-doi="10.1371/journal.pbio.0030343"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0030343" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamic+Properties+of+Network+Motifs+Contribute+to+Biological+Network+Organization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamic+Properties+of+Network+Motifs+Contribute+to+Biological+Network+Organization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001693-Binder1" id="pone.0001693-Binder1"></a>Binder B, Heinrich R (2002) Dynamic stability of signal transduction networks depending on downstream and upstream specificity of protein kinases. Mol Biol Rep  29: 51–55.  <ul class="find" data-citedArticleID="1064392"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Dynamic+stability+of+signal+transduction+networks+depending+on+downstream+and+upstream+specificity+of+protein+kinases.&amp;auth=&amp;atitle=Dynamic+stability+of+signal+transduction+networks+depending+on+downstream+and+upstream+specificity+of+protein+kinases." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamic+stability+of+signal+transduction+networks+depending+on+downstream+and+upstream+specificity+of+protein+kinases." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamic+stability+of+signal+transduction+networks+depending+on+downstream+and+upstream+specificity+of+protein+kinases.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0001693-Kremling2" id="pone.0001693-Kremling2"></a>Kremling A, Saez-Rodriguez J (2007) Systems biology-An engineering perspective. J Biotechnol  129: 329–351.  <ul class="find" data-citedArticleID="1064424" data-doi="10.1016/j.jbiotec.2007.02.009"><li><a href="http://dx.doi.org/10.1016/j.jbiotec.2007.02.009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systems+biology-An+engineering+perspective." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systems+biology-An+engineering+perspective.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0001693-Vinson1" id="pone.0001693-Vinson1"></a>Vinson DR, Georgaki C (2000) A new measure of process output controllability. Journal of Process Control  10: 185–194.  <ul class="find" data-citedArticleID="1064452" data-doi="10.1016/s0959-1524(99)00045-1"><li><a href="http://dx.doi.org/10.1016/s0959-1524(99)00045-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+new+measure+of+process+output+controllability." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+new+measure+of+process+output+controllability.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0001693-Wolkenhauer2" id="pone.0001693-Wolkenhauer2"></a>Wolkenhauer O, Mesarovic M (2005) Feedback dynamics and cell function: Why systems biology is called Systems Biology. Mol. Biosyst  1: 14–16.  <ul class="find" data-citedArticleID="1064462" data-doi="10.1039/b502088n"><li><a href="http://dx.doi.org/10.1039/b502088n" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Feedback+dynamics+and+cell+function%3A+Why+systems+biology+is+called+Systems+Biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Feedback+dynamics+and+cell+function%3A+Why+systems+biology+is+called+Systems+Biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0001693-Aldana1" id="pone.0001693-Aldana1"></a>Aldana M, Balleza E, Kauffman S, Resendiz O (2007) Robustness and evolvability in genetic regulatory networks. J Theor Biol  245: 433–448.  <ul class="find" data-citedArticleID="1064382" data-doi="10.1016/j.jtbi.2006.10.027"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2006.10.027" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+and+evolvability+in+genetic+regulatory+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+and+evolvability+in+genetic+regulatory+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0001693-Subcommittee1" id="pone.0001693-Subcommittee1"></a>Subcommittee for Scleroderma Criteria of the American Rheumatism Association Diagnostic and Therapeutic Criteria Committee (1980) Preliminary criteria for the classification of systemic sclerosis (scleroderma). Arthritis Rheum  23: 581–590.  <ul class="find" data-citedArticleID="1064450" data-doi="10.1002/art.1780230510"><li><a href="http://dx.doi.org/10.1002/art.1780230510" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Preliminary+criteria+for+the+classification+of+systemic+sclerosis+%28scleroderma%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Preliminary+criteria+for+the+classification+of+systemic+sclerosis+%28scleroderma%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0001693-LeRoy2" id="pone.0001693-LeRoy2"></a>LeRoy EC, Black C, Fleischmajer R, Jablonska S, Krieg T, et al.  (1988) Scleroderma (systemic sclerosis): classification, subsets and pathogenesis. J Rheumatol  15: 202–205.  <ul class="find" data-citedArticleID="1064428"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Scleroderma+%28systemic+sclerosis%29%3A+classification%2C+subsets+and+pathogenesis.&amp;auth=&amp;atitle=Scleroderma+%28systemic+sclerosis%29%3A+classification%2C+subsets+and+pathogenesis." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Scleroderma+%28systemic+sclerosis%29%3A+classification%2C+subsets+and+pathogenesis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Scleroderma+%28systemic+sclerosis%29%3A+classification%2C+subsets+and+pathogenesis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0001693-Kailath1" id="pone.0001693-Kailath1"></a>Kailath T, Sayed AH, Hassibi B (1999) Linear Estimation. Upper Saddle River, New Jersey: Prentice Hall.   <ul class="find-nolinks"></ul></li><li><span class="label">45.
+              </span><a name="pone.0001693-Wei1" id="pone.0001693-Wei1"></a>Wei Y, Wang D (2003) Condition numbers and perturbation of the weighted Moore-Penrose inverse and weighted linear squares problem. Applied mathematics and Computation  145: 45–58.  <ul class="find" data-citedArticleID="1064456" data-doi="10.1016/s0096-3003(02)00437-x"><li><a href="http://dx.doi.org/10.1016/s0096-3003(02)00437-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Condition+numbers+and+perturbation+of+the+weighted+Moore-Penrose+inverse+and+weighted+linear+squares+problem." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Condition+numbers+and+perturbation+of+the+weighted+Moore-Penrose+inverse+and+weighted+linear+squares+problem.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.XML" value="112617"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.PDF" value="540792"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e001.PNG" value="10930"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e001.TIF" value="26564"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e002.PNG" value="28495"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e002.TIF" value="32126"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e003.PNG" value="38736"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e003.TIF" value="57792"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g001.PNG_L" value="290919"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g001.PNG_M" value="148453"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g001.PNG_S" value="11439"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g001.TIF" value="455246"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g001.PNG_I" value="53264"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.t001.PNG_L" value="36729"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.t001.PNG_M" value="45852"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.t001.PNG_S" value="9779"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.t001.TIF" value="208814"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.t001.PNG_I" value="15299"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g002.PNG_L" value="29360"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g002.PNG_M" value="22171"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g002.PNG_S" value="4549"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g002.TIF" value="81438"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g002.PNG_I" value="8418"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g003.PNG_L" value="291706"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g003.PNG_M" value="116619"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g003.PNG_S" value="9596"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g003.TIF" value="511478"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g003.PNG_I" value="41955"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g004.PNG_L" value="191477"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g004.PNG_M" value="54152"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g004.PNG_S" value="6117"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g004.TIF" value="382772"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g004.PNG_I" value="19247"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g005.PNG_L" value="197527"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g005.PNG_M" value="53836"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g005.PNG_S" value="5692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g005.TIF" value="380390"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g005.PNG_I" value="18814"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e004.PNG" value="11004"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e004.TIF" value="26612"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e005.PNG" value="6517"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e005.TIF" value="22472"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e006.PNG" value="10235"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e006.TIF" value="26332"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e007.PNG" value="10538"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e007.TIF" value="26544"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e008.PNG" value="8377"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e008.TIF" value="24428"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e009.PNG" value="9634"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e009.TIF" value="25736"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e010.PNG" value="9633"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e010.TIF" value="25900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e011.PNG" value="11068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e011.TIF" value="27220"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e012.PNG" value="12141"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e012.TIF" value="28668"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e013.PNG" value="16032"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e013.TIF" value="32288"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e014.PNG" value="18713"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e014.TIF" value="34692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e015.PNG" value="16028"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e015.TIF" value="32672"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e016.PNG" value="19494"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e016.TIF" value="35760"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e017.PNG" value="22161"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e017.TIF" value="38476"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e018.PNG" value="26135"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e018.TIF" value="41912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e019.PNG" value="11979"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e019.TIF" value="28016"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e020.PNG" value="7685"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e020.TIF" value="23768"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e021.PNG" value="10400"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e021.TIF" value="26376"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e022.PNG" value="8826"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e022.TIF" value="24880"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e023.PNG" value="6671"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e023.TIF" value="22620"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e024.PNG" value="10405"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e024.TIF" value="26172"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e025.PNG" value="7459"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e025.TIF" value="23484"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g006.PNG_L" value="13743"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g006.PNG_M" value="14505"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g006.PNG_S" value="4334"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g006.TIF" value="21312"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.g006.PNG_I" value="4989"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e026.PNG" value="7419"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e026.TIF" value="23696"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e027.PNG" value="12483"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e027.TIF" value="28308"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e028.PNG" value="9868"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e028.TIF" value="25648"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e029.PNG" value="10680"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e029.TIF" value="27072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e030.PNG" value="6966"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e030.TIF" value="22912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e031.PNG" value="6927"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001693.e031.TIF" value="22876"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001693&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001693" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001693&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001693&volume=&issue=&title=Differential Dynamic Properties of Scleroderma Fibroblasts in Response to Perturbation of Environmental Stimuli&author_name=Momiao%20Xiong%2C%20Frank%20C.%20Arnett%2C%20Xinjian%20Guo%2C%20Hao%20Xiong%2C%20Xiaodong%20Zhou&start_page=1&end_page=12" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001693" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693&amp;t=Differential%20Dynamic%20Properties%20of%20Scleroderma%20Fibroblasts%20in%20Response%20to%20Perturbation%20of%20Environmental%20Stimuli" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693&title=Differential%20Dynamic%20Properties%20of%20Scleroderma%20Fibroblasts%20in%20Response%20to%20Perturbation%20of%20Environmental%20Stimuli&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693&amp;title=Differential%20Dynamic%20Properties%20of%20Scleroderma%20Fibroblasts%20in%20Response%20to%20Perturbation%20of%20Environmental%20Stimuli" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001693&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Differential Dynamic Properties of Scleroderma Fibroblasts in Response to Perturbation of Environmental Stimuli';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001693';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Differential%20Dynamic%20Properties%20of%20Scleroderma%20Fibroblasts%20in%20Response%20to%20Perturbation%20of%20Environmental%20Stimuli http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001693" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001693" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Dynamical+systems%22" title="Search for articles in the subject area:'Dynamical systems'"><div class="flagText">Dynamical systems</div></a>
+              <div data-categoryid="21479" data-articleid="26212"
+                   data-categoryname="Dynamical systems"
+                   class="flagImage" title="Flag 'Dynamical systems' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Fibroblasts%22" title="Search for articles in the subject area:'Fibroblasts'"><div class="flagText">Fibroblasts</div></a>
+              <div data-categoryid="47975" data-articleid="26212"
+                   data-categoryname="Fibroblasts"
+                   class="flagImage" title="Flag 'Fibroblasts' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="26212"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulation%22" title="Search for articles in the subject area:'Gene regulation'"><div class="flagText">Gene regulation</div></a>
+              <div data-categoryid="17553" data-articleid="26212"
+                   data-categoryname="Gene regulation"
+                   class="flagImage" title="Flag 'Gene regulation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulatory+networks%22" title="Search for articles in the subject area:'Gene regulatory networks'"><div class="flagText">Gene regulatory networks</div></a>
+              <div data-categoryid="17555" data-articleid="26212"
+                   data-categoryname="Gene regulatory networks"
+                   class="flagImage" title="Flag 'Gene regulatory networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+networks%22" title="Search for articles in the subject area:'Genetic networks'"><div class="flagText">Genetic networks</div></a>
+              <div data-categoryid="31807" data-articleid="26212"
+                   data-categoryname="Genetic networks"
+                   class="flagImage" title="Flag 'Genetic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Scleroderma%22" title="Search for articles in the subject area:'Scleroderma'"><div class="flagText">Scleroderma</div></a>
+              <div data-categoryid="46569" data-articleid="26212"
+                   data-categoryname="Scleroderma"
+                   class="flagImage" title="Flag 'Scleroderma' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22System+stability%22" title="Search for articles in the subject area:'System stability'"><div class="flagText">System stability</div></a>
+              <div data-categoryid="32597" data-articleid="26212"
+                   data-categoryname="System stability"
+                   class="flagImage" title="Flag 'System stability' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=8679'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6994'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=1895&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

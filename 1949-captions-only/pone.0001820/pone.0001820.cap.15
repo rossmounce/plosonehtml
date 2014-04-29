@@ -1,0 +1,1156 @@
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>In our analysis, we primarily focused on estimating the binding probability of a TF to either the whole analyzed promoter or at single base pair resolution (using the Bayesian method). We also introduced an extension for inferring combinatorial regulation. Given the flexibility of our probabilistic (Bayesian) modeling framework, virtually any question can be answered probabilistically within it. For example, Beer and Tavazoie <a href="#pone.0001820-Beer1">[51]</a> introduced a method for predicting gene expression using positional and combinatorial constraints for local sequence elements. Similar questions can also be answered probabilistically in the proposed framework, e.g., “what is the probability that two TFs, A and B, both have binding sites in a given promoter such that binding site for A is closer to the transcription start site than that of B, binding sites are within 50 base pairs from each other and within 150 base pairs from the transcription start site?” Alternatively, the above type of positional and combinatorial constraints that have been identified in previous studies can be included into the proposed framework via informative prior distributions.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>One popular way of analyzing expression data is based on clustering similarly behaving genes together or finding groups of genes that are differentially expressed. The gene sets found are then typically searched for common (either known or unknown) sequence motifs. A potentially very useful extension of our framework will be to develop a method for computing the probability that a set of genes (or a fraction of them) have a binding site for a TF or for a set of TFs.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>A number of other possible extensions are also easily included in this probabilistic modeling framework. For example, some proteins interact to form a heterodimer and bind as a complex, in which case the potential binding sites of (all or a subset of) the constituent TFs may be more likely to be physically close to each other. Incorporation of protein-protein interaction databases may help in revealing such mechanisms. Evolutionary conservation was included in the framework by utilizing the conservation scores of an input promoter. One can also simultaneously analyze the corresponding promoter in other organisms to check if they have a binding site for the same TF (in the corresponding location), see <a href="#pone.0001820-Sandelin2">[46]</a>. In addition to this, an interesting extension would be to modify the proposed framework to take into account the conservation of TF binding patterns <a href="#pone.0001820-Hallikas1">[84]</a>. An alternative future extension is to incorporate probabilistic evolutionary processes within the proposed binding prediction framework (see <a href="#pone.0001820-Siddharthan1">[6]</a>). Finally, as noted before, our choice of using a PSFM model for binding sites is arbitrary and the same framework can be easily extended to other binding site models as well.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Our final note is devoted to the general distinction between motif discovery and binding site prediction methods. The proposed Bayesian method interprets binding specificities as random variables whose prior parameters define the amount of uncertainty associated with each TF binding model. By gradually forcing all pseudo counts to be equal (unity), i.e., increasing the uncertainty, the Bayesian binding prediction method indeed turns into a pure motif discovery method. Thus, for uncertain binding specificities, the Bayesian method can also be used as a motif discoverer.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>Our future work includes developing the framework in the direction of the aforementioned extensions. We are also extending our genome-wide analysis to yeast. Predicting TF binding in yeast is interesting not only because it is the most often considered model organism, but also because yeast has a well-developed nucleosome model <a href="#pone.0001820-Segal1">[74]</a> and more abundant ChIP-chip data (see <a href="#pone.0001820-Lee1">[65]</a>, <a href="#pone.0001820-Qi1">[9]</a>).</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>A central goal in the described computational analysis is accurate TF binding prediction from multiple data sources. However, because TF binding does not necessarily imply transcriptional regulation, it is also important to further extend computational methods to incorporate other, functional data, such as gene expression or protein level (time series) measurements. Statistical inference of transcriptional regulatory networks from a combination of gene expression time series, promoter sequence and binding specificity data has been studied in <a href="#pone.0001820-Segal2">[85]</a>–<a href="#pone.0001820-deHoon1">[87]</a>, <a href="#pone.0001820-Chen2">[63]</a>. Probabilistic formulation of TF binding prediction is particularly useful in such modeling approaches as it naturally allows a principled fusion of various data sources. In a Bayesian context, it is both intuitive and simple to integrate diverse data sources via informative prior distributions. This is similar with what we proposed for the probabilistic integration of multiple data sources above. Similar ideas have already been introduced for the Bayesian inference of transcriptional regulatory networks from gene expression data where a prior distribution of network models is estimated from promoter sequences and TF binding specificities <a href="#pone.0001820-Chen2">[63]</a> or from ChIP-chip data <a href="#pone.0001820-Bernard1">[62]</a>. We are currently developing Bayesian learning methods for transcriptional regulatory networks that can make principled statistical inference from diverse sets of data sources, such as the ones already discussed in this work and other functional data.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>We have developed a flexible and comprehensive framework for TF binding prediction from multiple data sources. The proposed methods are probabilistic in nature and, thus, directly assess our degree of belief in binding or non-binding in terms of probabilities. Instead of assessing TF binding at each nucleotide location separately, we extended the binding prediction methods to analyze each promoter sequence as a whole. This gives a more complete view of a TF binding to and possibly regulating a target gene. Although we primary focused on answering the question of whether the entire promoter has a binding site for a TF, we also developed a method for computing binding probabilities at each nucleotide position by essentially integrating out other locations in a promoter. Most importantly, the proposed methods can make principled inference from multiple data sources that can include, among others, multiple motif models, evolutionary conservation, regulatory potential, CpG islands, nucleosome positioning, DNase hypersensitive sites and ChIP-chip. Results on our carefully constructed test set demonstrate that principled data fusion can significantly improve the performance of binding prediction methods. Recent technological developments, such as protein binding microarrays, now allow accurate measurements of TF binding specificities to be gathered in a high-throughput fashion. Using accurate binding specificity measurements together with principled TF binding prediction methods can provide a competitive alternative to traditional condition specific ChIP-chip experiments, especially when TF binding prediction incorporates multiple additional data sources. Our genome-wide TF-DNA binding results for mouse indicate relatively sparse connectivity between TFs and their target genes, consistent with previous results. The probabilistic formulation of TF binding prediction is particularly useful for integrating our results as building blocks in other computational methods. To that end, we have also implemented a web tool, ProbTF, which allows users to analyze their own promoter sequences and additional data sources.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>The computational methods are implemented in Matlab and will be made available as an open-source library upon publication. The test set, including all sequences and additional information sources, will also be made available on a supplementary web site. A preliminary version of the computational methods presented in Sections ‘Modeling framework’, ‘Likelihood approach: one motif model θ’, and ‘Likelihood approach: multiple motif models Θ’ have been reported in our previous conference article <a href="#pone.0001820-Lhdesmki1">[88]</a>.</p>
+
+<h4>Modeling framework</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Let <em>S</em> = (<em>s</em><sub>1</sub>,…,<em>s<sub>L</sub></em>) denote a single strand of a promoter sequence, where <em>s<sub>i</sub></em>Є{A, C, G, T} and <em>L</em> is the length of the sequence. (Generalizations to double stranded DNA sequences are given later on.) Let <em>Q</em> denote the number of (hidden) motif instances in sequence <em>S</em>. This is one of the key quantities estimated from the data. Further, let <em>A</em> denote the (unknown) start positions of non-overlapping motif instances in sequence <em>S</em>. For example, if <em>Q</em> = <em>c</em>, then <em>A</em> = {<em>a</em><sub>1</sub>,…,<em>a<sub>c</sub></em>}. Thus, a promoter consists of <em>c</em> motif instances and <em>c</em>+1 background sequence chunks, some of which can be empty. In the following we assume that <em>A</em> always defines start positions for non-overlapping motifs.</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>Non-binding background sequence locations are modeled by the commonly used <em>d</em>th order Markovian background model φ. That is, let<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e009&amp;representation=PNG" class="inline-graphic"></span><br>denote the probability of observing nucleotide <em>s<sub>i</sub></em> at the <em>i</em>th position of a promoter sequence <em>S</em> in the background model φ given <em>d</em> previous nucleotides. For simplicity, we assume that for positions <em>i</em>≤<em>d</em> we have access to <em>s</em><sub>−<em>d</em>+1</sub>,…,<em>s</em><sub>0</sub>. We could alternatively define a separate probability distribution for the first <em>d</em> nucleotides. The likelihood of the background model, <em>A</em> = Ø, is thus <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e010&amp;representation=PNG" class="inline-graphic"></span>.</p>
+<a id="article1.body1.sec4.sec1.p3" name="article1.body1.sec4.sec1.p3"></a><p>Motifs are modeled using the standard PSFM model θ which is a product of independent multinomial distributions <a href="#pone.0001820-Staden1">[21]</a>. Similarly as above, let<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e011&amp;representation=PNG" class="inline-graphic"></span><br>denote the probability of observing nucleotide <em>s<sub>i</sub></em> at the <em>j</em>th (<em>j</em> = 1,…,ℓ) position of a motif model θ, where ℓ is the length of the motif. Note that <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e012&amp;representation=PNG" class="inline-graphic"></span> for all <em>j</em> and that probabilities for different <em>j</em>s are independent. The probability of sequence <em>S</em>, given non-overlapping motif positions and motif and background models, is<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e013&amp;representation=PNG" class="inline-graphic"><span class="note">(3)</span></span><br>where |<em>A</em>| = <em>Q</em> = <em>c</em> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e014&amp;representation=PNG" class="inline-graphic"></span>.</p>
+
+
+<h4>Likelihood approach: one motif model θ</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Using Bayes' rule, the probability of <em>c</em> motif instances, given the sequence <em>S</em>, is (see <a href="#pone.0001820-Thijs1">[42]</a>)<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e015&amp;representation=PNG" class="inline-graphic"><span class="note">(4)</span></span><br>where the normalization factor has the following form<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e016&amp;representation=PNG" class="inline-graphic"><span class="note">(5)</span></span><br>and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e017&amp;representation=PNG" class="inline-graphic"></span> is the maximum number of non-overlapping ℓ-length motifs in an <em>L</em>-length sequence. Note that since the sum in Equation (5) has only <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e018&amp;representation=PNG" class="inline-graphic"></span> terms (instead of infinitely many) the normalization factor can be computed exactly. The likelihood of sequence <em>S</em>, given that it contains <em>c</em> motif instances, can be obtained by summing over all possible positions <em>A</em> of <em>c</em> motif instances <a href="#pone.0001820-Thijs1">[42]</a><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e019&amp;representation=PNG" class="inline-graphic"><span class="note">(6)</span></span><br>where in the last equality we have used <em>P</em>(<em>S</em>|<em>A</em>,<em>Q</em> = <em>c</em>,θ,φ) = <em>P</em>(<em>S</em>|<em>A</em>,θ,φ) and Equation (3). The above probabilistic formulation (Equations (4)–(6)) is practically identical to the one proposed by Thijs <em>et al.</em> <a href="#pone.0001820-Thijs1">[42]</a>.</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>As in <a href="#pone.0001820-Thijs1">[42]</a>, let us assume for now that, for a fixed value of <em>Q</em>, the prior over motif positions <em>A</em> is uniform and is inversely proportional to the number of different motif positions, i.e., <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e020&amp;representation=PNG" class="inline-graphic"></span>. Let <em>R</em>(<em>S</em>|<em>Q</em> = <em>c</em>,θ,φ) denote the sum in Equation (6) without the (constant) prior term <em>P</em>(<em>A</em>|<em>Q</em> = <em>c</em>,θ,φ). The likelihood in Equation (6) can be computed efficiently using the following recursion<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e021&amp;representation=PNG" class="inline-graphic"></span><br>where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e022&amp;representation=PNG" class="inline-graphic"></span> denotes a subsequence of <em>S</em> (note that <em>S</em><sub>1</sub> = <em>S</em>). For the prior over the number of motif instances, we use a probability distribution motivated by previous studies <a href="#pone.0001820-Thijs1">[42]</a><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e023&amp;representation=PNG" class="inline-graphic"><span class="note">(7)</span></span><br>where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e024&amp;representation=PNG" class="inline-graphic"></span>. Since <em>P</em>(<em>Q</em> = <em>c</em>|θ,φ) does not depend on θ or φ we also rewrite <em>P</em>(<em>Q</em> = <em>c</em>|θ,φ) = <em>P</em>(<em>Q</em> = <em>c</em>). One could consider other priors as well, such as ones that depend on the information content of the matrix (see <a href="#pone.0001820-Siddharthan1">[6]</a>).</p>
+<a id="article1.body1.sec4.sec2.p3" name="article1.body1.sec4.sec2.p3"></a><p>The probability that a given TF (defined by θ) binds to a gene having promoter sequence <em>S</em>, denoted by θ→<em>S</em>, can be computed as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e025&amp;representation=PNG" class="inline-graphic"><span class="note">(8)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e026&amp;representation=PNG" class="inline-graphic"><span class="note">(9)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e027&amp;representation=PNG" class="inline-graphic"><span class="note">(10)</span></span><br>where <em>P</em>(<em>Q</em> = <em>c</em>|<em>S</em>,θ,φ) can be obtained using Equations (4)–(7). Assuming a single binding position is sufficient for transcriptional regulation, then the above probability of binding can also be interpreted as a probability of transcriptional regulation. It is straightforward to adopt the above probability <em>P</em>(θ→<em>S</em>|<em>S</em>,θ,φ) for the requirement of having multiple binding sites. Also note that we have the distribution of having any number (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e028&amp;representation=PNG" class="inline-graphic"></span>) of binding sites from which we can compute, e.g., the expected (mean) and the maximum a posteriori (MAP) number of binding sites.</p>
+
+
+<h4>Likelihood approach: multiple motif models Θ</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>A TF can recognize several different types of binding sites and is then characterized by several motif models Θ = (θ<sup>(1)</sup>,…,θ<sup>(<em>m</em>)</sup>) each having length ℓ<em><sub>i</sub></em>. Let πЄ{1,…,<em>m</em>}<em><sup>c</sup></em> denote a configuration of motif models from Θ in <em>A</em>. That is, π<em><sub>i</sub></em> specifies the motif model <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e029&amp;representation=PNG" class="inline-graphic"></span> at location <em>a<sub>i</sub></em>. For notational convenience, define<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e030&amp;representation=PNG" class="inline-graphic"><span class="note">(11)</span></span><br>and note that (see also Equation (3))<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e031&amp;representation=PNG" class="inline-graphic"><span class="note">(12)</span></span><br></p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>The probability of <em>c</em> motif instances can be obtained using Bayes' rule as in Equations (4)–(5) but θ replaced with Θ. Further, following Equation (6), the likelihood of sequence <em>S</em> given <em>c</em> motif instances can be obtained by summing over all possible positions and configurations<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e032&amp;representation=PNG" class="inline-graphic"><span class="note">(13)</span></span><br>where ℓ<sub>min</sub> = {ℓ<sub>1</sub>,…,ℓ<em><sub>m</sub></em>}. Let us again start by assuming a uniform prior over motif positions <em>A</em> and configurations π (for each fixed value of <em>Q</em>), and let <em>R</em>(<em>S</em>|<em>Q</em> = <em>c</em>,Θ,φ) denote the sum in Equation (13) without the (constant) prior term <em>P</em>(<em>A</em>,π|Q = <em>c</em>,Θ,φ). A computationally efficient recursive formula can be written as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e033&amp;representation=PNG" class="inline-graphic"></span><br>A closed form formula for uniform <em>P</em>(<em>A</em>,π|<em>Q</em> = <em>c</em>,Θ,φ) is more difficult to obtain in general, but it can be computed numerically using a similar recursion as the one above.</p>
+<a id="article1.body1.sec4.sec3.p3" name="article1.body1.sec4.sec3.p3"></a><p>The prior <em>P</em>(<em>Q</em> = <em>c</em>|Θ,φ) depends now on Θ and thus can be adjusted for multiple motifs. However, it is unrealistic to assume that different motif models (θ<sup>(1)</sup>,…, θ<sup>(<em>m</em>)</sup>) are independent. Indeed, it is likely that they are strongly dependent. Therefore, we use the same prior <em>P</em>(<em>Q</em> = <em>c</em>) as in the case of a single motif model as a first approximation.</p>
+<a id="article1.body1.sec4.sec3.p4" name="article1.body1.sec4.sec3.p4"></a><p>Let Θ→<em>S</em> denote that a TF characterized by Θ binds to a promoter <em>S</em>. The probability that at least one of the motif models in Θ has a binding site in <em>S</em>, <em>P</em>(Θ→<em>S</em>|<em>S</em>,Θ,φ), can be computed as in Equations (8)–(10) but θ replaced with Θ. Under the same premise as above that a single binding site is sufficient for gene regulation, <em>P</em>(Θ→<em>S</em>|<em>S</em>,Θ,φ) can be interpreted as the probability of regulation.</p>
+<a id="article1.body1.sec4.sec3.p5" name="article1.body1.sec4.sec3.p5"></a><p>The above probabilistic modeling framework that incorporates multiple motif models can be viewed as an extension of a framework proposed in <a href="#pone.0001820-Thijs1">[42]</a>. Note that the proposed framework is also similar to hidden Markov models (HMM) that have been proposed previously <a href="#pone.0001820-Frith1">[36]</a>–<a href="#pone.0001820-Sinha1">[38]</a>, <a href="#pone.0001820-Sinha2">[44]</a>. An HMM is defined by motif and background models Θ and φ and the transition probabilities (between the states of the HMM) whereas the modeling framework described herein is built on motif and background models alone, with additional information brought into the computation via the priors <em>P</em>(<em>Q</em>|Θ,φ) and <em>P</em>(<em>A</em>,π|<em>Q</em>,Θ,φ).</p>
+
+
+<h4>Bayesian approach</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>TF binding specificities are derived from experimental data sets, some of which have extremely small sample sizes (as low as five reported binding sequences). PSFM models can therefore contain a considerable amount of uncertainty. Instead of assuming motif models θ to be known exactly, as above, it is useful to take the uncertainty in the motif models themselves into account. This can be done naturally in a Bayesian setting where the parameters/models are considered as random variables. We describe the Bayesian methods directly for the case of multiple motifs. The single motif case can be obtained as a special case by setting <em>m</em> = 1 and omitting π.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>Using Bayes' rule, the probability of motif positions <em>A</em> and configurations π, given the sequence <em>S</em>, is<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e034&amp;representation=PNG" class="inline-graphic"><span class="note">(14)</span></span><br></p>
+<a id="article1.body1.sec4.sec4.p3" name="article1.body1.sec4.sec4.p3"></a><p>The marginal likelihood <em>P</em>(<em>S</em>|<em>A</em>,π) is obtained by integrating over parameters<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e035&amp;representation=PNG" class="inline-graphic"></span><br>where <em>P</em>(<em>S</em>|<em>A</em>,π,Θ,φ) is the same product of multinomial distributions as in Equation (12) and <em>P</em>(Θ,φ|<em>A</em>,π) = <em>P</em>(Θ,φ)defines a prior distribution for the parameters.</p>
+<a id="article1.body1.sec4.sec4.p4" name="article1.body1.sec4.sec4.p4"></a><p>TF-DNA binding databases typically provide information in the form of “the number of times a TF has been observed to bind a given sequence.” These sequences are also aligned and aligned counts are summarized in position specific weight matrices (TRANSFAC, JASPAR), which we denote as α<em><sub>ij</sub></em><sup>(<em>k</em>)</sup>. Similar counts can also be obtained for the background model (denoted by α<em><sub>ij</sub></em><sup>(0)</sup>) from genomic sequences that do not contain (known) binding sites. Therefore, it is natural to use a Dirichlet prior for the parameters, which is defined by so-called pseudo-counts.</p>
+<a id="article1.body1.sec4.sec4.p5" name="article1.body1.sec4.sec4.p5"></a><p>Let us rewrite the motif model parameters (independent multinomial distributions) for now as θ<sup>(<em>k</em>)</sup>(<em>i</em>, <em>j</em>) = θ<em><sub>ij</sub></em><sup>(<em>k</em>)</sup> which again defines the probability of seeing nucleotide <em>i</em>Є{A, C, G, T} at the <em>j</em>th (1≤<em>j</em>≤ℓ<em><sub>k</sub></em>) position in the <em>k</em>th (1≤<em>k</em>≤<em>m</em>) motif model. Denote θ<em><sub>j</sub></em><sup>(<em>k</em>)</sup> = {θ<em><sub>ij</sub></em><sup>(<em>k</em>)</sup>|<em>i</em>Є{A, C, G, T}}. The Dirichlet prior for each θ<em><sub>j</sub></em><sup>(<em>k</em>)</sup> with hyperparameters α<em><sub>ij</sub></em><sup>(<em>k</em>)</sup> is defined as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e036&amp;representation=PNG" class="inline-graphic"></span><br>where θ<em><sub>ij</sub></em><sup>(<em>k</em>)</sup>≥0, ∑<em><sub>i</sub></em>θ<em><sub>ij</sub></em><sup>(<em>k</em>)</sup> = 1, α<em><sub>ij</sub></em><sup>(<em>k</em>)</sup>&gt;0, and Γ(·) is the Gamma function. Priors for different <em>j</em> and <em>k</em> are assumed to be independent. The Dirichlet prior for the background model is defined similarly.</p>
+<a id="article1.body1.sec4.sec4.p6" name="article1.body1.sec4.sec4.p6"></a><p>The Dirichlet prior is also a conjugate prior for multinomials. Consequently, the marginal likelihood has a closed-form solution. Let <em>N<sub>ij</sub></em><sup>(<em>k</em>)</sup> denote the number of times nucleotide <em>i</em> is observed at the <em>j</em>th position in the <em>k</em>th motif model given <em>S</em>, <em>A</em> and π. Denote α<em><sub>j</sub></em><sup>(<em>k</em>)</sup> = ∑<em><sub>i</sub></em>α<em><sub>ij</sub></em><sup>(<em>k</em>)</sup> and <em>N<sub>j</sub></em><sup>(<em>k</em>)</sup> = ∑<em><sub>i</sub>N<sub>ij</sub></em><sup>(<em>k</em>)</sup>. The marginal likelihood can be written as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e037&amp;representation=PNG" class="inline-graphic"><span class="note">(15)</span></span><br>where the first (resp. the second) part corresponds to the background model (resp. <em>m</em> motif models).</p>
+<a id="article1.body1.sec4.sec4.p7" name="article1.body1.sec4.sec4.p7"></a><p>To keep likelihood-based and Bayesian approaches comparable, we use the same prior here, i.e.<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e038&amp;representation=PNG" class="inline-graphic"><span class="note">(16)</span></span><br>where <em>P</em>(<em>A</em>,π|<em>Q</em> = |<em>A</em>|) and <em>P</em>(<em>Q</em> = |<em>A</em>|) are as in Equations (13) and (7), respectively. Note that we write <em>P</em>(<em>A</em>,π|<em>Q</em> = |<em>A</em>|) instead of <em>P</em>(<em>A</em>,π|<em>Q</em> = |<em>A</em>|, Θ,φ) because the (uniform) prior depends only on the widths of the motif models, ℓ<em><sub>i</sub></em>, and not on the actual parameters Θ or φ.</p>
+<a id="article1.body1.sec4.sec4.p8" name="article1.body1.sec4.sec4.p8"></a><p>Because some of the motif models are remarkably diffuse (computed from only a few example sequences), we do not use the PSWMs as pseudo counts directly. We instead use a version that incorporates a so-called prior strength term <em>M</em>, i.e.,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e039&amp;representation=PNG" class="inline-graphic"><span class="note">(17)</span></span><br></p>
+<a id="article1.body1.sec4.sec4.p9" name="article1.body1.sec4.sec4.p9"></a><p>This prevents a (single) sequence to have too strong of an influence on the posterior parameter values. For simplicity, we use the same prior strength for all the motif models, although this does not need to be the case in general. In addition, we add a small number (one) to each α<em><sub>i</sub></em><sub>,<em>j</em></sub><sup>(<em>k</em>)</sup> to prevent zero entries. Finally, to preserve comparability between likelihood and Bayesian approaches, the normalized motif models for the likelihood based approach are computed from the recomputed pseudo-counts used in the Bayesian estimation, i.e.,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e040&amp;representation=PNG" class="inline-graphic"><span class="note">(18)</span></span><br></p>
+<a id="article1.body1.sec4.sec4.p10" name="article1.body1.sec4.sec4.p10"></a><p>Recall that in the Bayesian framework, the mean of θ<sup>(<em>k</em>)</sup>(<em>i</em>, <em>j</em>) relative to the prior distribution <em>P</em>(θ<em><sub>j</sub></em><sup>(<em>k</em>)</sup>|α) is equal to the quantity in Equation (18).</p>
+
+
+<h4>MCMC estimation for Bayesian inference</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>Unfortunately, there is no efficient recursive formula to compute the probabilities <em>P</em>(<em>A</em>,π|<em>S</em>) for all <em>A</em> and π. However, one can solve the problem by using stochastic estimation methods. Here we propose to sample positions <em>A</em> and configurations π directly from the posterior <em>P</em>(<em>A</em>,π|<em>S</em>) using Markov chain Monte Carlo (MCMC). We develop a Metropolis-Hastings (MH) algorithm for this purpose. For an introduction to MCMC methods, see <a href="#pone.0001820-Robert1">[89]</a>.</p>
+<a id="article1.body1.sec4.sec5.p2" name="article1.body1.sec4.sec5.p2"></a><p>The MH algorithm is completely specified by a proposal distribution <em>G</em>(<em>A</em>′,π′|<em>A</em>,π) which proposes new pairs (<em>A</em>′,π′) given the current (<em>A</em>,π). We define <em>G</em> as follows.</p>
+
+
+<ul class="bulletlist">
+
+<li>Motif addition with probability <em>p</em>: for a uniformly chosen motif model θ<sup>(<em>i</em>)</sup>ЄΘ, propose a new, non-occupied/non-overlapping motif position uniformly randomly (if a free location exists).</li>
+
+<li>Motif deletion with probability 1−<em>p</em>: delete an existing motif uniformly randomly (if a motif exists).</li>
+
+</ul><a id="article1.body1.sec4.sec5.p3" name="article1.body1.sec4.sec5.p3"></a><p>We use <em>p</em> = 0.5. The proposed pair (<em>A</em>′,π′) is then accepted with probability<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e041&amp;representation=PNG" class="inline-graphic"></span><br>which satisfies the detailed balance condition. Convergence in distribution to the desired posterior (in the limit of infinitely many samples) is guaranteed if, in addition to satisfying the detailed balance, the resulting chain is also irreducible and aperiodic. Irreducibility of the chain follows from the fact that any pair (<em>A</em>′,π′) can be reached from any pair (<em>A</em>,π) by repeatedly adding or deleting one motif at a time and each step has a positive selection probability. Aperiodicity of the chain can be seen similarly. For example, the probability that the chain first deletes all <em>c</em> = |<em>A</em>| motifs, then stays at <em>A</em> = Ø any number of steps (by trying to delete a motif), and finally adds the same <em>c</em> motifs, is non-zero. In other words, the probability of moving from (<em>A</em>,π) back to (<em>A</em>,π) in 2<em>c</em> or more steps is non-zero. Therefore, the period (the greatest common factor of integers that include at least {2<em>c</em>, 2<em>c</em>+1,…}) for all the states (<em>A</em>,π) is 1 and the chain is aperiodic. Note that computing the above Bayes factor can be done very efficiently because only a single motif is added or deleted at a time. In particular, only two parts of the marginal likelihoods are different, corresponding to the motif that is added/deleted and the background chunk that is deleted/added. For integer-valued pseudo-counts, the computation of the Bayes factor reduces even further because Γ(<em>n</em>) = (<em>n</em>−1)!. After a proper burn-in period <em>B</em>, a dependent sample ((<em>A</em><sup>(<em>B</em>+1)</sup>, π<sup>(<em>B</em>+1)</sup>), (<em>A</em><sup>(<em>B</em>+2)</sup>, π<sup>(<em>B</em>+2)</sup>), …, (<em>A</em><sup>(<em>B</em>+<em>N</em>)</sup>, π<sup>(<em>B</em>+<em>N</em>)</sup>)) is collected.</p>
+<a id="article1.body1.sec4.sec5.p4" name="article1.body1.sec4.sec5.p4"></a><p>Although the chain is ergodic as shown above, it is important to monitor convergence of the MCMC algorithm for finite samples to guarantee the desired output. Bayesian inference in this case can be considered as a model selection problem where the model space consists of all valid pairs (<em>A</em>,π). Although the model space is discrete and finite, standard convergence diagnostics over the full model space are difficult to apply in practice. Better suited diagnostic methods are the ones that are specifically developed for model selection problems, such as the ones in the context of reversible jump MCMC methods (see <a href="#pone.0001820-Brooks1">[90]</a>). A general strategy is to reduce the model space and monitor the convergence in a lower dimensional space. Here we consider a method that compares the marginal probabilities of having <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e042&amp;representation=PNG" class="inline-graphic"></span> binding sites, <em>P</em>(<em>Q</em> = <em>c</em>|<em>S</em>) = ∑<sub>|<em>A</em>| = <em>c</em></sub> ∑<sub>π</sub> <em>P</em>(<em>A</em>,π|<em>S</em>), from two independent chains (see <a href="#pone.0001820-Husmeier2">[91]</a>). Note that <em>P</em>(<em>Q</em> = <em>c</em>|<em>S</em>) is exactly the distribution that we are interested in when assessing TF binding. As for the convergence diagnostic, we use a heuristic that reports two chains as having converged if the <em>L</em><sub>1</sub>-distance between two independent estimates of <em>P</em>(<em>Q</em>|<em>S</em>) is within an accepted error threshold (we use 0.025). We could also use a formal hypothesis testing (e.g. chi-squared or Kolmogorov-Smirnov) for assessing lack of convergence by sub-sampling the two chains to get (approximately) independent samples <a href="#pone.0001820-Brooks1">[90]</a>. The less involved heuristic seems to serve our purposes. We use <em>B</em> = 5·10<sup>5</sup> for the burn-in and <em>N</em> = <em>i</em>·<em>B</em> for the sample size, where index <em>i</em> = 1, 2,… is increased until the chain pair passes the convergence diagnostic.</p>
+<a id="article1.body1.sec4.sec5.p5" name="article1.body1.sec4.sec5.p5"></a><p>As above, the quantities of interest include the probability of having at least one binding site for at least one of the motif models, denoted as Θ→<em>S</em> (or, conversely, having no binding sites),<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e043&amp;representation=PNG" class="inline-graphic"></span><br>and the posterior probability of having exactly <em>Q</em> = <em>c</em> binding sites, <em>P</em>(<em>Q</em> = <em>c</em>|<em>S</em>). These quantities can be estimated directly from the chain<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e044&amp;representation=PNG" class="inline-graphic"></span><br>and<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e045&amp;representation=PNG" class="inline-graphic"></span><br>where χ is the indicator function. The sample averages converge to the true posterior probabilities almost surely. The final estimates are obtained by averaging estimates from two independent chains that pass the convergence diagnostic.</p>
+
+
+<h4>Combinatorial regulation</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>From the point of view of modeling transcriptional regulatory networks, it is also important to study combinatorial regulation by several TFs Ω = (Θ<sup>(1)</sup>,…, Θ<sup>(<em>p</em>)</sup>), each with a set of motif models<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e046&amp;representation=PNG" class="inline-graphic"></span><br>A key quantity then is the probability that each different TF has at least one binding site (for at least one of their motif models). Let the configurations now be defined as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e047&amp;representation=PNG" class="inline-graphic"></span><br>and define a set<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e048&amp;representation=PNG" class="inline-graphic"><span class="note">(19)</span></span><br></p>
+<a id="article1.body1.sec4.sec6.p2" name="article1.body1.sec4.sec6.p2"></a><p>In other words, the set <em>C</em> says that every TF is presented with some motif in every configuration π. Note that Equation (19) implies that if πЄ<em>C</em> then |π| = <em>c</em>≥<em>p</em>. The probability of <em>p</em> TFs binding a promoter <em>S</em> jointly can be written as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e049&amp;representation=PNG" class="inline-graphic"></span><br></p>
+<a id="article1.body1.sec4.sec6.p3" name="article1.body1.sec4.sec6.p3"></a><p>Probabilities <em>P</em>(<em>A</em>,π|<em>S</em>) are computed as in Equations (14–16) except that <em>m</em> in Equation (15) is replaced with <em>m</em><sub>1</sub>+…+<em>m<sub>p</sub></em> and the prior <em>P</em>(<em>A</em>,π) defined in Equation (16) is adjusted for several TFs. Let <em>c<sub>i</sub></em>≥0 denote the number of binding sites for the <em>i</em>th TF. Assuming that the number of binding sites for different TFs are independent, then one can model the joint number of binding sites, <em>Q</em><sub>Ω</sub>, as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e050&amp;representation=PNG" class="inline-graphic"></span><br></p>
+<a id="article1.body1.sec4.sec6.p4" name="article1.body1.sec4.sec6.p4"></a><p>There is no efficient formula to compute <em>P</em>(Ω→<em>S</em>|<em>S</em>), or even the analogous likelihood based quantity, so we only formulate this in the Bayesian context and solve it with MCMC sampling. The same MH algorithm as above can be applied except that a motif θ<sup>(<em>i</em>,<em>j</em>)</sup> is now added uniformly randomly from a list of motif sets Ω. Finally, <em>P</em>(Ω→<em>S</em>|<em>S</em>) can be directly estimated from a chain as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e051&amp;representation=PNG" class="inline-graphic"><span class="note">(20)</span></span><br></p>
+<a id="article1.body1.sec4.sec6.p5" name="article1.body1.sec4.sec6.p5"></a><p>We also consider a naive (likelihood-based) approximation that estimates the probability of combinatorial regulation by the product of individual binding probabilities, i.e.,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e052&amp;representation=PNG" class="inline-graphic"><span class="note">(21)</span></span><br></p>
+
+
+<h4>Combining multiple information sources</h4>
+<a id="article1.body1.sec4.sec7.p1" name="article1.body1.sec4.sec7.p1"></a><p>TF binding predictions can be significantly improved by incorporating multiple additional data sources, such as evolutionary conservation, regulatory potential, CpG islands, nucleosome positioning, DNase hypersensitive sites or ChIP-chip, into our probabilistic inference framework. Let <em>D</em> denote a single additional data source that is indicative of functional binding sites. The data is assumed to be in the form <em>D</em> = (<em>P</em>(1),…, <em>P</em>(<em>L</em>)), where <em>P</em>(<em>i</em>) is the probability that the <em>i</em>th base pair location has one of the above mentioned properties (is conserved, belongs to a regulatory region, has a low nucleosome occupancy, etc.). Here we explain how such additional information can be used in a principled way to significantly improve TF binding inference.</p>
+<a id="article1.body1.sec4.sec7.p2" name="article1.body1.sec4.sec7.p2"></a><p>We model the probability of <em>S</em> and <em>D</em> given <em>A</em>, π, Θ and φ as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e053&amp;representation=PNG" class="inline-graphic"></span><br>where we assume that <em>S</em> and <em>D</em> are conditionally independent and that the probability of <em>D</em> does not depend on the motif and background models. Let <em>I</em> = {1,…, <em>L</em>} denote base pair indices of a promoter and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e054&amp;representation=PNG" class="inline-graphic"></span> be indices of binding sites specified by <em>A</em> and π. The data <em>D</em> can then be modeled as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e055&amp;representation=PNG" class="inline-graphic"><span class="note">(22)</span></span><br>where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e056&amp;representation=PNG" class="inline-graphic"></span> and<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e057&amp;representation=PNG" class="inline-graphic"></span><br></p>
+<a id="article1.body1.sec4.sec7.p3" name="article1.body1.sec4.sec7.p3"></a><p>The factorization in Equation (22) is useful as it allows us to write <em>P</em>(<em>S</em>, <em>D</em>|<em>A</em>,π,Θ,φ) in the following compact form<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e058&amp;representation=PNG" class="inline-graphic"></span><br></p>
+<a id="article1.body1.sec4.sec7.p4" name="article1.body1.sec4.sec7.p4"></a><p>In particular, note that in the likelihood based approach the same efficient recursive formula as in ‘Likelihood approach: multiple motif models Θ’ Section can be applied to compute <em>P</em>(<em>S</em>, <em>D</em>|<em>Q</em> = <em>c</em>,Θ,φ).</p>
+<a id="article1.body1.sec4.sec7.p5" name="article1.body1.sec4.sec7.p5"></a><p>In a Bayesian setting, data fusion can be performed similarly<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e059&amp;representation=PNG" class="inline-graphic"><span class="note">(23)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e060&amp;representation=PNG" class="inline-graphic"><span class="note">(24)</span></span><br></p>
+<a id="article1.body1.sec4.sec7.p6" name="article1.body1.sec4.sec7.p6"></a><p>If we have several additional data sources <em>D<sub>k</sub></em> = (<em>P<sub>k</sub></em>(1),…, <em>P<sub>k</sub></em>(<em>L</em>)), 1≤<em>k</em>≤<em>N<sub>D</sub></em>, then we propose to combine them directly using<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e061&amp;representation=PNG" class="inline-graphic"></span><br>where <em>w<sub>k</sub></em>≥0 and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e062&amp;representation=PNG" class="inline-graphic"></span>.</p>
+<a id="article1.body1.sec4.sec7.p7" name="article1.body1.sec4.sec7.p7"></a><p>Conceptually, the probability <em>P</em>(<em>D</em>|<em>A</em>,π) can be viewed as a positional prior for binding sites. But we do not combine <em>P</em>(<em>D</em>|<em>A</em>,π) with <em>P</em>(<em>A</em>,π) since all aforementioned data sources (probabilities <em>P</em>(<em>i</em>)) depend on the sequence <em>S</em> as well.</p>
+<a id="article1.body1.sec4.sec7.p8" name="article1.body1.sec4.sec7.p8"></a><p>In practice, we do not use the above probabilities directly but a scaled version of them. For the <em>k</em>th additional data set we scale the original probabilities between [<em>d<sub>k</sub></em>, 1−<em>d<sub>k</sub></em>], where 0≤<em>d<sub>k</sub></em>≤0.5. We resort to fixed parameter values for <em>w<sub>k</sub></em>s and <em>d<sub>k</sub></em>s here because the estimated binding probabilities are not sensitive to small deviations in the value of <em>w<sub>k</sub></em> or <em>d<sub>k</sub></em> However, it is also possible to develop a full Bayesian treatment by introducing priors over <em>w<sub>k</sub></em>s and <em>d<sub>k</sub></em>s. Our simplified strategy also improves computational efficiency and makes it possible to use the standard MCMC instead of more computationally demanding trans-dimensional MCMC methods.</p>
+
+
+<h4>Single vs. both strands</h4>
+<a id="article1.body1.sec4.sec8.p1" name="article1.body1.sec4.sec8.p1"></a><p>So far we have only considered using a single, either forward or reverse, strand for inferring TF binding. Extending the above methods to double-stranded DNA is straightforward. Let a promoter be denoted now as <em>S</em> = (<em>S</em>′,<em>S</em>″), where <em>S</em>′ and <em>S</em>″ are the forward and complementary reverse strands. Let us first assume that binding events on separate strands are independent of each other. In the case of double-stranded DNA, we need to compute the probability of an event Θ→<em>S</em>′ or Θ→<em>S</em>″. Let us denote <em>P</em>(Θ→<em>S</em>′|<em>S</em>,Θ,φ) = <em>P<sub>S</sub></em><sub>′</sub> and <em>P</em>(Θ→<em>S</em>″|<em>S</em>,Θ,φ) = <em>P<sub>S</sub></em><sub>″</sub>. Now<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e063&amp;representation=PNG" class="inline-graphic"></span><br></p>
+<a id="article1.body1.sec4.sec8.p2" name="article1.body1.sec4.sec8.p2"></a><p>Due to the OR-type of event (Θ→<em>S</em>′ or Θ→<em>S</em>″), the effective prior probability of having zero binding sites decreases. We account for this bias by changing <em>P</em>(<em>Q</em> = 0|Θ,φ) from <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e064&amp;representation=PNG" class="inline-graphic"></span>. The above formulation can also make use of the correlation between <em>P<sub>S</sub></em><sub>′</sub> and <em>P<sub>S</sub></em><sub>″</sub>. A similar extension works for the Bayesian case as well with the exception that <em>S</em>′ and <em>S</em>″ should not be analyzed separately even if binding on the two strands is assumed to be independent. Joint analysis of <em>S</em>′ and <em>S</em>″ is easily implemented using the same MCMC/MH algorithm as above. The only difference is that now the model should include separate start positions <em>A</em> = (<em>A</em>′,<em>A</em>″) and configurations π = (π′,π″) for the two strands. This approach also allows incorporating additional constraints, such as binding sites on two strands are less likely to occur at the same position due to physical space constraints.</p>
+
+
+<h4>Binding probabilities at single nucleotide resolution</h4>
+<a id="article1.body1.sec4.sec9.p1" name="article1.body1.sec4.sec9.p1"></a><p>Our computational methods are primarily designed to answer the question of whether the whole promoter has a binding site for a given TF. However, it is also useful to be able to infer binding probabilities at higher, single nucleotide, resolution. A motif position and configuration pair (<em>A</em>,π) contains a binding site (start position) at the <em>i</em>th nucleotide if <em>i</em>Є<em>A</em>. In the Bayesian context, the probability of a binding site at the <em>i</em>th location can be expressed and estimated simply as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001820.e065&amp;representation=PNG" class="inline-graphic"></span><br></p>
+
+
+<h4>Comparison with other methods</h4>
+<a id="article1.body1.sec4.sec10.p1" name="article1.body1.sec4.sec10.p1"></a><p>We compare our proposed probabilistic method with traditional promoter scanning <a href="#pone.0001820-Staden1">[21]</a>–<a href="#pone.0001820-Claverie1">[23]</a>, <a href="#pone.0001820-Hertzberg1">[26]</a>, <a href="#pone.0001820-Baji1">[28]</a> and with a method that assesses the probability of binding <a href="#pone.0001820-Chen2">[63]</a>. Traditional scanning methods output a significance value for each position in a promoter. It is common practice to use the smallest <em>p</em>-value over a promoter as a measure of binding to the whole promoter, which we also use here. We use the same approach to adopt traditional promoter scanning to handle multiple motif models and report the smallest <em>p</em>-value over the multiple motif models. The same approach to handle multiple motif models is used with the method from <a href="#pone.0001820-Chen2">[63]</a>. Significance values of the traditional scanning method (as well as intermediate quantities in <a href="#pone.0001820-Chen2">[63]</a>) are computed relative to the null distribution derived from the negative promoter sequences.</p>
+
+
+<h4>Data</h4>
+<a id="article1.body1.sec4.sec11.p1" name="article1.body1.sec4.sec11.p1"></a><p>The data set consists of a merger of annotated TF binding sites for mouse from the ABS <a href="#pone.0001820-Blanco1">[35]</a> and ORegAnno <a href="#pone.0001820-Montgomery1">[34]</a> databases. In total there are 47 annotated promoter sequences. The sequences have sets of length of around 500 nucleotides (ABS) and 2K nucleotides (ORegAnno). The TF binding sites are mapped onto the mm8 (February 2006) mouse assembly.</p>
+<a id="article1.body1.sec4.sec11.p2" name="article1.body1.sec4.sec11.p2"></a><p>The promoters are generally upstream of the genes that they are associated with. However, some regions stretch over the first exon into intronic regions. Therefore, some promoters have exons in their sequence. There were around a dozen overlapping promoters between the two databases. The TF binding sites for these promoters were merged onto the longer 2K ORegAnno sequences. The data set also includes 250 upstream, non-coding sequences that can be used for generating background models and statistics.</p>
+<a id="article1.body1.sec4.sec11.p3" name="article1.body1.sec4.sec11.p3"></a><p>The test set used in our simulations consists of 47 promoter sequences, each having a varying number of annotated binding sites (<em>positive sequences</em>), and 250 promoter sequences that have no reported binding sites (<em>negative sequences</em>). Additional data sources (evolutionary conservation <a href="#pone.0001820-Siepel1">[72]</a>, regulatory potential <a href="#pone.0001820-Taylor1">[73]</a>, nucleosome location <a href="#pone.0001820-Segal1">[74]</a>, and CpG islands) are available for all the positive sequences. Evolutionary conservation, regulatory potential and CpG island data are downloaded from the UCSC genome browser <a href="#pone.0001820-Kent1">[33]</a> and nucleosome location predictions are obtained using the method and software from <a href="#pone.0001820-Segal1">[74]</a>. After removing unknown/unmatched TFs and TFs for which we do not have prior binding specificities in TRANSFAC, we are left with 70 unique TF-promoter pairs in the <em>positive set</em>, which include 23 unique TFs. As for the <em>negative set</em>, we use all possible pairs of the 23 unique TFs and the 47 promoter sequences that are not in the positive set. We further filter the negative set and ignore those TF-promoter pairs where the TF belongs to the same family as a TF in the positive set (for the same promoter) since their binding specificities are defined by largely overlapping TRANSFAC motif models. For example, Mef2c has an annotated binding site in the Des promoter. Consequently, all other “Mef-family”-Des pairs are ignored from the negative set. This filtering reduces the negative set from all possible 23×47−70 = 1011 pairs to 952. Because all the annotated binding sites for each TF are on the same strand of DNA, we first use only the strand containing the annotated sites. This also doubles the size of the negative set. Because the direction of transcription can be unknown in general, we also extend the analysis to cover both strands. In some simulations we use only 4 randomly chosen TF-promoter pairs for each promoter from the negative set, resulting in 47×4 = 188 unique TF-promoter pairs in the <em>reduced negative set</em>.</p>
+<a id="article1.body1.sec4.sec11.p4" name="article1.body1.sec4.sec11.p4"></a><p>For all the simulations, we use (scaled) motif models from TRANSFAC. Parameters of the Markovian background models (model orders 0,1,…, 4 are tested) are estimated from the 250 negative sequences (both strands).</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001820"></div><a name="pone.0001820.s001" id="pone.0001820.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001820.s001">Text S1. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0001820.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001820.s002" id="pone.0001820.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001820.s002">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">ROC curves for the likelihood-based probabilistic method (red), traditional scanning (blue), and a probabilistic scanning-based method that outputs a probability of binding (green) for the case where promoter sequence lengths have not been made equal. Background model order is (a) d = 0 and (b) d = 1.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001820.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.49 MB TIF)</p>
+<a name="pone.0001820.s003" id="pone.0001820.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001820.s003">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">ROC curves for the likelihood-based method (blue) when combined with a single additional information source: regulatory potential (red), and evolutionary conservation (green). Solid graphs (resp. dashed graphs) correspond to the optimized parameters (resp. results obtained with stratified cross-validation).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001820.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.33 MB TIF)</p>
+<a name="pone.0001820.s004" id="pone.0001820.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001820.s004">Figure S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">ROC curves for the traditional scanning (green), traditional scanning combined with thresholded conservation information (blue), probabilistic method combined with conservation information (red), and probabilistic method (cyan) for the case where promoter sequence lengths have not been made equal.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001820.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.34 MB TIF)</p>
+<a name="pone.0001820.s005" id="pone.0001820.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001820.s005">Figure S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">ROC curves for the likelihood-based method (blue) when combined with a single additional information source: evolutionary conservation (green) and regulatory potential (red). Promoter sequences that are used to train the regulatory potential method and that also overlap with our test set have been removed.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001820.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(0.33 MB TIF)</p>
+</div>
+
+
+
+<div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: AR HL IS. Performed the experiments: HL. Analyzed the data: AR HL. Contributed reagents/materials/analysis tools: HL. Wrote the paper: HL. Other: Compiled and created the test set: AR. Supervised the study: IS.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001820-Davidson1" id="pone.0001820-Davidson1"></a>Davidson EH (2001) Genomic Regulatory Systems: Development and Evolution. Academic Press, 1st edition.   <ul class="find-nolinks"></ul></li><li><span class="label">2.
+              </span><a name="pone.0001820-MacIsaac1" id="pone.0001820-MacIsaac1"></a>MacIsaac KD, Fraenkel E (2006) Practical strategies for discovering regulatory DNA sequence motifs. PLoS Computational Biology  2: e36.  <ul class="find" data-citedArticleID="1076594" data-doi="10.1371/journal.pcbi.0020036"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020036" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Practical+strategies+for+discovering+regulatory+DNA+sequence+motifs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Practical+strategies+for+discovering+regulatory+DNA+sequence+motifs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001820-Tompa1" id="pone.0001820-Tompa1"></a>Tompa M, Li N, Bailey TL, Church GM, De Moor B, et al.  (2005) Assessing computational tools for the discovery of transcription factor binding sites. Nature Biotechnology  23: 137–144.  <ul class="find" data-citedArticleID="1076662" data-doi="10.1038/nbt1053"><li><a href="http://dx.doi.org/10.1038/nbt1053" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001820-Hughes1" id="pone.0001820-Hughes1"></a>Hughes JD, Estep PW, Tavazoie S, Church GM (2000) Computational identification of Cis-regulatory elements associated with groups of functionally related genes in <em>Saccharomyces cerevisiae</em>. Journal of Molecular Biology  296: 1205–1214.  <ul class="find" data-citedArticleID="1076566" data-doi="10.1006/jmbi.2000.3519"><li><a href="http://dx.doi.org/10.1006/jmbi.2000.3519" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+identification+of+Cis-regulatory+elements+associated+with+groups+of+functionally+related+genes+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+identification+of+Cis-regulatory+elements+associated+with+groups+of+functionally+related+genes+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001820-Kellis1" id="pone.0001820-Kellis1"></a>Kellis M, Patterson N, Endrizzi M, Birren B, Lander ES (2003) Sequencing and comparison of yeast species to identify genes and regulatory elements. Nature  423: 241–254.  <ul class="find" data-citedArticleID="1076576" data-doi="10.1038/nature01644"><li><a href="http://dx.doi.org/10.1038/nature01644" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sequencing+and+comparison+of+yeast+species+to+identify+genes+and+regulatory+elements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sequencing+and+comparison+of+yeast+species+to+identify+genes+and+regulatory+elements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001820-Siddharthan1" id="pone.0001820-Siddharthan1"></a>Siddharthan R, Siggia ED, van Nimwegen E (2005) PhyloGibbs: A Gibbs sampling motif finder that incorporates phylogeny. PLoS Computational Biology  1: e67.  <ul class="find" data-citedArticleID="1076636" data-doi="10.1371/journal.pcbi.0010067.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0010067.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PhyloGibbs%3A+A+Gibbs+sampling+motif+finder+that+incorporates+phylogeny." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PhyloGibbs%3A+A+Gibbs+sampling+motif+finder+that+incorporates+phylogeny.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001820-Liu1" id="pone.0001820-Liu1"></a>Liu XS, Brutlag DL, Liu JS (2002) An algorithm for finding protein-DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments. Nature Biotechnology  20: 835–839.  <ul class="find" data-citedArticleID="1076590" data-doi="10.1038/nbt717"><li><a href="http://dx.doi.org/10.1038/nbt717" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+algorithm+for+finding+protein-DNA+binding+sites+with+applications+to+chromatin-immunoprecipitation+microarray+experiments." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+algorithm+for+finding+protein-DNA+binding+sites+with+applications+to+chromatin-immunoprecipitation+microarray+experiments.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001820-Harbison1" id="pone.0001820-Harbison1"></a>Harbison CT, Gordon DB, Lee TI, Rinaldi NJ, Macisaac KD, et al.  (2004) Transcriptional regulatory code of a eukaryotic genome. Nature  431: 99–104.  <ul class="find" data-citedArticleID="1076554" data-doi="10.1038/nature02800"><li><a href="http://dx.doi.org/10.1038/nature02800" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcriptional+regulatory+code+of+a+eukaryotic+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcriptional+regulatory+code+of+a+eukaryotic+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001820-Qi1" id="pone.0001820-Qi1"></a>Qi Y, Rolfe A, MacIsaac KD, Gerber GK, Pokholok D, et al.  (2006) High-resolution computational models of genome binding events. Nature Biotechnology  24: 963–970.  <ul class="find" data-citedArticleID="1076614" data-doi="10.1038/nbt1233"><li><a href="http://dx.doi.org/10.1038/nbt1233" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High-resolution+computational+models+of+genome+binding+events." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High-resolution+computational+models+of+genome+binding+events.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001820-Narlikar1" id="pone.0001820-Narlikar1"></a>Narlikar L, Gordân R, Ohler U, Hartemink AJ (2006) Informative priors based on transcription factor structural class improve <em>de novo</em> motif discovery. Bioinformatics  22: e384–e392.  <ul class="find" data-citedArticleID="1076606" data-doi="10.1093/bioinformatics/btl251"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl251" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Informative+priors+based+on+transcription+factor+structural+class+improve+de+novo+motif+discovery." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Informative+priors+based+on+transcription+factor+structural+class+improve+de+novo+motif+discovery.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001820-Narlikar2" id="pone.0001820-Narlikar2"></a>Narlikar L, Gordân R, Hartemink A (2007) Nucleosome occupancy information improves <em>de novo</em> motif discovery. Research in Computational Molecular Biology (RECOMB). Springer. pp. 107–121.  <ul class="find-nolinks"></ul></li><li><span class="label">12.
+              </span><a name="pone.0001820-Narlikar3" id="pone.0001820-Narlikar3"></a>Narlikar L, Gordân R, Hartemink AJ (In press) A nucleosome-guided map of transcription factor binding sites in yeast. PLoS Computational Biology.   <ul class="find" data-citedArticleID="1076610" data-doi="10.1371/journal.pcbi.0030215.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0030215.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+nucleosome-guided+map+of+transcription+factor+binding+sites+in+yeast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+nucleosome-guided+map+of+transcription+factor+binding+sites+in+yeast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001820-Wingender1" id="pone.0001820-Wingender1"></a>Wingender E, Chen X, Hehl R, Karas H, Liebich I, et al.  (2000) TRANSFAC: an integrated system for gene expression regulation. Nucleic Acids Research  28: 316–319.  <ul class="find" data-citedArticleID="1076670" data-doi="10.1093/nar/28.1.316"><li><a href="http://dx.doi.org/10.1093/nar/28.1.316" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=TRANSFAC%3A+an+integrated+system+for+gene+expression+regulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22TRANSFAC%3A+an+integrated+system+for+gene+expression+regulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001820-Sandelin1" id="pone.0001820-Sandelin1"></a>Sandelin A, Alkema W, Engström P, Wasserman WW, Lenhard B (2004) JASPAR: an open-access database for eukaryotic transcription factor binding profiles. Nucleic Acids Research  32: D91–D94.  <ul class="find" data-citedArticleID="1076628" data-doi="10.1093/nar/gkh012"><li><a href="http://dx.doi.org/10.1093/nar/gkh012" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=JASPAR%3A+an+open-access+database+for+eukaryotic+transcription+factor+binding+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22JASPAR%3A+an+open-access+database+for+eukaryotic+transcription+factor+binding+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001820-Mukherjee1" id="pone.0001820-Mukherjee1"></a>Mukherjee S, Berger MF, Jona G, Wang XS, Muzzey D, et al.  (2004) Rapid analysis of the DNA-binding specificities of transcription factors with DNA microarrays. Nature Genetics  36: 1331–1339.  <ul class="find" data-citedArticleID="1076602" data-doi="10.1038/ng1473"><li><a href="http://dx.doi.org/10.1038/ng1473" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Rapid+analysis+of+the+DNA-binding+specificities+of+transcription+factors+with+DNA+microarrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Rapid+analysis+of+the+DNA-binding+specificities+of+transcription+factors+with+DNA+microarrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001820-Berger1" id="pone.0001820-Berger1"></a>Berger MF, Philippakis AA, Qureshi AM, He FS, Estep PW III, et al.  (2006) Compact, universal DNA microarrays to comprehensively determine transcription-factor binding site specificities. Nature Biotechnology  24: 1429–1435.  <ul class="find" data-citedArticleID="1076514" data-doi="10.1038/nbt1246"><li><a href="http://dx.doi.org/10.1038/nbt1246" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Compact%2C+universal+DNA+microarrays+to+comprehensively+determine+transcription-factor+binding+site+specificities." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Compact%2C+universal+DNA+microarrays+to+comprehensively+determine+transcription-factor+binding+site+specificities.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001820-Warren1" id="pone.0001820-Warren1"></a>Warren CL, Kratochvil NCS, Hauschild KE, Foister S, Brezinski ML, et al.  (2007) Defining the sequence-recognition profile of DNA-binding molecules. Proceedings of the National Academy of Sciences of the USA  103: 867–872.  <ul class="find" data-citedArticleID="1076664" data-doi="10.1073/pnas.0509843102"><li><a href="http://dx.doi.org/10.1073/pnas.0509843102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Defining+the+sequence-recognition+profile+of+DNA-binding+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Defining+the+sequence-recognition+profile+of+DNA-binding+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001820-Maerkl1" id="pone.0001820-Maerkl1"></a>Maerkl SJ, Quake SR (2007) A systems approach to measuring the binding energy landscapes of transcription factors. Science  315: 233–237.  <ul class="find" data-citedArticleID="1076596" data-doi="10.1126/science.1131007"><li><a href="http://dx.doi.org/10.1126/science.1131007" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+systems+approach+to+measuring+the+binding+energy+landscapes+of+transcription+factors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+systems+approach+to+measuring+the+binding+energy+landscapes+of+transcription+factors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001820-Zhang1" id="pone.0001820-Zhang1"></a>Zhang L, Kasif S, Cantor CR (2007) Quantifying DNA-protein binding specificities by using oligonucleotide mass tags and mass spectroscopy. Proceedings of the National Academy of Sciences of the USA  104: 3061–3066.  <ul class="find" data-citedArticleID="1076676" data-doi="10.1073/pnas.0611075104"><li><a href="http://dx.doi.org/10.1073/pnas.0611075104" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantifying+DNA-protein+binding+specificities+by+using+oligonucleotide+mass+tags+and+mass+spectroscopy." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantifying+DNA-protein+binding+specificities+by+using+oligonucleotide+mass+tags+and+mass+spectroscopy.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001820-Eisenstein1" id="pone.0001820-Eisenstein1"></a>Eisenstein M (2005) A plan for when the ChIPs are down. Nature Methods  2: 5.  <ul class="find" data-citedArticleID="1076540" data-doi="10.1038/nmeth0105-5"><li><a href="http://dx.doi.org/10.1038/nmeth0105-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+plan+for+when+the+ChIPs+are+down." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+plan+for+when+the+ChIPs+are+down.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001820-Staden1" id="pone.0001820-Staden1"></a>Staden R (1984) Computer methods to locate signals in nucleic acid sequences. Nucleic Acids Research  12: 505–519.  <ul class="find" data-citedArticleID="1076646" data-doi="10.1093/nar/12.1part2.505"><li><a href="http://dx.doi.org/10.1093/nar/12.1part2.505" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computer+methods+to+locate+signals+in+nucleic+acid+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computer+methods+to+locate+signals+in+nucleic+acid+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001820-Quandt1" id="pone.0001820-Quandt1"></a>Quandt K, Frechl K, Karas H, Wingender E, Werner T (1995) MatInd and MatInspector: new fast and versatile tools for detection of consensus matches in nucleotide sequence data. Nucleic Acids Research  23: 4878–4884.  <ul class="find" data-citedArticleID="1076616" data-doi="10.1093/nar/23.23.4878"><li><a href="http://dx.doi.org/10.1093/nar/23.23.4878" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MatInd+and+MatInspector%3A+new+fast+and+versatile+tools+for+detection+of+consensus+matches+in+nucleotide+sequence+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MatInd+and+MatInspector%3A+new+fast+and+versatile+tools+for+detection+of+consensus+matches+in+nucleotide+sequence+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001820-Claverie1" id="pone.0001820-Claverie1"></a>Claverie JM, Audic S (1996) The statistical significance of nucleotide position-weight matrix matches. Bioinformatics  12: 431–439.  <ul class="find" data-citedArticleID="1076534" data-doi="10.1093/bioinformatics/12.5.431"><li><a href="http://dx.doi.org/10.1093/bioinformatics/12.5.431" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+statistical+significance+of+nucleotide+position-weight+matrix+matches." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+statistical+significance+of+nucleotide+position-weight+matrix+matches.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001820-Wu1" id="pone.0001820-Wu1"></a>Wu TD, Nevill-Manning CG, Brutlag DL (2000) Fast probabilistic analysis of sequence function using scoring matrices. Bioinformatics  16: 233–244.  <ul class="find" data-citedArticleID="1076672" data-doi="10.1093/bioinformatics/16.3.233"><li><a href="http://dx.doi.org/10.1093/bioinformatics/16.3.233" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fast+probabilistic+analysis+of+sequence+function+using+scoring+matrices." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fast+probabilistic+analysis+of+sequence+function+using+scoring+matrices.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001820-Huang1" id="pone.0001820-Huang1"></a>Huang H, Kao MCJ, Zhou X, Liu JS, Wong WH (2004) Determination of local statistical significance of patterns in Markov sequences with application to promoter element identification. Journal of Computational Biology  11: 1–14.  <ul class="find" data-citedArticleID="1076564" data-doi="10.1089/106652704773416858"><li><a href="http://dx.doi.org/10.1089/106652704773416858" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Determination+of+local+statistical+significance+of+patterns+in+Markov+sequences+with+application+to+promoter+element+identification." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Determination+of+local+statistical+significance+of+patterns+in+Markov+sequences+with+application+to+promoter+element+identification.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001820-Hertzberg1" id="pone.0001820-Hertzberg1"></a>Hertzberg L, Zuk O, Getz G, Domany E (2005) Finding motifs in promoter regions. Journal of Computational Biology  12: 314–330.  <ul class="find" data-citedArticleID="1076558" data-doi="10.1089/cmb.2005.12.314"><li><a href="http://dx.doi.org/10.1089/cmb.2005.12.314" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Finding+motifs+in+promoter+regions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Finding+motifs+in+promoter+regions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001820-Barash1" id="pone.0001820-Barash1"></a>Barash Y, Elidan G, Kaplan T, Friedman N (2005) CIS: compound importance sampling method for protein-DNA binding site <em>p</em>-value estimation. Bioinformatics  21: 596–600.  <ul class="find" data-citedArticleID="1076508" data-doi="10.1093/bioinformatics/bti041"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti041" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=CIS%3A+compound+importance+sampling+method+for+protein-DNA+binding+site+p-value+estimation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22CIS%3A+compound+importance+sampling+method+for+protein-DNA+binding+site+p-value+estimation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001820-Baji1" id="pone.0001820-Baji1"></a>Bajić IV (2006) Detection-theoretic analysis of MatInspector. IEEE Transactions on Signal Processing  54: 2388–2393.  <ul class="find" data-citedArticleID="1076506" data-doi="10.1109/tsp.2006.873739"><li><a href="http://dx.doi.org/10.1109/tsp.2006.873739" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detection-theoretic+analysis+of+MatInspector." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detection-theoretic+analysis+of+MatInspector.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001820-Wasserman1" id="pone.0001820-Wasserman1"></a>Wasserman WW, Sandelin A (2004) Applied bioinformatics for the identification of regulatory elements. Nature Reviews Genetics  5: 276–287.  <ul class="find" data-citedArticleID="1076666" data-doi="10.1038/nrg1315"><li><a href="http://dx.doi.org/10.1038/nrg1315" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Applied+bioinformatics+for+the+identification+of+regulatory+elements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Applied+bioinformatics+for+the+identification+of+regulatory+elements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001820-Bulyk1" id="pone.0001820-Bulyk1"></a>Bulyk ML, Johnson PLF, Church GM (2002) Nucleotides of transcription factor binding sites exert interdependent effects on the binding affinities of transcription factors. Nucleic Acids Research  30: 1255–1261.  <ul class="find" data-citedArticleID="1076526" data-doi="10.1093/nar/30.5.1255"><li><a href="http://dx.doi.org/10.1093/nar/30.5.1255" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Nucleotides+of+transcription+factor+binding+sites+exert+interdependent+effects+on+the+binding+affinities+of+transcription+factors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Nucleotides+of+transcription+factor+binding+sites+exert+interdependent+effects+on+the+binding+affinities+of+transcription+factors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001820-Zhou1" id="pone.0001820-Zhou1"></a>Zhou Q, Liu JS (2004) Modeling within-motif dependence for transcription factor binding site predictions. Bioinformatics  20: 909–916.  <ul class="find" data-citedArticleID="1076678" data-doi="10.1093/bioinformatics/bth006"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+within-motif+dependence+for+transcription+factor+binding+site+predictions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+within-motif+dependence+for+transcription+factor+binding+site+predictions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001820-Barash2" id="pone.0001820-Barash2"></a>Barash Y, Elidan G, Friedman N, Kaplan T (2003) Modeling dependencies in protein-DNA binding sites. Proceedings of the Seventh Annual International Conference on Computational Biology (RECOMB 2003). ACM.   <ul class="find-nolinks"></ul></li><li><span class="label">33.
+              </span><a name="pone.0001820-Kent1" id="pone.0001820-Kent1"></a>Kent WJ, Sugnet CW, Furey TS, Roskin KM, Pringle TH, et al.  (2002) The human genome browser at UCSC. Genome Research  12: 996–1006.  <ul class="find" data-citedArticleID="1076578" data-doi="10.1101/gr.229102"><li><a href="http://dx.doi.org/10.1101/gr.229102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+human+genome+browser+at+UCSC." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+human+genome+browser+at+UCSC.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001820-Montgomery1" id="pone.0001820-Montgomery1"></a>Montgomery SB, Griffith OL, Sleumer MC, Bergman CM, Bilenky M, et al.  (2006) ORegAnno: An open access database and curation system for literature-derived promoters, transcription factor binding sites and regulatory variation. Bioinformatics  22: 637–640.  <ul class="find" data-citedArticleID="1076600" data-doi="10.1093/bioinformatics/btk027"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btk027" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ORegAnno%3A+An+open+access+database+and+curation+system+for+literature-derived+promoters%2C+transcription+factor+binding+sites+and+regulatory+variation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ORegAnno%3A+An+open+access+database+and+curation+system+for+literature-derived+promoters%2C+transcription+factor+binding+sites+and+regulatory+variation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001820-Blanco1" id="pone.0001820-Blanco1"></a>Blanco E, Farré D, Albà MM, Messeguer X, Guigó R (2006) ABS: a database of Annotated regulatory Binding Sites from orthologous promoters. Nucleic Acids Research  34: D63–D67.  <ul class="find" data-citedArticleID="1076520" data-doi="10.1093/nar/gkj116"><li><a href="http://dx.doi.org/10.1093/nar/gkj116" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ABS%3A+a+database+of+Annotated+regulatory+Binding+Sites+from+orthologous+promoters." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ABS%3A+a+database+of+Annotated+regulatory+Binding+Sites+from+orthologous+promoters.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001820-Frith1" id="pone.0001820-Frith1"></a>Frith MC, Hansen U, Weng Z (2001) Detection of cis-element clusters in higher eukaryotic DNA. Bioinformatics  17: 878–889.  <ul class="find" data-citedArticleID="1076546" data-doi="10.1093/bioinformatics/17.10.878"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.10.878" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detection+of+cis-element+clusters+in+higher+eukaryotic+DNA." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detection+of+cis-element+clusters+in+higher+eukaryotic+DNA.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001820-Rajewsky1" id="pone.0001820-Rajewsky1"></a>Rajewsky N, Vergassola M, Gaul U, Siggia ED (2002) Computational detection of genomic cis-regulatory modules applied to body patterning in the early <em>Drosophila</em> embryo. BMC Bioinformatics  3: 30.  <ul class="find" data-citedArticleID="1076618"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo.&amp;auth=&amp;atitle=Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0001820-Sinha1" id="pone.0001820-Sinha1"></a>Sinha S, van Nimwegen E, Siggia ED (2003) A probabilistic method to detect regulatory modules. Bioinformatics  19: i292–i301.  <ul class="find" data-citedArticleID="1076640" data-doi="10.1093/bioinformatics/btg1040"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1040" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+probabilistic+method+to+detect+regulatory+modules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+probabilistic+method+to+detect+regulatory+modules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0001820-Lawrence1" id="pone.0001820-Lawrence1"></a>Lawrence CE, Altschul SF, Boguski MS, Liu JS, Neuwald AF, et al.  (1993) Detecting subtle sequence signals: A Gibbs sampling strategy for multiple alignment. Science  262: 208–214.  <ul class="find" data-citedArticleID="1076580" data-doi="10.1126/science.8211139"><li><a href="http://dx.doi.org/10.1126/science.8211139" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detecting+subtle+sequence+signals%3A+A+Gibbs+sampling+strategy+for+multiple+alignment." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detecting+subtle+sequence+signals%3A+A+Gibbs+sampling+strategy+for+multiple+alignment.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0001820-Bailey1" id="pone.0001820-Bailey1"></a>Bailey TL, Elkan C (1994) Fitting a mixture model by expectation maximization to discover motifs in biopolymers. Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology. volume 2. pp. 28–36.  <ul class="find-nolinks"></ul></li><li><span class="label">41.
+              </span><a name="pone.0001820-Bailey2" id="pone.0001820-Bailey2"></a>Bailey TL, Elkan CP (1995) The value of prior knowledge in discovering motifs with MEME. Proceedings of the Third International Conference on Intelligent Systems for Molecular Biology. AAAI Press, volume 3. pp. 21–29.  <ul class="find-nolinks"></ul></li><li><span class="label">42.
+              </span><a name="pone.0001820-Thijs1" id="pone.0001820-Thijs1"></a>Thijs G, Marchal K, Lescot M, Rombauts S, Moor BD, et al.  (2002) A Gibbs sampling method to detect overrepresented motifs in the upstream regions of coexpressed genes. Journal of Computational Biology  9: 447–464.  <ul class="find" data-citedArticleID="1076656" data-doi="10.1089/10665270252935566"><li><a href="http://dx.doi.org/10.1089/10665270252935566" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Gibbs+sampling+method+to+detect+overrepresented+motifs+in+the+upstream+regions+of+coexpressed+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Gibbs+sampling+method+to+detect+overrepresented+motifs+in+the+upstream+regions+of+coexpressed+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0001820-Reiss1" id="pone.0001820-Reiss1"></a>Reiss DJ, Schwikowski B (2004) Predicting protein-peptide interactions via a network-based motif sampler. Bioinformatics  20: i274–i282.  <ul class="find" data-citedArticleID="1076622" data-doi="10.1093/bioinformatics/bth922"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth922" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+protein-peptide+interactions+via+a+network-based+motif+sampler." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+protein-peptide+interactions+via+a+network-based+motif+sampler.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0001820-Sinha2" id="pone.0001820-Sinha2"></a>Sinha S (2006) On counting position weight matrix matches in a sequence, with application to discriminative motif finding. Bioinformatics  22: e454–e463.  <ul class="find" data-citedArticleID="1076642" data-doi="10.1093/bioinformatics/btl227"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl227" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+counting+position+weight+matrix+matches+in+a+sequence%2C+with+application+to+discriminative+motif+finding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+counting+position+weight+matrix+matches+in+a+sequence%2C+with+application+to+discriminative+motif+finding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0001820-Lehrach1" id="pone.0001820-Lehrach1"></a>Lehrach WP, Husmeier D, Williams CKI (2006) A regularized discriminative model for the prediction of protein-peptide interactions. Bioinformatics  22: 532–540.  <ul class="find" data-citedArticleID="1076584" data-doi="10.1093/bioinformatics/bti804"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti804" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+regularized+discriminative+model+for+the+prediction+of+protein-peptide+interactions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+regularized+discriminative+model+for+the+prediction+of+protein-peptide+interactions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0001820-Sandelin2" id="pone.0001820-Sandelin2"></a>Sandelin A, Wasserman WW, Lenhard B (2004) ConSite: web-based prediction of regulatory elements using cross-species comparison. Nucleic Acids Research  32: W249–W252.  <ul class="find" data-citedArticleID="1076630" data-doi="10.1093/nar/gkh372"><li><a href="http://dx.doi.org/10.1093/nar/gkh372" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ConSite%3A+web-based+prediction+of+regulatory+elements+using+cross-species+comparison." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ConSite%3A+web-based+prediction+of+regulatory+elements+using+cross-species+comparison.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0001820-Marinescu1" id="pone.0001820-Marinescu1"></a>Marinescu VD, Kohane IS, Riva A (2005) MAPPER: a search engine for the computational identification of putative transcription factor binding sites in multiple genomes. BMC Bioinformatics  6: 79.  <ul class="find" data-citedArticleID="1076598"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=MAPPER%3A+a+search+engine+for+the+computational+identification+of+putative+transcription+factor+binding+sites+in+multiple+genomes.&amp;auth=&amp;atitle=MAPPER%3A+a+search+engine+for+the+computational+identification+of+putative+transcription+factor+binding+sites+in+multiple+genomes." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MAPPER%3A+a+search+engine+for+the+computational+identification+of+putative+transcription+factor+binding+sites+in+multiple+genomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MAPPER%3A+a+search+engine+for+the+computational+identification+of+putative+transcription+factor+binding+sites+in+multiple+genomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0001820-GuhaThakurta1" id="pone.0001820-GuhaThakurta1"></a>GuhaThakurta D (2006) Computational identification of transcriptional regulatory elements in DNA sequence. Nucleic Acids Research  34: 3585–3598.  <ul class="find" data-citedArticleID="1076550" data-doi="10.1093/nar/gkl372"><li><a href="http://dx.doi.org/10.1093/nar/gkl372" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+identification+of+transcriptional+regulatory+elements+in+DNA+sequence." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+identification+of+transcriptional+regulatory+elements+in+DNA+sequence.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">49.
+              </span><a name="pone.0001820-Beyer1" id="pone.0001820-Beyer1"></a>Beyer A, Workman C, Hollunder J, Radke D, Möller U, et al.  (2006) Integrated assessment and prediction of transcription factor binding. PLoS Computatioanl Biology  2: e70.  <ul class="find" data-citedArticleID="1076518" data-doi="10.1371/journal.pcbi.0020070.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020070.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrated+assessment+and+prediction+of+transcription+factor+binding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrated+assessment+and+prediction+of+transcription+factor+binding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">50.
+              </span><a name="pone.0001820-AmbesiImpiombato1" id="pone.0001820-AmbesiImpiombato1"></a>Ambesi-Impiombato A, Bansal M, Liò P, di Bernardo D (2006) Computational framework for the prediction of transcription factor binding sites by multiple data integration. BMC Neuroscience  7: Suppl 1S8.  <ul class="find" data-citedArticleID="1076500" data-doi="10.1186/1471-2202-7-s1-s8"><li><a href="http://dx.doi.org/10.1186/1471-2202-7-s1-s8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+framework+for+the+prediction+of+transcription+factor+binding+sites+by+multiple+data+integration." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+framework+for+the+prediction+of+transcription+factor+binding+sites+by+multiple+data+integration.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">51.
+              </span><a name="pone.0001820-Beer1" id="pone.0001820-Beer1"></a>Beer MA, Tavazoie S (2004) Predicting gene expression from sequence. Cell  117: 185–198.  <ul class="find" data-citedArticleID="1076512" data-doi="10.1016/s0092-8674(04)00304-6"><li><a href="http://dx.doi.org/10.1016/s0092-8674(04)00304-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+gene+expression+from+sequence." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+gene+expression+from+sequence.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">52.
+              </span><a name="pone.0001820-Jensen1" id="pone.0001820-Jensen1"></a>Jensen ST, Shen L, Liu JS (2005) Combining phylogenetic motif discovery and motif clustering to predict co-regulated genes. Bioinformatics  21: 3832–3839.  <ul class="find" data-citedArticleID="1076572" data-doi="10.1093/bioinformatics/bti628"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti628" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Combining+phylogenetic+motif+discovery+and+motif+clustering+to+predict+co-regulated+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Combining+phylogenetic+motif+discovery+and+motif+clustering+to+predict+co-regulated+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">53.
+              </span><a name="pone.0001820-Gordon1" id="pone.0001820-Gordon1"></a>Gordon DB, Nekludova L, McCallum S, Fraenkel E (2005) TAMO: a flexible, object-oriented framework for analyzing transcriptional regulation using DNA-sequence motifs. Bioinformatics  21: 3164–3165.  <ul class="find" data-citedArticleID="1076548" data-doi="10.1093/bioinformatics/bti481"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti481" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=TAMO%3A+a+flexible%2C+object-oriented+framework+for+analyzing+transcriptional+regulation+using+DNA-sequence+motifs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22TAMO%3A+a+flexible%2C+object-oriented+framework+for+analyzing+transcriptional+regulation+using+DNA-sequence+motifs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">54.
+              </span><a name="pone.0001820-Holloway1" id="pone.0001820-Holloway1"></a>Holloway DT, Kon M, DeLisi C (2005) Integrating genomic data to predict transcription factor binding. Genome Informatics  16: 83–94.  <ul class="find" data-citedArticleID="1076560"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Integrating+genomic+data+to+predict+transcription+factor+binding.&amp;auth=&amp;atitle=Integrating+genomic+data+to+predict+transcription+factor+binding." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrating+genomic+data+to+predict+transcription+factor+binding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrating+genomic+data+to+predict+transcription+factor+binding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">55.
+              </span><a name="pone.0001820-Holloway2" id="pone.0001820-Holloway2"></a>Holloway DT, Kon M, DeLisi C (2006) Machine learning methods for transcription data integration. IBM Journal of Research and Development  6: 631–643.  <ul class="find" data-citedArticleID="1076562" data-doi="10.1147/rd.506.0631"><li><a href="http://dx.doi.org/10.1147/rd.506.0631" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Machine+learning+methods+for+transcription+data+integration." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Machine+learning+methods+for+transcription+data+integration.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">56.
+              </span><a name="pone.0001820-Murphy1" id="pone.0001820-Murphy1"></a>Murphy KP, Mian S (1999) Modelling gene expression data using dynamic Bayesian networks. Berkeley: Technical report, University of California.   <ul class="find-nolinks"></ul></li><li><span class="label">57.
+              </span><a name="pone.0001820-Husmeier1" id="pone.0001820-Husmeier1"></a>Husmeier D (2003) Sensitivity and specificity of inferring genetic regulatory interactions from microarray experiments with dynamic Bayesian networks. Bioinformatics  19: 2271–2282.  <ul class="find" data-citedArticleID="1076568" data-doi="10.1093/bioinformatics/btg313"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg313" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sensitivity+and+specificity+of+inferring+genetic+regulatory+interactions+from+microarray+experiments+with+dynamic+Bayesian+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sensitivity+and+specificity+of+inferring+genetic+regulatory+interactions+from+microarray+experiments+with+dynamic+Bayesian+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">58.
+              </span><a name="pone.0001820-Friedman1" id="pone.0001820-Friedman1"></a>Friedman N (2004) Inferring cellular networks using probabilistic graphical models. Science  303: 799–805.  <ul class="find" data-citedArticleID="1076544" data-doi="10.1126/science.1094068"><li><a href="http://dx.doi.org/10.1126/science.1094068" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inferring+cellular+networks+using+probabilistic+graphical+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inferring+cellular+networks+using+probabilistic+graphical+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">59.
+              </span><a name="pone.0001820-Chen1" id="pone.0001820-Chen1"></a>Chen T, He HL, Church GM (1999) Modeling gene expression with differential equations. Proceedings of Pacific Symposium on Biocomputing (PSB 99). pp. 29–40.  World Scientific, Singapore, volume 4.  <ul class="find-nolinks"></ul></li><li><span class="label">60.
+              </span><a name="pone.0001820-Bower1" id="pone.0001820-Bower1"></a> Bower JM, Bolouri H, editors.  (2001) Computational Modeling of Genetic and Biochemical Networks. The MIT Press, 1st edition edition.   <ul class="find-nolinks"></ul></li><li><span class="label">61.
+              </span><a name="pone.0001820-Wilkinson1" id="pone.0001820-Wilkinson1"></a>Wilkinson DJ (2006) Stochastic Modelling for Systems Biology. Chapman &amp; Hall/CRC, 1st edition.   <ul class="find-nolinks"></ul></li><li><span class="label">62.
+              </span><a name="pone.0001820-Bernard1" id="pone.0001820-Bernard1"></a>Bernard A, Hartemink A (2005) Informative structure priors: joint learning of dynamic regulatory networks from multiple types of data. Proceedings of Pacific Symposium on Biocomputing (PSB 05). pp. 459–470.  World Scientific, Singapore, volume 10.  <ul class="find-nolinks"></ul></li><li><span class="label">63.
+              </span><a name="pone.0001820-Chen2" id="pone.0001820-Chen2"></a>Chen G, Jensen ST, Stoeckert CJ Jr (2007) Clustering of genes into regulons using integrated modeling-COGRIM. Genome Biology  8:   <ul class="find" data-citedArticleID="1076532"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Clustering+of+genes+into+regulons+using+integrated+modeling-COGRIM.&amp;auth=&amp;atitle=Clustering+of+genes+into+regulons+using+integrated+modeling-COGRIM." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Clustering+of+genes+into+regulons+using+integrated+modeling-COGRIM." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Clustering+of+genes+into+regulons+using+integrated+modeling-COGRIM.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">64.
+              </span><a name="pone.0001820-Pan1" id="pone.0001820-Pan1"></a>Pan W (2006) Incorporating gene functions as priors in model-based clustering of microarray gene expression data. Bioinformatics  22: 795–801.  <ul class="find" data-citedArticleID="1076612" data-doi="10.1093/bioinformatics/btl011"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl011" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Incorporating+gene+functions+as+priors+in+model-based+clustering+of+microarray+gene+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Incorporating+gene+functions+as+priors+in+model-based+clustering+of+microarray+gene+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">65.
+              </span><a name="pone.0001820-Lee1" id="pone.0001820-Lee1"></a>Lee TI, Rinaldi NJ, Robert F, Odom DT, Bar-Joseph Z, et al.  (2002) Transcriptional regulatory networks in <em>Saccharomyces cerevisiae</em>. Science  298: 799–804.  <ul class="find" data-citedArticleID="1076582" data-doi="10.1126/science.1075090"><li><a href="http://dx.doi.org/10.1126/science.1075090" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcriptional+regulatory+networks+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcriptional+regulatory+networks+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">66.
+              </span><a name="pone.0001820-Stormo1" id="pone.0001820-Stormo1"></a>Stormo GD, Schneider TD, Gold L, Ehrenfeucht A (1982) Use of the ‘Perceptron’ algorithm to distinguish translational initiation sites in <em>E. coli</em>. Nucleic Acids Research  10: 2997–3011.  <ul class="find" data-citedArticleID="1076650" data-doi="10.1093/nar/10.9.2997"><li><a href="http://dx.doi.org/10.1093/nar/10.9.2997" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Use+of+the+%E2%80%98Perceptron%E2%80%99+algorithm+to+distinguish+translational+initiation+sites+in+E.+coli." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Use+of+the+%E2%80%98Perceptron%E2%80%99+algorithm+to+distinguish+translational+initiation+sites+in+E.+coli.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">67.
+              </span><a name="pone.0001820-Thijs2" id="pone.0001820-Thijs2"></a>Thijs G, Lescot M, Marchal K, Rombauts S, Moor BD, et al.  (2001) A higher-order background model improves the detection of promoter regulatory elements by Gibbs sampling. Bioinformatics  17: 1113–1122.  <ul class="find" data-citedArticleID="1076658" data-doi="10.1093/bioinformatics/17.12.1113"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.12.1113" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+higher-order+background+model+improves+the+detection+of+promoter+regulatory+elements+by+Gibbs+sampling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+higher-order+background+model+improves+the+detection+of+promoter+regulatory+elements+by+Gibbs+sampling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">68.
+              </span><a name="pone.0001820-Fawcett1" id="pone.0001820-Fawcett1"></a>Fawcett T (2006) An introduction to ROC analysis. Pattern Recognition Letters  27: 861–874.  <ul class="find" data-citedArticleID="1076542" data-doi="10.1016/j.patrec.2005.10.010"><li><a href="http://dx.doi.org/10.1016/j.patrec.2005.10.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+introduction+to+ROC+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+introduction+to+ROC+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">69.
+              </span><a name="pone.0001820-Liu2" id="pone.0001820-Liu2"></a>Liu X, Brutlag DL, S LJ (2001) Bioprospector: discovering conserved DNA motifs in upstream regulatory regions of co-expressed genes. Proceedings of Pacific Symposium on Biocomputing (PSB 01). pp. 127–138.  World Scientific, Singapore, volume 6.  <ul class="find-nolinks"></ul></li><li><span class="label">70.
+              </span><a name="pone.0001820-Steck1" id="pone.0001820-Steck1"></a>Steck H, Jaakkola TS (2002) On the Dirichlet prior and Bayesian regularization. Advances in Neural Information Processing Systems, volume 15. pp. 697–704.  <ul class="find-nolinks"></ul></li><li><span class="label">71.
+              </span><a name="pone.0001820-Xie1" id="pone.0001820-Xie1"></a>Xie X, Lu J, Kulbokas EJ, Golub TR, Mootha V, et al.  (2005) Systematic discovery of regulatory motifs in human promoters and 30 UTRs by comparison of several mammals. Nature  434: 338–345.  <ul class="find" data-citedArticleID="1076674" data-doi="10.1038/nature03441"><li><a href="http://dx.doi.org/10.1038/nature03441" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+discovery+of+regulatory+motifs+in+human+promoters+and+30+UTRs+by+comparison+of+several+mammals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+discovery+of+regulatory+motifs+in+human+promoters+and+30+UTRs+by+comparison+of+several+mammals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">72.
+              </span><a name="pone.0001820-Siepel1" id="pone.0001820-Siepel1"></a>Siepel A, Bejerano G, Pedersen JS, Hinrichs AS, Hou M, et al.  (2005) Evolutionarily conserved elements in vertebrate, insect, worm, and yeast genomes. Genome Research  15: 1034–1050.  <ul class="find" data-citedArticleID="1076638" data-doi="10.1101/gr.3715005"><li><a href="http://dx.doi.org/10.1101/gr.3715005" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolutionarily+conserved+elements+in+vertebrate%2C+insect%2C+worm%2C+and+yeast+genomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolutionarily+conserved+elements+in+vertebrate%2C+insect%2C+worm%2C+and+yeast+genomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">73.
+              </span><a name="pone.0001820-Taylor1" id="pone.0001820-Taylor1"></a>Taylor J, Tyekucheva S, King DC, Hardison RC, Miller W, et al.  (2006) ESPERR: Learning strong and weak signals in genomic sequence alignments to identify functional elements. Genome Research  16: 1596–1604.  <ul class="find" data-citedArticleID="1076654" data-doi="10.1101/gr.4537706"><li><a href="http://dx.doi.org/10.1101/gr.4537706" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ESPERR%3A+Learning+strong+and+weak+signals+in+genomic+sequence+alignments+to+identify+functional+elements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ESPERR%3A+Learning+strong+and+weak+signals+in+genomic+sequence+alignments+to+identify+functional+elements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">74.
+              </span><a name="pone.0001820-Segal1" id="pone.0001820-Segal1"></a>Segal E, Fondufe-Mittendorf Y, Chen L, Thåström A, Field Y, et al.  (2006) A genomic code for nucleosome positioning. Nature  442: 772–778.  <ul class="find" data-citedArticleID="1076632" data-doi="10.1038/nature04979"><li><a href="http://dx.doi.org/10.1038/nature04979" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+genomic+code+for+nucleosome+positioning." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+genomic+code+for+nucleosome+positioning.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">75.
+              </span><a name="pone.0001820-Heintzman1" id="pone.0001820-Heintzman1"></a>Heintzman ND, Ren B (2007) The gateway to transcription: identifying, characterizing and understanding promoters in the eukaryotic genome. Cellular and Molecular Life Sciences  64: 386–400.  <ul class="find" data-citedArticleID="1076556" data-doi="10.1007/s00018-006-6295-0"><li><a href="http://dx.doi.org/10.1007/s00018-006-6295-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+gateway+to+transcription%3A+identifying%2C+characterizing+and+understanding+promoters+in+the+eukaryotic+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+gateway+to+transcription%3A+identifying%2C+characterizing+and+understanding+promoters+in+the+eukaryotic+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">76.
+              </span><a name="pone.0001820-Levine1" id="pone.0001820-Levine1"></a>Levine M, Tjian R (2003) Transcription regulation and animal diversity. Nature  424: 147–151.  <ul class="find" data-citedArticleID="1076586" data-doi="10.1038/nature01763"><li><a href="http://dx.doi.org/10.1038/nature01763" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcription+regulation+and+animal+diversity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcription+regulation+and+animal+diversity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">77.
+              </span><a name="pone.0001820-Ren1" id="pone.0001820-Ren1"></a>Ren B, Robert F, Wyrick JJ, Aparicio O, Jennings EG, et al.  (2000) Genome-wide location and function of DNA binding proteins. Science  290: 2306–2309.  <ul class="find" data-citedArticleID="1076624" data-doi="10.1126/science.290.5500.2306"><li><a href="http://dx.doi.org/10.1126/science.290.5500.2306" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+location+and+function+of+DNA+binding+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+location+and+function+of+DNA+binding+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">78.
+              </span><a name="pone.0001820-Crawford1" id="pone.0001820-Crawford1"></a>Crawford GE, Holt IE, Mullikin JC, Tai D, National Institutes of Health Intramural Sequencing Center (2004) Identifying gene regulatory elements by genome-wide recovery of DNase hypersensitive sites. Proceedings of the National Academy of Sciences of the USA  101: 992–997.  <ul class="find" data-citedArticleID="1076536" data-doi="10.1073/pnas.0307540100"><li><a href="http://dx.doi.org/10.1073/pnas.0307540100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifying+gene+regulatory+elements+by+genome-wide+recovery+of+DNase+hypersensitive+sites." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifying+gene+regulatory+elements+by+genome-wide+recovery+of+DNase+hypersensitive+sites.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">79.
+              </span><a name="pone.0001820-KelMargoulis1" id="pone.0001820-KelMargoulis1"></a>Kel-Margoulis OV, Kel AE, Reuter I, Deineko IV, Wingender E (2002) TRANSCompel®: a database on composite regulatory elements in eukaryotic genes. Nucleic Acids Research  30: 332–334.  <ul class="find" data-citedArticleID="1076574" data-doi="10.1093/nar/30.1.332"><li><a href="http://dx.doi.org/10.1093/nar/30.1.332" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=TRANSCompel%C2%AE%3A+a+database+on+composite+regulatory+elements+in+eukaryotic+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22TRANSCompel%C2%AE%3A+a+database+on+composite+regulatory+elements+in+eukaryotic+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">80.
+              </span><a name="pone.0001820-Smit1" id="pone.0001820-Smit1"></a>Smit AFA, Hubley R, Green P (1997) Repeatmasker computer program.   Available at <a href="http://www.repeatmasker.org/">http://www.repeatmasker.org/</a>.  <ul class="find-nolinks"></ul></li><li><span class="label">81.
+              </span><a name="pone.0001820-Reguly1" id="pone.0001820-Reguly1"></a>Reguly T, Breitkreutz A, Boucher L, Breitkreutz BJ, Hon GC, et al.  (2006) Comprehensive curation and analysis of global interaction networks in <em>Saccharomyces cerevisiae</em>. Journal of Biology  5:   <ul class="find" data-citedArticleID="1076620"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Comprehensive+curation+and+analysis+of+global+interaction+networks+in+Saccharomyces+cerevisiae.&amp;auth=&amp;atitle=Comprehensive+curation+and+analysis+of+global+interaction+networks+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comprehensive+curation+and+analysis+of+global+interaction+networks+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comprehensive+curation+and+analysis+of+global+interaction+networks+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">82.
+              </span><a name="pone.0001820-Thomas1" id="pone.0001820-Thomas1"></a>Thomas K, Wu J, Sung DY, Thompson W, Powell M, et al.  (2007) SP1 transcription factors in male germ cell development and differentiation. Molecular and Cellular Endocrinology  270: 1–7.  <ul class="find" data-citedArticleID="1076660" data-doi="10.1016/j.mce.2007.03.001"><li><a href="http://dx.doi.org/10.1016/j.mce.2007.03.001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SP1+transcription+factors+in+male+germ+cell+development+and+differentiation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SP1+transcription+factors+in+male+germ+cell+development+and+differentiation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">83.
+              </span><a name="pone.0001820-Cawley1" id="pone.0001820-Cawley1"></a>Cawley S, Bekiranov S, Ng HH, Kapranov P, Sekinger EA, et al.  (2004) Unbiased mapping of transcription factor binding sites along human chromosomes 21 and 22 points to widespread regulation of noncoding RNAs. Cell  116: 499–509.  <ul class="find" data-citedArticleID="1076528" data-doi="10.1016/s0092-8674(04)00127-8"><li><a href="http://dx.doi.org/10.1016/s0092-8674(04)00127-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Unbiased+mapping+of+transcription+factor+binding+sites+along+human+chromosomes+21+and+22+points+to+widespread+regulation+of+noncoding+RNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Unbiased+mapping+of+transcription+factor+binding+sites+along+human+chromosomes+21+and+22+points+to+widespread+regulation+of+noncoding+RNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">84.
+              </span><a name="pone.0001820-Hallikas1" id="pone.0001820-Hallikas1"></a>Hallikas O, Palin K, Sinjushina N, Rautiainen R, Partanen J, et al.  (2006) Genome-wide prediction of mammalian enhancers based on analysis of transcription-factor binding affinity. Cell  124: 47–59.  <ul class="find" data-citedArticleID="1076552" data-doi="10.1016/j.cell.2005.10.042"><li><a href="http://dx.doi.org/10.1016/j.cell.2005.10.042" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+prediction+of+mammalian+enhancers+based+on+analysis+of+transcription-factor+binding+affinity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+prediction+of+mammalian+enhancers+based+on+analysis+of+transcription-factor+binding+affinity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">85.
+              </span><a name="pone.0001820-Segal2" id="pone.0001820-Segal2"></a>Segal E, Yelensky R, Koller D (2003) Genome-wide discovery of transcriptional modules from DNA sequence and gene expression. Bioinformatics  19: i273–i282.  <ul class="find" data-citedArticleID="1076634" data-doi="10.1093/bioinformatics/btg1038"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1038" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+discovery+of+transcriptional+modules+from+DNA+sequence+and+gene+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+discovery+of+transcriptional+modules+from+DNA+sequence+and+gene+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">86.
+              </span><a name="pone.0001820-Tamada1" id="pone.0001820-Tamada1"></a>Tamada Y, Kim S, Bannai H, Imoto S, Tashiro K, et al.  (2003) Estimating gene networks from gene expression data by combining Bayesian network model with promoter element detection. Bioinformatics  19: ii227–ii236.  <ul class="find" data-citedArticleID="1076652" data-doi="10.1093/bioinformatics/btg1082"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1082" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+gene+networks+from+gene+expression+data+by+combining+Bayesian+network+model+with+promoter+element+detection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+gene+networks+from+gene+expression+data+by+combining+Bayesian+network+model+with+promoter+element+detection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">87.
+              </span><a name="pone.0001820-deHoon1" id="pone.0001820-deHoon1"></a>de Hoon MJL, Makita Y, Imoto S, Kobayashi K, Ogasawara N, et al.  (2004) Predicting gene regulation by sigma factors in <em>bacillus subtilis</em> from genome-wide data. Bioinformatics  20: i101–i108.  <ul class="find" data-citedArticleID="1076680" data-doi="10.1093/bioinformatics/bth927"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth927" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+gene+regulation+by+sigma+factors+in+bacillus+subtilis+from+genome-wide+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+gene+regulation+by+sigma+factors+in+bacillus+subtilis+from+genome-wide+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">88.
+              </span><a name="pone.0001820-Lhdesmki1" id="pone.0001820-Lhdesmki1"></a>Lähdesmäki H, Shmulevich I (2007) Probabilistic framework for transcription factor binding prediction. Proceedings of Fifth IEEE International Workshop on Genomic Signal Processing and Statistics (Gensips'07).   <ul class="find-nolinks"></ul></li><li><span class="label">89.
+              </span><a name="pone.0001820-Robert1" id="pone.0001820-Robert1"></a>Robert CP, Casella G (2005) Monte Carlo Statistical Methods. Springer-Verlag, 2nd edition.   <ul class="find-nolinks"></ul></li><li><span class="label">90.
+              </span><a name="pone.0001820-Brooks1" id="pone.0001820-Brooks1"></a>Brooks SP, Giudici P, Philippe A (2003) Nonparametric convergence assessment for MCMC model selection. Journal of Computational and Graphical Statistics  12: 1–22.  <ul class="find" data-citedArticleID="1076524" data-doi="10.1198/1061860031347"><li><a href="http://dx.doi.org/10.1198/1061860031347" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Nonparametric+convergence+assessment+for+MCMC+model+selection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Nonparametric+convergence+assessment+for+MCMC+model+selection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">91.
+              </span><a name="pone.0001820-Husmeier2" id="pone.0001820-Husmeier2"></a>Husmeier D (2005)  Introduction to learning Bayesian networks from data. In: Husmeier D, Dybowski R, Roberts S, editors. Probabilistic Modeling in Bioinformatics and Medical Informatics. UK: Springer-Verlag. pp. 17–57.  <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.XML" value="206704"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.PDF" value="1204553"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g001.PNG_L" value="23120"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g001.PNG_M" value="15378"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g001.PNG_S" value="7958"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g001.TIF" value="158332"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g001.PNG_I" value="5127"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e001.PNG" value="10232"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e001.TIF" value="26424"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e002.PNG" value="9387"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e002.TIF" value="25400"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g002.PNG_L" value="198515"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g002.PNG_M" value="102466"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g002.PNG_S" value="12973"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g002.TIF" value="598112"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g002.PNG_I" value="36614"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g003.PNG_L" value="502254"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g003.PNG_M" value="107626"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g003.PNG_S" value="12407"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g003.TIF" value="1553610"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g003.PNG_I" value="43275"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e003.PNG" value="5002"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e003.TIF" value="20960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g004.PNG_L" value="393135"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g004.PNG_M" value="87961"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g004.PNG_S" value="13631"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g004.TIF" value="1381782"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g004.PNG_I" value="30747"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g005.PNG_L" value="289287"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g005.PNG_M" value="69732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g005.PNG_S" value="9045"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g005.TIF" value="840196"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g005.PNG_I" value="23550"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e004.PNG" value="10066"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e004.TIF" value="26212"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e005.PNG" value="10005"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e005.TIF" value="26176"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e006.PNG" value="6791"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e006.TIF" value="22748"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e007.PNG" value="6728"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e007.TIF" value="22732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g006.PNG_L" value="985855"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g006.PNG_M" value="193113"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g006.PNG_S" value="19372"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g006.TIF" value="2956194"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g006.PNG_I" value="84329"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g007.PNG_L" value="353087"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g007.PNG_M" value="87002"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g007.PNG_S" value="11945"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g007.TIF" value="1330554"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g007.PNG_I" value="29635"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g008.PNG_L" value="308116"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g008.PNG_M" value="70335"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g008.PNG_S" value="9684"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g008.TIF" value="879450"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g008.PNG_I" value="24560"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g009.PNG_L" value="185704"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g009.PNG_M" value="94720"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g009.PNG_S" value="12467"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g009.TIF" value="558184"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g009.PNG_I" value="34267"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e008.PNG" value="7872"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e008.TIF" value="23728"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g010.PNG_L" value="389703"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g010.PNG_M" value="84005"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g010.PNG_S" value="12017"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g010.TIF" value="1383350"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g010.PNG_I" value="29622"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g011.PNG_L" value="388453"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g011.PNG_M" value="84335"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g011.PNG_S" value="12135"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g011.TIF" value="1380626"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g011.PNG_I" value="29482"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g012.PNG_L" value="163826"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g012.PNG_M" value="84280"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g012.PNG_S" value="12450"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g012.TIF" value="517398"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g012.PNG_I" value="31783"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g013.PNG_L" value="415651"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g013.PNG_M" value="94023"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g013.PNG_S" value="11547"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g013.TIF" value="1521242"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g013.PNG_I" value="33367"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g014.PNG_L" value="256407"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g014.PNG_M" value="51784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g014.PNG_S" value="9238"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g014.TIF" value="1100828"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g014.PNG_I" value="17972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g015.PNG_L" value="163412"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g015.PNG_M" value="40555"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g015.PNG_S" value="8514"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g015.TIF" value="919112"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.g015.PNG_I" value="13577"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e009.PNG" value="8615"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e009.TIF" value="24808"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e010.PNG" value="9625"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e010.TIF" value="25744"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e011.PNG" value="7396"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e011.TIF" value="23396"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e012.PNG" value="8471"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e012.TIF" value="24388"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e013.PNG" value="31766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e013.TIF" value="47984"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e014.PNG" value="9887"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e014.TIF" value="25716"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e015.PNG" value="12353"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e015.TIF" value="28380"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e016.PNG" value="11616"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e016.TIF" value="27556"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e017.PNG" value="5226"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e017.TIF" value="21180"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e018.PNG" value="5587"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e018.TIF" value="21604"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e019.PNG" value="17730"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e019.TIF" value="33592"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e020.PNG" value="8770"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e020.TIF" value="24724"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e021.PNG" value="23545"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e021.TIF" value="38740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e022.PNG" value="7065"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e022.TIF" value="22980"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e023.PNG" value="11119"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e023.TIF" value="26828"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e024.PNG" value="7321"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e024.TIF" value="23216"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e025.PNG" value="9443"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e025.TIF" value="25524"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e026.PNG" value="9376"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e026.TIF" value="25248"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e027.PNG" value="7969"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e027.TIF" value="23936"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e028.PNG" value="6744"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e028.TIF" value="22712"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e029.PNG" value="5318"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e029.TIF" value="21268"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e030.PNG" value="14639"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e030.TIF" value="30488"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e031.PNG" value="10409"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e031.TIF" value="26428"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e032.PNG" value="26684"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e032.TIF" value="41708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e033.PNG" value="33037"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e033.TIF" value="47756"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e034.PNG" value="10701"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e034.TIF" value="26496"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e035.PNG" value="11614"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e035.TIF" value="28036"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e036.PNG" value="13746"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e036.TIF" value="29780"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e037.PNG" value="25047"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e037.TIF" value="41260"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e038.PNG" value="15130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e038.TIF" value="31084"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e039.PNG" value="10837"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e039.TIF" value="26432"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e040.PNG" value="10837"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e040.TIF" value="26532"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e041.PNG" value="13333"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e041.TIF" value="29612"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e042.PNG" value="6686"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e042.TIF" value="22640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e043.PNG" value="12905"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e043.TIF" value="28548"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e044.PNG" value="11459"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e044.TIF" value="27136"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e045.PNG" value="11320"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e045.TIF" value="27008"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e046.PNG" value="9119"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e046.TIF" value="25148"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e047.PNG" value="10497"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e047.TIF" value="26656"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e048.PNG" value="9408"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e048.TIF" value="25532"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e049.PNG" value="12257"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e049.TIF" value="27924"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e050.PNG" value="12645"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e050.TIF" value="28112"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e051.PNG" value="11577"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e051.TIF" value="27092"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e052.PNG" value="11173"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e052.TIF" value="27292"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e053.PNG" value="10082"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e053.TIF" value="26228"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e054.PNG" value="9716"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e054.TIF" value="25744"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e055.PNG" value="24811"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e055.TIF" value="40992"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e056.PNG" value="8841"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e056.TIF" value="24836"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e057.PNG" value="11474"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e057.TIF" value="27080"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e058.PNG" value="12840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e058.TIF" value="29384"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e059.PNG" value="11248"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e059.TIF" value="26976"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e060.PNG" value="11047"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e060.TIF" value="26840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e061.PNG" value="8611"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e061.TIF" value="24568"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e062.PNG" value="6732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e062.TIF" value="22640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e063.PNG" value="13986"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e063.TIF" value="30304"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e064.PNG" value="5684"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e064.TIF" value="21608"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e065.PNG" value="16114"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.e065.TIF" value="31572"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.s001.DOC" value="28160"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.s002.TIF" value="515544"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.s003.TIF" value="346102"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.s004.TIF" value="353012"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001820.s005.TIF" value="343186"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001820&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001820" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001820&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001820&volume=&issue=&title=Probabilistic Inference of Transcription Factor Binding from Multiple Data Sources&author_name=Harri%20L%C3%A4hdesm%C3%A4ki%2C%20Alistair%20G.%20Rust%2C%20Ilya%20Shmulevich&start_page=1&end_page=24" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001820" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820&amp;t=Probabilistic%20Inference%20of%20Transcription%20Factor%20Binding%20from%20Multiple%20Data%20Sources" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820&title=Probabilistic%20Inference%20of%20Transcription%20Factor%20Binding%20from%20Multiple%20Data%20Sources&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820&amp;title=Probabilistic%20Inference%20of%20Transcription%20Factor%20Binding%20from%20Multiple%20Data%20Sources" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001820&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Probabilistic Inference of Transcription Factor Binding from Multiple Data Sources';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001820';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Probabilistic%20Inference%20of%20Transcription%20Factor%20Binding%20from%20Multiple%20Data%20Sources http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001820" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001820" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Bayes+theorem%22" title="Search for articles in the subject area:'Bayes theorem'"><div class="flagText">Bayes theorem</div></a>
+              <div data-categoryid="32251" data-articleid="26464"
+                   data-categoryname="Bayes theorem"
+                   class="flagImage" title="Flag 'Bayes theorem' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Binding+analysis%22" title="Search for articles in the subject area:'Binding analysis'"><div class="flagText">Binding analysis</div></a>
+              <div data-categoryid="19597" data-articleid="26464"
+                   data-categoryname="Binding analysis"
+                   class="flagImage" title="Flag 'Binding analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22DNA+sequences%22" title="Search for articles in the subject area:'DNA sequences'"><div class="flagText">DNA sequences</div></a>
+              <div data-categoryid="32003" data-articleid="26464"
+                   data-categoryname="DNA sequences"
+                   class="flagImage" title="Flag 'DNA sequences' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Forecasting%22" title="Search for articles in the subject area:'Forecasting'"><div class="flagText">Forecasting</div></a>
+              <div data-categoryid="34789" data-articleid="26464"
+                   data-categoryname="Forecasting"
+                   class="flagImage" title="Flag 'Forecasting' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulation%22" title="Search for articles in the subject area:'Gene regulation'"><div class="flagText">Gene regulation</div></a>
+              <div data-categoryid="17553" data-articleid="26464"
+                   data-categoryname="Gene regulation"
+                   class="flagImage" title="Flag 'Gene regulation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome+evolution%22" title="Search for articles in the subject area:'Genome evolution'"><div class="flagText">Genome evolution</div></a>
+              <div data-categoryid="17207" data-articleid="26464"
+                   data-categoryname="Genome evolution"
+                   class="flagImage" title="Flag 'Genome evolution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Nucleosomes%22" title="Search for articles in the subject area:'Nucleosomes'"><div class="flagText">Nucleosomes</div></a>
+              <div data-categoryid="34075" data-articleid="26464"
+                   data-categoryname="Nucleosomes"
+                   class="flagImage" title="Flag 'Nucleosomes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+motif+analysis%22" title="Search for articles in the subject area:'Sequence motif analysis'"><div class="flagText">Sequence motif analysis</div></a>
+              <div data-categoryid="19657" data-articleid="26464"
+                   data-categoryname="Sequence motif analysis"
+                   class="flagImage" title="Flag 'Sequence motif analysis' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=2810'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=8424'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=4060&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=18873">Publisher's Note: Additional funding information</a><br>Posted by PLoS_ONE_Group</p>
+      <p><a href="/annotation/listThread.action?root=7659">Referee comments: Referee 1</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>
