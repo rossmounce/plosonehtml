@@ -70,7 +70,7 @@ for j in *.html
 			for i in $(seq 1 $CAPNUM)
 			do
 			echo "figure $i of $j"
-			cmd="awk '/<p><strong>Figure [0-9][0-9]?\./{x++}x==$i' $j | sed -n '/<p><strong>Figure/,/<span>doi:10.1371/p' | sed '/<span>doi:10.1371/d'  > ./$STEM/$STEM.cap.$i"
+			cmd="egrep -A7 '<p><strong>Figure $i' $j | sed 's@doi:10\.1371\/journal\.pone\.[0-9][0-9][0-9][0-9][0-9][0-9][0-9]\.g0[0-9][0-9]</span>.*@THISISTHEEND@' | sed '/<span>THISISTHEEND/q' > ./$STEM/$STEM.cap.$i"
 			eval "$cmd"
 			done
 	fi
