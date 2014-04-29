@@ -48,7 +48,7 @@ mv *.html 2000-HTML-articles/
 The title of each article can be obtained from line 19 of each HTML file.
 ```
 ls *.html | sed 's@\.html@@' > ../articleIDs.txt 
-ls *.html | xargs awk "FNR==19" | sed -E -e 's@<title>PLOS ONE:@@' -e 's@</title>@@' -e 's@^[[:space:]]+@@g'  > ../titles.txt
-ls *.html | xargs grep -h -m1 'name=\"citation_author\"' | sed -E -e 's@<meta name="citation_author" content="@@' -e 's@"/>@@' -e 's@^[[:space:]]+@@g' > ../firstauthors.txt
+ls *.html | xargs awk "FNR==19" | sed -e 's@<title>PLOS ONE:@@' -e 's@</title>@@' > ../titles.txt
+ls *.html | xargs grep -h -m1 'name=\"citation_author\"' | sed -e 's@<meta name="citation_author" content="@@' -e 's@"/>@@' > ../firstauthors.txt
 ```
 
