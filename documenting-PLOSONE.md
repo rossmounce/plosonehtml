@@ -17,7 +17,9 @@ citation BibTex
 http://www.plosone.org/article/getBibTexCitation.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001234
 
 figure caption HTML
+```
 <p><strong>Figure 1.
+```
 
 Identifiers for each and every figure caption + figure in HTML
 http://dx.doi.org/10.1371/journal.pone.0001234.g001
