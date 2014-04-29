@@ -1,0 +1,1342 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000936"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000936" />
+
+    <meta name="citation_title" content="Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway"/>
+    <meta itemprop="name" content="Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway"/>
+
+      <meta name="citation_author" content="Zhike Zi"/>
+            <meta name="citation_author_institution" content="Computational Systems Biology, Max Planck Institute for Molecular Genetics, Berlin, Germany"/>
+      <meta name="citation_author" content="Edda Klipp"/>
+            <meta name="citation_author_institution" content="Computational Systems Biology, Max Planck Institute for Molecular Genetics, Berlin, Germany"/>
+            <meta name="citation_author_institution" content="Theoretical Biophysics, Humboldt University Berlin, Institute for Biology, Berlin, Germany"/>
+
+    <meta name="citation_date" content="2007/9/26"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000936.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e936"/>
+    <meta name="citation_issue" content="9"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Mechanisms of TGF-beta signaling from cell membrane to the nucleus.; citation_author=Y Shi; citation_author=J Massague; citation_journal_title=Cell; citation_volume=113; citation_number=1; citation_pages=685-700; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Specificity and versatility in tgf-beta signaling through Smads.; citation_author=XH Feng; citation_author=R Derynck; citation_journal_title=Annu Rev Cell Dev Biol; citation_volume=21; citation_number=2; citation_pages=659-693; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Smad transcription factors.; citation_author=J Massague; citation_author=J Seoane; citation_author=D Wotton; citation_journal_title=Genes Dev; citation_volume=19; citation_number=3; citation_pages=2783-2810; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=PPM1A functions as a Smad phosphatase to terminate TGFbeta signaling.; citation_author=X Lin; citation_author=X Duan; citation_author=YY Liang; citation_author=Y Su; citation_author=KH Wrighton; citation_journal_title=Cell; citation_volume=125; citation_number=4; citation_pages=915-928; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Regulation of Smurf2 ubiquitin ligase activity by anchoring the E2 to the HECT domain.; citation_author=AA Ogunjimi; citation_author=DJ Briant; citation_author=N Pece-Barbara; citation_author=C Le Roy; citation_author=GM Di Guglielmo; citation_journal_title=Mol Cell; citation_volume=19; citation_number=5; citation_pages=297-308; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Transforming growth factor beta-independent shuttling of Smad4 between the cytoplasm and nucleus.; citation_author=CE Pierreux; citation_author=FJ Nicolas; citation_author=CS Hill; citation_journal_title=Mol Cell Biol; citation_volume=20; citation_number=6; citation_pages=9041-9054; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Smad2 nucleocytoplasmic shuttling by nucleoporins CAN/Nup214 and Nup153 feeds TGFbeta signaling complexes in the cytoplasm and nucleus.; citation_author=L Xu; citation_author=Y Kang; citation_author=S Col; citation_author=J Massague; citation_journal_title=Mol Cell; citation_volume=10; citation_number=7; citation_pages=271-282; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Kinetic analysis of Smad nucleocytoplasmic shuttling reveals a mechanism for transforming growth factor beta-dependent nuclear accumulation of Smads.; citation_author=B Schmierer; citation_author=CS Hill; citation_journal_title=Mol Cell Biol; citation_volume=25; citation_number=8; citation_pages=9845-9858; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Distinct endocytic pathways regulate TGF-beta receptor signalling and turnover.; citation_author=GM Di Guglielmo; citation_author=C Le Roy; citation_author=AF Goodfellow; citation_author=JL Wrana; citation_journal_title=Nat Cell Biol; citation_volume=5; citation_number=9; citation_pages=410-421; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Ligand-dependent and -independent transforming growth factor-beta receptor recycling regulated by clathrin-mediated endocytosis and Rab11.; citation_author=H Mitchell; citation_author=A Choudhury; citation_author=RE Pagano; citation_author=EB Leof; citation_journal_title=Mol Biol Cell; citation_volume=15; citation_number=10; citation_pages=4166-4178; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Computational modeling of the dynamics of the MAP kinase cascade activated by surface and internalized EGF receptors.; citation_author=B Schoeberl; citation_author=C Eichler-Jonsson; citation_author=ED Gilles; citation_author=G Muller; citation_journal_title=Nat Biotechnol; citation_volume=20; citation_number=11; citation_pages=370-375; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The IkappaB-NF-kappaB signaling module: temporal control and selective gene activation.; citation_author=A Hoffmann; citation_author=A Levchenko; citation_author=ML Scott; citation_author=D Baltimore; citation_journal_title=Science; citation_volume=298; citation_number=12; citation_pages=1241-1245; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Identification of nucleocytoplasmic cycling as a remote sensor in cellular signaling by databased modeling.; citation_author=I Swameye; citation_author=TG Muller; citation_author=J Timmer; citation_author=O Sandra; citation_author=U Klingmuller; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=100; citation_number=13; citation_pages=1028-1033; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Integrative model of the response of yeast to osmotic shock.; citation_author=E Klipp; citation_author=B Nordlander; citation_author=R Kruger; citation_author=P Gennemark; citation_author=S Hohmann; citation_journal_title=Nat Biotechnol; citation_volume=23; citation_number=14; citation_pages=975-982; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Genome-scale microbial in silico models: the constraints-based approach.; citation_author=ND Price; citation_author=JA Papin; citation_author=CH Schilling; citation_author=BO Palsson; citation_journal_title=Trends Biotechnol; citation_volume=21; citation_number=15; citation_pages=162-169; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Signal processing in the TGF-beta superfamily ligand-receptor network.; citation_author=JM Vilar; citation_author=R Jansen; citation_author=C Sander; citation_journal_title=PLoS Comput Biol; citation_volume=2; citation_number=16; citation_pages=e3; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Systems theory of Smad signalling.; citation_author=DC Clarke; citation_author=MD Betterton; citation_author=X Liu; citation_journal_title=Syst Biol (Stevenage); citation_volume=153; citation_number=17; citation_pages=412-424; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A rate equation approach to elucidate the kinetics and robustness of the TGF-beta pathway.; citation_author=P Melke; citation_author=H Jonsson; citation_author=E Pardali; citation_author=P ten Dijke; citation_author=C Peterson; citation_journal_title=Biophys J; citation_volume=91; citation_number=18; citation_pages=4368-4380; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Cell shape controls terminal differentiation of human epidermal keratinocytes.; citation_author=FM Watt; citation_author=PW Jordan; citation_author=CH O'Neill; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=85; citation_number=19; citation_pages=5576-5580; citation_date=1988; " />
+      <meta name="citation_reference" content="citation_title=Dehydroascorbic acid uptake in a human keratinocyte cell line (HaCaT) is glutathione-independent.; citation_author=I Savini; citation_author=S Duflot; citation_author=L Avigliano; citation_journal_title=Biochem J 345 Pt; citation_volume=3; citation_number=20; citation_pages=665-672; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Smad7 binds to Smurf2 to form an E3 ubiquitin ligase that targets the TGF beta receptor for degradation.; citation_author=P Kavsak; citation_author=RK Rasmussen; citation_author=CG Causing; citation_author=S Bonni; citation_author=H Zhu; citation_journal_title=Mol Cell; citation_volume=6; citation_number=21; citation_pages=1365-1375; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The nuclear import function of Smad2 is masked by SARA and unmasked by TGFbeta-dependent phosphorylation.; citation_author=L Xu; citation_author=YG Chen; citation_author=J Massague; citation_journal_title=Nat Cell Biol; citation_volume=2; citation_number=22; citation_pages=559-562; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Hematopoiesis controlled by distinct TIF1gamma and Smad4 branches of the TGFbeta pathway.; citation_author=W He; citation_author=DC Dorn; citation_author=H Erdjument-Bromage; citation_author=P Tempst; citation_author=MA Moore; citation_journal_title=Cell; citation_volume=125; citation_number=23; citation_pages=929-941; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=SBML-PET: a Systems Biology Markup Language-based parameter estimation tool.; citation_author=Z Zi; citation_author=E Klipp; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=24; citation_pages=2704-2705; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Stochastic ranking for constrained evolutionary optimization.; citation_author=TP Runarsson; citation_author=X Yao; citation_journal_title=Ieee Transactions on Evolutionary Computation; citation_volume=4; citation_number=25; citation_pages=284-294; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Distribution and modulation of the cellular receptor for transforming growth factor-beta.; citation_author=LM Wakefield; citation_author=DM Smith; citation_author=T Masui; citation_author=CC Harris; citation_author=MB Sporn; citation_journal_title=J Cell Biol; citation_volume=105; citation_number=26; citation_pages=965-975; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=Phosphatidylinositol 3-kinase function is required for transforming growth factor beta-mediated epithelial to mesenchymal transition and cell migration.; citation_author=AV Bakin; citation_author=AK Tomlinson; citation_author=NA Bhowmick; citation_author=HL Moses; citation_author=CL Arteaga; citation_journal_title=J Biol Chem; citation_volume=275; citation_number=27; citation_pages=36803-36810; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Balancing the activation state of the endothelium via two distinct TGF-beta type I receptors.; citation_author=MJ Goumans; citation_author=G Valdimarsdottir; citation_author=S Itoh; citation_author=A Rosendahl; citation_author=P Sideras; citation_journal_title=Embo J; citation_volume=21; citation_number=28; citation_pages=1743-1753; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Nucleocytoplasmic shuttling of Smads 2, 3, and 4 permits sensing of TGF-beta receptor activity.; citation_author=GJ Inman; citation_author=FJ Nicolas; citation_author=CS Hill; citation_journal_title=Mol Cell; citation_volume=10; citation_number=29; citation_pages=283-294; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=TGF beta receptor internalization into EEA1-enriched early endosomes: role in signaling to Smad2.; citation_author=S Hayes; citation_author=A Chawla; citation_author=S Corvera; citation_journal_title=J Cell Biol; citation_volume=158; citation_number=30; citation_pages=1239-1249; citation_date=2002; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway"/>
+    <meta name="twitter:description" content="BackgroundInvestigation of dynamics and regulation of the TGF-&beta; signaling pathway is central to the understanding of complex cellular processes such as growth, apoptosis, and differentiation. In this study, we aim at using systems biology approach to provide dynamic analysis on this pathway.Methodology/Principal FindingsWe proposed a constraint-based modeling method to build a comprehensive mathematical model for the Smad dependent TGF-&beta; signaling pathway by fitting the experimental data and incorporating the qualitative constraints from the experimental analysis. The performance of the model generated by constraint-based modeling method is significantly improved compared to the model obtained by only fitting the quantitative data. The model agrees well with the experimental analysis of TGF-&beta; pathway, such as the time course of nuclear phosphorylated Smad, the subcellular location of Smad and signal response of Smad phosphorylation to different doses of TGF-&beta;.Conclusions/SignificanceThe simulation results indicate that the signal response to TGF-&beta; is regulated by the balance between clathrin dependent endocytosis and non-clathrin mediated endocytosis. This model is useful to be built upon as new precise experimental data are emerging. The constraint-based modeling method can also be applied to quantitative modeling of other signaling pathways."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000936.g006"/>
+
+  <meta property="og:title" content="Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=5478'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=1536'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1322&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000936">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000936" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000936&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-<i>β</i> Signaling Pathway
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Zhike Zi, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Computational Systems Biology, Max Planck Institute for Molecular Genetics, Berlin, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Edda Klipp
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:klipp@molgen.mpg.de">klipp@molgen.mpg.de</a></p>
+
+                <p>Affiliations:
+                  Computational Systems Biology, Max Planck Institute for Molecular Genetics, Berlin, Germany, 
+                  Theoretical Biophysics, Humboldt University Berlin, Institute for Biology, Berlin, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: September 26, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000936</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000936-g001" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-t001" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-t002" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-g002" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-g003" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-g004" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-t003" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-g005" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000936-g006" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000936">Reader Comments (4)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000936" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Investigation of dynamics and regulation of the TGF-β signaling pathway is central to the understanding of complex cellular processes such as growth, apoptosis, and differentiation. In this study, we aim at using systems biology approach to provide dynamic analysis on this pathway.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We proposed a constraint-based modeling method to build a comprehensive mathematical model for the Smad dependent TGF-β signaling pathway by fitting the experimental data and incorporating the qualitative constraints from the experimental analysis. The performance of the model generated by constraint-based modeling method is significantly improved compared to the model obtained by only fitting the quantitative data. The model agrees well with the experimental analysis of TGF-β pathway, such as the time course of nuclear phosphorylated Smad, the subcellular location of Smad and signal response of Smad phosphorylation to different doses of TGF-β.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>The simulation results indicate that the signal response to TGF-β is regulated by the balance between clathrin dependent endocytosis and non-clathrin mediated endocytosis. This model is useful to be built upon as new precise experimental data are emerging. The constraint-based modeling method can also be applied to quantitative modeling of other signaling pathways.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Zi Z, Klipp E (2007) Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-<em>β</em> Signaling Pathway. PLoS ONE 2(9):
+          e936.
+            doi:10.1371/journal.pone.0000936</p><p><strong>Academic Editor: </strong>Gustavo Stolovitzky, IBM Thomas J. Watson Research Center, United States of America</p><p><strong>Received:</strong> March 2, 2007; <strong>Accepted:</strong> September 6, 2007; <strong>Published:</strong> September 26, 2007</p><p><strong>Copyright:</strong> © 2007 Zi, Klipp. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>Z. Zi is supported by PhD program of the IMPRS for Computational Biology and Scientific Computing. This work was supported by ENFIN, a Network of Excellence funded by the European Commission within its FP6 Programme, under the thematic area “Life sciences, genomics and biotechnology for health”, contract number LSHG-CT-2005-518254.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The transforming growth factor β (TGF-β) superfamily consists of TGF-βs, bone morphogenetic proteins (BMPs), activins and related proteins. These proteins regulate numerous cellular processes, such as cell proliferation, differentiation, apoptosis and specification of developmental fate <a href="#pone.0000936-Shi1">[1]</a>, <a href="#pone.0000936-Feng1">[2]</a>. TGF-β initiates signaling by forming a ligand-receptor complex with the type I and type II receptors at cell surface. The activated receptor complex propagates the signal inside by phosphorylating the receptor-regulated Smad (R-Smad). Activated R-Smad then forms a heteromeric complex with common mediated Smad (Co-Smad), Smad4. These complexes accumulate in the nucleus and regulate gene expression in a cell-type-specific manner through interactions with transcription factors, coactivators and corepressors <a href="#pone.0000936-Massague1">[3]</a>. The nuclear Smad complexes are then dephosphorylated by Smad phosphatase <a href="#pone.0000936-Lin1">[4]</a>. Another important player is inhibitory Smad (I-Smad), Smad7, which recruits Smurf to the TGF-β receptor complex to facilitate the ubiquitin dependent degradation of receptors <a href="#pone.0000936-Ogunjimi1">[5]</a>. Both R-Smad and Smad4 continuously shuttle between the cytoplasm and nucleus in uninduced cells and also in presence of TGF-β signal <a href="#pone.0000936-Pierreux1">[6]</a>–<a href="#pone.0000936-Schmierer1">[8]</a>. The receptors and activated ligand-receptor complex are internalized through two distinct endocytic routes, the clathrin-dependent endocytosis and the caveolar lipid-raft mediated endocytosis <a href="#pone.0000936-DiGuglielmo1">[9]</a>, <a href="#pone.0000936-Mitchell1">[10]</a>. <a href="#pone-0000936-g001">Figure 1</a> schematically depicts the Smad dependent TGF-β signaling pathways.</p>
+<div class="figure" id="pone-0000936-g001"><div class="img"><a name="pone-0000936-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Schematic representation of Smad dependent TGF-β signaling pathway.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>Detailed information about this pathway is described in the text.</p>
+<span>doi:10.1371/journal.pone.0000936.g001</span></div><a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Quantitative modeling studies of signaling pathways have been successfully applied to understand complex cellular processes <a href="#pone.0000936-Schoeberl1">[11]</a>–<a href="#pone.0000936-Klipp1">[14]</a>. Traditionally, the quantitative models are validated by fitting western-blot data. Due to the complexity of the model and the quality of the data, over-fitting is a common problem for parameter estimation. When the model has many estimated parameters and the corresponding data is a few, the over-fitting problem might lead to some unwarranted conclusions because the parameter set in the model might be a special domain of possible parameter sets which can similarly fit the data well, but result in different predictions. On the other hand, genome-scale constraint-based models of metabolism have been constructed and used to successfully interpret and predict cellular behavior <a href="#pone.0000936-Price1">[15]</a>. Constraint-based modeling is an effective method to narrow the range of the possible parameter space for quantitative models. However, there is less attention to apply the constraint-based modeling for the quantitative analysis of signaling pathways. Here, we proposed a constraint-based modeling method to build a comprehensive mathematical model for the Smad-dependent TGF-β signaling pathway by fitting experimental data and incorporating the qualitative constraints from the experimental analysis.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>So far, several mathematical models have been proposed for the TGF-β signaling pathways. Vilar <em>et al.</em> proposed a concise model for the TGF-β receptor trafficking network <a href="#pone.0000936-Vilar1">[16]</a>. On the other hand, Clarke <em>et al.</em> <a href="#pone.0000936-Clarke1">[17]</a> and Melke <em>et al.</em> <a href="#pone.0000936-Melke1">[18]</a> proposed the models for the Smad nucleocytoplasmic shuttling and Smad phosphorylation response to the TGF-β signal without considering the receptor trafficking steps. In this study, we established a comprehensive mathematical model for the TGF-β signaling pathway, which includes the signal transduction, the receptor endocytosis, the Smad nucleocytoplasmic shuttling, and the ligand induced negative feedback. The simulation analysis of the model agrees well with the experimental analysis of TGF-β pathway, such as the time course of nuclear phosphorylated Smad, the subcellular location of Smad, and Smad phosphorylation response to different concentrations of TGF-β. We employed the mathematical model to study the dynamic relationship between receptor trafficking at the cell surface and the activation of the phosphorylated Smad in the nucleus. The simulation results indicate that the signal response to TGF-β is regulated by the balance between clathrin dependent endocytosis and non-clathrin mediated endocytosis.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Mathematical model of the Smad dependent TGF-β signaling pathway</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>We proposed here a comprehensive model for Smad dependent TGF-β signaling pathway in mammalian cells, which includes three modules: receptor trafficking and signaling; Smad nucleocytoplasmic shuttling and signaling and I-Smad negative regulation. In the module of receptor trafficking, the model takes into account the following essential elements: (i) constitutive receptor synthesis and degradation; (ii) receptor and ligand-receptor complex trafficking by two distinct endocytic routes; (iii) the distribution of receptors and ligand-receptor complex in different pools, such as membrane surface, clathrin-coated pit, early endosome and caveolar lipid-raft; (iv) the formation of activated receptor complex induced by TGF-β. In the module of Smad nucleocytoplasmic shuttling, the signal events we consider are (i) Smad nucleocytoplasmic shuttling; (ii) Smad complex formation; (iii) nuclear Smad complex dephosphorylation by nuclear phosphatase. In the module of I-Smad negative regulation, the negative feedback contributing to the ligand-induced degradation of the receptors by I-Smad is simplified and modeled as a black box from the nuclear phosphorylated Smad. We made the following assumptions for the model:</p>
+
+
+<ol class="order">
+
+<li>Experimental analyses indicate that TGF-β receptor trafficking is not affected by TGF-β stimulation <a href="#pone.0000936-DiGuglielmo1">[9]</a>, <a href="#pone.0000936-Mitchell1">[10]</a>. We assume that the corresponding internalization and recycling rates for type I receptor, type II receptor and activated ligand-receptors are the same.</li>
+
+<li>Referring to the concise model of signal processing in the TGF-β ligand-receptor network <a href="#pone.0000936-Vilar1">[16]</a>, we assume that the rate of sequential formation of ligand-receptor complex is proportional to the amount of ligand, type I receptor and type II receptor.</li>
+
+<li>The experimental data shown by Lin, <em>et al.</em> indicate that the variation of total amount of Smad is small <a href="#pone.0000936-Lin1">[4]</a>. We assume that the total amount of Smad is constant. Therefore, the production and degradation of Smad are not considered in this model.</li>
+
+<li>Previous experimental analyses suggest that I-Smad/Smurf complex targets the lipid-raft-bound receptor for degradation which leads to the ligand-induced negative feedback <a href="#pone.0000936-Ogunjimi1">[5]</a>, <a href="#pone.0000936-DiGuglielmo1">[9]</a>. We assume that the rate of ligand-induced degradation of receptors is proportional to the amount of nuclear phoshporylated Smad and the receptor complex in caveolar lipid-raft.</li>
+
+</ol><a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>In order to compare with the published data, we used Smad2 denoting R-Smad. We used the law of mass-action to describe the rate of signal transduction steps. The time-dependent changes of the concentrations of the signaling proteins and protein complexes are determined by the following system of differential equations:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e001&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e002&amp;representation=PNG" class="inline-graphic"><span class="note">(2)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e003&amp;representation=PNG" class="inline-graphic"><span class="note">(3)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e004&amp;representation=PNG" class="inline-graphic"><span class="note">(4)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e005&amp;representation=PNG" class="inline-graphic"><span class="note">(5)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e006&amp;representation=PNG" class="inline-graphic"><span class="note">(6)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e007&amp;representation=PNG" class="inline-graphic"><span class="note">(7)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e008&amp;representation=PNG" class="inline-graphic"><span class="note">(8)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e009&amp;representation=PNG" class="inline-graphic"><span class="note">(9)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e010&amp;representation=PNG" class="inline-graphic"><span class="note">(10)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e011&amp;representation=PNG" class="inline-graphic"><span class="note">(11)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e012&amp;representation=PNG" class="inline-graphic"><span class="note">(12)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e013&amp;representation=PNG" class="inline-graphic"><span class="note">(13)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e014&amp;representation=PNG" class="inline-graphic"><span class="note">(14)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e015&amp;representation=PNG" class="inline-graphic"><span class="note">(15)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e016&amp;representation=PNG" class="inline-graphic"><span class="note">(16)</span></span><br>The model is composed of an ordinary differential equations system with 16 state variables and 20 parameters. The values and the corresponding biological meaning of the parameters are listed in <a href="#pone-0000936-t001">Table 1</a>. The initial conditions and the biological meaning of the variables are listed in <a href="#pone-0000936-t002">Table 2</a>.</p>
+<div class="figure" id="pone-0000936-t001"><div class="img"><a name="pone-0000936-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Parameter values in the model</span></strong></p><span>doi:10.1371/journal.pone.0000936.t001</span></div><div class="figure" id="pone-0000936-t002"><div class="img"><a name="pone-0000936-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Initial conditions of state variables (proteins) in the model</span></strong></p><span>doi:10.1371/journal.pone.0000936.t002</span></div>
+
+<h4>Derivation of the parameter values</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>In order to keep the consistency of the parameter values, we derived the parameter values from experimental analysis in epithelial cells. In particularly, most of the data used in this study is from experimental analysis of HaCaT (Human keratinocyte cell line) cells. The rational guided the derivation of relative parameter values is described in the following:</p>
+
+
+<ul class="bulletlist">
+
+<li><strong>Parameters for the volume ratio of different compartments:</strong> The model distinguishes the different compartments of extracellular medium, cytoplasm and nucleus where the signaling steps take place. The average cytoplasimc/nuclear volume ratio (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e017&amp;representation=PNG" class="inline-graphic"></span>) was measured as about 3 in reference <a href="#pone.0000936-Schmierer1">[8]</a>. The volume of HaCaT cell is estimated as about 1.4×10<sup>−12</sup> Liter <a href="#pone.0000936-Watt1">[19]</a>, <a href="#pone.0000936-Savini1">[20]</a>, therefore, we can derive the volume of cytoplasm and nucleus are 1.05×10<sup>−12</sup> Liter and 3.5×10<sup>−13</sup> Liter, respectively. A typical cell culture experiment would have a cell density of 1.0×10<sup>6</sup> cells/ml. The average extracellular medium volume per cell (<em>V<sub>extra</sub></em>) is about 1.0×10<sup>−9</sup> Liter. Hence, the volume ratio of cytoplasm to extracellular medium (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e018&amp;representation=PNG" class="inline-graphic"></span>) is set to a value of 0.001.</li>
+
+<li><strong>Rate constant of receptor constitutive degradation</strong>: Pervious experimental data indicate that the type II receptor has a half-life of about 1 hr, whereas type I receptors are more stable, with a half-life of about 4–6 hr <a href="#pone.0000936-Kavsak1">[21]</a>. The receptors are constitutively degraded from early endosomes and about 50% percent of initial labeled receptors locate in early endosome <a href="#pone.0000936-DiGuglielmo1">[9]</a>. Rescaling the degradation rate of the total receptors to the early endosome receptors results in constitutive degradation rate constant of type I receptor (<em>k<sup>T1R</sup><sub>deg</sub></em>) and type II receptor (<em>k<sup>T</sup></em><sup>2<em>R</em></sup><em><sub>deg</sub></em>) with value of 0.005 min<sup>−1</sup> (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e019&amp;representation=PNG" class="inline-graphic"></span>) and 0.025 min<sup>−1</sup> (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e020&amp;representation=PNG" class="inline-graphic"></span>), respectively. On the other hand, <a href="#pone-0000936-g003">Figure 3</a> of reference <a href="#pone.0000936-DiGuglielmo1">[9]</a> shows that only 30% of the initial labeled receptor complex remain in the cell after 8 h when the caveolar endocytosis is inhibited. Based on this information, we can derive the constitutive degradation rate constant of ligand-receptor complex (<em>k<sub>cd</sub></em>) is 0.005 min<sup>−1</sup> (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e021&amp;representation=PNG" class="inline-graphic"></span>).</li>
+
+<li><strong>Rate constant of receptor internalization and recycling</strong>: Vilar <em>et al.</em> derived the rate constant of receptor internalization and recycling based on the experimental observations <a href="#pone.0000936-Vilar1">[16]</a>. On the other hand, reference <a href="#pone.0000936-DiGuglielmo1">[9]</a> indicate that receptors are internalized through clathrin and non-clathrin independent endocytosis route with similar rates. Therefore, we choose the internalization rate constant of receptors (<em>ki<sub>EE</sub></em> and <em>ki<sub>Cave</sub></em>) with the value of 0.33 min<sup>−1</sup> which is estimated in reference <a href="#pone.0000936-Vilar1">[16]</a>. The recycling rate constant (<em>kr<sub>EE</sub></em>) for the receptors recycled from early endosome back to the cell surface is set to a value of 0.033 min<sup>−1</sup>, which is derived in reference <a href="#pone.0000936-Vilar1">[16]</a>.</li>
+
+<li><strong>Rate constant for Smad nuclear import and export</strong>: The nuclear import rate of Smad2 (<em>k<sup>Smad</sup></em><sup>2</sup><em><sub>imp</sub></em>) was experimentally measured with the value of 0.16 min<sup>−1</sup> in reference <a href="#pone.0000936-Schmierer1">[8]</a>. Reference <a href="#pone.0000936-Schmierer1">[8]</a> also measured that the ratio of mean nuclear fluorescence to mean cytoplasmic fluorescence (R) of Smad2 in uninduced cells is about 0.5. The R ratio of Smad2 is equivalent to the ratio of nuclear to cytoplasmic Smad2 concentrations. We can derive <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e022&amp;representation=PNG" class="inline-graphic"></span> according to equation (31). Therefore, the value for the nuclear export rate constant (<em>k<sup>Smad</sup></em><sup>2</sup><em><sub>exp</sub></em>) in our model is about 1 min<sup>−1</sup> (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e023&amp;representation=PNG" class="inline-graphic"></span>). On the other hand, <a href="#pone-0000936-g005">Figure 5A</a> of reference <a href="#pone.0000936-Schmierer1">[8]</a> also shows that the nuclear export rate of Smad4 is about half of the nuclear export rate of Smad2. Hence, the nuclear export rate constant of Smad4 (<em>k<sup>Smad</sup></em><sup>4</sup><em><sub>exp</sub></em>) is 0.5 min<sup>−1</sup>. Since the R ratio of Smad4 is measured with a value of about 0.5 <a href="#pone.0000936-Schmierer1">[8]</a>, we can derive the nuclear import rate constant of Smad4 (<em>k<sup>Smad</sup></em><sup>4</sup><em><sub>imp</sub></em>) a value of 0.08 min<sup>−1</sup>.</li>
+
+<li><strong>Nuclear import rate constant of phosphorylated Smad:</strong> <a href="#pone-0000936-g003">Figure 3</a> of reference <a href="#pone.0000936-Xu2">[22]</a> shows that nuclear import rate between phoshporylated and unphosphorylated Smad2 is similar. Therefore, we set the import rate constant for the phosphorylated Smad complex (<em>k<sup>Smads_Complex</sup><sub>imp</sub></em>) to the same value as the import rate constant for unphosphorylated Smad2, which is 0.16 min<sup>−1</sup>.</li>
+
+</ul><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>There are 7 unknown parameter values in the model that are required to be estimated, i.e. <em>v<sub>T1R</sub></em>, <em>v<sub>T2R</sub></em>, <em>kr<sub>Cave</sub></em>, <em>k<sub>LRC</sub></em>, <em>k<sub>lid</sub></em>, <em>k<sub>Smads_Complex</sub></em> and <em>k<sup>Smads_Complex</sup><sub>diss</sub></em>.</p>
+
+
+<h4>Steady state analysis of the model for the uninduced cell</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>We performed steady state analysis of the model for the uninduced cell without TGF-β stimulation. When there is no TGF-β present to the cells, the concentrations of the ligand-receptor complex and phosphorylated Smad complex are assumed to be zero.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>For type I receptor, we can derive the following algebraic equations for the steady state of the unindcued cell:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e024&amp;representation=PNG" class="inline-graphic"><span class="note">(17)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e025&amp;representation=PNG" class="inline-graphic"><span class="note">(18)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e026&amp;representation=PNG" class="inline-graphic"><span class="note">(19)</span></span><br>The steady state concentrations of type I receptor at cell surface, in the lipid-raft and in the early endosome, obtained by solving the systems of algebraic equations (17–19), are<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e027&amp;representation=PNG" class="inline-graphic"><span class="note">(20)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e028&amp;representation=PNG" class="inline-graphic"><span class="note">(21)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e029&amp;representation=PNG" class="inline-graphic"><span class="note">(22)</span></span><br>The steady state concentrations of type II receptor at cell surface, in the lipid-raft and in the early endosome are<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e030&amp;representation=PNG" class="inline-graphic"><span class="note">(23)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e031&amp;representation=PNG" class="inline-graphic"><span class="note">(24)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e032&amp;representation=PNG" class="inline-graphic"><span class="note">(25)</span></span><br>For the Smad2 in the cytoplasm and nucleus, the following algebraic equations should be satisfied for the steady state of the unindcued cell:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e033&amp;representation=PNG" class="inline-graphic"><span class="note">(26)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e034&amp;representation=PNG" class="inline-graphic"><span class="note">(27)</span></span><br>Because the total amount of Smad2 is a constant, mass conservation reads: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e035&amp;representation=PNG" class="inline-graphic"><span class="note">(28)</span></span><br>Solving the algebraic equations (26–28) yields the steady state concentrations of cytoplasmic and nuclear Smad2 in the uninduced cell as following:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e036&amp;representation=PNG" class="inline-graphic"><span class="note">(29)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e037&amp;representation=PNG" class="inline-graphic"><span class="note">(30)</span></span><br>The ratio of nuclear to cytoplasmic Smad2 concentration corresponds to the ratio of mean nuclear fluorescence to mean cytoplasmic fluorescence (R) of Smad2, according to equations (29–30), which is<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e038&amp;representation=PNG" class="inline-graphic"><span class="note">(31)</span></span><br>The steady state concentrations of cytoplasmic and nuclear Smad4 in the uninduced cell are<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e039&amp;representation=PNG" class="inline-graphic"><span class="note">(32)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e040&amp;representation=PNG" class="inline-graphic"><span class="note">(33)</span></span><br>The total amount of Smad2 (<em>N<sup>total</sup><sub>Smad</sub></em><sub>2</sub>) and Smad4 (<em>N<sup>total</sup><sub>Smad4</sub></em>) are estimated to be 6×10<sup>−19</sup> mol per cell and 1.4×10<sup>−18</sup> mol per cell in HaCaT cells, which corresponds to about 3.6×10<sup>5</sup> and 8.4×10<sup>5</sup> molecules per cell, respectively <a href="#pone.0000936-He1">[23]</a>.</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>Without the treatment of TGF-β, the concentrations of signaling proteins will arrive at steady state balancing protein production, degradation, receptor endocytosis and Smad protein nucleocytoplasmic shuttling. We set the initial concentrations of the signaling proteins as their steady state values before TGF-β is added.</p>
+
+
+<h4>Parameter estimation by constraint-based modeling</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>The parameter estimation for the 7 unknown values of rate constants was done using a modified version of the tool SBML-PET <a href="#pone.0000936-Zi1">[24]</a>, which incorporates stochastic ranking evolution strategy (SRES) for parameter estimation jobs. SRES is an evolutionary optimization algorithm that uses stochastic ranking as the constraint handling technique <a href="#pone.0000936-Runarsson1">[25]</a>. The objective of the parameter estimation is to find the most feasible parameters in the model that reproduce the quantitative experimental data for the TGF-β signaling pathway. At the same time, the model with the estimated parameters should satisfy some qualitative experimental observation of this pathway. Therefore, the corresponding quantitative time course data is used in the objective function definition and the qualitative data is coded as constraints during the optimization process. We used two time courses of Smad phosphorylation for parameter estimation:</p>
+
+
+<ol class="order">
+
+<li>The quantitative western blot data reported in <a href="#pone-0000936-g001">Figure 1A</a> in Lin <em>et al.</em> <a href="#pone.0000936-Lin1">[4]</a> gives us the time course of Smad2 in the whole HaCaT cell extract in the presence of continuous TGF-β stimulation for 24 hours. We normalized the data to its maximum value which gives us the dynamic change of the protein. We also normalized corresponding simulation data to its maximum value so that we can compare the experimental data and the simulation data.</li>
+
+<li>The quantitative western blot data reported in <a href="#pone-0000936-g001">Figure 1C</a> in Lin <em>et al.</em> <a href="#pone.0000936-Lin1">[4]</a> gives us the time course of Smad2 phosphorylation under a different condition. TGF-β (2 ng/ml) is added at first 30 minutes, then washed out and type I receptor kinase inhibitor SB431542 is added to terminate the signal.</li>
+
+</ol><a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>Other qualitative information from the literatures is used as constraints encoded within SRES method.</p>
+
+
+<ol class="order">
+
+<li>The number of total receptors per cell falls into the range of 1000 to 100000 per cell according to the distribution of TGF-β receptors in a wide spectrum of cell types reported in Wakefield <em>et al.</em> <a href="#pone.0000936-Wakefield1">[26]</a>.</li>
+
+<li>Experimental results of receptor distribution at the cell surface, in the early endosomes and caveolin-positive vesicles indicate that about 40~50% percent of total receptors are located in the early endosomes <a href="#pone.0000936-DiGuglielmo1">[9]</a>, <a href="#pone.0000936-Mitchell1">[10]</a>. We set a constraint for the distribution of receptors, that the about at least 30% and at maximum 60% of receptors locate in the early endosome.</li>
+
+<li>Schmierer <em>et al.</em> quantified the Smad redistribution in HaCaT cells upon 2 ng/ml TGF-β with photobleaching experiments using EGFP-Smad (enhanced green fluorescent protein) fusions <a href="#pone.0000936-Schmierer1">[8]</a>. The study indicates that the ratio of nuclear to cytoplasmic Smad2 concentrations is about 2.5 after 1 hour TGF-β treatment. After TGF-β stimulus, about 80% of the Smad2 in the nuclues is phosphorylated or complexed. We set constraints for the corresponding Smad2 distribution: the ratio of nuclear to cytoplasmic Smad2 concentrations should be in the range of 1.5~3.5 and 60%~90% of the Smad2 in the nucleus is phosphorylated or complexed after 1 hour TGF-β treatment.</li>
+
+<li>Previous experimental data indicate that 0.5 ng/ml (20 pM) of TGF-β is sufficient to yield a maximal response of Smad phosphorylation after 1 hour TGF-β treatment <a href="#pone.0000936-Bakin1">[27]</a>, <a href="#pone.0000936-Goumans1">[28]</a>. We encode this information as a constraint that the ratio of Smad phosphorylation level with the dose of 0.5 ng/ml to that with the dose of 2 ng/ml TGF-β at 60th minute should be larger than 0.9 and smaller than 1.1.</li>
+
+</ol>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results and Discussion"></a><h3>Results and Discussion</h3>
+<h4>Comparison of kinetic simulation with experimental analysis</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>We first check whether the model obtained by constraint-based modeling method can reproduce the experimental data used for parameter estimation, which can give us the information about quality of “in-sample fit” (how good is the model fitting the data used for parameter estimation). Experiments reported that the signal would peak at about 30–60 min after TGF-β addition. The result shown in <a href="#pone-0000936-g002">Figure 2A</a> indicates that the simulated time courses of Smad2 phosphorylation agree well with the experimental data <a href="#pone.0000936-Lin1">[4]</a>. The model is also able to reproduce the experimental observation that the treatment with type I receptor kinase inhibitor SB431542 will cause rapid decrease of the nuclear phosphorylated Smad2 level <a href="#pone.0000936-Lin1">[4]</a>, <a href="#pone.0000936-Inman1">[29]</a> (<a href="#pone-0000936-g002">Figure 2B</a>). Taken these simulation results together, the model has good “in-sample fit” for the data.</p>
+<div class="figure" id="pone-0000936-g002"><div class="img"><a name="pone-0000936-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Comparison of experimental analysis and simulation results from the model obtained by constraint-based modeling method.</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>(A–B) for “in-sample fit”. (C–D) for “out-sample fit”. (A) Comparison of the model time course and experimental time course of Smad2 phosphorylation with 24 hours TGF-β treatment. The experimental data is normalized from <a href="#pone-0000936-g001">Figure 1A</a> in Lin <em>et al.</em> <a href="#pone.0000936-Lin1">[4]</a>. (B) Effect of type I receptor kinase inhibitor SB431542. Cells were treated with TGF-β for 30 minutes, then were washed out TGF-β at 30th minute and added SB431542 to prevent rephosphorylation of Smad2. The experimental data is normalized from <a href="#pone-0000936-g001">Figure 1C</a> in Lin <em>et al.</em> <a href="#pone.0000936-Lin1">[4]</a>. (C) Comparison of the model time course with an experimental time course of nuclear phosphorylated Smad2 after TGF-β treatment (80 pM, 2 ng/ml). The western-blot data reported by Inman <em>et al.</em> (<a href="#pone-0000936-g001">Fig. 1A</a>, top panel) is quantified with Scion Image software <a href="#pone.0000936-Inman1">[29]</a>. (D) Subcellular location of Smad2 after TGF-β treatment (80 pM). The concentrations shown here refer to the local concentrations in cytoplasm and nucleus.</p>
+<span>doi:10.1371/journal.pone.0000936.g002</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>We next asked whether the model has a good match to other experimental data that were not used for parameter estimation. This test can be regarded as “out-sample fit” or model validation. The result shown in <a href="#pone-0000936-g002">Figure 2C</a> indicates that the simulated time courses of nuclear phosphorylated Smad2 agree well with the experimental data <a href="#pone.0000936-Inman1">[29]</a>. As a further test, we calculated the subcellular location of Smad2 from the simulation result of the model. The results are in agreement with previous reports that TGF-β causes a change in the overall Smad2 distribution from predominantly cytoplasmic to predominantly nuclear <a href="#pone.0000936-Pierreux1">[6]</a>–<a href="#pone.0000936-Schmierer1">[8]</a>, <a href="#pone.0000936-Inman1">[29]</a>. After TGF-β treatment, Smad2 proteins are rapidly accumulated in the nucleus and then return to the cytoplasm (<a href="#pone-0000936-g002">Figure 2D</a>). Finally, we tested whether the model can predict well the signal response to different dose of TGF-β. Previous experimental data indicate that the response of Smad phosphorylation after 1 hour TGF-β treatment will be saturated when the concentration of TGF-β is larger than 0.5 ng/ml <a href="#pone.0000936-Bakin1">[27]</a>, <a href="#pone.0000936-Goumans1">[28]</a>. The model successfully predicts the dose-response of Smad phosphorylation upon different concentrations of TGF-β (<a href="#pone-0000936-g003">Figure 3</a>).</p>
+<div class="figure" id="pone-0000936-g003"><div class="img"><a name="pone-0000936-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Effects on Smad2 phosphorylation by different doses of TGF-β.</span></strong></p><span>doi:10.1371/journal.pone.0000936.g003</span></div>
+
+<h4>Model performance is significantly improved by constraint-based modeling</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>We compared the performance of the model generated by constraint-based modeling method and that of the model obtained by only fitting the time course data. We first compared the experimental data and simulation results from the model obtained by only fitting the time course data. The results shown in <a href="#pone-0000936-g004">Figure 4</a> indicate that the model has been over-fitted to the data used for parameter estimation (<a href="#pone-0000936-g004">Figure 4A–4B</a>), but it has bad predictions for the data that are not used for parameter estimation. For example, experimental evidence shows that the response of Smad phosphorylation after 1 hour TGF-β treatment will be saturated when the concentration of TGF-β is larger than 0.5 ng/ml <a href="#pone.0000936-Bakin1">[27]</a>, <a href="#pone.0000936-Goumans1">[28]</a>. However, the predicted time course of phosphorylated Smad2 in the model, obtained by only fitting the time course data, is not saturated even for a very high dose of TGF-β (10 ng/ml), which contradicts the experimental results (<a href="#pone-0000936-g004">Figure 4C</a>).</p>
+<div class="figure" id="pone-0000936-g004"><div class="img"><a name="pone-0000936-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Comparison of experimental analysis and simulation results from the model obtained by only fitting the time course data.</span></strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>(A–B) The model has been over-fitted for “in-sample fit”. (C) The model has a bad prediction for “out-sample fit”. (A) Comparison of the model time course and experimental time course of Smad2 phosphorylation with 24 hours TGF-β treatment. Experimental data is the same as described in <a href="#pone-0000936-g002">Figure 2A</a>. (B) Effect of type I receptor kinase inhibitor SB431542. Experimental data is the same as described in <a href="#pone-0000936-g002">Figure 2B</a>. (C) Effects on Smad2 phosphorylation by different doses of TGF-β.</p>
+<span>doi:10.1371/journal.pone.0000936.g004</span></div><a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>On the other hand, we compared the possible variation of parameter sets of the models by these two different methods. For each method, we independently generated 1000 parameter sets which make the model have similar goodness of fitting the time course data of Smad phosphorylation (<a href="#pone.0000936.s001">Table S1</a> and <a href="#pone.0000936.s002">Table S2</a>). According to the statistical result for the parameter sets shown in <a href="#pone-0000936-t003">Table 3</a>, the ranges of the variation for the 7 estimated parameter values are significantly narrowed by constraint-based modeling method.</p>
+<div class="figure" id="pone-0000936-t003"><div class="img"><a name="pone-0000936-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Range of the variation for the estimated parameters in the 1000 parameter sets</span></strong></p><span>doi:10.1371/journal.pone.0000936.t003</span></div><a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>Previous modeling studies of TGF-β signaling pathway indicate that the Smad phosphorylation response to TGF-β is robust to a large variation of some parameters <a href="#pone.0000936-Clarke1">[17]</a>, <a href="#pone.0000936-Melke1">[18]</a>. The large variations in the estimated parameter sets are usually caused by two reasons. The data quality is the main reason for the large variation of parameter sets obtained by only fitting the time course data. When we fit the western-blot data, we actually fit the scaled data. However, the parameter for the scaled coefficient is unknown, which can vary in a large range if we only fitting the scaled time course data without considering other qualitative constraints. Another reason comes from the insensitivity of some parameters to the signal response. For example, the sensitivities of the parameters <em>k<sub>LRC</sub></em>, <em>v<sub>T2R</sub></em> and <em>k<sub>lid</sub></em> are very small (<a href="#pone-0000936-g005">Figure 5</a>), which means the output of the model (Smad phosphorylation level) is robust to the variation of these insensitive parameters.</p>
+<div class="figure" id="pone-0000936-g005"><div class="img"><a name="pone-0000936-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Sensitivity analysis of the rate constants on nuclear Smad phosphorylation.</span></strong></p><a id="article1.body1.sec3.sec2.fig2.caption1.p1" name="article1.body1.sec3.sec2.fig2.caption1.p1"></a><p>The original values of the sensitivities are present <a href="#pone.0000936.s003">Table S3</a></p>
+<span>doi:10.1371/journal.pone.0000936.g005</span></div>
+
+<h4>Sensitivity analysis of the model</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>We next systematically investigated the sensitivity of all the rate constants and found those whose perturbation the pathway is most sensitive or most robust against. Response sensitivities were used for quantifying the effects of all the rate constants on the concentration of signaling proteins. In this model, we regard nuclear phosphorylated Smad complex (nuclear phosphorylated Smad2) as the readout of the signal in this pathway because experimental results indicate that nuclear phosphorylated Smad complex acts as transcription factor to induce the expression of many genes <a href="#pone.0000936-Shi1">[1]</a>, <a href="#pone.0000936-Massague1">[3]</a>. We determined the sensitivity of the integral concentrations of the nuclear phosphorylated Smad complex from the beginning of the TGF-β activation to the end of the simulation time (8 hours). The definition of response sensitivity for nuclear phosphorylated Smad is as following:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.e041&amp;representation=PNG" class="inline-graphic"><span class="note">(34)</span></span><br>As shown in <a href="#pone-0000936-g005">Figure 5</a>, we can divide the parameters into three groups: positive control, negative control and almost no control to the changes of nuclear Smad complex. The strong positive and negative control groups belong to the reactions participating phosphorylation of Smad, receptor endocytosis, type I receptor production. The most negative control on the concentration of nuclear Smad complex is the rate constants corresponding to the dephosphorylation of nuclear Smad complex, which implies that the nuclear phosphatase has a strong negative control on the nuclear phosphorylated Smad level. Finally, we want to point out that all these analyses are based on small perturbations of relative parameters according to the definition of response coefficient.</p>
+
+
+<h4>The regulation of the signal: balance between clathrin dependent endocytosis and non-clathrin mediated endocytosis</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>In the experimental studies, potassium depletion can be used to interfere with clathrin-dependent trafficking of receptors, which can inhibit the TGF-β signal <a href="#pone.0000936-DiGuglielmo1">[9]</a>, <a href="#pone.0000936-Hayes1">[30]</a>. On the other hand, nystatin treatment causes the inhibition of the non-clathrin endocytosis pathway <a href="#pone.0000936-DiGuglielmo1">[9]</a>. The simulation analysis of the model indicates that the inhibition of clathrin dependent endocytosis causes a transient response of Smad2 phosphorylation (<a href="#pone-0000936-g006">Figure 6A</a>). The simulation result also shows that inhibition of non-clathrin dependent endocytosis increases TGF-β signal amplitude, which produces a prolonged signal (<a href="#pone-0000936-g006">Figure 6C</a>).</p>
+<div class="figure" id="pone-0000936-g006"><div class="img"><a name="pone-0000936-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000936" data-uri="info:doi/10.1371/journal.pone.0000936.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000936.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000936.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000936.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000936.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>Computational simulations of the time course of nuclear phosphorylated Smad2 by the inhibition of different receptor endocytosis in 1000 parameter sets estimated by constraint-based modeling method.</span></strong></p><a id="article1.body1.sec3.sec4.fig1.caption1.p1" name="article1.body1.sec3.sec4.fig1.caption1.p1"></a><p>The red lines refer the simulations for the parameter values listed in <a href="#pone-0000936-t001">Table 1</a>. Blue lines correspond to the 1000 parameter sets with the estimated parameter values listed in the <a href="#pone.0000936.s001">Table S1</a>. (A) Same parameter values as those in parameter sets with the exception that clathrin dependent internalization rate constant is decreased by a factor of 10: <em>ki<sub>EE</sub></em> = 0.033 min<sup>−1</sup>. (B) Same parameters values as those in parameter sets. (C) Same parameter values as those in parameter sets with the exception that non-clathrin dependent internalization rate constant is decreased by a factor of 10: <em>ki<sub>Cave</sub></em> = 0.033 min<sup>−1</sup>. (D) Same parameter values as those in parameter sets with the exception that <em>ki<sub>EE</sub></em> is decreased by a factor of 10 and <em>ki<sub>Cave</sub></em> is decreased by a factor of 2: <em>ki<sub>EE</sub></em> = 0.033 min<sup>−1</sup>, <em>ki<sub>Cave</sub></em> = 0.165 min<sup>−1</sup>. (E) Same parameter values as those in parameter sets with the exception that <em>ki<sub>EE</sub></em> and <em>ki<sub>Cave</sub></em> are decreased by a factor of 10: <em>ki<sub>EE</sub></em> = 0.033 min<sup>−1</sup>, <em>ki<sub>Cave</sub></em> = 0.033 min<sup>−1</sup>. (F) Same parameter values as those in parameter sets with the exception that <em>ki<sub>EE</sub></em> is decreased by a factor of 2 and <em>ki<sub>Cave</sub></em> is decreased by a factor of 10: <em>ki<sub>EE</sub></em> = 0.165 min<sup>−1</sup>, <em>ki<sub>Cave</sub></em> = 0.033 min<sup>−1</sup>.</p>
+<span>doi:10.1371/journal.pone.0000936.g006</span></div><a id="article1.body1.sec3.sec4.p2" name="article1.body1.sec3.sec4.p2"></a><p>What will happen if both clathrin dependent and non-clathrin dependent endocytosis are inhibited? The simulation results indicate that the key quantity is the ratio of clathrin to non-clathrin dependent endocytosis rate. A transient response of Smad2 phosphorylation appears upon the combination of a strong inhibition of clathrin dependent endocytosis and a weak inhibition of non-clathrin mediated endocytosis, which corresponds to a low ratio of clathrin to non-clathrin dependent endocytosis rate (<a href="#pone-0000936-g006">Figure 6D</a>). Furthermore, when both clathrin dependent endocytosis and non-clathrin dependent endocytosis are equally inhibited (a medium ratio of clathrin to non-clathrin dependent endocytosis rate), the signal response of Smad2 phosphorylation is similar as the control (<a href="#pone-0000936-g006">Figure 6E</a>). Finally, a prolonged signal response of Smad2 phosphorylation is observed (<a href="#pone-0000936-g006">Figure 6F</a>) with the combination of a weak inhibition of clathrin dependent endocytosis and a strong non-clathrin dependent endocytosis (a high ratio of clathrin to non-clathrin dependent endocytosis rate). Therefore, the TGF-β signal response is regulated by the balance between the strength of signal initiation from clathrin dependent endocytosis and the strength of negative feedback in the venue of non-clathrin mediated endocytosis.</p>
+<a id="article1.body1.sec3.sec4.p3" name="article1.body1.sec3.sec4.p3"></a><p>Recently Vilar <em>et al.</em> proposed a concise computational model of signal processing in TGF-β superfamily ligand-receptor network <a href="#pone.0000936-Vilar1">[16]</a>. This work indicates that the key quantity that determines the qualitative behavior of the pathway is the ratio of the constitutive to the ligand-induced rate of receptor degradation (CIR, constitutive-to-induced degradation ratio). Low CIR causes a transient increase of signal activity that returns to pre-stimulus levels. On the contrast, high CIR produces a permanently elevated level of signal activity. The concept of CIR refers to the rates of two degradations process rather than the simple expression of the degrading rate constants. This conclusion is affirmed by our analysis of the balance between clathrin dependent endocytosis versus non-clathrin mediated endocytosis. Our model shows the TGF-β signal response is regulated by the ratio of clathrin to non-clathrin endocytosis rate. On the other hand, the concise model doesn't distinguish the receptors in early endosomes and in caveolar lipid-raft. For ligand-induced degradation of receptors, the concise model simply regards the processes of the non-clathrin dependent internalization, recycling and the degradation of the receptors in caveolar lipid-raft as one-step of ligand induced receptor degradation at cell surface. Therefore, the control role of CIR ratio proposed in the concise model is consistent with regulation role of the clathrin to non-clathrin endocytosis rate ratio in the comprehensive model of this work.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000936"></div><a name="pone.0000936.s001" id="pone.0000936.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000936.s001">Table S1. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0000936.s001</p><a id="article1.body1.sec4.supplementary-material1.caption1.p1" name="article1.body1.sec4.supplementary-material1.caption1.p1"></a><p class="postSiDOI">(0.19 MB XLS)</p>
+<a name="pone.0000936.s002" id="pone.0000936.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000936.s002">Table S2. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0000936.s002</p><a id="article1.body1.sec4.supplementary-material2.caption1.p1" name="article1.body1.sec4.supplementary-material2.caption1.p1"></a><p class="postSiDOI">(0.19 MB XLS)</p>
+<a name="pone.0000936.s003" id="pone.0000936.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000936.s003">Table S3. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0000936.s003</p><a id="article1.body1.sec4.supplementary-material3.caption1.p1" name="article1.body1.sec4.supplementary-material3.caption1.p1"></a><p class="postSiDOI">(0.12 MB XLS)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We appreciate the help from Ye-Guang Chen during the early stage of this work. We thank Aristidis Moustakas for discussion and critical reading of the manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: ZZ. Performed the experiments: ZZ. Analyzed the data: EK ZZ. Contributed reagents/materials/analysis tools: ZZ. Wrote the paper: EK ZZ.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000936-Shi1" id="pone.0000936-Shi1"></a>Shi Y, Massague J (2003) Mechanisms of TGF-beta signaling from cell membrane to the nucleus. Cell  113: 685–700.  <ul class="find" data-citedArticleID="996004" data-doi="10.1016/s0092-8674(03)00432-x"><li><a href="http://dx.doi.org/10.1016/s0092-8674(03)00432-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mechanisms+of+TGF-beta+signaling+from+cell+membrane+to+the+nucleus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mechanisms+of+TGF-beta+signaling+from+cell+membrane+to+the+nucleus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000936-Feng1" id="pone.0000936-Feng1"></a>Feng XH, Derynck R (2005) Specificity and versatility in tgf-beta signaling through Smads. Annu Rev Cell Dev Biol  21: 659–693.  <ul class="find" data-citedArticleID="995966" data-doi="10.1146/annurev.cellbio.21.022404.142018"><li><a href="http://dx.doi.org/10.1146/annurev.cellbio.21.022404.142018" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Specificity+and+versatility+in+tgf-beta+signaling+through+Smads." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Specificity+and+versatility+in+tgf-beta+signaling+through+Smads.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000936-Massague1" id="pone.0000936-Massague1"></a>Massague J, Seoane J, Wotton D (2005) Smad transcription factors. Genes Dev  19: 2783–2810.  <ul class="find" data-citedArticleID="995984" data-doi="10.1101/gad.1350705"><li><a href="http://dx.doi.org/10.1101/gad.1350705" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Smad+transcription+factors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Smad+transcription+factors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000936-Lin1" id="pone.0000936-Lin1"></a>Lin X, Duan X, Liang YY, Su Y, Wrighton KH, et al.  (2006) PPM1A functions as a Smad phosphatase to terminate TGFbeta signaling. Cell  125: 915–928.  <ul class="find" data-citedArticleID="995982" data-doi="10.1016/j.cell.2006.03.044"><li><a href="http://dx.doi.org/10.1016/j.cell.2006.03.044" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PPM1A+functions+as+a+Smad+phosphatase+to+terminate+TGFbeta+signaling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PPM1A+functions+as+a+Smad+phosphatase+to+terminate+TGFbeta+signaling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000936-Ogunjimi1" id="pone.0000936-Ogunjimi1"></a>Ogunjimi AA, Briant DJ, Pece-Barbara N, Le Roy C, Di Guglielmo GM, et al.  (2005) Regulation of Smurf2 ubiquitin ligase activity by anchoring the E2 to the HECT domain. Mol Cell  19: 297–308.  <ul class="find" data-citedArticleID="995990" data-doi="10.1016/j.molcel.2005.06.028"><li><a href="http://dx.doi.org/10.1016/j.molcel.2005.06.028" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Regulation+of+Smurf2+ubiquitin+ligase+activity+by+anchoring+the+E2+to+the+HECT+domain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Regulation+of+Smurf2+ubiquitin+ligase+activity+by+anchoring+the+E2+to+the+HECT+domain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000936-Pierreux1" id="pone.0000936-Pierreux1"></a>Pierreux CE, Nicolas FJ, Hill CS (2000) Transforming growth factor beta-independent shuttling of Smad4 between the cytoplasm and nucleus. Mol Cell Biol  20: 9041–9054.  <ul class="find" data-citedArticleID="995992" data-doi="10.1128/mcb.20.23.9041-9054.2000"><li><a href="http://dx.doi.org/10.1128/mcb.20.23.9041-9054.2000" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transforming+growth+factor+beta-independent+shuttling+of+Smad4+between+the+cytoplasm+and+nucleus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transforming+growth+factor+beta-independent+shuttling+of+Smad4+between+the+cytoplasm+and+nucleus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000936-Xu1" id="pone.0000936-Xu1"></a>Xu L, Kang Y, Col S, Massague J (2002) Smad2 nucleocytoplasmic shuttling by nucleoporins CAN/Nup214 and Nup153 feeds TGFbeta signaling complexes in the cytoplasm and nucleus. Mol Cell  10: 271–282.  <ul class="find" data-citedArticleID="996014" data-doi="10.1016/s1097-2765(02)00586-5"><li><a href="http://dx.doi.org/10.1016/s1097-2765(02)00586-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Smad2+nucleocytoplasmic+shuttling+by+nucleoporins+CAN%2FNup214+and+Nup153+feeds+TGFbeta+signaling+complexes+in+the+cytoplasm+and+nucleus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Smad2+nucleocytoplasmic+shuttling+by+nucleoporins+CAN%2FNup214+and+Nup153+feeds+TGFbeta+signaling+complexes+in+the+cytoplasm+and+nucleus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000936-Schmierer1" id="pone.0000936-Schmierer1"></a>Schmierer B, Hill CS (2005) Kinetic analysis of Smad nucleocytoplasmic shuttling reveals a mechanism for transforming growth factor beta-dependent nuclear accumulation of Smads. Mol Cell Biol  25: 9845–9858.  <ul class="find" data-citedArticleID="996000" data-doi="10.1128/mcb.25.22.9845-9858.2005"><li><a href="http://dx.doi.org/10.1128/mcb.25.22.9845-9858.2005" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Kinetic+analysis+of+Smad+nucleocytoplasmic+shuttling+reveals+a+mechanism+for+transforming+growth+factor+beta-dependent+nuclear+accumulation+of+Smads." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Kinetic+analysis+of+Smad+nucleocytoplasmic+shuttling+reveals+a+mechanism+for+transforming+growth+factor+beta-dependent+nuclear+accumulation+of+Smads.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000936-DiGuglielmo1" id="pone.0000936-DiGuglielmo1"></a>Di Guglielmo GM, Le Roy C, Goodfellow AF, Wrana JL (2003) Distinct endocytic pathways regulate TGF-beta receptor signalling and turnover. Nat Cell Biol  5: 410–421.  <ul class="find" data-citedArticleID="995964" data-doi="10.1038/ncb975"><li><a href="http://dx.doi.org/10.1038/ncb975" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Distinct+endocytic+pathways+regulate+TGF-beta+receptor+signalling+and+turnover." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Distinct+endocytic+pathways+regulate+TGF-beta+receptor+signalling+and+turnover.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000936-Mitchell1" id="pone.0000936-Mitchell1"></a>Mitchell H, Choudhury A, Pagano RE, Leof EB (2004) Ligand-dependent and -independent transforming growth factor-beta receptor recycling regulated by clathrin-mediated endocytosis and Rab11. Mol Biol Cell  15: 4166–4178.  <ul class="find" data-citedArticleID="995988" data-doi="10.1091/mbc.e04-03-0245"><li><a href="http://dx.doi.org/10.1091/mbc.e04-03-0245" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Ligand-dependent+and+-independent+transforming+growth+factor-beta+receptor+recycling+regulated+by+clathrin-mediated+endocytosis+and+Rab11." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Ligand-dependent+and+-independent+transforming+growth+factor-beta+receptor+recycling+regulated+by+clathrin-mediated+endocytosis+and+Rab11.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000936-Schoeberl1" id="pone.0000936-Schoeberl1"></a>Schoeberl B, Eichler-Jonsson C, Gilles ED, Muller G (2002) Computational modeling of the dynamics of the MAP kinase cascade activated by surface and internalized EGF receptors. Nat Biotechnol  20: 370–375.  <ul class="find" data-citedArticleID="996002" data-doi="10.1038/nbt0402-370"><li><a href="http://dx.doi.org/10.1038/nbt0402-370" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+modeling+of+the+dynamics+of+the+MAP+kinase+cascade+activated+by+surface+and+internalized+EGF+receptors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+modeling+of+the+dynamics+of+the+MAP+kinase+cascade+activated+by+surface+and+internalized+EGF+receptors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000936-Hoffmann1" id="pone.0000936-Hoffmann1"></a>Hoffmann A, Levchenko A, Scott ML, Baltimore D (2002) The IkappaB-NF-kappaB signaling module: temporal control and selective gene activation. Science  298: 1241–1245.  <ul class="find" data-citedArticleID="995974" data-doi="10.1126/science.1071914"><li><a href="http://dx.doi.org/10.1126/science.1071914" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+IkappaB-NF-kappaB+signaling+module%3A+temporal+control+and+selective+gene+activation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+IkappaB-NF-kappaB+signaling+module%3A+temporal+control+and+selective+gene+activation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000936-Swameye1" id="pone.0000936-Swameye1"></a>Swameye I, Muller TG, Timmer J, Sandra O, Klingmuller U (2003) Identification of nucleocytoplasmic cycling as a remote sensor in cellular signaling by databased modeling. Proc Natl Acad Sci U S A  100: 1028–1033.  <ul class="find" data-citedArticleID="996006" data-doi="10.1073/pnas.0237333100"><li><a href="http://dx.doi.org/10.1073/pnas.0237333100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+nucleocytoplasmic+cycling+as+a+remote+sensor+in+cellular+signaling+by+databased+modeling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+nucleocytoplasmic+cycling+as+a+remote+sensor+in+cellular+signaling+by+databased+modeling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000936-Klipp1" id="pone.0000936-Klipp1"></a>Klipp E, Nordlander B, Kruger R, Gennemark P, Hohmann S (2005) Integrative model of the response of yeast to osmotic shock. Nat Biotechnol  23: 975–982.  <ul class="find" data-citedArticleID="995980" data-doi="10.1038/nbt1114"><li><a href="http://dx.doi.org/10.1038/nbt1114" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrative+model+of+the+response+of+yeast+to+osmotic+shock." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrative+model+of+the+response+of+yeast+to+osmotic+shock.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000936-Price1" id="pone.0000936-Price1"></a>Price ND, Papin JA, Schilling CH, Palsson BO (2003) Genome-scale microbial in silico models: the constraints-based approach. Trends Biotechnol  21: 162–169.  <ul class="find" data-citedArticleID="995994" data-doi="10.1016/s0167-7799(03)00030-1"><li><a href="http://dx.doi.org/10.1016/s0167-7799(03)00030-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-scale+microbial+in+silico+models%3A+the+constraints-based+approach." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-scale+microbial+in+silico+models%3A+the+constraints-based+approach.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000936-Vilar1" id="pone.0000936-Vilar1"></a>Vilar JM, Jansen R, Sander C (2006) Signal processing in the TGF-beta superfamily ligand-receptor network. PLoS Comput Biol  2: e3.  <ul class="find" data-citedArticleID="996008" data-doi="10.1371/journal.pcbi.0020003"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020003" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Signal+processing+in+the+TGF-beta+superfamily+ligand-receptor+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Signal+processing+in+the+TGF-beta+superfamily+ligand-receptor+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000936-Clarke1" id="pone.0000936-Clarke1"></a>Clarke DC, Betterton MD, Liu X (2006) Systems theory of Smad signalling. Syst Biol (Stevenage)  153: 412–424.  <ul class="find" data-citedArticleID="995962" data-doi="10.1049/ip-syb:20050055"><li><a href="http://dx.doi.org/10.1049/ip-syb:20050055" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systems+theory+of+Smad+signalling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systems+theory+of+Smad+signalling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000936-Melke1" id="pone.0000936-Melke1"></a>Melke P, Jonsson H, Pardali E, ten Dijke P, Peterson C (2006) A rate equation approach to elucidate the kinetics and robustness of the TGF-beta pathway. Biophys J  91: 4368–4380.  <ul class="find" data-citedArticleID="995986" data-doi="10.1529/biophysj.105.080408"><li><a href="http://dx.doi.org/10.1529/biophysj.105.080408" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+rate+equation+approach+to+elucidate+the+kinetics+and+robustness+of+the+TGF-beta+pathway." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+rate+equation+approach+to+elucidate+the+kinetics+and+robustness+of+the+TGF-beta+pathway.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000936-Watt1" id="pone.0000936-Watt1"></a>Watt FM, Jordan PW, O'Neill CH (1988) Cell shape controls terminal differentiation of human epidermal keratinocytes. Proc Natl Acad Sci U S A  85: 5576–5580.  <ul class="find" data-citedArticleID="996012" data-doi="10.1073/pnas.85.15.5576"><li><a href="http://dx.doi.org/10.1073/pnas.85.15.5576" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cell+shape+controls+terminal+differentiation+of+human+epidermal+keratinocytes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cell+shape+controls+terminal+differentiation+of+human+epidermal+keratinocytes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000936-Savini1" id="pone.0000936-Savini1"></a>Savini I, Duflot S, Avigliano L (2000) Dehydroascorbic acid uptake in a human keratinocyte cell line (HaCaT) is glutathione-independent. Biochem J 345 Pt  3: 665–672.  <ul class="find" data-citedArticleID="995998" data-doi="10.1042/0264-6021:3450665"><li><a href="http://dx.doi.org/10.1042/0264-6021:3450665" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dehydroascorbic+acid+uptake+in+a+human+keratinocyte+cell+line+%28HaCaT%29+is+glutathione-independent." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dehydroascorbic+acid+uptake+in+a+human+keratinocyte+cell+line+%28HaCaT%29+is+glutathione-independent.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000936-Kavsak1" id="pone.0000936-Kavsak1"></a>Kavsak P, Rasmussen RK, Causing CG, Bonni S, Zhu H, et al.  (2000) Smad7 binds to Smurf2 to form an E3 ubiquitin ligase that targets the TGF beta receptor for degradation. Mol Cell  6: 1365–1375.  <ul class="find" data-citedArticleID="995978" data-doi="10.1016/s1097-2765(00)00134-9"><li><a href="http://dx.doi.org/10.1016/s1097-2765(00)00134-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Smad7+binds+to+Smurf2+to+form+an+E3+ubiquitin+ligase+that+targets+the+TGF+beta+receptor+for+degradation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Smad7+binds+to+Smurf2+to+form+an+E3+ubiquitin+ligase+that+targets+the+TGF+beta+receptor+for+degradation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000936-Xu2" id="pone.0000936-Xu2"></a>Xu L, Chen YG, Massague J (2000) The nuclear import function of Smad2 is masked by SARA and unmasked by TGFbeta-dependent phosphorylation. Nat Cell Biol  2: 559–562.  <ul class="find" data-citedArticleID="996016"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+nuclear+import+function+of+Smad2+is+masked+by+SARA+and+unmasked+by+TGFbeta-dependent+phosphorylation.&amp;auth=&amp;atitle=The+nuclear+import+function+of+Smad2+is+masked+by+SARA+and+unmasked+by+TGFbeta-dependent+phosphorylation." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+nuclear+import+function+of+Smad2+is+masked+by+SARA+and+unmasked+by+TGFbeta-dependent+phosphorylation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+nuclear+import+function+of+Smad2+is+masked+by+SARA+and+unmasked+by+TGFbeta-dependent+phosphorylation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000936-He1" id="pone.0000936-He1"></a>He W, Dorn DC, Erdjument-Bromage H, Tempst P, Moore MA, et al.  (2006) Hematopoiesis controlled by distinct TIF1gamma and Smad4 branches of the TGFbeta pathway. Cell  125: 929–941.  <ul class="find" data-citedArticleID="995972" data-doi="10.1016/j.cell.2006.03.045"><li><a href="http://dx.doi.org/10.1016/j.cell.2006.03.045" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Hematopoiesis+controlled+by+distinct+TIF1gamma+and+Smad4+branches+of+the+TGFbeta+pathway." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Hematopoiesis+controlled+by+distinct+TIF1gamma+and+Smad4+branches+of+the+TGFbeta+pathway.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000936-Zi1" id="pone.0000936-Zi1"></a>Zi Z, Klipp E (2006) SBML-PET: a Systems Biology Markup Language-based parameter estimation tool. Bioinformatics  22: 2704–2705.  <ul class="find" data-citedArticleID="996018" data-doi="10.1093/bioinformatics/btl443"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl443" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SBML-PET%3A+a+Systems+Biology+Markup+Language-based+parameter+estimation+tool." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SBML-PET%3A+a+Systems+Biology+Markup+Language-based+parameter+estimation+tool.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000936-Runarsson1" id="pone.0000936-Runarsson1"></a>Runarsson TP, Yao X (2000) Stochastic ranking for constrained evolutionary optimization. Ieee Transactions on Evolutionary Computation  4: 284–294.  <ul class="find" data-citedArticleID="995996" data-doi="10.1109/4235.873238"><li><a href="http://dx.doi.org/10.1109/4235.873238" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stochastic+ranking+for+constrained+evolutionary+optimization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stochastic+ranking+for+constrained+evolutionary+optimization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000936-Wakefield1" id="pone.0000936-Wakefield1"></a>Wakefield LM, Smith DM, Masui T, Harris CC, Sporn MB (1987) Distribution and modulation of the cellular receptor for transforming growth factor-beta. J Cell Biol  105: 965–975.  <ul class="find" data-citedArticleID="996010" data-doi="10.1083/jcb.105.2.965"><li><a href="http://dx.doi.org/10.1083/jcb.105.2.965" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Distribution+and+modulation+of+the+cellular+receptor+for+transforming+growth+factor-beta." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Distribution+and+modulation+of+the+cellular+receptor+for+transforming+growth+factor-beta.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000936-Bakin1" id="pone.0000936-Bakin1"></a>Bakin AV, Tomlinson AK, Bhowmick NA, Moses HL, Arteaga CL (2000) Phosphatidylinositol 3-kinase function is required for transforming growth factor beta-mediated epithelial to mesenchymal transition and cell migration. J Biol Chem  275: 36803–36810.  <ul class="find" data-citedArticleID="995960" data-doi="10.1074/jbc.m005912200"><li><a href="http://dx.doi.org/10.1074/jbc.m005912200" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Phosphatidylinositol+3-kinase+function+is+required+for+transforming+growth+factor+beta-mediated+epithelial+to+mesenchymal+transition+and+cell+migration." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Phosphatidylinositol+3-kinase+function+is+required+for+transforming+growth+factor+beta-mediated+epithelial+to+mesenchymal+transition+and+cell+migration.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000936-Goumans1" id="pone.0000936-Goumans1"></a>Goumans MJ, Valdimarsdottir G, Itoh S, Rosendahl A, Sideras P, et al.  (2002) Balancing the activation state of the endothelium via two distinct TGF-beta type I receptors. Embo J  21: 1743–1753.  <ul class="find" data-citedArticleID="995968" data-doi="10.1093/emboj/21.7.1743"><li><a href="http://dx.doi.org/10.1093/emboj/21.7.1743" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Balancing+the+activation+state+of+the+endothelium+via+two+distinct+TGF-beta+type+I+receptors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Balancing+the+activation+state+of+the+endothelium+via+two+distinct+TGF-beta+type+I+receptors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000936-Inman1" id="pone.0000936-Inman1"></a>Inman GJ, Nicolas FJ, Hill CS (2002) Nucleocytoplasmic shuttling of Smads 2, 3, and 4 permits sensing of TGF-beta receptor activity. Mol Cell  10: 283–294.  <ul class="find" data-citedArticleID="995976" data-doi="10.1016/s1097-2765(02)00585-3"><li><a href="http://dx.doi.org/10.1016/s1097-2765(02)00585-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Nucleocytoplasmic+shuttling+of+Smads+2%2C+3%2C+and+4+permits+sensing+of+TGF-beta+receptor+activity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Nucleocytoplasmic+shuttling+of+Smads+2%2C+3%2C+and+4+permits+sensing+of+TGF-beta+receptor+activity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000936-Hayes1" id="pone.0000936-Hayes1"></a>Hayes S, Chawla A, Corvera S (2002) TGF beta receptor internalization into EEA1-enriched early endosomes: role in signaling to Smad2. J Cell Biol  158: 1239–1249.  <ul class="find" data-citedArticleID="995970" data-doi="10.1083/jcb.200204088"><li><a href="http://dx.doi.org/10.1083/jcb.200204088" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=TGF+beta+receptor+internalization+into+EEA1-enriched+early+endosomes%3A+role+in+signaling+to+Smad2." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22TGF+beta+receptor+internalization+into+EEA1-enriched+early+endosomes%3A+role+in+signaling+to+Smad2.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.XML" value="98829"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.PDF" value="636646"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g001.PNG_L" value="805214"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g001.PNG_M" value="116688"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g001.PNG_S" value="11220"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g001.TIF" value="1711730"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g001.PNG_I" value="40123"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e001.PNG" value="21589"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e001.TIF" value="38248"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e002.PNG" value="10969"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e002.TIF" value="26800"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e003.PNG" value="12258"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e003.TIF" value="28708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e004.PNG" value="21949"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e004.TIF" value="38488"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e005.PNG" value="11144"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e005.TIF" value="26880"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e006.PNG" value="12487"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e006.TIF" value="28832"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e007.PNG" value="15589"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e007.TIF" value="31780"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e008.PNG" value="15708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e008.TIF" value="31868"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e009.PNG" value="12192"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e009.TIF" value="28444"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e010.PNG" value="18984"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e010.TIF" value="35432"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e011.PNG" value="18012"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e011.TIF" value="33692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e012.PNG" value="18979"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e012.TIF" value="35204"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e013.PNG" value="17949"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e013.TIF" value="33728"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e014.PNG" value="18310"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e014.TIF" value="34556"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e015.PNG" value="18943"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e015.TIF" value="34748"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e016.PNG" value="16630"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e016.TIF" value="32808"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t001.PNG_L" value="261897"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t001.PNG_M" value="152216"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t001.PNG_S" value="14004"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t001.TIF" value="1079750"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t001.PNG_I" value="46335"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t002.PNG_L" value="169058"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t002.PNG_M" value="91536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t002.PNG_S" value="10829"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t002.TIF" value="784910"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t002.PNG_I" value="28005"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e017.PNG" value="6188"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e017.TIF" value="22356"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e018.PNG" value="6401"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e018.TIF" value="22624"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e019.PNG" value="8692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e019.TIF" value="25284"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e020.PNG" value="8398"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e020.TIF" value="24952"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e021.PNG" value="8657"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e021.TIF" value="25280"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e022.PNG" value="10438"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e022.TIF" value="27040"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e023.PNG" value="10603"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e023.TIF" value="27088"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e024.PNG" value="16234"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e024.TIF" value="32308"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e025.PNG" value="11589"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e025.TIF" value="27496"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e026.PNG" value="14224"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e026.TIF" value="30356"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e027.PNG" value="11911"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e027.TIF" value="27488"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e028.PNG" value="12966"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e028.TIF" value="28724"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e029.PNG" value="8783"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e029.TIF" value="24660"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e030.PNG" value="12031"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e030.TIF" value="27536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e031.PNG" value="13201"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e031.TIF" value="28824"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e032.PNG" value="8894"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e032.TIF" value="24732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e033.PNG" value="15720"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e033.TIF" value="31252"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e034.PNG" value="15432"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e034.TIF" value="31168"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e035.PNG" value="10513"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e035.TIF" value="26536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e036.PNG" value="13411"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e036.TIF" value="28896"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e037.PNG" value="13336"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e037.TIF" value="28932"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e038.PNG" value="13656"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e038.TIF" value="29408"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e039.PNG" value="13393"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e039.TIF" value="28896"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e040.PNG" value="13411"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e040.TIF" value="28932"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g002.PNG_L" value="564663"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g002.PNG_M" value="169424"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g002.PNG_S" value="13447"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g002.TIF" value="1420080"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g002.PNG_I" value="63073"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g003.PNG_L" value="325497"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g003.PNG_M" value="154665"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g003.PNG_S" value="12877"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g003.TIF" value="603296"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g003.PNG_I" value="55908"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g004.PNG_L" value="278608"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g004.PNG_M" value="76696"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g004.PNG_S" value="6145"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g004.TIF" value="562156"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g004.PNG_I" value="27714"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t003.PNG_L" value="119487"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t003.PNG_M" value="70029"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t003.PNG_S" value="9973"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t003.TIF" value="520410"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.t003.PNG_I" value="21500"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g005.PNG_L" value="179822"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g005.PNG_M" value="55165"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g005.PNG_S" value="7083"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g005.TIF" value="726276"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g005.PNG_I" value="19127"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e041.PNG" value="14130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.e041.TIF" value="29952"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g006.PNG_L" value="608768"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g006.PNG_M" value="156531"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g006.PNG_S" value="10816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g006.TIF" value="1184222"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.g006.PNG_I" value="55693"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.s001.XLS" value="191488"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.s002.XLS" value="193536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000936.s003.XLS" value="123392"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000936&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000936" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000936&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000936&volume=&issue=&title=Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway&author_name=Zhike%20Zi%2C%20Edda%20Klipp&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000936" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936&amp;t=Constraint-Based%20Modeling%20and%20Kinetic%20Analysis%20of%20the%20Smad%20Dependent%20TGF-%CE%B2%20Signaling%20Pathway" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936&title=Constraint-Based%20Modeling%20and%20Kinetic%20Analysis%20of%20the%20Smad%20Dependent%20TGF-%CE%B2%20Signaling%20Pathway&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936&amp;title=Constraint-Based%20Modeling%20and%20Kinetic%20Analysis%20of%20the%20Smad%20Dependent%20TGF-%CE%B2%20Signaling%20Pathway" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000936&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Constraint-Based Modeling and Kinetic Analysis of the Smad Dependent TGF-β Signaling Pathway';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000936';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Constraint-Based%20Modeling%20and%20Kinetic%20Analysis%20of%20the%20Smad%20Dependent%20TGF-%CE%B2%20Signaling%20Pathway http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000936" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000936" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Endocytosis%22" title="Search for articles in the subject area:'Endocytosis'"><div class="flagText">Endocytosis</div></a>
+              <div data-categoryid="17829" data-articleid="24710"
+                   data-categoryname="Endocytosis"
+                   class="flagImage" title="Flag 'Endocytosis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Endosomes%22" title="Search for articles in the subject area:'Endosomes'"><div class="flagText">Endosomes</div></a>
+              <div data-categoryid="20471" data-articleid="24710"
+                   data-categoryname="Endosomes"
+                   class="flagImage" title="Flag 'Endosomes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Lipid+signaling%22" title="Search for articles in the subject area:'Lipid signaling'"><div class="flagText">Lipid signaling</div></a>
+              <div data-categoryid="23663" data-articleid="24710"
+                   data-categoryname="Lipid signaling"
+                   class="flagImage" title="Flag 'Lipid signaling' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Membrane+receptor+signaling%22" title="Search for articles in the subject area:'Membrane receptor signaling'"><div class="flagText">Membrane receptor signaling</div></a>
+              <div data-categoryid="20271" data-articleid="24710"
+                   data-categoryname="Membrane receptor signaling"
+                   class="flagImage" title="Flag 'Membrane receptor signaling' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phosphorylation%22" title="Search for articles in the subject area:'Phosphorylation'"><div class="flagText">Phosphorylation</div></a>
+              <div data-categoryid="42723" data-articleid="24710"
+                   data-categoryname="Phosphorylation"
+                   class="flagImage" title="Flag 'Phosphorylation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22SMAD+signaling%22" title="Search for articles in the subject area:'SMAD signaling'"><div class="flagText">SMAD signaling</div></a>
+              <div data-categoryid="21675" data-articleid="24710"
+                   data-categoryname="SMAD signaling"
+                   class="flagImage" title="Flag 'SMAD signaling' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Simulation+and+modeling%22" title="Search for articles in the subject area:'Simulation and modeling'"><div class="flagText">Simulation and modeling</div></a>
+              <div data-categoryid="8375" data-articleid="24710"
+                   data-categoryname="Simulation and modeling"
+                   class="flagImage" title="Flag 'Simulation and modeling' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22TGF-beta+signaling+cascade%22" title="Search for articles in the subject area:'TGF-beta signaling cascade'"><div class="flagText">TGF-beta signaling cascade</div></a>
+              <div data-categoryid="42393" data-articleid="24710"
+                   data-categoryname="TGF-beta signaling cascade"
+                   class="flagImage" title="Flag 'TGF-beta signaling cascade' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=7179'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=7613'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3963&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=2985">The SBML model is availabe in BioModels</a><br>Posted by zhike_zi</p>
+      <p><a href="/annotation/listThread.action?root=95">correction for equation (16)</a><br>Posted by zhike_zi</p>
+      <p><a href="/annotation/listThread.action?root=10513">equation (1) and (4) missed one item</a><br>Posted by zhike_zi</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

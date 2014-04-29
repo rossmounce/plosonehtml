@@ -1,0 +1,1321 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000554"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000554" />
+
+    <meta name="citation_title" content="A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves"/>
+    <meta itemprop="name" content="A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves"/>
+
+      <meta name="citation_author" content="John Stephen Yap"/>
+            <meta name="citation_author_institution" content="Department of Statistics, University of Florida, Gainesville, Florida, United States of America"/>
+      <meta name="citation_author" content="Chenguang Wang"/>
+            <meta name="citation_author_institution" content="Department of Statistics, University of Florida, Gainesville, Florida, United States of America"/>
+      <meta name="citation_author" content="Rongling Wu"/>
+            <meta name="citation_author_institution" content="Department of Statistics, University of Florida, Gainesville, Florida, United States of America"/>
+
+    <meta name="citation_date" content="2007/6/20"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000554.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e554"/>
+    <meta name="citation_issue" content="6"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=The evolutionary significance of phenotypic plasticity.; citation_author=SC Stearns; citation_journal_title=BioScience; citation_volume=39; citation_number=1; citation_pages=436-445; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=Genetics and evolution of phenotypic plasticity.; citation_author=SM Scheiner; citation_journal_title=Annu Rev Ecol Syst; citation_volume=24; citation_number=2; citation_pages=35-68; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_author=CD Schlichting; citation_author=M Pigliucci; citation_number=3; citation_date=1998; citation_publisher=Sinauer Associates; " />
+      <meta name="citation_reference" content="citation_author=M Lynch; citation_author=B Walsh; citation_number=4; citation_date=1998; citation_publisher=Sinauer; " />
+      <meta name="citation_reference" content="citation_title=Adaptive phenotypic plasticity: consensus and controversy.; citation_author=S Via; citation_author=R Gomulkiewicz; citation_author=G de Jong; citation_author=SE Scheiner; citation_author=CD Schlichting; citation_author=P van Tienderen; citation_journal_title=Trends Ecol Evol; citation_volume=10; citation_number=5; citation_pages=212-217; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Quantitative genetics and the evolution of reaction norms.; citation_author=R Gomulkiewicz; citation_author=M Kirkpatrick; citation_journal_title=Evolution; citation_volume=46; citation_number=6; citation_pages=390-311; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Evolution of thermal sensitivity of ectotherm performance.; citation_author=RB Huey; citation_author=JG Kingsolver; citation_journal_title=Trends Ecol Evol; citation_volume=4; citation_number=7; citation_pages=131-135; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=Evolution of resistance to high temperature in ectotherms.; citation_author=RB Huey; citation_author=JG Kingsolver; citation_journal_title=Am Nat; citation_volume=142; citation_number=8; citation_pages=S21-S46; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Trade-offs and the evolution of thermal reaction norms.; citation_author=MJ Angilletta; citation_author=RS Wilson; citation_author=CA Navas; citation_author=RS James; citation_journal_title=Trends Ecol Evol; citation_volume=18; citation_number=9; citation_pages=234-240; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Variation in continuous reaction norms: quantifying directions of biological interest.; citation_author=R Izem; citation_author=JG Kingsolver; citation_journal_title=Am Nat; citation_volume=166; citation_number=10; citation_pages=277-289; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Variation, selection and evolution of function-valued traits.; citation_author=JG Kingsolver; citation_author=R Gomulkiewicz; citation_author=PA Carter; citation_journal_title=Genetica; citation_volume=112/113; citation_number=11; citation_pages=87-104; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Quantitative genetics of continuous reaction norms: Thermal sensitivity of caterpillar growth rates.; citation_author=JG Kingsolver; citation_author=GJ Ragland; citation_author=JG Shlicht; citation_journal_title=Evolution; citation_volume=58; citation_number=12; citation_pages=1521-1529; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Mapping Mendelian factors underlying quantitative traits using RFLP linkage maps.; citation_author=ES Lander; citation_author=D Botstein; citation_journal_title=Genetics; citation_volume=121; citation_number=13; citation_pages=185-199; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=High resolution mapping of quantitative traits into multiple loci via interval mapping.; citation_author=RC Jansen; citation_author=P Stam; citation_journal_title=Genetics; citation_volume=136; citation_number=14; citation_pages=1447-1455; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Precision mapping of quantitative trait loci.; citation_author=Z-B Zeng; citation_journal_title=Genetics; citation_volume=136; citation_number=15; citation_pages=1457-1468; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=A random model approach to interval mapping of quantitative trait loci.; citation_author=S Xu; citation_author=WR Atchley; citation_journal_title=Genetics; citation_volume=141; citation_number=16; citation_pages=1189-1197; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Multiple trait analysis of genetic mapping for quantitative trait loci.; citation_author=C Jiang; citation_author=Z-B Zeng; citation_journal_title=Genetics; citation_volume=140; citation_number=17; citation_pages=1111-1127; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Interval mapping of quantitative trait loci employing correlated trait complexes.; citation_author=AB Korol; citation_author=IY Ronin; citation_author=VM Kirzhner; citation_journal_title=Genetics; citation_volume=140; citation_number=18; citation_pages=1137-1147; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Functional Mapping of Quantitative Trait Loci Underlying the Character Process: A Theoretical Framework.; citation_author=CX Ma; citation_author=G Casella; citation_author=RL Wu; citation_journal_title=Genetics; citation_volume=161; citation_number=19; citation_pages=1751-1762; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Functional mapping – How to map and study the genetic architecture of dynamic complex traits.; citation_author=RL Wu; citation_author=M Lin; citation_journal_title=Nat Rev Genet; citation_volume=7; citation_number=20; citation_pages=229-237; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Thermal sensitivity of growth, food intake and activity of juvenile brown trout.; citation_author=AF Ojanguren; citation_author=FG Reyes-Gavilan; citation_author=F Brana; citation_journal_title=J Thermal Biol; citation_volume=26; citation_number=21; citation_pages=165-170; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_author=PJ Diggle; citation_author=P Heagerty; citation_author=KY Liang; citation_author=SL Zeger; citation_number=22; citation_date=2002; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=Power-transformations when fitting theoretical models to data.; citation_author=RJ Carroll; citation_author=D Ruppert; citation_journal_title=J Am Stat Assoc; citation_volume=79; citation_number=23; citation_pages=321-328; citation_date=1984; " />
+      <meta name="citation_reference" content="citation_title=Functional mapping of quantitative trait loci underlying growth trajectories using a transform-both-sides logistic model.; citation_author=RL Wu; citation_author=CX Ma; citation_author=M Lin; citation_author=ZH Wang; citation_author=G Casella; citation_journal_title=Biometrics; citation_volume=60; citation_number=24; citation_pages=729-738; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A nonstationary model for functional mapping of complex traits.; citation_author=W Zhao; citation_author=UQ Chen; citation_author=G Casella; citation_author=JM Cheverud; citation_author=RL Wu; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=25; citation_pages=2469-2477; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Parametric modeling of growth curve data: An overview (with discussion).; citation_author=DL Zimmerman; citation_author=V Núñez-Antón; citation_journal_title=Test; citation_volume=10; citation_number=26; citation_pages=1-73; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Maximum likelihood from incomplete data via the EM algorithm.; citation_author=AP Dempster; citation_author=NM Laird; citation_author=DB Rubin; citation_journal_title=J Roy Stat Soc Ser B; citation_volume=39; citation_number=27; citation_pages=1-38; citation_date=1977; " />
+      <meta name="citation_reference" content="citation_title=Environmental factors and growth.; citation_author=JR Brett; citation_number=28; citation_pages=599-675; citation_date=1979; citation_publisher=Academic Press; " />
+      <meta name="citation_reference" content="citation_author=JM Elliott; citation_number=29; citation_date=1994; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=How should enzyme activities be used in fish growth studies?; citation_author=D Pelletier; citation_author=PU Blier; citation_author=J-D Dutil; citation_author=H Guderley; citation_journal_title=J Exp Biol; citation_volume=198; citation_number=30; citation_pages=1493-1497; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Stenotherms and eurytherms: mechanisms establishing thermal optima and tolerance ranges.; citation_author=GN Somero; citation_author=E Dahlhoff; citation_author=JJ Lin; citation_number=31; citation_pages=53-78; citation_date=1996; citation_publisher=Cambridge University Press; " />
+      <meta name="citation_reference" content="citation_title=Integrating thermal physiology and ecology of ectotherms: a discussion of approaches.; citation_author=RB Huey; citation_author=RD Stevenson; citation_journal_title=Am Zool; citation_volume=19; citation_number=32; citation_pages=357-366; citation_date=1979; " />
+      <meta name="citation_reference" content="citation_title=Specialists and generalists in changing environments. 1. Fitness landscapes of thermal sensitivity.; citation_author=GW Gilchrist; citation_journal_title=Am Nat; citation_volume=146; citation_number=33; citation_pages=252-270; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Plant eco-devo: the potential of poplar as a model.; citation_author=Q Cronk; citation_journal_title=New Phytol; citation_volume=166; citation_number=34; citation_pages=39-48; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=It's the ecology, stupid!; citation_author=J Dusheck; citation_journal_title=Nature; citation_volume=418; citation_number=35; citation_pages=578-579; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Quantitative laws in metabolism and growth.; citation_author=L von Bertalanffy; citation_journal_title=Quart Rev Biol; citation_volume=32; citation_number=36; citation_pages=217-231; citation_date=1957; " />
+      <meta name="citation_reference" content="citation_title=A general model for ontogenetic growth.; citation_author=GB West; citation_author=JH Brown; citation_author=BJ Enquist; citation_journal_title=Nature; citation_volume=413; citation_number=37; citation_pages=628-631; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The emerging conceptual framework of evolutionary developmental biology.; citation_author=W Arthur; citation_journal_title=Nature; citation_volume=415; citation_number=38; citation_pages=757-764; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Composite functional mapping of dynamic quantitative traits.; citation_author=RQ Yang; citation_author=J Zhang; citation_author=RL Wu; citation_journal_title=Genetics (revised).; citation_number=39; citation_date=2006; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves"/>
+    <meta name="twitter:description" content="
+Whether and how thermal reaction norm is under genetic control is fundamental to understand the mechanistic basis of adaptation to novel thermal environments. However, the genetic study of thermal reaction norm is difficult because it is often expressed as a continuous function or curve. Here we derive a statistical model for dissecting thermal performance curves into individual quantitative trait loci (QTL) with the aid of a genetic linkage map. The model is constructed within the maximum likelihood context and implemented with the EM algorithm. It integrates the biological principle of responses to temperature into a framework for genetic mapping through rigorous mathematical functions established to describe the pattern and shape of thermal reaction norms. The biological advantages of the model lie in the decomposition of the genetic causes for thermal reaction norm into its biologically interpretable modes, such as hotter-colder, faster-slower and generalist-specialist, as well as the formulation of a series of hypotheses at the interface between genetic actions/interactions and temperature-dependent sensitivity. The model is also meritorious in statistics because the precision of parameter estimation and power of QTLdetection can be increased by modeling the mean-covariance structure with a small set of parameters. The results from simulation studies suggest that the model displays favorable statistical properties and can be robust in practical genetic applications. The model provides a conceptual platform for testing many ecologically relevant hypotheses regarding organismic adaptation within the Eco-Devo paradigm.
+"/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000554.g005"/>
+
+  <meta property="og:title" content="A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=6214'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=3267'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1186&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000554">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000554" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000554&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            John Stephen Yap, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Statistics, University of Florida, Gainesville, Florida, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Chenguang Wang, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Statistics, University of Florida, Gainesville, Florida, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Rongling Wu
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:rwu@mail.ifas.ufl.edu">rwu@mail.ifas.ufl.edu</a></p>
+
+                <p>Affiliation:
+                  Department of Statistics, University of Florida, Gainesville, Florida, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: June 20, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000554</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000554-g001" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000554-g002" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000554-g003" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000554-t001" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000554-g004" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000554-g005" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000554-t002" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000554">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000554" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Whether and how thermal reaction norm is under genetic control is fundamental to understand the mechanistic basis of adaptation to novel thermal environments. However, the genetic study of thermal reaction norm is difficult because it is often expressed as a continuous function or curve. Here we derive a statistical model for dissecting thermal performance curves into individual quantitative trait loci (QTL) with the aid of a genetic linkage map. The model is constructed within the maximum likelihood context and implemented with the EM algorithm. It integrates the biological principle of responses to temperature into a framework for genetic mapping through rigorous mathematical functions established to describe the pattern and shape of thermal reaction norms. The biological advantages of the model lie in the decomposition of the genetic causes for thermal reaction norm into its biologically interpretable modes, such as hotter-colder, faster-slower and generalist-specialist, as well as the formulation of a series of hypotheses at the interface between genetic actions/interactions and temperature-dependent sensitivity. The model is also meritorious in statistics because the precision of parameter estimation and power of QTLdetection can be increased by modeling the mean-covariance structure with a small set of parameters. The results from simulation studies suggest that the model displays favorable statistical properties and can be robust in practical genetic applications. The model provides a conceptual platform for testing many ecologically relevant hypotheses regarding organismic adaptation within the <em>Eco-Devo</em> paradigm.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Yap JS, Wang C, Wu R (2007) A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves. PLoS ONE 2(6):
+          e554.
+            doi:10.1371/journal.pone.0000554</p><p><strong>Academic Editor: </strong>Justin Borevitz, University of Chicago, United States of America</p><p><strong>Received:</strong> January 30, 2007; <strong>Accepted:</strong> May 24, 2007; <strong>Published:</strong> June 20, 2007</p><p><strong>Copyright:</strong> © 2007 Yap et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The preparation of this manuscript is supported by NSF grant (0540745) and NIH grant (R01 NS041670) to R.W.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Understanding the genetic variation of phenotypic responses to a range of environments (referred to as phenotypic plasticity or reaction norm) and its impact on selection and evolution has been a central challenge for studies in evolutionary genetics and ecology <a href="#pone.0000554-Stearns1">[1]</a>–<a href="#pone.0000554-Schlichting1">[3]</a>. Environment-dependent responsiveness of a genotype can be broadly classified into two types in terms of whether the environment is discrete or continuous. While the mechanistic basis for the phenotypic plasticity of a genotype to discrete environments has been extensively investigated <a href="#pone.0000554-Stearns1">[1]</a>–<a href="#pone.0000554-Gomulkiewicz1">[6]</a>, we know almost nothing about the pattern of phenotypic expression of a single genotype across continuous environmental gradients, such as temperature and humidity gradients <a href="#pone.0000554-Via1">[5]</a>. Virtually, many biological traits vary continuously when the environmental state is continuous, for which the phenotypic value of a trait can be expressed as a function of the environmental states. These traits are often called “infinite-dimensional” traits that require an infinite number of measurements to be completely described <a href="#pone.0000554-Gomulkiewicz1">[6]</a>. Thermal performance curves (TPCs) which are of evolutionary significance present one of such excellent examples <a href="#pone.0000554-Huey1">[7]</a>–<a href="#pone.0000554-Izem1">[10]</a>. TPCs represent the change in performance of an individual or a genotype as a function of temperature.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p><a href="#pone-0000554-g001">Figure 1</a> illustrates the growth rate of caterpillars, <em>y</em>, measured at six temperatures ranging from 11° Celsius to 40° Celsius, that is, (11, 17, 23, 29, 35, 40) <a href="#pone.0000554-Izem1">[10]</a>. Although the data are discontinuous, the underlying relationship between the growth rate and the temperature (<em>t</em>) can be described by a mathematical function, such as high-order polynomials, that is biologically meaningful or statistically justifiable <a href="#pone.0000554-Izem1">[10]</a>. In general, the TPC curve slowly increases with increasing temperature, tends to reach a maximum at some intermediate temperature and then rapidly decreases with further increase in temperature, but it is obvious that there exists pronounced differentiation in curve shape among individuals due to genetic and environmental effects. One purpose of the development of statistical models is to separate these two different types of effects on TPCs and test their relative importance in governing the shape of the curves. The second purpose is to address an important question about the genetic architecture of continuous reaction norms: specifically, what are the patterns of genetic variation and covariation in continuous reaction norms found in natural populations <a href="#pone.0000554-Scheiner1">[2]</a>?</p>
+<div class="figure" id="pone-0000554-g001"><div class="img"><a name="pone-0000554-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Example of thermal performance curves – growth rate z was measured at six temperatures for 90 families of caterpillars.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>This set of curves has a common shape (slowly increases, tend to reach a maximum and rapidly decreases). The variation in the curves is due to both genetic and environmental factors operational in the population. Adapted from ref. <a href="#pone.0000554-Izem1">[10]</a>.</p>
+<span>doi:10.1371/journal.pone.0000554.g001</span></div><a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Three distinct modes of variation have been proposed to describe the variation of TPCs, i.e., hotter-colder, faster-slower and generalist-specialist <a href="#pone.0000554-Huey2">[8]</a> (<a href="#pone-0000554-g002">Fig. 2</a>). Specifically, these modes are defined as follows:</p>
+
+
+<ol class="order">
+
+<li>The <em>hotter-colder</em> describes variation in the temperature at which performance is maximal, in which some individuals (hotter, 1) have maximal performance at hotter temperatures (τ<sub>1</sub>), whereas others (colder, 0) have maximal performance at colder temperatures (τ<sub>0</sub>) relative to the mean reaction norm for the population.</li>
+
+<li>The <em>faster-slower</em> captures variation in the overall height of the reaction norm, in which some individuals (faster, 1) have greater performance at all temperatures than others (slower, 0).</li>
+
+<li>The <em>generalist-specialist</em> shows variation in the width of the reaction norm, in which individuals with greater performance at intermediate temperatures (τ<em><sub>I</sub></em>) have lower performance at low (τ<em><sub>L</sub></em>) and high temperatures (τ<em><sub>H</sub></em>) (specialists, 1), whereas individuals with lower performance at intermediate temperatures have greater performance at low and high temperatures (generalists, 0) relative to the mean reaction norm for the population.</li>
+
+</ol><div class="figure" id="pone-0000554-g002"><div class="img"><a name="pone-0000554-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Three hypothetical patterns of variation in thermal performance curves due to the effects of a hotter/colder, faster/slower and genegeneralist/specialist QTL, respectively.</span></strong></p><span>doi:10.1371/journal.pone.0000554.g002</span></div><a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Each of these three patterns, hotter-colder, faster-slower, and generalist-specialist, that can be viewed as different directions of variation may be controlled by a particular set of genes. It is possible that these three sets of genes may exist simultaneously in the same population such that this population may contain mixtures of genotypes that vary along different axes of variation <a href="#pone.0000554-Kingsolver1">[11]</a>. A central challenge is to test how specific genes govern each mode of variation and quantify how much different modes of variation contribute to the total genetic variation for TPCs in a population <a href="#pone.0000554-Kingsolver2">[12]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>The questions mentioned above can now be addressed by using genetic mapping approaches <a href="#pone.0000554-Lander1">[13]</a>–<a href="#pone.0000554-Xu1">[16]</a> that capitalizes on molecular markers to infer the underlying quantitative trait loci (QTL) for thermal reaction norms. However, these traditional approaches can only be well used to associate marker genotypes with single phenotypic values of a trait, and have less power to map a phenotype, such as thermal reaction norms, expressed as an “infinite-dimensional” curve. Although extensions have been made to model multiple discrete traits at the same time <a href="#pone.0000554-Jiang1">[17]</a>, <a href="#pone.0000554-Korol1">[18]</a>, they are limited for mapping a large number of traits due to computational prohibition and longitudinal repeated measures showing an autocorrelation structure. More recently, a new QTL mapping strategy, called functional mapping, has been proposed to map traits that vary continuously as a function of an independent variable <a href="#pone.0000554-Ma1">[19]</a>, <a href="#pone.0000554-Wu1">[20]</a>. By embedding biologically sensible growth equations into the mapping framework, functional mapping can estimate the dynamic changes of the genetic effects of a QTL in development and push hypotheses tests towards the interplay between genes and development.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>In principle, functional mapping can be used to study the genetic architecture of environmentally sensitive phenotypic variation for a complex trait. However, a direct use of functional mapping is problematic because it has not taken into account the underlying modes of variation unique to thermal reaction norms <a href="#pone.0000554-Huey2">[8]</a>. The purpose of this study is to derive a theoretical framework model for mapping QTL that regulate differentiation in TPC described by a rational function. By testing the mathematical parameters that define the optimum performance breadth and thermal limit of a TPC, a general procedure is given for testing and identifying possible existence of a particular underlying mode of variation. The model allows for a further extension to discern the contributions of multiple modes of variation to TPCs through a web of genetic actions and interactions. The model and procedure are derived within the maximum likelihood context and implemented with the EM algorithm. Monte Carlo simulation studies are performed to explore the statistical properties of the model and validate its usefulness in practice.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Method"></a><h3>Method</h3>
+<h4>Mixture Model</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>To simplify the description of the model, we assume a backcross population in which there are only two contrast genotypes at each locus. The model can be readily extended to other more complicated designs, such as the F<sub>2</sub>, a full-sib family, a natural population and a structured pedigree with multiple founders. The backcross considered has <em>n</em> individuals, each genotyped with polymorphic markers for the construction of a linkage map. This map is used to identify the genome-wide distribution of QTL that control TPCs. All the backcross individuals are subjected to a multitude of temperature (say <em>T</em>), which cover the range suited for the species studied to grow normally. At each temperature, body mass or body size (in terms of length, width or volume) of the backcross is measured at multiple time points, from which the mean rate of growth is calculated. Thus, the relationship between growth rate and temperature describe the TPC which is modeled by a rational function.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Suppose there is a putative QTL segregating with two different genotypes <em>Qq</em> (coded by 1) and <em>qq</em> (coded by 0) in the assumed backcross that affects the shape of TPCs. This QTL is located somewhere in the genome, which can be detected by the linkage map. Assume the QTL to reside between a pair of flanking markers <strong>M</strong><sub>1</sub> and <strong>M</strong><sub>2</sub> each with two genotypes coded by 1 and 0. For each backcross individual, it may carry one (and only one) QTL genotype, 1 or 0. The probability of a particular individual (<em>i</em>) to carry QTL genotype 1 or 0 depends on the marker genotype of this individual at two flanking markers (<strong>M</strong><sub>1</sub> and <strong>M</strong><sub>2</sub>) that bracket the QTL. Let <em>r</em><sub>1</sub>, <em>r</em><sub>2</sub> and <em>r</em> be the recombination fractions between <strong>M</strong><sub>1</sub> and QTL, between QTL and <strong>M</strong><sub>2</sub> and between the two markers, respectively. Under the assumption of independent crossovers, we derive the probability of a QTL genotype given a marker genotype as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e001&amp;representation=PNG" class="inline-graphic"></span><br>Because each individual has a known marker genotype, 11, 10, 01 or 00, these conditional probabilities are generally expressed by ω<sub>1|<em>i</em></sub> and ω<sub>0|<em>i</em></sub>.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>The phenotypic value of growth rate for individual <em>i</em> at different temperatures, <strong>y</strong><em><sub>i</sub></em> = (<em>y<sub>i</sub></em>(1),…,<em>y<sub>i</sub></em>(<em>T</em>)), is distributed as a mixture distribution with two different groups of QTL genotypes, expressed as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e002&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br>where Θ<em><sub>p</sub></em> = (ω<sub>1|<em>i</em></sub>, ω<sub>0|<em>j</em></sub>) is the vector of individual-specific mixture proportions (i.e., the conditional probabilities of QTL genotypes) which are constrained to be non-negative and sum to unity, <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e003&amp;representation=PNG" class="inline-graphic"></span> where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e004&amp;representation=PNG" class="inline-graphic"></span> is a vector that contains the parameters specific to component (i.e., QTL genotype) <em>j</em>, and Θ<em><sub>v</sub></em> includes the parameters common to all components. We assume that given the <em>i</em>th individual's QTL genotype <em>j</em>, its repeated measures follow a multivariate normal distribution, expressed as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e005&amp;representation=PNG" class="inline-graphic"></span><br>where <strong>u</strong><em><sub>j</sub></em> = (<em>u<sub>j</sub></em>(1),…,<em>u<sub>j</sub></em>(<em>T</em>)) is a vector of expected values for QTL genotype <em>j</em> at different temperatures. At a particular temperature <em>t</em>, the relationship between the observation and expected mean can be described by a regression model,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e006&amp;representation=PNG" class="inline-graphic"><span class="note">(2)</span></span><br>where ξ<em><sub>i</sub></em> is the indicator variable denoted as 1 for <em>j</em> = 1 and 0 for <em>j</em> = 0, and <em>e<sub>i</sub></em>(<em>t</em>) is the residual error (i.e., the accumulative effect of polygenes and errors) that is independently and identically distributed (iid) normal with mean zero and variance σ<sup>2</sup>(<em>t</em>). The errors at two different time points or states, <em>t</em><sub>1</sub> and <em>t</em><sub>2</sub>, are correlated with covariance σ(<em>t</em><sub>1</sub>, <em>t</em><sub>2</sub>). The covariance matrix Σ is composed of σ<sup>2</sup>(<em>t</em>) and σ(<em>t</em><sub>1</sub>, <em>t</em><sub>2</sub>).</p>
+
+
+<h4>Modeling the Mean-Covariance Structures</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Functional mapping models the mean vector and the structure of covariance matrix for longitudinal traits. The genotypic means for growth rate over a range of continuous temperatures can be specified by a biologically meaningful mathematical equation. In a thermal experiment for brown trout, Ojanguren et al. <a href="#pone.0000554-Ojanguren1">[21]</a> used a third-order polynomial function to sufficiently describe the thermal sensitivity of fish growth. Here, we use a rational function such that a general form of TPC across different temperatures for QTL genotype <em>j</em> is expressed as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e007&amp;representation=PNG" class="inline-graphic"><span class="note">(3)</span></span><br>where a combination of <em>a<sub>j</sub></em> and <em>b<sub>j</sub></em> describes the height and base width of the TPC and <em>c<sub>j</sub></em> and <em>d<sub>j</sub></em> describe the horizontal and vertical translation of the curve, respectively. If there are differences in a set of curve parameters, arrayed in <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e008&amp;representation=PNG" class="inline-graphic"></span>, between different genotypes at a QTL, this means that this QTL triggers an effect on TPCs. Further, by estimating different sets of parameters, three modes of variation for TPC, controlled by a hotter-colder, faster-slower and generalist-specialist QTL, respectively, can be elucidated (<a href="#pone-0000554-g001">Fig. 1</a>).</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>In statistics, theories and methods have been available to model the structure of covariances between measurements repeatedly made at a series of time points <a href="#pone.0000554-Diggle1">[22]</a>. Because of its elegant mathematical and statistical properties, the autoregressive process has been widely used for studies of longitudinal data measurements. The first-order autoregressive (AR(1)) model has been successfully applied to model the structure of the within-subject covariance matrix for functional mapping. The AR(1) model is basedon two simplified assumptions, i.e., variance stationarity – the residual variance (σ<sup>2</sup>) is unchanged over time points, and covariance stationarity – the correlation between different measurements decreases proportionally (in ρ) with increased time interval. Mathematically, the AR(1) is described as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e009&amp;representation=PNG" class="inline-graphic"></span><br>for the variance, and<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e010&amp;representation=PNG" class="inline-graphic"></span><br>for the covariance between any two time points <em>t</em><sub>1</sub> and <em>t</em><sub>2</sub>, where 0&lt;ρ&lt;1 is the proportion parameter with which the correlation decays with time lag. The parameters that model the structure of the covariance matrix are arrayed in Θ<em><sub>v</sub></em> = (ρ, σ<sup>2</sup>).</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>When the residual covariance matrix (<em>Σ</em>) is modeled by the AR(1) model, the closed forms can be derived for its inverse and determinant, which facilitate model computing and parameter estimating. The inverse <em>Σ</em><sup>−1</sup> is a tridiagonal symmetric matrix, whose diagonal elements are<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e011&amp;representation=PNG" class="inline-graphic"></span><br>and second diagonal elements are all<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e012&amp;representation=PNG" class="inline-graphic"></span><br>The determinant of the matrix is derived as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e013&amp;representation=PNG" class="inline-graphic"></span><br>Let <strong>z</strong><em><sub>j</sub></em><sub>|<em>i</em></sub> = [<em>z<sub>j</sub></em><sub>|<em>i</em></sub>(1),…,<em>z<sub>j</sub></em><sub>|<em>i</em></sub>(<em>T</em>)] = <strong>y</strong><em><sub>i</sub></em>−<strong>u</strong><em><sub>j</sub></em>, (<em>j</em> = 0,…,<em>j</em>), then we have<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e014&amp;representation=PNG" class="inline-graphic"></span><br>In practice, the two simplified assumptions of the AR(1) model may not hold so that the elegant expressions of the matrix cannot be used for functional mapping. To make longitudinal data well suited to the AR(1) model, some treatments are needed. For example, to remove the heteroscedastic problem of the residual variance, Carroll and Rupert's <a href="#pone.0000554-Carroll1">[23]</a> transform-both-sides (TBS) model is embedded into the growth-incorporated finite mixture model <a href="#pone.0000554-Wu2">[24]</a>, which does not need any more parameters. Both empirical analyses with real examples and computer simulations suggest that the TBS-based model can increase the precision of parameter estimation and computational efficiency. Furthermore, the TBS model preserves original biological means of the curve parameters although statistical analyses are based on transformed data.</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>The TBS-based model displays the potential to relax the assumption of variance stationarity, but the covariance stationarity issue remains unsolved. Zimmerman and Núñez-Antón <a href="#pone.0000554-Zhao1">[25]</a> proposed a so-called structured antedependence (SAD) model to model the age-specific change of correlation in the analysis of longitudinal traits. The SAD model has been employed in several studies and displays many favorable properties for genetic mapping of dynamic traits <a href="#pone.0000554-Zimmerman1">[26]</a>.</p>
+
+
+<h4>Likelihood and Estimation</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>We implemented the EM algorithm, originally proposed by Dempster et al. <a href="#pone.0000554-Dempster1">[27]</a>, to obtain the maximum likelihood estimates (MLEs) of three groups of unknown parameters in a QTL mapping model, that is, the conditional probabilities of QTL genotypes (Θ<em><sub>p</sub></em>) that specify the co-segregation patterns of QTL and markers in a mapping population, the curve parameters <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e015&amp;representation=PNG" class="inline-graphic"></span> that model the mean vector, and the parameters (Θ<em><sub>v</sub></em>) that model the structure of the covariance matrix. All these unknowns are contained within the mixture model described by equation (1).</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>The likelihood of phenotypic values measured at multiple temperatures can be written, in terms of a multivariate mixture model (1), as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e016&amp;representation=PNG" class="inline-graphic"></span><br>where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e017&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e018&amp;representation=PNG" class="inline-graphic"></span>. The MLEs of the unknown parameters for a QTL can be computed by implementing the EM algorithm. The log-likelihood is given by<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e019&amp;representation=PNG" class="inline-graphic"><span class="note">(4)</span></span><br>with derivative with respect to any element Θ<sub>ς</sub> in the unknown vector (<em>Θ</em><em><sub>p</sub></em>,<em>Θ</em><em><sub>q</sub></em>)<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e020&amp;representation=PNG" class="inline-graphic"></span><br>where we define<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e021&amp;representation=PNG" class="inline-graphic"><span class="note">(5)</span></span><br>which could be thought of as a posterior probability that individual <em>i</em> have QTL genotype <em>j</em>. Conditional on <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e022&amp;representation=PNG" class="inline-graphic"></span>, we solve for<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e023&amp;representation=PNG" class="inline-graphic"><span class="note">(6)</span></span><br>The log-likelihood equations are derived to estimate the parameters in (Θ<em><sub>p</sub></em>, Θ<em><sub>q</sub></em>) through the EM algorithm. In the E step, the posterior probabilities of a QTL given marker genotypes and phenotypes observations are calculated with equation (2). Then, in the M step, different parameters are estimated with equation (3). The log-likelihood equations in the M step are given in the Appendix. The iterations between the E and M steps are repeated until the estimates converge. The values at the convergence are regarded as the MLEs. In practice, the QTL position parameter (θ) can be viewed as a fixed parameter because a putative QTL can be searched at every 1 or 2 cM on a map interval bracketed by two markers throughout the entire linkage map. The log-likelihood ratio test statistic for a QTL at a particular map position is displayed graphically to generate a likelihood map or profile. The genomic position that corresponds to a peak of the profile is the MLEof the QTL location.</p>
+
+
+<h4>Hypothesis Tests</h4>
+<h5>Existence of a QTL.</h5><a id="article1.body1.sec2.sec4.sec1.p1" name="article1.body1.sec2.sec4.sec1.p1"></a><p>The merit of functional mapping includes the tests of a number of biologically meaningful hypotheses regarding the genetic and developmental control of dynamic traits. After the genetic parameters are obtained, we need to test whether there is a QTL that affects the shape of TPC. The existence of a QTL can be tested by formulating the following hypotheses:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e024&amp;representation=PNG" class="inline-graphic"><span class="note">(7)</span></span><br>where the null hypothesis <em>H</em><sub>0</sub> states that the data can be fit with only one mean curve by parameters Θ<em><sub>u̅</sub></em> = (<em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>), whereas in the alternative hypothesis <em>H</em><sub>1</sub> two distinct curves exist showing that there is a segregating QTL forTPC. The test statistic is the log-likelihood ratio (LR) of the full (<em>H</em><sub>1</sub>) over reduced model (<em>H</em><sub>0</sub>), expressed as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e025&amp;representation=PNG" class="inline-graphic"></span><br>where the tildes and hats denote the MLEs of the unknown parameters under the <em>H</em><sub>0</sub> and <em>H</em><sub>1</sub>, respectively. Note that the estimation of (<em>Θ̂</em><em><sub>p</sub></em>, <em>Θ̂</em><em><sub>u</sub></em>, <em>Θ̂</em><em><sub>v</sub></em>) depends on both phenotypic values and marker data, whereas the estimation of <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e026&amp;representation=PNG" class="inline-graphic"></span> only depends on phenotypic values. The critical threshold for the declaration of a QTL can be determined from permutation tests (Churchill and Doerge 1994).</p>
+
+<h5>Type of QTL.</h5><a id="article1.body1.sec2.sec4.sec2.p1" name="article1.body1.sec2.sec4.sec2.p1"></a><p>After a significant QTL for TPCs is identified, the next step is to test how this QTL affects the patterns of TPCs. Three different modes of variation are specified for thermal performance curves <a href="#pone.0000554-Huey2">[8]</a>. Each of these modes may be controlled by a different gene. The proposed model can be used to identify mode-specific QTL by formulating relevant hypotheses. Whether there is a QTL that controls the hotter-colder variation can be tested on the basis of the following hypotheses<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e027&amp;representation=PNG" class="inline-graphic"></span><br>where τ<sub>1</sub> and τ<sub>0</sub> are the temperatures at which the TPC reaches a maximum value for QTL genotype 1 and 0, respectively. These temperatures corresponding to the maximum performance can be obtained by solving the following equations<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e028&amp;representation=PNG" class="inline-graphic"></span><br>and<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e029&amp;representation=PNG" class="inline-graphic"></span><br>Thus, testing hypothesis (8) is equivalent to testing the hypothesis<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e030&amp;representation=PNG" class="inline-graphic"></span><br>The QTL for the faster-slower mode of variation can be detected by<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e031&amp;representation=PNG" class="inline-graphic"><span class="note">(8)</span></span><br>Although the alternative hypothesis of (1) contains two possibilities <em>u</em><sub>1</sub>(<em>t</em>)&gt;<em>u</em><sub>0</sub>(<em>t</em>) or <em>u</em><sub>1</sub>(<em>t</em>)&lt;<em>u</em><sub>0</sub>(<em>t</em>), the property of a rational function indicates that only one possibility exists consistently at all temperatures during the entire range. Thus, the rejection of the null hypothesis suggests that one QTL genotype performs better at all temperatures than the second genotype.</p>
+<a id="article1.body1.sec2.sec4.sec2.p2" name="article1.body1.sec2.sec4.sec2.p2"></a><p>The identification of a so-called generalists-specialist QTL is more difficult, compared with that of the hotter-colder and faster-slower QTL. First, by solving the equation <em>u</em><sub>1</sub>(<em>t</em>) = <em>u</em><sub>0</sub>(<em>t</em>), we obtain the two temperatures, denoted by <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e032&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e033&amp;representation=PNG" class="inline-graphic"></span> (assuming <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e034&amp;representation=PNG" class="inline-graphic"></span>), at which the two QTL genotypic TPCs cross over. Second, based on these two temperatures, the TPC is divided into three distinct regions of temperature <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e035&amp;representation=PNG" class="inline-graphic"></span>. The hypotheses for detecting the generalist-specialist QTL are made on the basis of the area under curve, i.e.,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e036&amp;representation=PNG" class="inline-graphic"><span class="note">(9)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e037&amp;representation=PNG" class="inline-graphic"><span class="note">(10)</span></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e038&amp;representation=PNG" class="inline-graphic"><span class="note">(11)</span></span><br>where<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e039&amp;representation=PNG" class="inline-graphic"></span><br>The rejection of each null hypothesis from (9) to (11) indicates the existence of a generalists-specialist QTL.</p>
+<a id="article1.body1.sec2.sec4.sec2.p3" name="article1.body1.sec2.sec4.sec2.p3"></a><p>Different from the hypothesis test about the existence of a QTL (7), there is no problem of non-identifiability for hypothesis tests (8)–(11). Thus, the log-likelihood test statistics calculated for the hypotheses tests (8)–(11) can be reasonably assumed to asymptotically follow a χ<sup>2</sup>-distribution with the degree of freedom equal to the difference in the number of parameters to be estimated under the null and alternative hypotheses.</p>
+
+
+
+<h4>Monte Carlo Simulation</h4>
+<h5>Design.</h5><a id="article1.body1.sec2.sec5.sec1.p1" name="article1.body1.sec2.sec5.sec1.p1"></a><p>We performed simulation studies to investigate the statistical behavior of the proposed model. A backcross design with two genotypes 1 and 0 at each locus is simulated. We simulated 10 equally spaced markers, with the recombination fraction of <em>r</em> = 0.2 apart, to construct a linkage map of 229.87 cM. Assume that a putative QTL is located at 5.27 cM from the second marker (with the recombination fraction (<em>r</em><sub>1</sub> = 0.05) between the second marker and QTL). The first marker was randomly generated using Bernoulli (0.5). The succeeding markers were randomly generated using Bernoulli (<em>p</em>) where <em>p</em> depends on the genotype of the previous marker; that is, if the previous marker genotype was 0, then the next marker genotype was Bernoulli (<em>r</em>) and ifit was 1, then Bernoulli (1−<em>r</em>). The QTL was generated using Bernoulli (<em>r</em><sub>1</sub>) if the second marker genotype was 0 and Bernoulli (1−<em>r</em><sub>1</sub>), if it was genotype 1.</p>
+<a id="article1.body1.sec2.sec5.sec1.p2" name="article1.body1.sec2.sec5.sec1.p2"></a><p>The phenotypic values for TPCs are simulated by summing the QTL genotypic curves and multivariate-normally distributed residual errors with mean vector zero and covariance matrix Σ structured by the AR(1) model. The genotypic TPCs are assumed separately for different modes of variation in temperature-dependent performance, hotter-colder, faster-slower and generalist-specialist. Each mode corresponds to the control of a different QTL accordingly defined as the hotter-colder, faster-slower and generalist-specialist QTL. The TPC parameters that specify each of these modes for different types of QTL were chosen from the space of these curve parameters (see an example in <a href="#pone-0000554-g001">Fig 1</a>). The simulation studies were designed for different sample sizes (<em>n</em> = 100 and 400) and different heritabilities (<em>H</em><sup>2</sup> = 0.1 and 0.4). The covariance-structuring AR(1) parameters are given to assure the heritability of the phenotypic values at the middle temperature at <em>H</em><sup>2</sup> = 0.1 and 0.4.</p>
+
+<h5>Results.</h5><a id="article1.body1.sec2.sec5.sec2.p1" name="article1.body1.sec2.sec5.sec2.p1"></a><p>The simulated marker and phenotypic TPC data are analyzed by the proposed model. By assuming a putative QTL at every 2 cM on the simulated linkage group, the log-likelihood ratio test statistics (LR) calculated for hypotheses (7) were plotted (<a href="#pone-0000554-g003">Fig. 3</a>). The peak of the LR profile corresponds to the MLE of the QTL location. The critical value for declaring the existence of a QTL was determined from 100 permutation tests.</p>
+<div class="figure" id="pone-0000554-g003"><div class="img"><a name="pone-0000554-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>LR plotted over the interval of markers.</span></strong></p><a id="article1.body1.sec2.sec5.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec5.sec2.fig1.caption1.p1"></a><p>Solid curves correspond to <em>n</em> = 400 whereas broken curves to <em>n</em> = 100. Higher curves for each <em>n</em> correspond to higher heritability. The vertical dotted line shows the true location of the QTL at 30.81 cM from the first marker.</p>
+<span>doi:10.1371/journal.pone.0000554.g003</span></div><a id="article1.body1.sec2.sec5.sec2.p2" name="article1.body1.sec2.sec5.sec2.p2"></a><p>The means and standard errors (SEs) of the MLEs of the QTL location, genotype-specific curve parameters, and covariance-structuring parameters were calculated from 100 repeated simulations (<a href="#pone-0000554-t001">Table 1</a>). In general, the proposed model can provide a reasonable estimate of the QTL location for different modes of variation. But there is the best estimation precision for the location of the generalist-specialist QTL, followed by the hotter-colder and faster-slower QTL, although such difference disappears for a large sample size and heritability (<a href="#pone-0000554-t001">Table 1</a>). As expected, the estimation accuracy and precision of the QTL location increase exponentially with increasing sample sizes and heritability levels of TPC for all the modes of variation.</p>
+<div class="figure" id="pone-0000554-t001"><div class="img"><a name="pone-0000554-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>The averaged MLEs of the QTL position, curve and AR(1) parameters and their standard errors (given in parentheses) for different QTL types under different sample sizes (<em>n</em>) and heritabilities (<em>H</em><sup>2</sup>) based on 100 simulation replicates</span></strong></p><span>doi:10.1371/journal.pone.0000554.t001</span></div><a id="article1.body1.sec2.sec5.sec2.p3" name="article1.body1.sec2.sec5.sec2.p3"></a><p>Although the model can reasonably estimate the curve and AR(1) parameters, the accuracy and precision of estimation depend heavily upon the mode of variation (<a href="#pone-0000554-t001">Table 1</a>). <a href="#pone-0000554-g004">Figure 4</a> illustrates the comparisons between the estimated and given TPCs for different QTL genotypes from each mode of variation. The estimation of the faster-slower mode is least precise, whereas the generalist-specialist mode has the best estimation precision, with the hotter-colder mode intermediate. For all the modes,a modest sample size (100) and heritability (0.1) can be sufficient to estimate the parameters of TPC curves, but increasing sample sizes and heritabilities are always favorable to improve the precision of parameter estimation.</p>
+<div class="figure" id="pone-0000554-g004"><div class="img"><a name="pone-0000554-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Estimated (solid) and given (broken) TPCs for two different QTL genotypes at different types of QTL under different samples and heritabilities.</span></strong></p><a id="article1.body1.sec2.sec5.sec2.fig2.caption1.p1" name="article1.body1.sec2.sec5.sec2.fig2.caption1.p1"></a><p>The given curves for two different QTL genotypes are specified by <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e040&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e041&amp;representation=PNG" class="inline-graphic"></span> for the hotter-colder gene; <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e042&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e043&amp;representation=PNG" class="inline-graphic"></span> for the faster-slower gene and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e044&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e045&amp;representation=PNG" class="inline-graphic"></span> for the generalist-specialist gene. In many cases, the estimated curves overlap with the given curves, suggesting that the model provides an unbiased estimate of TPCs. Curve parameters defined to specify three different modes of variation in TPC each controlled by a different QTL type in a backcross population.</p>
+<span>doi:10.1371/journal.pone.0000554.g004</span></div><a id="article1.body1.sec2.sec5.sec2.p4" name="article1.body1.sec2.sec5.sec2.p4"></a><p>An additional simulation study was conducted to examine how poorly TPC-fitted data affect the estimates of model parameters. We simulated TPC data for the hotter-colder gene by considering three different scenarios: (1) all backcross individuals are fitted by a given QTL genotype-specific TPC with a large coefficient of determination (<em>R</em><sup>2</sup> = 0.9–1.0), (2) a half of individuals are fitted by a large coefficient of determination (<em>R</em><sup>2</sup> = 0.9–1.0), whereas the other half fitted by a low coefficient of determination (<em>R</em><sup>2</sup> = 0.5–0.6), and (3) all individuals are fitted by a low coefficient of determination (<em>R</em><sup>2</sup> = 0.5–0.6). <a href="#pone-0000554-t002">Table 2</a> tabulates the means and SEs of the MLEs for the QTL position, curve parameters and covariance-structuring parameters. As expected, the accuracy and precision of parameter estimates increases with a higher proportion of individuals that can be better fitted by TPCs (see also <a href="#pone-0000554-g005">Fig. 5</a>). But even if all individuals have a modest coefficient of determination, the model can still provides reasonable parameter estimation.</p>
+<div class="figure" id="pone-0000554-g005"><div class="img"><a name="pone-0000554-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Results from simulation scenarios for a hotter-colder QTL.</span></strong></p><a id="article1.body1.sec2.sec5.sec2.fig3.caption1.p1" name="article1.body1.sec2.sec5.sec2.fig3.caption1.p1"></a><p>Scenario 1–the coefficients of determination (<em>R</em><sup>2</sup>) equal to 0.9–1.0 for all individuals; Scenario 2–<em>R</em><sup>2</sup> = 0.9–1.0 for a half of individuals and <em>R</em><sup>2</sup> = 0.5–0.6 for the other half; Scenario 3–<em>R</em><sup>2</sup> = 0.5–0.6 for all individuals. Upper panel: LR plotted over the interval of markers. Lower panel: Estimated (solid) and given (broken) TPCs for two different QTL genotypes.</p>
+<span>doi:10.1371/journal.pone.0000554.g005</span></div><div class="figure" id="pone-0000554-t002"><div class="img"><a name="pone-0000554-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000554" data-uri="info:doi/10.1371/journal.pone.0000554.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000554.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000554.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000554.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>The averaged MLEs of the QTL position, curve and AR(1) parameters and their standard errors (given in parentheses) for different simulation scenarios for a hotter-colder QTL under <em>n</em> = 200 and <em>H</em><sup>2</sup> = 0.4 based on 100 simulation replicates. The true parameters are <em>a</em><sub>1</sub> = <em>a</em><sub>0</sub> = 1, <em>b</em><sub>1</sub> = <em>b</em><sub>0</sub> = 0.2, <em>d</em><sub>1</sub> = <em>d</em><sub>0</sub> = 10, <em>c</em><sub>1</sub> = 5.0, <em>c</em><sub>0</sub> = 3.5, σ<sup>2</sup> = 0.036, and ρ = 0.6.</span></strong></p><span>doi:10.1371/journal.pone.0000554.t002</span></div>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Growth is an integrative process that involves digestion, absorption, assimilation, metabolic expenditure and excretion <a href="#pone.0000554-Brett1">[28]</a>, <a href="#pone.0000554-Elliott1">[29]</a>. All of these functions are mediated by enzymatic activities that are largely affected by temperature <a href="#pone.0000554-Pelletier1">[30]</a>, <a href="#pone.0000554-Somero1">[31]</a>. Ultimately, thermal regimen emerges as the main factor controlling the growth rate of an organism <a href="#pone.0000554-Huey1">[7]</a>, <a href="#pone.0000554-Huey2">[8]</a>. An accurate description of thermal dependence of any aspect of organismal performance should include three critical parameters: (1) temperature or range of temperatures for maximal performance (i.e. optimum), (2) thermal performance breadth (range of temperatures in which performance is above certain level) and (3) tolerance zone or range of above-zero performance <a href="#pone.0000554-Huey1">[7]</a>, <a href="#pone.0000554-Huey3">[32]</a>, <a href="#pone.0000554-Gilchrist1">[33]</a>. Extensive studies have been carried out to establish an empirical model for specifying the relationship between growth rate and temperature in a variety of organisms <a href="#pone.0000554-Huey2">[8]</a>, <a href="#pone.0000554-Izem1">[10]</a> and integrate it into the evolutionary and developmental context of adaptation <a href="#pone.0000554-Huey1">[7]</a>, <a href="#pone.0000554-Huey2">[8]</a>, <a href="#pone.0000554-Izem1">[10]</a>, <a href="#pone.0000554-Gilchrist1">[33]</a>. However, further incorporation of thermal sensitivity into evolutionary studies is limited by our poor understanding of the genetic machinery of this phenomenon. To our knowledge, no analytical model has been available to detect and characterize specific quantitative trait loci (QTL) that control thermal performance curves (TPC) based on their underlying mathematical functions.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Thanks to functional mapping, a general framework constructed to map QTL for quantitative traits that undergo developmental changes <a href="#pone.0000554-Ma1">[19]</a>, <a href="#pone.0000554-Wu1">[20]</a>, we are now able to derive an analytical model for mapping TPCs by implementing the biological principle of the thermal sensitivity. The new model includes two components. First, it integrates mathematical equations that specify the shape and process of TPCs into a statistical framework for QTL mapping, thus increasing the biological relevance and statistical power of the model. Second, because of the autocorrelation between longitudinal measures <a href="#pone.0000554-Diggle1">[22]</a>, parametric modeling of the structure and pattern for the covariance matrix increases the robustness of the model. Although a similar analytical principle of functional mapping has been used for its derivation process, the new model is different from the original model in the aspects as follows.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>First, the new model embeds fundamental ideas of thermal sensitivity within QTL mapping, allowing for the characterization of different types of QTL that contribute to different modes of variation in TPC. Variation in TPC may be due to three different modes, hotter-colder, faster-slower and generalist-specialist <a href="#pone.0000554-Huey2">[8]</a>. Empirical studies suggest that these modes play different roles in affecting TPC differentiation in a population <a href="#pone.0000554-Izem1">[10]</a>. These roles can now be discerned by our model through the detection of the underlying genetic control mechanisms due to specific QTL. In this article, we propose a quantitative procedure for testing the existence and effect of so-called hotter-colder, faster-slower and generalist-specialist QTL on thermal performance. Second, the new model has for the first time provided a general framework in which development and genetics can be integrated with ecology to further and deepen the idea of Eco-Devo, aimed to study the developmental mechanism of ecological processes <a href="#pone.0000554-Cronk1">[34]</a>, <a href="#pone.0000554-Dusheck1">[35]</a>. In a couple with real genetic and phenotypic data to be collected in the design of this study, this model can be expected to push ecological genetic studies into a level at which a detailed picture of the developmental machinery of adaptation and evolution can be clearly elucidated. The utilization of the new model is validated through extensive simulation studies under different conditions that are faced in practice.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>In this article, we limited our analysis to the mean rates of growth during a time course at individual temperatures. This treatment has simplified our modeling and calculation, but has ignored the role of development in the regulation of TPC differentiation. The biological relevance of our model can be enhanced by incorporating the growth equation into the mean vector. As a universal phenomenon, growth follows a rule that can be described by mathematical functions derived on the basis of the goodness-of-fit of observational data <a href="#pone.0000554-vonBertalanffy1">[36]</a> or from fundamental biological principles <a href="#pone.0000554-West1">[37]</a>. If a logistic equation is used to describe growth trajectory, we can estimate the growth curve parameters for each QTL genotype and test how the detected QTL for TPC exerts its pleiotropic effect on time-dependent growth. This integrative model is supposed to be in a better position to unravel the genetic and developmental mechanisms of ecological adaptation within the <em>Evo-Devo</em> and <em>Eco-Devo</em> contexts <a href="#pone.0000554-Arthur1">[38]</a>.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>In statistics, this model can be modified or extended to be more powerful. For the sake of description, the model was proposed on the basis of simple interval mapping <a href="#pone.0000554-Lander1">[13]</a>. But it is straightforward to incorporate composite interval mapping <a href="#pone.0000554-Jansen1">[14]</a>, <a href="#pone.0000554-Zeng1">[15]</a> into the model, increasing the mapping resolution of linked QTL on the same chromosome. Composite interval mapping combines the idea of interval mapping and partial regression analysis with markers outside the test interval, minimizing the impacts of all those QTL residing outside the interval. As pointed out by Yang et al. <a href="#pone.0000554-Yang1">[39]</a>, however, parametric fitting of individual marker effects will inhibit the implementation of composite interval mapping for dynamic traits. While a parametric method is used for interval mapping, partial regression analysis with other markers as co-factors can be effectively constructed by a nonparametric approach. The deployment of composite interval mapping will allow our model to precisely characterize the QTL that regulate thermal performance trajectories in additive or interactive manners. The computer code to perform linkage disequilibrium analyses can be requested from the corresponding author <a href="mailto:(rwu@stat.ufl.edu)">(rwu@stat.ufl.edu)</a>.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Appendix"></a><h3>Appendix</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>In what follows, we derive the log-likelihood functions used to estimate the parameters <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e048&amp;representation=PNG" class="inline-graphic"></span>. The symbol ' denotes the estimates of parameters from the previous step.<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e049&amp;representation=PNG" class="inline-graphic"></span><br>where<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e050&amp;representation=PNG" class="inline-graphic"></span><br>and<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e051&amp;representation=PNG" class="inline-graphic"></span><br>and<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e052&amp;representation=PNG" class="inline-graphic"></span><br>where<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000554.e053&amp;representation=PNG" class="inline-graphic"></span><br></p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>The authors wish to acknowledge the constructive comments of two anonymous reviewers on the earlier version of this manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: RW. Performed the experiments: JY CC. Analyzed the data: JY CC. Wrote the paper: RW.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000554-Stearns1" id="pone.0000554-Stearns1"></a>Stearns SC (1989) The evolutionary significance of phenotypic plasticity. BioScience  39: 436–445.  <ul class="find" data-citedArticleID="961086" data-doi="10.2307/1311135"><li><a href="http://dx.doi.org/10.2307/1311135" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+evolutionary+significance+of+phenotypic+plasticity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+evolutionary+significance+of+phenotypic+plasticity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000554-Scheiner1" id="pone.0000554-Scheiner1"></a>Scheiner SM (1993) Genetics and evolution of phenotypic plasticity. Annu Rev Ecol Syst  24: 35–68.  <ul class="find" data-citedArticleID="961034" data-doi="10.1146/annurev.es.24.110193.000343"><li><a href="http://dx.doi.org/10.1146/annurev.es.24.110193.000343" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genetics+and+evolution+of+phenotypic+plasticity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genetics+and+evolution+of+phenotypic+plasticity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000554-Schlichting1" id="pone.0000554-Schlichting1"></a>Schlichting CD, Pigliucci M (1998) Phenotypic Evolution: a Reaction Norm Perspective. Sunderland, MA: Sinauer Associates.   <ul class="find-nolinks"></ul></li><li><span class="label">4.
+              </span><a name="pone.0000554-Lynch1" id="pone.0000554-Lynch1"></a>Lynch M, Walsh B (1998) Genetics and Analysis of Quantitative Traits. Sunderland, MA: Sinauer.   <ul class="find-nolinks"></ul></li><li><span class="label">5.
+              </span><a name="pone.0000554-Via1" id="pone.0000554-Via1"></a>Via S, Gomulkiewicz R, de Jong G, Scheiner SE, Schlichting CD, van Tienderen P (1995) Adaptive phenotypic plasticity: consensus and controversy. Trends Ecol Evol  10: 212–217.  <ul class="find" data-citedArticleID="961070" data-doi="10.1016/s0169-5347(00)89061-8"><li><a href="http://dx.doi.org/10.1016/s0169-5347(00)89061-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Adaptive+phenotypic+plasticity%3A+consensus+and+controversy." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Adaptive+phenotypic+plasticity%3A+consensus+and+controversy.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000554-Gomulkiewicz1" id="pone.0000554-Gomulkiewicz1"></a>Gomulkiewicz R, Kirkpatrick M (1992) Quantitative genetics and the evolution of reaction norms. Evolution  46: 390–311.  <ul class="find" data-citedArticleID="961064" data-doi="10.2307/2409860"><li><a href="http://dx.doi.org/10.2307/2409860" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantitative+genetics+and+the+evolution+of+reaction+norms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantitative+genetics+and+the+evolution+of+reaction+norms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000554-Huey1" id="pone.0000554-Huey1"></a>Huey RB, Kingsolver JG (1989) Evolution of thermal sensitivity of ectotherm performance. Trends Ecol Evol  4: 131–135.  <ul class="find" data-citedArticleID="961066" data-doi="10.1016/0169-5347(89)90211-5"><li><a href="http://dx.doi.org/10.1016/0169-5347(89)90211-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+of+thermal+sensitivity+of+ectotherm+performance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+of+thermal+sensitivity+of+ectotherm+performance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000554-Huey2" id="pone.0000554-Huey2"></a>Huey RB, Kingsolver JG (1993) Evolution of resistance to high temperature in ectotherms. Am Nat  142: S21–S46.  <ul class="find" data-citedArticleID="961044" data-doi="10.1086/285521"><li><a href="http://dx.doi.org/10.1086/285521" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+of+resistance+to+high+temperature+in+ectotherms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+of+resistance+to+high+temperature+in+ectotherms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000554-Angilletta1" id="pone.0000554-Angilletta1"></a>Angilletta MJ, Wilson RS, Navas CA, James RS (2003) Trade-offs and the evolution of thermal reaction norms. Trends Ecol Evol  18: 234–240.  <ul class="find" data-citedArticleID="961056" data-doi="10.1016/s0169-5347(03)00087-9"><li><a href="http://dx.doi.org/10.1016/s0169-5347(03)00087-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Trade-offs+and+the+evolution+of+thermal+reaction+norms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Trade-offs+and+the+evolution+of+thermal+reaction+norms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000554-Izem1" id="pone.0000554-Izem1"></a>Izem R, Kingsolver JG (2005) Variation in continuous reaction norms: quantifying directions of biological interest. Am Nat  166: 277–289.  <ul class="find" data-citedArticleID="961010" data-doi="10.1086/431314"><li><a href="http://dx.doi.org/10.1086/431314" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Variation+in+continuous+reaction+norms%3A+quantifying+directions+of+biological+interest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Variation+in+continuous+reaction+norms%3A+quantifying+directions+of+biological+interest.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000554-Kingsolver1" id="pone.0000554-Kingsolver1"></a>Kingsolver JG, Gomulkiewicz R, Carter PA (2001) Variation, selection and evolution of function-valued traits. Genetica  112/113: 87–104.  <ul class="find" data-citedArticleID="961058" data-doi="10.1007/978-94-010-0585-2_7"><li><a href="http://dx.doi.org/10.1007/978-94-010-0585-2_7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Variation%2C+selection+and+evolution+of+function-valued+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Variation%2C+selection+and+evolution+of+function-valued+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000554-Kingsolver2" id="pone.0000554-Kingsolver2"></a>Kingsolver JG, Ragland GJ, Shlicht JG (2004) Quantitative genetics of continuous reaction norms: Thermal sensitivity of caterpillar growth rates. Evolution  58: 1521–1529.  <ul class="find" data-citedArticleID="961030" data-doi="10.1554/03-557"><li><a href="http://dx.doi.org/10.1554/03-557" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantitative+genetics+of+continuous+reaction+norms%3A+Thermal+sensitivity+of+caterpillar+growth+rates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantitative+genetics+of+continuous+reaction+norms%3A+Thermal+sensitivity+of+caterpillar+growth+rates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000554-Lander1" id="pone.0000554-Lander1"></a>Lander ES, Botstein D (1989) Mapping Mendelian factors underlying quantitative traits using RFLP linkage maps. Genetics  121: 185–199.  <ul class="find" data-citedArticleID="961068"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Mapping+Mendelian+factors+underlying+quantitative+traits+using+RFLP+linkage+maps.&amp;auth=&amp;atitle=Mapping+Mendelian+factors+underlying+quantitative+traits+using+RFLP+linkage+maps." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mapping+Mendelian+factors+underlying+quantitative+traits+using+RFLP+linkage+maps." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mapping+Mendelian+factors+underlying+quantitative+traits+using+RFLP+linkage+maps.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000554-Jansen1" id="pone.0000554-Jansen1"></a>Jansen RC, Stam P (1994) High resolution mapping of quantitative traits into multiple loci via interval mapping. Genetics  136: 1447–1455.  <ul class="find" data-citedArticleID="961042"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=High+resolution+mapping+of+quantitative+traits+into+multiple+loci+via+interval+mapping.&amp;auth=&amp;atitle=High+resolution+mapping+of+quantitative+traits+into+multiple+loci+via+interval+mapping." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High+resolution+mapping+of+quantitative+traits+into+multiple+loci+via+interval+mapping." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High+resolution+mapping+of+quantitative+traits+into+multiple+loci+via+interval+mapping.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000554-Zeng1" id="pone.0000554-Zeng1"></a>Zeng Z-B (1994) Precision mapping of quantitative trait loci. Genetics  136: 1457–1468.  <ul class="find" data-citedArticleID="961026"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Precision+mapping+of+quantitative+trait+loci.&amp;auth=&amp;atitle=Precision+mapping+of+quantitative+trait+loci." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Precision+mapping+of+quantitative+trait+loci." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Precision+mapping+of+quantitative+trait+loci.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000554-Xu1" id="pone.0000554-Xu1"></a>Xu S, Atchley WR (1995) A random model approach to interval mapping of quantitative trait loci. Genetics  141: 1189–1197.  <ul class="find" data-citedArticleID="961028"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+random+model+approach+to+interval+mapping+of+quantitative+trait+loci.&amp;auth=&amp;atitle=A+random+model+approach+to+interval+mapping+of+quantitative+trait+loci." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+random+model+approach+to+interval+mapping+of+quantitative+trait+loci." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+random+model+approach+to+interval+mapping+of+quantitative+trait+loci.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000554-Jiang1" id="pone.0000554-Jiang1"></a>Jiang C, Zeng Z-B (1995) Multiple trait analysis of genetic mapping for quantitative trait loci. Genetics  140: 1111–1127.  <ul class="find" data-citedArticleID="961038"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Multiple+trait+analysis+of+genetic+mapping+for+quantitative+trait+loci.&amp;auth=&amp;atitle=Multiple+trait+analysis+of+genetic+mapping+for+quantitative+trait+loci." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Multiple+trait+analysis+of+genetic+mapping+for+quantitative+trait+loci." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Multiple+trait+analysis+of+genetic+mapping+for+quantitative+trait+loci.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000554-Korol1" id="pone.0000554-Korol1"></a>Korol AB, Ronin IY, Kirzhner VM (1995) Interval mapping of quantitative trait loci employing correlated trait complexes. Genetics  140: 1137–1147.  <ul class="find" data-citedArticleID="961080" data-doi="10.1007/bf00222012"><li><a href="http://dx.doi.org/10.1007/bf00222012" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Interval+mapping+of+quantitative+trait+loci+employing+correlated+trait+complexes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Interval+mapping+of+quantitative+trait+loci+employing+correlated+trait+complexes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000554-Ma1" id="pone.0000554-Ma1"></a>Ma CX, Casella G, Wu RL (2002) Functional Mapping of Quantitative Trait Loci Underlying the Character Process: A Theoretical Framework. Genetics  161: 1751–1762.  <ul class="find" data-citedArticleID="961014"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Functional+Mapping+of+Quantitative+Trait+Loci+Underlying+the+Character+Process%3A+A+Theoretical+Framework.&amp;auth=&amp;atitle=Functional+Mapping+of+Quantitative+Trait+Loci+Underlying+the+Character+Process%3A+A+Theoretical+Framework." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+Mapping+of+Quantitative+Trait+Loci+Underlying+the+Character+Process%3A+A+Theoretical+Framework." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+Mapping+of+Quantitative+Trait+Loci+Underlying+the+Character+Process%3A+A+Theoretical+Framework.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000554-Wu1" id="pone.0000554-Wu1"></a>Wu RL, Lin M (2006) Functional mapping – How to map and study the genetic architecture of dynamic complex traits. Nat Rev Genet  7: 229–237.  <ul class="find" data-citedArticleID="961046" data-doi="10.1038/nrg1804"><li><a href="http://dx.doi.org/10.1038/nrg1804" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+mapping+%E2%80%93+How+to+map+and+study+the+genetic+architecture+of+dynamic+complex+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+mapping+%E2%80%93+How+to+map+and+study+the+genetic+architecture+of+dynamic+complex+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000554-Ojanguren1" id="pone.0000554-Ojanguren1"></a>Ojanguren AF, Reyes-Gavilan FG, Brana F (2001) Thermal sensitivity of growth, food intake and activity of juvenile brown trout. J Thermal Biol  26: 165–170.  <ul class="find" data-citedArticleID="961074" data-doi="10.1016/s0306-4565(00)00038-3"><li><a href="http://dx.doi.org/10.1016/s0306-4565(00)00038-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Thermal+sensitivity+of+growth%2C+food+intake+and+activity+of+juvenile+brown+trout." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Thermal+sensitivity+of+growth%2C+food+intake+and+activity+of+juvenile+brown+trout.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000554-Diggle1" id="pone.0000554-Diggle1"></a>Diggle PJ, Heagerty P, Liang KY, Zeger SL (2002) Analysis of Longitudinal Data. Oxford, UK: Oxford University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">23.
+              </span><a name="pone.0000554-Carroll1" id="pone.0000554-Carroll1"></a>Carroll RJ, Ruppert D (1984) Power-transformations when fitting theoretical models to data. J Am Stat Assoc  79: 321–328.  <ul class="find" data-citedArticleID="961054" data-doi="10.1080/01621459.1984.10478052"><li><a href="http://dx.doi.org/10.1080/01621459.1984.10478052" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Power-transformations+when+fitting+theoretical+models+to+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Power-transformations+when+fitting+theoretical+models+to+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000554-Wu2" id="pone.0000554-Wu2"></a>Wu RL, Ma CX, Lin M, Wang ZH, Casella G (2004) Functional mapping of quantitative trait loci underlying growth trajectories using a transform-both-sides logistic model. Biometrics  60: 729–738.  <ul class="find" data-citedArticleID="961020" data-doi="10.1111/j.0006-341x.2004.00223.x"><li><a href="http://dx.doi.org/10.1111/j.0006-341x.2004.00223.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+mapping+of+quantitative+trait+loci+underlying+growth+trajectories+using+a+transform-both-sides+logistic+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+mapping+of+quantitative+trait+loci+underlying+growth+trajectories+using+a+transform-both-sides+logistic+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000554-Zhao1" id="pone.0000554-Zhao1"></a>Zhao W, Chen UQ, Casella G, Cheverud JM, Wu RL (2005) A nonstationary model for functional mapping of complex traits. Bioinformatics  21: 2469–2477.  <ul class="find" data-citedArticleID="961048" data-doi="10.1093/bioinformatics/bti382"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti382" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+nonstationary+model+for+functional+mapping+of+complex+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+nonstationary+model+for+functional+mapping+of+complex+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000554-Zimmerman1" id="pone.0000554-Zimmerman1"></a>Zimmerman DL, Núñez-Antón V (2001) Parametric modeling of growth curve data: An overview (with discussion). Test  10: 1–73.  <ul class="find" data-citedArticleID="961076" data-doi="10.1007/bf02595823"><li><a href="http://dx.doi.org/10.1007/bf02595823" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Parametric+modeling+of+growth+curve+data%3A+An+overview+%28with+discussion%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Parametric+modeling+of+growth+curve+data%3A+An+overview+%28with+discussion%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000554-Dempster1" id="pone.0000554-Dempster1"></a>Dempster AP, Laird NM, Rubin DB (1977) Maximum likelihood from incomplete data via the EM algorithm. J Roy Stat Soc Ser B  39: 1–38.  <ul class="find" data-citedArticleID="961078"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Maximum+likelihood+from+incomplete+data+via+the+EM+algorithm.&amp;auth=&amp;atitle=Maximum+likelihood+from+incomplete+data+via+the+EM+algorithm." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Maximum+likelihood+from+incomplete+data+via+the+EM+algorithm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Maximum+likelihood+from+incomplete+data+via+the+EM+algorithm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000554-Brett1" id="pone.0000554-Brett1"></a>Brett JR (1979)  Environmental factors and growth. In: Hoar WS, Randall DJ, Brett JR, editors. Fish Physiology 8. New York: Academic Press. pp. 599–675.  <ul class="find-nolinks"></ul></li><li><span class="label">29.
+              </span><a name="pone.0000554-Elliott1" id="pone.0000554-Elliott1"></a>Elliott JM (1994) Quantitative Ecology and the Brown Trout. Oxford: Oxford University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">30.
+              </span><a name="pone.0000554-Pelletier1" id="pone.0000554-Pelletier1"></a>Pelletier D, Blier PU, Dutil J-D, Guderley H (1995) How should enzyme activities be used in fish growth studies? J Exp Biol  198: 1493–1497.  <ul class="find" data-citedArticleID="961032"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=How+should+enzyme+activities+be+used+in+fish+growth+studies%3F&amp;auth=&amp;atitle=How+should+enzyme+activities+be+used+in+fish+growth+studies%3F" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=How+should+enzyme+activities+be+used+in+fish+growth+studies%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22How+should+enzyme+activities+be+used+in+fish+growth+studies%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000554-Somero1" id="pone.0000554-Somero1"></a>Somero GN, Dahlhoff E, Lin JJ (1996)  Stenotherms and eurytherms: mechanisms establishing thermal optima and tolerance ranges. In: Johnston IA, Bennett AF, editors. Animals and Temperature. Phenotypic and Evolutionary Adaptation. Cambridge: Cambridge University Press. pp. 53–78.  <ul class="find-nolinks"></ul></li><li><span class="label">32.
+              </span><a name="pone.0000554-Huey3" id="pone.0000554-Huey3"></a>Huey RB, Stevenson RD (1979) Integrating thermal physiology and ecology of ectotherms: a discussion of approaches. Am Zool  19: 357–366.  <ul class="find" data-citedArticleID="961012" data-doi="10.1093/icb/19.1.357"><li><a href="http://dx.doi.org/10.1093/icb/19.1.357" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrating+thermal+physiology+and+ecology+of+ectotherms%3A+a+discussion+of+approaches." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrating+thermal+physiology+and+ecology+of+ectotherms%3A+a+discussion+of+approaches.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000554-Gilchrist1" id="pone.0000554-Gilchrist1"></a>Gilchrist GW (1995) Specialists and generalists in changing environments. 1. Fitness landscapes of thermal sensitivity. Am Nat  146: 252–270.  <ul class="find" data-citedArticleID="961050" data-doi="10.1086/285797"><li><a href="http://dx.doi.org/10.1086/285797" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Specialists+and+generalists+in+changing+environments.+1.+Fitness+landscapes+of+thermal+sensitivity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Specialists+and+generalists+in+changing+environments.+1.+Fitness+landscapes+of+thermal+sensitivity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000554-Cronk1" id="pone.0000554-Cronk1"></a>Cronk Q (2005) Plant eco-devo: the potential of poplar as a model. New Phytol  166: 39–48.  <ul class="find" data-citedArticleID="961036" data-doi="10.1111/j.1469-8137.2005.01369.x"><li><a href="http://dx.doi.org/10.1111/j.1469-8137.2005.01369.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Plant+eco-devo%3A+the+potential+of+poplar+as+a+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Plant+eco-devo%3A+the+potential+of+poplar+as+a+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000554-Dusheck1" id="pone.0000554-Dusheck1"></a>Dusheck J (2002) It's the ecology, stupid! Nature  418: 578–579.  <ul class="find" data-citedArticleID="961024" data-doi="10.1038/418578a"><li><a href="http://dx.doi.org/10.1038/418578a" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=It%27s+the+ecology%2C+stupid%21" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22It%27s+the+ecology%2C+stupid%21%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000554-vonBertalanffy1" id="pone.0000554-vonBertalanffy1"></a>von Bertalanffy L (1957) Quantitative laws in metabolism and growth. Quart Rev Biol  32: 217–231.  <ul class="find" data-citedArticleID="961060" data-doi="10.1086/401873"><li><a href="http://dx.doi.org/10.1086/401873" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantitative+laws+in+metabolism+and+growth." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantitative+laws+in+metabolism+and+growth.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000554-West1" id="pone.0000554-West1"></a>West GB, Brown JH, Enquist BJ (2001) A general model for ontogenetic growth. Nature  413: 628–631.  <ul class="find" data-citedArticleID="961062" data-doi="10.1038/35098076"><li><a href="http://dx.doi.org/10.1038/35098076" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+general+model+for+ontogenetic+growth." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+general+model+for+ontogenetic+growth.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000554-Arthur1" id="pone.0000554-Arthur1"></a>Arthur W (2002) The emerging conceptual framework of evolutionary developmental biology. Nature  415: 757–764.  <ul class="find" data-citedArticleID="961072" data-doi="10.1038/415757a"><li><a href="http://dx.doi.org/10.1038/415757a" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+emerging+conceptual+framework+of+evolutionary+developmental+biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+emerging+conceptual+framework+of+evolutionary+developmental+biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000554-Yang1" id="pone.0000554-Yang1"></a>Yang RQ, Zhang J, Wu RL (2006) Composite functional mapping of dynamic quantitative traits. Genetics (revised)..   <ul class="find" data-citedArticleID="961018" data-doi="10.1534/genetics.107.077321"><li><a href="http://dx.doi.org/10.1534/genetics.107.077321" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Composite+functional+mapping+of+dynamic+quantitative+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Composite+functional+mapping+of+dynamic+quantitative+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.XML" value="101994"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.PDF" value="243300"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g001.PNG_L" value="843073"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g001.PNG_M" value="355211"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g001.PNG_S" value="11595"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g001.TIF" value="950524"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g001.PNG_I" value="27652"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g002.PNG_L" value="26336"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g002.PNG_M" value="172694"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g002.PNG_S" value="17913"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g002.TIF" value="116948"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g002.PNG_I" value="25850"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e001.PNG" value="45417"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e001.TIF" value="61540"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e002.PNG" value="12830"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e002.TIF" value="28096"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e003.PNG" value="8753"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e003.TIF" value="23224"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e004.PNG" value="8061"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e004.TIF" value="22640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e005.PNG" value="13743"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e005.TIF" value="28756"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e006.PNG" value="10736"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e006.TIF" value="25436"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e007.PNG" value="10723"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e007.TIF" value="25104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e008.PNG" value="9145"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e008.TIF" value="23668"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e009.PNG" value="9303"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e009.TIF" value="23808"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e010.PNG" value="8911"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e010.TIF" value="23492"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e011.PNG" value="11714"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e011.TIF" value="26332"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e012.PNG" value="8210"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e012.TIF" value="22784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e013.PNG" value="9511"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e013.TIF" value="24044"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e014.PNG" value="14105"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e014.TIF" value="28708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e015.PNG" value="7139"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e015.TIF" value="21628"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e016.PNG" value="11363"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e016.TIF" value="26272"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e017.PNG" value="8551"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e017.TIF" value="23064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e018.PNG" value="10017"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e018.TIF" value="24568"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e019.PNG" value="12784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e019.TIF" value="27640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e020.PNG" value="37064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e020.TIF" value="51140"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e021.PNG" value="12778"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e021.TIF" value="27008"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e022.PNG" value="9911"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e022.TIF" value="24552"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e023.PNG" value="10784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e023.TIF" value="25204"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e024.PNG" value="10666"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e024.TIF" value="25412"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e025.PNG" value="13470"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e025.TIF" value="27688"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e026.PNG" value="8211"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e026.TIF" value="22664"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e027.PNG" value="9532"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e027.TIF" value="24072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e028.PNG" value="14249"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e028.TIF" value="28876"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e029.PNG" value="14747"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e029.TIF" value="29252"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e030.PNG" value="9598"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e030.TIF" value="24104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e031.PNG" value="10689"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e031.TIF" value="25380"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e032.PNG" value="6344"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e032.TIF" value="20904"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e033.PNG" value="6371"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e033.TIF" value="20912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e034.PNG" value="7088"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e034.TIF" value="21604"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e035.PNG" value="9452"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e035.TIF" value="24068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e036.PNG" value="10887"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e036.TIF" value="25872"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e037.PNG" value="10895"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e037.TIF" value="25788"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e038.PNG" value="11219"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e038.TIF" value="26000"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e039.PNG" value="24362"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e039.TIF" value="38452"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g003.PNG_L" value="67861"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g003.PNG_M" value="235848"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g003.PNG_S" value="18751"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g003.TIF" value="379866"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g003.PNG_I" value="31826"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t001.PNG_L" value="262940"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t001.PNG_M" value="436660"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t001.PNG_S" value="27514"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t001.TIF" value="1202358"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t001.PNG_I" value="57059"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e046.PNG" value="6273"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e046.TIF" value="20844"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e040.PNG" value="9895"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e040.TIF" value="24404"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e041.PNG" value="10330"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e041.TIF" value="24848"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e042.PNG" value="10316"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e042.TIF" value="24844"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e043.PNG" value="9935"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e043.TIF" value="24468"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e044.PNG" value="10381"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e044.TIF" value="24808"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e045.PNG" value="10297"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e045.TIF" value="24772"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g004.PNG_L" value="64701"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g004.PNG_M" value="232209"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g004.PNG_S" value="23208"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g004.TIF" value="365336"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g004.PNG_I" value="36482"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g005.PNG_L" value="55565"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g005.PNG_M" value="189771"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g005.PNG_S" value="19128"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g005.TIF" value="318448"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.g005.PNG_I" value="28613"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t002.PNG_L" value="98029"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t002.PNG_M" value="148581"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t002.PNG_S" value="13996"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t002.TIF" value="397172"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.t002.PNG_I" value="21068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e047.PNG" value="6273"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e047.TIF" value="20844"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e048.PNG" value="10994"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e048.TIF" value="25572"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e049.PNG" value="81164"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e049.TIF" value="95208"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e050.PNG" value="13365"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e050.TIF" value="27968"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e051.PNG" value="44360"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e051.TIF" value="58748"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e052.PNG" value="11463"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e052.TIF" value="25796"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e053.PNG" value="34883"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000554.e053.TIF" value="49352"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000554&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000554" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000554&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000554&volume=&issue=&title=A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves&author_name=John%20Stephen%20Yap%2C%20Chenguang%20Wang%2C%20Rongling%20Wu&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000554" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554&amp;t=A%20Computational%20Approach%20for%20Functional%20Mapping%20of%20Quantitative%20Trait%20Loci%20That%20Regulate%20Thermal%20Performance%20Curves" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554&title=A%20Computational%20Approach%20for%20Functional%20Mapping%20of%20Quantitative%20Trait%20Loci%20That%20Regulate%20Thermal%20Performance%20Curves&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554&amp;title=A%20Computational%20Approach%20for%20Functional%20Mapping%20of%20Quantitative%20Trait%20Loci%20That%20Regulate%20Thermal%20Performance%20Curves" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000554&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'A Computational Approach for Functional Mapping of Quantitative Trait Loci That Regulate Thermal Performance Curves';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000554';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20A%20Computational%20Approach%20for%20Functional%20Mapping%20of%20Quantitative%20Trait%20Loci%20That%20Regulate%20Thermal%20Performance%20Curves http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000554" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000554" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Covariance%22" title="Search for articles in the subject area:'Covariance'"><div class="flagText">Covariance</div></a>
+              <div data-categoryid="33497" data-articleid="23946"
+                   data-categoryname="Covariance"
+                   class="flagImage" title="Flag 'Covariance' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Evolutionary+ecology%22" title="Search for articles in the subject area:'Evolutionary ecology'"><div class="flagText">Evolutionary ecology</div></a>
+              <div data-categoryid="48159" data-articleid="23946"
+                   data-categoryname="Evolutionary ecology"
+                   class="flagImage" title="Flag 'Evolutionary ecology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Evolutionary+genetics%22" title="Search for articles in the subject area:'Evolutionary genetics'"><div class="flagText">Evolutionary genetics</div></a>
+              <div data-categoryid="17209" data-articleid="23946"
+                   data-categoryname="Evolutionary genetics"
+                   class="flagImage" title="Flag 'Evolutionary genetics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+mapping%22" title="Search for articles in the subject area:'Gene mapping'"><div class="flagText">Gene mapping</div></a>
+              <div data-categoryid="47615" data-articleid="23946"
+                   data-categoryname="Gene mapping"
+                   class="flagImage" title="Flag 'Gene mapping' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phenotypes%22" title="Search for articles in the subject area:'Phenotypes'"><div class="flagText">Phenotypes</div></a>
+              <div data-categoryid="40235" data-articleid="23946"
+                   data-categoryname="Phenotypes"
+                   class="flagImage" title="Flag 'Phenotypes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Quantitative+traits%22" title="Search for articles in the subject area:'Quantitative traits'"><div class="flagText">Quantitative traits</div></a>
+              <div data-categoryid="24563" data-articleid="23946"
+                   data-categoryname="Quantitative traits"
+                   class="flagImage" title="Flag 'Quantitative traits' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Simulation+and+modeling%22" title="Search for articles in the subject area:'Simulation and modeling'"><div class="flagText">Simulation and modeling</div></a>
+              <div data-categoryid="8375" data-articleid="23946"
+                   data-categoryname="Simulation and modeling"
+                   class="flagImage" title="Flag 'Simulation and modeling' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Theoretical+ecology%22" title="Search for articles in the subject area:'Theoretical ecology'"><div class="flagText">Theoretical ecology</div></a>
+              <div data-categoryid="47903" data-articleid="23946"
+                   data-categoryname="Theoretical ecology"
+                   class="flagImage" title="Flag 'Theoretical ecology' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=181'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=5905'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=8958&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,1143 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001751"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001751" />
+
+    <meta name="citation_title" content="Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis"/>
+    <meta itemprop="name" content="Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis"/>
+
+      <meta name="citation_author" content="Daniel J. Kelley"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+            <meta name="citation_author_institution" content="Neuroscience Training Program, Center for Neuroscience, University of Wisconsin School of Medicine and Public Health, Madison, Wisconsin, United States of America"/>
+            <meta name="citation_author_institution" content="Medical Scientist Training Program, University of Wisconsin School of Medicine and Public Health, Madison, Wisconsin, United States of America"/>
+      <meta name="citation_author" content="Terrence R. Oakes"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+      <meta name="citation_author" content="Larry L. Greischar"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+      <meta name="citation_author" content="Moo K. Chung"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+      <meta name="citation_author" content="John M. Ollinger"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+      <meta name="citation_author" content="Andrew L. Alexander"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+      <meta name="citation_author" content="Steven E. Shelton"/>
+            <meta name="citation_author_institution" content="Department of Psychiatry, University of Wisconsin, Madison, Wisconsin, United States of America,"/>
+      <meta name="citation_author" content="Ned H. Kalin"/>
+            <meta name="citation_author_institution" content="Department of Psychiatry, University of Wisconsin, Madison, Wisconsin, United States of America,"/>
+      <meta name="citation_author" content="Richard J. Davidson"/>
+            <meta name="citation_author_institution" content="Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Psychiatry, University of Wisconsin, Madison, Wisconsin, United States of America,"/>
+
+    <meta name="citation_date" content="2008/3/12"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001751.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1751"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Reduction of physiological fluctuations in fMRI using digital filters.; citation_author=B Biswal; citation_author=AE DeYoe; citation_author=JS Hyde; citation_journal_title=Magn Reson Med; citation_volume=35; citation_number=1; citation_pages=107-113; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Time course EPI of human brain function during task activation.; citation_author=PA Bandettini; citation_author=EC Wong; citation_author=RS Hinks; citation_author=RS Tikofsky; citation_author=JS Hyde; citation_journal_title=Magn Reson Med; citation_volume=25; citation_number=2; citation_pages=390-397; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Effect of temporal autocorrelation due to physiological noise and stimulus paradigm on voxel-level false-positive rates in fMRI.; citation_author=PL Purdon; citation_author=RM Weisskoff; citation_journal_title=Hum Brain Mapp; citation_volume=6; citation_number=3; citation_pages=239-249; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Functional connectivity in the motor cortex of resting human brain using echo-planar mri.; citation_author=FZY Bharat Biswal; citation_author=VictorM Haughton; citation_author=JamesS Hyde; citation_journal_title=Magnetic Resonance in Medicine; citation_volume=34; citation_number=4; citation_pages=537-541; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Retrospective estimation and correction of physiological fluctuation in functional MRI.; citation_author=X Hu; citation_author=TH Le; citation_author=T Parrish; citation_author=P Erhard; citation_journal_title=Magn Reson Med; citation_volume=34; citation_number=5; citation_pages=201-212; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Image-based method for retrospective correction of physiological motion effects in fMRI: RETROICOR.; citation_author=H Gary; citation_author=T-QL Glover; citation_author=David Ress; citation_journal_title=Magnetic Resonance in Medicine; citation_volume=44; citation_number=6; citation_pages=162-167; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=AFNI: software for analysis and visualization of functional magnetic resonance neuroimages.; citation_author=RW Cox; citation_journal_title=Comput Biomed Res; citation_volume=29; citation_number=7; citation_pages=162-173; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Python Reference Manual.; citation_author=G van Rossum; citation_author=FL Drake; citation_number=8; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=SciPy: Open Source Scientific Tools for Python.; citation_author=E Jones; citation_author=T Oliphant; citation_author=P Peterson; citation_number=9; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Numerical Python, Lawrence Livermore National Laboratory, Livermore, California, USA.; citation_author=D Ascher; citation_author=PF Dubois; citation_author=K Hinsen; citation_author=J Hugunin; citation_author=T Oliphant; citation_number=10; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Matplotlib: A 2D Graphics Environment.; citation_author=JD Hunter; citation_journal_title=Computing in Science and Engineering; citation_volume=9; citation_number=11; citation_pages=90-95; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_number=12; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=peakdet: Peak detection using MATLAB.; citation_author=E Billauer; citation_number=13; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Low-frequency fluctuations in the cardiac rate as a source of variance in the resting-state fMRI BOLD signal.; citation_author=K Shmueli; citation_author=P van Gelderen; citation_author=JA de Zwart; citation_author=SG Horovitz; citation_author=M Fukunaga; citation_journal_title=Neuroimage; citation_volume=38; citation_number=14; citation_pages=306-320; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Automatic detection of left ventricular ejection time from a finger photoplethysmographic pulse oximetry waveform: comparison with Doppler aortic measurement.; citation_author=GS Chan; citation_author=PM Middleton; citation_author=BG Celler; citation_author=L Wang; citation_author=NH Lovell; citation_journal_title=Physiol Meas; citation_volume=28; citation_number=15; citation_pages=439-452; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Separating respiratory-variation-related fluctuations from neuronal-activity-related fluctuations in fMRI.; citation_author=RM Birn; citation_author=JB Diamond; citation_author=MA Smith; citation_author=PA Bandettini; citation_journal_title=Neuroimage; citation_volume=31; citation_number=16; citation_pages=1536-1548; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=R: A Language for Data Analysis and Graphics.; citation_author=R Ihaka; citation_author=R Gentleman; citation_journal_title=Journal of Computational and Graphical Statistics; citation_volume=5; citation_number=17; citation_pages=299-314; citation_date=1996; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis"/>
+    <meta name="twitter:description" content="Functional MRI resting state and connectivity studies of brain focus on neural fluctuations at low frequencies which share power with physiological fluctuations originating from lung and heart. Due to the lack of automated software to process physiological signals collected at high magnetic fields, a gap exists in the processing pathway between the acquisition of physiological data and its use in fMRI software for both physiological noise correction and functional analyses of brain activation and connectivity. To fill this gap, we developed an open source, physiological signal processing program, called PhysioNoise, in the python language. We tested its automated processing algorithms and dynamic signal visualization on resting monkey cardiac and respiratory waveforms. PhysioNoise consistently identifies physiological fluctuations for fMRI noise correction and also generates covariates for subsequent analyses of brain activation and connectivity."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001751.g005"/>
+
+  <meta property="og:title" content="Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=1298'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=6585'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=5472&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001751">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001751" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001751&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Daniel J. Kelley
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:djkelley@wisc.edu">djkelley@wisc.edu</a></p>
+
+                <p>Affiliations:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America, 
+                  Neuroscience Training Program, Center for Neuroscience, University of Wisconsin School of Medicine and Public Health, Madison, Wisconsin, United States of America, 
+                  Medical Scientist Training Program, University of Wisconsin School of Medicine and Public Health, Madison, Wisconsin, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Terrence R. Oakes, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Larry L. Greischar, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Moo K. Chung, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            John M. Ollinger, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Andrew L. Alexander, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Steven E. Shelton, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Psychiatry, University of Wisconsin, Madison, Wisconsin, United States of America,
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ned H. Kalin, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Psychiatry, University of Wisconsin, Madison, Wisconsin, United States of America,
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Richard J. Davidson
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Waisman Laboratory for Brain Imaging and Behavior, Waisman Center, University of Wisconsin, Madison, Wisconsin, United States of America, 
+                  Department of Psychiatry, University of Wisconsin, Madison, Wisconsin, United States of America,
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 12, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001751</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001751-g001" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001751-g002" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001751-g003" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001751-g004" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001751-g005" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001751">Reader Comments (4)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001751" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Functional MRI resting state and connectivity studies of brain focus on neural fluctuations at low frequencies which share power with physiological fluctuations originating from lung and heart. Due to the lack of automated software to process physiological signals collected at high magnetic fields, a gap exists in the processing pathway between the acquisition of physiological data and its use in fMRI software for both physiological noise correction and functional analyses of brain activation and connectivity. To fill this gap, we developed an open source, physiological signal processing program, called PhysioNoise, in the python language. We tested its automated processing algorithms and dynamic signal visualization on resting monkey cardiac and respiratory waveforms. PhysioNoise consistently identifies physiological fluctuations for fMRI noise correction and also generates covariates for subsequent analyses of brain activation and connectivity.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Kelley DJ, Oakes TR, Greischar LL, Chung MK, Ollinger JM, et al.  (2008) Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis. PLoS ONE 3(3):
+          e1751.
+            doi:10.1371/journal.pone.0001751</p><p><strong>Academic Editor: </strong>Ernest Greene, University of Southern California, United States of America</p><p><strong>Received:</strong> November 7, 2007; <strong>Accepted:</strong> February 8, 2008; <strong>Published:</strong> March 12, 2008</p><p><strong>Copyright:</strong> © 2008 Kelley et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported by MH46729, MH69315, and the HealthEmotions Research Institute.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Physiological noise <a href="#pone.0001751-Biswal1">[1]</a> describes a known low-frequency component of brain signals collected with functional MRI <a href="#pone.0001751-Bandettini1">[2]</a> (fMRI) that contaminates brain activation <a href="#pone.0001751-Purdon1">[3]</a> and connectivity studies <a href="#pone.0001751-BharatBiswal1">[4]</a>. Retrospective removal of physiological noise from fMRI signal <a href="#pone.0001751-Hu1">[5]</a>, <a href="#pone.0001751-Gary1">[6]</a> requires simultaneous collection of functional brain images along with cardiac and respiratory signals, typically using a pulse oximeter and a respiratory bellows belt, respectively. Further processing of the physiological signals is necessary to remove acquisition artifact and to prepare them for use in existing fMRI noise correction and analysis software like AFNI <a href="#pone.0001751-Cox1">[7]</a> [<a href="http://afni.nimh.nih.gov/afni/">http://afni.nimh.nih.gov/afni/</a>] . However, open-source software is not currently available to fill the gap between raw and processed physiological noise signals. We sought to fill this gap (<a href="#pone-0001751-g001">Figure 1</a>) by writing a fully automated, physiological noise processing program called PhysioNoise (download source code from <a href="#pone.0001751.s001">Text S1</a>) in the python language that enables interactive visualization of cardiac and respiratory time series, automatic detection of cardiac and respiratory peaks, and generation of processed cardiac and respiratory time series for both retrospective fMRI correction and covariates for analyses of brain activation and connectivity.</p>
+<div class="figure" id="pone-0001751-g001"><div class="img"><a name="pone-0001751-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>PhysioNoise Fills Physiological Signal Processing Gap.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>PhysioNoise processes physiological noise signals for existing software (AFNI) used in retrospective fMRI physiological noise correction and connectivity analyses. The inputs to PhysioNoise are represented by the blue arrow and the outputs from PhysioNoise are identified with the red arrows. (RW = Downsampled respiratory spline waveform; CPttl = Cardiac peak based on the TTL pulse from the scanner; CPd3 = Cardiac peak based on trough of the third derivative; CPd3R = Cardiac peak R-wave estimate based on small peak of third derivative preceding the CPd3; RVT = Respiratory volume over time based on peakdet peaks; RRT = Respiratory rate over time; CVT = Cardiac volume over time based on peakdet peaks; CRTttl = Cardiac rate over time based on the TTL pulse from the scanner; CRTd3 = Cardiac rate over time based on CPd3; CRTd3R = Cardiac rate over time based on CPd3R).</p>
+<span>doi:10.1371/journal.pone.0001751.g001</span></div></div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Algorithm</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>PhysioNoise was developed in python <a href="#pone.0001751-vanRossum1">[8]</a> using MacPython 2.5 [<a href="http://www.pythonmac.org/packages/">http://www.pythonmac.org/packages/</a>] on the Mac OS X platform and requires scipy <a href="#pone.0001751-Jones1">[9]</a> [<a href="http://www.scipy.org/">http://www.scipy.org/</a>], numpy <a href="#pone.0001751-Ascher1">[10]</a> [<a href="http://numpy.scipy.org/">http://numpy.scipy.org/</a>], and matplotlib <a href="#pone.0001751-Hunter1">[11]</a> [<a href="http://matplotlib.sourceforge.net/">http://matplotlib.sourceforge.net/</a>] libraries. The program was also implemented and tested on a linux workstation running Scientific Linux <a href="#pone.0001751-ScientificLinux.org1">[12]</a>. PhysioNoise removes high frequency noise from both respiratory and cardiac waveforms with a user specified, zero phase, low pass Butterworth filter and calculates the residual (raw signal–Butterworth filtered signal). Acquisition artifacts are identified as time course regions with large residuals. A window around each artifact is removed and the entire filtered, cleaned dataset is fit with a spline such that clean peaks are modeled and the windowed gaps are replaced with values from the spline interpolation to produce a clean, spline waveform (<a href="#pone-0001751-g002">Figure 2</a>).</p>
+<div class="figure" id="pone-0001751-g002"><div class="img"><a name="pone-0001751-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Plot of Physiological Signal Artifact.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>The raw respiratory and cardiac waveforms are plotted along with their filtered versions. Signal artifacts with large residuals (Raw Signal-Filtered Signal) are replaced with a spline interpolation. The series of green spline circles are the thick black waveform.</p>
+<span>doi:10.1371/journal.pone.0001751.g002</span></div>
+
+<h4>Processing for Retrospective Physiological fMRI Noise Correction</h4>
+<h5>Respiratory Waveform.</h5><a id="article1.body1.sec2.sec2.sec1.p1" name="article1.body1.sec2.sec2.sec1.p1"></a><p>Respiratory peaks are detected in the respiratory spline dataset (RW) using a slightly modified version of the open-source peakdet.m algorithm of Eli Billauer <a href="#pone.0001751-Billauer1">[13]</a> which we translated to python. This algorithm alternately detects peaks and troughs in a periodic signal. We adapted this algorithm to detect respiratory (RPpd) and cardiac (CPpd) peaks by adding optional, user specified thresholds to limit peak detection to physiologically relevant timings and magnitudes. The downsampled respiratory spline waveform (RW) is output for use in retrospective fMRI noise correction software such as AFNI's 3dretroicor.</p>
+
+<h5>Cardiac Waveform.</h5><a id="article1.body1.sec2.sec2.sec2.p1" name="article1.body1.sec2.sec2.sec2.p1"></a><p>The denoised cardiac spline was then subject to peak detection. For fMRI analysis there is a need to identify the ejection timing of the heart based on the pulse oximeter signal. The cardiac signal has several features that can be analyzed (<a href="#pone-0001751-g003">Figure 3</a>). A common method is to use the cardiac TTL pulse (CPttl) delivered by the scanner to estimate the R-wave, which is only detectable using EKG. Since the scanner records the peak times, PhysioNoise converts these times to a spike wave time series whose duration matches that of the fMRI brain scan. However, the CPttl peak detection contains artifactual errors of peak omission and commission and the CPttl onset time lags the R-wave <a href="#pone.0001751-Shmueli1">[14]</a>. Prior studies using Doppler measures of aortic flow confirmed that the timing of ventricle contraction and the onset of systole and diastole can be detected by taking the third derivative of the pulse oximeter waveform and are identifiable as two small peaks separated by a larger trough <a href="#pone.0001751-Chan1">[15]</a>. The trough is readily detectable even in noisy data, corresponds to the time when ventricular ejection occurs, and may be a closer approximation to R-wave onset that precedes the CPttl peaks. We identified the ventricular contraction time (CPd3) as the large trough of the cardiac waveform's third derivative. After implementation we determined that smaller troughs were detected which needed to be removed from CPd3. To do so, the envelope of the cardiac waveform's third derivative peaks was used to threshold the absolute value of the third derivative's troughs. Only troughs whose absolute magnitude was greater than that of the third derivative's peak envelope and at least half the mean envelope magnitude were reported as CPd3 peaks. The R-wave estimate (CPd3R) was then determined by selecting the nearest third derivative peak that preceded the large trough. The CPttl, CPd3, and CPd3R are saved to disk as options for retrospective fMRI correction.</p>
+<div class="figure" id="pone-0001751-g003"><div class="img"><a name="pone-0001751-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Cardiac Peaks.</span></strong></p><a id="article1.body1.sec2.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.sec2.fig1.caption1.p1"></a><p>The CPpd, CPttl, CPd3, and CPd3R are displayed on the cardiac spline (black) and third derivative (cyan). The envelope of the third derivative peaks is shown in yellow. The plot also shows an example of the scanner TTL error of commission in which an extra CPttl was detected during one cardiac cycle. The differentiation method correctly produced one CPd3 peak (CPttl = Cardiac peak based on the TTL pulse from the scanner; CPd3 = Cardiac peak based on trough of the third derivative; CPd3R = Cardiac peak R-wave estimate based on small peak of third derivative preceding the CPd3).</p>
+<span>doi:10.1371/journal.pone.0001751.g003</span></div>
+
+
+<h4>Processing for fMRI Functional Analysis of Activation and Connectivity</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>To prepare physiological noise covariates of no interest (nuisance variables) for connectivity analyses, further processing of the respiratory and cardiac peaks is required. First, the top and bottom respiratory envelopes and their difference, known as respiratory volume per time (RVT), are generated from their peaks (RPpd) as previously reported by Birn <a href="#pone.0001751-Birn1">[16]</a> using the peakdet algorithm. The cardiac volume per time curve (CVT) is also generated using peaks (CPpd) detected with peakdet algorithm (<a href="#pone-0001751-g004">Figure 4</a>). Second, cardiac rate time (CRT) courses based on the TTL (CRTttl), the third derivative (CRTd3), and the third derivative's R-wave estimate (CRTd3R) are generated as the inverse change in time between CP centered points on the initial peak <a href="#pone.0001751-Shmueli1">[14]</a>. The respiratory rate (RRT) over time was also calculated using the RPpd in the same manner as CRT (<a href="#pone-0001751-g005">Figure 5</a>). Third, the RVT and CRT waveforms are sampled on the TR and half TR and output for later use in fMRI activation and connectivity analyses.</p>
+<div class="figure" id="pone-0001751-g004"><div class="img"><a name="pone-0001751-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Respiratory and Cardiac Envelopes.</span></strong></p><a id="article1.body1.sec2.sec3.fig1.caption1.p1" name="article1.body1.sec2.sec3.fig1.caption1.p1"></a><p>The peaks identified by peakdet (RPpd,CPpd) are shown along with the respiratory and cardiac waveforms, top envelope, bottom envelope, and the absolute value of their means.</p>
+<span>doi:10.1371/journal.pone.0001751.g004</span></div><div class="figure" id="pone-0001751-g005"><div class="img"><a name="pone-0001751-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001751" data-uri="info:doi/10.1371/journal.pone.0001751.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001751.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001751.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001751.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001751.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Cardiac and Respiratory Rates and Volumes over Time.</span></strong></p><a id="article1.body1.sec2.sec3.fig2.caption1.p1" name="article1.body1.sec2.sec3.fig2.caption1.p1"></a><p>Representative RVT, RRT, CVT, CRTttl, CRTd3, and CRTd3R waveforms are displayed in PhysioNoise. Note that the CRTd3 contains fewer outliers than the CRTttl and the CRTd3R. Dynamic visualization of these curves in PhysioNoise is possible using the zoom and scroll features (RVT = Respiratory volume over time based on peakdet peaks; RRT = Respiratory rate over time; CVT = Cardiac volume over time based on peakdet peaks; CRTttl = Cardiac rate over time based on the TTL pulse from the scanner; CRTd3 = Cardiac rate over time based on CPd3; CRTd3R = Cardiac rate over time based on CPd3R).</p>
+<span>doi:10.1371/journal.pone.0001751.g005</span></div>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>With RARC approval, rhesus monkeys (n = 13) were sedated and restrained during simultaneous 3.0 Tesla GE Signa scanner acquisitions of functional MRI, pulse oximetry, and respiratory bellows signals. Respiration was monitored with a respiratory belt and cardiac contraction with a pulse oximeter on a 3.0 Tesla scanner (GE Medical Systems; Waukesha, WI). Both were collected at a 1000 Hz sampling rate. Artifacts in the physiological signal were automatically detected and corrected (<a href="#pone-0001751-g002">Figure 2</a>) using PhysioNoise prior to identifying RPpd, CPpd, CPttl, CPd3, and CPd3R (<a href="#pone-0001751-g003">Figure 3</a>). The downsampled signal and peaks were then available for use in retrospective fMRI physiological noise correction in AFNI. The respiratory and cardiac envelopes derived from the peakdet peaks of the spline waveforms (<a href="#pone-0001751-g004">Figure 4</a>) were successfully used to generate the RVT and CVT curves. The CRT curves were also successfully generated from the CPttl, CPd3, and CPd3R peaks. In short, PhysioNoise produced useful waveforms for fMRI analysis of activation or connectivity (<a href="#pone-0001751-g001">Figure 1</a>). Statistical tests were conducted in SPSS 14.0 (SPSS, Inc; Chicago) and R <a href="#pone.0001751-Ihaka1">[17]</a>.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>To evaluate the peakdet algorithm, we tested the null hypothesis that the period of both the respiratory and cardiac waveforms calculated from the peakdet peaks would be comparable to the period derived from the frequency of the maximum density in their respective power spectra. The temporal period (seconds) for the respiratory waveform determined by the peakdet algorithm [mean = 2.47; SD = 1.26] was comparable to the peak power [mean = 2.06; SD = 0.532; paired t(12) = 1.08; p = 0.301 ]. The temporal period of the cardiac waveform from the power spectra [mean = 0.868; SD = 0.133] was comparable to the period using CPpd peaks determined by peakdet [mean = 0.866; SD = 0.138; paired t(12) = −0.201; p = 0.844].</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>To evaluate the differentiation method for improved R-wave onset approximation, we compared the period from the CPttl peaks [mean = 0.805; SD = 0.225] to the period derived from the CPd3 [mean = 0.853; SD = 0.125] and CPd3R [mean = 0.853; SD = 0.133] peaks generated from the differentiation method and found them to be equivalent [F(2,24) = 0.989; p = 0.387] based on a one way ANOVA blocked across monkeys.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>To determine whether CPd3 would provide a better estimate of R wave onset than CPttl, we evaluated the latency of CPd3 by testing the null hypothesis that the CPd3 time would be comparable to the CPttl onset. To do so, we measured the time change from CPd3R to the onset of both CPd3 [mean = 195.3 ms; SD = 51.1] and CPttl [mean = 232.2 ms; SD = 58.4] and took their difference. We determined that the CPd3 preceded CPttl by about 37 ms [mean = −36.8 ms; SD = 23.1] and this time lag was significantly different from zero [paired t(12) = −5.74; p = 0.00].</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>To quantify the spike reduction in the CRT waveforms, we tested the null hypothesis that the CRTttl, CRTd3, and CRTd3R would have comparable numbers of outliers (SD&gt;4) and those outliers would have equal variance. The mean number of outliers for these methods were not equal [F(2,24) = 5.30; p = 0.012] when tested in a one way ANOVA blocked across monkeys. The CRTttl [mean = 6895; SD = 7228] had significantly more outliers than the CRTd3 [mean = 1662; SD = 3039; paired t(12) = 3.34; p  = 0.006] and marginally more significant outliers than CRTd3R [mean = 1963; SD = 3607; paired t(12) = 2.13; p = 0.055] methods. To demonstrate outlier dispersion, we tested the ratio of each method's outlier variances pooled across monkeys using an F-test. The CRTttl variance [mean = 0.312; SD = 0.833] was significantly more variable than the CRTd3 [mean = 0.036; SD = 0.068; F(1,24) = 6.37; p = 0.019] and the CRTd3R [mean = 0.026; SD = 0.046; F(1,24) = 15.6; p = 0.000].</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>PhysioNoise is a fully automated physiological noise processing program in the python language that processes physiological fluctuations and fills a gap between physiological noise signal acquisition and its use in fMRI neuroanalysis. Although PhysioNoise is fully automated, users have several options to control processing. Furthermore, PhysioNoise is open-source, modifiable by the users themselves, and may serve as a base program for further algorithm implementations. The utility of the program was validated using anesthetized monkey cardiac and respiratory signals. PhysioNoise detects and corrects acquisition artifact in the physiological signal and returns several processed waveforms suitable for fMRI correction and analysis.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>PhysioNoise is available for download (<a href="#pone.0001751.s001">Text S1</a>) as a stand alone program. The open source algorithms we adapted as functions for use in PhysioNoise are contained within the PhysioNoise source code. Prerequisites to use PhysioNoise include a working installation of python <a href="#pone.0001751-vanRossum1">[8]</a> and access to scipy <a href="#pone.0001751-Jones1">[9]</a> [<a href="http://www.scipy.org/">http://www.scipy.org/</a>], numpy <a href="#pone.0001751-Ascher1">[10]</a> [<a href="http://numpy.scipy.org/">http://numpy.scipy.org/</a>], and matplotlib <a href="#pone.0001751-Hunter1">[11]</a> [<a href="http://matplotlib.sourceforge.net/">http://matplotlib.sourceforge.net/</a>] libraries. The PhysioNoise program was tested with physiological and fMRI signals collected from monkeys using a 3.0 Tesla GE Signa MRI scanner and a respiratory bellows belt. The algorithms we packaged into PhysioNoise are generalizable to other fMRI scanners and respiratory bellows equipment.</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>In summary, PhysioNoise outputs the RW, CPd3, CPd3R, and CPttl time courses as options for retrospective fMRI brain signal correction of physiological noise and the RVT, RRT, CVT, CRTd3, CRTd3R, and CRTttl curves as options for neuroanalysis. Prior studies have noted that the CPttl lags the R-wave by about 120 ms and produces CRT waves with intermittent spikes which are due to the detection of false peaks or omission of true peaks <a href="#pone.0001751-Shmueli1">[14]</a>. We detected the CPd3R about 230 ms prior to the CPttl R-wave estimate. This suggests that the CPd3R may precede the actual R-wave. Future studies should use PhysioNoise to directly compare the R-wave onset times from pulse oximetry using the differentiation method, the CPttl from the scanner, and the actual R-wave from EKG measurements during fMRI acquisition. The CPd3 may be a more appropriate choice for R-wave estimation for fMRI noise correction and analysis compared to the CPttl because the CPd3 preceded the CPttl by about 37 ms and the CRTd3 has fewer outliers with less outlier dispersion.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001751"></div><a name="pone.0001751.s001" id="pone.0001751.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001751.s001">Text S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">PhysioNoise Source Code</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001751.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.05 MB TXT</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We are grateful to T. Johnson and E. Zao and the staff at the Harlow Center for Biological Psychology and the Wisconsin National Primate Research Center for their technical support.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: RD NK DK TO LG JO AA SS. Performed the experiments: NK DK TO LG JO AA SS. Analyzed the data: DK MC. Contributed reagents/materials/analysis tools: RD NK DK. Wrote the paper: DK TO LG MC SS.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001751-Biswal1" id="pone.0001751-Biswal1"></a>Biswal B, DeYoe AE, Hyde JS (1996) Reduction of physiological fluctuations in fMRI using digital filters. Magn Reson Med  35: 107–113.  <ul class="find" data-citedArticleID="1070028" data-doi="10.1002/mrm.1910350114"><li><a href="http://dx.doi.org/10.1002/mrm.1910350114" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reduction+of+physiological+fluctuations+in+fMRI+using+digital+filters." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reduction+of+physiological+fluctuations+in+fMRI+using+digital+filters.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001751-Bandettini1" id="pone.0001751-Bandettini1"></a>Bandettini PA, Wong EC, Hinks RS, Tikofsky RS, Hyde JS (1992) Time course EPI of human brain function during task activation. Magn Reson Med  25: 390–397.  <ul class="find" data-citedArticleID="1070020" data-doi="10.1002/mrm.1910250220"><li><a href="http://dx.doi.org/10.1002/mrm.1910250220" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Time+course+EPI+of+human+brain+function+during+task+activation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Time+course+EPI+of+human+brain+function+during+task+activation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001751-Purdon1" id="pone.0001751-Purdon1"></a>Purdon PL, Weisskoff RM (1998) Effect of temporal autocorrelation due to physiological noise and stimulus paradigm on voxel-level false-positive rates in fMRI. Hum Brain Mapp  6: 239–249.  <ul class="find" data-citedArticleID="1070044" data-doi="10.1002/(sici)1097-0193(1998)6:4<239::aid-hbm4&gt;3.3.co;2-0"><li><a href="http://dx.doi.org/10.1002/(sici)1097-0193(1998)6:4<239::aid-hbm4&gt;3.3.co;2-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effect+of+temporal+autocorrelation+due+to+physiological+noise+and+stimulus+paradigm+on+voxel-level+false-positive+rates+in+fMRI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effect+of+temporal+autocorrelation+due+to+physiological+noise+and+stimulus+paradigm+on+voxel-level+false-positive+rates+in+fMRI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001751-BharatBiswal1" id="pone.0001751-BharatBiswal1"></a>Bharat Biswal FZY, Haughton VictorM, Hyde JamesS (1995) Functional connectivity in the motor cortex of resting human brain using echo-planar mri. Magnetic Resonance in Medicine  34: 537–541.  <ul class="find" data-citedArticleID="1070022" data-doi="10.1002/mrm.1910340409"><li><a href="http://dx.doi.org/10.1002/mrm.1910340409" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+connectivity+in+the+motor+cortex+of+resting+human+brain+using+echo-planar+mri." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+connectivity+in+the+motor+cortex+of+resting+human+brain+using+echo-planar+mri.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001751-Hu1" id="pone.0001751-Hu1"></a>Hu X, Le TH, Parrish T, Erhard P (1995) Retrospective estimation and correction of physiological fluctuation in functional MRI. Magn Reson Med  34: 201–212.  <ul class="find" data-citedArticleID="1070036" data-doi="10.1002/mrm.1910340211"><li><a href="http://dx.doi.org/10.1002/mrm.1910340211" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Retrospective+estimation+and+correction+of+physiological+fluctuation+in+functional+MRI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Retrospective+estimation+and+correction+of+physiological+fluctuation+in+functional+MRI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001751-Gary1" id="pone.0001751-Gary1"></a>Gary H, Glover T-QL, Ress David (2000) Image-based method for retrospective correction of physiological motion effects in fMRI: RETROICOR. Magnetic Resonance in Medicine  44: 162–167.  <ul class="find" data-citedArticleID="1070034" data-doi="10.1002/1522-2594(200007)44:1<162::aid-mrm23&gt;3.0.co;2-e"><li><a href="http://dx.doi.org/10.1002/1522-2594(200007)44:1<162::aid-mrm23&gt;3.0.co;2-e" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Image-based+method+for+retrospective+correction+of+physiological+motion+effects+in+fMRI%3A+RETROICOR." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Image-based+method+for+retrospective+correction+of+physiological+motion+effects+in+fMRI%3A+RETROICOR.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001751-Cox1" id="pone.0001751-Cox1"></a>Cox RW (1996) AFNI: software for analysis and visualization of functional magnetic resonance neuroimages. Comput Biomed Res  29: 162–173.  <ul class="find" data-citedArticleID="1070032" data-doi="10.1006/cbmr.1996.0014"><li><a href="http://dx.doi.org/10.1006/cbmr.1996.0014" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=AFNI%3A+software+for+analysis+and+visualization+of+functional+magnetic+resonance+neuroimages." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22AFNI%3A+software+for+analysis+and+visualization+of+functional+magnetic+resonance+neuroimages.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001751-vanRossum1" id="pone.0001751-vanRossum1"></a>van Rossum G, Drake FL (2001) Python Reference Manual. PythonLabs, Virginia, USA:   <a href="http://www.python.org">http://www.python.org</a>.  <ul class="find-nolinks"></ul></li><li><span class="label">9.
+              </span><a name="pone.0001751-Jones1" id="pone.0001751-Jones1"></a>Jones E, Oliphant T, Peterson P (2001) SciPy: Open Source Scientific Tools for Python.   Available at <a href="http://www.scipy.org">http://www.scipy.org</a>.  <ul class="find-nolinks"></ul></li><li><span class="label">10.
+              </span><a name="pone.0001751-Ascher1" id="pone.0001751-Ascher1"></a>Ascher D, Dubois PF, Hinsen K, Hugunin J, Oliphant T (2001) Numerical Python, Lawrence Livermore National Laboratory, Livermore, California, USA.   Available at: <a href="http://numpy.scipy.org/numpydoc/numpy.html">http://numpy.scipy.org/numpydoc/numpy.ht​ml</a>.  <ul class="find-nolinks"></ul></li><li><span class="label">11.
+              </span><a name="pone.0001751-Hunter1" id="pone.0001751-Hunter1"></a>Hunter JD (2007) Matplotlib: A 2D Graphics Environment. Computing in Science and Engineering  9: 90–95.  <ul class="find" data-citedArticleID="1070038" data-doi="10.1109/mcse.2007.55"><li><a href="http://dx.doi.org/10.1109/mcse.2007.55" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Matplotlib%3A+A+2D+Graphics+Environment." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Matplotlib%3A+A+2D+Graphics+Environment.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001751-ScientificLinux.org1" id="pone.0001751-ScientificLinux.org1"></a>ScientificLinux.org (2007)   Scientific Linux [<a href="https://www.scientificlinux.org/">https://www.scientificlinux.org/</a>].  <ul class="find-nolinks"></ul></li><li><span class="label">13.
+              </span><a name="pone.0001751-Billauer1" id="pone.0001751-Billauer1"></a>Billauer E (2007) peakdet: Peak detection using MATLAB.   <a href="http://www.billauer.co.il/peakdet.html">http://www.billauer.co.il/peakdet.html</a>.  <ul class="find-nolinks"></ul></li><li><span class="label">14.
+              </span><a name="pone.0001751-Shmueli1" id="pone.0001751-Shmueli1"></a>Shmueli K, van Gelderen P, de Zwart JA, Horovitz SG, Fukunaga M, et al.  (2007) Low-frequency fluctuations in the cardiac rate as a source of variance in the resting-state fMRI BOLD signal. Neuroimage  38: 306–320.  <ul class="find" data-citedArticleID="1070048" data-doi="10.1016/j.neuroimage.2007.07.037"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2007.07.037" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Low-frequency+fluctuations+in+the+cardiac+rate+as+a+source+of+variance+in+the+resting-state+fMRI+BOLD+signal." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Low-frequency+fluctuations+in+the+cardiac+rate+as+a+source+of+variance+in+the+resting-state+fMRI+BOLD+signal.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001751-Chan1" id="pone.0001751-Chan1"></a>Chan GS, Middleton PM, Celler BG, Wang L, Lovell NH (2007) Automatic detection of left ventricular ejection time from a finger photoplethysmographic pulse oximetry waveform: comparison with Doppler aortic measurement. Physiol Meas  28: 439–452.  <ul class="find" data-citedArticleID="1070030" data-doi="10.1088/0967-3334/28/4/009"><li><a href="http://dx.doi.org/10.1088/0967-3334/28/4/009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automatic+detection+of+left+ventricular+ejection+time+from+a+finger+photoplethysmographic+pulse+oximetry+waveform%3A+comparison+with+Doppler+aortic+measurement." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automatic+detection+of+left+ventricular+ejection+time+from+a+finger+photoplethysmographic+pulse+oximetry+waveform%3A+comparison+with+Doppler+aortic+measurement.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001751-Birn1" id="pone.0001751-Birn1"></a>Birn RM, Diamond JB, Smith MA, Bandettini PA (2006) Separating respiratory-variation-related fluctuations from neuronal-activity-related fluctuations in fMRI. Neuroimage  31: 1536–1548.  <ul class="find" data-citedArticleID="1070026" data-doi="10.1016/j.neuroimage.2006.02.048"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2006.02.048" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Separating+respiratory-variation-related+fluctuations+from+neuronal-activity-related+fluctuations+in+fMRI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Separating+respiratory-variation-related+fluctuations+from+neuronal-activity-related+fluctuations+in+fMRI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001751-Ihaka1" id="pone.0001751-Ihaka1"></a>Ihaka R, Gentleman R (1996) R: A Language for Data Analysis and Graphics. Journal of Computational and Graphical Statistics  5: 299–314.  <ul class="find" data-citedArticleID="1070040" data-doi="10.2307/1390807"><li><a href="http://dx.doi.org/10.2307/1390807" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=R%3A+A+Language+for+Data+Analysis+and+Graphics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22R%3A+A+Language+for+Data+Analysis+and+Graphics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.XML" value="41265"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.PDF" value="483733"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g001.PNG_L" value="1192801"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g001.PNG_M" value="149884"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g001.PNG_S" value="12210"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g001.TIF" value="1996990"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g001.PNG_I" value="52320"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g002.PNG_L" value="1248233"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g002.PNG_M" value="130294"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g002.PNG_S" value="17701"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g002.TIF" value="2865576"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g002.PNG_I" value="84441"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g003.PNG_L" value="436820"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g003.PNG_M" value="93036"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g003.PNG_S" value="13629"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g003.TIF" value="1042510"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g003.PNG_I" value="33320"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g004.PNG_L" value="1649960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g004.PNG_M" value="168771"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g004.PNG_S" value="15783"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g004.TIF" value="3355160"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g004.PNG_I" value="60180"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g005.PNG_L" value="196470"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g005.PNG_M" value="135681"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g005.PNG_S" value="19562"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g005.TIF" value="309066"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.g005.PNG_I" value="117954"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001751.s001.TXT" value="49201"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001751&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001751" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001751&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001751&volume=&issue=&title=Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis&author_name=Daniel%20J.%20Kelley%2C%20Terrence%20R.%20Oakes%2C%20Larry%20L.%20Greischar%2C%20Moo%20K.%20Chung%2C%20John%20M.%20Ollinger%2C%20Andrew%20L.%20Alexander%2C%20Steven%20E.%20Shelton%2C%20Ned%20H.%20Kalin%2C%20Richard%20J.%20Davidson&start_page=1&end_page=5" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001751" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751&amp;t=Automatic%20Physiological%20Waveform%20Processing%20for%20fMRI%20Noise%20Correction%20and%20Analysis" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751&title=Automatic%20Physiological%20Waveform%20Processing%20for%20fMRI%20Noise%20Correction%20and%20Analysis&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751&amp;title=Automatic%20Physiological%20Waveform%20Processing%20for%20fMRI%20Noise%20Correction%20and%20Analysis" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001751&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Automatic Physiological Waveform Processing for fMRI Noise Correction and Analysis';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001751';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Automatic%20Physiological%20Waveform%20Processing%20for%20fMRI%20Noise%20Correction%20and%20Analysis http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001751" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001751" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Bioassays+and+physiological+analysis%22" title="Search for articles in the subject area:'Bioassays and physiological analysis'"><div class="flagText">Bioassays and physiological analysis</div></a>
+              <div data-categoryid="9041" data-articleid="26326"
+                   data-categoryname="Bioassays and physiological analysis"
+                   class="flagImage" title="Flag 'Bioassays and physiological analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Computer+software%22" title="Search for articles in the subject area:'Computer software'"><div class="flagText">Computer software</div></a>
+              <div data-categoryid="2287" data-articleid="26326"
+                   data-categoryname="Computer software"
+                   class="flagImage" title="Flag 'Computer software' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Functional+magnetic+resonance+imaging%22" title="Search for articles in the subject area:'Functional magnetic resonance imaging'"><div class="flagText">Functional magnetic resonance imaging</div></a>
+              <div data-categoryid="46285" data-articleid="26326"
+                   data-categoryname="Functional magnetic resonance imaging"
+                   class="flagImage" title="Flag 'Functional magnetic resonance imaging' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Language%22" title="Search for articles in the subject area:'Language'"><div class="flagText">Language</div></a>
+              <div data-categoryid="32921" data-articleid="26326"
+                   data-categoryname="Language"
+                   class="flagImage" title="Flag 'Language' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Monkeys%22" title="Search for articles in the subject area:'Monkeys'"><div class="flagText">Monkeys</div></a>
+              <div data-categoryid="43037" data-articleid="26326"
+                   data-categoryname="Monkeys"
+                   class="flagImage" title="Flag 'Monkeys' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Respiratory+physiology%22" title="Search for articles in the subject area:'Respiratory physiology'"><div class="flagText">Respiratory physiology</div></a>
+              <div data-categoryid="48185" data-articleid="26326"
+                   data-categoryname="Respiratory physiology"
+                   class="flagImage" title="Flag 'Respiratory physiology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Signal+filtering%22" title="Search for articles in the subject area:'Signal filtering'"><div class="flagText">Signal filtering</div></a>
+              <div data-categoryid="20157" data-articleid="26326"
+                   data-categoryname="Signal filtering"
+                   class="flagImage" title="Flag 'Signal filtering' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Signal+processing%22" title="Search for articles in the subject area:'Signal processing'"><div class="flagText">Signal processing</div></a>
+              <div data-categoryid="4409" data-articleid="26326"
+                   data-categoryname="Signal processing"
+                   class="flagImage" title="Flag 'Signal processing' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=4946'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=5362'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3768&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=11671">Software Version</a><br>Posted by kelley</p>
+      <p><a href="/annotation/listThread.action?root=9477">3 Rs</a><br>Posted by imaprimate2</p>
+      <p><a href="/annotation/listThread.action?root=21521">Publisher's Note: Updated Figure 5</a><br>Posted by ploswebmaster</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

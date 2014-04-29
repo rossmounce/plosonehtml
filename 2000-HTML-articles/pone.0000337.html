@@ -1,0 +1,1140 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000337"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000337" />
+
+    <meta name="citation_title" content="Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data"/>
+    <meta itemprop="name" content="Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data"/>
+
+      <meta name="citation_author" content="Naoki Nariai"/>
+            <meta name="citation_author_institution" content="Bioinformatics Program, Boston University, Boston, Massachusetts, United States of America"/>
+      <meta name="citation_author" content="Eric D. Kolaczyk"/>
+            <meta name="citation_author_institution" content="Department of Mathematics and Statistics, Boston University, Boston, Massachusetts, United States of America"/>
+      <meta name="citation_author" content="Simon Kasif"/>
+            <meta name="citation_author_institution" content="Bioinformatics Program, Boston University, Boston, Massachusetts, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Biomedical Engineering, Boston University, Boston, Massachusetts, United States of America"/>
+
+    <meta name="citation_date" content="2007/3/28"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000337.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e337"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Gapped BLAST and PSI-BLAST: a new generation of protein database search programs.; citation_author=SF Altschul; citation_author=TL Madden; citation_author=AA Schaffer; citation_author=J Zhang; citation_author=Z Zhang; citation_journal_title=Nucleic Acids Res; citation_volume=25; citation_number=1; citation_pages=3389-3402; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Pfam: clans, web tools and services.; citation_author=RD Finn; citation_author=J Mistry; citation_author=B Schuster-Bockler; citation_author=S Griffiths-Jones; citation_author=V Hollich; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=2; citation_pages=D247-251; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A combined algorithm for genome-wide prediction of protein function.; citation_author=EM Marcotte; citation_author=M Pellegrini; citation_author=MJ Thompson; citation_author=TO Yeates; citation_author=D Eisenberg; citation_journal_title=Nature; citation_volume=402; citation_number=3; citation_pages=83-86; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Microbial genescapes: phyletic and functional patterns of ORF distribution among prokaryotes.; citation_author=T Gaasterland; citation_author=MA Ragan; citation_journal_title=Microb Comp Genomics; citation_volume=3; citation_number=4; citation_pages=199-217; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Assigning protein functions by comparative genome analysis: protein phylogenetic profiles.; citation_author=M Pellegrini; citation_author=EM Marcotte; citation_author=MJ Thompson; citation_author=D Eisenberg; citation_author=TO Yeates; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=96; citation_number=5; citation_pages=4285-4288; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Mutual information relevance networks: functional genomic clustering using pairwise entropy measurements.; citation_author=AJ Butte; citation_author=IS Kohane; citation_journal_title=Pac Symp Biocomput; citation_number=6; citation_pages=418-429; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Cluster analysis and display of genome-wide expression patterns.; citation_author=MB Eisen; citation_author=PT Spellman; citation_author=PO Brown; citation_author=D Botstein; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=95; citation_number=7; citation_pages=14863-14868; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Transitive functional annotation by shortest-path analysis of gene expression data.; citation_author=X Zhou; citation_author=MC Kao; citation_author=WH Wong; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=99; citation_number=8; citation_pages=12783-12788; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Whole-genome annotation by using evidence integration in functional-linkage networks.; citation_author=U Karaoz; citation_author=TM Murali; citation_author=S Letovsky; citation_author=Y Zheng; citation_author=C Ding; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=101; citation_number=9; citation_pages=2888-2893; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Predicting protein function from protein/protein interaction data: a probabilistic approach.; citation_author=S Letovsky; citation_author=S Kasif; citation_journal_title=Bioinformatics; citation_number=10; citation_pages=i197-204; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A network of protein-protein interactions in yeast.; citation_author=B Schwikowski; citation_author=P Uetz; citation_author=S Fields; citation_journal_title=Nat Biotechnol; citation_volume=18; citation_number=11; citation_pages=1257-1261; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=A probabilistic functional network of yeast genes.; citation_author=I Lee; citation_author=SV Date; citation_author=AT Adai; citation_author=EM Marcotte; citation_journal_title=Science; citation_volume=306; citation_number=12; citation_pages=1555-1558; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Assessing the limits of genomic data integration for predicting protein networks.; citation_author=LJ Lu; citation_author=Y Xia; citation_author=A Paccanaro; citation_author=H Yu; citation_author=M Gerstein; citation_journal_title=Genome Res; citation_volume=15; citation_number=13; citation_pages=945-953; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A Bayesian framework for combining heterogeneous data sources for gene function prediction (in Saccharomyces cerevisiae).; citation_author=OG Troyanskaya; citation_author=K Dolinski; citation_author=AB Owen; citation_author=RB Altman; citation_author=D Botstein; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=100; citation_number=14; citation_pages=8348-8353; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The society of genes: networks of functional links between genes from comparative genomics.; citation_author=I Yanai; citation_author=C DeLisi; citation_journal_title=Genome Biol; citation_volume=3; citation_number=15; citation_pages=research0064; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=An integrated probabilistic model for functional prediction of proteins.; citation_author=M Deng; citation_author=T Chen; citation_author=F Sun; citation_journal_title=J Comput Biol; citation_volume=11; citation_number=16; citation_pages=463-475; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A statistical framework for genomic data fusion.; citation_author=GR Lanckriet; citation_author=T De Bie; citation_author=N Cristianini; citation_author=MI Jordan; citation_author=WS Noble; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=17; citation_pages=2626-2635; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Discovering functional relationships: biochemistry versus genetics.; citation_author=SL Wong; citation_author=LV Zhang; citation_author=FP Roth; citation_journal_title=Trends Genet; citation_volume=21; citation_number=18; citation_pages=424-427; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MIPS: a database for genomes and protein sequences.; citation_author=HW Mewes; citation_author=D Frishman; citation_author=U Guldener; citation_author=G Mannhaupt; citation_author=K Mayer; citation_journal_title=Nucleic Acids Res; citation_volume=30; citation_number=19; citation_pages=31-34; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Gene ontology: tool for the unification of biology. The Gene Ontology Consortium.; citation_author=M Ashburner; citation_author=CA Ball; citation_author=JA Blake; citation_author=D Botstein; citation_author=H Butler; citation_journal_title=Nat Genet; citation_volume=25; citation_number=20; citation_pages=25-29; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The GRID: the General Repository for Interaction Datasets.; citation_author=BJ Breitkreutz; citation_author=C Stark; citation_author=M Tyers; citation_journal_title=Genome Biol; citation_volume=4; citation_number=21; citation_pages=R23; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Functional discovery via a compendium of expression profiles.; citation_author=TR Hughes; citation_author=MJ Marton; citation_author=AR Jones; citation_author=CJ Roberts; citation_author=R Stoughton; citation_journal_title=Cell; citation_volume=102; citation_number=22; citation_pages=109-126; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Comprehensive identification of cell cycle-regulated genes of the yeast Saccharomyces cerevisiae by microarray hybridization.; citation_author=PT Spellman; citation_author=G Sherlock; citation_author=MQ Zhang; citation_author=VR Iyer; citation_author=K Anders; citation_journal_title=Mol Biol Cell; citation_volume=9; citation_number=23; citation_pages=3273-3297; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Genomic expression programs in the response of yeast cells to environmental changes.; citation_author=AP Gasch; citation_author=PT Spellman; citation_author=CM Kao; citation_author=O Carmel-Harel; citation_author=MB Eisen; citation_journal_title=Mol Biol Cell; citation_volume=11; citation_number=24; citation_pages=4241-4257; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Genomic expression responses to DNA-damaging agents and the regulatory role of the yeast ATR homolog Mec1p.; citation_author=AP Gasch; citation_author=M Huang; citation_author=S Metzner; citation_author=D Botstein; citation_author=SJ Elledge; citation_journal_title=Mol Biol Cell; citation_volume=12; citation_number=25; citation_pages=2987-3003; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Controlling the false discovery rate: a practical and powerful approach to multiple testing.; citation_author=Y Benjamini; citation_author=Y Hochberg; citation_journal_title=J Roy Stat Soc B; citation_number=26; citation_pages=289-300; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=A direct approach to false discovery rates.; citation_author=JD Storey; citation_journal_title=J Roy Stat Soc B; citation_number=27; citation_pages=479-498; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Saccharomyces genome database: underlying principles and organisation.; citation_author=SS Dwight; citation_author=R Balakrishnan; citation_author=KR Christie; citation_author=MC Costanzo; citation_author=K Dolinski; citation_journal_title=Brief Bioinform; citation_volume=5; citation_number=28; citation_pages=9-22; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Multiple locus linkage analysis of genomewide expression in yeast.; citation_author=JD Storey; citation_author=JM Akey; citation_author=L Kruglyak; citation_journal_title=PLoS Biol; citation_volume=3; citation_number=29; citation_pages=e267; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=The budding yeast rRNA and ribosome biosynthesis (RRB) regulon contains over 200 genes.; citation_author=CH Wade; citation_author=MA Umbarger; citation_author=MA McAlear; citation_journal_title=Yeast; citation_volume=23; citation_number=30; citation_pages=293-306; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Fcf1p and Fcf2p are novel nucleolar Saccharomyces cerevisiae proteins involved in pre-rRNA processing.; citation_author=B Rempola; citation_author=I Karkusiewicz; citation_author=I Piekarska; citation_author=J Rytka; citation_journal_title=Biochem Biophys Res Commun; citation_volume=346; citation_number=31; citation_pages=546-554; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A screen for genes of heme uptake identifies the FLC family required for import of FAD into the endoplasmic reticulum.; citation_author=O Protchenko; citation_author=R Rodriguez-Suarez; citation_author=R Androphy; citation_author=H Bussey; citation_author=CC Philpott; citation_journal_title=J Biol Chem; citation_volume=281; citation_number=32; citation_pages=21445-21457; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Proteasome- and SCF-dependent degradation of yeast adenine deaminase upon transition from proliferation to quiescence requires a new F-box protein named Saf1p.; citation_author=S Escusa; citation_author=J Camblong; citation_author=JM Galan; citation_author=B Pinson; citation_author=B Daignan-Fornier; citation_journal_title=Mol Microbiol; citation_volume=60; citation_number=33; citation_pages=1014-1025; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=On the Optimality of the Simple Bayesian Classifier under Zero-One Loss.; citation_author=P Domingos; citation_author=M Pazzani; citation_journal_title=Machine Learning; citation_volume=29; citation_number=34; citation_pages=103-130; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Towards a better understanding of memory-based reasoning systems.; citation_author=J Rachlin; citation_author=S Kasif; citation_author=S Salzberg; citation_journal_title=International Conference on Machine Learning; citation_number=35; citation_pages=242-250; citation_date=1994; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data"/>
+    <meta name="twitter:description" content="Dramatic improvements in high throughput sequencing technologies have led to a staggering growth in the number of predicted genes. However, a large fraction of these newly discovered genes do not have a functional assignment. Fortunately, a variety of novel high-throughput genome-wide functional screening technologies provide important clues that shed light on gene function. The integration of heterogeneous data to predict protein function has been shown to improve the accuracy of automated gene annotation systems. In this paper, we propose and evaluate a probabilistic approach for protein function prediction that integrates protein-protein interaction (PPI) data, gene expression data, protein motif information, mutant phenotype data, and protein localization data. First, functional linkage graphs are constructed from PPI data and gene expression data, in which an edge between nodes (proteins) represents evidence for functional similarity. The assumption here is that graph neighbors are more likely to share protein function, compared to proteins that are not neighbors. The functional linkage graph model is then used in concert with protein domain, mutant phenotype and protein localization data to produce a functional prediction. Our method is applied to the functional prediction of Saccharomyces cerevisiae genes, using Gene Ontology (GO) terms as the basis of our annotation. In a cross validation study we show that the integrated model increases recall by 18%, compared to using PPI data alone at the 50% precision. We also show that the integrated predictor is significantly better than each individual predictor. However, the observed improvement vs. PPI depends on both the new source of data and the functional category to be predicted. Surprisingly, in some contexts integration hurts overall prediction accuracy. Lastly, we provide a comprehensive assignment of putative GO terms to 463 proteins that currently have no assigned function."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000337.g003"/>
+
+  <meta property="og:title" content="Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=0'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=6673'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=7182&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000337">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000337" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000337&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Naoki Nariai
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:nariai@bu.edu">nariai@bu.edu</a></p>
+
+                <p>Affiliation:
+                  Bioinformatics Program, Boston University, Boston, Massachusetts, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Eric D. Kolaczyk, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Mathematics and Statistics, Boston University, Boston, Massachusetts, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Simon Kasif
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Bioinformatics Program, Boston University, Boston, Massachusetts, United States of America, 
+                  Department of Biomedical Engineering, Boston University, Boston, Massachusetts, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 28, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000337</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000337-g001" data-doi="info:doi/10.1371/journal.pone.0000337" data-uri="info:doi/10.1371/journal.pone.0000337.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000337-g002" data-doi="info:doi/10.1371/journal.pone.0000337" data-uri="info:doi/10.1371/journal.pone.0000337.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000337-g003" data-doi="info:doi/10.1371/journal.pone.0000337" data-uri="info:doi/10.1371/journal.pone.0000337.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000337">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000337" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Dramatic improvements in high throughput sequencing technologies have led to a staggering growth in the number of predicted genes. However, a large fraction of these newly discovered genes do not have a functional assignment. Fortunately, a variety of novel high-throughput genome-wide functional screening technologies provide important clues that shed light on gene function. The integration of heterogeneous data to predict protein function has been shown to improve the accuracy of automated gene annotation systems. In this paper, we propose and evaluate a probabilistic approach for protein function prediction that integrates protein-protein interaction (PPI) data, gene expression data, protein motif information, mutant phenotype data, and protein localization data. First, functional linkage graphs are constructed from PPI data and gene expression data, in which an edge between nodes (proteins) represents evidence for functional similarity. The assumption here is that graph neighbors are more likely to share protein function, compared to proteins that are not neighbors. The functional linkage graph model is then used in concert with protein domain, mutant phenotype and protein localization data to produce a functional prediction. Our method is applied to the functional prediction of <em>Saccharomyces cerevisiae</em> genes, using Gene Ontology (GO) terms as the basis of our annotation. In a cross validation study we show that the integrated model increases recall by 18%, compared to using PPI data alone at the 50% precision. We also show that the integrated predictor is significantly better than each individual predictor. However, the observed improvement vs. PPI depends on both the new source of data and the functional category to be predicted. Surprisingly, in some contexts integration hurts overall prediction accuracy. Lastly, we provide a comprehensive assignment of putative GO terms to 463 proteins that currently have no assigned function.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Nariai N, Kolaczyk ED, Kasif S (2007) Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data. PLoS ONE 2(3):
+          e337.
+            doi:10.1371/journal.pone.0000337</p><p><strong>Academic Editor: </strong>John Storey, University of Washington, United States of America</p><p><strong>Received:</strong> December 13, 2006; <strong>Accepted:</strong> March 8, 2007; <strong>Published:</strong> March 28, 2007</p><p><strong>Copyright:</strong> © 2007 Nariai et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported by NSF grant ITR-048715 and NHGRI grant R01 HG003367-01A1.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Functional annotation of genes is a fundamental problem in computational and experimental biology. The problem can be solved at various levels of resolution ranging from identifying high level processes where a given protein might be associated with, to discovery of the cell specific protein-ligand interaction targets of a protein in different biological conditions. The most established and reliable methods for protein function prediction are based on sequence similarity using BLAST <a href="#pone.0000337-Altschul1">[1]</a> and profile methods such as PFAM <a href="#pone.0000337-Finn1">[2]</a>, and PSI-BLAST <a href="#pone.0000337-Altschul1">[1]</a>. Other still evolving methods that are too numerous to list include gene fusion information <a href="#pone.0000337-Marcotte1">[3]</a>, and phylogenetic profiling <a href="#pone.0000337-Gaasterland1">[4]</a>, <a href="#pone.0000337-Pellegrini1">[5]</a>. Emergent methods that elucidate function from a variety of high-throughput experimental screens have become particularly attractive recently due to the reduced cost of conducting genome-wide functional screens. Genomic and proteomic data sets, including gene expression and protein-protein interaction (PPI) data, are becoming increasingly available for a growing array of organisms. Driven by the hypothesis that co-expressed genes might participate in related biological processes, clustering gene expression profiles across diverse conditions can be used to assign protein function <a href="#pone.0000337-Butte1">[6]</a>–<a href="#pone.0000337-Zhou1">[8]</a>. Using PPI data to assign protein function has been extensively studied. These algorithms are often based on the “guilt by association” principle that suggests that interacting neighbors in protein-protein interaction (PPI) networks might also share a function <a href="#pone.0000337-Karaoz1">[9]</a>–<a href="#pone.0000337-Schwikowski1">[11]</a>. Since such genome-wide data sets are inherently noisy, and each type of data captures only one aspect of cellular activity (e.g. gene expression data measure mRNA levels of transcriptionally induced genes, and PPI data suggest a feasible physical interaction between proteins), it is appealing to combine such heterogeneous data in an effort to improve the coverage and accuracy of protein function prediction.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Bayesian network methodologies for data integration have been explored <a href="#pone.0000337-Lee1">[12]</a>–<a href="#pone.0000337-Troyanskaya1">[14]</a> in a number of systems for predicting protein-protein interactions and protein function similarity. These approaches calculate the posterior probability that each pair of genes <em>i</em> and <em>j</em>, has a functional relationship, given the various types of genome-wide data. These algorithms output a functional linkage graph <a href="#pone.0000337-Marcotte1">[3]</a>, <a href="#pone.0000337-Yanai1">[15]</a> in which an edge between two nodes (genes) represents functional similarity with a reliability score (probability) assigned to each edge. However, using these probabilistic networks to produce a functional assignment remains a hard computational problem. For instance, one approach for protein function annotation based on Markov random fields (MRFs) has been previously investigated <a href="#pone.0000337-Letovsky1">[10]</a>. An integrated MRF approach that includes network structures (PPI network and co-expression network) and protein domain information to predict protein function has also been proposed <a href="#pone.0000337-Deng1">[16]</a>. There, the authors used Gibbs sampling to estimate the probability that a protein has a particular function. Machine learning methods based on support vector machines have been investigated in several projects <a href="#pone.0000337-Lanckriet1">[17]</a>, <a href="#pone.0000337-Wong1">[18]</a>. In fact, it is rather obvious that if we treat the prediction of function based on each modality as an expert, then any of the popular classification methods (decision trees, boosting, and weighted majority) can in principle be used for “integration” of these predictions. However, given the currently sparse data using complex representations for prediction might lead to overfitting.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>In this paper, our contribution is twofold. First, we propose a simple and relatively transparent probabilistic model for protein function prediction that allows us to efficiently calculate the posterior probability that each gene has a particular function, given various types of genome-wide data. Second, we analyze the effect of combining the heterogeneous data sources in a substantially more comprehensive manner than has been done to date, with the goal of better understanding just which types of genes benefit most from the integration of which types of data sources. In particular, we develop a relatively simple yet useful method to integrate functional linkage graphs with categorical information. The functional linkage graphs are constructed from PPI data and gene expression data. As usual the assumption here is that physically interacting proteins or co-expressed genes are more likely to share protein functions than a randomly selected pair of proteins <a href="#pone.0000337-Letovsky1">[10]</a>. Categorical features for each protein, including protein motifs, knockout phenotype, and localization information are captured based on predictive sources of evidence available from the MIPS database <a href="#pone.0000337-Mewes1">[19]</a>. Using Bayesian networks framework, this categorical information is then combined with functional linkage graphs constructed from PPI data and gene expression data to generate functional predictions. Our method is applied to the functional prediction of proteins in yeast (<em>Saccharomyces cerevisiae</em>). Our methodology combines PPI data, gene expression data, protein motif information, mutant phenotype data, and protein localization data, while using Gene Ontology (GO) “biological processes” terms <a href="#pone.0000337-Ashburner1">[20]</a> as the basis for functional annotation. The long term goal of this research is to develop a probabilistic language to specify which proteins might be active in a given biological process based on the type of interacting partners they have, protein motifs, or transcriptional profiles.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>By combining five types of data, the number of correctly recovered known gene-term associations is increased by 18% at the same precision (50%), compared to using PPI data alone. We specifically focused on certain points on the ROC curve in our analysis that we believe are potentially feasible for follow-ups on the prediction in experimental labs. We show that by adding different types of genome-wide data, different types of the GO terms that are specific for the type of information are newly recovered. Also, by conducting robustness analysis of the integration model to PPI edge removal, we provide a novel perspective on the amount of PPI data necessary to obtain high prediction accuracy by the integration model. In that analysis, we find some conditions where integration actually hurts performance rather than improving accuracy. Plausible functions are assigned to 463 currently unannotated proteins by our method, and we discuss some of these novel assignments.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>2.1 Data preparation</h4>
+<h5>2.1.1 Protein-protein interaction data.</h5><a id="article1.body1.sec2.sec1.sec1.p1" name="article1.body1.sec2.sec1.sec1.p1"></a><p>From the GRID database <a href="#pone.0000337-Breitkreutz1">[21]</a>, 31201 non-redundant protein-protein interactions among 5151 yeast <em>Saccharomyces cerevisiae</em> genes are extracted. We eliminated self-self interactions and duplicated protein interaction pairs from the database to construct a PPI functional linkage graph <a href="#pone.0000337-Marcotte1">[3]</a>, <a href="#pone.0000337-Yanai1">[15]</a>, in which an edge between two nodes (proteins) represents evidence for protein function similarity.</p>
+
+<h5>2.1.2 Gene expression data.</h5><a id="article1.body1.sec2.sec1.sec2.p1" name="article1.body1.sec2.sec1.sec2.p1"></a><p>Four types of gene expression data, the Rosetta compendium data <a href="#pone.0000337-Hughes1">[22]</a>, cell cycle data <a href="#pone.0000337-Spellman1">[23]</a>, stress-response data <a href="#pone.0000337-Gasch1">[24]</a>, and DNA-damage data <a href="#pone.0000337-Gasch2">[25]</a> are used in this paper. For each type of gene expression data, Pearson correlation coefficients for all combinations of genes are calculated, and gene pairs whose correlation coefficient is larger than 0.85 are selected as “co-expressed pairs” for each type of gene expression data. We obtained 1783, 645, 10654 and 31827 gene pairs from the Rosetta data, cell cycle data, stress-response data and DNA damage data, respectively. The false discovery rate (FDR) <a href="#pone.0000337-Benjamini1">[26]</a>, <a href="#pone.0000337-Storey1">[27]</a> for each threshold is less than 10<sup>−10</sup>, indicating that for each experiment we are only using a set of declared co-expressed pairs for which a false declaration is exceedingly unlikely. Finally, 38151 non-redundant gene pairs are obtained from the combined gene pairs to construct a co-expression functional linkage graph.</p>
+
+<h5>2.1.3 Protein motif information.</h5><a id="article1.body1.sec2.sec1.sec3.p1" name="article1.body1.sec2.sec1.sec3.p1"></a><p>From the MIPS <a href="#pone.0000337-Mewes1">[19]</a> database, 2678 protein-motif associations (e.g. YCR065W protein has “Fork head domain signatures and profile” motif) are extracted, covering 2179 proteins across 992 motif categories. If a protein has a specific protein motif, this can increase the probability that the protein has a specific protein function. We describe how to integrate this category information for protein function prediction in Section 2.3.</p>
+
+<h5>2.1.4 Gene knock-out phenotype data.</h5><a id="article1.body1.sec2.sec1.sec4.p1" name="article1.body1.sec2.sec1.sec4.p1"></a><p>From the MIPS <a href="#pone.0000337-Mewes1">[19]</a> database, 3013 protein-phenotype associations (e.g. YPR185W deletion mutant exhibits “Starvation sensitivity”) are obtained, covering 1460 proteins across 175 mutant phenotype categories.</p>
+
+<h5>2.1.5 Protein localization data.</h5><a id="article1.body1.sec2.sec1.sec5.p1" name="article1.body1.sec2.sec1.sec5.p1"></a><p>From the MIPS <a href="#pone.0000337-Mewes1">[19]</a> database, 5191 protein-localization data (e.g. YPR191W protein localizes at “Mitochondrial inner membrane”) are obtained, covering 4076 proteins across 41 cellular location categories.</p>
+
+<h5>2.1.6 GO term data.</h5><a id="article1.body1.sec2.sec1.sec6.p1" name="article1.body1.sec2.sec1.sec6.p1"></a><p>From the 06/03/2006 version of the Yeast SGD database <a href="#pone.0000337-Dwight1">[28]</a>, 107636 gene-term GO assignments are obtained, in which there are 6289 genes and 1965 ‘biological process’ terms in total. For each gene-term association, we expanded the label in the GO hierarchy to include all ‘is-a’ and ‘part-of’ ancestors of each GO term. Labels that appear more than 300 times among the 6289 genes are excluded for further analysis, on the assumption that such terms are too broad for protein function prediction. Also labels that appear less than five times among the genes are excluded, since they do not constitute a sufficiently large enough sample to make reliable predictions.</p>
+<a id="article1.body1.sec2.sec1.sec6.p2" name="article1.body1.sec2.sec1.sec6.p2"></a><p>From PPI data and gene expression data, two different functional linkage graphs are obtained. Here, an edge in each functional linkage graph shows that the two nodes (proteins) are a member of the constructed pairs in each data set. For each GO label <em>t</em> and for each functional linkage graph <em>l</em>, we calculate <em>p</em><sub>1</sub><sup>(<em>l</em>)</sup>, the probability that a protein has label <em>t</em>, given that the interacting partner has label <em>t</em>. This <em>p</em><sub>1</sub><sup>(<em>l</em>)</sup> is expected to be higher than <em>p</em><sub>0</sub><sup>(<em>l</em>)</sup>, the probability that the protein has label <em>t</em>, given that the interacting partner does not have label <em>t</em>. Here, a <em>X</em><sup>2</sup> test was performed to ensure that <em>p</em><sub>1</sub><sup>(<em>l</em>)</sup> and <em>p</em><sub>0</sub><sup>(<em>l</em>)</sup> were statistically different using a Bonferroni-corrected <em>p</em>-value of 0.001<em>/T</em> , where <em>T</em> is the number of terms tested in each data set.</p>
+
+
+
+<h4>2.2 Categorical features of proteins</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Proteins can be associated with categorical features according to different types of categorical information. The categorical features that are used in our predictive methodology are defined below.</p>
+
+
+<ul class="bulletlist">
+
+<li>Protein motif (domain): Random variable <em>d<sub>i</sub></em> is associated with a protein where <em>d<sub>i</sub></em> = 1 if the protein contains domain <em>d<sub>i</sub></em>, and <em>d<sub>i</sub></em> = 0 otherwise. A feature vector <strong>d</strong> = (<em>d</em><sub>1</sub>, <em>d</em><sub>2</sub>,…, <em>d<sub>qd</sub></em>)<sup>T</sup> is defined for each protein, where <em>q<sub>d</sub></em> is the total number of protein motif features (<em>q<sub>d</sub></em> = 992 in our case).</li>
+
+<li>Phenotype: Random variable <em>p<sub>i</sub></em> is associated with a protein where <em>p<sub>i</sub></em> = 1 if the gene knockout exhibits phenotype <em>p<sub>i</sub></em>, and <em>p<sub>i</sub></em> = 0 otherwise. A feature vector <strong>p</strong> = (<em>p<sub>1</sub></em>, <em>p<sub>2</sub></em>,…, <em>p<sub>qp</sub></em>)<sup>T</sup> is defined for each protein, where <em>q<sub>p</sub></em> is the total number of phenotype features (<em>q<sub>p</sub></em> = 175 in our case).</li>
+
+<li>Protein localization: Random variable <em>l<sub>i</sub></em> is associated with a protein where <em>l<sub>i</sub></em> = 1 if the protein localizes in <em>l<sub>i</sub></em>, and <em>l<sub>i</sub></em> = 0 otherwise. A feature vector <strong>l</strong> = (<em>l</em><sub>1</sub>, <em>l</em><sub>2</sub>,…, <em>l<sub>ql</sub></em>)<sup>T</sup> is defined for each protein, where <em>q<sub>l</sub></em> is the total number of localization features (<em>q<sub>l</sub></em> = 41 in our case).</li>
+
+</ul><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Naturally, a protein can have several features at the same time. Our aim is to integrate these sources of evidence in a smooth fashion to improve the accuracy and coverage of the functional predictors based on the assumption that if a protein has specific features, then this can increase the probability to infer specific protein functions.</p>
+
+
+<h4>2.3 Computing the posterior probability of function using graphs and features</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>For each protein <em>i</em> and GO term <em>t</em>, a Boolean random variable <em>L<sub>i,t</sub></em> is associated, where <em>L<sub>i,t</sub></em> = 1 if <em>i</em> is labeled with <em>t</em>, and <em>L<sub>i,t</sub></em> = 0 otherwise. We want to calculate the probability of <em>L<sub>i,t</sub></em> = 1 for all combinations of <em>i</em> and <em>t</em>, given the structure of functional linkage graphs constructed above, and the category features that the protein <em>i</em> has, and all the assignments of GO terms to the other proteins. We assume that probability distribution for the labeling <em>L<sub>i,t</sub></em> = 1 is conditionally independent of all other nodes given the functional annotation of the neighbors and category information of the protein.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>We want to calculate the posterior probability given functional linkage graphs and category features of a protein <em>P</em>(<em>L<sub>i,t</sub></em> = 1|<em>N<sub>i</sub></em><sup>(l)</sup>,…, <em>N<sub>i</sub></em><sup>(<em>m</em>)</sup>, <em>k<sub>i,t</sub></em><sup>(l)</sup>,…, <em>k<sub>i,t</sub></em><sup>(<em>m</em>)</sup>, <strong>c</strong><em><sub>i</sub></em><sup>(l)</sup>,…, <strong>c</strong><em><sub>i</sub></em><sup>(<em>n</em>)</sup>), where <em>N<sub>i</sub></em><sup>(l)</sup>(<em>l</em> = 1,…, <em>m</em>) is the number of graph neighbors (excluding unannotated neighbors) of gene <em>i</em> in a functional linkage graph <em>l</em>, <em>k<sub>i</sub></em><sup>(l)</sup>(<em>l</em> = 1,…, <em>m</em>) is the number of the neighbors of gene <em>i</em> which are labeled with term <em>t</em> in the graph <em>l</em>, <em>m</em> is the number of different types of functional linkage graphs, <strong>c</strong><em><sub>i</sub></em><sup>(<em>j</em>)</sup>(<em>j</em> = 1,…, <em>n</em>) is the feature vector that the gene <em>i</em> has for a category feature type <em>j</em>, and <em>n</em> is the number of different types of categories (not the number of features). For example, in this paper, <em>N<sub>i</sub></em><sup>(1)</sup> and <em>k<sub>i</sub></em><sup>(1)</sup> is the number of neighbors of gene <em>i</em>, and the neighbors that have term <em>t</em> in a PPI network, respectively. <em>N<sub>i</sub></em><sup>(2)</sup> and <em>k<sub>i</sub></em><sup>(2)</sup> is the number of the neighbors and the neighbors that have term <em>t</em> in a co-expression network, respectively. <strong>c</strong><em><sub>i</sub></em><sup>(1)</sup>, <strong>c</strong><em><sub>i</sub></em><sup>(2)</sup> and <strong>c</strong><em><sub>i</sub></em><sup>(3)</sup> are feature vectors that gene <em>i</em> has for the three types of categories, i.e., protein motif feature vector <strong>d</strong>, mutant phenotype feature vector <strong>p</strong>, and localization feature vector <strong>l</strong>, respectively (Section 2.2).</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>Applying Bayes' theorem, the posterior probability that gene <em>i</em> has function <em>t P</em>(<em>L<sub>i,t</sub></em> = 1|<em>N<sub>i</sub></em><sup>(1)</sup>,…, <em>N<sub>i</sub></em><sup>(<em>m</em>)</sup>, <em>k<sub>i,t</sub></em><sup>(1)</sup>,…, <em>k<sub>i,t</sub></em><sup>(<em>m</em>)</sup>, <strong>c</strong><em><sub>i</sub></em><sup>(1)</sup>,…, <strong>c</strong><em><sub>i</sub></em><sup>(<em>n</em>)</sup>) can be rewritten (with omitting subscript <em>i</em> and <em>t</em>) as:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e001&amp;representation=PNG" class="inline-graphic"><span class="note">1</span></span><br></p>
+<a id="article1.body1.sec2.sec3.p4" name="article1.body1.sec2.sec3.p4"></a><p>Here, we assume that the probability distribution of <em>L<sub>i,t</sub></em> is independent of the number of graph neighbors <em>N</em><sup>(1)</sup>,…, <em>N</em><sup>(<em>m</em>)</sup>, hence <em>P</em>(<em>L</em>|<em>N</em><sup>(1)</sup>, …, <em>N</em><sup>(<em>m</em>)</sup>) =  <em>P</em>(<em>L</em>). Also, we assume that <em>k</em><sup>(1)</sup>,…, <em>k</em><sup>(<em>m</em>)</sup>, <strong>c</strong><sup>(1)</sup>,…, <strong>c</strong><sup>(<em>n</em>)</sup> are conditionally independent of each other, given <em>L</em> and <em>N</em><sup>(1)</sup>,…, <em>N</em><sup>(<em>m</em>)</sup>. This assumption is similar to the case in a Naive Bayes classifier. It is natural to assume that <em>k</em><sup>(<em>l</em>)</sup> is conditionally independent of <em>N</em><sup>(1)</sup>,…, <em>N</em><sup>(<em>m</em>)</sup> except <em>N</em><sup>(<em>l</em>)</sup>, given <em>L</em>. Also, <strong>c</strong><sup>(<em>j</em>)</sup> is conditionally independent of <em>N</em><sup>(1)</sup>,…, <em>N</em><sup>(<em>m</em>)</sup>, given <em>L</em>. Now we need to calculate each decomposed product in (1).</p>
+<a id="article1.body1.sec2.sec3.p5" name="article1.body1.sec2.sec3.p5"></a><p><em>P</em>(<em>k</em><sup>(<em>l</em>)</sup>|<em>L,N</em><sup>(l)</sup>) is the probability that <em>k</em><sup>(<em>l</em>)</sup> neighbors are labeled with <em>t</em> out of <em>N</em><sup>(<em>l</em>)</sup> neighbors in a graph <em>l</em>, given that the gene <em>i</em> is labeled with <em>t</em>. Here we assume a binomial distribution <a href="#pone.0000337-Letovsky1">[10]</a> and calculate this probability as <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e002&amp;representation=PNG" class="inline-graphic"></span>, where <em>p</em><sub>1</sub><sup>(<em>l</em>)</sup> is the probability that a protein <em>i</em> has label <em>t</em>, given that an interacting partner has label <em>t</em> within a functional linkage graph <em>l</em>, which is pre-calculated by training data (Section 2.1.6). Similarly, <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e003&amp;representation=PNG" class="inline-graphic"></span>, where <em>p</em><sub>0</sub><sup>(<em>l</em>)</sup> is the probability that a protein <em>i</em> has label <em>t</em>, given that an interacting partner does not have label <em>t</em> within a functional linkage graph <em>l</em>.</p>
+<a id="article1.body1.sec2.sec3.p6" name="article1.body1.sec2.sec3.p6"></a><p><em>P</em>(c<sup>(<em>j</em>)</sup>|<em>L</em>) is the probability that a gene <em>i</em> has feature vector c<sup>(<em>j</em>)</sup> given that the gene <em>i</em> has term <em>t</em>. <em>P</em>(<em>L</em>) is the prior probability that the gene <em>i</em> has term <em>t</em>. This is calculated as <em>P</em>(<em>L</em>) = <em>f</em>, where <em>f</em> is the frequency of term <em>t</em> among genes.</p>
+<a id="article1.body1.sec2.sec3.p7" name="article1.body1.sec2.sec3.p7"></a><p>Hence the neighborhood function (1) becomes:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e004&amp;representation=PNG" class="inline-graphic"><span class="note">2</span></span><br>where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e005&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e006&amp;representation=PNG" class="inline-graphic"></span>, assuming conditional independence between the feature vectors. Here, <em>P</em>(<em>c<sub>x</sub></em><sup>(<em>j</em>)</sup>  = 1|<em>L</em>) = (# of <em>t</em>-labeled genes that have a feature <em>c<sub>x</sub></em><sup>(<em>j</em>)</sup>)/(# of <em>t</em>-labeled genes), and <em>P</em>(<em>c<sub>x</sub></em><sup>(<em>j</em>)</sup> = 1|<em>L</em> ¯) = (# of genes that are not labeled with <em>t</em> and have a feature <em>c<sub>x</sub></em><sup>(<em>j</em>)</sup>)/(# of genes that are not labeled with <em>t</em>). Since we do not want lack of information to affect protein function prediction, we assume <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.e007&amp;representation=PNG" class="inline-graphic"></span> hence <em>P</em>(<em>c<sub>x</sub></em><sup>(<em>j</em>)</sup>  = 0| <em>L</em>)/<em>P</em>(<em>c<sub>x</sub></em><sup>(<em>j</em>)</sup> = 0|<em>L</em> ¯) = 1. For example, suppose that the current genome-wide data do not contain information that a protein is localized in mitochondria. However, this does not necessary mean that the protein does not localize in mitochondria. The reason might be that just lack of the currently available data.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>The integration algorithm described in the <a href="#s2">Methods</a> section is evaluated on the task of predicting protein functions for <em>Saccharomyces cerevisiae</em>. The algorithm fuses probabilities obtained from diverse data sources including PPI, gene expression, protein motif information, gene knock-out phenotype, and protein localization. The functional annotations used to train our models are based on the GO category and are obtained from Yeast SGD database <a href="#pone.0000337-Dwight1">[28]</a>. The algorithm is first validated on known protein-term associations by a 5-fold cross validation methodology. We also conduct robustness analysis to understand the effect of removal of PPI edges on the accuracy of the prediction with one or more data sources. Finally, we predict protein function of unannotated genes.</p>
+
+<h4>3.1 Cross Validation Analysis of Prediction Accuracy</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>First, we attempted to predict known protein-term associations by 5-fold cross validation. For each gene <em>g</em> and term <em>t</em>, the probability that gene <em>g</em> has term <em>t</em> is calculated based on equation (2), given that we know every other gene-term associations in the training set. It is predicted that gene <em>g</em> has term <em>t</em> if the probability exceeds a specified threshold. A positive <em>g-t</em> association set is obtained from the GO “biological processes” data, and negative <em>g-t</em> association set is defined as follows: If the association is not in the positive set, and <em>g</em> is annotated with at least one biological process <em>t</em>, and <em>t</em> is neither ancestor nor descendant of the known function in the GO hierarchy. <a href="#pone-0000337-g001">Figure 1</a> presents a ROC curve of function prediction by different combinations of each data sources. Sensitivity is defined as #TP/(#TP+#FN), which corresponds to recall, and specificity is defined as #TN/(#FP+#TN), which corresponds to precision. For varying posterior probability cut-off, 1-specificity and sensitivity is plotted. The result shows that by combining the five specific types of data described above, protein functions can be predicted more accurately, compared to each data source alone.</p>
+<div class="figure" id="pone-0000337-g001"><div class="img"><a name="pone-0000337-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000337" data-uri="info:doi/10.1371/journal.pone.0000337.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000337.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000337.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1. </strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>The ROC curve of recall experiment by 5-fold cross validation. Sensitivity is defined as #TP/(#TP+#FN), and specificity is defined as #TN/(#FP+#TN).</p>
+<span>doi:10.1371/journal.pone.0000337.g001</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p><a href="#pone-0000337-g002">Figure 2</a> summarizes the impact that data integration has on protein function prediction sensitivity at a fixed precision (50% and 80%). The error bar shows the standard deviation of 10 independent cross-validation experiments. At the 50% precision, 14906 known protein-term associations can be recovered on average by combining five types of data. On the other hand, when we use PPI data alone, 12662 associations can be recovered on average. Our integrated method thus realizes an 18% increase in the number of functional predictions for genes at the 50% precision. At the 80% precision, the combination of all data (PPI, gene expression, protein motif, mutant phenotype, and protein localization) works better than any other combinations and other single source of data. However, at the 80% precision, combining PPI data with one other data source shows a little improvement in predictive accuracy, suggesting that PPI data is particularly informative.</p>
+<div class="figure" id="pone-0000337-g002"><div class="img"><a name="pone-0000337-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000337" data-uri="info:doi/10.1371/journal.pone.0000337.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000337.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000337.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2. </strong></p><a id="article1.body1.sec3.sec1.fig2.caption1.p1" name="article1.body1.sec3.sec1.fig2.caption1.p1"></a><p>#TP at 50% precision (Upper) and #TP at 80% precision (Lower). Here, <em>ppi</em>, <em>exp</em>, <em>motif</em>, <em>pheno</em>, and <em>locali</em> corresponds to PPI, gene expression, protein motif, phenotype, and localization data, respectively.</p>
+<span>doi:10.1371/journal.pone.0000337.g002</span></div><a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>These two levels of precision, i.e., 50% and 80%, were chosen as being reasonably representative of the range of possible improvements observed in our study. In addition to the performance characteristics just described, we also examined the issue of falsely predicted proteins, as a function of the threshold applied to posterior probabilities. Using the method of <a href="#pone.0000337-Storey2">[29]</a>, the rate of false discoveries, for the classifier integrating all data sources, was estimated to be 0.13 and 8.4×10<sup>−6</sup>, respectively, at the 50% and 80% precision levels.</p>
+<a id="article1.body1.sec3.sec1.p4" name="article1.body1.sec3.sec1.p4"></a><p>Next, we analyzed whether prediction accuracy depends upon the functional category to be predicted. It is expected that the prediction performance of specific GO terms depends on what kinds of data sources one uses. <a href="#pone.0000337.s001">Table S1</a> (in Supporting Information) shows the list of GO terms, which are improved by adding gene expression data in addition to PPI data at the 50% precision for each GO term prediction. Here GO terms are listed, of which the number of #TP is increased by at least 10, compared to that of using PPI data alone. We can see from the result that many of the improved terms are metabolism related (e.g. “amino acid and derivative metabolism”, “nitrogen compound biosynthesis”, and etc.). Since metabolic reactions are often interactions between enzymes and compounds, and such proteins (enzymes) do not necessarily have protein-protein interactions between enzymes in a same pathway, it might be difficult to reconstruct and hence predict such metabolic pathways by using PPI data alone. In this sense, measuring gene expression of enzymes and identifying co-expressed genes will be supplementary information for capturing functionally related genes. Here, the result suggests that the gene expression data actually helps to identify such metabolic components that are working in a same pathway. <a href="#pone.0000337.s002">Table S2</a> shows the list of GO terms, which are improved by adding protein motif information in addition to PPI data. Here, it is interesting to see that GO terms “phosphorylation” and “phosphate metabolism” are most strikingly improved. Also, among newly recovered genes that have the GO term “transcription from RNA polymerase II promoter” by adding motif information, nine proteins have a protein motif “Zinc finger, C2H2 type, domain”. Since protein kinases and transcription factors often have specific binding domains, protein motif information are particularly useful for predicting these terms. <a href="#pone.0000337.s003">Table S3</a> shows the list of GO terms, which are improved by adding phenotype data in addition to PPI data. Among the improved GO terms, “cell wall organization and biogenesis”, “cell budding”, “reproduction”, and “external encapsulating structure organization and biogenesis” might be related to phenotypes of a cell, and only listed in this table. <a href="#pone.0000337.s004">Table S4</a> shows the list of GO terms, which are improved by adding localization data in addition to PPI data. Among the improved GO terms, “ion transport”, “Golgi vesicle transport”, and “vesicle-mediated transport” are cellular location specific GO terms, and these terms are only listed in this table. We can conclude from these results that by adding different types of genome-wide data, different types of GO terms that are specific for the data type can newly be predicted.</p>
+<a id="article1.body1.sec3.sec1.p5" name="article1.body1.sec3.sec1.p5"></a><p>Here is an example how the combination of different types of data helps to predict protein function more specifically. Genes YKR055W, YIL118W and YJL128C have a GO term “intracellular signaling cascade”, but neither the PPI data nor the protein motif information alone can predict the GO term for the proteins. When PPI data alone is used, a GO term “signal transduction”, which is a parent of “intracellular signaling cascade” in the GO hierarchy and hence a broader term, can be predicted. However, when both PPI data and protein motif information are used, the GO term can be predicted correctly. In this case, information that the proteins have a protein motif “protein kinases signatures and profile” or “prenyl group binding site” helps to predict more specific term “intracellular signaling cascade” correctly.</p>
+
+
+<h4>3.2 Robustness analysis of the integration model</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>In the recall experiment in Section 3.1, we showed that PPI data is the strongest source of evidence for protein function prediction in our model, compared to other data sources. Here, we want to know whether our integration model works well or not when the amount of PPI data is limited. In this experiment, a certain fraction of the PPI edges are randomly removed from the original PPI network, and then protein function is predicted using our integration model. <a href="#pone-0000337-g003">Figure 3</a> shows the result of prediction at 50% precision (left) and 80% precision (right). Here, <em>x</em>-axis shows how much of PPI edges are present, compared to the original PPI network. For example, at <em>x</em> = 50, half of PPI edges are randomly removed from the original PPI network. The error bar shows the standard deviation of 10 independent experiments. At 50% precision, the integration model always wins, regardless of the number of PPI edges present. However, interestingly, at 80% precision, the integration model wins only when more than 50% of PPI edges are present. In other words, in order to obtain high prediction accuracy (80% precision) by the integration model, certain amount of PPI data is necessary (more than 50% of original PPI edges in this case). This result suggests that the combination of gene expression, protein motif, mutant phenotype and protein localization data is still a weak indicator of protein function, and hence need to have certain amount of PPI information (strong indicator of protein function) in order to obtain high prediction accuracy (80% precision).</p>
+<div class="figure" id="pone-0000337-g003"><div class="img"><a name="pone-0000337-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000337" data-uri="info:doi/10.1371/journal.pone.0000337.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000337.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000337.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000337.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000337.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000337.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3. </strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>#TP at 50% precision (Left) and #TP at 80% precision (Right) with varying amount of PPI edges. At 50% precision, the integration model always wins over the PPI model. However, at 80% precision, the integration model wins only when more than 50% of original PPI edges are present.</p>
+<span>doi:10.1371/journal.pone.0000337.g003</span></div>
+
+<h4>3.3 Prediction of function unknown proteins</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>By integrating five types of data, we assign plausible GO terms to 463 proteins among 1481 currently unannotated yeast <em>Saccharomyces cerevisiae</em> proteins (complete list available in Supporting Information, <a href="#pone.0000337.s005">Table S5</a>). The threshold probability for function annotation is 0.470, in which we expect 50% precision for the protein function prediction from the cross validation experiment in Section 3.1.</p>
+<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>Among the predicted function of unannotated proteins, recent literature reported <a href="#pone.0000337-Wade1">[30]</a> that YBL028C, YBR271W, YCR016W, YJR003C, YDL167C, YDR361C, YIL096C, YIL127C, YLR449W, YMR310C, YNL022C, YNL132W, YNL175C, YGR187C, YGR283C and YOR021C as rRNA and ribosome biosynthesis (RRB) regulon. It has also been reported <a href="#pone.0000337-Rempola1">[31]</a> that YLR051C encodes a protein involved in pre-rRNA processing, confirming our prediction of “ribosome biogenesis” (or related terms). Other than ribosomal proteins, recent literature reported that YAL053W participates in a cell wall biosynthesis process <a href="#pone.0000337-Protchenko1">[32]</a>. Since our prediction for YAL053W is “cell wall organization and biogenesis”, we can say that there is an experimental validation for the prediction. Also, it is reported <a href="#pone.0000337-Escusa1">[33]</a> that YBR280C encodes a protein, which targets Aah1p for proteasome-dependent degradation. Here, our prediction for the protein “SCF-dependent proteasomal ubiquitin-dependent protein catabolism” is quite consistent with the literature.</p>
+<a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"></a><p>It is confirmed here that 20 out of 463 function predictions for unannotated proteins are quite consistent with the conclusion from the recent publications. We expect that many of our predictions will turn out to be true after validation experiments.</p>
+<a id="article1.body1.sec3.sec3.p4" name="article1.body1.sec3.sec3.p4"></a><p>All the biological data and a Perl program used in this analysis are available at: <a href="http://genomics10.bu.edu/nariai/yeast_func/">http://genomics10.bu.edu/nariai/yeast_fu​nc/</a>.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>In this paper, we propose a probabilistic method to predict protein function from multiple types of genome-wide data. Pair-wise information between proteins, such as PPI data or co-expression information is converted into a functional linkage graph, in which an edge between nodes represents evidence for protein function similarity. Category information, such as protein motif information, mutant phenotype data, and protein localization data is combined with the functional linkage graphs using a unified probabilistic framework. We showed in our 5-fold cross validation experiment that our method successfully improved prediction accuracy and coverage by integrating five types of genome-wide data. Also, by conducting robustness analysis of the integration model to PPI edge removal, we showed that there is a certain amount of PPI data necessary to obtain high prediction accuracy by the integration model. We proposed functional predictions for 463 currently unannotated proteins. One subjective aspect of our method is in the choice 0.85 in thresholding the correlation coefficients in constructing our co-expression functional linkage graph. However, we have found our results to be quite robust to this choice; for example, even much higher thresholds yield qualitatively quite similar results. In principle, a more objective choice of threshold could be made through the use of cross-validation, but this would come at the cost of an increased computational burden. Other limitations are that we assume probabilistic conditional independence between different types of functional linkage graphs and each informational category. Of course, this assumption might not always be correct in a biological sense. For example, some of physically interacting protein pairs are also co-expressed. However, previous literature has reported that Naive Bayes frequently tends to work well, and frequently better than more sophisticated classifiers, when the data are sparse compared to the dimensionality of the problem, even when the features (e.g., in our case, the functional linkage graphs and category feature vectors) are not truly conditionally independent <a href="#pone.0000337-Domingos1">[34]</a>, <a href="#pone.0000337-Rachlin1">[35]</a>. Hence, we anticipate that our method may in fact prove to be a fairly strong contender in competition, for the types of data we use, with more sophisticated methods that may follow. In addition, we assume independence between non-ancestral GO terms. Since the GO terms comprise a hierarchical structure, and there would be dependencies among the GO terms, one might want to take the dependency between the nodes into account. Also in our method, within a functional linkage graph, non-neighbors (two nodes whose distance are more than one) are not considered for functional similarity. Application of a Markov Random Field model in conjunction with belief propagation and/or sampling may address these limitations and is the subject of on-going investigation.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>Although the result presented here is a case study for yeast <em>S. cerevisiae</em>, we believe that similar advances are possible for fly, worm, mouse and human where analogous resources are being compiled.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000337"></div><a name="pone.0000337.s001" id="pone.0000337.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000337.s001">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Improved GO terms by adding gene expression data at 50% precision.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000337.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.02 MB XLS)</p>
+<a name="pone.0000337.s002" id="pone.0000337.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000337.s002">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Improved GO terms by adding protein motif data at 50% precision.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000337.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.02 MB XLS)</p>
+<a name="pone.0000337.s003" id="pone.0000337.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000337.s003">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Improved GO terms by adding phenotype data at 50% precision.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000337.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.02 MB XLS)</p>
+<a name="pone.0000337.s004" id="pone.0000337.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000337.s004">Table S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">Improved GO terms by adding localization data at 50% precision.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000337.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.02 MB XLS)</p>
+<a name="pone.0000337.s005" id="pone.0000337.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000337.s005">Table S5. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">Prediction result of unannotated genes. N1 is the number of neighbors in PPI network, k1 is the number of t-labeled (t is the predicted GO term) neighbors in PPI network, N2 is the number of neighbors in co-expression network, and k2 is the number of t-labeled neighbors in co-expression network.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000337.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(0.23 MB XLS)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Dr. Lingang Zhang, Dr. John Rachlin and Dr. T. M. Murali for helpful discussion, and anonymous reviewers for helpful comments on the manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SK NN EK. Performed the experiments: NN. Analyzed the data: SK NN. Contributed reagents/materials/analysis tools: NN. Wrote the paper: SK NN EK.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000337-Altschul1" id="pone.0000337-Altschul1"></a>Altschul SF, Madden TL, Schaffer AA, Zhang J, Zhang Z, et al.  (1997) Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic Acids Res  25: 3389–3402.  <ul class="find" data-citedArticleID="941238" data-doi="10.1093/nar/25.17.3389"><li><a href="http://dx.doi.org/10.1093/nar/25.17.3389" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gapped+BLAST+and+PSI-BLAST%3A+a+new+generation+of+protein+database+search+programs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gapped+BLAST+and+PSI-BLAST%3A+a+new+generation+of+protein+database+search+programs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000337-Finn1" id="pone.0000337-Finn1"></a>Finn RD, Mistry J, Schuster-Bockler B, Griffiths-Jones S, Hollich V, et al.  (2006) Pfam: clans, web tools and services. Nucleic Acids Res  34: D247–251.  <ul class="find" data-citedArticleID="941258" data-doi="10.1093/nar/gkj149"><li><a href="http://dx.doi.org/10.1093/nar/gkj149" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pfam%3A+clans%2C+web+tools+and+services." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pfam%3A+clans%2C+web+tools+and+services.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000337-Marcotte1" id="pone.0000337-Marcotte1"></a>Marcotte EM, Pellegrini M, Thompson MJ, Yeates TO, Eisenberg D (1999) A combined algorithm for genome-wide prediction of protein function. Nature  402: 83–86.  <ul class="find" data-citedArticleID="941278" data-doi="10.1038/47048"><li><a href="http://dx.doi.org/10.1038/47048" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+combined+algorithm+for+genome-wide+prediction+of+protein+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+combined+algorithm+for+genome-wide+prediction+of+protein+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000337-Gaasterland1" id="pone.0000337-Gaasterland1"></a>Gaasterland T, Ragan MA (1998) Microbial genescapes: phyletic and functional patterns of ORF distribution among prokaryotes. Microb Comp Genomics  3: 199–217.  <ul class="find" data-citedArticleID="941260"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Microbial+genescapes%3A+phyletic+and+functional+patterns+of+ORF+distribution+among+prokaryotes.&amp;auth=&amp;atitle=Microbial+genescapes%3A+phyletic+and+functional+patterns+of+ORF+distribution+among+prokaryotes." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microbial+genescapes%3A+phyletic+and+functional+patterns+of+ORF+distribution+among+prokaryotes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microbial+genescapes%3A+phyletic+and+functional+patterns+of+ORF+distribution+among+prokaryotes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000337-Pellegrini1" id="pone.0000337-Pellegrini1"></a>Pellegrini M, Marcotte EM, Thompson MJ, Eisenberg D, Yeates TO (1999) Assigning protein functions by comparative genome analysis: protein phylogenetic profiles. Proc Natl Acad Sci U S A  96: 4285–4288.  <ul class="find" data-citedArticleID="941282" data-doi="10.1073/pnas.96.8.4285"><li><a href="http://dx.doi.org/10.1073/pnas.96.8.4285" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assigning+protein+functions+by+comparative+genome+analysis%3A+protein+phylogenetic+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assigning+protein+functions+by+comparative+genome+analysis%3A+protein+phylogenetic+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000337-Butte1" id="pone.0000337-Butte1"></a>Butte AJ, Kohane IS (2000) Mutual information relevance networks: functional genomic clustering using pairwise entropy measurements. Pac Symp Biocomput 418–429.  <ul class="find" data-citedArticleID="941246" data-doi="10.1142/9789814447331_0040"><li><a href="http://dx.doi.org/10.1142/9789814447331_0040" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mutual+information+relevance+networks%3A+functional+genomic+clustering+using+pairwise+entropy+measurements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mutual+information+relevance+networks%3A+functional+genomic+clustering+using+pairwise+entropy+measurements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000337-Eisen1" id="pone.0000337-Eisen1"></a>Eisen MB, Spellman PT, Brown PO, Botstein D (1998) Cluster analysis and display of genome-wide expression patterns. Proc Natl Acad Sci U S A  95: 14863–14868.  <ul class="find" data-citedArticleID="941254" data-doi="10.1073/pnas.95.25.14863"><li><a href="http://dx.doi.org/10.1073/pnas.95.25.14863" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cluster+analysis+and+display+of+genome-wide+expression+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cluster+analysis+and+display+of+genome-wide+expression+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000337-Zhou1" id="pone.0000337-Zhou1"></a>Zhou X, Kao MC, Wong WH (2002) Transitive functional annotation by shortest-path analysis of gene expression data. Proc Natl Acad Sci U S A  99: 12783–12788.  <ul class="find" data-citedArticleID="941306" data-doi="10.1073/pnas.192159399"><li><a href="http://dx.doi.org/10.1073/pnas.192159399" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transitive+functional+annotation+by+shortest-path+analysis+of+gene+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transitive+functional+annotation+by+shortest-path+analysis+of+gene+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000337-Karaoz1" id="pone.0000337-Karaoz1"></a>Karaoz U, Murali TM, Letovsky S, Zheng Y, Ding C, et al.  (2004) Whole-genome annotation by using evidence integration in functional-linkage networks. Proc Natl Acad Sci U S A  101: 2888–2893.  <ul class="find" data-citedArticleID="941268" data-doi="10.1073/pnas.0307326101"><li><a href="http://dx.doi.org/10.1073/pnas.0307326101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Whole-genome+annotation+by+using+evidence+integration+in+functional-linkage+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Whole-genome+annotation+by+using+evidence+integration+in+functional-linkage+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000337-Letovsky1" id="pone.0000337-Letovsky1"></a>Letovsky S, Kasif S (2003) Predicting protein function from protein/protein interaction data: a probabilistic approach. Bioinformatics 19 Suppl 1i197–204.  <ul class="find" data-citedArticleID="941274" data-doi="10.1093/bioinformatics/btg1026"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1026" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+protein+function+from+protein%2Fprotein+interaction+data%3A+a+probabilistic+approach." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+protein+function+from+protein%2Fprotein+interaction+data%3A+a+probabilistic+approach.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000337-Schwikowski1" id="pone.0000337-Schwikowski1"></a>Schwikowski B, Uetz P, Fields S (2000) A network of protein-protein interactions in yeast. Nat Biotechnol  18: 1257–1261.  <ul class="find" data-citedArticleID="941290" data-doi="10.1038/82360"><li><a href="http://dx.doi.org/10.1038/82360" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+network+of+protein-protein+interactions+in+yeast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+network+of+protein-protein+interactions+in+yeast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000337-Lee1" id="pone.0000337-Lee1"></a>Lee I, Date SV, Adai AT, Marcotte EM (2004) A probabilistic functional network of yeast genes. Science  306: 1555–1558.  <ul class="find" data-citedArticleID="941272" data-doi="10.1126/science.1099511"><li><a href="http://dx.doi.org/10.1126/science.1099511" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+probabilistic+functional+network+of+yeast+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+probabilistic+functional+network+of+yeast+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000337-Lu1" id="pone.0000337-Lu1"></a>Lu LJ, Xia Y, Paccanaro A, Yu H, Gerstein M (2005) Assessing the limits of genomic data integration for predicting protein networks. Genome Res  15: 945–953.  <ul class="find" data-citedArticleID="941276" data-doi="10.1101/gr.3610305"><li><a href="http://dx.doi.org/10.1101/gr.3610305" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assessing+the+limits+of+genomic+data+integration+for+predicting+protein+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assessing+the+limits+of+genomic+data+integration+for+predicting+protein+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000337-Troyanskaya1" id="pone.0000337-Troyanskaya1"></a>Troyanskaya OG, Dolinski K, Owen AB, Altman RB, Botstein D (2003) A Bayesian framework for combining heterogeneous data sources for gene function prediction (in Saccharomyces cerevisiae). Proc Natl Acad Sci U S A  100: 8348–8353.  <ul class="find" data-citedArticleID="941298" data-doi="10.1073/pnas.0832373100"><li><a href="http://dx.doi.org/10.1073/pnas.0832373100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Bayesian+framework+for+combining+heterogeneous+data+sources+for+gene+function+prediction+%28in+Saccharomyces+cerevisiae%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Bayesian+framework+for+combining+heterogeneous+data+sources+for+gene+function+prediction+%28in+Saccharomyces+cerevisiae%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000337-Yanai1" id="pone.0000337-Yanai1"></a>Yanai I, DeLisi C (2002) The society of genes: networks of functional links between genes from comparative genomics. Genome Biol  3: research0064.  <ul class="find" data-citedArticleID="941304"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+society+of+genes%3A+networks+of+functional+links+between+genes+from+comparative+genomics.&amp;auth=&amp;atitle=The+society+of+genes%3A+networks+of+functional+links+between+genes+from+comparative+genomics." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+society+of+genes%3A+networks+of+functional+links+between+genes+from+comparative+genomics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+society+of+genes%3A+networks+of+functional+links+between+genes+from+comparative+genomics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000337-Deng1" id="pone.0000337-Deng1"></a>Deng M, Chen T, Sun F (2004) An integrated probabilistic model for functional prediction of proteins. J Comput Biol  11: 463–475.  <ul class="find" data-citedArticleID="941248" data-doi="10.1089/1066527041410346"><li><a href="http://dx.doi.org/10.1089/1066527041410346" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+integrated+probabilistic+model+for+functional+prediction+of+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+integrated+probabilistic+model+for+functional+prediction+of+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000337-Lanckriet1" id="pone.0000337-Lanckriet1"></a>Lanckriet GR, De Bie T, Cristianini N, Jordan MI, Noble WS (2004) A statistical framework for genomic data fusion. Bioinformatics  20: 2626–2635.  <ul class="find" data-citedArticleID="941270" data-doi="10.1093/bioinformatics/bth294"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth294" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+statistical+framework+for+genomic+data+fusion." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+statistical+framework+for+genomic+data+fusion.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000337-Wong1" id="pone.0000337-Wong1"></a>Wong SL, Zhang LV, Roth FP (2005) Discovering functional relationships: biochemistry versus genetics. Trends Genet  21: 424–427.  <ul class="find" data-citedArticleID="941302" data-doi="10.1016/j.tig.2005.06.006"><li><a href="http://dx.doi.org/10.1016/j.tig.2005.06.006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Discovering+functional+relationships%3A+biochemistry+versus+genetics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Discovering+functional+relationships%3A+biochemistry+versus+genetics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000337-Mewes1" id="pone.0000337-Mewes1"></a>Mewes HW, Frishman D, Guldener U, Mannhaupt G, Mayer K, et al.  (2002) MIPS: a database for genomes and protein sequences. Nucleic Acids Res  30: 31–34.  <ul class="find" data-citedArticleID="941280" data-doi="10.1093/nar/30.1.31"><li><a href="http://dx.doi.org/10.1093/nar/30.1.31" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MIPS%3A+a+database+for+genomes+and+protein+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MIPS%3A+a+database+for+genomes+and+protein+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000337-Ashburner1" id="pone.0000337-Ashburner1"></a>Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, et al.  (2000) Gene ontology: tool for the unification of biology. The Gene Ontology Consortium. Nat Genet  25: 25–29.  <ul class="find" data-citedArticleID="941240"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium.&amp;auth=&amp;atitle=Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000337-Breitkreutz1" id="pone.0000337-Breitkreutz1"></a>Breitkreutz BJ, Stark C, Tyers M (2003) The GRID: the General Repository for Interaction Datasets. Genome Biol  4: R23.  <ul class="find" data-citedArticleID="941244" data-doi="10.1186/gb-2003-4-3-r23"><li><a href="http://dx.doi.org/10.1186/gb-2003-4-3-r23" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+GRID%3A+the+General+Repository+for+Interaction+Datasets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+GRID%3A+the+General+Repository+for+Interaction+Datasets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000337-Hughes1" id="pone.0000337-Hughes1"></a>Hughes TR, Marton MJ, Jones AR, Roberts CJ, Stoughton R, et al.  (2000) Functional discovery via a compendium of expression profiles. Cell  102: 109–126.  <ul class="find" data-citedArticleID="941266" data-doi="10.1016/s0092-8674(00)00015-5"><li><a href="http://dx.doi.org/10.1016/s0092-8674(00)00015-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+discovery+via+a+compendium+of+expression+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+discovery+via+a+compendium+of+expression+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000337-Spellman1" id="pone.0000337-Spellman1"></a>Spellman PT, Sherlock G, Zhang MQ, Iyer VR, Anders K, et al.  (1998) Comprehensive identification of cell cycle-regulated genes of the yeast Saccharomyces cerevisiae by microarray hybridization. Mol Biol Cell  9: 3273–3297.  <ul class="find" data-citedArticleID="941292" data-doi="10.1091/mbc.9.12.3273"><li><a href="http://dx.doi.org/10.1091/mbc.9.12.3273" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comprehensive+identification+of+cell+cycle-regulated+genes+of+the+yeast+Saccharomyces+cerevisiae+by+microarray+hybridization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comprehensive+identification+of+cell+cycle-regulated+genes+of+the+yeast+Saccharomyces+cerevisiae+by+microarray+hybridization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000337-Gasch1" id="pone.0000337-Gasch1"></a>Gasch AP, Spellman PT, Kao CM, Carmel-Harel O, Eisen MB, et al.  (2000) Genomic expression programs in the response of yeast cells to environmental changes. Mol Biol Cell  11: 4241–4257.  <ul class="find" data-citedArticleID="941262" data-doi="10.1091/mbc.11.12.4241"><li><a href="http://dx.doi.org/10.1091/mbc.11.12.4241" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+expression+programs+in+the+response+of+yeast+cells+to+environmental+changes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+expression+programs+in+the+response+of+yeast+cells+to+environmental+changes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000337-Gasch2" id="pone.0000337-Gasch2"></a>Gasch AP, Huang M, Metzner S, Botstein D, Elledge SJ, et al.  (2001) Genomic expression responses to DNA-damaging agents and the regulatory role of the yeast ATR homolog Mec1p. Mol Biol Cell  12: 2987–3003.  <ul class="find" data-citedArticleID="941264" data-doi="10.1091/mbc.12.10.2987"><li><a href="http://dx.doi.org/10.1091/mbc.12.10.2987" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+expression+responses+to+DNA-damaging+agents+and+the+regulatory+role+of+the+yeast+ATR+homolog+Mec1p." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+expression+responses+to+DNA-damaging+agents+and+the+regulatory+role+of+the+yeast+ATR+homolog+Mec1p.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000337-Benjamini1" id="pone.0000337-Benjamini1"></a>Benjamini Y, Hochberg Y (1995) Controlling the false discovery rate: a practical and powerful approach to multiple testing. J Roy Stat Soc B 289–300.  <ul class="find" data-citedArticleID="941242"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Controlling+the+false+discovery+rate%3A+a+practical+and+powerful+approach+to+multiple+testing.&amp;auth=&amp;atitle=Controlling+the+false+discovery+rate%3A+a+practical+and+powerful+approach+to+multiple+testing." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Controlling+the+false+discovery+rate%3A+a+practical+and+powerful+approach+to+multiple+testing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Controlling+the+false+discovery+rate%3A+a+practical+and+powerful+approach+to+multiple+testing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000337-Storey1" id="pone.0000337-Storey1"></a>Storey JD (2002) A direct approach to false discovery rates. J Roy Stat Soc B 479–498.  <ul class="find" data-citedArticleID="941294" data-doi="10.1111/1467-9868.00346"><li><a href="http://dx.doi.org/10.1111/1467-9868.00346" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+direct+approach+to+false+discovery+rates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+direct+approach+to+false+discovery+rates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000337-Dwight1" id="pone.0000337-Dwight1"></a>Dwight SS, Balakrishnan R, Christie KR, Costanzo MC, Dolinski K, et al.  (2004) Saccharomyces genome database: underlying principles and organisation. Brief Bioinform  5: 9–22.  <ul class="find" data-citedArticleID="941252"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Saccharomyces+genome+database%3A+underlying+principles+and+organisation.&amp;auth=&amp;atitle=Saccharomyces+genome+database%3A+underlying+principles+and+organisation." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Saccharomyces+genome+database%3A+underlying+principles+and+organisation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Saccharomyces+genome+database%3A+underlying+principles+and+organisation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000337-Storey2" id="pone.0000337-Storey2"></a>Storey JD, Akey JM, Kruglyak L (2005) Multiple locus linkage analysis of genomewide expression in yeast. PLoS Biol  3: e267.  <ul class="find" data-citedArticleID="941296" data-doi="10.1371/journal.pbio.0030267"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0030267" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Multiple+locus+linkage+analysis+of+genomewide+expression+in+yeast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Multiple+locus+linkage+analysis+of+genomewide+expression+in+yeast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000337-Wade1" id="pone.0000337-Wade1"></a>Wade CH, Umbarger MA, McAlear MA (2006) The budding yeast rRNA and ribosome biosynthesis (RRB) regulon contains over 200 genes. Yeast  23: 293–306.  <ul class="find" data-citedArticleID="941300"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+budding+yeast+rRNA+and+ribosome+biosynthesis+%28RRB%29+regulon+contains+over+200+genes.&amp;auth=&amp;atitle=The+budding+yeast+rRNA+and+ribosome+biosynthesis+%28RRB%29+regulon+contains+over+200+genes." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+budding+yeast+rRNA+and+ribosome+biosynthesis+%28RRB%29+regulon+contains+over+200+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+budding+yeast+rRNA+and+ribosome+biosynthesis+%28RRB%29+regulon+contains+over+200+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000337-Rempola1" id="pone.0000337-Rempola1"></a>Rempola B, Karkusiewicz I, Piekarska I, Rytka J (2006) Fcf1p and Fcf2p are novel nucleolar Saccharomyces cerevisiae proteins involved in pre-rRNA processing. Biochem Biophys Res Commun  346: 546–554.  <ul class="find" data-citedArticleID="941288" data-doi="10.1016/j.bbrc.2006.05.140"><li><a href="http://dx.doi.org/10.1016/j.bbrc.2006.05.140" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fcf1p+and+Fcf2p+are+novel+nucleolar+Saccharomyces+cerevisiae+proteins+involved+in+pre-rRNA+processing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fcf1p+and+Fcf2p+are+novel+nucleolar+Saccharomyces+cerevisiae+proteins+involved+in+pre-rRNA+processing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000337-Protchenko1" id="pone.0000337-Protchenko1"></a>Protchenko O, Rodriguez-Suarez R, Androphy R, Bussey H, Philpott CC (2006) A screen for genes of heme uptake identifies the FLC family required for import of FAD into the endoplasmic reticulum. J Biol Chem  281: 21445–21457.  <ul class="find" data-citedArticleID="941284" data-doi="10.1074/jbc.m512812200"><li><a href="http://dx.doi.org/10.1074/jbc.m512812200" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+screen+for+genes+of+heme+uptake+identifies+the+FLC+family+required+for+import+of+FAD+into+the+endoplasmic+reticulum." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+screen+for+genes+of+heme+uptake+identifies+the+FLC+family+required+for+import+of+FAD+into+the+endoplasmic+reticulum.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000337-Escusa1" id="pone.0000337-Escusa1"></a>Escusa S, Camblong J, Galan JM, Pinson B, Daignan-Fornier B (2006) Proteasome- and SCF-dependent degradation of yeast adenine deaminase upon transition from proliferation to quiescence requires a new F-box protein named Saf1p. Mol Microbiol  60: 1014–1025.  <ul class="find" data-citedArticleID="941256" data-doi="10.1111/j.1365-2958.2006.05153.x"><li><a href="http://dx.doi.org/10.1111/j.1365-2958.2006.05153.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Proteasome-+and+SCF-dependent+degradation+of+yeast+adenine+deaminase+upon+transition+from+proliferation+to+quiescence+requires+a+new+F-box+protein+named+Saf1p." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Proteasome-+and+SCF-dependent+degradation+of+yeast+adenine+deaminase+upon+transition+from+proliferation+to+quiescence+requires+a+new+F-box+protein+named+Saf1p.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000337-Domingos1" id="pone.0000337-Domingos1"></a>Domingos P, Pazzani M (1997) On the Optimality of the Simple Bayesian Classifier under Zero-One Loss. Machine Learning  29: 103–130.  <ul class="find" data-citedArticleID="941250" data-doi="10.1023/a:1007413511361"><li><a href="http://dx.doi.org/10.1023/a:1007413511361" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+the+Optimality+of+the+Simple+Bayesian+Classifier+under+Zero-One+Loss." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+the+Optimality+of+the+Simple+Bayesian+Classifier+under+Zero-One+Loss.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000337-Rachlin1" id="pone.0000337-Rachlin1"></a>Rachlin J, Kasif S, Salzberg S (1994) Towards a better understanding of memory-based reasoning systems. International Conference on Machine Learning 242–250.  <ul class="find" data-citedArticleID="941286"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Towards+a+better+understanding+of+memory-based+reasoning+systems.&amp;auth=&amp;atitle=Towards+a+better+understanding+of+memory-based+reasoning+systems." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Towards+a+better+understanding+of+memory-based+reasoning+systems." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Towards+a+better+understanding+of+memory-based+reasoning+systems.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.XML" value="80591"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.PDF" value="153960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e001.PNG" value="40045"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e001.TIF" value="40368"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e002.PNG" value="8245"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e002.TIF" value="29720"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e003.PNG" value="8448"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e003.TIF" value="29900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e004.PNG" value="30827"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e004.TIF" value="53772"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e005.PNG" value="4592"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e005.TIF" value="26404"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e006.PNG" value="5811"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e006.TIF" value="28720"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e007.PNG" value="8621"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.e007.TIF" value="31068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g001.PNG_L" value="114562"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g001.PNG_M" value="93149"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g001.PNG_S" value="3515"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g001.TIF" value="220510"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g001.PNG_I" value="37287"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g002.PNG_L" value="24038"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g002.PNG_M" value="69584"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g002.PNG_S" value="3531"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g002.TIF" value="191254"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g002.PNG_I" value="29191"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g003.PNG_L" value="92331"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g003.PNG_M" value="56346"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g003.PNG_S" value="2545"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g003.TIF" value="258658"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.g003.PNG_I" value="24178"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.s001.XLS" value="22016"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.s002.XLS" value="19968"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.s003.XLS" value="22016"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.s004.XLS" value="20992"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000337.s005.XLS" value="229376"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000337&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000337" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000337&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000337&volume=&issue=&title=Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data&author_name=Naoki%20Nariai%2C%20Eric%20D.%20Kolaczyk%2C%20Simon%20Kasif&start_page=1&end_page=7" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000337" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337&amp;t=Probabilistic%20Protein%20Function%20Prediction%20from%20Heterogeneous%20Genome-Wide%20Data" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337&title=Probabilistic%20Protein%20Function%20Prediction%20from%20Heterogeneous%20Genome-Wide%20Data&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337&amp;title=Probabilistic%20Protein%20Function%20Prediction%20from%20Heterogeneous%20Genome-Wide%20Data" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000337&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Probabilistic Protein Function Prediction from Heterogeneous Genome-Wide Data';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000337';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Probabilistic%20Protein%20Function%20Prediction%20from%20Heterogeneous%20Genome-Wide%20Data http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000337" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000337" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Data+processing%22" title="Search for articles in the subject area:'Data processing'"><div class="flagText">Data processing</div></a>
+              <div data-categoryid="18073" data-articleid="23512"
+                   data-categoryname="Data processing"
+                   class="flagImage" title="Flag 'Data processing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="23512"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Graphs%22" title="Search for articles in the subject area:'Graphs'"><div class="flagText">Graphs</div></a>
+              <div data-categoryid="19267" data-articleid="23512"
+                   data-categoryname="Graphs"
+                   class="flagImage" title="Flag 'Graphs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phenotypes%22" title="Search for articles in the subject area:'Phenotypes'"><div class="flagText">Phenotypes</div></a>
+              <div data-categoryid="40235" data-articleid="23512"
+                   data-categoryname="Phenotypes"
+                   class="flagImage" title="Flag 'Phenotypes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+kinase+signaling+cascade%22" title="Search for articles in the subject area:'Protein kinase signaling cascade'"><div class="flagText">Protein kinase signaling cascade</div></a>
+              <div data-categoryid="21139" data-articleid="23512"
+                   data-categoryname="Protein kinase signaling cascade"
+                   class="flagImage" title="Flag 'Protein kinase signaling cascade' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+metabolism%22" title="Search for articles in the subject area:'Protein metabolism'"><div class="flagText">Protein metabolism</div></a>
+              <div data-categoryid="19757" data-articleid="23512"
+                   data-categoryname="Protein metabolism"
+                   class="flagImage" title="Flag 'Protein metabolism' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein-protein+interactions%22" title="Search for articles in the subject area:'Protein-protein interactions'"><div class="flagText">Protein-protein interactions</div></a>
+              <div data-categoryid="18067" data-articleid="23512"
+                   data-categoryname="Protein-protein interactions"
+                   class="flagImage" title="Flag 'Protein-protein interactions' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Saccharomyces+cerevisiae%22" title="Search for articles in the subject area:'Saccharomyces cerevisiae'"><div class="flagText">Saccharomyces cerevisiae</div></a>
+              <div data-categoryid="43143" data-articleid="23512"
+                   data-categoryname="Saccharomyces cerevisiae"
+                   class="flagImage" title="Flag 'Saccharomyces cerevisiae' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=938'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=8898'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=690&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

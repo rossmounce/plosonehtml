@@ -1,0 +1,1308 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Normalized Cut Group Clustering of Resting-State fMRI Data</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0002001"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0002001" />
+
+    <meta name="citation_title" content="Normalized Cut Group Clustering of Resting-State fMRI Data"/>
+    <meta itemprop="name" content="Normalized Cut Group Clustering of Resting-State fMRI Data"/>
+
+      <meta name="citation_author" content="Martijn van den Heuvel"/>
+            <meta name="citation_author_institution" content="Rudolf Magnus Institute of Neuroscience, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands"/>
+      <meta name="citation_author" content="Rene Mandl"/>
+            <meta name="citation_author_institution" content="Rudolf Magnus Institute of Neuroscience, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands"/>
+      <meta name="citation_author" content="Hilleke Hulshoff Pol"/>
+            <meta name="citation_author_institution" content="Rudolf Magnus Institute of Neuroscience, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands"/>
+
+    <meta name="citation_date" content="2008/4/23"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0002001.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e2001"/>
+    <meta name="citation_issue" content="4"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Functional connectivity in the motor cortex of resting human brain using echo-planar MRI.; citation_author=B Biswal; citation_author=FZ Yetkin; citation_author=VM Haughton; citation_author=JS Hyde; citation_journal_title=Magn Reson Med; citation_volume=34; citation_number=1; citation_pages=537-541; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=fMRI resting state networks define distinct modes of long-distance interactions in the human brain.; citation_author=M De Luca; citation_author=CF Beckmann; citation_author=N De Stefano; citation_author=PM Matthews; citation_author=SM Smith; citation_journal_title=Neuroimage; citation_volume=29; citation_number=2; citation_pages=1359-1367; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Functional connectivity in the resting brain: a network analysis of the default mode hypothesis.; citation_author=MD Greicius; citation_author=B Krasnow; citation_author=AL Reiss; citation_author=V Menon; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=100; citation_number=3; citation_pages=253-258; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Searching for a baseline: functional imaging and the resting human brain.; citation_author=DA Gusnard; citation_author=ME Raichle; citation_author=ME Raichle; citation_journal_title=Nat Rev Neurosci; citation_volume=2; citation_number=4; citation_pages=685-694; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=A default mode of brain function.; citation_author=ME Raichle; citation_author=AM MacLeod; citation_author=AZ Snyder; citation_author=WJ Powers; citation_author=DA Gusnard; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=98; citation_number=5; citation_pages=676-682; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Mapping functionally related regions of brain with functional connectivity MR imaging.; citation_author=D Cordes; citation_author=VM Haughton; citation_author=K Arfanakis; citation_author=GJ Wendt; citation_author=PA Turski; citation_journal_title=AJNR Am J Neuroradiol; citation_volume=21; citation_number=6; citation_pages=1636-1644; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging.; citation_author=MD Fox; citation_author=ME Raichle; citation_journal_title=Nat Rev Neurosci; citation_volume=8; citation_number=7; citation_pages=700-711; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Consistent resting-state networks across healthy subjects.; citation_author=JS Damoiseaux; citation_author=SA Rombouts; citation_author=F Barkhof; citation_author=P Scheltens; citation_author=CJ Stam; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=103; citation_number=8; citation_pages=13848-13853; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Correlations in low-frequency BOLD fluctuations reflect cortico-cortical connections.; citation_author=MJ Lowe; citation_author=M Dzemidzic; citation_author=JT Lurito; citation_author=VP Mathews; citation_author=MD Phillips; citation_journal_title=Neuroimage; citation_volume=12; citation_number=9; citation_pages=582-587; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Simultaneous assessment of flow and BOLD signals in resting-state functional connectivity maps.; citation_author=BB Biswal; citation_author=J Van Kylen; citation_author=JS Hyde; citation_journal_title=NMR Biomed; citation_volume=10; citation_number=10; citation_pages=165-170; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Frequencies contributing to functional connectivity in the cerebral cortex in “resting-state” data.; citation_author=D Cordes; citation_author=VM Haughton; citation_author=K Arfanakis; citation_author=JD Carew; citation_author=PA Turski; citation_journal_title=AJNR Am J Neuroradiol; citation_volume=22; citation_number=11; citation_pages=1326-1333; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Functional connectivity: the principal-component analysis of large (PET) data sets.; citation_author=KJ Friston; citation_author=CD Frith; citation_author=PF Liddle; citation_author=RS Frackowiak; citation_journal_title=J Cereb Blood Flow Metab; citation_volume=13; citation_number=12; citation_pages=5-14; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Independent component analysis of nondeterministic fMRI signal sources.; citation_author=V Kiviniemi; citation_author=JH Kantola; citation_author=J Jauhiainen; citation_author=A Hyvarinen; citation_author=O Tervonen; citation_journal_title=Neuroimage; citation_volume=19; citation_number=13; citation_pages=253-260; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Functional connectivity as revealed by spatial independent component analysis of fMRI measurements during rest.; citation_author=VG van de Ven; citation_author=E Formisano; citation_author=D Prvulovic; citation_author=CH Roeder; citation_author=DE Linden; citation_journal_title=Hum Brain Mapp; citation_volume=22; citation_number=14; citation_pages=165-178; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Hierarchical clustering to measure connectivity in fMRI resting-state data.; citation_author=D Cordes; citation_author=V Haughton; citation_author=JD Carew; citation_author=K Arfanakis; citation_author=K Maravilla; citation_journal_title=Magn Reson Imaging; citation_volume=20; citation_number=15; citation_pages=305-317; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Detection of signal synchronizations in resting-state fMRI datasets.; citation_author=B Thirion; citation_author=S Dodel; citation_author=JB Poline; citation_journal_title=Neuroimage; citation_volume=29; citation_number=16; citation_pages=321-327; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Investigations into resting-state connectivity using independent component analysis.; citation_author=CF Beckmann; citation_author=M DeLuca; citation_author=JT Devlin; citation_author=SM Smith; citation_journal_title=Philos Trans R Soc Lond B Biol Sci; citation_volume=360; citation_number=17; citation_pages=1001-1013; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A method for making group inferences from functional MRI data using independent component analysis.; citation_author=VD Calhoun; citation_author=T Adali; citation_author=GD Pearlson; citation_author=JJ Pekar; citation_journal_title=Hum Brain Mapp; citation_volume=14; citation_number=18; citation_pages=140-151; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Neurophysiological architecture of functional magnetic resonance images of human brain.; citation_author=R Salvador; citation_author=J Suckling; citation_author=MR Coleman; citation_author=JD Pickard; citation_author=D Menon; citation_journal_title=Cereb Cortex; citation_volume=15; citation_number=19; citation_pages=1332-1342; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Normalized cuts and image segmentation.; citation_author=J Shi; citation_author=J Malik; citation_journal_title=IEEE Transactions on pattern analysis and machine intelligence; citation_volume=22; citation_number=20; citation_pages=17; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Spontaneous low-frequency BOLD signal fluctuations: an fMRI investigation of the resting-state default mode of brain function hypothesis.; citation_author=P Fransson; citation_journal_title=Hum Brain Mapp; citation_volume=26; citation_number=21; citation_pages=15-29; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Wandering minds: the default network and stimulus-independent thought.; citation_author=MF Mason; citation_author=MI Norton; citation_author=JD Van Horn; citation_author=DM Wegner; citation_author=ST Grafton; citation_journal_title=Science; citation_volume=315; citation_number=22; citation_pages=393-395; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Distinct brain networks for adaptive and stable task control in humans.; citation_author=NU Dosenbach; citation_author=DA Fair; citation_author=FM Miezin; citation_author=AL Cohen; citation_author=KK Wenger; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=104; citation_number=23; citation_pages=11073-11078; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Dissociable intrinsic connectivity networks for salience processing and executive control.; citation_author=WW Seeley; citation_author=V Menon; citation_author=AF Schatzberg; citation_author=J Keller; citation_author=GH Glover; citation_journal_title=J Neurosci; citation_volume=27; citation_number=24; citation_pages=2349-2356; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Undirected graphs of frequency-dependent functional connectivity in whole brain networks.; citation_author=R Salvador; citation_author=J Suckling; citation_author=C Schwarzbauer; citation_author=E Bullmore; citation_journal_title=Philos Trans R Soc Lond B Biol Sci; citation_volume=360; citation_number=25; citation_pages=937-946; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Reduced resting-state brain activity in the “default network” in normal aging.; citation_author=JS Damoiseaux; citation_author=CF Beckmann; citation_author=EJ Arigita; citation_author=F Barkhof; citation_author=P Scheltens; citation_journal_title=Cereb Cortex; citation_number=26; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Performance of blind source separation algorithms for fMRI analysis using a group ICA method.; citation_author=N Correa; citation_author=T Adali; citation_author=VD Calhoun; citation_journal_title=Magn Reson Imaging; citation_volume=25; citation_number=27; citation_pages=684-694; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Analyzing consistency of independent components: an fMRI illustration.; citation_author=J Ylipaavalniemi; citation_author=R Vigario; citation_journal_title=Neuroimage; citation_volume=39; citation_number=28; citation_pages=169-180; citation_date=2008; " />
+      <meta name="citation_reference" content="citation_title=Pattern Recognition: John Wiley & Sons, Inc.; citation_author=RO Duda; citation_author=PE Hart; citation_author=DG Stork; citation_number=29; citation_pages=654; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Neuroscience. Neural networks debunk phrenology.; citation_author=RT Knight; citation_journal_title=Science; citation_volume=316; citation_number=30; citation_pages=1578-1579; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Neuronal oscillations in cortical networks.; citation_author=G Buzsaki; citation_author=A Draguhn; citation_journal_title=Science; citation_volume=304; citation_number=31; citation_pages=1926-1929; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Unrest at rest: Default activity and spontaneous network correlations.; citation_author=RL Buckner; citation_author=JL Vincent; citation_journal_title=Neuroimage; citation_volume=37; citation_number=32; citation_pages=1091-1096; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=A default mode of brain function: A brief history of an evolving idea.; citation_author=ME Raichle; citation_author=AZ Snyder; citation_journal_title=Neuroimage; citation_volume=37; citation_number=33; citation_pages=1083-1090; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Default-mode network activity distinguishes Alzheimer's disease from healthy aging: evidence from functional MRI.; citation_author=MD Greicius; citation_author=G Srivastava; citation_author=AL Reiss; citation_author=V Menon; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=101; citation_number=34; citation_pages=4637-4642; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Altered resting state networks in mild cognitive impairment and mild Alzheimer's disease: an fMRI study.; citation_author=SA Rombouts; citation_author=F Barkhof; citation_author=R Goekoop; citation_author=CJ Stam; citation_author=P Scheltens; citation_journal_title=Hum Brain Mapp; citation_volume=26; citation_number=35; citation_pages=231-239; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Resting-State Functional Connectivity in Major Depression: Abnormally Increased Contributions from Subgenual Cingulate Cortex and Thalamus.; citation_author=MD Greicius; citation_author=BH Flores; citation_author=V Menon; citation_author=GH Glover; citation_author=HB Solvason; citation_journal_title=Biol Psychiatry; citation_volume=62; citation_number=36; citation_pages=429-437; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Spontaneous Low-Frequency Fluctuations in the BOLD Signal in Schizophrenic Patients: Anomalies in the Default Network.; citation_author=RL Bluhm; citation_author=J Miller; citation_author=RA Lanius; citation_author=EA Osuch; citation_author=K Boksman; citation_journal_title=Schizophr Bull; citation_volume=33; citation_number=37; citation_pages=1004-1012; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Widespread functional disconnectivity in schizophrenia with resting-state functional magnetic resonance imaging.; citation_author=M Liang; citation_author=Y Zhou; citation_author=T Jiang; citation_author=Z Liu; citation_author=L Tian; citation_journal_title=Neuroreport; citation_volume=17; citation_number=38; citation_pages=209-213; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Small-world networks and disturbed functional connectivity in schizophrenia.; citation_author=S Micheloyannis; citation_author=E Pachou; citation_author=CJ Stam; citation_author=M Breakspear; citation_author=P Bitsios; citation_journal_title=Schizophr Res; citation_volume=87; citation_number=39; citation_pages=60-66; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Frequency based mutual information measures between clusters of brain regions in functional magnetic resonance imaging.; citation_author=R Salvador; citation_author=A Martinez; citation_author=E Pomarol-Clotet; citation_author=S Sarro; citation_author=J Suckling; citation_journal_title=Neuroimage; citation_volume=35; citation_number=40; citation_pages=83-88; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Are Anticorrelated Networks in the Brain Relevant to Schizophrenia?; citation_author=P Williamson; citation_journal_title=Schizophr Bull; citation_volume=33; citation_number=41; citation_pages=994-1003; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Functional dysconnectivity of the dorsolateral prefrontal cortex in first-episode schizophrenia using resting-state fMRI.; citation_author=Y Zhou; citation_author=M Liang; citation_author=T Jiang; citation_author=L Tian; citation_author=Y Liu; citation_journal_title=Neurosci Lett; citation_volume=417; citation_number=42; citation_pages=297-302; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=The application of graph theoretical analysis to complex networks in the brain.; citation_author=JC Reijneveld; citation_author=SC Ponten; citation_author=HW Berendse; citation_author=CJ Stam; citation_journal_title=Clin Neurophysiol; citation_volume=118; citation_number=43; citation_pages=2317-2331; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Functional connectivity patterns of human magnetoencephalographic recordings: a ‘small-world’ network?; citation_author=CJ Stam; citation_journal_title=Neurosci Lett; citation_volume=355; citation_number=44; citation_pages=25-28; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Measuring interregional functional connectivity using coherence and partial coherence analyses of fMRI data.; citation_author=FT Sun; citation_author=LM Miller; citation_author=M D'Esposito; citation_journal_title=Neuroimage; citation_volume=21; citation_number=45; citation_pages=647-658; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=PRESTO-SENSE: an ultrafast whole-brain fMRI technique.; citation_author=X Golay; citation_author=KP Pruessmann; citation_author=M Weiger; citation_author=GR Crelier; citation_author=PJ Folkers; citation_journal_title=Magn Reson Med; citation_volume=43; citation_number=46; citation_pages=779-786; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Phase navigator correction in 3D fMRI improves detection of brain activation: quantitative assessment with a graded motor activation procedure.; citation_author=NF Ramsey; citation_author=JS van den Brink; citation_author=AM van Muiswinkel; citation_author=PJ Folkers; citation_author=CT Moonen; citation_journal_title=Neuroimage; citation_volume=8; citation_number=47; citation_pages=240-248; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Automatic 3D intersubject registration of MR volumetric data in standardized Talairach space.; citation_author=DL Collins; citation_author=P Neelin; citation_author=TM Peters; citation_author=AC Evans; citation_journal_title=J Comput Assist Tomogr; citation_volume=18; citation_number=48; citation_pages=192-205; citation_date=1994; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Normalized Cut Group Clustering of Resting-State fMRI Data"/>
+    <meta name="twitter:description" content="BackgroundFunctional brain imaging studies have indicated that distinct anatomical brain regions can show coherent spontaneous neuronal activity during rest. Regions that show such correlated behavior are said to form resting-state networks (RSNs). RSNs have been investigated using seed-dependent functional connectivity maps and by using a number of model-free methods. However, examining RSNs across a group of subjects is still a complex task and often involves human input in selecting meaningful networks.Methodology/Principal FindingsWe report on a voxel based model-free normalized cut graph clustering approach with whole brain coverage for group analysis of resting-state data, in which the number of RSNs is computed as an optimal clustering fit of the data. Inter-voxel correlations of time-series are grouped at the individual level and the consistency of the resulting networks across subjects is clustered at the group level, defining the group RSNs. We scanned a group of 26 subjects at rest with a fast BOLD sensitive fMRI scanning protocol on a 3 Tesla MR scanner.Conclusions/SignificanceAn optimal group clustering fit revealed 7 RSNs. The 7 RSNs included motor/visual, auditory and attention networks and the frequently reported default mode network. The found RSNs showed large overlap with recently reported resting-state results and support the idea of the formation of spatially distinct RSNs during rest in the human brain."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0002001.g006"/>
+
+  <meta property="og:title" content="Normalized Cut Group Clustering of Resting-State fMRI Data" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=5266'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=4472'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=4171&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0002001">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0002001" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0002001&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Normalized Cut Group Clustering of Resting-State fMRI Data
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Martijn van den Heuvel
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:M.P.vandenheuvel@umcutrecht.nl">M.P.vandenheuvel@umcutrecht.nl</a></p>
+
+                <p>Affiliation:
+                  Rudolf Magnus Institute of Neuroscience, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Rene Mandl, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Rudolf Magnus Institute of Neuroscience, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Hilleke Hulshoff Pol
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Rudolf Magnus Institute of Neuroscience, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: April 23, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0002001</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0002001-g001" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0002001-g002" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0002001-g003" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0002001-g004" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0002001-g005" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0002001-g006" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0002001">Reader Comments (4)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0002001" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Functional brain imaging studies have indicated that distinct anatomical brain regions can show coherent spontaneous neuronal activity during rest. Regions that show such correlated behavior are said to form resting-state networks (RSNs). RSNs have been investigated using seed-dependent functional connectivity maps and by using a number of model-free methods. However, examining RSNs across a group of subjects is still a complex task and often involves human input in selecting meaningful networks.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We report on a voxel based model-free normalized cut graph clustering approach with whole brain coverage for group analysis of resting-state data, in which the number of RSNs is computed as an optimal clustering fit of the data. Inter-voxel correlations of time-series are grouped at the individual level and the consistency of the resulting networks across subjects is clustered at the group level, defining the group RSNs. We scanned a group of 26 subjects at rest with a fast BOLD sensitive fMRI scanning protocol on a 3 Tesla MR scanner.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>An optimal group clustering fit revealed 7 RSNs. The 7 RSNs included motor/visual, auditory and attention networks and the frequently reported default mode network. The found RSNs showed large overlap with recently reported resting-state results and support the idea of the formation of spatially distinct RSNs during rest in the human brain.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>van den Heuvel M, Mandl R, Hulshoff Pol H (2008) Normalized Cut Group Clustering of Resting-State fMRI Data. PLoS ONE 3(4):
+          e2001.
+            doi:10.1371/journal.pone.0002001</p><p><strong>Editor: </strong>Björn Brembs, Freie Universitaet Berlin, Germany</p><p><strong>Received:</strong> November 21, 2007; <strong>Accepted:</strong> March 10, 2008; <strong>Published:</strong> April 23, 2008</p><p><strong>Copyright:</strong> © 2008 van den Heuvel et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported in part by a grant from the Dutch Science Organization for Medical Research NWO ZON-MW VIDI Program (H.E.H.,917.46.370).</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Functional brain imaging studies have suggested that the brain is not inactive during rest, but rather shows a default state of activation <a href="#pone.0002001-Biswal1">[1]</a>–<a href="#pone.0002001-Raichle1">[5]</a>. Low frequency oscillations (ranging from 0.01 to 0.1 Hz) of resting-state functional Magnetic Resonance Imaging (fMRI) time-series are known to show correlated patterns between anatomical separated brain regions <a href="#pone.0002001-Biswal1">[1]</a>, <a href="#pone.0002001-Cordes1">[6]</a>, <a href="#pone.0002001-Fox1">[7]</a>. These correlations are suggested to originate from coherency in the underlying neuronal activation patterns of these regions and believed to reflect functional connectivity. Regions that show this kind of coherent functional behavior are said to form a resting-state network (RSN). Multiple RSNs have been reported, including primary auditory, motor and sensory networks, attention networks and the default mode network <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Raichle1">[5]</a>, <a href="#pone.0002001-Damoiseaux1">[8]</a>, <a href="#pone.0002001-Lowe1">[9]</a>. Resting-state fMRI patterns are traditionally examined by correlating the rest recorded fMRI time-series of a single seed voxel against the time-series of all other voxels, resulting in a functional connectivity map (fcMap). A seed voxel is usually selected from an activation map of a separately acquired fMRI experiment. For example, when the seed voxel is based on activation in a motor task, the resting-state fcMap gives information about functionally connected regions involved in the motor network. Several studies mapping motor, visual, auditory and even cognitive networks have shown the potential of this seed-based resting-state analysis <a href="#pone.0002001-Biswal1">[1]</a>, <a href="#pone.0002001-Cordes1">[6]</a>, <a href="#pone.0002001-Biswal2">[10]</a>, <a href="#pone.0002001-Cordes2">[11]</a>. However, the information of a fcMap is limited to the network associated with the selected seed voxel. In contrast, model-free methods enable the exploration of spatial and temporal activation patterns without the need of defining a specific model. Several model-free methods have been applied to individual (resting) PET and fMRI data, including principal component analysis (PCA) <a href="#pone.0002001-Friston1">[12]</a>, independent component analysis (ICA) ) <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Kiviniemi1">[13]</a>, <a href="#pone.0002001-vandeVen1">[14]</a>, hierarchical <a href="#pone.0002001-Cordes3">[15]</a> and Laplacian based clustering <a href="#pone.0002001-Thirion1">[16]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>A few model-free resting-state group methods have been introduced <a href="#pone.0002001-Beckmann1">[17]</a>–<a href="#pone.0002001-Salvador1">[19]</a>. However, group analysis of resting-state data is still a complex task and often involves human input in selecting the number of meaningful group networks. Here, we report on a model-free group graph clustering approach for selecting consistent functionally connected RSNs across a group of subjects. Our method works at the voxel level with whole brain coverage and includes a procedure to determine the number of RSNs as an optimal fit of the data. The method involves the formation of individual and group functional connectivity graphs which are clustered to group voxels that show high functional connectivity in RSNs. For the clustering itself, the normalized cut (Ncut) graph clustering method of Shi and Malik <a href="#pone.0002001-Shi1">[20]</a> was used. The Ncut criterion is an unbiased measure of the disassociation between the subgroups of the data and minimizing this criterion directly leads to maximizing the total association within the subgroups. The Ncut method has the strong advantage of being less sensitive to outliers than other graph clustering methods. In essence, our RSN group selection method consists of a two stage process, combining clustering at the individual level with clustering at the group level. At the individual level, the inter-voxel functional connectivity of an individual fMRI dataset is expressed as the temporal coherence in the rest recorded BOLD time-series. This inter-voxel connectivity data is then clustered, resulting in individual clustermaps. At the group level, the consistency across the individual clustermaps is clustered and this determines the group RSNs. As a result, the RSNs directly reflect groups of voxels that consistently showed a high level of functional connectivity across the group of subjects. A group of 26 subjects was scanned on a 3 Tesla scanner with a fast fMRI protocol. Analysis of the acquired resting-state data was done with the two-stage Ncut group clustering approach and the resulting group RSNs are discussed on their functional relevance, overlap and differences with previous reported resting-state studies.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>Spatial maps of the 7 clusters are shown in <a href="#pone-0002001-g001">Figure 1</a> and can be described as follows. Cluster <em>a</em> (<a href="#pone-0002001-g001">Figure 1a</a>) shows a network of posterior cingulate/precuneus region (Brodmann Area (BA) 23/31), middle temporal gyrus (BA 39), inferior temporal gyrus (BA 21), supramarginal gyrus (BA 40) and frontal regions, including both superior frontal gyrus (BA 8) and medial frontal gyrus (BA 11). Clusters <em>b</em> and <em>c</em> (<a href="#pone-0002001-g001">Figure 1b and 1c</a>) show highly lateralized parietal-frontal networks in the left and right hemisphere, involving superior parietal lobule, inferior parietal lobule, supramarginal gyrus (BA 7/40), middle frontal gyrus and superior frontal gyrus (BA 8/9). Cluster <em>d</em> (<a href="#pone-0002001-g001">Figure 1d</a>) shows the largest found network, consisting of postcentral gyrus (BA 3/1/2), precentral gyrus (BA 4), cingulate gyrus (BA 24) and lateral, medial and superior occipital gyrus and peristriate region (BA 17/18/19). Cluster <em>e</em> (<a href="#pone-0002001-g001">Figure 1e</a>) involves bilateral insular and superior temporal cortex (BA 22) and a part of the cingulate gyrus (BA 24). Cluster <em>f</em> (<a href="#pone-0002001-g001">Figure 1f</a>) involves a singular region consisting of a posterior part of BA 7. Cluster <em>g</em> (<a href="#pone-0002001-g001">Figure 1g</a>) involves a singular region covering a medial part of the medial frontal gyrus (BA 9) and an anterior part of the cingulate gyrus (BA 32).</p>
+<div class="figure" id="pone-0002001-g001"><div class="img"><a name="pone-0002001-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Group clustered resting-state networks.</span></strong></p><a id="article1.body1.sec2.fig1.caption1.p1" name="article1.body1.sec2.fig1.caption1.p1"></a><p>Group clustering of 3 Tesla resting-state fMRI data of a group of 26 subjects revealed 7 resting-state networks (RSNs). 1a shows a functional connected network consisting of the posterior cingulate/precuneus, medial frontal regions and bilateral parietal/temporal regions, a RSN known as the default mode network. 1b and 1c show lateralized parietal-frontal networks, networks that are often reported in attention and memory processing. 1d shows a joint network of both sensorimotor and visual networks. Iteratively clustering partitioned this cluster in 3 sub-clusters, shown in clustermap d'. The results showed separate clusters for primary visual regions (cluster <em>d</em>'<em>-1</em>), primary sensorimotor regions (cluster <em>d</em>'<em>-2</em>) and extra-striate visual regions (cluster <em>d</em>'<em>-3</em>). 1e shows a network of bilateral insular regions and posterior cingulate cortex. 1f and 1g represent singular clusters consisting of, respectively, a posterior part of Brodmann Area 7 and an anterior part of the cingulate cortex. The clustered networks show resemblance with previous reported RSNs.</p>
+<span>doi:10.1371/journal.pone.0002001.g001</span></div><a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>Cluster <em>d</em> (<a href="#pone-0002001-g001">Figure 1d</a>) overlapped several brain regions. Iteratively clustering the voxels in cluster <em>d</em> with the Ncut group clustering approach revealed 3 sub-clusters within this cluster. The results of this sub-clustering are shown in <a href="#pone-0002001-g001">Figure 1</a> (<a href="#pone-0002001-g001">Figure 1</a>-d', lower right corner). Cluster <em>d</em>'<em>-1</em> represents a sub-cluster consisting of striate and parastriate cortex (BA 17/18) (<a href="#pone-0002001-g001">Figure 1d</a>'-1). Cluster <em>d</em>'<em>-2</em> shows a sub-cluster consisting of postcentral gyrus (BA 3/1/2), precentral gyrus (BA 4) and cingulate gyrus (BA 24) (<a href="#pone-0002001-g001">Figure 1d</a>'-2). Cluster <em>d</em>'<em>-3</em> represents a sub-cluster consisting of lateral and superior occipital gyrus (BA 19) (<a href="#pone-0002001-g001">Figure 1d</a>'-3).</p>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>We report on a group clustering method to select resting-state networks at a group level. Voxels with coherent resting-state time-series were grouped and disconnected from voxels showing a different time pattern, resulting in individual clustermaps. At the group level, the consistency across the individual clustermaps was computed and clustered, defining the group resting-state networks (RSNs). Normalized cut group clustering of 3 Tesla resting-state fMRI data of 26 subjects revealed 7 independent functional connected resting-state networks.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Group clustering resulted in resting-state networks (RSNs) of known functional relevance that show resemblance with recently reported resting-state group ICA results. Six out of seven of the found clusters show resemblance with the group ICA results of Beckmann et al. <a href="#pone.0002001-Beckmann1">[17]</a>, De Luca et al. <a href="#pone.0002001-DeLuca1">[2]</a> and Damoiseaux et al. <a href="#pone.0002001-Damoiseaux1">[8]</a>, being cluster <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>, <em>e</em> and cluster <em>f</em>. Cluster <em>a</em> (<a href="#pone-0002001-g001">Figure 1a</a>) represents a network of regions that is often referred to as the default mode network <a href="#pone.0002001-Greicius1">[3]</a>, <a href="#pone.0002001-Raichle1">[5]</a>. The default mode network is consistently found in resting-state fMRI studies <a href="#pone.0002001-Greicius1">[3]</a>, <a href="#pone.0002001-Fransson1">[21]</a> and resting-state group ICA studies <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Damoiseaux1">[8]</a>, <a href="#pone.0002001-Beckmann1">[17]</a>. The default mode network is suggested to play an important role in core processes of human cognition <a href="#pone.0002001-Greicius1">[3]</a>, <a href="#pone.0002001-Gusnard1">[4]</a>, <a href="#pone.0002001-Mason1">[22]</a>. Cluster <em>b</em> and <em>c</em> reflect lateralized parietal-frontal networks, which are often reported in attention and memory processing. Both networks are consistently found in resting-state studies <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Damoiseaux1">[8]</a>, <a href="#pone.0002001-Beckmann1">[17]</a>. Cluster <em>d</em> represents a combined network of regions involved in motor and visual processing. Cluster <em>e</em> shows a network consisting of bilateral insular regions and cingulate gyrus. This network is suggested to play an important role in the control of goal-directed behavior <a href="#pone.0002001-Dosenbach1">[23]</a> and salience processing <a href="#pone.0002001-Seeley1">[24]</a> and is often reported in RSN studies <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Damoiseaux1">[8]</a>, <a href="#pone.0002001-Beckmann1">[17]</a>. Two clusters, clusters <em>f</em> and <em>g</em> (<a href="#pone-0002001-g001">Figure 1f and 1g</a>), consist of singular regions, which suggest that these clusters show an isolated pattern of neuronal activity during rest. These results support the idea of complex functional connected RSNs underlying the architecture of the resting brain <a href="#pone.0002001-Salvador2">[25]</a>.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Interestingly, the group clustermaps also show important differences with previous reported resting-state studies. Previous studies have described up to 10 different RSNs <a href="#pone.0002001-Damoiseaux1">[8]</a>, were in this study 7 RSNs were found. Most studies <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Damoiseaux1">[8]</a>, <a href="#pone.0002001-Beckmann1">[17]</a>, <a href="#pone.0002001-Salvador1">[19]</a> report the motor and visual regions to belong to two separate RSNs, while in this study they were grouped together in a single RSN (cluster <em>d</em>, <a href="#pone-0002001-g001">Figure 1d</a>). In addition, primary visual and extra-striate visual regions have also been reported to form separated RSNs <a href="#pone.0002001-Beckmann1">[17]</a>, <a href="#pone.0002001-Damoiseaux2">[26]</a>. Clustering motor and visual regions in a single RSN suggests that other RSNs are more differentiated in their level of functional connectivity than motor and visual regions and could imply that these regions are interconnected to quite some extent. This marks an important differentiation between the results of this study and previous studies <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Beckmann1">[17]</a>, <a href="#pone.0002001-Salvador1">[19]</a>, <a href="#pone.0002001-Damoiseaux2">[26]</a> and this difference is particular noteworthy as a number of studies have especially foccused on the motor and visual system during rest and reported two separate networks <a href="#pone.0002001-Biswal1">[1]</a>, <a href="#pone.0002001-Cordes1">[6]</a>, <a href="#pone.0002001-Biswal2">[10]</a>, <a href="#pone.0002001-Cordes2">[11]</a>. This suggested the existence of meaningful sub-RSNs within cluster <em>d.</em> The voxels in cluster <em>d</em> were therefore iteratively clustered using the Ncut clustering approach, partitioning cluster <em>d</em> in 3 sub-RSNs (see <a href="#s4">method</a> section). This exploratory procedure resulted in 3 sub-clusters which are shown in <a href="#pone-0002001-g001">Figure 1d</a>' (lower-right part of <a href="#pone-0002001-g001">Figure 1</a>). Sub-clustering indeed resulted in two separate RSNs for primary visual regions (<a href="#pone-0002001-g001">Figure 1d</a>'-1) and primary sensorimotor regions (<a href="#pone-0002001-g001">Figure 1d</a>'-2), similar to previous group ICA <a href="#pone.0002001-DeLuca1">[2]</a>, <a href="#pone.0002001-Damoiseaux1">[8]</a>, <a href="#pone.0002001-Beckmann1">[17]</a> and clustering studies <a href="#pone.0002001-Salvador1">[19]</a>. Furthermore, the extra-striate regions (<a href="#pone-0002001-g001">Figure 1d</a>'-3) were clustered as a separate RSN, similar as reported in Damoiseaux et al. <a href="#pone.0002001-Damoiseaux1">[8]</a> and Beckmann et al. <a href="#pone.0002001-Beckmann1">[17]</a>, although clustermap <em>d</em>'<em>-3</em> overlaps somewhat larger regions. These results suggest a valuable role for iteratively clustering in the Ncut group procedure and future studies are aimed to further explore such a multilevel Ncut clustering approach.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>A number of other differences between the results of this study and previous studies are of interest. First, the singleton cluster <em>f</em> (<a href="#pone-0002001-g001">Figure 1f</a>) was not found to be this prominent in other studies. Second, although most of the clustered RSNs represent regions of known functional relevance, cluster <em>g</em> (<a href="#pone-0002001-g001">Figure 1g</a>) does not directly correspond to a known functional network. Third, our results only partially overlap with the group results of Salvador et al. <a href="#pone.0002001-Salvador2">[25]</a>, who reports on a hierarchal graph clustering approach of resting-state fMRI. In their study, six main clusters were found, of which only the motor and visual clusters show some overlap with our combined motor/visual network (cluster <em>d</em>, <a href="#pone-0002001-g001">Figure 1d</a>). The differences in clustering results may arise from the used voxel-wise approach in our study, in contrast to the averaged regional approach used by Salvador et al. In addition, in the study of Salvador et al. the group connectivity graph was constructed by averaging the individual regional-connectivity graphs, while in this study the group graph reflected the cluster-consistency over the individual clustering results.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>Overall, despite differences between studies, we take the similarities between the clustered group networks and the previous reported group ICA components as a demonstration of the robust formation of functional networks when the brain is at rest. In this study, resting-state data was acquired in a different setting (on a 3 Tesla scanner and with a six times faster fMRI protocol) and analyzed with a novel group clustering approach, but this still resulted in the selection of known RSNs. The RSN similarities marks the potential of our normalized cut group clustering method in correctly detecting functionally connected RSNs in the resting brain.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>The consistency of the proposed Ncut clustering group approach was studied by examining the results of multiple clusterings with different parameter settings (<a href="#pone-0002001-g002">Figure 2</a>, <a href="#pone-0002001-g003">3</a> and <a href="#pone-0002001-g004">4</a>). First, the cut-off threshold of the individual connectivity graph was varied for three settings (being 0.3, 0.4 and 0.5). This resulted in three different sets of individual clustering results which were clustered at the group level (Stage B). The group clustering showed to be only minor influenced by the individual cut-off threshold, as all 7 clusters of the 3 sets showed high overlap (<a href="#pone-0002001-g002">Figure 2</a>). However, when the individual cut-off threshold was increased to 0.6 (and up) more and more paths were removed from the individual graphs and this did have an effect on the group results, showing less consistent group RSNs. Therefore the individual cut-off threshold was set to 0.4 in the main analysis. Second, the influence of the level of overclustering at the individual clustering stage (Stage A) on the final group clustering was examined by repeating the clustering with 5 settings of overclustering, ranging from 15 to 45. This resulted in 5 sets of group clusterings, all showing large overlap for all of the 7 clusters (<a href="#pone-0002001-g003">Figure 3</a>), indicating that changing the level of individual overclustering did not change the nature of the group clustering results. As a third test, the influence of the group-graph complexity parameter on the group clustering was examined. The group graph was clustered with 5 settings of the group cut-off threshold around the found optimum of 9. The 5 cluster solutions showed large similarity for all of the 7 group clusters (<a href="#pone-0002001-g004">Figure 4</a>). This overlap suggests only a minor influence of the graph complexity threshold on the group clustering. Taken together, these results show that the used Ncut group clustering approach yield consistent results for clustering with different parameter settings. This indicates that our group clustering approach is robust for different settings of the cluster parameters. In addition, the overlap suggest that the clustered RSNs can be found consistently in a group of subjects, increasing the confidence in the found RSNs.</p>
+<div class="figure" id="pone-0002001-g002"><div class="img"><a name="pone-0002001-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Overlap of multiple group clusterings of different sets of individual clustermaps, varying on the individual cut-off threshold.</span></strong></p><a id="article1.body1.sec3.fig1.caption1.p1" name="article1.body1.sec3.fig1.caption1.p1"></a><p>At the individual clustering stage, the constructed individual connectivity graph was threshold with the set individual graph cut-off threshold <em>rc</em> before clustering. To examine the effect of <em>rc</em> on the final group clustering, the individual clustering procedure was repeated with 3 settings of <em>rc</em>, being 0.3, 0.4 and 0.5. The overclustering parameter was kept fixed on 20. Group clustering (graph complexity threshold set to 9; number of RSNs set to 7) was repeated with the 3 sets of individual clustering results, resulting in 3 group clusterings. For all of the 7 group clusters the overlap of these clustering solutions was computed. Figure clearly shows large overlap for all of the 7 group clusters, indicating that the setting of <em>rc</em> did not affect the final group clustering. However, when <em>rc</em> was increased to 0.6 and up, more and more paths were removed from the individual graph. This clearly affected the individual clustering and the group clustering, changing the spatially layout of the clusters (data not shown).</p>
+<span>doi:10.1371/journal.pone.0002001.g002</span></div><div class="figure" id="pone-0002001-g003"><div class="img"><a name="pone-0002001-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Overlap of multiple group clusterings of different sets of individual clustermaps, varying on the level of individual overclustering.</span></strong></p><a id="article1.body1.sec3.fig2.caption1.p1" name="article1.body1.sec3.fig2.caption1.p1"></a><p>To test the assumed minor effect of overclustering at the individual level on the group clustering results, the individual clustering (Stage A) was repeated with varying overclustering settings (i.e., the number of clusters) and analyzed at the group level (Stage B). For each individual dataset, the individual clustering (stage A) was repeated with varying number of clusters (assumed to result in overclustering), ranging from 15 to 35 (with steps of 5). This resulted in 5 clustermaps per individual dataset. Next, the group clustering (stage B) was repeated with the 5 sets of individual clustermaps (graph complexity threshold set to 9; number of RSNs set to 7). For each of the 7 resulting group clusters, the 5 cluster solutions were summated, creating an overlap map (cluster <em>a</em>–<em>g</em>) with voxel values ranging up to a maximum of 5. The maximum of 5 indicated an overlap off all 5 cluster solutions. Figure shows highly similar cluster results over the 5 different group clusterings, as suggested by the large overlap for each of the 7 clusters. As expected, the results demonstrated that the overclustering at the individual level did not change the nature of the group clustering.</p>
+<span>doi:10.1371/journal.pone.0002001.g003</span></div><div class="figure" id="pone-0002001-g004"><div class="img"><a name="pone-0002001-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Overlap of multiple group clusterings with varying group graph complexity cut-off thresholds.</span></strong></p><a id="article1.body1.sec3.fig3.caption1.p1" name="article1.body1.sec3.fig3.caption1.p1"></a><p>To verify that the optimization procedure considering the selection of the group graph complexity cut-off threshold resulted in a stable clustering, the group clustering was repeated with multiple settings of the graph complexity cut-off threshold. The group clustering stage (stage B) was repeated (using the individual clustermaps consisting of 20 clusters) with different settings for the group cut-off threshold varying around the found optimum of 9 (ranging from 7 to 11). The number of clusters was set to the found optimum of 7 (see main text). Next, for each of the 7 clusters, the 5 group cluster solutions were summated, creating an overlap map with voxels ranging up to a maximum of 5. The maximum of 5 indicated the overlap of all 5 clustering solutions. Figure shows large overlap between the 5 group clusterings, for all of the 7 clusters. This large overlap demonstrates that varying the cut-off threshold around the found optimum only minor influenced the group results, indicating that the automatic parameter setting procedure resulted in a stable clustering solution.</p>
+<span>doi:10.1371/journal.pone.0002001.g004</span></div><a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>A number of model-free methods have been successfully introduced for the group wise selection of RSNs from resting-state fMRI. ICA based methods are perhaps the most commonly used <a href="#pone.0002001-Beckmann1">[17]</a>, <a href="#pone.0002001-Calhoun1">[18]</a> and have been reported to show large consistency <a href="#pone.0002001-Correa1">[27]</a>, <a href="#pone.0002001-Ylipaavalniemi1">[28]</a>. ICA methods search for a mixture of sources underlying the observed signal, with the assumption that the sources are statistically independent. An advantage of these methods is that they work at the voxel level and that the temporal signal of the independent components can be easily further examined and compared between groups. However, the interpretation of the ICA results may involve human input in selecting the anatomical meaningful networks from the total collection of components and this can be a complex task. New analysis methods are suggested to calculate the consistency across ICA solutions to provide additional information for a better interpretation of the results <a href="#pone.0002001-Ylipaavalniemi1">[28]</a>. Clustering methods have also been successfully used to investigate RSNs <a href="#pone.0002001-Cordes3">[15]</a>, <a href="#pone.0002001-Salvador1">[19]</a>. Salvador et al. <a href="#pone.0002001-Salvador1">[19]</a> reported on hierarchical graph clustering of an averaged group connectivity matrix, clustering brain regions in six main groups. Advantages of this clustering method are the simplified selection of RSNs by controlling for the hierarchical levels of clustering and the straightforward interpretation of the results. However, most clustering approaches have clustered over brain regions, using a parcellation of the cortex in a number of fixed regions, making the spatial resolution of these methods limited to a regional scale. Clustering at the group level forms the core of our group clustering approach. Functional connectivity is represented on the voxel scale, enabling the examination of RSNs in detail, similar to group ICA methods <a href="#pone.0002001-Beckmann1">[17]</a>, <a href="#pone.0002001-Calhoun1">[18]</a>. A strong asset is the data-driven computation of the number of RSNs, avoiding human input in defining the number of RSNs. Clustering purely implies the grouping of voxels that consistently show correlated time-series across a group of subjects making the results straightforward to interpret. However, in contrast to group ICA methods, the temporal signals of the RSNs are not directly available for further processing, but this requires some level of post analysis like overlapping the clusters on the functional time-series and calculating the level of (partial) correlation between the RSN regions. Graph clustering methods using minima criteria, among which hierarchal clustering and k-means clustering, tend to be sensitive to outliers in the dataset <a href="#pone.0002001-Duda1">[29]</a>. Minima based clustering methods are generally very effective when clustering averaged time-series over regions, as noise over the time-series is averaged out. However, such clustering strategies are less effective in clustering voxels. The time-series of a single voxel could have a low signal to noise ratio and therefore easily show a rather distinct pattern from the rest of the dataset. As a result, the clustering of voxel-based data could result in grouping such an outlier or a small group of outliers as single clusters, ignoring the more global character of the data <a href="#pone.0002001-Cordes3">[15]</a>, <a href="#pone.0002001-Duda1">[29]</a>. To overcome this problem, in this study the normalized cut clustering of Shi and Malik <a href="#pone.0002001-Shi1">[20]</a> was used. The normalized cut criterion measures both the total similarity within groups as well as the dissimilarity between groups, effectively penalizing the formation of small clusters and thereby stimulating the clustering of more global RSNs.</p>
+<a id="article1.body1.sec3.p8" name="article1.body1.sec3.p8"></a><p>The neurophysiological meaning of resting-state networks remains unclear. It has been proposed that synchronization of neuronal oscillation patterns within neuronal networks may contribute to the regulation of information flow <a href="#pone.0002001-Knight1">[30]</a> supporting selection, consolidation and combination of learned information <a href="#pone.0002001-Buzsaki1">[31]</a>, processes that are likely to be on-going during rest <a href="#pone.0002001-Buckner1">[32]</a>, <a href="#pone.0002001-Raichle2">[33]</a>. Coherent oscillatory patterns during rest in RSNs may therefore be involved in the consolidation of past events and the preparation for future responses to stimuli <a href="#pone.0002001-Buckner1">[32]</a>, <a href="#pone.0002001-Raichle2">[33]</a>. More specific, robust functional connections between the posterior and anterior cingulate cortex of the default mode network have been associated with integration of cognitive and emotional processing <a href="#pone.0002001-Greicius1">[3]</a>.</p>
+<a id="article1.body1.sec3.p9" name="article1.body1.sec3.p9"></a><p>Investigations into the resting-state of the brain may give us more insight into the foundation of the brains architecture and its dysfunction in brain disorders. It has been recently suggested that resting-state patterns may be affected in Alzheimer's disease <a href="#pone.0002001-Greicius2">[34]</a>, <a href="#pone.0002001-Rombouts1">[35]</a>, depression <a href="#pone.0002001-Greicius3">[36]</a> and schizophrenia <a href="#pone.0002001-Bluhm1">[37]</a>–<a href="#pone.0002001-Zhou1">[42]</a>. Our proposed group clustering method could contribute to this field of research. It allows for a direct comparison of the spatial distribution of RSNs between patients and healthy controls. Furthermore, the used graph representation of connected voxels can be used to examine the organization of the functionally connected resting-state brain <a href="#pone.0002001-Salvador1">[19]</a>, <a href="#pone.0002001-Reijneveld1">[43]</a> and possible disruptions in network organization in patients <a href="#pone.0002001-Micheloyannis1">[39]</a>.</p>
+<a id="article1.body1.sec3.p10" name="article1.body1.sec3.p10"></a><p>The described two-stage Ncut group clustering approach requires to set a number of parameters by the user before clustering, being the individual cut-off threshold, the level of individual overclustering and the group graph complexity threshold. In this study, the influence of the chosen parameter settings was tested and found to have only a minor influence on the group clustering (<a href="#pone-0002001-g002">Figure 2</a>, <a href="#pone-0002001-g003">3</a> and <a href="#pone-0002001-g004">4</a>). In addition, the number of group clusters, defining the total number of group RSNs, has to be defined. The described approach includes an exhaustive search procedure to find the group cluster parameters that resulted in an optimal clustering of the group data, by finding a clustering solution with a minimal normalized cut cost <a href="#pone.0002001-Shi1">[20]</a>. The examined influence of the individual and group parameters on the final group clustering and the described optimization procedure might assist the user to set the required parameters.</p>
+<a id="article1.body1.sec3.p11" name="article1.body1.sec3.p11"></a><p>Some limitations to this study have to be considered. Like in all clustering based resting-state methods, all cortical voxels must be placed in one of the RSNs. However, it can be argued that only parts of the brain participate in RSNs. Indeed, two of the found clustermaps show a solitary group of voxels, which suggest that these voxels do not participate in a network, but rather show an isolated pattern of neuronal activity during rest. Stronger pre-selection criteria may address this issue by removing voxels that show little to no significant connections from clustering. An additional limitation of using a clustering approach is that each voxel is exclusively assigned to one cluster. This may be incorrect for regions that participate in multiple RSNs, for example subcortical regions with relay functions like the thalamus. In this study we focused exclusively on the cortical areas, but it is of interest to examine subcortical contributions to RSNs. A more general limitation considers the assumption of cross-correlation between time-series reflecting functional connectivity. Two voxels showing a high cross-correlation between their time-series could be mediated by a third voxels time-series and not because they are (directly) functionally connected. The use of partial correlation or partial coherence has been suggested to account for these third party influences <a href="#pone.0002001-Cordes3">[15]</a>, <a href="#pone.0002001-Salvador1">[19]</a>, <a href="#pone.0002001-Stam1">[44]</a>, <a href="#pone.0002001-Sun1">[45]</a>.</p>
+<a id="article1.body1.sec3.p12" name="article1.body1.sec3.p12"></a><p>We introduced a two-stage normalized cut based group clustering method to investigate the formation of resting-state networks in the human brain at a group level. Inter-voxel functional connectivity was clustered into individual networks and consistency of these networks over the group of subjects determined the group RSNs. Group clustering of rest recorded 3 Tesla fMRI data of 26 subjects revealed resting-state networks of known functional relevance and included the often reported default mode network. Our results support the idea of the formation of spatially distinct RSNs during rest in the human brain.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Datasets and preprocessing</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Data was acquired using a 3 Tesla Philips Achieva Medical scanner (Philips Medical Systems, Best, The Netherlands) at the University Medical Center Utrecht, The Netherlands. 26 right handed healthy subjects with no psychiatric history participated in the study (age mean/std : 25/7.7; gender: 14 male, 12 female). All participants gave written consent prior to taking part in the study as approved by the medical ethics committee for research in humans (METC) of the University Medical Center Utrecht, the Netherlands. During the resting experiment the scanner room was darkened and the subjects were instructed to relax with their eyes closed, without falling asleep. Resting-state blood oxygenation level dependent (BOLD) signals were recorded during a period of 8 minutes using a fast fMRI sequence (3D-PRESTO pulse sequence with parallel imaging <a href="#pone.0002001-Golay1">[46]</a>, <a href="#pone.0002001-Ramsey1">[47]</a>. Acquisition parameters: TR 21.75 ms, effective TE 32.4 ms (using a shifted echo); flip-angle 9 degrees; 1000 timeframes; FOV 256×256 mm, voxelsize 4 mm isotropic, 32 slices covering whole brain; total acquisition time per volume 0.5 sec). The short volume acquisition time of 500 ms allowed the sampling of information in the frequency domain up to 1 Hz. This minimized the possible backfolding (aliasing) of higher frequencies, such as cardiac and respiratory oscillations into the lower resting-state frequencies of interest (0.01–0.1 Hz). Directly after the acquisition of the functional time-series an additional PRESTO scan with better anatomical contrast using an increased flip angle of 25 degrees (FA25) was acquired for coregistration purposes. A T1 weighted image was acquired for anatomical reference (3D FFE pulse sequence. Acquisition parameters: TR = 9.87 ms, TE = 4.6 ms; flip-angle 8 degrees; SENSE reduction 1.7 (left-right) and 1.4 (anterior-posterior); FOV 240×240 mm, voxelsize 0.75×0.75×0.8 mm, 180 slices).</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>All preprocessing steps were done with the SPM2 software package (<a href="http://www.fil.ion.ucl.ac.uk">http://www.fil.ion.ucl.ac.uk</a>). The functional scans were corrected for small head movements by realigning all functional scans to the last functional scan. Realignment to the last functional scan ensured maximum spatial overlap with the FA25 scan at the start position of the registration, because the FA25 scan was acquired directly after the resting-state time-series. The functional time-series were coregistered to the FA25 image, by taking the last functional scan as a source. The T1 image was then coregistered to the FA25 image, providing spatial alignment between the functional time-series and the anatomical image. After realignment, the rest recorded functional time-series were bandpass filtered with a finite impulse response (FIR) bandpass filter with zero phase distortion (bandwidth 0.01–0.1 Hz) to eliminate low frequency noise (including slow scanner drifts) and influences of higher frequencies reflecting possible cardiac or respiratory oscillations <a href="#pone.0002001-Cordes2">[11]</a>. Normalization parameters were estimated using the MNI 305 T1 brain <a href="#pone.0002001-Collins1">[48]</a> as a template and the T1 image as a source. All functional scans were then normalized to the standard space according to normalization parameters and resampled to a 4×4×4 mm resolution, enabling between subject comparisons. Cortex segmentation was done on the T1 image using the Freesurfer software package (<a href="http://surfer.nmr.mgh.harvard.edu/">http://surfer.nmr.mgh.harvard.edu/</a>). Segmentation maps were normalized and resampled to a 4×4×4 mm resolution to spatially overlap the filtered time-series.</p>
+<a id="article1.body1.sec4.sec1.p3" name="article1.body1.sec4.sec1.p3"></a><p>After preprocessing, the resting-state fMRI datasets were analyzed using the normalized cut group clustering method, consisting of two clustering stages (explained in detail below). At the individual level (Stage A, Individual clustering), voxels showing correlated BOLD activation patterns over time were clustered and defined an individual clustermap. Next, at the group level (Stage B, Group clustering) the consistency across the individual clustermaps was computed and clustered using the Ncut method, defining the group RSNs.</p>
+
+
+<h4>Stage A: Individual clustering</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Clustering at the individual level (Stage A) involved the grouping of voxels that showed coherent BOLD fMRI time signals. The individual clustering stage consisted of two steps (<a href="#pone-0002001-g005">Figure 5</a>), the <em>Formation of an individual functional connectivity graph</em> (step A1) and the <em>Clustering</em> of this graph (step A2).</p>
+<div class="figure" id="pone-0002001-g005"><div class="img"><a name="pone-0002001-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Individual clustering stage.</span></strong></p><a id="article1.body1.sec4.sec2.fig1.caption1.p1" name="article1.body1.sec4.sec2.fig1.caption1.p1"></a><p><em>Step A1 Graph formation</em>. An individual graph was constructed, consisting of M cortical voxels and (M<sup>2</sup> -M)/2 edges connecting all voxel pairs. The weight <em>w</em>(<em>i,j</em>) of edge <em>e</em>(<em>i,j</em>) connecting voxel <em>i</em> and voxel <em>j</em> was computed as the correlation between the filtered time-series of voxel <em>i</em> and voxel <em>j</em>, reflecting the level of functional connectivity between the two voxels. <em>Step A2 Clustering</em>. Prior to the clustering, a cut-off threshold of 0.4 was applied to reduce the complexity of the graph and lower the computational load, setting all weights to zero that did not reach this threshold. Normalized cut clustering was used to partition the graph in a fixed number of 20 networks, grouping voxels that showed a high level of functional connectivity into networks, resulting in an individual clustermap.</p>
+<span>doi:10.1371/journal.pone.0002001.g005</span></div><h5>Step A1 Formation of an individual functional connectivity graph.</h5><a id="article1.body1.sec4.sec2.sec1.p1" name="article1.body1.sec4.sec2.sec1.p1"></a><p>Each fMRI dataset was represented as a fully connected undirected graph <em>G</em> = (<em>N,E</em>), with nodes N representing the voxels in the dataset (all gray matter voxels) and the weighted edges E connecting each voxel pair (<a href="#pone-0002001-g005">Figure 5</a>, step A1). This resulted in an individual graph of M nodes representing the M cortical voxels with a total of (<em>M</em><sup>2</sup>−<em>M</em>)/2 edges connecting each possible voxel pair. M varied between subjects from 8500 to 9500, depending on the individual cortical segmentation. The weights of the edges of the graph represented the level of functional connectivity between the voxels. The weight <em>w</em>(<em>i,j</em>) of edge <em>e</em>(<em>i,j</em>) connecting voxel <em>i</em> and voxel <em>j</em> in the graph was computed as the correlation between their filtered fMRI time-series. The individual functional connectivity graph was stored as a weighted connection matrix before clustering.</p>
+
+<h5>Step A2 Clustering.</h5><a id="article1.body1.sec4.sec2.sec2.p1" name="article1.body1.sec4.sec2.sec2.p1"></a><p>Next, the connectivity graph <em>G</em> was clustered in a number of sets consisting of groups of voxels that showed a high level of functional connectivity (<a href="#pone-0002001-g005">Figure 5</a>). To partition graph G in a number of subsets the normalized cut-cost clustering method according to Shi and Malik <a href="#pone.0002001-Shi1">[20]</a> was used. By using a <em>graph cut method</em> for clustering a graph is partitioned in a number of subsets by removing edges from the graph that connect the subsets, with the total cost of this operation defined as the sum of all the weights of the edges that have to be removed. The normalized cut value normalizes this cut cost by the fraction of all paths in that subset (for a more detailed description see supporting information <a href="#pone.0002001.s001">text S1</a>). A direct advantage of the Ncut method is that, due to the normalization factor, the clustering is less sensitive to grouping outliers as individual subsets. The optimal partitioning of graph G is one that minimizes the Ncut cost and can be found by solving a generalized eigenvalue system representation of G <a href="#pone.0002001-Shi1">[20]</a>. Clustering was done with the public available MALTAB implemented Ncutclustering_7 toolbox of Shi (<a href="http://www.cis.upenn.edu/jshi/software">http://www.cis.upenn.edu/jshi/software</a>).</p>
+<a id="article1.body1.sec4.sec2.sec2.p2" name="article1.body1.sec4.sec2.sec2.p2"></a><p>To reduce the number of connecting edges in the connectivity graph and therefore reduce the graph complexity, a cut-off threshold <em>rc</em> <a href="#pone.0002001-Cordes3">[15]</a> of 0.4 was applied, setting the weights of the edges that did not reach this threshold to zero. The effect of this individual cut-off threshold on the group clustering was examined by repeating the individual clustering stage with 3 different settings of <em>rc,</em> being 0.3, 0.4 and 0.5, resulting in 3 clustermaps for each individual dataset. The group clustering stage (Stage B, see below) was then repeated with the 3 different sets of 26 individual clustermaps, resulting in 3 group clusterings. Varying the individual cut-off threshold <em>rc</em> around 0.4 did not change the nature of the group clustering, as indicated by the overlap of the resulting group clusters (<a href="#pone-0002001-g002">Figure 2</a>). Therefore, <em>rc</em> was set to 0.4.</p>
+<a id="article1.body1.sec4.sec2.sec2.p3" name="article1.body1.sec4.sec2.sec2.p3"></a><p>Clustering required a preset number of clusters to partition in. At start the number of RSNs was unknown. Setting the number of clusters lower than the true number of RSNs would result in an underclustering of the data, erroneously combining distinct RSNs. Setting a high number of clusters would probably result in an overclustering of the data, forcing networks to be divided in multiple subsets. However, if overclustering of the data would force a true RSN to be split in two or more subsets, the assignment of the voxels to one of the subsets would be random, as no correct splitting would be possible on basis of the data itself. Therefore, the devision into subsets would not change the shape or outline of the RSNs and would not affect the nature of the group clustering. To verify this assumed minor effect of individual overclustering on the group clustering, the individual clustering stage was repeated with the (overclustering) number of clusters ranging from 15 up to 35 (with steps of 5), resulting in a total of 5 clustermaps per individual dataset. Subsequently, the group clustering step (Stage B, see below) was repeated 5 times (using fixed group cluster parameters), with the 5 different sets of 26 individual clustermaps. As predicted, the 5 group clustermaps demonstrated large overlap, indicating that overclustering at the individual level did not change the nature of the group results (<a href="#pone-0002001-g003">Figure 3</a>).</p>
+<a id="article1.body1.sec4.sec2.sec2.p4" name="article1.body1.sec4.sec2.sec2.p4"></a><p>To avoid incorrect underclustering of the data, the number of clusters was set to 20, double the number of 6 to 10 networks reported in previous fMRI resting-state studies. This was expected to result in (harmless) overclustering of the data. The individual graph was partitioned in 20 clusters using the Ncut clustering algorithm. Labeling the cortical voxels with their cluster number (ranging from 1 to 20) resulted in an individual clustermap. Small gaps in the individual clustermap were filled by using a majority voting algorithm with a minimum of 5 neighbours.</p>
+
+
+
+<h4>Stage B: Group clustering</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>In the group clustering stage the consistency across the 26 individual clustermaps was computed and clustered (Stage B, <a href="#pone-0002001-g006">Figure 6</a>). The resulting group clustermap expressed networks that could be consistently found across the group of subjects. Group clustering consisted of 3 steps, <em>Formation of the group graph</em> that reflected the RSN consistency across the group of subjects (step B1), <em>Setting cluster parameters</em> (step B2) and <em>Computing the group clustermap</em> (step B3).</p>
+<div class="figure" id="pone-0002001-g006"><div class="img"><a name="pone-0002001-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0002001" data-uri="info:doi/10.1371/journal.pone.0002001.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0002001.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0002001.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0002001.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>Group clustering stage.</span></strong></p><a id="article1.body1.sec4.sec3.fig1.caption1.p1" name="article1.body1.sec4.sec3.fig1.caption1.p1"></a><p><em>Step B1 Formation of a group graph</em>. A group graph was constructed, consisting of the cortical voxels that resulted from the group averaged cortical segmentation map and edges connecting all possible voxel pairs. The weight <em>W</em>(<em>i,j</em>) of the edge connecting voxel <em>i</em> and voxel <em>j</em> reflected the cluster consistency across the group of subjects and was computed as follows. For each individual clustermap, the individual cluster-similarity between voxel <em>i</em> and <em>j</em> was defined as 1 if in the individual clustermap voxel <em>i</em> and voxel <em>j</em> were grouped in the same cluster and 0 otherwise. Figure box shows the clustermaps of subject 1 and 2 and the last subject (subject S). In subject 1 the voxels <em>i</em> and <em>j</em> were not clustered in the same cluster, hence the cluster-similarity between voxel <em>i</em> and voxel <em>j</em> was set to 0. In contrast, in subject 2 and in subject S voxel <em>i</em> and <em>j</em> were clustered in the same cluster and therefore the cluster-similarity values between these voxels in these subjects were set to 1. At the group level, <em>W</em>(<em>i,j</em>) was computed as the summation of the cluster-similarities between voxel <em>i</em> and voxel <em>j</em> over the group of S subjects. <em>Step B2 Setting cluster parameters</em>. The group graph was clustered with increasing number of clusters P and increasing graph complexity cut-off thresholds Q. An optimal fit was computed as the clustering fit with the first minimum normalized cut cost value in descending direction of the number of P clusters, to maximize the number of meaningful clustered RSNs. <em>Step B3 Computing group clustermap.</em> The cortical voxels were labeled according to the optimal clustering fit, resulting in the group clustermap. The group clustermap represents networks of voxels that were consistently clustered into the same resting-state network across the group of subjects.</p>
+<span>doi:10.1371/journal.pone.0002001.g006</span></div><h5>Step B1 Formation of the group graph.</h5><a id="article1.body1.sec4.sec3.sec1.p1" name="article1.body1.sec4.sec3.sec1.p1"></a><p>Overlap of the normalized individual cortical segmentation maps resulted in a group cortical segmentation of 9014 gray matter voxels. From the 9014 cortical voxels a fully connected undirected group graph <em>Ggrp</em> was constructed with (9014<sup>2</sup>−9014)/2 edges connecting all voxel pairs (<a href="#pone-0002001-g006">Figure 6</a>, step B1). The weights of the edges were set to express the consistency of the cluster-similarity across the individual clustermaps and were computed as follows. In each individual clustermap (the outcome of the individual clustering stage), the cluster-similarity between two voxels was set to 1 if the two voxels were grouped in the same cluster and 0 otherwise. Then at the group level, the weight of the edge connecting those two voxels in the group graph was computed as the total summation of the cluster-similarity values across the individual clustermaps. More formally, weight <em>W</em>(<em>i,j</em>) of edge <em>E</em>(<em>i,j</em>) between voxel <em>i</em> and <em>j</em> in <em>Ggrp</em>, was defined as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0002001.e001&amp;representation=PNG" class="inline-graphic"></span><br>with N the number of subjects and <em>clus<sub>S</sub>(i,j)</em> being 1 if voxel <em>i</em> and <em>j</em> were in the same cluster in subject S and 0 otherwise. This definition of the weights of the group graph expressed between subject cluster-similarity in such a way that high weight values reflected strong subject overlap. A high value of <em>W</em>(<em>i,j</em>) would indicate that in a large proportion of the group of 26 subjects the two voxels <em>i</em> and <em>j</em> were clustered into the same cluster and therefore should probably belong to the same group RSN.</p>
+
+<h5>Step B2 Setting cluster parameters.</h5><a id="article1.body1.sec4.sec3.sec2.p1" name="article1.body1.sec4.sec3.sec2.p1"></a><p>At start of the group clustering stage the number of clusters (i.e. the number of RSNs) to partition <em>Ggrp</em> in was unknown. Furthermore, a graph complexity cut-off threshold was needed to be set to decrease the size of <em>Ggrp</em> in preparation for the clustering to reduce the computational load, setting the weights of the edges that did not reach the complexity cut-off threshold to zero. At start, the number of group clusters and the cut-off threshold were unknown and as a result could not be set correctly by the user. An optimal partitioning of <em>Ggrp</em> with respect to these 2 parameters was computed with the following procedure. First, <em>Ggrp</em> was clustered repetitively with different cut-off thresholds and with different values for the number of clusters (i.e. RSNs). For each of these clusterings the Ncut method was used and the Ncut cost to partition <em>Ggrp</em> was computed. This resulted in a <em>Ncut cost landscape</em> of size P×Q, with P the range of used numbers of clusters and Q the range of used graph complexity thresholds. The examined number of group clusters varied between 2 and 50 clusters and the graph complexity threshold varied between 5 and 25, resulting in a 49×21 Ncut cost landscape, containing 1029 group clustering solutions. Second, from this Ncut landscape the optimal clustering solution was selected. The Ncut cost of a clustering is defined as the summation of the weights of the edges that have to be removed to divide the group in multiple sets and directly reflects the quality of the clustering <a href="#pone.0002001-Shi1">[20]</a>. Therefore, the optimal partitioning of <em>Ggrp</em> in an optimal number of clusters, was selected from the total collection of cluster solutions as a solution with a minimum Ncut cost. This minimum was selected by traveling through the Ncut cost landscape in descending direction of the number of clusters starting with 50 (i.e. from 50 to 2) -partitioning the data in as much meaningful networks as possible- and in ascending direction of the cut-off threshold (i.e up from 2 to 25), keeping the information in <em>Ggrp</em> as high as possible. This procedure resulted in an optimal partitioning of <em>Ggrp</em> in 7 clusters with a group cut-off threshold of 9.</p>
+
+<h5>Step B3 Computing the group clustermap.</h5><a id="article1.body1.sec4.sec3.sec3.p1" name="article1.body1.sec4.sec3.sec3.p1"></a><p>The cluster labels resulting from the computed optimal clustering of <em>Ggrp</em> were assigned to the cortical voxels (<a href="#pone-0002001-g006">Figure 6</a>, step B3). This resulted in a group clustermap of 7 RSNs.</p>
+<a id="article1.body1.sec4.sec3.sec3.p2" name="article1.body1.sec4.sec3.sec3.p2"></a><p>To confirm that the optimization procedure resulted in a stable clustering fit of <em>Ggrp</em>, the overlap of the clustering solutions with a cut-off threshold varying around the found optimum of 9 was calculated. A range of −2 to 2 was chosen (i.e. 5 cut-off thresholds ranging from 7 to 11). To test the specific effect of the cut-off threshold on the group clustering the number of clusters was kept fixed for all 5 group clusterings to the found optimum of 7. The 5 computed group clustermaps showed large overlap for all of the 7 clusters, indicating that the optimization procedure resulted in a stable clustering (<a href="#pone-0002001-g004">Figure 4</a>).</p>
+
+
+
+<h4>Additional analysis, sub-clustering of cluster d</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>The largest clustered network (cluster <em>d</em>, <a href="#pone-0002001-g001">Figure 1</a>) consisted of both sensorimotor and visual regions, combining these regions in a single RSN. To examine whether this cluster consisted of multiple sub-clusters, an iterative cluster procedure was added, sub-clustering the voxels in cluster <em>d</em> (<a href="#pone-0002001-g001">Figure 1d</a>). This iterative clustering stage followed the exact procedure of the normalized group clustering approach, with both the individual clustering stage (Stage A) and group clustering stage (Stage B). First, individual connectivity graphs were formed out of the selected voxels and clustered. For the individual clustering a cut-off <em>rc</em> of 0.4 was used and the level of overclustering was set to 10 clusters, being over twice the expected number of clusters, similar to the procedure followed in the main analysis (Stage A: Individual clustering, step A2). The individual clusterresults were combined at the group clustering stage, forming a new group graph, consisting of 4186 voxels (Stage B: Group clustering). This graph was then clustered with the graph-complexity threshold set to a value of 9 (similar to the main analysis) and the number of group clusters set to 3.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0002001"></div><a name="pone.0002001.s001" id="pone.0002001.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0002001.s001">Text S1. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0002001.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="postSiDOI">(0.05 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We like to thank Kuan Kho for his helpful comments on this manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: Mv HH RM. Performed the experiments: Mv. Analyzed the data: Mv. Contributed reagents/materials/analysis tools: Mv. Wrote the paper: Mv HH RM.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0002001-Biswal1" id="pone.0002001-Biswal1"></a>Biswal B, Yetkin FZ, Haughton VM, Hyde JS (1995) Functional connectivity in the motor cortex of resting human brain using echo-planar MRI. Magn Reson Med  34: 537–541.  <ul class="find" data-citedArticleID="1092150" data-doi="10.1002/mrm.1910340409"><li><a href="http://dx.doi.org/10.1002/mrm.1910340409" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+connectivity+in+the+motor+cortex+of+resting+human+brain+using+echo-planar+MRI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+connectivity+in+the+motor+cortex+of+resting+human+brain+using+echo-planar+MRI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0002001-DeLuca1" id="pone.0002001-DeLuca1"></a>De Luca M, Beckmann CF, De Stefano N, Matthews PM, Smith SM (2006) fMRI resting state networks define distinct modes of long-distance interactions in the human brain. Neuroimage  29: 1359–1367.  <ul class="find" data-citedArticleID="1092176" data-doi="10.1016/j.neuroimage.2005.08.035"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2005.08.035" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=fMRI+resting+state+networks+define+distinct+modes+of+long-distance+interactions+in+the+human+brain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22fMRI+resting+state+networks+define+distinct+modes+of+long-distance+interactions+in+the+human+brain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0002001-Greicius1" id="pone.0002001-Greicius1"></a>Greicius MD, Krasnow B, Reiss AL, Menon V (2003) Functional connectivity in the resting brain: a network analysis of the default mode hypothesis. Proc Natl Acad Sci U S A  100: 253–258.  <ul class="find" data-citedArticleID="1092190" data-doi="10.1073/pnas.0135058100"><li><a href="http://dx.doi.org/10.1073/pnas.0135058100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+connectivity+in+the+resting+brain%3A+a+network+analysis+of+the+default+mode+hypothesis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+connectivity+in+the+resting+brain%3A+a+network+analysis+of+the+default+mode+hypothesis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0002001-Gusnard1" id="pone.0002001-Gusnard1"></a>Gusnard DA, Raichle ME, Raichle ME (2001) Searching for a baseline: functional imaging and the resting human brain. Nat Rev Neurosci  2: 685–694.  <ul class="find" data-citedArticleID="1092196" data-doi="10.1038/35094500"><li><a href="http://dx.doi.org/10.1038/35094500" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Searching+for+a+baseline%3A+functional+imaging+and+the+resting+human+brain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Searching+for+a+baseline%3A+functional+imaging+and+the+resting+human+brain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0002001-Raichle1" id="pone.0002001-Raichle1"></a>Raichle ME, MacLeod AM, Snyder AZ, Powers WJ, Gusnard DA, et al.  (2001) A default mode of brain function. Proc Natl Acad Sci U S A  98: 676–682.  <ul class="find" data-citedArticleID="1092210" data-doi="10.1073/pnas.98.2.676"><li><a href="http://dx.doi.org/10.1073/pnas.98.2.676" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+default+mode+of+brain+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+default+mode+of+brain+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0002001-Cordes1" id="pone.0002001-Cordes1"></a>Cordes D, Haughton VM, Arfanakis K, Wendt GJ, Turski PA, et al.  (2000) Mapping functionally related regions of brain with functional connectivity MR imaging. AJNR Am J Neuroradiol  21: 1636–1644.  <ul class="find" data-citedArticleID="1092164"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Mapping+functionally+related+regions+of+brain+with+functional+connectivity+MR+imaging.&amp;auth=&amp;atitle=Mapping+functionally+related+regions+of+brain+with+functional+connectivity+MR+imaging." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mapping+functionally+related+regions+of+brain+with+functional+connectivity+MR+imaging." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mapping+functionally+related+regions+of+brain+with+functional+connectivity+MR+imaging.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0002001-Fox1" id="pone.0002001-Fox1"></a>Fox MD, Raichle ME (2007) Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging. Nat Rev Neurosci  8: 700–711.  <ul class="find" data-citedArticleID="1092182" data-doi="10.1038/nrn2201"><li><a href="http://dx.doi.org/10.1038/nrn2201" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Spontaneous+fluctuations+in+brain+activity+observed+with+functional+magnetic+resonance+imaging." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Spontaneous+fluctuations+in+brain+activity+observed+with+functional+magnetic+resonance+imaging.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0002001-Damoiseaux1" id="pone.0002001-Damoiseaux1"></a>Damoiseaux JS, Rombouts SA, Barkhof F, Scheltens P, Stam CJ, et al.  (2006) Consistent resting-state networks across healthy subjects. Proc Natl Acad Sci U S A  103: 13848–13853.  <ul class="find" data-citedArticleID="1092172" data-doi="10.1073/pnas.0601417103"><li><a href="http://dx.doi.org/10.1073/pnas.0601417103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Consistent+resting-state+networks+across+healthy+subjects." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Consistent+resting-state+networks+across+healthy+subjects.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0002001-Lowe1" id="pone.0002001-Lowe1"></a>Lowe MJ, Dzemidzic M, Lurito JT, Mathews VP, Phillips MD (2000) Correlations in low-frequency BOLD fluctuations reflect cortico-cortical connections. Neuroimage  12: 582–587.  <ul class="find" data-citedArticleID="1092204" data-doi="10.1006/nimg.2000.0654"><li><a href="http://dx.doi.org/10.1006/nimg.2000.0654" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Correlations+in+low-frequency+BOLD+fluctuations+reflect+cortico-cortical+connections." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Correlations+in+low-frequency+BOLD+fluctuations+reflect+cortico-cortical+connections.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0002001-Biswal2" id="pone.0002001-Biswal2"></a>Biswal BB, Van Kylen J, Hyde JS (1997) Simultaneous assessment of flow and BOLD signals in resting-state functional connectivity maps. NMR Biomed  10: 165–170.  <ul class="find" data-citedArticleID="1092152" data-doi="10.1002/(sici)1099-1492(199706/08)10:4/5<165::aid-nbm454&gt;3.0.co;2-7"><li><a href="http://dx.doi.org/10.1002/(sici)1099-1492(199706/08)10:4/5<165::aid-nbm454&gt;3.0.co;2-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Simultaneous+assessment+of+flow+and+BOLD+signals+in+resting-state+functional+connectivity+maps." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Simultaneous+assessment+of+flow+and+BOLD+signals+in+resting-state+functional+connectivity+maps.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0002001-Cordes2" id="pone.0002001-Cordes2"></a>Cordes D, Haughton VM, Arfanakis K, Carew JD, Turski PA, et al.  (2001) Frequencies contributing to functional connectivity in the cerebral cortex in “resting-state” data. AJNR Am J Neuroradiol  22: 1326–1333.  <ul class="find" data-citedArticleID="1092166"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Frequencies+contributing+to+functional+connectivity+in+the+cerebral+cortex+in+%3Fresting-state%3F+data.&amp;auth=&amp;atitle=Frequencies+contributing+to+functional+connectivity+in+the+cerebral+cortex+in+%3Fresting-state%3F+data." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Frequencies+contributing+to+functional+connectivity+in+the+cerebral+cortex+in+%E2%80%9Cresting-state%E2%80%9D+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Frequencies+contributing+to+functional+connectivity+in+the+cerebral+cortex+in+%E2%80%9Cresting-state%E2%80%9D+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0002001-Friston1" id="pone.0002001-Friston1"></a>Friston KJ, Frith CD, Liddle PF, Frackowiak RS (1993) Functional connectivity: the principal-component analysis of large (PET) data sets. J Cereb Blood Flow Metab  13: 5–14.  <ul class="find" data-citedArticleID="1092186" data-doi="10.1038/jcbfm.1993.4"><li><a href="http://dx.doi.org/10.1038/jcbfm.1993.4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+connectivity%3A+the+principal-component+analysis+of+large+%28PET%29+data+sets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+connectivity%3A+the+principal-component+analysis+of+large+%28PET%29+data+sets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0002001-Kiviniemi1" id="pone.0002001-Kiviniemi1"></a>Kiviniemi V, Kantola JH, Jauhiainen J, Hyvarinen A, Tervonen O (2003) Independent component analysis of nondeterministic fMRI signal sources. Neuroimage  19: 253–260.  <ul class="find" data-citedArticleID="1092198" data-doi="10.1016/s1053-8119(03)00097-1"><li><a href="http://dx.doi.org/10.1016/s1053-8119(03)00097-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Independent+component+analysis+of+nondeterministic+fMRI+signal+sources." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Independent+component+analysis+of+nondeterministic+fMRI+signal+sources.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0002001-vandeVen1" id="pone.0002001-vandeVen1"></a>van de Ven VG, Formisano E, Prvulovic D, Roeder CH, Linden DE (2004) Functional connectivity as revealed by spatial independent component analysis of fMRI measurements during rest. Hum Brain Mapp  22: 165–178.  <ul class="find" data-citedArticleID="1092242" data-doi="10.1002/hbm.20022"><li><a href="http://dx.doi.org/10.1002/hbm.20022" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+connectivity+as+revealed+by+spatial+independent+component+analysis+of+fMRI+measurements+during+rest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+connectivity+as+revealed+by+spatial+independent+component+analysis+of+fMRI+measurements+during+rest.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0002001-Cordes3" id="pone.0002001-Cordes3"></a>Cordes D, Haughton V, Carew JD, Arfanakis K, Maravilla K (2002) Hierarchical clustering to measure connectivity in fMRI resting-state data. Magn Reson Imaging  20: 305–317.  <ul class="find" data-citedArticleID="1092168" data-doi="10.1016/s0730-725x(02)00503-9"><li><a href="http://dx.doi.org/10.1016/s0730-725x(02)00503-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Hierarchical+clustering+to+measure+connectivity+in+fMRI+resting-state+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Hierarchical+clustering+to+measure+connectivity+in+fMRI+resting-state+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0002001-Thirion1" id="pone.0002001-Thirion1"></a>Thirion B, Dodel S, Poline JB (2006) Detection of signal synchronizations in resting-state fMRI datasets. Neuroimage  29: 321–327.  <ul class="find" data-citedArticleID="1092234" data-doi="10.1016/j.neuroimage.2005.06.054"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2005.06.054" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detection+of+signal+synchronizations+in+resting-state+fMRI+datasets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detection+of+signal+synchronizations+in+resting-state+fMRI+datasets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0002001-Beckmann1" id="pone.0002001-Beckmann1"></a>Beckmann CF, DeLuca M, Devlin JT, Smith SM (2005) Investigations into resting-state connectivity using independent component analysis. Philos Trans R Soc Lond B Biol Sci  360: 1001–1013.  <ul class="find" data-citedArticleID="1092148" data-doi="10.1098/rstb.2005.1634"><li><a href="http://dx.doi.org/10.1098/rstb.2005.1634" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Investigations+into+resting-state+connectivity+using+independent+component+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Investigations+into+resting-state+connectivity+using+independent+component+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0002001-Calhoun1" id="pone.0002001-Calhoun1"></a>Calhoun VD, Adali T, Pearlson GD, Pekar JJ (2001) A method for making group inferences from functional MRI data using independent component analysis. Hum Brain Mapp  14: 140–151.  <ul class="find" data-citedArticleID="1092160" data-doi="10.1002/hbm.1048"><li><a href="http://dx.doi.org/10.1002/hbm.1048" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+method+for+making+group+inferences+from+functional+MRI+data+using+independent+component+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+method+for+making+group+inferences+from+functional+MRI+data+using+independent+component+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0002001-Salvador1" id="pone.0002001-Salvador1"></a>Salvador R, Suckling J, Coleman MR, Pickard JD, Menon D, et al.  (2005) Neurophysiological architecture of functional magnetic resonance images of human brain. Cereb Cortex  15: 1332–1342.  <ul class="find" data-citedArticleID="1092220" data-doi="10.1093/cercor/bhi016"><li><a href="http://dx.doi.org/10.1093/cercor/bhi016" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Neurophysiological+architecture+of+functional+magnetic+resonance+images+of+human+brain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Neurophysiological+architecture+of+functional+magnetic+resonance+images+of+human+brain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0002001-Shi1" id="pone.0002001-Shi1"></a>Shi J, Malik J (2000) Normalized cuts and image segmentation. IEEE Transactions on pattern analysis and machine intelligence  22: 17.  <ul class="find" data-citedArticleID="1092228" data-doi="10.1109/34.868688"><li><a href="http://dx.doi.org/10.1109/34.868688" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Normalized+cuts+and+image+segmentation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Normalized+cuts+and+image+segmentation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0002001-Fransson1" id="pone.0002001-Fransson1"></a>Fransson P (2005) Spontaneous low-frequency BOLD signal fluctuations: an fMRI investigation of the resting-state default mode of brain function hypothesis. Hum Brain Mapp  26: 15–29.  <ul class="find" data-citedArticleID="1092184" data-doi="10.1002/hbm.20113"><li><a href="http://dx.doi.org/10.1002/hbm.20113" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Spontaneous+low-frequency+BOLD+signal+fluctuations%3A+an+fMRI+investigation+of+the+resting-state+default+mode+of+brain+function+hypothesis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Spontaneous+low-frequency+BOLD+signal+fluctuations%3A+an+fMRI+investigation+of+the+resting-state+default+mode+of+brain+function+hypothesis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0002001-Mason1" id="pone.0002001-Mason1"></a>Mason MF, Norton MI, Van Horn JD, Wegner DM, Grafton ST, et al.  (2007) Wandering minds: the default network and stimulus-independent thought. Science  315: 393–395.  <ul class="find" data-citedArticleID="1092206" data-doi="10.1126/science.1131295"><li><a href="http://dx.doi.org/10.1126/science.1131295" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Wandering+minds%3A+the+default+network+and+stimulus-independent+thought." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Wandering+minds%3A+the+default+network+and+stimulus-independent+thought.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0002001-Dosenbach1" id="pone.0002001-Dosenbach1"></a>Dosenbach NU, Fair DA, Miezin FM, Cohen AL, Wenger KK, et al.  (2007) Distinct brain networks for adaptive and stable task control in humans. Proc Natl Acad Sci U S A  104: 11073–11078.  <ul class="find" data-citedArticleID="1092178" data-doi="10.1073/pnas.0704320104"><li><a href="http://dx.doi.org/10.1073/pnas.0704320104" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Distinct+brain+networks+for+adaptive+and+stable+task+control+in+humans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Distinct+brain+networks+for+adaptive+and+stable+task+control+in+humans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0002001-Seeley1" id="pone.0002001-Seeley1"></a>Seeley WW, Menon V, Schatzberg AF, Keller J, Glover GH, et al.  (2007) Dissociable intrinsic connectivity networks for salience processing and executive control. J Neurosci  27: 2349–2356.  <ul class="find" data-citedArticleID="1092226" data-doi="10.1523/jneurosci.5587-06.2007"><li><a href="http://dx.doi.org/10.1523/jneurosci.5587-06.2007" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dissociable+intrinsic+connectivity+networks+for+salience+processing+and+executive+control." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dissociable+intrinsic+connectivity+networks+for+salience+processing+and+executive+control.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0002001-Salvador2" id="pone.0002001-Salvador2"></a>Salvador R, Suckling J, Schwarzbauer C, Bullmore E (2005) Undirected graphs of frequency-dependent functional connectivity in whole brain networks. Philos Trans R Soc Lond B Biol Sci  360: 937–946.  <ul class="find" data-citedArticleID="1092222" data-doi="10.1098/rstb.2005.1645"><li><a href="http://dx.doi.org/10.1098/rstb.2005.1645" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Undirected+graphs+of+frequency-dependent+functional+connectivity+in+whole+brain+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Undirected+graphs+of+frequency-dependent+functional+connectivity+in+whole+brain+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0002001-Damoiseaux2" id="pone.0002001-Damoiseaux2"></a>Damoiseaux JS, Beckmann CF, Arigita EJ, Barkhof F, Scheltens P, et al.  (2007) Reduced resting-state brain activity in the “default network” in normal aging. Cereb Cortex.   <ul class="find" data-citedArticleID="1092174" data-doi="10.1093/cercor/bhm207"><li><a href="http://dx.doi.org/10.1093/cercor/bhm207" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reduced+resting-state+brain+activity+in+the+%E2%80%9Cdefault+network%E2%80%9D+in+normal+aging." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reduced+resting-state+brain+activity+in+the+%E2%80%9Cdefault+network%E2%80%9D+in+normal+aging.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0002001-Correa1" id="pone.0002001-Correa1"></a>Correa N, Adali T, Calhoun VD (2007) Performance of blind source separation algorithms for fMRI analysis using a group ICA method. Magn Reson Imaging  25: 684–694.  <ul class="find" data-citedArticleID="1092170" data-doi="10.1016/j.mri.2006.10.017"><li><a href="http://dx.doi.org/10.1016/j.mri.2006.10.017" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Performance+of+blind+source+separation+algorithms+for+fMRI+analysis+using+a+group+ICA+method." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Performance+of+blind+source+separation+algorithms+for+fMRI+analysis+using+a+group+ICA+method.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0002001-Ylipaavalniemi1" id="pone.0002001-Ylipaavalniemi1"></a>Ylipaavalniemi J, Vigario R (2008) Analyzing consistency of independent components: an fMRI illustration. Neuroimage  39: 169–180.  <ul class="find" data-citedArticleID="1092238" data-doi="10.1016/j.neuroimage.2007.08.027"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2007.08.027" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Analyzing+consistency+of+independent+components%3A+an+fMRI+illustration." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Analyzing+consistency+of+independent+components%3A+an+fMRI+illustration.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0002001-Duda1" id="pone.0002001-Duda1"></a>Duda RO, Hart PE, Stork DG (2001) Pattern Recognition: John Wiley &amp; Sons, Inc.   <ul class="find-nolinks"></ul></li><li><span class="label">30.
+              </span><a name="pone.0002001-Knight1" id="pone.0002001-Knight1"></a>Knight RT (2007) Neuroscience. Neural networks debunk phrenology. Science  316: 1578–1579.  <ul class="find" data-citedArticleID="1092200" data-doi="10.1126/science.1144677"><li><a href="http://dx.doi.org/10.1126/science.1144677" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Neuroscience.+Neural+networks+debunk+phrenology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Neuroscience.+Neural+networks+debunk+phrenology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0002001-Buzsaki1" id="pone.0002001-Buzsaki1"></a>Buzsaki G, Draguhn A (2004) Neuronal oscillations in cortical networks. Science  304: 1926–1929.  <ul class="find" data-citedArticleID="1092158" data-doi="10.1126/science.1099745"><li><a href="http://dx.doi.org/10.1126/science.1099745" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Neuronal+oscillations+in+cortical+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Neuronal+oscillations+in+cortical+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0002001-Buckner1" id="pone.0002001-Buckner1"></a>Buckner RL, Vincent JL (2007) Unrest at rest: Default activity and spontaneous network correlations. Neuroimage  37: 1091–1096.  <ul class="find" data-citedArticleID="1092156" data-doi="10.1016/j.neuroimage.2007.01.010"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2007.01.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Unrest+at+rest%3A+Default+activity+and+spontaneous+network+correlations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Unrest+at+rest%3A+Default+activity+and+spontaneous+network+correlations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0002001-Raichle2" id="pone.0002001-Raichle2"></a>Raichle ME, Snyder AZ (2007) A default mode of brain function: A brief history of an evolving idea. Neuroimage  37: 1083–1090.  <ul class="find" data-citedArticleID="1092212" data-doi="10.1016/j.neuroimage.2007.02.041"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2007.02.041" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+default+mode+of+brain+function%3A+A+brief+history+of+an+evolving+idea." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+default+mode+of+brain+function%3A+A+brief+history+of+an+evolving+idea.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0002001-Greicius2" id="pone.0002001-Greicius2"></a>Greicius MD, Srivastava G, Reiss AL, Menon V (2004) Default-mode network activity distinguishes Alzheimer's disease from healthy aging: evidence from functional MRI. Proc Natl Acad Sci U S A  101: 4637–4642.  <ul class="find" data-citedArticleID="1092192" data-doi="10.1073/pnas.0308627101"><li><a href="http://dx.doi.org/10.1073/pnas.0308627101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Default-mode+network+activity+distinguishes+Alzheimer%27s+disease+from+healthy+aging%3A+evidence+from+functional+MRI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Default-mode+network+activity+distinguishes+Alzheimer%27s+disease+from+healthy+aging%3A+evidence+from+functional+MRI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0002001-Rombouts1" id="pone.0002001-Rombouts1"></a>Rombouts SA, Barkhof F, Goekoop R, Stam CJ, Scheltens P (2005) Altered resting state networks in mild cognitive impairment and mild Alzheimer's disease: an fMRI study. Hum Brain Mapp  26: 231–239.  <ul class="find" data-citedArticleID="1092218" data-doi="10.1002/hbm.20160"><li><a href="http://dx.doi.org/10.1002/hbm.20160" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Altered+resting+state+networks+in+mild+cognitive+impairment+and+mild+Alzheimer%27s+disease%3A+an+fMRI+study." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Altered+resting+state+networks+in+mild+cognitive+impairment+and+mild+Alzheimer%27s+disease%3A+an+fMRI+study.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0002001-Greicius3" id="pone.0002001-Greicius3"></a>Greicius MD, Flores BH, Menon V, Glover GH, Solvason HB, et al.  (2007) Resting-State Functional Connectivity in Major Depression: Abnormally Increased Contributions from Subgenual Cingulate Cortex and Thalamus. Biol Psychiatry  62: 429–437.  <ul class="find" data-citedArticleID="1092194" data-doi="10.1016/j.biopsych.2006.09.020"><li><a href="http://dx.doi.org/10.1016/j.biopsych.2006.09.020" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Resting-State+Functional+Connectivity+in+Major+Depression%3A+Abnormally+Increased+Contributions+from+Subgenual+Cingulate+Cortex+and+Thalamus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Resting-State+Functional+Connectivity+in+Major+Depression%3A+Abnormally+Increased+Contributions+from+Subgenual+Cingulate+Cortex+and+Thalamus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0002001-Bluhm1" id="pone.0002001-Bluhm1"></a>Bluhm RL, Miller J, Lanius RA, Osuch EA, Boksman K, et al.  (2007) Spontaneous Low-Frequency Fluctuations in the BOLD Signal in Schizophrenic Patients: Anomalies in the Default Network. Schizophr Bull  33: 1004–1012.  <ul class="find" data-citedArticleID="1092154" data-doi="10.1093/schbul/sbm052"><li><a href="http://dx.doi.org/10.1093/schbul/sbm052" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Spontaneous+Low-Frequency+Fluctuations+in+the+BOLD+Signal+in+Schizophrenic+Patients%3A+Anomalies+in+the+Default+Network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Spontaneous+Low-Frequency+Fluctuations+in+the+BOLD+Signal+in+Schizophrenic+Patients%3A+Anomalies+in+the+Default+Network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0002001-Liang1" id="pone.0002001-Liang1"></a>Liang M, Zhou Y, Jiang T, Liu Z, Tian L, et al.  (2006) Widespread functional disconnectivity in schizophrenia with resting-state functional magnetic resonance imaging. Neuroreport  17: 209–213.  <ul class="find" data-citedArticleID="1092202" data-doi="10.1097/01.wnr.0000198434.06518.b8"><li><a href="http://dx.doi.org/10.1097/01.wnr.0000198434.06518.b8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Widespread+functional+disconnectivity+in+schizophrenia+with+resting-state+functional+magnetic+resonance+imaging." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Widespread+functional+disconnectivity+in+schizophrenia+with+resting-state+functional+magnetic+resonance+imaging.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0002001-Micheloyannis1" id="pone.0002001-Micheloyannis1"></a>Micheloyannis S, Pachou E, Stam CJ, Breakspear M, Bitsios P, et al.  (2006) Small-world networks and disturbed functional connectivity in schizophrenia. Schizophr Res  87: 60–66.  <ul class="find" data-citedArticleID="1092208" data-doi="10.1016/j.schres.2006.06.028"><li><a href="http://dx.doi.org/10.1016/j.schres.2006.06.028" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Small-world+networks+and+disturbed+functional+connectivity+in+schizophrenia." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Small-world+networks+and+disturbed+functional+connectivity+in+schizophrenia.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0002001-Salvador3" id="pone.0002001-Salvador3"></a>Salvador R, Martinez A, Pomarol-Clotet E, Sarro S, Suckling J, et al.  (2007) Frequency based mutual information measures between clusters of brain regions in functional magnetic resonance imaging. Neuroimage  35: 83–88.  <ul class="find" data-citedArticleID="1092224" data-doi="10.1016/j.neuroimage.2006.12.001"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2006.12.001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Frequency+based+mutual+information+measures+between+clusters+of+brain+regions+in+functional+magnetic+resonance+imaging." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Frequency+based+mutual+information+measures+between+clusters+of+brain+regions+in+functional+magnetic+resonance+imaging.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0002001-Williamson1" id="pone.0002001-Williamson1"></a>Williamson P (2007) Are Anticorrelated Networks in the Brain Relevant to Schizophrenia? Schizophr Bull  33: 994–1003.  <ul class="find" data-citedArticleID="1092236" data-doi="10.1093/schbul/sbm043"><li><a href="http://dx.doi.org/10.1093/schbul/sbm043" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Are+Anticorrelated+Networks+in+the+Brain+Relevant+to+Schizophrenia%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Are+Anticorrelated+Networks+in+the+Brain+Relevant+to+Schizophrenia%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0002001-Zhou1" id="pone.0002001-Zhou1"></a>Zhou Y, Liang M, Jiang T, Tian L, Liu Y, et al.  (2007) Functional dysconnectivity of the dorsolateral prefrontal cortex in first-episode schizophrenia using resting-state fMRI. Neurosci Lett  417: 297–302.  <ul class="find" data-citedArticleID="1092240" data-doi="10.1016/j.neulet.2007.02.081"><li><a href="http://dx.doi.org/10.1016/j.neulet.2007.02.081" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+dysconnectivity+of+the+dorsolateral+prefrontal+cortex+in+first-episode+schizophrenia+using+resting-state+fMRI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+dysconnectivity+of+the+dorsolateral+prefrontal+cortex+in+first-episode+schizophrenia+using+resting-state+fMRI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0002001-Reijneveld1" id="pone.0002001-Reijneveld1"></a>Reijneveld JC, Ponten SC, Berendse HW, Stam CJ (2007) The application of graph theoretical analysis to complex networks in the brain. Clin Neurophysiol  118: 2317–2331.  <ul class="find" data-citedArticleID="1092216" data-doi="10.1016/j.clinph.2007.08.010"><li><a href="http://dx.doi.org/10.1016/j.clinph.2007.08.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+application+of+graph+theoretical+analysis+to+complex+networks+in+the+brain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+application+of+graph+theoretical+analysis+to+complex+networks+in+the+brain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0002001-Stam1" id="pone.0002001-Stam1"></a>Stam CJ (2004) Functional connectivity patterns of human magnetoencephalographic recordings: a ‘small-world’ network? Neurosci Lett  355: 25–28.  <ul class="find" data-citedArticleID="1092230" data-doi="10.1016/j.neulet.2003.10.063"><li><a href="http://dx.doi.org/10.1016/j.neulet.2003.10.063" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+connectivity+patterns+of+human+magnetoencephalographic+recordings%3A+a+%E2%80%98small-world%E2%80%99+network%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+connectivity+patterns+of+human+magnetoencephalographic+recordings%3A+a+%E2%80%98small-world%E2%80%99+network%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0002001-Sun1" id="pone.0002001-Sun1"></a>Sun FT, Miller LM, D'Esposito M (2004) Measuring interregional functional connectivity using coherence and partial coherence analyses of fMRI data. Neuroimage  21: 647–658.  <ul class="find" data-citedArticleID="1092232" data-doi="10.1016/j.neuroimage.2003.09.056"><li><a href="http://dx.doi.org/10.1016/j.neuroimage.2003.09.056" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Measuring+interregional+functional+connectivity+using+coherence+and+partial+coherence+analyses+of+fMRI+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Measuring+interregional+functional+connectivity+using+coherence+and+partial+coherence+analyses+of+fMRI+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0002001-Golay1" id="pone.0002001-Golay1"></a>Golay X, Pruessmann KP, Weiger M, Crelier GR, Folkers PJ, et al.  (2000) PRESTO-SENSE: an ultrafast whole-brain fMRI technique. Magn Reson Med  43: 779–786.  <ul class="find" data-citedArticleID="1092188" data-doi="10.1002/1522-2594(200006)43:6<779::aid-mrm1&gt;3.0.co;2-4"><li><a href="http://dx.doi.org/10.1002/1522-2594(200006)43:6<779::aid-mrm1&gt;3.0.co;2-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PRESTO-SENSE%3A+an+ultrafast+whole-brain+fMRI+technique." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PRESTO-SENSE%3A+an+ultrafast+whole-brain+fMRI+technique.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0002001-Ramsey1" id="pone.0002001-Ramsey1"></a>Ramsey NF, van den Brink JS, van Muiswinkel AM, Folkers PJ, Moonen CT, et al.  (1998) Phase navigator correction in 3D fMRI improves detection of brain activation: quantitative assessment with a graded motor activation procedure. Neuroimage  8: 240–248.  <ul class="find" data-citedArticleID="1092214" data-doi="10.1006/nimg.1998.0358"><li><a href="http://dx.doi.org/10.1006/nimg.1998.0358" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Phase+navigator+correction+in+3D+fMRI+improves+detection+of+brain+activation%3A+quantitative+assessment+with+a+graded+motor+activation+procedure." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Phase+navigator+correction+in+3D+fMRI+improves+detection+of+brain+activation%3A+quantitative+assessment+with+a+graded+motor+activation+procedure.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0002001-Collins1" id="pone.0002001-Collins1"></a>Collins DL, Neelin P, Peters TM, Evans AC (1994) Automatic 3D intersubject registration of MR volumetric data in standardized Talairach space. J Comput Assist Tomogr  18: 192–205.  <ul class="find" data-citedArticleID="1092162" data-doi="10.1097/00004728-199403000-00005"><li><a href="http://dx.doi.org/10.1097/00004728-199403000-00005" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automatic+3D+intersubject+registration+of+MR+volumetric+data+in+standardized+Talairach+space." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automatic+3D+intersubject+registration+of+MR+volumetric+data+in+standardized+Talairach+space.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.XML" value="106458"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.PDF" value="516488"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g001.PNG_L" value="1324386"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g001.PNG_M" value="151695"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g001.PNG_S" value="13337"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g001.TIF" value="2614262"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g001.PNG_I" value="61611"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g002.PNG_L" value="1486572"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g002.PNG_M" value="176065"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g002.PNG_S" value="13279"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g002.TIF" value="2961954"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g002.PNG_I" value="70584"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g003.PNG_L" value="1539064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g003.PNG_M" value="178206"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g003.PNG_S" value="13408"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g003.TIF" value="3003374"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g003.PNG_I" value="71134"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g004.PNG_L" value="1532068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g004.PNG_M" value="177625"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g004.PNG_S" value="13213"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g004.TIF" value="3002002"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g004.PNG_I" value="71171"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g005.PNG_L" value="798388"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g005.PNG_M" value="101601"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g005.PNG_S" value="8958"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g005.TIF" value="1765498"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g005.PNG_I" value="40163"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g006.PNG_L" value="1441224"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g006.PNG_M" value="184129"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g006.PNG_S" value="15043"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g006.TIF" value="3166292"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.g006.PNG_I" value="72547"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.e001.PNG" value="9470"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.e001.TIF" value="25268"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0002001.s001.DOC" value="53248"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0002001&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0002001" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0002001&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0002001&volume=&issue=&title=Normalized Cut Group Clustering of Resting-State fMRI Data&author_name=Martijn%20van%20den%20Heuvel%2C%20Rene%20Mandl%2C%20Hilleke%20Hulshoff%20Pol&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0002001" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001&amp;t=Normalized%20Cut%20Group%20Clustering%20of%20Resting-State%20fMRI%20Data" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001&title=Normalized%20Cut%20Group%20Clustering%20of%20Resting-State%20fMRI%20Data&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001&amp;title=Normalized%20Cut%20Group%20Clustering%20of%20Resting-State%20fMRI%20Data" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0002001&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Normalized Cut Group Clustering of Resting-State fMRI Data';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0002001';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Normalized%20Cut%20Group%20Clustering%20of%20Resting-State%20fMRI%20Data http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0002001" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0002001" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Behavior%22" title="Search for articles in the subject area:'Behavior'"><div class="flagText">Behavior</div></a>
+              <div data-categoryid="32855" data-articleid="26826"
+                   data-categoryname="Behavior"
+                   class="flagImage" title="Flag 'Behavior' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cognition%22" title="Search for articles in the subject area:'Cognition'"><div class="flagText">Cognition</div></a>
+              <div data-categoryid="17733" data-articleid="26826"
+                   data-categoryname="Cognition"
+                   class="flagImage" title="Flag 'Cognition' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cognitive+science%22" title="Search for articles in the subject area:'Cognitive science'"><div class="flagText">Cognitive science</div></a>
+              <div data-categoryid="17271" data-articleid="26826"
+                   data-categoryname="Cognitive science"
+                   class="flagImage" title="Flag 'Cognitive science' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Functional+magnetic+resonance+imaging%22" title="Search for articles in the subject area:'Functional magnetic resonance imaging'"><div class="flagText">Functional magnetic resonance imaging</div></a>
+              <div data-categoryid="46285" data-articleid="26826"
+                   data-categoryname="Functional magnetic resonance imaging"
+                   class="flagImage" title="Flag 'Functional magnetic resonance imaging' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Graphs%22" title="Search for articles in the subject area:'Graphs'"><div class="flagText">Graphs</div></a>
+              <div data-categoryid="19267" data-articleid="26826"
+                   data-categoryname="Graphs"
+                   class="flagImage" title="Flag 'Graphs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Neural+networks%22" title="Search for articles in the subject area:'Neural networks'"><div class="flagText">Neural networks</div></a>
+              <div data-categoryid="1931" data-articleid="26826"
+                   data-categoryname="Neural networks"
+                   class="flagImage" title="Flag 'Neural networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Neuroimaging%22" title="Search for articles in the subject area:'Neuroimaging'"><div class="flagText">Neuroimaging</div></a>
+              <div data-categoryid="46063" data-articleid="26826"
+                   data-categoryname="Neuroimaging"
+                   class="flagImage" title="Flag 'Neuroimaging' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Optimization%22" title="Search for articles in the subject area:'Optimization'"><div class="flagText">Optimization</div></a>
+              <div data-categoryid="31839" data-articleid="26826"
+                   data-categoryname="Optimization"
+                   class="flagImage" title="Flag 'Optimization' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9315'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=1463'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3462&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=11145">Text S1 is also available as a PDF</a><br>Posted by PLoS_ONE_Group</p>
+      <p><a href="/annotation/listThread.action?root=1693">Spontaneous brain activity</a><br>Posted by BjoernBrembs</p>
+      <p><a href="/annotation/listThread.action?root=19195">Referee Comments: Referee 2</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

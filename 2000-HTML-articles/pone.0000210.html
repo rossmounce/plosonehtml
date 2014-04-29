@@ -1,0 +1,1238 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Wind Data Mining by Kohonen Neural Networks</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000210"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000210" />
+
+    <meta name="citation_title" content="Wind Data Mining by Kohonen Neural Networks"/>
+    <meta itemprop="name" content="Wind Data Mining by Kohonen Neural Networks"/>
+
+      <meta name="citation_author" content="José Fayos"/>
+            <meta name="citation_author_institution" content="Departamento de Cristalografía, Instituto de Química Física Rocasolano, Consejo Superior de Investigaciones Científicas (CSIC), Madrid, Spain"/>
+      <meta name="citation_author" content="Carolina Fayos"/>
+            <meta name="citation_author_institution" content="Raytheon Information Solutions, Silver Spring, Maryland, United States of America"/>
+
+    <meta name="citation_date" content="2007/2/14"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000210.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e210"/>
+    <meta name="citation_issue" content="2"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Validation of GCM control simulations using indices of daily airflow types over the British Isles.; citation_author=M Hulme; citation_author=KR Briffa; citation_author=PD Jones; citation_author=CA Senior; citation_journal_title=
+                  Climate Dynamics
+               ; citation_volume=9; citation_number=1; citation_pages=95-105; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Neural Network Classifiers for Local Wind Prediction.; citation_author=R Kretzschmar; citation_author=P Eckert; citation_author=D Cattani; citation_journal_title=
+                  Journal of Applied Meteorology
+               ; citation_volume=43; citation_number=2; citation_pages=727-738; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A Neural Network for Damaging Wind Prediction.; citation_author=C Marzban; citation_journal_title=
+                  Weather and Forecasting
+               ; citation_volume=13; citation_number=3; citation_pages=151-163; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Types and spells of weather around the year in the British Islands.; citation_author=HH Lamb; citation_journal_title=
+                  Quaterly Journal of the Royal Meteorological Society
+               ; citation_volume=76; citation_number=4; citation_pages=393-438; citation_date=1950; " />
+      <meta name="citation_reference" content="citation_title=British Isles weather types and a register of daily sequence of circulation patterns, 1861–1971.; citation_author=HH Lamb; citation_journal_title=
+                  Geophysical Memoirs
+               ; citation_volume=116; citation_number=5; citation_date=1972; " />
+      <meta name="citation_reference" content="citation_title=An initial climatology of gales over the North Sea.; citation_author=AF Jenkinson; citation_author=FP Collison; citation_number=6; citation_date=1977; citation_publisher=Meteorological Office; " />
+      <meta name="citation_reference" content="citation_title=A comparison of Lamb circulation types with an objective classification scheme.; citation_author=PD Jones; citation_author=M Hulme; citation_author=KR Briffa; citation_journal_title=
+                  International Journal of Climatology
+               ; citation_volume=13; citation_number=7; citation_pages=655-663; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Reproducing a subjective classification scheme for atmospheric circulation patterns over the United Kingdom using a neural network.; citation_author=GC Cawley; citation_author=SR Dorling; citation_journal_title=
+                  Proceedings of the International Conference on Artificial Neural Networks ICANN-96
+               ; citation_number=8; citation_pages=281-286; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=The simulation of weather types in GCMs: A regional approach to control-run validation.; citation_author=KR Briffa; citation_number=9; citation_pages=122-138; citation_date=1995; citation_publisher=Springer; " />
+      <meta name="citation_reference" content="citation_title=A Monthly Climatology for Sweden and its Application to a Winter Temperature Case Study.; citation_author=D Chen; citation_journal_title=
+                  International Journal of Climatology
+               ; citation_volume=20; citation_number=10; citation_pages=1067-1076; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The meteorological control on the anthropogenic ion content of precipitation at three sites in the UK: The utility of Lamb Weather Types.; citation_author=TD Davies; citation_author=SR Dorling; citation_author=CE Pierce; citation_author=RJ Bathelmie; citation_author=G Farmer; citation_journal_title=
+                  International Journal of Climatology
+               ; citation_volume=11; citation_number=11; citation_pages=795-807; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_author=T Kohonen; citation_number=12; citation_date=1995; citation_publisher=Springer-Verlag, Series in Information Sciences, vol. 30; " />
+      <meta name="citation_reference" content="citation_title=Self-organizing feature maps predicting sea levels.; citation_author=A Ultsch; citation_author=F Röske; citation_journal_title=
+                  Information Sciences
+               ; citation_volume=144; citation_number=13; citation_pages=91-125; citation_date=2002; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Wind Data Mining by Kohonen Neural Networks"/>
+    <meta name="twitter:description" content="Time series of Circulation Weather Type (CWT), including daily averaged wind direction and vorticity, are self-classified by similarity using Kohonen Neural Networks (KNN). It is shown that KNN is able to map by similarity all 7300 five-day CWT sequences during the period of 1975&ndash;94, in London, United Kingdom. It gives, as a first result, the most probable wind sequences preceding each one of the 27 CWT Lamb classes in that period. Inversely, as a second result, the observed diffuse correlation between both five-day CWT sequences and the CWT of the 6th day, in the long 20-year period, can be generalized to predict the last from the previous CWT sequence in a different test period, like 1995, as both time series are similar. Although the average prediction error is comparable to that obtained by forecasting standard methods, the KNN approach gives complementary results, as they depend only on an objective classification of observed CWT data, without any model assumption. The 27 CWT of the Lamb Catalogue were coded with binary three-dimensional vectors, pointing to faces, edges and vertex of a &ldquo;wind-cube,&rdquo; so that similar CWT vectors were close."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000210.g005"/>
+
+  <meta property="og:title" content="Wind Data Mining by Kohonen Neural Networks" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=7452'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=3698'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=5355&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000210">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000210" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000210&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Wind Data Mining by Kohonen Neural Networks
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            José Fayos
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:xpepe@iqfr.csic.es">xpepe@iqfr.csic.es</a>
+            </p>
+
+                <p>Affiliation:
+                  Departamento de Cristalografía, Instituto de Química Física Rocasolano, Consejo Superior de Investigaciones Científicas (CSIC), Madrid, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Carolina Fayos
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Raytheon Information Solutions, Silver Spring, Maryland, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: February 14, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000210</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000210-t001" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t002" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-g001" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t003" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t004" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-g002" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-g003" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-g004" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t005" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t005" title="Table 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t006" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t006" title="Table 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t007" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t007" title="Table 7">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t007&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-t008" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t008" title="Table 8">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t008&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000210-g005" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000210">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000210" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Time series of Circulation Weather Type (CWT), including daily averaged wind direction and vorticity, are self-classified by similarity using Kohonen Neural Networks (KNN). It is shown that KNN is able to map by similarity all 7300 five-day CWT sequences during the period of 1975–94, in London, United Kingdom. It gives, as a first result, the most probable wind sequences preceding each one of the 27 CWT Lamb classes in that period. Inversely, as a second result, the observed diffuse correlation between both five-day CWT sequences and the CWT of the 6<sup>th</sup> day, in the long 20-year period, can be generalized to predict the last from the previous CWT sequence in a different test period, like 1995, as both time series are similar. Although the average prediction error is comparable to that obtained by forecasting standard methods, the KNN approach gives complementary results, as they depend only on an objective classification of observed CWT data, without any model assumption. The 27 CWT of the Lamb Catalogue were coded with binary three-dimensional vectors, pointing to faces, edges and vertex of a “wind-cube,” so that similar CWT vectors were close.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Fayos J, Fayos C (2007) Wind Data Mining by Kohonen Neural Networks. PLoS ONE 2(2):
+          e210.
+            doi:10.1371/journal.pone.0000210</p><p><strong>Academic Editor: </strong>Ananth Grama, Purdue University, United States of America</p><p><strong>Received:</strong> October 10, 2006; <strong>Accepted:</strong> January 17, 2007; <strong>Published:</strong> February 14, 2007</p><p><strong>Copyright:</strong> © 2007 Fayos, Fayos. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>J. Fayos thanks the Spanish MEC for support under project CTQ2005-02058/BQU.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The current Circulation Weather Type (CWT), including wind direction and vorticity, gives local information about the upcoming temperature and precipitation, as it is shown by Hulme et al. <a href="#pone.0000210-Hulme1">[1]</a>. Besides, CWT prediction is also important for practical uses such as aerial and water transport. However, the nonlinear behaviour of the dynamical phenomena involving these variables adds difficulty to dynamical models to predict CWT. Thus, having into account the large amount of available CWT observed data, a data mining approach seems to be appropriate to uncover correlations among time series of CWT, not easily expressed in the model equations. Data mining results depend just on the observed CWT behaviour along large periods, where time series seem to repeat somehow allowing prediction. Hence, being independent of any behaviour model assumed for CWT, data mining can also be complementary information for the well established forecasting methods.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Neural Networks (NN) have proved to be an efficient tool for weather data mining. For example Kretzschmar et al. <a href="#pone.0000210-Kretzschmar1">[2]</a> and Marzban <a href="#pone.0000210-Marzban1">[3]</a> worked on the local prediction of the wind speed by using feed-forward NN. Marzban <a href="#pone.0000210-Marzban1">[3]</a> selected wind direction as a predictor and their results, especially on predicting anomalous winds, improved somewhat to those obtained by other methods such as linear regression or persistence. Both authors show that wind persistence is indeed quite frequent and therefore it should be a reference for any other prediction method.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>In the present work, we used the CWT Lamb Catalogue with the averaged daily wind direction and vorticity over London (UK) area, Lamb <a href="#pone.0000210-Lamb1">[4]</a>, <a href="#pone.0000210-Lamb2">[5]</a>. The Catalogue describes the state of the large-scale atmospheric circulation, from 1861 to 1997. The CWT data are calculated from a Northern Europe grid, centred in London, at sea-level and 500mbar pressure, taken twice daily at 00GMT and at 12GMT. These data are available on the web: <a href="http://www.cru.uea.ac.uk/">http://www.cru.uea.ac.uk/</a>~mikeh/datasets/uk/lamb.htm. The Catalogue was recalculated to an objective one by Jenkinson and Collison <a href="#pone.0000210-Jenkinson1">[6]</a> and then used by Jones et al. <a href="#pone.0000210-Jones1">[7]</a>. Later, Cawley and Dorling <a href="#pone.0000210-Cawley1">[8]</a> reported a neural network classifier to reproduce the Lamb classification using the Jenkinson algorithm. Research about the calculation and discussion of this catalogue, are shown by Briffa <a href="#pone.0000210-Briffa1">[9]</a> and Chen <a href="#pone.0000210-Chen1">[10]</a>, the latter also describing the calculation of the wind direction derived from the pressure grid. The Lamb Catalogue has been used in some studies, Davis et al. <a href="#pone.0000210-Davies1">[11]</a>, relating atmospheric circulation to environmental problems.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>These CWT data, for a long (20 years) learning period, were used in this work for both predictor and predictant, where short (five days) time series of daily CWT sequences were classified by their resultant wind of the next day. It is shown in fact that both sets are correlated. This classification produces an accumulative table with the most probable CWT sequences preceding each one of the 27 possible CWT Lamb classes, which can be generalized to another test period, to predict the unknown CWT from its observed (five days) precedent CWT sequence. Having into account the nonlinear behaviour of CWT variables, we select as an objective CWT classifier the Kohonen Neural Network (KNN), Kohonen <a href="#pone.0000210-Kohonen1">[12]</a>, because it is a self-organizing feature map. It means that the KNN procedure would uncover some implicit CWT relations instead to assume any CWT behaviour. This is not the first time that KNN is used to weather forecasting, a detailed paper concerning its use for predicting one variable among time series of sea levels, wind data, air pressure and air temperature in the German North Sea is due to Ultsch and Röske <a href="#pone.0000210-Ultsch1">[13]</a>. They concluded that the implicit modelling of the physical processes employed in the NN predicts better than the explicit modelling employed in the hydrodynamic or statistical methods, although in fact their results gave higher errors for predicted wind direction.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>CWT data analysis</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>The Lamb Catalogue contains 27 Lamb Classes (LC) of daily averaged wind directions and vorticity, which are our CWT data. <a href="#pone-0000210-t001">Table 1</a> shows the number of days per LC class that appear in the London Catalogue during 50 years (N = 18263 days) from 1947 to 1996, where null or undefined values can result after averaging. Notice that this is a highly inhomogeneous distribution of wind classes similar to the one given by Chen <a href="#pone.0000210-Chen1">[10]</a> for Sweden. This fact will obviously favor the prediction of the most frequent winds such as W against those least frequent such as CNE wind. The CWT distribution also shows many zero or neutral winds such as A or C, and many winds of W or SW directions (especially those with undefined circulation). However, as above mentioned, due to the frequent wind changes in the same day, both zero and undefined winds can be biased by their daily averaging, which can hide important daily variations. In any case, that lost information in the average CWT data, must be considered to interpret the predicted CWT also as daily average data.</p>
+<div class="figure" id="pone-0000210-t001"><div class="img"><a name="pone-0000210-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Distribution of the 27 LC wind classes in London, along 50 years.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t001</span></div><a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>We checked the above mentioned wind persistence by comparing the observed LC distribution with a random generated LC distribution during the 50 years period, assuming the frequencies of <a href="#pone-0000210-t001">Table 1</a>. For the random LC distribution, the probability of finding two equal LC in two randomly chosen days along a time series of N days with <em>n<sub>i</sub>
+               </em> days per LC<sub>i</sub> class is (∑<em>n<sub>i</sub>
+               </em>
+               <sup>2</sup>)/<em>N</em>
+               <sup>2</sup> = 0.09, which would give 1650 wind coincidences in N = 18263 random tests (independently of the separation between days). However, by using the actual observed wind distribution, we show in <a href="#pone-0000210-t002">Table 2</a> that the number of wind coincidences is much greater than 1650 when the two selected days are separated by few day intervals, indicating a non-random wind distribution. We see that 29% of the days repeat the wind of the previous day (<em>interv</em> = 1), and in general wind persistence is observed for shorter periods. The number of wind coincidences decreases quickly from <em>interv</em> = 1 to 5 as shows the last row. Calculation up to <em>interv</em> = 40, shows that from 8 to 40 days intervals the average wind coincidences is 1700, which is similar to the above calculated value for a random wind distribution.</p>
+<div class="figure" id="pone-0000210-t002"><div class="img"><a name="pone-0000210-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>LC wind coincidences (<em>coinc</em>) for two days separated by an interval of <em>interv</em> days, <em>δ(coinc)</em> is the difference between consecutive number of coincidences.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t002</span></div><a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>Besides this explicitly observed wind persistence, we assume that some other wind information of the target day is implicit in the previous CWT time series, implicit correlation that will also be uncovered by KNN.</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>It is not easy to choose an optimal number of days for the sequence of daily winds previous to a target day, to have enough correlation in between. We see that the fewer days we take the more persistence effect will condition the correlation, but CWT of more distant days would not condition the target day. The <em>δ(coinc)</em> values of <a href="#pone-0000210-t002">Table 2</a> show that five days seems to mark a wind persistence behaviour border, so we decided to take time series of five consecutive CWT to be correlated with the CWT of the 6<sup>th</sup> day. Then, among the 50 year period, there is a 50% probability to have coincidence between the CWT of the 6<sup>th</sup> day with any one of the five previous days.</p>
+
+
+<h4>CWT data codification</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>The KNN process compares, by similarity, the 27 LC's among them. But their orderly classification hinders such comparison, for example the LC for the wind ANE is 1 whereas LC for the wind AN is 8 and LC for the wind N is 18, although ANE and AN are near situations as well as AN and N are. In order to prevent this we codified each LC by a 3D binary vector (BLC), where the first component (1, 0 or −1) indicates its vorticity or circulation (A, UNDefined or C); the second component indicates the projection of the wind on the N-S direction: 1 for N-wind, 0 for no projection and −1 for S-wind; and the third component is the projection of the wind on the E-W direction: 1 for E-wind, 0 for no projection and −1 for W-wind. In this manner, the 27 3D vectors, shown in <a href="#pone-0000210-t003">Table 3</a> (with the exception of the zero vector), point to the surface of a “wind's cube”, in vertex, face centres and edge centres, as <a href="#pone-0000210-g001">Figure 1</a> shows, where close winds are represented by near points on the cube surface.</p>
+<div class="figure" id="pone-0000210-g001"><div class="img"><a name="pone-0000210-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1. </strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>Winds cube representing the 27 Lamb Classes of CWT, including wind direction and vorticity, codified by 3D binary vectors BLC. The origin (000) represents the total UNDefined wind.</p>
+<span>doi:10.1371/journal.pone.0000210.g001</span></div><div class="figure" id="pone-0000210-t003"><div class="img"><a name="pone-0000210-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Description of the 27 Lamb Codes and their 3D vector codifications used in this work.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t003</span></div><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>For our KNN self-classification, we have coded the LC data in pairs of vectors, where the first vector represents the CWT of the 5 previous days (5LC) and the second vector represents the CWT of the 6<sup>th</sup> day (LC6). The vector codifying 5LC is a (5x3)D vector (from now 5BLC) formed by the union of the five correspondent 3D vectors. The vector codifying LC6 is its 3D binary vector (BLC6). As an example, the LC's for the days 1 to 10 of January 1980 in the Lamb Catalogue are: 0 0 15 25 26 17 0 0 14 0.</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>Then, if January 6<sup>th</sup> is the target day, the predictor/predictant pair 5LC/LC6 is (0 0 15 25 26)/17, and its correspondent pair of binary vectors 5BLC/BLC6 is (1 0 0, 1 0 0, 0 −1 −1, −1 −1 −1, −1 0 −1)/(0 1 −1).</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>We have used CWT data of different periods, the largest of 20 years between 1975 and 1994, with 7300 days. The inhomogeneous distribution of LCs over London (UK) showed in <a href="#pone-0000210-t001">Table 1</a>, can be now explored by analyzing how the observed BLC6 vectors fill the 3D vector space. <a href="#pone-0000210-t004">Table 4</a> shows some estimators of the 3D BLC6 vector dispersion, calculated for three different sets, the 7300 vectors of 20 years, the 360 vectors of one year and, as a reference of completely dispersed set, a 7300 3D vector set of components +1, 0 or −1 generated at random. While the average components, &lt;BLC&gt;, for the random set are almost zero, those of the observed wind vectors show the expected bias, low bias to A and S and high bias to W. The rest of the average estimators described in the <a href="#pone-0000210-t004">Table 4</a> (&lt;σ&gt;, &lt;dist&gt; and &lt;α&gt;) confirms the less dispersion of the observed data with respect to a random vector set.</p>
+<div class="figure" id="pone-0000210-t004"><div class="img"><a name="pone-0000210-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Estimation of the CWT data distribution having into account their BLC codified vector dispersion on 3D space.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t004</span></div>
+
+<h4>Data classification by Kohonen Neural Networks (KNN)</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>In the section of <a href="#s4">METHODS</a> we show in detail the KNN process. In the present section we just describe how KNN works with our CWT data. We first use KNN to project all the 15D 5BLC vectors of the considered period, with a similarity criterion among them, on points of a 2D Kohonen map. In this map, the vicinity among the projections, generally forming clusters, implies the similarity of their respective 15D vectors. This KNN process is called unsupervised training. A supervised training is the projection the (15+3)D union vectors formed by the 15 components of 5BLC and the 3 components of the correspondent BLC6 vectors, by considering the total similarity in between.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>In an unsupervised training, the KNN allows simultaneous memorization of all input 15D 5BLC vectors in a 3D learning matrix. After some iterations, or training epochs, 15D vector-images, similar to the input vectors, cluster in this matrix. When the training converges, a cluster analysis can be done on the vector-images projected on the 2D Kohonen map. To identify each vector-image on the Kohonen map, we label each one by the LC6 observed after the correspondent 5BLC input vector. In this way, if equal LC6 labels cluster on the 2D map we guess that some correlation exists between 5BLC and their BLC6 classes. In fact, we found this correlation in our CWT data, which confirms that KNN is useful to uncover that the 5BLC vectors contain some information of their correspondent LC6.</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>In a supervised training, the 3D learning matrix increases its size to contain the vector-images of the (15+3)D 5BLC/BLC6 input vectors, this matrix will be later used for prediction purpose. Once the 5BLC vs. BLC6 correlation is confirmed, it is justified to have the BLC6 information into account for the 5BLC classification, which gives a more resolved Kohonen map. The supervised-trained 3D matrix and its correspondent Kohonen map, give then information about the most probable CWT sequences before each one of the 27 CWT's. The probable CWT sequences are the 15D imaging vector in the matrix corresponding to the desired LC6 type on the Kohonen map.</p>
+<a id="article1.body1.sec2.sec3.p4" name="article1.body1.sec2.sec3.p4"></a><p>This 5BLC/BLC6 correlation implicit in the 3D trained matrix for a large period, can be used to predict the CWT of one target day from the CWT sequence of the previous five days, for a different test period (see in <a href="#s4">METHODS</a>). For this, we have to assume, and in fact we prove, that similar CWT time series of the test period can also be found during the training period. Note that, in order to increase the probability of this event, we take a long training period of twenty years before to the one year test period. The prediction is done by looking for the image vector most similar to our predictor 5BLC sequence in the predictor part of supervised-trained 3D matrix (the distance between both 15D vectors is the localization error <em>δ_loc)</em>. Then, the correspondent predictant part of the vector is the predicted CWT for the target day (the distance between this 3D predictant vector and the actual observed BLC6 vector is the prediction error <em>δ_pred</em>).</p>
+<a id="article1.body1.sec2.sec3.p5" name="article1.body1.sec2.sec3.p5"></a><p>We have seen however that the clustering of 15D-5BLC vectors in the unsupervised Kohonen map or the clustering of 18D-5BLC/BLC6 vectors in the supervised map, are far from perfect if we expected a map just with 27 separate clusters for the 27 classes of LC6. We have instead overlapped clusters indicating a diffuse 5BLC/BLC6 correlation, although we realized that some significant clustering and hence correlation exist. The <a href="#pone-0000210-g002">Figure 2</a> shows the Kohonen maps, one unsupervised and the other supervised for the 726 5BLC/BLC6 vectors during 1992–93 after 4000 training epochs. Both maps are 2D-periodic and their cluster positions cannot be related as they correspond to two independent trainings. The maps are 50×50 size which give 3.4 points per input data and for clarity we only show the labels of the most populated LC's (A = 0, C = 20 and W = 16).</p>
+<div class="figure" id="pone-0000210-g002"><div class="img"><a name="pone-0000210-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2. </strong></p><a id="article1.body1.sec2.sec3.fig1.caption1.p1" name="article1.body1.sec2.sec3.fig1.caption1.p1"></a><p>The 50×50 Kohonen maps of the unsupervised clustering (left) and of the supervised clustering (right) of the 5BLC vectors during 1992–93. For clarity reason, only the labels of the most populated LC classes A (black), C (grey) and W (white), are shown. Self-aggregations of equal LC6 labels are amplified by supervising. A given LC spreads on some clusters each one corresponding to a cluster of similar 5LC sequences.</p>
+<span>doi:10.1371/journal.pone.0000210.g002</span></div><a id="article1.body1.sec2.sec3.p6" name="article1.body1.sec2.sec3.p6"></a><p>The maps don't show random distributions but rather we see several diffused clusters per class with better resolution in the supervised map. However, the maps indicate that similar 5BLC vectors in a cluster can precede different LC6 or that one LC6 can be preceded by different 5BLC clusters. Both effects can be reduced by smoothing the trained matrix which will also smooth the LC distribution on the Kohonen map (see in <a href="#s4">METHODS</a>). In the same way, in order to find in the map the most representative clusters of a LC6, it is useful to calculate for each LC its density map d(i,j). This is done by counting at each point (i,j) the number of LC's of this class in an area around the point (also including the overlapped LC6's) in the Kohonen map.</p>
+<a id="article1.body1.sec2.sec3.p7" name="article1.body1.sec2.sec3.p7"></a><p>The diffuse correlation between 5BLC and LC6 classes hinder a direct interpretation of the Kohonen map in terms to evaluate the self aggregation of LC6 classes in clusters, with the parallel aggregation of their correspondent 5BLC classes. In fact, the more defined is the 5BLC/LC6 correlation, the more defined becomes the self aggregation of each LC6 in terms of few isolated and compact clusters. A measure of these cluster properties can be done in the 27×27 normalized neighbourhood matrix VN3(i,j) among all LC6's on the 2D map (see <a href="#pone-0000210-g003">Figures 3</a> and <a href="#pone-0000210-g004">4</a> for matrices of unsupervised and supervised trainings with 20 years data). We show in <a href="#s4">METHODS</a> how the matrix is calculated and how an aggregation factor can be defined for each LC6, which should be greater than one for a significant LC6 aggregation.</p>
+<div class="figure" id="pone-0000210-g003"><div class="img"><a name="pone-0000210-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3. </strong></p><a id="article1.body1.sec2.sec3.fig2.caption1.p1" name="article1.body1.sec2.sec3.fig2.caption1.p1"></a><p>Neighbourhood matrix of LC6 classes, with rounded values of VN3(i,j)×100, for the non supervised Kohonen map in the period 1975–94, where W has been smoothed three times. The non-zero values are coloured to show the closer classes on the map. In the first column are the aggregation factors for each LC, in the second column the LC6 numeration of <a href="#pone-0000210-t003">Table 3</a>.</p>
+<span>doi:10.1371/journal.pone.0000210.g003</span></div><div class="figure" id="pone-0000210-g004"><div class="img"><a name="pone-0000210-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4. </strong></p><a id="article1.body1.sec2.sec3.fig3.caption1.p1" name="article1.body1.sec2.sec3.fig3.caption1.p1"></a><p>Neighbourhood matrix of LC6 classes, calculated as that of <a href="#pone-0000210-g003">Figure 3</a>, but for the Kohonen map after supervising the training with the CWT of the 6<sup>th</sup> days.</p>
+<span>doi:10.1371/journal.pone.0000210.g004</span></div>
+
+<h4>5BLC/BLC6 vector correlation</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>Although the contribution of the 3D-BLC6 vectors in the supervised training of the learning matrix W is only 1/6 of the input vectors 18D−(5BLC+BLC6), it will produce some bias in the classification. Therefore, in order to prevent undesired artificial bias, it is necessary to ensure that significant correlation exists between both vector sets 5BLC and BLC6 before proceeding with the supervised training. On the other hand if that correlation exists, it would be justified to supervise the training in order to amplify that correlation, which will allow a further improvement on the LC6 prediction.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>We show in this section several evidences supporting 5BLC/BLC6 correlation. The first one, shown in the previous section, is that the 15D 5BLC vectors of 1992–93 are self-classified, after unsupervised training, by their corresponding LC6 labels. Although the correlation is diffuse, the aggregation factors for LC = (30, 20, 16), in the Kohonen map of <a href="#pone-0000210-g002">Figure 2</a>, are respectively (2.3, 1.5 1.9) and their average value for all 27 classes is 2.4, being these values significantly greater than 1 (the average aggregation factor for a random distribution of classes on the map). The second evidence is that the above training for 1992_93 supervised by their BLC6 vectors amplifies that implicit correlation, as shows <a href="#pone-0000210-g002">Figure 2</a>, improving the above aggregation factors to (4.5, 3.3, 4.8) with average of 4.0, double values although the supervising only modifies 1/6 of the training vectors.</p>
+<a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>On the other hand, the 5BLC/BLC6 correlation can be generalized to other periods. Thus, prediction of the 1994 BLC6 vectors from their previous 5BLC, by using the supervised W matrix with 1992_93, gave an average &lt;<em>δ_pred&gt;</em> = 1.25, which decreases to 1.11 by smoothing the matrix indicating that it represents better the 1994 test period. Both errors indicate correlation since they are significantly lower than the average error of 1.54 for a BLC6 prediction by using an untrained or randomly generated W matrix. This random prediction error is almost constant for different random matrices or different BLC6 sets, so we used it to validate prediction errors from trained matrices.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p>As another evidence for 5BLC/BLC6 correlation we did the following test. It is expected that the supervised training would only be effective when the 5BLC vectors contain significant information of their correspondent BLC6 vectors. We confirmed this by supervising the 5BLC's wind sequences of 1992_93 with the non correlated winds of the 36<sup>th</sup> day ahead, BLC36. As expected, the lack of correlation prevented the prediction of BLC36's corresponding to 5BLC's of 1994, giving &lt;<em>δ_pred&gt;</em> = 1.56 (close to the error for a random prediction). Using that ill-biased matrix, the BLC6 corresponding to the 5BLC of 1994 could neither be predicted, giving &lt;<em>δ_pred&gt;</em> = 1.55, which also confirms what it was expected.</p>
+<a id="article1.body1.sec2.sec4.p5" name="article1.body1.sec2.sec4.p5"></a><p>In addition, we found that the increasing of the aggregation factors in the Kohonen map, from unsupervised to supervised training, is much more relevant for longer periods. <a href="#pone-0000210-g003">Figures 3</a> and <a href="#pone-0000210-g004">4</a> show the LC6 neighbourhood matrices for the non-supervised and supervised Kohonen maps, for the period 1975–94 with 7300 input data. In both cases the learned matrices have been smoothed (see in <a href="#s4">METHODS</a>) three times in order to minimize local singularities. We don't show the Kohonen map due to its 162×162 big size necessary to conserve ~3.5 neurons per input data. <a href="#pone-0000210-g003">Figures 3</a> and <a href="#pone-0000210-g004">4</a> also give the individual aggregation factor for each LC, and we note the large influence of supervising on the average aggregation factor, which increases from 2.46 to 8.92 (2.41 to 8.55 by using unsmoothed matrices), twice the effect compared with the 1993–94 training. In fact, 7300 5BLC input data represent 10 times better the possible series of 1995, than the 726 input data of 1992–93 the series of 1994. Note that the possible combinations of the 27 LC's among 5 days is quite big (27H5≈170000), although many combinations are very improbable.</p>
+<a id="article1.body1.sec2.sec4.p6" name="article1.body1.sec2.sec4.p6"></a><p>Besides the LC aggregation factors, the neighbourhood matrix gives more local valuable information. If we colour for growing values the elements of the matrix, we get a repetitive pattern in both <a href="#pone-0000210-g003">Figures 3</a> and <a href="#pone-0000210-g004">4</a>. The values on the main diagonal VN3(i,i) show the aggregation of equal LC6's, the values of VN3(i,j) with j close to i show the aggregation between different but close BLC's having the same vorticity (the proximity should be interpreted on the winds cube). In addition there are other parallel diagonals of significant values at periods of 8 LC's showing the aggregation of also close LC's in the winds cube but with different vorticity. According to the aggregation factors, the rather diffuse neighbourhood matrix of the unsupervised training becomes sharper by supervising the training, which amplifies the correlation between closer CWT's. For example, the supervised training doesn't cluster together A with C winds, whereas the unsupervised training does.</p>
+<a id="article1.body1.sec2.sec4.p7" name="article1.body1.sec2.sec4.p7"></a><p>The relative very low aggregation factor of 1.5 in the supervised training, corresponds to the 74 days, along 1975–94, with LC = 10 or total undefined (UND) CWT (0,0,0), which cannot be properly normalized with KNN.</p>
+
+
+<h4>Probable wind sequence preceding a given wind class</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Choosing a large training period will include more 5BLC/BLC6 observed samples and, as we showed before, it will also increase the aggregation factor from unsupervised to supervised Kohonen maps. Hence, in order to analyze the most probable sequences of five winds preceding a particular class of wind for the 6<sup>th</sup> day, we have used the supervised trained matrix (smoothed 3 times) and its 162×162 Kohonen map, with 1975–94 wind data and 10000 epochs, which corresponds to the neighbourhood matrix of <a href="#pone-0000210-g004">Figure 4</a>. As we also showed before, there are some reasons to choose the smoothed matrix. First that it increases the aggregation factors of both unsupervised and supervised maps, which means that the smoothed matrix represents better the correlation between the 5BLC/BLC6 training vectors. Second, that the smoothed matrix of the 1992–93 training data represents better the 1994 test data than the unsmoothed one as it gives better prediction, which was also confirmed for the periods 1975–94/1995.</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p>The most significant clusters of each LC6 on the 162×162 Kohonen map, are found on their particular density map up to 5 neighbours (defined above in Data Classification by KNN), where we choose the three largest maxima. The centre of each density maximum corresponds in the smoothed matrix to the most representative wind sequence for the 5 days previous to that LC6 class. The components of this 15D vector are then approached to integer values 1, 0 or −1, to identify the closest 5BLC, which together with the LC6 are shown in <a href="#pone-0000210-t005">Table 5</a>. Of course, the significance of the wind sequences previous to each LC6 depends on their population in the training period, and consequently on their BLC6 adjustment to the matrix, both listed in <a href="#pone-0000210-t006">Table 6</a>.</p>
+<div class="figure" id="pone-0000210-t005"><div class="img"><a name="pone-0000210-t005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t005.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 5.  <span>The three most probable sequences of five daily winds, preceding each LC wind class.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t005</span></div><div class="figure" id="pone-0000210-t006"><div class="img"><a name="pone-0000210-t006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t006.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 6.  <span>Distribution of the 27 LC's of <a href="#pone-0000210-t003">table 3</a>, in row A, among different periods, LC = 10 for completely undefined wind is omitted.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t006</span></div><a id="article1.body1.sec2.sec5.p3" name="article1.body1.sec2.sec5.p3"></a><p>As expected, considerable wind persistence is observed in <a href="#pone-0000210-t005">Table 5</a>, and it is important to remember here that the classes A and C, with strong wind persistence, can be quite biased as a result of considering daily average winds.</p>
+<a id="article1.body1.sec2.sec5.p4" name="article1.body1.sec2.sec5.p4"></a><p>It is also important to note that the wind sequences of <a href="#pone-0000210-t005">Table 5</a> are not necessarily observed sequences in 1975–94. In fact they were initially their image vectors (close to the observed sequences) but then were averaged by smoothing and later approximated to integer values to the closest observed wind sequence. In any case, <a href="#pone-0000210-t005">Table 5</a> gives the most probable wind sequences previous to a given LC, considering the 1975–94 period. Besides, we will see in the next section that the localization errors of the five wind sequences among the test set of 1995 or among the training set of1975–94, on the smoothed matrix trained with 1975–94, are similar (see <a href="#pone-0000210-t007">Table 7</a>), indicating that this matrix represents both periods. This fact, emphasize the impact of the training set size on the prediction of the test set. Hence, <a href="#pone-0000210-t005">Table 5</a> could be generalized for other periods, such as 1995, not included in the training.</p>
+<div class="figure" id="pone-0000210-t007"><div class="img"><a name="pone-0000210-t007" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t007&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t007"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t007&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t007/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t007/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t007/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t007/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t007.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t007/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t007/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t007.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 7.  <span>Wind (BLC6) prediction from the previous (5BLC) five days data wind by Kohonen Neural Networks.</span></strong></p><span>doi:10.1371/journal.pone.0000210.t007</span></div><a id="article1.body1.sec2.sec5.p5" name="article1.body1.sec2.sec5.p5"></a><p>It is also important to note that the 5 days CWT time series, shown in <a href="#pone-0000210-t005">Table 5</a>, are just the result of an objective self-clustering of all observed 5-days time series along 1975–94 together with their observed CWT in the 6<sup>th</sup> day. In fact, the lack of meteorological assumptions to derive <a href="#pone-0000210-t005">Table 5</a>, showing purely statistical analysis of the observed data, makes it valuable for its posterior meteorological interpretation or for testing a prediction model. In fact, it is known that atmospheric circulations are patterns repeated over periods of time and hence they are often predictable.</p>
+<a id="article1.body1.sec2.sec5.p6" name="article1.body1.sec2.sec5.p6"></a><p>Some analysis could be done on <a href="#pone-0000210-t005">Table 5</a>. For example, it is interesting to show the vorticity persistence, that is, the distribution of vorticities types among the 5 days previous to each vorticity type of the 6<sup>th</sup> day. Thus, previous to A there are 73A, 29C and 33UNDef., previous to C 17A, 65C and 53UNDef., and previous to undefined vorticity there are 33A, 22C and 80UNDef.</p>
+<a id="article1.body1.sec2.sec5.p7" name="article1.body1.sec2.sec5.p7"></a><p>A second analysis of <a href="#pone-0000210-t005">Table 5</a> would be to identify the time series on the winds cube, giving a 3D graphical representation of the circulation variation among these five days.</p>
+<a id="article1.body1.sec2.sec5.p8" name="article1.body1.sec2.sec5.p8"></a><p>A third more difficult analysis of <a href="#pone-0000210-t005">Table 5</a> would be to get, from the evolution among five days of the CWT in a point (London), some information about the 2D circulation map evolution responsible of that CWT time series. For a point in the Northern Hemisphere the winds rotate around an Anticyclone in a clockwise manner, while the rotation is counter clockwise around a Cyclone. Then, if we assume the simple case of circular shaped Anticyclone or Cyclone causing wind on a point P, from the direction of this wind one could estimate the situation of the centres of these A or C, with respect to P, as shows the first part of <a href="#pone-0000210-t008">Table 8</a>. Now, as an example, let us take from <a href="#pone-0000210-t005">Table 5</a> the most probable wind sequence, from the fifth to the first day before the target day with AN: A SW CSW C NE. Then, according to <a href="#pone-0000210-t008">Table 8</a>, the situation of the centres of A and/or C, with respect to P, would be for the 5<sup>th</sup> day before (A) an A centred on P, for the 4<sup>th</sup> day before (SW) an A centred to the SE of P and a C centred to the NW of P, and so on as it is shown in the second part of <a href="#pone-0000210-t008">Table 8</a>, which shows a continuous displacement of A and C, across P, towards SE direction.</p>
+<div class="figure" id="pone-0000210-t008"><div class="img"><a name="pone-0000210-t008" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t008&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.t008"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.t008&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t008/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t008/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t008/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t008/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t008.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.t008/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.t008/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.t008.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 8.  <span>Above, the probable situation of an Anticyclone or Cyclone, with respect to a point P receiving their wind. Below, as an example, the probable evolution of the 2D circulation map previous to a day with CWT = AN</span></strong></p><span>doi:10.1371/journal.pone.0000210.t008</span></div>
+
+<h4>Prediction of wind direction and vorticity for a given day from wind data of the previous five days</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>We select for prediction purpose the 20 years (1975–94) large training period because the aggregation of CWT's in the Kohonen map shows higher correlation between 5BLC/BLC6 input pairs, and because the CWT time series of the next year, taken as test period, are well represented in that training period. After 10000 epochs of supervised training with the period 1975–94, the 5BLC/BLC6 input vectors are adjusted to their correspondent vector images in the matrix, as shows <a href="#pone-0000210-t007">Table 7</a> under &lt;<em>δ_loc</em>&gt; and &lt;<em>δ_pred</em>&gt; columns, which obviously get worse by smoothing the matrix since the process adjusted the unsmoothed matrix. Note that in this case both localization and prediction mean just adjustments. The <a href="#pone-0000210-t007">Table 7</a> also shows observed/predicted wind coincidences, errors in vorticity and angle errors in wind directions. The unsupervised learning matrix with 1975–94, which is not in <a href="#pone-0000210-t007">Table 7</a>, gives a 5BLC localization error of 0.22, lower than that of supervised learning, as expected. <a href="#pone-0000210-t006">Table 6</a> shows the number of days per class and the &lt;<em>δ_pred&gt;</em> adjustment per class, which is better for the most populated classes. Of course, these “prediction errors” apply to the most probable wind sequences previous to each LC shown in <a href="#pone-0000210-t005">Table 5</a>, as both deal with the same smoothed trained matrix.</p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>The supervised trained matrix is then used for a real BLC6 prediction from their previous 5BLC, but in a test period (1995) not used in the training. Now, the generalization of the learning to a different period is tested by comparing the known BCL6 winds of 1995 with the predicted ones. For this process, we are assuming both, that the 1995 5BLC vectors are represented enough in the learned matrix with 1975–94, and that there is similar 5BLC/BLC6 correlation in both periods. In fact, <a href="#pone-0000210-t006">Table 6</a> shows that the distribution of CWT's during 1995 is similar to that for 1992–93 and 1975–94. It also shows that the prediction errors per class are lowest for the most populated classes. The total UNDefined winds have been omitted of <a href="#pone-0000210-t006">Table 6</a> and <a href="#pone-0000210-t007">7</a> (74 in 1975–94 and 6 in 1995) as they cannot be well processed by KNN.</p>
+<a id="article1.body1.sec2.sec6.p3" name="article1.body1.sec2.sec6.p3"></a><p>After the analysis of the 1975–94 training period, <a href="#pone-0000210-t007">Table 7</a> shows the localization and (real) prediction errors for the CWT of 1995 together with vorticity and angle partial errors. As we said before, the similar localization error of both five wind sequences in the smoothed matrix, 1.22 for 1975–94 and 1.29 for 1995, indicates that this matrix represents both periods similarly. As expected, the BLC6 real prediction error of 1.10 for 1995 is higher than the adjustment error of 0.48 for the BLC6 of 1975–94, as the later were included in the supervised training.</p>
+<a id="article1.body1.sec2.sec6.p4" name="article1.body1.sec2.sec6.p4"></a><p>In order to test the wind persistence, we calculated again the learning matrix with 1975–94, but this time supervising with the 5th day wind BLC5, instead of with the 6th day wind BLC6. The result is not in <a href="#pone-0000210-t007">Table 7</a>, but it gives a localization error of 0.22 and an average “prediction” error of 0.03 for BLC5's, both smaller than supervising with the 6<sup>th</sup> day. By using the corresponding trained matrix, the prediction error for the actual 6th days in 1975–94 is 1.00, which in fact is close to the average distance among all (7300) observed BLC6 and their previous observed BLC5 (that is the prediction error assuming persistence), due to the high fit of 0.03 or almost coincidence of BLC5's to the matrix. The <a href="#pone-0000210-t007">Table 7</a> shows that the supervised matrix with the 5<sup>th</sup> days is able to predict the winds of the 6th days of 1995 with a similar average prediction error of 0.98, slightly higher than the average error of 0.967 between the observed BLC5 and observed BLC6 in 1995. This proves again that the 5BLC of 1995 are well represented in the 1975–94 matrix and that wind persistence is similar in both periods. The prediction error in this case doesn't improve by smoothing the matrix. <a href="#pone-0000210-t006">Table 6</a> also shows the distribution errors of predicted BLC6 for that training supervised with the 5<sup>th</sup> day winds.</p>
+<a id="article1.body1.sec2.sec6.p5" name="article1.body1.sec2.sec6.p5"></a><p>Hence, just by assuming CWT persistence from one day to the next gives a bit lower average prediction error than by using a KNN trained matrix with 5BLC/BLC6 data of a large period. By supervising with the 5<sup>th</sup> days we reinforce its influence on the training giving similar prediction as persistence. However, although the observed wind persistence is clearly conditioning the average prediction, the data mining by KNN allows individual insight into the wind sequences distribution and the particular wind prediction from the previous wind sequences, beyond the average results, which can be clearly seen in <a href="#pone-0000210-t005">Tables 5</a> and <a href="#pone-0000210-t006">6</a>. On the other hand, there are 246 days in 1995 with different wind as the day before, for which we get &lt;<em>δ_pred&gt;</em> = 1.32 and there are 176 days with different wind to any one of the five previous days, for which we get &lt;<em>δ_pred&gt;</em> = 1.36 (both lower than 1.54 for random prediction). This confirms that there is some hidden CL6 information included in the previous 5BLC aside persistence. However, the principal contribution of the KNN approach to CWT prediction is that, contrary to the standard methods, it just depends of an objective classification of observed CWT data without any other assumption.</p>
+<a id="article1.body1.sec2.sec6.p6" name="article1.body1.sec2.sec6.p6"></a><p>By using the 5BLC/BLC6 training we got an average error for predicted wind directions of 41° (after averaging δα of the fourth row in <a href="#pone-0000210-t007">Table 7</a>). This is the same error as obtained by Ultsch and Röske <a href="#pone.0000210-Ultsch1">[13]</a>, by using KNN with the North Sea wind data plus pressure and temperature data and shorter interval between measurements; with these data, they got a wind direction error of 38° by assuming wind persistence.</p>
+<a id="article1.body1.sec2.sec6.p7" name="article1.body1.sec2.sec6.p7"></a><p>The 5BLC/BLC5 training (fifth row of <a href="#pone-0000210-t005">Table 5</a>), which gave similar results as to assume LC5/LC6 persistence, gives an average error for wind direction of 24°, equal to that given by a conventional wind forecast model in the mentioned South Eastern part of the North Sea, provided by the Marine Weather Service in Hamburg, cited as SWA by Ultsch and Röske <a href="#pone.0000210-Ultsch1">[13]</a>.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>We used the Lamb Catalogue for Circulation Weather Type (CWT) data including daily average of wind direction and its vorticity over London, UK. The 27 Lamb Classes (LC) where codified in 3D binary vectors pointing to vertex, edges and faces of a winds cube, which gives similar close vectors for similar LC's.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Data mining of those codified LC's by Kohonen Neural Networks (KNN) allows self-classification, or objective clustering, of 5LC time series along five consecutive days. In this classification, the correspondent observed LC6 for the sixth day (not included in that classification) become also somehow classified among the 27 LC parallel classes. This means that the 5LC wind series conditions somehow the wind of the last LC6 day, and that the explicit correlation by wind persistence and other unknown implicit correlation are uncovered by the KNN data mining. The choice of five days for time series was suggested by the observed border of persistence decay over five days.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>The 5LC/LC6 correlation allows giving the most probable wind sequences previous to each one of the 27 LC's, in the long KNN trained period of 1975–94, or by generalization, in a different not trained test period like 1995. Inversely, it also allows predicting the probable CWT of a day in the test period, by knowing the precedent CWT sequence. The generalization is possible because the wind sequences of the test periods are enough represented in the training period. This presence of similar wind sequences along different periods causes the KNN prediction skills, the longest the training period the better, although we could also find enough representation of 1994 time series just in the 1992–93 period.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Although the observed wind persistence is an important part of the 5LC/LC6 correlation and strongly conditions the wind prediction, the KNN procedure also allows LC6 prediction for 5LC time series not including that LC6.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>The correlation between 5LC classes and LC6 classes is however somehow diffuse, in fact the Kohonen map shows some overlapping between classes of the 5LC set, and their relation with the LC6 classes is far to be bi-univocal. The self classification of the 5LC data is analyzed by the aggregation of their correspondent LC6 on the Kohonen map. It is shown that this aggregation increases with the length of the training period, and the classes with high aggregation in the training period are the best predicted in the test period.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>Our research shows results for a specific grid time and grid space, where the used daily average data can bias the real observations due to the high variability of the wind. As a result, the number of days with undefined wind direction or vorticity is probably overestimated. Although the computation time could be prohibitive, the use of longer data sets at higher resolution both in time and space would produce more accurate results.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>The presented results are derived from an objective self-clustering of observed CWT time series without any weather model assumption; hence they just reflect what is observed after a mining process. This wind data mining analysis extracts and represents some facts and wind correlations hidden in the observed CWT data which, apart of its informative value, could be complementary for checking the calculated forecasting results with conventional forecasting models.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Methods"></a><h3>Methods</h3>
+<h4>The Kohonen Neural Network</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>
+               <a href="#pone-0000210-g005">Figure 5</a> shows a scheme of the Kohonen Neural Network, Kohonen <a href="#pone.0000210-Kohonen1">[12]</a>. Let us explain how it works with the following example. Assume we want to classify by similarity all the 726 (365+366−5) 5BLC(k) 15D vectors for all the 5 days wind sequences corresponding to the two year period 1992–93. The Kohonen NN is going to project each vector on a point of a 2D Kohonen map, which will be a matrix of 50×50 points (in order to have 3.4 points space for each input vector, as 50×50/726 = 3.4). To the left of <a href="#pone-0000210-g005">Figure 5</a> there is a column with 15 neurons which will be activated by the components of the input vectors 5BLC(k)<sub>L</sub>, where L indicates learning. To the right is the cubic learning matrix (50×50×15) W(i,j,k) of the variable synapses (connection weight) between the 15 input neurons to each one of the 50×50 output neurons, which form the 2D Kohonen matrix represented on the superior face of the cube. The activation of each neuron of the Kohonen matrix is calculated by KOHM(i,j) = ∑<sub>L</sub>5BLC(k)<sub>L</sub>•W(i,j,k). At the beginning of the calculation, the 37500 (50×50×15) elements of W are fractional random values between −1 and 1. Then for each one of the 726 input vectors the training begins: the column vector W(I,J,k) most similar to it is searched, and modifications of the W(I,J,k) elements and (with less intensity) also of W(i,j,k) neighbour columns, are calculated (but not applied) to approximate them to the input vector 5BLC(k)<sub>L</sub>. All (50×50×15) synapses modifications due to the consecutive 726 input vectors are accumulated and then are applied to W(i,j,k), completing one epoch of training. Both, the maximum radius for neighbour W columns and the strength of synapses corrections, decay as the learning advances. After N epochs, the 3D synapses matrix is full trained if the components converge to stable values, and then each input vector 5BLC(k)<sub>L</sub> will have its image, with similar components, in a particular column vector W(I<sub>L</sub>,J<sub>L</sub>,k). The process has given similar components to neighbour columns, establishing therefore a self-classification, by similarity, for the 726 input vectors. The vector images of similar input vectors cluster in the 3D matrix and are mapped on the Kohonen map at the points KOHM(I<sub>L</sub>,J<sub>L</sub>). Each 5BLC vector is identified on the map by a label, for which we use the correspondent observed LC6. For neighbourhood considerations the Kohonen map is built periodic in its two dimensions (all computing programs used in this work were made by us and are available upon request).</p>
+<div class="figure" id="pone-0000210-g005"><div class="img"><a name="pone-0000210-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000210" data-uri="info:doi/10.1371/journal.pone.0000210.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000210.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000210.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000210.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000210.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5. </strong></p><a id="article1.body1.sec4.sec1.fig1.caption1.p1" name="article1.body1.sec4.sec1.fig1.caption1.p1"></a><p>Scheme of the Kohonen NN. Each input vector 5BLC(k), on the left, activates every point of the 2D Kohonen map KOHM(i,j) by the 3D synapses matrix W(i,j,k). The values of W(i,j,k) are trained to cluster the input vectors in the self classified 2D Kohonen map.</p>
+<span>doi:10.1371/journal.pone.0000210.g005</span></div><a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>If some aggregation of equal LC6 labels into classes is observed on the map, it means that there is correlation between the 15D 5BLC vectors and their corresponding 3D BLC6. In this case, a classification of these 5BLC vectors together with the corresponding BLC6 vectors will be useful to amplify that correlation. This is a supervised training, where each input vector is formed by the union of the 15+3 components in an 18D vector, the learning matrix W(i,j,k) becomes now of dimension (50×50×18), and the calculation proceeds like the non-supervised training.</p>
+<a id="article1.body1.sec4.sec1.p3" name="article1.body1.sec4.sec1.p3"></a><p>If the unsupervised training converges, the image column vectors W(I<sub>L</sub>,J<sub>L</sub>,k) become almost coincident with its corresponding 5BLC(k)<sub>L</sub>, and the same thing happens in the supervised training among the last three components of W(I<sub>L</sub>,J<sub>L</sub>,k<sub>16–18</sub>) with the corresponding components of BLC6(k)<sub>L</sub>. We call &lt;<em>δ_loc</em>&gt; (localization error) the averaged value of the distances among the learning vectors 5BLC(k)<sub>L</sub> and their images W(I<sub>L</sub>,J<sub>L</sub>,k<sub>1–15</sub>), and &lt;<em>δ_pred</em>&gt; (‘prediction’ error) the averaged value among the distances between BLC6(k)<sub>L</sub> and W(I<sub>L</sub>,J<sub>L</sub>,k<sub>16–18</sub>). Although in this case <em>δ_pred</em> is just an adjusting error as BLC6(k)<sub>L</sub> were implied in the W learning.</p>
+<a id="article1.body1.sec4.sec1.p4" name="article1.body1.sec4.sec1.p4"></a><p>Assuming deterministic rules for wind evolution, or that similar wind time series can be found in different periods, the knowledge of a training period could be used to predict winds in a different test period. Thus, the learned matrix W(i,j,k) obtained by a supervised training with data from 1992_93, can be used to predict, for the test year 1994, the 360 3D wind vectors, BLC6<sub>T</sub>, from their corresponding 15D wind vectors 5BLC<sub>T</sub> of the previous five days. To do this, for a given 5BLC<sub>T</sub>(k) vector, we look in the above W(i,j,k) for the more similar column vector W(I<sub>L</sub>,J<sub>L</sub>,k<sub>1–15</sub>) and then, the last three components W(I<sub>L</sub>,J<sub>L</sub>,k<sub>16–18</sub>) of that column will be the components of the corresponding predicted vector for the observed BLC6<sub>T</sub> in 1994 (by using our 1992_93 data knowledge). Thus, the predicted LC6<sub>T</sub> will usually be, on the Kohonen map, close or included into a previous self-classified cluster of similar LC6<sub>L</sub> classes. The average localization error for 5BLC<sub>T</sub> shows how the test data are represented in the learned matrix. The ‘prediction’ errors are now real prediction since the test period was not included in the matrix training.</p>
+
+
+<h4>The learning conditions of the KNN</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>In the learning process itself, there are some control parameters such as the number of neurons in the Kohonen map (<em>numK</em>) or its size, and the optimal number of learning epochs (<em>numE</em>). For example, Ultsch and Röske <a href="#pone.0000210-Ultsch1">[13]</a> recommended <em>numK</em> = 10×<em>numV</em> and <em>numE</em> = 10×√<em>numV</em>, where <em>numV</em> is the number of training vectors. But we didn't use that control since we have a large <em>numV</em> = 7300 for 20 years, which would produce a too long calculation. We decided instead to use a 162×162 map, allowing 3.4 neurons per learning vector and we needed <em>numE</em> = 10000 epochs to reach convergence in the learning matrix.</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>Another fact to consider is the possibility to have over-fitting during the training, this occurs when due to an excess of epochs, the net loses its generalization capability. Over-fitting is detected when the prediction error for test vectors (not included in the training) stops decreasing during the epochs, while the error for the learning vectors still decreases. In our case we could not observe any over-fitting along the different trainings.</p>
+
+
+<h4>Smoothing matrix W</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>In order to minimize the local singularities on the Kohonen map, the learning matrix can be smoothed to obtain a Kohonen map with the most representative clusters. The smoothed WS(i,j,k) matrix is obtained by averaging each k column of W(i,j,k) with their neighbouring columns as follows: WS(I,J,k) = [16<em>sm</em>
+               <sup>2</sup>&lt;W(I”,J”,k)&gt;+8<em>sm</em>&lt;W(I′,J′,k)&gt;+W(I,J,k)]/(16<em>sm</em>
+               <sup>2</sup>+8<em>sm</em>+1), where WS(I,J,k) is a column vector in the smoothed matrix, W(I,J,k) is the column in the trained matrix, &lt;W(I′,J′,k)&gt; is the average of the first 8 neighbour columns around, &lt;W(I”,J”,k)&gt; is the average of the 16 second neighbour columns, and <em>sm</em> is a weight factor. We tried different <em>sm</em> values and selected <em>sm</em> = 2/3 as more convenient.</p>
+
+
+<h4>Neighbourhood matrix</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>We found that a way of analyzing the clusters of LC6 classes on the Kohonen map is by calculating its 27×27 neighbourhood matrix V(i,j). For all points of the map occupied by a particular LC6 = i, we add in V(i,i) their neighbours with the same LC6, and in V(i,j) their neighbours with different LC6 = j, keeping in mind the periodicity of the map. This way, for a given vicinity radius on the map (at radius = 1 there are 8 points), a symmetrical neighbourhood matrix V(i,j) is calculated. However, as the number N<sub>i</sub> of days for each LC class is different, we normalize the matrix to VN(i,j) = V(i,j)/(Ni×Nj). Then, we consider the value VN(i,i)/&lt;VN(i,j)&gt; for each LC6, as its aggregation measure on the map for a given vicinity radius (although may be LC6's spread on different clusters). Values of VN(i,i)/&lt;VN(i,j)&gt; greater than one means significant aggregation, hence significant self-classification for that LC6. Finally, for a better weight of the aggregation measure, we have accumulated in VN3(i,j), 3 times the first neighbours, 2 times the seconds and 1 time the thirds, then, VN3(i,i)/&lt;VN3(i,j)&gt; was the aggregation factor used in this work.</p>
+
+</div>
+
+
+
+<div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: JF CF. Performed the experiments: JF CF. Analyzed the data: JF CF. Contributed reagents/materials/analysis tools: JF CF. Wrote the paper: JF CF.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000210-Hulme1" id="pone.0000210-Hulme1"></a>Hulme M, Briffa KR, Jones PD, Senior CA (1993) Validation of GCM control simulations using indices of daily airflow types over the British Isles. 
+                  <em>Climate Dynamics</em>
+                 9(2): 95–105.  <ul class="find" data-citedArticleID="930152"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Validation+of+GCM+control+simulations+using+indices+of+daily+airflow+types+over+the+British+Isles.&amp;auth=&amp;atitle=Validation+of+GCM+control+simulations+using+indices+of+daily+airflow+types+over+the+British+Isles." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Validation+of+GCM+control+simulations+using+indices+of+daily+airflow+types+over+the+British+Isles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Validation+of+GCM+control+simulations+using+indices+of+daily+airflow+types+over+the+British+Isles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000210-Kretzschmar1" id="pone.0000210-Kretzschmar1"></a>Kretzschmar R, Eckert P, Cattani D (2003) Neural Network Classifiers for Local Wind Prediction. 
+                  <em>Journal of Applied Meteorology</em>
+                 43(5): 727–738.  <ul class="find" data-citedArticleID="930160"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Neural+Network+Classifiers+for+Local+Wind+Prediction.&amp;auth=&amp;atitle=Neural+Network+Classifiers+for+Local+Wind+Prediction." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Neural+Network+Classifiers+for+Local+Wind+Prediction." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Neural+Network+Classifiers+for+Local+Wind+Prediction.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000210-Marzban1" id="pone.0000210-Marzban1"></a>Marzban C (1998) A Neural Network for Damaging Wind Prediction. 
+                  <em>Weather and Forecasting</em>
+                 13(1): 151–163.  <ul class="find" data-citedArticleID="930166"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+Neural+Network+for+Damaging+Wind+Prediction.&amp;auth=&amp;atitle=A+Neural+Network+for+Damaging+Wind+Prediction." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Neural+Network+for+Damaging+Wind+Prediction." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Neural+Network+for+Damaging+Wind+Prediction.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000210-Lamb1" id="pone.0000210-Lamb1"></a>Lamb HH (1950) Types and spells of weather around the year in the British Islands. 
+                  <em>Quaterly Journal of the Royal Meteorological Society</em>
+                 76: 393–438.  <ul class="find" data-citedArticleID="930162"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Types+and+spells+of+weather+around+the+year+in+the+British+Islands.&amp;auth=&amp;atitle=Types+and+spells+of+weather+around+the+year+in+the+British+Islands." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Types+and+spells+of+weather+around+the+year+in+the+British+Islands." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Types+and+spells+of+weather+around+the+year+in+the+British+Islands.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000210-Lamb2" id="pone.0000210-Lamb2"></a>Lamb HH (1972) British Isles weather types and a register of daily sequence of circulation patterns, 1861–1971. 
+                  <em>Geophysical Memoirs</em>
+                 116:   <ul class="find" data-citedArticleID="930164"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=British+Isles+weather+types+and+a+register+of+daily+sequence+of+circulation+patterns%2C+1861%26%23x2013%3B1971.&amp;auth=&amp;atitle=British+Isles+weather+types+and+a+register+of+daily+sequence+of+circulation+patterns%2C+1861%26%23x2013%3B1971." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=British+Isles+weather+types+and+a+register+of+daily+sequence+of+circulation+patterns%2C+1861%26%23x2013%3B1971." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22British+Isles+weather+types+and+a+register+of+daily+sequence+of+circulation+patterns%2C+1861%26%23x2013%3B1971.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000210-Jenkinson1" id="pone.0000210-Jenkinson1"></a>Jenkinson AF, Collison FP (1977) An initial climatology of gales over the North Sea. 
+                  <em>Technical report, Synoptic Climatology Branch Memorandum No. 62,</em>
+               . Meteorological Office. Bracknell.  <ul class="find-nolinks"></ul></li><li><span class="label">7.
+              </span><a name="pone.0000210-Jones1" id="pone.0000210-Jones1"></a>Jones PD, Hulme M, Briffa KR (1993) A comparison of Lamb circulation types with an objective classification scheme. 
+                  <em>International Journal of Climatology</em>
+                 13: 655–663.  <ul class="find" data-citedArticleID="930156"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+comparison+of+Lamb+circulation+types+with+an+objective+classification+scheme.&amp;auth=&amp;atitle=A+comparison+of+Lamb+circulation+types+with+an+objective+classification+scheme." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comparison+of+Lamb+circulation+types+with+an+objective+classification+scheme." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comparison+of+Lamb+circulation+types+with+an+objective+classification+scheme.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000210-Cawley1" id="pone.0000210-Cawley1"></a>Cawley GC, Dorling SR (1996) Reproducing a subjective classification scheme for atmospheric circulation patterns over the United Kingdom using a neural network. 
+                  <em>Proceedings of the International Conference on Artificial Neural Networks ICANN-96</em>
+                281–286.  <ul class="find" data-citedArticleID="930146"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Reproducing+a+subjective+classification+scheme+for+atmospheric+circulation+patterns+over+the+United+Kingdom+using+a+neural+network.&amp;auth=&amp;atitle=Reproducing+a+subjective+classification+scheme+for+atmospheric+circulation+patterns+over+the+United+Kingdom+using+a+neural+network." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reproducing+a+subjective+classification+scheme+for+atmospheric+circulation+patterns+over+the+United+Kingdom+using+a+neural+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reproducing+a+subjective+classification+scheme+for+atmospheric+circulation+patterns+over+the+United+Kingdom+using+a+neural+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000210-Briffa1" id="pone.0000210-Briffa1"></a>Briffa KR (1995)  The simulation of weather types in GCMs: A regional approach to control-run validation. In: von Storch H, Navarra A, editors. 
+                  <em>Analysis of Climate Variability</em>,. Springer. Berlin: pp. 122–138.  <ul class="find-nolinks"></ul></li><li><span class="label">10.
+              </span><a name="pone.0000210-Chen1" id="pone.0000210-Chen1"></a>Chen D (2000) A Monthly Climatology for Sweden and its Application to a Winter Temperature Case Study. 
+                  <em>International Journal of Climatology</em>
+                 20: 1067–1076.  <ul class="find" data-citedArticleID="930148"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+Monthly+Climatology+for+Sweden+and+its+Application+to+a+Winter+Temperature+Case+Study.&amp;auth=&amp;atitle=A+Monthly+Climatology+for+Sweden+and+its+Application+to+a+Winter+Temperature+Case+Study." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Monthly+Climatology+for+Sweden+and+its+Application+to+a+Winter+Temperature+Case+Study." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Monthly+Climatology+for+Sweden+and+its+Application+to+a+Winter+Temperature+Case+Study.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000210-Davies1" id="pone.0000210-Davies1"></a>Davies TD, Dorling SR, Pierce CE, Bathelmie RJ, Farmer G (1991) The meteorological control on the anthropogenic ion content of precipitation at three sites in the UK: The utility of Lamb Weather Types. 
+                  <em>International Journal of Climatology</em>
+                 11: 795–807.  <ul class="find" data-citedArticleID="930150"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+meteorological+control+on+the+anthropogenic+ion+content+of+precipitation+at+three+sites+in+the+UK%3A+The+utility+of+Lamb+Weather+Types.&amp;auth=&amp;atitle=The+meteorological+control+on+the+anthropogenic+ion+content+of+precipitation+at+three+sites+in+the+UK%3A+The+utility+of+Lamb+Weather+Types." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+meteorological+control+on+the+anthropogenic+ion+content+of+precipitation+at+three+sites+in+the+UK%3A+The+utility+of+Lamb+Weather+Types." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+meteorological+control+on+the+anthropogenic+ion+content+of+precipitation+at+three+sites+in+the+UK%3A+The+utility+of+Lamb+Weather+Types.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000210-Kohonen1" id="pone.0000210-Kohonen1"></a>Kohonen T (1995) 
+                  <em>Self-organizing maps</em>,. Springer-Verlag, Series in Information Sciences, vol. 30. Berlin.  <ul class="find-nolinks"></ul></li><li><span class="label">13.
+              </span><a name="pone.0000210-Ultsch1" id="pone.0000210-Ultsch1"></a>Ultsch A, Röske F (2002) Self-organizing feature maps predicting sea levels. 
+                  <em>Information Sciences</em>
+                 144: 91–125.  <ul class="find" data-citedArticleID="930168"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Self-organizing+feature+maps+predicting+sea+levels.&amp;auth=&amp;atitle=Self-organizing+feature+maps+predicting+sea+levels." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Self-organizing+feature+maps+predicting+sea+levels." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Self-organizing+feature+maps+predicting+sea+levels.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.XML" value="167444"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.PDF" value="457085"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t001.PNG_L" value="72104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t001.PNG_M" value="76164"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t001.PNG_S" value="3317"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t001.TIF" value="336786"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t001.PNG_I" value="35599"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t002.PNG_L" value="27102"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t002.PNG_M" value="27894"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t002.PNG_S" value="2235"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t002.TIF" value="126876"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t002.PNG_I" value="12520"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g001.PNG_L" value="554558"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g001.PNG_M" value="53905"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g001.PNG_S" value="2530"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g001.TIF" value="704460"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g001.PNG_I" value="19309"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t003.PNG_L" value="116704"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t003.PNG_M" value="120847"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t003.PNG_S" value="4249"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t003.TIF" value="542738"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t003.PNG_I" value="56401"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t004.PNG_L" value="76846"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t004.PNG_M" value="79197"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t004.PNG_S" value="3293"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t004.TIF" value="342514"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t004.PNG_I" value="38182"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g002.PNG_L" value="1128553"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g002.PNG_M" value="51616"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g002.PNG_S" value="2582"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g002.TIF" value="1090356"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g002.PNG_I" value="18800"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g003.PNG_L" value="2438118"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g003.PNG_M" value="61541"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g003.PNG_S" value="2870"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g003.TIF" value="3051714"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g003.PNG_I" value="24315"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g004.PNG_L" value="2055324"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g004.PNG_M" value="72081"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g004.PNG_S" value="2909"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g004.TIF" value="2704986"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g004.PNG_I" value="26427"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t005.PNG_L" value="231670"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t005.PNG_M" value="92365"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t005.PNG_S" value="6026"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t005.TIF" value="1240832"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t005.PNG_I" value="41490"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t006.PNG_L" value="116130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t006.PNG_M" value="44564"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t006.PNG_S" value="2824"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t006.TIF" value="495490"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t006.PNG_I" value="20202"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t007.PNG_L" value="204452"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t007.PNG_M" value="75051"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t007.PNG_S" value="2871"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t007.TIF" value="819040"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t007.PNG_I" value="32601"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t008.PNG_L" value="45533"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t008.PNG_M" value="47043"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t008.PNG_S" value="2896"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t008.TIF" value="248356"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.t008.PNG_I" value="22620"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g005.PNG_L" value="186326"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g005.PNG_M" value="18972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g005.PNG_S" value="1816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g005.TIF" value="255956"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000210.g005.PNG_I" value="7383"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000210&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000210" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000210&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000210&volume=&issue=&title=Wind Data Mining by Kohonen Neural Networks&author_name=Jos%C3%A9%20Fayos%2C%20Carolina%20Fayos&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000210" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210&amp;t=Wind%20Data%20Mining%20by%20Kohonen%20Neural%20Networks" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210&title=Wind%20Data%20Mining%20by%20Kohonen%20Neural%20Networks&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210&amp;title=Wind%20Data%20Mining%20by%20Kohonen%20Neural%20Networks" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000210&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Wind Data Mining by Kohonen Neural Networks';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000210';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Wind%20Data%20Mining%20by%20Kohonen%20Neural%20Networks http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000210" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000210" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Catalogs%22" title="Search for articles in the subject area:'Catalogs'"><div class="flagText">Catalogs</div></a>
+              <div data-categoryid="6909" data-articleid="23258"
+                   data-categoryname="Catalogs"
+                   class="flagImage" title="Flag 'Catalogs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Data+mining%22" title="Search for articles in the subject area:'Data mining'"><div class="flagText">Data mining</div></a>
+              <div data-categoryid="24055" data-articleid="23258"
+                   data-categoryname="Data mining"
+                   class="flagImage" title="Flag 'Data mining' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Forecasting%22" title="Search for articles in the subject area:'Forecasting'"><div class="flagText">Forecasting</div></a>
+              <div data-categoryid="34789" data-articleid="23258"
+                   data-categoryname="Forecasting"
+                   class="flagImage" title="Flag 'Forecasting' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Learning%22" title="Search for articles in the subject area:'Learning'"><div class="flagText">Learning</div></a>
+              <div data-categoryid="20059" data-articleid="23258"
+                   data-categoryname="Learning"
+                   class="flagImage" title="Flag 'Learning' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Neural+networks%22" title="Search for articles in the subject area:'Neural networks'"><div class="flagText">Neural networks</div></a>
+              <div data-categoryid="1931" data-articleid="23258"
+                   data-categoryname="Neural networks"
+                   class="flagImage" title="Flag 'Neural networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Neurons%22" title="Search for articles in the subject area:'Neurons'"><div class="flagText">Neurons</div></a>
+              <div data-categoryid="17179" data-articleid="23258"
+                   data-categoryname="Neurons"
+                   class="flagImage" title="Flag 'Neurons' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Vector+spaces%22" title="Search for articles in the subject area:'Vector spaces'"><div class="flagText">Vector spaces</div></a>
+              <div data-categoryid="33091" data-articleid="23258"
+                   data-categoryname="Vector spaces"
+                   class="flagImage" title="Flag 'Vector spaces' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Weather%22" title="Search for articles in the subject area:'Weather'"><div class="flagText">Weather</div></a>
+              <div data-categoryid="21095" data-articleid="23258"
+                   data-categoryname="Weather"
+                   class="flagImage" title="Flag 'Weather' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=7466'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6500'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3940&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

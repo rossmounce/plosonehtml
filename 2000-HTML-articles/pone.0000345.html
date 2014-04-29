@@ -1,0 +1,940 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Compartmental Architecture and Dynamics of Hematopoiesis</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000345"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000345" />
+
+    <meta name="citation_title" content="Compartmental Architecture and Dynamics of Hematopoiesis"/>
+    <meta itemprop="name" content="Compartmental Architecture and Dynamics of Hematopoiesis"/>
+
+      <meta name="citation_author" content="David Dingli"/>
+            <meta name="citation_author_institution" content="Division of Hematology, Mayo Clinic College of Medicine, Rochester, Minnesota, United States of America"/>
+            <meta name="citation_author_institution" content="Program for Evolutionary Dynamics, Harvard University, Cambridge, Massachusetts, United States of America"/>
+      <meta name="citation_author" content="Arne Traulsen"/>
+            <meta name="citation_author_institution" content="Program for Evolutionary Dynamics, Harvard University, Cambridge, Massachusetts, United States of America"/>
+      <meta name="citation_author" content="Jorge M. Pacheco"/>
+            <meta name="citation_author_institution" content="Program for Evolutionary Dynamics, Harvard University, Cambridge, Massachusetts, United States of America"/>
+            <meta name="citation_author_institution" content="Centro de Física Teórica e Computacional and Departamento de Física da Faculdade de Ciências, Lisboa, Portugal"/>
+
+    <meta name="citation_date" content="2007/4/4"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000345.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e345"/>
+    <meta name="citation_issue" content="4"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Perspectives on the properties of stem cells.; citation_author=EA McCulloch; citation_author=JE Till; citation_journal_title=Nat Med; citation_volume=11; citation_number=1; citation_pages=1026-1028; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Biology of hematopoietic stem cells and progenitors: implications for clinical application.; citation_author=M Kondo; citation_author=AJ Wagers; citation_author=MG Manz; citation_author=SS Prohaska; citation_author=DC Scherer; citation_journal_title=Annu Rev Immunol; citation_volume=21; citation_number=2; citation_pages=759-806; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The biology of hematopoietic stem cells.; citation_author=SJ Morrison; citation_author=N Uchida; citation_author=IL Weissman; citation_journal_title=Annu Rev Cell Dev Biol; citation_volume=11; citation_number=3; citation_pages=35-71; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Allometric scaling of the hematopoietic stem cell pool across mammals.; citation_author=D Dingli; citation_author=JM Pacheco; citation_journal_title=PLoS ONE; citation_volume=1; citation_number=4; citation_pages=e2; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Telomere fluorescence measurements in granulocytes and T lymphocyte subsets point to a high turnover of hematopoietic stem cells and memory T cells in early childhood.; citation_author=N Rufer; citation_author=TH Brummendorf; citation_author=S Kolvraa; citation_author=C Bischoff; citation_author=K Christensen; citation_journal_title=J Exp Med; citation_volume=190; citation_number=5; citation_pages=157-167; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Evidence for a mitotic clock in human hematopoietic stem cells: loss of telomeric DNA with age.; citation_author=H Vaziri; citation_author=W Dragowska; citation_author=RC Allsopp; citation_author=TE Thomas; citation_author=CB Harley; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=91; citation_number=6; citation_pages=9857-9860; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Progenitor cells divide symmetrically to generate new colony-forming cells and clonal heterogeneity.; citation_author=SB Marley; citation_author=JL Lewis; citation_author=MY Gordon; citation_journal_title=Br J Haematol; citation_volume=121; citation_number=7; citation_pages=643-648; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Quantitative measurement of the erythrocytic and granulocytic cells of the marrow and blood.; citation_author=DM Donohue; citation_author=RH Reiff; citation_author=ML Hanson; citation_author=Y Betson; citation_author=CA Finch; citation_journal_title=J Clin Invest; citation_volume=37; citation_number=8; citation_pages=1571-1576; citation_date=1958; " />
+      <meta name="citation_reference" content="citation_title=Kinetics of the formed elements of human blood.; citation_author=CA Finch; citation_author=LA Harker; citation_author=JD Cook; citation_journal_title=Blood; citation_volume=50; citation_number=9; citation_pages=699-707; citation_date=1977; " />
+      <meta name="citation_reference" content="citation_title=Granulocytopoiesis.; citation_author=EP Cronkite; citation_author=TM Fliedner; citation_journal_title=N Engl J Med; citation_volume=270; citation_number=10; citation_pages=1347-1352; citation_date=1964; " />
+      <meta name="citation_reference" content="citation_title=Granulocyte-macrophage progenitors as candidate leukemic stem cells in blast-crisis CML.; citation_author=CH Jamieson; citation_author=LE Ailles; citation_author=SJ Dylla; citation_author=M Muijtjens; citation_author=C Jones; citation_journal_title=N Engl J Med; citation_volume=351; citation_number=11; citation_pages=657-667; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Cell kinetic status of haematopoietic stem cells.; citation_author=MC MacKey; citation_journal_title=Cell Prolif; citation_volume=34; citation_number=12; citation_pages=71-83; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Human haematopoiesis in steady state and following intense perturbations.; citation_author=E Shochat; citation_author=SM Stemmer; citation_author=L Segel; citation_journal_title=Bull Math Biol; citation_volume=64; citation_number=13; citation_pages=861-886; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The complex effect of granulocyte colony-stimulating factor on human granulopoiesis analyzed by a new physiologically-based mathematical model.; citation_author=V Vainstein; citation_author=Y Ginosar; citation_author=M Shoham; citation_author=DO Ranmar; citation_author=A Ianovski; citation_journal_title=J Theor Biol; citation_volume=234; citation_number=14; citation_pages=311-327; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A mathematical model of hematopoiesis: II. Cyclical neutropenia.; citation_author=C Colijn; citation_author=MC Mackey; citation_journal_title=J Theor Biol; citation_volume=237; citation_number=15; citation_pages=133-146; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A mathematical model of hematopoiesis–I. Periodic chronic myelogenous leukemia.; citation_author=C Colijn; citation_author=MC Mackey; citation_journal_title=J Theor Biol; citation_volume=237; citation_number=16; citation_pages=117-132; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A mathematical model of haemopoiesis as exemplified by CD34 cell mobilization into the peripheral blood.; citation_author=MN Obeyesekere; citation_author=RW Berry; citation_author=PP Spicer; citation_author=M Korbling; citation_journal_title=Cell Prolif; citation_volume=37; citation_number=17; citation_pages=279-294; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A mechanistic mathematical model of temozolomide myelosuppression in children with high-grade gliomas.; citation_author=JC Panetta; citation_author=MN Kirstein; citation_author=AJ Gajjar; citation_author=G Nair; citation_author=M Fouladi; citation_journal_title=Math Biosci; citation_volume=186; citation_number=18; citation_pages=29-41; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Leukocyte kinetics in hematologic disorders studied by DNA-phosphorus labeling.; citation_author=RI Walker; citation_author=JC Herion; citation_author=WB Herring; citation_author=JG Palmer; citation_journal_title=Blood; citation_volume=23; citation_number=19; citation_pages=795-810; citation_date=1964; " />
+      <meta name="citation_reference" content="citation_title=The mutation rate in PIG-A is normal in patients with paroxysmal nocturnal hemoglobinuria (PNH).; citation_author=DJ Araten; citation_author=L Luzzatto; citation_journal_title=Blood; citation_volume=108; citation_number=20; citation_pages=734-736; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Clonal populations of hematopoietic cells with paroxysmal nocturnal hemoglobinuria genotype and phenotype are present in normal individuals.; citation_author=DJ Araten; citation_author=K Nafa; citation_author=K Pakdeesuwan; citation_author=L Luzzatto; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=96; citation_number=21; citation_pages=5209-5214; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Peripheral blood progenitor cell mobilisation alters myeloid, but not erythroid, progenitor cell self-renewal kinetics.; citation_author=SB Marley; citation_author=JL Lewis; citation_author=B Zheng; citation_author=RJ Davidson; citation_author=JG Davis; citation_journal_title=Bone Marrow Transplant; citation_volume=27; citation_number=22; citation_pages=241-248; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=(A)Symmetric stem cell replication and cancer.; citation_author=D Dingli; citation_author=A Traulsen; citation_author=F Michor; citation_journal_title=PLoS Computational Biology; citation_number=23; citation_date=2007; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Compartmental Architecture and Dynamics of Hematopoiesis"/>
+    <meta name="twitter:description" content="BackgroundBlood cell formation is maintained by the replication of hematopoietic stem cells (HSC) that continuously feed downstream &ldquo;compartments&rdquo; where amplification and differentiation of cells occurs, giving rise to all blood lineages. Whereas HSC replicate slowly, committed cells replicate faster as they become more differentiated.Methodology/Significant FindingWe propose a multi-compartment model of hematopoiesis, designed on the principle of cell flow conservation under stationary conditions. Cells lost from one compartment due to differentiation are replaced by cells from the upstream compartment. We assume that there is a constant relationship between cell input and output in each compartment and fix the single parameter of the model using data available for granulocyte maturation. We predict that &sim;31 mitotic events separate the HSC from the mature cells observed in the circulation. Besides estimating the number of compartments, our model allows us to estimate the size of each compartment, the rate of cell replication within each compartment, the mean time a given cell type contributes to hematopoiesis, the amplification rate in each compartment, as well as the mean time separating stem-cell replication and mature blood-cell formation.ConclusionsDespite its simplicity, the model agrees with the limited in vivo data available and can make testable predictions. In particular, our prediction of the average lifetime of a PIG-A mutated clone agrees closely with the experimental results available for the PIG-A gene mutation in healthy adults. The present elucidation of the compartment structure and dynamics of hematopoiesis may prove insightful in further understanding a variety of hematopoietic disorders."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000345.g001"/>
+
+  <meta property="og:title" content="Compartmental Architecture and Dynamics of Hematopoiesis" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=8111'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=7398'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=3682&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000345">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000345" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000345&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Compartmental Architecture and Dynamics of Hematopoiesis
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            David Dingli
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:dingli.david@mayo.edu">dingli.david@mayo.edu</a></p>
+
+                <p>Affiliations:
+                  Division of Hematology, Mayo Clinic College of Medicine, Rochester, Minnesota, United States of America, 
+                  Program for Evolutionary Dynamics, Harvard University, Cambridge, Massachusetts, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Arne Traulsen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Program for Evolutionary Dynamics, Harvard University, Cambridge, Massachusetts, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jorge M. Pacheco
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Program for Evolutionary Dynamics, Harvard University, Cambridge, Massachusetts, United States of America, 
+                  Centro de Física Teórica e Computacional and Departamento de Física da Faculdade de Ciências, Lisboa, Portugal
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: April 04, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000345</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000345-g001" data-doi="info:doi/10.1371/journal.pone.0000345" data-uri="info:doi/10.1371/journal.pone.0000345.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000345">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000345" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Blood cell formation is maintained by the replication of hematopoietic stem cells (HSC) that continuously feed downstream “<em>compartments</em>” where amplification and differentiation of cells occurs, giving rise to all blood lineages. Whereas HSC replicate slowly, committed cells replicate faster as they become more differentiated.</p>
+
+
+<h3>Methodology/Significant Finding</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We propose a multi-compartment model of hematopoiesis, designed on the principle of cell flow conservation under stationary conditions. Cells lost from one compartment due to differentiation are replaced by cells from the upstream compartment. We assume that there is a constant relationship between cell input and output in each compartment and fix the single parameter of the model using data available for granulocyte maturation. We predict that ~31 mitotic events separate the HSC from the mature cells observed in the circulation. Besides estimating the number of compartments, our model allows us to estimate the size of each compartment, the rate of cell replication within each compartment, the mean time a given cell type contributes to hematopoiesis, the amplification rate in each compartment, as well as the mean time separating stem-cell replication and mature blood-cell formation.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>Despite its simplicity, the model agrees with the limited <em>in vivo</em> data available and can make testable predictions. In particular, our prediction of the average lifetime of a <em>PIG-A</em> mutated clone agrees closely with the experimental results available for the <em>PIG-A</em> gene mutation in healthy adults. The present elucidation of the compartment structure and dynamics of hematopoiesis may prove insightful in further understanding a variety of hematopoietic disorders.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Dingli D, Traulsen A, Pacheco JM (2007) Compartmental Architecture and Dynamics of Hematopoiesis. PLoS ONE 2(4):
+          e345.
+            doi:10.1371/journal.pone.0000345</p><p><strong>Academic Editor: </strong>Christopher Arendt, Sanofi-Aventis, United States of America</p><p><strong>Received:</strong> February 9, 2007; <strong>Accepted:</strong> February 15, 2007; <strong>Published:</strong> April 4, 2007</p><p><strong>Copyright:</strong> © 2007 Dingli et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The authors have no support or funding to report.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Hematopoiesis is the process for the generation of all cellular blood elements. A continuous supply of cells is necessary to compensate for the loss of cells due to apoptotic senescence or migration out of the circulating compartment. Blood cell formation has at its root hematopoietic stem cells (HSC) that have the dual property of self renewal and the ability to differentiate into all types of blood cells <a href="#pone.0000345-McCulloch1">[1]</a>, <a href="#pone.0000345-Kondo1">[2]</a>, <a href="#pone.0000345-Morrison1">[3]</a>. In an adult human, ~400 HSC <a href="#pone.0000345-Dingli1">[4]</a> are actively contributing to hematopoiesis, replicating at a rate of 1/year <a href="#pone.0000345-Dingli1">[4]</a>, <a href="#pone.0000345-Rufer1">[5]</a>. On the other hand, the average daily bone marrow output in an adult human is ~3.5×10<sup>11</sup> cells <a href="#pone.0000345-Vaziri1">[6]</a>. Conceptually, hematopoiesis has been rationalized as a multi-step process where cell replication and differentiation are coupled with cells moving through successive stages – compartments - of maturation in a series of steps from HSC all the way down to mature blood cells. Hematopoietic cell self-renewal is not restricted to HSC but occurs in cells further downstream, albeit to a lesser extent <a href="#pone.0000345-Marley1">[7]</a>. There is ample evidence to show that as cells become more committed to a specific lineage, they replicate at faster rates up to values of more than once per day <a href="#pone.0000345-Donohue1">[8]</a>, <a href="#pone.0000345-Finch1">[9]</a>, <a href="#pone.0000345-Cronkite1">[10]</a>. Thus hematopoiesis is associated with cells replicating increasingly faster as they undergo both differentiation and amplification.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>In spite of such a clear-cut picture of hematopoiesis, little is known of its architectural and dynamical structure. Namely, there is no unambiguous determination of the number of stages connecting HSC and mature blood cells, let alone how fast cells replicate at each stage and to which degree amplification takes place at each stage. Such a determination has been made exceedingly difficult given the i) disconnect between morphologically distinct cell subsets and the number of divisions that a cell within a given morphologic classification can undergo <a href="#pone.0000345-Donohue1">[8]</a>, <a href="#pone.0000345-Finch1">[9]</a> and ii) the fact that the amplification that occurs in the bone marrow dilutes the progenitor cells making morphologic identification of these cells unfeasible. With few exceptions, many compartment (stage) specific replication rates remain undetermined despite the importance of these parameters, since the size of any compartment and its rate of replication may determine the cells’ susceptibility to malignant transformation <a href="#pone.0000345-Jamieson1">[11]</a>. On the other hand, previous attempts to develop mathematical models of hematopoiesis <a href="#pone.0000345-MacKey1">[12]</a>, <a href="#pone.0000345-Shochat1">[13]</a>, <a href="#pone.0000345-Vainstein1">[14]</a>, <a href="#pone.0000345-Colijn1">[15]</a>, <a href="#pone.0000345-Colijn2">[16]</a>, <a href="#pone.0000345-Obeyesekere1">[17]</a>, <a href="#pone.0000345-Panetta1">[18]</a> have failed to provide such information on the number of compartments, although they suggest an architectural organization comprising from 17 to 30 stages <a href="#pone.0000345-Vaziri1">[6]</a>, <a href="#pone.0000345-MacKey1">[12]</a>, <a href="#pone.0000345-Shochat1">[13]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Here, we develop a model that relies on a single free parameter. Despite its simplicity, the model is capable of providing i) an estimate of the number of distinct compartments, ii) the size of each compartment, iii) the specific replication rate within each compartment, iv) the mean time a given cell type contributes to hematopoiesis, v) the level of amplification which is taking place as cells differentiate and vi) the mean time separating stem-cell replication and mature blood-cell formation.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results and Discussion"></a><h3>Results and Discussion</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>In the following, we use Eqs. <strong>3</strong> and <strong>4</strong> derived in the Methods to explore and test the predictive capacity of our model.</p>
+<a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>During polymorphonuclear leukocyte production, ≈10<sup>10</sup> myeloblasts expand and produce ≈1.4×10<sup>11</sup> myelocytes in 4 steps <a href="#pone.0000345-Donohue1">[8]</a>, <a href="#pone.0000345-Finch1">[9]</a>. With the production of myelocytes, mitosis in the granulocyte lineage ceases and only differentiation occurs in cells further downstream (e.g. metamyelocytes) <a href="#pone.0000345-Walker1">[19]</a>. Hence, from Eq. <strong>4</strong> we find that the ratio of cells in compartment <em>i</em>+1 to cells in compartment <em>i</em> is <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e001&amp;representation=PNG" class="inline-graphic"></span>.</p>
+<a id="article1.body1.sec2.p3" name="article1.body1.sec2.p3"></a><p>The parameter γ defines the net cell amplification between consecutive compartments. For γ = 1 all compartments contain the same number of cells. All larger values of γ imply an exponential growth of compartment sizes. If γ = 2, there is a net doubling of cells from compartment <em>i</em> to <em>i</em>+1.</p>
+<a id="article1.body1.sec2.p4" name="article1.body1.sec2.p4"></a><p>The total number of active HSC in the most primitive compartment (<em>N</em><sub>0</sub>) is ~400 <a href="#pone.0000345-Dingli1">[4]</a>, whereas we have ~3.5×10<sup>11</sup> as the average daily output of the hematopoietic system <a href="#pone.0000345-Vaziri1">[6]</a>. Here we wish to point out that our model does not dissect the branching into the different lineages and we assume that all the lineages behave in the same way. Hence, as the number of cells between two consecutive compartments increases by γ≈1.93, our model predicts that the total number of steps has to be approximately<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e002&amp;representation=PNG" class="inline-graphic"><span class="note">1</span></span><br>Using sequential telomere shortening as a marker of cellular replication <a href="#pone.0000345-Rufer1">[5]</a>, <a href="#pone.0000345-Vaziri1">[6]</a>, it was shown that HSC within compartment <em>N</em><sub>0</sub> replicate approximately once per year. Given that granulocyte precursors can reproduce up to 5 times per day <a href="#pone.0000345-Cronkite1">[10]</a>, for the ratio of replication rates between compartment <em>i</em> and <em>i</em>+1 we find <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e003&amp;representation=PNG" class="inline-graphic"></span>. Finally, since we know γ and <em>r</em>, we can use Eq. (4) and calculate the probability that a cell division leads to differentiation, as <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e004&amp;representation=PNG" class="inline-graphic"></span>. Hence, hematopoiesis can be depicted as in <a href="#pone-0000345-g001">Fig. 1b</a> where from <em>N</em><sub>0</sub>~400 active HSC one reaches a per day output of <em>N</em><sub>31</sub> = 3.5×10<sup>11</sup> cells after 31 stages of replication and amplification. Our results imply that most of the time, when cells in any compartment downstream of the active HSC pool replicate, they are more likely to divide symmetrically and produce 2 differentiated daughter cells than to contribute to the amplification of that compartment. In other words, our model values for ‘<em>r</em>’ and ‘ε’ are consistent with hematopoiesis being associated with an exponential expansion of cells from the HSC up to the mature cells such that, when cells are in the mitotic pool, they replicate at an accelerated rate as they differentiate. Our estimate for ε is also compatible with the observation that progenitor cells can self-renew to a limited extent <a href="#pone.0000345-Marley1">[7]</a>.</p>
+<div class="figure" id="pone-0000345-g001"><div class="img"><a name="pone-0000345-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000345" data-uri="info:doi/10.1371/journal.pone.0000345.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000345.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000345.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000345.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000345.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000345.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000345.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000345.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000345.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1. </strong></p><a id="article1.body1.sec2.fig1.caption1.p1" name="article1.body1.sec2.fig1.caption1.p1"></a><p><strong>a</strong>) During mitosis, the parent cell may give rise to daughter cells that are different from the parent ( probability ε) being transferred downstream or, with probability 1−ε, to daughter cells identical to the parent which contribute to repopulate their own compartment. <strong>b</strong>) Hematopoiesis is maintained by a small group of stem cells that replicate slowly; subsequent steps lead to cell amplification and accelerated replication so that the populations grow exponentially. Contributions of each identified group of cells to hematopoiesis were computed as the weighted average based on the population distribution, being very similar to published estimates (STRC stands for short term repopulating cell, d is time in days and h is time in hours). <strong>c</strong>) The model parameters <em>r</em>, ε are robust to changes in the size of the active stem cell pool.</p>
+<span>doi:10.1371/journal.pone.0000345.g001</span></div><a id="article1.body1.sec2.p5" name="article1.body1.sec2.p5"></a><p>Besides accounting for the multi-step nature of hematopoiesis, for which we predict a number of approximately 31 replication-amplification stages, our model also predicts the specific replication rate and size of each stage. Consequently, we may now test the predictive capacity of our model by analyzing the (unfortunately) scarce information available on hematopoiesis. To this end we evaluated data generated independently from studies on the <em>PIG-A</em> gene which codes for a subunit of the enzyme N-acetylglucosamine transferase. The <em>PIG-A</em> gene accumulates mutations at a normal somatic rate <a href="#pone.0000345-Araten1">[20]</a> and virtually every healthy adult has circulating neutrophils and erythrocytes that have lost surface expression of GPI-anchored proteins such as CD55 and CD59 <a href="#pone.0000345-Araten2">[21]</a>. The frequency of these mutant cells in healthy adults is 11–51/10<sup>6</sup> neutrophils <a href="#pone.0000345-Araten2">[21]</a>. The mutations have to occur in progenitor cells such as CFU-GEMM or further downstream since they persist for variable periods of time and affect more than one lineage.</p>
+<a id="article1.body1.sec2.p6" name="article1.body1.sec2.p6"></a><p>Assuming that, at any time, there is only 1 mutated progenitor, this means that adults have between 20,000 and 100,000 CFU-GEMM. According to our model, this places the CFU-GEMM, 5 to 8 steps downstream from the active HSC. Consequently, we predict that the average time these cells contribute to hematopoiesis will be between 61 and 120 days (longer for the upstream progenitors). This number is in excellent agreement with clinical observation <a href="#pone.0000345-Araten2">[21]</a>. Moreover, our model clearly predicts that individuals with the smaller clone sizes would have the clone detectable for the shorter time interval (on average), as it has to arise later in the system due to its size. This is indeed what has been experimentally observed <a href="#pone.0000345-Araten2">[21]</a>. It is noteworthy that the number of compartments, <em>k</em> = 31 is in agreement with studies where progressive telomere shortening was measured in hematopoietic progenitors and granulocytes, although these were not collected from the same individuals <a href="#pone.0000345-Vaziri1">[6]</a>.</p>
+<a id="article1.body1.sec2.p7" name="article1.body1.sec2.p7"></a><p>Finally, we assess the robustness of the results obtained. To this end, we vary the size of the active stem-cell pool repeating the determination of the parameters <em>r</em> and ε for each value. This is motivated by the fact that this is the only purely theoretical number entering Eq. <strong>1</strong>. <a href="#pone-0000345-g001">Fig. 1c</a> provides compelling evidence of the very weak dependence of the parameters <em>r</em> and ε on the actual size of the active stem-cell pool. Increasing the size up to 10000 (which, in view of the results of <a href="#pone.0000345-Dingli1">[4]</a> might translate into a stem-cell pool devoid of any quiescent reserve) leads to variations of <em>r</em> and ε of only 4.4% and 2.9%, respectively.</p>
+<a id="article1.body1.sec2.p8" name="article1.body1.sec2.p8"></a><p>In conclusion, we provide a simple multi-compartment model of hematopoiesis in which the observed exponential expansion of cells from the active stem cell pool to the mature cells is naturally incorporated. The model predicts the replication rate of the cells in any compartment, the size of each compartment as well as the average time cells spend in a given compartment. The model leads to numbers that fit well the limited clinical data available on humans and makes predictions which, besides being amenable to experimental validation, may provide further insight into the understanding of a variety of hematopoietic disorders. Indeed, knowledge of the size and rate of replication of cells in each compartment allows a more detailed account of the stochastic dynamics associated with myeloid disorders.</p>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Material and Methods"></a><h3>Material and Methods</h3>
+<h4>Model</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>Consider a given compartment <em>i</em> with <em>N<sub>i</sub></em> cells in a total of <em>k</em> compartments (stages of replication). We describe the transfer from compartment <em>i</em> to compartment <em>i+1</em> as a downstream flow of cells. When a cell in this compartment replicates, it produces two daughter cells. With a probability ε, the 2 daughter cells are exported to the downstream compartment <em>i</em>+1, leading to a decrease in the number of cells in compartment <em>i</em> to <em>N<sub>i</sub></em>−1. However, with probability 1−ε, cell replication leads to identical offspring <a href="#pone.0000345-Marley1">[7]</a>, <a href="#pone.0000345-Marley2">[22]</a> that remain in compartment <em>i</em>, such that <em>N<sub>i</sub></em> increases by one (amplification) – see <a href="#pone-0000345-g001">Figure 1</a>.</p>
+<a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>Hence, these two processes change <em>N<sub>i</sub></em> on average by<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e005&amp;representation=PNG" class="inline-graphic"><span class="note">2</span></span><br>We assume that ε is the same for all compartments. In such a scenario, if cell loss from a given compartment due to export is exactly balanced by the gain from cell division (ε = 0.5), we come to the biologically implausible situation where cells from the upstream compartment are not needed at all. On the other hand, if there is no amplification (replication of cells that remain in any given compartment, ε = 1), the process works at its maximum limit of efficiency, without any reserves if a higher output of cells is temporarily required (e.g. infection or hemorrhage). In this case, the size of the compartment would be doubled in each step even for constant replication rates. Consequently, ε fulfills 0.5&lt;ε&lt;1.0.</p>
+<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>In this respect, our model may appear that it only allows symmetric cell division with the two daughter cells either remaining in compartment <em>i</em> (self-renewal) or both moving to compartment <em>i</em>+1 (differentiation). However when looking at large cell populations, the average of these two processes can accommodate asymmetric cell division where the daughter cells have different fates. Indeed, for ε = 0.5, the overall population dynamics appears as originating purely from asymmetric division. In keeping with this discussion, we note that, in our current model, the most primitive hematopoietic stem cells (<em>i</em> = 0) can only divide asymmetrically (ε = 0.5) to maintain hematopoiesis without influx from any upstream compartment. A more detailed analysis that explicitly includes asymmetric cell division at the level of the individual cell has been reported elsewhere <a href="#pone.0000345-Dingli2">[23]</a>.</p>
+<a id="article1.body1.sec3.sec1.p4" name="article1.body1.sec3.sec1.p4"></a><p>Under stationary conditions, a certain number of cells from compartment <em>i</em>−1 are required in each time step to balance the loss of cells from compartment <em>i</em> due to export. Since, per time step compartment <em>i</em> loses (2ε−1)·<em>N<sub>i</sub></em>·<em>r<sub>i</sub></em> cells (where <em>r<sub>i</sub></em> is the rate of replication in that compartment), this number must be compensated by those cells exported from compartment <em>i</em>−1. The rate of replication in compartment <em>i</em>−1 is <em>r<sub>i</sub></em><sub>−1</sub>. Per time step, this compartment produces on average 2ε·<em>N<sub>i</sub></em><sub>−1</sub>·<em>r<sub>i</sub></em><sub>−1</sub> cells. Under stationary conditions, we have (2ε−1)·<em>N<sub>i</sub></em>·<em>r<sub>i</sub></em> = 2ε·<em>N<sub>i</sub></em><sub>−1</sub>·<em>r<sub>i</sub></em><sub>−1</sub>, which can be written as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e006&amp;representation=PNG" class="inline-graphic"><span class="note">3</span></span><br></p>
+<a id="article1.body1.sec3.sec1.p5" name="article1.body1.sec3.sec1.p5"></a><p>If the ratio between the replication rates of two adjacent compartments is constant (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e007&amp;representation=PNG" class="inline-graphic"></span>), then the rates of replication grow exponentially and Eq. <strong>2</strong> implies that<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e008&amp;representation=PNG" class="inline-graphic"><span class="note">4</span></span><br>Equations <strong>3</strong> and <strong>4</strong> allow us to calculate the total number of compartments as well as ε and <em>r</em>. For <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000345.e009&amp;representation=PNG" class="inline-graphic"></span> we obtain γ&gt;1. In this biologically plausible parameter range, our model implies an exponential <em>growth</em> of the size of the compartments.</p>
+
+</div>
+
+
+
+<div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: JP DD AT. Performed the experiments: JP AT. Analyzed the data: JP DD AT. Wrote the paper: JP DD AT.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000345-McCulloch1" id="pone.0000345-McCulloch1"></a>McCulloch EA, Till JE (2005) Perspectives on the properties of stem cells. Nat Med  11: 1026–1028.  <ul class="find" data-citedArticleID="941916" data-doi="10.1038/nm1005-1026"><li><a href="http://dx.doi.org/10.1038/nm1005-1026" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Perspectives+on+the+properties+of+stem+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Perspectives+on+the+properties+of+stem+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000345-Kondo1" id="pone.0000345-Kondo1"></a>Kondo M, Wagers AJ, Manz MG, Prohaska SS, Scherer DC, et al.  (2003) Biology of hematopoietic stem cells and progenitors: implications for clinical application. Annu Rev Immunol  21: 759–806.  <ul class="find" data-citedArticleID="941908" data-doi="10.1146/annurev.immunol.21.120601.141007"><li><a href="http://dx.doi.org/10.1146/annurev.immunol.21.120601.141007" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Biology+of+hematopoietic+stem+cells+and+progenitors%3A+implications+for+clinical+application." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Biology+of+hematopoietic+stem+cells+and+progenitors%3A+implications+for+clinical+application.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000345-Morrison1" id="pone.0000345-Morrison1"></a>Morrison SJ, Uchida N, Weissman IL (1995) The biology of hematopoietic stem cells. Annu Rev Cell Dev Biol  11: 35–71.  <ul class="find" data-citedArticleID="941918" data-doi="10.1146/annurev.cb.11.110195.000343"><li><a href="http://dx.doi.org/10.1146/annurev.cb.11.110195.000343" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+biology+of+hematopoietic+stem+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+biology+of+hematopoietic+stem+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000345-Dingli1" id="pone.0000345-Dingli1"></a>Dingli D, Pacheco JM (2006) Allometric scaling of the hematopoietic stem cell pool across mammals. PLoS ONE  1: e2.  <ul class="find" data-citedArticleID="941898" data-doi="10.1371/journal.pone.0000002"><li><a href="http://dx.doi.org/10.1371/journal.pone.0000002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Allometric+scaling+of+the+hematopoietic+stem+cell+pool+across+mammals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Allometric+scaling+of+the+hematopoietic+stem+cell+pool+across+mammals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000345-Rufer1" id="pone.0000345-Rufer1"></a>Rufer N, Brummendorf TH, Kolvraa S, Bischoff C, Christensen K, et al.  (1999) Telomere fluorescence measurements in granulocytes and T lymphocyte subsets point to a high turnover of hematopoietic stem cells and memory T cells in early childhood. J Exp Med  190: 157–167.  <ul class="find" data-citedArticleID="941924" data-doi="10.1084/jem.190.2.157"><li><a href="http://dx.doi.org/10.1084/jem.190.2.157" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Telomere+fluorescence+measurements+in+granulocytes+and+T+lymphocyte+subsets+point+to+a+high+turnover+of+hematopoietic+stem+cells+and+memory+T+cells+in+early+childhood." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Telomere+fluorescence+measurements+in+granulocytes+and+T+lymphocyte+subsets+point+to+a+high+turnover+of+hematopoietic+stem+cells+and+memory+T+cells+in+early+childhood.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000345-Vaziri1" id="pone.0000345-Vaziri1"></a>Vaziri H, Dragowska W, Allsopp RC, Thomas TE, Harley CB, et al.  (1994) Evidence for a mitotic clock in human hematopoietic stem cells: loss of telomeric DNA with age. Proc Natl Acad Sci U S A  91: 9857–9860.  <ul class="find" data-citedArticleID="941930" data-doi="10.1073/pnas.91.21.9857"><li><a href="http://dx.doi.org/10.1073/pnas.91.21.9857" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evidence+for+a+mitotic+clock+in+human+hematopoietic+stem+cells%3A+loss+of+telomeric+DNA+with+age." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evidence+for+a+mitotic+clock+in+human+hematopoietic+stem+cells%3A+loss+of+telomeric+DNA+with+age.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000345-Marley1" id="pone.0000345-Marley1"></a>Marley SB, Lewis JL, Gordon MY (2003) Progenitor cells divide symmetrically to generate new colony-forming cells and clonal heterogeneity. Br J Haematol  121: 643–648.  <ul class="find" data-citedArticleID="941912" data-doi="10.1046/j.1365-2141.2003.04338.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2141.2003.04338.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Progenitor+cells+divide+symmetrically+to+generate+new+colony-forming+cells+and+clonal+heterogeneity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Progenitor+cells+divide+symmetrically+to+generate+new+colony-forming+cells+and+clonal+heterogeneity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000345-Donohue1" id="pone.0000345-Donohue1"></a>Donohue DM, Reiff RH, Hanson ML, Betson Y, Finch CA (1958) Quantitative measurement of the erythrocytic and granulocytic cells of the marrow and blood. J Clin Invest  37: 1571–1576.  <ul class="find" data-citedArticleID="941902" data-doi="10.1172/jci103750"><li><a href="http://dx.doi.org/10.1172/jci103750" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantitative+measurement+of+the+erythrocytic+and+granulocytic+cells+of+the+marrow+and+blood." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantitative+measurement+of+the+erythrocytic+and+granulocytic+cells+of+the+marrow+and+blood.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000345-Finch1" id="pone.0000345-Finch1"></a>Finch CA, Harker LA, Cook JD (1977) Kinetics of the formed elements of human blood. Blood  50: 699–707.  <ul class="find" data-citedArticleID="941904"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Kinetics+of+the+formed+elements+of+human+blood.&amp;auth=&amp;atitle=Kinetics+of+the+formed+elements+of+human+blood." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Kinetics+of+the+formed+elements+of+human+blood." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Kinetics+of+the+formed+elements+of+human+blood.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000345-Cronkite1" id="pone.0000345-Cronkite1"></a>Cronkite EP, Fliedner TM (1964) Granulocytopoiesis. N Engl J Med  270: 1347–1352.  <ul class="find" data-citedArticleID="941896" data-doi="10.1056/nejm196406182702506"><li><a href="http://dx.doi.org/10.1056/nejm196406182702506" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Granulocytopoiesis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Granulocytopoiesis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000345-Jamieson1" id="pone.0000345-Jamieson1"></a>Jamieson CH, Ailles LE, Dylla SJ, Muijtjens M, Jones C, et al.  (2004) Granulocyte-macrophage progenitors as candidate leukemic stem cells in blast-crisis CML. N Engl J Med  351: 657–667.  <ul class="find" data-citedArticleID="941906" data-doi="10.1056/nejmoa040258"><li><a href="http://dx.doi.org/10.1056/nejmoa040258" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Granulocyte-macrophage+progenitors+as+candidate+leukemic+stem+cells+in+blast-crisis+CML." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Granulocyte-macrophage+progenitors+as+candidate+leukemic+stem+cells+in+blast-crisis+CML.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000345-MacKey1" id="pone.0000345-MacKey1"></a>MacKey MC (2001) Cell kinetic status of haematopoietic stem cells. Cell Prolif  34: 71–83.  <ul class="find" data-citedArticleID="941910" data-doi="10.1046/j.1365-2184.2001.00195.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2184.2001.00195.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cell+kinetic+status+of+haematopoietic+stem+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cell+kinetic+status+of+haematopoietic+stem+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000345-Shochat1" id="pone.0000345-Shochat1"></a>Shochat E, Stemmer SM, Segel L (2002) Human haematopoiesis in steady state and following intense perturbations. Bull Math Biol  64: 861–886.  <ul class="find" data-citedArticleID="941926" data-doi="10.1006/bulm.2002.0305"><li><a href="http://dx.doi.org/10.1006/bulm.2002.0305" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Human+haematopoiesis+in+steady+state+and+following+intense+perturbations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Human+haematopoiesis+in+steady+state+and+following+intense+perturbations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000345-Vainstein1" id="pone.0000345-Vainstein1"></a>Vainstein V, Ginosar Y, Shoham M, Ranmar DO, Ianovski A, et al.  (2005) The complex effect of granulocyte colony-stimulating factor on human granulopoiesis analyzed by a new physiologically-based mathematical model. J Theor Biol  234: 311–327.  <ul class="find" data-citedArticleID="941928" data-doi="10.1016/j.jtbi.2004.11.026"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2004.11.026" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+complex+effect+of+granulocyte+colony-stimulating+factor+on+human+granulopoiesis+analyzed+by+a+new+physiologically-based+mathematical+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+complex+effect+of+granulocyte+colony-stimulating+factor+on+human+granulopoiesis+analyzed+by+a+new+physiologically-based+mathematical+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000345-Colijn1" id="pone.0000345-Colijn1"></a>Colijn C, Mackey MC (2005) A mathematical model of hematopoiesis: II. Cyclical neutropenia. J Theor Biol  237: 133–146.  <ul class="find" data-citedArticleID="941892" data-doi="10.1016/j.jtbi.2005.03.034"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2005.03.034" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+mathematical+model+of+hematopoiesis%3A+II.+Cyclical+neutropenia." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+mathematical+model+of+hematopoiesis%3A+II.+Cyclical+neutropenia.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000345-Colijn2" id="pone.0000345-Colijn2"></a>Colijn C, Mackey MC (2005) A mathematical model of hematopoiesis–I. Periodic chronic myelogenous leukemia. J Theor Biol  237: 117–132.  <ul class="find" data-citedArticleID="941894" data-doi="10.1016/j.jtbi.2005.03.033"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2005.03.033" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+mathematical+model+of+hematopoiesis%26%23x2013%3BI.+Periodic+chronic+myelogenous+leukemia." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+mathematical+model+of+hematopoiesis%26%23x2013%3BI.+Periodic+chronic+myelogenous+leukemia.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000345-Obeyesekere1" id="pone.0000345-Obeyesekere1"></a>Obeyesekere MN, Berry RW, Spicer PP, Korbling M (2004) A mathematical model of haemopoiesis as exemplified by CD34 cell mobilization into the peripheral blood. Cell Prolif  37: 279–294.  <ul class="find" data-citedArticleID="941920" data-doi="10.1111/j.1365-2184.2004.00312.x"><li><a href="http://dx.doi.org/10.1111/j.1365-2184.2004.00312.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+mathematical+model+of+haemopoiesis+as+exemplified+by+CD34+cell+mobilization+into+the+peripheral+blood." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+mathematical+model+of+haemopoiesis+as+exemplified+by+CD34+cell+mobilization+into+the+peripheral+blood.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000345-Panetta1" id="pone.0000345-Panetta1"></a>Panetta JC, Kirstein MN, Gajjar AJ, Nair G, Fouladi M, et al.  (2003) A mechanistic mathematical model of temozolomide myelosuppression in children with high-grade gliomas. Math Biosci  186: 29–41.  <ul class="find" data-citedArticleID="941922" data-doi="10.1016/j.mbs.2003.07.002"><li><a href="http://dx.doi.org/10.1016/j.mbs.2003.07.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+mechanistic+mathematical+model+of+temozolomide+myelosuppression+in+children+with+high-grade+gliomas." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+mechanistic+mathematical+model+of+temozolomide+myelosuppression+in+children+with+high-grade+gliomas.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000345-Walker1" id="pone.0000345-Walker1"></a>Walker RI, Herion JC, Herring WB, Palmer JG (1964) Leukocyte kinetics in hematologic disorders studied by DNA-phosphorus labeling. Blood  23: 795–810.  <ul class="find" data-citedArticleID="941932"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Leukocyte+kinetics+in+hematologic+disorders+studied+by+DNA-phosphorus+labeling.&amp;auth=&amp;atitle=Leukocyte+kinetics+in+hematologic+disorders+studied+by+DNA-phosphorus+labeling." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Leukocyte+kinetics+in+hematologic+disorders+studied+by+DNA-phosphorus+labeling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Leukocyte+kinetics+in+hematologic+disorders+studied+by+DNA-phosphorus+labeling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000345-Araten1" id="pone.0000345-Araten1"></a>Araten DJ, Luzzatto L (2006) The mutation rate in PIG-A is normal in patients with paroxysmal nocturnal hemoglobinuria (PNH). Blood  108: 734–736.  <ul class="find" data-citedArticleID="941888" data-doi="10.1182/blood-2006-01-0256"><li><a href="http://dx.doi.org/10.1182/blood-2006-01-0256" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+mutation+rate+in+PIG-A+is+normal+in+patients+with+paroxysmal+nocturnal+hemoglobinuria+%28PNH%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+mutation+rate+in+PIG-A+is+normal+in+patients+with+paroxysmal+nocturnal+hemoglobinuria+%28PNH%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000345-Araten2" id="pone.0000345-Araten2"></a>Araten DJ, Nafa K, Pakdeesuwan K, Luzzatto L (1999) Clonal populations of hematopoietic cells with paroxysmal nocturnal hemoglobinuria genotype and phenotype are present in normal individuals. Proc Natl Acad Sci U S A  96: 5209–5214.  <ul class="find" data-citedArticleID="941890" data-doi="10.1073/pnas.96.9.5209"><li><a href="http://dx.doi.org/10.1073/pnas.96.9.5209" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Clonal+populations+of+hematopoietic+cells+with+paroxysmal+nocturnal+hemoglobinuria+genotype+and+phenotype+are+present+in+normal+individuals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Clonal+populations+of+hematopoietic+cells+with+paroxysmal+nocturnal+hemoglobinuria+genotype+and+phenotype+are+present+in+normal+individuals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000345-Marley2" id="pone.0000345-Marley2"></a>Marley SB, Lewis JL, Zheng B, Davidson RJ, Davis JG, et al.  (2001) Peripheral blood progenitor cell mobilisation alters myeloid, but not erythroid, progenitor cell self-renewal kinetics. Bone Marrow Transplant  27: 241–248.  <ul class="find" data-citedArticleID="941914" data-doi="10.1038/sj.bmt.1702777"><li><a href="http://dx.doi.org/10.1038/sj.bmt.1702777" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Peripheral+blood+progenitor+cell+mobilisation+alters+myeloid%2C+but+not+erythroid%2C+progenitor+cell+self-renewal+kinetics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Peripheral+blood+progenitor+cell+mobilisation+alters+myeloid%2C+but+not+erythroid%2C+progenitor+cell+self-renewal+kinetics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000345-Dingli2" id="pone.0000345-Dingli2"></a>Dingli D, Traulsen A, Michor F (2007) (A)Symmetric stem cell replication and cancer. PLoS Computational Biology.   In Press.  <ul class="find" data-citedArticleID="941900" data-doi="10.1371/journal.pcbi.0030053.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0030053.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=%28A%29Symmetric+stem+cell+replication+and+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22%28A%29Symmetric+stem+cell+replication+and+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.XML" value="45029"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.PDF" value="151596"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e001.PNG" value="3651"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e001.TIF" value="26100"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e002.PNG" value="4090"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e002.TIF" value="26740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e003.PNG" value="3620"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e003.TIF" value="25704"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e004.PNG" value="2509"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e004.TIF" value="24300"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.g001.PNG_L" value="166730"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.g001.PNG_M" value="52224"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.g001.PNG_S" value="2967"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.g001.TIF" value="425068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.g001.PNG_I" value="25130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e005.PNG" value="3019"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e005.TIF" value="24672"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e006.PNG" value="2580"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e006.TIF" value="24280"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e007.PNG" value="1019"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e007.TIF" value="21884"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e008.PNG" value="2662"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e008.TIF" value="24412"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e009.PNG" value="1399"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000345.e009.TIF" value="22432"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000345&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000345" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000345&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000345&volume=&issue=&title=Compartmental Architecture and Dynamics of Hematopoiesis&author_name=David%20Dingli%2C%20Arne%20Traulsen%2C%20Jorge%20M.%20Pacheco&start_page=1&end_page=4" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000345" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345&amp;t=Compartmental%20Architecture%20and%20Dynamics%20of%20Hematopoiesis" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345&title=Compartmental%20Architecture%20and%20Dynamics%20of%20Hematopoiesis&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345&amp;title=Compartmental%20Architecture%20and%20Dynamics%20of%20Hematopoiesis" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000345&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Compartmental Architecture and Dynamics of Hematopoiesis';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000345';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Compartmental%20Architecture%20and%20Dynamics%20of%20Hematopoiesis http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000345" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000345" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Blood+cells%22" title="Search for articles in the subject area:'Blood cells'"><div class="flagText">Blood cells</div></a>
+              <div data-categoryid="20111" data-articleid="23528"
+                   data-categoryname="Blood cells"
+                   class="flagImage" title="Flag 'Blood cells' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cell+cycle+and+cell+division%22" title="Search for articles in the subject area:'Cell cycle and cell division'"><div class="flagText">Cell cycle and cell division</div></a>
+              <div data-categoryid="17353" data-articleid="23528"
+                   data-categoryname="Cell cycle and cell division"
+                   class="flagImage" title="Flag 'Cell cycle and cell division' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cell+differentiation%22" title="Search for articles in the subject area:'Cell differentiation'"><div class="flagText">Cell differentiation</div></a>
+              <div data-categoryid="17923" data-articleid="23528"
+                   data-categoryname="Cell differentiation"
+                   class="flagImage" title="Flag 'Cell differentiation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Granulocytes%22" title="Search for articles in the subject area:'Granulocytes'"><div class="flagText">Granulocytes</div></a>
+              <div data-categoryid="19377" data-articleid="23528"
+                   data-categoryname="Granulocytes"
+                   class="flagImage" title="Flag 'Granulocytes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Hematopoiesis%22" title="Search for articles in the subject area:'Hematopoiesis'"><div class="flagText">Hematopoiesis</div></a>
+              <div data-categoryid="20421" data-articleid="23528"
+                   data-categoryname="Hematopoiesis"
+                   class="flagImage" title="Flag 'Hematopoiesis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Hematopoietic+stem+cells%22" title="Search for articles in the subject area:'Hematopoietic stem cells'"><div class="flagText">Hematopoietic stem cells</div></a>
+              <div data-categoryid="20095" data-articleid="23528"
+                   data-categoryname="Hematopoietic stem cells"
+                   class="flagImage" title="Flag 'Hematopoietic stem cells' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mutation%22" title="Search for articles in the subject area:'Mutation'"><div class="flagText">Mutation</div></a>
+              <div data-categoryid="31809" data-articleid="23528"
+                   data-categoryname="Mutation"
+                   class="flagImage" title="Flag 'Mutation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Stem+cells%22" title="Search for articles in the subject area:'Stem cells'"><div class="flagText">Stem cells</div></a>
+              <div data-categoryid="17585" data-articleid="23528"
+                   data-categoryname="Stem cells"
+                   class="flagImage" title="Flag 'Stem cells' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=1154'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=3079'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3851&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=5207">Correction to the model</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

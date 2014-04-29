@@ -1,0 +1,1442 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000562"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000562" />
+
+    <meta name="citation_title" content="Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity"/>
+    <meta itemprop="name" content="Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity"/>
+
+      <meta name="citation_author" content="Arun Krishnan"/>
+            <meta name="citation_author_institution" content="Institute for Advanced Biosciences, Keio University, Tsuruoka, Japan"/>
+      <meta name="citation_author" content="Alessandro Giuliani"/>
+            <meta name="citation_author_institution" content="Istituto Superiore di Sanità, Environment and Health Department, Rome, Italy"/>
+      <meta name="citation_author" content="Masaru Tomita"/>
+            <meta name="citation_author_institution" content="Institute for Advanced Biosciences, Keio University, Tsuruoka, Japan"/>
+
+    <meta name="citation_date" content="2007/6/27"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000562.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e562"/>
+    <meta name="citation_issue" content="6"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Gene regulatory network growth by duplication.; citation_author=SA Teichmann; citation_author=M Madan Babu; citation_journal_title=Nature Genetics; citation_volume=36; citation_number=1; citation_pages=492-496; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Structure and evolution of transcriptional regulatory networks.; citation_author=M Madan Babu; citation_author=NM Luscombe; citation_author=L Aravind; citation_author=M Gerstein; citation_author=SA Teichmann; citation_journal_title=Curr Opin Struc Biol; citation_volume=14; citation_number=2; citation_pages=283-291; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Modeling transcriptional control in gene networks-methods, recent results and future directions.; citation_author=P Smolen; citation_author=DA Baxter; citation_author=JH Byrne; citation_journal_title=Bul Math Biol; citation_volume=62; citation_number=3; citation_pages=247-292; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Reveal: a general reverse engineering algorithm for inference of genetic network architectures.; citation_author=S Liang; citation_author=S Fuhrman; citation_author=R Somogyi; citation_number=4; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Modeling the complexity of genetic networks: understanding multigenic and pleiotropic regulation.; citation_author=R Somogyi; citation_author=C Sniegoski; citation_journal_title=Complexity; citation_volume=1; citation_number=5; citation_pages=45-63; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Dynamical behaviour of biological regulatory networks-i. biological role of feedback loops and practical use of the concept of the loop-characteristic state.; citation_author=R Thomas; citation_author=D Thieffry; citation_author=M Kaufmann; citation_journal_title=Bull Math Biol; citation_volume=57; citation_number=6; citation_pages=247-276; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Programming the drosophila embryo.; citation_author=J Boden; citation_journal_title=J Theor Biol; citation_volume=188; citation_number=7; citation_pages=391-445; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Large scale temporal gene expression mapping of central nervous system development.; citation_author=XL Wen; citation_author=S Fuhrman; citation_author=G Michaels; citation_author=D Carr; citation_author=S Smith; citation_journal_title=Proc Natl Acad Sci USA; citation_volume=95; citation_number=8; citation_pages=334-339; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Cluster analysis and display of genome wide expression patterns.; citation_author=MB Eisen; citation_author=PT Spellman; citation_author=PO Brown; citation_author=D Botstein; citation_journal_title=Proc Natl Acad Sci USA; citation_volume=95; citation_number=9; citation_pages=14863-14868; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=The dynamics of feedback control circuits in biochemical pathways.; citation_author=J Tyson; citation_author=HG Othmer; citation_journal_title=Prog Theor Biol; citation_volume=5; citation_number=10; citation_pages=2-62; citation_date=1978; " />
+      <meta name="citation_reference" content="citation_title=Mathematics of cellular control processes. i. negative feedback to one gene.; citation_author=JS Griffith; citation_journal_title=J Theor Biol; citation_volume=20; citation_number=11; citation_pages=202-208; citation_date=1968; " />
+      <meta name="citation_reference" content="citation_title=Mathematics of cellular control processes. ii. positive feedback to one gene.; citation_author=JS Griffith; citation_journal_title=J Theor Biol; citation_volume=20; citation_number=12; citation_pages=209-216; citation_date=1968; " />
+      <meta name="citation_reference" content="citation_title=Oscillations and multiple steady states in a cyclic gene model with repression.; citation_author=H Smith; citation_journal_title=J Math Biol; citation_volume=25; citation_number=13; citation_pages=169-190; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=Logical identification of all steady states: The concept of feedback loop characteristic states.; citation_author=EH Snoussi; citation_author=R Thomas; citation_journal_title=Bull Math Biol; citation_volume=55; citation_number=14; citation_pages=973-991; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=A mathematical framework for describing and analyzing gene regulatory networks.; citation_author=T Mestl; citation_author=E Plahte; citation_author=SW Omholt; citation_journal_title=J Theor Biol; citation_volume=176; citation_number=15; citation_pages=291-300; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Chaos in high dimensional neural and gene networks.; citation_author=T Mestl; citation_author=C Lemay; citation_author=L Glass; citation_journal_title=Physical D; citation_volume=98; citation_number=16; citation_pages=33-52; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=A methodological basis for description and analysis of systems with complex switch-like interactions.; citation_author=E Plahte; citation_author=T Mestl; citation_author=SW Omholt; citation_journal_title=J Math Biol; citation_volume=36; citation_number=17; citation_pages=321-348; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Simulation of prokaryotic genetic circuits.; citation_author=H Mcadams; citation_author=A Arkin; citation_journal_title=Ann Rev Biophys Biomed Struct; citation_volume=27; citation_number=18; citation_pages=199-224; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Genomic cis-regulatory logic, experimental and computational analysis of a sea urchin gene.; citation_author=CH Yuh; citation_author=H Bolouri; citation_author=EH Davidson; citation_journal_title=Science; citation_volume=279; citation_number=19; citation_pages=1896-1902; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Modeling and simulation of genetic regulatory systems: A literature review.; citation_author=H de Jong; citation_journal_title=J Comp Biol; citation_volume=9(1); citation_number=20; citation_pages=67-103; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Reverse-engineering transcription control networks.; citation_author=TS Gardner; citation_author=JJ Faith; citation_journal_title=Physics of Life Reviews; citation_volume=2(1); citation_number=21; citation_pages=65-88; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=From genotype to phenotype: bufferring mechanisms and the storage of genetic information.; citation_author=S Rutherford; citation_journal_title=BioEssays; citation_volume=22; citation_number=22; citation_pages=1095-1105; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Reverse engineering of gene regulatory networks: a finite state linear model.; citation_author=A Brazma; citation_author=T Schlitt; citation_journal_title=Genome Biology; citation_volume=4(6); citation_number=23; citation_pages=P5; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A feedforward loop motif in transcriptional regulation: induction and repression.; citation_author=F Hayot; citation_author=C Jayaprakash; citation_journal_title=J Theor Biol; citation_volume=234; citation_number=24; citation_pages=133-143; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Network motifs: Structure does not determine function.; citation_author=PJ Ingram; citation_author=MPH Stumpf; citation_author=J Stark; citation_journal_title=BMC Genomics; citation_volume=7; citation_number=25; citation_pages=108; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Stochsim: modelling of stochastic biomolecular processes.; citation_author=NL Novere; citation_author=TS Shimizu; citation_journal_title=Bioinformatics; citation_volume=17; citation_number=26; citation_pages=575-576; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Genetic algorithm toolbox user's guide.; citation_author=A Chipperfield; citation_author=P Fleming; citation_author=H Pohlheim; citation_author=C Fonseca; citation_number=27; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The Genetic Basis of Evolutionary Change.; citation_author=RC Lewontin; citation_number=28; citation_date=1974; citation_publisher=Columbia University Press; " />
+      <meta name="citation_reference" content="citation_title=The Strategy of the Genes.; citation_author=CH Waddington; citation_number=29; citation_date=1957; citation_publisher=Macmillan; " />
+      <meta name="citation_reference" content="citation_title=Factors of Evolution: The Theory of Stabilizing Selection.; citation_author=II Schmalhausen; citation_number=30; citation_date=1986; citation_publisher=University of Chicago Press; " />
+      <meta name="citation_reference" content="citation_title=Canalization in evolutionary genetics: a stabilizing theory?; citation_author=G Gibson; citation_author=G Wagner; citation_journal_title=BioEssays; citation_volume=22; citation_number=31; citation_pages=372-380; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The evolution of canalization and the breaking of von baer's laws: Modeling the evolution of development with epistasis.; citation_author=SH Rice; citation_journal_title=Evolution; citation_volume=52; citation_number=32; citation_pages=647-656; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Principal component analysis in meteorology and oceanography.; citation_author=RW Preisendorfer; citation_author=CD Mobley; citation_number=33; citation_date=1988; citation_publisher=Elsevier; " />
+      <meta name="citation_reference" content="citation_title=Extracting qualitative dynamics from experimental data.; citation_author=DS Broomhead; citation_author=GP King; citation_journal_title=Physica D; citation_volume=20; citation_number=34; citation_pages=217-236; citation_date=1986; " />
+      <meta name="citation_reference" content="citation_title=Modularity and dynamics of cellular networks.; citation_author=JN Darroch; citation_author=JE Mosimann; citation_journal_title=Biometrika; citation_volume=72(2); citation_number=35; citation_pages=241-252; citation_date=1985; " />
+      <meta name="citation_reference" content="citation_title=Computational discovery of gene modules and regulatory networks.; citation_author=Z Bar-Joseph; citation_author=GK Gerber; citation_author=TI Lee; citation_author=NJ Rinaldi; citation_author=JY Yoo; citation_journal_title=Nature Biotechnology; citation_volume=21(11); citation_number=36; citation_pages=1295-1297; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Modularity and dynamics of cellular networks.; citation_author=Y Qi; citation_author=h Ge; citation_journal_title=PLoS Computational Biology; citation_volume=2(12); citation_number=37; citation_pages=e174; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Observing Systems: Selected Papers of Heinz von Foerster.; citation_author=H von Foerster; citation_number=38; citation_date=1981; citation_publisher=Intersystems Publications; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity"/>
+    <meta name="twitter:description" content="BackgroundGene Regulatory Networks (GRNs) have become a major focus of interest in recent years. A number of reverse engineering approaches have been developed to help uncover the regulatory networks giving rise to the observed gene expression profiles. However, this is an overspecified problem due to the fact that more than one genotype (network wiring) can give rise to the same phenotype. We refer to this phenomenon as &ldquo;gene elasticity.&rdquo; In this work, we study the effect of this particular problem on the pure, data-driven inference of gene regulatory networks.MethodologyWe simulated a four-gene network in order to produce &ldquo;data&rdquo; (protein levels) that we use in lieu of real experimental data. We then optimized the network connections between the four genes with a view to obtain the original network that gave rise to the data. We did this for two different cases: one in which only the network connections were optimized and the other in which both the network connections as well as the kinetic parameters (given as reaction probabilities in our case) were estimated. We observed that multiple genotypes gave rise to very similar protein levels. Statistical experimentation indicates that it is impossible to differentiate between the different networks on the basis of both equilibrium as well as dynamic data.ConclusionsWe show explicitly that reverse engineering of GRNs from pure expression data is an indeterminate problem. Our results suggest the unsuitability of an inferential, purely data-driven approach for the reverse engineering transcriptional networks in the case of gene regulatory networks displaying a certain level of complexity."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000562.g009"/>
+
+  <meta property="og:title" content="Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=6502'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=3154'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=7677&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000562">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000562" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000562&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Arun Krishnan
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:krishnan@ttck.keio.ac.jp">krishnan@ttck.keio.ac.jp</a></p>
+
+                <p>Affiliation:
+                  Institute for Advanced Biosciences, Keio University, Tsuruoka, Japan
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Alessandro Giuliani, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Istituto Superiore di Sanità, Environment and Health Department, Rome, Italy
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Masaru Tomita
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute for Advanced Biosciences, Keio University, Tsuruoka, Japan
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: June 27, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000562</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000562-g001" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-t001" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-t002" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g002" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g003" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g004" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g005" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g006" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g007" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g007" title="Figure 7">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g007&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g008" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g008" title="Figure 8">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g008&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-g009" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g009" title="Figure 9">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g009&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-t003" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000562-t004" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000562">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000562" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Gene Regulatory Networks (GRNs) have become a major focus of interest in recent years. A number of reverse engineering approaches have been developed to help uncover the regulatory networks giving rise to the observed gene expression profiles. However, this is an overspecified problem due to the fact that more than one genotype (network wiring) can give rise to the same phenotype. We refer to this phenomenon as “gene elasticity.” In this work, we study the effect of this particular problem on the pure, data-driven inference of gene regulatory networks.</p>
+
+
+<h3>Methodology</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We simulated a four-gene network in order to produce “data” (protein levels) that we use in lieu of real experimental data. We then optimized the network connections between the four genes with a view to obtain the original network that gave rise to the data. We did this for two different cases: one in which only the network connections were optimized and the other in which both the network connections as well as the kinetic parameters (given as reaction probabilities in our case) were estimated. We observed that multiple genotypes gave rise to very similar protein levels. Statistical experimentation indicates that it is impossible to differentiate between the different networks on the basis of both equilibrium as well as dynamic data.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>We show explicitly that reverse engineering of GRNs from pure expression data is an indeterminate problem. Our results suggest the unsuitability of an inferential, purely data-driven approach for the reverse engineering transcriptional networks in the case of gene regulatory networks displaying a certain level of complexity.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Krishnan A, Giuliani A, Tomita M (2007) Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity. PLoS ONE 2(6):
+          e562.
+            doi:10.1371/journal.pone.0000562</p><p><strong>Academic Editor: </strong>Raya Khanin, University of Glasgow, United Kingdom</p><p><strong>Received:</strong> May 1, 2007; <strong>Accepted:</strong> May 26, 2007; <strong>Published:</strong> June 27, 2007</p><p><strong>Copyright:</strong> © 2007 Krishnan et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>Arun Krishnan and Masaru Tomita would like to acknowledge the Tsuruoka city and Yamagata prefecture governments for funding for this project.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Gene Regulatory Networks (GRNs) have become a major focus of interest in recent years due to the rapid improvement in high-throughput sequencing technologies and advances in computational modeling and information technology. The basic unit of gene regulation consists of a transcription factor, its DNA binding site and the target gene or transcription unit that it regulates <a href="#pone.0000562-Teichmann1">[1]</a>. In GRN, transcription factors (TFs) receive inputs from upstream signal transduction processes and in response, bind directly or indirectly, via other TFs or co-factors to target sequences in the promoter or cis-regulatory regions of target genes. These bound TFs can then promote or repress transcription by stimulating or repressing the assembly of preinitiation complexes. The activity of genes is regulated by a host of biological molecules including proteins, peptides and metabolites.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>The resulting network is a complex, multilayered system that can be examined at multiple levels of details <a href="#pone.0000562-MadanBabu1">[2]</a>. The modeling of GRNs has utilized two key approximations <a href="#pone.0000562-Smolen1">[3]</a>. These are: a) control is exercised at the transcriptional level and b) The production of protein product is a continuous process with the rate determined by the balance of gene activation vs. repression. The first constraint, even though it is known to not be tenable in many cases, is considered as a prerequisite while dealing with GRNs. In our approach we relaxed the strict transcriptional character of control by inserting a posttranslational modification (PTM) mechanism into the simulation.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Recent approaches have got rid of the second approximation by including the stochastic nature of production of individual protein molecules. Methods used to model and reverse engineer transcriptional control within gene regulatory systems include the “Boolean” method <a href="#pone.0000562-Liang1">[4]</a>–<a href="#pone.0000562-Eisen1">[9]</a>, the continuous approach using differential equations <a href="#pone.0000562-Tyson1">[10]</a>–<a href="#pone.0000562-Plahte1">[17]</a> that has been well studied and in use for decades and a hybrid Boolean-continuous approach <a href="#pone.0000562-Mcadams1">[18]</a>, <a href="#pone.0000562-Yuh1">[19]</a>. The interested reader is referred to papers by Smolen et al. <a href="#pone.0000562-Smolen1">[3]</a> and de Jong <a href="#pone.0000562-deJong1">[20]</a> for a more exhaustive review of the existing approaches.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>All the above mentioned reverse engineering approaches have principally focused on decoding the mechanisms of transcriptional control; primarily in order to take advantage of the large amounts of data about RNA transcripts being generated by current genomic technologies. However, measuring peptide, protein and metabolite regulators of gene expression is generally more difficult and not often available <a href="#pone.0000562-Gardner1">[21]</a>. Regardless, in all the techniques mentioned above, one tries to ascertain the genotypic landscape from knowledge of limited phenotypic data. The sense in which genotypes and phenotypes are used in this case is slightly different from their original meaning: genotype points to the underlying functional connectivity between the different gene activities whereas phenotype points to their visible effect (such as mRNA or protein levels). This would have been straightforward if there was a strict one-to-one mapping between genotype and phenotype. However, this is not really the case.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Theoretically, in a given environment, the mapping between any particular genotype and a set of phenotypes is determined by a probability function, which represents a collection of possible phenotypes around the most-likely phenotype for any given genotype <a href="#pone.0000562-Rutherford1">[22]</a>. In effect, the genotype to phenotype mapping is bounded by 1:1 mapping (total gene plasticity), 1:all mapping (total gene elasticity) and all:1 mapping (total constraint) with most of the actual cases falling in between these three bounds leading to some degree of what we refer to as “gene elasticity”. This could be due to either decreased environmental canalization or developmental polymorphism or both. Regardless, the fact that multiple genotypes can give rise to a very similar set of phenotypes causes potentially huge problems for the reverse engineering of transcriptional networks.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>In this work we study the effect of this particular problem on the inference of gene regulatory networks. We assume that in future (as is already the case with the possibility of the use of large scale protein chips), it would be possible to obtain large-scale information about not just RNA transcripts in a cell but also various protein counts. With that in mind, we simulated a four-gene network in order to produce “data” that we use in lieu of real experimental data. This data was then sampled at a few sampling instants . We then optimized the network connections between the four genes with a view to obtain the original network that gave rise to the data. We did this for two different cases: one in which only the network connections were optimized and the other in which both the network connections as well as the kinetic parameters (given as reaction probabilities in our case) were estimated. We observed that multiple genotypes gave rise to very similar protein levels. Statistical tests indicate that it is impossible to identify different network architectures on the basis of both equilibrium as well as dynamic data. This suggests that a purely data-driven inferential approach for reverse engineering transcriptional networks is improbable if not impossible in practice.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Materials and Methods"></a><h3>Materials and Methods</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>Our approach towards the simulation of GRNs is a mix of the finite-state model pioneered by Brazma et al. <a href="#pone.0000562-Brazma1">[23]</a> and stochastic simulation. The model is based on the following assumptions:</p>
+
+
+<ul class="bulletlist">
+
+<li>Each gene has a number of TF binding sites in its promoter region</li>
+
+<li>Each protein has a number of binding domains, with each binding domain being able to bind to a specific gene.</li>
+
+<li>The binding of a single activating protein to a binding site creates a complex that can in turn be recognized by RNA Polymerase (RNAP) molecules.</li>
+
+<li>The binding of a single repressive protein molecule to a binding site creates a complex that can no longer be bound to by RNAP molecules</li>
+
+<li>An “active” gene is thus denoted by the presence of the corresponding complexes that can be bound to by RNAP molecules.</li>
+
+<li>Each protein has the possibility of undergoing PTM.</li>
+
+<li>The PTM can activate or deactivate a protein.</li>
+
+</ul><a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>At the basic level, the model can be considered as a finite-state one since the state of the network depends on the binding/unbinding of proteins to the different binding sites in the promoter regions of the different genes. <a href="#pone-0000562-g001">Figure 1(b)</a> shows the abstraction of the network shown in <a href="#pone-0000562-g001">Figure 1(a)</a>. The gene corresponding to each protein is colored differently. Each protein has binding domains for none or more genes. As an example, protein P1, has binding domains for genes G1, G3 and G4. The red and green boxes attached to the binding domains indicate the effect of binding: red represents repression while green denotes activation.</p>
+<div class="figure" id="pone-0000562-g001"><div class="img"><a name="pone-0000562-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>The abstract representation in our model of the network shown in Figure 1(a) is shown in Figure 1(b).</span></strong></p><a id="article1.body1.sec2.fig1.caption1.p1" name="article1.body1.sec2.fig1.caption1.p1"></a><p>The gene corresponding to each protein is represented by different colors. Each protein (colored gray) has a certain number of binding domains. For eg., protein P1 can bind to genes G1, G3 and G4 (showed by the colored bars). The red and green boxes refer to the effect of binding while the red and green circles refer to PTMs.: red represents repression and green, activation</p>
+<span>doi:10.1371/journal.pone.0000562.g001</span></div><a id="article1.body1.sec2.p3" name="article1.body1.sec2.p3"></a><p>A similar abstraction can also be made for the RNAP-cofactor complexes. Each RNAP-cofactor complex can bind to none or more genes in order to transcribe them. The RNAP-cofactor complexes also evolve by either gaining or losing the ability to bind to and transcribe specific genes.</p>
+<a id="article1.body1.sec2.p4" name="article1.body1.sec2.p4"></a><p>While the genes in Brazma et al.'s model have binary (ON/OFF) states, gene activity in our model is governed by the number of molecules of the “active” gene (that is one with promoter proteins bound to their promoter regions). As a result, the model stays closer to reality where a basal level of gene activity is present and genes are seldom seen to exhibit purely binary state behavior. Additionally, in contrast to the work by Brazma et al. <a href="#pone.0000562-Brazma1">[23]</a>, time, in our case is discrete. Moreover, the state affects the number of molecules of each species in the system. Additionally, we also model the effect of reversible PTMs. We describe the model in more detail in the following section.</p>
+
+<h4>Model</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Our model of the gene regulatory network involves proteins and DNA molecules interacting in the classical promoter/TF paradigm. This is by no means the unique or the most relevant mechanism of regulatory systems; nevertheless it is endowed with sufficient complexity to be an interesting case study.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Following the work of Hayot et al. <a href="#pone.0000562-Hayot1">[24]</a> and Ingram et al. <a href="#pone.0000562-Ingram1">[25]</a>, our model of the gene regulatory network attempts to describe the process of gene regulation from transcription binding to protein production in a physically reasonable way. As mentioned in <a href="#pone.0000562-Ingram1">[25]</a>, each gene (<em>i</em>) is represented as having a section of DNA (<em>D<sub>i</sub></em>), which codes for the corresponding mRNA (<em>M<sub>i</sub></em>). This is preceded by the binding of transcription factors to the promoter region to form a complex <em>Q<sub>j</sub></em>. The transcription factors are one among the different protein species that are present in the system. The number of proteins in the system usually consists of the inputs to the system as well as of the products of the structural genes in the system. However the protein species can outnumber the genes. This is in order to cater for all types of transcriptional regulators and will be discussed in greater detail below.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>RNAP molecules (in combination with other co-factors) can then bind to <em>Q<sub>i</sub></em> as they read the DNA forming a second complex <em>Q<sub>i</sub></em><sup>*</sup>. This complex then breaks down on completion of the reading, thereby releasing <em>Q<sub>i</sub></em>, <em>R<sub>i</sub></em> and the newly formed <em>M<sub>i</sub></em>. The mRNA molecules are then translated to produce copies of the protein <em>P<sub>i</sub></em>. Both positive and negative regulations have been included in the model. In case of negative regulation, protein <em>P<sub>i</sub></em> binding to the promoter region of gene <em>j</em> will result in the formation of a complex <em>Q̅<sub>i</sub></em>. These molecules cannot be bound to by RNAP-cofactor complex molecules and hence repress the particular gene by inhibiting transcription. The inhibition however is not independent of the binding order. Thus a regulator that inhibits the expression of a gene can only bind a promoter region that has not been already bound by any other transcriptional regulator.</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>Proteins can also undergo Post Translational Modifications (PTMs). PTMs are of two types: activating and inhibiting. An activating PTM promotes the activity of the protein while an inhibiting PTM deactivates the protein. It must be mentioned that PTMs in our model are reversible. The species <em>R</em> can be viewed as either RNAP by itself or as an RNAP-cofactor complex. Typically, in our case, while simulating only the RNAP molecule, a single <em>R</em> species was utilized whereas multiple <em>R</em> species implied that different RNAP-cofactor complexes were part of the system.</p>
+<a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"></a><p>There are 11 species types present in our model as shown in <a href="#pone-0000562-t001">Table 1</a> while the allowed reactions between these species types are given in <a href="#pone-0000562-t002">Table 2</a>.</p>
+<div class="figure" id="pone-0000562-t001"><div class="img"><a name="pone-0000562-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Species present in our model</span></strong></p><span>doi:10.1371/journal.pone.0000562.t001</span></div><div class="figure" id="pone-0000562-t002"><div class="img"><a name="pone-0000562-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>The reactions taking place in our system</span></strong></p><span>doi:10.1371/journal.pone.0000562.t002</span></div><a id="article1.body1.sec2.sec1.p6" name="article1.body1.sec2.sec1.p6"></a><p>The reactions between a particular section of DNA, <em>D</em>, and a protein <em>P</em>, or between the complex <em>Q</em> and the RNAP-cofactor complex <em>R</em> can only take place under certain conditions determined by the type of protein or RNAP-cofactor complex. We model each protein as having potentially up to g DNA-binding domains (one for each gene where g is the number of genes). Similarly, the different types of RNAP-cofactor complex can bind 1, 2, 3, · · ·, <em>g</em> DNA-transcription factor complexes <em>Q</em>.</p>
+<a id="article1.body1.sec2.sec1.p7" name="article1.body1.sec2.sec1.p7"></a><p>There are two different types of transcription factors in the system: Those that influence the expression of other transcriptional regulators but are themselves not transcriptionally regulated and those that do not regulate the expression of other transcriptional regulators. A note must be made here of the fundamental difference between the input proteins (<em>I</em> in <a href="#pone-0000562-t001">Table 1</a>) and the normal protein molecules (<em>P</em> in <a href="#pone-0000562-t001">Table 1</a>). While both are protein molecules, input proteins act as signaling molecules to the network under study. The input proteins affect the respective <em>P</em> molecules in an activating manner. For example, for a 4-node network, if the number of inputs is 2, then <em>I<sub>1</sub></em> will activate <em>P<sub>1</sub></em> and <em>I<sub>2</sub></em> will activate <em>P<sub>2</sub></em>. Moreover, in our simulations, the input proteins are stepped together at time t = 0 and their levels reduced to 0 at time t = 200. Thus these protein levels act as signaling switches.</p>
+<a id="article1.body1.sec2.sec1.p8" name="article1.body1.sec2.sec1.p8"></a><p>There are a finite number of PTM-agents (T) and null molecules (NULL) in the system (see Simulation section).</p>
+
+
+<h4>Simulation</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>In order to better represent the low copy numbers of all these molecules in the actual cell, we simulate the reactions using a stochastic algorithm. At each time instant, we pick two species at random. We check the compatibility of the species using the reactions given in <a href="#pone-0000562-t002">Table 2</a>. If the two molecules cannot take part in a reaction, say for example <em>D</em> and <em>M,</em> then no reaction takes place in that time interval. If however, the species can potentially interact, the subtypes of both the species are again chosen at random. If one of the two species is a <em>P</em> or an <em>R</em> the bits for the corresponding subtype are checked to see that the respective protein or RNAP-cofactor complex can bind to the second species. Additionally, the action of the selected protein species (positive or negative regulatory) is checked to ascertain its effect on the other species. Also, the protein is checked to see if it can undergo PTM and if so whether the PTM is activating or inhibiting. Once all the conditions have been satisfied, a further random number <em>r</em> is generated and only if <em>r</em>≤<em>k<sub>i</sub></em> where <em>k<sub>i</sub></em> is the probability of occurrence of reaction <em>i</em> and the appropriate counts incremented and decreased according to the stoichiometric coefficients given in <a href="#pone-0000562-t002">Table 2</a>. This process is then repeated at the next time interval till the end of the simulation time. Our simulation approach is closest in ethos to that of the StochSim <a href="#pone.0000562-Novere1">[26]</a> stochastic simulator. We also make use of null molecules in order to simulate monomolecular reactions.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>We simulate the model for a total of T time intervals of δt seconds each (with δt = 0.001 for our simulations). A stochastic simulation can give different results depending on the random numbers used. However, in order to obtain “deterministic” results since the goal of this exercise is to ascertain whether the original network can be recovered, we fix the random number seed so that given a particular representation of the proteins and RNAP-cofactor complexes, we will obtain the same, reproducible results. The idea behind using a “deterministic” simulation is to find out whether keeping all other conditions a constant, we are able to get back the original network purely by searching through the space of all possible networks.</p>
+
+
+<h4>Data</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p><a href="#pone-0000562-g002">Figure 2(a)</a> shows the template network that was used to obtain the data that were used in lieu of experimental data. There are four genes in the network with the product of gene 1 requiring an activating PTM in order to regulate the downstream genes. Three of the four genes also auto-regulate themselves; proteins 2 and 3 promote the transcription of their respective genes while protein 1 represses the transcription of its gene. <a href="#pone-0000562-g002">Figure 2(b)</a> show the protein levels for proteins 3 and 4 (with proteins 1 and 2 being almost near zero). The simulation of the template network was carried out for 300 seconds. The data (protein levels of proteins 3 and 4) was sampled at 10-second intervals for a total of 30 data points.</p>
+<div class="figure" id="pone-0000562-g002"><div class="img"><a name="pone-0000562-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>The template network (a) and the protein levels (b) that mimic “experimental data” values.</span></strong></p><span>doi:10.1371/journal.pone.0000562.g002</span></div>
+
+<h4>Network Inference</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>In order to identify the network that replicates the data, we used a genetic algorithm (GA) that finds the optimum connectivity between the genes and RNAP-cofactor complexes in the system under study. In this case, this equates to finding the best combination of domains in the g proteins and r RNAP-cofactor complexes that results in the minimization of the fitness function. The number of genes, RNAP-cofactor complexes and proteins are denoted by <em>g</em>, <em>r</em> and <em>p</em> respectively. Each protein is represented using <em>2g+2</em> bits (also called alleles) while each RNAP-cofactor complex is represented using g bits (alleles), one for each gene. The first <em>g</em> bits of each protein represent the binding domains to each of the <em>g</em> promoter regions (1 for presence and 0 for absence of the domains), while the next <em>g</em> bits indicate the type of regulatory action directed towards the respective proteins (1 for promotion and 0 for inhibition. The last 2 bits represent the effect of PTM, with bit 2<em>g</em>+1 representing the presence or absence of PTM and bit 2<em>g</em>+2 representing the nature of the PTM (1 for activating or 0 for inhibiting). For example a protein with a representation 1001 − 0001 − 11 (separated by a hyphen for ease of understanding) implies that it can bind to the promoter regions for genes 1 and 4 and that while the regulatory action is negative for gene 1, it is positive for gene 4 (since the first and fourth bits for the second half of the bitstring are 0 and 1 respectively. The protein also requires PTM for activation as suggested by the last two bits (11 implies that PTM is required and it is an activating modification). A similar representation is made for the RNAP-cofactor complex using one bit for each gene. The <em>p</em> proteins are encoded using a <em>(2g+2)p</em>-long bit string (<em>2g+2</em> bits for each protein) and we do the same for the RNAP-cofactor complexes using an <em>rg</em>-long bit string. The two encodings are then concatenated to give a chromosome of length <em>(2g+2)p+rg</em> bits (alleles). The fitness function to be minimized, <em>D</em>(<em>m, ê</em>) is given by the root mean squared deviation (RMSD) of the model values <em>m</em>, from the “pseudo” experimental values, <em>é</em> as: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.e010&amp;representation=PNG" class="inline-graphic"></span><br>where the number of samples is given by <em>n</em>.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>Thus in our case, the fitness function itself is more like a “distance” function and will be referred to as such in the rest of the manuscript. As mentioned earlier, a GA was used to find the optimal network acting on the above-described representation. The GA is a stochastic global search method representing a metaphor of natural biological evolution. GAs operate on the population of potential solutions applying the principle of survival of the fittest to produce hopefully, better and better solutions <a href="#pone.0000562-Chipperfield1">[27]</a>. In each generation, a new set of approximations to the solution is created by a process of selecting individuals according to their level of fitness in the problem domain and breeding them together with operators borrowed from genetics such as crossover, mutations and selections. This process leads to the evolution of populations of individuals (solutions) that are better fitted to the problem domain than their predecessors thereby approaching an optimal solution.</p>
+<a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>In this case, a population of 500 individuals was seeded. In each generation, two individuals in the population are chosen at random to mate in order to produce offspring. The crossover points in the chromosomes for the mating individuals are based on a certain crossover probability. Mutations can affect chromosomes that are not mating in a given generation with a certain mutation probability (0.8 in our case). Since the GA is a stochastic algorithm, the optimization needs to be done a number of times in order to obtain a ‘near-optimal’ solution. In our case, 25 different runs of the algorithm were carried out and the 6 runs with the smallest distance function values were selected.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p>The optimization was carried out for two different cases:</p>
+
+
+<ul class="bulletlist">
+
+<li>In the first case, the kinetic parameters, represented here by the reaction probabilities, were kept the same as those for the run that generated the data. As a result only the network connections were optimized in order to obtain the network that has the smallest RMSD value.</li>
+
+<li>In the second case, the search space included the 10 kinetic parameters as well as the network connections.</li>
+
+</ul>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results and Discussion"></a><h3>Results and Discussion</h3>
+<h4>Network Inference</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p><a href="#pone-0000562-g003">Figure 3</a> shows the template network (<a href="#pone-0000562-g003">Figure 3(a)</a>) along with two other networks (<a href="#pone-0000562-g003">Figures 3(b) and 3(c)</a>) that had the smallest distance function values. Interestingly, both the optimized networks had a distance function value of 0; that is, the protein levels at the sampling points were identical to those produced by the template network. While a comparison of the two networks with the template shows some points of similarity, there are also significant differences in the wiring pattern. For example, in both the optimized networks, protein 2 requires an activating PTM in addition to that required by protein 1 whereas it is not so in the original network in which only protein 1 requires an activating PTM. In addition the network in</p>
+<div class="figure" id="pone-0000562-g003"><div class="img"><a name="pone-0000562-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>The original (template) network that gave rise to the data and the two best networks obtained from minimizing the error.</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>Only the network connections were optimized in this case, with the kinetic parameters taking on the same values as those that generated the “data”. Both Optimized Network-1 (Figure 3(b)) and Optimized Network-2 (Figure 3(c)) had a value of 0 for the minimization function which was the RMSD of the model and the “data” values.</p>
+<span>doi:10.1371/journal.pone.0000562.g003</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p><a href="#pone-0000562-g003">Figure 3(c)</a> has more repressive interactions than either the template network or the other optimized network in <a href="#pone-0000562-g003">Figure 3(b)</a>. As mentioned earlier, the second experiment consisted of identifying the optimal combination of both network connectivities and kinetic parameters that would approximate the data. This is a much tougher optimization problem and hence, despite a number of runs, it was not possible to obtain a solution with an RMSD of 0. Despite this, there were a number of networks that had very similar phenotypes with respect to those produced by the template network. Three of the networks with the smallest RMSD values are shown in <a href="#pone-0000562-g004">Figures 4(b), 4(c) and 4(d)</a>. Once again, we witness a wide range of interactions among the elements of the optimized networks, which can be very different from those of the template network. <a href="#pone-0000562-g005">Figures 5(a)</a> and 5(b) show the protein levels obtained by the simulation of six optimized networks with the lowest RMSD values from the two different experiments, respectively.</p>
+<div class="figure" id="pone-0000562-g004"><div class="img"><a name="pone-0000562-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>The original (template) network that gave rise to the data and the two best networks obtained from minimizing the error.</span></strong></p><a id="article1.body1.sec3.sec1.fig2.caption1.p1" name="article1.body1.sec3.sec1.fig2.caption1.p1"></a><p>The network connectivities as well as the reaction probabilities were optimized in order to obtain the minimal deviation between the model and “data” values.</p>
+<span>doi:10.1371/journal.pone.0000562.g004</span></div><div class="figure" id="pone-0000562-g005"><div class="img"><a name="pone-0000562-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Protein Levels for both experiments: (5(a)): The case where only the network connections are optimized.</span></strong></p><a id="article1.body1.sec3.sec1.fig3.caption1.p1" name="article1.body1.sec3.sec1.fig3.caption1.p1"></a><p>(5(b)): Case were network connections and reaction probabilities are optimized. Notice that in both cases, the protein expression patterns are very similar despite the differences in network connectivities as seen from <a href="#pone-0000562-g003">Figures 3</a> and <a href="#pone-0000562-g004">4</a>.</p>
+<span>doi:10.1371/journal.pone.0000562.g005</span></div><a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>Despite the wide range of wiring patterns and interaction types (PTM, auto regulation, activation and repression), the protein profiles for all these different networks are remarkably similar to that of the template network shown in <a href="#pone-0000562-g002">Figure 2(b)</a>. This is consistent with the fact that there is never total gene-plasticity (a1:1 mapping between genotype and phenotype) but rather, what we call gene “elasticity” with multiple genotypes giving rise to a similar set of phenotypes. This is mainly due to the fact that natural selection acts on variation among phenotypes rather than genotypes <a href="#pone.0000562-Lewontin1">[28]</a>. Hence, there is a system of genetic buffering that allows for the buildup and storage of genetic variation in phenotypically normal populations <a href="#pone.0000562-Waddington1">[29]</a>–<a href="#pone.0000562-Gibson1">[31]</a>. Theory suggests that this variation in genotype can change the underlying genetic architecture in spite of the phenotype being maintained due to strong stabilizing selection <a href="#pone.0000562-Rice1">[32]</a>. This behavior is remarkably similar to what we observe in protein sequence/structure relations (with the sequence playing the role of genotype and the structure of phenotype) where a huge sequence space maps into a much smaller fold space.</p>
+
+
+<h4>Optimal Networks</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>Although the results in the previous section show that different networks give rise to very similar, even identical expression profiles, a question can be raised as to whether the observed behavior is a result of the fact that the networks might be suboptimal in some sense and hence, the network space surrounding the template network could well be very dense with different networks giving rise to similar expression profiles. This is a valid point and needs to be addressed. However, the notion of optimality itself is difficult to define in this case. What would an “optimal” network look like? We defined an optimal network as one that evolves towards a particular goal from an initial random state. The goal in our case was a maximization of the levels of certain proteins. We evolved a population of networks starting with an initial random assignment towards the goal of maximizing the distance function. Such a network is optimal in terms of the particular distance function. We then performed the same experiment for this “optimal” network by generating data from this network and then using this data to infer back the original network. <a href="#pone-0000562-g006">Figure 6</a> shows the template and inferred “optimal” networks. As can be observed, the template and optimized networks, although having an RMSD value of 0 (implying perfect alignment of the respective protein expression patterns) do differ slightly in their wiring. Obviously, this is dependent on the particular kinetic parameters used as well as the algorithm being used. However, we would expect to see similar behavior for any stochastic algorithm that models the behavior of gene regulatory networks. Although this is not a conclusive proof of the fact that the behavior observed in the previous section is not completely due to the suboptimality of the template network, it does show that regardless of the type of network, the many-to-one phenotype-genotype mapping can lead to an indeterminacy of the reverse engineering problem.</p>
+<div class="figure" id="pone-0000562-g006"><div class="img"><a name="pone-0000562-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>The optimal (template) network and the best network inferred from minimizing the RMSD between the two expression levels.</span></strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>Only the network connectivities were optimized. All other parameters including the kinetic parameters were kept constant. Although the two networks are very similar, there is a slight difference in the activation of P1 and P2.</p>
+<span>doi:10.1371/journal.pone.0000562.g006</span></div>
+
+<h4>Principal Component Analysis</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>Having demonstrated the equivalence of different network architectures to get rid of a given phenotype and the substantial indeterminacy of reverse engineering problem in the presence of a complex feedback network, we must approach the other horn of the problem. Basically we need to demonstrate that the outputs coming from networks endowed with different architectures cannot be traced back to their respective sources. This step is crucial as proof-of-concept of the basic indeterminacy of the reverse engineering procedure, given that a discrimination of the source networks on the pure basis of their outputs should imply the (at least theoretical) possibility to establish a 1:1 mapping between genotype and phenotype in the presence of sufficient data. For this goal use was made of two different settings correspondent respectively to “equilibrium” and “dynamic” discrimination tasks.</p>
+<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>In the first task (equilibrium discrimination) the three networks (R2, R3, template) were run starting from different initial conditions and their occupancy in the different regions of the phase space defined by the “equilibrium” positions of Protein1, Protein3 and Protein4 were examined. As mentioned earlier, the reaching of “equilibrium” was assessed by the stabilization of the protein levels on almost invariant values and in this case was assumed to occur at a time of 300 seconds. Hence from here on, all mention of “equilibrium protein levels” will imply protein levels after a time of 300 seconds.</p>
+<a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"></a><p>The different initial conditions were simulated by using different seeds for the random number generator for the different runs. Each network was run for 25 different simulations, each starting from a different initial condition for a total of 300 seconds. Only the protein levels at t = 300 were utilized in this analysis. The reaching of equilibrium was assessed by the stabilization of the protein levels on almost invariant values.</p>
+<a id="article1.body1.sec3.sec3.p4" name="article1.body1.sec3.sec3.p4"></a><p>The dynamic discrimination task involved the recording of the different values of Protein1, Protein3 and Protein4 in time during the transient, going from the initial to the stable final position at the end of 300 seconds. The networks were run for 10 different simulations and sampled once every second for a total of 3000 time points. These two tasks correspond to two possible reverse engineering experiments:</p>
+
+
+<ol class="order">
+
+<li>Discrimination of different mechanisms in space (e.g. different mutations and/or drug treatments)</li>
+
+<li>Discrimination of different mechanisms in time (e.g. recording of a time course after a perturbation).</li>
+
+</ol><a id="article1.body1.sec3.sec3.p5" name="article1.body1.sec3.sec3.p5"></a><p>The results of the first task are reported in <a href="#pone-0000562-g007">Figure 7</a>. As is evident from the figure, the networks are completely superimposable in the phase space with no discrimination for the phase-space localization. <a href="#pone-0000562-g008">Figure 8</a> shows the correlation coefficients of the protein levels of each of the 75 different runs (25 runs each for the three different networks) against each other. The first 25 runs are for the template network, followed by those for the R2 and R3 networks respectively. If the networks were indeed separable, then one would expect the correlation coefficient values between runs of the same network to have significantly higher values than between runs from different networks. However, the near uniformity of the high correlation values across networks shows that they do inhabit very similar regions of the phase space.</p>
+<div class="figure" id="pone-0000562-g007"><div class="img"><a name="pone-0000562-g007" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g007&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g007"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g007&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g007/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g007/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g007/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g007/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g007.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g007/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g007/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g007.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 7.  <span>“Equilibrium” phase space for proteins 1, 3 and 4.</span></strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>The reaching of equilibrium was assessed by the stabilization of the protein levels on almost invariant values. In our case, the protein levels at a time corresponding to 300 seconds were assumed to indicate equilibrium levels. There is a lack of a clear separation of the protein levels from the three different networks.</p>
+<span>doi:10.1371/journal.pone.0000562.g007</span></div><div class="figure" id="pone-0000562-g008"><div class="img"><a name="pone-0000562-g008" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g008&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g008"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g008&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g008/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g008/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g008/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g008/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g008.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g008/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g008/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g008.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 8.  <span>Correlation coefficient of the individual runs for the three different networks against one another.</span></strong></p><a id="article1.body1.sec3.sec3.fig2.caption1.p1" name="article1.body1.sec3.sec3.fig2.caption1.p1"></a><p>The correlation coefficients are computed as the correlation of the three protein levels for each run and plotted as a matrix with the different runs making up the abscissa and ordinate. Runs 1–25 pertain to the template network, 26–50 to the first optimized network (R2) and runs 51–75 to the second optimized network (R3). The colors range from blue (very low correlation) to dark brown (high correlation). The fact that there is no clear discrimination between the networks implies that the protein levels obtained from the three networks occupy similar regions in phase-space.</p>
+<span>doi:10.1371/journal.pone.0000562.g008</span></div><a id="article1.body1.sec3.sec3.p6" name="article1.body1.sec3.sec3.p6"></a><p>The dynamic simulation, corresponding to the study of the transient behavior going from an initial (perturbed) state to the attractor (equilibrium protein levels) was analyzed by means of principal component analysis (PCA). The goal of PCA is to project an initial <em>n</em>-dimensional space into a <em>p</em>-dimensional one (with <em>p&lt;&lt;n</em>) saving the major portion of initial information; the new <em>p</em> dimensions are called principal components and correspond to linear combinations of the original variables (dimensions) that are orthogonal to each other. The dimensionality reduction is obtained by means of correlations linking the original variables and the components, and correspond to the eigenvectors of the correlation matrix. The portion of the original variance explained by each variable is proportional to the eigenvalue of the corresponding eigenvector <a href="#pone.0000562-Preisendorfer1">[33]</a>.</p>
+<a id="article1.body1.sec3.sec3.p7" name="article1.body1.sec3.sec3.p7"></a><p>The components correspond to the “order parameters” shaping the data, i.e. to the driving forces generating the observed correlations <a href="#pone.0000562-Broomhead1">[34]</a>. A completely random set is expected to give rise to a principal component solution with a flat distribution of eigenvalues. Thus the essential non-random components in a given distribution can be identified as the ones having eigenvalues higher than that expected from pure chance, i.e. above the so called “noise floor” <a href="#pone.0000562-Broomhead1">[34]</a>.</p>
+<a id="article1.body1.sec3.sec3.p8" name="article1.body1.sec3.sec3.p8"></a><p>In our case each original dimension (variable) had 3000 points corresponding to the 10 time series of 300 points each for the different runs. We had 9 of these variables each corresponding to a specific protein for a specific network (3 protein levels and 3 networks) and the PCA gave rise to a 4-component solution well above the noise floor with a leading first component (factor1) explaining 47.7% of total variance (<a href="#pone-0000562-t003">Table 3</a>). If the networks could be discriminated, one or more of the significant components should be able to separate the statistical units corresponding to the different networks. Looking at the factor-loading matrix reported in <a href="#pone-0000562-t004">Table 4</a> (the loadings are the correlation coefficients between original variables and components) it is evident that the first factor (component) corresponds to a common “size” component <a href="#pone.0000562-Darroch1">[35]</a> in which all the variables enter with a positive correlation. The presence of such a leading component points to a common behavior relative to both the different networks and different proteins and corresponds to the shape of the curve describing the reach of the attractor (<a href="#pone-0000562-g009">Figure 9</a>, panel a).</p>
+<div class="figure" id="pone-0000562-g009"><div class="img"><a name="pone-0000562-g009" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g009&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.g009"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.g009&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g009/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g009/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g009/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g009/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g009.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.g009/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.g009/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.g009.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 9.  <span>Factor scores for the first four principal components.</span></strong></p><a id="article1.body1.sec3.sec3.fig3.caption1.p1" name="article1.body1.sec3.sec3.fig3.caption1.p1"></a><p>The different colored lines are the natural separation of the results into the different simulation runs.</p>
+<span>doi:10.1371/journal.pone.0000562.g009</span></div><div class="figure" id="pone-0000562-t003"><div class="img"><a name="pone-0000562-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Eigenvalues and the percent of explained variance</span></strong></p><span>doi:10.1371/journal.pone.0000562.t003</span></div><div class="figure" id="pone-0000562-t004"><div class="img"><a name="pone-0000562-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000562" data-uri="info:doi/10.1371/journal.pone.0000562.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000562.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000562.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000562.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000562.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Factor Loadings–Correlation coefficients between original variables and components</span></strong></p><span>doi:10.1371/journal.pone.0000562.t004</span></div><a id="article1.body1.sec3.sec3.p9" name="article1.body1.sec3.sec3.p9"></a><p>The shape components (2 to 4) display both positive and negative loadings and could be responsible for the differences between networks. It is evident from both the loading pattern (<a href="#pone-0000562-t004">Table 4</a>) and component plots (<a href="#pone-0000562-g009">Figure 9 panels b–e</a>) that no component is able to discriminate among the different networks.</p>
+<a id="article1.body1.sec3.sec3.p10" name="article1.body1.sec3.sec3.p10"></a><p>From the perspective of the reverse engineering of networks, what this suggests is the improbability, if not the impossibility of inferring GRNs by means of a pure data driven strategy based on the measurement of mRNA or protein levels. The networks obtained from the optimization procedure do show some similarities with the template network. Almost all the networks obtained (with one exception) require protein 1 to have an activating PTM as well as a repressive autoregulatory loop. In addition, all the optimized networks show that protein 1 promotes the transcription of genes 3 and 4. In the first case, where only the network wiring was optimized, it is also discernible that protein 1 inhibits the transcription of gene 2.</p>
+<a id="article1.body1.sec3.sec3.p11" name="article1.body1.sec3.sec3.p11"></a><p>However, when both the network and the kinetic parameters were included in the search space, there was no other feature that was as discernible as the ones mentioned above. Given that kinetic parameters are typically unknown and need to be estimated, there is a strong case to be made for the fact that no single network that can be obtained from a completely automated reverse engineering approach can identify the template network that gave rise to the observed phenotype in the first place. Rather, an ensemble of networks can be derived from such approaches. However, even this might not enable us to uniquely determine the underlying network wiring without the additional aid of other data such as those indicating the presence or absence of binding domains for the different proteins, metabolites and other molecules that define the network and so constraining the solution space.</p>
+
+
+<h4>Conclusions</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>Bar-Joseph et al. <a href="#pone.0000562-BarJoseph1">[36]</a> incorporated DNA-protein binding results along with expression profiles in order to describe a genome-wide regulatory network. Since protein-DNA binding data provides direct physical evidence of regulatory interactions, combining genome-wide protein-DNA binding data with gene expression data improves the detection of transcriptional modules over using a single source <a href="#pone.0000562-Qi1">[37]</a>. The reasoning is that the low data quality and coverage of high-throughput datasets imposes limitations on inferring accurate networks and that technological innovations in data generation and improvements in computational methods will lead to a removal of this roadblock on the path to inferring the underlying network structure accurately. However, we have shown here that even in the presence of completely noise-free data and detailed qualitative models, inferring network connectivities purely from high throughput expression data is almost impossible due to the indeterminacy of the reverse engineering problem. This indeterminacy comes about as a result of gene elasticity with multiple genotypes or network wirings giving rise to very similar, indistinguishable phenotypes.</p>
+<a id="article1.body1.sec3.sec4.p2" name="article1.body1.sec3.sec4.p2"></a><p>The impossibility of recovering the exact structure of the network in the presence of feedback loops from input/output relations (definition of a complex machine) was recognized by Heinz von Foerster <a href="#pone.0000562-vonFoerster1">[38]</a> in the middle of the last century. Thus, the only recourse to accurately uncovering the underlying GRN seems to be to use a combination of data of different origins and scope such as in the work by Bar-Joseph and coworkers.</p>
+
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>Arun Krishnan and Masaru Tomita would like to acknowledge the Tsuruoka city and Yamagata prefecture governments for funding for this project.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: AK. Performed the experiments: AK. Analyzed the data: AG AK. Contributed reagents/materials/analysis tools: AG AK. Wrote the paper: AG AK. Other: Overall Project Lead: MT.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000562-Teichmann1" id="pone.0000562-Teichmann1"></a>Teichmann SA, Madan Babu M (2004) Gene regulatory network growth by duplication. Nature Genetics  36: 492–496.  <ul class="find" data-citedArticleID="961804" data-doi="10.1038/ng1340"><li><a href="http://dx.doi.org/10.1038/ng1340" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+regulatory+network+growth+by+duplication." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+regulatory+network+growth+by+duplication.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000562-MadanBabu1" id="pone.0000562-MadanBabu1"></a>Madan Babu M, Luscombe NM, Aravind L, Gerstein M, Teichmann SA (2004) Structure and evolution of transcriptional regulatory networks. Curr Opin Struc Biol  14: 283–291.  <ul class="find" data-citedArticleID="961774" data-doi="10.1016/j.sbi.2004.05.004"><li><a href="http://dx.doi.org/10.1016/j.sbi.2004.05.004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Structure+and+evolution+of+transcriptional+regulatory+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Structure+and+evolution+of+transcriptional+regulatory+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000562-Smolen1" id="pone.0000562-Smolen1"></a>Smolen P, Baxter DA, Byrne JH (2000) Modeling transcriptional control in gene networks-methods, recent results and future directions. Bul Math Biol  62: 247–292.  <ul class="find" data-citedArticleID="961798" data-doi="10.1006/bulm.1999.0155"><li><a href="http://dx.doi.org/10.1006/bulm.1999.0155" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+transcriptional+control+in+gene+networks-methods%2C+recent+results+and+future+directions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+transcriptional+control+in+gene+networks-methods%2C+recent+results+and+future+directions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000562-Liang1" id="pone.0000562-Liang1"></a>Liang S, Fuhrman S, Somogyi R (1998) Reveal: a general reverse engineering algorithm for inference of genetic network architectures.   URL citeseer.ist.psu.edu/liang98reveal.html.  <ul class="find-nolinks"></ul></li><li><span class="label">5.
+              </span><a name="pone.0000562-Somogyi1" id="pone.0000562-Somogyi1"></a>Somogyi R, Sniegoski C (1996) Modeling the complexity of genetic networks: understanding multigenic and pleiotropic regulation. Complexity  1: 45–63.  <ul class="find" data-citedArticleID="961802" data-doi="10.1002/cplx.6130010612"><li><a href="http://dx.doi.org/10.1002/cplx.6130010612" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+the+complexity+of+genetic+networks%3A+understanding+multigenic+and+pleiotropic+regulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+the+complexity+of+genetic+networks%3A+understanding+multigenic+and+pleiotropic+regulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000562-Thomas1" id="pone.0000562-Thomas1"></a>Thomas R, Thieffry D, Kaufmann M (1995) Dynamical behaviour of biological regulatory networks-i. biological role of feedback loops and practical use of the concept of the loop-characteristic state. Bull Math Biol  57: 247–276.  <ul class="find" data-citedArticleID="961806" data-doi="10.1016/0092-8240(94)00036-c"><li><a href="http://dx.doi.org/10.1016/0092-8240(94)00036-c" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamical+behaviour+of+biological+regulatory+networks-i.+biological+role+of+feedback+loops+and+practical+use+of+the+concept+of+the+loop-characteristic+state." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamical+behaviour+of+biological+regulatory+networks-i.+biological+role+of+feedback+loops+and+practical+use+of+the+concept+of+the+loop-characteristic+state.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000562-Boden1" id="pone.0000562-Boden1"></a>Boden J (1997) Programming the drosophila embryo. J Theor Biol  188: 391–445.  <ul class="find" data-citedArticleID="961746"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Programming+the+drosophila+embryo.&amp;auth=&amp;atitle=Programming+the+drosophila+embryo." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Programming+the+drosophila+embryo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Programming+the+drosophila+embryo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000562-Wen1" id="pone.0000562-Wen1"></a>Wen XL, Fuhrman S, Michaels G, Carr D, Smith S, et al.  (1998) Large scale temporal gene expression mapping of central nervous system development. Proc Natl Acad Sci USA  95: 334–339.  <ul class="find" data-citedArticleID="961812" data-doi="10.1073/pnas.95.1.334"><li><a href="http://dx.doi.org/10.1073/pnas.95.1.334" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Large+scale+temporal+gene+expression+mapping+of+central+nervous+system+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Large+scale+temporal+gene+expression+mapping+of+central+nervous+system+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000562-Eisen1" id="pone.0000562-Eisen1"></a>Eisen MB, Spellman PT, Brown PO, Botstein D (1998) Cluster analysis and display of genome wide expression patterns. Proc Natl Acad Sci USA  95: 14863–14868.  <ul class="find" data-citedArticleID="961756" data-doi="10.1073/pnas.95.25.14863"><li><a href="http://dx.doi.org/10.1073/pnas.95.25.14863" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cluster+analysis+and+display+of+genome+wide+expression+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cluster+analysis+and+display+of+genome+wide+expression+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000562-Tyson1" id="pone.0000562-Tyson1"></a>Tyson J, Othmer HG (1978) The dynamics of feedback control circuits in biochemical pathways. Prog Theor Biol  5: 2–62.  <ul class="find" data-citedArticleID="961808" data-doi="10.1016/b978-0-12-543105-7.50008-7"><li><a href="http://dx.doi.org/10.1016/b978-0-12-543105-7.50008-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+dynamics+of+feedback+control+circuits+in+biochemical+pathways." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+dynamics+of+feedback+control+circuits+in+biochemical+pathways.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000562-Griffith1" id="pone.0000562-Griffith1"></a>Griffith JS (1968) Mathematics of cellular control processes. i. negative feedback to one gene. J Theor Biol  20: 202–208.  <ul class="find" data-citedArticleID="961762" data-doi="10.1016/0022-5193(68)90189-6"><li><a href="http://dx.doi.org/10.1016/0022-5193(68)90189-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mathematics+of+cellular+control+processes.+i.+negative+feedback+to+one+gene." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mathematics+of+cellular+control+processes.+i.+negative+feedback+to+one+gene.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000562-Griffith2" id="pone.0000562-Griffith2"></a>Griffith JS (1968) Mathematics of cellular control processes. ii. positive feedback to one gene. J Theor Biol  20: 209–216.  <ul class="find" data-citedArticleID="961764" data-doi="10.1016/0022-5193(68)90190-2"><li><a href="http://dx.doi.org/10.1016/0022-5193(68)90190-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mathematics+of+cellular+control+processes.+ii.+positive+feedback+to+one+gene." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mathematics+of+cellular+control+processes.+ii.+positive+feedback+to+one+gene.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000562-Smith1" id="pone.0000562-Smith1"></a>Smith H (1987) Oscillations and multiple steady states in a cyclic gene model with repression. J Math Biol  25: 169–190.  <ul class="find" data-citedArticleID="961796" data-doi="10.1007/bf00276388"><li><a href="http://dx.doi.org/10.1007/bf00276388" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Oscillations+and+multiple+steady+states+in+a+cyclic+gene+model+with+repression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Oscillations+and+multiple+steady+states+in+a+cyclic+gene+model+with+repression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000562-Snoussi1" id="pone.0000562-Snoussi1"></a>Snoussi EH, Thomas R (1993) Logical identification of all steady states: The concept of feedback loop characteristic states. Bull Math Biol  55: 973–991.  <ul class="find" data-citedArticleID="961800" data-doi="10.1016/s0092-8240(05)80199-5"><li><a href="http://dx.doi.org/10.1016/s0092-8240(05)80199-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Logical+identification+of+all+steady+states%3A+The+concept+of+feedback+loop+characteristic+states." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Logical+identification+of+all+steady+states%3A+The+concept+of+feedback+loop+characteristic+states.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000562-Mestl1" id="pone.0000562-Mestl1"></a>Mestl T, Plahte E, Omholt SW (1995) A mathematical framework for describing and analyzing gene regulatory networks. J Theor Biol  176: 291–300.  <ul class="find" data-citedArticleID="961778" data-doi="10.1006/jtbi.1995.0199"><li><a href="http://dx.doi.org/10.1006/jtbi.1995.0199" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+mathematical+framework+for+describing+and+analyzing+gene+regulatory+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+mathematical+framework+for+describing+and+analyzing+gene+regulatory+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000562-Mestl2" id="pone.0000562-Mestl2"></a>Mestl T, Lemay C, Glass L (1996) Chaos in high dimensional neural and gene networks. Physical D  98: 33–52.  <ul class="find" data-citedArticleID="961780" data-doi="10.1016/0167-2789(96)00086-3"><li><a href="http://dx.doi.org/10.1016/0167-2789(96)00086-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Chaos+in+high+dimensional+neural+and+gene+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Chaos+in+high+dimensional+neural+and+gene+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000562-Plahte1" id="pone.0000562-Plahte1"></a>Plahte E, Mestl T, Omholt SW (1998) A methodological basis for description and analysis of systems with complex switch-like interactions. J Math Biol  36: 321–348.  <ul class="find" data-citedArticleID="961784" data-doi="10.1007/s002850050103"><li><a href="http://dx.doi.org/10.1007/s002850050103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+methodological+basis+for+description+and+analysis+of+systems+with+complex+switch-like+interactions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+methodological+basis+for+description+and+analysis+of+systems+with+complex+switch-like+interactions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000562-Mcadams1" id="pone.0000562-Mcadams1"></a>Mcadams H, Arkin A (1998) Simulation of prokaryotic genetic circuits. Ann Rev Biophys Biomed Struct  27: 199–224.  <ul class="find" data-citedArticleID="961776" data-doi="10.1146/annurev.biophys.27.1.199"><li><a href="http://dx.doi.org/10.1146/annurev.biophys.27.1.199" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Simulation+of+prokaryotic+genetic+circuits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Simulation+of+prokaryotic+genetic+circuits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000562-Yuh1" id="pone.0000562-Yuh1"></a>Yuh CH, Bolouri H, Davidson EH (1998) Genomic cis-regulatory logic, experimental and computational analysis of a sea urchin gene. Science  279: 1896–1902.  <ul class="find" data-citedArticleID="961814" data-doi="10.1126/science.279.5358.1896"><li><a href="http://dx.doi.org/10.1126/science.279.5358.1896" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+cis-regulatory+logic%2C+experimental+and+computational+analysis+of+a+sea+urchin+gene." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+cis-regulatory+logic%2C+experimental+and+computational+analysis+of+a+sea+urchin+gene.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000562-deJong1" id="pone.0000562-deJong1"></a>de Jong H (2002) Modeling and simulation of genetic regulatory systems: A literature review. J Comp Biol  9(1): 67–103.  <ul class="find" data-citedArticleID="961816" data-doi="10.1089/10665270252833208"><li><a href="http://dx.doi.org/10.1089/10665270252833208" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+and+simulation+of+genetic+regulatory+systems%3A+A+literature+review." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+and+simulation+of+genetic+regulatory+systems%3A+A+literature+review.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000562-Gardner1" id="pone.0000562-Gardner1"></a>Gardner TS, Faith JJ (2005) Reverse-engineering transcription control networks. Physics of Life Reviews  2(1): 65–88.  <ul class="find" data-citedArticleID="961758" data-doi="10.1016/j.plrev.2005.01.001"><li><a href="http://dx.doi.org/10.1016/j.plrev.2005.01.001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reverse-engineering+transcription+control+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reverse-engineering+transcription+control+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000562-Rutherford1" id="pone.0000562-Rutherford1"></a>Rutherford S (2000) From genotype to phenotype: bufferring mechanisms and the storage of genetic information. BioEssays  22: 1095–1105.  <ul class="find" data-citedArticleID="961792" data-doi="10.1002/1521-1878(200012)22:12<1095::aid-bies7&gt;3.0.co;2-a"><li><a href="http://dx.doi.org/10.1002/1521-1878(200012)22:12<1095::aid-bies7&gt;3.0.co;2-a" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=From+genotype+to+phenotype%3A+bufferring+mechanisms+and+the+storage+of+genetic+information." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22From+genotype+to+phenotype%3A+bufferring+mechanisms+and+the+storage+of+genetic+information.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000562-Brazma1" id="pone.0000562-Brazma1"></a>Brazma A, Schlitt T (2003) Reverse engineering of gene regulatory networks: a finite state linear model. Genome Biology  4(6): P5.  <ul class="find" data-citedArticleID="961748"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Reverse+engineering+of+gene+regulatory+networks%3A+a+finite+state+linear+model.&amp;auth=&amp;atitle=Reverse+engineering+of+gene+regulatory+networks%3A+a+finite+state+linear+model." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reverse+engineering+of+gene+regulatory+networks%3A+a+finite+state+linear+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reverse+engineering+of+gene+regulatory+networks%3A+a+finite+state+linear+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000562-Hayot1" id="pone.0000562-Hayot1"></a>Hayot F, Jayaprakash C (2005) A feedforward loop motif in transcriptional regulation: induction and repression. J Theor Biol  234: 133–143.  <ul class="find" data-citedArticleID="961766" data-doi="10.1016/j.jtbi.2004.11.010"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2004.11.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+feedforward+loop+motif+in+transcriptional+regulation%3A+induction+and+repression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+feedforward+loop+motif+in+transcriptional+regulation%3A+induction+and+repression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000562-Ingram1" id="pone.0000562-Ingram1"></a>Ingram PJ, Stumpf MPH, Stark J (2006) Network motifs: Structure does not determine function. BMC Genomics  7: 108.  <ul class="find" data-citedArticleID="961768" data-doi="10.1186/1471-2164-7-108"><li><a href="http://dx.doi.org/10.1186/1471-2164-7-108" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Network+motifs%3A+Structure+does+not+determine+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Network+motifs%3A+Structure+does+not+determine+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000562-Novere1" id="pone.0000562-Novere1"></a>Novere NL, Shimizu TS (2001) Stochsim: modelling of stochastic biomolecular processes. Bioinformatics  17: 575–576.  <ul class="find" data-citedArticleID="961782" data-doi="10.1093/bioinformatics/17.6.575"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.6.575" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stochsim%3A+modelling+of+stochastic+biomolecular+processes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stochsim%3A+modelling+of+stochastic+biomolecular+processes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000562-Chipperfield1" id="pone.0000562-Chipperfield1"></a>Chipperfield A, Fleming P, Pohlheim H, Fonseca C (2001) Genetic algorithm toolbox user's guide.   URL <a href="http://www.acse.dept.shef.ac.uk/cgi- bin/gatbx- download">http://www.acse.dept.shef.ac.uk/cgi- bin/gatbx- download</a>.  <ul class="find-nolinks"></ul></li><li><span class="label">28.
+              </span><a name="pone.0000562-Lewontin1" id="pone.0000562-Lewontin1"></a>Lewontin RC (1974) The Genetic Basis of Evolutionary Change. New York: Columbia University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">29.
+              </span><a name="pone.0000562-Waddington1" id="pone.0000562-Waddington1"></a>Waddington CH (1957) The Strategy of the Genes. New York: Macmillan.   <ul class="find-nolinks"></ul></li><li><span class="label">30.
+              </span><a name="pone.0000562-Schmalhausen1" id="pone.0000562-Schmalhausen1"></a>Schmalhausen II (1986) Factors of Evolution: The Theory of Stabilizing Selection. Chicago: University of Chicago Press.   <ul class="find-nolinks"></ul></li><li><span class="label">31.
+              </span><a name="pone.0000562-Gibson1" id="pone.0000562-Gibson1"></a>Gibson G, Wagner G (2000) Canalization in evolutionary genetics: a stabilizing theory? BioEssays  22: 372–380.  <ul class="find" data-citedArticleID="961760" data-doi="10.1002/(sici)1521-1878(200004)22:4<372::aid-bies7&gt;3.0.co;2-j"><li><a href="http://dx.doi.org/10.1002/(sici)1521-1878(200004)22:4<372::aid-bies7&gt;3.0.co;2-j" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Canalization+in+evolutionary+genetics%3A+a+stabilizing+theory%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Canalization+in+evolutionary+genetics%3A+a+stabilizing+theory%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000562-Rice1" id="pone.0000562-Rice1"></a>Rice SH (1998) The evolution of canalization and the breaking of von baer's laws: Modeling the evolution of development with epistasis. Evolution  52: 647–656.  <ul class="find" data-citedArticleID="961790" data-doi="10.2307/2411260"><li><a href="http://dx.doi.org/10.2307/2411260" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+evolution+of+canalization+and+the+breaking+of+von+baer%27s+laws%3A+Modeling+the+evolution+of+development+with+epistasis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+evolution+of+canalization+and+the+breaking+of+von+baer%27s+laws%3A+Modeling+the+evolution+of+development+with+epistasis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000562-Preisendorfer1" id="pone.0000562-Preisendorfer1"></a>Preisendorfer RW, Mobley CD (1988) Principal component analysis in meteorology and oceanography. New York: Elsevier.   <ul class="find-nolinks"></ul></li><li><span class="label">34.
+              </span><a name="pone.0000562-Broomhead1" id="pone.0000562-Broomhead1"></a>Broomhead DS, King GP (1986) Extracting qualitative dynamics from experimental data. Physica D  20: 217–236.  <ul class="find" data-citedArticleID="961750" data-doi="10.1016/0167-2789(86)90031-x"><li><a href="http://dx.doi.org/10.1016/0167-2789(86)90031-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Extracting+qualitative+dynamics+from+experimental+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Extracting+qualitative+dynamics+from+experimental+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000562-Darroch1" id="pone.0000562-Darroch1"></a>Darroch JN, Mosimann JE (1985) Modularity and dynamics of cellular networks. Biometrika  72(2): 241–252.  <ul class="find" data-citedArticleID="961754" data-doi="10.1093/biomet/72.2.241"><li><a href="http://dx.doi.org/10.1093/biomet/72.2.241" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modularity+and+dynamics+of+cellular+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modularity+and+dynamics+of+cellular+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000562-BarJoseph1" id="pone.0000562-BarJoseph1"></a>Bar-Joseph Z, Gerber GK, Lee TI, Rinaldi NJ, Yoo JY, et al.  (2003) Computational discovery of gene modules and regulatory networks. Nature Biotechnology  21(11): 1295–1297.  <ul class="find" data-citedArticleID="961744" data-doi="10.1038/nbt890"><li><a href="http://dx.doi.org/10.1038/nbt890" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+discovery+of+gene+modules+and+regulatory+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+discovery+of+gene+modules+and+regulatory+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000562-Qi1" id="pone.0000562-Qi1"></a>Qi Y, Ge h (2006) Modularity and dynamics of cellular networks. PLoS Computational Biology  2(12): e174.  <ul class="find" data-citedArticleID="961788" data-doi="10.1371/journal.pcbi.0020174"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020174" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modularity+and+dynamics+of+cellular+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modularity+and+dynamics+of+cellular+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000562-vonFoerster1" id="pone.0000562-vonFoerster1"></a>von Foerster H (1981) Observing Systems: Selected Papers of Heinz von Foerster. Seaside, CA: Intersystems Publications.   <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.XML" value="90312"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.PDF" value="1084866"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g001.PNG_L" value="90389"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g001.PNG_M" value="32611"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g001.PNG_S" value="2424"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g001.TIF" value="297080"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g001.PNG_I" value="15553"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t001.PNG_L" value="67401"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t001.PNG_M" value="67727"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t001.PNG_S" value="3540"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t001.TIF" value="366674"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t001.PNG_I" value="29910"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t002.PNG_L" value="33919"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t002.PNG_M" value="28424"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t002.PNG_S" value="2064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t002.TIF" value="287712"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t002.PNG_I" value="12926"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e001.PNG" value="1330"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e001.TIF" value="22260"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e002.PNG" value="1852"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e002.TIF" value="22968"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e003.PNG" value="1330"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e003.TIF" value="22308"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e004.PNG" value="2012"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e004.TIF" value="23068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e005.PNG" value="1543"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e005.TIF" value="22668"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e006.PNG" value="1550"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e006.TIF" value="22572"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e007.PNG" value="960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e007.TIF" value="21744"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e008.PNG" value="1163"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e008.TIF" value="21960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e009.PNG" value="1519"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e009.TIF" value="22632"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g002.PNG_L" value="323169"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g002.PNG_M" value="47877"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g002.PNG_S" value="2194"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g002.TIF" value="568594"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g002.PNG_I" value="20185"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e010.PNG" value="4501"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.e010.TIF" value="26824"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g003.PNG_L" value="329017"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g003.PNG_M" value="93355"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g003.PNG_S" value="3810"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g003.TIF" value="595112"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g003.PNG_I" value="38845"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g004.PNG_L" value="429555"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g004.PNG_M" value="95509"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g004.PNG_S" value="3412"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g004.TIF" value="842932"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g004.PNG_I" value="40288"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g005.PNG_L" value="579339"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g005.PNG_M" value="86133"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g005.PNG_S" value="3062"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g005.TIF" value="906158"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g005.PNG_I" value="31221"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g006.PNG_L" value="196104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g006.PNG_M" value="56335"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g006.PNG_S" value="2586"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g006.TIF" value="328788"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g006.PNG_I" value="23585"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g007.PNG_L" value="497041"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g007.PNG_M" value="78157"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g007.PNG_S" value="2410"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g007.TIF" value="598450"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g007.PNG_I" value="35384"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g008.PNG_L" value="1956401"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g008.PNG_M" value="234234"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g008.PNG_S" value="5308"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g008.TIF" value="2613926"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g008.PNG_I" value="76960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g009.PNG_L" value="1732859"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g009.PNG_M" value="196553"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g009.PNG_S" value="4284"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g009.TIF" value="2425002"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.g009.PNG_I" value="64530"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t003.PNG_L" value="56135"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t003.PNG_M" value="60985"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t003.PNG_S" value="3555"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t003.TIF" value="309748"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t003.PNG_I" value="27733"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t004.PNG_L" value="66831"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t004.PNG_M" value="72328"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t004.PNG_S" value="3876"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t004.TIF" value="338286"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000562.t004.PNG_I" value="32665"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000562&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000562" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000562&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000562&volume=&issue=&title=Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity&author_name=Arun%20Krishnan%2C%20Alessandro%20Giuliani%2C%20Masaru%20Tomita&start_page=1&end_page=12" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000562" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562&amp;t=Indeterminacy%20of%20Reverse%20Engineering%20of%20Gene%20Regulatory%20Networks%3A%20The%20Curse%20of%20Gene%20Elasticity" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562&title=Indeterminacy%20of%20Reverse%20Engineering%20of%20Gene%20Regulatory%20Networks%3A%20The%20Curse%20of%20Gene%20Elasticity&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562&amp;title=Indeterminacy%20of%20Reverse%20Engineering%20of%20Gene%20Regulatory%20Networks%3A%20The%20Curse%20of%20Gene%20Elasticity" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000562&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Indeterminacy of Reverse Engineering of Gene Regulatory Networks: The Curse of Gene Elasticity';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000562';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Indeterminacy%20of%20Reverse%20Engineering%20of%20Gene%20Regulatory%20Networks%3A%20The%20Curse%20of%20Gene%20Elasticity http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000562" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000562" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Biochemical+simulations%22" title="Search for articles in the subject area:'Biochemical simulations'"><div class="flagText">Biochemical simulations</div></a>
+              <div data-categoryid="31873" data-articleid="23962"
+                   data-categoryname="Biochemical simulations"
+                   class="flagImage" title="Flag 'Biochemical simulations' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22DNA+transcription%22" title="Search for articles in the subject area:'DNA transcription'"><div class="flagText">DNA transcription</div></a>
+              <div data-categoryid="20231" data-articleid="23962"
+                   data-categoryname="DNA transcription"
+                   class="flagImage" title="Flag 'DNA transcription' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Engineering+and+technology%22" title="Search for articles in the subject area:'Engineering and technology'"><div class="flagText">Engineering and technology</div></a>
+              <div data-categoryid="2605" data-articleid="23962"
+                   data-categoryname="Engineering and technology"
+                   class="flagImage" title="Flag 'Engineering and technology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulatory+networks%22" title="Search for articles in the subject area:'Gene regulatory networks'"><div class="flagText">Gene regulatory networks</div></a>
+              <div data-categoryid="17555" data-articleid="23962"
+                   data-categoryname="Gene regulatory networks"
+                   class="flagImage" title="Flag 'Gene regulatory networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+networks%22" title="Search for articles in the subject area:'Genetic networks'"><div class="flagText">Genetic networks</div></a>
+              <div data-categoryid="31807" data-articleid="23962"
+                   data-categoryname="Genetic networks"
+                   class="flagImage" title="Flag 'Genetic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phenotypes%22" title="Search for articles in the subject area:'Phenotypes'"><div class="flagText">Phenotypes</div></a>
+              <div data-categoryid="40235" data-articleid="23962"
+                   data-categoryname="Phenotypes"
+                   class="flagImage" title="Flag 'Phenotypes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+interaction+networks%22" title="Search for articles in the subject area:'Protein interaction networks'"><div class="flagText">Protein interaction networks</div></a>
+              <div data-categoryid="18069" data-articleid="23962"
+                   data-categoryname="Protein interaction networks"
+                   class="flagImage" title="Flag 'Protein interaction networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Transcription+factors%22" title="Search for articles in the subject area:'Transcription factors'"><div class="flagText">Transcription factors</div></a>
+              <div data-categoryid="17335" data-articleid="23962"
+                   data-categoryname="Transcription factors"
+                   class="flagImage" title="Flag 'Transcription factors' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=4260'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=1534'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=1310&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

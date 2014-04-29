@@ -1,0 +1,1576 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Reconstruction of Cell Lineage Trees in Mice</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001939"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001939" />
+
+    <meta name="citation_title" content="Reconstruction of Cell Lineage Trees in Mice"/>
+    <meta itemprop="name" content="Reconstruction of Cell Lineage Trees in Mice"/>
+
+      <meta name="citation_author" content="Adam Wasserstrom"/>
+            <meta name="citation_author_institution" content="Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Rivka Adar"/>
+            <meta name="citation_author_institution" content="Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Gabi Shefer"/>
+            <meta name="citation_author_institution" content="Department of Cell and Developmental Biology, Sackler School of Medicine, Tel-Aviv University, Tel-Aviv, Israel"/>
+      <meta name="citation_author" content="Dan Frumkin"/>
+            <meta name="citation_author_institution" content="Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Shalev Itzkovitz"/>
+            <meta name="citation_author_institution" content="Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Tomer Stern"/>
+            <meta name="citation_author_institution" content="Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Irena Shur"/>
+      <meta name="citation_author" content="Lior Zangi"/>
+            <meta name="citation_author_institution" content="Department of Immunology, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Shai Kaplan"/>
+            <meta name="citation_author_institution" content="Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Alon Harmelin"/>
+            <meta name="citation_author_institution" content="Department of Veterinary Resources, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Yair Reisner"/>
+            <meta name="citation_author_institution" content="Department of Immunology, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Dafna Benayahu"/>
+            <meta name="citation_author_institution" content="Department of Cell and Developmental Biology, Sackler School of Medicine, Tel-Aviv University, Tel-Aviv, Israel"/>
+      <meta name="citation_author" content="Eldad Tzahor"/>
+            <meta name="citation_author_institution" content="Department of Immunology, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Eran Segal"/>
+            <meta name="citation_author_institution" content="Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel"/>
+      <meta name="citation_author" content="Ehud Shapiro"/>
+            <meta name="citation_author_institution" content="Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel"/>
+            <meta name="citation_author_institution" content="Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel"/>
+
+    <meta name="citation_date" content="2008/4/9"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001939.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1939"/>
+    <meta name="citation_issue" content="4"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Genomic variability within an organism exposes its cell lineage tree.; citation_author=D Frumkin; citation_author=A Wasserstrom; citation_author=S Kaplan; citation_author=U Feige; citation_author=E Shapiro; citation_journal_title=PLoS Comput Biol; citation_volume=1; citation_number=1; citation_pages=e50; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Post-embryonic cell lineages of the nematode, Caenorhabditis elegans.; citation_author=JE Sulston; citation_author=HR Horvitz; citation_journal_title=Dev Biol; citation_volume=56; citation_number=2; citation_pages=110-156; citation_date=1977; " />
+      <meta name="citation_reference" content="citation_title=The embryonic cell lineage of the nematode Caenorhabditis elegans.; citation_author=JE Sulston; citation_author=E Schierenberg; citation_author=JG White; citation_author=JN Thomson; citation_journal_title=Dev Biol; citation_volume=100; citation_number=3; citation_pages=64-119; citation_date=1983; " />
+      <meta name="citation_reference" content="citation_title=A phylogenetic approach to mapping cell fate.; citation_author=SJ Salipante; citation_author=MS Horwitz; citation_journal_title=Curr Top Dev Biol; citation_volume=79; citation_number=4; citation_pages=157-184; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Fate maps old and new.; citation_author=JD Clarke; citation_author=C Tickle; citation_journal_title=Nat Cell Biol; citation_volume=1; citation_number=5; citation_pages=E103-109; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Phylogenetic fate mapping.; citation_author=SJ Salipante; citation_author=MS Horwitz; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=103; citation_number=6; citation_pages=5448-5453; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Extensive somatic microsatellite mutations in normal human tissue.; citation_author=S Vilkki; citation_author=JL Tsao; citation_author=A Loukola; citation_author=M Poyhonen; citation_author=O Vierimaa; citation_journal_title=Cancer Res; citation_volume=61; citation_number=7; citation_pages=4541-4544; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Mouse models for human DNA mismatch-repair gene defects.; citation_author=K Wei; citation_author=R Kucherlapati; citation_author=W Edelmann; citation_journal_title=Trends Mol Med; citation_volume=8; citation_number=8; citation_pages=346-353; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Developmental cell lineage.; citation_author=G Stent; citation_journal_title=Int J Dev Biol; citation_volume=42; citation_number=9; citation_pages=237-241; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Self-renewal of the adult skeletal muscle satellite cell.; citation_author=CA Collins; citation_author=TA Partridge; citation_journal_title=Cell Cycle; citation_volume=4; citation_number=10; citation_pages=1338-1341; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Cellular patterning of the vertebrate embryo.; citation_author=L Mathis; citation_author=JF Nicolas; citation_journal_title=Trends Genet; citation_volume=18; citation_number=11; citation_pages=627-635; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Boundaries in development: formation and function.; citation_author=KD Irvine; citation_author=C Rauskolb; citation_journal_title=Annu Rev Cell Dev Biol; citation_volume=17; citation_number=12; citation_pages=189-214; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Widespread dispersion of neuronal clones across functional regions of the cerebral cortex.; citation_author=C Walsh; citation_author=CL Cepko; citation_journal_title=Science; citation_volume=255; citation_number=13; citation_pages=434-440; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_author=D Graur; citation_author=L W-H; citation_number=14; citation_pages=481; citation_date=2000; citation_publisher=Sinauer Associates; " />
+      <meta name="citation_reference" content="citation_title=Estimating Cell Depth from Somatic Mutations.; citation_author=A Wasserstrom; citation_author=D Frumkin; citation_author=R Adar; citation_author=S Itzkovitz; citation_author=T Stern; citation_journal_title=PLoS Computational Biology; citation_number=15; citation_date=2008; " />
+      <meta name="citation_reference" content="citation_title=Stem cell function, self-renewal, and behavioral heterogeneity of cells from the adult muscle satellite cell niche.; citation_author=CA Collins; citation_author=I Olsen; citation_author=PS Zammit; citation_author=L Heslop; citation_author=A Petrie; citation_journal_title=Cell; citation_volume=122; citation_number=16; citation_pages=289-301; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Whole genome amplification: abundant supplies of DNA from precious samples or clinical specimens.; citation_author=RS Lasken; citation_author=M Egholm; citation_journal_title=Trends Biotechnol; citation_volume=21; citation_number=17; citation_pages=531-535; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Resistance to H-2-restricted but not to allo-H2-specific graft and cytotoxic T lymphocyte responses in lymphoma mutant.; citation_author=C Ohlen; citation_author=J Bastin; citation_author=HG Ljunggren; citation_author=L Foster; citation_author=E Wolpert; citation_journal_title=J Immunol; citation_volume=145; citation_number=18; citation_pages=52-58; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=Mutation selection and the natural history of cancer.; citation_author=J Cairns; citation_journal_title=Nature; citation_volume=255; citation_number=19; citation_pages=197-200; citation_date=1975; " />
+      <meta name="citation_reference" content="citation_title=Clonal analysis of epiblast fate during germ layer formation in the mouse embryo.; citation_author=KA Lawson; citation_author=JJ Meneses; citation_author=RA Pedersen; citation_journal_title=Development; citation_volume=113; citation_number=20; citation_pages=891-911; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=The clonal evolution of tumor cell populations.; citation_author=PC Nowell; citation_journal_title=Science; citation_volume=194; citation_number=21; citation_pages=23-28; citation_date=1976; " />
+      <meta name="citation_reference" content="citation_title=Chimeric-transgenic mice represent a powerful tool for studying how the proliferation and differentiation programs of intestinal epithelial cell lineages are regulated.; citation_author=ML Hermiston; citation_author=RP Green; citation_author=JI Gordon; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=90; citation_number=22; citation_pages=8866-8870; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=A common somitic origin for embryonic muscle progenitors and satellite cells.; citation_author=J Gros; citation_author=M Manceau; citation_author=V Thome; citation_author=C Marcelle; citation_journal_title=Nature; citation_volume=435; citation_number=23; citation_pages=954-958; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A Pax3/Pax7-dependent population of skeletal muscle progenitor cells.; citation_author=F Relaix; citation_author=D Rocancourt; citation_author=A Mansouri; citation_author=M Buckingham; citation_journal_title=Nature; citation_volume=435; citation_number=24; citation_pages=948-953; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Pax3/Pax7 mark a novel population of primitive myogenic cells during development.; citation_author=L Kassar-Duchossoy; citation_author=E Giacone; citation_author=B Gayraud-Morel; citation_author=A Jory; citation_author=D Gomes; citation_journal_title=Genes Dev; citation_volume=19; citation_number=25; citation_pages=1426-1431; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Muscle regeneration by bone marrow-derived myogenic progenitors.; citation_author=G Ferrari; citation_author=G Cusella-De Angelis; citation_author=M Coletta; citation_author=E Paolucci; citation_author=A Stornaiuolo; citation_journal_title=Science; citation_volume=279; citation_number=26; citation_pages=1528-1530; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Skeletal myogenic progenitors originating from embryonic dorsal aorta coexpress endothelial and myogenic markers and contribute to postnatal muscle growth and regeneration.; citation_author=L De Angelis; citation_author=L Berghella; citation_author=M Coletta; citation_author=L Lattanzi; citation_author=M Zanchi; citation_journal_title=J Cell Biol; citation_volume=147; citation_number=27; citation_pages=869-878; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Amplification of multiple genomic loci from single cells isolated by laser micro-dissection of tissues.; citation_author=D Frumkin; citation_author=A Wasserstrom; citation_author=S Itzkovitz; citation_author=A Harmelin; citation_author=G Rechavi; citation_journal_title=BMC Biotechnology; citation_volume=8; citation_number=28; citation_date=2008; " />
+      <meta name="citation_reference" content="citation_author=A Chisholm; citation_number=29; citation_date=2000; citation_publisher=Academic Press; " />
+      <meta name="citation_reference" content="citation_title=Pax5: the guardian of B cell identity and function.; citation_author=C Cobaleda; citation_author=A Schebesta; citation_author=A Delogu; citation_author=M Busslinger; citation_journal_title=Nat Immunol; citation_volume=8; citation_number=30; citation_pages=463-470; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Heart development: the battle between mesoderm and endoderm.; citation_author=R Pal; citation_author=A Khanna; citation_journal_title=Stem Cells Dev; citation_volume=16; citation_number=31; citation_pages=3-5; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Fate of the lineage.; citation_author=JMW Slack; citation_journal_title=Nature Genetics; citation_volume=24; citation_number=32; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Involvement of mouse Mlh1 in DNA mismatch repair and meiotic crossing over.; citation_author=SM Baker; citation_author=AW Plug; citation_author=TA Prolla; citation_author=CE Bronner; citation_author=AC Harris; citation_journal_title=Nat Genet; citation_volume=13; citation_number=33; citation_pages=336-342; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Skeletal muscle satellite cells can spontaneously enter an alternative mesenchymal pathway.; citation_author=G Shefer; citation_author=M Wleklinski-Lee; citation_author=Z Yablonka-Reuveni; citation_journal_title=J Cell Sci; citation_volume=117; citation_number=34; citation_pages=5393-5404; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Subpopulations of marrow stromal cells share a variety of osteoblastic markers.; citation_author=D Benayahu; citation_author=A Fried; citation_author=D Zipori; citation_author=S Wientroub; citation_journal_title=Calcif Tissue Int; citation_volume=49; citation_number=35; citation_pages=202-207; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=Effect of raloxifene-analog (LY 117018-Hcl) on the bone marrow of ovariectomized mice.; citation_author=Z Liu; citation_author=E Graff; citation_author=D Benayahu; citation_journal_title=J Cell Biochem; citation_volume=76; citation_number=36; citation_pages=509-517; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Isolation and characterization of nontubular sca-1+lin− multipotent stem/progenitor cells from adult mouse kidney.; citation_author=B Dekel; citation_author=L Zangi; citation_author=E Shezen; citation_author=S Reich-Zeliger; citation_author=S Eventov-Friedman; citation_journal_title=J Am Soc Nephrol; citation_volume=17; citation_number=37; citation_pages=3300-3314; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Regulation of oocyte maturation. The role of cAMP.; citation_author=N Dekel; citation_journal_title=Ann N Y Acad Sci; citation_volume=541; citation_number=38; citation_pages=211-216; citation_date=1988; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Reconstruction of Cell Lineage Trees in Mice"/>
+    <meta name="twitter:description" content="The cell lineage tree of a multicellular organism represents its history of cell divisions from the very first cell, the zygote. A new method for high-resolution reconstruction of parts of such cell lineage trees was recently developed based on phylogenetic analysis of somatic mutations accumulated during normal development of an organism. In this study we apply this method in mice to reconstruct the lineage trees of distinct cell types. We address for the first time basic questions in developmental biology of higher organisms, namely what is the correlation between the lineage relation among cells and their (1) function, (2) physical proximity and (3) anatomical proximity. We analyzed B-cells, kidney-, mesenchymal- and hematopoietic-stem cells, as well as satellite cells, which are adult skeletal muscle stem cells isolated from their niche on the muscle fibers (myofibers) from various skeletal muscles. Our results demonstrate that all analyzed cell types are intermingled in the lineage tree, indicating that none of these cell types are single exclusive clones. We also show a significant correlation between the physical proximity of satellite cells within muscles and their lineage. Furthermore, we show that satellite cells obtained from a single myofiber are significantly clustered in the lineage tree, reflecting their common developmental origin. Lineage analysis based on somatic mutations enables performing high resolution reconstruction of lineage trees in mice and humans, which can provide fundamental insights to many aspects of their development and tissue maintenance."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001939.g004"/>
+
+  <meta property="og:title" content="Reconstruction of Cell Lineage Trees in Mice" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=5282'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=8437'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1158&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001939">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001939" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001939&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Reconstruction of Cell Lineage Trees in Mice
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Adam Wasserstrom, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Rivka Adar, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Gabi Shefer, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Cell and Developmental Biology, Sackler School of Medicine, Tel-Aviv University, Tel-Aviv, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Dan Frumkin, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Shalev Itzkovitz, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Tomer Stern, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author no_author_meta">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Irena Shur, 
+          </span>
+        </span>
+
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Lior Zangi, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Immunology, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Shai Kaplan, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Alon Harmelin, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Veterinary Resources, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Yair Reisner, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Immunology, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Dafna Benayahu, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Cell and Developmental Biology, Sackler School of Medicine, Tel-Aviv University, Tel-Aviv, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Eldad Tzahor, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Immunology, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Eran Segal, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ehud Shapiro
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">* E-mail:</span> <a href="mailto:Ehud.Shapiro@weizmann.ac.il">Ehud.Shapiro@weizmann.ac.il</a></p>
+
+                <p>Affiliations:
+                  Department of Biological Chemistry, Weizmann Institute of Science, Rehovot, Israel, 
+                  Department of Computer Science and Applied Mathematics, Weizmann Institute of Science, Rehovot, Israel
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: April 09, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001939</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001939-g001" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001939-g002" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001939-g003" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001939-t001" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001939-g004" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001939">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001939" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>The cell lineage tree of a multicellular organism represents its history of cell divisions from the very first cell, the zygote. A new method for high-resolution reconstruction of parts of such cell lineage trees was recently developed based on phylogenetic analysis of somatic mutations accumulated during normal development of an organism. In this study we apply this method in mice to reconstruct the lineage trees of distinct cell types. We address for the first time basic questions in developmental biology of higher organisms, namely what is the correlation between the lineage relation among cells and their (1) function, (2) physical proximity and (3) anatomical proximity. We analyzed B-cells, kidney-, mesenchymal- and hematopoietic-stem cells, as well as satellite cells, which are adult skeletal muscle stem cells isolated from their niche on the muscle fibers (myofibers) from various skeletal muscles. Our results demonstrate that all analyzed cell types are intermingled in the lineage tree, indicating that none of these cell types are single exclusive clones. We also show a significant correlation between the physical proximity of satellite cells within muscles and their lineage. Furthermore, we show that satellite cells obtained from a single myofiber are significantly clustered in the lineage tree, reflecting their common developmental origin. Lineage analysis based on somatic mutations enables performing high resolution reconstruction of lineage trees in mice and humans, which can provide fundamental insights to many aspects of their development and tissue maintenance.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Wasserstrom A, Adar R, Shefer G, Frumkin D, Itzkovitz S, et al.  (2008) Reconstruction of Cell Lineage Trees in Mice. PLoS ONE 3(4):
+          e1939.
+            doi:10.1371/journal.pone.0001939</p><p><strong>Editor: </strong>Thomas Zwaka, Baylor College of Medicine, United States of America</p><p><strong>Received:</strong> November 7, 2007; <strong>Accepted:</strong> February 25, 2008; <strong>Published:</strong> April 9, 2008</p><p><strong>Copyright:</strong> © 2008 Wasserstrom et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This research was supported by The Israel Academy of Science and Humanities (Bikura), by The Yeshaya Horowitz association through the center for Complexity Science, by The Research Grant from Dr. Mordecai Roshwald, by The Grant from Kenneth and Sally Leafman Appelbaum Discovery Fund, by The Estate of Karl Felix Jakubskind, by The Clore Center for Biological Physics, and by a Research Grant from The Louis Chor Memorial Trust.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>All the cells in the body of a multi-cellular organism, such as a human or a mouse, descend from a single cell–the fertilized egg. The exact history of cell divisions that an organism underwent since its beginning is naturally represented by a mathematical tree, which we call the organism cell lineage tree (<a href="#pone.0001939-Frumkin1">[1]</a>, <a href="#pone-0001939-g001">Figure 1A</a>). Lineage trees encapsulate a wealth of information regarding the development and maintenance of the various subsystems of these organisms under physiological and pathological conditions. Lineage analyses, aiming to elucidate various parts of lineage trees, have been performed until now using a variety of methods. Direct observation of cell divisions enabled the complete reconstruction of the lineage tree of somatic cells of <em>Caenorhabditis elegans</em> <a href="#pone.0001939-Sulston1">[2]</a>, <a href="#pone.0001939-Sulston2">[3]</a>, yet this method is inapplicable to humans and mice since they are opaque and have a tremendous number of cells <a href="#pone.0001939-Salipante1">[4]</a>. A variety of methods for lineage analysis, generally termed clonal assays (reviewed in <a href="#pone.0001939-Clarke1">[5]</a>), rely on marking some cells and tracing their progeny. These methods have yielded many insights, but can provide only course-grain information about a cell lineage tree <a href="#pone.0001939-Frumkin1">[1]</a>, <a href="#pone.0001939-Salipante1">[4]</a>. In addition, these methods are also inapplicable to the study of humans because they are invasive.</p>
+<div class="figure" id="pone-0001939-g001"><div class="img"><a name="pone-0001939-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Cell lineage analysis based on somatic MS mutations.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>A. The cell lineage tree of an organism is a rooted labeled binary tree representing its development from a single cell until present time. Nodes (circles) represent cells (dead cells are crossed), and edges (lines) connect parent and daughter cells (dashed lines represent several divisions). Uncrossed leaves (nodes with no daughters) represent extant cells. Lineage trees are a snapshot of a specific timepoint, which constantly grow throughout embryonic development and the adult life of the organism. Any cell sample (colored leaves) induces a partial subtree, called the cell sample lineage tree (panel B). B. The genomic composition of cells in the sample tree at three MS loci is shown. Spontaneous somatic mutations (marked by X) in these loci are sufficient to encode the lineage relations between these cells. Cells that are genetically similar tend to share a longer common developmental path, consequently enabling phylogenetic analysis to reconstruct the tree. Although idealized mutations are depicted, even potential hampering factors (such as coincident mutations) are not expected to disrupt analysis if a sufficient number of loci are analyzed <a href="#pone.0001939-Frumkin1">[1]</a>. C. Scheme of reconstruction procedure. DNA from isolated cells is amplified either by culture or whole genome amplification, after which each cell is analyzed over a large set of MS loci using PCR and capillary electrophoresis. Capillary histograms are automatically analyzed yielding cell identifiers, which represent the mutations each cell accumulated in the MS set. Phylogenetic analysis of cell identifiers yields a reconstructed tree, which is an estimation of the lineage relations between analyzed cells.</p>
+<span>doi:10.1371/journal.pone.0001939.g001</span></div><a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>A new approach for cell lineage analysis was recently proposed by our group <a href="#pone.0001939-Frumkin1">[1]</a> and later independently by another research group <a href="#pone.0001939-Salipante1">[4]</a>, <a href="#pone.0001939-Salipante2">[6]</a>. This approach exploits stochastic processes that occur during the normal development of higher organisms. Before a cell divides, its genome is duplicated with very high precision, yet several mistakes, known as somatic mutations, occur in this process. These mutations are random and sufficiently rare such that they usually do not disrupt the functionality of the cell. Nevertheless, they contain very valuable information, as cells that share a common developmental path tend to share the mutations that occurred along this path. Our analysis shows that in higher organisms such as human and mouse the information available in such somatic mutations is rich enough to implicitly encode the entire cell lineage tree of an organism with very high precision (<a href="#pone.0001939-Frumkin1">[1]</a>, <a href="#pone-0001939-g001">Figure 1B</a>). The fact that species that share a long evolutionary path tend to have similar genomes compared to species that have diverged earlier in evolution enables phylogenetic analysis at the species level. This similar phenomenon in cells of a multicellular organism enables the application of phylogenetic analysis to reconstruct the lineage relations between cells <a href="#pone.0001939-Frumkin1">[1]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Because somatic mutations are relatively rare events, our analysis focuses on microsatellites (MS; repetitive DNA sequences with relatively high mutation rates) in mismatch repair (MMR)-deficient organisms. Such organisms have a much higher rate of MS mutations <a href="#pone.0001939-Vilkki1">[7]</a>, <a href="#pone.0001939-Wei1">[8]</a> without compromising their normal development. Another application of this approach was also demonstrated in a 7-month old wild-type mouse in the reconstruction of the lineage relations between about 50 cells (mainly hepatocytes) using fast-mutating MS <a href="#pone.0001939-Salipante2">[6]</a>.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Here we applied this method to the study of mouse cell lineage trees. We first aimed to get a glimpse of what mouse lineage trees look like, and to have a sense of their general features, structure and complexity. For this purpose we analyzed multiple cell types obtained from various sources in the mouse body. This analysis also allowed us to address for the first time three basic questions in developmental biology of higher organisms:</p>
+
+
+<ol class="order">
+
+<li>What is the correlation between lineage and function? (we use the terms cell type and function interchangeably in this paper)</li>
+
+<li>What is the correlation between lineage and physical proximity among cells?</li>
+
+<li>What is the correlation between lineage and anatomical proximity among cells?</li>
+
+</ol><a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p><em>Caenorhabditis elegans</em> offers the best point of reference for the first question, since its entire lineage tree (including 959 somatic cells, all with known function) has been reconstructed <a href="#pone.0001939-Sulston1">[2]</a>, <a href="#pone.0001939-Sulston2">[3]</a>. Even in <em>C. elegans</em>, in which there is a fixed relationship between cell ancestry and cell fate, lineage boundaries do not necessarily coincide with functional boundaries <a href="#pone.0001939-Sulston2">[3]</a>. Two exceptions are its intestine and the germ line, both of which are identifiable tissues generated as “single exclusive clones” <a href="#pone.0001939-Sulston2">[3]</a>, i.e. in each case one precursor generates all the cells of the tissue and no other cell. Examples of partial clonal derivation are also present in <em>C. elegans</em>: some precursors generate only, but not all, cells of a given type; other precursors generate all, but not only, cells of a given type. However, throughout most of the lineage tree, cell types are intermingled even at the terminal divisions <a href="#pone.0001939-Sulston2">[3]</a>. This is true for various invertebrate taxa, whose lineage trees show little correlation between the phenotypic similarity of two differentiated cells and the closeness of their genealogical relation <a href="#pone.0001939-Stent1">[9]</a>. While in <em>C. elegans</em> and other simple organisms the relation between lineage and function is completely known (though not necessarily understood), this relation is much less known in higher organisms. In order to address this, and other similar questions in mice, we defined a general scheme for lineage analysis which assigns statistical significance to the correlations between lineage and various cell properties (see <a href="#s2">Results</a>).</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>In addition to obtaining knowledge regarding the general features of the lineage tree, we also focused on a specific cell type–satellite cells–a small population of muscle stem cells residing beneath the basal lamina of each myofiber <a href="#pone.0001939-Collins1">[10]</a>. Satellite cells, which are normally quiescent, are activated in response to muscle injury, upon which they proliferate, differentiate and fuse together to repair or replace damaged myofibers <a href="#pone.0001939-Collins1">[10]</a>. Despite the extensive research, the exact lineage of satellite cells is unknown. We analyzed satellite cells in two respects: first, whether there is a correlation between the lineage of satellite cells and their physical proximity. Specifically, we ask whether cells which are physically closer share a significantly longer common developmental path. In general, sister cells can stay close to each other following cell division, a situation called coherent growth <a href="#pone.0001939-Mathis1">[11]</a> which has been demonstrated in compartments <a href="#pone.0001939-Irvine1">[12]</a> and in cancer [Frumkin D. <em>et al.</em>, submitted]. Alternatively, sister cells can disperse as a result of cell motility, a common phenomenon in early embryogenesis of vertebrates <a href="#pone.0001939-Mathis1">[11]</a>, for example in the widespread dispersion of neurons across functional regions of the cerebral cortex <a href="#pone.0001939-Walsh1">[13]</a>. Second, we checked whether there is a correlation between the lineage of satellite cells and anatomical proximity. The anatomy of skeletal muscle defines a hierarchy among its components: each muscle is made of many myofibers, on each of which reside several satellite cells. We defined anatomical proximity between satellite cells according to their relation within this hierarchy, and the hierarchy of the body (left vs. right lateralities). We analyzed whether satellite cells from the same myofiber, muscle or body-side have a significantly longer common developmental path than a random pair of cells.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>Cell Lineage Reconstruction</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>We performed three lineage experiments on mice called ML2, ML4 and ML7 at the age of 10, 13 and 5.5 weeks respectively. In each experiment, we isolated single cells of multiple types (see complete lists in <a href="#pone.0001939.s003">Tables S1</a>, summarized in <a href="#pone-0001939-t001">Table 1</a>) and performed a semi-automated procedure (similar to that described in <a href="#pone.0001939-Frumkin1">[1]</a>) which yields lineage trees depicting their lineage relations (<a href="#pone-0001939-g001">Figure 1C</a>). In these experiments, genomic DNA from each cell was amplified (either by whole genome amplification or <em>ex vivo</em> culture) and then genotyped over a set of almost 100 MS loci (of various repeat units and lengths, see <a href="#pone.0001939.s004">Table S2</a>). Genotyping (performed automatically, see <a href="#pone.0001939.s010">Text S1</a>) assigns to each cell a vector, called an identifier <a href="#pone.0001939-Frumkin1">[1]</a>, representing the mutations it accumulated at the set of loci in comparison to the zygote (see <a href="#pone.0001939.s005">Tables S3a–c</a> for complete cell identifiers; see <a href="#pone.0001939.s001">Figure S1</a> for examples of MS mutations and signal analysis issues). Tail DNA was used to approximate the putative zygote of each mouse based on the assumption that the tail contains cells of multiple lineages whose most recent common ancestor (MRCA) is most probably the zygote, or one of its immediate descendants. Overall we identified 1156 mutations, accounting for 10.7% of analyzed signals. Cell identifiers served as input to the Neighbor-Joining (NJ) reconstruction algorithm <a href="#pone.0001939-Graur1">[14]</a> (applying the distance function ‘Absolute-distance’, see <a href="#s4">Materials and Methods</a>). For analysis we chose informative samples that had at least 5% amplification and at least one mutation (ML7 oocytes were not included in the lineage analysis and will be reported separately with more comprehensive oocyte data). The output of this analysis for each experiment was a rooted binary tree depicting the inferred lineage relations between the set of sampled cells and the zygote, which includes intermediate nodes representing precursor cells of the sample (<a href="#pone-0001939-g002">Figures 2</a>–<a href="#pone-0001939-g003">3</a>). Beyond lineage relations, reconstructed trees also show the estimated depths of individual cells (the depth of a cell is the number of cell divisions it underwent from the zygote). These depths were obtained using a new method we recently developed, based on the correlation between genetic distance and cell depth, using an <em>ex vivo</em> cell cultured tree for calibration <a href="#pone.0001939-Wasserstrom1">[15]</a>. While reconstructed trees are enlightening in themselves, some analysis (see below) is required to understand the information they encapsulate.</p>
+<div class="figure" id="pone-0001939-g002"><div class="img"><a name="pone-0001939-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Lineage reconstruction of ML2 and ML4.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>Reconstructed trees of 26 cells of ML2 (10 week old mouse) and 25 cells of ML4 (13 week old mouse) are shown. Terminal nodes represent single analyzed cells (colors are used for different cell types), while intermediate nodes (uncolored) represent hypothesized precursor cells. Reconstruction was performed using the Neighbor-Joining algorithm (with the distance function ‘Absolute-distance’, see <a href="#s4">Methods</a>). The vertical axis represents number of cell divisions, and the estimated depth for each cell is obtained by projecting it to this axis. These estimates were obtained by a method we developed, which is based on the correlation between genetic distance and cell depth <a href="#pone.0001939-Wasserstrom1">[15]</a>. Reconstructed trees show that none of the analyzed cell types is completely and solely clustered on a subtree, demonstrating that none of cell types is a single exclusive clones.</p>
+<span>doi:10.1371/journal.pone.0001939.g002</span></div><div class="figure" id="pone-0001939-g003"><div class="img"><a name="pone-0001939-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Lineage reconstruction of ML7.</span></strong></p><a id="article1.body1.sec2.sec1.fig2.caption1.p1" name="article1.body1.sec2.sec1.fig2.caption1.p1"></a><p>Reconstructed tree of 67 cells of ML7 (5.5 week old mouse) is shown (see <a href="#pone-0001939-g002">Figure 2</a> for explanation of reconstructed trees). This experiment mainly focused on satellite cells (muscle stem cells), which were isolated from various muscles and myofibers from the mouse body. Although no myofiber is a single exclusive clone, we show that satellite cells from the same myofiber have a significantly larger lineage measure, reflecting that they tend to share a longer common developmental path (see <a href="#pone-0001939-g004">Figure 4F</a>).</p>
+<span>doi:10.1371/journal.pone.0001939.g003</span></div><div class="figure" id="pone-0001939-t001"><div class="img"><a name="pone-0001939-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Cell Samples in ML Experiments.</span></strong></p><span>doi:10.1371/journal.pone.0001939.t001</span></div>
+
+<h4>Lineage Analysis of Reconstructed Trees</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>In this work we perform lineage analysis in an attempt to find correlations between the cell lineage tree and cell type and the anatomical proximity of satellite cells within the hierarchy of muscle. Our analysis tests whether cells within a certain set (e.g. B-cells or satellite cells from the same muscle) have on average a longer common developmental history than a random pair of cells (see <a href="#pone.0001939.s002">Figure S2</a> for various theoretical outcomes in a lineage analysis checking the correlation between lineage and cell type). We use two measures between a pair of cells that are expected to correlate well with the length of the common developmental history of a pair of cells: the depth of the MRCA of the pair (as assigned by the reconstruction algorithm), and the percent of common mutations shared by the pair. The latter measure does not depend on a reconstructed tree, which has a speculative component in it, but rather on the “raw” data, i.e. the cell identifiers. We performed these analyses only in experiment ML7 because experiments ML2 and ML4 had a small sample of cells.</p>
+
+
+<h4>Analyzed Cell Types in Mouse are not Single Exclusive Clones</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>A quick glance at the reconstructed lineage trees of ML2, ML4 and ML7 (<a href="#pone-0001939-g002">Figures 2</a>–<a href="#pone-0001939-g003">3</a>) reveals that none of the analyzed cell types (as given in <a href="#pone-0001939-t001">Table 1</a>) is a single exclusive clone, since no cell type is completely and solely clustered on a subtree. We further investigated whether there may be a subtler correlation between lineage and cell type in ML7. We performed lineage analysis as described above (using both measures) and found that neither of the cell types (satellite cells and B-cells) is significantly correlated to length of common developmental history.</p>
+
+
+<h4>Satellite Cells within a Myofiber Share a Longer Common Developmental History</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>The mouse body contains a large number of muscles (on the left or right body side), each of which is made of a bundle of myofibers, in each of which reside about 10–20 satellite cells <a href="#pone.0001939-Collins2">[16]</a> (<a href="#pone-0001939-g004">Figure 4E</a>). This hierarchy between the various components, which together make skeletal muscle, led us to ask whether satellite cells from the same muscle have a significantly longer common developmental path than satellite cells from different muscles. Satellite cells have yet another advantage which enables performing this type of analysis–they can be isolated from pre-determined physical locations in the mouse while preserving this information for each analyzed cell (<a href="#pone-0001939-g004">Figure 4A–D</a>).</p>
+<div class="figure" id="pone-0001939-g004"><div class="img"><a name="pone-0001939-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001939" data-uri="info:doi/10.1371/journal.pone.0001939.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001939.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001939.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001939.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001939.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Lineage analysis of satellite cells.</span></strong></p><a id="article1.body1.sec2.sec4.fig1.caption1.p1" name="article1.body1.sec2.sec4.fig1.caption1.p1"></a><p>A muscle fiber from the Gastrocnemius muscle of ML4 was stained for DAPI (blue, all nuclei within the fiber) and Pax7 (pink, satellite cells). A. DAPI staining. B. Pax7 staining showing two satellite cells. C. Overlay of DAPI and Pax7. D. Single satellite cells were isolated from muscle fibers and cultured <em>ex vivo</em>, creating clones whose DNA approximates the DNA of the founder cell. Part of a Petri dish containing a single cell culture is shown. Myofiber structures are evident also in culture. E. Satellite cells can be categorized based on a hierarchy of body-side, muscle and myofiber. Myofibers are numbered from most superficial (#1) until deepest in the muscle. F. The average MRCA depth between pairs of satellite cells from the same myofiber/muscle/body-side was compared to the average MRCA depth between all pairs of cells. Pairs of satellite cells from the same myofiber had on average a significantly larger MRCA depth than a random pair of cells (p&lt;0.0001) demonstrating that myofiber is a significant lineage unit. G. Correlation between lineage and physical proximity in the two main muscles of ML7. The physical distance between myofibers was defined as the difference between myofiber indices (e.g. the distance between a satellite cell on myofiber #3 and a satellite cell on myofiber #1 is 2). Physical distance and MRCA depth are significantly anti-correlated (p = 0.02 and p = 0.0001 for Gastrocnemius left and right, respectively; values stand for anti-correlation coefficients), demonstrating that satellite cells which are physically close to each other tend to share a common developmental path.</p>
+<span>doi:10.1371/journal.pone.0001939.g004</span></div><a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>In each experiment we isolated several satellite cells from various muscles and myofibers (see <a href="#pone-0001939-t001">Table 1</a>). We labeled each satellite cell according to its laterality (left or right), muscle identity (e.g. Gastrocnemius), and myofiber (e.g. 2<sup>nd</sup> myofiber of Gastrocnemius). We analyzed the correlation between length of common developmental history and myofiber, muscle and body-side, as described above (<a href="#pone-0001939-g004">Figure 4F</a>). We found that satellite cells from the same myofiber have a significantly longer common developmental history than a random pair of cells (p&lt;0.0001) using both measures (MRCA depth and percent of common mutations). Satellite cells from the same muscle also have a significantly longer common developmental history than a random pair of cells (p&lt;0.002 for both measures), but this is because of the significance of myofibers (satellite cells from the same myofiber are necessarily also from the same muscle). To test the significance of muscle independent of myofiber, we analyzed satellite cells pairs from the same muscle, but different myofibers. In this case, they did not have a significantly longer common developmental history than a random pair of cells (p&gt;0.32 for both measures). Satellite cell pairs from the same body-side did not show a significantly longer common developmental history than a random pair of cells using any of the measures. Taken together, then results suggest that myofiber is a significant lineage unit in mouse.</p>
+
+
+<h4>Physically Closer Satellite Cells Share a Longer Common Developmental History</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Next, we analyzed whether physically closer satellite cells share a longer common developmental history. Myofibers are numbered according to the order in which they were encountered when penetrating the muscle, from superficial to deepest.&nbsp;This implies that myofibers with adjacent indexes are also close physically. We define the physical distance between two myofibers to be the difference between their indices (e.g. the distance between two satellite cells from the same muscle, one from myofiber #3 and the other from myofiber #1, is 2). We analyzed the two main muscles in ML7: Gastrocnemius-Left (including 23 satellite cells from 4 myofibers) and Gastrocnemius-Right (23 satellite cells from 5 myofibers). The other two muscles (EDL-Left and EDL-Right) were comprised of a small number of satellite cells (3 and 8, respectively) hence we preferred not to analyze them. For each muscle we created a lineage matrix (according to our two measures) and a physical distance matrix (according to the physical distance defined above), and checked whether they are significantly correlated (see <a href="#s4">Methods</a>). We found that for both muscles there is a significant anti-correlation between the lineage measures and physical proximity (<a href="#pone-0001939-g004">Figure 4G</a>; p = 0.0018 and p = 0.0002 for Gastrocnemius left and right, respectively, according to the MRCA depth measure, and p = 0.0063 and p = 0.0259 according to the percent of common mutations measure). This anti-correlation demonstrates that satellite cells which are physically close to each other tend to share a longer common developmental path, and suggests a relatively coherent growth of satellite cells in myofibers within a muscle.</p>
+
+
+<h4>Evaluation of DNA Amplification Fidelity</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>The methods we employed for amplifying DNA from single cells, whether by <em>ex vivo</em> culturing or WGA, are not expected to introduce any substantial bias in our analyses, for the following reasons. When single cells are cultured <em>ex vivo</em>, mutations may occur during the clonal expansion, yet the identifier of a cell clone is with high probability identical to the identifier of the clone's founder cell <a href="#pone.0001939-Frumkin1">[1]</a>. WGA may introduce artifact mutations <a href="#pone.0001939-Lasken1">[17]</a>, which cannot be distinguished from mutations that occurred in the mouse. To evaluate the level of WGA artifact mutations we created small colonies, each founded by a single RMA cell <a href="#pone.0001939-Ohlen1">[18]</a>, and analyzed the cell identifier for each progeny cell (using the same set of MS loci). Progeny cells are assumed to have identical genomes, in the case of which mutations are attributed to WGA artifacts. The two WGA methods we used show 0.9%–1.2% mutations (see <a href="#pone.0001939.s006">Tables S4</a>). Since our MS are highly unstable, mutations may have occurred in culture, hence the actual percent of WGA artifact mutations is expected to be lower. In any case, this figure is significantly lower than the percentage of mutations in the analyzed cells (see <a href="#pone-0001939-t001">Table 1</a>), therefore the majority of mutations occurred <em>in vivo</em>.</p>
+
+
+<h4>Lack of Mutations in ML7 Mesenchymal Stem Cells</h4>
+<a id="article1.body1.sec2.sec7.p1" name="article1.body1.sec2.sec7.p1"></a><p>In contrast to most cells which showed a high percent of mutations (12.5% on average), 18 out of 20 mesenchymal stem cells (MSCs) in ML7 do not exhibit any mutations over the entire set of analyzed MS (although amplification levels of all cell types amplified in culture were normally high; two MSCs show a few mutations, which may be an artifact due to a slightly different protocol used in their culture, see <a href="#s4">Materials and Methods</a>). We are currently investigating whether this result is reproducible, and whether it is related to the immortal strand hypothesis <a href="#pone.0001939-Cairns1">[19]</a>.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>We reconstructed three lineage trees of cells of multiple types obtained from three adult mice based on the analysis of spontaneous somatic mutations accumulated in microsatellites. We analyzed correlations between lineage and cell type, and between lineage and the hierarchy of the anatomy of skeletal muscle. Such correlations are closely related to three basic questions in development: First, are lineage and biological function correlated, i.e. do cells sharing a long common developmental path tend to be of the same type and perform the same biological function? We found that for the cell types we analyzed there is no significant correlation between lineage and cell type. Specifically we showed that none of these cell types are a single exclusive clone. While this is in accordance with the fact that cells in early embryogenesis retain a large developmental potential <a href="#pone.0001939-Lawson1">[20]</a>, to the best of our knowledge we are the first to demonstrate it in higher organisms. If any of the cells types were a single exclusive clone, we expect that analysis using our set of MS loci would be sufficient to detect it, since our group was able to detect clonality of tumor cells in distinct physical locations using a similar set of MS [Frumkin D. <em>et al.,</em> submitted]. We note three special cases of single exclusive clones that are recognized in vertebrates: cancer, which according to the accepted dogma arises from a single founder cell <a href="#pone.0001939-Nowell1">[21]</a>, lymphocytes committed to the production of a particular species of antibody molecule, which arise as a single subclone from a pluripotent lymphocyte <a href="#pone.0001939-Stent1">[9]</a>, and intestinal crypts, which are composed of a monoclonal population of cells descended from a single active multipotent stem cell <a href="#pone.0001939-Hermiston1">[22]</a>. The fact that we did not find a correlation between cell type and lineage may be a result of insufficient sampling. Specifically, to detect a significant lineage correlation in a cell population which is polyclonal, one needs to sample at least the number of progenitors of the population (Itzkovitz S. <em>et al.</em>, manuscript in preparation). We can provide a lower bound and say that if cell populations such as B-cells sampled in this work arise from several independent clones, the number of clones is higher than the number of cells sampled. In our analysis, we focused on the length of the common developmental history of cells, as measured by MRCA depth in the reconstructed lineage tree and percent of common mutations.&nbsp;Other aspects of cell lineage can be compared as well, such as the path distance between&nbsp;cells in the reconstructed lineage tree. We did not present analysis results that use this measure since we found them to reflect mostly on the depth of cells.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>The second and third questions we addressed are related to the development and maintenance of body musculature. We asked whether there is a correlation between cell lineage and physical proximity in satellite cells within a muscle. We found a significant anti-correlation between physical proximity and the length of the common developmental path of these cells. This demonstrates that satellite cells from the same muscle which are physically closer to each other tend to share a longer common developmental path. Next, we asked whether there is a correlation between cell lineage and anatomical proximity among cells, based on the hierarchy of satellite cell-myofiber-muscle-body side. We found that satellite cells from the same myofiber are significantly clustered together on the lineage tree, suggesting they are created (and perhaps maintained) from a small pool of progenitor cells. Our data suggests that satellite cells from the same myofiber are not single exclusive clones because no myofiber is clustered on a distinct subtree. This means that satellite cells from a single myofiber are either created by more than one founder cell during embryogenesis, or become heterogenic during the process of muscle repair following injury. These results may help understand the origins of satellite cells. Our data are most consistent with satellite cells being created locally and temporally during embryogenesis <a href="#pone.0001939-Gros1">[23]</a>–<a href="#pone.0001939-KassarDuchossoy1">[25]</a>, rather than having a heterogenic origin from various tissues such as the bone marrow or other sources <a href="#pone.0001939-Ferrari1">[26]</a>, <a href="#pone.0001939-DeAngelis1">[27]</a>. Our results are currently inconclusive regarding the correlation between muscle and cell lineage. On one hand, we found a significant correlation between physical proximity and depth of common ancestor within a muscle, suggesting that myofibers within muscles are also linked lineage-wise. On the other hand,&nbsp;satellite cells from the same muscle did not have longer common developmental history compared to satellite cells from different muscles. While these findings do not necessarily contradict, a conclusive statement in this respect requires further experiments with more muscles at various physical distances from each other (in ML7, which was our major experiment in satellite cells, we analyzed only two muscles, which were quite close physically). Regarding the correlation between cell lineage and body-side, our results demonstrate that there is no significant correlation between these, at least in satellite cells. In principle, it may be possible to reconstruct the entire satellite cell lineage, which would give a clearer picture regarding the development and maintenance of satellite cells, and should reveal their heterogenic nature.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>We have evidence that our method for reconstructing cell lineages from somatic mutations is informative and discovers relations between cells when these exist. First, we found that satellite cells from the same myofiber tend to share a longer common developmental path, which makes sense biologically. Second, our group analyzed cancerous and non-cancerous cells from an older mouse using our method and found that the tumor initiated from a single founder cell approximately five months prior to diagnosis and that the tumor grew in a physically coherent manner (Frumkin <em>et al.</em>, submitted). These findings are in accordance with the accepted paradigm of cancer development. Third, our previous work <a href="#pone.0001939-Frumkin1">[1]</a> demonstrated an <em>ex vivo</em> proof of concept for the method. Extrapolation from <em>in vitro</em> to <em>in vivo</em> assumes that somatic mutations in MS occur similarly <em>ex vivo</em> and <em>in vivo</em>.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Beyond the specific biological findings, we see the importance of this work as a demonstration of the potential of this new methodology of lineage analysis. Previous lineage analyses based on classical techniques (such as marking a cell and following its progeny) were unable to reconstruct lineage trees at the single cell level due to inherent limitations. This is now changed: in principle the lineage relations between any set of isolated cells can be reconstructed. The lineage trees shown here as well as the one reconstructed by Horwitz and colleagues <a href="#pone.0001939-Salipante2">[6]</a> are just first examples, but we believe that a new field of cell lineage analysis will emerge. This possibility is also due to technological advancements: WGA of single cells provides large DNA quantities from practically any desired cell <a href="#pone.0001939-Frumkin2">[28]</a>, and high-throughput DNA analysis technologies enable cheaper and quicker analysis of multiple loci obtained from WGA. In the long term we believe that this methodology and technology will drive large-scale projects such as the “Human Cell Lineage Project” (and its Mouse parallel <a href="#pone.0001939-Frumkin1">[1]</a>), aiming to understand ever larger portions of these organisms. We also foresee that this methodology will drive a conceptual change and create a new field of computational lineage analysis. The conceptual change is first of all based on the definition of a cell lineage tree (see <a href="#pone.0001939-Frumkin1">[1]</a> and this paper), which defines the lineage relations between cells according to their genealogical relations in this tree. The term lineage has acquired over time multiple meanings <a href="#pone.0001939-Chisholm1">[29]</a>, which do not necessarily correspond to the rigorous definition of genealogical lineage. For example, it is used to define the acquisition of a state of commitment (e.g. ‘B-lymphocyte lineage <a href="#pone.0001939-Cobaleda1">[30]</a>) or a specific tissue of origin (e.g. ‘mesodermal lineage’ <a href="#pone.0001939-Pal1">[31]</a>). Among developmental biologists, such distinctions are not always made explicit or even recognized <a href="#pone.0001939-Slack1">[32]</a>. Computational analyses of cell lineage trees coupled to biological or clinical understanding of these analyses are required to understand such trees. These analyses are necessary because lineage trees encapsulate a wealth of information, yet most of this information is not self-evident. Understanding the cell lineage trees of higher organisms, especially human, is a fundamental challenge of many branches of biology and medicine (see <a href="#pone.0001939-Frumkin1">[1]</a>). Several open questions are actually lineage questions in disguise, and knowledge of the relevant portions of the cell lineage tree could shed light on these questions. For example, in cancer research, lineage analysis can reveal the timing of tumor initiation, the relation between metastases and primary tumors, and the differential response of tumor subpopulation to cancer therapy. In stem cell research, depth analysis at successive timepoints can reveal the number of stem cells maintaining a niche, and their dynamics in physiological and pathological states. In developmental biology research, lineage analysis can reveal the developmental origin of various tissues. Here we performed a few such analyses, but we believe this is only the tip of the iceberg, and further analysis may yield deeper insights. For example, by applying tools and concepts used in the analysis of human populations to cell populations, it may be possible to derive quantitative estimates regarding the cell dynamics and the number of stem cells which maintain a tissue. Perhaps most importantly, the fact that this methodology is non-invasive theoretically allows analyzing humans, without being confined to analysis of model organisms.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Experiment mice</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Mlh1+/− mice were obtained from Michael Liskay (described in <a href="#pone.0001939-Baker1">[33]</a>) and were maintained at our institute under C57Bl/6 and 129SvEv (kindly provided by Ari Elson, The Weizmann Institute of Science) backgrounds. Mlh1+/−C57Bl/6 and Mlh1+/− 129SvEv were mated to yield Mlh1−/− progeny of dual background, which were used for experiments. ML2, ML4 and ML7 were 10, 13 and 5.5 weeks old respectively when sacrificed, and were genotyped as Mlh1−/−. All animal husbandry and euthanasia procedures were performed in accordance with the Institutional Animal Care and Use Committee at the Weizmann Institute of Science.</p>
+
+
+<h4>Isolation and culture of satellite cells</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Satellite cells were isolated and cultured as described in <a href="#pone.0001939-Shefer1">[34]</a>. Briefly, EDL, soleus, gastrocnemius and masseter muscles were digested in 0.2% (w/v) collagenase type I (Sigma-Aldrich) at 37°C. Collagenase was reconstituted in Dulbecco's Modified Essential Medium (DMEM; high glucose, with L-glutamine, 110 mg/l sodium pyruvate, and pyridoxine hydrochloride; supplemented with 50 U/ml penicillin and 50 mg/ml streptomycin; GIBCO Invitrogen). Following digestion, the muscles were triturated with a wide-bore pipette to release single myofibers. Each single myofiber was transferred to a separate 60 ml dish and then to a tube containing 1ml DMEM. Single myofibers were triturated using a 20G needle mounted onto a 1 ml syringe, to disengage satellite cells. The resulting fiber suspension (in 1 ml DMEM) was then dispensed to 12 Matrigel pre-coated wells within a 24-well plate. Clones were observed every other day.</p>
+
+
+<h4>Isolation and culture of mesenchymal stem cells (MSCs)</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>MSCs were isolated and cultured as described in <a href="#pone.0001939-Benayahu1">[35]</a>, <a href="#pone.0001939-Liu1">[36]</a>. Briefly, femurs were cleaned off the soft tissue and epiphysis to allow bone marrow cells (BMC) collection. The BMC were flushed out with DMEM using syringe with 21G needle. To get Colony forming unit-fibroblast (CFU-F) single cell BMC suspensions were diluted to a concentration of 2.5×10<sup>6</sup> cells/ml in DMEM supplemented with 10% FCS and plated in 24-wells plates. MSC clones from ML7 samples 104 and 105 were created slightly differently: due to uncertainty of a single cell origin of these clones, a second subcloning step was performed, and cells were allowed to proliferate for additional 4–5 days.</p>
+
+
+<h4>Isolation and culture of kidney stem cells</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>Kidney stem cells were isolated and cultured as described in <a href="#pone.0001939-Dekel1">[37]</a>.</p>
+
+
+<h4>Isolation and culture of hematopoietic stem cells</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>Hematopoietic stem cells (SCA-1<sup>+</sup> Lin<sup>−</sup>) were obtained by crushing tibiae and femurs and extracting cells from the bone marrow (BM). The BM cells suspension were passed through a nylon mesh twice to remove connective tissue and clumps of cells. Subsequently, the cells (20×10<sup>6</sup>) were washed and resuspended at 5ml PBS. BM cell suspensions were maintained on ice throughout the purification procedures. Antibodies used for immunomagnetic positive selection were SCA-1 conjugated to microbeads (SCA-1 multisort kit, Miltenyi Biotec, Bergisch Gladbach, Germany). The following lineage marker antibodies conjugated to microbeads were used: CD45R/B220 for the B lineage, CD4/L3T4 and CD8a/Ly-2 for T cell lineage, and CD11b/Mac-1 for myelomonocytic cells. SCA-1<sup>+</sup> cells were positively selected using the MACS® magnetic bead system (Miltenyi). The microbeads were removed from the magnetic field, thereby allowing the SCA-1<sup>+</sup> cells to be collected into the multisort release reagent (Miltenyi). Cytofluorimetric sorting of the isolated SCA-1<sup>+</sup> cells was carried out by double immunofluorescent staining, using the following directly labeled antibodies (obtained from Pharmingen, San Diego, CA): PE-SCA-1/Ly-6A/E (clone E13-161.7), R-APC-CD45R/B220 (clone RA3-6B2), R-APC-CD4/L3T4 (clone GK 1.5), R-APC-CD8a/Ly-2 (clone 53-6.7) and R-APC-CD11b (clone M1/70). Stained cells were resuspended at 1×10<sup>6</sup> cells /ml in buffer column at 4°C (on ice). Cells were then sorted for positive SCA-1-PE cells and lineage negative cells-APC (SCA-1<sup>+</sup> Lin<sup>−</sup> cells) into a sterile glass tube containing 500 µl/ml FCS sterile using ARIA sorter (BD Biosciences, Mountain View, CA). Immediately after purification, 10<sup>3</sup> cells per ml SCA-1<sup>+</sup>Lin<sup>−</sup> cells were suspended in 10 ml of culture medium. Cells were counted and diluted to reach an average of 1 cell/600 µl culture medium and replated into 96-well culture plates (200 µl/well) to establish single cell clones. Single cell clones were cultured for 7 days in 96-wells plate (Nunc, Roskilde, Denmark) in culture medium made with Iscoves Modified Dulbeccos Medium (IMDM) containing 10% FCS, 2 mM L-glutamine, 100 U/ml penicillin and 0.1 mg/ml streptomycin.</p>
+
+
+<h4>Isolation of single cells from a suspension</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>Single cells were isolated by suspending a bulk of cells in PBS until a dilution of about 1 cell/0.5 µl was obtained. Then, 0.5 µl drops of this dilution were placed at the center of multiple wells of a 96-well (flat bottom) plate. Microscopic observation was used to identify wells with exactly one cell.</p>
+
+
+<h4>Isolation of B-Cells, NK-Cells</h4>
+<a id="article1.body1.sec4.sec7.p1" name="article1.body1.sec4.sec7.p1"></a><p>Spleens of experiment mice were dissected and crushed over a 1 µm mesh (A.D. Sinun, Israel) into a Petri dish obtaining a cell suspension. The cell suspension was transferred into a 50 ml tube, centrifuged (7 min, 1200 rpm) in a 5702 Eppendorf centrifuge. Cells were resuspended in 1 ml PBS and counted. Isolation of specifically desired cells was performed by magnetic sorting using the Miltenyi Biotec magnetic microbeads, MACS columns and MACS separator, according to the manufacturers instructions. CD45R (B220) microbeads were used for B cells, and CD49b (DX5) microbeads were used for NK cells. Single B-cells and NK-cells were obtained as described above.</p>
+
+
+<h4>Isolation of oocytes</h4>
+<a id="article1.body1.sec4.sec8.p1" name="article1.body1.sec4.sec8.p1"></a><p>Ovaries were removed and placed in Leibovitz's L-15 tissue culture medium (Gibco), supplemented with 5% fetal bovine serum (Biolab, Jerusalem, Israel), penicillin (100 IU/ml) and streptomycin (100 µg/ml, Gibco). When isolated from the ovarian follicles, the oocytes were arrested at the first prophase. To maintain meiotic arrest in fully grown oocytes, the phosphodiesterase inhibitor, isobutylmethylxantine (IBMX) (0.2 mM, Sigma), that prevents cAMP degradation was included in the medium of incubation <a href="#pone.0001939-Dekel2">[38]</a>. The follicles were punctured under a stereoscopic microscope in order to release the cumulus–oocyte complexes that were then placed into acidic L-15 medium (pH 6.0) to obtain cumulus-free oocytes. Each oocyte was placed in a 0.2 mL tube (ABgene) in a volume of 5 µL medium. Oocytes were frozen in liquid nitrogen and kept in −80°C until analyzed.</p>
+
+
+<h4>Whole Genome Amplification of single cells</h4>
+<a id="article1.body1.sec4.sec9.p1" name="article1.body1.sec4.sec9.p1"></a><p>was performed using the GenomePlex Single Cell Whole Genome Amplification Kit (Sigma #WGA4) and the GenomiPhi DNA amplification kit (GE Healthcare, UK). The GenomePlex kit was used according to the manufacturer's instructions. Prior to the GenomiPhi protocol, cell denaturation was performed as follows: one part (2 µl) of lysis solution (400 mM KOH, 100 mM DTT and 10 mM EDTA) was added to 0.5 ml tubes, each containing a single cell in 2 µl double distilled water. Cells were lysed for 10 min on ice followed by addition of one part (2 µl) of neutralization solution (400 mM HCl, 600 mM Tris HCl, pH 6–prepared by mixing 4 ml of 1 M HCl and 6 ml of 1 M Tris HCl, pH 7.5). At this point each cell was in 6 µl solution (instead of 1 µl according to the protocol). The GenomiPhi protocol was carried out according to the manufacturer's instructions, except that amounts of all the ingredients were multiplied by six.</p>
+
+
+<h4>Cell identifiers</h4>
+<a id="article1.body1.sec4.sec10.p1" name="article1.body1.sec4.sec10.p1"></a><p>Because analysis of multiple loci from single cells requires a minimal amount of DNA (typically ~1 µg in our case) we first amplified genomic DNA either by ex vivo culturing of single cells or by WGA (as described above), or a combination of these. DNA was extracted from cell clones using the Wizard SV Genomic DNA Purification System (Promega). All Primers were obtained from Applied Biosystems. Some were part of the ABI PRISM® Mouse Mapping Primers v.1.0, and others were designed by us using Primer3 (<a href="http://frodo.wi.mit.edu/">http://frodo.wi.mit.edu/</a>). In each amplification reaction 4 MS loci were amplified together in 25 µl including DNA (25–50 ng when extracted from cell clones, or about 1% of WGA products), 0.2 µM of each primer, 0.2 mM of each dNTP (BIOLINE), and 0.625U of Thermo-Start DNA Polymerase (ABgene). Thermal cycling conditions were: (i) 15’ 95°c, (ii) 35 cycles: 1’ 95°c, 1’ 58°c, 1’ 72°c, (iii) 15’ 72°c. Amplified products from three PCR reactions were combined and run on an ABI prism 3130xl Genetic Analyzer machine (Applied Biosystems). Fragment analysis was performed using the GeneMapper v3.7 software accompanying the machine. We used a programmable laboratory robot (TECAN Genesis) augmented with a PCR machine (Biometra TRobot) to perform the liquid handling for PCR, the PCR itself, and the sample preparation for the capillary machine. Capillary signals were analyzed using an automatic signal analysis program that we designed (see <a href="#pone.0001939.s010">Text S1</a>). Manual override was used in about 1.5% of the signals that were defined by the algorithm as problematic, as well as all signals of samples which were amplified using Genome-Plex, due to their high stutter patterns. Analysis assigns to each MS allele in every sample a relative allelic value–a whole number equal to the difference between the number of repeats of that allele and the number of repeat units of the corresponding allele in the zygote (MS slippage mutations tend to insert or delete repeated units). All relative allelic values together compose the identifier ascribed to each cell.</p>
+
+
+<h4>Evaluation of whole genome amplification fidelity</h4>
+<a id="article1.body1.sec4.sec11.p1" name="article1.body1.sec4.sec11.p1"></a><p>RMA cells (kindly donated by Lea Eisenbach, The Weizmann Institute of Science) were maintained in RPM1640 medium (GIBCO, Invitrogen, UK) supplemented with 10% heat inactivated (65°C, 30 minutes) FBS (GIBCO) and 1% Penicillin/Streptomycin (GIBCO). Single RMA cells were obtained as described above, and were allowed to grow for a few days, until clones with about 10–20 cells were obtained. These clones were then separated to single cells, whose identifiers were obtained as described above. Mutations in two loci were overridden as problematic signals (see shaded ‘PS’ signals in <a href="#pone.0001939.s006">Tables S4a–b</a>, discussed in <a href="#pone.0001939.s010">Text S1</a>). Separate experiments were performed for each WGA kit (GenomiPhi and GenomePlex). In the GenomiPhi experiment two clones were created and five progeny cell were analyzed from each clone. This experiment showed 0.9% mutations. In the GenomePlex experiment three clones were created and eight progeny cells were analyzed from one clone, and one progeny cell was analyzed from each of the other two clones. This experiment showed 1.2% mutations. Bulk of RMA DNA was used as a reference against which mutations were assigned.</p>
+
+
+<h4>Lineage reconstruction</h4>
+<a id="article1.body1.sec4.sec12.p1" name="article1.body1.sec4.sec12.p1"></a><p>Lineage tree reconstruction was performed with the NJ algorithm (implemented in MATLAB). We used the distance function “Absolute-distance”, in which the distance between two samples is the average distance between their allelic values in all alleles which were analyzed in both samples. The un-rooted output tree was rooted from the node corresponding to the root, yielding the reconstructed rooted tree.</p>
+
+
+<h4>Lineage analysis of reconstructed trees</h4>
+<a id="article1.body1.sec4.sec13.p1" name="article1.body1.sec4.sec13.p1"></a><p>Our general scheme for lineage analysis is as follows: (i) a set of cells for which we would like to check their correlation to lineage is chosen, (ii) a lineage measure is chosen, (iii) the ratio between the average lineage measure for all pairs of cells in the set and the average lineage measure for all pairs of cells is calculated. If this ratio is larger (or smaller, depending on the measure) than 95% of the ratios in 10,000 randomizations of the samples, we define the correlation between lineage and this set to be significant. In the analysis of myofibers and muscles we used the same scheme, but compared all pairs of cells within a myofiber/muscle to all pairs of cells in the experiment. We calculated the average lineage measure within all pairs of satellite cells which are on the same myofiber (or muscle), and proceeded as above.</p>
+
+
+<h4>Analysis of lineage vs. physical proximity in satellite cells</h4>
+<a id="article1.body1.sec4.sec14.p1" name="article1.body1.sec4.sec14.p1"></a><p>For each analyzed muscle we calculated a lineage matrix and a physical matrix between all satellite cells within the muscle. Each entry in the lineage matrix is the lineage measure between the pair of corresponding cells. Each entry in the physical matrix is the physical distance between the pair of corresponding cells, as defined in the paper (difference between myofiber indices). An anti-correlation coefficient (equal to minus the correlation coefficient) was obtained for each lineage and physical matrix, and was compared to 10,000 randomizations of the lineage matrix. Lineage and physical proximity within a muscle were defined as significantly anti-correlated if the anti-correlation coefficient for the actual data was larger than 95% of the anti-correlation coefficients in the randomizations.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001939"></div><a name="pone.0001939.s001" id="pone.0001939.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s001">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Examples of MS mutations and signal analysis issues</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0001939.s002" id="pone.0001939.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s002">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Correlation between lineage and cell type</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0001939.s003" id="pone.0001939.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s003">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">List of ML2, ML4 and ML7 cells</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.26 MB DOC)</p>
+<a name="pone.0001939.s004" id="pone.0001939.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s004">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">List of MS Loci used for ML experiments</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.17 MB DOC)</p>
+<a name="pone.0001939.s005" id="pone.0001939.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s005">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">Cell identifiers for ML2</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(0.10 MB XLS)</p>
+<a name="pone.0001939.s006" id="pone.0001939.s006"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s006">Table S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material6.caption1.p1" name="article1.body1.sec5.supplementary-material6.caption1.p1"></a><p class="preSiDOI">Cell identifiers for ML4</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s006</p><a id="article1.body1.sec5.supplementary-material6.caption1.p2" name="article1.body1.sec5.supplementary-material6.caption1.p2"></a><p class="postSiDOI">(0.10 MB XLS)</p>
+<a name="pone.0001939.s007" id="pone.0001939.s007"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s007">Table S5. </a></strong></p><a id="article1.body1.sec5.supplementary-material7.caption1.p1" name="article1.body1.sec5.supplementary-material7.caption1.p1"></a><p class="preSiDOI">Cell identifiers for ML7</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s007</p><a id="article1.body1.sec5.supplementary-material7.caption1.p2" name="article1.body1.sec5.supplementary-material7.caption1.p2"></a><p class="postSiDOI">(0.31 MB XLS)</p>
+<a name="pone.0001939.s008" id="pone.0001939.s008"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s008">Table S6. </a></strong></p><a id="article1.body1.sec5.supplementary-material8.caption1.p1" name="article1.body1.sec5.supplementary-material8.caption1.p1"></a><p class="preSiDOI">Cell identifiers for WGA fidelity experiments (GenomiPhi)</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s008</p><a id="article1.body1.sec5.supplementary-material8.caption1.p2" name="article1.body1.sec5.supplementary-material8.caption1.p2"></a><p class="postSiDOI">(0.06 MB XLS)</p>
+<a name="pone.0001939.s009" id="pone.0001939.s009"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s009">Table S7. </a></strong></p><a id="article1.body1.sec5.supplementary-material9.caption1.p1" name="article1.body1.sec5.supplementary-material9.caption1.p1"></a><p class="preSiDOI">Cell identifiers for WGA fidelity experiments (GenomePlex)</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s009</p><a id="article1.body1.sec5.supplementary-material9.caption1.p2" name="article1.body1.sec5.supplementary-material9.caption1.p2"></a><p class="postSiDOI">(0.09 MB XLS)</p>
+<a name="pone.0001939.s010" id="pone.0001939.s010"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001939.s010">Text S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material10.caption1.p1" name="article1.body1.sec5.supplementary-material10.caption1.p1"></a><p class="preSiDOI">Algorithm for automatic analysis of capillary electrophoresis signals</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001939.s010</p><a id="article1.body1.sec5.supplementary-material10.caption1.p2" name="article1.body1.sec5.supplementary-material10.caption1.p2"></a><p class="postSiDOI">(0.32 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Lea Eisenbach for giving us RMA cells, Keren Katzav and Amit Mishali for the design and preparation of the figures, and Yuval Dor for critical reading of the manuscript. We thank Applied Biosystems for supplying us with the ABI PRISM® Mouse Mapping Primers v.1.0. Ehud Shapiro is the Incumbent of The Harry Weinrebe Professorial Chair of Computer Science and Biology and of The France Telecom–Orange Excellence Chair for Interdisciplinary Studies of the Paris “Centre de Recherche Interdisciplinaire” (FTO/CRI).</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: YR LZ ES DF AW RA GS IS DB ET. Performed the experiments: LZ DF AW AH RA GS IS. Analyzed the data: SI ES DF AW ES RA TS. Contributed reagents/materials/analysis tools: YR LZ SK GS IS DB ET. Wrote the paper: SI LZ ES DF AW ES RA TS GS IS DB ET.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001939-Frumkin1" id="pone.0001939-Frumkin1"></a>Frumkin D, Wasserstrom A, Kaplan S, Feige U, Shapiro E (2005) Genomic variability within an organism exposes its cell lineage tree. PLoS Comput Biol  1: e50.  <ul class="find" data-citedArticleID="1086964" data-doi="10.1371/journal.pcbi.0010050.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0010050.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+variability+within+an+organism+exposes+its+cell+lineage+tree." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+variability+within+an+organism+exposes+its+cell+lineage+tree.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001939-Sulston1" id="pone.0001939-Sulston1"></a>Sulston JE, Horvitz HR (1977) Post-embryonic cell lineages of the nematode, Caenorhabditis elegans. Dev Biol  56: 110–156.  <ul class="find" data-citedArticleID="1087004" data-doi="10.1016/0012-1606(77)90158-0"><li><a href="http://dx.doi.org/10.1016/0012-1606(77)90158-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Post-embryonic+cell+lineages+of+the+nematode%2C+Caenorhabditis+elegans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Post-embryonic+cell+lineages+of+the+nematode%2C+Caenorhabditis+elegans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001939-Sulston2" id="pone.0001939-Sulston2"></a>Sulston JE, Schierenberg E, White JG, Thomson JN (1983) The embryonic cell lineage of the nematode Caenorhabditis elegans. Dev Biol  100: 64–119.  <ul class="find" data-citedArticleID="1087006" data-doi="10.1016/0012-1606(83)90201-4"><li><a href="http://dx.doi.org/10.1016/0012-1606(83)90201-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+embryonic+cell+lineage+of+the+nematode+Caenorhabditis+elegans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+embryonic+cell+lineage+of+the+nematode+Caenorhabditis+elegans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001939-Salipante1" id="pone.0001939-Salipante1"></a>Salipante SJ, Horwitz MS (2007) A phylogenetic approach to mapping cell fate. Curr Top Dev Biol  79: 157–184.  <ul class="find" data-citedArticleID="1086994" data-doi="10.1016/s0070-2153(06)79006-8"><li><a href="http://dx.doi.org/10.1016/s0070-2153(06)79006-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+phylogenetic+approach+to+mapping+cell+fate." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+phylogenetic+approach+to+mapping+cell+fate.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001939-Clarke1" id="pone.0001939-Clarke1"></a>Clarke JD, Tickle C (1999) Fate maps old and new. Nat Cell Biol  1: E103–109.  <ul class="find" data-citedArticleID="1086948" data-doi="10.1038/12105"><li><a href="http://dx.doi.org/10.1038/12105" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fate+maps+old+and+new." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fate+maps+old+and+new.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001939-Salipante2" id="pone.0001939-Salipante2"></a>Salipante SJ, Horwitz MS (2006) Phylogenetic fate mapping. Proc Natl Acad Sci U S A  103: 5448–5453.  <ul class="find" data-citedArticleID="1086996" data-doi="10.1073/pnas.0601265103"><li><a href="http://dx.doi.org/10.1073/pnas.0601265103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Phylogenetic+fate+mapping." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Phylogenetic+fate+mapping.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001939-Vilkki1" id="pone.0001939-Vilkki1"></a>Vilkki S, Tsao JL, Loukola A, Poyhonen M, Vierimaa O, et al.  (2001) Extensive somatic microsatellite mutations in normal human tissue. Cancer Res  61: 4541–4544.  <ul class="find" data-citedArticleID="1087008"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Extensive+somatic+microsatellite+mutations+in+normal+human+tissue.&amp;auth=&amp;atitle=Extensive+somatic+microsatellite+mutations+in+normal+human+tissue." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Extensive+somatic+microsatellite+mutations+in+normal+human+tissue." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Extensive+somatic+microsatellite+mutations+in+normal+human+tissue.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001939-Wei1" id="pone.0001939-Wei1"></a>Wei K, Kucherlapati R, Edelmann W (2002) Mouse models for human DNA mismatch-repair gene defects. Trends Mol Med  8: 346–353.  <ul class="find" data-citedArticleID="1087014" data-doi="10.1016/s1471-4914(02)02359-6"><li><a href="http://dx.doi.org/10.1016/s1471-4914(02)02359-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mouse+models+for+human+DNA+mismatch-repair+gene+defects." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mouse+models+for+human+DNA+mismatch-repair+gene+defects.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001939-Stent1" id="pone.0001939-Stent1"></a>Stent G (1998) Developmental cell lineage. Int J Dev Biol  42: 237–241.  <ul class="find" data-citedArticleID="1087002"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Developmental+cell+lineage.&amp;auth=&amp;atitle=Developmental+cell+lineage." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Developmental+cell+lineage." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Developmental+cell+lineage.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001939-Collins1" id="pone.0001939-Collins1"></a>Collins CA, Partridge TA (2005) Self-renewal of the adult skeletal muscle satellite cell. Cell Cycle  4: 1338–1341.  <ul class="find" data-citedArticleID="1086952" data-doi="10.4161/cc.4.10.2114"><li><a href="http://dx.doi.org/10.4161/cc.4.10.2114" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Self-renewal+of+the+adult+skeletal+muscle+satellite+cell." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Self-renewal+of+the+adult+skeletal+muscle+satellite+cell.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001939-Mathis1" id="pone.0001939-Mathis1"></a>Mathis L, Nicolas JF (2002) Cellular patterning of the vertebrate embryo. Trends Genet  18: 627–635.  <ul class="find" data-citedArticleID="1086984" data-doi="10.1016/s0168-9525(02)02806-8"><li><a href="http://dx.doi.org/10.1016/s0168-9525(02)02806-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cellular+patterning+of+the+vertebrate+embryo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cellular+patterning+of+the+vertebrate+embryo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001939-Irvine1" id="pone.0001939-Irvine1"></a>Irvine KD, Rauskolb C (2001) Boundaries in development: formation and function. Annu Rev Cell Dev Biol  17: 189–214.  <ul class="find" data-citedArticleID="1086974" data-doi="10.1146/annurev.cellbio.17.1.189"><li><a href="http://dx.doi.org/10.1146/annurev.cellbio.17.1.189" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Boundaries+in+development%3A+formation+and+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Boundaries+in+development%3A+formation+and+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001939-Walsh1" id="pone.0001939-Walsh1"></a>Walsh C, Cepko CL (1992) Widespread dispersion of neuronal clones across functional regions of the cerebral cortex. Science  255: 434–440.  <ul class="find" data-citedArticleID="1087010" data-doi="10.1126/science.1734520"><li><a href="http://dx.doi.org/10.1126/science.1734520" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Widespread+dispersion+of+neuronal+clones+across+functional+regions+of+the+cerebral+cortex." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Widespread+dispersion+of+neuronal+clones+across+functional+regions+of+the+cerebral+cortex.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001939-Graur1" id="pone.0001939-Graur1"></a>Graur D, W-H L (2000) Fundamentals of molecular evolution. Sunderland: Sinauer Associates.   <ul class="find-nolinks"></ul></li><li><span class="label">15.
+              </span><a name="pone.0001939-Wasserstrom1" id="pone.0001939-Wasserstrom1"></a>Wasserstrom A, Frumkin D, Adar R, Itzkovitz S, Stern T, et al.  (2008) Estimating Cell Depth from Somatic Mutations. PLoS Computational Biology.   In press.  <ul class="find" data-citedArticleID="1087012" data-doi="10.1371/journal.pcbi.1000058"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.1000058" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+Cell+Depth+from+Somatic+Mutations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+Cell+Depth+from+Somatic+Mutations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001939-Collins2" id="pone.0001939-Collins2"></a>Collins CA, Olsen I, Zammit PS, Heslop L, Petrie A, et al.  (2005) Stem cell function, self-renewal, and behavioral heterogeneity of cells from the adult muscle satellite cell niche. Cell  122: 289–301.  <ul class="find" data-citedArticleID="1086954" data-doi="10.1016/j.cell.2005.05.010"><li><a href="http://dx.doi.org/10.1016/j.cell.2005.05.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stem+cell+function%2C+self-renewal%2C+and+behavioral+heterogeneity+of+cells+from+the+adult+muscle+satellite+cell+niche." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stem+cell+function%2C+self-renewal%2C+and+behavioral+heterogeneity+of+cells+from+the+adult+muscle+satellite+cell+niche.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001939-Lasken1" id="pone.0001939-Lasken1"></a>Lasken RS, Egholm M (2003) Whole genome amplification: abundant supplies of DNA from precious samples or clinical specimens. Trends Biotechnol  21: 531–535.  <ul class="find" data-citedArticleID="1086978" data-doi="10.1016/j.tibtech.2003.09.010"><li><a href="http://dx.doi.org/10.1016/j.tibtech.2003.09.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Whole+genome+amplification%3A+abundant+supplies+of+DNA+from+precious+samples+or+clinical+specimens." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Whole+genome+amplification%3A+abundant+supplies+of+DNA+from+precious+samples+or+clinical+specimens.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001939-Ohlen1" id="pone.0001939-Ohlen1"></a>Ohlen C, Bastin J, Ljunggren HG, Foster L, Wolpert E, et al.  (1990) Resistance to H-2-restricted but not to allo-H2-specific graft and cytotoxic T lymphocyte responses in lymphoma mutant. J Immunol  145: 52–58.  <ul class="find" data-citedArticleID="1086988"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Resistance+to+H-2-restricted+but+not+to+allo-H2-specific+graft+and+cytotoxic+T+lymphocyte+responses+in+lymphoma+mutant.&amp;auth=&amp;atitle=Resistance+to+H-2-restricted+but+not+to+allo-H2-specific+graft+and+cytotoxic+T+lymphocyte+responses+in+lymphoma+mutant." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Resistance+to+H-2-restricted+but+not+to+allo-H2-specific+graft+and+cytotoxic+T+lymphocyte+responses+in+lymphoma+mutant." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Resistance+to+H-2-restricted+but+not+to+allo-H2-specific+graft+and+cytotoxic+T+lymphocyte+responses+in+lymphoma+mutant.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001939-Cairns1" id="pone.0001939-Cairns1"></a>Cairns J (1975) Mutation selection and the natural history of cancer. Nature  255: 197–200.  <ul class="find" data-citedArticleID="1086944" data-doi="10.1038/255197a0"><li><a href="http://dx.doi.org/10.1038/255197a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mutation+selection+and+the+natural+history+of+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mutation+selection+and+the+natural+history+of+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001939-Lawson1" id="pone.0001939-Lawson1"></a>Lawson KA, Meneses JJ, Pedersen RA (1991) Clonal analysis of epiblast fate during germ layer formation in the mouse embryo. Development  113: 891–911.  <ul class="find" data-citedArticleID="1086980"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Clonal+analysis+of+epiblast+fate+during+germ+layer+formation+in+the+mouse+embryo.&amp;auth=&amp;atitle=Clonal+analysis+of+epiblast+fate+during+germ+layer+formation+in+the+mouse+embryo." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Clonal+analysis+of+epiblast+fate+during+germ+layer+formation+in+the+mouse+embryo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Clonal+analysis+of+epiblast+fate+during+germ+layer+formation+in+the+mouse+embryo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001939-Nowell1" id="pone.0001939-Nowell1"></a>Nowell PC (1976) The clonal evolution of tumor cell populations. Science  194: 23–28.  <ul class="find" data-citedArticleID="1086986" data-doi="10.1126/science.959840"><li><a href="http://dx.doi.org/10.1126/science.959840" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+clonal+evolution+of+tumor+cell+populations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+clonal+evolution+of+tumor+cell+populations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001939-Hermiston1" id="pone.0001939-Hermiston1"></a>Hermiston ML, Green RP, Gordon JI (1993) Chimeric-transgenic mice represent a powerful tool for studying how the proliferation and differentiation programs of intestinal epithelial cell lineages are regulated. Proc Natl Acad Sci U S A  90: 8866–8870.  <ul class="find" data-citedArticleID="1086972" data-doi="10.1073/pnas.90.19.8866"><li><a href="http://dx.doi.org/10.1073/pnas.90.19.8866" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Chimeric-transgenic+mice+represent+a+powerful+tool+for+studying+how+the+proliferation+and+differentiation+programs+of+intestinal+epithelial+cell+lineages+are+regulated." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Chimeric-transgenic+mice+represent+a+powerful+tool+for+studying+how+the+proliferation+and+differentiation+programs+of+intestinal+epithelial+cell+lineages+are+regulated.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001939-Gros1" id="pone.0001939-Gros1"></a>Gros J, Manceau M, Thome V, Marcelle C (2005) A common somitic origin for embryonic muscle progenitors and satellite cells. Nature  435: 954–958.  <ul class="find" data-citedArticleID="1086970" data-doi="10.1038/nature03572"><li><a href="http://dx.doi.org/10.1038/nature03572" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+common+somitic+origin+for+embryonic+muscle+progenitors+and+satellite+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+common+somitic+origin+for+embryonic+muscle+progenitors+and+satellite+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001939-Relaix1" id="pone.0001939-Relaix1"></a>Relaix F, Rocancourt D, Mansouri A, Buckingham M (2005) A Pax3/Pax7-dependent population of skeletal muscle progenitor cells. Nature  435: 948–953.  <ul class="find" data-citedArticleID="1086992" data-doi="10.1038/nature03594"><li><a href="http://dx.doi.org/10.1038/nature03594" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Pax3%2FPax7-dependent+population+of+skeletal+muscle+progenitor+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Pax3%2FPax7-dependent+population+of+skeletal+muscle+progenitor+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001939-KassarDuchossoy1" id="pone.0001939-KassarDuchossoy1"></a>Kassar-Duchossoy L, Giacone E, Gayraud-Morel B, Jory A, Gomes D, et al.  (2005) Pax3/Pax7 mark a novel population of primitive myogenic cells during development. Genes Dev  19: 1426–1431.  <ul class="find" data-citedArticleID="1086976" data-doi="10.1101/gad.345505"><li><a href="http://dx.doi.org/10.1101/gad.345505" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pax3%2FPax7+mark+a+novel+population+of+primitive+myogenic+cells+during+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pax3%2FPax7+mark+a+novel+population+of+primitive+myogenic+cells+during+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001939-Ferrari1" id="pone.0001939-Ferrari1"></a>Ferrari G, Cusella-De Angelis G, Coletta M, Paolucci E, Stornaiuolo A, et al.  (1998) Muscle regeneration by bone marrow-derived myogenic progenitors. Science  279: 1528–1530.  <ul class="find" data-citedArticleID="1086962" data-doi="10.1126/science.279.5356.1528"><li><a href="http://dx.doi.org/10.1126/science.279.5356.1528" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Muscle+regeneration+by+bone+marrow-derived+myogenic+progenitors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Muscle+regeneration+by+bone+marrow-derived+myogenic+progenitors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001939-DeAngelis1" id="pone.0001939-DeAngelis1"></a>De Angelis L, Berghella L, Coletta M, Lattanzi L, Zanchi M, et al.  (1999) Skeletal myogenic progenitors originating from embryonic dorsal aorta coexpress endothelial and myogenic markers and contribute to postnatal muscle growth and regeneration. J Cell Biol  147: 869–878.  <ul class="find" data-citedArticleID="1086956" data-doi="10.1083/jcb.147.4.869"><li><a href="http://dx.doi.org/10.1083/jcb.147.4.869" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Skeletal+myogenic+progenitors+originating+from+embryonic+dorsal+aorta+coexpress+endothelial+and+myogenic+markers+and+contribute+to+postnatal+muscle+growth+and+regeneration." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Skeletal+myogenic+progenitors+originating+from+embryonic+dorsal+aorta+coexpress+endothelial+and+myogenic+markers+and+contribute+to+postnatal+muscle+growth+and+regeneration.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001939-Frumkin2" id="pone.0001939-Frumkin2"></a>Frumkin D, Wasserstrom A, Itzkovitz S, Harmelin A, Rechavi G, et al.  (2008) Amplification of multiple genomic loci from single cells isolated by laser micro-dissection of tissues. BMC Biotechnology  8:   <ul class="find" data-citedArticleID="1086966" data-doi="10.1186/1472-6750-8-17"><li><a href="http://dx.doi.org/10.1186/1472-6750-8-17" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Amplification+of+multiple+genomic+loci+from+single+cells+isolated+by+laser+micro-dissection+of+tissues." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Amplification+of+multiple+genomic+loci+from+single+cells+isolated+by+laser+micro-dissection+of+tissues.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001939-Chisholm1" id="pone.0001939-Chisholm1"></a>Chisholm A (2000) The Encyclopedia of Genetics. Academic Press.   <ul class="find-nolinks"></ul></li><li><span class="label">30.
+              </span><a name="pone.0001939-Cobaleda1" id="pone.0001939-Cobaleda1"></a>Cobaleda C, Schebesta A, Delogu A, Busslinger M (2007) Pax5: the guardian of B cell identity and function. Nat Immunol  8: 463–470.  <ul class="find" data-citedArticleID="1086950" data-doi="10.1038/ni1454"><li><a href="http://dx.doi.org/10.1038/ni1454" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pax5%3A+the+guardian+of+B+cell+identity+and+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pax5%3A+the+guardian+of+B+cell+identity+and+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001939-Pal1" id="pone.0001939-Pal1"></a>Pal R, Khanna A (2007) Heart development: the battle between mesoderm and endoderm. Stem Cells Dev  16: 3–5.  <ul class="find" data-citedArticleID="1086990"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Heart+development%3A+the+battle+between+mesoderm+and+endoderm.&amp;auth=&amp;atitle=Heart+development%3A+the+battle+between+mesoderm+and+endoderm." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Heart+development%3A+the+battle+between+mesoderm+and+endoderm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Heart+development%3A+the+battle+between+mesoderm+and+endoderm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001939-Slack1" id="pone.0001939-Slack1"></a>Slack JMW (2000) Fate of the lineage. Nature Genetics  24:   <ul class="find" data-citedArticleID="1087000" data-doi="10.1038/73424"><li><a href="http://dx.doi.org/10.1038/73424" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fate+of+the+lineage." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fate+of+the+lineage.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001939-Baker1" id="pone.0001939-Baker1"></a>Baker SM, Plug AW, Prolla TA, Bronner CE, Harris AC, et al.  (1996) Involvement of mouse Mlh1 in DNA mismatch repair and meiotic crossing over. Nat Genet  13: 336–342.  <ul class="find" data-citedArticleID="1086940" data-doi="10.1038/ng0796-336"><li><a href="http://dx.doi.org/10.1038/ng0796-336" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Involvement+of+mouse+Mlh1+in+DNA+mismatch+repair+and+meiotic+crossing+over." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Involvement+of+mouse+Mlh1+in+DNA+mismatch+repair+and+meiotic+crossing+over.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001939-Shefer1" id="pone.0001939-Shefer1"></a>Shefer G, Wleklinski-Lee M, Yablonka-Reuveni Z (2004) Skeletal muscle satellite cells can spontaneously enter an alternative mesenchymal pathway. J Cell Sci  117: 5393–5404.  <ul class="find" data-citedArticleID="1086998" data-doi="10.1242/jcs.01419"><li><a href="http://dx.doi.org/10.1242/jcs.01419" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Skeletal+muscle+satellite+cells+can+spontaneously+enter+an+alternative+mesenchymal+pathway." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Skeletal+muscle+satellite+cells+can+spontaneously+enter+an+alternative+mesenchymal+pathway.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001939-Benayahu1" id="pone.0001939-Benayahu1"></a>Benayahu D, Fried A, Zipori D, Wientroub S (1991) Subpopulations of marrow stromal cells share a variety of osteoblastic markers. Calcif Tissue Int  49: 202–207.  <ul class="find" data-citedArticleID="1086942" data-doi="10.1007/bf02556119"><li><a href="http://dx.doi.org/10.1007/bf02556119" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Subpopulations+of+marrow+stromal+cells+share+a+variety+of+osteoblastic+markers." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Subpopulations+of+marrow+stromal+cells+share+a+variety+of+osteoblastic+markers.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001939-Liu1" id="pone.0001939-Liu1"></a>Liu Z, Graff E, Benayahu D (2000) Effect of raloxifene-analog (LY 117018-Hcl) on the bone marrow of ovariectomized mice. J Cell Biochem  76: 509–517.  <ul class="find" data-citedArticleID="1086982" data-doi="10.1002/(sici)1097-4644(20000301)76:3<509::aid-jcb17&gt;3.0.co;2-r"><li><a href="http://dx.doi.org/10.1002/(sici)1097-4644(20000301)76:3<509::aid-jcb17&gt;3.0.co;2-r" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effect+of+raloxifene-analog+%28LY+117018-Hcl%29+on+the+bone+marrow+of+ovariectomized+mice." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effect+of+raloxifene-analog+%28LY+117018-Hcl%29+on+the+bone+marrow+of+ovariectomized+mice.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001939-Dekel1" id="pone.0001939-Dekel1"></a>Dekel B, Zangi L, Shezen E, Reich-Zeliger S, Eventov-Friedman S, et al.  (2006) Isolation and characterization of nontubular sca-1+lin− multipotent stem/progenitor cells from adult mouse kidney. J Am Soc Nephrol  17: 3300–3314.  <ul class="find" data-citedArticleID="1086958" data-doi="10.1681/asn.2005020195"><li><a href="http://dx.doi.org/10.1681/asn.2005020195" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Isolation+and+characterization+of+nontubular+sca-1%2Blin%E2%88%92+multipotent+stem%2Fprogenitor+cells+from+adult+mouse+kidney." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Isolation+and+characterization+of+nontubular+sca-1%2Blin%E2%88%92+multipotent+stem%2Fprogenitor+cells+from+adult+mouse+kidney.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0001939-Dekel2" id="pone.0001939-Dekel2"></a>Dekel N (1988) Regulation of oocyte maturation. The role of cAMP. Ann N Y Acad Sci  541: 211–216.  <ul class="find" data-citedArticleID="1086960" data-doi="10.1111/j.1749-6632.1988.tb22258.x"><li><a href="http://dx.doi.org/10.1111/j.1749-6632.1988.tb22258.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Regulation+of+oocyte+maturation.+The+role+of+cAMP." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Regulation+of+oocyte+maturation.+The+role+of+cAMP.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.XML" value="103519"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.PDF" value="550128"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g001.PNG_L" value="961300"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g001.PNG_M" value="170829"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g001.PNG_S" value="12242"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g001.TIF" value="1417492"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g001.PNG_I" value="59134"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g002.PNG_L" value="854766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g002.PNG_M" value="126752"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g002.PNG_S" value="6296"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g002.TIF" value="1378558"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g002.PNG_I" value="45526"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g003.PNG_L" value="1004758"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g003.PNG_M" value="97469"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g003.PNG_S" value="10490"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g003.TIF" value="2608836"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g003.PNG_I" value="52148"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.t001.PNG_L" value="222082"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.t001.PNG_M" value="122041"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.t001.PNG_S" value="13594"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.t001.TIF" value="1038616"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.t001.PNG_I" value="37766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g004.PNG_L" value="2226154"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g004.PNG_M" value="249804"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g004.PNG_S" value="21011"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g004.TIF" value="3084840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.g004.PNG_I" value="150147"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s001.DOC" value="40960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s002.DOC" value="36864"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s003.DOC" value="261120"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s004.DOC" value="166912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s005.XLS" value="102912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s006.XLS" value="98816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s007.XLS" value="310272"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s008.XLS" value="62464"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s009.XLS" value="92672"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001939.s010.DOC" value="324096"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001939&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001939" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001939&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001939&volume=&issue=&title=Reconstruction of Cell Lineage Trees in Mice&author_name=Adam%20Wasserstrom%2C%20Rivka%20Adar%2C%20Gabi%20Shefer%2C%20Dan%20Frumkin%2C%20Shalev%20Itzkovitz%2C%20Tomer%20Stern%2C%20Irena%20Shur%2C%20Lior%20Zangi%2C%20Shai%20Kaplan%2C%20Alon%20Harmelin%2C%20Yair%20Reisner%2C%20Dafna%20Benayahu%2C%20Eldad%20Tzahor%2C%20Eran%20Segal%2C%20Ehud%20Shapiro&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001939" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939&amp;t=Reconstruction%20of%20Cell%20Lineage%20Trees%20in%20Mice" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939&title=Reconstruction%20of%20Cell%20Lineage%20Trees%20in%20Mice&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939&amp;title=Reconstruction%20of%20Cell%20Lineage%20Trees%20in%20Mice" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001939&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Reconstruction of Cell Lineage Trees in Mice';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001939';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Reconstruction%20of%20Cell%20Lineage%20Trees%20in%20Mice http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001939" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001939" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genomic+signal+processing%22" title="Search for articles in the subject area:'Genomic signal processing'"><div class="flagText">Genomic signal processing</div></a>
+              <div data-categoryid="18635" data-articleid="26702"
+                   data-categoryname="Genomic signal processing"
+                   class="flagImage" title="Flag 'Genomic signal processing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mammalian+genomics%22" title="Search for articles in the subject area:'Mammalian genomics'"><div class="flagText">Mammalian genomics</div></a>
+              <div data-categoryid="17625" data-articleid="26702"
+                   data-categoryname="Mammalian genomics"
+                   class="flagImage" title="Flag 'Mammalian genomics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Muscle+analysis%22" title="Search for articles in the subject area:'Muscle analysis'"><div class="flagText">Muscle analysis</div></a>
+              <div data-categoryid="22927" data-articleid="26702"
+                   data-categoryname="Muscle analysis"
+                   class="flagImage" title="Flag 'Muscle analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Muscle+cells%22" title="Search for articles in the subject area:'Muscle cells'"><div class="flagText">Muscle cells</div></a>
+              <div data-categoryid="17691" data-articleid="26702"
+                   data-categoryname="Muscle cells"
+                   class="flagImage" title="Flag 'Muscle cells' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mutation%22" title="Search for articles in the subject area:'Mutation'"><div class="flagText">Mutation</div></a>
+              <div data-categoryid="31809" data-articleid="26702"
+                   data-categoryname="Mutation"
+                   class="flagImage" title="Flag 'Mutation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetic+analysis%22" title="Search for articles in the subject area:'Phylogenetic analysis'"><div class="flagText">Phylogenetic analysis</div></a>
+              <div data-categoryid="17851" data-articleid="26702"
+                   data-categoryname="Phylogenetic analysis"
+                   class="flagImage" title="Flag 'Phylogenetic analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Skeletal+muscles%22" title="Search for articles in the subject area:'Skeletal muscles'"><div class="flagText">Skeletal muscles</div></a>
+              <div data-categoryid="47715" data-articleid="26702"
+                   data-categoryname="Skeletal muscles"
+                   class="flagImage" title="Flag 'Skeletal muscles' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Somatic+mutation%22" title="Search for articles in the subject area:'Somatic mutation'"><div class="flagText">Somatic mutation</div></a>
+              <div data-categoryid="32421" data-articleid="26702"
+                   data-categoryname="Somatic mutation"
+                   class="flagImage" title="Flag 'Somatic mutation' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9081'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=5105'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=463&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=16121">Missing acknowledgement</a><br>Posted by adam_wasserstrom</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

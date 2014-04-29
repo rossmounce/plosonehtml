@@ -1,0 +1,1055 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000958"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000958" />
+
+    <meta name="citation_title" content="Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study"/>
+    <meta itemprop="name" content="Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study"/>
+
+      <meta name="citation_author" content="Alexander Statnikov"/>
+            <meta name="citation_author_institution" content="Discovery Systems Laboratory, Department of Biomedical Informatics, Vanderbilt University, Nashville, Tennessee, United States of America"/>
+      <meta name="citation_author" content="Chun Li"/>
+            <meta name="citation_author_institution" content="Department of Biostatistics, Vanderbilt University, Nashville, Tennessee, United States of America"/>
+            <meta name="citation_author_institution" content="Center for Human Genetics Research, Vanderbilt University, Nashville, Tennessee, United States of America"/>
+      <meta name="citation_author" content="Constantin F. Aliferis"/>
+            <meta name="citation_author_institution" content="Discovery Systems Laboratory, Department of Biomedical Informatics, Vanderbilt University, Nashville, Tennessee, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Biostatistics, Vanderbilt University, Nashville, Tennessee, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Cancer Biology, Vanderbilt University, Nashville, Tennessee, United States of America"/>
+
+    <meta name="citation_date" content="2007/9/26"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000958.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e958"/>
+    <meta name="citation_issue" content="9"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Using high-throughput SNP technologies to study cancer.; citation_author=LJ Engle; citation_author=CL Simpson; citation_author=JE Landers; citation_journal_title=Oncogene; citation_volume=25; citation_number=1; citation_pages=1594-1601; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide association studies for common diseases and complex traits.; citation_author=JN Hirschhorn; citation_author=MJ Daly; citation_journal_title=Nat Rev Genet; citation_volume=6; citation_number=2; citation_pages=95-108; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide association studies: theoretical and practical concerns.; citation_author=WY Wang; citation_author=BJ Barratt; citation_author=DG Clayton; citation_author=JA Todd; citation_journal_title=Nat Rev Genet; citation_volume=6; citation_number=3; citation_pages=109-118; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Predicting cancer susceptibility from single-nucleotide polymorphism data: a case study in multiple myeloma.; citation_author=M Waddell; citation_author=D Page; citation_author=F Zhan; citation_author=B Barlogie; citation_author=J Shaughnessy; citation_journal_title=Proceedings of the Fifth ACM SIGKDD Workshop on Data Mining in Bioinformatics (BIOKDD); citation_number=4; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Localization of cancer susceptibility genes by genome-wide single-nucleotide polymorphism linkage-disequilibrium mapping.; citation_author=N Mitra; citation_author=TZ Ye; citation_author=A Smith; citation_author=S Chuai; citation_author=T Kirchhoff; citation_journal_title=Cancer Res; citation_volume=64; citation_number=5; citation_pages=8116-8125; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Variants in the GH-IGF axis confer susceptibility to lung cancer.; citation_author=MF Rudd; citation_author=EL Webb; citation_author=A Matakidou; citation_author=GS Sellick; citation_author=RD Williams; citation_journal_title=Genome Res; citation_volume=16; citation_number=6; citation_pages=693-701; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Localization of breast cancer susceptibility loci by genome-wide SNP linkage disequilibrium mapping.; citation_author=NA Ellis; citation_author=T Kirchhoff; citation_author=N Mitra; citation_author=TZ Ye; citation_author=S Chuai; citation_journal_title=Genet Epidemiol; citation_volume=30; citation_number=7; citation_pages=48-61; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide association study in esophageal cancer using GeneChip mapping 10K array.; citation_author=N Hu; citation_author=C Wang; citation_author=Y Hu; citation_author=HH Yang; citation_author=C Giffen; citation_journal_title=Cancer Res; citation_volume=65; citation_number=8; citation_pages=2542-2546; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Environmental and heritable causes of cancer among 9.6 million individuals in the Swedish Family-Cancer Database.; citation_author=K Czene; citation_author=P Lichtenstein; citation_author=K Hemminki; citation_journal_title=Int J Cancer; citation_volume=99; citation_number=9; citation_pages=260-266; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Environmental and heritable factors in the causation of cancer–analyses of cohorts of twins from Sweden, Denmark, and Finland.; citation_author=P Lichtenstein; citation_author=NV Holm; citation_author=PK Verkasalo; citation_author=A Iliadou; citation_author=J Kaprio; citation_journal_title=N Engl J Med; citation_volume=343; citation_number=10; citation_pages=78-85; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Detection of genotyping errors by Hardy-Weinberg equilibrium testing.; citation_author=L Hosking; citation_author=S Lumsden; citation_author=K Lewis; citation_author=A Yeo; citation_author=L McCarthy; citation_journal_title=Eur J Hum Genet; citation_volume=12; citation_number=11; citation_pages=395-399; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Statistical analysis with missing data.; citation_author=RJA Little; citation_author=DB Rubin; citation_number=12; citation_date=2002; citation_publisher=Wiley; " />
+      <meta name="citation_reference" content="citation_title=An Analysis of Four Missing Data Treatment Methods for Supervised Learning.; citation_author=GEAPA Batista; citation_author=MC Monard; citation_journal_title=Applied Artificial Intelligence; citation_volume=17; citation_number=13; citation_pages=519-533; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing.; citation_author=Y Benjamini; citation_author=Y Hochberg; citation_journal_title=Journal of the Royal Statistical Society Series B (Methodological); citation_volume=57; citation_number=14; citation_pages=289-300; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=The control of the false discovery rate in multiple testing under dependency.; citation_author=Y Benjamini; citation_author=D Yekutieli; citation_journal_title=Ann Statist; citation_volume=29; citation_number=15; citation_pages=1165-1188; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Statistical significance for genomewide studies.; citation_author=JD Storey; citation_author=R Tibshirani; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=100; citation_number=16; citation_pages=9440-9445; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Gene selection for cancer classification using support vector machines.; citation_author=I Guyon; citation_author=J Weston; citation_author=S Barnhill; citation_author=V Vapnik; citation_journal_title=Machine Learning; citation_volume=46; citation_number=17; citation_pages=389-422; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Statistical learning theory.; citation_author=VN Vapnik; citation_number=18; citation_date=1998; citation_publisher=Wiley; " />
+      <meta name="citation_reference" content="citation_title=Support vector machine classification and validation of cancer tissue samples using microarray expression data.; citation_author=TS Furey; citation_author=N Cristianini; citation_author=N Duffy; citation_author=DW Bednarski; citation_author=M Schummer; citation_journal_title=Bioinformatics; citation_volume=16; citation_number=19; citation_pages=906-914; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=A comprehensive evaluation of multicategory classification methods for microarray gene expression cancer diagnosis.; citation_author=A Statnikov; citation_author=CF Aliferis; citation_author=I Tsamardinos; citation_author=D Hardin; citation_author=S Levy; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=20; citation_pages=631-643; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Computational protein biomarker prediction: a case study for prostate cancer.; citation_author=M Wagner; citation_author=DN Naik; citation_author=A Pothen; citation_author=S Kasukurti; citation_author=RR Devineni; citation_journal_title=BMC Bioinformatics; citation_volume=5; citation_number=21; citation_pages=26; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Challenges in the analysis of mass-throughput data: a technical commentary from the statistical machine learning perspective.; citation_author=CF Aliferis; citation_author=A Statnikov; citation_author=I Tsamardinos; citation_journal_title=Cancer Informatics; citation_volume=2; citation_number=22; citation_pages=133-162; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=AUC: a statistically consistent and more discriminating measure than accuracy.; citation_author=CX Ling; citation_author=J Huang; citation_author=H Zhang; citation_journal_title=Proceedings of the Eighteenth International Joint Conference of Artificial Intelligence (IJCAI); citation_number=23; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors.; citation_author=FE Harrell; citation_author=KL Lee; citation_author=DB Mark; citation_journal_title=Stat Med; citation_volume=15; citation_number=24; citation_pages=361-387; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=ROC Graphs: Notes and Practical Considerations for Researchers.; citation_author=T Fawcett; citation_journal_title=Technical Report, HPL-2003-4, HP Laboratories; citation_number=25; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Is cross-validation valid for small-sample microarray classification?; citation_author=UM Braga-Neto; citation_author=ER Dougherty; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=26; citation_pages=374-380; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Pitfalls in the use of DNA microarray data for diagnostic and prognostic classification.; citation_author=R Simon; citation_author=MD Radmacher; citation_author=K Dobbin; citation_author=LM McShane; citation_journal_title=J Natl Cancer Inst; citation_volume=95; citation_number=27; citation_pages=14-18; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Critical review of published microarray studies for cancer outcome and guidelines on statistical analysis and reporting.; citation_author=A Dupuy; citation_author=RM Simon; citation_journal_title=J Natl Cancer Inst; citation_volume=99; citation_number=28; citation_pages=147-157; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Evaluating coverage of genome-wide association studies.; citation_author=JC Barrett; citation_author=LR Cardon; citation_journal_title=Nat Genet; citation_volume=38; citation_number=29; citation_pages=659-662; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Coverage and characteristics of the Affymetrix GeneChip Human Mapping 100K SNP set.; citation_author=DL Nicolae; citation_author=X Wen; citation_author=BF Voight; citation_author=NJ Cox; citation_journal_title=PLoS Genet; citation_volume=2; citation_number=30; citation_pages=e67; citation_date=2006; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study"/>
+    <meta name="twitter:description" content="BackgroundThe development of new high-throughput genotyping technologies has allowed fast evaluation of single nucleotide polymorphisms (SNPs) on a genome-wide scale. Several recent genome-wide association studies employing these technologies suggest that panels of SNPs can be a useful tool for predicting cancer susceptibility and discovery of potentially important new disease loci.Methodology/Principal FindingsIn the present paper we undertake a careful examination of the relative significance of genetics, environmental factors, and biases of the data analysis protocol that was used in a previously published genome-wide association study. That prior study reported a nearly perfect discrimination of esophageal cancer patients and healthy controls on the basis of only genetic information. On the other hand, our results strongly suggest that SNPs in this dataset are not statistically linked to the phenotype, while several environmental factors and especially family history of esophageal cancer (a proxy to both environmental and genetic factors) have only a modest association with the disease.Conclusions/SignificanceThe main component of the previously claimed strong discriminatory signal is due to several data analysis pitfalls that in combination led to the strongly optimistic results. Such pitfalls are preventable and should be avoided in future studies since they create misleading conclusions and generate many false leads for subsequent research."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000958.g002"/>
+
+  <meta property="og:title" content="Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=4735'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=4806'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=9025&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000958">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000958" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000958&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Alexander Statnikov, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Discovery Systems Laboratory, Department of Biomedical Informatics, Vanderbilt University, Nashville, Tennessee, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Chun Li, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Department of Biostatistics, Vanderbilt University, Nashville, Tennessee, United States of America, 
+                  Center for Human Genetics Research, Vanderbilt University, Nashville, Tennessee, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Constantin F. Aliferis
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:constantin.aliferis@vanderbilt.edu">constantin.aliferis@vanderbilt.edu</a>.</p>
+
+                <p>Affiliations:
+                  Discovery Systems Laboratory, Department of Biomedical Informatics, Vanderbilt University, Nashville, Tennessee, United States of America, 
+                  Department of Biostatistics, Vanderbilt University, Nashville, Tennessee, United States of America, 
+                  Department of Cancer Biology, Vanderbilt University, Nashville, Tennessee, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: September 26, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000958</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000958-g001" data-doi="info:doi/10.1371/journal.pone.0000958" data-uri="info:doi/10.1371/journal.pone.0000958.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000958-g002" data-doi="info:doi/10.1371/journal.pone.0000958" data-uri="info:doi/10.1371/journal.pone.0000958.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000958-t001" data-doi="info:doi/10.1371/journal.pone.0000958" data-uri="info:doi/10.1371/journal.pone.0000958.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000958">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000958" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>The development of new high-throughput genotyping technologies has allowed fast evaluation of single nucleotide polymorphisms (SNPs) on a genome-wide scale. Several recent genome-wide association studies employing these technologies suggest that panels of SNPs can be a useful tool for predicting cancer susceptibility and discovery of potentially important new disease loci.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>In the present paper we undertake a careful examination of the relative significance of genetics, environmental factors, and biases of the data analysis protocol that was used in a previously published genome-wide association study. That prior study reported a nearly perfect discrimination of esophageal cancer patients and healthy controls on the basis of only genetic information. On the other hand, our results strongly suggest that SNPs in this dataset are not statistically linked to the phenotype, while several environmental factors and especially family history of esophageal cancer (a proxy to both environmental and genetic factors) have only a modest association with the disease.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>The main component of the previously claimed strong discriminatory signal is due to several data analysis pitfalls that in combination led to the strongly optimistic results. Such pitfalls are preventable and should be avoided in future studies since they create misleading conclusions and generate many false leads for subsequent research.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Statnikov A, Li C, Aliferis CF (2007) Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study. PLoS ONE 2(9):
+          e958.
+            doi:10.1371/journal.pone.0000958</p><p><strong>Academic Editor: </strong>Enrico Scalas, University of East Piedmont, Italy</p><p><strong>Received:</strong> July 30, 2007; <strong>Accepted:</strong> August 30, 2007; <strong>Published:</strong> September 26, 2007</p><p><strong>Copyright:</strong> © 2007 Statnikov et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The work was in part supported by grant R01 LM007948-01. The funding agencies had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>One of the promising methods for analysis of the human genome and identification of genes and genomic regions contributing to phenotypes is the use of single nucleotide polymorphisms (SNPs). SNPs make up more than 90% of all human genetic variation and have been extensively studied for functional relationships between genotype and phenotype. The advent of high-throughput genotyping technologies has allowed fast evaluation of SNPs on a genome-wide scale at a relatively low cost <a href="#pone.0000958-Engle1">[1]</a>–<a href="#pone.0000958-Wang1">[3]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>During the last two years several groups reported success in using SNP genotyping assays in association studies of cancer <a href="#pone.0000958-Engle1">[1]</a>, <a href="#pone.0000958-Waddell1">[4]</a>–<a href="#pone.0000958-Hu1">[8]</a>. In particular, the study by Hu et al. reported a nearly perfect classification of esophageal cancer cases and controls on the basis of only SNP data from a case-control genome-wide association study <a href="#pone.0000958-Hu1">[8]</a>. Taken at face value, this result suggests that esophageal cancer is a solely genetic disease. This is contradictory to other literature in the field that emphasizes importance of environment for cancer susceptibility <a href="#pone.0000958-Czene1">[9]</a>, <a href="#pone.0000958-Lichtenstein1">[10]</a>. In order to shed light on this issue, we re-analyzed the data of <a href="#pone.0000958-Hu1">[8]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>We identified two data analysis pitfalls in <a href="#pone.0000958-Hu1">[8]</a> that caused over-optimistic conclusions in the original paper: First, the SNP selection method was severely biased toward claiming significance for SNPs that are not truly associated with the disease. Second, both SNP selection and building of classifier model were performed on the same subjects as used for estimation of classification accuracy. Since neither cross-validation nor independent sample validation were performed, the resulting classification performance estimate was overoptimistic.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>We conducted a re-analysis of the SNP and environmental data that corrects the above problems and found that the SNPs in this dataset are not statistically linked to esophageal cancer, while several environmental factors, especially family history of esophageal cancer (that potentially accounts for many environmental and genetic factors), have a modest association with the disease. We quantified the contribution of each of the factors to cancer classification and provided unbiased classification performance estimates using established unbiased data analysis protocols. Given the insignificant contribution of SNPs to cancer classification, our findings suggest that the SNPs identified in <a href="#pone.0000958-Hu1">[8]</a> lack statistical evidence for being involved in esophageal cancer.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Materials and Methods"></a><h3>Materials and Methods</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>In all data analyses in addition to replicating the methods of <a href="#pone.0000958-Hu1">[8]</a>, we used unbiased alternatives so that the effects of bias (if any) in the analysis of <a href="#pone.0000958-Hu1">[8]</a> could be quantified. The justification of unbiasedness of alternative methods is provided in the pertinent subsections below.</p>
+
+<h4>Study Datasets</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>The data used in the present study is the same as used in the original paper <a href="#pone.0000958-Hu1">[8]</a>. The data consisted of 50 esophageal squamous cell carcinoma patients and 50 controls. The patients were diagnosed with esophageal cancer between 1998 and 2000 in Shanxi Cancer Hospital in Taiyuan, People's Republic of China. Twenty-five patients and nine controls had a positive family history of the disease. The controls were matched by age, sex, and place of residence.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>The genotyping of venous blood samples for all subjects in the study was performed at the National Cancer Institute (Bethesda, Maryland) as summarized below: The germ line DNA was extracted and purified. DNA samples were subsequently prepared and assayed according to Affymetrix GeneChip Mapping Assay protocol. The 10K SNP arrays with 11,555 SNPs distributed throughout human genome were scanned and genotype calls were assigned automatically by the Affymetrix GeneChip DNA Analysis software. Four genotype calls were defined in the data: AA, AB, BB, or “no call”. More details on biological specimen collection and processing, target preparation, scanning, and genotype generation are provided in <a href="#pone.0000958-Hu1">[8]</a>.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>For each subject, the following five variables were also recorded: age at interview (years), tobacco use (yes/no), alcohol consumption (yes/no), family history of esophageal cancer (yes/no), and consumption of pickled vegetables (yes/no).</p>
+
+
+<h4>SNP Array Data Preparation</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Before data analyses, we preprocessed the SNP array data following the approach described in the original paper <a href="#pone.0000958-Hu1">[8]</a>. First, out of 11,542 SNPs in the original dataset, 105 SNPs were removed because they could not be mapped to human genome with NCBI build 36. Second, to minimize possible genotyping errors, 946 SNPs were removed because they were homozygous in either cases or controls. Third, for the same reason, 482 SNPs were removed because they did not satisfy Hardy-Weinberg equilibrium in the control group at the α = 0.01 level <a href="#pone.0000958-Hosking1">[11]</a>. Fourth, “recessive A” encoding of SNPs (AA = 1, AB = 0, BB = 0) was implemented. After these steps, the dataset consisted of 10,009 SNPs.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Since some of the data analysis methods (e.g., Principal Component Analysis or Support Vector Machines described below) require no missing data, we imputed missing genotypes in the SNP dataset and used it whenever these methods were employed. Specifically, we used the multivariate nonparametric nearest neighbor imputation technique of <a href="#pone.0000958-Little1">[12]</a>, <a href="#pone.0000958-Batista1">[13]</a>.</p>
+
+
+<h4>SNP Selection</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>First, we employed the SNP selection method described in <a href="#pone.0000958-Hu1">[8]</a>: For each SNP, a generalized linear model (GLM) of the probability of cancer was fit using as predictor variables the SNP and two other variables: family history of esophageal cancer and alcohol consumption. The GLM was fit for all 100 subjects without leaving out an independent testing sample. Then a p-value was obtained based on the difference between the deviance <em>D<sub>0</sub></em> of the null model without any predictor variables and the deviance <em>D<sub>1</sub></em> of the fitted model. The difference <em>D<sub>0</sub>–D<sub>1</sub></em> follows a chi-squared distribution with 3 degrees of freedom. Since the above procedure is applied to each SNP in the dataset, it is necessary to adjust for multiple comparisons to ensure that the desired proportion of false positives (0.05) is preserved. To this end, Bonferroni adjustment was performed to the significance level 0.05 of the test (i.e., instead of using the significance level 0.05, the level 0.05/number of SNPs was used instead). We refer to the above method as “GLM1”. Finally, we note that Bonferroni adjustment often provides a conservative assessment of the statistical significance and assumes that all SNPs are independent, while there exist methods that are less conservative and can be applicable when the SNPs are dependent, e.g. <a href="#pone.0000958-Benjamini1">[14]</a>–<a href="#pone.0000958-Storey1">[16]</a>.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>Since the p-value of GLM1 reflects the combined effect of the three predictor variables, it tends to be small even if the SNP does not have any effect on esophageal cancer at all. To address this problem of the original analysis, we also applied the following unbiased SNP selection method: we proceed similarly as in GLM1 except that the p-value is based on the difference between the deviance <em>D</em>'<em><sub>0</sub></em> of the model including family history of esophageal cancer and alcohol consumption and the deviance <em>D<sub>1</sub></em>. The resultant statistic <em>D</em>'<em><sub>0</sub>–D<sub>1</sub></em> follows a chi-squared distribution with one degree of freedom, and it reflects the effect of the SNP that is being analyzed. We refer to this method as “GLM2” and show that it is indeed unbiased in the Results and Discussion section and in the Supporting Information <a href="#pone.0000958.s001">File S1</a>.</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>Finally, when fitting support vector machines (see next section) to the data, we also applied the Recursive Feature Elimination (RFE) technique that is among the best performing variable selection methods for microarray gene expression data and other high-throughput molecular datasets <a href="#pone.0000958-Guyon1">[17]</a>. In brief, this method involves iteratively fitting support vector machine cancer classification models by discarding the SNPs with the smallest impact on classification and selecting the SNPs that participate in the best performing classification model. Unlike the above GLM-based methods, we applied RFE only to the training set of patients and controls during cross-validation.</p>
+
+
+<h4>Cancer Classification Models</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>First, we used the classification procedure described in <a href="#pone.0000958-Hu1">[8]</a>. That is, principal component analysis (PCA) was performed on the selected SNPs, and then the first principal component was extracted and used to predict cancer status.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>As a state-of-the-art alternative to the PCA-based classification procedure, we applied support vector machine (SVM) classifiers <a href="#pone.0000958-Vapnik1">[18]</a>. The underlying idea of SVM classifiers is to calculate a maximal margin hyperplane separating the cases and controls. To achieve non-linear separation, the data are implicitly mapped to a higher dimensional space by means of a kernel function, where a separating hyperplane is found. Subjects are classified according to the side of the hyperplane they belong to. These classification methods are commonly used for analysis of high-throughput molecular data <a href="#pone.0000958-Waddell1">[4]</a>, <a href="#pone.0000958-Furey1">[19]</a>–<a href="#pone.0000958-Wagner1">[21]</a> and have many attractive theoretical and empirical properties. For example, they often outperform other classification methods to a remarkable degree; they are also fairly insensitive to the large variable-to-sample ratio; and they can learn very complex classification functions <a href="#pone.0000958-Vapnik1">[18]</a>, <a href="#pone.0000958-Aliferis1">[22]</a>. We used the libSVM implementation of the linear SVM classifiers (<a href="http://www.csie.ntu.edu.tw/%E2%88%BCcjlin/libsvm/">www.csie.ntu.edu.tw/~cjlin/libsvm/</a>). We also experimented with the nonlinear SVM classifiers but they resulted in more complex models with similar classification performance.</p>
+<a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>To assess the combined performance of SNPs and environmental factors (and/or family history), we used ensemble classification methods based on SVM classifiers. We present in this paper only results for the best ensembling technique that averages predictions of the two SVM classifiers for each subject: one based on SNP data and another one based on environmental factors (and/or family history). The description and results for the other ensembling techniques are provided in the Supporting Information <a href="#pone.0000958.s002">File S2</a>.</p>
+
+
+<h4>Evaluation of Classification Performance</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Unlike the original study <a href="#pone.0000958-Hu1">[8]</a> that used proportion of correct classifications as the performance metric, we employed area under the ROC curve (AUC) that has more power to detect predictive signal of SNPs <a href="#pone.0000958-Ling1">[23]</a>–<a href="#pone.0000958-Fawcett1">[25]</a>. The ROC curve is the plot of sensitivity versus 1-specificity for a range of classification threshold values. AUC ranges from 0 to 1, with an AUC equal to 0 indicating the worst possible classifier, 0.5 representing a random (i.e., uninformative) classifier, and 1 representing perfect classification. An excellent introduction to ROC analysis for classification is provided in <a href="#pone.0000958-Fawcett1">[25]</a>.</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p>In order to obtain unbiased AUC estimates, the cancer classification models were built and evaluated by repeated 10-fold cross-validation procedure <a href="#pone.0000958-BragaNeto1">[26]</a>. The repeated 10-fold cross-validation estimator of classification performance can be obtained by running regular 10-fold cross-validation procedure 100 times with different splits of data into training and testing sets and reporting the average estimate over all 100 runs. This estimator is asymptotically unbiased because the testing samples are never used to train the classifier. Furthermore, the repeated 10-fold cross-validation has much smaller variance than regular cross-validation that may be affected by a non-representative split of the data <a href="#pone.0000958-BragaNeto1">[26]</a>.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results and Discussion"></a><h3>Results and Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>While the prior work reported 37 significant SNPs by applying method GLM1 to the esophageal cancer SNP array dataset <a href="#pone.0000958-Hu1">[8]</a>, our execution of the published protocol in <a href="#pone.0000958-Hu1">[8]</a> leads to 226 significant SNPs. The difference from the reported number of 37 SNPs is due to additional filtering step that was performed to the set of SNPs significant at the Bonferroni adjusted 0.05 α-level that was not reported in the original publication (Dr. Maxwell Lee, personal communication). Since, as we show below, an unbiased method for SNP effect assessment (e.g., GLM2) yields zero significant SNPs, any additional filtering step is superfluous, therefore we do not consider such filtering in the present work.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Nevertheless, the application of the PCA-based classifier to the data of 226 significant SNPs reproduces the classification performance of the original study <a href="#pone.0000958-Hu1">[8]</a>. Namely, the first principal component provides a nearly perfect classification of patients and controls with 0.98 AUC and 0.93 proportion of correct classifications (<a href="#pone-0000958-g001">Figure 1</a>). However, this result is over-optimistic primarily due to the following reasons.</p>
+<div class="figure" id="pone-0000958-g001"><div class="img"><a name="pone-0000958-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000958" data-uri="info:doi/10.1371/journal.pone.0000958.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000958.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000958.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>First two principal components extracted from SNPs that were selected by the method GLM1.</span></strong></p><a id="article1.body1.sec3.fig1.caption1.p1" name="article1.body1.sec3.fig1.caption1.p1"></a><p>The first principal component provides a nearly perfect separation of cases from controls.</p>
+<span>doi:10.1371/journal.pone.0000958.g001</span></div><a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>First, the calculation of p-value in SNP selection method GLM1 does not reflect the significance of the SNP under consideration, but the significance of three variables combined (SNP, family history of esophageal cancer, and alcohol consumption). Because family history and alcohol consumption are strong risk factors for esophageal cancer, this p-value will be biased towards zero, even when the SNP has nothing to do with esophageal cancer. This bias can be demonstrated as follows: It is reasonable to assume the majority of the SNPs do not have any effect on esophageal cancer risk. For these SNPs, the p-values should follow a uniform distribution between 0 and 1. However, a vast majority of their p-values were &lt;10<sup>−3</sup> (<a href="#pone-0000958-g002">Figure 2</a>), which is consistent with the fact that their p-value reflected the combined effect of family history of esophageal cancer, alcohol consumption, and the SNP instead of the SNP itself. On the other hand, the procedure GLM2 reflects the effects of only SNPs and does not suffer from the above shortcoming (<a href="#pone-0000958-g002">Figure 2</a>). A more elaborate empirical permutation-based demonstration of why GLM1 is biased while GLM2 is not is provided in the Supporting Information <a href="#pone.0000958.s001">File S1</a>. The application of procedure GLM2 resulted in no significant SNPs after Bonferroni adjustment (<a href="#pone-0000958-g002">Figure 2</a>). Therefore, the SNPs reported in <a href="#pone.0000958-Hu1">[8]</a> as statistically significant are not statistically significant at the Bonferroni adjusted 0.05 α-level.</p>
+<div class="figure" id="pone-0000958-g002"><div class="img"><a name="pone-0000958-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000958" data-uri="info:doi/10.1371/journal.pone.0000958.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000958.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000958.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Distribution of p-values computed by GLM1 and GLM2 SNP selection methods.</span></strong></p><a id="article1.body1.sec3.fig2.caption1.p1" name="article1.body1.sec3.fig2.caption1.p1"></a><p>The figure is shown in logarithmic scale for convenience. The vertical line is the Bonferroni adjusted α-level (0.05/10,009). While there are SNPs that are significant according to GLM1 method, no SNP is significant by GLM2. The distribution of p-values for GLM2 is uniform, however the distribution for GLM1 is not.</p>
+<span>doi:10.1371/journal.pone.0000958.g002</span></div><a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Second, both SNP selection by GLM1 and building of PCA-based classifier model were performed in <a href="#pone.0000958-Hu1">[8]</a> on the same 100 subjects as used for estimation of final classification accuracy. Since neither cross-validation nor independent sample validation were performed, the resulting classification performance estimate is overoptimistic as explained in <a href="#pone.0000958-Simon1">[27]</a>, <a href="#pone.0000958-Dupuy1">[28]</a>. In order to obtain an unbiased performance estimate for the SNP selection method and classifier of <a href="#pone.0000958-Hu1">[8]</a>, the above methods were applied by repeated 10-fold cross-validation. The resulting classification performance estimate was 0.68 AUC, while the original procedure in <a href="#pone.0000958-Hu1">[8]</a> led to 0.98 AUC, indicating a 0.30 AUC over-estimation.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>To assess the contribution of SNPs and other variables to esophageal cancer classification, we performed several analyses that are summarized in <a href="#pone-0000958-t001">Table 1</a>. We used the SNP selection technique RFE <a href="#pone.0000958-Guyon1">[17]</a> and the SVM classifiers <a href="#pone.0000958-Vapnik1">[18]</a> described in the Materials and Methods section. When SNP data is used alone, the performance is 0.51 AUC which is statistically indistinguishable from the performance of an uninformative classifier (0.50 AUC). On the other hand, four environmental variables alone (age at interview, tobacco use, alcohol consumption, and consumption of pickled vegetables) can classify cancer with 0.60 AUC indicating a modest association with cancer. When these four environmental variables are combined with SNP data, the resulting performance slightly increases to 0.62 AUC. An even more surprising result was that a single variable (i.e., family history of esophageal cancer) can classify the disease with 0.66 AUC which is more accurate than using SNP data and the four other environmental variables. We hypothesize that this happens because the family history contains information about other environmental and genetic variables that were not measured in the study data. Clearly, there are much more than four environmental variables that affect esophageal cancer. Likewise the Affymetrix 10k SNP array is an early genotyping technology that does not provide as dense genomic coverage as more recent arrays with &gt;500k SNPs <a href="#pone.0000958-Barrett1">[29]</a>, <a href="#pone.0000958-Nicolae1">[30]</a>. When the family history is combined with other four environmental variables, cancer can be classified with 0.73 AUC which is more accurate than using either set of variables alone. On the other hand, when the family history is combined with SNP data, the resulting classifier with 0.64 AUC is not as accurate as using the former variable alone. Finally, when SNPs and all other variables are combined, cancer can be classified with 0.73 AUC.</p>
+<div class="figure" id="pone-0000958-t001"><div class="img"><a name="pone-0000958-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000958" data-uri="info:doi/10.1371/journal.pone.0000958.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000958.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000958.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000958.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000958.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000958.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Estimates of classification performance obtained by repeated 10-fold cross-validation procedure.</span></strong></p><span>doi:10.1371/journal.pone.0000958.t001</span></div><a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>The experiments presented in this paper involved SVM classifiers. As we mentioned, the choice of classifier was based on empirical evidence suggesting that SVMs have superior performance in different high-dimensional “omics” datasets <a href="#pone.0000958-Furey1">[19]</a>–<a href="#pone.0000958-Wagner1">[21]</a> as well as in SNP data <a href="#pone.0000958-Waddell1">[4]</a> and they certainly outperform unsupervised classification methods such as PCA <a href="#pone.0000958-Simon1">[27]</a>, <a href="#pone.0000958-Dupuy1">[28]</a>. However, one cannot preclude that there does not exist some classification methods that outperform SVMs in SNP array datasets. Future research will answer this question.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>In conclusion, our findings suggest that several data analysis pitfalls of <a href="#pone.0000958-Hu1">[8]</a> led researchers to identify SNPs that are not statistically significant and to derive a severely biased estimate of classification performance of esophageal cancer patients and healthy controls on the basis of these SNPs. We also showed that environmental factors and especially family history of cancer (the latter may serve as proxy to both genetic and environmental factors) have a modest association with the disease. It is thus conceivable that other SNPs, not included in the assay employed, may be implicated in the disease. These results are consistent with the previous literature that emphasizes the importance of environmental factors on the causation of this complex disease <a href="#pone.0000958-Czene1">[9]</a>, <a href="#pone.0000958-Lichtenstein1">[10]</a>. The results also underscore the importance of sound data analysis in genome-wide association studies.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000958"></div><a name="pone.0000958.s001" id="pone.0000958.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000958.s001">File S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material1.caption1.p1" name="article1.body1.sec4.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Demonstration of Bias in Computation of P-Values</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000958.s001</p><a id="article1.body1.sec4.supplementary-material1.caption1.p2" name="article1.body1.sec4.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.08 MB DOC)</p>
+<a name="pone.0000958.s002" id="pone.0000958.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000958.s002">File S2. </a></strong></p><a id="article1.body1.sec4.supplementary-material2.caption1.p1" name="article1.body1.sec4.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Integrated Analysis of Multiple Data Types</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000958.s002</p><a id="article1.body1.sec4.supplementary-material2.caption1.p2" name="article1.body1.sec4.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.09 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>The authors would like to acknowledge Dr. Maxwell Lee and his collaborators for providing the dataset for the present study and for extensive comments on this manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: AS CA CL. Performed the experiments: AS. Analyzed the data: AS CA CL. Wrote the paper: AS.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000958-Engle1" id="pone.0000958-Engle1"></a>Engle LJ, Simpson CL, Landers JE (2006) Using high-throughput SNP technologies to study cancer. Oncogene  25: 1594–1601.  <ul class="find" data-citedArticleID="998046" data-doi="10.1038/sj.onc.1209368"><li><a href="http://dx.doi.org/10.1038/sj.onc.1209368" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Using+high-throughput+SNP+technologies+to+study+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Using+high-throughput+SNP+technologies+to+study+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000958-Hirschhorn1" id="pone.0000958-Hirschhorn1"></a>Hirschhorn JN, Daly MJ (2005) Genome-wide association studies for common diseases and complex traits. Nat Rev Genet  6: 95–108.  <ul class="find" data-citedArticleID="998056" data-doi="10.1038/nrg1521"><li><a href="http://dx.doi.org/10.1038/nrg1521" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+association+studies+for+common+diseases+and+complex+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+association+studies+for+common+diseases+and+complex+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000958-Wang1" id="pone.0000958-Wang1"></a>Wang WY, Barratt BJ, Clayton DG, Todd JA (2005) Genome-wide association studies: theoretical and practical concerns. Nat Rev Genet  6: 109–118.  <ul class="find" data-citedArticleID="998086" data-doi="10.1038/nrg1522"><li><a href="http://dx.doi.org/10.1038/nrg1522" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+association+studies%3A+theoretical+and+practical+concerns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+association+studies%3A+theoretical+and+practical+concerns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000958-Waddell1" id="pone.0000958-Waddell1"></a>Waddell M, Page D, Zhan F, Barlogie B, Shaughnessy J (2005) Predicting cancer susceptibility from single-nucleotide polymorphism data: a case study in multiple myeloma. Proceedings of the Fifth ACM SIGKDD Workshop on Data Mining in Bioinformatics (BIOKDD).   <ul class="find" data-citedArticleID="998082" data-doi="10.1145/1134030.1134035"><li><a href="http://dx.doi.org/10.1145/1134030.1134035" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+cancer+susceptibility+from+single-nucleotide+polymorphism+data%3A+a+case+study+in+multiple+myeloma." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+cancer+susceptibility+from+single-nucleotide+polymorphism+data%3A+a+case+study+in+multiple+myeloma.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000958-Mitra1" id="pone.0000958-Mitra1"></a>Mitra N, Ye TZ, Smith A, Chuai S, Kirchhoff T, et al.  (2004) Localization of cancer susceptibility genes by genome-wide single-nucleotide polymorphism linkage-disequilibrium mapping. Cancer Res  64: 8116–8125.  <ul class="find" data-citedArticleID="998068" data-doi="10.1158/0008-5472.can-04-1411"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-04-1411" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Localization+of+cancer+susceptibility+genes+by+genome-wide+single-nucleotide+polymorphism+linkage-disequilibrium+mapping." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Localization+of+cancer+susceptibility+genes+by+genome-wide+single-nucleotide+polymorphism+linkage-disequilibrium+mapping.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000958-Rudd1" id="pone.0000958-Rudd1"></a>Rudd MF, Webb EL, Matakidou A, Sellick GS, Williams RD, et al.  (2006) Variants in the GH-IGF axis confer susceptibility to lung cancer. Genome Res  16: 693–701.  <ul class="find" data-citedArticleID="998072" data-doi="10.1101/gr.5120106"><li><a href="http://dx.doi.org/10.1101/gr.5120106" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Variants+in+the+GH-IGF+axis+confer+susceptibility+to+lung+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Variants+in+the+GH-IGF+axis+confer+susceptibility+to+lung+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000958-Ellis1" id="pone.0000958-Ellis1"></a>Ellis NA, Kirchhoff T, Mitra N, Ye TZ, Chuai S, et al.  (2006) Localization of breast cancer susceptibility loci by genome-wide SNP linkage disequilibrium mapping. Genet Epidemiol  30: 48–61.  <ul class="find" data-citedArticleID="998044" data-doi="10.1002/gepi.20101"><li><a href="http://dx.doi.org/10.1002/gepi.20101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Localization+of+breast+cancer+susceptibility+loci+by+genome-wide+SNP+linkage+disequilibrium+mapping." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Localization+of+breast+cancer+susceptibility+loci+by+genome-wide+SNP+linkage+disequilibrium+mapping.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000958-Hu1" id="pone.0000958-Hu1"></a>Hu N, Wang C, Hu Y, Yang HH, Giffen C, et al.  (2005) Genome-wide association study in esophageal cancer using GeneChip mapping 10K array. Cancer Res  65: 2542–2546.  <ul class="find" data-citedArticleID="998060" data-doi="10.1158/0008-5472.can-04-3247"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-04-3247" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+association+study+in+esophageal+cancer+using+GeneChip+mapping+10K+array." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+association+study+in+esophageal+cancer+using+GeneChip+mapping+10K+array.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000958-Czene1" id="pone.0000958-Czene1"></a>Czene K, Lichtenstein P, Hemminki K (2002) Environmental and heritable causes of cancer among 9.6 million individuals in the Swedish Family-Cancer Database. Int J Cancer  99: 260–266.  <ul class="find" data-citedArticleID="998040" data-doi="10.1002/ijc.10332"><li><a href="http://dx.doi.org/10.1002/ijc.10332" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Environmental+and+heritable+causes+of+cancer+among+9.6+million+individuals+in+the+Swedish+Family-Cancer+Database." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Environmental+and+heritable+causes+of+cancer+among+9.6+million+individuals+in+the+Swedish+Family-Cancer+Database.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000958-Lichtenstein1" id="pone.0000958-Lichtenstein1"></a>Lichtenstein P, Holm NV, Verkasalo PK, Iliadou A, Kaprio J, et al.  (2000) Environmental and heritable factors in the causation of cancer–analyses of cohorts of twins from Sweden, Denmark, and Finland. N Engl J Med  343: 78–85.  <ul class="find" data-citedArticleID="998062" data-doi="10.1056/nejm200007133430201"><li><a href="http://dx.doi.org/10.1056/nejm200007133430201" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Environmental+and+heritable+factors+in+the+causation+of+cancer%E2%80%93analyses+of+cohorts+of+twins+from+Sweden%2C+Denmark%2C+and+Finland." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Environmental+and+heritable+factors+in+the+causation+of+cancer%E2%80%93analyses+of+cohorts+of+twins+from+Sweden%2C+Denmark%2C+and+Finland.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000958-Hosking1" id="pone.0000958-Hosking1"></a>Hosking L, Lumsden S, Lewis K, Yeo A, McCarthy L, et al.  (2004) Detection of genotyping errors by Hardy-Weinberg equilibrium testing. Eur J Hum Genet  12: 395–399.  <ul class="find" data-citedArticleID="998058" data-doi="10.1038/sj.ejhg.5201164"><li><a href="http://dx.doi.org/10.1038/sj.ejhg.5201164" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detection+of+genotyping+errors+by+Hardy-Weinberg+equilibrium+testing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detection+of+genotyping+errors+by+Hardy-Weinberg+equilibrium+testing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000958-Little1" id="pone.0000958-Little1"></a>Little RJA, Rubin DB (2002) Statistical analysis with missing data. Hoboken, N.J: Wiley.   <ul class="find-nolinks"></ul></li><li><span class="label">13.
+              </span><a name="pone.0000958-Batista1" id="pone.0000958-Batista1"></a>Batista GEAPA, Monard MC (2003) An Analysis of Four Missing Data Treatment Methods for Supervised Learning. Applied Artificial Intelligence  17: 519–533.  <ul class="find" data-citedArticleID="998032" data-doi="10.1080/713827181"><li><a href="http://dx.doi.org/10.1080/713827181" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+Analysis+of+Four+Missing+Data+Treatment+Methods+for+Supervised+Learning." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+Analysis+of+Four+Missing+Data+Treatment+Methods+for+Supervised+Learning.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000958-Benjamini1" id="pone.0000958-Benjamini1"></a>Benjamini Y, Hochberg Y (1995) Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society Series B (Methodological)  57: 289–300.  <ul class="find" data-citedArticleID="998034"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Controlling+the+False+Discovery+Rate%3A+A+Practical+and+Powerful+Approach+to+Multiple+Testing.&amp;auth=&amp;atitle=Controlling+the+False+Discovery+Rate%3A+A+Practical+and+Powerful+Approach+to+Multiple+Testing." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Controlling+the+False+Discovery+Rate%3A+A+Practical+and+Powerful+Approach+to+Multiple+Testing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Controlling+the+False+Discovery+Rate%3A+A+Practical+and+Powerful+Approach+to+Multiple+Testing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000958-Benjamini2" id="pone.0000958-Benjamini2"></a>Benjamini Y, Yekutieli D (2001) The control of the false discovery rate in multiple testing under dependency. Ann Statist  29: 1165–1188.  <ul class="find" data-citedArticleID="998036" data-doi="10.1214/aos/1013699998"><li><a href="http://dx.doi.org/10.1214/aos/1013699998" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+control+of+the+false+discovery+rate+in+multiple+testing+under+dependency." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+control+of+the+false+discovery+rate+in+multiple+testing+under+dependency.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000958-Storey1" id="pone.0000958-Storey1"></a>Storey JD, Tibshirani R (2003) Statistical significance for genomewide studies. Proc Natl Acad Sci U S A  100: 9440–9445.  <ul class="find" data-citedArticleID="998078" data-doi="10.1073/pnas.1530509100"><li><a href="http://dx.doi.org/10.1073/pnas.1530509100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+significance+for+genomewide+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+significance+for+genomewide+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000958-Guyon1" id="pone.0000958-Guyon1"></a>Guyon I, Weston J, Barnhill S, Vapnik V (2002) Gene selection for cancer classification using support vector machines. Machine Learning  46: 389–422.  <ul class="find" data-citedArticleID="998052" data-doi="10.1023/a:1012487302797"><li><a href="http://dx.doi.org/10.1023/a:1012487302797" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+selection+for+cancer+classification+using+support+vector+machines." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+selection+for+cancer+classification+using+support+vector+machines.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000958-Vapnik1" id="pone.0000958-Vapnik1"></a>Vapnik VN (1998) Statistical learning theory. New York: Wiley.   <ul class="find-nolinks"></ul></li><li><span class="label">19.
+              </span><a name="pone.0000958-Furey1" id="pone.0000958-Furey1"></a>Furey TS, Cristianini N, Duffy N, Bednarski DW, Schummer M, et al.  (2000) Support vector machine classification and validation of cancer tissue samples using microarray expression data. Bioinformatics  16: 906–914.  <ul class="find" data-citedArticleID="998050" data-doi="10.1093/bioinformatics/16.10.906"><li><a href="http://dx.doi.org/10.1093/bioinformatics/16.10.906" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Support+vector+machine+classification+and+validation+of+cancer+tissue+samples+using+microarray+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Support+vector+machine+classification+and+validation+of+cancer+tissue+samples+using+microarray+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000958-Statnikov1" id="pone.0000958-Statnikov1"></a>Statnikov A, Aliferis CF, Tsamardinos I, Hardin D, Levy S (2005) A comprehensive evaluation of multicategory classification methods for microarray gene expression cancer diagnosis. Bioinformatics  21: 631–643.  <ul class="find" data-citedArticleID="998076" data-doi="10.1093/bioinformatics/bti033"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti033" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comprehensive+evaluation+of+multicategory+classification+methods+for+microarray+gene+expression+cancer+diagnosis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comprehensive+evaluation+of+multicategory+classification+methods+for+microarray+gene+expression+cancer+diagnosis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000958-Wagner1" id="pone.0000958-Wagner1"></a>Wagner M, Naik DN, Pothen A, Kasukurti S, Devineni RR, et al.  (2004) Computational protein biomarker prediction: a case study for prostate cancer. BMC Bioinformatics  5: 26.  <ul class="find" data-citedArticleID="998084" data-doi="10.1186/1471-2105-5-26"><li><a href="http://dx.doi.org/10.1186/1471-2105-5-26" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+protein+biomarker+prediction%3A+a+case+study+for+prostate+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+protein+biomarker+prediction%3A+a+case+study+for+prostate+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000958-Aliferis1" id="pone.0000958-Aliferis1"></a>Aliferis CF, Statnikov A, Tsamardinos I (2006) Challenges in the analysis of mass-throughput data: a technical commentary from the statistical machine learning perspective. Cancer Informatics  2: 133–162.  <ul class="find" data-citedArticleID="998028"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Challenges+in+the+analysis+of+mass-throughput+data%3A+a+technical+commentary+from+the+statistical+machine+learning+perspective.&amp;auth=&amp;atitle=Challenges+in+the+analysis+of+mass-throughput+data%3A+a+technical+commentary+from+the+statistical+machine+learning+perspective." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Challenges+in+the+analysis+of+mass-throughput+data%3A+a+technical+commentary+from+the+statistical+machine+learning+perspective." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Challenges+in+the+analysis+of+mass-throughput+data%3A+a+technical+commentary+from+the+statistical+machine+learning+perspective.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000958-Ling1" id="pone.0000958-Ling1"></a>Ling CX, Huang J, Zhang H (2003) AUC: a statistically consistent and more discriminating measure than accuracy. Proceedings of the Eighteenth International Joint Conference of Artificial Intelligence (IJCAI).   <ul class="find" data-citedArticleID="998064"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=AUC%3A+a+statistically+consistent+and+more+discriminating+measure+than+accuracy.&amp;auth=&amp;atitle=AUC%3A+a+statistically+consistent+and+more+discriminating+measure+than+accuracy." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=AUC%3A+a+statistically+consistent+and+more+discriminating+measure+than+accuracy." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22AUC%3A+a+statistically+consistent+and+more+discriminating+measure+than+accuracy.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000958-Harrell1" id="pone.0000958-Harrell1"></a>Harrell FE Jr, Lee KL, Mark DB (1996) Multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors. Stat Med  15: 361–387.  <ul class="find" data-citedArticleID="998054" data-doi="10.1002/(sici)1097-0258(19960229)15:4<361::aid-sim168&gt;3.0.co;2-4"><li><a href="http://dx.doi.org/10.1002/(sici)1097-0258(19960229)15:4<361::aid-sim168&gt;3.0.co;2-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Multivariable+prognostic+models%3A+issues+in+developing+models%2C+evaluating+assumptions+and+adequacy%2C+and+measuring+and+reducing+errors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Multivariable+prognostic+models%3A+issues+in+developing+models%2C+evaluating+assumptions+and+adequacy%2C+and+measuring+and+reducing+errors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000958-Fawcett1" id="pone.0000958-Fawcett1"></a>Fawcett T (2003) ROC Graphs: Notes and Practical Considerations for Researchers. Technical Report, HPL-2003-4, HP Laboratories.   <ul class="find" data-citedArticleID="998048"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=ROC+Graphs%3A+Notes+and+Practical+Considerations+for+Researchers.&amp;auth=&amp;atitle=ROC+Graphs%3A+Notes+and+Practical+Considerations+for+Researchers." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ROC+Graphs%3A+Notes+and+Practical+Considerations+for+Researchers." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ROC+Graphs%3A+Notes+and+Practical+Considerations+for+Researchers.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000958-BragaNeto1" id="pone.0000958-BragaNeto1"></a>Braga-Neto UM, Dougherty ER (2004) Is cross-validation valid for small-sample microarray classification? Bioinformatics  20: 374–380.  <ul class="find" data-citedArticleID="998038" data-doi="10.1093/bioinformatics/btg419"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg419" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Is+cross-validation+valid+for+small-sample+microarray+classification%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Is+cross-validation+valid+for+small-sample+microarray+classification%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000958-Simon1" id="pone.0000958-Simon1"></a>Simon R, Radmacher MD, Dobbin K, McShane LM (2003) Pitfalls in the use of DNA microarray data for diagnostic and prognostic classification. J Natl Cancer Inst  95: 14–18.  <ul class="find" data-citedArticleID="998074" data-doi="10.1093/jnci/95.1.14"><li><a href="http://dx.doi.org/10.1093/jnci/95.1.14" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pitfalls+in+the+use+of+DNA+microarray+data+for+diagnostic+and+prognostic+classification." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pitfalls+in+the+use+of+DNA+microarray+data+for+diagnostic+and+prognostic+classification.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000958-Dupuy1" id="pone.0000958-Dupuy1"></a>Dupuy A, Simon RM (2007) Critical review of published microarray studies for cancer outcome and guidelines on statistical analysis and reporting. J Natl Cancer Inst  99: 147–157.  <ul class="find" data-citedArticleID="998042" data-doi="10.1093/jnci/djk018"><li><a href="http://dx.doi.org/10.1093/jnci/djk018" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Critical+review+of+published+microarray+studies+for+cancer+outcome+and+guidelines+on+statistical+analysis+and+reporting." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Critical+review+of+published+microarray+studies+for+cancer+outcome+and+guidelines+on+statistical+analysis+and+reporting.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000958-Barrett1" id="pone.0000958-Barrett1"></a>Barrett JC, Cardon LR (2006) Evaluating coverage of genome-wide association studies. Nat Genet  38: 659–662.  <ul class="find" data-citedArticleID="998030" data-doi="10.1038/ng1801"><li><a href="http://dx.doi.org/10.1038/ng1801" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evaluating+coverage+of+genome-wide+association+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evaluating+coverage+of+genome-wide+association+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000958-Nicolae1" id="pone.0000958-Nicolae1"></a>Nicolae DL, Wen X, Voight BF, Cox NJ (2006) Coverage and characteristics of the Affymetrix GeneChip Human Mapping 100K SNP set. PLoS Genet  2: e67.  <ul class="find" data-citedArticleID="998070" data-doi="10.1371/journal.pgen.0020067.eor"><li><a href="http://dx.doi.org/10.1371/journal.pgen.0020067.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Coverage+and+characteristics+of+the+Affymetrix+GeneChip+Human+Mapping+100K+SNP+set." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Coverage+and+characteristics+of+the+Affymetrix+GeneChip+Human+Mapping+100K+SNP+set.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.XML" value="57411"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.PDF" value="142262"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g001.PNG_L" value="192116"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g001.PNG_M" value="44142"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g001.PNG_S" value="3771"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g001.TIF" value="607286"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g001.PNG_I" value="16762"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g002.PNG_L" value="133241"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g002.PNG_M" value="36747"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g002.PNG_S" value="4266"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g002.TIF" value="939274"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.g002.PNG_I" value="14599"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.t001.PNG_L" value="108156"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.t001.PNG_M" value="144530"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.t001.PNG_S" value="16773"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.t001.TIF" value="444416"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.t001.PNG_I" value="50712"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.s001.DOC" value="81408"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000958.s002.DOC" value="88576"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000958&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000958" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000958&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000958&volume=&issue=&title=Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study&author_name=Alexander%20Statnikov%2C%20Chun%20Li%2C%20Constantin%20F.%20Aliferis&start_page=1&end_page=5" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000958" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958&amp;t=Effects%20of%20Environment%2C%20Genetics%20and%20Data%20Analysis%20Pitfalls%20in%20an%20Esophageal%20Cancer%20Genome-Wide%20Association%20Study" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958&title=Effects%20of%20Environment%2C%20Genetics%20and%20Data%20Analysis%20Pitfalls%20in%20an%20Esophageal%20Cancer%20Genome-Wide%20Association%20Study&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958&amp;title=Effects%20of%20Environment%2C%20Genetics%20and%20Data%20Analysis%20Pitfalls%20in%20an%20Esophageal%20Cancer%20Genome-Wide%20Association%20Study" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000958&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Effects of Environment, Genetics and Data Analysis Pitfalls in an Esophageal Cancer Genome-Wide Association Study';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000958';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Effects%20of%20Environment%2C%20Genetics%20and%20Data%20Analysis%20Pitfalls%20in%20an%20Esophageal%20Cancer%20Genome-Wide%20Association%20Study http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000958" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000958" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Alcohol+consumption%22" title="Search for articles in the subject area:'Alcohol consumption'"><div class="flagText">Alcohol consumption</div></a>
+              <div data-categoryid="25997" data-articleid="24752"
+                   data-categoryname="Alcohol consumption"
+                   class="flagImage" title="Flag 'Alcohol consumption' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Esophageal+cancer%22" title="Search for articles in the subject area:'Esophageal cancer'"><div class="flagText">Esophageal cancer</div></a>
+              <div data-categoryid="26511" data-articleid="24752"
+                   data-categoryname="Esophageal cancer"
+                   class="flagImage" title="Flag 'Esophageal cancer' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome+analysis%22" title="Search for articles in the subject area:'Genome analysis'"><div class="flagText">Genome analysis</div></a>
+              <div data-categoryid="40539" data-articleid="24752"
+                   data-categoryname="Genome analysis"
+                   class="flagImage" title="Flag 'Genome analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome-wide+association+studies%22" title="Search for articles in the subject area:'Genome-wide association studies'"><div class="flagText">Genome-wide association studies</div></a>
+              <div data-categoryid="40995" data-articleid="24752"
+                   data-categoryname="Genome-wide association studies"
+                   class="flagImage" title="Flag 'Genome-wide association studies' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genotyping%22" title="Search for articles in the subject area:'Genotyping'"><div class="flagText">Genotyping</div></a>
+              <div data-categoryid="19731" data-articleid="24752"
+                   data-categoryname="Genotyping"
+                   class="flagImage" title="Flag 'Genotyping' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Natural+history+of+disease%22" title="Search for articles in the subject area:'Natural history of disease'"><div class="flagText">Natural history of disease</div></a>
+              <div data-categoryid="18849" data-articleid="24752"
+                   data-categoryname="Natural history of disease"
+                   class="flagImage" title="Flag 'Natural history of disease' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Statistical+data%22" title="Search for articles in the subject area:'Statistical data'"><div class="flagText">Statistical data</div></a>
+              <div data-categoryid="32437" data-articleid="24752"
+                   data-categoryname="Statistical data"
+                   class="flagImage" title="Flag 'Statistical data' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Support+vector+machines%22" title="Search for articles in the subject area:'Support vector machines'"><div class="flagText">Support vector machines</div></a>
+              <div data-categoryid="32835" data-articleid="24752"
+                   data-categoryname="Support vector machines"
+                   class="flagImage" title="Flag 'Support vector machines' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=2266'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=4192'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=1783&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

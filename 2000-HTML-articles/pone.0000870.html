@@ -1,0 +1,1358 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000870"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000870" />
+
+    <meta name="citation_title" content="Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species"/>
+    <meta itemprop="name" content="Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species"/>
+
+      <meta name="citation_author" content="Drew W. Purves"/>
+            <meta name="citation_author_institution" content="Department of Ecology and Evolutionary Biology, Princeton University, Princeton, New Jersey, United States of America"/>
+            <meta name="citation_author_institution" content="External Research Office, Microsoft Research, Cambridge, United Kingdom"/>
+      <meta name="citation_author" content="Jeremy W. Lichstein"/>
+            <meta name="citation_author_institution" content="Department of Ecology and Evolutionary Biology, Princeton University, Princeton, New Jersey, United States of America"/>
+      <meta name="citation_author" content="Stephen W. Pacala"/>
+            <meta name="citation_author_institution" content="Department of Ecology and Evolutionary Biology, Princeton University, Princeton, New Jersey, United States of America"/>
+
+    <meta name="citation_date" content="2007/9/12"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000870.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e870"/>
+    <meta name="citation_issue" content="9"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=The adaptive geometry of trees.; citation_author=HS Horn; citation_number=1; citation_pages=xi, 144 p. p; citation_date=1971; citation_publisher=Princeton University Press; " />
+      <meta name="citation_reference" content="citation_title=Forest models defined by field measurements: estimation, error analysis and dynamics.; citation_author=SW Pacala; citation_author=CD Canham; citation_author=J Saponara; citation_author=JA Silander; citation_author=RK Kobe; citation_journal_title=Ecological Monographs; citation_volume=66; citation_number=2; citation_pages=1-43; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Juvenile Tree Survivorship as a component of shade tolerance.; citation_author=RK Kobe; citation_author=SW Pacala; citation_author=JA Silander; citation_journal_title=Ecological Applications; citation_volume=5; citation_number=3; citation_pages=517-532; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_author=BV Barnes; citation_author=SR Zak; citation_author=SR Denton; citation_author=SH Spur; citation_number=4; citation_date=1998; citation_publisher=Wiley; " />
+      <meta name="citation_reference" content="citation_title=A theory of forest dynamics : the ecological implications of forest succession models.; citation_author=HH Shugart; citation_number=5; citation_pages=xiv, 278 p. p; citation_date=1984; citation_publisher=Springer-Verlag; " />
+      <meta name="citation_reference" content="citation_author=CD Oliver; citation_author=BC Larson; citation_number=6; citation_pages=xviii, 520 p. p; citation_date=1996; citation_publisher=Wiley; " />
+      <meta name="citation_reference" content="citation_title=Turbulence structure of a tropical forest.; citation_author=RT Pinker; citation_author=JZ Holland; citation_journal_title=Boundary-Layer Meteorology; citation_volume=43; citation_number=7; citation_pages=43-63; citation_date=1988; " />
+      <meta name="citation_reference" content="citation_title=Surface energy exchanges along a tundra-forest transition and feedbacks to climate.; citation_author=J Beringer; citation_author=FS Chapin; citation_author=CC Thompson; citation_author=AD McGuire; citation_journal_title=Agricultural and Forest Meteorology; citation_volume=131; citation_number=8; citation_pages=143-161; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Coupled simulation of potential natural vegetation, terrestrial carbon balance and physical land-surface properties with the ALBIOC model.; citation_author=C Roelandt; citation_journal_title=Ecological Modelling; citation_volume=143; citation_number=9; citation_pages=191-214; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Recent advances in ecosystem-atmosphere interactions: an ecological perspective.; citation_author=PR Moorcroft; citation_journal_title=Proceedings of the Royal Society B-Biological Sciences; citation_volume=270; citation_number=10; citation_pages=1215-1227; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Human-induced changes in US biogenic volatile organic compound emissions: evidence from long-term forest inventory data.; citation_author=DW Purves; citation_author=JP Caspersen; citation_author=PR Moorcroft; citation_author=GC Hurtt; citation_author=SW Pacala; citation_journal_title=Global Change Biology; citation_volume=10; citation_number=11; citation_pages=1737-1755; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Modeling forest canopy heights: The effects of canopy shape.; citation_author=R Nelson; citation_journal_title=Remote Sensing of Environment; citation_volume=60; citation_number=12; citation_pages=327-334; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Architecture of 54 moist-forest tree species: Traits, trade-offs, and functional groups.; citation_author=L Poorter; citation_author=L Bongers; citation_author=F Bongers; citation_journal_title=Ecology; citation_volume=87; citation_number=13; citation_pages=1289-1301; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Crown asymmetry, treefalls and repeat disturbance of broadleaved forest gaps.; citation_author=TP Young; citation_author=SP Hubbell; citation_journal_title=Ecology; citation_volume=72; citation_number=14; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=Architecture of a cool-temperate rain forest canopy.; citation_author=T Olesen; citation_journal_title=Ecology; citation_volume=82; citation_number=15; citation_pages=2719-2730; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Tree canopy displacement at forest gap edges.; citation_author=CC Muth; citation_author=FA Bazzaz; citation_journal_title=Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere; citation_volume=32; citation_number=16; citation_pages=247-254; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Tree canopy displacement and neighborhood interactions.; citation_author=CC Muth; citation_author=FA Bazzaz; citation_journal_title=Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere; citation_volume=33; citation_number=17; citation_pages=1323-1330; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Long-term survivorship and crown area dynamics of tropical rain forest canopy trees.; citation_author=SR Herwitz; citation_author=RE Slye; citation_author=SM Turton; citation_journal_title=Ecology; citation_volume=81; citation_number=18; citation_pages=585-597; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Ecological consequences of phenotypic plasticity.; citation_author=BG Miner; citation_author=SE Sultan; citation_author=SG Morgan; citation_author=DK Padilla; citation_author=RA Relyea; citation_journal_title=Trends in Ecology&Evolution; citation_volume=20; citation_number=19; citation_pages=685-692; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A model of competition incorporating plasticity through modular foliage and crown development.; citation_author=KA Sorrensen-Cothern; citation_author=ED Ford; citation_author=DG Sprugel; citation_journal_title=Ecological Monographs; citation_volume=63; citation_number=20; citation_pages=277-304; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Modelling the relationship between the asymmetry in crown display and local environment.; citation_author=K Umeki; citation_journal_title=Ecological Modelling; citation_volume=82; citation_number=21; citation_pages=11-20; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Effects of compensatory growth on population processes: A simulation study.; citation_author=J Brisson; citation_author=JF Reynolds; citation_journal_title=Ecology; citation_volume=78; citation_number=22; citation_pages=2378-2384; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Pattern and process: competition causes regular spacing of individuals within plant populations.; citation_author=P Stoll; citation_author=E Bergius; citation_journal_title=Journal of Ecology; citation_volume=93; citation_number=23; citation_pages=395-403; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Use of a spatially explicit individual-tree model (SORTIE/BC) to explore the implications of patchiness in structurally complex forests.; citation_author=KD Coates; citation_author=CD Canham; citation_author=M Beaudet; citation_author=DL Sachs; citation_author=C Messier; citation_journal_title=Forest Ecology and Management; citation_volume=186; citation_number=24; citation_pages=297-310; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Reconstructing crown shape from stem diameter and tree position to supply light models. I. Algorithms and comparison of light simulations.; citation_author=A Piboule; citation_author=C Collet; citation_author=H Frochot; citation_author=JF Dhote; citation_journal_title=Annals of Forest Science; citation_volume=62; citation_number=25; citation_pages=645-657; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Simulation of the growth of even-aged stands of white spruce.; citation_author=KJ Mitchell; citation_journal_title=Yale University School of Forestry Bulletin; citation_volume=75; citation_number=26; citation_date=1969; " />
+      <meta name="citation_reference" content="citation_title=Dynamics and simulated yield of Douglas-fir.; citation_author=KJ Mitchell; citation_journal_title=Forest Science Monographs; citation_volume=17; citation_number=27; citation_date=1975; " />
+      <meta name="citation_reference" content="citation_title=Modelling crown shape of Picea abies: Spacing effects.; citation_author=C Deleuze; citation_author=JC Herve; citation_author=F Colin; citation_author=L Ribeyrolles; citation_journal_title=Canadian Journal of Forest Research; citation_volume=26; citation_number=28; citation_pages=1957-1966; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=On territorial behaviour and other factors influencing habitat distribution in birds. I. Theoretical development.; citation_author=SD Fretwell; citation_author=HL Lucas; citation_journal_title=Acta Biotheoretica; citation_volume=19; citation_number=29; citation_pages=686-693; citation_date=1970; " />
+      <meta name="citation_reference" content="citation_title=Forest inventory and analysis: a national inventory and monitoring program.; citation_author=WB Smith; citation_journal_title=Environmental Pollution; citation_volume=116; citation_number=30; citation_pages=S233-S242; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The enhanced forest inventory and analysis program of the USDA Forest Service: Historical perspective and announcement of statistical documentation.; citation_author=RE McRoberts; citation_author=WA Bechtold; citation_author=PL Patterson; citation_author=CT Scott; citation_author=GA Reams; citation_journal_title=Journal of Forestry; citation_volume=103; citation_number=31; citation_pages=304-308; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=The ecological detective : confronting models with data.; citation_author=R Hilborn; citation_author=M Mangel; citation_number=32; citation_pages=xvii, 315 p. p; citation_date=1997; citation_publisher=Princeton University Press; " />
+      <meta name="citation_reference" content="citation_title=Crown-diameter prediction models for 87 species of stand-grown trees in the eastern United States.; citation_author=WA Bechtold; citation_journal_title=Southern Journal of Applied Forestry; citation_volume=27; citation_number=33; citation_pages=269-278; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Largest-crown-width prediction models for 53 species in the western United States.; citation_author=WA Bechtold; citation_journal_title=Western Journal of Applied Forestry; citation_volume=19; citation_number=34; citation_pages=245-251; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Long-term canopy dynamics analysed by aerial photographs in a temperate old-growth evergreen broad-leaved forest.; citation_author=T Fujita; citation_author=A Itaya; citation_author=M Miura; citation_author=T Manabe; citation_author=SI Yamamoto; citation_journal_title=Journal of Ecology; citation_volume=91; citation_number=35; citation_pages=686-693; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Modeling loblolly pine canopy dynamics for a light capture model.; citation_author=DW MacFarlane; citation_author=EJ Green; citation_author=A Brunner; citation_author=RL Amateis; citation_journal_title=Forest Ecology and Management; citation_volume=173; citation_number=36; citation_pages=145-168; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Long-term survivorship and crown area dynamics of tropical rain forest canopy trees.; citation_author=SR Herwitz; citation_author=RE Slye; citation_author=SM Turton; citation_journal_title=Ecology; citation_volume=81; citation_number=37; citation_pages=585-597; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Creating a virtual tropical forest from three-dimensional aerial imagery to estimate carbon stocks.; citation_author=S Brown; citation_author=T Pearson; citation_author=D Slaymaker; citation_author=S Ambagis; citation_author=N Moore; citation_journal_title=Ecological Applications; citation_volume=15; citation_number=38; citation_pages=1083-1095; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Estimating tree height and tree crown properties using airborne scanning laser in a boreal nature reserve.; citation_author=E Naesset; citation_author=T Okland; citation_journal_title=Remote Sensing of Environment; citation_volume=79; citation_number=39; citation_pages=105-115; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Estimating individual tree leaf area in loblolly pine plantations using LiDAR-derived measurements of height and crown dimensions.; citation_author=SD Roberts; citation_author=TJ Dean; citation_author=DL Evans; citation_author=JW McCombs; citation_author=RL Harrington; citation_journal_title=Forest Ecology and Management; citation_volume=213; citation_number=40; citation_pages=54-70; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Predicting individual stem volumes of sugi (Cryptomeria japonica D. Don) plantations in mountainous areas using small-footprint airborne LiDAR.; citation_author=T Takahashi; citation_author=K Yamamoto; citation_author=Y Senda; citation_author=M Tsuzuku; citation_journal_title=Journal of Forest Research; citation_volume=10; citation_number=41; citation_pages=305-312; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Estimating individual tree heights of sugi (Cryptomeria japonica D. Don) plantations in mountainous areas using small-footprint airborne LiDAR.; citation_author=T Takahashi; citation_author=K Yamamoto; citation_author=Y Senda; citation_author=M Tsuzuku; citation_journal_title=Journal of Forest Research; citation_volume=10; citation_number=42; citation_pages=135-142; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Estimation of biophysical characteristics for highly variable mixed-conifer stands using small-footprint lidar Canadian Journal of Forest Research; citation_author=JLR Jensen; citation_author=KS Humes; citation_author=T Conner; citation_author=CJ Williams; citation_author=J DeGroot; citation_volume=36; citation_number=43; citation_pages=1129-1138; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A reevlauation of the -3/2 power rule of plant self-thinning.; citation_author=DE Weller; citation_journal_title=Ecological Monographs; citation_volume=57; citation_number=44; citation_pages=23-43; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=A neighborhood analysis of canopy tree competition: effects of shading versus crowding.; citation_author=CD Canham; citation_author=PT LePage; citation_author=KD Coates; citation_journal_title=Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere; citation_volume=34; citation_number=45; citation_pages=778-787; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Neighborhood analyses of canopy tree competition along environmental gradients in new England forests.; citation_author=CD Canham; citation_author=MJ Papaik; citation_author=M Uriarte; citation_author=WH McWilliams; citation_author=JC Jenkins; citation_journal_title=Ecological Applications; citation_volume=16; citation_number=46; citation_pages=540-554; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A spatially explicit model of sapling growth in a tropical forest: does the identity of neighbours matter?; citation_author=M Uriarte; citation_author=R Condit; citation_author=CD Canham; citation_author=SP Hubbell; citation_journal_title=Journal of Ecology; citation_volume=92; citation_number=47; citation_pages=348-360; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=TASS/SYLVER/TIPSY: systems for predicting the impact of silvicultural practices on yield, lumber value, economic return and other benefits.; citation_author=CM Di Lucca; citation_number=48; citation_pages=7-16; citation_date=1998; citation_publisher=Clear Lake Ltd; " />
+      <meta name="citation_reference" content="citation_title=Tree growth prediction using size and exposed crown area.; citation_author=PH Wyckoff; citation_author=JS Clark; citation_journal_title=Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere; citation_volume=35; citation_number=49; citation_pages=13-20; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Variation in stand mortality related to successional composition.; citation_author=JP Caspersen; citation_journal_title=Forest Ecology and Management; citation_volume=200; citation_number=50; citation_pages=540-554; citation_date=2004; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species"/>
+    <meta name="twitter:description" content="BackgroundCanopy structure, which can be defined as the sum of the sizes, shapes and relative placements of the tree crowns in a forest stand, is central to all aspects of forest ecology. But there is no accepted method for deriving canopy structure from the sizes, species and biomechanical properties of the individual trees in a stand. Any such method must capture the fact that trees are highly plastic in their growth, forming tessellating crown shapes that fill all or most of the canopy space.Methodology/Principal FindingsWe introduce a new, simple and rapidly-implemented model&ndash;the Ideal Tree Distribution, ITD&ndash;with tree form (height allometry and crown shape), growth plasticity, and space-filling, at its core. The ITD predicts the canopy status (in or out of canopy), crown depth, and total and exposed crown area of the trees in a stand, given their species, sizes and potential crown shapes. We use maximum likelihood methods, in conjunction with data from over 100,000 trees taken from forests across the coterminous US, to estimate ITD model parameters for 250 North American tree species. With only two free parameters per species&ndash;one aggregate parameter to describe crown shape, and one parameter to set the so-called depth bias&ndash;the model captures between-species patterns in average canopy status, crown radius, and crown depth, and within-species means of these metrics vs stem diameter. The model also predicts much of the variation in these metrics for a tree of a given species and size, resulting solely from deterministic responses to variation in stand structure.Conclusions/SignificanceThis new model, with parameters for US tree species, opens up new possibilities for understanding and modeling forest dynamics at local and regional scales, and may provide a new way to interpret remote sensing data of forest canopies, including LIDAR and aerial photography."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000870.g005"/>
+
+  <meta property="og:title" content="Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=1629'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=4407'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=7102&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000870">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000870" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000870&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Drew W. Purves
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:dpurves@microsoft.com">dpurves@microsoft.com</a></p>
+
+                <p>Affiliations:
+                  Department of Ecology and Evolutionary Biology, Princeton University, Princeton, New Jersey, United States of America, 
+                  External Research Office, Microsoft Research, Cambridge, United Kingdom
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jeremy W. Lichstein, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Ecology and Evolutionary Biology, Princeton University, Princeton, New Jersey, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Stephen W. Pacala
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Ecology and Evolutionary Biology, Princeton University, Princeton, New Jersey, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: September 12, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000870</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000870-g001" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000870-t001" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000870-t002" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000870-g002" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000870-g003" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000870-g004" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000870-g005" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000870">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000870" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Canopy structure, which can be defined as the sum of the sizes, shapes and relative placements of the tree crowns in a forest stand, is central to all aspects of forest ecology. But there is no accepted method for deriving canopy structure from the sizes, species and biomechanical properties of the individual trees in a stand. Any such method must capture the fact that trees are highly plastic in their growth, forming tessellating crown shapes that fill all or most of the canopy space.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We introduce a new, simple and rapidly-implemented model–the Ideal Tree Distribution, ITD–with tree form (height allometry and crown shape), growth plasticity, and space-filling, at its core. The ITD predicts the canopy status (in or out of canopy), crown depth, and total and exposed crown area of the trees in a stand, given their species, sizes and potential crown shapes. We use maximum likelihood methods, in conjunction with data from over 100,000 trees taken from forests across the coterminous US, to estimate ITD model parameters for 250 North American tree species. With only two free parameters per species–one aggregate parameter to describe crown shape, and one parameter to set the so-called depth bias–the model captures between-species patterns in average canopy status, crown radius, and crown depth, and within-species means of these metrics vs stem diameter. The model also predicts much of the variation in these metrics for a tree of a given species and size, resulting solely from deterministic responses to variation in stand structure.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>This new model, with parameters for US tree species, opens up new possibilities for understanding and modeling forest dynamics at local and regional scales, and may provide a new way to interpret remote sensing data of forest canopies, including LIDAR and aerial photography.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Purves DW, Lichstein JW, Pacala SW (2007) Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species. PLoS ONE 2(9):
+          e870.
+            doi:10.1371/journal.pone.0000870</p><p><strong>Academic Editor: </strong>Mark Rees, University of Sheffield, United Kingdom</p><p><strong>Received:</strong> June 8, 2007; <strong>Accepted:</strong> June 11, 2007; <strong>Published:</strong> September 12, 2007</p><p><strong>Copyright:</strong> © 2007 Purves et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported by the Andrew Mellon Foundation (DWP) and is a product of the Carbon Mitigation Initiative (CMI) of the Princeton Environmental Institute at Princeton University. CMI (<a href="http://www.princeton.edu/">www.princeton.edu/</a>~cmi) is sponsored by BP and Ford. None of these agencies had any role whatsoever in this work: they had no influence on the choice of research question, the design or implementation of the study; or the interpretation of results.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Forest canopy structure–which can be defined as the sum of the sizes, shapes and relative placements of the tree crowns–is central to all aspects of forest ecology and dynamics. On the one hand, the canopy structure sets the light environment experienced by individual trees, which is known to be a primary determinant of their growth, mortality and fecundity (<a href="#pone.0000870-Horn1">[1]</a>, <a href="#pone.0000870-Pacala1">[2]</a>, <a href="#pone.0000870-Kobe1">[3]</a>, <a href="#pone.0000870-Barnes1">[4]</a>). These rates are the determinants of the dynamics of species composition, succession and coexistence (<a href="#pone.0000870-Shugart1">[5]</a>, <a href="#pone.0000870-Pacala1">[2]</a>). On the other hand, competition for canopy space drives the growth rates, densities, and size distribution of canopy trees, and hence the dynamics of carbon fluxes, carbon storage, timber yields and self-thinning (e.g. <a href="#pone.0000870-Oliver1">[6]</a> pages 213–258). Importantly, the canopy structure itself is set by the sizes, shapes and positions of the crowns of the individual trees. Therefore, canopy structure both determines, and is determined by, interactions among individual trees, defining a feedback that is central to any detailed understanding of forest dynamics (<a href="#pone.0000870-Oliver1">[6]</a> pages 195–398; <a href="#pone.0000870-Pacala1">[2]</a>). Quite apart from its ecological implications, the canopy is the boundary between the land surface and the atmosphere, and so in vegetated regions its structure determines surface properties such as albedo, canopy stomatal conductance and surface roughness, which affect local and regional climate (<a href="#pone.0000870-Pinker1">[7]</a>; <a href="#pone.0000870-Beringer1">[8]</a>; <a href="#pone.0000870-Roelandt1">[9]</a>, <a href="#pone.0000870-Moorcroft1">[10]</a>). And a detailed quantitative understanding of canopy structure is required for applications as diverse as estimating regional biogenic VOC emissions (<a href="#pone.0000870-Purves1">[11]</a>) and remote sensing of forest structure (e.g.<a href="#pone.0000870-Nelson1">[12]</a>).</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>There is currently no accepted method for scaling from the properties of individual trees to canopy structure. How does the density, size distribution, species, and allometry of the individual trees, determine which trees are in the canopy, the distribution of canopy heights, and the distribution of the total and exposed crown areas? And therefore, how sensitive is canopy structure–and hence forest ecology and dynamics, and forest ecosystem function–to changes in the vital demographic rates of growth, mortality, and recruitment, or to changes in disturbance rates?</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>The key challenge for any such model is to reconcile the fact that the dimensions and shapes of individual trees are highly correlated with size and species (e.g. see <a href="#pone.0000870-Poorter1">[13]</a>), with the fact that trees are extremely plastic and opportunistic in their growth (<a href="#pone.0000870-Young1">[14]</a>, <a href="#pone.0000870-Olesen1">[15]</a>, <a href="#pone.0000870-Muth1">[16]</a>, <a href="#pone.0000870-Muth2">[17]</a>). Because of this growth plasticity, canopy trees form complex, irregular, tessellating crowns, that usually do not grow into each other, and that tend to fill most or all of the canopy space (e.g. <a href="#pone.0000870-Herwitz1">[18]</a>); whilst maintaining marked size-and species-dependent patterns.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Plasticity is acknowledged to be important in forest ecology (<a href="#pone.0000870-Muth2">[17]</a>) and in plant ecology in general (<a href="#pone.0000870-Miner1">[19]</a>), but it has been included in spatial modeling of plant communities only rarely (<a href="#pone.0000870-SorrensenCothern1">[20]</a>, <a href="#pone.0000870-Umeki1">[21]</a>, <a href="#pone.0000870-Brisson1">[22]</a>, <a href="#pone.0000870-Stoll1">[23]</a>). Previous approaches to simulating growth plasticity in the context of canopy structure range from simple to highly complex. Forest gap models (<a href="#pone.0000870-Shugart1">[5]</a>, <a href="#pone.0000870-Pacala1">[2]</a>, <a href="#pone.0000870-Coates1">[24]</a>) have opted for the simplest approach, assuming no growth plasticity at all. Thus, in these models trees adopt a rigid 3D crown shape that depends on the species and size of the individual, but does not respond to neighbors in any way. But this leads to predictions of canopy structure that contradict observations. For example, the model SORTIE (<a href="#pone.0000870-Pacala1">[2]</a>, <a href="#pone.0000870-Coates1">[24]</a>) reproduces the species composition of northeast US old-growth stands quite well, but for the same forests it predicts extensive interdigitation between adjacent crowns, and too much open space in the canopy. Some modifications to the rigid crown model have been made, by allowing species to alter the position of a rigid crown in relation to the stem base in response to neighbors (<a href="#pone.0000870-Umeki1">[21]</a>), or adjusting the shape of a fixed crown area (<a href="#pone.0000870-Piboule1">[25]</a>). These approaches require a high level of model complexity, but despite this they are not sufficient to capture the combination of plastic crown sizes, irregularity, and space-filling that characterizes real canopies.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Distinct from the forest gap models, some models in the forestry literature have included an explicit consideration of growth plasticity in crown size and shape. The simplest of these models (the Shell model:<a href="#pone.0000870-Mitchell1">[26]</a>, <a href="#pone.0000870-Mitchell2">[27]</a>) allows for only one form of growth plasticity: dropping shaded foliage. The inclusion of this behavior makes the Shell model considerably more realistic than models with the rigid crown assumption, especially because it guarantees a perfectly filled canopy. But it also makes the Shell model orders of magnitude more computationally intensive, and therefore impractical for long-term or large-scale modeling (a similar level of computational intensity is required by the methods outlined in <a href="#pone.0000870-Umeki1">[21]</a> and <a href="#pone.0000870-Piboule1">[25]</a>). An alternative class of models simulates growth at the level of the branch, rather than the individual tree (e.g. <a href="#pone.0000870-SorrensenCothern1">[20]</a>, <a href="#pone.0000870-Deleuze1">[28]</a>), but these models are more complex still.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>In this paper, we introduce a simple individual-based model of canopy structure–the ideal tree distribution model, ITD–with tree form (height and crown shape), growth plasticity, and space-filling, at its core. The model is based around assumptions of opportunistic growth and optimal foraging, hence the reference to the ideal free distribution IFD (<a href="#pone.0000870-Fretwell1">[29]</a>). Taking a limit of perfect plasticity makes the ITD spatially implicit, meaning that although it is derived from a consideration of spatial processes, it can be implemented without any information on the spatial locations of individuals. This means that the ITD can be implemented extremely rapidly, allowing for parameter estimation using inversion methods, as is done here. We use measurements of crown size and shape from over 100,000 individual trees to parameterize the model for 250 North American tree species. We compare the predictions of the fitted model to the data, and find that the model captures the key patterns of inter- and intraspecific variation in crown size and shape exhibited in the various forest types of the region.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>The analysis presented here is the first of a group utilizing the ITD model. Strigul <em>et al.</em> (in review) gives the theoretical foundation for the ITD, showing how it can be derived from the Shell model (<a href="#pone.0000870-Mitchell1">[26]</a>, <a href="#pone.0000870-Mitchell2">[27]</a>); explaining mathematically how it leads to a set of so-called macroscopic equations which can be derived explicitly from the properties of trees of different species, to the dynamics of stands; and solved analytically for equilibrium and select transient behaviours. An additional theory paper (Adams <em>et al.</em> in review) uses the macroscopic equations from Strigul <em>et al.</em> (in review) to explore the dynamics of species invasion, giving the conditions necessary for coexistence, founder control, species dominance, and neutrality, in terms of the life history and biomechanical parameters of the competing species. Purves <em>et al.</em> (unpublished) uses a large forest inventory database for the Lake States of the eastern US to estimate these parameters for different species on different soils, showing that the macroscopic equations, and the analytical results in Adams <em>et al.</em> (in review), can give accurate predictions for the 100-year dynamics of biomass, size distribution and species composition, and their dependencies on soil. The fact that these results were made possible by the ITD is further evidence of the importance of canopy structure to forest dynamics.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>Definition of canopy structure</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>The canopy structure of a stand of trees can be defined as the sum of the sizes, shapes and spatial arrangement of the individual crowns. These sizes, shapes, and positions, and hence canopy structure itself, are often highly complex, and are likely to depend on many additional details not considered here. We focus on three readily-observed features of an individual tree's crown with immediate functional significance. First, a tree crown is either in the canopy (i.e. at least some of the crown has no other tree's branches above it) or in the understory (i.e., it can only receive light that has passed through the crown of another tree). We refer to this division as canopy status (in or out of the canopy implying canopy status = 1 or 0 respectively). Second, each crown has a projection area (hereafter crown area), defined as the area of ground lying directly underneath the crown (hereafter, we work with crown radius, defined as the radius of a circle with the same area as the crown area). Some or all of this crown area is exposed (exposed crown area, ECA). Third, each crown has a crown depth, defined as the vertical distance between the top of the crown and the lowest living foliage. For the purposes of the analysis presented here, we consider the canopy structure of a stand <em>q</em> to consist of the canopy status for every tree in <em>q</em>, together with the crown areas and crown depths of those trees in the canopy. The aim of this analysis is to find a simple model that predicts these metrics for each tree in a stand, given the size and species identity of all trees in the stand.</p>
+
+
+<h4>Model description</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Our canopy model, which we refer to as the ideal tree distribution model, is described in detail in <a href="#pone.0000870.s001">Appendix S1</a>. The central assumptions behind the ITD are that (1) the total of the exposed crown areas of the canopy trees in a stand, is logically constrained to be less than or equal to the ground area; (2) if trees are sufficiently plastic in their growth, there should also be no unused canopy space, such that the total of the exposed crown areas is <em>exactly</em> equal to the ground area; (3) competition for canopy space is fundamentally height-structured, such that for any stand at any time, there is a critical <em>canopy height Z</em><sup>*</sup> such that any foliage above <em>Z</em><sup>*</sup> is in the canopy, with all other foliage in the understory.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Then, all that is needed is to solve for the value of <em>Z</em><sup>* </sup>that makes condition (2) true. Given the value of <em>Z</em><sup>*</sup>, the canopy status of an individual tree <em>i</em> is set: if <em>i</em> is taller than <em>Z</em><sup>*</sup> it has some exposed foliage, it which it case it can is classified as a canopy tree (canopy status = 1: see above). Otherwise <em>i</em> has no exposed foliage, and can be classified as an understory tree (canopy status = 0). For canopy trees, the crown radius and crown depth are given by trimming the potential crown (see below) at <em>Z</em><sup>*+</sup><em>V<sub>bias,j</sub></em> where <em>V<sub>bias,j</sub></em> a <em>depth bias</em> specific to species <em>j</em> (see below).</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>The ITD is most easily understood for the special case where the trees have perfectly flat-topped, disc-like crowns, and no depth bias. In this case, all that is necessary is to sum the potential crown areas of the tallest tree, then the next tallest tree, and so on, until this sum equals the ground area. The height of the last tree added to the sum is <em>Z</em><sup>*</sup>. All trees included in the sum up to this point (i.e., all trees at least as tall as <em>Z</em><sup>*</sup>) are assigned to the canopy and given a total, and exposed crown area, equal to their potential crown area; whereas the remaining trees (i.e., trees shorter than <em>Z</em><sup>*</sup>) are assigned to the understory. This ‘flat top’ version of the ITD retains the key feature of height-structured, density-dependent competition for canopy space, and yet is simple enough to be open to mathematical analysis solving for (for example) the equilibrium <em>Z</em><sup>*</sup> in monocultures, and the identity of the late-successional dominant species (Strigul <em>et al.</em> in review; Adams <em>et al.</em> in review; Purves <em>et al.</em> unpublished). Moreover, it gives accurate predictions of canopy status in the tropical forest BCI (Bohlman unpublished). However, here we consider the general version of the ITD, where the crowns can take an arbitrary shape and species can exhibit a depth bias. This version performs better than the flat top version in predicting canopy status and crown dimensions in eastern US forests (comparison not shown), albeit it at the cost of analytical tractability in the context of a dynamic model.</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>To understand the general version of the ITD, assume that each tree has a potential crown, defined as the shell of foliage that it would adopt if there were no competition with neighboring trees. The potential crown for tree <em>i</em> is a function <em>R<sub>i</sub></em>(<em>Z</em>), which describes the crown projection radius of a tree's crown at height <em>Z</em> above the ground, as a function of the species and size of the tree. This is simply the radius of the circular shadow that the canopy would project, with the sun directly overhead, on to a flat surface held at height <em>Z</em> above the ground. For a tree with a conical crown shape, this radius would be a linear function of the distance below the top of the crown.</p>
+<a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p>Second, assume that, given the value of the stand canopy height <em>Z</em><sup>*</sup>, each tree retains only that part of its potential crown that is above <em>Z</em><sup>*+</sup><em>V<sub>bias,j</sub></em>, dropping all remaining foliage, where <em>V<sub>bias,j</sub></em> is a species-specific depth bias. Under these assumptions, each individual responds to its <em>effective canopy height Z</em><sup>*+</sup><em>V<sub>bias,j</sub></em>, but <em>Z</em><sup>*</sup> retains two absolute definitions: <em>Z</em><sup>*</sup> is the height that any tree must exceed to be classed as a canopy tree, and <em>Z</em><sup>*</sup> is the height that any foliage must exceed to count as exposed. Under this scheme, any proposed value of <em>Z</em><sup>*</sup> implies a value for the sum of the exposed crown areas of all of the trees in the stand. This sum decreases monotonically with increasing <em>Z</em><sup>*</sup>, guaranteeing a unique value of <em>Z</em><sup>*</sup> that satisfies the condition that this sum is equal to the ground area (see above). The value of <em>Z</em><sup>*</sup> then sets the canopy status, total and exposed crown area, and crown depth, of each tree.</p>
+<a id="article1.body1.sec2.sec2.p6" name="article1.body1.sec2.sec2.p6"></a><p>Finally, it should be noted here that the ITD can be formally derived from the Shell model (see Strigul <em>et al.</em> in review). This is illustrated in <a href="#pone-0000870-g001">Figure 1</a>. In common with the ITD, the Shell model assumes that each tree has a potential crown, and that trees retain only that part that is not shaded by other trees. However, in the Shell model, trees are given no flexibility in the horizontal placement of their crowns, or the foliage within the crowns. This means that, in effect, the canopy height <em>Z</em> varies across space, such that a tree of a given species and size would be in the canopy if it was in one location, but in the understory if it was in another location; and that canopy trees can adopt irregular crowns, as they experience different canopy heights <em>Z</em> with different neighbours (<a href="#pone-0000870-g001">Fig. 1a</a>). The different values of <em>Z</em> must be calculated on a grid of locations, with a resolution fine enough to capture the variation in the size and shape of individual tree crowns (each parcel of space must be assigned to an individual tree). Therefore the Shell model cannot be used with data that lacks the spatial locations of trees (such as the FHM data used here). And even where locations are available, the model is computationally demanding to implement, making it unsuitable for the kind of inverse parameterization used here.</p>
+<div class="figure" id="pone-0000870-g001"><div class="img"><a name="pone-0000870-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>The ITD model, which is spatially implicit, can be derived from the Shell model (a, b), a spatially explicit model that predicts canopy structure from the size and species of individual trees in a stand (<a href="#pone.0000870-Mitchell1">[26]</a>, <a href="#pone.0000870-Mitchell2">[27]</a>, and see Strigul <em>et al.</em> in review).</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>In the Shell model trees drop shaded foliage, which trims the potential crowns (a) to produce a set of tessellating realized crowns with variable join heights <em>Z</em> (b). Under this scheme some trees are predicted to have no crown area, corresponding to understory trees that must be dealt with separately (two smallest trees in figure). The ITD model assumes that, through additional growth plasticity (e.g. angled trunks, as shown) all join heights <em>Z</em> become equal to a constant value <em>Z</em><sup>*</sup> (c). The version of the ITD model presented in this paper includes a species-specific depth bias <em>V<sub>bias,j</sub></em> such that trees of species <em>j</em> trim their potential crowns at an effective join height <em>Zˆ</em> = <em>Z</em><sup>*</sup>+<em>V<sub>bias,j</sub></em>, illustrated in (d). With or without this bias, the value of <em>Z</em><sup>*</sup> can be found rapidly, requiring orders of magnitude fewer calculations than the spatially explicit Shell model. In (d) two canopy trees are drawn overlapping in the understory. The ITD makes the assumption that growth plasticity is sufficient to avoid any such overlap, but it is spatially implicit and so does not specify how this would be achieved in a given stand.</p>
+<span>doi:10.1371/journal.pone.0000870.g001</span></div><a id="article1.body1.sec2.sec2.p7" name="article1.body1.sec2.sec2.p7"></a><p>But, with the inclusion of additional growth plasticity into the Shell model, the spatial variation in <em>Z</em> approaches zero. Taking a limiting assumption of perfect plasticity then leads to ITD, which assumes a single join height <em>Z</em><sup>*</sup> for all locations in the stand.</p>
+
+
+<h4>FHM data</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>We parameterized and tested the ITD model against field measurements of canopy status, crown radius, and crown depth, taken from over 100,000 trees as part of the USDA Forest Health Monitoring (FHM) inventory (see <a href="#pone.0000870-Smith1">[30]</a>, <a href="#pone.0000870-McRoberts1">[31]</a>). The FHM data covers the coterminous US. The data available at time of download (November 2004) included two time periods (6 years up to and including 1999, and 3 years post-1999). We extracted 6675 plots, containing records for 147,995 living trees, from the pre-1999 data; and 2353 plots, with 63,702 trees, from the post-1999 data. We excluded plantation plots, and plots that were listed as overlapping more than one stand. Within the FHM plots, data were collected from 4 or more separate sampling points. Trees larger than 5 inches dbh (i.e. 12.7 cm) were sampled from a radius of 7.32 m around each point, with a radius of 2.1 m for trees 1–5 inches.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>For each tree, a number of observations were provided in the FHM, including species, stem diameter (dbh), crown class, and crown ratio (see below for definitions of these measures). The pre-1999 data provided, for trees larger than 5 inches (i.e. 12.7 cm), two measures of crown projection diameter, but no observed height data. For these data we generated a height value from a height-dbh allometry (<a href="#pone.0000870.s002">Appendix S2</a>). The post-1999 data provided observed heights for all trees, but no crown diameter measurements.</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>Observed canopy status <em>U<sub>i</sub><sup>(obs)</sup></em> ( = 1 if tree <em>i</em> has any foliage in the canopy, and 0 otherwise) was generated from crown class, which measures the position of a tree in the canopy. We set <em>U<sub>i</sub><sup>(obs)</sup></em> = 0 where crown class was 5 (‘overtopped’) and to 1 otherwise. For each tree with crown diameter information (i.e. trees over 5 inches dbh in the pre-1999 data), we calculated a value for observed crown radius <em>R<sub>i</sub><sup>(obs)</sup></em>(m) from <em>D<sup>(obs)</sup><sub>i</sub></em><sub>,1</sub> (m) and <em>D<sup>(obs)</sup><sub>i</sub></em><sub>,2</sub> (m): <em>D<sup>(obs)</sup><sub>i</sub></em><sub>,1</sub> referring to the largest available crown diameter; <em>D<sup>(obs)</sup><sub>i</sub></em><sub>,2</sub> referring to the diameter measured at 90° to D<em><sup>(obs)</sup><sub>i</sub></em><sub>,1</sub>. We calculated observed crown area <em>α<sub>i</sub><sup>(obs)</sup></em> (m<sup>2</sup>) by assuming an elliptical shape:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.e001&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br>and calculated <em>R<sub>i</sub><sup>(obs)</sup></em> (m) as <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.e002&amp;representation=PNG" class="inline-graphic"></span>. Thus, <em>R<sub>i</sub><sup>(obs)</sup></em> is the radius of a circle with the same area as the ellipse defined by <em>D<sup>(obs)</sup><sub>i</sub></em><sub>,1</sub>and <em>D<sup>(obs)</sup><sub>i</sub></em><sub>,2</sub>. An observed crown depth <em>V<sub>i</sub><sup>(obs)</sup></em> was generated for each tree by multiplying the height of the tree (observed, or from an allometry) by the crown ratio recorded in the field (crown ratio is defined as the length from the top of the crown to the lowest foliage, divided by tree height).</p>
+
+
+<h4>Parameter estimation</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>We used maximum likelihood methods (<a href="#pone.0000870-Hilborn1">[32]</a>) to estimate species-specific parameters for the ITD for 250 North American tree species. At the center of the parameter estimation was a goodness-of-fit criterion (in this case the log-likelihood) consisting of a comparison of model predictions with observations for all available canopy status, crown radius and crown depth data. Parameter estimation consisted of adjusting parameters to maximize this goodness-of-fit, with standard methods available to estimate the uncertainty in each parameter (<a href="#pone.0000870.s003">Appendix S3</a>).</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>The predictions of the ITD model for a given stand are determined by the height, potential crown shape, and depth bias, of each individual in the stand (<a href="#pone-0000870-g001">Fig. 1</a>). Values of dbh and height were available for each tree in the data (see above). Thus, the parameters to be estimated consisted of those determining crown shape–i.e. the parameters in the function <em>R<sub>i</sub></em>(<em>Z</em>) introduced above–and the depth bias parameter <em>V<sub>bias,j</sub></em>. For crown shape, 4 parameters were required to describe the potential crown shape of canopy trees, with 2 more to describe understory crown dimensions (<a href="#pone-0000870-t001">Table 1</a>). In addition to these 7 parameters, we required 3 statistical parameters to describe unaccounted-for variation in the crown metrics (<a href="#pone-0000870-t001">Table 1:</a> <a href="#pone.0000870.s003">Appendix S3</a>). Thus, a straightforward fit for the full parameter set (hereafter the <em>full fit</em>) required 10 free parameters for each species, or 2500 free parameters in total.</p>
+<div class="figure" id="pone-0000870-t001"><div class="img"><a name="pone-0000870-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Parameters used in the ITD model, and in parameter estimation.</span></strong></p><span>doi:10.1371/journal.pone.0000870.t001</span></div><a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>The large number of parameters, the inclusion of rare species with few data, and the need for parameter interpretation, motivated a search for approaches with fewer free parameters. To this end we developed the <em>single-axis</em> scheme, which reduces the interspecific variation in crown shape parameters to variation in a single species-specific trait score <em>T<sub>j</sub></em>, thus requiring only one free parameter per species. The approach is similar to the way a PCA analysis reduces multidimensional variation to a small number of axes. The scheme can be applied to any analysis estimating multiple parameters for multiple species, and can be extended to include multiple trait axes (see <a href="#pone.0000870.s003">Appendix S3</a>). This parameter estimation scheme required only two free parameters per species: <em>T<sub>j</sub></em> to set the potential crown shape and statistical parameters, and the depth bias parameter <em>V<sub>bias,j</sub></em>. For comparison, we also ran parameter estimations assuming a single crown shape for all species, and/or a single value of <em>V<sub>bias,j</sub></em> for all species, and compared the results with the full fit and the single-axis fit using information criteria (<a href="#pone-0000870-t002">Table 2</a>).</p>
+<div class="figure" id="pone-0000870-t002"><div class="img"><a name="pone-0000870-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Comparison of nine alternative parameter estimation schemes.</span></strong></p><span>doi:10.1371/journal.pone.0000870.t002</span></div>
+
+<h4>Predicted-observed comparison</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Once parameters had been estimated, a prediction for each of the three crown metrics (canopy status, crown radius, crown depth) was provided for each tree <em>i</em> in each inventory plot <em>q</em>, by implementing the ITD model in combination with the data for that plot, using the estimated parameter values for the crown shape and depth bias parameters (MLE estimates). For each species <em>j</em>, we calculated the mean predicted, and mean observed, canopy status across all trees in all plots, and the mean predicted, and mean observed, crown radius and crown depth for canopy trees. In addition, within each species we recorded the slopes from ordinary least squares (OLS) linear regressions of predicted crown radius vs dbh, and observed crown radius vs dbh (canopy trees only in both cases).</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>Alternative parameter estimation schemes</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>Parameter estimation schemes without species-specific crown shapes, or without species-specific biases, were strongly rejected by the analysis (<a href="#pone-0000870-t002">Table 2</a>). Both information criteria (AIC and BIC) indicated that the ‘best’ statistical model in this case was the full fit, which included 10 free parameters per species. However, we opt to report the parameter estimates generated by using the single-axis scheme for crown shape, in conjunction with species-specific values for <em>V<sub>bias,j</sub></em>, requiring two free parameters per species. This choice was made for three reasons. First, examination of the model predictions showed clearly this option could recover the key interspecific patterns in canopy status, crown size and crown shape observed in the data (see below). Second, many species are rare, having very few data: for example 38 species have fewer than 30 data in total. For these species 10 parameters almost certainly constitutes overfitting, compromising the predictive ability for the rarer species when used in novel situations. Third, one aim of the analysis was to generate a concise set of parameters that might lend themselves to interpretation in the future. However, we recognize that parameter estimates from the full fit scheme may be more appropriate for making predictions for the more common species in novel data sets. Therefore, any readers interested in using the parameter estimates from the full fit scheme are invited to contact the lead author for the values.</p>
+
+
+<h4>Interspecific variation in crown shape</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>Two species-specific parameters were estimated from the data: the trait score <em>T<sub>j</sub></em> and the depth bias <em>V<sub>bias,j</sub></em>. The full set of these two parameters for each of the 250 species in the analysis is given in <a href="#pone.0000870.s001">Tables S1</a>, <a href="#pone.0000870.s002">S2</a> and <a href="#pone.0000870.s003">S3</a> including, for each parameter, the MLE estimate and the 95% confidence intervals. Under this scheme, the 6 crown shape parameters, defining the size and shape of the potential crowns of canopy and understory trees, were forced to be perfectly correlated with each other across species, because they were all set by the value of <em>T<sub>j</sub></em> (see <a href="#pone.0000870.s003">Appendix S3</a>). The scheme estimated that the interspecific correlation between the potential crown shape parameters <em>R</em><sub>0,<em>j</em></sub>, <em>R</em><sub>40,<em>j</em></sub>, <em>R<sub>us</sub></em><sub>,<em>j</em></sub> and <em>B<sub>j</sub></em> was positive (<a href="#pone.0000870.s002">Table S2</a>). Thus, the scheme estimated that the best single axis of variation between the potential crown shapes of these trees stretches from species with generally narrow, columnar crowns (low <em>T<sub>j</sub></em>), to species with generally wider, more gently curved crowns (high <em>T<sub>j</sub></em>) (see <a href="#pone-0000870-g002">Fig. 2</a>). Pictorial representations of the estimated crown shapes looked reasonable (<a href="#pone-0000870-g002">Fig. 2</a>), including for such unusual species such as Black Spruce (<em>Picea mariana</em>) which has a notably narrow, columnar shape (Petrides 1998).</p>
+<div class="figure" id="pone-0000870-g002"><div class="img"><a name="pone-0000870-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Estimated potential crown shapes for 10 common species and 10 rare species with contrasting estimated crown shapes.</span></strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>Each species is shown at the average height, and average dbh, of that species observed in the data. The full potential crown shape is shown as the grey dashed lines; the solid lines give the realized crown shape drawn at the average observed crown ratio of the species in the data, so the solid lines give a picture of the realized crown shape of a typical individual of the species. Species are given in order of the MLE estimate for the trait score <em>T<sub>j</sub></em> (95% confidence interval for <em>T<sub>j</sub></em> given in parentheses), which is one of the two species-specific parameters estimated, the other being the depth bias <em>V<sub>bias,j</sub></em> (see <a href="#pone.0000870.s003">Appendix S3</a>). <em>Taxus distichum</em> (var. <em>nutans</em>) is not native to the US, but was found in the inventory data.</p>
+<span>doi:10.1371/journal.pone.0000870.g002</span></div><a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>Across all species, <em>T<sub>j</sub></em> varied widely (90% of values within the range 0.14 to 0.86) corresponding to a large variation in crown shape parameters. For example <em>R</em><sub>40,<em>j</em></sub>, which is the maximum potential crown radius of a tree with dbh 40 cm, had a 90% range of 1.72 to 7.96 m. Caution is needed here because many of the species in the analysis were rare, resulting in highly uncertain estimates for species-specific parameters, which will tend to increase the apparent interspecific variation. However, a large range of parameter estimates was seen even in the 30 most common species (e.g. 90% range for <em>R</em><sub>40,<em>j</em></sub> 2.54 to 5.63 m). The average depth bias <em>V<sub>bias,j</sub></em> was slightly negative (−0.70 m) implying that, on average, species tend to carry a small amount of extra foliage down into the understory (<a href="#pone-0000870-g001">Fig. 1d</a>). But <em>V<sub>bias,j</sub></em> varied very widely across species, with some species exhibiting substantially negative values (90% range −6.47 to+4.90 m for all species; −2.71 to+4.62 m for the 30 most common). A negative value of <em>V<sub>bias,j</sub></em> implies that species <em>j</em> carries the bottom of its crown above the canopy height <em>Z</em><sup>*</sup>.</p>
+<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>The interspecific variation in parameters was statistically significant, as indicated by the many pairs of species with non-overlapping credible intervals in either <em>T<sub>j</sub></em> or <em>V<sub>bias,j</sub></em> (<a href="#pone-0000870-g002">Fig. 2</a> and <a href="#pone.0000870.s003">Table S3</a>: a pair of non-overlapping 95% intervals corresponds to significant difference at <em>p</em>&lt;0.0025). This helps to explain why parameter estimates without species-specific crown shapes were rejected (<a href="#pone-0000870-t002">Table 2</a>). The parameter variation in both <em>T<sub>j</sub></em> and <em>V<sub>bias,j</sub></em> was continuous, with no indication of aggregations of species corresponding to distinct functional groups for crown shape or depth bias. There was substantial overlap between the estimated <em>T<sub>j</sub></em> and <em>V<sub>bias,j</sub></em> values of conifer and broadleaf species.</p>
+
+
+<h4>Predictive ability: interspecific variation</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>The fitted model reproduced the most important aspects of interspecific variation in crown size and shape (<a href="#pone-0000870-g003">Fig. 3</a>). For species with at least 100 crown class observations (i.e. fraction of trees with some foliage in the canopy), the observed <em>average canopy status</em> had a mean of 0.560 (with range 0.169 to 0.976). This compares to a mean model prediction of 0.556, and a mean absolute deviation between the model prediction and observation of 0.096 (i.e., model within 10% of observed for an average species). A similar accuracy could be seen for the other metrics. For species with at least 30 observations of crown radius, the <em>average crown radius</em> had an observed mean of 2.65 m (with range of 1.40 to 4.22 m), compared to a mean model prediction of 2.68 m; and the mean deviation between the model prediction and observation was 0.118 m (i.e. predicted crown radius wrong by 12 cm for an average species). The observed <em>OLS slope of crown radius vs dbh</em> had an average of 0.0692 m cm<sup>−1</sup>, with range 0.0217 to 0.2198, compared to a mean model prediction of 0.0696; for these slopes, the mean absolute deviation between model and observed was 0.0145 (i.e. 0.01 m radius per cm dbh). The observed <em>average crown depth</em> had a mean of 8.630 m (range 2.02 to 18.82), compared to a mean prediction of 8.632; and the average absolute deviation between the model and observed average crown depth was 0.834 m.</p>
+<div class="figure" id="pone-0000870-g003"><div class="img"><a name="pone-0000870-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Observed vs predicted average crown metrics for the 75 US tree species with at least 100 measurements of observed canopy status (top left), and the 135 species with at least 30 measurements of observed crown radius and crown depth (remaining panels).</span></strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>The most common third of the species in each panel are shown in black, with remaining species in grey. Predictions are from implementing the ITD model for each FHM forest inventory plot. The parameter estimation allowed two free parameters for each species <em>j</em>. Observations for species <em>j</em> were generated by averaging all available canopy status data for <em>j</em>, and all available crown radius and crown depth measurements for canopy trees of species <em>j</em>. Slope refers to slope from a least-squares linear regression of either observed canopy radius vs dbh, or predicted canopy radius vs dbh.</p>
+<span>doi:10.1371/journal.pone.0000870.g003</span></div>
+
+<h4>Predictive ability: inter-individual variation</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>The model also captured the key features of inter-individual variation in crown size and shape within a species (<a href="#pone-0000870-g004">Figs. 4</a>, <a href="#pone-0000870-g005">5</a>). For all species, larger trees were more likely to be in the canopy, but the slope and curvature of the relationship varied greatly between species (see examples given in <a href="#pone-0000870-g004">Fig. 4</a>). For those species with sufficient data to assess the fit between predictions and observations, the correspondence between model predictions and observations was extremely close (examples given in <a href="#pone-0000870-g004">Fig. 4</a>). This match included non-intuitive results such as the fact that, for many species, the smallest trees were more likely to be in the canopy than were trees of intermediate size (e.g. <em>Populus tremuloides</em> and <em>Quercus rubra</em> in <a href="#pone-0000870-g004">Fig. 4</a>).</p>
+<div class="figure" id="pone-0000870-g004"><div class="img"><a name="pone-0000870-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>The relationship between dbh and average canopy status for 6 species of contrasting allometry and life history, predicted (grey) and observed (black).</span></strong></p><a id="article1.body1.sec3.sec4.fig1.caption1.p1" name="article1.body1.sec3.sec4.fig1.caption1.p1"></a><p>The values are the fraction of individuals within the appropriate dbh class that had some foliage in the canopy. Values are only given where there were at least 30 trees in the dbh class for the species. The parameter estimation allowed only two free parameters for each species. Values in parentheses are the successional age of the species, calculated after <a href="#pone.0000870-Caspersen1">[50]</a>: high values indicate a late successional species. The successional age of <em>Picea engelmanni</em> should not be compared with the other species in the figure because it is the only western species: its successional age is greater than the average for western species, indicating that is late successional.</p>
+<span>doi:10.1371/journal.pone.0000870.g004</span></div><div class="figure" id="pone-0000870-g005"><div class="img"><a name="pone-0000870-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000870" data-uri="info:doi/10.1371/journal.pone.0000870.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000870.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000870.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000870.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000870.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>The relationship between dbh and crown radius and crown depth, for 4 common US tree species of contrasting crown shape and allometry: predicted (grey) and observed (black).</span></strong></p><a id="article1.body1.sec3.sec4.fig2.caption1.p1" name="article1.body1.sec3.sec4.fig2.caption1.p1"></a><p>For each species and metric, data from 300 randomly selected individuals are shown. The parameter estimation allowed two free parameters for each species. Values in parentheses are successional ages: see legend for <a href="#pone-0000870-g004">Fig. 4</a>.</p>
+<span>doi:10.1371/journal.pone.0000870.g005</span></div><a id="article1.body1.sec3.sec4.p2" name="article1.body1.sec3.sec4.p2"></a><p>In addition, the model predicted substantial variation in both crown radius and crown depth for a given species and dbh (<a href="#pone-0000870-g005">Fig. 5</a>). Such variation could have been recreated easily by simply implementing the ‘noise’ parameters describing unaccounted-for variation, thereby introducing unexplained random variation to each model prediction; but this was not done here. Instead, the predicted variation was deterministic, resulting solely from the variation in the calculated value of <em>Z</em><sup>*</sup> from plot to plot, which itself was driven solely by observed variation in the neighborhoods experienced by trees of a given species and dbh.</p>
+<a id="article1.body1.sec3.sec4.p3" name="article1.body1.sec3.sec4.p3"></a><p>For crown depth, the predicted variation was close to that observed, showing that this variation can be explained solely as the deterministic reaction of trees to variation in their neighborhoods. For crown radius, the predicted variation, though substantial, was less than observed. This is likely to reflect some combination of the model missing processes that might affect crown radius (e.g. soil type); and measurement error for crown radius, both of which are included implicitly in the parameters that govern unexplained variation.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3>
+<h4>The ITD as a model of canopy structure</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>The ITD model is evidently able to provide accurate predictions for canopy structure, given data on the individual trees, in a wide variety of forest types, even where only two parameters (<em>T<sub>j</sub></em> and <em>V<sub>bias,j</sub></em>) are allowed to vary between species (<a href="#pone-0000870-g003">Figs 3</a>–<a href="#pone-0000870-g004"></a><a href="#pone-0000870-g005">5</a>). For a given species, the value of these two parameters, in combination with species-specific height-dbh parameters, predicts average canopy status, crown radius and crown depth (<a href="#pone-0000870-g003">Fig. 3</a>); the within-species relationships between these 3 metrics and dbh (<a href="#pone-0000870-g004">Figs 4</a>, <a href="#pone-0000870-g005">5</a>); and much of the observed variability for a given dbh (<a href="#pone-0000870-g005">Fig. 5</a>). Thus the ITD model appears to be a relatively parsimonious model, reconciling different species-specific patterns of canopy structure, and crown size and shape, in a wide variety of forest communities, into a simple modeling framework. As such, we hope that it may act as an important step toward a deeper understanding of canopy structure in forests, and possibly in other plant communities.</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>In evaluating the significance of these results, it is important to bear in mind that describing these patterns with separate allometries would require at least nine species-specific parameters (i.e. for canopy status vs dbh, crown radius vs dbh, and crown depth vs dbh, including the unexplained variation in each), whereas the results presented here used only two free parameters. More importantly, standard allometries predict metrics from dbh alone (e.g. <a href="#pone.0000870-Bechtold1">[33]</a>, <a href="#pone.0000870-Bechtold2">[34]</a> for crown area), and are therefore fundamentally incapable of capturing the fact that the metrics depend on the state of the forest stand within which a tree is found. For example, an allometry of canopy status vs dbh would make a tree of a given dbh equally likely to be in the canopy, whether it was found in an open field, a young stand, or an old growth forest. Allometries can be modified to take into account some measure of stand density (such as basal area), but this requires additional parameters, and the appropriate stand metrics and functional forms are not known. Compared to this, the ITD gives a simple, biologically reasonable formulation that naturally captures competition for canopy space, and that appears to work quite well in a wide range of forest types (<a href="#pone-0000870-g003">Figs 3</a>–<a href="#pone-0000870-g004"></a><a href="#pone-0000870-g005">5</a>). On the other hand, the conceptual differences between the ITD and the use of standard allometries should not be overstated. Like standard allometries, the ITD assigns a crown shape to each tree–the potential crown shape–which is a simple function of species and size. The advantage of the ITD is simply that it allows for interactions between these potential shapes, to give plasticity in the realized crowns. This then leads naturally to a prediction of which trees are in or out of the canopy.</p>
+
+
+<h4>Model limitations</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>The form of the ITD model presented here suffers from a variety of limitations. This includes the lack of time lags in the response of canopy structure to changes in the size and density of trees, such that newly-vacated canopy space becomes filled instantly. In contrast, it is known that tree-fall gaps can take several years to close (e.g. <a href="#pone.0000870-Fujita1">[35]</a>). Also, the potential crown shapes are assumed to be invariant to variation in soils, climate or light environment, whereas they may be variable (e.g. <a href="#pone.0000870-MacFarlane1">[36]</a>); individuals are assumed to switch instantly between canopy and understory forms, whereas they may show more gradual, and potentially complex, shifts; and the ITD assumes infinite horizontal growth plasticity, whereas trees are obviously highly constrained. These limitations are not dealt with here, because the intention was to provide a simple model that may or may not require modification in the future. In addition, the available observations (the FHM forest inventory data) provided no significant evidence of problems in the model predictions. Therefore, although the current model limitations may prove to be crucial for some applications, their signature is apparently not present in the measurements that are typically taken in forest inventories. As such, their solution appears to require alternative, field-based, observational or experimental approaches. We also note that our analysis did not rule out the possibility that a different model structure could have provided an equally good fit to the data, which further motivates detailed field observations of the key processes determining forest canopy structure.</p>
+
+
+<h4>Remote sensing of forest structure</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>A primary goal of the remote sensing of forests is to infer properties of forest stands (the species, sizes and spatial densities of the individual trees, and hence the basal area and biomass of forest stands: hereafter referred to as stand structure), from aircraft-or satellite-borne optical (e.g. <a href="#pone.0000870-Herwitz2">[37]</a>, <a href="#pone.0000870-Brown1">[38]</a>) and LIDAR returns (e.g. <a href="#pone.0000870-Naesset1">[39]</a>, <a href="#pone.0000870-Roberts1">[40]</a>, <a href="#pone.0000870-Takahashi1">[41]</a>, <a href="#pone.0000870-Takahashi2">[42]</a>, <a href="#pone.0000870-Jensen1">[43]</a>). The ITD provides a general and rapidly-implemented way to predict these canopy properties from stand structure, and it therefore has the potential to improve the interpretation of remote sensing data. For example, LIDAR returns can provide measurements of canopy height (i.e. the height of the canopy above the ground). In a general sense a taller forest canopy indicates not only taller individual trees, but also trees with larger dbh (because individual height and dbh are positively correlated), along with a lower density of trees (since stand density tends to be negatively correlated with the average size of individuals both within stands of a given species, and among stands of different species: <a href="#pone.0000870-Weller1">[44]</a>). The ITD can provide quantitative predictions of these relationships for a given forest type. For any given structure (i.e. a list of the species, sizes and densities of individual trees), the ITD predicts not only the maximum canopy height (the height of the tallest tree), and the minimum canopy height (<em>Z</em><sup>*</sup>), but it also predicts the exact probability distribution of canopy heights. At the heart of the ITD is the function <em>α<sub>q</sub></em><sup>(<em>tot,Zq</em>)</sup> which, for a stand <em>q</em>, gives the total exposed crown area (ha ha<sup>−1</sup>) vs distance from the ground, <em>Z<sub>q</sub></em> (<a href="#pone.0000870.s001">Appendix S1</a>). This function is exactly equal to the probability of a given LIDAR measurement returning a canopy height greater than <em>Z<sub>q</sub></em> (also see <a href="#pone-0000870-g001">Fig 1d</a>). Therefore the ITD can be used to assess which species, densities and sizes of trees are consistent with a given sample of LIDAR returns. This method would engage with the whole sample of return heights, rather than summary statistics such as the mean height. And the ITD would not require fine-resolution data in order to extract the locations and heights of individual trees; it could be used equally well with LIDAR samples spread coarsely over a wide area. Similarly, analysis of aerial photography data can provide estimates of the density of trees in the canopy, and the probability distribution of their exposed crown areas, ECAs. For any given stand structure, the ITD predicts both of these properties.</p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>In both cases, it should be possible to use a formal probabilistic framework to compare the ITD and the remote sensing data to estimate stand properties from given canopy properties. The ITD does require height allometry and crown shape parameters for each species, and these are, at present, only available for North American trees (<a href="#pone.0000870.s006">Table S3</a>); but these parameters could be derived using forest inventory data from other parts of the world using the methods outlined here.</p>
+
+
+<h4>Understanding and predicting forest dynamics</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>The key to understanding, and therefore predicting, the dynamics of mesic forests is the process of density-dependent competition for canopy space, and hence light. This is recognized in forest gap models–the only models that have hitherto been successful in predicting the community dynamics of mixed species forests (e.g. <a href="#pone.0000870-Shugart1">[5]</a>, <a href="#pone.0000870-Pacala1">[2]</a>). In these models, complex light-tracing algorithms are used in combination with crown allometries to calculate the degree of shading cast by, and experienced by, different individuals. Growth and mortality are then functions of the level of light incident on each individual. And in forestry it has long been recognized that both crown class (a more general measure of canopy status) and crown ratio are important predictors of the growth and mortality of individual trees.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>But modeling the process of height structured competition in a quantitative manner that allows for a rigorous understanding and predictive ability for forest dynamics has remained elusive. In part, this has been due to a lack of data with which to parameterize models of canopy structure, and/or the effects of canopy structure on the growth, mortality and reproduction of individuals. This was especially true for measurements that are hard to take (e.g. exposed crown areas, leaf densities, understory light), for rates that are slow and therefore require large sample sizes (e.g. mortality rates for canopy trees), and for rare species. However, this problem is rapidly being overcome by the appearance of large forest inventory data sets, which contain observations of growth rates, and mortality and reproductive events (e.g. the USDA FIA contains millions of tree records for the US alone: see <a href="#pone.0000870-Purves1">[11]</a>) and measurements relevant to canopy structure (e.g. the FHM data used here). Satellite-and aerial-photograph derived data sets could be larger still.</p>
+<a id="article1.body1.sec4.sec4.p3" name="article1.body1.sec4.sec4.p3"></a><p>A more fundamental limitation has been the lack of a simple quantitative model relating the state of a forest stand (the species, sizes and densities of trees) and canopy structure, and hence competition for canopy space and light. This relationship appeared to be complex and spatially explicit, and hence computationally expensive and mathematically intractable. Forest gap models have utilized computationally intensive light-tracing algorithms to generate predictions for incident light levels experienced by the center of the crown of each individual (e.g. <a href="#pone.0000870-Pacala1">[2]</a>). But even these models have lacked a biologically-derived formulation for competition between the largest canopy trees, which cast little shade on each other, but which compete for canopy space (and yet large trees are responsible for most of the carbon fixation, and hence NPP and carbon storage, of forests). Approaches to understanding competition between large trees in forest gap models have been limited to phenomenological neighbourhood models (<a href="#pone.0000870-Canham1">[45]</a>, <a href="#pone.0000870-Canham2">[46]</a>, <a href="#pone.0000870-Uriarte1">[47]</a>). This work has lead to important new discoveries in forest ecology, but neighbourhood models require the estimation of parameters for every <em>pair</em> of species (i.e. interaction-specific parameters), and there is no reason to expect them to recover the fundamental fact that stand level NPP is limited by the total available canopy space. In contrast, a class of forest models derived from the Shell model (e.g. TASS, see <a href="#pone.0000870-DiLucca1">[48]</a>) is ideally suited to understanding competition between canopy trees, but this is at the cost of an extremely computationally intensive 3D tessellation algorithm.</p>
+<a id="article1.body1.sec4.sec4.p4" name="article1.body1.sec4.sec4.p4"></a><p>Being spatially explicit, the ITD can be implemented much more rapidly than the canopy component of either forest gap models, or the Shell model. Moreover it can be used in conjunction with data that is not spatially explicit (e.g. most forest inventory data, including the FHM and FIA). Similarly to the Shell model, the ITD is all about dividing up canopy space and so, in common with it, it naturally captures competition between large trees: growth can simply be a made a function of exposed crown area, ECA (<a href="#pone.0000870-Wyckoff1">[49]</a>). This allows for realistic competition between large trees whilst constraining stand-level productivity, without the need for interaction-specific parameters. The dynamic model that results from replacing the canopy structure component of a standard forest gap model (SORTIE: <a href="#pone.0000870-Pacala1">[2]</a>, <a href="#pone.0000870-Coates1">[24]</a>) with the ITD, is also rapid to implement, and becomes analytically tractable for such metrics as equilibrium density, basal area and biomass, patterns of self thinning, and the invasion of monocultures by other species (Strigul <em>et al.</em> in review). And yet it can reproduce the dynamics of SORTIE, provided that SORTIE is first made more realistic by the inclusion of extra growth plasticity (Strigul <em>et al.</em> in review).</p>
+<a id="article1.body1.sec4.sec4.p5" name="article1.body1.sec4.sec4.p5"></a><p>Thus, the combination of forest models based on the ITD, with large forest inventory data sets, may represent a first step toward a rigorous understanding and predictive ability for forest dynamics. In recent work we show that this can lead to accurate predictions for the 100-year dynamics of biomass, size distribution and species composition, and their dependency on soil type, for the forests of the Lake States of the eastern US (Purves <em>et al.</em> unpublished). Perhaps this approach can be extended to make the model parameters explicit functions of climate and soil, leading to a rigorous, individual-based understanding of observed regional variation in forest structure and species composition. If so, defensible predictions of the nature and timescale of forest responses to climate change and other anthropogenic perturbations could be within reach.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000870"></div><a name="pone.0000870.s001" id="pone.0000870.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000870.s001">Appendix S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Derivation and description of the ideal tree distribution (ITD) model</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000870.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.34 MB DOC)</p>
+<a name="pone.0000870.s002" id="pone.0000870.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000870.s002">Appendix S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Estimation of species-specific height-dbh parameters</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000870.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.05 MB DOC)</p>
+<a name="pone.0000870.s003" id="pone.0000870.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000870.s003">Appendix S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Parameter estimation scheme</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000870.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.28 MB DOC)</p>
+<a name="pone.0000870.s004" id="pone.0000870.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000870.s004">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">Summary of ITD parameter estimates the single axis scheme, with the additional free parameter <em>V<sub>bias,j</sub></em>. Parameters marked with * were fit as species-specific free parameters; for species <em>j</em>, parameters marked with {double dagger} depended only on the value of <em>T<sub>j</sub></em>. Parameter <em>M<sub>j</sub></em> was fixed at 0.95 for each species <em>j</em>, as shown. By definition, 5% of the species have values for parameter P above the 90% range for P, and 5% have values below the range. This interval was calculated for each parameter, either using only the 30 most common species, or all species, as shown.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000870.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.06 MB DOC)</p>
+<a name="pone.0000870.s005" id="pone.0000870.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000870.s005">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">Parameters for converting the trait score for species <em>j</em>, <em>T<sub>j</sub></em>, to crown shape parameters (see eq. S3.3). Parameters marked <em>fixed</em> were not estimated, but fixed at the values given. Other parameters were fit as global free parameters, as part of the single-axis scheme. These values can be used with eq. S3.3 to assign species-specific crown shape parameters to species <em>j</em>, from the value of the trait score <em>T<sub>j</sub></em> given in <a href="#pone.0000870.s006">Table S3</a>.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000870.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0000870.s006" id="pone.0000870.s006"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000870.s006">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material6.caption1.p1" name="article1.body1.sec5.supplementary-material6.caption1.p1"></a><p class="preSiDOI">ITD model parameters for the 250 tree species represented in the FHM data, together with height-dbh parameters for North American tree species not present in the FHM data. The height <em>H<sub>i</sub></em> (m) of a tree of species <em>j</em>, with <em>dbh<sub>i</sub></em> in cm (or diameter at root collar, <em>drc<sub>i</sub></em>) can be calculated as <em>H<sub>i</sub></em> = 10ˆ[<em>a<sub>j,dbh</sub></em>+<em>b<sub>j</sub></em>.log<sub>10</sub> (<em>dbh<sub>i</sub></em>)], or as <em>H<sub>i</sub></em> = 10ˆ[<em>a<sub>j,drc</sub></em>+<em>b<sub>j</sub></em>.log<sub>10</sub> (<em>drc<sub>i</sub></em>)] . The parameter <em>T<sub>j</sub></em> can be used in conjunction with <a href="#pone.0000870.s005">Table S2</a> to generate species-specific crown shape parameters for species <em>j</em>. <em>V<sub>bias,j</sub></em> is a species-specific parameter required by the ITD model. The numeric code used to identify species in US Forest Service forest inventories is given. 95% confidence intervals are given for <em>T<sub>j</sub></em> and <em>V<sub>bias,j</sub></em> in parentheses.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000870.s006</p><a id="article1.body1.sec5.supplementary-material6.caption1.p2" name="article1.body1.sec5.supplementary-material6.caption1.p2"></a><p class="postSiDOI">(0.46 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Prof. Kiona Ogle for wood density data. We thank Profs. John Caspersen and Kiona Ogle, and Drs. Stephanie Bohlman, Denis Pritzinsky, Nikolay Strigul and Christian Wirth, for helpful discussions.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SP DP JL. Performed the experiments: DP. Analyzed the data: DP JL. Contributed reagents/materials/analysis tools: JL. Wrote the paper: SP DP. Other: Contributed and analyzed height-dbh data: JL. Contributed to development of model and statistics: JL.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000870-Horn1" id="pone.0000870-Horn1"></a>Horn HS (1971) The adaptive geometry of trees. Princeton, N.J.: Princeton University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">2.
+              </span><a name="pone.0000870-Pacala1" id="pone.0000870-Pacala1"></a>Pacala SW, Canham CD, Saponara J, Silander JA, Kobe RK, et al.  (1996) Forest models defined by field measurements: estimation, error analysis and dynamics. Ecological Monographs  66: 1–43.  <ul class="find" data-citedArticleID="990002" data-doi="10.2307/2963479"><li><a href="http://dx.doi.org/10.2307/2963479" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Forest+models+defined+by+field+measurements%3A+estimation%2C+error+analysis+and+dynamics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Forest+models+defined+by+field+measurements%3A+estimation%2C+error+analysis+and+dynamics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000870-Kobe1" id="pone.0000870-Kobe1"></a>Kobe RK, Pacala SW, Silander JA (1995) Juvenile Tree Survivorship as a component of shade tolerance. Ecological Applications  5: 517–532.  <ul class="find" data-citedArticleID="989976" data-doi="10.2307/1942040"><li><a href="http://dx.doi.org/10.2307/1942040" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Juvenile+Tree+Survivorship+as+a+component+of+shade+tolerance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Juvenile+Tree+Survivorship+as+a+component+of+shade+tolerance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000870-Barnes1" id="pone.0000870-Barnes1"></a>Barnes BV, Zak SR, Denton SR, Spur SH (1998) Forest Ecology. New York: Wiley.   <ul class="find-nolinks"></ul></li><li><span class="label">5.
+              </span><a name="pone.0000870-Shugart1" id="pone.0000870-Shugart1"></a>Shugart HH (1984) A theory of forest dynamics : the ecological implications of forest succession models. New York: Springer-Verlag.   <ul class="find-nolinks"></ul></li><li><span class="label">6.
+              </span><a name="pone.0000870-Oliver1" id="pone.0000870-Oliver1"></a>Oliver CD, Larson BC (1996) Forest stand dynamics. New York: Wiley.   <ul class="find-nolinks"></ul></li><li><span class="label">7.
+              </span><a name="pone.0000870-Pinker1" id="pone.0000870-Pinker1"></a>Pinker RT, Holland JZ (1988) Turbulence structure of a tropical forest. Boundary-Layer Meteorology  43: 43–63.  <ul class="find" data-citedArticleID="990006" data-doi="10.1007/bf00153968"><li><a href="http://dx.doi.org/10.1007/bf00153968" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Turbulence+structure+of+a+tropical+forest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Turbulence+structure+of+a+tropical+forest.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000870-Beringer1" id="pone.0000870-Beringer1"></a>Beringer J, Chapin FS, Thompson CC, McGuire AD (2005) Surface energy exchanges along a tundra-forest transition and feedbacks to climate. Agricultural and Forest Meteorology  131: 143–161.  <ul class="find" data-citedArticleID="989944" data-doi="10.1016/j.agrformet.2005.05.006"><li><a href="http://dx.doi.org/10.1016/j.agrformet.2005.05.006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Surface+energy+exchanges+along+a+tundra-forest+transition+and+feedbacks+to+climate." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Surface+energy+exchanges+along+a+tundra-forest+transition+and+feedbacks+to+climate.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000870-Roelandt1" id="pone.0000870-Roelandt1"></a>Roelandt C (2001) Coupled simulation of potential natural vegetation, terrestrial carbon balance and physical land-surface properties with the ALBIOC model. Ecological Modelling  143: 191–214.  <ul class="find" data-citedArticleID="990014" data-doi="10.1016/s0304-3800(01)00331-3"><li><a href="http://dx.doi.org/10.1016/s0304-3800(01)00331-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Coupled+simulation+of+potential+natural+vegetation%2C+terrestrial+carbon+balance+and+physical+land-surface+properties+with+the+ALBIOC+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Coupled+simulation+of+potential+natural+vegetation%2C+terrestrial+carbon+balance+and+physical+land-surface+properties+with+the+ALBIOC+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000870-Moorcroft1" id="pone.0000870-Moorcroft1"></a>Moorcroft PR (2003) Recent advances in ecosystem-atmosphere interactions: an ecological perspective. Proceedings of the Royal Society B-Biological Sciences  270: 1215–1227.  <ul class="find" data-citedArticleID="989988" data-doi="10.1098/rspb.2002.2251"><li><a href="http://dx.doi.org/10.1098/rspb.2002.2251" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Recent+advances+in+ecosystem-atmosphere+interactions%3A+an+ecological+perspective." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Recent+advances+in+ecosystem-atmosphere+interactions%3A+an+ecological+perspective.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000870-Purves1" id="pone.0000870-Purves1"></a>Purves DW, Caspersen JP, Moorcroft PR, Hurtt GC, Pacala SW (2004) Human-induced changes in US biogenic volatile organic compound emissions: evidence from long-term forest inventory data. Global Change Biology  10: 1737–1755.  <ul class="find" data-citedArticleID="990010" data-doi="10.1111/j.1365-2486.2004.00844.x"><li><a href="http://dx.doi.org/10.1111/j.1365-2486.2004.00844.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Human-induced+changes+in+US+biogenic+volatile+organic+compound+emissions%3A+evidence+from+long-term+forest+inventory+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Human-induced+changes+in+US+biogenic+volatile+organic+compound+emissions%3A+evidence+from+long-term+forest+inventory+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000870-Nelson1" id="pone.0000870-Nelson1"></a>Nelson R (1997) Modeling forest canopy heights: The effects of canopy shape. Remote Sensing of Environment  60: 327–334.  <ul class="find" data-citedArticleID="989996" data-doi="10.1016/s0034-4257(96)00214-3"><li><a href="http://dx.doi.org/10.1016/s0034-4257(96)00214-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+forest+canopy+heights%3A+The+effects+of+canopy+shape." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+forest+canopy+heights%3A+The+effects+of+canopy+shape.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000870-Poorter1" id="pone.0000870-Poorter1"></a>Poorter L, Bongers L, Bongers F (2006) Architecture of 54 moist-forest tree species: Traits, trade-offs, and functional groups. Ecology  87: 1289–1301.  <ul class="find" data-citedArticleID="990008" data-doi="10.1890/0012-9658(2006)87[1289:aomtst]2.0.co;2"><li><a href="http://dx.doi.org/10.1890/0012-9658(2006)87[1289:aomtst]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Architecture+of+54+moist-forest+tree+species%3A+Traits%2C+trade-offs%2C+and+functional+groups." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Architecture+of+54+moist-forest+tree+species%3A+Traits%2C+trade-offs%2C+and+functional+groups.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000870-Young1" id="pone.0000870-Young1"></a>Young TP, Hubbell SP (1991) Crown asymmetry, treefalls and repeat disturbance of broadleaved forest gaps. Ecology  72:   <ul class="find" data-citedArticleID="990036" data-doi="10.2307/1941119"><li><a href="http://dx.doi.org/10.2307/1941119" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Crown+asymmetry%2C+treefalls+and+repeat+disturbance+of+broadleaved+forest+gaps." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Crown+asymmetry%2C+treefalls+and+repeat+disturbance+of+broadleaved+forest+gaps.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000870-Olesen1" id="pone.0000870-Olesen1"></a>Olesen T (2001) Architecture of a cool-temperate rain forest canopy. Ecology  82: 2719–2730.  <ul class="find" data-citedArticleID="989998" data-doi="10.1890/0012-9658(2001)082[2719:aoactr]2.0.co;2"><li><a href="http://dx.doi.org/10.1890/0012-9658(2001)082[2719:aoactr]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Architecture+of+a+cool-temperate+rain+forest+canopy." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Architecture+of+a+cool-temperate+rain+forest+canopy.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000870-Muth1" id="pone.0000870-Muth1"></a>Muth CC, Bazzaz FA (2002) Tree canopy displacement at forest gap edges. Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere  32: 247–254.  <ul class="find" data-citedArticleID="989990" data-doi="10.1139/x01-196"><li><a href="http://dx.doi.org/10.1139/x01-196" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Tree+canopy+displacement+at+forest+gap+edges." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Tree+canopy+displacement+at+forest+gap+edges.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000870-Muth2" id="pone.0000870-Muth2"></a>Muth CC, Bazzaz FA (2003) Tree canopy displacement and neighborhood interactions. Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere  33: 1323–1330.  <ul class="find" data-citedArticleID="989992" data-doi="10.1139/x03-045"><li><a href="http://dx.doi.org/10.1139/x03-045" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Tree+canopy+displacement+and+neighborhood+interactions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Tree+canopy+displacement+and+neighborhood+interactions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000870-Herwitz1" id="pone.0000870-Herwitz1"></a>Herwitz SR, Slye RE, Turton SM (2000) Long-term survivorship and crown area dynamics of tropical rain forest canopy trees. Ecology  81: 585–597.  <ul class="find" data-citedArticleID="989966" data-doi="10.2307/177450"><li><a href="http://dx.doi.org/10.2307/177450" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Long-term+survivorship+and+crown+area+dynamics+of+tropical+rain+forest+canopy+trees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Long-term+survivorship+and+crown+area+dynamics+of+tropical+rain+forest+canopy+trees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000870-Miner1" id="pone.0000870-Miner1"></a>Miner BG, Sultan SE, Morgan SG, Padilla DK, Relyea RA (2005) Ecological consequences of phenotypic plasticity. Trends in Ecology&amp;Evolution  20: 685–692.  <ul class="find" data-citedArticleID="989982" data-doi="10.1016/j.tree.2005.08.002"><li><a href="http://dx.doi.org/10.1016/j.tree.2005.08.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Ecological+consequences+of+phenotypic+plasticity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Ecological+consequences+of+phenotypic+plasticity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000870-SorrensenCothern1" id="pone.0000870-SorrensenCothern1"></a>Sorrensen-Cothern KA, Ford ED, Sprugel DG (1993) A model of competition incorporating plasticity through modular foliage and crown development. Ecological Monographs  63: 277–304.  <ul class="find" data-citedArticleID="990020" data-doi="10.2307/2937102"><li><a href="http://dx.doi.org/10.2307/2937102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+model+of+competition+incorporating+plasticity+through+modular+foliage+and+crown+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+model+of+competition+incorporating+plasticity+through+modular+foliage+and+crown+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000870-Umeki1" id="pone.0000870-Umeki1"></a>Umeki K (1995) Modelling the relationship between the asymmetry in crown display and local environment. Ecological Modelling  82: 11–20.  <ul class="find" data-citedArticleID="990028" data-doi="10.1016/0304-3800(94)00081-r"><li><a href="http://dx.doi.org/10.1016/0304-3800(94)00081-r" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modelling+the+relationship+between+the+asymmetry+in+crown+display+and+local+environment." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modelling+the+relationship+between+the+asymmetry+in+crown+display+and+local+environment.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000870-Brisson1" id="pone.0000870-Brisson1"></a>Brisson J, Reynolds JF (1997) Effects of compensatory growth on population processes: A simulation study. Ecology  78: 2378–2384.  <ul class="find" data-citedArticleID="989946" data-doi="10.2307/2265900"><li><a href="http://dx.doi.org/10.2307/2265900" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effects+of+compensatory+growth+on+population+processes%3A+A+simulation+study." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effects+of+compensatory+growth+on+population+processes%3A+A+simulation+study.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000870-Stoll1" id="pone.0000870-Stoll1"></a>Stoll P, Bergius E (2005) Pattern and process: competition causes regular spacing of individuals within plant populations. Journal of Ecology  93: 395–403.  <ul class="find" data-citedArticleID="990022" data-doi="10.1111/j.0022-0477.2005.00989.x"><li><a href="http://dx.doi.org/10.1111/j.0022-0477.2005.00989.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pattern+and+process%3A+competition+causes+regular+spacing+of+individuals+within+plant+populations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pattern+and+process%3A+competition+causes+regular+spacing+of+individuals+within+plant+populations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000870-Coates1" id="pone.0000870-Coates1"></a>Coates KD, Canham CD, Beaudet M, Sachs DL, Messier C (2003) Use of a spatially explicit individual-tree model (SORTIE/BC) to explore the implications of patchiness in structurally complex forests. Forest Ecology and Management  186: 297–310.  <ul class="find" data-citedArticleID="989956" data-doi="10.1016/s0378-1127(03)00301-3"><li><a href="http://dx.doi.org/10.1016/s0378-1127(03)00301-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Use+of+a+spatially+explicit+individual-tree+model+%28SORTIE%2FBC%29+to+explore+the+implications+of+patchiness+in+structurally+complex+forests." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Use+of+a+spatially+explicit+individual-tree+model+%28SORTIE%2FBC%29+to+explore+the+implications+of+patchiness+in+structurally+complex+forests.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000870-Piboule1" id="pone.0000870-Piboule1"></a>Piboule A, Collet C, Frochot H, Dhote JF (2005) Reconstructing crown shape from stem diameter and tree position to supply light models. I. Algorithms and comparison of light simulations. Annals of Forest Science  62: 645–657.  <ul class="find" data-citedArticleID="990004" data-doi="10.1051/forest:2005071"><li><a href="http://dx.doi.org/10.1051/forest:2005071" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reconstructing+crown+shape+from+stem+diameter+and+tree+position+to+supply+light+models.+I.+Algorithms+and+comparison+of+light+simulations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reconstructing+crown+shape+from+stem+diameter+and+tree+position+to+supply+light+models.+I.+Algorithms+and+comparison+of+light+simulations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000870-Mitchell1" id="pone.0000870-Mitchell1"></a>Mitchell KJ (1969) Simulation of the growth of even-aged stands of white spruce. Yale University School of Forestry Bulletin  75:   <ul class="find" data-citedArticleID="989984"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Simulation+of+the+growth+of+even-aged+stands+of+white+spruce.&amp;auth=&amp;atitle=Simulation+of+the+growth+of+even-aged+stands+of+white+spruce." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Simulation+of+the+growth+of+even-aged+stands+of+white+spruce." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Simulation+of+the+growth+of+even-aged+stands+of+white+spruce.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000870-Mitchell2" id="pone.0000870-Mitchell2"></a>Mitchell KJ (1975) Dynamics and simulated yield of Douglas-fir. Forest Science Monographs  17:   <ul class="find" data-citedArticleID="989986"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Dynamics+and+simulated+yield+of+Douglas-fir.&amp;auth=&amp;atitle=Dynamics+and+simulated+yield+of+Douglas-fir." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamics+and+simulated+yield+of+Douglas-fir." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamics+and+simulated+yield+of+Douglas-fir.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000870-Deleuze1" id="pone.0000870-Deleuze1"></a>Deleuze C, Herve JC, Colin F, Ribeyrolles L (1993) Modelling crown shape of Picea abies: Spacing effects. Canadian Journal of Forest Research  26: 1957–1966.  <ul class="find" data-citedArticleID="989958" data-doi="10.1139/x26-221"><li><a href="http://dx.doi.org/10.1139/x26-221" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modelling+crown+shape+of+Picea+abies%3A+Spacing+effects." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modelling+crown+shape+of+Picea+abies%3A+Spacing+effects.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000870-Fretwell1" id="pone.0000870-Fretwell1"></a>Fretwell SD, Lucas HL (1970) On territorial behaviour and other factors influencing habitat distribution in birds. I. Theoretical development. Acta Biotheoretica  19: 686–693.  <ul class="find" data-citedArticleID="989962" data-doi="10.1007/bf01601953"><li><a href="http://dx.doi.org/10.1007/bf01601953" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+territorial+behaviour+and+other+factors+influencing+habitat+distribution+in+birds.+I.+Theoretical+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+territorial+behaviour+and+other+factors+influencing+habitat+distribution+in+birds.+I.+Theoretical+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000870-Smith1" id="pone.0000870-Smith1"></a>Smith WB (2002) Forest inventory and analysis: a national inventory and monitoring program. Environmental Pollution  116: S233–S242.  <ul class="find" data-citedArticleID="990018" data-doi="10.1016/s0269-7491(01)00255-x"><li><a href="http://dx.doi.org/10.1016/s0269-7491(01)00255-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Forest+inventory+and+analysis%3A+a+national+inventory+and+monitoring+program." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Forest+inventory+and+analysis%3A+a+national+inventory+and+monitoring+program.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000870-McRoberts1" id="pone.0000870-McRoberts1"></a>McRoberts RE, Bechtold WA, Patterson PL, Scott CT, Reams GA (2005) The enhanced forest inventory and analysis program of the USDA Forest Service: Historical perspective and announcement of statistical documentation. Journal of Forestry  103: 304–308.  <ul class="find" data-citedArticleID="989980"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+enhanced+forest+inventory+and+analysis+program+of+the+USDA+Forest+Service%3A+Historical+perspective+and+announcement+of+statistical+documentation.&amp;auth=&amp;atitle=The+enhanced+forest+inventory+and+analysis+program+of+the+USDA+Forest+Service%3A+Historical+perspective+and+announcement+of+statistical+documentation." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+enhanced+forest+inventory+and+analysis+program+of+the+USDA+Forest+Service%3A+Historical+perspective+and+announcement+of+statistical+documentation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+enhanced+forest+inventory+and+analysis+program+of+the+USDA+Forest+Service%3A+Historical+perspective+and+announcement+of+statistical+documentation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000870-Hilborn1" id="pone.0000870-Hilborn1"></a>Hilborn R, Mangel M (1997) The ecological detective : confronting models with data. Princeton, N.J.: Princeton University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">33.
+              </span><a name="pone.0000870-Bechtold1" id="pone.0000870-Bechtold1"></a>Bechtold WA (2003) Crown-diameter prediction models for 87 species of stand-grown trees in the eastern United States. Southern Journal of Applied Forestry  27: 269–278.  <ul class="find" data-citedArticleID="989940"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Crown-diameter+prediction+models+for+87+species+of+stand-grown+trees+in+the+eastern+United+States.&amp;auth=&amp;atitle=Crown-diameter+prediction+models+for+87+species+of+stand-grown+trees+in+the+eastern+United+States." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Crown-diameter+prediction+models+for+87+species+of+stand-grown+trees+in+the+eastern+United+States." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Crown-diameter+prediction+models+for+87+species+of+stand-grown+trees+in+the+eastern+United+States.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000870-Bechtold2" id="pone.0000870-Bechtold2"></a>Bechtold WA (2004) Largest-crown-width prediction models for 53 species in the western United States. Western Journal of Applied Forestry  19: 245–251.  <ul class="find" data-citedArticleID="989942"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Largest-crown-width+prediction+models+for+53+species+in+the+western+United+States.&amp;auth=&amp;atitle=Largest-crown-width+prediction+models+for+53+species+in+the+western+United+States." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Largest-crown-width+prediction+models+for+53+species+in+the+western+United+States." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Largest-crown-width+prediction+models+for+53+species+in+the+western+United+States.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000870-Fujita1" id="pone.0000870-Fujita1"></a>Fujita T, Itaya A, Miura M, Manabe T, Yamamoto SI (2003) Long-term canopy dynamics analysed by aerial photographs in a temperate old-growth evergreen broad-leaved forest. Journal of Ecology  91: 686–693.  <ul class="find" data-citedArticleID="989964" data-doi="10.1046/j.1365-2745.2003.00796.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2745.2003.00796.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Long-term+canopy+dynamics+analysed+by+aerial+photographs+in+a+temperate+old-growth+evergreen+broad-leaved+forest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Long-term+canopy+dynamics+analysed+by+aerial+photographs+in+a+temperate+old-growth+evergreen+broad-leaved+forest.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000870-MacFarlane1" id="pone.0000870-MacFarlane1"></a>MacFarlane DW, Green EJ, Brunner A, Amateis RL (2003) Modeling loblolly pine canopy dynamics for a light capture model. Forest Ecology and Management  173: 145–168.  <ul class="find" data-citedArticleID="989978" data-doi="10.1016/s0378-1127(02)00011-7"><li><a href="http://dx.doi.org/10.1016/s0378-1127(02)00011-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+loblolly+pine+canopy+dynamics+for+a+light+capture+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+loblolly+pine+canopy+dynamics+for+a+light+capture+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000870-Herwitz2" id="pone.0000870-Herwitz2"></a>Herwitz SR, Slye RE, Turton SM (2000) Long-term survivorship and crown area dynamics of tropical rain forest canopy trees. Ecology  81: 585–597.  <ul class="find" data-citedArticleID="989968" data-doi="10.2307/177450"><li><a href="http://dx.doi.org/10.2307/177450" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Long-term+survivorship+and+crown+area+dynamics+of+tropical+rain+forest+canopy+trees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Long-term+survivorship+and+crown+area+dynamics+of+tropical+rain+forest+canopy+trees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000870-Brown1" id="pone.0000870-Brown1"></a>Brown S, Pearson T, Slaymaker D, Ambagis S, Moore N, et al.  (2005) Creating a virtual tropical forest from three-dimensional aerial imagery to estimate carbon stocks. Ecological Applications  15: 1083–1095.  <ul class="find" data-citedArticleID="989948" data-doi="10.1890/04-0829"><li><a href="http://dx.doi.org/10.1890/04-0829" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Creating+a+virtual+tropical+forest+from+three-dimensional+aerial+imagery+to+estimate+carbon+stocks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Creating+a+virtual+tropical+forest+from+three-dimensional+aerial+imagery+to+estimate+carbon+stocks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000870-Naesset1" id="pone.0000870-Naesset1"></a>Naesset E, Okland T (2002) Estimating tree height and tree crown properties using airborne scanning laser in a boreal nature reserve. Remote Sensing of Environment  79: 105–115.  <ul class="find" data-citedArticleID="989994" data-doi="10.1016/s0034-4257(01)00243-7"><li><a href="http://dx.doi.org/10.1016/s0034-4257(01)00243-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+tree+height+and+tree+crown+properties+using+airborne+scanning+laser+in+a+boreal+nature+reserve." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+tree+height+and+tree+crown+properties+using+airborne+scanning+laser+in+a+boreal+nature+reserve.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000870-Roberts1" id="pone.0000870-Roberts1"></a>Roberts SD, Dean TJ, Evans DL, McCombs JW, Harrington RL, et al.  (2005) Estimating individual tree leaf area in loblolly pine plantations using LiDAR-derived measurements of height and crown dimensions. Forest Ecology and Management  213: 54–70.  <ul class="find" data-citedArticleID="990012" data-doi="10.1016/j.foreco.2005.03.025"><li><a href="http://dx.doi.org/10.1016/j.foreco.2005.03.025" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+individual+tree+leaf+area+in+loblolly+pine+plantations+using+LiDAR-derived+measurements+of+height+and+crown+dimensions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+individual+tree+leaf+area+in+loblolly+pine+plantations+using+LiDAR-derived+measurements+of+height+and+crown+dimensions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000870-Takahashi1" id="pone.0000870-Takahashi1"></a>Takahashi T, Yamamoto K, Senda Y, Tsuzuku M (2005) Predicting individual stem volumes of sugi (Cryptomeria japonica D. Don) plantations in mountainous areas using small-footprint airborne LiDAR. Journal of Forest Research  10: 305–312.  <ul class="find" data-citedArticleID="990024" data-doi="10.1007/s10310-005-0150-2"><li><a href="http://dx.doi.org/10.1007/s10310-005-0150-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+individual+stem+volumes+of+sugi+%28Cryptomeria+japonica+D.+Don%29+plantations+in+mountainous+areas+using+small-footprint+airborne+LiDAR." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+individual+stem+volumes+of+sugi+%28Cryptomeria+japonica+D.+Don%29+plantations+in+mountainous+areas+using+small-footprint+airborne+LiDAR.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0000870-Takahashi2" id="pone.0000870-Takahashi2"></a>Takahashi T, Yamamoto K, Senda Y, Tsuzuku M (2005) Estimating individual tree heights of sugi (Cryptomeria japonica D. Don) plantations in mountainous areas using small-footprint airborne LiDAR. Journal of Forest Research  10: 135–142.  <ul class="find" data-citedArticleID="990026" data-doi="10.1007/s10310-004-0125-8"><li><a href="http://dx.doi.org/10.1007/s10310-004-0125-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+individual+tree+heights+of+sugi+%28Cryptomeria+japonica+D.+Don%29+plantations+in+mountainous+areas+using+small-footprint+airborne+LiDAR." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+individual+tree+heights+of+sugi+%28Cryptomeria+japonica+D.+Don%29+plantations+in+mountainous+areas+using+small-footprint+airborne+LiDAR.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0000870-Jensen1" id="pone.0000870-Jensen1"></a>Jensen JLR, Humes KS, Conner T, Williams CJ, DeGroot J (2006) Estimation of biophysical characteristics for highly variable mixed-conifer stands using small-footprint lidar Canadian Journal of Forest Research 36: 1129–1138.  <ul class="find" data-citedArticleID="989974" data-doi="10.1139/x06-007"><li><a href="http://dx.doi.org/10.1139/x06-007" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimation+of+biophysical+characteristics+for+highly+variable+mixed-conifer+stands+using+small-footprint+lidar+Canadian+Journal+of+Forest+Research" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimation+of+biophysical+characteristics+for+highly+variable+mixed-conifer+stands+using+small-footprint+lidar+Canadian+Journal+of+Forest+Research%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0000870-Weller1" id="pone.0000870-Weller1"></a>Weller DE (1987) A reevlauation of the -3/2 power rule of plant self-thinning. Ecological Monographs  57: 23–43.  <ul class="find" data-citedArticleID="990032" data-doi="10.2307/1942637"><li><a href="http://dx.doi.org/10.2307/1942637" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+reevlauation+of+the+-3%2F2+power+rule+of+plant+self-thinning." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+reevlauation+of+the+-3%2F2+power+rule+of+plant+self-thinning.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0000870-Canham1" id="pone.0000870-Canham1"></a>Canham CD, LePage PT, Coates KD (2004) A neighborhood analysis of canopy tree competition: effects of shading versus crowding. Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere  34: 778–787.  <ul class="find" data-citedArticleID="989950" data-doi="10.1139/x03-232"><li><a href="http://dx.doi.org/10.1139/x03-232" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+neighborhood+analysis+of+canopy+tree+competition%3A+effects+of+shading+versus+crowding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+neighborhood+analysis+of+canopy+tree+competition%3A+effects+of+shading+versus+crowding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0000870-Canham2" id="pone.0000870-Canham2"></a>Canham CD, Papaik MJ, Uriarte M, McWilliams WH, Jenkins JC, et al.  (2006) Neighborhood analyses of canopy tree competition along environmental gradients in new England forests. Ecological Applications  16: 540–554.  <ul class="find" data-citedArticleID="989952" data-doi="10.1890/1051-0761(2006)016[0540:naoctc]2.0.co;2"><li><a href="http://dx.doi.org/10.1890/1051-0761(2006)016[0540:naoctc]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Neighborhood+analyses+of+canopy+tree+competition+along+environmental+gradients+in+new+England+forests." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Neighborhood+analyses+of+canopy+tree+competition+along+environmental+gradients+in+new+England+forests.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0000870-Uriarte1" id="pone.0000870-Uriarte1"></a>Uriarte M, Condit R, Canham CD, Hubbell SP (2004) A spatially explicit model of sapling growth in a tropical forest: does the identity of neighbours matter? Journal of Ecology  92: 348–360.  <ul class="find" data-citedArticleID="990030" data-doi="10.1111/j.0022-0477.2004.00867.x"><li><a href="http://dx.doi.org/10.1111/j.0022-0477.2004.00867.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+spatially+explicit+model+of+sapling+growth+in+a+tropical+forest%3A+does+the+identity+of+neighbours+matter%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+spatially+explicit+model+of+sapling+growth+in+a+tropical+forest%3A+does+the+identity+of+neighbours+matter%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0000870-DiLucca1" id="pone.0000870-DiLucca1"></a>Di Lucca CM (1998)  TASS/SYLVER/TIPSY: systems for predicting the impact of silvicultural practices on yield, lumber value, economic return and other benefits. In: Bamsey CR, editor. Stand Density Management Conference: Using the Planning Tools. Edmonton: Clear Lake Ltd. pp. 7–16.  <ul class="find-nolinks"></ul></li><li><span class="label">49.
+              </span><a name="pone.0000870-Wyckoff1" id="pone.0000870-Wyckoff1"></a>Wyckoff PH, Clark JS (2005) Tree growth prediction using size and exposed crown area. Canadian Journal of Forest Research-Revue Canadienne De Recherche Forestiere  35: 13–20.  <ul class="find" data-citedArticleID="990034" data-doi="10.1139/x04-142"><li><a href="http://dx.doi.org/10.1139/x04-142" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Tree+growth+prediction+using+size+and+exposed+crown+area." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Tree+growth+prediction+using+size+and+exposed+crown+area.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">50.
+              </span><a name="pone.0000870-Caspersen1" id="pone.0000870-Caspersen1"></a>Caspersen JP (2004) Variation in stand mortality related to successional composition. Forest Ecology and Management  200: 540–554.  <ul class="find" data-citedArticleID="989954" data-doi="10.1016/j.foreco.2004.06.015"><li><a href="http://dx.doi.org/10.1016/j.foreco.2004.06.015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Variation+in+stand+mortality+related+to+successional+composition." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Variation+in+stand+mortality+related+to+successional+composition.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.XML" value="117181"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.PDF" value="402842"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g001.PNG_L" value="154668"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g001.PNG_M" value="60710"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g001.PNG_S" value="8324"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g001.TIF" value="238754"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g001.PNG_I" value="22266"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.e001.PNG" value="10066"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.e001.TIF" value="26012"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.e002.PNG" value="7301"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.e002.TIF" value="23228"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t001.PNG_L" value="99518"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t001.PNG_M" value="57647"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t001.PNG_S" value="8784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t001.TIF" value="441024"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t001.PNG_I" value="17079"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t002.PNG_L" value="142118"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t002.PNG_M" value="82244"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t002.PNG_S" value="9978"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t002.TIF" value="598348"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.t002.PNG_I" value="25314"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g002.PNG_L" value="218594"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g002.PNG_M" value="62071"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g002.PNG_S" value="7528"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g002.TIF" value="315190"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g002.PNG_I" value="21834"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g003.PNG_L" value="132663"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g003.PNG_M" value="66112"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g003.PNG_S" value="9177"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g003.TIF" value="196604"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g003.PNG_I" value="26521"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g004.PNG_L" value="156196"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g004.PNG_M" value="47986"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g004.PNG_S" value="7448"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g004.TIF" value="278526"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g004.PNG_I" value="17358"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g005.PNG_L" value="282357"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g005.PNG_M" value="48524"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g005.PNG_S" value="6188"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g005.TIF" value="469732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.g005.PNG_I" value="17527"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.s001.DOC" value="339456"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.s002.DOC" value="45056"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.s003.DOC" value="275456"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.s004.DOC" value="58368"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.s005.DOC" value="35840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000870.s006.DOC" value="461824"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000870&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000870" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000870&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000870&volume=&issue=&title=Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species&author_name=Drew%20W.%20Purves%2C%20Jeremy%20W.%20Lichstein%2C%20Stephen%20W.%20Pacala&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000870" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870&amp;t=Crown%20Plasticity%20and%20Competition%20for%20Canopy%20Space%3A%20A%20New%20Spatially%20Implicit%20Model%20Parameterized%20for%20250%20North%20American%20Tree%20Species" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870&title=Crown%20Plasticity%20and%20Competition%20for%20Canopy%20Space%3A%20A%20New%20Spatially%20Implicit%20Model%20Parameterized%20for%20250%20North%20American%20Tree%20Species&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870&amp;title=Crown%20Plasticity%20and%20Competition%20for%20Canopy%20Space%3A%20A%20New%20Spatially%20Implicit%20Model%20Parameterized%20for%20250%20North%20American%20Tree%20Species" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000870&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Crown Plasticity and Competition for Canopy Space: A New Spatially Implicit Model Parameterized for 250 North American Tree Species';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000870';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Crown%20Plasticity%20and%20Competition%20for%20Canopy%20Space%3A%20A%20New%20Spatially%20Implicit%20Model%20Parameterized%20for%20250%20North%20American%20Tree%20Species http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000870" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000870" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Death+rates%22" title="Search for articles in the subject area:'Death rates'"><div class="flagText">Death rates</div></a>
+              <div data-categoryid="51935" data-articleid="24578"
+                   data-categoryname="Death rates"
+                   class="flagImage" title="Flag 'Death rates' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Forest+ecology%22" title="Search for articles in the subject area:'Forest ecology'"><div class="flagText">Forest ecology</div></a>
+              <div data-categoryid="51997" data-articleid="24578"
+                   data-categoryname="Forest ecology"
+                   class="flagImage" title="Flag 'Forest ecology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Forests%22" title="Search for articles in the subject area:'Forests'"><div class="flagText">Forests</div></a>
+              <div data-categoryid="47599" data-articleid="24578"
+                   data-categoryname="Forests"
+                   class="flagImage" title="Flag 'Forests' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Invasive+species%22" title="Search for articles in the subject area:'Invasive species'"><div class="flagText">Invasive species</div></a>
+              <div data-categoryid="46115" data-articleid="24578"
+                   data-categoryname="Invasive species"
+                   class="flagImage" title="Flag 'Invasive species' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetic+analysis%22" title="Search for articles in the subject area:'Phylogenetic analysis'"><div class="flagText">Phylogenetic analysis</div></a>
+              <div data-categoryid="17851" data-articleid="24578"
+                   data-categoryname="Phylogenetic analysis"
+                   class="flagImage" title="Flag 'Phylogenetic analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Radii%22" title="Search for articles in the subject area:'Radii'"><div class="flagText">Radii</div></a>
+              <div data-categoryid="33457" data-articleid="24578"
+                   data-categoryname="Radii"
+                   class="flagImage" title="Flag 'Radii' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Remote+sensing%22" title="Search for articles in the subject area:'Remote sensing'"><div class="flagText">Remote sensing</div></a>
+              <div data-categoryid="9345" data-articleid="24578"
+                   data-categoryname="Remote sensing"
+                   class="flagImage" title="Flag 'Remote sensing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Trees%22" title="Search for articles in the subject area:'Trees'"><div class="flagText">Trees</div></a>
+              <div data-categoryid="42711" data-articleid="24578"
+                   data-categoryname="Trees"
+                   class="flagImage" title="Flag 'Trees' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=7492'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=97'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=4431&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

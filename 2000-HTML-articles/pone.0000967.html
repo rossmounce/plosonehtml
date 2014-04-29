@@ -1,0 +1,1242 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000967"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000967" />
+
+    <meta name="citation_title" content="SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins"/>
+    <meta itemprop="name" content="SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins"/>
+
+      <meta name="citation_author" content="Richard J. Edwards"/>
+            <meta name="citation_author_institution" content="University College Dublin Complex and Adaptive Systems Laboratory, University College Dublin Conway Institute of Biomolecular and Biomedical Sciences, University College Dublin, Dublin, Ireland"/>
+            <meta name="citation_author_institution" content="School of Biological Sciences, University of Southampton, Southampton, United Kingdom"/>
+      <meta name="citation_author" content="Norman E. Davey"/>
+            <meta name="citation_author_institution" content="University College Dublin Complex and Adaptive Systems Laboratory, University College Dublin Conway Institute of Biomolecular and Biomedical Sciences, University College Dublin, Dublin, Ireland"/>
+      <meta name="citation_author" content="Denis C. Shields"/>
+            <meta name="citation_author_institution" content="University College Dublin Complex and Adaptive Systems Laboratory, University College Dublin Conway Institute of Biomolecular and Biomedical Sciences, University College Dublin, Dublin, Ireland"/>
+
+    <meta name="citation_date" content="2007/10/3"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000967.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e967"/>
+    <meta name="citation_issue" content="10"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Peptides mediating interaction networks: new leads at last.; citation_author=V Neduva; citation_author=RB Russell; citation_journal_title=Curr Opin Biotechnol; citation_volume=17; citation_number=1; citation_pages=465-471; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=DOMINO: a database of domain-peptide interactions.; citation_author=A Ceol; citation_author=A Chatr-Aryamontri; citation_author=E Santonico; citation_author=R Sacco; citation_author=L Castagnoli; citation_journal_title=Nucleic Acids Res; citation_volume=29; citation_number=2; citation_pages=29; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=SH2 domain specificity determination using oriented phosphopeptide library.; citation_author=Z Songyang; citation_author=LC Cantley; citation_journal_title=Methods Enzymol; citation_volume=254; citation_number=3; citation_pages=523-535; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=ELM server: A new resource for investigating short functional sites in modular eukaryotic proteins.; citation_author=P Puntervoll; citation_author=R Linding; citation_author=C Gemund; citation_author=S Chabanis-Davidson; citation_author=M Mattingsdal; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=4; citation_pages=3625-3630; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Systematic discovery of new recognition peptides mediating protein interaction networks.; citation_author=V Neduva; citation_author=R Linding; citation_author=I Su-Angrand; citation_author=A Stark; citation_author=F de Masi; citation_journal_title=PLoS Biol; citation_volume=3; citation_number=5; citation_pages=e405; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Linear motifs: evolutionary interaction switches.; citation_author=V Neduva; citation_author=RB Russell; citation_journal_title=FEBS Lett; citation_volume=579; citation_number=6; citation_pages=3342-3345 Epub 2005 Apr 3318; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=DILIMOT: discovery of linear motifs in proteins.; citation_author=V Neduva; citation_author=RB Russell; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=7; citation_pages=W350-355; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=SLiMDisc: short, linear motif discovery, correcting for common evolutionary descent.; citation_author=NE Davey; citation_author=DC Shields; citation_author=RJ Edwards; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=8; citation_pages=3546-3554; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Combinatorial pattern discovery in biological sequences: The TEIRESIAS algorithm.; citation_author=I Rigoutsos; citation_author=A Floratos; citation_journal_title=Bioinformatics; citation_volume=14; citation_number=9; citation_pages=55-67; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Basic local alignment search tool.; citation_author=SF Altschul; citation_author=W Gish; citation_author=W Miller; citation_author=EW Myers; citation_author=DJ Lipman; citation_journal_title=J Mol Biol; citation_volume=215; citation_number=10; citation_pages=403-410; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=IUPred: web server for the prediction of intrinsically unstructured regions of proteins based on estimated energy content.; citation_author=Z Dosztanyi; citation_author=V Csizmok; citation_author=P Tompa; citation_author=I Simon; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=11; citation_pages=3433-3434; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Ensembl 2006.; citation_author=E Birney; citation_author=D Andrews; citation_author=M Caccamo; citation_author=Y Chen; citation_author=L Clarke; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=12; citation_pages=D556-561; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The Universal Protein Resource (UniProt).; citation_author=A Bairoch; citation_author=R Apweiler; citation_author=CH Wu; citation_author=WC Barker; citation_author=B Boeckmann; citation_journal_title=Nucleic Acids Res; citation_volume=33; citation_number=13; citation_pages=D154-159; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Minimotif Miner: a tool for investigating protein function.; citation_author=S Balla; citation_author=V Thapar; citation_author=S Verma; citation_author=T Luong; citation_author=T Faghri; citation_journal_title=Nat Methods; citation_volume=3; citation_number=14; citation_pages=175-177; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Human protein reference database–2006 update.; citation_author=GR Mishra; citation_author=M Suresh; citation_author=K Kumaran; citation_author=N Kannabiran; citation_author=S Suresh; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=15; citation_pages=D411-414; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Identification and characterization of peptides that interact with hepatitis B virus via the putative receptor binding site.; citation_author=Q Deng; citation_author=JW Zhai; citation_author=ML Michel; citation_author=J Zhang; citation_author=J Qin; citation_journal_title=J Virol; citation_volume=81; citation_number=16; citation_pages=4244-4254 Epub 2006 Dec 4227; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Search for hepatitis B virus cell receptors reveals binding sites for interleukin 6 on the virus envelope protein.; citation_author=AR Neurath; citation_author=N Strick; citation_author=P Sproul; citation_journal_title=J Exp Med; citation_volume=175; citation_number=17; citation_pages=461-469; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Cloning and expression of a novel hepatitis B virus-binding protein from HepG2 cells.; citation_author=S De Falco; citation_author=MG Ruvoletto; citation_author=A Verdoliva; citation_author=M Ruvo; citation_author=A Raucci; citation_journal_title=J Biol Chem; citation_volume=276; citation_number=18; citation_pages=36613-36623 Epub 32001 Jun 36611; citation_date=2001; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins"/>
+    <meta name="twitter:description" content="BackgroundShort linear motifs (SLiMs) in proteins are functional microdomains of fundamental importance in many biological systems. SLiMs typically consist of a 3 to 10 amino acid stretch of the primary protein sequence, of which as few as two sites may be important for activity, making identification of novel SLiMs extremely difficult. In particular, it can be very difficult to distinguish a randomly recurring &ldquo;motif&rdquo; from a truly over-represented one. Incorporating ambiguous amino acid positions and/or variable-length wildcard spacers between defined residues further complicates the matter.Methodology/Principal FindingsIn this paper we present two algorithms. SLiMBuild identifies convergently evolved, short motifs in a dataset of proteins. Motifs are built by combining dimers into longer patterns, retaining only those motifs occurring in a sufficient number of unrelated proteins. Motifs with fixed amino acid positions are identified and then combined to incorporate amino acid ambiguity and variable-length wildcard spacers. The algorithm is computationally efficient compared to alternatives, particularly when datasets include homologous proteins, and provides great flexibility in the nature of motifs returned. The SLiMChance algorithm estimates the probability of returned motifs arising by chance, correcting for the size and composition of the dataset, and assigns a significance value to each motif. These algorithms are implemented in a software package, SLiMFinder. SLiMFinder default settings identify known SLiMs with 100% specificity, and have a low false discovery rate on random test data.Conclusions/SignificanceThe efficiency of SLiMBuild and low false discovery rate of SLiMChance make SLiMFinder highly suited to high throughput motif discovery and individual high quality analyses alike. Examples of such analyses on real biological data, and how SLiMFinder results can help direct future discoveries, are provided. SLiMFinder is freely available for download under a GNU license from http://bioinformatics.ucd.ie/shields/software/slimfinder/."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000967.g004"/>
+
+  <meta property="og:title" content="SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=6296'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=1673'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1992&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000967">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000967" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000967&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Richard J. Edwards
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:r.edwards@soton.ac.uk">r.edwards@soton.ac.uk</a></p>
+
+                <p>Affiliations:
+                  University College Dublin Complex and Adaptive Systems Laboratory, University College Dublin Conway Institute of Biomolecular and Biomedical Sciences, University College Dublin, Dublin, Ireland, 
+                  School of Biological Sciences, University of Southampton, Southampton, United Kingdom
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Norman E. Davey, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  University College Dublin Complex and Adaptive Systems Laboratory, University College Dublin Conway Institute of Biomolecular and Biomedical Sciences, University College Dublin, Dublin, Ireland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Denis C. Shields
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  University College Dublin Complex and Adaptive Systems Laboratory, University College Dublin Conway Institute of Biomolecular and Biomedical Sciences, University College Dublin, Dublin, Ireland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: October 03, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000967</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000967-g001" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000967-g002" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000967-g003" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000967-t001" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000967-g004" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000967-t002" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000967-t003" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000967">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000967" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Short linear motifs (SLiMs) in proteins are functional microdomains of fundamental importance in many biological systems. SLiMs typically consist of a 3 to 10 amino acid stretch of the primary protein sequence, of which as few as two sites may be important for activity, making identification of novel SLiMs extremely difficult. In particular, it can be very difficult to distinguish a randomly recurring “motif” from a truly over-represented one. Incorporating ambiguous amino acid positions and/or variable-length wildcard spacers between defined residues further complicates the matter.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>In this paper we present two algorithms. SLiMBuild identifies convergently evolved, short motifs in a dataset of proteins. Motifs are built by combining dimers into longer patterns, retaining only those motifs occurring in a sufficient number of unrelated proteins. Motifs with fixed amino acid positions are identified and then combined to incorporate amino acid ambiguity and variable-length wildcard spacers. The algorithm is computationally efficient compared to alternatives, particularly when datasets include homologous proteins, and provides great flexibility in the nature of motifs returned. The SLiMChance algorithm estimates the probability of returned motifs arising by chance, correcting for the size and composition of the dataset, and assigns a significance value to each motif. These algorithms are implemented in a software package, SLiMFinder. SLiMFinder default settings identify known SLiMs with 100% specificity, and have a low false discovery rate on random test data.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>The efficiency of SLiMBuild and low false discovery rate of SLiMChance make SLiMFinder highly suited to high throughput motif discovery and individual high quality analyses alike. Examples of such analyses on real biological data, and how SLiMFinder results can help direct future discoveries, are provided. SLiMFinder is freely available for download under a GNU license from <a href="http://bioinformatics.ucd.ie/shields/software/slimfinder/">http://bioinformatics.ucd.ie/shields/sof​tware/slimfinder/</a>.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Edwards RJ, Davey NE, Shields DC (2007) SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins. PLoS ONE 2(10):
+          e967.
+            doi:10.1371/journal.pone.0000967</p><p><strong>Academic Editor: </strong>Mukund Thattai, Tata Institute of Fundamental Research, India</p><p><strong>Received:</strong> August 2, 2007; <strong>Accepted:</strong> September 12, 2007; <strong>Published:</strong> October 3, 2007</p><p><strong>Copyright:</strong> © 2007 Edwards et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was funded by Science Foundation Ireland. The funders had no role in the manuscript or the work presented therein.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Protein-protein interactions are of fundamental importance in biology. Although many well-characterised interactions are mediated by large domain-domain interfaces, it is estimated that 15%–40% of interactions may be mediated by a short, linear motif (SLiM) in one of the binding partners <a href="#pone.0000967-Neduva1">[1]</a>, <a href="#pone.0000967-Ceol1">[2]</a>. Because of their short and degenerate nature, new SLiMs are hard to identify and much of what we know about them stems from a few well-characterised examples (<em>e.g.</em> SH2-domain binding motifs <a href="#pone.0000967-Songyang1">[3]</a>). The Eukaryotic Linear Motif (ELM) database has annotated examples for over sixty known motifs <a href="#pone.0000967-Puntervoll1">[4]</a> and large-scale analyses of interaction datasets suggest that there are hundreds yet to be discovered <a href="#pone.0000967-Neduva2">[5]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>SLiM-mediated interactions are often transient, with quite low affinity for their binding partners, and it has been suggested that they exhibit considerable evolutionary plasticity <a href="#pone.0000967-Neduva3">[6]</a>. Indeed, existing methods for identifying new SLiMs <a href="#pone.0000967-Neduva4">[7]</a>, <a href="#pone.0000967-Davey1">[8]</a> explicitly invoke a model of convergent evolution to identify over-represented sequence patterns. These <a href="#s2">methods</a>, however, rely on an initial motif discovery phase using generic pattern-finding TEIRESIAS software <a href="#pone.0000967-Rigoutsos1">[9]</a>, which returns all shared patterns regardless of evolutionary relationships and with only crude length and complexity control. As a result, a lot of post-processing of returned motifs is required. Furthermore, TEIRESIAS offers only limited ambiguity capabilities and no options for returning variable length wildcard spacers, such as seen in the Cyclin recognition site ([RK].L.{0,1}[FYLIVMP]) <a href="#pone.0000967-Puntervoll1">[4]</a>. Here we present SLiMBuild, which is a novel algorithm explicitly designed to identify SLiMs that are shared by unrelated proteins (as identified by BLAST <a href="#pone.0000967-Altschul1">[10]</a>). SLiMBuild constructs motifs by combining dimers into longer patterns before efficiently incorporating amino acid degeneracy and/or variable length wildcards by adding variants that (a) occur in the desired number of unrelated proteins, and (b) increase the total number of unrelated proteins in which the ambiguous motif occurs.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Identifying recurring motifs is only part of the challenge. Because of their relative simplicity, short motifs are expected to occur in multiple unrelated proteins by chance. To account for this, SLiM discovery tools attempt to attach a score that indicates how unlikely a given motif is compared to other motifs in a dataset, either through an explicit heuristic <a href="#pone.0000967-Davey1">[8]</a> or by an empirical estimate <a href="#pone.0000967-Neduva4">[7]</a>. The SLiMChance algorithm we present here improves on these scores by making a crude but effective adjustment of motif probabilities by considering the total number of motifs in the motif-space considered by SLiMBuild. This allows the attachment of a significance value to returned motifs, which returns known motifs with a very high specificity from benchmark datasets of known eukaryotic motifs.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Both SLiMBuild and SLiMChance are implemented in a combined software package called SLiMFinder, which is freely available for academic use. SLiMFinder implements a number of input and output options that are described elsewhere (see <a href="http://bioinformatics.ucd.ie/shields/software/slimfinder/">http://bioinformatics.ucd.ie/shields/sof​tware/slimfinder/</a>).</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>The term “motif” can be used in a number of different contexts with different meanings. In this paper, we use motif to mean a short, linear motif (SLiM) in a protein. In biology, SLiMs are functional microdomains with three main properties:</p>
+
+
+<ol class="order">
+
+<li><em>Short</em>–generally less than 10aa long with five or less defined residues.</li>
+
+<li><em>Linear</em>–comprised of adjacent amino acids in a protein's primary sequence. While three-dimensional conformation may be important for function, it is not necessary for definition.</li>
+
+<li><em>Motif</em>–a defined sequence pattern, which is necessary for function, recurs in the relevant proteins.</li>
+
+</ol><a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>For simplicity, we use “SLiM” in this paper to describe a true functional motif with these properties, and “motif” to describe SLiM-like sequence patterns that may be functional or may simply be chance occurrences. SLiMs comprise of a number of defined amino acid positions, often separated by a number of wildcards, which may be any amino acid (<a href="#pone.0000967.s001">Figure S1</a>). Defined positions may be fixed, in which case only one species of amino acid is permitted at that position, or ambiguous, in which case multiple different amino acids may occupy that site and still result in a functional SLiM.</p>
+
+<h4>Overview of SLiMFinder algorithms</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>SLiMFinder is explicitly designed to look for shared motifs in regions of interest of unrelated proteins. To this end, evolutionary relationships must first be established using BLAST, before the main SLiMBuild Algorithm identifies shared motifs between unrelated proteins, masking out unwanted residues as required (<a href="#pone-0000967-g001">Figure 1</a>). The SLiMChance algorithm then assesses the motifs for statistically unlikely over-representation and significant motifs (putative SLiMs) are output (<a href="#pone-0000967-g001">Figure 1</a>). SLiMFinder recognises a number of input formats, although UniProt or Fasta format are recommended. Batch running of multiple datasets is also fully supported.</p>
+<div class="figure" id="pone-0000967-g001"><div class="img"><a name="pone-0000967-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Overview of SLiMFinder.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>An input dataset is first clustered into unrelated protein clusters (UPC) using a treatment of BLAST results to identify evolutionary relationships. The dataset is also masked according to user choices, masking out predicted ordered regions, selected UniProt features, low complexity regions and/or N-terminal methionines. This (masked) dataset is then processed by the SLiMBuild algorithm to identify motifs that are shared by unrelated proteins. A TEIRESIAS-style output of all motifs can be produced at this point. Amino acid frequencies are calculated for each cluster of unrelated proteins, either before or after masking, and may be retained as cluster-specific frequencies or averaged over all clusters. Alternatively, amino acid frequencies may be given from an external source. These frequencies are combined with data from SLiMBuild on the motif composition of the dataset and processed by the SLiMChance algorithm, which identifies significantly over-represented motifs. These motifs and additional dataset information are then output into results files.</p>
+<span>doi:10.1371/journal.pone.0000967.g001</span></div>
+
+<h4>Establishment of Evolutionary Relationships</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>SLiMFinder finds motifs that are shared by different “Unrelated Protein Clusters” (UPCs). Each UPC is a group of proteins that are not related to any proteins in the dataset outside of their own UPC. BLAST <a href="#pone.0000967-Altschul1">[10]</a> is first used to identify which proteins are related to which other proteins. Each protein is grouped with all its BLAST hits and then iteratively grouped with <em>their</em> BLAST hits until no more sequences are added to the UPC. Each UPC therefore has the following characteristics:</p>
+
+
+<ol class="order">
+
+<li>Every protein in a UPC has a BLAST-detectable relationship with at least one other member of the UPC.</li>
+
+<li>Every protein in a UPC can be linked to every other protein in the UPC via BLAST-detectable relationships, though sometimes this must go through one or more intermediate proteins.</li>
+
+<li>None of the proteins within a UPC has a BLAST-detectable relationship with any of the proteins in another UPC.</li>
+
+</ol><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>By default, a BLAST e-value of 10<sup>−4</sup> is used and the complexity filter is on. These parameters may be changed by the user.</p>
+
+
+<h4>Input sequence masking</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>SLiMFinder offers a number of input masking options, which can be useful for restricting analyses to particular parts of the proteins in the dataset. These include IUPRED <a href="#pone.0000967-Dosztanyi1">[11]</a> disorder prediction, UniProt features and low complexity regions. SLiMFinder masking is performed after UPC definition and therefore masking will not affect the UP relationships between sequences. Full details of the masking options are available at the SLiMFinder website.</p>
+
+
+<h4>SLiMBuild Construction of Motifs</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>SLiMBuild uses five basic sets of parameters for generating motifs from the dataset:</p>
+
+
+<ol class="order">
+
+<li><em>w,</em> the maximum number of wildcard positions allowed between any adjacent pair of defined positions.</li>
+
+<li>The maximum number of defined positions. (Sometimes referred to as the “length” of the motif, although the “true length” of a SLiM would include both defined and wildcard positions.)</li>
+
+<li><em>s</em>, the minimum support for the motif, i.e. the number of unrelated proteins that motif occurs in.</li>
+
+<li>Ambiguity options, including an equivalency file of allowed ambiguities.</li>
+
+<li>An optional minimum variant support, <em>v</em>, used in extending ambiguity.</li>
+
+</ol><a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>Motifs are constructed by first identifying all possible “<em>i-x-j</em> dimers”, which consist of two amino acids <em>i</em> and <em>j</em> separated by <em>x</em> wildcards, up to the maximum allowed value, <em>w</em> (<a href="#pone-0000967-g002">Figure 2A</a>). Motifs are then extended by joining appropriate dimers together (<a href="#pone-0000967-g002">Figure 2B</a>). Finally, SLiMBuild incorporates ambiguity into the motifs (<a href="#pone-0000967-g003">Figure 3</a>).</p>
+<div class="figure" id="pone-0000967-g002"><div class="img"><a name="pone-0000967-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>SLiMBuild construction of motifs.</span></strong></p><a id="article1.body1.sec2.sec4.fig1.caption1.p1" name="article1.body1.sec2.sec4.fig1.caption1.p1"></a><p>A. Dimer construction. For each position in a sequence, each possible wildcard length x is used to find possible “i-x-j” dimers. Dimers containing masked (“X”) residues are ignored (greyed dimers). Note that the n-terminal “̂” marker is treated as any other amino acid. B. Motif extension. Longer SLiMs are constructed during the SLiMBuild process by matching the occurrences of shorter SLiMs with the relevant i-x-j dimers. At each stage, only SLiMs with sufficient unrelated protein support are retained, making the algorithm very efficient.</p>
+<span>doi:10.1371/journal.pone.0000967.g002</span></div><div class="figure" id="pone-0000967-g003"><div class="img"><a name="pone-0000967-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>SLiMBuild Ambiguity.</span></strong></p><a id="article1.body1.sec2.sec4.fig2.caption1.p1" name="article1.body1.sec2.sec4.fig2.caption1.p1"></a><p>A. Wildcard ambiguity. Ambiguity is added in a multi-stage process. First, the motif is broken up into its component parts, consisting of alternate defined and wildcard positions. These are then replaced by the appropriate equivalency group, which in the case of wildcards is the full range of wildcard lengths from 0 up to the maximum length allowed. These equivalencies are then expanded to all possible variants. Any variants that do not themselves meet the minimum support requirement used previously for motif extension are not considered (shown in grey). Variants are only combined when the UPC support for the ambiguous motif is greater than for the individual variants. Variants that would not increase the UPC support of the original motif are therefore also removed (shown in red). The remaining variants are ranked (see text) and the best variant combined with the original motif (blue). The remaining variants are re-assessed for increasing UPC support and any failing to do so are again removed. If any remain, the ranking and combining cycle repeats. If not, the finished degenerate motif is returned. B. Amino acid ambiguities. These are handled in the same way as wildcard ambiguities, except that this time equivalencies are defined by the given equivalency list. If a given amino acid belongs to multiple equivalency groups, such as serine ([AGS] and [ST]) then all possible combinations of these equivalency groups (four in this case) are considered separately, thus multiple ambiguous SLiMs can potentially be produced. (Expansion of these combinations has been truncated in the figure.)</p>
+<span>doi:10.1371/journal.pone.0000967.g003</span></div>
+
+<h4>SLiMBuild dimer construction</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Dimers are constructed simply by taking each position <em>i</em> of each protein in turn to define the first amino acid, <em>a<sub>i</sub></em>. Each wildcard length <em>x</em> from 0 to <em>W</em>, where <em>W</em> is the maximum wildcard length is then taken in turn and used to define the second amino acid in the dimer, <em>a<sub>j</sub></em> where <em>j</em> = <em>i</em>+<em>x</em>. If <em>a<sub>i</sub></em> or <em>a<sub>j</sub></em> are masked (an ‘X’) then that dimer is rejected, else the dimer is added to the stored list, along with information on the protein and position <em>i</em> of its occurrence (<a href="#pone-0000967-g002">Figure 2A</a>). Symbols representing N- and C-termini (̂ and $) are added to each sequence prior to dimer construction and thereon considered as additional amino acids. After all dimers have been found in all sequences, any with a support below the minimum support threshold are removed. (For a motif to exceed a given support, each of its component dimers must also exceed that support.)</p>
+
+
+<h4>SLiMBuild motif extension</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>Motifs are extended by concatenating i-x-j dimers (<a href="#pone-0000967-g002">Figure 2B</a>). For each dimer <em>a<sub>i</sub>x<sub>1</sub>a<sub>j</sub></em> all <em>a<sub>z</sub>x<sub>2</sub>a<sub>k</sub></em> dimers are examined, where <em>a<sub>z</sub></em> = <em>a<sub>j</sub></em> (<em>k</em> = <em>z</em>+<em>x<sub>2</sub></em>, <em>a<sub>z</sub></em> and <em>a<sub>k</sub></em> are amino acids at positions <em>z</em> and <em>k</em>). Where the two dimers have occurrences in the same protein and <em>z</em> = <em>j</em>, the two dimers are compiled to make a single <em>a<sub>i</sub>x<sub>1</sub>a<sub>j</sub>x<sub>2</sub>a<sub>k</sub></em> trimer. If this trimer occurs in <em>s</em> or more unrelated sequences, it is retained and extended in the same way to make 4mers. This continues until the maximum motif length is reached (length 5 by default) or until there are no more motifs with the desired support to extend.</p>
+
+
+<h4>SLiMBuild ambiguity</h4>
+<a id="article1.body1.sec2.sec7.p1" name="article1.body1.sec2.sec7.p1"></a><p>SLiMBuild considers two types of ambiguity: amino acid degeneracy at a given position, and flexible length wildcard “gaps”. A similar logic is applied in considering both these forms of ambiguity by carefully combining appropriate motifs generated during SLiMBuild extension. Each fixed motif is considered in turn as a seed for adding ambiguity in terms of degenerate non-wildcard positions and/or flexible wildcard lengths (<a href="#pone-0000967-g003">Figure 3</a>). Ambiguity is considered in three phases: wildcards only, amino acids only and combined wildcard and amino acid degeneracy. (Combined ambiguity can be computationally intensive and is switched off by default.)</p>
+<a id="article1.body1.sec2.sec7.p2" name="article1.body1.sec2.sec7.p2"></a><p>In each case, the motif being considered is broken down into individual elements, consisting of alternate amino acids and/or wildcard lengths. Each element is then replaced by its “equivalencies”. For wildcards, this consists of single wildcard equivalency “01..<em>W</em>”, where <em>W</em> is the maximum wildcard length allowed; <em>e.g.</em> for the default maximum wildcard length of 2, the wildcard equivalencies are 0, 1 and 2, and a variable length gap of 1 or 2 is represented by the equivalency <a href="#pone.0000967-Birney1">[12]</a>. (<a href="#pone-0000967-g003">Figure 3A</a>). For amino acid positions, SLiMFinder makes use of an “Equivalency list” for ambiguity in a similar way to TEIRESIAS, although the actual application of this file is quite different. This equivalency list contains a number of amino acid groups that may be substituted in degenerate positions; <em>e.g.</em> KR would allow for [KR] degeneracy, while FYW, would facilitate [FY], [YW], [FW] and [FYW]. A single amino acid can have multiple equivalency groups, which are analysed separately. <em>E.g.</em> AGS,ST would permit serine [AS], [GS], [AGS] and [ST], but <span class="underline">not</span> [AGST]. Where multiple equivalency groups exist for one or more amino acids in a SLiM, all possible combinations of equivalency group are considered (<a href="#pone-0000967-g003">Figure 3B</a>).</p>
+<a id="article1.body1.sec2.sec7.p3" name="article1.body1.sec2.sec7.p3"></a><p>The idea of ambiguity is to try to increase the coverage within a dataset for a given motif. This is achieved by adding ambiguity that increases support (no. of unrelated proteins) for the motif. Thus, returned motifs need to have been initially seeded by a non-ambiguous motif (with lower support) before it is extended to consider ambiguity. For each ambiguity combination, all possible variants (excluding the original motif) are then considered. <em>E.g.</em> [KR]-0-[ST]-1-P yields variant motifs K0S1P, R0S1P, K0T1P and R0T1P, the second of which is ignored as it is the original motif. Any variants that do not meet the minimum support requirement are also rejected. Remaining variants are then ranked according to the following criteria:</p>
+
+
+<ol class="order">
+
+<li>Number of “new” UP clusters. (The number of UPCs in which the variant is found but the original motif is not.) If the variant provides no new UPCs then it is rejected.</li>
+
+<li>Total (UPC) support for the variant, if tied for 1.</li>
+
+<li>Total number of occurrences for the variant (in different sequences, regardless of homology relationships), if tied for 1&amp;2.</li>
+
+<li>If tied for 1–3, the variant that is most unlikely, given the amino acid frequencies of the whole dataset, is ranked higher.</li>
+
+</ol><a id="article1.body1.sec2.sec7.p4" name="article1.body1.sec2.sec7.p4"></a><p>The top-ranked variant is retained and its UPCs added to those of the original motif. The ranking is then repeated using this new UP support, <em>i.e.</em> further variants are not added if their “extra” support has already been provided by previous variants. This continues until all variants have been retained, or rejected (<a href="#pone-0000967-g003">Figure 3</a>). Finally, retained variants are combined to make an ambiguous motif. <em>E.g.</em> if R0T1P had been retained then it would be combined with the original R0S1P SLiM to make R0[ST]1P (R[ST].P). In the case of flexible wildcards, the minimum and maximum length variants retained are used. <em>i.e.</em> R0S1P+R2S1P = R[02]S1P (R.{0,2}S.P). Note that because different equivalency combinations are examined separately, one SLiM may spawn several ambiguous motifs (<em>e.g.</em> R[ST].P and R[AGS].P) but only one ambiguity will be produced per equivalency group (<em>i.e.</em> R[AS].P and R[AGS].P will <span class="underline">not</span> both be produced using a single AGS equivalency group). Note also that each variant must itself meet the minimum (UPC) support criteria, so only recurring variants are combined.</p>
+
+
+<h4>SLiMChance motif probability estimation</h4>
+<a id="article1.body1.sec2.sec8.p1" name="article1.body1.sec2.sec8.p1"></a><p>The SLiMChance algorithm attaches a significance value to motifs returned by SLiMBuild by first calculating the probability of seeing that specific motif in at least as many unrelated proteins as observed, and then adjusting this probability to take into consideration the total motif space searched by SLiMBuild.</p>
+
+
+<h4>SLiMChance probabilities per UPC</h4>
+<a id="article1.body1.sec2.sec9.p1" name="article1.body1.sec2.sec9.p1"></a><p>SLiMChance first calculates the probability of seeing each motif in each UPC, given its amino acid composition and i-x-j dimer frequencies. This probability is calculated using the binomial distribution and the expectation of the motif occurring at each site in the UPC, which is a simple calculation based on the frequency of each amino acid (<em>f<sub>a</sub></em>), and the total number of positions that a motif can occur (<em>N<sub>m</sub></em>). By default, amino acid frequencies are calculated from the dataset, individually for each UPC, before any masking takes place. Additional options allow amino acid frequencies to be adjusted for masking, averaged over all UPCs, or read from a file.</p>
+<a id="article1.body1.sec2.sec9.p2" name="article1.body1.sec2.sec9.p2"></a><p>For each defined position in a motif with d alternative (degenerate) amino acids, the probability of occurrence at any residue in the dataset (<em>p<sub>i</sub></em>) is the sum of the frequencies for the possible amino acids at that position:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e001&amp;representation=PNG" class="inline-graphic"></span><br>The probability <em>p<sub>m</sub></em> of the whole motif starting at any residue is therefore the product of <em>p<sub>i</sub></em> over all <em>L</em> positions in a motif: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e002&amp;representation=PNG" class="inline-graphic"></span><br>(Wildcard positions do not contribute to this value, as the probability of matching a wildcard is 1.0.). This defines the probability for each “Bernoulli trial” in the binomial distribution. What remains is to define appropriately the number of trials for the motif in the UPC. There are two features of the UPC that complicate estimation (for the probability calculation) of the number of positions that a motif might arise at: firstly, some but not all regions of the UPC proteins are related by evolution, and secondly, the particular pattern of masking may alter the number of positions available for motifs with a particular distribution of non-wildcard positions.</p>
+<a id="article1.body1.sec2.sec9.p3" name="article1.body1.sec2.sec9.p3"></a><p>Because the proteins within a UPC are evolutionarily related, they do not contribute to the motif space searched by SLiMFinder in the same way as unrelated proteins, for which the motifs found would be independent. However, unless all the sequences are 100% identical, there are still more independent positions at which a given motif could occur than in any of the individual sequences within the UPC. The UPC must therefore be rescaled to represent its true contribution to the dataset. This is performed using the “Minimum Spanning Tree” (MST) correction used by SLiMDisc <a href="#pone.0000967-Davey1">[8]</a> to correct for evolutionary relationships. This MST value varies from 1 to <em>N</em>, where <em>N</em> is the number of proteins in the UPC. If all proteins are 100% identical the MST value is equal to 1 (and the UPC is exactly equivalent to a single sequence). As the proteins become more dissimilar, MST tends towards <em>N</em> (see SLiMDisc <a href="#pone.0000967-Davey1">[8]</a> for more details). This is converted into an “MST correction”, <em>M</em>, for the UPC by dividing the MST value by <em>N</em>. The total size of the UPC is therefore adjusted by multiplying <em>N<sub>aa</sub></em> (the total number of unmasked residues in the UPC) by <em>M</em>. (This is equivalent to the mean number of amino acids per sequence in the UPC, multiplied by the MST-corrected size of the UPC.) SLiMFinder uses the largest GABLAM <a href="#pone.0000967-Davey1">[8]</a> ordered percentage identity between each pair of sequences to generate the distance matrix for MST calculations.</p>
+<a id="article1.body1.sec2.sec9.p4" name="article1.body1.sec2.sec9.p4"></a><p>The distribution of masking influences the potential number of sites at which a motif can occur. For a dimer motif with a given wildcard length x, SLiMChance directly observes the frequency of positions in the dataset that could accommodate a dimer motif of that wildcard length. Then, for longer motifs, it estimates the frequency of potential sites as the product of the fraction of dimer sites for all the dimers that constitute the motif. This has the numerical advantage that the frequencies of dimer types are previously available from the SLiMBuild computation. The number of trials is then estimated as the possible number of positions at which the motif could start (<em>N<sub>m</sub></em>). <em>N<sub>m</sub></em> is calculated empirically from the dataset. During dimer generation, the number of i-x-j dimers (<a href="#pone-0000967-g002">Figure 2</a>), <em>N<sub>ixj</sub></em>, is counted for each wildcard length <em>x</em> (where neither <em>i</em> nor <em>j</em> are masked). This is converted into the fraction of unmasked residues that start with a dimer of wildcard-length <em>x</em>, <em>D<sub>x</sub></em>, calculated as a proportion of the unmasked positions (<em>N<sub>aa</sub></em>) in the UPC. <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e003&amp;representation=PNG" class="inline-graphic"></span><br><em>N<sub>m</sub></em>, the number of positions at which a motif may potentially occur is then calculated from the product of the motif's component dimer frequencies and the MST-adjusted number of unmasked residues in the UPC: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e004&amp;representation=PNG" class="inline-graphic"></span><br>where <em>M</em> is the MST correction for that UPC, <em>L</em> is the length (no. of positions) of the motif and <em>D<sub>xw</sub></em> is the dimer frequency for that wildcard length <em>x</em> at wildcard position <em>w</em>. (For flexible-length wildcards, this is the mean dimer frequency of the length variants at <em>w</em>.)</p>
+<a id="article1.body1.sec2.sec9.p5" name="article1.body1.sec2.sec9.p5"></a><p>If there are wildcard length variants, each length variant has a chance of occurring and so this effectively increases the number of possible motif positions via a simple multiplication, where <em>x<sub>j</sub></em> is the number of wildcard variants at wildcard position <em>j</em>: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e005&amp;representation=PNG" class="inline-graphic"></span><br>It could be argued that this multiplier should apply to the probability of the motif at each position, rather than the number of motif positions. (In reality, each motif “position” is a starting residue. Obviously, there cannot be more starting residues than the length of the sequence, whereas this multiplication implies that there can be.) The reason for applying the correction to <em>N<sub>m</sub></em>, however, is that this value has no upper bound for the binomial calculation. The probability <em>p<sub>m</sub></em>, in contrast, must be ≤1.0, whereas the multiplier for numerous variable-length wildcards could cause it to exceed 1.0.</p>
+<a id="article1.body1.sec2.sec9.p6" name="article1.body1.sec2.sec9.p6"></a><p>The probability of 1+ occurrences of the motif in the UPC is calculated using the binomial: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e006&amp;representation=PNG" class="inline-graphic"></span><br></p>
+
+
+<h4>SLiMChance probabilities per dataset</h4>
+<a id="article1.body1.sec2.sec10.p1" name="article1.body1.sec2.sec10.p1"></a><p>The individual <em>p<sub>1+</sub></em> values are then used to calculate the motif probability for the entire dataset, <em>p</em>, where <em>N<sub>U</sub></em> is the number of UPCs in the dataset and <em>K<sub>U</sub></em> is the number of UPC containing the motif. Again, this is calculated using the binomial, where <em>p<sub>u</sub></em> is the mean <em>p<sub>1+</sub></em> value for each UPC: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e007&amp;representation=PNG" class="inline-graphic"></span><br><a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e008&amp;representation=PNG" class="inline-graphic"></span><br></p>
+
+
+<h4>SLiMChance significance values</h4>
+<a id="article1.body1.sec2.sec11.p1" name="article1.body1.sec2.sec11.p1"></a><p>The probability calculated above is the estimated probability of seeing a given motif with its observed support (or greater) given the dataset. However, the calculations implicitly assume that the motif was defined before anything was known about the dataset. In reality, SLiMFinder is looking for all possible motifs and only actually returning those at the “top end of the distribution”, <em>i.e.</em> the over-represented motifs. In reality, each motif in the “motif space” searched has a chance of being stochastically over-represented, so it is important to adjust for this and establish a significance value for each motif.</p>
+<a id="article1.body1.sec2.sec11.p2" name="article1.body1.sec2.sec11.p2"></a><p>The <em>a priori</em> probability of each motif in motif space being over-represented with a probability <em>p</em> is itself (perhaps obviously) <em>p</em>. Because SLiMBuild generates motifs using a maximum wildcard spacer length, <em>X</em>, it is possible to calculate exactly the size of the motif space, <em>B<sub>L</sub></em>, for each length of motif <em>L</em>: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e009&amp;representation=PNG" class="inline-graphic"></span><br>The significance of a motif (<em>Sig</em>) with occurrence probability <em>p</em> can therefore be calculated using the binomial distribution as the probability of getting one or more successes given <em>B<sub>L</sub></em> trials of probability <em>p</em>. <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.e010&amp;representation=PNG" class="inline-graphic"></span><br><em>Sig</em> ranges from zero to one and can be thought of as a true <em>p</em>-value. Because different lengths of motifs are not independent of each other, <em>Sig</em> is calculated independently for each number of defined positions. The motif space calculation only calculates the number of fixed-position motifs in the search space. Allowing ambiguities obviously increases the size of the search space and very relaxed ambiguous searches may need to use a more stringent <em>p</em>-value accordingly.</p>
+
+
+<h4>SLiMFinder Output</h4>
+<a id="article1.body1.sec2.sec12.p1" name="article1.body1.sec2.sec12.p1"></a><p>The main output for SLiMFinder is a delimited text file containing the list of motifs that meet the user-specified threshold for corrected significance (<em>Sig</em>). These are ranked according to their significance. Each line also contains a number of dataset-specific fields, allowing multiple datasets to be run and analysed together. Additional outputs that assist the visualisation and interpretation of interesting results are explained in detail in the SLiMFinder manual, available at the website. Other options include a TEIRESIAS-style output of all motifs generated by SLiMBuild, allowing SLiMFinder to be used as a direct replacement for TEIRESIAS for other SLiM discovery tools.</p>
+
+
+<h4>Systems</h4>
+<a id="article1.body1.sec2.sec13.p1" name="article1.body1.sec2.sec13.p1"></a><p>All SLiMFinder runs were performed on an Intel(R) Xeon(TM) dual 3.20GHz processor with 3Gb RAM. SLiMFinder and its constituent algorithms were run using Python 2.4.3.</p>
+
+
+<h4>Disorder prediction</h4>
+<a id="article1.body1.sec2.sec14.p1" name="article1.body1.sec2.sec14.p1"></a><p>For analyses presented in this paper, IUPRED <a href="#pone.0000967-Dosztanyi1">[11]</a> was used to predict intrinsically unordered regions, using the “short” setting and a threshold of 0.2.</p>
+
+
+<h4>Human genomic protein dataset</h4>
+<a id="article1.body1.sec2.sec15.p1" name="article1.body1.sec2.sec15.p1"></a><p>The EnsEMBL <a href="#pone.0000967-Birney1">[12]</a> human genome V.41 known and novel protein sequences were downloaded and used to generate a comprehensive, non-redundant sequence dataset containing one protein per gene. If a gene mapped to a SwissProt <a href="#pone.0000967-Bairoch1">[13]</a> sequence, and one of the peptides mapped to that gene had an identical sequence to the SwissProt entry then that peptide was used; in all other cases, the longest peptide was used. Sequences themselves were taken directly from the EnsEMBL. In total, this dataset consisted of 23,224 protein sequences, including 14,694 that mapped onto SwissProt entries.</p>
+
+
+<h4>Random test data</h4>
+<a id="article1.body1.sec2.sec16.p1" name="article1.body1.sec2.sec16.p1"></a><p>To test SLiMFinder function on a range of random data with different levels of realism, three types of random data were generated: (1) Randomly generated sequences using uniform amino acid frequencies; (2) Randomly generated sequences using amino acid frequencies from the Human genomic protein dataset; (3) Randomly selected proteins from the Human genomic protein dataset. The mean length of a protein sequence in the human protein dataset was 487.4 amino acids. Random sequences were therefore generated from a random length distribution ranging from 200 to 800 amino acids, with a mean length of 500 amino acids. For each type of random data, ten replicates of each of twenty-five datasets sizes were generated: 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 21, 24, 27, 30, 35, 40, 45, 50, 60, 70, 80, 90 and 100 proteins. This produced 250 datasets for each type of random data.</p>
+
+
+<h4>ELM benchmarking datasets</h4>
+<a id="article1.body1.sec2.sec17.p1" name="article1.body1.sec2.sec17.p1"></a><p>The best resource for biologically validated SLiMs is currently the Eukaryotic Linear Motif (ELM) database <a href="#pone.0000967-Puntervoll1">[4]</a>, which contains information for over a hundred known motifs, including example occurrences for many. (Other resources, such a Minimotif Miner <a href="#pone.0000967-Balla1">[14]</a>, contain more motifs but have considerably less annotation.) ELM data has been used as a benchmark for previous SLiM discovery software <a href="#pone.0000967-Neduva2">[5]</a>, <a href="#pone.0000967-Davey1">[8]</a>. The benchmark dataset consisted of seventeen ELMs for which there were at least three annotated occurrences in <em>unrelated</em> proteins (<a href="#pone-0000967-t001">Table 1</a>). Each ELM dataset consisted of all the proteins with annotated occurrences from the ELM website (Jan 2007). At first glance, this seems like an “easy” test set, as every protein in the dataset contains the known motif. In reality, however, the motifs are often degenerate and different proteins will contain different variants, and so the re-discovery of the known motifs is far from a foregone conclusion <a href="#pone.0000967-Neduva2">[5]</a>, <a href="#pone.0000967-Davey1">[8]</a>. As ELM represents the most comprehensive resource of validated SLiM occurrences available, it is still the best benchmarking dataset for SLiM discovery validation.</p>
+<div class="figure" id="pone-0000967-t001"><div class="img"><a name="pone-0000967-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>ELM benchmarking results sorted by significance of returned motifs.</span></strong></p><span>doi:10.1371/journal.pone.0000967.t001</span></div>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>SLiMFinder performance on random data</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>Before considering the performance of SLiMFinder on datasets of real biological interest, it is useful to assess its performance on random datasets. We looked at the most significant motif returned by each of 750 random datasets. The false positive rates for SLiMFinder are very similar, at any given significance threshold, for each type of random data (<a href="#pone-0000967-g004">Figure 4A</a>). Moreover, random data matches the calculated expectation quite closely, with approximately 10% of datasets yielding a significance of 0.1 or lower and 1% of datasets yielding a significance of 0.01 or lower. Although this relationship begins to deviate as the p-value increases, this is not of concern as these deviations occur within the non-significant portion of the data and will therefore not impact on results. Differences between different types of random data are minimal. Underlying complexities in amino acid distributions for real protein sequences, therefore, do not seem to strongly violate the underlying assumptions of the model.</p>
+<div class="figure" id="pone-0000967-g004"><div class="img"><a name="pone-0000967-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>SLiMFinder results on random datasets.</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>A. Cumulative frequency of the most significant motifs returned by SLiMFinder for random datasets. Very little difference is observed between datasets produced using human amino acid frequencies and datasets of actual human protein sequences, implying that there is little or no bias introduced by regional compositional biases within real protein sequences. B. Box plots of most significant results returned by all random datasets for different dataset sizes (UPC). Although there is a slight trend for larger datasets to return smaller p-values, the difference is primarily restricted to the non-significant motifs. Variation between datasets of the same size is considerably greater than variation between different sized datasets.</p>
+<span>doi:10.1371/journal.pone.0000967.g004</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>It is also of interest to ask how the program scales with dataset size in terms of the results returned. SLiMDisc <a href="#pone.0000967-Davey1">[8]</a>, for example, scales very poorly with dataset size: the number of motifs returned–and the scores of returned motifs–increases substantially. Although SLiMFinder shows some bias, the significance of the most significant motif returned from each dataset is not strongly dependent on dataset size (<a href="#pone-0000967-g004">Figure 4B</a>).</p>
+
+
+<h4>SLiMFinder performance on ELM benchmark data</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>Seven of the seventeen ELM datasets yield significant motifs (<em>p</em>&lt;0.05) that are variants of the true ELM (<a href="#pone-0000967-t001">Table 1</a>). This is not simply a reflection of how over-represented the true ELM is in the dataset, however. For the top three results, the true ELM is indeed “significant” but the remaining four ELMs that are found are not, as defined by ELM, particularly over-represented (data not shown). Instead, variants of the motif are discovered that <em>are</em> over-represented. These do not match the ELM exactly but the same is also true for the existing alternative SLiM discovery <a href="#s2">methods</a>, SLiMDisc <a href="#pone.0000967-Davey1">[8]</a> and DILIMOT <a href="#pone.0000967-Neduva4">[7]</a>. The SLiMChance score can therefore be seen as a complementary method to those previously implemented; it successfully returns motifs that the earlier <a href="#s2">methods</a> did not, while failing to successfully identify several motifs as significant that SLiMDisc and/or DILIMOT returned. Indeed, even when SLiMFinder succeeds for the same datasets as DILIMOT and/or SLiMDisc, it generally returns a different motif variant: only two of the SLiMDisc/DILIMOT motifs would be classed as “significant” by SLiMChance (data not shown). SLiMFinder motifs tend to be longer and include more defined positions of the known ELM than motifs returned by either SLiMDisc or DILIMOT (<a href="#pone-0000967-t001">Table 1</a>). None of the seventeen datasets returned significant motifs that were <em>not</em> variants of the true ELM, supporting the evidence from random datasets that the SLiMChance significance exhibits high specificity.</p>
+<a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>So why did SLiMFinder fail for these additional ten motifs? Several of the datasets are quite small and yet the ELM itself is quite degenerate. The signal present in the dataset might therefore simply be too weak to detect regardless of the method. For four ELMs (LIG_14-3-3_3, LIG_NRBOX, MOD_N-GLC_2 and TRG_LysEnd_APsAcLL_1), none of the SLiM discovery <a href="#s2">methods</a> returned a variant of the ELM as the top ranked result. For three others (LIG_14-3-3_1, LIG_HP1_1 and LIG_RGD) SLiMDisc returned the motif as the top rank but DILIMOT did not. Together, these account for 70% of failures. Importantly, pre-processing of the dataset can also impact on results. While it has been observed that SLiMs <em>tend</em> to occur in disordered regions <a href="#pone.0000967-Puntervoll1">[4]</a>, <a href="#pone.0000967-Neduva3">[6]</a>, masking UniProt “Domain” features and predicted disordered regions may mask out some true motifs. This certainly seems to be the case for LIG_RB. When disorder masking is switched off, LIG_RB returns the true ELM variant L.C.E as the most significant result, with a significance of 1.6×10<sup>−10</sup> (data not shown). This highlights the need for considering carefully how to mask sequences (or not) prior to searching. In some situations, it will make sense to carry out searches both with and without masking. The remaining motifs are probably missed because their amino acid composition makes them highly likely to occur by chance (<em>e.g</em>. LIG_Clathr_ClatBox_1 is leucine-rich (the most common amino acid) and has a high degree of degeneracy) or the dataset is too small to achieve a likelihood value that survives the correction for motif space (<em>e.g.</em> LIG_14-3-3_1 is a “strong” motif but, with only three UPC in the dataset, there is simply not enough statistical power for it to be detected). In contrast, SLiMDisc is able to return these motifs as it does not depend on over-representation versus random expectation but instead relies solely on over-representation versus other motifs in the dataset. SLiMFinder therefore complements the capabilities of SLiMDisc, which remains useful for smaller datasets.</p>
+
+
+<h4>Improved SLiMBuild amino acid ambiguity</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>One of the major improvements of SLiMFinder over SLiMDisc and DILIMOT is the way that amino acid ambiguity is incorporated. DILIMOT does not make use of ambiguity at all. SLiMDisc does have the option for including ambiguity but caution is advised, as it tends to increase substantially the return of false positives without much improvement in the motifs returned <a href="#pone.0000967-Davey1">[8]</a>. Ambiguity in SLiMFinder, however, does not introduce any false positives for the ELM benchmark dataset. Furthermore, the sensitivity of searches is increased by incorporating ambiguity. Of the seven ELMs yielding significant motifs, two fail to return significantly over-represented motifs without amino acid ambiguity.</p>
+<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>This is exemplified by the LIG_PCNA motif, which returns 13 ambiguous variations of the defined ELM (data not shown), the third of which (Q..[IL].SFF) covers all defined positions of the ELM. Another feature of SLiMFinder is that it attempts to reduce the complexity of the output by grouping motifs into “clouds”. These clouds are generated in a pairwise fashion; each pair of motifs is considered in turn and if they share at least two defined positions in at least two occurrences (<em>i.e.</em> the same residue in the same protein), they are put together in the same cloud. Because “true” motifs are often short and/or degenerate, SLiMFinder will generally return a variant of the motif, often with additional defined residues (<a href="#pone-0000967-t001">Table 1</a>). This is presumably because the over-represented “core” of the motif increases the likelihood of an extended pattern (that includes the core) also appearing to be over-represented: this may be just chance, or may reflect additional genuine but weaker sequence features around the motif. By grouping motifs together in this way, the user can achieve a better sense of which residues in the motif are most important.</p>
+
+
+<h4>Flexible wildcards</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>One of the innovations of SLiMBuild over TEIRESIAS <a href="#pone.0000967-Rigoutsos1">[9]</a>, which is used to generate motifs for both SLiMDisc and DILIMOT, is its ability to return motifs with flexible-length wildcards. Although only a limited number of known ELMs have annotated flexible-length wildcards, their incorporation can increase the accuracy of discovery. The cyclin ligand motif LIG_CYCLIN_1 ([RK].L.{0,1}[FYLIVMP]), for example, is returned very well by SLiMFinder (RR.{0,1}L.{0,1}F) while SLiMDisc (KKL) and DILIMOT (None) struggle to return an accurate descriptor (<a href="#pone-0000967-t001">Table 1</a>).</p>
+
+
+<h4>Combined ambiguity</h4>
+<a id="article1.body1.sec3.sec5.p1" name="article1.body1.sec3.sec5.p1"></a><p>In principle, SLiMFinder can return motifs with combined amino acid and wildcard ambiguities. In practice, however, this creates very long runtimes with little or no improvement in results, and is not recommended. (By default, SLiMFinder will return motifs with flexible wildcards and motifs with amino acid ambiguities but not motifs with both together.) For the ELM test dataset, no motif definitions were improved by combining both ambiguities during the SLiMBuild generation of motifs (data not shown). However, it is plausible that motif definitions may be improved by manually combining several motifs with different ambiguities from the same “motif cloud”.</p>
+
+
+<h4>Additional of sequence termini characters</h4>
+<a id="article1.body1.sec3.sec6.p1" name="article1.body1.sec3.sec6.p1"></a><p>The additional of sequence termini characters (̂ for the N-terminal and $ for the C-terminal) is a simple improvement that can help identify terminal motifs, such as the TRG_ER_KDEL_1 Golgi-to-ER retrieving signal. Although the KDEL motif alone is found as highly significant by SLiMChance (1.29×10<sup>−4</sup>; data not shown), the addition of the C-terminus symbol increases the significance by over twenty orders of magnitude. It is envisaged that for more borderline terminal motifs, the extra significance given by the proximity to the termini could be vital in identifying such motifs.</p>
+
+
+<h4>SLiMBuild versus TEIRESIAS runtimes</h4>
+<a id="article1.body1.sec3.sec7.p1" name="article1.body1.sec3.sec7.p1"></a><p>The primary motivation behind SLiMFinder was to improve the results of <em>ab initio</em> SLiM discovery by generating better motif descriptors and attaching a significance value to results. It is important, however, that these improvements in performance are not achieved at the cost of realistic runtimes. The best predictor of runtimes for random datasets was the number of amino acids in the dataset (data not shown). Although SLiMFinder runtimes do appear to increase exponentially with increasing dataset size, the slope of the curve is very shallow and none of the test datasets took more than an hour to run on a single 3.2GHz processor (<a href="#pone.0000967.s002">Figure S2A</a>). Indeed, all 750 test datasets could be run on a single machine in under 86 hours, making SLiMFinder very feasible for large scale analyses. In addition, the explicit treatment of the dataset to return convergently evolved motifs maintains manageable run-times as the degree of relatedness of the input dataset increases (<a href="#pone.0000967.s002">Figure S2B</a>). TEIRESIAS runtimes, in contrast, increase as the number of related proteins increases. This problem is magnified by use of ambiguity, in which case even small datasets can take several hours to run with TEIRESIAS. For an arbitrary dataset of twelve unrelated proteins that interact with AAA-domain proteins, for example, adding the default SLiMBuild equivalencies (AGS, ILMVF, FYW, FYH, KRH and DE) increased the runtime of TEIRESIAS by more than three orders of magnitude from 30 seconds to over 13 hours. For the same equivalency groups on the same dataset, the runtime of SLiMBuild was increased by approx 25% from 54 seconds to 68 seconds.</p>
+
+
+<h4>Example application 1: 14-3-3 interaction datasets</h4>
+<a id="article1.body1.sec3.sec8.p1" name="article1.body1.sec3.sec8.p1"></a><p>SLiMFinder performs with reasonable success on the ELM test data but it is of interest to see how it performs in what could be considered the more challenging case of real, often noisy, datasets. Two of the ELM datasets that “failed” were 14-3-3 ligand datasets. This failure could largely be attributed to the small dataset sizes of the test sets, with only 3 unrelated proteins for LIG_14-3-3_1 and 6 unrelated proteins for LIG_14-3-3_3. Increasing the dataset size, even if this introduces some “noisy” sequences that do not contain the motif, can allow such a motif to be returned. Furthermore, the ELM LIG_14-3-3_2 was not included in the test dataset due to the small number of annotated occurrences on the ELM website.</p>
+<a id="article1.body1.sec3.sec8.p2" name="article1.body1.sec3.sec8.p2"></a><p>We therefore sought to find 14-3-3 ligand motifs in the larger, but noisier, data available in the HPRD database <a href="#pone.0000967-Mishra1">[15]</a>. Humans have seven 14-3-3 isoforms, each with interaction data available in HPRD. SLiMFinder was run on each dataset and motifs with at least three unrelated occurrences and significance of 0.05 or less returned (<a href="#pone-0000967-t002">Table 2</a>). Regions predicted to be ordered with IUPred <a href="#pone.0000967-Dosztanyi1">[11]</a> were masked out. Consistent with the predicted high stringency of SLiMFinder, two of the datasets yielded no significant results. Of those that did, three returned 14-3-3-like motifs (R..S.P.L, GR.[ST]..P and FR..[ST].S). Furthermore, two datasets returned probable SH3-binding P..P motifs. Two datasets returned N-terminal motifs, which may represent common N-terminal target peptide signals rather than ligand-binding motifs. Only two additional motifs were returned, KE..K and Y.C.PG.L, neither of which are known SLiMs. These motifs may represent novel findings relating to 14-3-3 binding or function, although given the low significance of these motifs (0.01&lt;<em>p</em>&lt;0.05) we cannot rule out the possibility that they are false positives.</p>
+<div class="figure" id="pone-0000967-t002"><div class="img"><a name="pone-0000967-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>SLiMFinder results for 14-3-3 interaction datasets from HRPD.</span></strong></p><span>doi:10.1371/journal.pone.0000967.t002</span></div>
+
+<h4>Example application 2: Endoplasmic reticulum membrane targeting signals</h4>
+<a id="article1.body1.sec3.sec9.p1" name="article1.body1.sec3.sec9.p1"></a><p>In addition to the TRG_ER_KDEL_1 motif, ELM contains two more endoplasmic reticulum targeting SLiMs, both of which also lie at/near the termini of ER membrane proteins: TRG_ER_diArg_1 (̂M[DAL][VNI]R[RK] or ̂M[HL]RR) and TRG_ER_diLys_1 (K.{0,1}K.{2,3}$)<a href="#pone.0000967-Puntervoll1">[4]</a>. The KDEL motif, in contrast, is found in soluble proteins <a href="#pone.0000967-Puntervoll1">[4]</a>. We took the Gene Ontology cellular component category that identified endoplasmic reticulum proteins (GO:0005783 “endoplasmic reticulum”) and extracted all sequences matching this categories from six taxonomically diverse EnsEMBL genomes (<em>C elegans</em>, Chicken, Drosophila, Human, Yeast and Zebrafish) <a href="#pone.0000967-Birney1">[12]</a>. SLiMFinder was run on each dataset and motifs with a significance of 0.05 or less returned. To enrich for targeting SLiMs, we restricted analysis to the 20 amino acids at each terminus. The TRG_ER_KDEL_1 motif was returned by five out of six datasets, while the TRG_ER_diLys_1 motif was returned by three (<a href="#pone-0000967-t003">Table 3</a>). The TRG_ER_diArg_1 motif was not returned. On closer inspection, this motif occurs few or no times in each dataset. In addition to these known motifs, a number of novel motifs were returned. The most interesting of these were the L.FL.{0,1}L and, overlapping, [FV].L.L motifs, which were found in five out of six <em>C. elegans</em> UPC and were the only significant motifs returned from this dataset. The top-ranked motif for the human dataset was ̂.A..G, which occurred in 28 unrelated proteins. This is the result of an over-representation of alanine at the second position in these proteins, which may be indicative of a shared N-terminal target peptide sequence.</p>
+<div class="figure" id="pone-0000967-t003"><div class="img"><a name="pone-0000967-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000967" data-uri="info:doi/10.1371/journal.pone.0000967.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000967.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000967.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000967.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000967.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Results of SLiMFinder analysis performed on human and yeast ER proteins.</span></strong></p><span>doi:10.1371/journal.pone.0000967.t003</span></div>
+
+<h4>Example application 3: HBV phage display</h4>
+<a id="article1.body1.sec3.sec10.p1" name="article1.body1.sec3.sec10.p1"></a><p>Hepatitus B virus (HBV) is thought to infect human hepatocytes via attachment of the viral envelope protein's PreS domain with a specific cell surface receptor, the identity of which is unknown <a href="#pone.0000967-Deng1">[16]</a>. Deng <em>et al.</em> sought to identify novel binding partners of the PreS domain using phage display. From a random phage display library of 12mer peptides, they isolated 13 phages with specific PreS-binding activity, which in turn represented nine different peptide sequences. The authors noted a high frequency of tryptophan residues and manually determined a putative consensus sequence of WT.WW from a multiple sequence alignment of the peptides. This sequence was itself able to bind HBV particles. By searching candidate interactors with a slightly degenerate [FW]T.W[FW] motif (using BLAST), Deng <em>et al.</em> successfully identified a novel receptor protein, lipoprotein lipase (LPL), which also bound HBV.</p>
+<a id="article1.body1.sec3.sec10.p2" name="article1.body1.sec3.sec10.p2"></a><p>This work is an excellent example of how phage display can be used to identify a novel SLiM mediating a protein-protein interaction. However, given the short length of phage display peptides, using multiple sequence alignment to identify the shared motif(s) is not ideal and an alignment-free method may be less susceptible to bias. In addition to potential alignment errors, choice of consensus is a subjective human decision. We applied SLiMFinder to the nine 12mer peptides that bound PreS. Using amino acid frequencies from the input dataset, unsurprisingly, returned no significant motifs. This is because the dominating tryptophans are so prevalent that they make tryptophan-containing motifs statistically highly probable. The reality, however, is that these peptides were selected from a population of sequences with a very different amino acid composition. We therefore replaced the dataset amino acid frequencies with amino acid frequencies derived from the whole human genome. As expected, all significant motifs featured tryptophan, with the top ranked motif, W.{0,2}W being highly significant (<em>p</em> = 8.2×10<sup>−15</sup>). A three amino acid variant, W.{0,2}WW, which is similar but subtly different to the consensus of Deng <em>et al.</em>, was also significant (<em>p</em> = 1.5×10<sup>−6</sup>). In the active LPL protein, it is this W..WW motif that is conserved, while the consensus “T” is not a threonine in LPL <a href="#pone.0000967-Deng1">[16]</a>. The manually generated WT.WW motif was not significantly over-represented (<em>p</em> = 1.00). The degenerate [FW]T.W[FW] motif is significantly over-represented (<em>p</em> = 0.016) but was not returned as the appropriate component variants do not each occur in two or more sequences.</p>
+<a id="article1.body1.sec3.sec10.p3" name="article1.body1.sec3.sec10.p3"></a><p>Although no common motifs have been found to date, we also investigated the possibility that proteins previously reported to bind the key region of PreS shared motifs with the phage display peptides. Interleukin 6 <a href="#pone.0000967-Neurath1">[17]</a> and Serpin B3 (also known as Squamous cell carcinoma antigen 1) <a href="#pone.0000967-DeFalco1">[18]</a> were therefore added to the peptide sequences and SLiMFinder re-run and results analysed for motifs occurring in at least one of the full-length human proteins. The third-ranked motif, [FW]W (<em>p</em> = 5.3×10<sup>−7</sup>) was found in Serpin B3. This motif was also returned third from the peptides alone. This motif occurred in seven of the nine peptides, Serpin B3 and the LPL protein. A common mode of action for PreS-binding of Serpin B3 and LPL cannot be ruled out, therefore. The [FW]W is highly conserved in both Serpin B3 and LPL orthologues (data not shown), although the significance of this is limited unless HBV is shown to infect other species via a similar mechanism.</p>
+<a id="article1.body1.sec3.sec10.p4" name="article1.body1.sec3.sec10.p4"></a><p>In this example, the motif was so striking that, in reality, use of SLiMFinder did not add much value to the manual interpretation, except for a degree of statistical support for identified motif. In other situations, however, we can envisage the impact being much more significant. If the motif is more cryptic, then alignment-based manual inspection is much less likely to succeed. Perhaps more importantly, use of SLiMFinder in this context produces repeatable results and is therefore suitable for being scaled up to analyse and compare multiple datasets in a more objective fashion.</p>
+
+
+<h4>Conclusion</h4>
+<a id="article1.body1.sec3.sec11.p1" name="article1.body1.sec3.sec11.p1"></a><p>The full potential of SLiMs, both as explanations for biological phenomena and as experimental tools in molecular biology, is only just being unlocked <a href="#pone.0000967-Neduva1">[1]</a>. To meet this potential, there is a requirement for both improvements in technologies to identify protein-protein ligand interactions and in the <a href="#s2">methods</a> to identify SLiMs from the results of these technologies. Existing methods can be effective but suffer from low specificity of predictions, which can reduce the willingness of experimental biologists to act on the results. SLiMFinder is a novel algorithm building on, and extending from, the approaches of SLiMDisc <a href="#pone.0000967-Davey1">[8]</a> and DILIMOT <a href="#pone.0000967-Neduva4">[7]</a> to improve both the nature of the motifs returned and confidence in the predictions. SLiMBuild improves the type of motif returned through improved incorporation of ambiguity, introduction of flexible-length wildcard “gaps” and more control over the composition and length of motifs. The SLiMBuild approach has a number of advantages for SLiM discovery over TEIRESIAS <a href="#pone.0000967-Rigoutsos1">[9]</a> and would therefore make a worthwhile replacement of TEIRESIAS for other SLiM discovery <a href="#s2">methods</a>, such as DILIMOT <a href="#pone.0000967-Neduva4">[7]</a> or SLiMDisc <a href="#pone.0000967-Davey1">[8]</a>. Furthermore, the way that motifs are assembled by SLiMBuild makes it possible to make accurate estimates of the motif-space searched. SLiMChance takes advantage of this feature of SLiMBuild to combine accurate predictions with high stringency. This is the first practical application in this area that attempts to calculate a relevant significance value, and while the calculation is approximate, it provides a more useful guide for high-throughput analyses of many datasets. As the experimental techniques improve, and are applied more widely, it is hoped that the data available for SLiM detection will further increase the ability to identify new SLiMs with high reliability. Further refinements of the statistics will in turn give experimental biologists more faith in the results, encouraging more generation of high quality datasets specifically for motif discovery, such as the use of phage display peptides <a href="#pone.0000967-Deng1">[16]</a> and large scale interactome motif studies <a href="#pone.0000967-Neduva2">[5]</a>.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000967"></div><a name="pone.0000967.s001" id="pone.0000967.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000967.s001">Figure S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material1.caption1.p1" name="article1.body1.sec4.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Anatomy of a SLiM. Definitions of different properties of SLiM have been marked on the example ELM, LIG_CYCLIN_1. This motif has three defined positions (one fixed and two degenerate) and two wildcard spacers (one fixed, one flexible-length) for a total length of 4-5aa.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000967.s001</p><a id="article1.body1.sec4.supplementary-material1.caption1.p2" name="article1.body1.sec4.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.12 MB TIF)</p>
+<a name="pone.0000967.s002" id="pone.0000967.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000967.s002">Figure S2. </a></strong></p><a id="article1.body1.sec4.supplementary-material2.caption1.p1" name="article1.body1.sec4.supplementary-material2.caption1.p1"></a><p class="preSiDOI">SLiMFinder runtimes. A. SLiMFinder runtimes against dataset size. As expected, SLiMFinder takes longer to run with increasing dataset size. However, for typical dataset sizes of up to 100 proteins, runtimes remain short enough to make high throughput analyses feasible, even on a single processor. B. SLiMBuild run-times compared to TEIRESIAS runtimes for 12 proteins that interact with AAA domain-containing proteins from HPRD. Each dataset contains one or more related proteins from the ATP-binding cassette (ABC) family of proteins plus a number of unrelated proteins to make the total twelve. As the number of relationships increases, so the TEIRESIAS (square, dotted lines) runtime increases due to all the shared patterns between related sequences. SLiMBuild (triangles, solid lines), in contrast, ignores these patterns and so runtimes remain reasonably constant.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000967.s002</p><a id="article1.body1.sec4.supplementary-material2.caption1.p2" name="article1.body1.sec4.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.90 MB TIF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>The authors would like to thank Michael Lidschreiber, Tiberiu Simu and Ravindra Pushker for helpful comments during development of the software.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: RE. Performed the experiments: RE. Analyzed the data: RE. Wrote the paper: DS RE. Other: Assisted in algorithm development: ND.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000967-Neduva1" id="pone.0000967-Neduva1"></a>Neduva V, Russell RB (2006) Peptides mediating interaction networks: new leads at last. Curr Opin Biotechnol  17: 465–471.  <ul class="find" data-citedArticleID="998874" data-doi="10.1016/j.copbio.2006.08.002"><li><a href="http://dx.doi.org/10.1016/j.copbio.2006.08.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Peptides+mediating+interaction+networks%3A+new+leads+at+last." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Peptides+mediating+interaction+networks%3A+new+leads+at+last.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000967-Ceol1" id="pone.0000967-Ceol1"></a>Ceol A, Chatr-Aryamontri A, Santonico E, Sacco R, Castagnoli L, et al.  (2006) DOMINO: a database of domain-peptide interactions. Nucleic Acids Res  29: 29.  <ul class="find" data-citedArticleID="998862" data-doi="10.1093/nar/gkl961"><li><a href="http://dx.doi.org/10.1093/nar/gkl961" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=DOMINO%3A+a+database+of+domain-peptide+interactions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22DOMINO%3A+a+database+of+domain-peptide+interactions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000967-Songyang1" id="pone.0000967-Songyang1"></a>Songyang Z, Cantley LC (1995) SH2 domain specificity determination using oriented phosphopeptide library. Methods Enzymol  254: 523–535.  <ul class="find" data-citedArticleID="998888" data-doi="10.1016/0076-6879(95)54037-7"><li><a href="http://dx.doi.org/10.1016/0076-6879(95)54037-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SH2+domain+specificity+determination+using+oriented+phosphopeptide+library." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SH2+domain+specificity+determination+using+oriented+phosphopeptide+library.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000967-Puntervoll1" id="pone.0000967-Puntervoll1"></a>Puntervoll P, Linding R, Gemund C, Chabanis-Davidson S, Mattingsdal M, et al.  (2003) ELM server: A new resource for investigating short functional sites in modular eukaryotic proteins. Nucleic Acids Res  31: 3625–3630.  <ul class="find" data-citedArticleID="998884" data-doi="10.1093/nar/gkg545"><li><a href="http://dx.doi.org/10.1093/nar/gkg545" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ELM+server%3A+A+new+resource+for+investigating+short+functional+sites+in+modular+eukaryotic+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ELM+server%3A+A+new+resource+for+investigating+short+functional+sites+in+modular+eukaryotic+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000967-Neduva2" id="pone.0000967-Neduva2"></a>Neduva V, Linding R, Su-Angrand I, Stark A, de Masi F, et al.  (2005) Systematic discovery of new recognition peptides mediating protein interaction networks. PLoS Biol  3: e405.  <ul class="find" data-citedArticleID="998876" data-doi="10.1371/journal.pbio.0030405"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0030405" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+discovery+of+new+recognition+peptides+mediating+protein+interaction+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+discovery+of+new+recognition+peptides+mediating+protein+interaction+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000967-Neduva3" id="pone.0000967-Neduva3"></a>Neduva V, Russell RB (2005) Linear motifs: evolutionary interaction switches. FEBS Lett  579: 3342–3345 Epub 2005 Apr 3318.  <ul class="find" data-citedArticleID="998878" data-doi="10.1016/j.febslet.2005.04.005"><li><a href="http://dx.doi.org/10.1016/j.febslet.2005.04.005" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Linear+motifs%3A+evolutionary+interaction+switches." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Linear+motifs%3A+evolutionary+interaction+switches.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000967-Neduva4" id="pone.0000967-Neduva4"></a>Neduva V, Russell RB (2006) DILIMOT: discovery of linear motifs in proteins. Nucleic Acids Res  34: W350–355.  <ul class="find" data-citedArticleID="998880" data-doi="10.1093/nar/gkl159"><li><a href="http://dx.doi.org/10.1093/nar/gkl159" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=DILIMOT%3A+discovery+of+linear+motifs+in+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22DILIMOT%3A+discovery+of+linear+motifs+in+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000967-Davey1" id="pone.0000967-Davey1"></a>Davey NE, Shields DC, Edwards RJ (2006) SLiMDisc: short, linear motif discovery, correcting for common evolutionary descent. Nucleic Acids Res  34: 3546–3554.  <ul class="find" data-citedArticleID="998864" data-doi="10.1093/nar/gkl486"><li><a href="http://dx.doi.org/10.1093/nar/gkl486" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SLiMDisc%3A+short%2C+linear+motif+discovery%2C+correcting+for+common+evolutionary+descent." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SLiMDisc%3A+short%2C+linear+motif+discovery%2C+correcting+for+common+evolutionary+descent.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000967-Rigoutsos1" id="pone.0000967-Rigoutsos1"></a>Rigoutsos I, Floratos A (1998) Combinatorial pattern discovery in biological sequences: The TEIRESIAS algorithm. Bioinformatics  14: 55–67.  <ul class="find" data-citedArticleID="998886" data-doi="10.1093/bioinformatics/14.1.55"><li><a href="http://dx.doi.org/10.1093/bioinformatics/14.1.55" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Combinatorial+pattern+discovery+in+biological+sequences%3A+The+TEIRESIAS+algorithm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Combinatorial+pattern+discovery+in+biological+sequences%3A+The+TEIRESIAS+algorithm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000967-Altschul1" id="pone.0000967-Altschul1"></a>Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ (1990) Basic local alignment search tool. J Mol Biol  215: 403–410.  <ul class="find" data-citedArticleID="998854" data-doi="10.1016/s0022-2836(05)80360-2"><li><a href="http://dx.doi.org/10.1016/s0022-2836(05)80360-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Basic+local+alignment+search+tool." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Basic+local+alignment+search+tool.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000967-Dosztanyi1" id="pone.0000967-Dosztanyi1"></a>Dosztanyi Z, Csizmok V, Tompa P, Simon I (2005) IUPred: web server for the prediction of intrinsically unstructured regions of proteins based on estimated energy content. Bioinformatics  21: 3433–3434.  <ul class="find" data-citedArticleID="998870" data-doi="10.1093/bioinformatics/bti541"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti541" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=IUPred%3A+web+server+for+the+prediction+of+intrinsically+unstructured+regions+of+proteins+based+on+estimated+energy+content." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22IUPred%3A+web+server+for+the+prediction+of+intrinsically+unstructured+regions+of+proteins+based+on+estimated+energy+content.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000967-Birney1" id="pone.0000967-Birney1"></a>Birney E, Andrews D, Caccamo M, Chen Y, Clarke L, et al.  (2006) Ensembl 2006. Nucleic Acids Res  34: D556–561.  <ul class="find" data-citedArticleID="998860" data-doi="10.1093/nar/gkj133"><li><a href="http://dx.doi.org/10.1093/nar/gkj133" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Ensembl+2006." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Ensembl+2006.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000967-Bairoch1" id="pone.0000967-Bairoch1"></a>Bairoch A, Apweiler R, Wu CH, Barker WC, Boeckmann B, et al.  (2005) The Universal Protein Resource (UniProt). Nucleic Acids Res  33: D154–159.  <ul class="find" data-citedArticleID="998856" data-doi="10.1093/nar/gki070"><li><a href="http://dx.doi.org/10.1093/nar/gki070" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Universal+Protein+Resource+%28UniProt%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Universal+Protein+Resource+%28UniProt%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000967-Balla1" id="pone.0000967-Balla1"></a>Balla S, Thapar V, Verma S, Luong T, Faghri T, et al.  (2006) Minimotif Miner: a tool for investigating protein function. Nat Methods  3: 175–177.  <ul class="find" data-citedArticleID="998858" data-doi="10.1038/nmeth856"><li><a href="http://dx.doi.org/10.1038/nmeth856" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Minimotif+Miner%3A+a+tool+for+investigating+protein+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Minimotif+Miner%3A+a+tool+for+investigating+protein+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000967-Mishra1" id="pone.0000967-Mishra1"></a>Mishra GR, Suresh M, Kumaran K, Kannabiran N, Suresh S, et al.  (2006) Human protein reference database–2006 update. Nucleic Acids Res  34: D411–414.  <ul class="find" data-citedArticleID="998872" data-doi="10.1093/nar/gkj141"><li><a href="http://dx.doi.org/10.1093/nar/gkj141" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Human+protein+reference+database%E2%80%932006+update." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Human+protein+reference+database%E2%80%932006+update.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000967-Deng1" id="pone.0000967-Deng1"></a>Deng Q, Zhai JW, Michel ML, Zhang J, Qin J, et al.  (2007) Identification and characterization of peptides that interact with hepatitis B virus via the putative receptor binding site. J Virol  81: 4244–4254 Epub 2006 Dec 4227.  <ul class="find" data-citedArticleID="998868" data-doi="10.1128/jvi.01270-06"><li><a href="http://dx.doi.org/10.1128/jvi.01270-06" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+and+characterization+of+peptides+that+interact+with+hepatitis+B+virus+via+the+putative+receptor+binding+site." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+and+characterization+of+peptides+that+interact+with+hepatitis+B+virus+via+the+putative+receptor+binding+site.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000967-Neurath1" id="pone.0000967-Neurath1"></a>Neurath AR, Strick N, Sproul P (1992) Search for hepatitis B virus cell receptors reveals binding sites for interleukin 6 on the virus envelope protein. J Exp Med  175: 461–469.  <ul class="find" data-citedArticleID="998882" data-doi="10.1084/jem.175.2.461"><li><a href="http://dx.doi.org/10.1084/jem.175.2.461" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Search+for+hepatitis+B+virus+cell+receptors+reveals+binding+sites+for+interleukin+6+on+the+virus+envelope+protein." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Search+for+hepatitis+B+virus+cell+receptors+reveals+binding+sites+for+interleukin+6+on+the+virus+envelope+protein.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000967-DeFalco1" id="pone.0000967-DeFalco1"></a>De Falco S, Ruvoletto MG, Verdoliva A, Ruvo M, Raucci A, et al.  (2001) Cloning and expression of a novel hepatitis B virus-binding protein from HepG2 cells. J Biol Chem  276: 36613–36623 Epub 32001 Jun 36611.  <ul class="find" data-citedArticleID="998866" data-doi="10.1074/jbc.m102377200"><li><a href="http://dx.doi.org/10.1074/jbc.m102377200" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cloning+and+expression+of+a+novel+hepatitis+B+virus-binding+protein+from+HepG2+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cloning+and+expression+of+a+novel+hepatitis+B+virus-binding+protein+from+HepG2+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.XML" value="103258"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.PDF" value="330878"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g001.PNG_L" value="159851"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g001.PNG_M" value="34257"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g001.PNG_S" value="7247"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g001.TIF" value="293832"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g001.PNG_I" value="12267"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g002.PNG_L" value="273789"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g002.PNG_M" value="113499"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g002.PNG_S" value="10149"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g002.TIF" value="485294"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g002.PNG_I" value="41821"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g003.PNG_L" value="463621"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g003.PNG_M" value="85236"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g003.PNG_S" value="7876"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g003.TIF" value="793484"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g003.PNG_I" value="33567"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e001.PNG" value="7070"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e001.TIF" value="22972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e002.PNG" value="6690"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e002.TIF" value="22708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e003.PNG" value="6940"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e003.TIF" value="22904"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e004.PNG" value="8247"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e004.TIF" value="24256"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e005.PNG" value="9683"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e005.TIF" value="25592"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e006.PNG" value="7232"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e006.TIF" value="23184"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e007.PNG" value="7986"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e007.TIF" value="23884"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e008.PNG" value="11074"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e008.TIF" value="26672"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e009.PNG" value="7673"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e009.TIF" value="23604"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e010.PNG" value="7175"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.e010.TIF" value="23144"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t001.PNG_L" value="221826"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t001.PNG_M" value="134601"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t001.PNG_S" value="13439"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t001.TIF" value="979520"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t001.PNG_I" value="42523"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g004.PNG_L" value="432461"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g004.PNG_M" value="44560"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g004.PNG_S" value="6164"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g004.TIF" value="1037578"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.g004.PNG_I" value="16272"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t002.PNG_L" value="127750"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t002.PNG_M" value="165957"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t002.PNG_S" value="19495"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t002.TIF" value="550966"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t002.PNG_I" value="57673"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t003.PNG_L" value="96029"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t003.PNG_M" value="129316"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t003.PNG_S" value="17072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t003.TIF" value="390766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.t003.PNG_I" value="44542"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.s001.TIF" value="161342"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000967.s002.TIF" value="1062884"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000967&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000967" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000967&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000967&volume=&issue=&title=SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins&author_name=Richard%20J.%20Edwards%2C%20Norman%20E.%20Davey%2C%20Denis%20C.%20Shields&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000967" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967&amp;t=SLiMFinder%3A%20A%20Probabilistic%20Method%20for%20Identifying%20Over-Represented%2C%20Convergently%20Evolved%2C%20Short%20Linear%20Motifs%20in%20Proteins" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967&title=SLiMFinder%3A%20A%20Probabilistic%20Method%20for%20Identifying%20Over-Represented%2C%20Convergently%20Evolved%2C%20Short%20Linear%20Motifs%20in%20Proteins&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967&amp;title=SLiMFinder%3A%20A%20Probabilistic%20Method%20for%20Identifying%20Over-Represented%2C%20Convergently%20Evolved%2C%20Short%20Linear%20Motifs%20in%20Proteins" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000967&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'SLiMFinder: A Probabilistic Method for Identifying Over-Represented, Convergently Evolved, Short Linear Motifs in Proteins';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000967';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20SLiMFinder%3A%20A%20Probabilistic%20Method%20for%20Identifying%20Over-Represented%2C%20Convergently%20Evolved%2C%20Short%20Linear%20Motifs%20in%20Proteins http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000967" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000967" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22BLAST+algorithm%22" title="Search for articles in the subject area:'BLAST algorithm'"><div class="flagText">BLAST algorithm</div></a>
+              <div data-categoryid="31827" data-articleid="24770"
+                   data-categoryname="BLAST algorithm"
+                   class="flagImage" title="Flag 'BLAST algorithm' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Binomials%22" title="Search for articles in the subject area:'Binomials'"><div class="flagText">Binomials</div></a>
+              <div data-categoryid="32283" data-articleid="24770"
+                   data-categoryname="Binomials"
+                   class="flagImage" title="Flag 'Binomials' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Human+genomics%22" title="Search for articles in the subject area:'Human genomics'"><div class="flagText">Human genomics</div></a>
+              <div data-categoryid="17253" data-articleid="24770"
+                   data-categoryname="Human genomics"
+                   class="flagImage" title="Flag 'Human genomics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Molecular+evolution%22" title="Search for articles in the subject area:'Molecular evolution'"><div class="flagText">Molecular evolution</div></a>
+              <div data-categoryid="17533" data-articleid="24770"
+                   data-categoryname="Molecular evolution"
+                   class="flagImage" title="Flag 'Molecular evolution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Multiple+alignment+calculation%22" title="Search for articles in the subject area:'Multiple alignment calculation'"><div class="flagText">Multiple alignment calculation</div></a>
+              <div data-categoryid="20427" data-articleid="24770"
+                   data-categoryname="Multiple alignment calculation"
+                   class="flagImage" title="Flag 'Multiple alignment calculation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phage+display%22" title="Search for articles in the subject area:'Phage display'"><div class="flagText">Phage display</div></a>
+              <div data-categoryid="19955" data-articleid="24770"
+                   data-categoryname="Phage display"
+                   class="flagImage" title="Flag 'Phage display' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+sequencing%22" title="Search for articles in the subject area:'Protein sequencing'"><div class="flagText">Protein sequencing</div></a>
+              <div data-categoryid="47503" data-articleid="24770"
+                   data-categoryname="Protein sequencing"
+                   class="flagImage" title="Flag 'Protein sequencing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+motif+analysis%22" title="Search for articles in the subject area:'Sequence motif analysis'"><div class="flagText">Sequence motif analysis</div></a>
+              <div data-categoryid="19657" data-articleid="24770"
+                   data-categoryname="Sequence motif analysis"
+                   class="flagImage" title="Flag 'Sequence motif analysis' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9437'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=5991'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3519&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

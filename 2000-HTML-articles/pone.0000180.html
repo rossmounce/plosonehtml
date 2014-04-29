@@ -1,0 +1,1113 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000180"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000180" />
+
+    <meta name="citation_title" content="Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases"/>
+    <meta itemprop="name" content="Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases"/>
+
+      <meta name="citation_author" content="James O. Lloyd-Smith"/>
+            <meta name="citation_author_institution" content="Center for Infectious Disease Dynamics, Mueller Lab, Pennsylvania State University, University Park, Pennsylvania, United States of America"/>
+
+    <meta name="citation_date" content="2007/2/14"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000180.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e180"/>
+    <meta name="citation_issue" content="2"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Fitting the negative binomial distribution to biological data - note on the efficient fitting of the negative binomial.; citation_author=CI Bliss; citation_author=RA Fisher; citation_journal_title=Biometrics; citation_volume=9; citation_number=1; citation_pages=176-200; citation_date=1953; " />
+      <meta name="citation_reference" content="citation_author=EC Pielou; citation_number=2; citation_date=1977; citation_publisher=Wiley.; " />
+      <meta name="citation_reference" content="citation_title=Analysis of frequency count data using the negative binomial distribution.; citation_author=GC White; citation_author=RE Bennetts; citation_journal_title=Ecology; citation_volume=77; citation_number=3; citation_pages=2549-2557; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Patterns of macroparasite aggregation in wildlife host populations.; citation_author=DJ Shaw; citation_author=BT Grenfell; citation_author=AP Dobson; citation_journal_title=Parasitology; citation_volume=117; citation_number=4; citation_pages=597-610; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Comparative performance of species richness estimation methods.; citation_author=BA Walther; citation_author=S Morand; citation_journal_title=Parasitology; citation_volume=116; citation_number=5; citation_pages=395-405; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Linear model analysis of net catch data using the negative binomial distribution.; citation_author=JH Power; citation_author=EB Moser; citation_journal_title=Can J Fish Aq Sci; citation_volume=56; citation_number=6; citation_pages=191-200; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Spatial modelling of individual-level parasite counts using the negative binomial distribution.; citation_author=N Alexander; citation_author=R Moyeed; citation_author=J Stander; citation_journal_title=Biostatistics; citation_volume=1; citation_number=7; citation_pages=453-463; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Superspreading and the effect of individual variation on disease emergence.; citation_author=JO Lloyd-Smith; citation_author=SJ Schreiber; citation_author=PE Kopp; citation_author=WM Getz; citation_journal_title=Nature; citation_volume=438; citation_number=8; citation_pages=355-359; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_author=TE Harris; citation_number=9; citation_date=1989; citation_publisher=Dover; " />
+      <meta name="citation_reference" content="citation_title=Sampling theory of the negative binomial and logarithmic series distributions.; citation_author=FJ Anscombe; citation_journal_title=Biometrika; citation_volume=37; citation_number=10; citation_pages=358-382; citation_date=1950; " />
+      <meta name="citation_reference" content="citation_title=Small sample comparison of different estimators of negative binomial parameters.; citation_author=EP Pieters; citation_author=CE Gates; citation_author=JH Matis; citation_author=WL Sterling; citation_journal_title=Biometrics; citation_volume=33; citation_number=11; citation_pages=718-723; citation_date=1977; " />
+      <meta name="citation_reference" content="citation_title=Heterogeneities in macroparasite infections: patterns and processes.; citation_author=K Wilson; citation_author=ON Bjornstad; citation_author=AP Dobson; citation_author=S Merler; citation_author=G Poglayen; citation_number=12; citation_pages=6-44; citation_date=2001; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=The negative binomial distribution.; citation_author=GJS Ross; citation_author=DA Preece; citation_journal_title=Statistician; citation_volume=34; citation_number=13; citation_pages=323-336; citation_date=1985; " />
+      <meta name="citation_reference" content="citation_title=Estimation of the negative binomial parameter kappa by maximum quasi-likelihood.; citation_author=SJ Clark; citation_author=JN Perry; citation_journal_title=Biometrics; citation_volume=45; citation_number=14; citation_pages=309-316; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=Maximum-likelihood estimation for the negative binomial dispersion parameter.; citation_author=WW Piegorsch; citation_journal_title=Biometrics; citation_volume=46; citation_number=15; citation_pages=863-867; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=Quantification of parasite aggregation - a simulation study.; citation_author=RD Gregory; citation_author=MEJ Woolhouse; citation_journal_title=Acta Trop; citation_volume=54; citation_number=16; citation_pages=131-139; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Bias-corrected maximum likelihood estimator of the negative binomial dispersion parameter.; citation_author=K Saha; citation_author=S Paul; citation_journal_title=Biometrics; citation_volume=61; citation_number=17; citation_pages=179-185; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Towards reliable bird surveys: Accounting for individuals present but not detected.; citation_author=WL Thompson; citation_journal_title=Auk; citation_volume=119; citation_number=18; citation_pages=18-25; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Different epidemic curves for severe acute respiratory syndrome reveal similar impacts of control measures.; citation_author=J Wallinga; citation_author=P Teunis; citation_journal_title=Am J Epidemiol; citation_volume=160; citation_number=19; citation_pages=509-516; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Selecting a distributional assumption for modelling relative densities of benthic macroinvertebrates.; citation_author=BR Gray; citation_journal_title=Ecol Model; citation_volume=185; citation_number=20; citation_pages=1-12; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Epidemiological and genetic analysis of severe acute respiratory syndrome.; citation_author=CA Donnelly; citation_author=MC Fisher; citation_author=C Fraser; citation_author=AC Ghani; citation_author=S Riley; citation_journal_title=Lancet Infect Dis; citation_volume=4; citation_number=21; citation_pages=672-683; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_author=O Diekmann; citation_author=JAP Heesterbeek; citation_number=22; citation_date=2000; citation_publisher=John Wiley & Sons; " />
+      <meta name="citation_reference" content="citation_title=Chance mechanisms generating the negative binomial distribution.; citation_author=MT Boswell; citation_author=GP Patil; citation_number=23; citation_pages=3-22; citation_date=1970; citation_publisher=Pennsylvania State University Press; " />
+      <meta name="citation_reference" content="citation_author=JA Rice; citation_number=24; citation_date=1995; citation_publisher=Duxbury Press; " />
+      <meta name="citation_reference" content="citation_title=Multistage estimation compared with fixed-sample-size estimation of the negative binomial parameter k.; citation_author=LJ Willson; citation_author=JL Folks; citation_author=JH Young; citation_journal_title=Biometrics; citation_volume=40; citation_number=25; citation_pages=109-117; citation_date=1984; " />
+      <meta name="citation_reference" content="citation_title=Confidence curves and improved exact confidence intervals for discrete distributions.; citation_author=H Blaker; citation_journal_title=Can J Stat; citation_volume=28; citation_number=26; citation_pages=783-798; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Models for counts data with many zeros.; citation_author=MS Ridout; citation_author=CGB Demetrio; citation_author=JP Hinde; citation_number=27; citation_pages=179-192; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Infectious Diseases of Humans: Dynamics and Control:; citation_author=RM Anderson; citation_author=RM May; citation_number=28; citation_date=1991; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=Estimation and inference of R
+                  0 of an infectious pathogen by a removal method.; citation_author=MJ Ferrari; citation_author=ON Bjornstad; citation_author=AP Dobson; citation_journal_title=Math Biosci; citation_volume=198; citation_number=29; citation_pages=14-26; citation_date=2005; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases"/>
+    <meta name="twitter:description" content="BackgroundThe negative binomial distribution is used commonly throughout biology as a model for overdispersed count data, with attention focused on the negative binomial dispersion parameter, k. A substantial literature exists on the estimation of k, but most attention has focused on datasets that are not highly overdispersed (i.e., those with k&ge;1), and the accuracy of confidence intervals estimated for k is typically not explored.MethodologyThis article presents a simulation study exploring the bias, precision, and confidence interval coverage of maximum-likelihood estimates of k from highly overdispersed distributions. In addition to exploring small-sample bias on negative binomial estimates, the study addresses estimation from datasets influenced by two types of event under-counting, and from disease transmission data subject to selection bias for successful outbreaks.ConclusionsResults show that maximum likelihood estimates of k can be biased upward by small sample size or under-reporting of zero-class events, but are not biased downward by any of the factors considered. Confidence intervals estimated from the asymptotic sampling variance tend to exhibit coverage below the nominal level, with overestimates of k comprising the great majority of coverage errors. Estimation from outbreak datasets does not increase the bias of k estimates, but can add significant upward bias to estimates of the mean. Because k varies inversely with the degree of overdispersion, these findings show that overestimation of the degree of overdispersion is very rare for these datasets."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000180.g004"/>
+
+  <meta property="og:title" content="Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=4008'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=626'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=6706&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000180">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000180" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000180&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            James O. Lloyd-Smith
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:jlloydsmith@psu.edu">jlloydsmith@psu.edu</a>
+            </p>
+
+                <p>Affiliation:
+                  Center for Infectious Disease Dynamics, Mueller Lab, Pennsylvania State University, University Park, Pennsylvania, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: February 14, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000180</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000180-g001" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000180-g002" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000180-g003" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000180-g004" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000180-t001" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000180">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000180" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>The negative binomial distribution is used commonly throughout biology as a model for overdispersed count data, with attention focused on the negative binomial dispersion parameter, <em>k</em>. A substantial literature exists on the estimation of <em>k</em>, but most attention has focused on datasets that are not highly overdispersed (i.e., those with <em>k</em>≥1), and the accuracy of confidence intervals estimated for <em>k</em> is typically not explored.</p>
+
+
+<h3>Methodology</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>This article presents a simulation study exploring the bias, precision, and confidence interval coverage of maximum-likelihood estimates of <em>k</em> from highly overdispersed distributions. In addition to exploring small-sample bias on negative binomial estimates, the study addresses estimation from datasets influenced by two types of event under-counting, and from disease transmission data subject to selection bias for successful outbreaks.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>Results show that maximum likelihood estimates of <em>k</em> can be biased upward by small sample size or under-reporting of zero-class events, but are not biased downward by any of the factors considered. Confidence intervals estimated from the asymptotic sampling variance tend to exhibit coverage below the nominal level, with overestimates of <em>k</em> comprising the great majority of coverage errors. Estimation from outbreak datasets does not increase the bias of <em>k</em> estimates, but can add significant upward bias to estimates of the mean. Because <em>k</em> varies inversely with the degree of overdispersion, these findings show that overestimation of the degree of overdispersion is very rare for these datasets.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Lloyd-Smith JO (2007) Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases. PLoS ONE 2(2):
+          e180.
+            doi:10.1371/journal.pone.0000180</p><p><strong>Academic Editor: </strong>Mark Rees, University of Sheffield, United Kingdom</p><p><strong>Received:</strong> December 21, 2006; <strong>Accepted:</strong> January 3, 2007; <strong>Published:</strong> February 14, 2007</p><p><strong>Copyright:</strong> © 2007 James Lloyd-Smith. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This research was performed as a postdoctoral researcher supported by NIH-NIDA (R01-DA10135) and a Center for Infectious Disease Dynamics Postdoctoral Fellowship. None of the sponsors played any role in the research.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The negative binomial (NB) distribution has broad applications as a model for count data, particularly for data exhibiting overdispersion (i.e. with sample variance exceeding the mean). In the biological literature, classical uses of the NB distribution include analysis of parasite loads, species occurrence, parasitoid attacks, abundance samples and spatial clustering of populations <a href="#pone.0000180-Bliss1">[1]</a>–<a href="#pone.0000180-Alexander1">[7]</a>. The range of applications of the NB distribution was extended recently to include the epidemiology of directly-transmitted infections, as the NB distribution was shown to be a suitable model for the ‘offspring distribution’ for a number of disease transmission datasets <a href="#pone.0000180-LloydSmith1">[8]</a>. The offspring distribution, a concept arising in the theory of branching processes <a href="#pone.0000180-Harris1">[9]</a>, is the probability distribution for the number of individuals (termed ‘secondary cases’) infected directly by each infectious individual in a disease outbreak. Estimation of NB parameters for empirical offspring distributions revealed a high degree of overdispersion—particularly for severe acute respiratory syndrome (SARS), measles, and smallpox—signalling an unexpectedly large influence of individual variation and ‘superspreading’ on the dynamics of disease emergence <a href="#pone.0000180-LloydSmith1">[8]</a>. However, the authors emphasized the challenges inherent in estimating NB parameters and the confidence intervals (CIs) associated with those estimates, and noted that previous work on NB parameter estimation had not explored the parameter ranges of interest for epidemiological studies. A particular concern is whether the results were influenced by small sample size in the datasets analyzed, or biases peculiar to disease transmission data. This study uses simulated data to assess the bias and precision of NB parameter estimates and the coverage accuracy of CIs for highly overdispersed datasets, addressing the challenges of small datasets as well as potential biases arising in the data collection process.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>The popularity of the NB distribution is due largely to its ability to model count data with varying degrees of overdispersion. The distribution is commonly expressed in terms of the mean <em>m</em> and dispersion parameter <em>k</em> such that the probability of observing a non-negative integer <em>x</em> is<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e001&amp;representation=PNG" class="inline-graphic"><span class="note">1</span></span><br>The variance of the NB distribution is <em>m</em> (1+<em>m</em>/<em>k</em>), and hence decreasing values of <em>k</em> correspond to increasing levels of dispersion. The Poisson distribution is obtained as <em>k</em>→∞, and the logarithmic series distribution is obtained as <em>k</em>→0 <a href="#pone.0000180-Bliss1">[1]</a>, <a href="#pone.0000180-Anscombe1">[10]</a>. When <em>k</em> = 1, the NB distribution reduces to the geometric distribution. Note that recent work in the statistical literature uses the quantity α = 1/<em>k</em> due to its preferable properties for inference (discussed below), but studies applying the NB distribution in ecology and epidemiology are overwhelmingly posed in terms of <em>k</em>. Accordingly, all calculations in this study were conducted using α, but all results and discussion are posed in terms of <em>k</em>. (Confusingly, the term ‘dispersion parameter’ can refer to either <em>k</em> or α; other terms for <em>k</em> include ‘shape parameter’ and ‘clustering coefficient’.)</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>The dispersion parameter <em>k</em> is commonly used as an inverse measure of aggregation in biological count data <a href="#pone.0000180-Bliss1">[1]</a>–<a href="#pone.0000180-Walther1">[5]</a>, <a href="#pone.0000180-LloydSmith1">[8]</a>, <a href="#pone.0000180-Pieters1">[11]</a>, <a href="#pone.0000180-Wilson1">[12]</a>, yet its estimation from finite datasets is a recognized challenge. Many simulation studies have examined the efficacy of different estimators of NB parameters for finite datasets <a href="#pone.0000180-Pieters1">[11]</a>, <a href="#pone.0000180-Ross1">[13]</a>–<a href="#pone.0000180-Gregory1">[16]</a>, <a href="#pone.0000180-Saha1">[17; also see review in 14]</a>, but owing to precedent most of these have focused on <em>k</em>≥1 and hence do not apply to highly overdispersed data. One biologically motivated study did explore values of <em>k</em>&lt;1 <a href="#pone.0000180-Gregory1">[16]</a>, but it did not test the maximum-likelihood (ML) methods of estimation that have become standard owing to their asymptotic efficiency and low bias <a href="#pone.0000180-Wilson1">[12]</a>, <a href="#pone.0000180-Ross1">[13]</a>, <a href="#pone.0000180-Saha1">[17]</a>. The small-sample accuracy of ML estimates of <em>k</em> has not been tested for NB distributions with moderate to high degrees of overdispersion. Moreover, little attention has been paid to the accuracy of CIs of such NB parameter estimates. The first aim of this study, therefore, is to investigate the bias, precision and CI coverage accuracy of ML estimates of <em>k</em> for small samples. The investigation focuses on datasets with <em>k</em>&lt;1, to address the gap in existing studies, but results for <em>k</em>≥1 are included to establish continuity with earlier work.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>The second aim is to investigate how estimates of <em>k</em> are affected by potential biases of the data collection process, in particular systematic under-counting of events and the selection bias inherent in disease outbreak data. The disease transmission datasets analyzed by Lloyd-Smith et al. <a href="#pone.0000180-LloydSmith1">[8]</a> fell into two broad categories, surveillance and outbreak datasets, each of which presents challenges due to the processes by which data are generated and collected.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Surveillance datasets combine information about many separate introductions of a disease into a population of hosts. Empirical offspring distributions can be constructed by counting the number of secondary cases infected by the first infectious individual in each outbreak, but ignoring all subsequent generations of transmission (which often are not reported in detail, or may be influenced by outbreak control measures). The resulting datasets are analogous to many other datasets in biology, compiling many independent records of unrelated events. Datasets of this type can be affected by two broad classes of under-counting error. First, data points may be underestimated, due to the possibility that some of the secondary cases will be overlooked, misdiagnosed, or not traced to the individual that infected them. Second, individuals who do not transmit the disease may be more likely to be missed by surveillance programs, because they do not initiate a cluster of cases and thus are less likely to attract the attention of health authorities. Therefore instances of a particular value (i.e. <em>x</em> = 0, for no secondary cases) may be systematically under-counted in the surveillance samples. These two classes of under-counting error are common to many types of biological data <a href="#pone.0000180-Thompson1">[e.g. 18]</a>, <a href="#pone.0000180-Wallinga1">[19]</a>, <a href="#pone.0000180-Gray1">[20]</a>.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>Outbreak datasets, comprising the second category of disease transmission data, are more unique to epidemiology and disease ecology. Offspring distributions drawn from outbreak data include the number of secondary cases caused by many individuals within a single disease outbreak. These datasets arise when several generations of epidemic spread (typically early in an outbreak, before control measures are imposed) are fully reconstructed by contact tracing, so the number of secondary cases caused by each infectious case can be determined. Lloyd-Smith et al. <a href="#pone.0000180-LloydSmith1">[8]</a> showed that when the degree of infectiousness is highly overdispersed (e.g. when the offspring distribution is NB with <em>k</em>&lt;1), many outbreaks will die out stochastically in their first few generations of spread. In such situations, the outbreaks that survive tend to be those where a highly infectious individual (i.e. an individual whose number of secondary cases is drawn from the right-hand tail of the offspring distribution) appears in the early generations <a href="#pone.0000180-LloydSmith1">[8]</a>. Because outbreak datasets necessarily are drawn from successful outbreaks, there is the possibility of selection bias for an increased proportion of exceptionally infectious individuals, or ‘superspreaders’ <a href="#pone.0000180-Donnelly1">[21]</a>. Intuitively, this risk appears to be particularly acute for offspring distributions with lower mean values, for which the epidemic's growth is more dependent on chance. (Note that the mean of the offspring distribution corresponds to the basic reproduction number <em>R</em>
+            <sub>0</sub> of the disease <a href="#pone.0000180-LloydSmith1">[8]</a>, <a href="#pone.0000180-Diekmann1">[22]</a>).</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>2.1 Generating simulated data sets</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Four types of simulated datasets were examined. In all cases, the datasets comprised <em>n</em> values, <em>x<sub>i</sub>
+               </em> (<em>i</em> = 1, 2, …, <em>n</em>), generated as described below. In the epidemiological context that motivated this study, these values <em>x<sub>i</sub>
+               </em> correspond to the numbers of secondary cases that were infected by <em>n</em> different infectious individuals, but similar data could arise from many other processes. All simulations were conducted using Matlab v6.1 (MathWorks, Cambridge MA).</p>
+<h5>2.1.1 Negative binomial data.</h5><a id="article1.body1.sec2.sec1.sec1.p1" name="article1.body1.sec2.sec1.sec1.p1"></a><p>Because the NB random number generator in Matlab v6.1 (nbinrnd) does not allow non-integer values of <em>k</em>, NB random variates were simulated using the fact that the NB distribution can be derived as a Poisson distribution with gamma-distributed intensity, i.e. a Poisson-gamma mixture <a href="#pone.0000180-Boswell1">[23]</a>, <a href="#pone.0000180-Rice1">[24]</a>. First, <em>n</em> values <em>g<sub>i</sub>
+                  </em> were drawn from a gamma distribution with mean <em>m</em> and dispersion parameter <em>k</em>. Second, each of these values was used as the intensity parameter for a Poisson random variate to yield a NB-distributed value <em>x<sub>i</sub>
+                  </em>, i.e. <em>x<sub>i</sub>
+                  </em> = Poisson(<em>g<sub>i</sub>
+                  </em>). Random variates were generated using the Matlab functions gamrnd and poissrnd.</p>
+
+<h5>2.1.2 Negative binomial data with uniform under-counting.</h5><a id="article1.body1.sec2.sec1.sec2.p1" name="article1.body1.sec2.sec1.sec2.p1"></a><p>To simulate surveillance datasets with uniform under-counting of data, it was assumed that each secondary case can be missed by surveillance with a fixed probability <em>p<sub>u</sub>
+                  </em>. Raw data were drawn from a NB distribution with parameters <em>m</em> and <em>k</em>, as described in section 2.1.1 above. Each value <em>x<sub>i</sub>
+                  </em> was then decreased by an amount <em>d<sub>i</sub>
+                  </em>~binomial(<em>x<sub>i</sub>
+                  </em>, <em>p<sub>u</sub>
+                  </em>), generated using the Matlab function binornd, to represent under-counting.</p>
+
+<h5>2.1.3 Negative binomial data with under-reporting of zeroes.</h5><a id="article1.body1.sec2.sec1.sec3.p1" name="article1.body1.sec2.sec1.sec3.p1"></a><p>To simulate the possible under-reporting of individuals who cause no secondary infections, it was assumed that all individuals who caused <em>x<sub>i</sub>
+                  </em> = 0 cases can be overlooked with some fixed probability <em>p<sub>z</sub>
+                  </em>, while all other individuals have their full case-count recorded. NB samples were generated as in section 2.1.1, then any value <em>x<sub>i</sub>
+                  </em> = 0 was deleted with probability <em>p<sub>z</sub>
+                  </em> and replaced by another NB random variate. If the new value was also 0, then it was again replaced with probability <em>p<sub>z</sub>
+                  </em>. This process was repeated until a sample of <em>n</em> values was generated, in which each remaining value <em>x<sub>i</sub>
+                  </em> = 0 had avoided replacement exactly once.</p>
+
+<h5>2.1.4 Outbreak data.</h5><a id="article1.body1.sec2.sec1.sec4.p1" name="article1.body1.sec2.sec1.sec4.p1"></a><p>To generate outbreak datasets, stochastic disease outbreaks were simulated as discrete-time branching processes with NB offspring distributions, using the method described by Lloyd-Smith et al. <a href="#pone.0000180-LloydSmith1">[8]</a>. Each outbreak was assumed to begin with a single infected individual, who transmits the disease to <em>x</em>
+                  <sub>1</sub> other individuals, where <em>x</em>
+                  <sub>1</sub> is drawn from a NB distribution with parameters <em>m</em> and <em>k</em>. Each of these second-generation cases infects <em>x<sub>i</sub>
+                  </em> other individuals, where the <em>x<sub>i</sub>
+                  </em> are independent and identically distributed draws from the same NB offspring distribution; the number of cases in the third generation is then <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e002&amp;representation=PNG" class="inline-graphic"></span>. This process was repeated until the cumulative number of cases exceeded <em>n</em>, and the <em>x<sub>i</sub>
+                  </em> values corresponding to the first <em>n</em> infectious cases were used as the simulated outbreak dataset. To mirror the selection bias in using real outbreak datasets of a given size, outbreaks were simulated repeatedly until the cumulative number of cases was <em>n</em> or higher. Outbreaks that died out with fewer than <em>n</em> total cases were not used. Large outbreaks were less likely when <em>m</em>&lt;1, particularly for <em>k</em>&gt;1 where extremely infectious individuals (who cause large superspreading events) were very rare. No results were reported for parameter sets for which fewer than 1 in 10<sup>5</sup> simulated outbreaks had <em>n</em> cases or more. Otherwise, simulations were repeated until the desired number of datasets was obtained.</p>
+
+
+
+<h4>2.2 Estimation of dispersion parameter and confidence interval</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>For each of the above classes of simulated data, 10,000 simulated datasets were generated for each combination of the mean <em>m</em> = {0.5, 1.0, 3.0}, the dispersion parameter <em>k</em> = {0.1, 0.3, 0.7, 1.0, 3.0, 10.0}, and the sample size <em>n</em> = {10, 30, 100, 300}, in a full factorial design. Datasets with no non-zero values of <em>x<sub>i</sub>
+               </em> were rejected, as <em>k</em> cannot be estimated from all-zero data. For each simulated dataset, the ML estimate <em>k̂</em> was determined as described below. The 90% CI was calculated, and it was recorded whether the true value <em>k</em> fell within the CI, above its upper bound (termed a CI underestimate), or below its lower bound (a CI overestimate). The 90% CI was studied instead of the 95% interval because the more extreme values of <em>k</em> are most difficult to estimate accurately, and to match results presented in Lloyd-Smith et al. <a href="#pone.0000180-LloydSmith1">[8]</a>.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>An extensive statistical literature exists on ML estimation of NB parameters <a href="#pone.0000180-Bliss1">[1]</a>, <a href="#pone.0000180-Anscombe1">[10]</a>, <a href="#pone.0000180-Pieters1">[11]</a>, <a href="#pone.0000180-Ross1">[13]</a>, <a href="#pone.0000180-Piegorsch1">[15]</a>, <a href="#pone.0000180-Saha1">[17]</a>. This work shows that it is better to make inferences about <em>k</em> indirectly via its reciprocal α = 1/<em>k</em>, for two reasons. First, use of the reciprocal avoids discontinuities for homogeneous datasets, because increasing homogeneity yields α→0 instead of <em>k</em>→∞. Indeed, there is a continuous transition to values α&lt;0 corresponding to underdispersion (when sample variance is less than the mean), for which direct estimation of <em>k</em> is problematic <a href="#pone.0000180-Clark1">[14]</a>, <a href="#pone.0000180-Willson1">[25]</a>. Second, the sampling distribution for α tends to be more symmetric than that for <em>k</em> 
+               <a href="#pone.0000180-Ross1">[13]</a> (an example using outbreak data is shown in Fig. SI-1 of Lloyd-Smith et al. <a href="#pone.0000180-LloydSmith1">[8]</a>).</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>In this study ML estimation was conducted for the parameter α, but results are reported in terms of <em>k̂</em> = 1/α̂ because <em>k</em> is more familiar to epidemiologists and ecologists. Estimates of α̂ were restricted to positive values, because the allowed range for <em>k</em> was (0,∞). Underdispersed datasets were assigned the minimum value of α̂, corresponding to <em>k</em>→∞. This approximation is reasonable because the study focuses on highly overdispersed NB distributions (with <em>k</em>&lt;1); estimation of α̂ for underdispersed data is discussed in-depth elsewhere <a href="#pone.0000180-Clark1">[14]</a>, <a href="#pone.0000180-Piegorsch1">[15]</a>, <a href="#pone.0000180-Saha1">[17]</a>, <a href="#pone.0000180-Willson1">[25]</a>. The ML estimate of <em>m</em> is the sample mean, <em>x</em> ¯ <a href="#pone.0000180-Anscombe1">[10]</a>. The ML estimate of α was determined by unidimensional numerical maximization of the log-likelihood function <a href="#pone.0000180-Piegorsch1">[15]</a>, conducted using the fminbnd function of Matlab 6.1 over the interval (0.001,1000). The termination tolerance was set sufficiently small that negligible accuracy was lost in inverting the estimates, and direct ML estimates of <em>k</em> (obtained by maximizing the log-likelihood function derived from equation (1)) matched <em>k̂</em> = 1/α̂ to beyond the fourth decimal place. Reported estimates of <em>k̂</em> thus are drawn from the range (0.001,1000), which is much broader than the range of <em>k</em> commonly estimated from epidemiological data (e.g. the range of <em>k̂</em> was [0.032,5.1] in 11 uncontrolled outbreak datasets <a href="#pone.0000180-LloydSmith1">[8]</a>, or [0.038,6.014] in 49 macroparasite burden datasets <a href="#pone.0000180-Shaw1">[4]</a>). NB distributions with <em>k</em> = 1000 and <em>k</em>→∞ (the Poisson distribution) are indistinguishable in practice.</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>Confidence intervals for <em>k̂</em> were estimated from the asymptotic variance of the sampling distribution, given by the inverse of the information matrix <a href="#pone.0000180-Rice1">[24]</a>. For 11 outbreak datasets, intervals estimated in this way were very similar to those estimated using bias-corrected bootstrap methods (both parametric and non-parametric) and asymptotic variance for the zero-class estimator of <em>k</em> 
+               <a href="#pone.0000180-LloydSmith1">[8]</a>. For ML estimates of <em>k̂</em> or α̂, the asymptotic sampling variances (<span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e003&amp;representation=PNG" class="inline-graphic"></span> or <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e004&amp;representation=PNG" class="inline-graphic"></span>) cannot be expressed in closed form but are easily calculated numerically <a href="#pone.0000180-Anscombe1">[10]</a>, <a href="#pone.0000180-Saha1">[17]</a>. These variances are related by <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e005&amp;representation=PNG" class="inline-graphic"></span> 
+               <a href="#pone.0000180-Ross1">[13]</a>. In this study <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e006&amp;representation=PNG" class="inline-graphic"></span> was calculated for each simulated dataset, and the 90% CI for α̂ was estimated as [α̂−<em>z</em>
+               <sub>0.95</sub>σ<sub>α̂</sub>, α̂+<em>z</em>
+               <sub>0.95</sub>σ<sub>α̂</sub>], where <em>z</em>
+               <sub>0.95</sub> is the 95<sup>th</sup> percentile of the standard normal distribution <a href="#pone.0000180-Rice1">[24]</a>. The CI for <em>k̂</em> was generated by inverting and reversing the endpoints of the interval for α̂. When α̂−<em>z</em>
+               <sub>0.95</sub>σ<sub>α̂</sub>&lt;0, the upper bound of the interval for <em>k̂</em> was assumed to be <em>k</em>→∞.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>3.1 Negative binomial data</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>The results for unaltered NB datasets are shown in <a href="#pone-0000180-g001">Figure 1</a>. Boxplots show the median, interquartile range (IQR) and [5<sup>th</sup>, 95<sup>th</sup>] percentile interval of 10,000 ML estimates <em>k̂</em> for each parameter set, while vertical lines show the true value of <em>k</em>. In general, the estimates are biased upward (i.e. favoring values <em>k̂</em>&gt;<em>k</em>) but converge on the true value <em>k</em> as sample size <em>n</em> increases. For a given <em>n</em>, estimation tends to be less biased (the median value of <em>k̂</em> is closer to <em>k</em>) and more precise (the IQRs of <em>k̂</em> are smaller) for larger values of <em>m</em> and smaller values of <em>k</em>.</p>
+<div class="figure" id="pone-0000180-g001"><div class="img"><a name="pone-0000180-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1. </strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>Estimated values of <em>k̂</em> and confidence interval coverage for NB datasets. 10,000 datasets were simulated as described in Section 2.1.1 of the text, using mean <em>m</em>, dispersion parameter <em>k</em>, and sample size <em>n</em> as shown. Boxes show the median and interquartile range (IQR) of 10,000 resulting ML estimates of <em>k̂</em>, and whiskers show the 5<sup>th</sup> and 95<sup>th</sup> percentile values. Numbers to the right of each subplot show the percentage of simulations for which the true value of <em>k</em> was outside (below (CI overestimate)/above (CI underestimate) for the numbers <em>y</em>/<em>z</em>, respectively) the 90% confidence interval estimated for <em>k̂</em> The vertical line in each subplot shows the true value of <em>k</em>. To facilitate comparison among parameter sets, the horizontal axis of all subplots is scaled from 0 to 10 times the true value of <em>k</em>.</p>
+<span>doi:10.1371/journal.pone.0000180.g001</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>Numbers to the right of each subplot in <a href="#pone-0000180-g001">Figure 1</a> show the coverage accuracy of the CIs estimated for <em>k̂</em>. The two numbers <em>y</em>/<em>z</em> show, respectively, the percentage of simulations for which the true value of <em>k</em> fell below and above the estimated CI. For the 90% intervals estimated here, perfect coverage would yield values 5.0/5.0. For almost all parameter sets the proportion of CI overestimates (when the lower bound of the CI exceeds the true <em>k</em>) is greater than 5%, sometimes substantially so. This pattern is broken only for small <em>n</em> and large <em>k</em>. For all parameter sets the proportion of CI underestimates (when the upper bound of the CI is below the true <em>k</em>) is less than 5%. When the proportion of CI overestimates is very high (&gt;10%, say), CI underestimates tend to be almost non-existent. The true coverage of the estimated 90% CIs (calculated as (100−<em>y</em>−<em>z</em>)%) is generally less than 90%, although it often approaches this value for <em>n</em> = 300. Again, there is an exception for small <em>n</em> and large <em>k</em>, when realized coverage exceeds 90% and reaches 100% in some instances (when the CI is extremely broad).</p>
+
+
+<h4>3.2 Negative binomial data with uniform under-counting</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>The results for NB surveillance datasets subject to uniform under-counting are shown in <a href="#pone-0000180-g002">Figure 2</a>. Results are shown for two values of the probability <em>p<sub>u</sub>
+               </em> that any given secondary case is missed by surveillance. When <em>p<sub>u</sub>
+               </em> = 0.2 (<a href="#pone-0000180-g002">Fig. 2a</a>), estimates of <em>k̂</em> from these datasets differed only slightly from estimates from raw NB data (<a href="#pone-0000180-g001">Fig. 1</a>), exhibiting all the same qualitative patterns and slightly worse bias and precision. When <em>p<sub>u</sub>
+               </em> = 0.5 (<a href="#pone-0000180-g002">Fig. 2b</a>), results exhibited similar, but more extreme, differences from the raw NB results.</p>
+<div class="figure" id="pone-0000180-g002"><div class="img"><a name="pone-0000180-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2. </strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>Estimated values of <em>k̂</em> and confidence interval coverage for NB datasets with uniform under-counting of secondary cases. The probability with which any secondary case was missed by surveillance was (a) <em>p<sub>u</sub>
+                     </em> = 0.2 and (b) <em>p<sub>u</sub>
+                     </em> = 0.5. 10,000 datasets were simulated as described in Section 2.1.2 of the text, for parameters <em>m</em>, <em>k</em>, and <em>n</em> as shown. Plotting details are described in <a href="#pone-0000180-g001">Figure 1</a>.</p>
+<span>doi:10.1371/journal.pone.0000180.g002</span></div>
+
+<h4>3.3 Negative binomial data with under-reporting of zeroes</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>Results of estimation from NB surveillance datasets with under-reporting of the zero class, in which individuals who caused <em>x<sub>i</sub>
+               </em> = 0 cases were omitted from simulated datasets with probability <em>p<sub>z</sub>
+               </em>, are shown in <a href="#pone-0000180-g003">Figure 3</a>. For both <em>p<sub>z</sub>
+               </em> = 0.2 (<a href="#pone-0000180-g003">Fig. 3a</a>) and <em>p<sub>z</sub>
+               </em> = 0.5 (<a href="#pone-0000180-g003">Fig. 3b</a>), estimates of <em>k̂</em> are biased upward significantly. Notably, this effect does not diminish as sample size increases. Indeed, for most parameter sets the proportion of CI overestimates increases with higher <em>n</em>, as the sampling distribution narrows around the biased value.</p>
+<div class="figure" id="pone-0000180-g003"><div class="img"><a name="pone-0000180-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3. </strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>Estimated values of <em>k̂</em> and confidence interval coverage for NB datasets with under-reporting of zeroes. Individuals that caused no secondary infections were missed by surveillance with probability (a) <em>p<sub>z</sub>
+                     </em> = 0.2 and (b) <em>p<sub>z</sub>
+                     </em> = 0.5. 10,000 datasets were simulated as described in Section 2.1.3 of the text. Plotting details are described in <a href="#pone-0000180-g001">Figure 1</a>.</p>
+<span>doi:10.1371/journal.pone.0000180.g003</span></div>
+
+<h4>3.4 Outbreak data</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>Estimates from simulated outbreak datasets are shown in <a href="#pone-0000180-g004">Figure 4</a>. For <em>m</em> = 0.5 and <em>k</em>&gt;0.1, no results are presented for <em>n</em>≥100 because fewer than 1 in 10<sup>5</sup> simulated outbreaks reached 100 cases. For other values of <em>m</em> and <em>k</em>, estimates of <em>k̂</em> are quite robust (<a href="#pone-0000180-g004">Fig. 4a</a>). Comparing these results to estimates from <a href="#pone-0000180-g001">Figure 1</a>, it is evident that estimates from outbreak datasets have similar biases (slightly positive for small <em>n</em>, but diminishing as <em>n</em> increases) and precisions that are as good and sometimes better than those from unaltered NB data. The outbreak datasets yield slightly more CI overestimates for <em>m</em> = 3, even though the IQR and [5<sup>th</sup>, 95<sup>th</sup>] percentile interval of the sampling distribution is often smaller. Outbreak datasets yield fewer CI overestimates for <em>k</em> = 0.1, <em>m</em> = 0.5 or 1.0, and <em>n</em> = 10 or 30.</p>
+<div class="figure" id="pone-0000180-g004"><div class="img"><a name="pone-0000180-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4. </strong></p><a id="article1.body1.sec3.sec4.fig1.caption1.p1" name="article1.body1.sec3.sec4.fig1.caption1.p1"></a><p>Estimated values of (a) <em>k̂</em> and (b) <em>m̂</em> for outbreak datasets generated by branching process simulations with NB offspring distributions. 10,000 datasets were simulated as described in Section 2.1.4 of the text. Circles indicate parameter sets for which fewer than 1 in 10<sup>5</sup> simulated outbreaks had <em>n</em> cases or more. Other plotting details are described in <a href="#pone-0000180-g001">Figure 1</a>.</p>
+<span>doi:10.1371/journal.pone.0000180.g004</span></div><a id="article1.body1.sec3.sec4.p2" name="article1.body1.sec3.sec4.p2"></a><p>ML estimates of the mean are shown for these datasets as well (<a href="#pone-0000180-g004">Fig. 4b</a>). There is a striking positive bias evident in the estimates of <em>m̂</em> for <em>m</em> = 0.5; in all cases shown, the distribution of <em>m̂</em> estimates has median value &gt;1 and 5<sup>th</sup> percentile value ≥1. For <em>m</em> = 1, there is an upward bias in the <em>m̂</em> estimates that decreases as sample size rises. For <em>m</em> = 3, the upward bias persists but is very slight for <em>k</em>≥0.3 or <em>n</em>≥30.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>This study makes three novel contributions to the established literature on estimation of the NB dispersion parameter <em>k</em>. It provides the first comprehensive evaluation of ML estimation of <em>k</em> for highly overdispersed datasets (i.e. those with <em>k</em>&lt;1); it reports the coverage accuracy of CIs derived from those estimates; and it examines potential biases in estimation due to methods and errors of data collection, with application to epidemiological datasets in particular and biological datasets in general. The major qualitative results are summarized in <a href="#pone-0000180-t001">Table 1</a>.</p>
+<div class="figure" id="pone-0000180-t001"><div class="img"><a name="pone-0000180-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000180" data-uri="info:doi/10.1371/journal.pone.0000180.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000180.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000180.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000180.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Influence of NB parameters and data types on bias and precision of <em>k̂</em>.</span></strong></p><span>doi:10.1371/journal.pone.0000180.t001</span></div><a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>The results for unaltered NB datasets confirm and extend the findings of earlier studies. Small-sample estimates of <em>k̂</em> were biased toward overestimating <em>k</em>—and hence underestimating the degree of overdispersion in the data—as reported in previous studies using ML and related methods of estimation for <em>k</em>≥1 <a href="#pone.0000180-Clark1">[14]</a>, <a href="#pone.0000180-Piegorsch1">[15]</a>, <a href="#pone.0000180-Saha1">[17]</a>. The positive bias in <em>k</em> arises because smaller samples are less likely to include values from the right-hand tail of the NB distribution, without which the dataset appears more homogeneous. Estimates of <em>k̂</em> were less biased and more precise for larger values of <em>m</em>, possibly because such datasets had higher total numbers of non-zero events. Estimates were more biased and less precise for higher values of <em>k</em> (particularly in the previously-studied range of <em>k</em>≥1), corresponding to the known instability of ML estimates when data are closer to being fitted by a Poisson distribution <a href="#pone.0000180-Ross1">[13]</a>. Intuitively, this effect arises because a NB distribution with <em>k</em> = 10 is qualitatively similar to one with <em>k</em> = 50 or <em>k</em>→∞, and quite dissimilar to one with <em>k</em> = 1, so the range of <em>k̂</em> estimates for small samples tends to be large and skewed upwards.</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>One previous simulation study <a href="#pone.0000180-Gregory1">[16]</a> presented in-depth results for estimation of <em>k</em>&lt;1 (specifically, for <em>k</em> = 0.4), employing method-of-moments estimates <em>k̂</em>
+            <sub>mom</sub> rather than the ML estimates assessed here. That study reported that smaller sample sizes from NB datasets led to systematic underestimation of the mean and variance and overestimation of <em>k</em>; the variance/mean ratio was also biased downward by small <em>n</em>. There is one interesting difference between the method-of-moments estimates results of Gregory and Woolhouse <a href="#pone.0000180-Gregory1">[16]</a> and the present results for ML estimation: the positive bias of <em>k̂</em>
+            <sub>mom</sub> was fairly constant as <em>m</em> increased (though the range of <em>k̂</em>
+            <sub>mom</sub> values was greatest for lower <em>m</em>), while the bias of ML estimates <em>k̂</em> decreased for higher <em>m</em> (<a href="#pone-0000180-g001">Fig. 1</a>). It is notable that their values of <em>m</em> ranged from 1.25 to 160 (for <em>k</em> = 0.4), while the values used here ranged from 0.5 to 3 (for <em>k</em> between 0.1 and 10).</p>
+<a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4"></a><p>Several salient patterns emerged regarding the realized coverage of 90% CIs, as estimated using the asymptotic variance of ML estimates. The true coverage of the nominal 90% intervals was typically less than 90%, and CI overestimates were much more numerous than CI underestimates. For all parameter sets considered, &lt;5% of CIs had upper bounds below the true value of <em>k</em>. The realized coverage of the CIs is driven by the interplay of two factors: the value of the estimates, <em>k̂</em>, and the breadth of the intervals (determined by the sampling variance, <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e007&amp;representation=PNG" class="inline-graphic"></span>). The upward bias of <em>k̂</em> increases for lower values of <em>n</em> and <em>m</em> and higher values of <em>k</em>; lower values of <em>n</em>, <em>m</em>, or <em>k</em> lead to increases in <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e008&amp;representation=PNG" class="inline-graphic"></span> and hence broader intervals. Overestimates of <em>k̂</em> favor CI overestimates by setting a high mid-point for the estimated intervals, and by reducing the estimated sampling variance (because <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000180.e009&amp;representation=PNG" class="inline-graphic"></span> is calculated with an inflated value of <em>k</em>) and thus leading to narrower intervals. The gross patterns in the frequency of CI overestimates thus are driven primarily by patterns of bias in <em>k̂</em>.</p>
+<a id="article1.body1.sec4.p5" name="article1.body1.sec4.p5"></a><p>To understand the finer patterns in CI coverage accuracy, particularly for CI underestimates and for CI overestimates for higher values of <em>k</em>, it is necessary to consider how the CIs are calculated. Recall that intervals were estimated for α = 1/<em>k</em> as [α̂−<em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub>, α̂+<em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub>], then converted into intervals for <em>k</em>. CI underestimates for <em>k</em> occur when α&lt;α̂−<em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub>. The complete absence of CI underestimates in many small-<em>n</em> parameter sets arises because α̂&lt;<em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub> such that the lower bound of the CI for α̂ is &lt;0. In these instances, the upper bound of the CI for <em>k̂</em> is set to the maximum value for <em>k̂</em> and cannot be exceeded. As <em>n</em>, <em>m</em>, or <em>k</em> increases, σ<sub>α̂</sub> decreases and the CIs narrow such that some CI underestimates occur. Similarly, CI overestimates occur when α&gt;α̂+<em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub>. As <em>k</em> increases, CI overestimates become less frequent (despite the high frequency of <em>k̂</em> overestimates) because α = 1/<em>k</em> is often smaller than <em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub>. Because α̂ is constrained to positive values in these simulations, CI overestimates are impossible when α&lt;<em>z</em>
+            <sub>0.95</sub>σ<sub>α̂</sub>. Accordingly, for given values of <em>k</em>&gt;1, CI overestimates are more frequent for higher values of <em>n</em> and <em>m</em> (corresponding to lower values of σ<sub>α̂</sub>). This study's focus on overdispersed datasets, and hence on the positive values of <em>k</em> familiar to biologists, has thus influenced the determination of CI coverage in some regions of parameter space. Estimation procedures allowing for underdispersed data (α̂&lt;0) may show different results. Investigators requiring CIs guaranteed to reach nominal levels of coverage should consult the literature on exact CIs for discrete distributions <a href="#pone.0000180-Blaker1">[e.g. 26]</a>.</p>
+<a id="article1.body1.sec4.p6" name="article1.body1.sec4.p6"></a><p>The simulation results from surveillance and outbreak datasets (<a href="#pone-0000180-g002">Figs. 2</a>–<a href="#pone-0000180-g003"></a>
+            <a href="#pone-0000180-g004">4</a>) can be interpreted readily in light of the raw NB results discussed above. For datasets where individual values correspond to completely unconnected events (e.g. epidemiological surveillance of multiple independent introductions of a disease, or many other biological observations), the effects of two forms of under-reporting were assessed. In uniform under-counting, each instance of the quantity being counted (e.g. secondary cases, in the epidemiological context) can be overlooked with equal probability <em>p<sub>u</sub>
+            </em>. The expected value of each datum <em>x<sub>i</sub>
+            </em> in the raw dataset (drawn from an NB distribution with parameters <em>m</em> and <em>k</em>) is reduced to (1−<em>p<sub>u</sub>
+            </em>) <em>x<sub>i</sub>
+            </em>, and the resulting distribution is NB with parameters (1−<em>p<sub>u</sub>
+            </em>) <em>m</em> and <em>k</em> (as argued under the topic of ‘population-wide control measures’ by Lloyd-Smith et al. <a href="#pone.0000180-LloydSmith1">[8]</a>). Thus uniform under-counting does not introduce systematic bias to ML estimates of <em>k</em>, but does cause a slight increase in the small-sample bias and decrease in precision (<a href="#pone-0000180-g002">Fig. 2</a>) corresponding to the effect of a lower mean, as characterized for raw NB data (<a href="#pone-0000180-g001">Fig. 1</a>).</p>
+<a id="article1.body1.sec4.p7" name="article1.body1.sec4.p7"></a><p>In contrast, the second class of under-reporting bias, in which <em>x<sub>i</sub>
+            </em> = 0 events are omitted from datasets with probability <em>p<sub>z</sub>
+            </em>, leads to systematic overestimation of <em>k</em> that does not vanish as <em>n</em> increases (<a href="#pone-0000180-g003">Fig. 3</a>). NB distributions with low <em>k</em> are characterized by large zero classes and long tails (giving rise to the large variance-to-mean ratios that define overdispersion). Decreasing the proportion of zeroes (hence replacing <em>x<sub>i</sub>
+            </em> = 0 events by <em>x<sub>i</sub>
+            </em>&gt;0 events) leads to higher sample mean <em>m̂</em> and lower sample variance <em>ŝ</em>
+            <sup>2</sup>. As is readily seen from the method-of moments estimator <em>k̂</em>
+            <sub>mom</sub> = <em>m̂</em>
+            <sup>2</sup>/(<em>ŝ</em>
+            <sup>2</sup>−<em>m̂</em>) <a href="#pone.0000180-Anscombe1">[10]</a>, this will bias estimates of <em>k</em> to higher values. Investigators should be vigilant for this class of under-reporting bias, and conduct estimation using a zero-modified NB distribution <a href="#pone.0000180-Ridout1">[27]</a> if zero under-counting is suspected.</p>
+<a id="article1.body1.sec4.p8" name="article1.body1.sec4.p8"></a><p>Outbreak datasets involve a mechanism of data generation that is particular to epidemiological (or demographic) processes. Earlier analyses have shown that when offspring distributions are highly overdispersed (e.g. NB with <em>k</em>&lt;1), the outbreaks that succeed tend to be those with early superspreading events <a href="#pone.0000180-LloydSmith1">[8]</a>. The present results show that this does not cause underestimation of <em>k</em> as had been feared; estimates of <em>k̂</em> from outbreak data (<a href="#pone-0000180-g004">Fig. 4a</a>) exhibited similar properties to those from raw NB data (<a href="#pone-0000180-g001">Fig. 1</a>). Indeed, outbreak estimates had slightly smaller bias and greater precision for smaller <em>n</em>, probably because the use of outbreak data (biased toward including high-<em>x<sub>i</sub>
+            </em> events) counteracts the usual small-sample bias (which arises because small datasets often lack high-<em>x<sub>i</sub>
+            </em> events). Therefore the selection bias inherent in outbreak datasets acts to offset somewhat the usual upward bias in estimates of <em>k̂</em>.</p>
+<a id="article1.body1.sec4.p9" name="article1.body1.sec4.p9"></a><p>In sharp contrast, estimation of <em>m̂</em> from outbreak datasets (assessed by simulation because, unlike the surveillance cases, the potential bias cannot be computed directly) is strongly biased upward when <em>m</em> is below or near 1 (<a href="#pone-0000180-g004">Fig. 4b</a>). This is unsurprising because the minimum value of <em>m̂</em> for an outbreak with <em>n</em> cases is (<em>n</em>−1)/<em>n</em> (for an outbreak that dies out immediately following the <em>n</em>
+            <sup>th</sup> case), while higher values are quite feasible. (Recall that <em>m̂</em> is estimated as the mean number of secondary cases generated by the first <em>n</em> cases in an outbreak, regardless of whether the outbreak continues beyond <em>n</em> cases. If the cumulative number of cases after the <em>r</em>
+            <sup>th</sup> generation of transmission is <em>j</em>, then the mean value of <em>x<sub>i</sub>
+            </em> for <em>i</em> = 1 to <em>j</em> is (<em>j</em>−1)/<em>j</em>. If the <em>n</em>
+            <sup>th</sup> case then occurs in the (<em>r</em>+1)<sup>th</sup> generation of transmission, then all infections caused by the final <em>n</em>−<em>j</em> individuals in the dataset (i.e. <em>x<sub>i</sub>
+            </em> for <em>i</em> = <em>j</em>+1 to <em>n</em>) serve to inflate <em>m̂</em> above its minimum value of (<em>n</em>−1)/<em>n.</em>) The greatest bias in <em>m̂</em> occurs for low <em>k</em> and <em>n</em>, when large superspreading events in the final generation can have disproportionate effect on the sample mean. For <em>m</em> = 1.0, the bias decreases as <em>n</em> increases, probably because higher-<em>n</em> datasets involve more generations of disease transmission, so the ‘left-over’ cases of the final generation (i.e. the final <em>n</em>−<em>j</em> individuals in the example above) make a smaller proportional contribution. For <em>m</em> = 3.0, there is no substantial bias for any parameters (with a minor exception for <em>k</em> = 0.1 and <em>n</em> = 10).</p>
+<a id="article1.body1.sec4.p10" name="article1.body1.sec4.p10"></a><p>The results presented here suggest several avenues for future work. This study has focused on ML estimation only, and it would be fruitful to extend the conclusions to other methods of estimating <em>k</em>, such as maximum quasi-likelihood <a href="#pone.0000180-Clark1">[14]</a>, method-of-moments with small-sample correction <a href="#pone.0000180-Gregory1">[16]</a>, or bias-corrected ML <a href="#pone.0000180-Saha1">[17]</a>. Further studies on estimation of <em>m̂</em> will be interesting, particularly in the epidemiological context where the mean of the offspring distribution is equivalent to the crucial quantity <em>R</em>
+            <sub>0</sub> 
+            <a href="#pone.0000180-LloydSmith1">[8]</a>, <a href="#pone.0000180-Diekmann1">[22]</a>. In particular, it will be important to learn how the overdispersion observed in disease transmission data <a href="#pone.0000180-LloydSmith1">[8]</a> influences estimation of <em>R</em>
+            <sub>0</sub> from continuous-time outbreak data such as daily case reports <a href="#pone.0000180-Anderson1">[28]</a>, <a href="#pone.0000180-Ferrari1">[29]</a>, as opposed to estimation directly from known chains of transmission as assessed here. Overdispersed offspring distributions cause outbreaks to either die out stochastically or grow explosively <a href="#pone.0000180-LloydSmith1">[8]</a>, so estimation of <em>R</em>
+            <sub>0</sub> from daily case reports (of successful outbreaks only, necessarily) may exhibit bias beyond that shown in <a href="#pone-0000180-g004">Figure 4b</a>.</p>
+<a id="article1.body1.sec4.p11" name="article1.body1.sec4.p11"></a><p>In summary, this study showed that there is minimal risk of underestimating <em>k</em>—and hence of overestimating the degree of overdispersion in the data—due to small sample size or any of the three process biases considered here. There is substantial risk of overestimating <em>k</em>, particularly when sample sizes are small or the zero-class is systematically under-counted. All of the systematic biases identified in this study favored higher values of <em>k̂</em>, and instances when confidence intervals excluded the true value <em>k</em> were predominantly overestimates. Note that an independent risk of underestimating <em>k</em> can arise from pooling data from heterogeneous groups: the dispersion parameter estimated from pooled data is nearly always less than the average of values estimated for the individual groups <a href="#pone.0000180-Pieters1">[11]</a>, <a href="#pone.0000180-Gregory1">[16]</a>. Regarding sample sizes for NB datasets with <em>k</em>≤1, <em>n</em> = 100 or more allows accurate and precise ML estimation of <em>k̂</em>, while for <em>n</em> = 30 the median estimates showed minimal bias but the sampling distribution skewed to high values. A sample size of 10 yields unreliable estimates, particularly for <em>m</em>≤1. These findings will help guide prospective design of sampling regimens, or, when sample size cannot be increased, will aid investigators in understanding the limitations of ML estimates of <em>k̂</em> and associated CIs.</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>I am grateful to Leo Polansky, Sadie Ryan and Maria Sanchez for helpful comments on the manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: JL. Performed the experiments: JL. Analyzed the data: JL. Contributed reagents/materials/analysis tools: JL. Wrote the paper: JL.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000180-Bliss1" id="pone.0000180-Bliss1"></a>Bliss CI, Fisher RA (1953) Fitting the negative binomial distribution to biological data - note on the efficient fitting of the negative binomial. Biometrics  9: 176–200.  <ul class="find" data-citedArticleID="928016" data-doi="10.2307/3001850"><li><a href="http://dx.doi.org/10.2307/3001850" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fitting+the+negative+binomial+distribution+to+biological+data+-+note+on+the+efficient+fitting+of+the+negative+binomial." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fitting+the+negative+binomial+distribution+to+biological+data+-+note+on+the+efficient+fitting+of+the+negative+binomial.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000180-Pielou1" id="pone.0000180-Pielou1"></a>Pielou EC (1977) Mathematical Ecology. New York: Wiley..   <ul class="find-nolinks"></ul></li><li><span class="label">3.
+              </span><a name="pone.0000180-White1" id="pone.0000180-White1"></a>White GC, Bennetts RE (1996) Analysis of frequency count data using the negative binomial distribution. Ecology  77: 2549–2557.  <ul class="find" data-citedArticleID="928060" data-doi="10.2307/2265753"><li><a href="http://dx.doi.org/10.2307/2265753" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Analysis+of+frequency+count+data+using+the+negative+binomial+distribution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Analysis+of+frequency+count+data+using+the+negative+binomial+distribution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000180-Shaw1" id="pone.0000180-Shaw1"></a>Shaw DJ, Grenfell BT, Dobson AP (1998) Patterns of macroparasite aggregation in wildlife host populations. Parasitology  117: 597–610.  <ul class="find" data-citedArticleID="928052" data-doi="10.1017/s0031182098003448"><li><a href="http://dx.doi.org/10.1017/s0031182098003448" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Patterns+of+macroparasite+aggregation+in+wildlife+host+populations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Patterns+of+macroparasite+aggregation+in+wildlife+host+populations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000180-Walther1" id="pone.0000180-Walther1"></a>Walther BA, Morand S (1998) Comparative performance of species richness estimation methods. Parasitology  116: 395–405.  <ul class="find" data-citedArticleID="928058" data-doi="10.1017/s0031182097002230"><li><a href="http://dx.doi.org/10.1017/s0031182097002230" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+performance+of+species+richness+estimation+methods." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+performance+of+species+richness+estimation+methods.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000180-Power1" id="pone.0000180-Power1"></a>Power JH, Moser EB (1999) Linear model analysis of net catch data using the negative binomial distribution. Can J Fish Aq Sci  56: 191–200.  <ul class="find" data-citedArticleID="928042" data-doi="10.1139/f98-150"><li><a href="http://dx.doi.org/10.1139/f98-150" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Linear+model+analysis+of+net+catch+data+using+the+negative+binomial+distribution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Linear+model+analysis+of+net+catch+data+using+the+negative+binomial+distribution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000180-Alexander1" id="pone.0000180-Alexander1"></a>Alexander N, Moyeed R, Stander J (2000) Spatial modelling of individual-level parasite counts using the negative binomial distribution. Biostatistics  1: 453–463.  <ul class="find" data-citedArticleID="928008" data-doi="10.1093/biostatistics/1.4.453"><li><a href="http://dx.doi.org/10.1093/biostatistics/1.4.453" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Spatial+modelling+of+individual-level+parasite+counts+using+the+negative+binomial+distribution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Spatial+modelling+of+individual-level+parasite+counts+using+the+negative+binomial+distribution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000180-LloydSmith1" id="pone.0000180-LloydSmith1"></a>Lloyd-Smith JO, Schreiber SJ, Kopp PE, Getz WM (2005) Superspreading and the effect of individual variation on disease emergence. Nature  438: 355–359.  <ul class="find" data-citedArticleID="928034" data-doi="10.1038/nature04153"><li><a href="http://dx.doi.org/10.1038/nature04153" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Superspreading+and+the+effect+of+individual+variation+on+disease+emergence." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Superspreading+and+the+effect+of+individual+variation+on+disease+emergence.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000180-Harris1" id="pone.0000180-Harris1"></a>Harris TE (1989) The Theory of Branching Processes. New York: Dover.   <ul class="find-nolinks"></ul></li><li><span class="label">10.
+              </span><a name="pone.0000180-Anscombe1" id="pone.0000180-Anscombe1"></a>Anscombe FJ (1950) Sampling theory of the negative binomial and logarithmic series distributions. Biometrika  37: 358–382.  <ul class="find" data-citedArticleID="928012" data-doi="10.2307/2332388"><li><a href="http://dx.doi.org/10.2307/2332388" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sampling+theory+of+the+negative+binomial+and+logarithmic+series+distributions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sampling+theory+of+the+negative+binomial+and+logarithmic+series+distributions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000180-Pieters1" id="pone.0000180-Pieters1"></a>Pieters EP, Gates CE, Matis JH, Sterling WL (1977) Small sample comparison of different estimators of negative binomial parameters. Biometrics  33: 718–723.  <ul class="find" data-citedArticleID="928040" data-doi="10.2307/2529470"><li><a href="http://dx.doi.org/10.2307/2529470" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Small+sample+comparison+of+different+estimators+of+negative+binomial+parameters." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Small+sample+comparison+of+different+estimators+of+negative+binomial+parameters.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000180-Wilson1" id="pone.0000180-Wilson1"></a>Wilson K, Bjornstad ON, Dobson AP, Merler S, Poglayen G, et al.  (2001)  Heterogeneities in macroparasite infections: patterns and processes. In: Hudson PJ, Rizzoli A, Grenfell BT, Heesterbeek H, Dobson AP, editors. The Ecology of Wildlife Diseases. Oxford: Oxford University Press. pp. 6–44.  <ul class="find-nolinks"></ul></li><li><span class="label">13.
+              </span><a name="pone.0000180-Ross1" id="pone.0000180-Ross1"></a>Ross GJS, Preece DA (1985) The negative binomial distribution. Statistician  34: 323–336.  <ul class="find" data-citedArticleID="928048" data-doi="10.2307/2987659"><li><a href="http://dx.doi.org/10.2307/2987659" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+negative+binomial+distribution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+negative+binomial+distribution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000180-Clark1" id="pone.0000180-Clark1"></a>Clark SJ, Perry JN (1989) Estimation of the negative binomial parameter kappa by maximum quasi-likelihood. Biometrics  45: 309–316.  <ul class="find" data-citedArticleID="928020" data-doi="10.2307/2532055"><li><a href="http://dx.doi.org/10.2307/2532055" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimation+of+the+negative+binomial+parameter+kappa+by+maximum+quasi-likelihood." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimation+of+the+negative+binomial+parameter+kappa+by+maximum+quasi-likelihood.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000180-Piegorsch1" id="pone.0000180-Piegorsch1"></a>Piegorsch WW (1990) Maximum-likelihood estimation for the negative binomial dispersion parameter. Biometrics  46: 863–867.  <ul class="find" data-citedArticleID="928036" data-doi="10.2307/2532104"><li><a href="http://dx.doi.org/10.2307/2532104" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Maximum-likelihood+estimation+for+the+negative+binomial+dispersion+parameter." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Maximum-likelihood+estimation+for+the+negative+binomial+dispersion+parameter.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000180-Gregory1" id="pone.0000180-Gregory1"></a>Gregory RD, Woolhouse MEJ (1993) Quantification of parasite aggregation - a simulation study. Acta Trop  54: 131–139.  <ul class="find" data-citedArticleID="928030" data-doi="10.1016/0001-706x(93)90059-k"><li><a href="http://dx.doi.org/10.1016/0001-706x(93)90059-k" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantification+of+parasite+aggregation+-+a+simulation+study." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantification+of+parasite+aggregation+-+a+simulation+study.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000180-Saha1" id="pone.0000180-Saha1"></a>Saha K, Paul S (2005) Bias-corrected maximum likelihood estimator of the negative binomial dispersion parameter. Biometrics  61: 179–185.  <ul class="find" data-citedArticleID="928050" data-doi="10.1111/j.0006-341x.2005.030833.x"><li><a href="http://dx.doi.org/10.1111/j.0006-341x.2005.030833.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bias-corrected+maximum+likelihood+estimator+of+the+negative+binomial+dispersion+parameter." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bias-corrected+maximum+likelihood+estimator+of+the+negative+binomial+dispersion+parameter.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000180-Thompson1" id="pone.0000180-Thompson1"></a>Thompson WL (2002) Towards reliable bird surveys: Accounting for individuals present but not detected. Auk  119: 18–25.  <ul class="find" data-citedArticleID="928054" data-doi="10.2307/4090008"><li><a href="http://dx.doi.org/10.2307/4090008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Towards+reliable+bird+surveys%3A+Accounting+for+individuals+present+but+not+detected." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Towards+reliable+bird+surveys%3A+Accounting+for+individuals+present+but+not+detected.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000180-Wallinga1" id="pone.0000180-Wallinga1"></a>Wallinga J, Teunis P (2004) Different epidemic curves for severe acute respiratory syndrome reveal similar impacts of control measures. Am J Epidemiol  160: 509–516.  <ul class="find" data-citedArticleID="928056" data-doi="10.1093/aje/kwh255"><li><a href="http://dx.doi.org/10.1093/aje/kwh255" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Different+epidemic+curves+for+severe+acute+respiratory+syndrome+reveal+similar+impacts+of+control+measures." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Different+epidemic+curves+for+severe+acute+respiratory+syndrome+reveal+similar+impacts+of+control+measures.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000180-Gray1" id="pone.0000180-Gray1"></a>Gray BR (2005) Selecting a distributional assumption for modelling relative densities of benthic macroinvertebrates. Ecol Model  185: 1–12.  <ul class="find" data-citedArticleID="928028" data-doi="10.1016/j.ecolmodel.2004.11.006"><li><a href="http://dx.doi.org/10.1016/j.ecolmodel.2004.11.006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Selecting+a+distributional+assumption+for+modelling+relative+densities+of+benthic+macroinvertebrates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Selecting+a+distributional+assumption+for+modelling+relative+densities+of+benthic+macroinvertebrates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000180-Donnelly1" id="pone.0000180-Donnelly1"></a>Donnelly CA, Fisher MC, Fraser C, Ghani AC, Riley S, et al.  (2004) Epidemiological and genetic analysis of severe acute respiratory syndrome. Lancet Infect Dis  4: 672–683.  <ul class="find" data-citedArticleID="928024" data-doi="10.1016/s1473-3099(04)01173-9"><li><a href="http://dx.doi.org/10.1016/s1473-3099(04)01173-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Epidemiological+and+genetic+analysis+of+severe+acute+respiratory+syndrome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Epidemiological+and+genetic+analysis+of+severe+acute+respiratory+syndrome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000180-Diekmann1" id="pone.0000180-Diekmann1"></a>Diekmann O, Heesterbeek JAP (2000) Mathematical Epidemiology of Infectious Diseases: Model Building, Analysis, and Interpretation. Chichester: John Wiley &amp; Sons.   <ul class="find-nolinks"></ul></li><li><span class="label">23.
+              </span><a name="pone.0000180-Boswell1" id="pone.0000180-Boswell1"></a>Boswell MT, Patil GP (1970)  Chance mechanisms generating the negative binomial distribution. In: Patil GP, editor. Random Counts in Scientific Work. University Park, PA: Pennsylvania State University Press. pp. 3–22.  <ul class="find-nolinks"></ul></li><li><span class="label">24.
+              </span><a name="pone.0000180-Rice1" id="pone.0000180-Rice1"></a>Rice JA (1995) Mathematical statistics and data analysis. Belmont, , CA: Duxbury Press.   <ul class="find-nolinks"></ul></li><li><span class="label">25.
+              </span><a name="pone.0000180-Willson1" id="pone.0000180-Willson1"></a>Willson LJ, Folks JL, Young JH (1984) Multistage estimation compared with fixed-sample-size estimation of the negative binomial parameter <em>k</em>. Biometrics  40: 109–117.  <ul class="find" data-citedArticleID="928062" data-doi="10.2307/2530749"><li><a href="http://dx.doi.org/10.2307/2530749" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Multistage+estimation+compared+with+fixed-sample-size+estimation+of+the+negative+binomial+parameter+k." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Multistage+estimation+compared+with+fixed-sample-size+estimation+of+the+negative+binomial+parameter+k.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000180-Blaker1" id="pone.0000180-Blaker1"></a>Blaker H (2000) Confidence curves and improved exact confidence intervals for discrete distributions. Can J Stat  28: 783–798.  <ul class="find" data-citedArticleID="928014" data-doi="10.2307/3315916"><li><a href="http://dx.doi.org/10.2307/3315916" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Confidence+curves+and+improved+exact+confidence+intervals+for+discrete+distributions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Confidence+curves+and+improved+exact+confidence+intervals+for+discrete+distributions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000180-Ridout1" id="pone.0000180-Ridout1"></a>Ridout MS, Demetrio CGB, Hinde JP (1998) Models for counts data with many zeros. pp. 179–192.  Proceedings of the XIXth International Biometric Conference. <ul class="find-nolinks"></ul></li><li><span class="label">28.
+              </span><a name="pone.0000180-Anderson1" id="pone.0000180-Anderson1"></a>Anderson RM, May RM (1991) Infectious Diseases of Humans: Dynamics and Control:. Oxford University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">29.
+              </span><a name="pone.0000180-Ferrari1" id="pone.0000180-Ferrari1"></a>Ferrari MJ, Bjornstad ON, Dobson AP (2005) Estimation and inference of <em>R</em>
+                  <sub>0</sub> of an infectious pathogen by a removal method. Math Biosci  198: 14–26.  <ul class="find" data-citedArticleID="928026"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Estimation+and+inference+of+R0+of+an+infectious+pathogen+by+a+removal+method.&amp;auth=&amp;atitle=Estimation+and+inference+of+R0+of+an+infectious+pathogen+by+a+removal+method." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimation+and+inference+of+R0+of+an+infectious+pathogen+by+a+removal+method." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimation+and+inference+of+R0+of+an+infectious+pathogen+by+a+removal+method.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.XML" value="95983"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.PDF" value="597428"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e001.PNG" value="8060"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e001.TIF" value="19804"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e002.PNG" value="2696"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e002.TIF" value="11916"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e003.PNG" value="1130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e003.TIF" value="9640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e004.PNG" value="1204"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e004.TIF" value="9816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e005.PNG" value="2549"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e005.TIF" value="11832"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e006.PNG" value="1204"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e006.TIF" value="9816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g001.PNG_L" value="779307"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g001.PNG_M" value="27642"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g001.PNG_S" value="2285"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g001.TIF" value="1127576"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g001.PNG_I" value="12931"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g002.PNG_L" value="1387663"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g002.PNG_M" value="51856"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g002.PNG_S" value="2592"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g002.TIF" value="2034210"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g002.PNG_I" value="23553"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g003.PNG_L" value="1316797"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g003.PNG_M" value="52588"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g003.PNG_S" value="2390"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g003.TIF" value="1948988"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g003.PNG_I" value="23715"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g004.PNG_L" value="908794"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g004.PNG_M" value="35318"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g004.PNG_S" value="2178"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g004.TIF" value="1449820"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.g004.PNG_I" value="16568"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.t001.PNG_L" value="43777"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.t001.PNG_M" value="18953"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.t001.PNG_S" value="1912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.t001.TIF" value="1727154"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.t001.PNG_I" value="8651"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e007.PNG" value="1130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e007.TIF" value="9640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e008.PNG" value="1130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e008.TIF" value="12784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e009.PNG" value="1130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000180.e009.TIF" value="9640"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000180&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000180" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000180&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000180&volume=&issue=&title=Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases&author_name=James%20O.%20Lloyd-Smith&start_page=1&end_page=8" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000180" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180&amp;t=Maximum%20Likelihood%20Estimation%20of%20the%20Negative%20Binomial%20Dispersion%20Parameter%20for%20Highly%20Overdispersed%20Data%2C%20with%20Applications%20to%20Infectious%20Diseases" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180&title=Maximum%20Likelihood%20Estimation%20of%20the%20Negative%20Binomial%20Dispersion%20Parameter%20for%20Highly%20Overdispersed%20Data%2C%20with%20Applications%20to%20Infectious%20Diseases&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180&amp;title=Maximum%20Likelihood%20Estimation%20of%20the%20Negative%20Binomial%20Dispersion%20Parameter%20for%20Highly%20Overdispersed%20Data%2C%20with%20Applications%20to%20Infectious%20Diseases" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000180&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Maximum Likelihood Estimation of the Negative Binomial Dispersion Parameter for Highly Overdispersed Data, with Applications to Infectious Diseases';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000180';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Maximum%20Likelihood%20Estimation%20of%20the%20Negative%20Binomial%20Dispersion%20Parameter%20for%20Highly%20Overdispersed%20Data%2C%20with%20Applications%20to%20Infectious%20Diseases http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000180" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000180" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Binomials%22" title="Search for articles in the subject area:'Binomials'"><div class="flagText">Binomials</div></a>
+              <div data-categoryid="32283" data-articleid="23198"
+                   data-categoryname="Binomials"
+                   class="flagImage" title="Flag 'Binomials' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Confidence+intervals%22" title="Search for articles in the subject area:'Confidence intervals'"><div class="flagText">Confidence intervals</div></a>
+              <div data-categoryid="32051" data-articleid="23198"
+                   data-categoryname="Confidence intervals"
+                   class="flagImage" title="Flag 'Confidence intervals' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Data+processing%22" title="Search for articles in the subject area:'Data processing'"><div class="flagText">Data processing</div></a>
+              <div data-categoryid="18073" data-articleid="23198"
+                   data-categoryname="Data processing"
+                   class="flagImage" title="Flag 'Data processing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Disease+ecology%22" title="Search for articles in the subject area:'Disease ecology'"><div class="flagText">Disease ecology</div></a>
+              <div data-categoryid="19589" data-articleid="23198"
+                   data-categoryname="Disease ecology"
+                   class="flagImage" title="Flag 'Disease ecology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Infectious+disease+control%22" title="Search for articles in the subject area:'Infectious disease control'"><div class="flagText">Infectious disease control</div></a>
+              <div data-categoryid="47603" data-articleid="23198"
+                   data-categoryname="Infectious disease control"
+                   class="flagImage" title="Flag 'Infectious disease control' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Infectious+disease+epidemiology%22" title="Search for articles in the subject area:'Infectious disease epidemiology'"><div class="flagText">Infectious disease epidemiology</div></a>
+              <div data-categoryid="17947" data-articleid="23198"
+                   data-categoryname="Infectious disease epidemiology"
+                   class="flagImage" title="Flag 'Infectious disease epidemiology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Probability+distribution%22" title="Search for articles in the subject area:'Probability distribution'"><div class="flagText">Probability distribution</div></a>
+              <div data-categoryid="32037" data-articleid="23198"
+                   data-categoryname="Probability distribution"
+                   class="flagImage" title="Flag 'Probability distribution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Respiratory+infections%22" title="Search for articles in the subject area:'Respiratory infections'"><div class="flagText">Respiratory infections</div></a>
+              <div data-categoryid="17595" data-articleid="23198"
+                   data-categoryname="Respiratory infections"
+                   class="flagImage" title="Flag 'Respiratory infections' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=5526'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=1683'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=8765&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=4573">Equation Support</a><br>Posted by Ivan_Savov</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

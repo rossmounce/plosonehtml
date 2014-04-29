@@ -1,0 +1,1296 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001821"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001821" />
+
+    <meta name="citation_title" content="Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16"/>
+    <meta itemprop="name" content="Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16"/>
+
+      <meta name="citation_author" content="Ron X. Yu"/>
+            <meta name="citation_author_institution" content="Department of Chemistry and Biochemistry, University of California San Diego, La Jolla, California, United States of America"/>
+      <meta name="citation_author" content="Jie Liu"/>
+            <meta name="citation_author_institution" content="Department of Chemistry and Biochemistry, University of California San Diego, La Jolla, California, United States of America"/>
+            <meta name="citation_author_institution" content="Center for Theoretical Biological Physics, University of California San Diego, La Jolla, California, United States of America"/>
+      <meta name="citation_author" content="Nick True"/>
+            <meta name="citation_author_institution" content="Department of Computer Science, University of California San Diego, La Jolla, California, United States of America"/>
+      <meta name="citation_author" content="Wei Wang"/>
+            <meta name="citation_author_institution" content="Department of Chemistry and Biochemistry, University of California San Diego, La Jolla, California, United States of America"/>
+            <meta name="citation_author_institution" content="Center for Theoretical Biological Physics, University of California San Diego, La Jolla, California, United States of America"/>
+
+    <meta name="citation_date" content="2008/3/19"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001821.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1821"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Genomic binding sites of the yeast cell-cycle transcription factors SBF and MBF.; citation_author=VR Iyer; citation_author=CE Horak; citation_author=CS Scafe; citation_author=D Botstein; citation_author=M Snyder; citation_journal_title=Nature; citation_volume=409; citation_number=1; citation_pages=533-538; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide location and function of DNA binding proteins.; citation_author=B Ren; citation_author=F Robert; citation_author=JJ Wyrick; citation_author=O Aparicio; citation_author=EG Jennings; citation_journal_title=Science; citation_volume=290; citation_number=2; citation_pages=2306-2309; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=A systematic approach to reconstructing transcription networks in Saccharomycescerevisiae.; citation_author=W Wang; citation_author=JM Cherry; citation_author=D Botstein; citation_author=H Li; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=99; citation_number=3; citation_pages=16893-16898; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Fitting a mixture model by expectation maximization to discover motifs in biopolymers.; citation_author=TL Bailey; citation_author=C Elkan; citation_journal_title=Proc Int Conf Intell Syst Mol Biol; citation_volume=2; citation_number=4; citation_pages=28-36; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=An algorithm for finding protein-DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments.; citation_author=XS Liu; citation_author=DL Brutlag; citation_author=JS Liu; citation_journal_title=Nat Biotechnol; citation_volume=20; citation_number=5; citation_pages=835-839; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Identification of consensus patterns in unaligned DNA sequences known to be functionally related.; citation_author=GZ Hertz; citation_author=GW Hartzell; citation_author=GD Stormo; citation_journal_title=Comput Appl Biosci; citation_volume=6; citation_number=6; citation_pages=81-92; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=An improved map of conserved regulatory sites for Saccharomyces cerevisiae.; citation_author=KD MacIsaac; citation_author=T Wang; citation_author=DB Gordon; citation_author=DK Gifford; citation_author=GD Stormo; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=7; citation_pages=113; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Transcriptional regulatory code of a eukaryotic genome.; citation_author=CT Harbison; citation_author=DB Gordon; citation_author=TI Lee; citation_author=NJ Rinaldi; citation_author=KD Macisaac; citation_journal_title=Nature; citation_volume=431; citation_number=8; citation_pages=99-104; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Informative priors based on transcription factor structural class improve de novo motif discovery.; citation_author=L Narlikar; citation_author=R Gordan; citation_author=U Ohler; citation_author=AJ Hartemink; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=9; citation_pages=e384-392; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=TAMO: a flexible, object-oriented framework for analyzing transcriptional regulation using DNA-sequence motifs.; citation_author=DB Gordon; citation_author=L Nekludova; citation_author=S McCallum; citation_author=E Fraenkel; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=10; citation_pages=3164-3165; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Regulatory element detection using correlation with expression.; citation_author=HJ Bussemaker; citation_author=H Li; citation_author=ED Siggia; citation_journal_title=Nat Genet; citation_volume=27; citation_number=11; citation_pages=167-171; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Statistical mechanical modeling of genome-wide transcription factor occupancy data by MatrixREDUCE.; citation_author=BC Foat; citation_author=AV Morozov; citation_author=HJ Bussemaker; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=12; citation_pages=e141-149; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Integrating regulatory motif discovery and genome-wide expression analysis.; citation_author=EM Conlon; citation_author=XS Liu; citation_author=JD Lieb; citation_author=JS Liu; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=100; citation_number=13; citation_pages=3339-3344; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Computational identification of cis-regulatory elements associated with groups of functionally related genes in Saccharomyces cerevisiae.; citation_author=JD Hughes; citation_author=PW Estep; citation_author=S Tavazoie; citation_author=GM Church; citation_journal_title=J Mol Biol; citation_volume=296; citation_number=14; citation_pages=1205-1214; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Assessing computational tools for the discovery of transcription factor binding sites.; citation_author=M Tompa; citation_author=N Li; citation_author=TL Bailey; citation_author=GM Church; citation_author=B De Moor; citation_journal_title=Nat Biotechnol; citation_volume=23; citation_number=15; citation_pages=137-144; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Interacting models of cooperative gene regulation.; citation_author=D Das; citation_author=N Banerjee; citation_author=MQ Zhang; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=101; citation_number=16; citation_pages=16234-16239; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Adaptively inferring human transcriptional subnetworks.; citation_author=D Das; citation_author=Z Nahle; citation_author=MQ Zhang; citation_journal_title=Mol Syst Biol; citation_volume=2; citation_number=17; citation_pages=2006 0029; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Integrated assessment and prediction of transcription factor binding.; citation_author=A Beyer; citation_author=C Workman; citation_author=J Hollunder; citation_author=D Radke; citation_author=U Moller; citation_journal_title=PLoS Comput Biol; citation_volume=2; citation_number=18; citation_pages=e70; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Reverse engineering of regulatory networks in human B cells.; citation_author=K Basso; citation_author=AA Margolin; citation_author=G Stolovitzky; citation_author=U Klein; citation_author=R Dalla-Favera; citation_journal_title=Nat Genet; citation_volume=37; citation_number=19; citation_pages=382-390; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide discovery of transcriptional modules from DNA sequence and gene expression.; citation_author=E Segal; citation_author=R Yelensky; citation_author=D Koller; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=20; citation_pages=i273-282; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Rich probabilistic models for gene expression.; citation_author=E Segal; citation_author=B Taskar; citation_author=A Gasch; citation_author=N Friedman; citation_author=D Koller; citation_journal_title=Bioinformatics; citation_volume=17; citation_number=21; citation_pages=S243-252; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Inference of combinatorial regulation in yeast transcriptional networks: a case study of sporulation.; citation_author=W Wang; citation_author=JM Cherry; citation_author=Y Nochomovitz; citation_author=E Jolly; citation_author=D Botstein; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=102; citation_number=22; citation_pages=1998-2003; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=New components of a system for phosphate accumulation and polyphosphate metabolism in Saccharomyces cerevisiae revealed by genomic expression analysis.; citation_author=N Ogawa; citation_author=J DeRisi; citation_author=PO Brown; citation_journal_title=Mol Biol Cell; citation_volume=11; citation_number=23; citation_pages=4309-4321; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Structural characteristics of the PHO8 gene encoding repressible alkaline phosphatase in Saccharomyces cerevisiae.; citation_author=Y Kaneko; citation_author=N Hayashi; citation_author=A Toh-e; citation_author=I Banno; citation_author=Y Oshima; citation_journal_title=Gene; citation_volume=58; citation_number=24; citation_pages=137-148; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=Identification, cloning and characterization of a derepressible Na+-coupled phosphate transporter in Saccharomyces cerevisiae.; citation_author=P Martinez; citation_author=BL Persson; citation_journal_title=Mol Gen Genet; citation_volume=258; citation_number=25; citation_pages=628-638; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=An essential function of a phosphoinositide-specific phospholipase C is relieved by inhibition of a cyclin-dependent protein kinase in the yeast Saccharomyces cerevisiae.; citation_author=JS Flick; citation_author=J Thorner; citation_journal_title=Genetics; citation_volume=148; citation_number=26; citation_pages=33-47; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=The gene for a major exopolyphosphatase of Saccharomyces cerevisiae.; citation_author=H Wurst; citation_author=T Shiba; citation_author=A Kornberg; citation_journal_title=J Bacteriol; citation_volume=177; citation_number=27; citation_pages=898-906; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=A putative new membrane protein, Pho86p, in the inorganic phosphate uptake system of Saccharomyces cerevisiae.; citation_author=C Yompakdee; citation_author=M Bun-ya; citation_author=K Shikata; citation_author=N Ogawa; citation_author=S Harashima; citation_journal_title=Gene; citation_volume=171; citation_number=28; citation_pages=41-47; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=A C. elegans mutant that lives twice as long as wild type.; citation_author=C Kenyon; citation_author=J Chang; citation_author=E Gensch; citation_author=A Rudner; citation_author=R Tabtiang; citation_journal_title=Nature; citation_volume=366; citation_number=29; citation_pages=461-464; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=DAF-16 target genes that control C. elegans life-span and metabolism.; citation_author=SS Lee; citation_author=S Kennedy; citation_author=AC Tolonen; citation_author=G Ruvkun; citation_journal_title=Science; citation_volume=300; citation_number=30; citation_pages=644-647; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Identification of direct DAF-16 targets controlling longevity, metabolism and diapause by chromatin immunoprecipitation.; citation_author=SW Oh; citation_author=A Mukhopadhyay; citation_author=BL Dixit; citation_author=T Raha; citation_author=MR Green; citation_journal_title=Nat Genet; citation_volume=38; citation_number=31; citation_pages=251-257; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Genes that act downstream of DAF-16 to influence the lifespan of Caenorhabditis elegans.; citation_author=CT Murphy; citation_author=SA McCarroll; citation_author=CI Bargmann; citation_author=A Fraser; citation_author=RS Kamath; citation_journal_title=Nature; citation_volume=424; citation_number=32; citation_pages=277-283; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Significance analysis of microarrays applied to the ionizing radiation response.; citation_author=VG Tusher; citation_author=R Tibshirani; citation_author=G Chu; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=98; citation_number=33; citation_pages=5116-5121; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=WormBase: better software, richer content.; citation_author=EM Schwarz; citation_author=I Antoshechkin; citation_author=C Bastiani; citation_author=T Bieri; citation_author=D Blasiar; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=34; citation_pages=D475-478; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Building a dictionary for genomes: identification of presumptive regulatory sites by statistical analysis.; citation_author=HJ Bussemaker; citation_author=H Li; citation_author=ED Siggia; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=97; citation_number=35; citation_pages=10096-10100; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=SKN-1 links C. elegans mesendodermal specification to a conserved oxidative stress response.; citation_author=JH An; citation_author=TK Blackwell; citation_journal_title=Genes Dev; citation_volume=17; citation_number=36; citation_pages=1882-1893; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Oxidative stress and life span determination in the nematode Caenorhabditis elegans.; citation_author=Y Honda; citation_author=S Honda; citation_journal_title=Ann N Y Acad Sci; citation_volume=959; citation_number=37; citation_pages=466-474; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Compilation of transcription regulating proteins.; citation_author=E Wingender; citation_journal_title=Nucleic Acids Res; citation_volume=16; citation_number=38; citation_pages=1879-1902; citation_date=1988; " />
+      <meta name="citation_reference" content="citation_title=JASPAR: an open-access database for eukaryotic transcription factor binding profiles.; citation_author=A Sandelin; citation_author=W Alkema; citation_author=P Engstrom; citation_author=WW Wasserman; citation_author=B Lenhard; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=39; citation_pages=D91-94; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=GO::TermFinder–open source software for accessing Gene Ontology information and finding significantly enriched Gene Ontology terms associated with a list of genes.; citation_author=EI Boyle; citation_author=S Weng; citation_author=J Gollub; citation_author=H Jin; citation_author=D Botstein; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=40; citation_pages=3710-3715; citation_date=2004; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16"/>
+    <meta name="twitter:description" content="A major challenge in the post-genome era is to reconstruct regulatory networks from the biological knowledge accumulated up to date. The development of tools for identifying direct target genes of transcription factors (TFs) is critical to this endeavor. Given a set of microarray experiments, a probabilistic model called TRANSMODIS has been developed which can infer the direct targets of a TF by integrating sequence motif, gene expression and ChIP-chip data. The performance of TRANSMODIS was first validated on a set of transcription factor perturbation experiments (TFPEs) involving Pho4p, a well studied TF in Saccharomyces cerevisiae. TRANSMODIS removed elements of arbitrariness in manual target gene selection process and produced results that concur with one's intuition. TRANSMODIS was further validated on a genome-wide scale by comparing it with two other methods in Saccharomyces cerevisiae. The usefulness of TRANSMODIS was then demonstrated by applying it to the identification of direct targets of DAF-16, a critical TF regulating ageing in Caenorhabditis elegans. We found that 189 genes were tightly regulated by DAF-16. In addition, DAF-16 has differential preference for motifs when acting as an activator or repressor, which awaits experimental verification. TRANSMODIS is computationally efficient and robust, making it a useful probabilistic framework for finding immediate targets."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001821.g003"/>
+
+  <meta property="og:title" content="Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=8041'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=5886'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=7677&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001821">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001821" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001821&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ron X. Yu, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Chemistry and Biochemistry, University of California San Diego, La Jolla, California, United States of America
+                </p>
+
+                <p>
+                    Current address: Genentech Inc., South San Francisco, California, United States of America
+                </p>
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jie Liu, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Department of Chemistry and Biochemistry, University of California San Diego, La Jolla, California, United States of America, 
+                  Center for Theoretical Biological Physics, University of California San Diego, La Jolla, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Nick True, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Computer Science, University of California San Diego, La Jolla, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Wei Wang
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">* E-mail:</span> <a href="mailto:wei-wang@ucsd.edu">wei-wang@ucsd.edu</a></p>
+
+                <p>Affiliations:
+                  Department of Chemistry and Biochemistry, University of California San Diego, La Jolla, California, United States of America, 
+                  Center for Theoretical Biological Physics, University of California San Diego, La Jolla, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 19, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001821</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001821-t001" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001821-t002" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001821-g001" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001821-t003" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001821-g002" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001821-g003" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001821">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001821" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>A major challenge in the post-genome era is to reconstruct regulatory networks from the biological knowledge accumulated up to date. The development of tools for identifying direct target genes of transcription factors (TFs) is critical to this endeavor. Given a set of microarray experiments, a probabilistic model called TRANSMODIS has been developed which can infer the direct targets of a TF by integrating sequence motif, gene expression and ChIP-chip data. The performance of TRANSMODIS was first validated on a set of transcription factor perturbation experiments (TFPEs) involving Pho4p, a well studied TF in <em>Saccharomyces cerevisiae</em>. TRANSMODIS removed elements of arbitrariness in manual target gene selection process and produced results that concur with one's intuition. TRANSMODIS was further validated on a genome-wide scale by comparing it with two other methods in <em>Saccharomyces cerevisiae</em>. The usefulness of TRANSMODIS was then demonstrated by applying it to the identification of direct targets of DAF-16, a critical TF regulating ageing in <em>Caenorhabditis elegans</em>. We found that 189 genes were tightly regulated by DAF-16. In addition, DAF-16 has differential preference for motifs when acting as an activator or repressor, which awaits experimental verification. TRANSMODIS is computationally efficient and robust, making it a useful probabilistic framework for finding immediate targets.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Yu RX, Liu J, True N, Wang W (2008) Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16. PLoS ONE 3(3):
+          e1821.
+            doi:10.1371/journal.pone.0001821</p><p><strong>Editor: </strong>Raya Khanin, University of Glasgow, United Kingdom</p><p><strong>Received:</strong> October 10, 2007; <strong>Accepted:</strong> January 31, 2008; <strong>Published:</strong> March 19, 2008</p><p><strong>Copyright:</strong> © 2008 Yu et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work is partially funded by NIH and the Center for Theoretical Biological Physics (CTBP).</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>One of the major goals in the post-genome era is to establish a connectivity diagram of transcription network, which requires identification of direct targets of transcription factors (TFs). One commonly used approach to detect regulatory interactions between TFs and genes is chromatin immunoprecipitation followed by microarray hybridization (ChIP-chip)<a href="#pone.0001821-Iyer1">[1]</a>, <a href="#pone.0001821-Ren1">[2]</a>, which is a binding assay. However binding of a TF to regulatory sequences does not necessarily imply regulation of gene expression. Furthermore, the applicability of ChIP-chip analysis is limited by the availability of antibody against a TF of interest. Therefore, ChIP-chip experiment is often complemented by functional assays using gene microarray.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>To determine genes that are regulated by a specific TF, the TF is constitutively activated or inhibited such that the target genes of the TF should have significant expression changes in most of these experiments, which we call transcription factor perturbation experiments (TFPEs)<a href="#pone.0001821-Wang1">[3]</a>. In TFPEs, a combination of thresholds, e.g. the least amount of fold change considered to be significant and the minimum number of experiments in which the gene expression changes are required to be significant, need to be pre-specified. However the choice of threshold values tends to be arbitrary. Thresholds are usually hand-picked on a case-by-case basis, depending on the data set. More importantly, direct and indirect targets of the TF cannot be discriminated by expression alone.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>In this paper, we present a probabilistic model called TRANSMODIS (<span class="underline">TRANS</span>cription <span class="underline">MO</span>dule <span class="underline">DIS</span>covery) which integrates sequence and expression information in target identification. The parametric model can remove the arbitrariness commonly associated with the selection of thresholds for gene expression change. Consideration about the presence or absence of a binding motif in promoters can help distinguish direct from indirect targets. Many motif finding algorithms, for example references <a href="#pone.0001821-Bailey1">[4]</a>–<a href="#pone.0001821-Tompa1">[15]</a>, have been developed and the performance of motif finding algorithms has been steadily improving. We thus assume that the core binding motif of a TF of interest has been determined <em>a priori</em> and is provided as an input to TRANSMODIS. TRANSMODIS is not a motif finding algorithm rather it focuses on determining direct targets of a TF.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Several computational methods had been developed previously to identify direct targets of TFs. MARSMotif<a href="#pone.0001821-Das1">[16]</a>, <a href="#pone.0001821-Das2">[17]</a> fits splines to gene expressions and determines motifs and genes regulated by the motif simultaneously. Beyer <em>et al.</em><a href="#pone.0001821-Beyer1">[18]</a> applied a Bayesian method to integrate various types of information to generate a list of putative targets of TFs in yeast. Their approach was not designed to identify targets of a TF in multiple microarray experiments. ARACNe<a href="#pone.0001821-Basso1">[19]</a> is an approach for reconstructing regulatory networks from a large number of expression profiles. It first identifies statistically significant gene-gene coregulations, and then eliminates indirect relationships, which are thought to be the weakest interactions within three-gene loops. The idea is that the remaining edges in the network should have a high probability of representing either direct regulatory interactions or interactions realized by post-transcriptional modifications. ARACNe is a novel approach; however it does not make use of any sequence data and its inferred gene-gene interactions are non-directional. Segal <em>et al.</em><a href="#pone.0001821-Segal1">[20]</a>, <a href="#pone.0001821-Segal2">[21]</a> built probabilistic models to search for genes showing similar expression patterns and also sharing common motif profiles. Their models were complex and the parameters of their models were learned iteratively via greedy search. Compared with the general scenario that Segal <em>et al.</em> were dealing with, TRANSMODIS handles a much simpler situation. As the core motif is given and the target genes of the TF of interest should show significant expression changes in most of the experiments, the search for optimal parameter values in TRANSMODIS is less likely to be trapped in local optima.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>The intuition behind TRANSMODIS is that genes containing the consensus core motif of the TF as well as exhibiting consistent expression changes in all TFPEs are likely to be true direct targets. In TRANSMODIS, gene expressions are modeled by a two-component Gaussian mixture model and the binding site sequences are assumed to be generated from a multinomial distribution which is represented by a position specific weight matrix (PSWM). By maximizing the joint likelihood of sequence and expression, TRANSMODIS identifies a set of genes that have consistent and highly elevated expressions and high scoring putative binding sites.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>TRANSMODIS is a generalization of MODEM<a href="#pone.0001821-Wang2">[22]</a>, a model we developed previously that is applicable only to a single gene expression microarray or ChIP-chip experiment. Compared with MODEM, TRANSMODIS is less sensitive to noise in individual experiments because of the consistency requirement on gene expression level across multiple experiments. TRANSMODIS also adds an additional step to score genes that do not contain a copy of the consensus binding motif in their promoter regions.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>Because consensus binding motif is not known for every TF and sets of TFPEs are limited, a true genome-wide verification of TRANSMODIS is not yet practical. Thus we validated the performance of TRANSMODIS on Pho4p, a TF in budding yeast <em>Saccharomyces cerevisiae</em>. A comparison with previously reported target genes and the target genes selected by the original authors who did the perturbation experiments showed that TRANSMODIS is a promising method for direct target identification and is expected to yield a low false discovery rate (FDR) in general. On a larger scale, TRANSMODIS was applied to a set of ChIP-chip data<a href="#pone.0001821-Harbison1">[8]</a> and evaluated against two other methods. Since no complete list of targets of any TF is known, the comparison was based on positive prediction value (PPV), which is the portion of true positives in all findings. TRANSMODIS demonstrated better performance than the two other methods on a majority of the 81 TFs tested. We then applied TRANSMODIS to identify immediate targets of DAF-16, which is a critical TF influencing the lifespan of nematode <em>Caenorhabditis elegans</em>.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>1. Validation of TRANSMODIS by simulation</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>We first validated TRANSMODIS on simulated data where the true targets were known. Each simulated data set consisted of 1000 genes and ten experiments. Out of the 1000 genes, ten were targets and the other 990 genes were non-targets. The expression values of non-target genes were identically and independently sampled from the standard normal distribution <em>N</em>(0,1). And those of targets were simulated from the normal distribution with a mean of three and a variance of one <em>N</em>(3,1). To make the problem more challenging, within each experiment, ten non-target genes were randomly selected to have their expressions drawn from the <em>N</em>(3,1) distribution of target genes and five target genes were randomly selected to have their expressions reduced by half.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>The consensus binding motif was chosen to be <em>TGTTTAC</em>. All target genes had this core binding motif present in their upstream sequences except for two of the ten target genes, which had binding motifs that differed from the consensus binding motif in two nucleotides, namely, <em>TTTTAAC</em> and <em>AGTTTCC</em>. The upstream sequences of all non-targets were simply generated from the uniform background. Each upstream sequence was 600-nucleotide long.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>A total of ten simulated data sets were generated and analyzed. The results are listed in <a href="#pone-0001821-t001">Table 1</a>. TRANMODIS showed a clear advantage over MODEM on the simulated data sets. With most data sets (9 out of 10), TRANSMODIS identified the complete set of true targets except for the fifth simulated data set, where TRANSMODIS missed one true target. TRANSMODIS had no false positives in all cases. MODEM, on the other hand, failed to find any target genes by the majority voting rule. Note that when MODEM was applied to an individual array, it did identify a list of targets; however since most of the genes on the lists were false positives, no gene (including true targets) made half of the lists. The number of true targets on most lists was between zero and two. Thus the simulation study showed that the gain of using information from all arrays all at once by TRANSMODIS was substantial.</p>
+<div class="figure" id="pone-0001821-t001"><div class="img"><a name="pone-0001821-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>TRANSMODIS and MODEM results on ten simulated data sets.</span></strong></p><span>doi:10.1371/journal.pone.0001821.t001</span></div>
+
+<h4>2. Validation of TRANSMODIS in <em>Saccharomyces cerevisiae</em></h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>To further validate the model, TRANSMODIS was applied to identify immediate targets of Pho4p, a TF in model organism <em>Saccharomyces cerevisiae</em>. Multiple perturbation microarray experiments were done for Pho4p. The PHO regulatory system is one of the most well studied pathways in <em>Saccharomyces cerevisiae</em>. In a low phosphate (P<sub>i</sub>) concentration medium, the cyclin-dependent kinase (CDK) inhibitor Pho81p inactivates the Pho80p-Pho85p complex, leading to an accumulation of hypophosphorylated form of Pho4p in the nucleus and subsequent activation of phosphate responsive genes. In order to identify all genes involved in the phosphate response, Ogawa <em>et al.</em><a href="#pone.0001821-Ogawa1">[23]</a> carried out eight microarray experiments, namely, low P<sub>i</sub> vs. high P<sub>i</sub> in WT (NBW7) exp 1, low P<sub>i</sub> vs. high P<sub>i</sub> in WT (NBW7) exp 2, low P<sub>i</sub> vs. high P<sub>i</sub> in WT (DBY7286), PHO4<sup>c</sup> vs. WT, pho80Δ vs. WT, pho85Δ vs. WT, PHO81<sup>c</sup> vs. WT exp 1 and PHO81<sup>c</sup> vs. WT exp 2. Pho4p was active in each of these experiments and up-regulated expressions of its target genes. Ogawa <em>et al.</em> considered a set of 20 genes that showed at least a two-fold increase of expression in at least five out of the eight experiments as Pho4p targets. In contrast to the somewhat arbitrary criterion used by Ogawa <em>et al.</em>, TRANSMODIS provides a parametric model to remove this arbitrariness.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Using the known binding motif <em>CACGTGG</em> of Pho4p and the eight microarray experiments of Ogawa <em>et al.</em> as inputs, TRANSMODIS found 19 genes from the entire <em>Saccharomyces cerevisiae</em> genome (about 6000 genes) as Pho4p targets (<a href="#pone-0001821-t002">Table 2</a> and <a href="#pone.0001821.s004">Table S1</a>). The 19-gene TRANSMODIS target list was nearly identical to the 20 genes identified by Ogawa <em>et al.</em> except for <em>YER038C</em>, which was dropped by TRANSMODIS. The <em>YER038C</em> gene is unlikely to be PHO-regulated because it does not contain the consensus Pho4-binding motif or variants in its promoter.</p>
+<div class="figure" id="pone-0001821-t002"><div class="img"><a name="pone-0001821-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Target genes selected using different approaches.</span></strong></p><span>doi:10.1371/journal.pone.0001821.t002</span></div><a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>There were nine genes reported to be PHO-regulated prior to the study of Ogawa <em>et al.</em> These nine genes were <em>PHO11</em>, <em>PHO5</em>, <em>PHO89</em>, <em>PHO8</em>, <em>SPL2</em>, <em>PHO12</em>, <em>PHO86</em>, <em>PHO84</em> and <em>PHO81</em><a href="#pone.0001821-Ogawa1">[23]</a>–<a href="#pone.0001821-Yompakdee1">[28]</a>. All of them except <em>PHO81</em> were correctly identified as targets by both Ogawa <em>et al.</em> and TRANSMODIS. A heatmap of the expression profiles of <em>PHO81</em> and its two homologs <em>YPL110C</em> and <em>SPL2</em> is shown in <a href="#pone-0001821-g001">Figure 1</a>. The heatmap reveals that <em>SPL2</em> had a consistently higher differential expression in all experiments (an average increase of 16-fold) than <em>PHO81</em> and <em>YPL110C</em> (an average increase of 1.6-fold and 2-fold respectively) (p-value = 0.015 from two-sample t-test) (<a href="#pone-0001821-g001">Figure 1</a>). Indeed, both Ogawa <em>et al.</em> and TRANSMODIS identified <em>SPL2</em> as a Pho4p target. Based on the gene expression data, the selection of <em>SPL2</em> and the omission of <em>PHO81</em> and <em>YPL110C</em> by TRANSMODIS are consistent with one's intuition.</p>
+<div class="figure" id="pone-0001821-g001"><div class="img"><a name="pone-0001821-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Comparison between the expression profiles of <em>PHO81</em> and its two homologs <em>SPL2</em> and <em>YPL110</em>C in the eight TFPE experiments of Pho4p.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>Red and green colors represent up- and down-regulation, respectively. The brightness of the color is proportional to the absolute expression ratio.</p>
+<span>doi:10.1371/journal.pone.0001821.g001</span></div><a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>TRANSMODIS is an extension to MODEM, which was developed for analyzing a single microarray experiment. To compare the performance of TRANSMODIS with that of MODEM, we applied MODEM in two different ways on this data set. The first approach was to calculate the average expression of each gene in all experiments and apply MODEM to this “single” array of averaged expressions. The second approach was to apply MODEM on all eight expression data separately and then select target genes using majority voting (<a href="#pone-0001821-t002">Table 2</a>). We have also listed the MODEM result on a single <em>PHO4</em> mutation experiment PHO4<sup>c</sup> vs. WT, in which the Pho4p was constitutively active in <a href="#pone-0001821-t002">Table 2</a>.</p>
+<a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p>One of the known targets, <em>PHO81</em>, was missed by all approaches because of the weak evidence in the expression data (<a href="#pone-0001821-g001">Figure 1</a>). The eight other earlier known targets were successfully identified by all approaches. Only <em>PHO86</em> was missed when MODEM was run on the averaged expression profile of all arrays. It is not surprising that TRANSMODIS was more stringent than MODEM, identifying fewer targets than MODEM. The average number of target genes found by MODEM from an individual experiment of Ogawa <em>et al.</em> was 32. By requiring consistent up-regulation in all experiments, TRANSMODIS can filter out non-targets that would otherwise be erroneously identified from a single array analysis. At the same time, being less sensitive to random noise in individual experiments, TRANSMODIS can recover some of the true targets that would otherwise be missed by MODEM.</p>
+<a id="article1.body1.sec2.sec2.p6" name="article1.body1.sec2.sec2.p6"></a><p>Different from MODEM, TRANSMODIS has an additional step of scoring promoter sequences that do not contain the consensus core motif (up to a certain number of allowed mismatches). Upon evaluation of such a gene without the core motif, if the probability of being a true target using the learned model parameters is greater than 0.5, TRANSMODIS will tag this gene as a target as well. For example, TRANSMODIS identified <em>PHM7</em> as a Pho4p target; the putative binding site in <em>PHM7</em> was found to be <em>CAAGTGC</em>, which differs from the consensus binding motif in two nucleotides and therefore was not evaluated by MODEM.</p>
+
+
+<h4>3. Comparative assessment of TRANSMODIS</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>There is only a limited number of multiple perturbation experiments publicly available for the same TFs. In order to assess the performance of TRANSMODIS on a genomic data set, we applied it to the ChIP-chip data of 204 TFs<a href="#pone.0001821-Harbison1">[8]</a>. The ChIP-chip experiments were done under different conditions for a portion of the 204 TFs. There are 26 and 15 TFs for which ChIP-chip experiments were done under 3 and &gt;3 conditions respectively. Since the TFs were not necessarily active under each of these conditions and the number of experiments was small, we could not blindly apply TRANSMODIS to experiments available for a TF. We therefore analyzed each ChIP-chip experiment separately and manually selected the experiment that satisfied the following two criteria: there is a significant motif identified by REDUCE<a href="#pone.0001821-Bussemaker1">[11]</a> in the experiment and the enriched functions of the identified target genes are consistent with those of the TFs.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>We compared the performance of TRANSMODIS with two other methods for identifying TF binding. The first one is a Bayesian method that integrates diverse information to predict TF binding in yeast<a href="#pone.0001821-Beyer1">[18]</a> and the second one is an error model developed by Young and colleagues<a href="#pone.0001821-Ren1">[2]</a>. Since no complete list of targets for any TF is available, sensitivity and specificity cannot be calculated for any of these methods. Therefore, we computed PPV, the portion of true positives in the total predictions. The true positives were taken from three databases: TRANSFAC, SCPD and YPD. We compared the results of the three methods on 81 TFs that had at least one target gene known in the literature and on which the Bayesian method made predictions (<a href="#pone-0001821-t003">Table 3</a>).</p>
+<div class="figure" id="pone-0001821-t003"><div class="img"><a name="pone-0001821-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Comparison between TRANSMODIS and two other methods for target gene identification on the set of ChIP-chip data by Harbison <em>et al.</em><a href="#pone.0001821-Harbison1">[8]</a>.</span></strong></p><span>doi:10.1371/journal.pone.0001821.t003</span></div><a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>On average, the Bayesian method had the most predictions while the error model had the least. The average PPV for the TRANSMODIS, the Bayesian method and the error model were 8.58%, 6.57% and 6.32%. More specifically, TRANSMODIS performed better than the Bayesian method and the error model on 44 and 46 TFs respectively, and TRANSMODIS performed worse than the other two methods on 22 and 13 TFs respectively. The PPVs are small for all three methods, which is probably due to the fact that only a small set of conditions was tested in the ChIP-chip experiments. It also highlights the need to continuously improve target identification methods.</p>
+
+
+<h4>4. Identification of genes involved in ageing</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>Encouraged by the success of TRANSMODIS on finding direct targets of TFs in <em>Saccharomyces cerevisiae</em>, we applied it to tackle a more challenging problem, namely the identification of direct targets of DAF-16 in nematode <em>Caenorhabditis elegans</em>. DAF-16 is a TF playing critical roles in worm ageing. The mechanism of ageing remains to be an important and unsolved mystery. Whereas the normal lifespan of an adult worm is only two to three weeks, individuals carrying mutations that decrease insulin/insulin-like growth factor 1 (IGF-1) signaling can live twice as long<a href="#pone.0001821-Kenyon1">[29]</a>. Mutations in gene <em>daf-2</em>, which is predicted to encode an insulin/IGF receptor ortholog, together with a downstream TF, <em>daf-16</em>, can increase lifespan significantly. DAF-2 negatively regulates the activity of DAF-16, a FOXO-family TF.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>Identifying direct targets of DAF-16 can shed light on the functional mechanism of DAF-16 at influencing lifespan. Lee <em>et al.</em><a href="#pone.0001821-Lee1">[30]</a> took a comparative genomics approach to identify orthologous genes containing the conserved DAF-16 binding sites in their promoter sequences and Oh <em>et al.</em><a href="#pone.0001821-Oh1">[31]</a> used chromatin immunoprecipitation (ChIP) followed by cloning to search for direct downstream targets of DAF-16. Lee <em>et al.</em> found that the expression of 7 genes were controlled by DAF-16 while Oh <em>et al.</em> chose to study 33 genes out of 103 candidates and 18 genes showed significant (either up or down) expression changes in a <em>daf-16</em> dependent manner. The results of these studies were useful but the number of direct targets identified was limited. To identify genes that are regulated by the DAF-2 pathway and investigate their roles in the ageing process, Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a> deduced the <em>daf-2</em> and <em>daf-16</em> activity using RNAi and analyzed the resultant gene expression profiles using cDNA microarrays. First, genes with a minimum of fourfold expression change were selected by hierarchical clustering of 60 arrays (5 mutant arrays plus 55 time course arrays); in addition, genes showing highly consistent expressions, regardless of the amount of fold change, were also included. Then based upon the p-values obtained from SAM<a href="#pone.0001821-Tusher1">[33]</a> and a visual inspection of genes for genes that were more overly expressed than the others, a top group of 58 genes was chosen to be further validated for their influence on lifespan<a href="#pone.0001821-Murphy1">[32]</a>.</p>
+<a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>The gene expression microarray experiments conducted by Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a> were functional assays and had multiple time points. We re-analyzed the data using TRANSMODIS to automatically identify the direct targets of DAF-16 without arbitrary thresholds and human involvement. We pooled together the time course data, which consisted of an early adult time course (ten time points from 0–48 h of adulthood) and a longer time course (ten time points from 0–192 h of adulthood), on worms exposed to <em>daf-2</em> RNAi and worms exposed to <em>daf-16</em> and <em>daf-2</em> RNAi. Arrays at 0h time point were left out of the analyses and we also discarded eight arrays with a high percentage of missing data. It left us with a set of twenty eight arrays. The numbers of <em>daf-2</em>(RNAi) treatments and <em>daf-2</em>(RNAi);<em>daf-16</em>(RNAi) treatments were approximately equal (15 versus 13). We retrieved 1kb upstream sequence of the translational start site of each ORF from WormBase<a href="#pone.0001821-Schwarz1">[34]</a>.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p>Using the twenty eight time course gene expression arrays, the upstream sequence data, and the binding motif <em>TRTTTAC</em> defined by Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a>, TRANSMODIS was run twice to the same data set with signs inverted in the second run, giving two classes of genes. Following the nomenclature defined in Murphy <em>et al.</em>, class 1 genes are genes that were induced in <em>daf-2</em>(RNAi) animals but repressed in <em>daf-2</em>(RNAi)<em>;daf-16</em>(RNAi) animals, and class 2 genes are the opposite genes which were repressed in <em>daf-2</em>(RNAi) animals but induced in <em>daf-2</em>(RNAi);<em>daf-16</em>(RNAi) animals. Class 1 and class 2 genes are candidate genes that extend and shorten worm lifespan respectively.</p>
+<a id="article1.body1.sec2.sec4.p5" name="article1.body1.sec2.sec4.p5"></a><p>TRANSMODIS identified 39 class 1 genes and 150 class 2 genes (<a href="#pone-0001821-g002">Figure 2</a>, <a href="#pone.0001821.s002">Table S2</a> and <a href="#pone.0001821.s003">Table S3</a>), compared with 263 class 1 genes and 251 class 2 genes that were found by Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a> using hierarchical clustering. Twenty of the TRANSMODIS predictions are in common with the 58 genes in Murphy <em>et al</em>. Furthermore the two lists of class 1 genes share 34 genes and the two class 2 gene lists overlap with 44 genes. The amount of overlap is statistically significant. Hierarchical clustering by itself cannot distinguish between direct and indirect targets. That was why Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a> used other criteria to prioritize their target list. TRANSMODIS provided a systematic and automatic target selection procedure that can be used in place of the original authors' method which needed human involvement.</p>
+<div class="figure" id="pone-0001821-g002"><div class="img"><a name="pone-0001821-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Expression profiles of class 1 and class 2 direct targets of DAF-16 in <em>Caenorhabditis elegans</em> identified by TRANSMODIS.</span></strong></p><span>doi:10.1371/journal.pone.0001821.g002</span></div><a id="article1.body1.sec2.sec4.p6" name="article1.body1.sec2.sec4.p6"></a><p>There was no significant overlap between the targets found by TRANSMODIS and the two previous studies of Lee <em>et al.</em><a href="#pone.0001821-Lee1">[30]</a> and Oh <em>et al.</em><a href="#pone.0001821-Oh1">[31]</a>. The target genes identified by Lee <em>et al</em>. and Oh <em>et al.</em> did not have consistent significant expression changes in the time course experiments of Murphy <em>et al</em>. It could be that those genes are regulated by DAF-16 transiently or only at a specific temporal stage. For example, the expression of ZK593.4 was significantly upregulated in the short time course experiments of <em>daf-2</em> RNAi at 1, 3, 4, 6, 8 and 12 hour time points, but showed almost no change in the long time course experiments of <em>daf-2</em> RNAi. In the double <em>daf-2;daf-16</em> RNAi knock-down experiments, ZK593.4 had significant down-regulation only at the first three time points. Such a pattern was not unique to ZK593.4 and was observed for thousands of genes and hence it is hard, if not impossible, to pick out direct targets of DAF-16 exhibiting this particular pattern. The targets identified by TRANSMODIS could be complementary to the previous studies of Lee <em>et al.</em><a href="#pone.0001821-Lee1">[30]</a> and Oh <em>et al.</em><a href="#pone.0001821-Oh1">[31]</a>.</p>
+<a id="article1.body1.sec2.sec4.p7" name="article1.body1.sec2.sec4.p7"></a><p>The extended motifs (the core motif plus immediate flanking regions) of the TRANSMODIS targets are shown in <a href="#pone-0001821-g003">Figure 3</a> and the extended motifs of the two classes differ significantly at the flanking regions. The class 1 genes seem to prefer <em>GSGAGNN<span class="underline">TRTTTAC</span>TBCANCG</em> (the core motif is underlined) while the class 2 genes seem to prefer <em>STCGACR<span class="underline">TRTTTAC</span>AGNTSGS</em>. It was suggested that DAF-16 can function both as an activator and a repressor<a href="#pone.0001821-Lee1">[30]</a>, <a href="#pone.0001821-Murphy1">[32]</a>. The direction of regulation by DAF-16 may depend on cooperation between DAF-16 and other TFs binding to the same promoter<a href="#pone.0001821-Lee1">[30]</a>, <a href="#pone.0001821-Murphy1">[32]</a>. Our finding suggests the possibility that the binding sites of the other TFs may partially overlap with that of DAF-16. We therefore hypothesize that the extended motifs of the two target classes are recognized by TFs that function side by side with DAF-16 in a competitive or cooperative manner. This hypothesis can be tested experimentally by using immobilized DNA segments to pull down the co-factors.</p>
+<div class="figure" id="pone-0001821-g003"><div class="img"><a name="pone-0001821-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001821" data-uri="info:doi/10.1371/journal.pone.0001821.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001821.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001821.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001821.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001821.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Enriched motifs in the class 1 and class 2 target genes of DAF-16.</span></strong></p><a id="article1.body1.sec2.sec4.fig2.caption1.p1" name="article1.body1.sec2.sec4.fig2.caption1.p1"></a><p>The <em>x</em> axis is the position and the <em>y</em> axis is the log<sub>2</sub> ratio between the target and non-target weight matrices.</p>
+<span>doi:10.1371/journal.pone.0001821.g003</span></div><a id="article1.body1.sec2.sec4.p8" name="article1.body1.sec2.sec4.p8"></a><p>We searched for enriched motifs in the 1 kb upstream sequences of TRANSMODIS targets using MobyDick<a href="#pone.0001821-Bussemaker2">[35]</a>, a dictionary motif finding algorithm. The MobyDick algorithm found approximately 300 motifs in each class of targets. We clustered these motifs based on their similarities and evaluated the significance of their occurrences using bootstrap. Among the class 1 targets, <em>AGTTCC</em>, <em>CTCCACC</em>, <em>CTGATAAG</em> and <em>CTTATCA</em> were significantly enriched (p-values&lt;0.01, unadjusted for multiple testing). The p-value of a motif was computed as the probability of observing the same or larger number of occurrences of that motif in a random set of genes, which was a bootstrap sample without replacement from the entire <em>Caenorhabditis elegans</em> genome. We took 10,000 bootstrap samples to compute the p-values. The motif <em>CTTACTA</em> matched the binding motif of GATA family of TFs documented in WormBase<a href="#pone.0001821-Schwarz1">[34]</a> and was also identified as an enriched motif by Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a>. Murphy <em>et al.</em> pointed out in their paper that the motif <em>cttatca</em> might be bound by a TF that cooperates with DAF-16. Among the TRANSMODIS class 2 genes, the following motifs were significantly enriched: <em>AGATKAGR</em>, <em>CTGATAAG</em> and <em>CTTATCA</em>. We then scanned the 2000 bp upstream region of translational start site of TRANSMODIS class 1 and class 2 homolog genes (the best BLAST matches) in human. The motif <em>CTGATAAG</em> was found to be enriched in the class 1 human genes as well (bootstrap p-value = 0.0061), which suggested that this motif may have functional roles. The other motifs had failed to make the 0.01 p-value cutoff. It is not clear at this point whether <em>CTGATAAG</em> is an extended reverse variant of the canonical GATA motif <em>TGATAAG</em> or a binding site for another TF. There are 11 GATA factors encoded in the <em>Caenorhabditis elegans</em> genome. The deviation of <em>CTGATAAG</em> from the canonical GATA motif implies that, if it is indeed bound by a GATA factor, then only a subset of GATA factors specifically bind to this motif and cooperate with DAF-16 to regulate the class 1 genes. Since oxidoreductases are enriched in the class 1 genes (see below) and GATA factors MED-1 and MED-2 are known to be involved in oxidative stress response mediated by SKN-1<a href="#pone.0001821-An1">[36]</a>, MED-1 and MED-2 should be the first TFs to be investigated.</p>
+<a id="article1.body1.sec2.sec4.p9" name="article1.body1.sec2.sec4.p9"></a><p>To understand the mechanism of DAF-16 at affecting lifespan, we examined enriched molecular functions for the two classes of target genes. On the Murphy <em>et al.</em> class 1 and class 2 genes, the GO term analysis showed that the class 1 genes were enriched for oxidoreductase activities and the class 2 genes were enriched for peptidase activities. The target genes selected by TRANSMODIS had significant overlap with the Muphy <em>et al.</em> genes for both classes. However while there were still many oxidoreductases among the TRANSMODIS class 1 genes, the TRANSMODIS class 2 genes were no longer enriched for peptidase activities. Therefore there were slight changes in the GO term analysis results between the two sets of class 2 genes.</p>
+<a id="article1.body1.sec2.sec4.p10" name="article1.body1.sec2.sec4.p10"></a><p>Among the twenty TRANSMODIS class 1 genes that had gene ontology annotations, nearly half of them (9 out of 20) were oxidoreductases (the Bonferroni corrected p-value was about 10<sup>−4</sup>). Numerous correlations between oxidative stress resistance and longevity have been described<a href="#pone.0001821-Honda1">[37]</a>, consistent with the observation that <em>daf-2</em> RNAi worms lived significantly longer than wild types. This observation also highlights the regulatory role of DAF-16 on oxidoreductases to extend lifespan. The nine oxidoreductases are C30G12.2, R09B5.6, C06B3.4, W06D12.3, C06B3.5, B0213.15, K12G11.3, F11A5.12 and K07C6.4. Murphy <em>et al.</em><a href="#pone.0001821-Murphy1">[32]</a> had examined five of them, namely C06B3.4, B0213.15, K12G11.3, F11A5.12 and K07C6.4, on affecting animal lifespan using RNAi. Knocking down the activities of all but B0213.15 extended lifespan, though not significantly<a href="#pone.0001821-Murphy1">[32]</a>. No significant biological processes or compartments were found, implying that the oxidoreductases are involved in many different processes. Combined with the functional study in <a href="#pone.0001821-Murphy1">[32]</a>, the GO term analysis suggested that the effects of oxidoreductases on ageing might be cooperative/collective and this is why mutations of their upstream regulators, e.g. DAF-2 and DAF-16, can significantly extend lifespan. TRANSMODIS identified 150 class 2 genes, involved in a diverse array of biological processes and functions. A significant portion of the genes (12 out of 63 annotated genes) are involved in macromolecule metabolism but the p-value was not significant at all. The most enriched biological processes were phosphate transport (13 out of 63 genes, p-value = 10<sup>−10</sup>) and ion transport (15 out of 63 genes, p-value = 10<sup>−9</sup>). The molecular functions of the class 2 genes with a p-value&lt;0.01 were being structural constituents of cuticle (12 genes, p-value = 10<sup>−10</sup>) and structural molecules (14 genes, p-value = 10<sup>−5</sup>). These observations suggest possible functional roles of DAF-16 on affecting lifespan that have not yet been well studied.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>TRANSMODIS is a probabilistic model for predicting direct targets from binding motif, sequence data, expression data and ChIP-chip experiments. The probabilistic framework removes arbitrary cutoffs in target selection procedures and allows integration of data coming from various sources. Compared with other criteria for identifying targets, TRANSMODIS is usually more stringent by requiring consistent and significant expression fold changes across all experiments.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>The methodology was validated on a set of TFPEs perturbing the activity of Pho4p in <em>Saccharomyces cerevisiae</em>. TRANSMODIS had successfully recovered a majority of previously known direct targets, i.e. the nine genes that were reported to be PHO-regulated prior to the study of Ogawa <em>et al.</em> Because we do not know the total number of true targets of Pho4p, it is difficult at the current stage to give sensitivity and specificity analyses of TRANSMODIS. To assess the performance of TRANSMODIS, we applied TRANSMODIS and two other methods (a Bayesian method<a href="#pone.0001821-Beyer1">[18]</a> and an error model<a href="#pone.0001821-Ren1">[2]</a>) on a set of 81 TFs in <em>Saccharomyces cerevisiae</em>. Using PPV as a measure of efficiency and accuracy, TRANSMODIS performed better than the Bayesian method and the error model on 44 and 46 TFs, and performed worse than the other two methods on 22 and 13 TFs, respectively.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Using simulated data sets, it was shown that TRANSMODIS could recover nearly every target gene every time and had few false positives; whereas MODEM, a previously developed method which is applicable to a single experiment, failed to find any target genes on the same data sets. Therefore, TRANSMODIS, though an extension of MODEM, was much more effective at identifying targets than MODEM when multiple arrays were available. If TRANSMODIS is fed a random motif, it can still make target predictions provided that the expression data is unaltered. This is due to the fact that true consensus binding motifs are usually short and degenerate, hence contributing less information than genomic expression data, especially when that data is combined from several experiments.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Some true targets can be missed by TRANSMODIS if the true targets had inconsistent induction in all experiments. The reason can be biological (e.g., transient regulation by the TF or combinatorial regulation of several TFs) or technical (e.g., systematic error or noise of microarray experiments). Nevertheless, the result of TRANSMODIS would be consistent with one's intuition given the data.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>The usefulness of TRANSMODIS was demonstrated in the identification of immediate targets of DAF-16, a critical TF in <em>Caenorhabditis elegans</em> that regulates ageing. TFPE experiments are functional assays and are commonly used by researchers to identify targets of a TF, particularly in higher organisms. TRANSMODIS identified target genes that showed DAF-16 dependent expression changes, and expanded the list of known DAF-16 targets. An interesting finding of our analysis is that the flanking sequences of the core motif recognized by DAF-16 differ dramatically in the two classes of targets with opposite effects on lifespan. The observation may provide a clue to the TFs that cooperate with DAF-16 to specifically regulate the two classes of genes. We also found several putative binding motifs for the co-factors of DAF-16 in regulating lifespan. In particular, GATA factors may play important roles in regulating class 1 genes.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>It is possible to obtain comparable results to TRANSMODIS by raising the cutoffs sometimes. However it is not clear how high the cutoffs should be set to in the absence of a guideline. If we require the induction ratio of target gene expression to be at least two-fold in at least six out of the eight Pho4p experiments done by Ogawa <em>et al.</em>, the target list will then shorten to fewer than 17 genes. So in order to yield a comparable target list, we probably would like to stick with the selection rule of requiring a marked up-regulation in five experiments for targets. Depending on the specific choice of the threshold, the final Pho4p target list is going to be of different length. For example, the target gene list consists of 20, 19 and 18 genes if the required cutoff is set to 2.1-fold, 2.2-fold, and 2.3-fold respectively. When the cutoff is raised from two-fold (the original threshold used by Ogawa <em>et al.</em>) to 2.1-fold, there is no change to the target list. When the cutoff is raised from 2.1-fold to 2.2-fold, gene <em>YER038C/KRE29</em> gets dropped and the target list becomes identical to the TRANSMODIS target list. Further increasing the cutoff to 2.3-fold drops gene <em>YOL084W/PHM7</em>, which is likely to be a true Pho4p target. Therefore even though it is possible to produce comparable results to TRANSMODIS by changing the thresholds, it is unclear how to find these thresholds and any choice would be arbitrary without an appropriate justification.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>TRANSMODIS assumes that (1) the TF of interest has activities in all experiments; and hence the true immediate targets of a TF of interest ought to have consistent and significant expression changes in most if not all microarray experiments, and (2) the promoters of direct targets contain good matches to the consensus binding motif. These assumptions do not always hold. For example, the promoters of targets may contain motifs that could be bound by the TF but are not because of a lack of co-factors or an inaccessible chromatin structure. Or there can be a situation where only a subset of direct targets was upregulated because the TF recognizes different motifs under different conditions. In these situations, TRANSMODIS is not able to recover the full set of targets but only a subset of them.</p>
+<a id="article1.body1.sec3.p8" name="article1.body1.sec3.p8"></a><p>In order to use TRANSMODIS, one has to supply a consensus binding motif, which is not always known in advance, especially in higher eukaryotic organisms. However as more biological knowledge is accumulated and deposited into databases such as TRANSFAC<a href="#pone.0001821-Wingender1">[38]</a> and JASPAR<a href="#pone.0001821-Sandelin1">[39]</a>, we believe that TRANSMODIS will find more applications in the future. A Java implementation of TRANSMODIS is available upon request. Or the users may choose to upload and analyze their microarray data at <a href="http://haedi.ucsd.edu/">http://haedi.ucsd.edu/</a>.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>The parametric model of TRANSMODIS</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>The model contains two components: expression and sequence. Target genes should differ from non-targets in both expression levels and patterns of extended motifs. The expressions of targets and non-targets were modeled by a two-component Gaussian mixture distribution, and the nucleotide frequencies at each position of an extended binding motif were assumed to be multinomial which was represented by a position specific weight matrix (PSWM). The PSWM for non-target genes was the background nucleotide frequencies in the entire genome. Many methods for regulatory network reconstruction simply assume a uniform background distribution. However the uniform background assumption weakened the list of learned genes by TRANSMODIS by including an excess of false targets, especially on the <em>Saccharomyces cerevisiae</em> data. The model assumptions of TRANSMODIS are: (1) arrays are independent; (2) all arrays have the same mean and variance for targets and also the same mean and variance for non-targets, and (3) genes are independent from each other in terms of expression and upstream sequence composition. The maximum likelihood estimators (MLEs) of model parameters were computed via an expectation-maximization (EM) algorithm. Since the variances of target and non-target expression distributions are allowed to be unequal, unintuitive interpretation of expression data can occur (<a href="#pone.0001821.s001">Figure S1</a>). A procedure has been put in place to avoid making such incorrect inferences. A robust version of the formula for updating the variance of expression distribution of targets has also been investigated. The differences were found to be minimal when the true expression model was a two-component Gaussian mixture model (<a href="#pone.0001821.s002">Figures S2</a> and <a href="#pone.0001821.s003">S3</a>, <a href="#pone.0001821.s007">Table S4</a>). Details as well as the derivation of the EM algorithm can be found in the supplementary materials.</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>Moderate deviations from the list of assumptions can be well tolerated by TRANSMODIS. Gross violations will result in a reduction of power in identifying true targets.</p>
+
+
+<h4>The program</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>The inputs to TRANSMODIS are: (1) the 5′ upstream sequences of all genes in the genome; (2) multiple genome-wide microarray measurements, such as TF perturbation experiments (TFPEs)<a href="#pone.0001821-Wang1">[3]</a> or ChIP-chip experiments<a href="#pone.0001821-Iyer1">[1]</a>, <a href="#pone.0001821-Ren1">[2]</a> or a combination of both. The parametric framework allows ChIP-chip experiments to be incorporated into the model just as any other microarray experiments as long as the TF is activated under the ChIP-chip experimental conditions; and (3) the core DNA motif recognized by the TF, typically six to eight bases long. The core motif could have been known <em>a priori</em> or be identified by a motif finding algorithm.</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>The TRANSMODIS program consists of two steps. In the first step, the parametric model of TRANSMODIS is fitted to genes containing matches to the input core motif in their promoters to obtain MLEs via an EM algorithm (details can be found in the supplementary text (<a href="#pone.0001821.s008">Text S1</a>)). The matches do not have to be perfect matches; it is still considered a match if the nucleotide subsequence differs from the core motif in only one base pair. The reverse complement of the input core motif is also scanned for. If a promoter has multiple matched copies of the input core motif, all copies are extracted and aligned to create an initialization of the PSWM of the target genes. Then during iterations of the EM algorithm, the copy with the highest score according to the current estimate of the target PSWM is chosen as the putative transcription factor binding site.</p>
+<a id="article1.body1.sec4.sec2.p3" name="article1.body1.sec4.sec2.p3"></a><p>In the second step of the TRANSMODIS analysis, genes that do not contain copies of the core motif (i.e. genes that were not used for the estimation of model parameters in the first step) have their promoters scanned for the core motif on both strands. If the probability of being a target is computed to be greater than that of being a non-target, the gene will be brought into the target list. No model parameters are estimated or modified during this step. The sole purpose of this second step is to catch potential true targets that lack a copy of the consensus binding motif and therefore would otherwise be overlooked if this step was not taken.</p>
+<a id="article1.body1.sec4.sec2.p4" name="article1.body1.sec4.sec2.p4"></a><p>The output of TRANSMODIS are (1) two PSWMs, one for target genes and the other for non-targets. The weight matrices go beyond the core motif and cover the immediate flanking regions beside the core motif; and (2) the probability of being a true target for each gene. By default, genes are identified as targets if the probabilities are greater than 0.5.</p>
+<a id="article1.body1.sec4.sec2.p5" name="article1.body1.sec4.sec2.p5"></a><p>TRANSMODIS is computationally efficient and converges fast. The running times on the Pho4p and Daf16p data sets were 2 minutes and 31 seconds and 8 minutes and 53 seconds respectively on a 2.4 GHz single processor computer with 512 KB of cache memory.</p>
+
+
+<h4>GO term analysis</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>GO Term Finder<a href="#pone.0001821-Boyle1">[40]</a> was used for the gene ontology analyses. The analyses were run on the annotation file submitted on March 21, 2006 for <em>Saccharomyces cerevisiae</em> and the annotation file submitted on March 20, 2006 for <em>Caenorhabditis elegans</em>. Bonferroni correction was used to adjust p-values for multiple testing.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001821"></div><a name="pone.0001821.s001" id="pone.0001821.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s001">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Illustration of drawing invalid conclusions due to unequal variances. Two scenarios are depicted here: (A) target distribution has a greater mean and a greater variance and (B) target distribution has a greater mean and a smaller variance. In particular, in panel (A) the distributions are assumed to be N(0,1) and N(3,1.4) for non-targets and targets respectively. Then the target distribution curve lies above the non-target's for all expression values less than −7.5, thus making genes with small expression values (&lt;−7.5) inappropriately identified as target genes instead of non-targets (e.g., for an expression value of −10, the ratio of conditional probabilities is as large as 700). In panel (B), the target and non-target distributions are assumed to be N(3,0.4) and N(0,1) respectively. Because of the smaller variance, the target distribution goes to zero faster than the non-target distribution does as expression level increases. For an expression value of 6, the odds of drawing such an expression value from the non-target over the target distribution is greater than 104. However it is incorrect to conclude that genes having expression values of 6 or greater are much more likely to be non-targets than targets.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001821.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(1.75 MB TIF)</p>
+<a name="pone.0001821.s002" id="pone.0001821.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s002">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Comparison of sensitivity between the two updating formulas for the standard deviation of target distribution.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001821.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(7.86 MB TIF)</p>
+<a name="pone.0001821.s003" id="pone.0001821.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s003">Figure S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Comparison of specificity between the two updating formulas for the standard deviation of target distribution. (Even though the one standard error bar is drawn above one, no actual specificity was ever greater than one.)</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001821.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(7.92 MB TIF)</p>
+<a name="pone.0001821.s004" id="pone.0001821.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s004">Table S1. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0001821.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="postSiDOI">(0.06 MB DOC)</p>
+<a name="pone.0001821.s005" id="pone.0001821.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s005">Table S2. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0001821.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="postSiDOI">(0.10 MB DOC)</p>
+<a name="pone.0001821.s006" id="pone.0001821.s006"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s006">Table S3. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0001821.s006</p><a id="article1.body1.sec5.supplementary-material6.caption1.p1" name="article1.body1.sec5.supplementary-material6.caption1.p1"></a><p class="postSiDOI">(0.32 MB DOC)</p>
+<a name="pone.0001821.s007" id="pone.0001821.s007"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s007">Table S4. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0001821.s007</p><a id="article1.body1.sec5.supplementary-material7.caption1.p1" name="article1.body1.sec5.supplementary-material7.caption1.p1"></a><p class="postSiDOI">(0.02 MB DOC)</p>
+<a name="pone.0001821.s008" id="pone.0001821.s008"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001821.s008">Text S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material8.caption1.p1" name="article1.body1.sec5.supplementary-material8.caption1.p1"></a><p class="preSiDOI">Supplementary text</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001821.s008</p><a id="article1.body1.sec5.supplementary-material8.caption1.p2" name="article1.body1.sec5.supplementary-material8.caption1.p2"></a><p class="postSiDOI">(0.24 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We are in debt to the support and advice from Dr. J. Andrew McCammon at UCSD. We also thank Dr. Hao Li at UCSF for providing the MobyDick program.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: WW RY. Performed the experiments: WW RY JL. Analyzed the data: WW RY JL. Contributed reagents/materials/analysis tools: WW NT. Wrote the paper: WW RY.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001821-Iyer1" id="pone.0001821-Iyer1"></a>Iyer VR, Horak CE, Scafe CS, Botstein D, Snyder M, et al.  (2001) Genomic binding sites of the yeast cell-cycle transcription factors SBF and MBF. Nature  409: 533–538.  <ul class="find" data-citedArticleID="1076716" data-doi="10.1038/35054095"><li><a href="http://dx.doi.org/10.1038/35054095" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+binding+sites+of+the+yeast+cell-cycle+transcription+factors+SBF+and+MBF." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+binding+sites+of+the+yeast+cell-cycle+transcription+factors+SBF+and+MBF.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001821-Ren1" id="pone.0001821-Ren1"></a>Ren B, Robert F, Wyrick JJ, Aparicio O, Jennings EG, et al.  (2000) Genome-wide location and function of DNA binding proteins. Science  290: 2306–2309.  <ul class="find" data-citedArticleID="1076738" data-doi="10.1126/science.290.5500.2306"><li><a href="http://dx.doi.org/10.1126/science.290.5500.2306" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+location+and+function+of+DNA+binding+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+location+and+function+of+DNA+binding+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001821-Wang1" id="pone.0001821-Wang1"></a>Wang W, Cherry JM, Botstein D, Li H (2002) A systematic approach to reconstructing transcription networks in Saccharomycescerevisiae. Proc Natl Acad Sci U S A  99: 16893–16898.  <ul class="find" data-citedArticleID="1076752" data-doi="10.1073/pnas.252638199"><li><a href="http://dx.doi.org/10.1073/pnas.252638199" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+systematic+approach+to+reconstructing+transcription+networks+in+Saccharomycescerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+systematic+approach+to+reconstructing+transcription+networks+in+Saccharomycescerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001821-Bailey1" id="pone.0001821-Bailey1"></a>Bailey TL, Elkan C (1994) Fitting a mixture model by expectation maximization to discover motifs in biopolymers. Proc Int Conf Intell Syst Mol Biol  2: 28–36.  <ul class="find" data-citedArticleID="1076684"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Fitting+a+mixture+model+by+expectation+maximization+to+discover+motifs+in+biopolymers.&amp;auth=&amp;atitle=Fitting+a+mixture+model+by+expectation+maximization+to+discover+motifs+in+biopolymers." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fitting+a+mixture+model+by+expectation+maximization+to+discover+motifs+in+biopolymers." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fitting+a+mixture+model+by+expectation+maximization+to+discover+motifs+in+biopolymers.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001821-Liu1" id="pone.0001821-Liu1"></a>Liu XS, Brutlag DL, Liu JS (2002) An algorithm for finding protein-DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments. Nat Biotechnol  20: 835–839.  <ul class="find" data-citedArticleID="1076724" data-doi="10.1038/nbt717"><li><a href="http://dx.doi.org/10.1038/nbt717" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+algorithm+for+finding+protein-DNA+binding+sites+with+applications+to+chromatin-immunoprecipitation+microarray+experiments." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+algorithm+for+finding+protein-DNA+binding+sites+with+applications+to+chromatin-immunoprecipitation+microarray+experiments.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001821-Hertz1" id="pone.0001821-Hertz1"></a>Hertz GZ, Hartzell GW 3rd, Stormo GD (1990) Identification of consensus patterns in unaligned DNA sequences known to be functionally related. Comput Appl Biosci  6: 81–92.  <ul class="find" data-citedArticleID="1076710" data-doi="10.1093/bioinformatics/6.2.81"><li><a href="http://dx.doi.org/10.1093/bioinformatics/6.2.81" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+consensus+patterns+in+unaligned+DNA+sequences+known+to+be+functionally+related." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+consensus+patterns+in+unaligned+DNA+sequences+known+to+be+functionally+related.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001821-MacIsaac1" id="pone.0001821-MacIsaac1"></a>MacIsaac KD, Wang T, Gordon DB, Gifford DK, Stormo GD, et al.  (2006) An improved map of conserved regulatory sites for Saccharomyces cerevisiae. BMC Bioinformatics  7: 113.  <ul class="find" data-citedArticleID="1076726" data-doi="10.1186/1471-2105-7-113"><li><a href="http://dx.doi.org/10.1186/1471-2105-7-113" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+improved+map+of+conserved+regulatory+sites+for+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+improved+map+of+conserved+regulatory+sites+for+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001821-Harbison1" id="pone.0001821-Harbison1"></a>Harbison CT, Gordon DB, Lee TI, Rinaldi NJ, Macisaac KD, et al.  (2004) Transcriptional regulatory code of a eukaryotic genome. Nature  431: 99–104.  <ul class="find" data-citedArticleID="1076708" data-doi="10.1038/nature02800"><li><a href="http://dx.doi.org/10.1038/nature02800" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcriptional+regulatory+code+of+a+eukaryotic+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcriptional+regulatory+code+of+a+eukaryotic+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001821-Narlikar1" id="pone.0001821-Narlikar1"></a>Narlikar L, Gordan R, Ohler U, Hartemink AJ (2006) Informative priors based on transcription factor structural class improve de novo motif discovery. Bioinformatics  22: e384–392.  <ul class="find" data-citedArticleID="1076732" data-doi="10.1093/bioinformatics/btl251"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl251" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Informative+priors+based+on+transcription+factor+structural+class+improve+de+novo+motif+discovery." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Informative+priors+based+on+transcription+factor+structural+class+improve+de+novo+motif+discovery.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001821-Gordon1" id="pone.0001821-Gordon1"></a>Gordon DB, Nekludova L, McCallum S, Fraenkel E (2005) TAMO: a flexible, object-oriented framework for analyzing transcriptional regulation using DNA-sequence motifs. Bioinformatics  21: 3164–3165.  <ul class="find" data-citedArticleID="1076706" data-doi="10.1093/bioinformatics/bti481"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti481" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=TAMO%3A+a+flexible%2C+object-oriented+framework+for+analyzing+transcriptional+regulation+using+DNA-sequence+motifs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22TAMO%3A+a+flexible%2C+object-oriented+framework+for+analyzing+transcriptional+regulation+using+DNA-sequence+motifs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001821-Bussemaker1" id="pone.0001821-Bussemaker1"></a>Bussemaker HJ, Li H, Siggia ED (2001) Regulatory element detection using correlation with expression. Nat Genet  27: 167–171.  <ul class="find" data-citedArticleID="1076692" data-doi="10.1145/369133.369174"><li><a href="http://dx.doi.org/10.1145/369133.369174" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Regulatory+element+detection+using+correlation+with+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Regulatory+element+detection+using+correlation+with+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001821-Foat1" id="pone.0001821-Foat1"></a>Foat BC, Morozov AV, Bussemaker HJ (2006) Statistical mechanical modeling of genome-wide transcription factor occupancy data by MatrixREDUCE. Bioinformatics  22: e141–149.  <ul class="find" data-citedArticleID="1076704" data-doi="10.1093/bioinformatics/btl223"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl223" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+mechanical+modeling+of+genome-wide+transcription+factor+occupancy+data+by+MatrixREDUCE." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+mechanical+modeling+of+genome-wide+transcription+factor+occupancy+data+by+MatrixREDUCE.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001821-Conlon1" id="pone.0001821-Conlon1"></a>Conlon EM, Liu XS, Lieb JD, Liu JS (2003) Integrating regulatory motif discovery and genome-wide expression analysis. Proc Natl Acad Sci U S A  100: 3339–3344.  <ul class="find" data-citedArticleID="1076696" data-doi="10.1073/pnas.0630591100"><li><a href="http://dx.doi.org/10.1073/pnas.0630591100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrating+regulatory+motif+discovery+and+genome-wide+expression+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrating+regulatory+motif+discovery+and+genome-wide+expression+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001821-Hughes1" id="pone.0001821-Hughes1"></a>Hughes JD, Estep PW, Tavazoie S, Church GM (2000) Computational identification of cis-regulatory elements associated with groups of functionally related genes in Saccharomyces cerevisiae. J Mol Biol  296: 1205–1214.  <ul class="find" data-citedArticleID="1076714" data-doi="10.1006/jmbi.2000.3519"><li><a href="http://dx.doi.org/10.1006/jmbi.2000.3519" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+identification+of+cis-regulatory+elements+associated+with+groups+of+functionally+related+genes+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+identification+of+cis-regulatory+elements+associated+with+groups+of+functionally+related+genes+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001821-Tompa1" id="pone.0001821-Tompa1"></a>Tompa M, Li N, Bailey TL, Church GM, De Moor B, et al.  (2005) Assessing computational tools for the discovery of transcription factor binding sites. Nat Biotechnol  23: 137–144.  <ul class="find" data-citedArticleID="1076748" data-doi="10.1038/nbt1053"><li><a href="http://dx.doi.org/10.1038/nbt1053" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001821-Das1" id="pone.0001821-Das1"></a>Das D, Banerjee N, Zhang MQ (2004) Interacting models of cooperative gene regulation. Proc Natl Acad Sci U S A  101: 16234–16239.  <ul class="find" data-citedArticleID="1076698" data-doi="10.1073/pnas.0407365101"><li><a href="http://dx.doi.org/10.1073/pnas.0407365101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Interacting+models+of+cooperative+gene+regulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Interacting+models+of+cooperative+gene+regulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001821-Das2" id="pone.0001821-Das2"></a>Das D, Nahle Z, Zhang MQ (2006) Adaptively inferring human transcriptional subnetworks. Mol Syst Biol  2: 2006 0029.  <ul class="find" data-citedArticleID="1076700" data-doi="10.1038/msb4100067"><li><a href="http://dx.doi.org/10.1038/msb4100067" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Adaptively+inferring+human+transcriptional+subnetworks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Adaptively+inferring+human+transcriptional+subnetworks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001821-Beyer1" id="pone.0001821-Beyer1"></a>Beyer A, Workman C, Hollunder J, Radke D, Moller U, et al.  (2006) Integrated assessment and prediction of transcription factor binding. PLoS Comput Biol  2: e70.  <ul class="find" data-citedArticleID="1076688" data-doi="10.1371/journal.pcbi.0020070.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020070.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrated+assessment+and+prediction+of+transcription+factor+binding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrated+assessment+and+prediction+of+transcription+factor+binding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001821-Basso1" id="pone.0001821-Basso1"></a>Basso K, Margolin AA, Stolovitzky G, Klein U, Dalla-Favera R, et al.  (2005) Reverse engineering of regulatory networks in human B cells. Nat Genet  37: 382–390.  <ul class="find" data-citedArticleID="1076686" data-doi="10.1038/ng1532"><li><a href="http://dx.doi.org/10.1038/ng1532" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reverse+engineering+of+regulatory+networks+in+human+B+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reverse+engineering+of+regulatory+networks+in+human+B+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001821-Segal1" id="pone.0001821-Segal1"></a>Segal E, Yelensky R, Koller D (2003) Genome-wide discovery of transcriptional modules from DNA sequence and gene expression. Bioinformatics  19: Suppl 1i273–282.  <ul class="find" data-citedArticleID="1076744" data-doi="10.1093/bioinformatics/btg1038"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1038" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+discovery+of+transcriptional+modules+from+DNA+sequence+and+gene+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+discovery+of+transcriptional+modules+from+DNA+sequence+and+gene+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001821-Segal2" id="pone.0001821-Segal2"></a>Segal E, Taskar B, Gasch A, Friedman N, Koller D (2001) Rich probabilistic models for gene expression. Bioinformatics  17: Suppl 1S243–252.  <ul class="find" data-citedArticleID="1076746" data-doi="10.1093/bioinformatics/17.suppl_1.s243"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.suppl_1.s243" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Rich+probabilistic+models+for+gene+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Rich+probabilistic+models+for+gene+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001821-Wang2" id="pone.0001821-Wang2"></a>Wang W, Cherry JM, Nochomovitz Y, Jolly E, Botstein D, et al.  (2005) Inference of combinatorial regulation in yeast transcriptional networks: a case study of sporulation. Proc Natl Acad Sci U S A  102: 1998–2003.  <ul class="find" data-citedArticleID="1076754" data-doi="10.1073/pnas.0405537102"><li><a href="http://dx.doi.org/10.1073/pnas.0405537102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inference+of+combinatorial+regulation+in+yeast+transcriptional+networks%3A+a+case+study+of+sporulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inference+of+combinatorial+regulation+in+yeast+transcriptional+networks%3A+a+case+study+of+sporulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001821-Ogawa1" id="pone.0001821-Ogawa1"></a>Ogawa N, DeRisi J, Brown PO (2000) New components of a system for phosphate accumulation and polyphosphate metabolism in Saccharomyces cerevisiae revealed by genomic expression analysis. Mol Biol Cell  11: 4309–4321.  <ul class="find" data-citedArticleID="1076734" data-doi="10.1091/mbc.11.12.4309"><li><a href="http://dx.doi.org/10.1091/mbc.11.12.4309" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=New+components+of+a+system+for+phosphate+accumulation+and+polyphosphate+metabolism+in+Saccharomyces+cerevisiae+revealed+by+genomic+expression+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22New+components+of+a+system+for+phosphate+accumulation+and+polyphosphate+metabolism+in+Saccharomyces+cerevisiae+revealed+by+genomic+expression+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001821-Kaneko1" id="pone.0001821-Kaneko1"></a>Kaneko Y, Hayashi N, Toh-e A, Banno I, Oshima Y (1987) Structural characteristics of the PHO8 gene encoding repressible alkaline phosphatase in Saccharomyces cerevisiae. Gene  58: 137–148.  <ul class="find" data-citedArticleID="1076718" data-doi="10.1016/0378-1119(87)90036-9"><li><a href="http://dx.doi.org/10.1016/0378-1119(87)90036-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Structural+characteristics+of+the+PHO8+gene+encoding+repressible+alkaline+phosphatase+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Structural+characteristics+of+the+PHO8+gene+encoding+repressible+alkaline+phosphatase+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001821-Martinez1" id="pone.0001821-Martinez1"></a>Martinez P, Persson BL (1998) Identification, cloning and characterization of a derepressible Na+-coupled phosphate transporter in Saccharomyces cerevisiae. Mol Gen Genet  258: 628–638.  <ul class="find" data-citedArticleID="1076728" data-doi="10.1007/s004380050776"><li><a href="http://dx.doi.org/10.1007/s004380050776" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification%2C+cloning+and+characterization+of+a+derepressible+Na%2B-coupled+phosphate+transporter+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification%2C+cloning+and+characterization+of+a+derepressible+Na%2B-coupled+phosphate+transporter+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001821-Flick1" id="pone.0001821-Flick1"></a>Flick JS, Thorner J (1998) An essential function of a phosphoinositide-specific phospholipase C is relieved by inhibition of a cyclin-dependent protein kinase in the yeast Saccharomyces cerevisiae. Genetics  148: 33–47.  <ul class="find" data-citedArticleID="1076702"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=An+essential+function+of+a+phosphoinositide-specific+phospholipase+C+is+relieved+by+inhibition+of+a+cyclin-dependent+protein+kinase+in+the+yeast+Saccharomyces+cerevisiae.&amp;auth=&amp;atitle=An+essential+function+of+a+phosphoinositide-specific+phospholipase+C+is+relieved+by+inhibition+of+a+cyclin-dependent+protein+kinase+in+the+yeast+Saccharomyces+cerevisiae." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+essential+function+of+a+phosphoinositide-specific+phospholipase+C+is+relieved+by+inhibition+of+a+cyclin-dependent+protein+kinase+in+the+yeast+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+essential+function+of+a+phosphoinositide-specific+phospholipase+C+is+relieved+by+inhibition+of+a+cyclin-dependent+protein+kinase+in+the+yeast+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001821-Wurst1" id="pone.0001821-Wurst1"></a>Wurst H, Shiba T, Kornberg A (1995) The gene for a major exopolyphosphatase of Saccharomyces cerevisiae. J Bacteriol  177: 898–906.  <ul class="find" data-citedArticleID="1076758"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+gene+for+a+major+exopolyphosphatase+of+Saccharomyces+cerevisiae.&amp;auth=&amp;atitle=The+gene+for+a+major+exopolyphosphatase+of+Saccharomyces+cerevisiae." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+gene+for+a+major+exopolyphosphatase+of+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+gene+for+a+major+exopolyphosphatase+of+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001821-Yompakdee1" id="pone.0001821-Yompakdee1"></a>Yompakdee C, Bun-ya M, Shikata K, Ogawa N, Harashima S, et al.  (1996) A putative new membrane protein, Pho86p, in the inorganic phosphate uptake system of Saccharomyces cerevisiae. Gene  171: 41–47.  <ul class="find" data-citedArticleID="1076760" data-doi="10.1016/0378-1119(96)00079-0"><li><a href="http://dx.doi.org/10.1016/0378-1119(96)00079-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+putative+new+membrane+protein%2C+Pho86p%2C+in+the+inorganic+phosphate+uptake+system+of+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+putative+new+membrane+protein%2C+Pho86p%2C+in+the+inorganic+phosphate+uptake+system+of+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001821-Kenyon1" id="pone.0001821-Kenyon1"></a>Kenyon C, Chang J, Gensch E, Rudner A, Tabtiang R (1993) A C. elegans mutant that lives twice as long as wild type. Nature  366: 461–464.  <ul class="find" data-citedArticleID="1076720" data-doi="10.1038/366461a0"><li><a href="http://dx.doi.org/10.1038/366461a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+C.+elegans+mutant+that+lives+twice+as+long+as+wild+type." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+C.+elegans+mutant+that+lives+twice+as+long+as+wild+type.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001821-Lee1" id="pone.0001821-Lee1"></a>Lee SS, Kennedy S, Tolonen AC, Ruvkun G (2003) DAF-16 target genes that control C. elegans life-span and metabolism. Science  300: 644–647.  <ul class="find" data-citedArticleID="1076722" data-doi="10.1126/science.1083614"><li><a href="http://dx.doi.org/10.1126/science.1083614" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=DAF-16+target+genes+that+control+C.+elegans+life-span+and+metabolism." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22DAF-16+target+genes+that+control+C.+elegans+life-span+and+metabolism.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001821-Oh1" id="pone.0001821-Oh1"></a>Oh SW, Mukhopadhyay A, Dixit BL, Raha T, Green MR, et al.  (2006) Identification of direct DAF-16 targets controlling longevity, metabolism and diapause by chromatin immunoprecipitation. Nat Genet  38: 251–257.  <ul class="find" data-citedArticleID="1076736" data-doi="10.1038/ng1723"><li><a href="http://dx.doi.org/10.1038/ng1723" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+direct+DAF-16+targets+controlling+longevity%2C+metabolism+and+diapause+by+chromatin+immunoprecipitation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+direct+DAF-16+targets+controlling+longevity%2C+metabolism+and+diapause+by+chromatin+immunoprecipitation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001821-Murphy1" id="pone.0001821-Murphy1"></a>Murphy CT, McCarroll SA, Bargmann CI, Fraser A, Kamath RS, et al.  (2003) Genes that act downstream of DAF-16 to influence the lifespan of Caenorhabditis elegans. Nature  424: 277–283.  <ul class="find" data-citedArticleID="1076730" data-doi="10.1038/nature01789"><li><a href="http://dx.doi.org/10.1038/nature01789" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genes+that+act+downstream+of+DAF-16+to+influence+the+lifespan+of+Caenorhabditis+elegans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genes+that+act+downstream+of+DAF-16+to+influence+the+lifespan+of+Caenorhabditis+elegans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001821-Tusher1" id="pone.0001821-Tusher1"></a>Tusher VG, Tibshirani R, Chu G (2001) Significance analysis of microarrays applied to the ionizing radiation response. Proc Natl Acad Sci U S A  98: 5116–5121.  <ul class="find" data-citedArticleID="1076750" data-doi="10.1073/pnas.091062498"><li><a href="http://dx.doi.org/10.1073/pnas.091062498" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Significance+analysis+of+microarrays+applied+to+the+ionizing+radiation+response." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Significance+analysis+of+microarrays+applied+to+the+ionizing+radiation+response.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001821-Schwarz1" id="pone.0001821-Schwarz1"></a>Schwarz EM, Antoshechkin I, Bastiani C, Bieri T, Blasiar D, et al.  (2006) WormBase: better software, richer content. Nucleic Acids Res  34: D475–478.  <ul class="find" data-citedArticleID="1076742" data-doi="10.1093/nar/gkj061"><li><a href="http://dx.doi.org/10.1093/nar/gkj061" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=WormBase%3A+better+software%2C+richer+content." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22WormBase%3A+better+software%2C+richer+content.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001821-Bussemaker2" id="pone.0001821-Bussemaker2"></a>Bussemaker HJ, Li H, Siggia ED (2000) Building a dictionary for genomes: identification of presumptive regulatory sites by statistical analysis. Proc Natl Acad Sci U S A  97: 10096–10100.  <ul class="find" data-citedArticleID="1076694" data-doi="10.1073/pnas.180265397"><li><a href="http://dx.doi.org/10.1073/pnas.180265397" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Building+a+dictionary+for+genomes%3A+identification+of+presumptive+regulatory+sites+by+statistical+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Building+a+dictionary+for+genomes%3A+identification+of+presumptive+regulatory+sites+by+statistical+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001821-An1" id="pone.0001821-An1"></a>An JH, Blackwell TK (2003) SKN-1 links C. elegans mesendodermal specification to a conserved oxidative stress response. Genes Dev  17: 1882–1893.  <ul class="find" data-citedArticleID="1076682" data-doi="10.1101/gad.1107803"><li><a href="http://dx.doi.org/10.1101/gad.1107803" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SKN-1+links+C.+elegans+mesendodermal+specification+to+a+conserved+oxidative+stress+response." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SKN-1+links+C.+elegans+mesendodermal+specification+to+a+conserved+oxidative+stress+response.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001821-Honda1" id="pone.0001821-Honda1"></a>Honda Y, Honda S (2002) Oxidative stress and life span determination in the nematode Caenorhabditis elegans. Ann N Y Acad Sci  959: 466–474.  <ul class="find" data-citedArticleID="1076712" data-doi="10.1111/j.1749-6632.2002.tb02117.x"><li><a href="http://dx.doi.org/10.1111/j.1749-6632.2002.tb02117.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Oxidative+stress+and+life+span+determination+in+the+nematode+Caenorhabditis+elegans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Oxidative+stress+and+life+span+determination+in+the+nematode+Caenorhabditis+elegans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0001821-Wingender1" id="pone.0001821-Wingender1"></a>Wingender E (1988) Compilation of transcription regulating proteins. Nucleic Acids Res  16: 1879–1902.  <ul class="find" data-citedArticleID="1076756" data-doi="10.1093/nar/16.5.1879"><li><a href="http://dx.doi.org/10.1093/nar/16.5.1879" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Compilation+of+transcription+regulating+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Compilation+of+transcription+regulating+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0001821-Sandelin1" id="pone.0001821-Sandelin1"></a>Sandelin A, Alkema W, Engstrom P, Wasserman WW, Lenhard B (2004) JASPAR: an open-access database for eukaryotic transcription factor binding profiles. Nucleic Acids Res  32: D91–94.  <ul class="find" data-citedArticleID="1076740" data-doi="10.1093/nar/gkh012"><li><a href="http://dx.doi.org/10.1093/nar/gkh012" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=JASPAR%3A+an+open-access+database+for+eukaryotic+transcription+factor+binding+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22JASPAR%3A+an+open-access+database+for+eukaryotic+transcription+factor+binding+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0001821-Boyle1" id="pone.0001821-Boyle1"></a>Boyle EI, Weng S, Gollub J, Jin H, Botstein D, et al.  (2004) GO::TermFinder–open source software for accessing Gene Ontology information and finding significantly enriched Gene Ontology terms associated with a list of genes. Bioinformatics  20: 3710–3715.  <ul class="find" data-citedArticleID="1076690" data-doi="10.1093/bioinformatics/bth456"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth456" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=GO%3A%3ATermFinder%E2%80%93open+source+software+for+accessing+Gene+Ontology+information+and+finding+significantly+enriched+Gene+Ontology+terms+associated+with+a+list+of+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22GO%3A%3ATermFinder%E2%80%93open+source+software+for+accessing+Gene+Ontology+information+and+finding+significantly+enriched+Gene+Ontology+terms+associated+with+a+list+of+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.XML" value="162560"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.PDF" value="296641"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t001.PNG_L" value="164367"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t001.PNG_M" value="96663"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t001.PNG_S" value="12006"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t001.TIF" value="717058"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t001.PNG_I" value="30392"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t002.PNG_L" value="224174"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t002.PNG_M" value="105422"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t002.PNG_S" value="13860"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t002.TIF" value="1355988"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t002.PNG_I" value="36482"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g001.PNG_L" value="253729"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g001.PNG_M" value="71230"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g001.PNG_S" value="9617"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g001.TIF" value="615196"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g001.PNG_I" value="24289"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t003.PNG_L" value="536607"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t003.PNG_M" value="111025"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t003.PNG_S" value="23709"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t003.TIF" value="3098732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.t003.PNG_I" value="145267"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g002.PNG_L" value="740298"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g002.PNG_M" value="353902"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g002.PNG_S" value="20057"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g002.TIF" value="3093644"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g002.PNG_I" value="138839"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g003.PNG_L" value="695752"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g003.PNG_M" value="119679"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g003.PNG_S" value="11492"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g003.TIF" value="1215850"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.g003.PNG_I" value="38840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s001.TIF" value="1917138"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s002.TIF" value="7870826"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s003.TIF" value="7934016"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s004.DOC" value="61952"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s005.DOC" value="98304"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s006.DOC" value="319488"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s007.DOC" value="20992"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001821.s008.DOC" value="242688"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001821&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001821" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001821&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001821&volume=&issue=&title=Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16&author_name=Ron%20X.%20Yu%2C%20Jie%20Liu%2C%20Nick%20True%2C%20Wei%20Wang&start_page=1&end_page=12" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001821" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821&amp;t=Identification%20of%20Direct%20Target%20Genes%20Using%20Joint%20Sequence%20and%20Expression%20Likelihood%20with%20Application%20to%20DAF-16" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821&title=Identification%20of%20Direct%20Target%20Genes%20Using%20Joint%20Sequence%20and%20Expression%20Likelihood%20with%20Application%20to%20DAF-16&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821&amp;title=Identification%20of%20Direct%20Target%20Genes%20Using%20Joint%20Sequence%20and%20Expression%20Likelihood%20with%20Application%20to%20DAF-16" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001821&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Identification of Direct Target Genes Using Joint Sequence and Expression Likelihood with Application to DAF-16';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001821';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Identification%20of%20Direct%20Target%20Genes%20Using%20Joint%20Sequence%20and%20Expression%20Likelihood%20with%20Application%20to%20DAF-16 http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001821" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001821" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Caenorhabditis+elegans%22" title="Search for articles in the subject area:'Caenorhabditis elegans'"><div class="flagText">Caenorhabditis elegans</div></a>
+              <div data-categoryid="42653" data-articleid="26466"
+                   data-categoryname="Caenorhabditis elegans"
+                   class="flagImage" title="Flag 'Caenorhabditis elegans' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="26466"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulation%22" title="Search for articles in the subject area:'Gene regulation'"><div class="flagText">Gene regulation</div></a>
+              <div data-categoryid="17553" data-articleid="26466"
+                   data-categoryname="Gene regulation"
+                   class="flagImage" title="Flag 'Gene regulation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+targeting%22" title="Search for articles in the subject area:'Gene targeting'"><div class="flagText">Gene targeting</div></a>
+              <div data-categoryid="47601" data-articleid="26466"
+                   data-categoryname="Gene targeting"
+                   class="flagImage" title="Flag 'Gene targeting' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Microarrays%22" title="Search for articles in the subject area:'Microarrays'"><div class="flagText">Microarrays</div></a>
+              <div data-categoryid="17255" data-articleid="26466"
+                   data-categoryname="Microarrays"
+                   class="flagImage" title="Flag 'Microarrays' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Oxidoreductases%22" title="Search for articles in the subject area:'Oxidoreductases'"><div class="flagText">Oxidoreductases</div></a>
+              <div data-categoryid="36357" data-articleid="26466"
+                   data-categoryname="Oxidoreductases"
+                   class="flagImage" title="Flag 'Oxidoreductases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Saccharomyces+cerevisiae%22" title="Search for articles in the subject area:'Saccharomyces cerevisiae'"><div class="flagText">Saccharomyces cerevisiae</div></a>
+              <div data-categoryid="43143" data-articleid="26466"
+                   data-categoryname="Saccharomyces cerevisiae"
+                   class="flagImage" title="Flag 'Saccharomyces cerevisiae' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+motif+analysis%22" title="Search for articles in the subject area:'Sequence motif analysis'"><div class="flagText">Sequence motif analysis</div></a>
+              <div data-categoryid="19657" data-articleid="26466"
+                   data-categoryname="Sequence motif analysis"
+                   class="flagImage" title="Flag 'Sequence motif analysis' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=6039'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=465'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=7202&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=6031">Referee comments: Referee 1 (Olivier Elemento)</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

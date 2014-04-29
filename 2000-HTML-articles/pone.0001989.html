@@ -1,0 +1,1323 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001989"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001989" />
+
+    <meta name="citation_title" content="Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction"/>
+    <meta itemprop="name" content="Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction"/>
+
+      <meta name="citation_author" content="Chao Cheng"/>
+            <meta name="citation_author_institution" content="Molecular and Computational Biology Program, Department of Biological Sciences, University of Southern California, Los Angeles, California, United States of America"/>
+      <meta name="citation_author" content="Lei M. Li"/>
+            <meta name="citation_author_institution" content="Molecular and Computational Biology Program, Department of Biological Sciences, University of Southern California, Los Angeles, California, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Mathematics, University of Southern California, Los Angeles, California, United States of America"/>
+
+    <meta name="citation_date" content="2008/4/23"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001989.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1989"/>
+    <meta name="citation_issue" content="4"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Antisense inhibition of human miRNAs and indications for an involvement of miRNA in cell growth and apoptosis.; citation_author=AM Cheng; citation_author=MW Byrom; citation_author=J Shelton; citation_author=LP Ford; citation_journal_title=Nucleic Acids Res; citation_volume=33; citation_number=1; citation_pages=1290-1297; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MicroRNAs and the regulation of cell death.; citation_author=P Xu; citation_author=M Guo; citation_author=BA Hay; citation_journal_title=Trends Genet; citation_volume=20; citation_number=2; citation_pages=617-624; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Encountering microRNAs in cell fate signaling.; citation_author=X Karp; citation_author=V Ambros; citation_journal_title=Science; citation_volume=310; citation_number=3; citation_pages=1288-1289; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MicroRNAs modulate hematopoietic lineage differentiation.; citation_author=CZ Chen; citation_author=L Li; citation_author=HF Lodish; citation_author=DP Bartel; citation_journal_title=Science; citation_volume=303; citation_number=4; citation_pages=83-86; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A pancreatic islet-specific microRNA regulates insulin secretion.; citation_author=MN Poy; citation_author=L Eliasson; citation_author=J Krutzfeldt; citation_author=S Kuwajima; citation_author=X Ma; citation_journal_title=Nature; citation_volume=432; citation_number=5; citation_pages=226-230; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14.; citation_author=RC Lee; citation_author=RL Feinbaum; citation_author=V Ambros; citation_journal_title=Cell; citation_volume=75; citation_number=6; citation_pages=843-854; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Global analysis of microRNA target gene expression reveals that miRNA targets are lower expressed in mature mouse and Drosophila tissues than in the embryos.; citation_author=Z Yu; citation_author=Z Jian; citation_author=SH Shen; citation_author=E Purisima; citation_author=E Wang; citation_journal_title=Nucleic Acids Res; citation_volume=35; citation_number=7; citation_pages=152-164; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Identification of novel genes coding for small expressed RNAs.; citation_author=M Lagos-Quintana; citation_author=R Rauhut; citation_author=W Lendeckel; citation_author=T Tuschl; citation_journal_title=Science; citation_volume=294; citation_number=8; citation_pages=853-858; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=MicroRNAs: genomics, biogenesis, mechanism, and function.; citation_author=DP Bartel; citation_journal_title=Cell; citation_volume=116; citation_number=9; citation_pages=281-297; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Genomics of microRNA.; citation_author=VN Kim; citation_author=JW Nam; citation_journal_title=Trends Genet; citation_volume=22; citation_number=10; citation_pages=165-173; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Transcription and processing of human microRNA precursors.; citation_author=BR Cullen; citation_journal_title=Mol Cell; citation_volume=16; citation_number=11; citation_pages=861-865; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Mechanisms of gene silencing by double-stranded RNA.; citation_author=G Meister; citation_author=T Tuschl; citation_journal_title=Nature; citation_volume=431; citation_number=12; citation_pages=343-349; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A microRNA in a multiple-turnover RNAi enzyme complex.; citation_author=G Hutvagner; citation_author=PD Zamore; citation_journal_title=Science; citation_volume=297; citation_number=13; citation_pages=2056-2060; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Silence from within: endogenous siRNAs and miRNAs.; citation_author=EJ Sontheimer; citation_author=RW Carthew; citation_journal_title=Cell; citation_volume=122; citation_number=14; citation_pages=9-12; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=microRNA-guided posttranscriptional gene regulation.; citation_author=PY Chen; citation_author=G Meister; citation_journal_title=Biol Chem; citation_volume=386; citation_number=15; citation_pages=1205-1218; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MicroRNA regulation of gene expression in plants.; citation_author=DV Dugas; citation_author=B Bartel; citation_journal_title=Curr Opin Plant Biol; citation_volume=7; citation_number=16; citation_pages=512-520; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A biochemical framework for RNA silencing in plants.; citation_author=G Tang; citation_author=BJ Reinhart; citation_author=DP Bartel; citation_author=PD Zamore; citation_journal_title=Genes Dev; citation_volume=17; citation_number=17; citation_pages=49-63; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Posttranscriptional regulation of the heterochronic gene lin-14 by lin-4 mediates temporal pattern formation in C. elegans.; citation_author=B Wightman; citation_author=I Ha; citation_author=G Ruvkun; citation_journal_title=Cell; citation_volume=75; citation_number=18; citation_pages=855-862; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=The 21-nucleotide let-7 RNA regulates developmental timing in Caenorhabditis elegans.; citation_author=BJ Reinhart; citation_author=FJ Slack; citation_author=M Basson; citation_author=AE Pasquinelli; citation_author=JC Bettinger; citation_journal_title=Nature; citation_volume=403; citation_number=19; citation_pages=901-906; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Involvement of microRNA in AU-rich element-mediated mRNA instability.; citation_author=Q Jing; citation_author=S Huang; citation_author=S Guth; citation_author=T Zarubin; citation_author=A Motoyama; citation_journal_title=Cell; citation_volume=120; citation_number=20; citation_pages=623-634; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Pervasive regulation of Drosophila Notch target genes by GY-box-, Brd-box-, and K-box-class microRNAs.; citation_author=EC Lai; citation_author=B Tam; citation_author=GM Rubin; citation_journal_title=Genes Dev; citation_volume=19; citation_number=21; citation_pages=1067-1080; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Regulation by let-7 and lin-4 miRNAs results in target mRNA degradation.; citation_author=S Bagga; citation_author=J Bracht; citation_author=S Hunter; citation_author=K Massirer; citation_author=J Holtz; citation_journal_title=Cell; citation_volume=122; citation_number=22; citation_pages=553-563; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Microarray analysis shows that some microRNAs downregulate large numbers of target mRNAs.; citation_author=LP Lim; citation_author=NC Lau; citation_author=P Garrett-Engele; citation_author=A Grimson; citation_author=JM Schelter; citation_journal_title=Nature; citation_volume=433; citation_number=23; citation_pages=769-773; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Systematic identification of microRNA functions by combining target prediction and expression profiling.; citation_author=X Wang; citation_author=X Wang; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=24; citation_pages=1646-1652; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Transcripts targeted by the microRNA-16 family cooperatively regulate cell cycle progression.; citation_author=PS Linsley; citation_author=J Schelter; citation_author=J Burchard; citation_author=M Kibukawa; citation_author=MM Martin; citation_journal_title=Mol Cell Biol; citation_volume=27; citation_number=25; citation_pages=2240-2252; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Silencing of microRNAs in vivo with ‘antagomirs’.; citation_author=J Krutzfeldt; citation_author=N Rajewsky; citation_author=R Braich; citation_author=KG Rajeev; citation_author=T Tuschl; citation_journal_title=Nature; citation_volume=438; citation_number=26; citation_pages=685-689; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Animal MicroRNAs confer robustness to gene expression and have a significant impact on 3′UTR evolution.; citation_author=A Stark; citation_author=J Brennecke; citation_author=N Bushati; citation_author=RB Russell; citation_author=SM Cohen; citation_journal_title=Cell; citation_volume=123; citation_number=27; citation_pages=1133-1146; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Cell-type-specific signatures of microRNAs on target mRNA expression.; citation_author=P Sood; citation_author=A Krek; citation_author=M Zavolan; citation_author=G Macino; citation_author=N Rajewsky; citation_journal_title=Proc Natl Acad Sci U S; citation_volume=A.103; citation_number=28; citation_pages=2746-2751; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Systematic discovery of regulatory motifs in human promoters and 3′ UTRs by comparison of several mammals.; citation_author=X Xie; citation_author=J Lu; citation_author=EJ Kulbokas; citation_author=TR Golub; citation_author=V Mootha; citation_journal_title=Nature; citation_volume=434; citation_number=29; citation_pages=338-345; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Prediction of mammalian microRNA targets.; citation_author=BP Lewis; citation_author=IH Shih; citation_author=MW Jones-Rhoades; citation_author=DP Bartel; citation_author=CB Burge; citation_journal_title=Cell; citation_volume=115; citation_number=30; citation_pages=787-798; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Specificity of microRNA target selection in translational repression.; citation_author=JG Doench; citation_author=PA Sharp; citation_journal_title=Genes Dev; citation_volume=18; citation_number=31; citation_pages=504-511; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Kinetic analysis of the RNAi enzyme complex.; citation_author=B Haley; citation_author=PD Zamore; citation_journal_title=Nat Struct Mol Biol; citation_volume=11; citation_number=32; citation_pages=599-606; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Computational identification of microRNA targets.; citation_author=N Rajewsky; citation_author=ND Socci; citation_journal_title=Dev Biol; citation_volume=267; citation_number=33; citation_pages=529-535; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Common logic of transcription factor and microRNA action.; citation_author=O Hobert; citation_journal_title=Trends Biochem Sci; citation_volume=29; citation_number=34; citation_pages=462-468; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.; citation_author=A Subramanian; citation_author=P Tamayo; citation_author=VK Mootha; citation_author=S Mukherjee; citation_author=BL Ebert; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=102; citation_number=35; citation_pages=15545-15550; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Post-translational regulation of the let-7 microRNA during neural cell specification.; citation_author=FG Wulczyn; citation_author=L Smirnova; citation_author=A Rybak; citation_author=C Brandt; citation_author=E Kwidzinski; citation_journal_title=FASEB J; citation_volume=21; citation_number=36; citation_pages=415-426; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=MicroRNA expression profiles classify human cancers.; citation_author=J Lu; citation_author=G Getz; citation_author=EA Miska; citation_author=E Alvarez-Saavedra; citation_author=J Lamb; citation_journal_title=Nature; citation_volume=435; citation_number=37; citation_pages=834-838; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A microRNA expression signature of human solid tumors defines cancer gene targets.; citation_author=S Volinia; citation_author=GA Calin; citation_author=CG Liu; citation_author=S Ambs; citation_author=A Cimmino; citation_journal_title=Proc Natl; citation_number=38; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The Stanford Microarray Database: implementation of new analysis tools and open source release of software.; citation_author=J Demeter; citation_author=C Beauheim; citation_author=J Gollub; citation_author=T Hernandez-Boussard; citation_author=H Jin; citation_journal_title=Nucleic Acids Res; citation_volume=35; citation_number=39; citation_pages=D766-D770; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=NCBI GEO: mining tens of millions of expression profiles–database and tools update.; citation_author=T Barrett; citation_author=DB Troup; citation_author=SE Wilhite; citation_author=P Ledoux; citation_author=D Rudnev; citation_journal_title=Nucleic Acids Res; citation_volume=35; citation_number=40; citation_pages=D760-D765; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Human MicroRNA targets.; citation_author=B John; citation_author=AJ Enright; citation_author=A Aravin; citation_author=T Tuschl; citation_author=C Sander; citation_journal_title=PLoS Biol; citation_volume=2; citation_number=41; citation_pages=e363-e3NA; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A combined computational-experimental approach predicts human microRNA targets.; citation_author=M Kiriakidou; citation_author=PT Nelson; citation_author=A Kouranov; citation_author=P Fitziev; citation_author=C Bouyioukos; citation_journal_title=Genes Dev; citation_volume=18; citation_number=42; citation_pages=1165-1178; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Combinatorial microRNA target predictions.; citation_author=A Krek; citation_author=D Grun; citation_author=MN Poy; citation_author=R Wolf; citation_author=L Rosenberg; citation_journal_title=Nat Genet; citation_volume=37; citation_number=43; citation_pages=495-500; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Inferring activity changes of transcription factors by binding association with sorted expression profiles.; citation_author=C Cheng; citation_author=X Yan; citation_author=F Sun; citation_author=LM Li; citation_journal_title=BMC Bioinformatics; citation_volume=8; citation_number=44; citation_pages=452; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Fast and effective prediction of microRNA/target duplexes.; citation_author=M Rehmsmeier; citation_author=P Steffen; citation_author=M Hochsmann; citation_author=R Giegerich; citation_journal_title=RNA; citation_volume=10; citation_number=45; citation_pages=1507-1517; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Prediction of plant microRNA targets.; citation_author=MW Rhoades; citation_author=BJ Reinhart; citation_author=LP Lim; citation_author=CB Burge; citation_author=B Bartel; citation_journal_title=Cell; citation_volume=110; citation_number=46; citation_pages=513-520; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=MicroRNA targets in Drosophila.; citation_author=AJ Enright; citation_author=B John; citation_author=U Gaul; citation_author=T Tuschl; citation_author=C Sander; citation_journal_title=Genome Biol; citation_volume=5; citation_number=47; citation_pages=R1; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=miRNAMap: genomic maps of microRNA genes and their target genes in mammalian genomes.; citation_author=PW Hsu; citation_author=HD Huang; citation_author=SD Hsu; citation_author=LZ Lin; citation_author=AP Tsou; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=48; citation_pages=D135-139; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Systematic identification of cell cycle regulated transcription factors from microarray time series data.; citation_author=C Cheng; citation_author=LM Li; citation_journal_title=BMC Genomics 2008; citation_volume=9; citation_number=49; citation_pages=116; citation_date=2008; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction"/>
+    <meta name="twitter:description" content="BackgroundMicroRNAs (miRNAs) play crucial roles in a variety of biological processes via regulating expression of their target genes at the mRNA level. A number of computational approaches regarding miRNAs have been proposed, but most of them focus on miRNA gene finding or target predictions. Little computational work has been done to investigate the effective regulation of miRNAs.Methodology/Principal FindingsWe propose a method to infer the effective regulatory activities of miRNAs by integrating microarray expression data with miRNA target predictions. The method is based on the idea that regulatory activity changes of miRNAs could be reflected by the expression changes of their target transcripts measured by microarray. To validate this method, we apply it to the microarray data sets that measure gene expression changes in cell lines after transfection or inhibition of several specific miRNAs. The results indicate that our method can detect activity enhancement of the transfected miRNAs as well as activity reduction of the inhibited miRNAs with high sensitivity and specificity. Furthermore, we show that our inference is robust with respect to false positives of target prediction.Conclusions/SignificanceA huge amount of gene expression data sets are available in the literature, but miRNA regulation underlying these data sets is largely unknown. The method is easy to be implemented and can be used to investigate the miRNA effective regulation underlying the expression change profiles obtained from microarray experiments."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001989.g006"/>
+
+  <meta property="og:title" content="Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=3523'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=5443'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=7948&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001989">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001989" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001989&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Chao Cheng, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Molecular and Computational Biology Program, Department of Biological Sciences, University of Southern California, Los Angeles, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Lei M. Li
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:lilei@usc.edu">lilei@usc.edu</a></p>
+
+                <p>Affiliations:
+                  Molecular and Computational Biology Program, Department of Biological Sciences, University of Southern California, Los Angeles, California, United States of America, 
+                  Department of Mathematics, University of Southern California, Los Angeles, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: April 23, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001989</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001989-g001" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001989-g002" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001989-g003" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001989-g004" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001989-g005" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001989-g006" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001989">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001989" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>MicroRNAs (miRNAs) play crucial roles in a variety of biological processes via regulating expression of their target genes at the mRNA level. A number of computational approaches regarding miRNAs have been proposed, but most of them focus on miRNA gene finding or target predictions. Little computational work has been done to investigate the effective regulation of miRNAs.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We propose a method to infer the effective regulatory activities of miRNAs by integrating microarray expression data with miRNA target predictions. The method is based on the idea that regulatory activity changes of miRNAs could be reflected by the expression changes of their target transcripts measured by microarray. To validate this method, we apply it to the microarray data sets that measure gene expression changes in cell lines after transfection or inhibition of several specific miRNAs. The results indicate that our method can detect activity enhancement of the transfected miRNAs as well as activity reduction of the inhibited miRNAs with high sensitivity and specificity. Furthermore, we show that our inference is robust with respect to false positives of target prediction.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>A huge amount of gene expression data sets are available in the literature, but miRNA regulation underlying these data sets is largely unknown. The method is easy to be implemented and can be used to investigate the miRNA effective regulation underlying the expression change profiles obtained from microarray experiments.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Cheng C, Li LM (2008) Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction. PLoS ONE 3(4):
+          e1989.
+            doi:10.1371/journal.pone.0001989</p><p><strong>Editor: </strong>Sui Huang, Children's Hospital Boston, United States of America</p><p><strong>Received:</strong> November 28, 2007; <strong>Accepted:</strong> March 1, 2008; <strong>Published:</strong> April 23, 2008</p><p><strong>Copyright:</strong> © 2008 Cheng, Li. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The work is supported by the NIH grant R01 GM75308-01.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>MicroRNAs (miRNAs) are small non-coding RNAs of 19–24 nucleotides in length that down-regulate gene expression during a variety of crucial cell processes, including cell proliferation <a href="#pone.0001989-Cheng1">[1]</a>, apoptosis <a href="#pone.0001989-Xu1">[2]</a>, development <a href="#pone.0001989-Karp1">[3]</a>, differentiation <a href="#pone.0001989-Chen1">[4]</a>, and metabolism <a href="#pone.0001989-Poy1">[5]</a>. Since the discovery of the first miRNA gene (lin-4) in 1993 <a href="#pone.0001989-Lee1">[6]</a>, several hundreds of miRNA genes have been identified in animals and plants. It is currently estimated that miRNA genes constitute about 1%–2% of the known genes and up to 30% of genes may be regulated by miRNAs in eukaryotes <a href="#pone.0001989-Yu1">[7]</a>. MiRNA genes can be located in introns or exons of protein-coding genes, or within the intergenic regions between protein-coding genes. They can either exist individually or form polycistronic clusters <a href="#pone.0001989-LagosQuintana1">[8]</a>–<a href="#pone.0001989-Kim1">[10]</a>. Mature miRNAs are originated from 70- to 100-nucleotide hairpin pre-miRNA precursors <a href="#pone.0001989-Bartel1">[9]</a>. Typically, a precursor is cleaved by RNase III family of endonucleases Drosha and Dicer into a duplex: one strand of the duplex is degraded, whereas the other strand functions as mature miRNA <a href="#pone.0001989-Cullen1">[11]</a>. The single-stranded mature miRNA is then incorporated into a silencing complex and guided to the 3′ un-translated region (3′-UTR) of the target mRNAs via base pairing, leading to the block of translation or degradation of the target mRNAs <a href="#pone.0001989-Meister1">[12]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>It has been thought that the degree of complementarity between the miRNA and its target mRNA determines the fate of the bound target mRNA <a href="#pone.0001989-Hutvagner1">[13]</a>–<a href="#pone.0001989-Chen2">[15]</a>. Perfect pairing induces target mRNA cleavage, as is the case in most plant miRNAs <a href="#pone.0001989-Dugas1">[16]</a>, <a href="#pone.0001989-Tang1">[17]</a>. Imperfect pairing in the central part of the duplex instead leads to the block of translation, as seen in the majority of animal miRNAs <a href="#pone.0001989-Wightman1">[18]</a>, <a href="#pone.0001989-Reinhart1">[19]</a>. More recent studies, however, have demonstrated that in both plants and animals, expression regulation at the mRNA level (via mRNA degradation or deadenylation) may serve as a common mechanism for miRNA function. First, animal miRNAs have been found to mediate mRNA degradation even when the target sites have incomplete complementarity to them <a href="#pone.0001989-Jing1">[20]</a>–<a href="#pone.0001989-Bagga1">[22]</a>. Second, microarray experiments reveal that overexpression of miRNA in cells cause the moderate down-regulation of a large number of transcripts, many of which contain the complementary sequences of the over-expressed miRNA in their 3′-UTRs <a href="#pone.0001989-Lim1">[23]</a>–<a href="#pone.0001989-Linsley1">[25]</a>. Conversely, gene expression analysis from miRNA knockdown animals reveal that the miRNA recognition motifs are strongly enriched in the 3′-UTRs of up-regulated genes, but depleted in the 3′-UTRs of down-regulated genes <a href="#pone.0001989-Krutzfeldt1">[26]</a>. Third, it has been shown that the 3′-UTRs of certain class of ubiquitously expressed genes are specifically depleted of miRNA target sites <a href="#pone.0001989-Stark1">[27]</a> and that the endogenous expression of several highly specific miRNAs is typically negatively correlated with the mRNA levels of their targets <a href="#pone.0001989-Stark1">[27]</a>–<a href="#pone.0001989-Xie1">[29]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Since the expression regulation at the mRNA level is common for miRNA functions, it is reasonable to expect that the activities of miRNAs can be reflected by the expression levels of their target mRNAs. As a matter of fact, the systematic negative correlations between expressions of miRNAs and those of their target transcripts have been observed in a number of studies as described above <a href="#pone.0001989-Lim1">[23]</a>–<a href="#pone.0001989-Xie1">[29]</a>. With these observations, a natural question to us is: can we infer the modification of miRNA effective regulation from the expressions of their target genes? In this paper, we propose a method that combines microarray expression data with miRNA target predictions to infer the relative activities of miRNAs underlying the gene expression changes. In a typical microarray expression experiment, the relative expression levels in two different biological samples (cDNA arrays) or the absolute expression levels in a single biological sample (oligonucleotide arrays) are measured simultaneously for tens of thousands of genes. The expression levels of miRNA are generally not available from these gene expression data. Thus, the purpose of our method is to infer the relative miRNA activities, i.e. changes of miRNA effective regulations between two different conditions, based on the expression changes of their target genes, which are directly measured by cDNA arrays or calculated by comparing the absolute gene expression levels from different oligonucleotide arrays. Basically, our method examines the trend of expression changes of target genes of a miRNA. If these target genes tend to be down-regulated, it indicates that the effective activity of this miRNA is enhanced between the two conditions. Conversely, a prevalent up-regulation of these target genes would indicate a reduction of the miRNA activity. We apply this method to microarray data measuring gene expression changes in cell lines transfected with certain miRNAs or anti-miRNAs (miRNA-specific inhibitors). It shows that the relative activities changes of the transfected miRNAs and the inhibited miRNAs can indeed be inferred with high sensitivity and specificity. The method is easy to be implemented and can be applied to other microarray data to provide useful information regarding the underlying miRNA activity regulations.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>We apply our method to the microarray expression data from miRNA transfection experiments performed by Lim et al. <a href="#pone.0001989-Lim1">[23]</a>. In this data, using non-transfected Hela cell as reference the relative expression levels of genes are measured in the HeLa cells at the 12 (12 h) and 24 (24 h) hour after respective transfection with two wild-type miRNAs (miR-1 and miR-124), two mutant miRNAs (124mut5-6 and 124mut9-10) and two chimeric miRNA (chimiR-124/1 and chimiR-1/124), which results in a total of 12 expression change profiles. We applied our method to these 12 expression change profiles to examine whether the activity enhancement of the transfected miRNAs can be detected. By integrating the expression data with the miRNA target prediction data, we infer the activity change scores (AC scores) with statistical significances for 211 human miRNAs in each of the 12 expression change profiles. More detailed description about the data, the definition of AC score, and the computational procedure can be found in section “<a href="#s4">Materials and Methods</a>”. The AC score is a measure of the inferred relative activities of miRNAs between two different conditions. In other words, it estimates the capability of these miRNAs to down-regulate expressions of their target genes. A positive AC score indicates activity enhancement of the corresponding miRNA, whereas a negative AC score indicates activity reduction. The complete results for 211 human miRNAs in these 12 expression change profiles are shown in the supplementary <a href="#pone.0001989.s001">Table S1</a>.</p>
+
+<h4>Relative activities of miRNAs in miRNA transfected HeLa cells</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>In <a href="#pone-0001989-g001">Figure 1</a>, we show the distribution of the AC scores for these 211 human miRNAs using box-plots, in which miR-1 and miR-124 are marked as red circles and blue rectangles, respectively. As shown, the regulation of miR-1 (<a href="#pone-0001989-g001">Figure 1A</a>) and miR-124 (<a href="#pone-0001989-g001">Figure 1B</a>) in their transfection microarray profiles are both detected by our method. In the miR-1 transfection data, the AC score of miR-1 is 12.37 at 12 h and 10.37 at 24 h. In the miR-124 transfection data, the AC score of miR-124 is 14.16 at 12 h and 16.11 at 24 h. These four AC scores are the highest among the 211 scores inferred from the corresponding miRNA transfection experiment, with q-values of 0 according to the results from 10,000 permutations.</p>
+<div class="figure" id="pone-0001989-g001"><div class="img"><a name="pone-0001989-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Distribution of AC scores for 211 known human miRNAs in (A) miR-1 (B) miR-124 (C) 124mut5-6 (D) 124mut9-10 (E) chimiR1/124 and (F) chimiR124/1 transfection data.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>The AC scores for miR-1 and miR-124 are marked as red circles and blue rectangles, respectively.</p>
+<span>doi:10.1371/journal.pone.0001989.g001</span></div><a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p><a href="#pone-0001989-g001">Figure 1C</a> indicates that switch of bases at position 5 and 6 (124mut5-6) substantially reduces the ability of miR-124 to down-regulate its target genes. In the 124mut5-6 transfection experiment, the AC score of miR-124 is −5.89 at 12 h (q = 0.0084) and −5.22 at 24 h (q = 0.10), suggesting slight reduction instead of an enhancement in regulatory activity. It seems that the regulatory activity of miR-124 is completely abolished as a consequence of base switch between positions 5 and 6. In contrast, switching bases between positions 9 and 10 (124mut9-10) exhibits less reduction of regulatory activity. As shown in <a href="#pone-0001989-g001">Figure 1D</a>, at 24 h the AC score for miR-124 in 124mut9-10 transfected HeLa cells is 14.15 (q = 0), which is comparable to 16.11 (q = 0) in the wild-type miR-124 transfected HeLa cells. However, the AC score of miR-124 at 12 h after the 124mut9-10 transfection is much lower (5.28, q = 0.063). This indicates that expression of the target genes of miR-124 is only partially down-regulated at 12 h due to the lower regulatory activity of 124mut9-10. Therefore, our results demonstrate that the silencing or down-regulation abilities of both 124mut5-6 and 124mut9-10 are reduced compared to miR-124. Furthermore, positions 5–6 of the miRNA are more crucial than positions 9–10.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p><a href="#pone-0001989-g001">Figure 1E and 1F</a> show that the 5′-ends of the miRNAs are dominant over the 3′-ends in down-regulating target genes. As shown, transfection of the chimaeric miRNA chimiR-1/124, composed of 5′-end of miR-1 and 3′-end of mir-124, down-regulates the expression of the target genes of miR-1; whereas transfection of the chimaeric miRNA chimiR-124/1, composed of 5′-end of miR-124 and 3′-end of mir-1, down-regulates the expression of the target genes of miR-124. These results are consistent with previous studies which demonstrated that the miRNA-target RNA interaction is restricted to the 5′-end of the miRNA sequence and that the perfect complementarity between the miRNA 2–8 bases and the targeted RNA is essential for target recognition <a href="#pone.0001989-Lewis1">[30]</a>–<a href="#pone.0001989-Rajewsky1">[33]</a>.</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>In <a href="#pone-0001989-g002">Figure 2</a>, we use the expression change profile at 24 h after miR-124 transfection as an example to illustrate how our method works. <a href="#pone-0001989-g002">Figure 2A</a> shows the <em>g(i)</em> function in Equation (1) (black curve) and <em>f(i)</em> functions in Equation (2) for miR-124 (red curve) and four randomly selected miRNAs (green curves). The definitions of <em>g(i)</em> and <em>f(i)</em> functions can be found in “<a href="#s4">Materials and Methods</a>”. If the activity of a miRNA does not change, <em>f(i)</em> would increase in a random fashion. However, if the activity of a miRNA does change, say in a down-regulated way, <em>f(i)</em> would increase rapidly. The function <em>g(i)</em> serves as a control for the comparison with <em>f(i)</em>. As shown in <a href="#pone-0001989-g002">Figure 2A</a>, the <em>f(i)</em> function for miR-124 exhibits a curve which deviates far from the curve of <em>g(i)</em> function, since the genes with high binding affinities to the miRNA tend to be down-regulated and therefore are enriched at the bottom of the sorted expression change profile <em>e</em>′. However, the <em>f(i)</em> functions of these randomly selected miRNAs are indistinguishable from the <em>g</em>(<em>i</em>) function. Thus, the maximum deviation of <em>f(i)</em> from <em>g(i)</em>, i.e. the pre-score, for miR-124 is much larger than those of the four randomly selected miRNAs, as shown in <a href="#pone-0001989-g002">Figure 2B</a>.</p>
+<div class="figure" id="pone-0001989-g002"><div class="img"><a name="pone-0001989-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Examples of pre-score calculation for miR-124 and four randomly selected miRNAs in the miR-124 transfection profile at 24 h.</span></strong></p><a id="article1.body1.sec2.sec1.fig2.caption1.p1" name="article1.body1.sec2.sec1.fig2.caption1.p1"></a><p>The <em>g(i)</em> function is shown as the black curve in (A); the <em>f(i)</em> functions in (A) and the <em>g(i)–f(i)</em> function in (B) for miR-124 and the randomly selected miRNAs are shown as the red lines and green lines, respectively. The dashed lines show the positions at which maximum deviations (pre-scores) are achieved for these miRNAs.</p>
+<span>doi:10.1371/journal.pone.0001989.g002</span></div><a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"></a><p>Interestingly, we find that over-expression of miR-1 or miR-124 can cause the activity changes of some other miRNAs, which are mostly down-regulated. For example, after miR-124 transfection, the activity of miR-32 is down-regulated with an AC score of −10.05 (q = 0) at 12 h and −9.57 (q = 0) at 24 h. These results support the notion that miRNAs regulate each other and form a regulatory network like transcription factors <a href="#pone.0001989-Hobert1">[34]</a>. An alternative explanation, however, is that the large amount of exogenous miRNA introduced by miR-1 or miR-124 transfection may interfere with the processing and maturation of endogenous miRNAs and lead to their down-regulation.</p>
+<a id="article1.body1.sec2.sec1.p6" name="article1.body1.sec2.sec1.p6"></a><p>We also applied our method to the shuffled expression change profiles, in which the gene names in the microarray data are shuffled, or in other word, mis-labeled randomly. In the shuffled data, we are unable to identify any miRNA with significant activity change at 0.30 significance level (q&lt;0.30), suggesting a high specificity of our method.</p>
+
+
+<h4>Robustness with respect to false miRNA target predictions</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>It is known that <em>in silico</em> miRNA target prediction is usually not accurate. Depending on the cut-off setting, the false positive rate and/or the false negative rate of the target predictions could be fairly high. Nonetheless, our method achieves accurate inference of miRNA activity modification in the miRNA transfection data as shown above. To investigate the robustness of our method to the false miRNA target predictions, we introduce additional errors to the miRNA target prediction data and examine whether our method is still able to identify the activity enhancement of the transfected miRNAs. By setting the cut-off value of binding energy to −12, the miRanda algorithm predicted 1076 regulatory target genes for miR-1 (transcripts corresponding to the same gene are combined). We divide the genes into a target gene set and a non-target gene set of miR-1. To introduce additional prediction errors, we randomly select 5%, 10%, 20%, 30%, 40% and 50% genes from the target gene set, set their miR-1 binding scores to 0s and assign their original binding scores to an equal number of randomly selected non-target genes. In other words, we swap the binding sores of a certain percentage of genes in miR-1 target and non-target gene sets. We then calculate the AC score of miR-1 in the expression change profile at 12 h and 24 h after miR-1 transfection based on the perturbed binding affinity data. For each percentage, we repeat the above procedure 100 times. The resulting average AC scores of miR-1 at each perturbing percentage and their p-values are shown in <a href="#pone-0001989-g003">Figure 3</a>.</p>
+<div class="figure" id="pone-0001989-g003"><div class="img"><a name="pone-0001989-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Average AC scores and p-values for miR-1 in the miR-1 transfection profile at 12 h (A and B) and 24 h (C and D) based on perturbed miR-1 target prediction scores.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>The x-axis shows the perturbing percentage from 0% to 50%. At each perturbing percentage, 100 perturbed binding score profiles of miR-1 are produced by exchanging the binding scores of target and non-target genes of miR-1. The standard deviations of AC scores and p-values are also shown.</p>
+<span>doi:10.1371/journal.pone.0001989.g003</span></div><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>As shown in <a href="#pone-0001989-g003">Figure 3</a>, the average AC scores decrease gradually with the increase of perturbing percentage. The activity change of miR-1, however, can still be detected even when the perturbing percentage increases to as large as 30%. Considering that the original miRNA binding data already contain some prediction errors, we conclude that our method is robust to the false positive predictions in the predicted miRNA binding affinity data.</p>
+
+
+<h4>Continuous versus discretized miRNA-target binding score data</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>In our method, we directly utilize the continuous binding scores of miRNAs to their targets. To identify miRNAs with significant activity changes, other strategies can be used: define the target gene set for each miRNA and then (1) perform gene set enrichment analysis (GSEA) <a href="#pone.0001989-Subramanian1">[35]</a> or (2) use the Wilcoxon test to compare the expressions of target genes with non-target genes. To show the advantage of using continuous binding scores, we discretize the binding affinity data by setting the binding scores over a cut-off value to 1 and those below the cut-off value to 0. When discretized binding scores are used, our method is essentially similar to the GSEA method. We apply our method to the discretized binding affinity data and the expression change profiles. <a href="#pone-0001989-g004">Figure 4</a> shows the results based on the discretized binding score data with different cut-off values. As shown, the results based on continuous binding scores outperform those based on discretized data.</p>
+<div class="figure" id="pone-0001989-g004"><div class="img"><a name="pone-0001989-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Box-plots of AC scores for the 211 miRNAs in the miR-124 transfection profiles at 12 h (A) and 24 h (B) based on the continuous and discretized binding score data.</span></strong></p><a id="article1.body1.sec2.sec3.fig1.caption1.p1" name="article1.body1.sec2.sec3.fig1.caption1.p1"></a><p>C corresponds to the continuous binding score data; D1, D2, D3, and D4 correspond to the discretized binding score data with cut-off value of 12, 60, 80 and 100, respectively. The AC score for miR-124 is marked as blue rectangle.</p>
+<span>doi:10.1371/journal.pone.0001989.g004</span></div><a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>We also use the Wilcoxon test to examine the significance of down-regulation of target genes (binding score ≥12) for each miRNA. It turns out that the down-regulation of the target genes of the transfected miRNA can be detected, but the specificity is relatively low. For example, in the expression change profile at 12 h after miR-1 transfection, the p-value of miR-1 by the Wilcoxon test is 0.0021, indicating the down-regulation of miR-1 target genes. However, there are 20 other miRNAs with more significant p-values, the lowest being 4.2e-11. In the expression change profile at 24 h after miR-1 transfection, the p-value of miR-1 is 0.061 and as many as 46 miRNAs have more significant p-values with the lowest at 7.2e-11. Therefore, our method, which is based on the continuous miRNA-target binding score data, achieves more accurate results than those methods based on miRNA target gene set analysis.</p>
+
+
+<h4>Other MiRNA transfection/inhibition data sets</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>In addition to the data described above, we apply our method to two other microarray data sets from miRNA transfection or inhibition experiments. The first data set is from the miRNA transfection experiment <a href="#pone.0001989-Wang1">[24]</a>. This data set is different from the previous one in two aspects. First, it takes a time course design, and measures gene expressions at 7 time points from 4 h to 120 h after miRNA transfection. Second, it uses one-channel Affymetrix microarrays to measure absolute expression levels of genes. In this data set, two time-course microarray experiments are included: one for miR-124 transfection and the other for the negative control transfection. Comparison of gene expressions in these two time courses at all time points results in 7 expression change profiles, which reflect expression changes caused by miR-124 transfection at different time points. We calculate the AC scores and their significances for each of the 211 miRNAs in these profiles. In <a href="#pone-0001989-g005">Figure 5</a>, we show the inferred relative activities of miR-124 across the time course after its transfection. As shown, moderate activity enhancement of miR-124 is observed at 4 h and 8 h with AC scores of 7.96 (q = 9.4E-4) and 6.15 (q = 0.026), respectively. In the rest time points (up to 120 h after transfection), we detect significant enhancement of miR-124 activity, with the highest AC score of 15.75 (q = 0) achieved at 12 h. The complete results for this data set can be found in the supplementary <a href="#pone.0001989.s002">Table S2</a>.</p>
+<div class="figure" id="pone-0001989-g005"><div class="img"><a name="pone-0001989-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>The inferred AC scores of miR-124 in the microarray time course of miR-124 transfection.</span></strong></p><span>doi:10.1371/journal.pone.0001989.g005</span></div><a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>In the second data set, the effects of over-expression and inhibition of two human miRNAs, miR-16 and miR-106b, are investigated using the two-channel Agilent microarrays <a href="#pone.0001989-Linsley1">[25]</a>. We apply our method to this data set and the complete results can be found in the supplementary <a href="#pone.0001989.s003">Table S3</a>. We detect the significant activity enhancement of miR-16 and miR-106b in Hela cells transfected with the corresponding miRNA, with the AC scores for miR-16 and miR-106b are 19.08 (q = 0) and 21.31 (q = 0), respectively. Of more importance, in the HeLa cells where the endogenous miR-16 and miR-106b levels are specifically inhibited by 2′-O-methyl-modified oligonucleotides (anti-miR), we detect the activity reduction of these two inhibited miRNAs. The AC scores of miR-16 and miR-106b are respectively −16.00 (q = 0) and −10.30 (q = 0) in the miRNA inhibition experiments. As suggested by these results, our method is able to detect the activity change of miRNAs in both gain-of-function (miRNA transfection) and loss-of function (miRNA inhibition) experiments.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>In this study, we propose a computational method to infer miRNA effective activity by integrating their binding affinities to target genes with gene expression changes measured by microarray experiment. With this method, we successfully detect activity enhancement of the miRNAs transfected to HeLa cells with high sensitivity and specificity. It should be noted that expression changes of the target genes for a miRNA reflects its effective regulatory activity change rather than expression change. This is one of the advantages of our method, since the expression level of a miRNA may not reflect its ability to down-regulate target genes. First, miRNA precursors need to be processed to become mature miRNA and post-transcriptional regulation may play important roles in controlling miRNA activities <a href="#pone.0001989-Wulczyn1">[36]</a>. Second, in some cases such as cancer, mutation of miRNA sequences may cause activity changes without substantially changing the expression levels. For these reasons, it may be more useful to measure or infer miRNA activity changes instead of measuring their expression changes. Unfortunately, some miRNA quantification methods such as miRNA microarray cannot effectively discriminate the expression levels of pre-miRNAs from those of mature miRNAs <a href="#pone.0001989-Lu1">[37]</a>, <a href="#pone.0001989-Volinia1">[38]</a>. Thus the miRNA expression levels measured by these methods do not reflect the actual regulatory activities of mature miRNAs. Furthermore, the number of large-scale miRNA profiling data is still limited, whereas a huge amount of microarray gene expression data are available from the public database such as Stanford Microarray Database (SMD) <a href="#pone.0001989-Demeter1">[39]</a> and Gene Expression Omnibus (GEO) <a href="#pone.0001989-Barrett1">[40]</a>. Our method may be implemented to these data sets and provide insight into miRNA activity regulation for further experimental investigation.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>In this study, the target genes for miRNAs were predicted using miRanda algorithm <a href="#pone.0001989-John1">[41]</a>. The self-consistency in our analysis of the miRNA transfected HeLa cells suggests the reliability of the miRanda predictions. Other than the miRanda algorithm, several other target prediction methods have also been proposed such as TargetScan <a href="#pone.0001989-Lewis1">[30]</a>, DIANA-MicroT <a href="#pone.0001989-Kiriakidou1">[42]</a>, and PicTar <a href="#pone.0001989-Krek1">[43]</a>. We do not study the effect of different miRNA target prediction methods, since it is beyond the focus of this paper. As shown, our method is robust with respect to the possible false predictions in the miRNA-target binding score data. However, we expect further improvement of the results by our method if more accurate miRNA target gene prediction is available.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Our method relies on the connection between activity of a given miRNA and expression levels of its target genes. Although recent studies indicate that expression regulation at the mRNA level may be a common mechanism for miRNA function in both plants and animals, the debate about the regulatory mechanisms of animal miRNAs is far from being closed. It is possible that for some animal miRNAs translation repression is the major mechanism for target gene suppression. In this case, our method may not be able to detect the activity changes of these miRNAs based on gene expression data. Another limitation of our method is that different miRNAs are considered independently during the activity inference. But miRNA regulation may involve interactive activity between multiple miRNAs. How to take into account the synergistic miRNA regulation would be an interesting direction in the future studies.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>In summary, we propose a method to infer effective activities of miRNA from microarray gene expression data and miRNA target predictions. This method can detect the activity enhancement of transfected miRNAs as well as the activity reduction of inhibited miRNAs with high sensitivity and specificity based on gene expression data. Since a huge amount of microarray expression data is available, we expect this method can be applied to infer miRNA regulations in many biological and medical research.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Overview</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>We originally use a similar method to infer activity changes of transcription factors by integrating microarray data with ChIP-chip data or motif discovery data <a href="#pone.0001989-Cheng2">[44]</a>. Since transcription factor and miRNA share a common logic in gene expression regulation <a href="#pone.0001989-Hobert1">[34]</a>, in this paper we revise the method and apply it to infer the relative activities of miRNAs by combining gene expression profiling with miRNA target predictions. In a typical expression change profile, the expression changes of tens of thousands transcripts are measured simultaneously under two different conditions, i.e. mutant versus wild type. To infer the relative activity of a miRNA, we examine expression changes of its target transcripts: if they tend to be down-regulated, then the activity of this miRNA is likely to be enhanced; conversely, if they tend to be up-regulated, then the activity of this miRNA is likely to be repressed. Unfortunately, the complete list of target transcripts of miRNAs is usually not available from experiments. But a number of computational approaches have been suggested to predict miRNA targets, such as TargetScan <a href="#pone.0001989-Lewis1">[30]</a>, miRanda <a href="#pone.0001989-John1">[41]</a>, DIANA-microT <a href="#pone.0001989-Kiriakidou1">[42]</a>, RNAhybrid <a href="#pone.0001989-Rehmsmeier1">[45]</a>, and PicTar <a href="#pone.0001989-Krek1">[43]</a>. These approaches search the 3′-UTR sequences of mRNAs for potential miRNA binding motifs that have binding affinities to the miRNA over a cut-off value. In our method, we do not use a stringent cut-off value to determine target gene sets for miRNAs. In contrast, we utilize the predicted binding affinity scores directly, for the magnitude of binding affinities itself is informative as has been shown by <a href="#pone.0001989-Wang1">[24]</a>.</p>
+
+
+<h4>Human miRNA target prediction</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>In plants, miRNAs are highly complementary to their binding sequences and therefore miRNA target prediction is relatively easy <a href="#pone.0001989-Rhoades1">[46]</a>. In animals, a number of miRNA target prediction approaches have been suggested in the past few years <a href="#pone.0001989-Lewis1">[30]</a>, <a href="#pone.0001989-John1">[41]</a>–<a href="#pone.0001989-Krek1">[43]</a>, <a href="#pone.0001989-Rehmsmeier1">[45]</a>, <a href="#pone.0001989-Enright1">[47]</a>. In this paper, we utilize the data predicted by miRanda algorithm <a href="#pone.0001989-John1">[41]</a>, <a href="#pone.0001989-Enright1">[47]</a>, which include the target predictions for 211 of known miRNAs in human. The complete data set is available from the miRNAMap database at <a href="http://mirnamap.mbc.nctu.edu.tw/html/downloads.html">http://mirnamap.mbc.nctu.edu.tw/html/dow​nloads.html</a> <a href="#pone.0001989-Hsu1">[48]</a>. The miRanda algorithm is based on sequence complementarity between the mature miRNA and its target site, binding energy for the miRNA-target duplex, and the evolutionary conservation of the target site sequence and position in aligned UTRs of homologous genes found in human, mouse and rat <a href="#pone.0001989-John1">[41]</a>. This algorithm was used to scan the human miRNA sequences against the 3′-UTRs of all the human transcripts for potential target sites. Each predicted miRNA-target duplex is assigned a binding energy (a negative value) with the cut-off value being set to −12, namely, only those sites with binding energies less than −12 were considered to be the target sites.</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>The predicted binding energy reflects the binding potential of the miRNA to the target site: a lower binding energy indicates a higher binding potential. Based on this data, we generate a binding score matrix <em>B</em> = (<em>b<sub>ij</sub></em>)<em><sub>N</sub></em><sub>×<em>M</em></sub>, where M is 211, the number of known human miRNAs, and N is 4896, the number of genes that contain at least one target site of the 211 miRNAs. The binding score <em>b<sub>ij</sub></em> is the sum of absolute values of binding energies for all the target sites of miRNA <em>j</em> within the 3′-UTR of gene <em>i</em>. If gene <em>i</em> contains no target site of miRNA <em>j</em>, we set <em>b<sub>ij</sub></em> to zero. Some human genes may correspond to multiple mRNA transcripts and in this case the binding scores of these transcripts are averaged.</p>
+
+
+<h4>Gene expression data in miRNA transfected cells</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>In this paper, three independent miRNA transfection data sets are used, which are originally generated by Lim et al. <a href="#pone.0001989-Lim1">[23]</a>, Wang et al. <a href="#pone.0001989-Wang1">[24]</a>, and Linsley et al. <a href="#pone.0001989-Linsley1">[25]</a>, respectively. To investigate the influence of miRNAs on gene expressions, Lim et al. transfected exogenous miRNAs into the HeLa cells and measured gene expression changes of genes in the transfected cells versus non-transfected cells using two-channel Agilent microarrays <a href="#pone.0001989-Lim1">[23]</a>. This data set is available from the GEO database with the accession number GSE2075 <a href="#pone.0001989-Barrett1">[40]</a>.</p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>In total, the effect of six miRNAs were examined in the data, including two wild-type miRNAs (miR-1 and miR-124), two mutant miRNAs of miR-124 (124mut5-6 and 124mut9-10), and two chimeric miRNAs (chimiR-124/1 and chimiR-1/124). The two mutant sequences of miR-124 were designed by switching bases at positions 5 and 6 (124mut5-6) and at positions 9 and 10 (124mut9-10), respectively. ChimiR-124/1 and chimiR-1/124 were two hybrid miRNAs. ChimiR-124/1 consists of the 5′-segment (10 bases) of miR-124 and the 3′-segment (12 bases) of miR-1, while chimiR-1/124 consisted of the 5′-segment (10 bases) of miR-1 and the 3′-segment (11 bases) of miR-124. These six miRNAs were transfected separately into HeLa cells and expression changes for more than 20,000 transcripts were measured at the 12 (12 h) and 24 (24 h) hours after transfection, resulting in 12 expression change profiles. In this data set some transcripts correspond to the same gene, namely, they have the same gene symbol. By averaging the measurements of transcripts corresponding to common genes, we finally obtained the relative expression levels of 15,223 different genes for each expression profile.</p>
+<a id="article1.body1.sec4.sec3.p3" name="article1.body1.sec4.sec3.p3"></a><p>In the second data set, gene expressions were profiled in miR-124 transfected as well as non-transfected HepG2 cells at 7 time points using the Affymetrix GeneChips <a href="#pone.0001989-Wang1">[24]</a>. We compared the expression profiles in transfected cells with those in non-transfected cells at each time point to obtain 7 expression change profiles. That is, these expression change profiles measure the relative expression levels (log ratios) of genes in miR-124 over-expressed cells with respect to non-transfected controls. The third data set contains four expression change profiles, which measure the relative expression levels of genes in miR-16 and miR-106b over-expressed and inhibited Hela cells using the two channel Agilent microarrays (non-transfected cells as controls) <a href="#pone.0001989-Linsley1">[25]</a>. For both of these two data sets, multiple measurements for the same transcripts were averaged to represent the relative expression levels of genes.</p>
+
+
+<h4>Inferring relative activities of miRNAs from gene expression data</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>To calculate the relative activities of miRNAs, we examine the expression changes of all genes between two different conditions measured by microarray experiments, which is denoted as “expression change profile” in this article. The expression changes of genes are directly measured by cDNA arrays or calculated by comparing absolute gene expression levels captured by pairs of oligonucleotide arrays. Given an expression change profile <em>e</em> = (<em>e<sub>1</sub></em>,<em>e<sub>2</sub></em>, …, <em>e<sub>N</sub></em>) (e.g. expression changes of genes in mutant versus wild-type cells, in which <em>e<sub>i</sub></em> is the log ratio of gene i) and a binding score matrix <em>B</em> = (<em>b<sub>ij</sub></em>)<em><sub>N</sub></em><sub>×<em>M</em></sub> (e.g. the above described binding score matrix for known human miRNAs), where <em>N</em> and <em>M</em> are the total number of genes and miRNAs respectively, our method aims to identify the miRNAs that are associated with the gene expression changes in <em>e</em>. The basic idea is to examine the expressions of target genes of miRNA: if the target genes tend to be down-regulated, we infer its activity to be enhanced; conversely, if the target genes tend to be up-regulated, we infer its activity to be repressed.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>For each miRNA, we calculate a score, termed the activity change score (AC score), which reflects the activity change of the miRNA. Suppose that we extract the binding scores corresponding to the current considered miRNA from the matrix B, and denote it as <em>b</em> = (<em>b</em><sub>1</sub>, <em>b</em><sub>2</sub>, …, <em>b<sub>N</sub></em>). To calculate the AC score, we first sort the expression vector <em>e</em> in a decreasing order and denote the sorted expression vector as <em>e</em>′ = (<em>e</em><sub>(1)</sub>, <em>e</em><sub>(2)</sub>, …, <em>e</em><sub>(<em>N</em>)</sub>). Accordingly, we rearrange the binding vector <em>b</em> into <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e001&amp;representation=PNG" class="inline-graphic"></span>, where (<em>i</em><sub>1</sub>, <em>i</em><sub>2</sub>, …, <em>i<sub>N</sub></em>) are the indices of the ranked genes in <em>e</em>′. Note that <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e002&amp;representation=PNG" class="inline-graphic"></span> and <em>e</em><sub>(<em>l</em>)</sub> correspond to the same gene <em>i<sub>l</sub></em>.</p>
+<a id="article1.body1.sec4.sec4.p3" name="article1.body1.sec4.sec4.p3"></a><p>Second, we combine the two vectors <em>e</em>′ and <em>b</em>′ into a non-decreasing function <em>f</em>(<em>i</em>) defined as follows:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e003&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br>where 1≤<em>i</em>≤<em>N</em>. Meanwhile we define another increasing function <em>g</em>(<em>i</em>) based only on <em>e</em>′ as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e004&amp;representation=PNG" class="inline-graphic"><span class="note">(2)</span></span><br>If the activity of a miRNA does not change, genes with high and low binding affinities to the miRNA would locate randomly in the ranking list <em>e</em>′, and <em>f</em>(<em>i</em>) would increase in a stochastic manner. However, if the activity of a miRNA does change, for example in a down-regulated manner, genes with high binding affinities would rank high in <em>e</em>′, and <em>f</em>(<em>i</em>) would increase rapidly. The function <em>g</em>(<em>i</em>) serves as a control for comparison with <em>f</em>(<em>i</em>).</p>
+<a id="article1.body1.sec4.sec4.p4" name="article1.body1.sec4.sec4.p4"></a><p>Third, we search for the index <em>i<sub>max</sub></em> that achieves the maximum deviation between <em>f</em>(<em>i</em>) and <em>g</em>(<em>i</em>), that is, <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e005&amp;representation=PNG" class="inline-graphic"></span>. Then a pre-score is defined as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e006&amp;representation=PNG" class="inline-graphic"><span class="note">(3)</span></span><br>Fourth, the pre-score is treated as a statistic and permutations are performed to obtain its distribution under the null hypothesis: no association between <em>e</em> and <em>b</em>. The binding vector <em>b</em>′ is permutated <em>K</em> times, resulting in <em>K</em> permuted binding vectors <em>b</em><sup>(1)</sup>, <em>b</em><sup>(2)</sup>, …, <em>b</em><sup>(<em>K</em>)</sup>. For each of the permutated binding vectors, we calculate a permutated pre-score and thereby we obtain a permutated pre-score vector denoted as <em>ps<sup>perm</sup></em> = (<em>ps</em><sup>1</sup>, <em>ps</em><sup>2</sup>, …, <em>ps<sup>K</sup></em>). The vector <em>ps<sup>perm</sup></em> represents the distribution of the pre-score under the null hypothesis and will be used for two purposes: (1) normalizing the pre-score and (2) assessing the significance of the activity change of a miRNA (to be described in the next section).</p>
+<a id="article1.body1.sec4.sec4.p5" name="article1.body1.sec4.sec4.p5"></a><p>Since the pre-scores of different miRNAs may have different distributions under the null hypothesis, they are not directly comparable. Therefore, we normalize the pre-score into the AC score defined as the following:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e007&amp;representation=PNG" class="inline-graphic"><span class="note">(4)</span></span><br>where <em>MEAN</em>(<em>ps<sup>perm</sup></em>) is the mean of <em>ps<sup>perm</sup></em> and <em>SD</em>(|<em>ps<sup>perm</sup></em>|) is the standard deviation of the absolute values of <em>ps<sup>perm</sup></em>. In General, the permutated pre-score has a bimodal distribution as shown in <a href="#pone-0001989-g006">Figure 6</a>. It can be shown that if the expression change profile <em>e</em> is symmetric with respect to zero, the permutated pre-score would also have a symmetric distribution. In most microarray data, the symmetric assumption for the expression change profile <em>e</em> is approximately satisfied and therefore we use <em>SD</em>(|<em>ps<sup>perm</sup></em>|) to combine the standard deviations of the permutated pre-scores in the positive and negative sides. Certainly, the symmetry is not perfect: the distribution of the pre-scores may skew to one side. We use <em>MEAN</em>(<em>ps<sup>perm</sup></em>) to correct the skewness, which is usually close to zero. In practice, the AC score achieves a good normalization for the pre-scores of different miRNAs. The AC score can be either positive or negative: a positive value indicates an overall down-regulation of the target genes of a miRNA and thereby the enhanced activity of the miRNA. Conversely, a negative value indicates an overall up-regulation of the target genes of a miRNA and thereby the reduced activity of the miRNA.</p>
+<div class="figure" id="pone-0001989-g006"><div class="img"><a name="pone-0001989-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001989" data-uri="info:doi/10.1371/journal.pone.0001989.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001989.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001989.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001989.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>Distribution of the pre-scores for miR-124 in 10,000 permutated data sets.</span></strong></p><span>doi:10.1371/journal.pone.0001989.g006</span></div><a id="article1.body1.sec4.sec4.p6" name="article1.body1.sec4.sec4.p6"></a><p>The AC score is a generalization of the enrichment score in gene set enrichment analysis (GSEA), which was proposed to identify gene sets associated with expression change profiles <a href="#pone.0001989-Subramanian1">[35]</a>. A target gene set of a miRNA, can be regarded as a degenerated binding score profile, in which binding scores above and below a specified threshold are set to 1 and 0, respectively. In this situation, our method is similar to the GSEA method. More explanations and applications of the method in the context of transcription inference can be found in <a href="#pone.0001989-Cheng2">[44]</a>, <a href="#pone.0001989-Cheng3">[49]</a>.</p>
+
+
+<h4>Significance evaluation of AC scores</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>The significances for the AC scores can also be assessed based on the above described permutation results. We define the p-value as the percentage of permutations that result in equal or more extreme pre-scores than the one from the original data. That is, the p-value for <em>ps</em><sup>*</sup> is defined as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001989.e008&amp;representation=PNG" class="inline-graphic"><span class="note">(5)</span></span><br>where <em>MEAN</em>(<em>ps<sup>perm</sup></em>) is the mean of <em>ps<sup>perm</sup></em> and <em>K</em> is the number of permutations.</p>
+<a id="article1.body1.sec4.sec5.p2" name="article1.body1.sec4.sec5.p2"></a><p>Since usually hundreds of miRNAs are examined simultaneously for each expression profile, multiple testing corrections need to be considered. Therefore, we calculate the false discovery rate (FDR) based on the permutations using a similar method introduced in GSEA <a href="#pone.0001989-Subramanian1">[35]</a>. The AC scores for each miRNA are calculated in both the original data, denoted as <em>ACS</em>(<em>r</em>) for the <em>r<sub>th</sub></em> miRNA, and the permutated data, denoted as <em>ACS</em>(<em>r</em>, <em>k</em>), for the <em>r<sub>th</sub></em> miRNA in the <em>k<sub>th</sub></em> permutation. We then consider the histogram of all <em>ACS</em>(<em>r</em>, <em>k</em>) over all <em>r</em> and <em>k</em>, and use this null distribution to compute an FDR <em>q</em> value for a given AC score <em>ACS</em>(<em>r</em>) = <em>ACS</em><sup>*</sup>. If <em>ACS</em><sup>*</sup>≥0, the FDR is the ratio of the percentage of all (<em>r</em>, <em>k</em>) with <em>ACS</em>(<em>r</em>, <em>k</em>)≥0, whose <em>ACS</em>(<em>r</em>, <em>k</em>)≥<em>ACS</em><sup>*</sup>, divided by the percentage of miRNAs with <em>ACS</em>(<em>r</em>)≥0, where <em>ACS</em>(<em>r</em>)≥<em>ACS</em><sup>*</sup>, and similarly if <em>ACS</em><sup>*</sup>&lt;0.</p>
+
+
+<h4>Software availability</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>The C++ program for the method is available for downloading at <a href="http://leili-lab.cmb.usc.edu/yeastaging/projects/microrna/">http://leili-lab.cmb.usc.edu/yeastaging/​projects/microrna/</a>.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001989"></div><a name="pone.0001989.s001" id="pone.0001989.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001989.s001">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">AC scores, p-values and q-values for 211 human miRNAs in expression profiles from miRNA transcfection experiments performed by Lim et al. <a href="#pone.0001989-Lim1">[23]</a>.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001989.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.16 MB XLS)</p>
+<a name="pone.0001989.s002" id="pone.0001989.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001989.s002">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">AC scores, p-values and q-values for 211 human miRNAs in expression profiles from miRNA transcfection time course experiments performed by Wang et al. <a href="#pone.0001989-Wang1">[24]</a>.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001989.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.10 MB XLS)</p>
+<a name="pone.0001989.s003" id="pone.0001989.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001989.s003">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">AC scores, p-values and q-values for 211 human miRNAs in expression profiles from miRNA transcfection and inhibition experiments performed by Linsley et al. <a href="#pone.0001989-Linsley1">[25]</a>.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001989.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.13 MB XLS)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Peter Chang and Min Xu for their critical reading of the manuscript and valuable suggestions.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: LL CC. Analyzed the data: CC. Contributed reagents/materials/analysis tools: CC. Wrote the paper: CC. Other: Helped with the writing: LL.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001989-Cheng1" id="pone.0001989-Cheng1"></a>Cheng AM, Byrom MW, Shelton J, Ford LP (2005) Antisense inhibition of human miRNAs and indications for an involvement of miRNA in cell growth and apoptosis. Nucleic Acids Res  33: 1290–1297.  <ul class="find" data-citedArticleID="1091054" data-doi="10.1093/nar/gki200"><li><a href="http://dx.doi.org/10.1093/nar/gki200" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Antisense+inhibition+of+human+miRNAs+and+indications+for+an+involvement+of+miRNA+in+cell+growth+and+apoptosis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Antisense+inhibition+of+human+miRNAs+and+indications+for+an+involvement+of+miRNA+in+cell+growth+and+apoptosis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001989-Xu1" id="pone.0001989-Xu1"></a>Xu P, Guo M, Hay BA (2004) MicroRNAs and the regulation of cell death. Trends Genet  20: 617–624.  <ul class="find" data-citedArticleID="1091138" data-doi="10.1016/j.tig.2004.09.010"><li><a href="http://dx.doi.org/10.1016/j.tig.2004.09.010" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MicroRNAs+and+the+regulation+of+cell+death." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MicroRNAs+and+the+regulation+of+cell+death.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001989-Karp1" id="pone.0001989-Karp1"></a>Karp X, Ambros V (2005) Encountering microRNAs in cell fate signaling. Science  310: 1288–1289.  <ul class="find" data-citedArticleID="1091082" data-doi="10.1126/science.1121566"><li><a href="http://dx.doi.org/10.1126/science.1121566" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Encountering+microRNAs+in+cell+fate+signaling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Encountering+microRNAs+in+cell+fate+signaling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001989-Chen1" id="pone.0001989-Chen1"></a>Chen CZ, Li L, Lodish HF, Bartel DP (2004) MicroRNAs modulate hematopoietic lineage differentiation. Science  303: 83–86.  <ul class="find" data-citedArticleID="1091050" data-doi="10.1126/science.1091903"><li><a href="http://dx.doi.org/10.1126/science.1091903" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MicroRNAs+modulate+hematopoietic+lineage+differentiation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MicroRNAs+modulate+hematopoietic+lineage+differentiation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001989-Poy1" id="pone.0001989-Poy1"></a>Poy MN, Eliasson L, Krutzfeldt J, Kuwajima S, Ma X, et al.  (2004) A pancreatic islet-specific microRNA regulates insulin secretion. Nature  432: 226–230.  <ul class="find" data-citedArticleID="1091108" data-doi="10.1038/nature03076"><li><a href="http://dx.doi.org/10.1038/nature03076" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+pancreatic+islet-specific+microRNA+regulates+insulin+secretion." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+pancreatic+islet-specific+microRNA+regulates+insulin+secretion.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001989-Lee1" id="pone.0001989-Lee1"></a>Lee RC, Feinbaum RL, Ambros V (1993) The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell  75: 843–854.  <ul class="find" data-citedArticleID="1091096" data-doi="10.1016/0092-8674(93)90529-y"><li><a href="http://dx.doi.org/10.1016/0092-8674(93)90529-y" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+C.+elegans+heterochronic+gene+lin-4+encodes+small+RNAs+with+antisense+complementarity+to+lin-14." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+C.+elegans+heterochronic+gene+lin-4+encodes+small+RNAs+with+antisense+complementarity+to+lin-14.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001989-Yu1" id="pone.0001989-Yu1"></a>Yu Z, Jian Z, Shen SH, Purisima E, Wang E (2007) Global analysis of microRNA target gene expression reveals that miRNA targets are lower expressed in mature mouse and Drosophila tissues than in the embryos. Nucleic Acids Res  35: 152–164.  <ul class="find" data-citedArticleID="1091140" data-doi="10.1093/nar/gkl1032"><li><a href="http://dx.doi.org/10.1093/nar/gkl1032" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Global+analysis+of+microRNA+target+gene+expression+reveals+that+miRNA+targets+are+lower+expressed+in+mature+mouse+and+Drosophila+tissues+than+in+the+embryos." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Global+analysis+of+microRNA+target+gene+expression+reveals+that+miRNA+targets+are+lower+expressed+in+mature+mouse+and+Drosophila+tissues+than+in+the+embryos.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001989-LagosQuintana1" id="pone.0001989-LagosQuintana1"></a>Lagos-Quintana M, Rauhut R, Lendeckel W, Tuschl T (2001) Identification of novel genes coding for small expressed RNAs. Science  294: 853–858.  <ul class="find" data-citedArticleID="1091092" data-doi="10.1126/science.1064921"><li><a href="http://dx.doi.org/10.1126/science.1064921" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+novel+genes+coding+for+small+expressed+RNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+novel+genes+coding+for+small+expressed+RNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001989-Bartel1" id="pone.0001989-Bartel1"></a>Bartel DP (2004) MicroRNAs: genomics, biogenesis, mechanism, and function. Cell  116: 281–297.  <ul class="find" data-citedArticleID="1091048" data-doi="10.1016/s0092-8674(04)00045-5"><li><a href="http://dx.doi.org/10.1016/s0092-8674(04)00045-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MicroRNAs%3A+genomics%2C+biogenesis%2C+mechanism%2C+and+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MicroRNAs%3A+genomics%2C+biogenesis%2C+mechanism%2C+and+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001989-Kim1" id="pone.0001989-Kim1"></a>Kim VN, Nam JW (2006) Genomics of microRNA. Trends Genet  22: 165–173.  <ul class="find" data-citedArticleID="1091084" data-doi="10.1016/j.tig.2006.01.003"><li><a href="http://dx.doi.org/10.1016/j.tig.2006.01.003" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomics+of+microRNA." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomics+of+microRNA.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001989-Cullen1" id="pone.0001989-Cullen1"></a>Cullen BR (2004) Transcription and processing of human microRNA precursors. Mol Cell  16: 861–865.  <ul class="find" data-citedArticleID="1091060" data-doi="10.1016/j.molcel.2004.12.002"><li><a href="http://dx.doi.org/10.1016/j.molcel.2004.12.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcription+and+processing+of+human+microRNA+precursors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcription+and+processing+of+human+microRNA+precursors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001989-Meister1" id="pone.0001989-Meister1"></a>Meister G, Tuschl T (2004) Mechanisms of gene silencing by double-stranded RNA. Nature  431: 343–349.  <ul class="find" data-citedArticleID="1091106" data-doi="10.1038/nature02873"><li><a href="http://dx.doi.org/10.1038/nature02873" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mechanisms+of+gene+silencing+by+double-stranded+RNA." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mechanisms+of+gene+silencing+by+double-stranded+RNA.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001989-Hutvagner1" id="pone.0001989-Hutvagner1"></a>Hutvagner G, Zamore PD (2002) A microRNA in a multiple-turnover RNAi enzyme complex. Science  297: 2056–2060.  <ul class="find" data-citedArticleID="1091076" data-doi="10.1126/science.1073827"><li><a href="http://dx.doi.org/10.1126/science.1073827" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+microRNA+in+a+multiple-turnover+RNAi+enzyme+complex." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+microRNA+in+a+multiple-turnover+RNAi+enzyme+complex.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001989-Sontheimer1" id="pone.0001989-Sontheimer1"></a>Sontheimer EJ, Carthew RW (2005) Silence from within: endogenous siRNAs and miRNAs. Cell  122: 9–12.  <ul class="find" data-citedArticleID="1091118" data-doi="10.1016/j.cell.2005.06.030"><li><a href="http://dx.doi.org/10.1016/j.cell.2005.06.030" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Silence+from+within%3A+endogenous+siRNAs+and+miRNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Silence+from+within%3A+endogenous+siRNAs+and+miRNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001989-Chen2" id="pone.0001989-Chen2"></a>Chen PY, Meister G (2005) microRNA-guided posttranscriptional gene regulation. Biol Chem  386: 1205–1218.  <ul class="find" data-citedArticleID="1091052" data-doi="10.1515/bc.2005.139"><li><a href="http://dx.doi.org/10.1515/bc.2005.139" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=microRNA-guided+posttranscriptional+gene+regulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22microRNA-guided+posttranscriptional+gene+regulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001989-Dugas1" id="pone.0001989-Dugas1"></a>Dugas DV, Bartel B (2004) MicroRNA regulation of gene expression in plants. Curr Opin Plant Biol  7: 512–520.  <ul class="find" data-citedArticleID="1091066" data-doi="10.1016/j.pbi.2004.07.011"><li><a href="http://dx.doi.org/10.1016/j.pbi.2004.07.011" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MicroRNA+regulation+of+gene+expression+in+plants." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MicroRNA+regulation+of+gene+expression+in+plants.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001989-Tang1" id="pone.0001989-Tang1"></a>Tang G, Reinhart BJ, Bartel DP, Zamore PD (2003) A biochemical framework for RNA silencing in plants. Genes Dev  17: 49–63.  <ul class="find" data-citedArticleID="1091126" data-doi="10.1101/gad.1048103"><li><a href="http://dx.doi.org/10.1101/gad.1048103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+biochemical+framework+for+RNA+silencing+in+plants." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+biochemical+framework+for+RNA+silencing+in+plants.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001989-Wightman1" id="pone.0001989-Wightman1"></a>Wightman B, Ha I, Ruvkun G (1993) Posttranscriptional regulation of the heterochronic gene lin-14 by lin-4 mediates temporal pattern formation in C. elegans. Cell  75: 855–862.  <ul class="find" data-citedArticleID="1091132" data-doi="10.1016/0092-8674(93)90530-4"><li><a href="http://dx.doi.org/10.1016/0092-8674(93)90530-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Posttranscriptional+regulation+of+the+heterochronic+gene+lin-14+by+lin-4+mediates+temporal+pattern+formation+in+C.+elegans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Posttranscriptional+regulation+of+the+heterochronic+gene+lin-14+by+lin-4+mediates+temporal+pattern+formation+in+C.+elegans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001989-Reinhart1" id="pone.0001989-Reinhart1"></a>Reinhart BJ, Slack FJ, Basson M, Pasquinelli AE, Bettinger JC, et al.  (2000) The 21-nucleotide let-7 RNA regulates developmental timing in Caenorhabditis elegans. Nature  403: 901–906.  <ul class="find" data-citedArticleID="1091114"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+21-nucleotide+let-7+RNA+regulates+developmental+timing+in+Caenorhabditis+elegans.&amp;auth=&amp;atitle=The+21-nucleotide+let-7+RNA+regulates+developmental+timing+in+Caenorhabditis+elegans." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+21-nucleotide+let-7+RNA+regulates+developmental+timing+in+Caenorhabditis+elegans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+21-nucleotide+let-7+RNA+regulates+developmental+timing+in+Caenorhabditis+elegans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001989-Jing1" id="pone.0001989-Jing1"></a>Jing Q, Huang S, Guth S, Zarubin T, Motoyama A, et al.  (2005) Involvement of microRNA in AU-rich element-mediated mRNA instability. Cell  120: 623–634.  <ul class="find" data-citedArticleID="1091078" data-doi="10.1016/j.cell.2004.12.038"><li><a href="http://dx.doi.org/10.1016/j.cell.2004.12.038" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Involvement+of+microRNA+in+AU-rich+element-mediated+mRNA+instability." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Involvement+of+microRNA+in+AU-rich+element-mediated+mRNA+instability.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001989-Lai1" id="pone.0001989-Lai1"></a>Lai EC, Tam B, Rubin GM (2005) Pervasive regulation of Drosophila Notch target genes by GY-box-, Brd-box-, and K-box-class microRNAs. Genes Dev  19: 1067–1080.  <ul class="find" data-citedArticleID="1091094" data-doi="10.1101/gad.1291905"><li><a href="http://dx.doi.org/10.1101/gad.1291905" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pervasive+regulation+of+Drosophila+Notch+target+genes+by+GY-box-%2C+Brd-box-%2C+and+K-box-class+microRNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pervasive+regulation+of+Drosophila+Notch+target+genes+by+GY-box-%2C+Brd-box-%2C+and+K-box-class+microRNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001989-Bagga1" id="pone.0001989-Bagga1"></a>Bagga S, Bracht J, Hunter S, Massirer K, Holtz J, et al.  (2005) Regulation by let-7 and lin-4 miRNAs results in target mRNA degradation. Cell  122: 553–563.  <ul class="find" data-citedArticleID="1091044" data-doi="10.1016/j.cell.2005.07.031"><li><a href="http://dx.doi.org/10.1016/j.cell.2005.07.031" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Regulation+by+let-7+and+lin-4+miRNAs+results+in+target+mRNA+degradation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Regulation+by+let-7+and+lin-4+miRNAs+results+in+target+mRNA+degradation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001989-Lim1" id="pone.0001989-Lim1"></a>Lim LP, Lau NC, Garrett-Engele P, Grimson A, Schelter JM, et al.  (2005) Microarray analysis shows that some microRNAs downregulate large numbers of target mRNAs. Nature  433: 769–773.  <ul class="find" data-citedArticleID="1091100" data-doi="10.1038/nature03315"><li><a href="http://dx.doi.org/10.1038/nature03315" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+analysis+shows+that+some+microRNAs+downregulate+large+numbers+of+target+mRNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+analysis+shows+that+some+microRNAs+downregulate+large+numbers+of+target+mRNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001989-Wang1" id="pone.0001989-Wang1"></a>Wang X, Wang X (2006) Systematic identification of microRNA functions by combining target prediction and expression profiling. Nucleic Acids Res  34: 1646–1652.  <ul class="find" data-citedArticleID="1091130" data-doi="10.1093/nar/gkl068"><li><a href="http://dx.doi.org/10.1093/nar/gkl068" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+identification+of+microRNA+functions+by+combining+target+prediction+and+expression+profiling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+identification+of+microRNA+functions+by+combining+target+prediction+and+expression+profiling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001989-Linsley1" id="pone.0001989-Linsley1"></a>Linsley PS, Schelter J, Burchard J, Kibukawa M, Martin MM, et al.  (2007) Transcripts targeted by the microRNA-16 family cooperatively regulate cell cycle progression. Mol Cell Biol  27: 2240–2252.  <ul class="find" data-citedArticleID="1091102" data-doi="10.1128/mcb.02005-06"><li><a href="http://dx.doi.org/10.1128/mcb.02005-06" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcripts+targeted+by+the+microRNA-16+family+cooperatively+regulate+cell+cycle+progression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcripts+targeted+by+the+microRNA-16+family+cooperatively+regulate+cell+cycle+progression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001989-Krutzfeldt1" id="pone.0001989-Krutzfeldt1"></a>Krutzfeldt J, Rajewsky N, Braich R, Rajeev KG, Tuschl T, et al.  (2005) Silencing of microRNAs in vivo with ‘antagomirs’. Nature  438: 685–689.  <ul class="find" data-citedArticleID="1091090" data-doi="10.1038/nature04303"><li><a href="http://dx.doi.org/10.1038/nature04303" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Silencing+of+microRNAs+in+vivo+with+%E2%80%98antagomirs%E2%80%99." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Silencing+of+microRNAs+in+vivo+with+%E2%80%98antagomirs%E2%80%99.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001989-Stark1" id="pone.0001989-Stark1"></a>Stark A, Brennecke J, Bushati N, Russell RB, Cohen SM (2005) Animal MicroRNAs confer robustness to gene expression and have a significant impact on 3′UTR evolution. Cell  123: 1133–1146.  <ul class="find" data-citedArticleID="1091122" data-doi="10.1016/j.cell.2005.11.023"><li><a href="http://dx.doi.org/10.1016/j.cell.2005.11.023" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Animal+MicroRNAs+confer+robustness+to+gene+expression+and+have+a+significant+impact+on+3%E2%80%B2UTR+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Animal+MicroRNAs+confer+robustness+to+gene+expression+and+have+a+significant+impact+on+3%E2%80%B2UTR+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001989-Sood1" id="pone.0001989-Sood1"></a>Sood P, Krek A, Zavolan M, Macino G, Rajewsky N (2006) Cell-type-specific signatures of microRNAs on target mRNA expression. Proc Natl Acad Sci U S  A.103: 2746–2751.  <ul class="find" data-citedArticleID="1091120" data-doi="10.1073/pnas.0511045103"><li><a href="http://dx.doi.org/10.1073/pnas.0511045103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cell-type-specific+signatures+of+microRNAs+on+target+mRNA+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cell-type-specific+signatures+of+microRNAs+on+target+mRNA+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001989-Xie1" id="pone.0001989-Xie1"></a>Xie X, Lu J, Kulbokas EJ, Golub TR, Mootha V, et al.  (2005) Systematic discovery of regulatory motifs in human promoters and 3′ UTRs by comparison of several mammals. Nature  434: 338–345.  <ul class="find" data-citedArticleID="1091136" data-doi="10.1038/nature03441"><li><a href="http://dx.doi.org/10.1038/nature03441" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+discovery+of+regulatory+motifs+in+human+promoters+and+3%E2%80%B2+UTRs+by+comparison+of+several+mammals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+discovery+of+regulatory+motifs+in+human+promoters+and+3%E2%80%B2+UTRs+by+comparison+of+several+mammals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001989-Lewis1" id="pone.0001989-Lewis1"></a>Lewis BP, Shih IH, Jones-Rhoades MW, Bartel DP, Burge CB (2003) Prediction of mammalian microRNA targets. Cell  115: 787–798.  <ul class="find" data-citedArticleID="1091098" data-doi="10.1016/s0092-8674(03)01018-3"><li><a href="http://dx.doi.org/10.1016/s0092-8674(03)01018-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+mammalian+microRNA+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+mammalian+microRNA+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001989-Doench1" id="pone.0001989-Doench1"></a>Doench JG, Sharp PA (2004) Specificity of microRNA target selection in translational repression. Genes Dev  18: 504–511.  <ul class="find" data-citedArticleID="1091064" data-doi="10.1101/gad.1184404"><li><a href="http://dx.doi.org/10.1101/gad.1184404" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Specificity+of+microRNA+target+selection+in+translational+repression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Specificity+of+microRNA+target+selection+in+translational+repression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001989-Haley1" id="pone.0001989-Haley1"></a>Haley B, Zamore PD (2004) Kinetic analysis of the RNAi enzyme complex. Nat Struct Mol Biol  11: 599–606.  <ul class="find" data-citedArticleID="1091070" data-doi="10.1038/nsmb780"><li><a href="http://dx.doi.org/10.1038/nsmb780" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Kinetic+analysis+of+the+RNAi+enzyme+complex." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Kinetic+analysis+of+the+RNAi+enzyme+complex.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001989-Rajewsky1" id="pone.0001989-Rajewsky1"></a>Rajewsky N, Socci ND (2004) Computational identification of microRNA targets. Dev Biol  267: 529–535.  <ul class="find" data-citedArticleID="1091110" data-doi="10.1016/j.ydbio.2003.12.003"><li><a href="http://dx.doi.org/10.1016/j.ydbio.2003.12.003" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+identification+of+microRNA+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+identification+of+microRNA+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001989-Hobert1" id="pone.0001989-Hobert1"></a>Hobert O (2004) Common logic of transcription factor and microRNA action. Trends Biochem Sci  29: 462–468.  <ul class="find" data-citedArticleID="1091072" data-doi="10.1016/j.tibs.2004.07.001"><li><a href="http://dx.doi.org/10.1016/j.tibs.2004.07.001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Common+logic+of+transcription+factor+and+microRNA+action." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Common+logic+of+transcription+factor+and+microRNA+action.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001989-Subramanian1" id="pone.0001989-Subramanian1"></a>Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, et al.  (2005) Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A  102: 15545–15550.  <ul class="find" data-citedArticleID="1091124" data-doi="10.1073/pnas.0506580102"><li><a href="http://dx.doi.org/10.1073/pnas.0506580102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+set+enrichment+analysis%3A+a+knowledge-based+approach+for+interpreting+genome-wide+expression+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+set+enrichment+analysis%3A+a+knowledge-based+approach+for+interpreting+genome-wide+expression+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001989-Wulczyn1" id="pone.0001989-Wulczyn1"></a>Wulczyn FG, Smirnova L, Rybak A, Brandt C, Kwidzinski E, et al.  (2007) Post-translational regulation of the let-7 microRNA during neural cell specification. FASEB J  21: 415–426.  <ul class="find" data-citedArticleID="1091134" data-doi="10.1096/fj.06-6130com"><li><a href="http://dx.doi.org/10.1096/fj.06-6130com" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Post-translational+regulation+of+the+let-7+microRNA+during+neural+cell+specification." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Post-translational+regulation+of+the+let-7+microRNA+during+neural+cell+specification.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001989-Lu1" id="pone.0001989-Lu1"></a>Lu J, Getz G, Miska EA, Alvarez-Saavedra E, Lamb J, et al.  (2005) MicroRNA expression profiles classify human cancers. Nature  435: 834–838.  <ul class="find" data-citedArticleID="1091104" data-doi="10.1038/nature03702"><li><a href="http://dx.doi.org/10.1038/nature03702" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MicroRNA+expression+profiles+classify+human+cancers." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MicroRNA+expression+profiles+classify+human+cancers.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0001989-Volinia1" id="pone.0001989-Volinia1"></a>Volinia S, Calin GA, Liu CG, Ambs S, Cimmino A, et al.  (2006) A microRNA expression signature of human solid tumors defines cancer gene targets. Proc Natl.   <ul class="find" data-citedArticleID="1091128" data-doi="10.1073/pnas.0510565103"><li><a href="http://dx.doi.org/10.1073/pnas.0510565103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+microRNA+expression+signature+of+human+solid+tumors+defines+cancer+gene+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+microRNA+expression+signature+of+human+solid+tumors+defines+cancer+gene+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0001989-Demeter1" id="pone.0001989-Demeter1"></a>Demeter J, Beauheim C, Gollub J, Hernandez-Boussard T, Jin H, et al.  (2007) The Stanford Microarray Database: implementation of new analysis tools and open source release of software. Nucleic Acids Res  35: D766–D770.  <ul class="find" data-citedArticleID="1091062" data-doi="10.1093/nar/gkl1019"><li><a href="http://dx.doi.org/10.1093/nar/gkl1019" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Stanford+Microarray+Database%3A+implementation+of+new+analysis+tools+and+open+source+release+of+software." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Stanford+Microarray+Database%3A+implementation+of+new+analysis+tools+and+open+source+release+of+software.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0001989-Barrett1" id="pone.0001989-Barrett1"></a>Barrett T, Troup DB, Wilhite SE, Ledoux P, Rudnev D, et al.  (2007) NCBI GEO: mining tens of millions of expression profiles–database and tools update. Nucleic Acids Res  35: D760–D765.  <ul class="find" data-citedArticleID="1091046" data-doi="10.1093/nar/gkl887"><li><a href="http://dx.doi.org/10.1093/nar/gkl887" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=NCBI+GEO%3A+mining+tens+of+millions+of+expression+profiles%E2%80%93database+and+tools+update." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22NCBI+GEO%3A+mining+tens+of+millions+of+expression+profiles%E2%80%93database+and+tools+update.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0001989-John1" id="pone.0001989-John1"></a>John B, Enright AJ, Aravin A, Tuschl T, Sander C, et al.  (2004) Human MicroRNA targets. PLoS Biol  2: e363–e3NA.  <ul class="find" data-citedArticleID="1091080" data-doi="10.1371/journal.pbio.0020363"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0020363" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Human+MicroRNA+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Human+MicroRNA+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0001989-Kiriakidou1" id="pone.0001989-Kiriakidou1"></a>Kiriakidou M, Nelson PT, Kouranov A, Fitziev P, Bouyioukos C, et al.  (2004) A combined computational-experimental approach predicts human microRNA targets. Genes Dev  18: 1165–1178.  <ul class="find" data-citedArticleID="1091086" data-doi="10.1101/gad.1184704"><li><a href="http://dx.doi.org/10.1101/gad.1184704" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+combined+computational-experimental+approach+predicts+human+microRNA+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+combined+computational-experimental+approach+predicts+human+microRNA+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0001989-Krek1" id="pone.0001989-Krek1"></a>Krek A, Grun D, Poy MN, Wolf R, Rosenberg L, et al.  (2005) Combinatorial microRNA target predictions. Nat Genet  37: 495–500.  <ul class="find" data-citedArticleID="1091088" data-doi="10.1038/ng1536"><li><a href="http://dx.doi.org/10.1038/ng1536" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Combinatorial+microRNA+target+predictions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Combinatorial+microRNA+target+predictions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0001989-Cheng2" id="pone.0001989-Cheng2"></a>Cheng C, Yan X, Sun F, Li LM (2007) Inferring activity changes of transcription factors by binding association with sorted expression profiles. BMC Bioinformatics  8: 452.  <ul class="find" data-citedArticleID="1091056" data-doi="10.1186/1471-2105-8-452"><li><a href="http://dx.doi.org/10.1186/1471-2105-8-452" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inferring+activity+changes+of+transcription+factors+by+binding+association+with+sorted+expression+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inferring+activity+changes+of+transcription+factors+by+binding+association+with+sorted+expression+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0001989-Rehmsmeier1" id="pone.0001989-Rehmsmeier1"></a>Rehmsmeier M, Steffen P, Hochsmann M, Giegerich R (2004) Fast and effective prediction of microRNA/target duplexes. RNA  10: 1507–1517.  <ul class="find" data-citedArticleID="1091112" data-doi="10.1261/rna.5248604"><li><a href="http://dx.doi.org/10.1261/rna.5248604" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fast+and+effective+prediction+of+microRNA%2Ftarget+duplexes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fast+and+effective+prediction+of+microRNA%2Ftarget+duplexes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0001989-Rhoades1" id="pone.0001989-Rhoades1"></a>Rhoades MW, Reinhart BJ, Lim LP, Burge CB, Bartel B, et al.  (2002) Prediction of plant microRNA targets. Cell  110: 513–520.  <ul class="find" data-citedArticleID="1091116" data-doi="10.1016/s0092-8674(02)00863-2"><li><a href="http://dx.doi.org/10.1016/s0092-8674(02)00863-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+plant+microRNA+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+plant+microRNA+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0001989-Enright1" id="pone.0001989-Enright1"></a>Enright AJ, John B, Gaul U, Tuschl T, Sander C, et al.  (2003) MicroRNA targets in Drosophila. Genome Biol  5: R1.  <ul class="find" data-citedArticleID="1091068" data-doi="10.1186/gb-2003-5-1-r1"><li><a href="http://dx.doi.org/10.1186/gb-2003-5-1-r1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MicroRNA+targets+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MicroRNA+targets+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0001989-Hsu1" id="pone.0001989-Hsu1"></a>Hsu PW, Huang HD, Hsu SD, Lin LZ, Tsou AP, et al.  (2006) miRNAMap: genomic maps of microRNA genes and their target genes in mammalian genomes. Nucleic Acids Res  34: D135–139.  <ul class="find" data-citedArticleID="1091074" data-doi="10.1093/nar/gkj135"><li><a href="http://dx.doi.org/10.1093/nar/gkj135" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=miRNAMap%3A+genomic+maps+of+microRNA+genes+and+their+target+genes+in+mammalian+genomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22miRNAMap%3A+genomic+maps+of+microRNA+genes+and+their+target+genes+in+mammalian+genomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">49.
+              </span><a name="pone.0001989-Cheng3" id="pone.0001989-Cheng3"></a>Cheng C, Li LM (2008) Systematic identification of cell cycle regulated transcription factors from microarray time series data. BMC Genomics 2008  9: 116.  <ul class="find" data-citedArticleID="1091058" data-doi="10.1186/1471-2164-9-116"><li><a href="http://dx.doi.org/10.1186/1471-2164-9-116" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+identification+of+cell+cycle+regulated+transcription+factors+from+microarray+time+series+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+identification+of+cell+cycle+regulated+transcription+factors+from+microarray+time+series+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.XML" value="97386"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.PDF" value="313536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g001.PNG_L" value="40614"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g001.PNG_M" value="72167"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g001.PNG_S" value="13257"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g001.TIF" value="257616"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g001.PNG_I" value="26753"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g002.PNG_L" value="35072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g002.PNG_M" value="63496"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g002.PNG_S" value="9620"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g002.TIF" value="128768"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g002.PNG_I" value="21593"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g003.PNG_L" value="35018"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g003.PNG_M" value="62778"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g003.PNG_S" value="10980"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g003.TIF" value="273300"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g003.PNG_I" value="22235"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g004.PNG_L" value="22381"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g004.PNG_M" value="44222"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g004.PNG_S" value="10587"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g004.TIF" value="113184"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g004.PNG_I" value="16239"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g005.PNG_L" value="14586"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g005.PNG_M" value="44180"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g005.PNG_S" value="8563"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g005.TIF" value="54682"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g005.PNG_I" value="15270"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e001.PNG" value="7432"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e001.TIF" value="23384"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e002.PNG" value="5092"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e002.TIF" value="21008"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e003.PNG" value="10465"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e003.TIF" value="26364"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e004.PNG" value="9421"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e004.TIF" value="25500"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e005.PNG" value="9715"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e005.TIF" value="25652"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e006.PNG" value="8079"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e006.TIF" value="23976"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e007.PNG" value="11396"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e007.TIF" value="27080"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g006.PNG_L" value="19410"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g006.PNG_M" value="52595"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g006.PNG_S" value="9761"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g006.TIF" value="105862"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.g006.PNG_I" value="18078"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e008.PNG" value="15629"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.e008.TIF" value="31356"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.s001.XLS" value="157184"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.s002.XLS" value="98816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001989.s003.XLS" value="131584"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001989&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001989" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001989&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001989&volume=&issue=&title=Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction&author_name=Chao%20Cheng%2C%20Lei%20M.%20Li&start_page=1&end_page=9" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001989" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989&amp;t=Inferring%20MicroRNA%20Activities%20by%20Combining%20Gene%20Expression%20with%20MicroRNA%20Target%20Prediction" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989&title=Inferring%20MicroRNA%20Activities%20by%20Combining%20Gene%20Expression%20with%20MicroRNA%20Target%20Prediction&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989&amp;title=Inferring%20MicroRNA%20Activities%20by%20Combining%20Gene%20Expression%20with%20MicroRNA%20Target%20Prediction" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001989&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Inferring MicroRNA Activities by Combining Gene Expression with MicroRNA Target Prediction';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001989';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Inferring%20MicroRNA%20Activities%20by%20Combining%20Gene%20Expression%20with%20MicroRNA%20Target%20Prediction http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001989" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001989" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="26802"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+targeting%22" title="Search for articles in the subject area:'Gene targeting'"><div class="flagText">Gene targeting</div></a>
+              <div data-categoryid="17701" data-articleid="26802"
+                   data-categoryname="Gene targeting"
+                   class="flagImage" title="Flag 'Gene targeting' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22HeLa+cells%22" title="Search for articles in the subject area:'HeLa cells'"><div class="flagText">HeLa cells</div></a>
+              <div data-categoryid="19567" data-articleid="26802"
+                   data-categoryname="HeLa cells"
+                   class="flagImage" title="Flag 'HeLa cells' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Messenger+RNA%22" title="Search for articles in the subject area:'Messenger RNA'"><div class="flagText">Messenger RNA</div></a>
+              <div data-categoryid="18353" data-articleid="26802"
+                   data-categoryname="Messenger RNA"
+                   class="flagImage" title="Flag 'Messenger RNA' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22MicroRNA%22" title="Search for articles in the subject area:'MicroRNA'"><div class="flagText">MicroRNA</div></a>
+              <div data-categoryid="19821" data-articleid="26802"
+                   data-categoryname="MicroRNA"
+                   class="flagImage" title="Flag 'MicroRNA' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Microarrays%22" title="Search for articles in the subject area:'Microarrays'"><div class="flagText">Microarrays</div></a>
+              <div data-categoryid="17255" data-articleid="26802"
+                   data-categoryname="Microarrays"
+                   class="flagImage" title="Flag 'Microarrays' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+motif+analysis%22" title="Search for articles in the subject area:'Sequence motif analysis'"><div class="flagText">Sequence motif analysis</div></a>
+              <div data-categoryid="19657" data-articleid="26802"
+                   data-categoryname="Sequence motif analysis"
+                   class="flagImage" title="Flag 'Sequence motif analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Transfection%22" title="Search for articles in the subject area:'Transfection'"><div class="flagText">Transfection</div></a>
+              <div data-categoryid="47399" data-articleid="26802"
+                   data-categoryname="Transfection"
+                   class="flagImage" title="Flag 'Transfection' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=1115'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6617'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=4555&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=21881">This link does not work. </a><br>Posted by Olivier1</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

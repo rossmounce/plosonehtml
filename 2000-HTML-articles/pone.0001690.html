@@ -1,0 +1,977 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: The Blind Watchmaker Network: Scale-Freeness and Evolution</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001690"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001690" />
+
+    <meta name="citation_title" content="The Blind Watchmaker Network: Scale-Freeness and Evolution"/>
+    <meta itemprop="name" content="The Blind Watchmaker Network: Scale-Freeness and Evolution"/>
+
+      <meta name="citation_author" content="Petter Minnhagen"/>
+            <meta name="citation_author_institution" content="Department of Theoretical Physics, Umeå University, Umeå, Sweden"/>
+            <meta name="citation_author_institution" content="Center for Models of Life, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Sebastian Bernhardsson"/>
+            <meta name="citation_author_institution" content="Department of Theoretical Physics, Umeå University, Umeå, Sweden"/>
+            <meta name="citation_author_institution" content="Center for Models of Life, Copenhagen, Denmark"/>
+
+    <meta name="citation_date" content="2008/2/27"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001690.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1690"/>
+    <meta name="citation_issue" content="2"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Statistical mechanics of complex networks.; citation_author=R Albert; citation_author=A-L Barabási; citation_journal_title=Rev. of Mod. Phys.; citation_volume=74; citation_number=1; citation_pages=47-97; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Evolution of networks: From biological nets to the Internet and WWW. Oxford University Press.; citation_author=SN Dorogovtsev; citation_author=JFF Mendes; citation_number=2; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The structure and function of complex networks.; citation_author=MEJ Newman; citation_journal_title=SIAM Review; citation_volume=45; citation_number=3; citation_pages=167-256; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Complex networks: Structure and dynamics.; citation_author=S Boccaletti; citation_author=V Latora; citation_author=Y Morena; citation_author=M Chavez; citation_author=D-U Hwang; citation_journal_title=Phys. Rep.; citation_volume=424; citation_number=4; citation_pages=175-308; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The Structure and dynamics of networks.; citation_author=MEJ Newman; citation_author=A-L Barabási; citation_author=DJ Watts; citation_number=5; citation_date=2006; citation_publisher=Princeton University press; " />
+      <meta name="citation_reference" content="citation_title=The blind watchmaker: Why the evidence of evolution reveals a universe without design. Norton.; citation_author=R Dawkins; citation_number=6; citation_date=1985; " />
+      <meta name="citation_reference" content="citation_title=Does selection mold molecular networks.; citation_author=A Wagner; citation_journal_title=Science STKE 41; citation_number=7; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Error attack and tolerance of complex networks.; citation_author=R Albert; citation_author=H Jeong; citation_author=A-L Barabási; citation_journal_title=Nature; citation_volume=406; citation_number=8; citation_pages=378-382; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Resilience of Internet for random breakdowns.; citation_author=R Cohen; citation_author=K Erez; citation_author=D ben-Avraham; citation_author=S Havlin; citation_journal_title=PRL.; citation_volume=85; citation_number=9; citation_pages=4626-4628; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Emergence of scaling in complex networks.; citation_author=A-L Barabási; citation_author=R Albert; citation_author=H Jeong; citation_journal_title=Science; citation_volume=286; citation_number=10; citation_pages=509-512; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=A model of large-scale proteomic evolution.; citation_author=RV Solé; citation_author=R Pastor-Satorras; citation_author=E Smith; citation_author=T Kepler; citation_journal_title=Adv. in Complex Systems; citation_volume=5; citation_number=11; citation_pages=43-54; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Modeling of protein interaction networks.; citation_author=A Vazquez; citation_author=A Flammini; citation_author=A Maritan; citation_author=A Vespignani; citation_journal_title=Complexus; citation_volume=1; citation_number=12; citation_pages=38-44; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The evolution of connectivity in metabolic networks.; citation_author=T Pfeiffer; citation_author=OS Soyer; citation_author=S Bonhoeffer; citation_journal_title=PloS Biology; citation_volume=3; citation_number=13; citation_pages=1269-1275; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Reconstruction of metabolic networks from genome data and analysis of their global structure for various organisms.; citation_author=H Ma; citation_author=A-P Zeng; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=14; citation_pages=270-277; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The connectivity structure, giant strong component and centrality of metabolic networks.; citation_author=H Ma; citation_author=A-P Zeng; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=15; citation_pages=1423-1430; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The large scale organization of metabolic networks.; citation_author=H Jeong; citation_author=B Tombor; citation_author=R Albert; citation_author=ZN Oltvai; citation_author=A-L Barabási; citation_journal_title=Nature; citation_volume=407; citation_number=16; citation_pages=651-654; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Optimization and scale-freeness for complex networks.; citation_author=P Minnhagen; citation_author=S Bernhardsson; citation_journal_title=Chaos; citation_volume=17; citation_number=17; citation_pages=0261171-0261177; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Information theory and statistical mechanics.; citation_author=ET Jaynes; citation_journal_title=Phys. Rev.; citation_volume=106; citation_number=18; citation_pages=620-630; citation_date=1957; " />
+      <meta name="citation_reference" content="citation_title=Scale-freeness for Networks as a Degenerate Ground State: A Hamiltonian Formulation.; citation_author=P Minnhagen; citation_author=S Bernhardsson; citation_author=BJ Kim; citation_journal_title=EPL; citation_volume=78; citation_number=19; citation_pages=280041-280045; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Robustness and evolvability in living systems.; citation_author=A Wagner; citation_number=20; citation_pages=138; citation_date=2005; citation_publisher=Princeton University Press. NJ; " />
+      <meta name="citation_reference" content="citation_title=Relevant cycles in chemical reaction networks.; citation_author=P Gleiss; citation_author=P Stadler; citation_author=A Wagner; citation_author=D Fell; citation_journal_title=Adv. Complex Systems; citation_volume=4; citation_number=21; citation_pages=207-226; citation_date=2001; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="The Blind Watchmaker Network: Scale-Freeness and Evolution"/>
+    <meta name="twitter:description" content="It is suggested that the degree distribution for networks of the cell-metabolism for simple organisms reflects a ubiquitous randomness. This implies that natural selection has exerted no or very little pressure on the network degree distribution during evolution. The corresponding random network, here termed the blind watchmaker network has a power-law degree distribution with an exponent &gamma;&ge;2. It is random with respect to a complete set of network states characterized by a description of which links are attached to a node as well as a time-ordering of these links. No a priory assumption of any growth mechanism or evolution process is made. It is found that the degree distribution of the blind watchmaker network agrees very precisely with that of the metabolic networks. This implies that the evolutionary pathway of the cell-metabolism, when projected onto a metabolic network representation, has remained statistically random with respect to a complete set of network states. This suggests that even a biological system, which due to natural selection has developed an enormous specificity like the cellular metabolism, nevertheless can, at the same time, display well defined characteristics emanating from the ubiquitous inherent random element of Darwinian evolution. The fact that also completely random networks may have scale-free node distributions gives a new perspective on the origin of scale-free networks in general."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001690.g003"/>
+
+  <meta property="og:title" content="The Blind Watchmaker Network: Scale-Freeness and Evolution" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=6371'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=5710'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=3370&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001690">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001690" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001690&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    The Blind Watchmaker Network: Scale-Freeness and Evolution
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Petter Minnhagen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Department of Theoretical Physics, Umeå University, Umeå, Sweden, 
+                  Center for Models of Life, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Sebastian Bernhardsson
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p>*E-mail: <a href="mailto:sebbeb@tp.umu.se">sebbeb@tp.umu.se</a></p>
+
+                <p>Affiliations:
+                  Department of Theoretical Physics, Umeå University, Umeå, Sweden, 
+                  Center for Models of Life, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: February 27, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001690</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001690-g001" data-doi="info:doi/10.1371/journal.pone.0001690" data-uri="info:doi/10.1371/journal.pone.0001690.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001690-g002" data-doi="info:doi/10.1371/journal.pone.0001690" data-uri="info:doi/10.1371/journal.pone.0001690.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001690-g003" data-doi="info:doi/10.1371/journal.pone.0001690" data-uri="info:doi/10.1371/journal.pone.0001690.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001690">Reader Comments (2)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001690" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>It is suggested that the degree distribution for networks of the cell-metabolism for simple organisms reflects a ubiquitous randomness. This implies that natural selection has exerted no or very little pressure on the network degree distribution during evolution. The corresponding random network, here termed <em>the blind watchmaker network</em> has a power-law degree distribution with an exponent <em>γ</em>≥2. It is random with respect to a complete set of network states characterized by a description of which links are attached to a node as well as a time-ordering of these links. No a priory assumption of any growth mechanism or evolution process is made. It is found that the degree distribution of the blind watchmaker network agrees very precisely with that of the metabolic networks. This implies that the evolutionary pathway of the cell-metabolism, when projected onto a metabolic network representation, has remained statistically random with respect to a complete set of network states. This suggests that even a biological system, which due to natural selection has developed an enormous specificity like the cellular metabolism, nevertheless can, at the same time, display well defined characteristics emanating from the ubiquitous inherent random element of Darwinian evolution. The fact that also completely random networks may have scale-free node distributions gives a new perspective on the origin of scale-free networks in general.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Minnhagen P, Bernhardsson S (2008) The Blind Watchmaker Network: Scale-Freeness and Evolution. PLoS ONE 3(2):
+          e1690.
+            doi:10.1371/journal.pone.0001690</p><p><strong>Academic Editor: </strong>Ji Zhu, University of Michigan, United States of America</p><p><strong>Received:</strong> November 13, 2007; <strong>Accepted:</strong> January 27, 2008; <strong>Published:</strong> February 27, 2008</p><p><strong>Copyright:</strong> © 2008 Minnhagen, Bernhardsson. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported by the Swedish Research Council through contract 50412501.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>A network is a representation of who or what is connected to, or influenced by, whom or what. To characterize the structure of a network, researchers often measure its degree distribution <em>N</em>(<em>k</em>), the number of nodes with <em>k</em> links attached. Numerous studies have found that real-world networks often have very broad degree distributions for larger <em>k</em>, <em>N</em>(<em>k</em>)~<em>k<sup>−γ</sup></em>; These fat tailed distributions approximate a power law in their structure <a href="#pone.0001690-Albert1">[1]</a>,<a href="#pone.0001690-Dorogovtsev1">[2]</a>,<a href="#pone.0001690-Newman1">[3]</a>,<a href="#pone.0001690-Boccaletti1">[4]</a>,<a href="#pone.0001690-Newman2">[5]</a>. They are also called scale-free networks because a power-law tail indicates the lack of an intrinsic characteristic degree size. Biological networks are particularly interesting because the structure of these networks have, directly or indirectly, arisen through the process of evolution by natural selection. These networks have been constructed as if by a blind watchmaker, through the interplay between a random stochastic evolution and a natural selection process <a href="#pone.0001690-Dawkins1">[6]</a>. So what can we learn from the observation that a biological network such as the network of the metabolism of a cell has a power law distribution <a href="#pone.0001690-Wagner1">[7]</a>? In order to answer this question we define and investigate a blind watchmaker network. We demonstrate that the empirically observed degree distributions for networks of the cellular metabolism for simple organisms are good approximations of this random structure. Previous authors have ascribed the scale-free structure of biological networks to various aspects of the evolutionary process: Either the scale-free network structure has been suggested to confer an evolutionary advantage<a href="#pone.0001690-Albert2">[8]</a>,<a href="#pone.0001690-Cohen1">[9]</a>, or the elementary mechanism for growth of the network has been suggested to generate a priori a scale-free network <a href="#pone.0001690-Barabsi1">[10]</a>,<a href="#pone.0001690-Sol1">[11]</a>,<a href="#pone.0001690-Vazquez1">[12]</a>,<a href="#pone.0001690-Pfeiffer1">[13]</a>. Our findings are to the contrary: The close correspondence between the blind watchmaker network and the structure of empirical networks implies that the evolutionary pathway leading to the construction of the cell-metabolism, when projected onto our network representation, is statistically random with respect to a complete set of network states (see <a href="#pone-0001690-g001">Figs. 1</a> and <a href="#pone-0001690-g002">2</a>). Thus our findings provide a new perspective on the origin of scale-free network structures <a href="#pone.0001690-Albert1">[1]</a>,<a href="#pone.0001690-Dorogovtsev1">[2]</a>,<a href="#pone.0001690-Newman1">[3]</a>,<a href="#pone.0001690-Boccaletti1">[4]</a>,<a href="#pone.0001690-Newman2">[5]</a>.</p>
+<div class="figure" id="pone-0001690-g001"><div class="img"><a name="pone-0001690-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001690" data-uri="info:doi/10.1371/journal.pone.0001690.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001690.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001690.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>The mapping between network and the balls-in-boxes model.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>The left half shows a network of nodes and links with the link-ends enumerated. The right half shows the equivalent balls-in-boxes model. The vertical position of the balls in a box gives the order in which they arrived into the box, or more generally a ranking.</p>
+<span>doi:10.1371/journal.pone.0001690.g001</span></div><div class="figure" id="pone-0001690-g002"><div class="img"><a name="pone-0001690-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001690" data-uri="info:doi/10.1371/journal.pone.0001690.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001690.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001690.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>The most unbiased box(node)-size distribution.</span></strong></p><a id="article1.body1.sec1.fig2.caption1.p1" name="article1.body1.sec1.fig2.caption1.p1"></a><p>Panels a-d show the most unbiased distributions <em>n(k)</em> obtained by the algorithm method: a) The variational solution <em>n</em>(<em>k</em>) = <em>A</em> exp(−<em>bk</em>)/<em>k</em> for the statistical states of the CBB-model compared to the average <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e023&amp;representation=PNG" class="inline-graphic"></span> solution from the algorithm method in case of <em>N = 1000</em> and <em>M/N = 4</em>. The fact that the two solutions agree reflects that the algorithm contains the least possible information compatible with the constraints: b) The same thing for the blind watchmaker version of the CBB-model. In this case the variational solution is <em>n</em>(<em>k</em>) = <em>A</em> exp(−<em>bk</em>)/<em>k</em><sup>2</sup> and the agreement again reflects that no additional information is contained in the algorithm. The two curves in the panel corresponds to <em>N = 1000</em> and <em>M/N = 2</em> and <em>4</em>, respectively. As seen the distribution becomes more power law like with increasing ratio <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e024&amp;representation=PNG" class="inline-graphic"></span> : c) The corresponding network solution. The most unbiased solution in this case gives the blind watchmaker network structure. The variational solution cannot be simply obtained for the network case because of the network constraints. By contrast these constraints are easily incorporated into the algorithm method. The panel shows the average solution for <em>M/N = 4</em> and <em>N = 1000</em>. The solution has a fat tail power law <em>n</em>(<em>k</em>)~<em>k<sup>−γ</sup></em> with <em>γ</em>≈2.1 : d) A real network is just one representation <em>n(k)</em> and not an average <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e025&amp;representation=PNG" class="inline-graphic"></span>. The panel shows a single network for <em>N = 1000</em> and <em>M/N = 4</em>. A single network always contain large split-off nodes.</p>
+<span>doi:10.1371/journal.pone.0001690.g002</span></div><a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>The cells living today have evolved into their present forms during some 4×10<sup>9</sup> years. An important part of the cell is its metabolism which provides the cell with substances necessary for sustaining life. It is a chemical mini-factory usually involving of the order of 500 to 1000 substances in a complex network of metabolic reactions. Some substances like water and <em>NAD</em><sup>+</sup> take part in very many chemical reactions producing new substances either needed in the chemical mini-factory itself to produce other substances, or needed in some other function in the cell, or in fact both <a href="#pone.0001690-Ma1">[14]</a>,<a href="#pone.0001690-Ma2">[15]</a>. Other substances like iron are just needed for some specific purpose in the cell.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>One possible metabolic network representation is constructed as follows: Substrates and products in the cell metabolism are nodes. Two nodes are connected if the substance of one is a substrate in a metabolic reaction which produces the substance represented by the other node. This means that each node corresponds to a particular substance and that the links denote its connections to other substances. One characteristic feature of a network is its degree distribution <em>N(k)</em>. In the present context this is the number of substances which are connected to precisely <em>k</em> other substances. <a href="#pone-0001690-g003">Figure 3(b)</a> shows the degree distribution for the metabolic network of the E. Coli. bacteria. Here the substance with the most connection is water with 302 connections followed by <em>NAD</em><sup>+</sup> with 141 connections. In <a href="#pone-0001690-g003">Fig. 3(b)</a> these two substances corresponds to the two split off nodes with the largest <em>k</em>. The bulk part of the <em>N(k)</em>-distribution of E. Coli. is broad and power law like. The straight line in the figure corresponds to <em>N</em>(<em>k</em>)~<em>k<sup>−γ</sup></em> with <em>γ</em>≥2 and illustrates that the node-degree distribution for metabolic networks is broad and power-law like, as was first demonstrated in Ref. <a href="#pone.0001690-Jeong1">[16]</a>. This power law like distribution is even more pronounced when taking an average over many different metabolic networks as shown in <a href="#pone-0001690-g003">Fig. 3(a)</a>.</p>
+<div class="figure" id="pone-0001690-g003"><div class="img"><a name="pone-0001690-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001690" data-uri="info:doi/10.1371/journal.pone.0001690.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001690.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001690.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001690.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001690.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Metabolic networks and the blind watchmaker network.</span></strong></p><a id="article1.body1.sec1.fig3.caption1.p1" name="article1.body1.sec1.fig3.caption1.p1"></a><p>The first two panels show the data for real metabolic networks (the data is taken from Ref. [ma03a][ma03b]): Panel a) shows the average distribution <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e001&amp;representation=PNG" class="inline-graphic"></span> over 107 metabolic networks. This average distribution has a fat power-law tail <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e002&amp;representation=PNG" class="inline-graphic"></span> with <em>γ</em>≈2.2. Note that the nodes with only one link are fewer (by roughly a factor of <em>5</em>) than the nodes with two links. The average size of these 107 networks is <em>N</em>≈640 and <em>M/N</em>≈5.35 b) the specific metabolic network distribution <em>n(k)</em> for the E.Coli bacteria (<em>N</em>≈970 and <em>M/N</em>≈5.8). This network has 6 nodes with more than 100 links. Panel c) makes a direct comparison between the 107 metabolic networks in Panel a and 107 blind watchmaker networks with the same <em>N</em> and <em>M</em>. The agreement implies a common origin. Panel d) makes the same comparison between the E.Coli network and a single random blind watchmaker network for the same <em>N</em> and <em>M</em>. Apart from a general agreement (modulo the larger statistical spread inherent in comparing single networks) , the distribution of the split-off nodes are similar. Panel e) compares the average of the metabolic networks with the corresponding average of the blind watchmaker networks <em>including</em> a constraint decreasing the abundance of the single link node to the same average number, <em>n(1)</em>, as for the metabolic networks (<em>a = 0.07</em>). The agreement is extraordinary. Panel f) makes the same comparison for the E. Coli. network (<em>a = 0.08</em>) again with a striking agreement.</p>
+<span>doi:10.1371/journal.pone.0001690.g003</span></div><a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>As the complex metabolic system is projected and reduced into a network, the relevant possibilities also reduce to the corresponding relevant possibilities of the network. A possible state of a network corresponds to a possible way of assembling its parts <em>i.e.</em> it includes both a description of what nodes a particular node is connected to and a description of the time order this particular node was connected to these other nodes. The blind watchmaker network is the network which is unbiased with respect to these different assembling possibilities. In the following we will briefly explain what the properties of the blind watchmaker network are and how they are obtained (with more details in supporting information in <a href="#pone.0001690.s001">Text S1</a>).</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>We start from a simplified network model, the constrained-balls-in-boxes(CBB)-model <a href="#pone.0001690-Minnhagen1">[17]</a>. The mapping between the CBB-model and the corresponding network goes as follows: a link is defined by its link-ends such that an enumeration of the links is given by (1,2),(3,4)……..(<em>M</em>−1,<em>M</em>) where the link ends corresponds to balls enumerated by 1,2,…,<em>M</em> as is illustrated in <a href="#pone-0001690-g001">Fig. 1:</a> The nodes correspond to boxes and the link-ends to the enumerated balls. The balls in the boxes are given a ranking by the vertical position of the balls in a box. The time-order of connections gives the ranking: earliest connection corresponds to the bottom position and the latest to the top. <em>The existence of this time-order ranking is crucial in the following</em>. The point is that the existence of an implicit time-ordering is an un-avoidable consequence of any sequential process. Natural selection is but one example of such a process.</p>
+<a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>For simplicity we here consider undirected links. A network is then an association of link-ends where the associated link-ends form nodes. Note that this means that a node will always contain at least one link-end. This is the origin of “constrained” in the name of the model: a box always contains at least one ball. Obviously, any association of the balls corresponds to a network. However, it is customary to include additional constraints in the definition of a network. The most common for an undirected network are: <em>1) a network must be connected, 2) only one link between two nodes, 3) no self-loops (which means that the two link-ends of the same link cannot belong to the same node)</em>. We will first discuss the model without the additional network constraints. In order to make connection to standard statistical mechanics we will consider the case with a fixed number of balls <em>M</em> and a fixed number of boxes <em>N</em>.</p>
+<a id="article1.body1.sec2.p3" name="article1.body1.sec2.p3"></a><p>The total number of ways you can distribute <em>M</em> balls into <em>N</em> boxes, Ω, is by elementary combinatorics <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e003&amp;representation=PNG" class="inline-graphic"></span> where the factors <em>N(k)!</em> in the denominator is the number of identical ways you can place the same balls in the same order into <em>N(k)</em> boxes of size <em>k</em> . However, in the CBB-model one ball is assigned to each box to start with. This means that the distinguishable number of ways you can distribute the remaining <em>k-1</em> balls into a box which already contains one ball, is <em>k</em> times less the number of ways to put <em>k</em> balls into the same box. Thus the total number of distinguishable ways you can distribute balls into the boxes is for the CBB-model reduced by a combinatorial factor <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e004&amp;representation=PNG" class="inline-graphic"></span> (more details in Supporting Information <a href="#pone.0001690.s001">Text S1</a>).</p>
+<a id="article1.body1.sec2.p4" name="article1.body1.sec2.p4"></a><p>The most unbiased estimate of Ω corresponds to the maximum and this maximum corresponds to one particular distribution <em>N(k)</em>. This is completely equivalent to the maximum entropy principle in statistical mechanics <a href="#pone.0001690-Jaynes1">[18]</a>: Once the statistical states are identified, the most unbiased system corresponds to the maximum of such states or equivalently to the maximum of the entropy <em>S</em> = lnΩ. This maximum is achieved when all statistical states are equally probable. The last statement is the counterpart of the postulate of a priory equal probabilities is statistical mechanics <a href="#pone.0001690-Jaynes1">[18]</a>. From an information perspective the maximum of <em>S</em> gives a measure of the maximum information which can be contained in the system <a href="#pone.0001690-Jaynes1">[18]</a>. For the CBB-model two statistical states are equal provided that there exists a one to one mapping between boxes containing the same balls and furthermore that for each such mapped pair of boxes the time order in which the balls arrived to the boxes differ by at most a cyclic permutation. The point is that this degeneracy of the statistical states is enforced by the constraint that the boxes always contain at least one ball: <em>The statistical state of the CBB-model and its network counterpart contain a k-degeneracy.</em></p>
+<a id="article1.body1.sec2.p5" name="article1.body1.sec2.p5"></a><p>The practical issue is to determine the distribution <em>N(k)</em> which maximizes Ω[<em>N</em>(<em>k</em>)] subject to the appropriate constraints. One way is to find an update algorithm which picks the statistical states with equal probability, since such an algorithm automatically yields <em>N(k)</em>. For the CBB-model the obvious algorithm is as follows: <em>Pick two balls randomly and then move one to the same box as the other. If the attempted move involves emptying a box you try again with two new randomly picked balls</em>. If you start with a random distribution with at least one ball in each box, then the restriction of “always at least one ball in all boxes” is in this way implemented without any additional bias. The resulting distribution, <em>N(k)</em>, is shown in <a href="#pone-0001690-g002">Fig. 2(a)</a>. An alternative is to directly find <em>N(k)</em> using a mathematical standard method called variational calculus (see supporting information <a href="#pone.0001690.s001">Text S1</a>). Both alternatives give the same as result (see <a href="#pone-0001690-g002">Fig. 2(a)</a>). The advantage with the algorithm method is that it directly gives a complete characterization of the unbiased situation: the average <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e005&amp;representation=PNG" class="inline-graphic"></span> which maximizes <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e006&amp;representation=PNG" class="inline-graphic"></span> and at the same time maximizes the noise <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e007&amp;representation=PNG" class="inline-graphic"></span> <a href="#pone.0001690-Minnhagen2">[19]</a>. As will be shown below this noise, or equivalently the spread of the data, provides important characteristics of the metabolic networks.</p>
+<a id="article1.body1.sec2.p6" name="article1.body1.sec2.p6"></a><p>The definition of the statistical state is a direct consequence of the maximum number of distinguishable ways you can distribute the balls in the boxes: The statistical states, when picked with equal probability, give the global maximum of the entropy. However, our requirement is that the <em>relevant states</em> are picked with equal probability: in our case the rankings of the balls in the boxes is relevant. As emphasized above, this is a direct consequence of the sequential element implicit in the natural selection process and which imposes a time-order ranking on the balls in the boxes. <em>The crucial assumption is that the blind watchmaker network is random with respect to these relevant states.</em> The key observation is that many such relevant states correspond to the same statistical state. Thus unbiased, or equivalently random, with respect to the relevant states inevitably means biased with respect to the statistical states. Furthermore, biased with respect to the statistical states means smaller entropy <em>S</em>. What bias is imposed on the statistical states? In order to see this we note that the entropy <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e008&amp;representation=PNG" class="inline-graphic"></span> is related to the probability <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e009&amp;representation=PNG" class="inline-graphic"></span> of obtaining a new statistical state when choosing a new relevant state: <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e010&amp;representation=PNG" class="inline-graphic"></span>. When the relevant states and statistical states are identical, this reduces to <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e011&amp;representation=PNG" class="inline-graphic"></span> and <em>S</em> = lnΩ. If several relevant states correspond to the same statistical state then <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e012&amp;representation=PNG" class="inline-graphic"></span> and <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e013&amp;representation=PNG" class="inline-graphic"></span>. In the present case <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e014&amp;representation=PNG" class="inline-graphic"></span> because <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e015&amp;representation=PNG" class="inline-graphic"></span> is the number of different time-orders which gives the same statistical state. Thus <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e016&amp;representation=PNG" class="inline-graphic"></span> where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e017&amp;representation=PNG" class="inline-graphic"></span>. Consequently, the most unbiased situation in terms of the relevant states corresponds to the <em>N(k)</em> which maximizes <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e018&amp;representation=PNG" class="inline-graphic"></span>.</p>
+<a id="article1.body1.sec2.p7" name="article1.body1.sec2.p7"></a><p>The corresponding least biased algorithm which achieves this maximization goes as follows:</p>
+
+
+<ol class="order">
+
+<li>pick two boxes (nodes) A and B randomly with probability <em>p</em>~<em>k</em><sup>2</sup></li>
+
+<li>pick a random ball in A and move to B.</li>
+
+<li>If the attempted move is forbidden by a constraint choose another ball in A. Repeat until one ball is moved. Then choose two new boxes (nodes)</li>
+
+<li>If no ball can be moved from A, choose two new boxes (nodes).</li>
+
+</ol><a id="article1.body1.sec2.p8" name="article1.body1.sec2.p8"></a><p>The important point here is that this algorithm incorporates the constraints in the most unbiased way and consequently yields the optimal <em>N(k)</em>. <a href="#pone-0001690-g002">Figure 2(b)</a> illustrates that the algorithm solutions which have the functional form <em>N</em>(<em>k</em>)~exp(−<em>bk</em>)/<em>k</em><sup>2</sup> (see Supporting Information in <a href="#pone.0001690.s001">Text S1</a>). Note that the distribution has an exponential decay for smaller values of average degree <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e019&amp;representation=PNG" class="inline-graphic"></span> but becomes very power law like for larger <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e020&amp;representation=PNG" class="inline-graphic"></span>.</p>
+<a id="article1.body1.sec2.p9" name="article1.body1.sec2.p9"></a><p>In order to find the variational solution for the network case, one needs to introduce the network constraints. These constraints can be directly implemented into the corresponding algorithm method: Moves which violates the network constraint are discarded.(see Supporting Information in <a href="#pone.0001690.s001">Text S1</a>) When the network constraints are included the distribution follows a power law <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e021&amp;representation=PNG" class="inline-graphic"></span> over a large range with <em>γ</em>&gt;2, as illustrated in <a href="#pone-0001690-g002">Fig. 2(c)</a>. An important point to notice is that average distribution <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001690.e022&amp;representation=PNG" class="inline-graphic"></span> is different from the individual network configurations <em>N(k)</em>. The striking difference is that a single network configurations always contains large split-off nodes, as illustrated in <a href="#pone-0001690-g002">Fig. 2(d)</a>. <em>These split-off nodes constitute an essential characteristic of the network.</em></p>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>How does the blind watchmakers random network compare to real networks? <a href="#pone-0001690-g003">Fig. 3</a> illustrates this for the case of metabolic networks: <a href="#pone-0001690-g003">Fig. 3(a)</a> shows the average distribution obtained from 107 such networks and <a href="#pone-0001690-g003">Fig. 3(b)</a> the metabolic network for the E. Coli. bacteria (the data is taken from Ref. <a href="#pone.0001690-Ma1">[14]</a>,<a href="#pone.0001690-Ma2">[15]</a>). In <a href="#pone-0001690-g003">Fig. 3(c) and 3(d)</a> these networks are compared to the corresponding blind watchmaker network: the only information contained in this latter network is the number of nodes and links and the number of networks involved in the average. We again stress that both the shape of the distribution <em>and</em> the spread of the data are important characteristics of a real network. As apparent from <a href="#pone-0001690-g003">Fig. 3(c)</a> the overlap between the two data-sets is striking. From this we conclude that metabolic networks are to large extent blind watchmaker networks. <a href="#pone-0001690-g003">Figure 3(d)</a> compare a single metabolic network (E. Coli.) with the corresponding random network. A particular feature in this comparison is the large split off nodes. In case of E. Coli. there are 6 nodes with more than 100 links and for the corresponding blind watchmaker there are on the average 5.3±1.5.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Even if the blind watchmaker network explains the overall feature such as the fat tails of biological networks like the metabolic ones, there are of course differences. One such difference is the low number of nodes with only one link in case of metabolic networks. Such systematic deviations signal additional constraints in the real network. Whenever such constraints are present the entropy of the distribution is <em>lower</em> than for the blind watchmaker network. To illustrate this we in <a href="#pone-0001690-g003">Fig. 3(e) and 3(f)</a> compare the real networks with the corresponding blind watchmaker network <em>including</em> the least biased constraint which adjusts the number of single-link nodes (details in Supporting Information <a href="#pone.0001690.s001">Text S1</a>). Now the agreement is extraordinary considering the fact that only one data point, the number of single-link nodes at the very beginning of the distribution, has been adjusted. It clearly demonstrates that it is rather the <em>deviations</em> from the blind watchmaker network which needs to be explained (like in the present case the smaller number of single -link nodes): These deviations contain information about the system in addition to the less system specific information represented by the blind watchmaker network.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>In the present work we focus on the different possible states a network can be found in. These network states distinguishes between the time order in which a node is connected to its neigbours. No a priory assumption of any growth mechanism or evolution process is made. We introduce the concept of <em>random with respect to the network states</em> and call the corresponding network <em>the blind watchmaker network.</em> It is found that the blind watchmaker network is scale-free and that metabolic networks to large extent are blind watchmaker networks. This means that the evolutionary path of the cell-metabolism, when projected onto a metabolic network representation, is statistically random with respect to a complete set of network states. This randomness emanates from the inherent randomness (the blind element) in Darwinian evolution and suggests that natural selection has had no or little effect on the network node degree distribution of metabolic networks.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Can these conclusions really be drawn from the agreement between the node degree distribution, the split off nodes and the stochastic spread of the data when comparing the actual data for metabolic networks and the blind watchmaker model network? In our opinion they can be drawn: The key is the quality of the agreement in relation to the number of free adjustable parameters. Earlier attempts to reproduce the degree distribution of metabolic networks usually starts from some assumption about the actual evolutionary path and has to our knowledge not been able to reproduce the data in the way demonstrated here <a href="#pone.0001690-Pfeiffer1">[13]</a>. So why does the evolution of metabolic networks choose this particular stochastic node degree distribution displayed by the blind watchmaker model network? According to us, the answer is that this degree distribution is <em>neutral</em> with respect to natural selection and hence, in this sense, has not been chosen at all. The notion that the node degree distribution for metabolic networks could be neutral with respect to natural selection has also been suggested on the bases of a comparison between the node degree distribution in atmospheric chemical reaction networks (no natural selection) and metabolic networks <a href="#pone.0001690-Wagner2">[20]</a>,<a href="#pone.0001690-Gleiss1">[21]</a>.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>The theoretical framework used in the analysis is classical statistical mechanics, both in its conventional variational form described in <a href="#pone.0001690.s001">Text S1</a> and in its stochastical algorithm form described in Results.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>The cell- metabolisms data represented by the metabolic networks are taken from Ma and Zeng in Ref. <a href="#pone.0001690-Ma1">[14]</a> and <a href="#pone.0001690-Ma2">[15]</a>.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001690"></div><a name="pone.0001690.s001" id="pone.0001690.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001690.s001">Text S1. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0001690.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="postSiDOI">(0.05 MB PDF)</p>
+</div>
+
+
+
+<div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SB PM. Performed the experiments: SB PM. Analyzed the data: SB PM. Contributed reagents/materials/analysis tools: SB PM. Wrote the paper: SB PM.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001690-Albert1" id="pone.0001690-Albert1"></a>Albert R, Barabási A-L (2002) Statistical mechanics of complex networks. Rev. of Mod. Phys.  74: 47–97.  <ul class="find" data-citedArticleID="1064224" data-doi="10.1103/revmodphys.74.47"><li><a href="http://dx.doi.org/10.1103/revmodphys.74.47" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+mechanics+of+complex+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+mechanics+of+complex+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001690-Dorogovtsev1" id="pone.0001690-Dorogovtsev1"></a>Dorogovtsev SN, Mendes JFF (2003) Evolution of networks: From biological nets to the Internet and WWW. Oxford University Press.  <ul class="find" data-citedArticleID="1064236" data-doi="10.1023/b:joss.0000014281.61380.75"><li><a href="http://dx.doi.org/10.1023/b:joss.0000014281.61380.75" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+of+networks%3A+From+biological+nets+to+the+Internet+and+WWW.+Oxford+University+Press." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+of+networks%3A+From+biological+nets+to+the+Internet+and+WWW.+Oxford+University+Press.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001690-Newman1" id="pone.0001690-Newman1"></a>Newman MEJ (2003) The structure and function of complex networks. SIAM Review  45: 167–256.  <ul class="find" data-citedArticleID="1064252" data-doi="10.1137/s003614450342480"><li><a href="http://dx.doi.org/10.1137/s003614450342480" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+structure+and+function+of+complex+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+structure+and+function+of+complex+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001690-Boccaletti1" id="pone.0001690-Boccaletti1"></a>Boccaletti S, Latora V, Morena Y, Chavez M, Hwang D-U (2006) Complex networks: Structure and dynamics. Phys. Rep.  424: 175–308.  <ul class="find" data-citedArticleID="1064230" data-doi="10.1016/j.physrep.2005.10.009"><li><a href="http://dx.doi.org/10.1016/j.physrep.2005.10.009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Complex+networks%3A+Structure+and+dynamics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Complex+networks%3A+Structure+and+dynamics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001690-Newman2" id="pone.0001690-Newman2"></a>Newman MEJ, Barabási A-L, Watts DJ (2006) The Structure and dynamics of networks. Princeton: Princeton University press.   <ul class="find-nolinks"></ul></li><li><span class="label">6.
+              </span><a name="pone.0001690-Dawkins1" id="pone.0001690-Dawkins1"></a>Dawkins R (1985) The blind watchmaker: Why the evidence of evolution reveals a universe without design. Norton.   <ul class="find-nolinks"></ul></li><li><span class="label">7.
+              </span><a name="pone.0001690-Wagner1" id="pone.0001690-Wagner1"></a>Wagner A (2003) Does selection mold molecular networks. Science STKE 41.   <ul class="find" data-citedArticleID="1064262" data-doi="10.1126/stke.2003.202.pe41"><li><a href="http://dx.doi.org/10.1126/stke.2003.202.pe41" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Does+selection+mold+molecular+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Does+selection+mold+molecular+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001690-Albert2" id="pone.0001690-Albert2"></a>Albert R, Jeong H, Barabási A-L (2000) Error attack and tolerance of complex networks. Nature  406: 378–382.  <ul class="find" data-citedArticleID="1064226" data-doi="10.1038/35019019"><li><a href="http://dx.doi.org/10.1038/35019019" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Error+attack+and+tolerance+of+complex+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Error+attack+and+tolerance+of+complex+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001690-Cohen1" id="pone.0001690-Cohen1"></a>Cohen R, Erez K, ben-Avraham D, Havlin S (2000) Resilience of Internet for random breakdowns. PRL.  85: 4626–4628.  <ul class="find" data-citedArticleID="1064232" data-doi="10.1103/physrevlett.85.4626"><li><a href="http://dx.doi.org/10.1103/physrevlett.85.4626" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Resilience+of+Internet+for+random+breakdowns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Resilience+of+Internet+for+random+breakdowns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001690-Barabsi1" id="pone.0001690-Barabsi1"></a>Barabási A-L, Albert R, Jeong H (1999) Emergence of scaling in complex networks. Science  286: 509–512.  <ul class="find" data-citedArticleID="1064228" data-doi="10.1126/science.286.5439.509"><li><a href="http://dx.doi.org/10.1126/science.286.5439.509" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Emergence+of+scaling+in+complex+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Emergence+of+scaling+in+complex+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001690-Sol1" id="pone.0001690-Sol1"></a>Solé RV, Pastor-Satorras R, Smith E, Kepler T (2002) A model of large-scale proteomic evolution. Adv. in Complex Systems  5: 43–54.  <ul class="find" data-citedArticleID="1064258" data-doi="10.1142/s021952590200047x"><li><a href="http://dx.doi.org/10.1142/s021952590200047x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+model+of+large-scale+proteomic+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+model+of+large-scale+proteomic+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001690-Vazquez1" id="pone.0001690-Vazquez1"></a>Vazquez A, Flammini A, Maritan A, Vespignani A (2003) Modeling of protein interaction networks. Complexus  1: 38–44.  <ul class="find" data-citedArticleID="1064260" data-doi="10.1159/000067642"><li><a href="http://dx.doi.org/10.1159/000067642" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+of+protein+interaction+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+of+protein+interaction+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001690-Pfeiffer1" id="pone.0001690-Pfeiffer1"></a>Pfeiffer T, Soyer OS, Bonhoeffer S (2005) The evolution of connectivity in metabolic networks. PloS Biology  3: 1269–1275.  <ul class="find" data-citedArticleID="1064256" data-doi="10.1371/journal.pbio.0030228"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0030228" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+evolution+of+connectivity+in+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+evolution+of+connectivity+in+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001690-Ma1" id="pone.0001690-Ma1"></a>Ma H, Zeng A-P (2003) Reconstruction of metabolic networks from genome data and analysis of their global structure for various organisms. Bioinformatics  19: 270–277.  <ul class="find" data-citedArticleID="1064244" data-doi="10.1093/bioinformatics/19.2.270"><li><a href="http://dx.doi.org/10.1093/bioinformatics/19.2.270" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reconstruction+of+metabolic+networks+from+genome+data+and+analysis+of+their+global+structure+for+various+organisms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reconstruction+of+metabolic+networks+from+genome+data+and+analysis+of+their+global+structure+for+various+organisms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001690-Ma2" id="pone.0001690-Ma2"></a>Ma H, Zeng A-P (2003) The connectivity structure, giant strong component and centrality of metabolic networks. Bioinformatics  19: 1423–1430.  <ul class="find" data-citedArticleID="1064246" data-doi="10.1093/bioinformatics/btg177"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg177" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+connectivity+structure%2C+giant+strong+component+and+centrality+of+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+connectivity+structure%2C+giant+strong+component+and+centrality+of+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001690-Jeong1" id="pone.0001690-Jeong1"></a>Jeong H, Tombor B, Albert R, Oltvai ZN, Barabási A-L (2000) The large scale organization of metabolic networks. Nature  407: 651–654.  <ul class="find" data-citedArticleID="1064242" data-doi="10.1038/35036627"><li><a href="http://dx.doi.org/10.1038/35036627" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+large+scale+organization+of+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+large+scale+organization+of+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001690-Minnhagen1" id="pone.0001690-Minnhagen1"></a>Minnhagen P, Bernhardsson S (2007) Optimization and scale-freeness for complex networks. Chaos  17: 0261171–0261177.  <ul class="find" data-citedArticleID="1064248" data-doi="10.1063/1.2720101"><li><a href="http://dx.doi.org/10.1063/1.2720101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Optimization+and+scale-freeness+for+complex+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Optimization+and+scale-freeness+for+complex+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001690-Jaynes1" id="pone.0001690-Jaynes1"></a>Jaynes ET (1957) Information theory and statistical mechanics. Phys. Rev.  106: 620–630.  <ul class="find" data-citedArticleID="1064240" data-doi="10.1103/physrev.106.620"><li><a href="http://dx.doi.org/10.1103/physrev.106.620" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Information+theory+and+statistical+mechanics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Information+theory+and+statistical+mechanics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001690-Minnhagen2" id="pone.0001690-Minnhagen2"></a>Minnhagen P, Bernhardsson S, Kim BJ (2007) Scale-freeness for Networks as a Degenerate Ground State: A Hamiltonian Formulation. EPL  78: 280041–280045.  <ul class="find" data-citedArticleID="1064250" data-doi="10.1209/0295-5075/78/28004"><li><a href="http://dx.doi.org/10.1209/0295-5075/78/28004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Scale-freeness+for+Networks+as+a+Degenerate+Ground+State%3A+A+Hamiltonian+Formulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Scale-freeness+for+Networks+as+a+Degenerate+Ground+State%3A+A+Hamiltonian+Formulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001690-Wagner2" id="pone.0001690-Wagner2"></a>Wagner A (2005) Robustness and evolvability in living systems. Princeton: Princeton University Press. NJ.   <ul class="find-nolinks"></ul></li><li><span class="label">21.
+              </span><a name="pone.0001690-Gleiss1" id="pone.0001690-Gleiss1"></a>Gleiss P, Stadler P, Wagner A, Fell D (2001) Relevant cycles in chemical reaction networks. Adv. Complex Systems  4: 207–226.  <ul class="find" data-citedArticleID="1064238" data-doi="10.1142/s0219525901000140"><li><a href="http://dx.doi.org/10.1142/s0219525901000140" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Relevant+cycles+in+chemical+reaction+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Relevant+cycles+in+chemical+reaction+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.XML" value="52397"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.PDF" value="272606"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g001.PNG_L" value="102425"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g001.PNG_M" value="75022"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g001.PNG_S" value="10561"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g001.TIF" value="201152"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g001.PNG_I" value="26365"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e023.PNG" value="5791"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e023.TIF" value="21740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e024.PNG" value="6371"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e024.TIF" value="22352"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e025.PNG" value="5812"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e025.TIF" value="22084"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g002.PNG_L" value="180521"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g002.PNG_M" value="140886"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g002.PNG_S" value="15793"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g002.TIF" value="422034"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g002.PNG_I" value="49271"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e001.PNG" value="5787"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e001.TIF" value="21736"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e002.PNG" value="6374"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e002.TIF" value="22360"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g003.PNG_L" value="256149"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g003.PNG_M" value="148895"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g003.PNG_S" value="17824"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g003.TIF" value="596608"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.g003.PNG_I" value="78796"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e003.PNG" value="8280"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e003.TIF" value="24168"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e004.PNG" value="6340"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e004.TIF" value="22344"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e005.PNG" value="6166"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e005.TIF" value="22140"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e006.PNG" value="6955"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e006.TIF" value="22920"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e007.PNG" value="9403"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e007.TIF" value="25340"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e008.PNG" value="4980"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e008.TIF" value="20908"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e009.PNG" value="4942"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e009.TIF" value="20880"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e010.PNG" value="6370"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e010.TIF" value="22296"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e011.PNG" value="5236"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e011.TIF" value="21220"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e012.PNG" value="5370"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e012.TIF" value="21308"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e013.PNG" value="5599"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e013.TIF" value="21516"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e014.PNG" value="7417"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e014.TIF" value="23364"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e015.PNG" value="6372"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e015.TIF" value="22340"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e016.PNG" value="9068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e016.TIF" value="25008"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e017.PNG" value="8017"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e017.TIF" value="23956"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e018.PNG" value="4983"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e018.TIF" value="20912"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e019.PNG" value="6686"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e019.TIF" value="22660"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e020.PNG" value="5386"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e020.TIF" value="21336"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e021.PNG" value="6847"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e021.TIF" value="22796"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e022.PNG" value="6130"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.e022.TIF" value="22120"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001690.s001.PDF" value="49365"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001690&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001690" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001690&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001690&volume=&issue=&title=The Blind Watchmaker Network: Scale-Freeness and Evolution&author_name=Petter%20Minnhagen%2C%20Sebastian%20Bernhardsson&start_page=1&end_page=5" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001690" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690&amp;t=The%20Blind%20Watchmaker%20Network%3A%20Scale-Freeness%20and%20Evolution" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690&title=The%20Blind%20Watchmaker%20Network%3A%20Scale-Freeness%20and%20Evolution&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690&amp;title=The%20Blind%20Watchmaker%20Network%3A%20Scale-Freeness%20and%20Evolution" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001690&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'The Blind Watchmaker Network: Scale-Freeness and Evolution';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001690';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20The%20Blind%20Watchmaker%20Network%3A%20Scale-Freeness%20and%20Evolution http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001690" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001690" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Algorithms%22" title="Search for articles in the subject area:'Algorithms'"><div class="flagText">Algorithms</div></a>
+              <div data-categoryid="32621" data-articleid="26206"
+                   data-categoryname="Algorithms"
+                   class="flagImage" title="Flag 'Algorithms' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cell+metabolism%22" title="Search for articles in the subject area:'Cell metabolism'"><div class="flagText">Cell metabolism</div></a>
+              <div data-categoryid="18083" data-articleid="26206"
+                   data-categoryname="Cell metabolism"
+                   class="flagImage" title="Flag 'Cell metabolism' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Entropy%22" title="Search for articles in the subject area:'Entropy'"><div class="flagText">Entropy</div></a>
+              <div data-categoryid="21749" data-articleid="26206"
+                   data-categoryname="Entropy"
+                   class="flagImage" title="Flag 'Entropy' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Evolutionary+processes%22" title="Search for articles in the subject area:'Evolutionary processes'"><div class="flagText">Evolutionary processes</div></a>
+              <div data-categoryid="17655" data-articleid="26206"
+                   data-categoryname="Evolutionary processes"
+                   class="flagImage" title="Flag 'Evolutionary processes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Metabolic+networks%22" title="Search for articles in the subject area:'Metabolic networks'"><div class="flagText">Metabolic networks</div></a>
+              <div data-categoryid="21289" data-articleid="26206"
+                   data-categoryname="Metabolic networks"
+                   class="flagImage" title="Flag 'Metabolic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Natural+selection%22" title="Search for articles in the subject area:'Natural selection'"><div class="flagText">Natural selection</div></a>
+              <div data-categoryid="34433" data-articleid="26206"
+                   data-categoryname="Natural selection"
+                   class="flagImage" title="Flag 'Natural selection' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Scale-free+networks%22" title="Search for articles in the subject area:'Scale-free networks'"><div class="flagText">Scale-free networks</div></a>
+              <div data-categoryid="22077" data-articleid="26206"
+                   data-categoryname="Scale-free networks"
+                   class="flagImage" title="Flag 'Scale-free networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Statistical+distributions%22" title="Search for articles in the subject area:'Statistical distributions'"><div class="flagText">Statistical distributions</div></a>
+              <div data-categoryid="32973" data-articleid="26206"
+                   data-categoryname="Statistical distributions"
+                   class="flagImage" title="Flag 'Statistical distributions' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=6014'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=8130'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=5861&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=6929">More details on algorithm</a><br>Posted by suihuang</p>
+      <p><a href="/annotation/listThread.action?root=17429">Referee comments: Referee 2</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

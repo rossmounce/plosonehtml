@@ -1,0 +1,1266 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000676"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000676" />
+
+    <meta name="citation_title" content="Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes"/>
+    <meta itemprop="name" content="Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes"/>
+
+      <meta name="citation_author" content="Henrik Bjørn Nielsen"/>
+            <meta name="citation_author_institution" content="Center for Biological Sequence Analysis, BioCentrum, Technical University of Denmark, Kongens Lyngby, Denmark"/>
+      <meta name="citation_author" content="John Mundy"/>
+            <meta name="citation_author_institution" content="Institute of Molecular Biology, Biocenter, University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Hanni Willenbrock"/>
+            <meta name="citation_author_institution" content="Center for Biological Sequence Analysis, BioCentrum, Technical University of Denmark, Kongens Lyngby, Denmark"/>
+
+    <meta name="citation_date" content="2007/8/1"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000676.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e676"/>
+    <meta name="citation_issue" content="8"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=The MicroArray Quality Control (MAQC) project shows inter- and intraplatform reproducibility of gene expression measurements.; citation_author=L Shi; citation_author=LH Reid; citation_author=WD Jones; citation_author=R Shippy; citation_author=JA Warrington; citation_journal_title=Nat Biotechnol; citation_volume=24; citation_number=1; citation_pages=1151-1161; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Getting the noise out of gene arrays.; citation_author=E Marshall; citation_journal_title=Science; citation_volume=306; citation_number=2; citation_pages=630-631; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Microarray reality checks in the context of a complex disease.; citation_author=GL Miklos; citation_author=R Maleszka; citation_journal_title=Nat Biotechnol; citation_volume=22; citation_number=3; citation_pages=615-621; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Functional discovery via a compendium of expression profiles.; citation_author=TR Hughes; citation_author=MJ Marton; citation_author=AR Jones; citation_author=CJ Roberts; citation_author=R Stoughton; citation_journal_title=Cell; citation_volume=102; citation_number=4; citation_pages=109-126; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Coexpression analysis of human genes across many microarray data sets.; citation_author=HK Lee; citation_author=AK Hsu; citation_author=J Sajdak; citation_author=J Qin; citation_author=P Pavlidis; citation_journal_title=Genome Res; citation_volume=14; citation_number=5; citation_pages=1085-1094; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Gene connectivity, function, and sequence conservation: predictions from modular yeast co-expression networks.; citation_author=MR Carlson; citation_author=B Zhang; citation_author=Z Fang; citation_author=PS Mischel; citation_author=S Horvath; citation_journal_title=BMC Genomics; citation_volume=7; citation_number=6; citation_pages=40; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The functional landscape of mouse gene expression.; citation_author=W Zhang; citation_author=QD Morris; citation_author=R Chang; citation_author=O Shai; citation_author=MA Bakowski; citation_journal_title=J Biol; citation_volume=3; citation_number=7; citation_pages=21; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Large-scale prediction of Saccharomyces cerevisiae gene function using overlapping transcriptional clusters.; citation_author=LF Wu; citation_author=TR Hughes; citation_author=AP Davierwala; citation_author=MD Robinson; citation_author=R Stoughton; citation_journal_title=Nat Genet; citation_volume=31; citation_number=8; citation_pages=255-265; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Incorporating biological knowledge into distance-based clustering analysis of microarray gene expression data.; citation_author=D Huang; citation_author=W Pan; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=9; citation_pages=1259-1268; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The Connectivity Map: using gene-expression signatures to connect small molecules, genes, and disease.; citation_author=J Lamb; citation_author=ED Crawford; citation_author=D Peck; citation_author=JW Modell; citation_author=IC Blat; citation_journal_title=Science; citation_volume=313; citation_number=10; citation_pages=1929-1935; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Arabidopsis map kinase 4 negatively regulates systemic acquired resistance.; citation_author=M Petersen; citation_author=P Brodersen; citation_author=H Naested; citation_author=E Andreasson; citation_author=U Lindhart; citation_journal_title=Cell; citation_volume=103; citation_number=11; citation_pages=1111-1120; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The MAP kinase substrate MKS1 is a regulator of plant defense responses.; citation_author=E Andreasson; citation_author=T Jenkins; citation_author=P Brodersen; citation_author=S Thorgrimsen; citation_author=NH Petersen; citation_journal_title=Embo J; citation_volume=24; citation_number=12; citation_pages=2579-2589; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Arabidopsis MAP kinase 4 regulates salicylic acid- and jasmonic acid/ethylene-dependent responses via EDS1 and PAD4.; citation_author=P Brodersen; citation_author=M Petersen; citation_author=H Bjørn Nielsen; citation_author=S Zhu; citation_author=MA Newman; citation_journal_title=Plant J; citation_number=13; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Involvement of MPK4 in osmotic stress response pathways in cell suspensions and plantlets of Arabidopsis thaliana: activation by hypoosmolarity and negative role in hyperosmolarity tolerance.; citation_author=MJ Droillard; citation_author=M Boudsocq; citation_author=H Barbier-Brygoo; citation_author=C Lauriere; citation_journal_title=FEBS Lett; citation_volume=574; citation_number=14; citation_pages=42-48; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The MKK2 pathway mediates cold and salt stress signaling in Arabidopsis.; citation_author=M Teige; citation_author=E Scheikl; citation_author=T Eulgem; citation_author=R Doczi; citation_author=K Ichimura; citation_journal_title=Mol Cell; citation_volume=15; citation_number=15; citation_pages=141-152; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The KEGG resource for deciphering the genome.; citation_author=M Kanehisa; citation_author=S Goto; citation_author=S Kawashima; citation_author=Y Okuno; citation_author=M Hattori; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=16; citation_pages=D277-280; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=MIPS: a database for genomes and protein sequences.; citation_author=HW Mewes; citation_author=D Frishman; citation_author=U Guldener; citation_author=G Mannhaupt; citation_author=K Mayer; citation_journal_title=Nucleic Acids Res; citation_volume=30; citation_number=17; citation_pages=31-34; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=On the interpretation of χ2 from contingency tables, and the calculation of P.; citation_author=RA Fisher; citation_journal_title=Journal of the Royal Statistical Society; citation_volume=85; citation_number=18; citation_pages=87-94; citation_date=1922; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide transcriptional analysis of the Arabidopsis thaliana interaction with the plant pathogen Pseudomonas syringae pv. tomato DC3000 and the human pathogen Escherichia coli O157:H7.; citation_author=R Thilmony; citation_author=W Underwood; citation_author=SY He; citation_journal_title=Plant J; citation_volume=46; citation_number=19; citation_pages=34-53; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Characterization of an Arabidopsis Mutant That Is Nonresponsive to Inducers of Systemic Acquired Resistance.; citation_author=H Cao; citation_author=SA Bowling; citation_author=AS Gordon; citation_author=X Dong; citation_journal_title=Plant Cell; citation_volume=6; citation_number=20; citation_pages=1583-1592; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=The cpr5 mutant of Arabidopsis expresses both NPR1-dependent and NPR1-independent resistance.; citation_author=SA Bowling; citation_author=JD Clarke; citation_author=Y Liu; citation_author=DF Klessig; citation_author=X Dong; citation_journal_title=Plant Cell; citation_volume=9; citation_number=21; citation_pages=1573-1584; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Epistasis analysis with global transcriptional phenotypes.; citation_author=N Van Driessche; citation_author=J Demsar; citation_author=EO Booth; citation_author=P Hill; citation_author=P Juvan; citation_journal_title=Nat Genet; citation_volume=37; citation_number=22; citation_pages=471-477; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=AtGenExpress: a multinational coordinated effort to uncover the transcriptome of Arabidopsis.; citation_number=23; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Requirement of salicylic acid for the induction of systemic acquired resistance.; citation_author=T Gaffney; citation_author=L Friedrich; citation_author=B Vernooij; citation_author=D Negrotto; citation_author=G Nye; citation_journal_title=Science and Justice; citation_number=24; citation_pages=754-756; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Comparative transcriptome analysis reveals significant differences in gene expression and signalling pathways between developmental and dark/starvation-induced senescence in Arabidopsis.; citation_author=V Buchanan-Wollaston; citation_author=T Page; citation_author=E Harrison; citation_author=E Breeze; citation_author=PO Lim; citation_journal_title=Plant J; citation_volume=42; citation_number=25; citation_pages=567-585; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Salicylic acid regulates flowering time and links defence responses and reproductive development.; citation_author=C Martinez; citation_author=E Pons; citation_author=G Prats; citation_author=J Leon; citation_journal_title=Plant J; citation_volume=37; citation_number=26; citation_pages=209-217; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=GENEVESTIGATOR. Arabidopsis microarray database and analysis toolbox.; citation_author=P Zimmermann; citation_author=M Hirsch-Hoffmann; citation_author=L Hennig; citation_author=W Gruissem; citation_journal_title=Plant Physiol; citation_volume=136; citation_number=27; citation_pages=2621-2632; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Combinatorial microarray analysis revealing arabidopsis genes implicated in cytokinin responses through the His→Asp Phosphorelay circuitry.; citation_author=T Kiba; citation_author=T Naitou; citation_author=N Koizumi; citation_author=T Yamashino; citation_author=H Sakakibara; citation_journal_title=Plant Cell Physiol; citation_volume=46; citation_number=28; citation_pages=339-355; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Plant response regulators implicated in signal transduction and circadian rhythm.; citation_author=T Mizuno; citation_journal_title=Curr Opin Plant Biol; citation_volume=7; citation_number=29; citation_pages=499-505; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Molecular and Physiological Characterisation of an Insertion Mutant in the ARR21 Putative Response Regulator Gene from Arabidopsis thaliana.; citation_author=J Horák; citation_author=B Brzobohatý; citation_author=M Lexa; citation_journal_title=Plant biology; citation_volume=5; citation_number=30; citation_pages=245-254; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Comparative studies on the type-B response regulators revealing their distinctive properties in the His-to-Asp phosphorelay signal transduction of Arabidopsis thaliana.; citation_author=Y Tajima; citation_author=A Imamura; citation_author=T Kiba; citation_author=Y Amano; citation_author=T Yamashino; citation_journal_title=Plant Cell Physiol; citation_volume=45; citation_number=31; citation_pages=28-39; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Genomic expression programs in the response of yeast cells to environmental changes.; citation_author=AP Gasch; citation_author=PT Spellman; citation_author=CM Kao; citation_author=O Carmel-Harel; citation_author=MB Eisen; citation_journal_title=Mol Biol Cell; citation_volume=11; citation_number=32; citation_pages=4241-4257; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Abiotic stress, the field environment and stress combination.; citation_author=R Mittler; citation_journal_title=Trends Plant Sci; citation_volume=11; citation_number=33; citation_pages=15-19; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=OrderedList–a bioconductor package for detecting similarity in ordered gene lists.; citation_author=C Lottaz; citation_author=X Yang; citation_author=S Scheid; citation_author=R Spang; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=34; citation_pages=2315-2316; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Statistical tools for synthesizing lists of differentially expressed features in related experiments.; citation_author=M Blangiardo; citation_author=S Richardson; citation_journal_title=Genome Biol; citation_volume=8; citation_number=35; citation_pages=R54; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Systematic determination of genetic network architecture.; citation_author=S Tavazoie; citation_author=JD Hughes; citation_author=MJ Campbell; citation_author=RJ Cho; citation_author=GM Church; citation_journal_title=Nat Genet; citation_volume=22; citation_number=36; citation_pages=281-285; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=NASCArrays: a repository for microarray data generated by NASC's transcriptomics service.; citation_author=DJ Craigon; citation_author=N James; citation_author=J Okyere; citation_author=J Higgins; citation_author=J Jotham; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=37; citation_pages=D575-577; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=CTR1, a negative regulator of the ethylene response pathway in Arabidopsis, encodes a member of the raf family of protein kinases.; citation_author=JJ Kieber; citation_author=M Rothenberg; citation_author=G Roman; citation_author=KA Feldmann; citation_author=JR Ecker; citation_journal_title=Cell; citation_volume=72; citation_number=38; citation_pages=427-441; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Summaries of Affymetrix GeneChip probe level data.; citation_author=RA Irizarry; citation_author=BM Bolstad; citation_author=F Collin; citation_author=LM Cope; citation_author=B Hobbs; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=39; citation_pages=e15; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Exploration, normalization, and summaries of high density oligonucleotide array probe level data.; citation_author=RA Irizarry; citation_author=B Hobbs; citation_author=F Collin; citation_author=YD Beazer-Barclay; citation_author=KJ Antonellis; citation_journal_title=Biostatistics; citation_volume=4; citation_number=40; citation_pages=249-264; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Comparison of computational methods for the identification of cell cycle-regulated genes.; citation_author=U de Lichtenberg; citation_author=LJ Jensen; citation_author=A Fausboll; citation_author=TS Jensen; citation_author=P Bork; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=41; citation_pages=1164-1171; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_author=WJ Conover; citation_number=42; citation_pages=97-104; citation_date=1971; citation_publisher=John Wiley & Sons; " />
+      <meta name="citation_reference" content="citation_author=M Hollander; citation_author=DA Wolfe; citation_number=43; citation_pages=15-22; citation_date=1973; citation_publisher=John Wiley & Sons; " />
+      <meta name="citation_reference" content="citation_title=Measuring the accuracy of diagnostic systems.; citation_author=JA Swets; citation_journal_title=Science; citation_volume=240; citation_number=44; citation_pages=1285-1293; citation_date=1988; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes"/>
+    <meta name="twitter:description" content="The systematic comparison of transcriptional responses of organisms is a powerful tool in functional genomics. For example, mutants may be characterized by comparing their transcript profiles to those obtained in other experiments querying the effects on gene expression of many experimental factors including treatments, mutations and pathogen infections. Similarly, drugs may be discovered by the relationship between the transcript profiles effectuated or impacted by a candidate drug and by the target disease. The integration of such data enables systems biology to predict the interplay between experimental factors affecting a biological system. Unfortunately, direct comparisons of gene expression profiles obtained in independent, publicly available microarray experiments are typically compromised by substantial, experiment-specific biases. Here we suggest a novel yet conceptually simple approach for deriving &lsquo;Functional Association(s) by Response Overlap&rsquo; (FARO) between microarray gene expression studies. The transcriptional response is defined by the set of differentially expressed genes independent from the magnitude or direction of the change. This approach overcomes the limited comparability between studies that is typical for methods that rely on correlation in gene expression. We apply FARO to a compendium of 242 diverse Arabidopsis microarray experimental factors, including phyto-hormones, stresses and pathogens, growth conditions/stages, tissue types and mutants. We also use FARO to confirm and further delineate the functions of Arabidopsis MAP kinase 4 in disease and stress responses. Furthermore, we find that a large, well-defined set of genes responds in opposing directions to different stress conditions and predict the effects of different stress combinations. This demonstrates the usefulness of our approach for exploiting public microarray data to derive biologically meaningful associations between experimental factors. Finally, our results indicate that FARO is more powerful in associating mutants in common pathways than existing methods such as co-expression analysis."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000676.g006"/>
+
+  <meta property="og:title" content="Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=6926'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=1999'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=7264&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000676">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000676" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000676&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Henrik Bjørn Nielsen
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:hbjorn@cbs.dtu.dk">hbjorn@cbs.dtu.dk</a></p>
+
+                <p>Affiliation:
+                  Center for Biological Sequence Analysis, BioCentrum, Technical University of Denmark, Kongens Lyngby, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            John Mundy, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute of Molecular Biology, Biocenter, University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Hanni Willenbrock
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Center for Biological Sequence Analysis, BioCentrum, Technical University of Denmark, Kongens Lyngby, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: August 01, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000676</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000676-g001" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000676-g002" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000676-g003" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000676-g004" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000676-g005" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000676-g006" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000676">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000676" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>The systematic comparison of transcriptional responses of organisms is a powerful tool in functional genomics. For example, mutants may be characterized by comparing their transcript profiles to those obtained in other experiments querying the effects on gene expression of many experimental factors including treatments, mutations and pathogen infections. Similarly, drugs may be discovered by the relationship between the transcript profiles effectuated or impacted by a candidate drug and by the target disease. The integration of such data enables systems biology to predict the interplay between experimental factors affecting a biological system. Unfortunately, direct comparisons of gene expression profiles obtained in independent, publicly available microarray experiments are typically compromised by substantial, experiment-specific biases. Here we suggest a novel yet conceptually simple approach for deriving ‘Functional Association(s) by Response Overlap’ (FARO) between microarray gene expression studies. The transcriptional response is defined by the set of differentially expressed genes independent from the magnitude or direction of the change. This approach overcomes the limited comparability between studies that is typical for methods that rely on correlation in gene expression. We apply FARO to a compendium of 242 diverse <em>Arabidopsis</em> microarray experimental factors, including phyto-hormones, stresses and pathogens, growth conditions/stages, tissue types and mutants. We also use FARO to confirm and further delineate the functions of <em>Arabidopsis</em> MAP kinase 4 in disease and stress responses. Furthermore, we find that a large, well-defined set of genes responds in opposing directions to different stress conditions and predict the effects of different stress combinations. This demonstrates the usefulness of our approach for exploiting public microarray data to derive biologically meaningful associations between experimental factors. Finally, our results indicate that FARO is more powerful in associating mutants in common pathways than existing methods such as co-expression analysis.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Nielsen HB, Mundy J, Willenbrock H (2007) Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes. PLoS ONE 2(8):
+          e676.
+            doi:10.1371/journal.pone.0000676</p><p><strong>Academic Editor: </strong>Ivan Baxter, Purdue University, United States of America</p><p><strong>Received:</strong> March 12, 2007; <strong>Accepted:</strong> June 21, 2007; <strong>Published:</strong> August 1, 2007</p><p><strong>Copyright:</strong> © 2007 Nielsen et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This study was supported financially by The Danish Center for Scientific Computing; EU, ADIT (IP), FP6, contract no.: LSHB-CT-2005-511977; and The Danish Technical and Agricultural and Veterinary Research Councils, in part via the STF program.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Whole-genome expression profiling provides global molecular phenotypes that enable functional analyses of genes and genomes. The amount of public gene expression data is rapidly accumulating due to advances and cost reductions in high-throughput technologies such as DNA microarrays. While reproducibility between identical RNA samples on different microarray platforms between dedicated laboratories is good <a href="#pone.0000676-Shi1">[1]</a>, comparability between studies with independent samples is less satisfactory <a href="#pone.0000676-Marshall1">[2]</a>, <a href="#pone.0000676-Miklos1">[3]</a>. Exploitation of the expanding data set has largely been limited to co-expression analysis of genes and comparisons between experimental factors (growth conditions, treatments, specific mutations, etc.) within single studies <a href="#pone.0000676-Hughes1">[4]</a>–<a href="#pone.0000676-Huang1">[9]</a>. Comparisons between experimental factors have been based on similarities in global expression profiles derived from the signals from all genes on the microarrays. This has enabled clustering of factors to estimate their relatedness. For such analyses, some advanced clustering approaches have been suggested, for example the utility of transcriptional consensus clusters derived from multiple cluster algorithms <a href="#pone.0000676-Wu1">[8]</a>, or incorporation of prior knowledge of gene function <a href="#pone.0000676-Huang1">[9]</a>. While controllable factors, except the specific factor(s) addressed, typically are kept constant for all experiments within a study, this is rarely true between different studies. Therefore, comparisons of global expression profiles across studies often fail to separate relevant from confounding factors. Fortunately, microarray studies typically include control samples that facilitate the isolation of the effects of factors addressed in the individual studies. Thus, a recent study by Lamb <em>et al.</em> <a href="#pone.0000676-Lamb1">[10]</a> presents a method that utilizes fold-change comparisons versus control samples to extract a ‘gene expression signature’ representing an experiment. In this way, experiments were associated based on the significant bias in the ranking of these ‘gene expression signature’ genes.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Sample replicates permit the statistical extraction of differentially expressed genes that are representative of the factor(s) addressed in a study. In this way, the impact of uncontrolled or random differences between samples is reduced. Consequently, we reasoned that relevant associations between experimental factors in different studies can be estimated by first identifying genes responding to a given factor by statistical comparison to control samples within a single study. In contrast to Lamb <em>et al.</em> <a href="#pone.0000676-Lamb1">[10]</a>, we simply use the overlap in differentially expressed genes in subsequent comparisons between factors of different studies.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Using this approach, we show that response overlaps in genes that are differentially expressed between microarray studies can be used to derive functional associations between experimental factors. We designate this approach ‘Functional Association(s) by Response Overlap’ (FARO). Importantly, FARO is designed to include the possibility that the amplitudes of responses may vary or be reversed, even when closely associated functions are affected. For example, if the proteins encoded by two genes function in a complex, common pathway or network, then overlapping sets of genes may be expected to respond when either gene function is compromised. However, if one protein is a repressor and the other an activator, the resulting responses are likely to affect overlapping gene sets in opposite directions. We further reasoned that while differences in the response direction of the overlapping genes of closely related factors may be expected, consistency in the relative direction, as either congruent or dissimilar, may be descriptive and support their association.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>As an example of the approach, we show that FARO between a compendium of 241 <em>Arabidopsis</em> gene expression responses from many laboratories and the response of the MAP kinase 4 loss-of-function mutant, <em>mpk4</em> <a href="#pone.0000676-Petersen1">[11]</a>–<a href="#pone.0000676-Brodersen1">[13]</a>, confirms and extends previous studies on the regulatory functions of MAP kinase 4 in pathogen and stress responses <a href="#pone.0000676-Droillard1">[14]</a>, <a href="#pone.0000676-Teige1">[15]</a>. This analysis also demonstrates that FARO enables the prediction of more general biological phenomena including the effects and severities of multiple stresses. In addition, we demonstrate that FARO is superior to co-expression analysis in associating genes according to KEGG <a href="#pone.0000676-Kanehisa1">[16]</a> and MIPS <a href="#pone.0000676-Mewes1">[17]</a> annotations in the Rosetta Yeast compendium <a href="#pone.0000676-Hughes1">[4]</a></p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>The FARO approach</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Transcript profiling experiments are generally designed to assess the effect on gene expression of an experimental factor such as growth condition/stage, treatments, specific mutations, etc. To assign Functional Associations by Response Overlap (FARO) between an experimental factor and the factors assessed in a compendium of gene expression responses, a query response of differentially expressed genes from one study was compared to the responses of the compendium (<a href="#pone-0000676-g001">Figure 1</a>). The associations were ranked by the overlap size and statistical significance was estimated using Fishers exact test <a href="#pone.0000676-Fisher1">[18]</a>. The compendium of gene expression responses was constructed by analyzing the individual studies in a collection of microarray studies to rank genes by their significance of differential expression within each study. The individual experiment was analyzed separately such that individual measurements were only compared directly within a study. Consequently, variations in experimental procedures between experiments have no direct influence on the estimated responses. Assuming that the individual experimental designs were executed carefully, differentially expressed genes represent the response to the factor(s) studied and thus provide an expression phenotype.</p>
+<div class="figure" id="pone-0000676-g001"><div class="img"><a name="pone-0000676-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Overview of the FARO method.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>A large number of gene expression studies from a microarray data repository are analyzed individually, resulting in a compendium of gene expression responses. Each of these responses corresponds to a list of top ranking, differentially expressed genes. A query response, for example a response measured in a new microarray experiment, may then be compared to the compendium responses (cr) and the response overlap in terms of common, differentially expressed genes determined. The strength of an association is determined by the size of the overlap and the result illustrated in a FARO map (bottom right and <a href="#pone-0000676-g002">Figure 2</a>). In the example, the query response demonstrates significant associations to compendium factors 1, 3, 4, and 5. Moreover, it is possible to test if the direction of a response is predominantly dissimilar (factor 4) or congruent (factor 5). This is indicated in the FARO map by a hammerhead or an arrow, respectively.</p>
+<span>doi:10.1371/journal.pone.0000676.g001</span></div><div class="figure" id="pone-0000676-g002"><div class="img"><a name="pone-0000676-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>FARO map of the Arabidopsis <em>mpk4</em> mutant.</span></strong></p><a id="article1.body1.sec2.sec1.fig2.caption1.p1" name="article1.body1.sec2.sec1.fig2.caption1.p1"></a><p>The 241 experimental factors (spheres/nodes) in the compendium of responses are divided into 8 categories indicated by different colors. Only edges (lines connecting factors) and names for experimental factors with strong associations to the <em>mpk4</em> mutant are shown. Thicker edges and bold factor fonts indicate increasing association strength. Edge arrows or hammerheads, respectively, indicate highly significant congruent or dissimilar (opposite) response direction of the overlapping genes. Significant factors are positioned inside the circle of non-significant factors solely for typographical reasons. NASCArray accession numbers are in parentheses.</p>
+<span>doi:10.1371/journal.pone.0000676.g002</span></div>
+
+<h4>FARO of the <em>Arabidopsis</em> MAP kinase 4 mutant</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>As a test of the approach, we determined FARO of the <em>Arabidopsis</em> MAP kinase 4 loss of function mutant (<em>mpk4</em>) against a compendium of 241 <em>Arabidopsis</em> gene expression profiles representing responses to experimental factors. <em>mpk4</em> was chosen because molecular and biochemical studies indicate that MPK4 kinase activity has two opposing functions which require further study <a href="#pone.0000676-Petersen1">[11]</a>–<a href="#pone.0000676-Brodersen1">[13]</a>. On the one hand, loss of MPK4 activity leads to the development of systemic acquired resistance to biotrophic pathogens that is dependent upon the phytohormone salicylate. On the other hand, MPK4 activity is required for certain responses to the plant hormones jasmonate and ethylene which induce defences against necrotrophic pathogens and herbivores. A biochemical explanation for these <em>mpk4</em> phenotypes is that MPK4 kinase activity, directly or indirectly, is normally required to repress systemic acquired resistance but is also required to induce some responses to jasmonate and ethylene.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>The gene expression responses of 241 experimental factors derived from the compendium are represented as colored nodes (spheres) in the FARO map (<a href="#pone-0000676-g002">Figure 2</a>). Edges from the central <em>mpk4</em> mutant factor to compendium factors represent the most significant response overlaps. In general, associations above the threshold used (FARO score 60, see <a href="#s4">Methods</a>) were almost all in agreement with previous molecular and biochemical studies, and only few of the factors below the threshold were previously suggested to be related to the effects of <em>mpk4</em> loss-of-function (Supporting Information <a href="#pone.0000676.s004">Table S1</a>).</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>More specifically, FARO indicated a series of very strong associations between <em>mpk4</em> and plants inoculated with virulent and avirulent pathogens. Thus, 16 of the 20 infection studies in the compendium were among the significant associations, while the 4 others were the only 3 insect infestations included and a <em>Pseudomonas syringae hrpA/fliC</em> double mutant. The latter is blocked in virulence factor secretion via the type III secretion system due to the <em>hrpA</em> mutation, and also cannot produce FliC, a flagellar, pathogen-associated molecular marker <a href="#pone.0000676-Thilmony1">[19]</a>. These 4 factors are therefore not expected to associate significantly with <em>mpk4</em> or salicylate-dependent systemic acquired resistance. FARO also showed strong associations between <em>mpk4</em> and the well-studied mutants <em>npr1</em> (<span class="underline">n</span>on-expressor of <span class="underline">p</span>athogenesis-<span class="underline">r</span>elated genes 1, <a href="#pone.0000676-Cao1">[20]</a>, and <em>cpr5</em> (<span class="underline">c</span>onstitutive expressor of <span class="underline">p</span>athogenesis-<span class="underline">r</span>elated genes 5, <a href="#pone.0000676-Bowling1">[21]</a>, both related to systemic acquired disease resistance. These findings are consistent with previous observations that the loss-of-function <em>mpk4</em> mutant exhibits constitutive systemic acquired resistance dependent upon salicylate <a href="#pone.0000676-Petersen1">[11]</a>–<a href="#pone.0000676-Brodersen1">[13]</a>.</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>MPK4, like other MAP kinases, performs its regulatory function(s) primarily via the phosphorylation of substrate proteins. We have recently shown that the nuclear protein MKS1 is an <em>in vivo</em> substrate of MPK4, and that there is significant similarity between the gene expression profiles of the <em>mpk4</em> mutant and MKS1 over-expressing plants <a href="#pone.0000676-Andreasson1">[12]</a>. In agreement with this, FARO showed that one of the strongest associations to <em>mpk4 was</em> to the transgenic MKS1 over-expressor. This may be explained biochemically if the lack of properly phosphorylated MKS1 in <em>mpk4</em> mutants, or the excessive accumulation of non-phosphorylated MKS1 in transgenic plants where MPK4 kinase activity is limiting, leads to the development of systemic acquired resistance. Interestingly, FARO also found strong association between <em>mpk4</em> and the jasmonate- and coronatine-insensitive 1 (<em>coi1</em>) and ethylene constitutive triple response 1 (<em>ctr1</em>) mutants, as well as to the ethylene response inhibitor AgNO<sub>3</sub>. The associations between <em>mpk4</em> and <em>coi1</em>, <em>ctr1</em> and AgNO<sub>3</sub> are in agreement with our findings that MPK4 is required for certain responses to jasmonate and ethylene as well as to salicylate <a href="#pone.0000676-Petersen1">[11]</a>, <a href="#pone.0000676-Brodersen1">[13]</a>. The significance and possible mechanistic links underlying this may be probed by examining the epistatic relationship between <em>mpk4</em> and <em>ctr1</em>. This can be determined <a href="#pone.0000676-VanDriessche1">[22]</a> from the global expression data we recently described both for the <em>mpk4</em> and <em>ctr1</em> single and for the <em>mpk4/ctr1</em> double mutants <a href="#pone.0000676-Brodersen1">[13]</a>. This analysis (Supporting Information <a href="#pone.0000676.s001">Text S1</a>) indicated that <em>mpk4</em> is, at least in part, epistatic to <em>ctr1</em> and again points out the value of comparing differential gene expression responses.</p>
+<a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p>The <em>Arabidopsis</em> compendium we used contains 33 studies of responses to 24 phytohormone treatments <a href="#pone.0000676-AtGenExpress1">[23]</a>. Of these, only the response to salicylate associated to <em>mpk4</em>, despite the fact that this single study, with only four samples, is among the hormone studies with the least statistical power. While this association is expected due to the elevated levels of salicylate measured in the <em>mpk4</em> mutant <a href="#pone.0000676-Petersen1">[11]</a>, it illustrates that FARO can overcome limitations in the experimental designs of the underlying studies.</p>
+<a id="article1.body1.sec2.sec2.p6" name="article1.body1.sec2.sec2.p6"></a><p>The edge arrow- and hammer-heads on the <em>mpk4</em> FARO map indicate the predominant congruence or dissimilarity in the direction of the observed responses, some of which are exemplified in <a href="#pone-0000676-g003">Figure 3</a>. For example, the congruence was close to 100% between <em>mpk4, cpr5</em>, the MKS1 over-expressor, and pathogen or elicitor-treated plants. In contrast, transgenic plants over-expressing the NahG salicylate hydroxylase, which degrades salicylate to catechol <a href="#pone.0000676-Gaffney1">[24]</a>, <a href="#pone.0000676-BuchananWollaston1">[25]</a>, had an inverted response (98% dissimilarity). This very strong association between <em>mpk4</em> and <em>NahG</em> transgenics confirms the set of genes that are required for <em>mpk4</em>- and salicylate-dependent systemic acquired resistance <a href="#pone.0000676-Petersen1">[11]</a>–<a href="#pone.0000676-Brodersen1">[13]</a>.</p>
+<div class="figure" id="pone-0000676-g003"><div class="img"><a name="pone-0000676-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Bar plot of gene expression congruence and dissimilarity.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>The response overlap between <em>mpk4</em> and selected experimental factors are shown. The dark and light areas of the bars indicate congruent and dissimilar gene expression between <em>mpk4</em> and an experimental factor, respectively.</p>
+<span>doi:10.1371/journal.pone.0000676.g003</span></div><a id="article1.body1.sec2.sec2.p7" name="article1.body1.sec2.sec2.p7"></a><p>In addition to the experimental factors described above, the <em>Arabidopsis</em> compendium included 58 organ- or tissue-specific factors. As might be expected, tissues as diverse as pollen, roots or leaves exhibit very large differences in gene expression, and it is therefore an analytical challenge to understand the gene expression profiles which account for their developmental differences and similarities. However, FARO found that, of the 58 tissue-specific factors, the 16 that addressed leaf sections, types or stages all associated to <em>mpk4</em> with rank 22 or higher in respect to other tissues (Supporting Information <a href="#pone.0000676.s004">Table S1</a>). This is in keeping with the leaf-specific expression of MPK4 primarily in guard and vascular cells <a href="#pone.0000676-Petersen1">[11]</a>. FARO also found that <em>mpk4</em> associated to seedlings at the post-transition and prior-to-bolting stages, both developmental periods in which salicylate levels increase <a href="#pone.0000676-Martinez1">[26]</a>. In addition, the only other tissue with significant associations to <em>mpk4</em> was sepals which are photosynthetic and resemble leaves.</p>
+
+
+<h4>Novel associations to <em>mpk4</em></h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>The FARO described above confirms what we and others have documented about MPK4. However, FARO also identified two other associations to <em>mpk4</em>. The first, largely congruent association was to treatment with the protein synthesis inhibitor cycloheximide (CHX). The significance of this association may be consistent with general effects of CHX and the phenotype of <em>mpk4</em>. mRNA accumulation in response to CHX often indicates that normal mRNA levels are negatively regulated at the transcriptional and/or post-transcriptional (mRNA stability) levels. Thus, loss of a labile repressor leads to accumulation of its target mRNA(s). Similarly, we previously showed that loss of MPK4 activity leads to derepression of a set of pathogenesis-related genes whose basal expression levels may normally be repressed via plant-specific WRKY transcriptions factors <a href="#pone.0000676-Andreasson1">[12]</a>. Thus, it is likely that CHX treatment would induce the accumulation of certain mRNAs that accumulate ectopically in <em>mpk4</em>. We note also that while <em>mpk4</em> mRNA levels do not change in response to CHX <a href="#pone.0000676-Zimmermann1">[27]</a>, the mRNA of <em>MKS1</em>, which encodes an MPK4 substrate <a href="#pone.0000676-Andreasson1">[12]</a> whose over-expression is closely associated with <em>mpk4</em> by FARO (<a href="#pone-0000676-g002">Figure 2</a>), accumulates strongly (30-fold) as a result of CHX treatment (NASCArray 183). This suggests that steady state levels of MKS1 mRNA are negatively regulated, possibly by feedback from the signaling pathway including MPK4 and MKS1.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>The second novel association identified by FARO was between <em>mpk4</em> and plants over-expressing the C-terminal, DNA-binding domain of the <em>Arabidopsis</em> response regulator 21 (ARR21) driven by the cauliflower mosaic virus 35S promoter (ARR21C <a href="#pone.0000676-Kiba1">[28]</a>; NASCArray 183). ARR21 is a type B ARR with an N-terminal receiver domain thought to regulate the activity of its C-terminal GARP DNA-binding domain. This suggests that ARR21 is or may become nuclear localized, as are both MPK4 and its substrate MKS1 <a href="#pone.0000676-Mizuno1">[29]</a>. In contrast to the <em>arr21</em> knockout mutant, for which no phenotype was detected <a href="#pone.0000676-Hork1">[30]</a>, over-expression of the constitutively active ARR21C protein results in abnormal development with tissues resembling <em>in vitro</em> callus <a href="#pone.0000676-Tajima1">[31]</a>. FARO of ARR21C against the compendium indicated strong associations between ARR21C and zeatin treatments, circadian rhythm, over-expression of the close homolog ARR22 <a href="#pone.0000676-Kiba1">[28]</a>, <a href="#pone.0000676-Mizuno1">[29]</a>, tissue-specific stress responses, as well as inoculation with the oomycete pathogen <em>Phytophthora infestans.</em> While this is revealing, a 2<sup>nd</sup> order FARO, in the form of an analysis for overlap between the <em>mpk4-arr21</em> overlap and the compendium, characterized the <em>mpk4-arr21</em> association as predominantly related to tissue-specific stress and/or response to <em>P. infestans</em> infection.</p>
+
+
+<h4>Multi-factor FARO</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>FARO further indicated that MPK4 may be involved in abiotic stress response(s). This was evident from strong associations to a series of stress responses in which organ- or tissue- specificity was a factor (root vs. shoot, NASCArray 137-146). Thus, the overlapping genes demonstrated a strong tendency to respond to stress predominantly in shoots (<a href="#pone-0000676-g004">Figure 4</a>).</p>
+<div class="figure" id="pone-0000676-g004"><div class="img"><a name="pone-0000676-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Pie charts showing the fractions of <em>mpk4</em> responding genes that are differentially expressed in shoot, root or both in response to osmotic, salt, cold or UV-B stress.</span></strong></p><span>doi:10.1371/journal.pone.0000676.g004</span></div><a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>This ‘single factor against all’ FARO analysis failed to clearly distinguish between different tissue-specific stress-responses. However, FARO between all 241 factors, creating a 241×241 matrix of associations, revealed a group of tissue-specific stress factors with an extraordinarily large overlap, similar to what has been described as a core environmental stress response in yeast <a href="#pone.0000676-Gasch1">[32]</a>. More specifically, collecting the 1209 most significantly differentially expressed genes (for details, see <a href="#s4">Methods</a> and Supporting Information <a href="#pone.0000676.s002">Text S2</a>) from each of the nine stress treatments (cold, drought, genotoxic, heat, osmotic, oxidative, salt, UV-B radiation and wounding) resulted in only 1858 different genes. Of these, 657 responded to all nine stress conditions. Interestingly, the response direction of the 657 genes was not conserved between the stress types, which only exhibited an average of 61% congruence (<a href="#pone-0000676-g005">Figure 5A</a>). Interestingly, this observation predicts that plants are unable to provide an adequate response to some combinations of stress. More specifically, clustering of the nine stress conditions, based on congruence of the responding genes, suggests which stress responses are compatible with each other, and which are not. Hence, stress responses that are related may interact positively, while distantly related responses may interact negatively. <a href="#pone-0000676-g005">Figure 5B</a> shows known interactions between agronomically important abiotic stresses. Of these interactions, only the positive interaction between ozone (oxidative stress) and UV radiation may not be explained by the clustering of the stress responses. Such interactions may provide a molecular basis to explain what farmers and breeders have long recognized: combinations of stresses in the field cause the greatest losses to crop productivity worldwide <a href="#pone.0000676-Mittler1">[33]</a>.</p>
+<div class="figure" id="pone-0000676-g005"><div class="img"><a name="pone-0000676-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Tissue-specific abiotic stress.</span></strong></p><a id="article1.body1.sec2.sec4.fig2.caption1.p1" name="article1.body1.sec2.sec4.fig2.caption1.p1"></a><p>A) Expression profiles of the 657 tissue-specific stress response genes for nine different stress conditions. Color bar values correspond to log<sub>2</sub>-fold changes of gene expression values for stress versus controls. The clustering shown is based on congruence between the stress responses. Vertical lines indicate main groups borders. B) Agriculturally important stress combinations (adapted from <a href="#pone.0000676-Mittler1">[33]</a>. Different combinations of abiotic stresses are presented in a matrix to demonstrate potential interactions with agronomic implications. Different interactions are color-coded to indicate potential negative (green, enhanced damage or lethality due to the stress combination) or potential positive (blue, cross-protection due to stress combination) effects. Black borders surround stress types with congruent response (main groups from 5A). Red border surrounds the only inconsistency between the grouping and known interaction (UV vs. Oxidative stress). C) Box plot of the expression profile of the 222 genes that are differentially expressed under all nine tissue-specific stress conditions and in the <em>mpk4</em> mutant. Notches indicate 95% confidence interval for the median and whiskers two standard deviations.</p>
+<span>doi:10.1371/journal.pone.0000676.g005</span></div><a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>The extensive overlap between the tissue-specific stress responses further explains why <em>mpk4</em> associated to all tissue-specific stress treatments rather than simply to a subset of them. However, the overlap between <em>mpk4</em> and all nine stress responses (222 genes), was not a random subset of the stress genes as these 222 genes displayed very similar profiles across the nine stress treatments. To establish this, we randomly sampled 222 genes from the stress response set of genes and calculated the average inter-gene expression profile correlation. This was repeated 10,000 times, and resulted in average correlations ranging from 0.18 to 0.34. In contrast, the subset overlapping with the <em>mpk4</em> response had an average correlation of 0.49 (P value ≪ 0.0001). The expression responses of these 222 genes across the nine stress conditions and in the <em>mpk4</em> knockout are shown in <a href="#pone-0000676-g005">Figure 5C</a>. These profiles suggest that the <em>mpk4</em> knockout may be hyposensitive to osmotic <a href="#pone.0000676-Droillard1">[14]</a>, cold, salt <a href="#pone.0000676-Teige1">[15]</a> and UV-B stress yet either be hypersensitive to heat stress or partly recover from the mutant phenotype under heat stress. The latter will depend on the epistatic relationship between heat response and <em>mpk4</em>.</p>
+
+
+<h4>FARO has cross-platform potential</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Exploiting the vast gene expression data in public repositories is often complicated by low cross-platform comparability. To investigate whether the FARO approach could include data generated on different platforms, gene expression responses were extracted from AFGC cDNA studies and compared to our compendium of Arabidopsis gene expression responses based on Affymetrix ATH1 GeneChip data. Genes were linked between the ATH1 GeneChip and the cDNA arrays using locus tags (<a href="http://www.Affymetrix.com">www.Affymetrix.com</a>), and only genes present on both platforms were compared. Most of these response-overlaps demonstrated good compatibility. More specifically, the cDNA expression profiles of ‘white light treated’ Colombia and Landsberg wild type Arabidopsis plants (NASCArray 250) were highly associated (rank 4 and 3, respectively) with the ‘4 hours white light’ compendium response (NASCArray 124). Moreover, among the top 10 ranking associations to the response compendium, half of the associations were to responses from light treatments, including blue and red light. In addition, the sulfur deficiency cDNA study (NASCArray 271) was highly associated with the corresponding sulfate limitation compendium response (rank 4; NASCArray 171), and the Phytophthora Infestans inoculation study (NASCArray 266) was highly associated with the corresponding compendium response phenotype (rank 6; NASCArray 123). Moreover, cytokinin and gibberellin cDNA studies (NASCArray 288 and 267) were moderately associated (rank 11) with corresponding compendium responses - zeatin and gibberellin (NASCArray 181 and 184). Finally, a cDNA study of ethylene response (NASCArray 227) was highly associated with the compendium response derived from mutants in the EIN2 gene in the ethylene pathway (rank 7 among compendium profile; NASCArray 52). Note that, this last significant overlap was obtained despite the fact that the cDNA array platform only contained ~2000 genes.</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p>Of nine cDNA experimental factors investigated (IAA induction, NASCArray 197 and NahG vs. WT, NASCArray 312, not shown), the average association rank to a similar compendium experimental factor was 8.2 out of 243 possible factors. In spite of difficulties in linking gene expression information across platforms, quantitative differences in the data from different platforms and the fact that the experiments do not always address identical experimental factors, the above results demonstrate the potential of the FARO approach in bridging between the platforms.</p>
+
+
+<h4>Benchmarking on the Rosetta Yeast compendium</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>To validate the performance of FARO in a more quantitative fashion, two benchmarking datasets were created from the Rosetta compendium of yeast gene expression profiles <a href="#pone.0000676-Hughes1">[4]</a>. The Rosetta dataset consists of microarray gene expression data for many yeast deletion mutants and some chemical treatments. Mutants within the Rosetta compendium may be associated by common KEGG category (71 mutant experiments) or by protein-protein interactions annotated in MIPS PPI (30 mutant experiments).</p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>Within each set, the strength of all associations was estimated by response overlaps. For the KEGG set, 39 correct associations were found that were stronger than any false association. Associations evaluated by use of the manually curated MIPS protein interaction annotations illustrated that the performance on this dataset was even better than for the KEGG dataset (<a href="#pone-0000676-g006">Figure 6a and b</a>). Thus, an extremely high initial true positive to false positive rate was observed in spite of the relatively low number of true associations in the MIPS set (MIPS: 35 true associations out of 436 possible vs. 619 true associations out of 2485 possible in the KEGG dataset). Moreover, the eight chemical treatment experiments included in the Rosetta compendium consistently associated most strongly to mutants in the pathway(s) that the treatments would be expected to affect (Supporting Information <a href="#pone.0000676.s003">Text S3</a>). FARO therefore enriched for true associations. Furthermore, a comparative analysis showed that FARO was superior to a conventional co-expression analysis or a ranking based on the OrderedList Bioconductor package <a href="#pone.0000676-Lottaz1">[34]</a> evaluated against corresponding associations in KEGG (<a href="#pone-0000676-g006">Figure 6b</a>).</p>
+<div class="figure" id="pone-0000676-g006"><div class="img"><a name="pone-0000676-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000676" data-uri="info:doi/10.1371/journal.pone.0000676.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000676.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000676.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000676.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000676.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>FARO benchmarking.</span></strong></p><a id="article1.body1.sec2.sec6.fig1.caption1.p1" name="article1.body1.sec2.sec6.fig1.caption1.p1"></a><p>(a) True positive (TPR) and false positive rate (FPR) as a function of the relative FARO score for response overlap (−log10 to the P-value; Fishers exact test). (b) ROC <a href="#pone.0000676-Swets1">[44]</a> curves of FARO performance.</p>
+<span>doi:10.1371/journal.pone.0000676.g006</span></div>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Functional Association by Response Overlap (FARO) is a robust and conceptually straightforward approach for extracting information on the relatedness of experimental factors (mutants, treatment, experimental condition, etc.) in microarray gene expression experiments made in different laboratories. This enables novel uses of microarray data repositories and offers an advantage over existing analytical methods. We used several methods to appraise the robustness, simplicity and interpretability of FARO.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>First, we used FARO to characterize the well-studied plant regulatory mutant <em>mpk4</em>. By comparing the result of <em>mpk4</em> versus wild type gene expression to a compendium of <em>Arabidopsis</em> gene expression responses, we identified associations to a meaningful subset of experimental factors within the compendium. This set of <em>mpk4</em> associated factors indicates that the mutant is involved in responses to both virulent and avirulent pathogens, and that the mutant has an expression profile like that of wild type plants treated with the hormone salicylic acid. FARO also indicated that the <em>mpk4</em> mutant exhibits a gene expression profile that resembles a shoot-specific stress response. This is in keeping with the finding that mutation or over-expression of putative upstream kinases, which can activate MPK4, are affected in responses to abiotic stresses <a href="#pone.0000676-Teige1">[15]</a>. The subset of strong <em>mpk4</em> associations also contained a series of mutants or treatments affecting responses to the plant hormones ethylene and jasmonic acid that are important for defense regulation. Moreover, a multi-factor FARO analysis indicates that tissue specific responses to various abiotic stress conditions have a very large overlap in terms of differentially expressed genes, but that the response direction varies between the stresses. Clustering the stress conditions based on gene expression congruence predicts the effect and severity of stress combinations, in line with agricultural observations <a href="#pone.0000676-Mittler1">[33]</a>. Hence, FARO can be extended to overview multiple factors. In addition, FARO identified two novel associations between mpk4 and cycloheximide (CHX) treatment and to over-expression of the C-terminal domain of the response regulator ARR21. In short, this characterization of the <em>mpk4</em> regulatory mutant was consistent with its previously reported characteristics and with broader knowledge in plant biology. Importantly, the ability of FARO to confirm and extend much of what is known about <em>mpk4</em> indicates that FARO will be a powerful tool for elucidating functional associations to more poorly characterized mutants.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Second, we extended this analysis to include the comparison of a series of cDNA microarray studies to our Affymetrix ATH1 GeneChip based Arabidopsis Compendium. This indicated that FARO is also applicable for cross-platform analyses, even including smaller arrayed gene sets.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Third, we used the Rosetta Yeast compendium <a href="#pone.0000676-Hughes1">[4]</a> to produce a more quantitative benchmarking of FARO. These analyses demonstrated that FARO had a remarkable ability to re-extract the groupings and protein interactions specified in both the KEGG and MIPS annotations. In this respect, FARO was clearly superior to the commonly applied method of co-expression analysis for identifying genes co-regulated in response to different experimental factors. Moreover, as an alternative to using the overlap size, several statistical approaches have been proposed for comparing lists of genes from microarray experiments <a href="#pone.0000676-Lottaz1">[34]</a>, <a href="#pone.0000676-Blangiardo1">[35]</a>. These methods use the rank of the genes in the respective lists to identify a common gene set and estimate the significance of this by permutations. However, we show that the much simpler FARO method performed significantly better than the OrderedList method (Lottaz et al., 2006) in identifying functional associations (<a href="#pone-0000676-g006">Figure 6</a>).</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>For all of the analyses described, FARO demonstrated very high robustness toward experimental noise. Much of this robustness is due to the indirect comparison of individual experimental results. That is, the FARO approach restricts direct comparisons between microarrays to within single experiments or studies, and only the outcomes of the statistical analyses in the form of differentially expressed genes are compared between experiments. Hence, FARO benefits from the care taken by experimentalists to ensure comparability within their individual experimental designs. In addition, the extraction of differentially expressed genes serves as a feature selection step, enriching for genes that are characteristic for the given experimental factor. This reduces the amount of noise in comparisons between factors and consequently contributes significant robustness of the analysis.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>Weakly designed or poorly conducted experiments may result in poorly defined lists of responding genes and tend to result in a smaller overlap than otherwise expected for truly associated factors. Thus, a poor quality experiment may result in false negatives, but is unlikely to result in false positive associations. Only experiments with undescribed and/or uncontrolled confounding experimental factors may result in highly significant, misleading associations. Similarly, the FARO approach may not be able to show strong associations to an experimental factor that only results in expression changes of a few genes. The probable cut-off in terms of top ranking genes used may need to be adjusted for such factors.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>While clustering schemes based on whole-genome profile comparisons may also provide functional predictions for individual genes <a href="#pone.0000676-Wu1">[8]</a>, <a href="#pone.0000676-Tavazoie1">[36]</a>, none of these schemes are as easily interpretable as FARO. Although the interpretation of a FARO requires an understanding of the biological system analyzed, FARO offers an advantage over more abstract methods since FARO results may be further dissected into the individual genes that constitute the overlap. Thus, interpretations of FARO results can be investigated by any systematic analysis that may be applied to the list of overlapping response genes. Examples are GO-term over-representation, chromosomal location bias, or even 2<sup>nd</sup> order FARO analyses. Consequently, the annotation of the overlapping genes may directly facilitate an interpretation of the functional association. Moreover, the congruence or dissimilarity in response directions of the overlapping genes may clarify relationships indicated by the association.</p>
+<a id="article1.body1.sec3.p8" name="article1.body1.sec3.p8"></a><p>The results obtained here for two model organisms, <em>Arabidopsis</em> and yeast, indicate the usefulness of our method for exploiting available microarray data for deriving functional associations. Given the amount of public microarray data, the applications for this method may be extended to the characterization of other species, including pathogens and humans. For example, the same approach might be useful for associating cancer gene expression response phenotypes to a compendium of cancer responses and cancer treatment responses for diagnostic purposes. Consequently, this study, together with that of Lamb et al. <a href="#pone.0000676-Lamb1">[10]</a>, points out the multitude of issues that can be addressed by associations between transcriptional responses. Furthermore, we have benchmarked the inherent sensitivity and robustness of deriving associations from such responses. We further note that while FARO is conceptually simpler than the method of Lamb <em>et al.</em> <a href="#pone.0000676-Lamb1">[10]</a>, FARO is able to associate factors not related by a congruent or dissimilar response, but only by the mere overlap in responding genes. The important relations found between abiotic stress responses in Arabidopsis exemplify this.</p>
+<a id="article1.body1.sec3.p9" name="article1.body1.sec3.p9"></a><p>Apart from being more powerful, an advantage of FARO over approaches utilizing co-expression measurements is the ability of FARO to associate not only genes or proteins, but any type of factors that may be experimentally addressed, including drug treatments and disease stages. Moreover, associations between analyzed experimental factors may be used to reveal clusters of factors in a functional association network that may be integrated with other data sources. Consequently, FARO enables exogenous factors to be associated directly to genotypes and as such unites bottom-up and top-down analytical approaches in a single association scheme.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Methods"></a><h3>Methods</h3>
+<h4><em>Arabidopsis</em> Compendium of Gene Expression Responses</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>The Nottingham <em>Arabidopsis</em> Stock Center (NASC) compendium of global expression data (<a href="http://affymetrix.arabidopsis.info/">http://affymetrix.arabidopsis.info/</a>) is a repository of microarray gene expression data from numerous studies <a href="#pone.0000676-Craigon1">[37]</a>. From this repository, we selected the AffyWatch II and III collection, including data from the AtGenExpress consortium and 29 focused studies from various laboratories as well as three of our own studies: the MAP kinase 4 (<em>mpk4</em>) knockout mutant <a href="#pone.0000676-Brodersen1">[13]</a>, the MAP kinase 4 substrate 1 (MKS1) over-expressor <a href="#pone.0000676-Andreasson1">[12]</a>, and the ethylene constitutive triple response 1 mutant (<em>ctr1</em>) <a href="#pone.0000676-Brodersen1">[13]</a>, <a href="#pone.0000676-Kieber1">[38]</a>. From the Arabidopsis Functional Genomics Consortium (AFGC) microarray project data collection, we also selected six cDNA studies for cross-platform compatibility benchmarking. A comprehensive list of the studies and their experimental factors is provided in Supporting Information <a href="#pone.0000676.s004">Table S1</a>. The compendium can be downloaded from: <a href="http://www.cbs.dtu.dk/databases/PlantExpr/">www.cbs.dtu.dk/databases/PlantExpr/</a></p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>Experimental factors were manually extracted from the description files, and each study was analyzed separately with regard to the experimental factors in its design. Microarray data was pre-processed by RMA <a href="#pone.0000676-Irizarry1">[39]</a>, <a href="#pone.0000676-Irizarry2">[40]</a>. Appropriate statistical tests (T-test, ANOVA or Fourier analysis) were used to extract lists of genes ranked by their significance of differential expression for the 241 compendium factors as well as for the <em>mpk4</em> factor. In total, more than 1700 microarray experiments were analysed.</p>
+
+
+<h4>KEGG and MIPS</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Two benchmarking sets were created by extracting mutants experiments that can be associated to other mutant experiments, within the Rosetta Yeast Expression Profile Compendium <a href="#pone.0000676-Hughes1">[4]</a>, by common annotation in the Kyoto Encyclopedia of Genes and Genomes (KEGG: <a href="http://www.genome.jp/kegg/">http://www.genome.jp/kegg/</a>), or by protein-protein interactions annotated in MIPS PPI (from the manually curated, comprehensive <em>Saccharomyces cerevisiae</em> protein-protein interaction database <a href="http://mips.gsf.de/">http://mips.gsf.de/</a>). These sets respectively comprised 71 and 30 mutant experiments. The KEGG category cell cycle was assigned to six additional genes recently found to be involved in yeast cell cycle <a href="#pone.0000676-deLichtenberg1">[41]</a>. For the KEGG dataset, 619 proteins were associated by common KEGG category, among 2485 possible associations between mutants. For the MIPS dataset, 35 associations by MIPS interactions were present among 435 possible associations between mutants.</p>
+
+
+<h4>Statistical Significance</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>The statistical significance of the response overlap, in terms of overlap in differentially expressed genes, was estimated using Fisher's exact test <a href="#pone.0000676-Fisher1">[18]</a>. The statistical significance of congruence in the up or down regulation of overlapping genes was determined using an exact test in the binomial distribution <a href="#pone.0000676-Conover1">[42]</a>, <a href="#pone.0000676-Hollander1">[43]</a>, where the hypothesized probability of success was fixed at 0.5.</p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>With regard to the optimal number of top ranking genes to include in a comparison between experimental factors, we found it optimal to include genes that ranked higher than the median number of significant genes in the compendium studies at a significance level lower than 0.05. While the inclusion of an increasing number of response-specific genes will strengthen a true response overlap signature, including too many genes may disturb the expression associations. Thus, the 1209 most significantly differentially expressed genes were used for the <em>Arabidopsis</em> compendium, and the 57 and 170 most significantly differentially expressed genes were used for the KEGG and MIPS benchmarking datasets, respectively. Additional considerations regarding the number of genes to include in a FARO are discussed in Supporting Information <a href="#pone.0000676.s002">Text S2</a>.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000676"></div><a name="pone.0000676.s001" id="pone.0000676.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000676.s001">Text S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">mpk4 is epistatic to ctr1.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000676.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.07 MB DOC)</p>
+<a name="pone.0000676.s002" id="pone.0000676.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000676.s002">Text S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Significant genes in a FARO analysis.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000676.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.69 MB DOC)</p>
+<a name="pone.0000676.s003" id="pone.0000676.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000676.s003">Text S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Treatment experiments in the Rosetta Yeast compendium.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000676.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.02 MB DOC)</p>
+<a name="pone.0000676.s004" id="pone.0000676.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000676.s004">Table S1. </a></strong></p><p class="siDoi">doi:10.1371/journal.pone.0000676.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="postSiDOI">(0.13 MB XLS)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>The authors wish to thank Søren Brunak (CBS), Lars Juhl Jensen (EMBL) and Anders Gorm Pedersen (CBS) for critical reading of the manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: HN. Analyzed the data: HN HW. Contributed reagents/materials/analysis tools: HN. Wrote the paper: HN HW JM.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000676-Shi1" id="pone.0000676-Shi1"></a>Shi L, Reid LH, Jones WD, Shippy R, Warrington JA, et al.  (2006) The MicroArray Quality Control (MAQC) project shows inter- and intraplatform reproducibility of gene expression measurements. Nat Biotechnol  24: 1151–1161.  <ul class="find" data-citedArticleID="971678" data-doi="10.1038/nbt1239"><li><a href="http://dx.doi.org/10.1038/nbt1239" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+MicroArray+Quality+Control+%28MAQC%29+project+shows+inter-+and+intraplatform+reproducibility+of+gene+expression+measurements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+MicroArray+Quality+Control+%28MAQC%29+project+shows+inter-+and+intraplatform+reproducibility+of+gene+expression+measurements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000676-Marshall1" id="pone.0000676-Marshall1"></a>Marshall E (2004) Getting the noise out of gene arrays. Science  306: 630–631.  <ul class="find" data-citedArticleID="971664" data-doi="10.1126/science.306.5696.630"><li><a href="http://dx.doi.org/10.1126/science.306.5696.630" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Getting+the+noise+out+of+gene+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Getting+the+noise+out+of+gene+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000676-Miklos1" id="pone.0000676-Miklos1"></a>Miklos GL, Maleszka R (2004) Microarray reality checks in the context of a complex disease. Nat Biotechnol  22: 615–621.  <ul class="find" data-citedArticleID="971670" data-doi="10.1038/nbt965"><li><a href="http://dx.doi.org/10.1038/nbt965" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+reality+checks+in+the+context+of+a+complex+disease." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+reality+checks+in+the+context+of+a+complex+disease.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000676-Hughes1" id="pone.0000676-Hughes1"></a>Hughes TR, Marton MJ, Jones AR, Roberts CJ, Stoughton R, et al.  (2000) Functional discovery via a compendium of expression profiles. Cell  102: 109–126.  <ul class="find" data-citedArticleID="971646" data-doi="10.1016/s0092-8674(00)00015-5"><li><a href="http://dx.doi.org/10.1016/s0092-8674(00)00015-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+discovery+via+a+compendium+of+expression+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+discovery+via+a+compendium+of+expression+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000676-Lee1" id="pone.0000676-Lee1"></a>Lee HK, Hsu AK, Sajdak J, Qin J, Pavlidis P (2004) Coexpression analysis of human genes across many microarray data sets. Genome Res  14: 1085–1094.  <ul class="find" data-citedArticleID="971660" data-doi="10.1101/gr.1910904"><li><a href="http://dx.doi.org/10.1101/gr.1910904" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Coexpression+analysis+of+human+genes+across+many+microarray+data+sets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Coexpression+analysis+of+human+genes+across+many+microarray+data+sets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000676-Carlson1" id="pone.0000676-Carlson1"></a>Carlson MR, Zhang B, Fang Z, Mischel PS, Horvath S, et al.  (2006) Gene connectivity, function, and sequence conservation: predictions from modular yeast co-expression networks. BMC Genomics  7: 40.  <ul class="find" data-citedArticleID="971626"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Gene+connectivity%2C+function%2C+and+sequence+conservation%3A+predictions+from+modular+yeast+co-expression+networks.&amp;auth=&amp;atitle=Gene+connectivity%2C+function%2C+and+sequence+conservation%3A+predictions+from+modular+yeast+co-expression+networks." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+connectivity%2C+function%2C+and+sequence+conservation%3A+predictions+from+modular+yeast+co-expression+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+connectivity%2C+function%2C+and+sequence+conservation%3A+predictions+from+modular+yeast+co-expression+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000676-Zhang1" id="pone.0000676-Zhang1"></a>Zhang W, Morris QD, Chang R, Shai O, Bakowski MA, et al.  (2004) The functional landscape of mouse gene expression. J Biol  3: 21.  <ul class="find" data-citedArticleID="971694"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+functional+landscape+of+mouse+gene+expression.&amp;auth=&amp;atitle=The+functional+landscape+of+mouse+gene+expression." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+functional+landscape+of+mouse+gene+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+functional+landscape+of+mouse+gene+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000676-Wu1" id="pone.0000676-Wu1"></a>Wu LF, Hughes TR, Davierwala AP, Robinson MD, Stoughton R, et al.  (2002) Large-scale prediction of <em>Saccharomyces cerevisiae</em> gene function using overlapping transcriptional clusters. Nat Genet  31: 255–265.  <ul class="find" data-citedArticleID="971692" data-doi="10.1038/ng906"><li><a href="http://dx.doi.org/10.1038/ng906" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Large-scale+prediction+of+Saccharomyces+cerevisiae+gene+function+using+overlapping+transcriptional+clusters." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Large-scale+prediction+of+Saccharomyces+cerevisiae+gene+function+using+overlapping+transcriptional+clusters.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000676-Huang1" id="pone.0000676-Huang1"></a>Huang D, Pan W (2006) Incorporating biological knowledge into distance-based clustering analysis of microarray gene expression data. Bioinformatics  22: 1259–1268.  <ul class="find" data-citedArticleID="971644" data-doi="10.1093/bioinformatics/btl065"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl065" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Incorporating+biological+knowledge+into+distance-based+clustering+analysis+of+microarray+gene+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Incorporating+biological+knowledge+into+distance-based+clustering+analysis+of+microarray+gene+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000676-Lamb1" id="pone.0000676-Lamb1"></a>Lamb J, Crawford ED, Peck D, Modell JW, Blat IC, et al.  (2006) The Connectivity Map: using gene-expression signatures to connect small molecules, genes, and disease. Science  313: 1929–1935.  <ul class="find" data-citedArticleID="971658" data-doi="10.1126/science.1132939"><li><a href="http://dx.doi.org/10.1126/science.1132939" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Connectivity+Map%3A+using+gene-expression+signatures+to+connect+small+molecules%2C+genes%2C+and+disease." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Connectivity+Map%3A+using+gene-expression+signatures+to+connect+small+molecules%2C+genes%2C+and+disease.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000676-Petersen1" id="pone.0000676-Petersen1"></a>Petersen M, Brodersen P, Naested H, Andreasson E, Lindhart U, et al.  (2000) <em>Arabidopsis</em> map kinase 4 negatively regulates systemic acquired resistance. Cell  103: 1111–1120.  <ul class="find" data-citedArticleID="971676" data-doi="10.1016/s0092-8674(00)00213-0"><li><a href="http://dx.doi.org/10.1016/s0092-8674(00)00213-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Arabidopsis+map+kinase+4+negatively+regulates+systemic+acquired+resistance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Arabidopsis+map+kinase+4+negatively+regulates+systemic+acquired+resistance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000676-Andreasson1" id="pone.0000676-Andreasson1"></a>Andreasson E, Jenkins T, Brodersen P, Thorgrimsen S, Petersen NH, et al.  (2005) The MAP kinase substrate MKS1 is a regulator of plant defense responses. Embo J  24: 2579–2589.  <ul class="find" data-citedArticleID="971612" data-doi="10.1038/sj.emboj.7600737"><li><a href="http://dx.doi.org/10.1038/sj.emboj.7600737" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+MAP+kinase+substrate+MKS1+is+a+regulator+of+plant+defense+responses." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+MAP+kinase+substrate+MKS1+is+a+regulator+of+plant+defense+responses.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000676-Brodersen1" id="pone.0000676-Brodersen1"></a>Brodersen P, Petersen M, Bjørn Nielsen H, Zhu S, Newman MA, et al.  (2006) <em>Arabidopsis</em> MAP kinase 4 regulates salicylic acid- and jasmonic acid/ethylene-dependent responses via EDS1 and PAD4. Plant J.   <ul class="find" data-citedArticleID="971620" data-doi="10.1111/j.1365-313x.2006.02806.x"><li><a href="http://dx.doi.org/10.1111/j.1365-313x.2006.02806.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Arabidopsis+MAP+kinase+4+regulates+salicylic+acid-+and+jasmonic+acid%2Fethylene-dependent+responses+via+EDS1+and+PAD4." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Arabidopsis+MAP+kinase+4+regulates+salicylic+acid-+and+jasmonic+acid%2Fethylene-dependent+responses+via+EDS1+and+PAD4.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000676-Droillard1" id="pone.0000676-Droillard1"></a>Droillard MJ, Boudsocq M, Barbier-Brygoo H, Lauriere C (2004) Involvement of MPK4 in osmotic stress response pathways in cell suspensions and plantlets of <em>Arabidopsis thaliana</em>: activation by hypoosmolarity and negative role in hyperosmolarity tolerance. FEBS Lett  574: 42–48.  <ul class="find" data-citedArticleID="971632" data-doi="10.1016/j.febslet.2004.08.001"><li><a href="http://dx.doi.org/10.1016/j.febslet.2004.08.001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Involvement+of+MPK4+in+osmotic+stress+response+pathways+in+cell+suspensions+and+plantlets+of+Arabidopsis+thaliana%3A+activation+by+hypoosmolarity+and+negative+role+in+hyperosmolarity+tolerance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Involvement+of+MPK4+in+osmotic+stress+response+pathways+in+cell+suspensions+and+plantlets+of+Arabidopsis+thaliana%3A+activation+by+hypoosmolarity+and+negative+role+in+hyperosmolarity+tolerance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000676-Teige1" id="pone.0000676-Teige1"></a>Teige M, Scheikl E, Eulgem T, Doczi R, Ichimura K, et al.  (2004) The MKK2 pathway mediates cold and salt stress signaling in <em>Arabidopsis</em>. Mol Cell  15: 141–152.  <ul class="find" data-citedArticleID="971686" data-doi="10.1016/j.molcel.2004.06.023"><li><a href="http://dx.doi.org/10.1016/j.molcel.2004.06.023" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+MKK2+pathway+mediates+cold+and+salt+stress+signaling+in+Arabidopsis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+MKK2+pathway+mediates+cold+and+salt+stress+signaling+in+Arabidopsis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000676-Kanehisa1" id="pone.0000676-Kanehisa1"></a>Kanehisa M, Goto S, Kawashima S, Okuno Y, Hattori M (2004) The KEGG resource for deciphering the genome. Nucleic Acids Res  32: D277–280.  <ul class="find" data-citedArticleID="971652" data-doi="10.1093/nar/gkh063"><li><a href="http://dx.doi.org/10.1093/nar/gkh063" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+KEGG+resource+for+deciphering+the+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+KEGG+resource+for+deciphering+the+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000676-Mewes1" id="pone.0000676-Mewes1"></a>Mewes HW, Frishman D, Guldener U, Mannhaupt G, Mayer K, et al.  (2002) MIPS: a database for genomes and protein sequences. Nucleic Acids Res  30: 31–34.  <ul class="find" data-citedArticleID="971668" data-doi="10.1093/nar/30.1.31"><li><a href="http://dx.doi.org/10.1093/nar/30.1.31" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MIPS%3A+a+database+for+genomes+and+protein+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MIPS%3A+a+database+for+genomes+and+protein+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000676-Fisher1" id="pone.0000676-Fisher1"></a>Fisher RA (1922) On the interpretation of χ<sup>2</sup> from contingency tables, and the calculation of P. Journal of the Royal Statistical Society  85: 87–94.  <ul class="find" data-citedArticleID="971634" data-doi="10.2307/2340521"><li><a href="http://dx.doi.org/10.2307/2340521" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+the+interpretation+of+%26%23x3c7%3B2+from+contingency+tables%2C+and+the+calculation+of+P." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+the+interpretation+of+%26%23x3c7%3B2+from+contingency+tables%2C+and+the+calculation+of+P.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000676-Thilmony1" id="pone.0000676-Thilmony1"></a>Thilmony R, Underwood W, He SY (2006) Genome-wide transcriptional analysis of the <em>Arabidopsis thaliana</em> interaction with the plant pathogen <em>Pseudomonas syringae</em> pv. tomato DC3000 and the human pathogen <em>Escherichia coli</em> O157:H7. Plant J  46: 34–53.  <ul class="find" data-citedArticleID="971688" data-doi="10.1111/j.1365-313x.2006.02725.x"><li><a href="http://dx.doi.org/10.1111/j.1365-313x.2006.02725.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+transcriptional+analysis+of+the+Arabidopsis+thaliana+interaction+with+the+plant+pathogen+Pseudomonas+syringae+pv.+tomato+DC3000+and+the+human+pathogen+Escherichia+coli+O157%3AH7." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+transcriptional+analysis+of+the+Arabidopsis+thaliana+interaction+with+the+plant+pathogen+Pseudomonas+syringae+pv.+tomato+DC3000+and+the+human+pathogen+Escherichia+coli+O157%3AH7.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000676-Cao1" id="pone.0000676-Cao1"></a>Cao H, Bowling SA, Gordon AS, Dong X (1994) Characterization of an <em>Arabidopsis</em> Mutant That Is Nonresponsive to Inducers of Systemic Acquired Resistance. Plant Cell  6: 1583–1592.  <ul class="find" data-citedArticleID="971624" data-doi="10.2307/3869945"><li><a href="http://dx.doi.org/10.2307/3869945" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Characterization+of+an+Arabidopsis+Mutant+That+Is+Nonresponsive+to+Inducers+of+Systemic+Acquired+Resistance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Characterization+of+an+Arabidopsis+Mutant+That+Is+Nonresponsive+to+Inducers+of+Systemic+Acquired+Resistance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000676-Bowling1" id="pone.0000676-Bowling1"></a>Bowling SA, Clarke JD, Liu Y, Klessig DF, Dong X (1997) The cpr5 mutant of <em>Arabidopsis</em> expresses both NPR1-dependent and NPR1-independent resistance. Plant Cell  9: 1573–1584.  <ul class="find" data-citedArticleID="971618" data-doi="10.2307/3870444"><li><a href="http://dx.doi.org/10.2307/3870444" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+cpr5+mutant+of+Arabidopsis+expresses+both+NPR1-dependent+and+NPR1-independent+resistance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+cpr5+mutant+of+Arabidopsis+expresses+both+NPR1-dependent+and+NPR1-independent+resistance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000676-VanDriessche1" id="pone.0000676-VanDriessche1"></a>Van Driessche N, Demsar J, Booth EO, Hill P, Juvan P, et al.  (2005) Epistasis analysis with global transcriptional phenotypes. Nat Genet  37: 471–477.  <ul class="find" data-citedArticleID="971690" data-doi="10.1038/ng1545"><li><a href="http://dx.doi.org/10.1038/ng1545" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Epistasis+analysis+with+global+transcriptional+phenotypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Epistasis+analysis+with+global+transcriptional+phenotypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000676-AtGenExpress1" id="pone.0000676-AtGenExpress1"></a>AtGenExpress (2006) AtGenExpress: a multinational coordinated effort to uncover the transcriptome of <em>Arabidopsis</em>.  <ul class="find" data-citedArticleID="971614"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=AtGenExpress%3A+a+multinational+coordinated+effort+to+uncover+the+transcriptome+of+Arabidopsis.&amp;auth=&amp;atitle=AtGenExpress%3A+a+multinational+coordinated+effort+to+uncover+the+transcriptome+of+Arabidopsis." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=AtGenExpress%3A+a+multinational+coordinated+effort+to+uncover+the+transcriptome+of+Arabidopsis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22AtGenExpress%3A+a+multinational+coordinated+effort+to+uncover+the+transcriptome+of+Arabidopsis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000676-Gaffney1" id="pone.0000676-Gaffney1"></a>Gaffney T, Friedrich L, Vernooij B, Negrotto D, Nye G, et al.  (1993) Requirement of salicylic acid for the induction of systemic acquired resistance. Science and Justice 754–756.  <ul class="find" data-citedArticleID="971636" data-doi="10.1126/science.261.5122.754"><li><a href="http://dx.doi.org/10.1126/science.261.5122.754" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Requirement+of+salicylic+acid+for+the+induction+of+systemic+acquired+resistance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Requirement+of+salicylic+acid+for+the+induction+of+systemic+acquired+resistance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000676-BuchananWollaston1" id="pone.0000676-BuchananWollaston1"></a>Buchanan-Wollaston V, Page T, Harrison E, Breeze E, Lim PO, et al.  (2005) Comparative transcriptome analysis reveals significant differences in gene expression and signalling pathways between developmental and dark/starvation-induced senescence in <em>Arabidopsis</em>. Plant J  42: 567–585.  <ul class="find" data-citedArticleID="971622" data-doi="10.1111/j.1365-313x.2005.02399.x"><li><a href="http://dx.doi.org/10.1111/j.1365-313x.2005.02399.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+transcriptome+analysis+reveals+significant+differences+in+gene+expression+and+signalling+pathways+between+developmental+and+dark%2Fstarvation-induced+senescence+in+Arabidopsis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+transcriptome+analysis+reveals+significant+differences+in+gene+expression+and+signalling+pathways+between+developmental+and+dark%2Fstarvation-induced+senescence+in+Arabidopsis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000676-Martinez1" id="pone.0000676-Martinez1"></a>Martinez C, Pons E, Prats G, Leon J (2004) Salicylic acid regulates flowering time and links defence responses and reproductive development. Plant J  37: 209–217.  <ul class="find" data-citedArticleID="971666" data-doi="10.1046/j.1365-313x.2003.01954.x"><li><a href="http://dx.doi.org/10.1046/j.1365-313x.2003.01954.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Salicylic+acid+regulates+flowering+time+and+links+defence+responses+and+reproductive+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Salicylic+acid+regulates+flowering+time+and+links+defence+responses+and+reproductive+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000676-Zimmermann1" id="pone.0000676-Zimmermann1"></a>Zimmermann P, Hirsch-Hoffmann M, Hennig L, Gruissem W (2004) GENEVESTIGATOR. Arabidopsis microarray database and analysis toolbox. Plant Physiol  136: 2621–2632.  <ul class="find" data-citedArticleID="971696" data-doi="10.1104/pp.104.046367"><li><a href="http://dx.doi.org/10.1104/pp.104.046367" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=GENEVESTIGATOR.+Arabidopsis+microarray+database+and+analysis+toolbox." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22GENEVESTIGATOR.+Arabidopsis+microarray+database+and+analysis+toolbox.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000676-Kiba1" id="pone.0000676-Kiba1"></a>Kiba T, Naitou T, Koizumi N, Yamashino T, Sakakibara H, et al.  (2005) Combinatorial microarray analysis revealing <em>arabidopsis</em> genes implicated in cytokinin responses through the His→Asp Phosphorelay circuitry. Plant Cell Physiol  46: 339–355.  <ul class="find" data-citedArticleID="971654" data-doi="10.1093/pcp/pci033"><li><a href="http://dx.doi.org/10.1093/pcp/pci033" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Combinatorial+microarray+analysis+revealing+arabidopsis+genes+implicated+in+cytokinin+responses+through+the+His%26%23x2192%3BAsp+Phosphorelay+circuitry." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Combinatorial+microarray+analysis+revealing+arabidopsis+genes+implicated+in+cytokinin+responses+through+the+His%26%23x2192%3BAsp+Phosphorelay+circuitry.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000676-Mizuno1" id="pone.0000676-Mizuno1"></a>Mizuno T (2004) Plant response regulators implicated in signal transduction and circadian rhythm. Curr Opin Plant Biol  7: 499–505.  <ul class="find" data-citedArticleID="971674" data-doi="10.1016/j.pbi.2004.07.015"><li><a href="http://dx.doi.org/10.1016/j.pbi.2004.07.015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Plant+response+regulators+implicated+in+signal+transduction+and+circadian+rhythm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Plant+response+regulators+implicated+in+signal+transduction+and+circadian+rhythm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000676-Hork1" id="pone.0000676-Hork1"></a>Horák J, Brzobohatý B, Lexa M (2003) Molecular and Physiological Characterisation of an Insertion Mutant in the <em>ARR21</em> Putative Response Regulator Gene from <em>Arabidopsis thaliana</em>. Plant biology  5: 245–254.  <ul class="find" data-citedArticleID="971642" data-doi="10.1055/s-2003-40789"><li><a href="http://dx.doi.org/10.1055/s-2003-40789" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Molecular+and+Physiological+Characterisation+of+an+Insertion+Mutant+in+the+ARR21+Putative+Response+Regulator+Gene+from+Arabidopsis+thaliana." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Molecular+and+Physiological+Characterisation+of+an+Insertion+Mutant+in+the+ARR21+Putative+Response+Regulator+Gene+from+Arabidopsis+thaliana.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000676-Tajima1" id="pone.0000676-Tajima1"></a>Tajima Y, Imamura A, Kiba T, Amano Y, Yamashino T, et al.  (2004) Comparative studies on the type-B response regulators revealing their distinctive properties in the His-to-Asp phosphorelay signal transduction of <em>Arabidopsis thaliana</em>. Plant Cell Physiol  45: 28–39.  <ul class="find" data-citedArticleID="971682" data-doi="10.1093/pcp/pcg154"><li><a href="http://dx.doi.org/10.1093/pcp/pcg154" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+studies+on+the+type-B+response+regulators+revealing+their+distinctive+properties+in+the+His-to-Asp+phosphorelay+signal+transduction+of+Arabidopsis+thaliana." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+studies+on+the+type-B+response+regulators+revealing+their+distinctive+properties+in+the+His-to-Asp+phosphorelay+signal+transduction+of+Arabidopsis+thaliana.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000676-Gasch1" id="pone.0000676-Gasch1"></a>Gasch AP, Spellman PT, Kao CM, Carmel-Harel O, Eisen MB, et al.  (2000) Genomic expression programs in the response of yeast cells to environmental changes. Mol Biol Cell  11: 4241–4257.  <ul class="find" data-citedArticleID="971638" data-doi="10.1091/mbc.11.12.4241"><li><a href="http://dx.doi.org/10.1091/mbc.11.12.4241" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+expression+programs+in+the+response+of+yeast+cells+to+environmental+changes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+expression+programs+in+the+response+of+yeast+cells+to+environmental+changes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000676-Mittler1" id="pone.0000676-Mittler1"></a>Mittler R (2006) Abiotic stress, the field environment and stress combination. Trends Plant Sci  11: 15–19.  <ul class="find" data-citedArticleID="971672" data-doi="10.1016/j.tplants.2005.11.002"><li><a href="http://dx.doi.org/10.1016/j.tplants.2005.11.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Abiotic+stress%2C+the+field+environment+and+stress+combination." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Abiotic+stress%2C+the+field+environment+and+stress+combination.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000676-Lottaz1" id="pone.0000676-Lottaz1"></a>Lottaz C, Yang X, Scheid S, Spang R (2006) OrderedList–a bioconductor package for detecting similarity in ordered gene lists. Bioinformatics  22: 2315–2316.  <ul class="find" data-citedArticleID="971662" data-doi="10.1093/bioinformatics/btl385"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl385" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=OrderedList%26%23x2013%3Ba+bioconductor+package+for+detecting+similarity+in+ordered+gene+lists." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22OrderedList%26%23x2013%3Ba+bioconductor+package+for+detecting+similarity+in+ordered+gene+lists.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000676-Blangiardo1" id="pone.0000676-Blangiardo1"></a>Blangiardo M, Richardson S (2007) Statistical tools for synthesizing lists of differentially expressed features in related experiments. Genome Biol  8: R54.  <ul class="find" data-citedArticleID="971616" data-doi="10.1186/gb-2007-8-4-r54"><li><a href="http://dx.doi.org/10.1186/gb-2007-8-4-r54" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+tools+for+synthesizing+lists+of+differentially+expressed+features+in+related+experiments." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+tools+for+synthesizing+lists+of+differentially+expressed+features+in+related+experiments.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000676-Tavazoie1" id="pone.0000676-Tavazoie1"></a>Tavazoie S, Hughes JD, Campbell MJ, Cho RJ, Church GM (1999) Systematic determination of genetic network architecture. Nat Genet  22: 281–285.  <ul class="find" data-citedArticleID="971684" data-doi="10.1038/10343"><li><a href="http://dx.doi.org/10.1038/10343" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+determination+of+genetic+network+architecture." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+determination+of+genetic+network+architecture.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000676-Craigon1" id="pone.0000676-Craigon1"></a>Craigon DJ, James N, Okyere J, Higgins J, Jotham J, et al.  (2004) NASCArrays: a repository for microarray data generated by NASC's transcriptomics service. Nucleic Acids Res  32: D575–577.  <ul class="find" data-citedArticleID="971630" data-doi="10.1093/nar/gkh133"><li><a href="http://dx.doi.org/10.1093/nar/gkh133" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=NASCArrays%3A+a+repository+for+microarray+data+generated+by+NASC%27s+transcriptomics+service." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22NASCArrays%3A+a+repository+for+microarray+data+generated+by+NASC%27s+transcriptomics+service.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000676-Kieber1" id="pone.0000676-Kieber1"></a>Kieber JJ, Rothenberg M, Roman G, Feldmann KA, Ecker JR (1993) CTR1, a negative regulator of the ethylene response pathway in <em>Arabidopsis</em>, encodes a member of the raf family of protein kinases. Cell  72: 427–441.  <ul class="find" data-citedArticleID="971656" data-doi="10.1016/0092-8674(93)90119-b"><li><a href="http://dx.doi.org/10.1016/0092-8674(93)90119-b" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=CTR1%2C+a+negative+regulator+of+the+ethylene+response+pathway+in+Arabidopsis%2C+encodes+a+member+of+the+raf+family+of+protein+kinases." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22CTR1%2C+a+negative+regulator+of+the+ethylene+response+pathway+in+Arabidopsis%2C+encodes+a+member+of+the+raf+family+of+protein+kinases.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000676-Irizarry1" id="pone.0000676-Irizarry1"></a>Irizarry RA, Bolstad BM, Collin F, Cope LM, Hobbs B, et al.  (2003) Summaries of Affymetrix GeneChip probe level data. Nucleic Acids Res  31: e15.  <ul class="find" data-citedArticleID="971648" data-doi="10.1093/nar/gng015"><li><a href="http://dx.doi.org/10.1093/nar/gng015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Summaries+of+Affymetrix+GeneChip+probe+level+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Summaries+of+Affymetrix+GeneChip+probe+level+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000676-Irizarry2" id="pone.0000676-Irizarry2"></a>Irizarry RA, Hobbs B, Collin F, Beazer-Barclay YD, Antonellis KJ, et al.  (2003) Exploration, normalization, and summaries of high density oligonucleotide array probe level data. Biostatistics  4: 249–264.  <ul class="find" data-citedArticleID="971650" data-doi="10.1093/biostatistics/4.2.249"><li><a href="http://dx.doi.org/10.1093/biostatistics/4.2.249" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Exploration%2C+normalization%2C+and+summaries+of+high+density+oligonucleotide+array+probe+level+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Exploration%2C+normalization%2C+and+summaries+of+high+density+oligonucleotide+array+probe+level+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000676-deLichtenberg1" id="pone.0000676-deLichtenberg1"></a>de Lichtenberg U, Jensen LJ, Fausboll A, Jensen TS, Bork P, et al.  (2005) Comparison of computational methods for the identification of cell cycle-regulated genes. Bioinformatics  21: 1164–1171.  <ul class="find" data-citedArticleID="971698" data-doi="10.1093/bioinformatics/bti093"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti093" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparison+of+computational+methods+for+the+identification+of+cell+cycle-regulated+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparison+of+computational+methods+for+the+identification+of+cell+cycle-regulated+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0000676-Conover1" id="pone.0000676-Conover1"></a>Conover WJ (1971) Practical nonparametric statistics. New York: John Wiley &amp; Sons. pp. 97–104.  <ul class="find-nolinks"></ul></li><li><span class="label">43.
+              </span><a name="pone.0000676-Hollander1" id="pone.0000676-Hollander1"></a>Hollander M, Wolfe DA (1973) Nonparametric statistical inference. New York: John Wiley &amp; Sons. pp. 15–22.  <ul class="find-nolinks"></ul></li><li><span class="label">44.
+              </span><a name="pone.0000676-Swets1" id="pone.0000676-Swets1"></a>Swets JA (1988) Measuring the accuracy of diagnostic systems. Science  240: 1285–1293.  <ul class="find" data-citedArticleID="971680" data-doi="10.1126/science.3287615"><li><a href="http://dx.doi.org/10.1126/science.3287615" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Measuring+the+accuracy+of+diagnostic+systems." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Measuring+the+accuracy+of+diagnostic+systems.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.XML" value="94614"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.PDF" value="588728"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g001.PNG_L" value="394158"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g001.PNG_M" value="111194"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g001.PNG_S" value="8370"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g001.TIF" value="730524"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g001.PNG_I" value="73853"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g002.PNG_L" value="1236083"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g002.PNG_M" value="225631"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g002.PNG_S" value="8611"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g002.TIF" value="1684152"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g002.PNG_I" value="78709"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g003.PNG_L" value="55264"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g003.PNG_M" value="22982"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g003.PNG_S" value="8843"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g003.TIF" value="196946"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g003.PNG_I" value="7045"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g004.PNG_L" value="288467"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g004.PNG_M" value="134456"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g004.PNG_S" value="11630"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g004.TIF" value="357980"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g004.PNG_I" value="43960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g005.PNG_L" value="453547"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g005.PNG_M" value="139582"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g005.PNG_S" value="16949"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g005.TIF" value="836920"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g005.PNG_I" value="51688"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g006.PNG_L" value="458933"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g006.PNG_M" value="85771"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g006.PNG_S" value="11430"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g006.TIF" value="851904"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.g006.PNG_I" value="30479"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.s001.DOC" value="67072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.s002.DOC" value="686592"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.s003.DOC" value="23552"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000676.s004.XLS" value="131584"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000676&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000676" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000676&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000676&volume=&issue=&title=Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes&author_name=Henrik%20Bj%C3%B8rn%20Nielsen%2C%20John%20Mundy%2C%20Hanni%20Willenbrock&start_page=1&end_page=10" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000676" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676&amp;t=Functional%20Associations%20by%20Response%20Overlap%20(FARO)%2C%20a%20Functional%20Genomics%20Approach%20Matching%20Gene%20Expression%20Phenotypes" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676&title=Functional%20Associations%20by%20Response%20Overlap%20(FARO)%2C%20a%20Functional%20Genomics%20Approach%20Matching%20Gene%20Expression%20Phenotypes&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676&amp;title=Functional%20Associations%20by%20Response%20Overlap%20(FARO)%2C%20a%20Functional%20Genomics%20Approach%20Matching%20Gene%20Expression%20Phenotypes" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000676&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Functional Associations by Response Overlap (FARO), a Functional Genomics Approach Matching Gene Expression Phenotypes';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000676';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Functional%20Associations%20by%20Response%20Overlap%20(FARO)%2C%20a%20Functional%20Genomics%20Approach%20Matching%20Gene%20Expression%20Phenotypes http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000676" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000676" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Arabidopsis+thaliana%22" title="Search for articles in the subject area:'Arabidopsis thaliana'"><div class="flagText">Arabidopsis thaliana</div></a>
+              <div data-categoryid="32845" data-articleid="24190"
+                   data-categoryname="Arabidopsis thaliana"
+                   class="flagImage" title="Flag 'Arabidopsis thaliana' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Complementary+DNA%22" title="Search for articles in the subject area:'Complementary DNA'"><div class="flagText">Complementary DNA</div></a>
+              <div data-categoryid="32053" data-articleid="24190"
+                   data-categoryname="Complementary DNA"
+                   class="flagImage" title="Flag 'Complementary DNA' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Ethylene%22" title="Search for articles in the subject area:'Ethylene'"><div class="flagText">Ethylene</div></a>
+              <div data-categoryid="34111" data-articleid="24190"
+                   data-categoryname="Ethylene"
+                   class="flagImage" title="Flag 'Ethylene' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="24190"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Microarrays%22" title="Search for articles in the subject area:'Microarrays'"><div class="flagText">Microarrays</div></a>
+              <div data-categoryid="17255" data-articleid="24190"
+                   data-categoryname="Microarrays"
+                   class="flagImage" title="Flag 'Microarrays' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phenotypes%22" title="Search for articles in the subject area:'Phenotypes'"><div class="flagText">Phenotypes</div></a>
+              <div data-categoryid="40235" data-articleid="24190"
+                   data-categoryname="Phenotypes"
+                   class="flagImage" title="Flag 'Phenotypes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Salicylates%22" title="Search for articles in the subject area:'Salicylates'"><div class="flagText">Salicylates</div></a>
+              <div data-categoryid="27397" data-articleid="24190"
+                   data-categoryname="Salicylates"
+                   class="flagImage" title="Flag 'Salicylates' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Yeast%22" title="Search for articles in the subject area:'Yeast'"><div class="flagText">Yeast</div></a>
+              <div data-categoryid="43039" data-articleid="24190"
+                   data-categoryname="Yeast"
+                   class="flagImage" title="Flag 'Yeast' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9080'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=5458'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3959&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

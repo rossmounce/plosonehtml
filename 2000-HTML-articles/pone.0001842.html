@@ -1,0 +1,978 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001842"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001842" />
+
+    <meta name="citation_title" content="Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes"/>
+    <meta itemprop="name" content="Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes"/>
+
+      <meta name="citation_author" content="Andrey Ptitsyn"/>
+            <meta name="citation_author_institution" content="Center for Bioinformatics, Department of Microbiology, Immunology and Pathology, College of Veterinary and Biomedical Sciences, Colorado State University, Fort Collins, Colorado, United States of America"/>
+
+    <meta name="citation_date" content="2008/3/26"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001842.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1842"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Microarray data analysis: from disarray to consolidation and consensus.; citation_author=DB Allison; citation_author=X Cui; citation_author=GP Page; citation_author=M Sabripour; citation_journal_title=Nat Rev Genet; citation_volume=7; citation_number=1; citation_pages=55-65; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Microarray data normalization and transformation.; citation_author=J Quackenbush; citation_journal_title=Nat Genet; citation_volume=32; citation_number=2; citation_pages=496-501; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Summaries of Affymetrix GeneChip probe level data.; citation_author=RA Irizarry; citation_author=BM Bolstad; citation_author=F Collin; citation_author=LM Cope; citation_author=B Hobbs; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=3; citation_pages=e15; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Model-based analysis of oligonucleotide arrays: expression index computation and outlier detection.; citation_author=C Li; citation_author=WH Wong; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=98; citation_number=4; citation_pages=31-36; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=A chromatin landmark and transcription initiation at most promoters in human cells.; citation_author=MG Guenther; citation_author=SS Levine; citation_author=LA Boyer; citation_author=R Jaenisch; citation_author=RA Young; citation_journal_title=Cell; citation_volume=130; citation_number=5; citation_pages=77-88; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=The Mechanism of Stochastic Resonance.; citation_author=R Benzi; citation_author=A Sutera; citation_author=A Vulpiani; citation_journal_title=Journal of Physics A: Mathematical and General; citation_number=6; citation_pages=L453-L457; citation_date=1981; " />
+      <meta name="citation_reference" content="citation_title=Statistical analysis of stochastic resonance in simple setting.; citation_author=P Greenwood; citation_author=L Ward; citation_author=W Wefelmeyer; citation_journal_title=Physical Review E; citation_volume=60; citation_number=7; citation_pages=4687-4695; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Robustness of circadian rhythms with respect to molecular noise.; citation_author=D Gonze; citation_author=J Halloy; citation_author=A Goldbeter; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=99; citation_number=8; citation_pages=673-678; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Dissociation between adipose tissue signals, behavior and the food-entrained oscillator.; citation_author=MT Martinez-Merlos; citation_author=M Angeles-Castellanos; citation_author=M Diaz-Munoz; citation_author=R Aguilar-Roblero; citation_author=J Mendoza; citation_journal_title=J Endocrinol; citation_volume=181; citation_number=9; citation_pages=53-63; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Characterization of peripheral circadian clocks in adipose tissues.; citation_author=S Zvonic; citation_author=AA Ptitsyn; citation_author=SA Conrad; citation_author=LK Scott; citation_author=ZE Floyd; citation_journal_title=Diabetes; citation_volume=55; citation_number=10; citation_pages=962-970; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Circadian clocks are resounding in peripheral tissues.; citation_author=AA Ptitsyn; citation_author=S Zvonic; citation_author=SA Conrad; citation_author=LK Scott; citation_author=RL Mynatt; citation_journal_title=PLoS Comput Biol; citation_volume=2; citation_number=11; citation_pages=e16; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Circadian oscillation of gene expression in murine calvarial bone.; citation_author=S Zvonic; citation_author=AA Ptitsyn; citation_author=G Kilroy; citation_author=X Wu; citation_author=SA Conrad; citation_journal_title=J Bone Miner Res; citation_volume=22; citation_number=12; citation_pages=357-365; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Digital Signal Processing Reveals Circadian Baseline Oscillation in Majority of Mammalian Genes.; citation_author=AA Ptitsyn; citation_author=S Zvonic; citation_author=JM Gimble; citation_journal_title=PLoS Comput Biol; citation_volume=3; citation_number=13; citation_pages=e120; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Permutation test for periodicity in short time series data.; citation_author=AA Ptitsyn; citation_author=S Zvonic; citation_author=JM Gimble; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=14; citation_pages=S10; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Extensive and divergent circadian gene expression in liver and heart.; citation_author=KF Storch; citation_author=O Lipan; citation_author=I Leykin; citation_author=N Viswanathan; citation_author=FC Davis; citation_journal_title=Nature; citation_volume=417; citation_number=15; citation_pages=78-83; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Role of adipose tissue in body-weight regulation: mechanisms regulating leptin production and energy balance.; citation_author=PJ Havel; citation_journal_title=Proc Nutr Soc; citation_volume=59; citation_number=16; citation_pages=359-371; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Time for sex: nycthemeral distribution of human sexual behavior.; citation_author=R Refinetti; citation_journal_title=J Circadian Rhythms; citation_volume=3; citation_number=17; citation_pages=4; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Logic of the yeast metabolic cycle: temporal compartmentalization of cellular processes.; citation_author=BP Tu; citation_author=A Kudlicki; citation_author=M Rowicka; citation_author=SL McKnight; citation_journal_title=Science; citation_volume=310; citation_number=18; citation_pages=1152-1158; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Smoothing and differentiation of data by simplified least squares procedures.; citation_author=A Savitzky; citation_author=M Golay; citation_journal_title=Analytical Chemistry; citation_volume=36; citation_number=19; citation_pages=1627-1639; citation_date=1964; " />
+      <meta name="citation_reference" content="citation_title=Spectral Analysis and Time Series. ed.:; citation_author=MB Priestley; citation_number=20; citation_date=1981; citation_publisher=Academic Press; " />
+      <meta name="citation_reference" content="citation_title=Identifying periodically expressed transcripts in microarray time series data.; citation_author=S Wichert; citation_author=K Fokianos; citation_author=K Strimmer; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=21; citation_pages=5-20; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Statistical significance for genomewide studies.; citation_author=JD Storey; citation_author=R Tibshirani; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=100; citation_number=22; citation_pages=9440-9445; citation_date=2003; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes"/>
+    <meta name="twitter:description" content="BackgroundMicroarrays are widely used for estimation of expression of thousands of genes in a biological sample. The resolution ability of this method is limited by the background noise. Low expressed genes are detected with insufficient reliability and expression of many genes is never detected at all.Methodology/Principal FindingsWe have applied the principles of stochastic resonance to detect expression of genes from microarray signals below the background noise level. We report the periodic pattern detected in genes called &ldquo;Absent&rdquo; by traditional analysis. The pattern is consistent with expression of the conventionally detected genes and specific to the tissue of origin. This effect is corroborated by the analysis of oscillating gene expression in mouse (M.musculus) and yeast (S. cerevisae).Conclusion/SignificanceMost genes usually considered silent are in fact expressed at a very low level. Stochastic resonance can be applied to detect changes in expression pattern of low-expressed genes as well as for the validation of the probe performance in microarrays."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001842.g003"/>
+
+  <meta property="og:title" content="Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=2841'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=7212'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=6526&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001842">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001842" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001842&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Andrey Ptitsyn
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">* E-mail:</span> <a href="mailto:Andrey.Ptitsyn@colostate.edu">Andrey.Ptitsyn@colostate.edu</a></p>
+
+                <p>Affiliation:
+                  Center for Bioinformatics, Department of Microbiology, Immunology and Pathology, College of Veterinary and Biomedical Sciences, Colorado State University, Fort Collins, Colorado, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 26, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001842</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001842-g001" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001842-g002" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001842-g003" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001842-t001" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001842">Reader Comments (2)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001842" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Microarrays are widely used for estimation of expression of thousands of genes in a biological sample. The resolution ability of this method is limited by the background noise. Low expressed genes are detected with insufficient reliability and expression of many genes is never detected at all.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We have applied the principles of stochastic resonance to detect expression of genes from microarray signals below the background noise level. We report the periodic pattern detected in genes called “Absent” by traditional analysis. The pattern is consistent with expression of the conventionally detected genes and specific to the tissue of origin. This effect is corroborated by the analysis of oscillating gene expression in mouse (<em>M.musculus</em>) and yeast (<em>S. cerevisae</em>).</p>
+
+
+<h3>Conclusion/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>Most genes usually considered silent are in fact expressed at a very low level. Stochastic resonance can be applied to detect changes in expression pattern of low-expressed genes as well as for the validation of the probe performance in microarrays.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Ptitsyn A (2008) Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes. PLoS ONE 3(3):
+          e1842.
+            doi:10.1371/journal.pone.0001842</p><p><strong>Editor: </strong>Nick Monk, University of Nottingham, United Kingdom</p><p><strong>Received:</strong> November 5, 2007; <strong>Accepted:</strong> February 12, 2008; <strong>Published:</strong> March 26, 2008</p><p><strong>Copyright:</strong> © 2008 Andrey Ptitsyn. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The author has no support or funding to report.</p><p><strong>Competing interests:</strong> The author has declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Microarrays have become a standard technique in biological research. From the beginning, the focus in microarray experiments has been on taking the simultaneous snapshot of a large number of genes, rather than exact measurement of expression level for a small number of selected genes. Over the years the technology has undergone a significant evolution, allowing a reliable identification of functional relation of co-expressed genes and a good estimation of expression level for particular genes <a href="#pone.0001842-Allison1">[1]</a>, <a href="#pone.0001842-Quackenbush1">[2]</a>. However microarray performance is still limited by the background noise. Advanced normalization and summation algorithms<a href="#pone.0001842-Irizarry1">[3]</a>, <a href="#pone.0001842-Li1">[4]</a> can improve signal to noise ratio for the low-expressed genes. However, none of the contemporary algorithms can help with identifying expression of the genes expressed at such low level that the luminescent signal reading from the spot does not exceed the reading from the space between spots. It is commonly assumed that genes whose expression could not be identified by either microarray or RT-PCR experiment are silent. This assumption is intuitive, but not founded in biology. In contrast, most recent studies indicate the presence of eukaryotic transcription initiation complexes at the promoters of majority of “silent” genes for which no transcripts could be detected <a href="#pone.0001842-Guenther1">[5]</a>. On the other hand, the situation where the signal to be detected is weaker than the ambient noise and could not be registered directly is not new in the other areas of science. The effect of Stochastic Resonance (SR) is well studied and widely applied in physics <a href="#pone.0001842-Benzi1">[6]</a>, <a href="#pone.0001842-Greenwood1">[7]</a> and even some areas of biology <a href="#pone.0001842-Gonze1">[8]</a>, <a href="#pone.0001842-MartinezMerlos1">[9]</a>. Stochastic resonance is a counter-intuitive effect of amplification of a weak periodic signal by an increase of ambient noise (see Supplemental <a href="#pone.0001842.s001">Figure S1</a>). But what periodic signal in gene expression could be detectable with SR approach?</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>In 2006–2007 we have published a series of papers characterizing the oscillating patterns of gene expression in metabolically active peripheral tissues in mice. The circadian oscillation we reported extends far beyond the commonly accepted 10–15% of genes directly regulated by the circadian molecular clock <a href="#pone.0001842-Zvonic1">[10]</a>, <a href="#pone.0001842-Ptitsyn1">[11]</a>, <a href="#pone.0001842-Zvonic2">[12]</a>, <a href="#pone.0001842-Ptitsyn2">[13]</a>. The accumulated evidence allows us to postulate that oscillation is a basic property of expression of all genes, not necessarily connected with any specific gene function. However, the oscillatory properties, such as phase and amplitude are dependent on the gene function and differ between tissues and experimental conditions <a href="#pone.0001842-Ptitsyn2">[13]</a>. Oscillatory patterns of expression in major housekeeping genes responsible for the energy balance (PPAR) and basic transcription (TBP) are bound to impose the same patterns on all transcribed genes regardless of the volume of transcription.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results and Discussion"></a><h3>Results and Discussion</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>The heat map plot in <a href="#pone-0001842-g001">Figure 1</a> shows the pattern of circadian expression in approximately 30% of all genes interrogated by the Affymetrix mouse expression microarray. At first glance the pattern of two red (zenith) and two green (nadirs) areas over two-day period is remarkably similar to the previously published circadian expression patterns in mice <a href="#pone.0001842-Zvonic1">[10]</a>,<a href="#pone.0001842-Ptitsyn3">[14]</a>. However in this case none of the genes selected for analysis has been called “Present” even once at any of the 12 time points. This effect is not specific to a particular tissue and observed in all mouse and yeast data sets considered in this paper.</p>
+<div class="figure" id="pone-0001842-g001"><div class="img"><a name="pone-0001842-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Circadian expression pattern in transcripts never called present.</span></strong></p><a id="article1.body1.sec2.fig1.caption1.p1" name="article1.body1.sec2.fig1.caption1.p1"></a><p>In spite of being considered silent most genes called absent are expressed in a daily changing pattern of elevated (red) and lowered expression level (green) over the 48h period of alternating light and darkness (bottom), consistent with circadian pattern in highly expressed genes. The plot shows four phase groups (roman numbers) in four murine tissues (data from <a href="#pone.0001842-Zvonic1">[10]</a> and <a href="#pone.0001842-Zvonic2">[12]</a>). On each pane expression profiles are stacked in order of autocorrelation with 24h lag (Ac, vertical axis).</p>
+<span>doi:10.1371/journal.pone.0001842.g001</span></div><a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>In most studies such “silent” genes are excluded from further analysis on the early stages. The filtration criteria are usually more stringent, selecting only genes called “Present” in at least half of all time points <a href="#pone.0001842-Storch1">[15]</a>. In the previous publications we have reported circadian oscillation in nearly 100% of all genes <a href="#pone.0001842-Ptitsyn2">[13]</a>. But the oscillating pattern does not show a strong dependence on the absolute level of expression or any regard to the signal/background noise ratio of the Affymetrix GeneChip. <a href="#pone-0001842-g002">Figure 2</a> shows relations between likeliness of circadian oscillation (estimated by a periodicity test p-value) and the overall median of expression signal in time series. There is no indication of a threshold associated with presence or absence call. Genes expressed below the noise level (typically with signal reading under 150) generate the same pattern as highly expressed genes. This finding is corroborated by the results of periodicity tests performed on the subset of non-present genes (see <a href="#pone-0001842-t001">Table 1</a>). As expected, the number of “absent” genes for which a periodic pattern is observed with the confidence level of <em>p&lt;0.1</em> is lower and the expression profiles are generally noisier compared to analysis of entire set of transcripts <a href="#pone.0001842-Ptitsyn2">[13]</a>. However, in spite of the lower signal to noise ratio the underlying baseline circadian, oscillation is detectable in majority of the profiles. This pattern and the proportion between phase groups are consistent with that of the “present” genes or the mixture of “present” and “absent” genes (transcripts). These observations lead to the conclusion that the criteria separating “present” from “absent” genes is arbitrary. The low signal emitted from the microarray probes can be below the noise level for the chip at each particular time point. However, it reflects the pattern of gene expression rather than an ambient noise. This point can be further illustrated by <a href="#pone-0001842-g003">Figure 3</a> which shows expression pattern of transcripts called “Absent” and “Present” in the contexts of a biological pathway (a fragment of insulin signaling pathway, data from Metacore database, GeneGo Inc.). In spite of the absence call for the insulin receptor the white adipose tissue is known to respond to the insulin signal <a href="#pone.0001842-Havel1">[16]</a>. The profile for the “Absent” insulin receptor is pronouncedly circadian and perfectly synchronized with production rate of the insulin receptor substrate, which is called present.</p>
+<div class="figure" id="pone-0001842-g002"><div class="img"><a name="pone-0001842-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>A scatter plot of mean intensity (axis X) and likeliness of periodicity estimated by Pt-test p-value (axis Y).</span></strong></p><span>doi:10.1371/journal.pone.0001842.g002</span></div><div class="figure" id="pone-0001842-g003"><div class="img"><a name="pone-0001842-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Insulin regulation of lipid metabolism in white adipose tissue (fragment).</span></strong></p><a id="article1.body1.sec2.fig3.caption1.p1" name="article1.body1.sec2.fig3.caption1.p1"></a><p>Transcripts called present are plotted with a red line on a white pane, absent transcripts are plotted blue on gray. Interactions are marked as p+ (activation by phosphorylation), b+ (activation by bonding) and tr+ (transcription activation). Timing of insulin receptor substrate transcription (IRS-1) is perfectly synchronized with insulin receptor transcription rate in spite of the absence call for the latter.</p>
+<span>doi:10.1371/journal.pone.0001842.g003</span></div><div class="figure" id="pone-0001842-t001"><div class="img"><a name="pone-0001842-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001842" data-uri="info:doi/10.1371/journal.pone.0001842.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001842.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001842.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001842.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Numbers of circadially oscillating “absent” genes as reported by different algorithms and testing strategies.</span></strong></p><span>doi:10.1371/journal.pone.0001842.t001</span></div><a id="article1.body1.sec2.p3" name="article1.body1.sec2.p3"></a><p>Periodic patterns observed in genes usually considered unexpressed are not necessarily associated with circadian rhythm. Analysis of respiratory oscillation pattern in <em>S.cerevisae</em> reveals a large group of genes (or rather transcripts interrogated by Affymetrix probe sets) that demonstrate a clear oscillating pattern consistent with that of highly expressed genes (Supplemental <a href="#pone.0001842.s002">Figure S2</a>).</p>
+<a id="article1.body1.sec2.p4" name="article1.body1.sec2.p4"></a><p>Why do the “absent” genes, with expression pattern otherwise indistinguishable from the background noise suddenly show signs of expression consistent with that of reliably detectable genes? The explanation has been outlined in the abstract of the very first paper reporting the effect of SR <a href="#pone.0001842-Benzi1">[6]</a>. The paper had shown that a dynamical system subject to both periodic forcing and random perturbation may show a resonance (peak in the power spectrum) which is absent when either the forcing or the perturbation is absent. In microarray gene expression studies the threshold is defined by the signal and noise levels estimated from the luminescent signal read from the spot with immobilized probes for a specific gene (transcript) and the background luminescence from the space between spots and/or blank spots with no specific probe. The details of signal detection may vary, particularly with Affymetrix summation algorithms (see <a href="#pone.0001842-Refinetti1">[17]</a> for review). However, regardless of the image processing and inference procedure microarray can be viewed as a detector with a certain threshold. All contemporary methods concentrate on improving the signal to noise ratio by either lowering the noise or amplifying the signal or both. However, the underlying periodicity of gene expression can provide an essential component for the SR to take effect. With known periodicity of the signal we have all necessary factors for SR. Periodicity of expression in nearly 100% of eukaryotic genes has been demonstrated in our recent paper <a href="#pone.0001842-Ptitsyn2">[13]</a>. The dominating rhythm is circadian in case of murine peripheral tissues. Expression pattern in yeast (<em>S. cerevisae</em>) is dominated by metabolic oscillation in respiratory cycle and this rhythm is also observed in nearly 100% of all genes (transcripts). However, the effect of SR can be achieved even without a natural baseline oscillation. Oscillation can be generated by repetitive application of perturbation (signal, treatment) in a biological system. Periodicity does not have to be time-wise. Regular placement of replicate probes on a lattice can also be viewed as a periodic signal across the surface of microarray and in combination with background noise it can create the effect of SR. In this case application of SR would require a new specifically designed microarray as well as significant modification of the analysis pipeline, starting from the image analysis on and between the spots of attached probes. In all cases the algorithm for detection of signal is based on a test for periodicity in a series of measurements rather than static comparison of signal and background noise levels.</p>
+<a id="article1.body1.sec2.p5" name="article1.body1.sec2.p5"></a><p>Using the SR methodology, the test for gene silence can be formulated as follows: in presence of both periodic signal with known frequency <em>ω</em> and stochastic noise the null hypothesis (H<sub>0</sub>: gene Y is expressed) is equivalent to H<sub>0</sub>: expression signal for gene Y is periodic with frequency <em>ω</em>; H<sub>0</sub> could not be rejected if test for periodicity is positive, alternative hypothesis (H<sub>A</sub>: gene X is silent) is accepted if there is no evidence of oscillation with frequency <em>ω</em>. There are a few available tests for periodicity; we suggest Pt-test <a href="#pone.0001842-Ptitsyn3">[14]</a>, specifically developed for short time series with low sampling rate, typical for gene expression profiles. This test can be applied in conjunction with digital signal processing in phase continuum approach <a href="#pone.0001842-Ptitsyn2">[13]</a>, which increases the test's ability to identify baseline oscillation. The concept of assigning detection calls using stochastic resonance is further illustrated by the computer program in supplemental materials (supplemental file <a href="#pone.0001842.s004">Code S1</a>). This program implements the simplest variant of detection call assignment: if sliding frame in phase continuum tests positive for baseline oscillation the genes found in this frame are called “Present”. More sophistication can be added by testing the presence of the baseline oscillation by a panel of statistical tests and/or taking in account the number of adjacent frames testing positive or negative. Multiple testing of FDR adjustment in not applicable for the reasons explained in the <a href="#s3">Methods</a> section.</p>
+<a id="article1.body1.sec2.p6" name="article1.body1.sec2.p6"></a><p>Detection of the extra-low gene expression has a few important implications. Long term practice of using microarray and RT-PCR technology has created a perception that a gene for which signal has the same intensity as ambient noise is not expressed. However, this fact relates to the resolution ability of the method rather than a real property of the gene. Using the principle of SR we greatly improve our ability to detect weak signals, but this method also has its limit. We observe expression of a large number of genes previously considered silent, but again this signal sinks into noise with no clear landmark separating expressed and silent fractions of genes. Could it be that the latter fraction does not exist and all genes are expressed, even at a miniscule rate? The entire concept of “silent” genes is created by our inability to detect extremely low transcript concentrations. There is no obvious landmark separating low-expressed genes and below-detection-threshold genes. Summing up the number of conventionally detected transcripts and transcripts detectable by SR leaves a very small fraction of truly silent gene candidates. This fraction also contains transcripts for which microarray probes are not performing as intended, which further reduces the number of potentially silent genes almost to none. Recent publication has already demonstrated that most human protein-coding genes are primed for transcription initiation, including those for which no transcripts could be detected <a href="#pone.0001842-Guenther1">[5]</a>. Now we can detect those elusive transcripts with the new computational tools and a novel approach to the analysis of low-abundance transcripts. The “pilot light” suggested in the title seems to be more appropriate than “silent” for the genes expressed below the standard detection threshold. Such genes are likely to have transcription initiation complex in place, but no significant accumulation of mature transcripts in the cytoplasm. Theoretically, the concept of all genes being expressed, only at very different scale does not contradict the accumulated knowledge about cellular processes. However, ability to detect the extremely low expression and account for it in the experiment design opens new prospective for better, more complete understanding of the cellular processes, better account for potential adverse effects in medication and more precise biology in general.</p>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Murine circadian expression data sets</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>We have completed independent circadian studies in AKR/J mice acclimated to a 12 hr light: 12 hr dark cycle, harvesting sets of 3–5 mice at 4 hr intervals in duplicates over a 24 hr period <a href="#pone.0001842-Zvonic1">[10]</a>. Total RNA samples from inguinal (iWAT) white adipose tissue, brown adipose tissue (BAT), and liver have been assayed by Affymetrix microarrays. A few genes have been selected for validation with RT-PCR for the expression profile of representative circadian rhythm genes in all 3 tissues. The transcriptomic data set contained over 22,000 gene expression profiles for each of 3 different tissues. In the current study, we have used only the murine liver data. Since each time point was sampled twice, the following Fourier transform for each profile can be re-arranged into a short time series that represents two complete circadian cycles. Profiles have been smoothened by a 3<sup>rd</sup> degree polynomial procedure and median-subtracted. For better compatibility, the same smoothing and median subtraction procedure has been applied to all other data sets.</p>
+
+
+<h4>Yeast data set</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>We have re-analyzed the time series data set provided by Dr. Tu and Dr. McKnight <a href="#pone.0001842-Tu1">[18]</a>. It has been reported that the time series covers approximately three periods of respiratory cycle and the majority of expressed genes follow this oscillating pattern.</p>
+
+
+<h4>Algorithms</h4>
+<h5>Data pre-processing.</h5><a id="article1.body1.sec3.sec3.sec1.p1" name="article1.body1.sec3.sec3.sec1.p1"></a><p>Profiles have been smoothened by a 3<sup>rd</sup> degree polynomial procedure and median-subtracted. For smoothing we use seven-point Savitzky-Golay algorithm <a href="#pone.0001842-Savitzky1">[19]</a>. To take advantage of all points in the time series a single-pass smoothing has been applied in a circular manner, with the last points contributing to smoothing the starting points. For better compatibility, the same smoothing and median subtraction procedure has been applied to all data sets.</p>
+
+<h5>Spectral Analysis.</h5><a id="article1.body1.sec3.sec3.sec2.p1" name="article1.body1.sec3.sec3.sec2.p1"></a><p>For purposes of spectral analysis, consider a series of microarray expression values for gene <em>x</em> with <em>N</em> samples of the form<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.e001&amp;representation=PNG" class="inline-graphic"></span><br>This series can be converted from time-domain, where each variable represents a measurement in time to a frequency domain using Discrete Fourier Transform (DFT) algorithm. Frequency domain representation of the series of experiments is also known as periodogram, which can be denoted by <em>I</em>(ω):<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.e002&amp;representation=PNG" class="inline-graphic"></span><br>If a time series has a significant sinusoidal component with frequency ωЄ[0, <em>π</em>], then the periodogram exhibits a peak at that frequency with a high probability. Conversely, if the time series is a purely random process (a.k.a “white noise”), then the plot of the periodogram against the Fourier frequencies approaches a straight line <a href="#pone.0001842-Priestley1">[20]</a>.</p>
+
+<h5>Fisher's g-test.</h5><a id="article1.body1.sec3.sec3.sec3.p1" name="article1.body1.sec3.sec3.sec3.p1"></a><p>The significance of the observed periodicity can be estimated by Fisher <em>g</em>-statistics, as recently recommended in <a href="#pone.0001842-Wichert1">[21]</a>. Fisher derived an exact test of the maximum periodogram coordinate by introducing the <em>g</em>-statistic<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.e003&amp;representation=PNG" class="inline-graphic"></span><br>where <em>I</em>(<em>ω<sub>k</sub></em>) is a <em>k-</em>th peak of the periodogram. Large values of g indicate a non-random periodicity. We calculate the <em>p</em>-value of the test under the null hypothesis with the exact distribution of <em>g</em> using the following formula:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.e004&amp;representation=PNG" class="inline-graphic"></span><br>where <em>n</em> = [<em>N</em>/2] and <em>p</em> is the largest integer less than 1/<em>x</em>.</p>
+<a id="article1.body1.sec3.sec3.sec3.p2" name="article1.body1.sec3.sec3.sec3.p2"></a><p>This algorithm closely follows the guidelines recommended for analysis of periodicities in time-series microarray data <a href="#pone.0001842-Wichert1">[21]</a> with the exception that we applied a locally developed C++ code instead of R scripts.</p>
+
+<h5>Autocorrelation.</h5><a id="article1.body1.sec3.sec3.sec4.p1" name="article1.body1.sec3.sec3.sec4.p1"></a><p>For a given a discrete time series <em>Y</em> = <em>x</em><sub>0</sub>, <em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>,… <em>x<sub>N</sub></em><sub>−1</sub> the autocorrelation is simply the correlation of the expression profile against itself with a frame shift of <em>k</em> data points (where 0≤<em>k</em>≤<em>N</em>−1, often referred as the lag). For the time shift <em>f</em>, defined as <em>f</em> = <em>i</em>+<em>k</em> if <em>i+k&lt;N</em> and <em>f</em> = <em>i</em>+<em>k</em>−<em>N</em> otherwise<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.e005&amp;representation=PNG" class="inline-graphic"></span><br>For each time series we calculate the maximum positive <em>R(f)</em> among all possible phase shifts <em>f</em> and use tabulated 0.05 significance cutoff values for correlation coefficient. Time series that shows significant autocorrelation <em>R(f)</em> with the lag <em>f</em> corresponding to one day (6 time points) are considered circadially expressed.</p>
+
+<h5>Pt-test.</h5><a id="article1.body1.sec3.sec3.sec5.p1" name="article1.body1.sec3.sec3.sec5.p1"></a><p>Consider a time series <em>Y</em> = <em>x</em><sub>0</sub>, <em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>,… <em>x<sub>N</sub></em><sub>−1</sub> in which technical variation approaches or even exceeds the amplitude of periodic expression. In a very short time series stochastic noise often obscures periodicity. However, the periodic change of the base expression level can still be identified in spite of the high noise level. If the periodogram of the original time series <em>IY(ω)</em> contains a significant peak corresponding to a particular frequency (for example, circadian) this peak results from observation is the <em>Y</em>. A random permutation would preserve the same noise level, but not the periodicity. Let <em>YR</em> be a random permutation of the time series <em>Y.</em> Its corresponding periodogram is <em>IR(ω)</em>. After DFT a periodogram <em>IR(ω)</em> would represent only the peaks occurring by chance. However it will miss the true periodic frequencies unless permutations happen to preserve the period, for example if the rank of each point <em>x</em> in permutated series <em>YR</em> is equal <em>x<sub>Y</sub></em>±<em>n</em>*<em>p</em> where <em>n</em> is a natural number and <em>p</em> is a period corresponding to a significant peak in <em>IY(ω)</em>. To avoid random re-institution of periodicity we generate <em>YR</em> by multiple shuffling of randomly selected time points <em>x<sub>n</sub></em>⇔<em>x<sub>m</sub></em>, where |<em>n</em>−<em>m</em>|≠<em>p</em>, i.e. each shuffle is swaps time points from different phase. Comparing permutations with deliberately wiped out periodicity to the original time series we can estimate whether a particular order of observations (i.e. time series) is important. For each gene expression profile we generate two series of <em>min(n!,100)</em> random permutations. Each permutated series <em>YR</em> is transformed to the frequency domain and a single peak of the periodogram <em>IR(ω)</em> is stored. The p-value for the null-hypothesis of random nature of a particular peak of periodogram can be estimated by comparing the stored <em>IR(ω)</em> values to the observed <em>I(ω)</em>: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001842.e006&amp;representation=PNG" class="inline-graphic"></span><br>High <em>p</em>-value exceeding the threshold, for example 0.05, means that at least 5 out of 100 random permutations of time series produce a periodogram with the same or higher peak, corresponding to a given periodicity. Low <em>p</em>-values indicate a significant difference between periodogram <em>IR(ω)</em> preserving circadian periodicity and randomly permutated periodogram <em>IY(ω)</em> with the same level of technical variation. This difference leads to rejection of the null-hypothesis of purely random nature of variation in the original time series <em>Y</em>.</p>
+
+<h5>Phase continuum.</h5><a id="article1.body1.sec3.sec3.sec6.p1" name="article1.body1.sec3.sec3.sec6.p1"></a><p>We start with phase classification, assigning each gene a phase based on maximal correlation to an ideal cosine curve. This method is superior to assigning a phase by position of peaks only because it takes into account more data. Each profile is subjected to z-score transformation equalizing the variation between time points. For each profile autocorrelation with circadian lag (<em>R<sub>c</sub></em>) is calculated and all profiles are sorted first by phase then by descending order of <em>R<sub>c</sub></em>. Concatenating all profiles of the same phase with equalized range of variation (amplitude) we generate a continuous stream <em>C<sub>ph</sub></em> of measurements containing a clear signal on one end and stochastic noise on the other. This continuum is treated with low-pass frequency filter and polynomial smoothing. We analyze each phase fraction separately to detect the point at which circadian signal deteriorates beyond p = 0.05 significance cutoff. A window W moving along the stream is transformed to frequency domain using Discrete Fourier Transform (DFT). The resulting periodogram <em>I<sub>w</sub></em> is compared a periodogram of a randomly permutated <em>W<sub>r</sub></em> using Kolmogorov-Smirnov goodness of fit test. Once the point at which <em>I<sub>w</sub></em> does not differ significantly from a random periodogram <em>I<sub>wr</sub></em> is detected, we count all original gene expression profiles that have circadian signal above the established cutoff <a href="#pone.0001842-Ptitsyn2">[13]</a>.</p>
+
+<h5>False Discovery Rate analysis.</h5><a id="article1.body1.sec3.sec3.sec7.p1" name="article1.body1.sec3.sec3.sec7.p1"></a><p>This methodology often applied to reduce the number of false-positive tests is based in the assumption of independent or mildly dependent <a href="#pone.0001842-Storey1">[22]</a> hypothesis testing. However, in case of testing timeline expression profiles for periodicity independence could not be assumes for a number of reasons. First, the pattern of circadian oscillation is obvious in the great majority of expression profiles as seen on heatmaps (<a href="#pone-0001842-g001">Figure 1</a>, for example). Second, analysis of correlation with phase shift (also used to identify phase groups) confirms high correlation of nearly all profiles to common cosine curves. Third, living cells are known to have more than one oscillator, but these oscillators are normally synchronized to the rhythm of the circadian molecular clock, active in peripheral tissues. Testing individual expression profiles for periodicity we are looking for manifestation of the same factor, hence not independent hypothesis. For these reasons FDR correction has not been applied to reduce the number of detected oscillating genes.</p>
+
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001842"></div><a name="pone.0001842.s001" id="pone.0001842.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001842.s001">Figure S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material1.caption1.p1" name="article1.body1.sec4.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Illustration of the principal of stochastic resonance. A periodic signal could be too weak to be detected by existing methods (A). The threshold for a detector can be selected so that a stochastic ambient noise is occasionally detected. The occurrence of stochastic noise exceeding the detection threshold is non-periodic (B). However, in presence of both stochastic noise and a weak periodic signal (C) there is a higher probability for the noise to be registered above threshold. Consequently, the occurrence of noise exceeding threshold becomes periodic and detection of this periodicity indicates the presence of baseline periodic signal.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001842.s001</p><a id="article1.body1.sec4.supplementary-material1.caption1.p2" name="article1.body1.sec4.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0001842.s002" id="pone.0001842.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001842.s002">Figure S2. </a></strong></p><a id="article1.body1.sec4.supplementary-material2.caption1.p1" name="article1.body1.sec4.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Heatmap of 323 transcripts (Affymetrix probesets) never called present at any time point. YG_S98 Affymetrix microarray has much fewer probesets compared to mouse expression arrays and almost all of these genes are found “present” or at least “marginal” at least once over the three periods of respiratory cycle. Only 323 genes are never called present. Pt-test indicates significant baseline oscillation with 3 periods within all profiles (36 time points each), although the pattern of 3 red zones is not obvious in all profiles. Only 3 transcripts show significant oscillation by fisher's g-test (p&lt;0.1). These profiles are depicted on <a href="#pone.0001842.s003">Supplemental Figure 3</a>.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001842.s002</p><a id="article1.body1.sec4.supplementary-material2.caption1.p2" name="article1.body1.sec4.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.12 MB DOC)</p>
+<a name="pone.0001842.s003" id="pone.0001842.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001842.s003">Figure S3. </a></strong></p><a id="article1.body1.sec4.supplementary-material3.caption1.p1" name="article1.body1.sec4.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Expression profiles of the tree S.cerevisae probesets with p&lt;0.1 by both Pt-test and Fisher's g-test. All three are never called present at any single time point. AFFX-BioDn-5_st represents a control sequence of bacterial origin which should not be present. Oscillating pattern of this probeset may be caused by a small contamination of the yeast culture with E.coli or cross-hybridization from the nearest yeast homologues of dethiobiotin synthetase. Two other probesets (6617_at and 7889_at) are annotated as “dubious ORF” and “nonessential protein”.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001842.s003</p><a id="article1.body1.sec4.supplementary-material3.caption1.p2" name="article1.body1.sec4.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.09 MB DOC)</p>
+<a name="pone.0001842.s004" id="pone.0001842.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001842.s004">Code S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material4.caption1.p1" name="article1.body1.sec4.supplementary-material4.caption1.p1"></a><p class="preSiDOI">This is an abbreviated C++ program that illustrates the concept of detection call based on the principle of Stochastic Resonance.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001842.s004</p><a id="article1.body1.sec4.supplementary-material4.caption1.p2" name="article1.body1.sec4.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.41 MB ZIP)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>The author would like to express sincere gratitude to Dr. Jeffrey Gimble from the Pennington Biomedical Research Center who has provided the experimental data and fruitful discussions. I also would like to thank Drs. Ann Hess and Richard Casey for reading and discussing the manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: AP. Analyzed the data: AP. Contributed reagents/materials/analysis tools: AP. Wrote the paper: AP.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001842-Allison1" id="pone.0001842-Allison1"></a>Allison DB, Cui X, Page GP, Sabripour M (2006) Microarray data analysis: from disarray to consolidation and consensus. Nat Rev Genet  7: 55–65.  <ul class="find" data-citedArticleID="1078344" data-doi="10.1038/nrg1749"><li><a href="http://dx.doi.org/10.1038/nrg1749" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+data+analysis%3A+from+disarray+to+consolidation+and+consensus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+data+analysis%3A+from+disarray+to+consolidation+and+consensus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001842-Quackenbush1" id="pone.0001842-Quackenbush1"></a>Quackenbush J (2002) Microarray data normalization and transformation. Nat Genet  32: Suppl496–501.  <ul class="find" data-citedArticleID="1078370" data-doi="10.1038/ng1032"><li><a href="http://dx.doi.org/10.1038/ng1032" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+data+normalization+and+transformation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+data+normalization+and+transformation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001842-Irizarry1" id="pone.0001842-Irizarry1"></a>Irizarry RA, Bolstad BM, Collin F, Cope LM, Hobbs B, et al.  (2003) Summaries of Affymetrix GeneChip probe level data. Nucleic Acids Res  31: e15.  <ul class="find" data-citedArticleID="1078356" data-doi="10.1093/nar/gng015"><li><a href="http://dx.doi.org/10.1093/nar/gng015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Summaries+of+Affymetrix+GeneChip+probe+level+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Summaries+of+Affymetrix+GeneChip+probe+level+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001842-Li1" id="pone.0001842-Li1"></a>Li C, Wong WH (2001) Model-based analysis of oligonucleotide arrays: expression index computation and outlier detection. Proc Natl Acad Sci U S A  98: 31–36.  <ul class="find" data-citedArticleID="1078358" data-doi="10.1073/pnas.98.1.31"><li><a href="http://dx.doi.org/10.1073/pnas.98.1.31" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Model-based+analysis+of+oligonucleotide+arrays%3A+expression+index+computation+and+outlier+detection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Model-based+analysis+of+oligonucleotide+arrays%3A+expression+index+computation+and+outlier+detection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001842-Guenther1" id="pone.0001842-Guenther1"></a>Guenther MG, Levine SS, Boyer LA, Jaenisch R, Young RA (2007) A chromatin landmark and transcription initiation at most promoters in human cells. Cell  130: 77–88.  <ul class="find" data-citedArticleID="1078352" data-doi="10.1016/j.cell.2007.05.042"><li><a href="http://dx.doi.org/10.1016/j.cell.2007.05.042" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+chromatin+landmark+and+transcription+initiation+at+most+promoters+in+human+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+chromatin+landmark+and+transcription+initiation+at+most+promoters+in+human+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001842-Benzi1" id="pone.0001842-Benzi1"></a>Benzi R, Sutera A, Vulpiani A (1981) The Mechanism of Stochastic Resonance. Journal of Physics A: Mathematical and General L453–L457.  <ul class="find" data-citedArticleID="1078346" data-doi="10.1088/0305-4470/14/11/006"><li><a href="http://dx.doi.org/10.1088/0305-4470/14/11/006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Mechanism+of+Stochastic+Resonance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Mechanism+of+Stochastic+Resonance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001842-Greenwood1" id="pone.0001842-Greenwood1"></a>Greenwood P, Ward L, Wefelmeyer W (1999) Statistical analysis of stochastic resonance in simple setting. Physical Review E  60: 4687–4695.  <ul class="find" data-citedArticleID="1078350" data-doi="10.1103/physreve.60.4687"><li><a href="http://dx.doi.org/10.1103/physreve.60.4687" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+analysis+of+stochastic+resonance+in+simple+setting." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+analysis+of+stochastic+resonance+in+simple+setting.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001842-Gonze1" id="pone.0001842-Gonze1"></a>Gonze D, Halloy J, Goldbeter A (2002) Robustness of circadian rhythms with respect to molecular noise. Proc Natl Acad Sci U S A  99: 673–678.  <ul class="find" data-citedArticleID="1078348" data-doi="10.1073/pnas.022628299"><li><a href="http://dx.doi.org/10.1073/pnas.022628299" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+of+circadian+rhythms+with+respect+to+molecular+noise." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+of+circadian+rhythms+with+respect+to+molecular+noise.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001842-MartinezMerlos1" id="pone.0001842-MartinezMerlos1"></a>Martinez-Merlos MT, Angeles-Castellanos M, Diaz-Munoz M, Aguilar-Roblero R, Mendoza J, et al.  (2004) Dissociation between adipose tissue signals, behavior and the food-entrained oscillator. J Endocrinol  181: 53–63.  <ul class="find" data-citedArticleID="1078360" data-doi="10.1677/joe.0.1810053"><li><a href="http://dx.doi.org/10.1677/joe.0.1810053" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dissociation+between+adipose+tissue+signals%2C+behavior+and+the+food-entrained+oscillator." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dissociation+between+adipose+tissue+signals%2C+behavior+and+the+food-entrained+oscillator.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001842-Zvonic1" id="pone.0001842-Zvonic1"></a>Zvonic S, Ptitsyn AA, Conrad SA, Scott LK, Floyd ZE, et al.  (2006) Characterization of peripheral circadian clocks in adipose tissues. Diabetes  55: 962–970.  <ul class="find" data-citedArticleID="1078384" data-doi="10.2337/diabetes.55.04.06.db05-0873"><li><a href="http://dx.doi.org/10.2337/diabetes.55.04.06.db05-0873" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Characterization+of+peripheral+circadian+clocks+in+adipose+tissues." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Characterization+of+peripheral+circadian+clocks+in+adipose+tissues.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001842-Ptitsyn1" id="pone.0001842-Ptitsyn1"></a>Ptitsyn AA, Zvonic S, Conrad SA, Scott LK, Mynatt RL, et al.  (2006) Circadian clocks are resounding in peripheral tissues. PLoS Comput Biol  2: e16.  <ul class="find" data-citedArticleID="1078364" data-doi="10.1371/journal.pcbi.0020016"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020016" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Circadian+clocks+are+resounding+in+peripheral+tissues." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Circadian+clocks+are+resounding+in+peripheral+tissues.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001842-Zvonic2" id="pone.0001842-Zvonic2"></a>Zvonic S, Ptitsyn AA, Kilroy G, Wu X, Conrad SA, et al.  (2007) Circadian oscillation of gene expression in murine calvarial bone. J Bone Miner Res  22: 357–365.  <ul class="find" data-citedArticleID="1078386" data-doi="10.1359/jbmr.061114"><li><a href="http://dx.doi.org/10.1359/jbmr.061114" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Circadian+oscillation+of+gene+expression+in+murine+calvarial+bone." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Circadian+oscillation+of+gene+expression+in+murine+calvarial+bone.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001842-Ptitsyn2" id="pone.0001842-Ptitsyn2"></a>Ptitsyn AA, Zvonic S, Gimble JM (2007) Digital Signal Processing Reveals Circadian Baseline Oscillation in Majority of Mammalian Genes. PLoS Comput Biol  3: e120.  <ul class="find" data-citedArticleID="1078366" data-doi="10.1371/journal.pcbi.0030120"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0030120" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Digital+Signal+Processing+Reveals+Circadian+Baseline+Oscillation+in+Majority+of+Mammalian+Genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Digital+Signal+Processing+Reveals+Circadian+Baseline+Oscillation+in+Majority+of+Mammalian+Genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001842-Ptitsyn3" id="pone.0001842-Ptitsyn3"></a>Ptitsyn AA, Zvonic S, Gimble JM (2006) Permutation test for periodicity in short time series data. BMC Bioinformatics  7: Suppl 2S10.  <ul class="find" data-citedArticleID="1078368" data-doi="10.1186/1471-2105-7-s2-s10"><li><a href="http://dx.doi.org/10.1186/1471-2105-7-s2-s10" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Permutation+test+for+periodicity+in+short+time+series+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Permutation+test+for+periodicity+in+short+time+series+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001842-Storch1" id="pone.0001842-Storch1"></a>Storch KF, Lipan O, Leykin I, Viswanathan N, Davis FC, et al.  (2002) Extensive and divergent circadian gene expression in liver and heart. Nature  417: 78–83.  <ul class="find" data-citedArticleID="1078376" data-doi="10.1038/nature744"><li><a href="http://dx.doi.org/10.1038/nature744" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Extensive+and+divergent+circadian+gene+expression+in+liver+and+heart." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Extensive+and+divergent+circadian+gene+expression+in+liver+and+heart.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001842-Havel1" id="pone.0001842-Havel1"></a>Havel PJ (2000) Role of adipose tissue in body-weight regulation: mechanisms regulating leptin production and energy balance. Proc Nutr Soc  59: 359–371.  <ul class="find" data-citedArticleID="1078354" data-doi="10.1017/s0029665100000410"><li><a href="http://dx.doi.org/10.1017/s0029665100000410" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Role+of+adipose+tissue+in+body-weight+regulation%3A+mechanisms+regulating+leptin+production+and+energy+balance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Role+of+adipose+tissue+in+body-weight+regulation%3A+mechanisms+regulating+leptin+production+and+energy+balance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001842-Refinetti1" id="pone.0001842-Refinetti1"></a>Refinetti R (2005) Time for sex: nycthemeral distribution of human sexual behavior. J Circadian Rhythms  3: 4.  <ul class="find" data-citedArticleID="1078372"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Time+for+sex%3A+nycthemeral+distribution+of+human+sexual+behavior.&amp;auth=&amp;atitle=Time+for+sex%3A+nycthemeral+distribution+of+human+sexual+behavior." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Time+for+sex%3A+nycthemeral+distribution+of+human+sexual+behavior." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Time+for+sex%3A+nycthemeral+distribution+of+human+sexual+behavior.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001842-Tu1" id="pone.0001842-Tu1"></a>Tu BP, Kudlicki A, Rowicka M, McKnight SL (2005) Logic of the yeast metabolic cycle: temporal compartmentalization of cellular processes. Science  310: 1152–1158.  <ul class="find" data-citedArticleID="1078380" data-doi="10.1126/science.1120499"><li><a href="http://dx.doi.org/10.1126/science.1120499" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Logic+of+the+yeast+metabolic+cycle%3A+temporal+compartmentalization+of+cellular+processes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Logic+of+the+yeast+metabolic+cycle%3A+temporal+compartmentalization+of+cellular+processes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001842-Savitzky1" id="pone.0001842-Savitzky1"></a>Savitzky A, Golay M (1964) Smoothing and differentiation of data by simplified least squares procedures. Analytical Chemistry  36: 1627–1639.  <ul class="find" data-citedArticleID="1078374" data-doi="10.1021/ac60214a047"><li><a href="http://dx.doi.org/10.1021/ac60214a047" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Smoothing+and+differentiation+of+data+by+simplified+least+squares+procedures." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Smoothing+and+differentiation+of+data+by+simplified+least+squares+procedures.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001842-Priestley1" id="pone.0001842-Priestley1"></a>Priestley MB (1981) Spectral Analysis and Time Series. ed.:. London: Academic Press.   <ul class="find-nolinks"></ul></li><li><span class="label">21.
+              </span><a name="pone.0001842-Wichert1" id="pone.0001842-Wichert1"></a>Wichert S, Fokianos K, Strimmer K (2004) Identifying periodically expressed transcripts in microarray time series data. Bioinformatics  20: 5–20.  <ul class="find" data-citedArticleID="1078382" data-doi="10.1093/bioinformatics/btg364"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg364" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifying+periodically+expressed+transcripts+in+microarray+time+series+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifying+periodically+expressed+transcripts+in+microarray+time+series+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001842-Storey1" id="pone.0001842-Storey1"></a>Storey JD, Tibshirani R (2003) Statistical significance for genomewide studies. Proc Natl Acad Sci U S A  100: 9440–9445.  <ul class="find" data-citedArticleID="1078378" data-doi="10.1073/pnas.1530509100"><li><a href="http://dx.doi.org/10.1073/pnas.1530509100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+significance+for+genomewide+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+significance+for+genomewide+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.XML" value="58946"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.PDF" value="303634"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g001.PNG_L" value="976081"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g001.PNG_M" value="183928"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g001.PNG_S" value="10014"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g001.TIF" value="1469838"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g001.PNG_I" value="63711"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g002.PNG_L" value="2571020"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g002.PNG_M" value="168398"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g002.PNG_S" value="9709"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g002.TIF" value="3572926"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g002.PNG_I" value="53124"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g003.PNG_L" value="427681"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g003.PNG_M" value="68713"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g003.PNG_S" value="7521"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g003.TIF" value="884594"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.g003.PNG_I" value="25238"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.t001.PNG_L" value="82517"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.t001.PNG_M" value="47018"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.t001.PNG_S" value="9231"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.t001.TIF" value="408070"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.t001.PNG_I" value="14768"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e001.PNG" value="7254"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e001.TIF" value="23188"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e002.PNG" value="10701"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e002.TIF" value="26740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e003.PNG" value="10191"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e003.TIF" value="25916"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e004.PNG" value="11541"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e004.TIF" value="27244"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e005.PNG" value="11725"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e005.TIF" value="27172"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e006.PNG" value="9776"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.e006.TIF" value="25692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.s001.DOC" value="41472"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.s002.DOC" value="122368"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.s003.DOC" value="93184"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001842.s004.ZIP" value="406647"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001842&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001842" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001842&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001842&volume=&issue=&title=Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes&author_name=Andrey%20Ptitsyn&start_page=1&end_page=6" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001842" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842&amp;t=Stochastic%20Resonance%20Reveals%20%E2%80%9CPilot%20Light%E2%80%9D%20Expression%20in%20Mammalian%20Genes" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842&title=Stochastic%20Resonance%20Reveals%20%E2%80%9CPilot%20Light%E2%80%9D%20Expression%20in%20Mammalian%20Genes&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842&amp;title=Stochastic%20Resonance%20Reveals%20%E2%80%9CPilot%20Light%E2%80%9D%20Expression%20in%20Mammalian%20Genes" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001842&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Stochastic Resonance Reveals “Pilot Light” Expression in Mammalian Genes';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001842';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Stochastic%20Resonance%20Reveals%20%E2%80%9CPilot%20Light%E2%80%9D%20Expression%20in%20Mammalian%20Genes http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001842" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001842" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Background+noise+%28acoustics%29%22" title="Search for articles in the subject area:'Background noise (acoustics)'"><div class="flagText">Background noise (acoustics)</div></a>
+              <div data-categoryid="34201" data-articleid="26508"
+                   data-categoryname="Background noise (acoustics)"
+                   class="flagImage" title="Flag 'Background noise (acoustics)' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Background+signal+noise%22" title="Search for articles in the subject area:'Background signal noise'"><div class="flagText">Background signal noise</div></a>
+              <div data-categoryid="21733" data-articleid="26508"
+                   data-categoryname="Background signal noise"
+                   class="flagImage" title="Flag 'Background signal noise' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Circadian+oscillators%22" title="Search for articles in the subject area:'Circadian oscillators'"><div class="flagText">Circadian oscillators</div></a>
+              <div data-categoryid="32325" data-articleid="26508"
+                   data-categoryname="Circadian oscillators"
+                   class="flagImage" title="Flag 'Circadian oscillators' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Circadian+rhythms%22" title="Search for articles in the subject area:'Circadian rhythms'"><div class="flagText">Circadian rhythms</div></a>
+              <div data-categoryid="19705" data-articleid="26508"
+                   data-categoryname="Circadian rhythms"
+                   class="flagImage" title="Flag 'Circadian rhythms' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22DNA+transcription%22" title="Search for articles in the subject area:'DNA transcription'"><div class="flagText">DNA transcription</div></a>
+              <div data-categoryid="20231" data-articleid="26508"
+                   data-categoryname="DNA transcription"
+                   class="flagImage" title="Flag 'DNA transcription' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="26508"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+oscillators%22" title="Search for articles in the subject area:'Genetic oscillators'"><div class="flagText">Genetic oscillators</div></a>
+              <div data-categoryid="19703" data-articleid="26508"
+                   data-categoryname="Genetic oscillators"
+                   class="flagImage" title="Flag 'Genetic oscillators' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Microarrays%22" title="Search for articles in the subject area:'Microarrays'"><div class="flagText">Microarrays</div></a>
+              <div data-categoryid="17255" data-articleid="26508"
+                   data-categoryname="Microarrays"
+                   class="flagImage" title="Flag 'Microarrays' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=2081'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=8246'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=105&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=18669">ongoing study</a><br>Posted by ptitsyn</p>
+      <p><a href="/annotation/listThread.action?root=5223">Referee comments: Referee 1 (Tom Nye)</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

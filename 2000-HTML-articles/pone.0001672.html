@@ -1,0 +1,1207 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001672"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001672" />
+
+    <meta name="citation_title" content="Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast"/>
+    <meta itemprop="name" content="Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast"/>
+
+      <meta name="citation_author" content="Maria I. Davidich"/>
+            <meta name="citation_author_institution" content="Institut für Theoretische Physik, Universität Bremen, Bremen, Germany"/>
+      <meta name="citation_author" content="Stefan Bornholdt"/>
+            <meta name="citation_author_institution" content="Institut für Theoretische Physik, Universität Bremen, Bremen, Germany"/>
+
+    <meta name="citation_date" content="2008/2/27"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001672.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1672"/>
+    <meta name="citation_issue" content="2"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Predictive models of molecular machines involved in Caenorhabditis elegans early embryogenesis.; citation_author=KC Gunsalus; citation_author=H Ge; citation_author=AJ Schetter; citation_author=DS Goldberg; citation_author=J-DJ Han; citation_journal_title=Nature; citation_volume=436 (11); citation_number=1; citation_pages=861-865; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Computational studies of gene regulatory networks: in numero molecular biology.; citation_author=J Hasty; citation_author=D McMillen; citation_author=F Isaacs; citation_author=JJ Collins; citation_journal_title=Nat Rev Genet; citation_volume=2; citation_number=2; citation_pages=268-279; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Dynamic modelling and analysis of biochemical networks: mechanism-based models and model-based experiments.; citation_author=NAW Riel; citation_journal_title=Briefings in Bioinformatics; citation_volume=7(4); citation_number=3; citation_pages=364-374; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Mathematical modeling of gene networks.; citation_author=P Smolen; citation_author=DA Baxter; citation_author=JH Byrne; citation_journal_title=Neuron; citation_volume=26; citation_number=4; citation_pages=567-580; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=A general method for numerically simulating the stochastic time evolution of coupled chemical reactions,; citation_author=DT Gillespie; citation_journal_title=J Comp Phys; citation_volume=22; citation_number=5; citation_pages=403-434; citation_date=1976; " />
+      <meta name="citation_reference" content="citation_title=Exact stochastic simulation of coupled chemical reactions.; citation_author=DT Gillespie; citation_journal_title=J Phys Chem; citation_volume=81; citation_number=6; citation_pages=2340-2361; citation_date=1977; " />
+      <meta name="citation_reference" content="citation_title=The logical analysis of continuous, nonlinear biochemical control networks.; citation_author=L Glass; citation_author=SA Kauffman; citation_journal_title=J Theor Biol; citation_volume=39; citation_number=7; citation_pages=103-129; citation_date=1973; " />
+      <meta name="citation_reference" content="citation_title=Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling pathways in the cell.; citation_author=JJ Tyson; citation_author=KC Chen; citation_author=B Novak; citation_journal_title=Curr Op Cell Biol; citation_volume=15; citation_number=8; citation_pages=221-231; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Modeling the fission yeast cell cycle: Quantized cycle times in wee1-cdc25 mutant cells.; citation_author=A Sveiczer; citation_author=A Csikasz-Nagy; citation_author=B Gyorffy; citation_author=JJ Tyson; citation_author=B Novak; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=97(14); citation_number=9; citation_pages=7865-7870; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Network dynamics and cell physiology.; citation_author=JJ Tyson; citation_author=KC Chen; citation_author=B Novak; citation_journal_title=Nature Rev Mol Cell Biol; citation_volume=2; citation_number=10; citation_pages=908-916; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Superstability of the yeast cell-cycle dynamics: Ensuring causality in the presence of biochemical stochasticity.; citation_author=S Braunewell; citation_author=S Bornholdt; citation_journal_title=J Theor Biol; citation_volume=245(4); citation_number=11; citation_pages=638-643; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The topology of the regulatory interactions predicts the expression pattern of the Drosophila segment polarity genes.; citation_author=R Albert; citation_author=HG Othmer; citation_journal_title=J Theor Biol; citation_volume=223; citation_number=12; citation_pages=1-18; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The yeast cell-cycle network is robustly designed.; citation_author=F Li; citation_author=T Long; citation_author=Y Lu; citation_author=Q Quyang; citation_author=C Tang; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=101(14); citation_number=13; citation_pages=4781-4786; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Metabolic stability and epigenesis in randomly constructed genetic nets.; citation_author=SA Kauffmann; citation_journal_title=J Theor Biol; citation_volume=22; citation_number=14; citation_pages=437-467; citation_date=1969; " />
+      <meta name="citation_reference" content="citation_title=The Origins of Order: Self-Organization and selection in evolution.; citation_author=SA Kauffman; citation_number=15; citation_date=1993; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=Systems biology: Less is more in modeling large genetic networks.; citation_author=S Bornholdt; citation_journal_title=Science; citation_volume=310 (5747); citation_number=16; citation_pages=449-451; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A gene regulatory network model for cell-fate determination during Arabidopsis Thaliana flower development that is robust and recovers experimental gene expression profiles.; citation_author=C Espinosa-Soto; citation_author=P Padilla-Longoria; citation_author=ER Alvarez-Buylla; citation_journal_title=Plant Cell; citation_volume=16; citation_number=17; citation_pages=2923-2939; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Genetic control of flower morphogenesis in Arabidopsis Thaliana: a logical analysis.; citation_author=L Mendoza; citation_author=D Thieffry; citation_author=ER Alvarez-Buylla; citation_journal_title=Bioinformatics; citation_volume=15; citation_number=18; citation_pages=593-606; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Light- and carbonsignaling pathways. Modeling circuits of interactions.; citation_author=KE Thum; citation_author=DE Shasha; citation_author=LV Lejay; citation_author=GM Coruzzi; citation_journal_title=Plant Physiol; citation_volume=132; citation_number=19; citation_pages=440-452; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Predicting Essential Components of Signal Transduction Networks: A Dynamic Model of Guard Cell Abscisic Acid Signaling.; citation_author=S Li; citation_author=SM Assmann; citation_author=R Albert; citation_journal_title=PLOS Biol.; citation_volume=e312(10); citation_number=20; citation_pages=1732-1748; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Dynamical analysis of a generic Boolean model for the control of the mammalian cell cycle.; citation_author=A Faure; citation_author=A Naldi; citation_author=C Chaouiya; citation_author=D Thieffry; citation_journal_title=Bioinformatics; citation_volume=22(14); citation_number=21; citation_pages=e124-e131; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A logical analysis of the drosophila gap-gene system.; citation_author=L Sanchez; citation_author=D Thieffry; citation_journal_title=J Theor Biol; citation_volume=211; citation_number=22; citation_pages=115-141; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The best yeast?; citation_author=SL Forsburg; citation_journal_title=Trends in Genetics; citation_volume=15 (9); citation_number=23; citation_pages=340-344; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Modeling the control of DNA replication in fission yeast. Cell biology.; citation_author=B Novak; citation_author=JJ Tyson; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=94; citation_number=24; citation_pages=9147-9152; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Mathematical model of the cell division cycle of fission yeast.; citation_author=B Novak; citation_author=Z Pataki; citation_author=A Ciliberto; citation_author=JJ Tyson; citation_journal_title=Chaos; citation_volume=11(1); citation_number=25; citation_pages=277-286; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The dynamics of the cell-cycle regulation.; citation_author=JJ Tyson; citation_author=A Csikasz-Nagy; citation_author=B Novak; citation_journal_title=BioEssays; citation_volume=24; citation_number=26; citation_pages=1095-1109; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Fkh2p and Sep1p regulate mitotic gene transcription in fission yeast; citation_author=V Buck; citation_author=SS Ng; citation_author=AB Ruiz-Garcia1; citation_author=K Papadopoulou; citation_author=S Bhatti; citation_journal_title=J Cell Science; citation_volume=116; citation_number=27; citation_pages=4263-4275; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=P25(rum1) orders s-phase and mitosis by acting as an inhibitor of the p34(cdc2) mitotic kinase.; citation_author=J Correabordes; citation_author=P Nurse; citation_journal_title=Cell; citation_volume=83; citation_number=28; citation_pages=1001-1009; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Inhibitory phosphorylation of the APC regulator Hct1 is controlled by the kinase Cdc28 and phosphatase Cdc14.; citation_author=S Jaspersen; citation_author=J Charles; citation_author=D Morgan; citation_journal_title=Curr Biol; citation_volume=9; citation_number=29; citation_pages=227-236; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Mik1 and wee1 cooperate in the inhibitory tyrosine phosphorylation of cdc2.; citation_author=K Lundgren; citation_author=N Walwortha; citation_author=R Booherb; citation_author=M Dembskia; citation_author=M Kirschnerb; citation_journal_title=Cell; citation_volume=64(6); citation_number=30; citation_pages=1111-1122; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=B-type cyclins regulate G1 progression in fission yeast in opposition to the p25rum1 cdk inhibitor.; citation_author=C Martin-Castellanos; citation_author=K Labib; citation_author=S Moreno; citation_journal_title=J EMBO; citation_volume=15(4); citation_number=31; citation_pages=839-849; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Negative regulation of mitosis by wee1[+], a gene encoding a protein kinase homologue.; citation_author=P Russel; citation_author=P Nurse; citation_journal_title=Cell; citation_volume=49; citation_number=32; citation_pages=559-567; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=The phosphatase Cdc14 triggers mitotic exit by reversal of Cdk-dependent phosphorylation.; citation_author=R Visintin; citation_author=K Craig; citation_author=ES Hwang; citation_author=S Prinz; citation_author=M Tyers; citation_journal_title=Mol Cell; citation_volume=2; citation_number=33; citation_pages=709-718; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Fission yeast Fizzy-related protein srw1 is a G1-specific promoter of mitotic cyclin B degradation.; citation_author=S Yamaguchi; citation_author=H Okayama; citation_author=P Nurse; citation_journal_title=J EMBO; citation_volume=19(15); citation_number=34; citation_pages=3968-3977; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Events at the end of mitosis in the budding and fission yeasts.; citation_author=V Simanis; citation_journal_title=J Cell Sci; citation_volume=116; citation_number=35; citation_pages=4263-4275; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Robustness in bacterial chemotaxis.; citation_author=U Alon; citation_author=MG Surette; citation_author=N Barkai; citation_author=S Leibler; citation_journal_title=Nature; citation_volume=397; citation_number=36; citation_pages=168-171; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Fission yeast Clp1p phosphatase regulates G2/M transition and coordination of cytokinesis with cell cycle progression.; citation_author=S Trautmann; citation_author=BA Wolfe; citation_author=P Jorgensen; citation_author=M Tyers; citation_author=KL Gould; citation_journal_title=Curr Biol; citation_volume=11(12); citation_number=37; citation_pages=931-940; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Pajek-Program for Large Network Analysis. Connections 21(2): 47-57. Trautmann S, Wolfe BA, Jorgensen P, Tyers M, Gould KL et al (2001) Fission yeast Clp1p phosphatase regulates G2/M transition and coordination of cytokinesis with cell cycle progression.; citation_author=V Batagelj; citation_author=A Mrvar; citation_journal_title=Curr Biol; citation_volume=11(12); citation_number=38; citation_pages=931-940; citation_date=1998; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast"/>
+    <meta name="twitter:description" content="A Boolean network model of the cell-cycle regulatory network of fission yeast (Schizosaccharomyces Pombe) is constructed solely on the basis of the known biochemical interaction topology. Simulating the model in the computer faithfully reproduces the known activity sequence of regulatory proteins along the cell cycle of the living cell. Contrary to existing differential equation models, no parameters enter the model except the structure of the regulatory circuitry. The dynamical properties of the model indicate that the biological dynamical sequence is robustly implemented in the regulatory network, with the biological stationary state G1 corresponding to the dominant attractor in state space, and with the biological regulatory sequence being a strongly attractive trajectory. Comparing the fission yeast cell-cycle model to a similar model of the corresponding network in S. cerevisiae, a remarkable difference in circuitry, as well as dynamics is observed. While the latter operates in a strongly damped mode, driven by external excitation, the S. pombe network represents an auto-excited system with external damping."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001672.g003"/>
+
+  <meta property="og:title" content="Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=4321'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=123'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=3845&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001672">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001672" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001672&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Maria I. Davidich, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institut für Theoretische Physik, Universität Bremen, Bremen, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Stefan Bornholdt
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:bornholdt@itp.uni-bremen.de">bornholdt@itp.uni-bremen.de</a></p>
+
+                <p>Affiliation:
+                  Institut für Theoretische Physik, Universität Bremen, Bremen, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: February 27, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001672</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001672-t001" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001672-g001" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001672-t002" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001672-t003" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001672-g002" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001672-g003" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001672-t004" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001672">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001672" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>A Boolean network model of the cell-cycle regulatory network of fission yeast (<em>Schizosaccharomyces Pombe</em>) is constructed solely on the basis of the known biochemical interaction topology. Simulating the model in the computer faithfully reproduces the known activity sequence of regulatory proteins along the cell cycle of the living cell. Contrary to existing differential equation models, no parameters enter the model except the structure of the regulatory circuitry. The dynamical properties of the model indicate that the biological dynamical sequence is robustly implemented in the regulatory network, with the biological stationary state G1 corresponding to the dominant attractor in state space, and with the biological regulatory sequence being a strongly attractive trajectory. Comparing the fission yeast cell-cycle model to a similar model of the corresponding network in <em>S. cerevisiae</em>, a remarkable difference in circuitry, as well as dynamics is observed. While the latter operates in a strongly damped mode, driven by external excitation, the <em>S. pombe</em> network represents an auto-excited system with external damping.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Davidich MI, Bornholdt S (2008) Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast. PLoS ONE 3(2):
+          e1672.
+            doi:10.1371/journal.pone.0001672</p><p><strong>Academic Editor: </strong>Gustavo Stolovitzky, IBM Thomas J. Watson Research Center, United States of America</p><p><strong>Received:</strong> June 26, 2007; <strong>Accepted:</strong> December 18, 2007; <strong>Published:</strong> February 27, 2008</p><p><strong>Copyright:</strong> © 2008 Davidich, Bornholdt. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The authors have no support or funding to report.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Predicting the dynamics of complex molecular networks that control living organisms is a central challenge of systems biology. While cell-wide, or organism-wide, models of genetic and molecular interactions appear well out of reach, predictive models of single pathways and small modular molecular networks of living cells have been studied with great success and are a matter of active research <a href="#pone.0001672-Gunsalus1">[1]</a>–<a href="#pone.0001672-Smolen1">[4]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>If the biochemical details of a chemical molecular network are known, an efficient yet detailed method for its simulation is to use chemical Monte-Carlo simulations <a href="#pone.0001672-Gillespie1">[5]</a>, <a href="#pone.0001672-Gillespie2">[6]</a>. Less computationally costly, and perhaps the most commonly used approach to modeling biochemical pathways and networks, are differential equations which capture the underlying reaction kinetics in terms of rates and concentrations <a href="#pone.0001672-Glass1">[7]</a>. Such methods are highly developed today and are broadly applied to predictive dynamical modeling from single pathways to complex biochemical networks <a href="#pone.0001672-Tyson1">[8]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Such mathematical models contain detailed information about the time evolution of the system, which, in some circumstances, may be more than one is interested in. For many biological questions, the sole prediction of the sequential pattern of states of the central control circuit of a cell could advance our knowledge significantly, as may be the case in cell cycle progression, cell commitment (e.g. to apoptosis), and in stem cell control and differentiation. When we are interested in the path that a cell takes, the exact time course of the control circuit dynamics may not be needed, however, its modeling takes most of our efforts and often one needs to know large numbers of biochemical parameters that are not easily obtained <a href="#pone.0001672-Sveiczer1">[9]</a>, <a href="#pone.0001672-Tyson2">[10]</a>.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Indeed, recent research indicates that some molecular control networks are so robustly designed that timing is not a critical factor <a href="#pone.0001672-Braunewell1">[11]</a>. Vice versa, as a working hypothesis, this observation bears the chance for vastly simplified dynamical models for molecular networks, as soon as one drops the requirement for accurate reproduction of timing by the model, and just asks for the sequence of dynamical patterns of the network. Recent studies demonstrate, that such more simplified models indeed can reproduce the sequence of states in biological systems. For example, a class of discrete dynamical systems with binary states, mathematically similar to models used in artificial neural networks, has recently proven to predict specific sequence patterns of protein and gene activity as observed in living cells <a href="#pone.0001672-Albert1">[12]</a>, <a href="#pone.0001672-Li1">[13]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Such models are in the mathematical tradition of random Boolean networks which, for decades, served as a simplistic analogy for how gene regulation networks could in principle work <a href="#pone.0001672-Kauffmann1">[14]</a>. In these historical studies, dynamical properties of random networks of discrete dynamical elements were studied to derive possible properties of (the then hardly known) regulatory circuits <a href="#pone.0001672-Kauffman1">[15]</a>. In the new approach outlined above, however, similar mathematical elements now serve to simulate one specific biological control network of fully known circuitry. From a different perspective, they can be viewed as a further simplification of the differential equation approach <a href="#pone.0001672-Bornholdt1">[16]</a>. Recent application of this model class to modeling real biological genetic circuits show that they can predict sequence patterns of protein and gene activity with much less input (e.g. parameters) to the model as the classical differential equations approach. Examples are models of the genetic network underlying flower development in <em>A. thaliana</em> <a href="#pone.0001672-EspinosaSoto1">[17]</a>–<a href="#pone.0001672-Thum1">[19]</a>, the cell-cycle networks of <em>S. cerevisiae</em> <a href="#pone.0001672-Li1">[13]</a>, the signal transduction network for abscisic acid induced stomatal closure <a href="#pone.0001672-Li2">[20]</a>, the mammalian cell-cycle <a href="#pone.0001672-Faure1">[21]</a>, as well as gene regulatory networks determining embryonic segmentation in <em>D. melanogaster</em> <a href="#pone.0001672-Albert1">[12]</a>, <a href="#pone.0001672-Faure1">[21]</a>.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>For example, the model by Albert and Othmer <a href="#pone.0001672-Albert1">[12]</a> of the segment polarity gene network in <em>D. melanogaster</em>, as well as the model by Li et al. <a href="#pone.0001672-Li1">[13]</a> of the <em>S. cerevisiae</em> cell-cycle control network, yield accurate predictions of sequential events of the processes previously not obtained from such a simple model class. In these models, the dynamics can be viewed in terms of flow in the space of possible states of the network, converging towards so-called attractors, or fixed points, which here correspond to specific biological states. These attractors and their basins of attraction in state space mainly depend on the circuitry of the network, and their analysis yields further information about the robustness of the dynamics against errors or mutations.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>How generic is this approach? In this article we address the question whether the approach of discrete dynamical network models is a more general method, namely whether constructing predictive dynamical models for regulation of proteins and genes from Boolean networks is a straightforward procedure that generalizes to other organisms. We choose the fission yeast (<em>Schizosaccharomyces Pombe</em>) cell-cycle as an example system that on the one hand is well understood in terms of established differential equation models, but on the other hand is markedly different from the above examples, as <em>S. cerevisiae</em>. The yeast <em>S. Pombe</em> has been sequenced in 1999 and has been used as a model organism only relatively recently <a href="#pone.0001672-Forsburg1">[23]</a>. Models exist <a href="#pone.0001672-Novak1">[24]</a>, <a href="#pone.0001672-Novak2">[25]</a> that mathematically model the fission yeast cell-cycle with a common ODE (ordinary differential equation) approach. These are based on a set of differential equations for the biochemical concentrations that take part in the network and their change in time (and space). This approach allows to predict the dynamics of the fission yeast cell-cycle for the wild-type and some known mutant cells <a href="#pone.0001672-Tyson2">[10]</a>, <a href="#pone.0001672-Tyson3">[26]</a>.</p>
+<a id="article1.body1.sec1.p8" name="article1.body1.sec1.p8"></a><p>We will in the following construct a discrete dynamical model for the fission yeast cell cycle network. An interesting question will be, how far we will get without considering parameters, as kinetic constants etc., that are a key ingredient of the existing models. We will base our model on the circuitry of the known biochemical network, only. Let us in the next section briefly review the fission yeast cell cycle network, then define our discrete dynamical model in the subsequent section. This is followed by a section reporting our results, and then we will compare our findings with a similar model of the budding yeast (<em>S. cerevisiae</em>) network and conclude with a discussion.</p>
+
+<h4>The fission yeast cell cycle network</h4>
+<a id="article1.body1.sec1.sec1.p1" name="article1.body1.sec1.sec1.p1"></a><p>Let us briefly review the regulatory processes that control the cell cycle in <em>S. Pombe</em>. The full process of one cell division consists of four stages, named G1—S—G2—M. At the first stage (G1), the cell grows and, under specific conditions, commits to division. At the second stage (S), DNA is synthesized and chromosomes are replicated. This is followed by a “gap” stage G2. The final stage (M) corresponds to mitosis, in which chromosomes are separated and the cell divides itself. Eventually, after the M stage, the cell enters G1 again, thereby completing one cycle.</p>
+<a id="article1.body1.sec1.sec1.p2" name="article1.body1.sec1.sec1.p2"></a><p>The biochemical reactions that form the network that controls the fission yeast cell-cycle have been studied in detail over the last years <a href="#pone.0001672-Novak2">[25]</a>, <a href="#pone.0001672-Buck1">[27]</a>–<a href="#pone.0001672-Yamaguchi1">[34]</a>. The major role is played by a cyclin-dependent protein kinase complex Cdc2/Cdc13 with Tyr-15, a residue of Cdc2. When Tyr-15 is unphosphorylated, complex Cdc2/Cdc13 reaches high activity. This residue is inactive during the G2 phase, when Cdc2/Cdc13 is phosphorylated, and becomes active during the G2—M transition <a href="#pone.0001672-Novak2">[25]</a>, <a href="#pone.0001672-Tyson3">[26]</a>. We have two nodes, representing this complex: Cdc2/Cdc13 and Cdc2/Cdc13*. The first is responsible for the intermediate activity of the complex, when the residue Tyr-15 is in its inactive form. Cdc2/Cdc13* is an indicator of high activity of Cdc2/Cdc13, when Tyr-15 is unphosphorylated.</p>
+<a id="article1.body1.sec1.sec1.p3" name="article1.body1.sec1.sec1.p3"></a><p>The other members that participate in the cell-cycle control can be attributed to two different classes. The first class consists of positive regulators of the kinase Cdc2/Cdc13: an indicator of mass of the cell, works as “Start”, “Start kinase” (SK), a group of Cdk/cyclin complexes (Cdc2 with Cig1, Cig2 and Puc1 cyclins), and the phosphatase Cdc25. A second class is composed of the antagonists of the complex Cdc2/Cdc13: Slp1, Rum1, Ste9, and the phosphatase PP <a href="#pone.0001672-Sveiczer1">[9]</a>.</p>
+<a id="article1.body1.sec1.sec1.p4" name="article1.body1.sec1.sec1.p4"></a><p>We give a full compilation of the network of key-regulators of the fission yeast cell cycle network in <a href="#pone-0001672-t001">Table 1</a>, corresponding to our current knowledge as given in <a href="#pone.0001672-Sveiczer1">[9]</a>, <a href="#pone.0001672-Novak2">[25]</a>, <a href="#pone.0001672-Tyson3">[26]</a>. Also our translation into an interaction graph with activating and inhibiting links is given in the table, which is the starting point for our discrete dynamical network simulation of this network. Let us in the next section define the discrete dynamics that we will simulate on this graph.</p>
+<div class="figure" id="pone-0001672-t001"><div class="img"><a name="pone-0001672-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>The rules of interaction of the main elements involved in the fission yeast cell cycle regulation.</span></strong></p><span>doi:10.1371/journal.pone.0001672.t001</span></div>
+
+<h4>A discrete dynamical model of the cell cycle network</h4>
+<a id="article1.body1.sec1.sec2.p1" name="article1.body1.sec1.sec2.p1"></a><p>We assume proteins to be the nodes of the network and assign a binary value <em>S<sub>i</sub>(t)</em>Є{0,1} to each node <em>i</em>, denoting whether the protein is present or not (due to different possible biochemical mechanisms, as, e.g., gene expression of a corresponding protein, or fast biochemical reactions as phosphorylization). The interactions between the nodes, as compiled in <a href="#pone-0001672-t001">Table 1</a>, are denoted as links, or arrows (see <a href="#pone-0001672-g001">Figure 1</a>). We do not quantify any interaction strength, except whether a link is present or not, and whether it is activating or inhibiting. Again, different biochemical mechanisms are subsumed under this simplified picture, as, e.g., transcriptional regulation, or faster enzymatic interactions.</p>
+<div class="figure" id="pone-0001672-g001"><div class="img"><a name="pone-0001672-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Network model.</span></strong></p><a id="article1.body1.sec1.sec2.fig1.caption1.p1" name="article1.body1.sec1.sec2.fig1.caption1.p1"></a><p>Network model of the fission yeast cell-cycle regulation. Nodes denote threshold functions (1), representing the switching behavior of regulatory proteins. Thresholds for the specific nodes are chosen as described in the text. Arrows represent interactions between proteins as defined in the interaction matrix <em>a<sub>ij</sub></em> of the model (with <em>a<sub>ij</sub> = +1</em> for green/solid arrows and <em>a<sub>ij</sub> = −1</em> for red/dashed arrows).</p>
+<span>doi:10.1371/journal.pone.0001672.g001</span></div><a id="article1.body1.sec1.sec2.p2" name="article1.body1.sec1.sec2.p2"></a><p>The states of the nodes are updated (in parallel) in discrete time steps according to the following rule:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.e001&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br>where <em>a<sub>ij</sub>(t) = 1</em> for an activating interaction (green link) from node <em>j</em> to node <em>i</em>, <em>a<sub>ij</sub>(t) = −1</em> for an inhibiting (red) link from node <em>j</em> to node <em>i</em>, and <em>a<sub>ij</sub>(t) = 0</em> for no interaction at all. This definition follows closely the approach in <a href="#pone.0001672-Li1">[13]</a>. <em>θ<sub>i</sub></em> is a threshold of activation of node <em>i</em>, which is 0 for all nodes, except two explained below. The dramatic simplification step in constructing this model consists in not differentiating between absolute values of interaction strengths on the one hand, and not distinguishing between the different time scales of the biochemical interactions involved on the other. This corresponds to dropping all biochemical parameter values, time constants, as well as binding constants, from the differential equation models. As we will see below, dynamical models on networks can be built to be insensitive to these parameters, provided that the interaction topology has certain properties.</p>
+<a id="article1.body1.sec1.sec2.p3" name="article1.body1.sec1.sec2.p3"></a><p>Two of the ten nodes included in the model exhibit a slightly different activation behavior, which we account for by a non-zero activation threshold. Cdc2/Cdc13*, the highly activated form of the complex Cdc2/Cdc13, has to be actively maintained by a positive regulatory signal, therefore <em>θ<sub>i</sub></em> = 1 for this node. The second special rule is to add “self-activation” (corresponding to adding a negative activation threshold <em>θ<sub>i</sub></em> = −1) to the node Cdc2/Cdc13, as it is otherwise not positively regulated. The biological motivation for this rule is the following. Cdc13 is constantly synthesized and after synthesis it immediately associates with Cdc2 <a href="#pone.0001672-Novak1">[24]</a>. Intracellular concentration of Cdc2 does not vary throughout the cell cycle <a href="#pone.0001672-Tyson3">[26]</a>. Thereby, as soon as enemies are not active, Cdc2/Cdc13 is becoming active. A similar mechanism is implemented in the corresponding ODE model <a href="#pone.0001672-Novak1">[24]</a> in terms of an inhomogeneous differential equation for Cdc13<sub>T</sub> with a heterogeneous exciting term k<sub>1</sub>M.</p>
+<a id="article1.body1.sec1.sec2.p4" name="article1.body1.sec1.sec2.p4"></a><p>We also follow <a href="#pone.0001672-Li1">[13]</a> by adding “self-degradation” (yellow loops) to those nodes that are not negatively regulated by others, representing the continuous degradation of proteins in the cell, which corresponds to <em>a<sub>ii</sub>(t) = −1</em>.</p>
+<a id="article1.body1.sec1.sec2.p5" name="article1.body1.sec1.sec2.p5"></a><p>Nodes, that have the same function as, for example, Wee1/Mik1 and SK (Cdc2/Cig1, Cdc2/Cig2, Cdc2/Puc1) are joined together in a single node (see <a href="#pone-0001672-g001">Figure 1</a>), as it does not make a difference in the specific mathematical model dynamics considered here.</p>
+<a id="article1.body1.sec1.sec2.p6" name="article1.body1.sec1.sec2.p6"></a><p>Finally let us define the initial condition of the model at the start of the simulation, which is chosen to correspond to the biological start condition with all nodes being in the OFF (inactive) state, except for the proteins Start, Ste9, Rum1, and Wee1/Mik1 <a href="#pone.0001672-Tyson3">[26]</a>.</p>
+
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>Simulation of the fission yeast cell cycle</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Let us first consider the time evolution of the proteins of the dynamical model described above. We run the cell-cycle model by exciting the G1 stationary state with the cell size signal (“Start” node). This initiates a sequence of network activation states of proteins that, eventually, return to the G1 stationary state. The temporal evolution of the protein states is presented in <a href="#pone-0001672-t002">Table 2</a>, where one observes a sequence of states which exactly matches the corresponding biological time sequence in the cell-cycle control network, from the excited G1 state (START) through S and G2 to the M phase and finally back to the stationary G1 state. This is a remarkable observation as it is unlikely to occur by chance due to the size of the state space.</p>
+<div class="figure" id="pone-0001672-t002"><div class="img"><a name="pone-0001672-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Temporal evolution of protein states in the cell cycle network.</span></strong></p><span>doi:10.1371/journal.pone.0001672.t002</span></div><a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>In the next step we run the model starting from each one of the 2<sup>10</sup> = 1024 possible initial states. We find that each initial state flows into one of 13 stationary states (fixed points and one limit cycle). The largest attractor belongs to a fixed point attracting 73% of all network states. Our first observation is that this fixed point exactly coincides with the biological G1 stationary state (see <a href="#pone-0001672-t003">Table 3</a>) of the cell. Thus, the biological target state is the dominant attractor of the network dynamics. As soon as the system reaches this state with the specific corresponding combination of active and inactive proteins it stays there, and is likely to do so even in the presence of perturbations.</p>
+<div class="figure" id="pone-0001672-t003"><div class="img"><a name="pone-0001672-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>All attractors (fixed points ( = FP) and one limit cycle ( = LC)) of the dynamics of the network model for the fission yeast cell cycle regulation.</span></strong></p><span>doi:10.1371/journal.pone.0001672.t003</span></div><a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>A further observation is best depicted by <a href="#pone-0001672-g002">Figure 2</a>, showing the dynamical flow of the network states and how it converges towards the biological fixed point. In this figure, the dynamical trajectories in the state space starting from all 1024 possible initial states of the network are shown. Each network state is represented by a dot, with the arrows between them indicating the dynamical transition from one state to its temporally subsequent state. At the root of the largest attractor (tree) the G1 state is found and the blue arrows show the biological time sequence that leads to it. This attractor tree consists of 73% of all network states.</p>
+<div class="figure" id="pone-0001672-g002"><div class="img"><a name="pone-0001672-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Network state space.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>State space of the 1024 possible network states (green circles) and their dynamical trajectories, all converging towards fixed point attractors. Each circle corresponds to one specific network state with each of the ten proteins being in one specific activation state (active/inactive). The largest attractor tree corresponds to all network states flowing to the G1 fixed point (blue node). Arrows between the network states indicate the direction of the dynamical flow from one network state to its subsequent state. The fission yeast cell-cycle sequence is shown with blue arrows.</p>
+<span>doi:10.1371/journal.pone.0001672.g002</span></div><a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>We additionally checked the probability of reaching the G1 stationary state, starting only from those initial conditions, when “Start” is active on the first time step. Here, in 75% of the cases one ends up in the G1 fixed point.</p>
+<a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"></a><p>We further performed a robustness test by reversing the state of a single, randomly chosen node while the network proceeds through the biological sequence. This deviation from the biological pathway by the activity state of one single protein at one randomly chosen step of the cycle, the system returns to the fixed point G1 in 81 out of 100 possible cases. Thus we observe an additional robustness in the fission yeast cell-cycle network, meaning that there is an increased probability to stay in the attractor basin of the biological fixed point when perturbing states along the biological trajectory.</p>
+<a id="article1.body1.sec2.sec1.p6" name="article1.body1.sec2.sec1.p6"></a><p>An immediate question about the specific network structure considered here is whether the architecture of the network has special properties as, for example, traces of being optimized by biological evolution. We compare the network dynamics to the null model of random networks with the same number of inhibiting and activating links, self-degrading and self-activating nodes and the same activation thresholds. Indeed one finds that the corresponding random networks typically have smaller attractors. The mean size of the biggest attractors is about 40% of all initial states (averaged over 1000 random networks). This may indicate that attractor basin size of the biological attractor is optimized to provide additional dynamical robustness.</p>
+
+
+<h4>Comparison with <em>S. cerevisiae</em></h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>The two yeasts, <em>S. cerevisiae</em> and <em>S. pombe</em>, are remarkably different organisms and a comparison may provide insights relevant for the understanding of higher eukaryotes. As we now have discrete dynamical models for the cell cycle network of both of them at hand (this work, as well as <a href="#pone.0001672-Li1">[13]</a>), let us discuss how they compare.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>As these two organisms are closely related genetically, one might expect a large overlap also in the biochemical control machinery. On the other hand, the biology of the two is markedly different, so there have to be some differences on the biochemical level as well. As an overview, the second model is shown in <a href="#pone-0001672-g003">Figure 3</a>.</p>
+<div class="figure" id="pone-0001672-g003"><div class="img"><a name="pone-0001672-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Budding yeast model.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>Budding yeast cell cycle network model <a href="#pone.0001672-Li1">[13]</a> for comparison with our model of fission yeast. This network relies on transcriptional regulation more than the fission yeast network. Note that some homologues corresponding to the latter do not have to be included here. Note also the difference in circuitry.</p>
+<span>doi:10.1371/journal.pone.0001672.g003</span></div><a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>There are a number of closely related genes (see <a href="#pone-0001672-t004">Table 4</a>) between the two yeasts <a href="#pone.0001672-Tyson2">[10]</a>, which, however, can have vastly differing functions <a href="#pone.0001672-Forsburg1">[23]</a>. In fission yeast, for example, phosphatase Cdc25 is required for the G2—M transition, while in the model of budding yeast <a href="#pone.0001672-Li1">[13]</a> the corresponding homologue Mih1 is insignificant. The reason is that in the fission yeast cell cycle, Cdc25 removes an inhibitory phosphate group from the residue Tyr-15 of Cdc2, which is important for the right timing of the G2—M transition. In contrast, the tyrosine residue in <em>S. cerevisiae</em> Cdc28 kinase (fission yeast: Cdc2) is not as critical and usually not phosphorylated. Therefore, for a model of fission yeast, Cdc25 is essential, whereas the homologue Mih1 in budding yeast is not <a href="#pone.0001672-Li1">[13]</a>. One other example is the role of the protein Cdc13. In fission yeast it acts in a complex with Cdc2, while in the budding yeast model its functionality is represented by two complexes Clb1,2/Cdc28 and Clb5,6/Cdc28, which exhibit some differences in interactions, as well as in timing.</p>
+<div class="figure" id="pone-0001672-t004"><div class="img"><a name="pone-0001672-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001672" data-uri="info:doi/10.1371/journal.pone.0001672.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001672.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001672.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001672.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001672.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Homologue proteins related to the cell cycle networks of fission yeast and budding yeast.</span></strong></p><span>doi:10.1371/journal.pone.0001672.t004</span></div><a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>Despite of the differences in many details, the general logic of both yeast cell cycles is surprisingly similar and exhibits a number of “structural homologues”. For example, both exhibit a negative feedback loop similar in role: Clb1,2/Cdc28 activates Cdc20 which inhibits Clb1,2/Cdc28 (fission yeast: Cdc2/Cdc13 activates through Cdc25 Cdc2/Cdc13*, which activates Slp1, which in turn inhibits Cdc2/Cdc13, Cdc2/Cdc13*).</p>
+<a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p>The most interesting comparison is in our view on the level of the global network dynamics. From this point of view, the S. cerevisiae network is a strongly damped system, driven by external excitation. External signals are entering the network, triggering signal cascades in the network that induce the subsequent phases. In contrast, the network of <em>S. pombe</em> corresponds to an auto-excited system (driven by a node with self-excitation-Cdc2/Cdc13) with additional damping. Here, an external signal works as a trigger mechanism that counteracts internal damping, causing the auto-excitation to spread its activity in the system</p>
+<a id="article1.body1.sec2.sec2.p6" name="article1.body1.sec2.sec2.p6"></a><p>While these differences in the “mechanics” of the signaling networks are considerable, the overall dynamics is surprisingly similar. The state space picture is quite similar in both cases: one observes only a small number of attractors and just one big global attractor (with 86% resp. 73% of all initial states), which for both organisms corresponds to the stationary G1 state.</p>
+<a id="article1.body1.sec2.sec2.p7" name="article1.body1.sec2.sec2.p7"></a><p>Finally, a most prominent difference between the two yeast networks is their choice in biochemical machinery: <em>S. cerevisiae</em> relies more on transcriptional factors while <em>S. pombe</em> mostly relies on post-translational regulation <a href="#pone.0001672-Simanis1">[35]</a>. From the methodological point of view, we note that for this reason we were surprised to find our model for the <em>S. pombe</em> cell cycle network so robust against neglecting the vastly different time scales of interactions, which we expected to be the major difficulty in constructing a discrete dynamical model for <em>S. pombe</em> as compared to <em>S. cerevisiae</em>.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>We have constructed a Boolean model for the biochemical network that controls the cell cycle progression in fission yeast <em>S. pombe</em>, and found a number of interesting results. The dynamics of this network reproduces the time sequence protein activation along the biological cell cycle, solely on the basis of the connectivity graph of the network, neglecting all biochemical kinetic parameters. The dynamics of the network is characterized by a dominant attractor in the space of all possible states, with an attractor basin that attracts most of all states. The network dynamics is robust against perturbation of the biological sequence of protein activation.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Also there is an interesting result, that the second big attractor is a limit cycle. This limit cycle could be related to the Wee1-Cdc25 double mutant. These cells have quantized cell cycles <a href="#pone.0001672-Sveiczer1">[9]</a> as a result of an underlying oscillator that creates small amplitude oscillations in Cdc2/Cdc13 activity (with a role of Slp1 in this).</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>The overall results obtained from our model are in accordance with the existing ODE model of fission yeast <a href="#pone.0001672-Tyson2">[10]</a>. Let us discuss the differences between these two approaches. The <em>S. pombe</em> ODE system <a href="#pone.0001672-Tyson2">[10]</a> has several steady state solutions. One can identify every such solution with the corresponding physiological stage. The growth of cell size brings the cell from one phase to another via a series of bifurcations. At the same time, other variables indicate the degree of activity of various components of the cell regulatory nodes. One observes <a href="#pone.0001672-Tyson3">[26]</a> that the typical curves depicting this activity have almost rectangular shape. This motivates our choice of binary valued function to approximate protein concentrations in time. Further, the ODE-based model makes use of continuous system parameters, which we omit and replace by their signs, only. As a result, the ODE bifurcation curve then corresponds to the Boolean biological path. The main advantage of our Boolean model is that we were able to drop 47 kinetic constants that were necessary in the ODE approach and, while doing so, still reproduce the biological sequence of protein activation.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>This fact and our further observations point at built-in dynamical robustness of the network, which may provide a mechanism for organisms to ensure functional robustness <a href="#pone.0001672-Alon1">[36]</a>. Vice versa, our study indicates that the regulatory robustness of biological chemical networks may allow for “robust” modeling approaches: Our paradigm here is nothing but assuming that biochemical networks are functioning in a parameter-insensitive way—which motivated us to eliminate tunable parameters alltogether. That our model reproduces the biological sequence instantly without any further parameter tuning, confirms our assumption <em>a posteriori</em>. We therefore encourage further modeling experiments with the here presented, quite minimalistic approach as it may prove a quick route to predicting biologically relevant dynamical features of genetic and protein networks in the living cell.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>The network of the key regulators of the fission yeast cell cycle is constructed by compiling information from an extensive literature study <a href="#pone.0001672-Sveiczer1">[9]</a>, <a href="#pone.0001672-Novak2">[25]</a>–<a href="#pone.0001672-Yamaguchi1">[34]</a>. For building a model, all types of interactions are divided into two classes—inhibition or activation. The summarized interactions are shown in <a href="#pone-0001672-t001">Table 1</a>, which correspond to <a href="#pone.0001672-Sveiczer1">[9]</a> except for the cases explained below.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>Since the mechanism of activation of the negative Cdc2/Cdc13 regulators is unknown, the authors of <a href="#pone.0001672-Sveiczer1">[9]</a> assumed a mechanism similar to budding yeast. In <a href="#pone.0001672-Sveiczer1">[9]</a> Slp1/APC degrades a hypothetical inhibitor of PP, which helps PP to become active. Recently, Clp1p has been proposed as a possible candidate for PP <a href="#pone.0001672-Trautmann1">[37]</a>. Following <a href="#pone.0001672-Novak2">[25]</a>, the helper molecules such as Start Kinases (SK) are inhibited, otherwise they prevent the final transition to the G1 stationary state. This is why in a Boolean model of the cell cycle helper molecules-Start Kinase (SK), Slp1, and PP-have self-inhibiting links. We further represent Wee1/Mik1 by one node, since they have similar function.</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>One also needs to distinguish activation levels of Cdc2/Cdc13. During the cell cycle, this complex has three different levels—low, intermediate, or high. It is also known that a high-level corresponds to dephosphorylation of the residue Tyr-15 of Cdc2. Therefore, Cdc2/Cdc13 is represented by two nodes: Cdc2/Cdc13 and Cdc2/Cdc13*, where the latter indicates the high activity state of Cdc2/Cdc13. During the G1 phase, when activity of Cdc2/Cdc13 is low, this corresponds to an inactive Cdc2/Cdc13 node. Intermediate levels of excitation correspond to activation of the node Cdc2/Cdc13, whereas high activity in the M phase is represented by the Cdc2/Cdc13* node being active in addition.</p>
+<a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4"></a><p>We focus on a case where checkpoints are disregarded except the checkpoint of the cell size. Also the change in the rate of DNA replication is neglected in the model. In comparison to <a href="#pone.0001672-Sveiczer1">[9]</a> we further neglect the phosphatase group Pyp3, which works in the absence of Cdc25, but does its job less effectively.</p>
+<a id="article1.body1.sec4.p5" name="article1.body1.sec4.p5"></a><p>The networks and dynamical trajectories were drawn with Pajek <a href="#pone.0001672-Batagelj1">[38]</a>.</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Attila Csikasz-Nagy for inspiring discussions and helpful comments on an earlier version of our model, as well as Stefan Braunewell, Michael C. Mackey, and Fabian Zoehrer for further discussions and comments.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SB MD. Performed the experiments: MD. Wrote the paper: SB MD.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001672-Gunsalus1" id="pone.0001672-Gunsalus1"></a>Gunsalus KC, Ge H, Schetter AJ, Goldberg DS, Han J-DJ, et al.  (2005) Predictive models of molecular machines involved in Caenorhabditis elegans early embryogenesis. Nature  436 (11): 861–865.  <ul class="find" data-citedArticleID="1062516" data-doi="10.1038/nature03876"><li><a href="http://dx.doi.org/10.1038/nature03876" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predictive+models+of+molecular+machines+involved+in+Caenorhabditis+elegans+early+embryogenesis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predictive+models+of+molecular+machines+involved+in+Caenorhabditis+elegans+early+embryogenesis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001672-Hasty1" id="pone.0001672-Hasty1"></a>Hasty J, McMillen D, Isaacs F, Collins JJ (2001) Computational studies of gene regulatory networks: in numero molecular biology. Nat Rev Genet  2: 268–279.  <ul class="find" data-citedArticleID="1062518" data-doi="10.1038/35066056"><li><a href="http://dx.doi.org/10.1038/35066056" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+studies+of+gene+regulatory+networks%3A+in+numero+molecular+biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+studies+of+gene+regulatory+networks%3A+in+numero+molecular+biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001672-Riel1" id="pone.0001672-Riel1"></a>Riel NAW (2006) Dynamic modelling and analysis of biochemical networks: mechanism-based models and model-based experiments. Briefings in Bioinformatics  7(4): 364–374.  <ul class="find" data-citedArticleID="1062540" data-doi="10.1093/bib/bbl040"><li><a href="http://dx.doi.org/10.1093/bib/bbl040" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamic+modelling+and+analysis+of+biochemical+networks%3A+mechanism-based+models+and+model-based+experiments." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamic+modelling+and+analysis+of+biochemical+networks%3A+mechanism-based+models+and+model-based+experiments.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001672-Smolen1" id="pone.0001672-Smolen1"></a>Smolen P, Baxter DA, Byrne JH (2000) Mathematical modeling of gene networks. Neuron  26: 567–580.  <ul class="find" data-citedArticleID="1062548" data-doi="10.1016/s0896-6273(00)81194-0"><li><a href="http://dx.doi.org/10.1016/s0896-6273(00)81194-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mathematical+modeling+of+gene+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mathematical+modeling+of+gene+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001672-Gillespie1" id="pone.0001672-Gillespie1"></a>Gillespie DT (1976) A general method for numerically simulating the stochastic time evolution of coupled chemical reactions, J Comp Phys  22: 403–434.  <ul class="find" data-citedArticleID="1062510" data-doi="10.1016/0021-9991(76)90041-3"><li><a href="http://dx.doi.org/10.1016/0021-9991(76)90041-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+general+method+for+numerically+simulating+the+stochastic+time+evolution+of+coupled+chemical+reactions%2C" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+general+method+for+numerically+simulating+the+stochastic+time+evolution+of+coupled+chemical+reactions%2C%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001672-Gillespie2" id="pone.0001672-Gillespie2"></a>Gillespie DT (1977) Exact stochastic simulation of coupled chemical reactions. J Phys Chem  81: 2340–2361.  <ul class="find" data-citedArticleID="1062512" data-doi="10.1021/j100540a008"><li><a href="http://dx.doi.org/10.1021/j100540a008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Exact+stochastic+simulation+of+coupled+chemical+reactions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Exact+stochastic+simulation+of+coupled+chemical+reactions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001672-Glass1" id="pone.0001672-Glass1"></a>Glass L, Kauffman SA (1973) The logical analysis of continuous, nonlinear biochemical control networks. J Theor Biol  39: 103–129.  <ul class="find" data-citedArticleID="1062514" data-doi="10.1016/0022-5193(73)90208-7"><li><a href="http://dx.doi.org/10.1016/0022-5193(73)90208-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+logical+analysis+of+continuous%2C+nonlinear+biochemical+control+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+logical+analysis+of+continuous%2C+nonlinear+biochemical+control+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001672-Tyson1" id="pone.0001672-Tyson1"></a>Tyson JJ, Chen KC, Novak B (2003) Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling pathways in the cell. Curr Op Cell Biol  15: 221–231.  <ul class="find" data-citedArticleID="1062556" data-doi="10.1016/s0955-0674(03)00017-6"><li><a href="http://dx.doi.org/10.1016/s0955-0674(03)00017-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sniffers%2C+buzzers%2C+toggles+and+blinkers%3A+dynamics+of+regulatory+and+signaling+pathways+in+the+cell." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sniffers%2C+buzzers%2C+toggles+and+blinkers%3A+dynamics+of+regulatory+and+signaling+pathways+in+the+cell.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001672-Sveiczer1" id="pone.0001672-Sveiczer1"></a>Sveiczer A, Csikasz-Nagy A, Gyorffy B, Tyson JJ, Novak B (2000) Modeling the fission yeast cell cycle: Quantized cycle times in wee1-cdc25 mutant cells. Proc Natl Acad Sci U S A  97(14): 7865–7870.  <ul class="find" data-citedArticleID="1062550" data-doi="10.1073/pnas.97.14.7865"><li><a href="http://dx.doi.org/10.1073/pnas.97.14.7865" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+the+fission+yeast+cell+cycle%3A+Quantized+cycle+times+in+wee1-cdc25+mutant+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+the+fission+yeast+cell+cycle%3A+Quantized+cycle+times+in+wee1-cdc25+mutant+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001672-Tyson2" id="pone.0001672-Tyson2"></a>Tyson JJ, Chen KC, Novak B (2001) Network dynamics and cell physiology. Nature Rev Mol Cell Biol  2: 908–916.  <ul class="find" data-citedArticleID="1062558" data-doi="10.1038/35103078"><li><a href="http://dx.doi.org/10.1038/35103078" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Network+dynamics+and+cell+physiology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Network+dynamics+and+cell+physiology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001672-Braunewell1" id="pone.0001672-Braunewell1"></a>Braunewell S, Bornholdt S (2006) Superstability of the yeast cell-cycle dynamics: Ensuring causality in the presence of biochemical stochasticity. J Theor Biol  245(4): 638–643.  <ul class="find" data-citedArticleID="1062498" data-doi="10.1016/j.jtbi.2006.11.012"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2006.11.012" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Superstability+of+the+yeast+cell-cycle+dynamics%3A+Ensuring+causality+in+the+presence+of+biochemical+stochasticity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Superstability+of+the+yeast+cell-cycle+dynamics%3A+Ensuring+causality+in+the+presence+of+biochemical+stochasticity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001672-Albert1" id="pone.0001672-Albert1"></a>Albert R, Othmer HG (2003) The topology of the regulatory interactions predicts the expression pattern of the Drosophila segment polarity genes. J Theor Biol  223: 1–18.  <ul class="find" data-citedArticleID="1062490" data-doi="10.1016/s0022-5193(03)00035-3"><li><a href="http://dx.doi.org/10.1016/s0022-5193(03)00035-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+topology+of+the+regulatory+interactions+predicts+the+expression+pattern+of+the+Drosophila+segment+polarity+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+topology+of+the+regulatory+interactions+predicts+the+expression+pattern+of+the+Drosophila+segment+polarity+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001672-Li1" id="pone.0001672-Li1"></a>Li F, Long T, Lu Y, Quyang Q, Tang C (2004) The yeast cell-cycle network is robustly designed. Proc Natl Acad Sci U S A  101(14): 4781–4786.  <ul class="find" data-citedArticleID="1062526" data-doi="10.1073/pnas.0305937101"><li><a href="http://dx.doi.org/10.1073/pnas.0305937101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+yeast+cell-cycle+network+is+robustly+designed." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+yeast+cell-cycle+network+is+robustly+designed.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001672-Kauffmann1" id="pone.0001672-Kauffmann1"></a>Kauffmann SA (1969) Metabolic stability and epigenesis in randomly constructed genetic nets. J Theor Biol  22: 437–467.  <ul class="find" data-citedArticleID="1062524" data-doi="10.1016/0022-5193(69)90015-0"><li><a href="http://dx.doi.org/10.1016/0022-5193(69)90015-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Metabolic+stability+and+epigenesis+in+randomly+constructed+genetic+nets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Metabolic+stability+and+epigenesis+in+randomly+constructed+genetic+nets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001672-Kauffman1" id="pone.0001672-Kauffman1"></a>Kauffman SA (1993) The Origins of Order: Self-Organization and selection in evolution. Oxford, UK: Oxford University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">16.
+              </span><a name="pone.0001672-Bornholdt1" id="pone.0001672-Bornholdt1"></a>Bornholdt S (2005) Systems biology: Less is more in modeling large genetic networks. Science  310 (5747): 449–451.  <ul class="find" data-citedArticleID="1062496" data-doi="10.1126/science.1119959"><li><a href="http://dx.doi.org/10.1126/science.1119959" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systems+biology%3A+Less+is+more+in+modeling+large+genetic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systems+biology%3A+Less+is+more+in+modeling+large+genetic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001672-EspinosaSoto1" id="pone.0001672-EspinosaSoto1"></a>Espinosa-Soto C, Padilla-Longoria P, Alvarez-Buylla ER (2004) A gene regulatory network model for cell-fate determination during Arabidopsis Thaliana flower development that is robust and recovers experimental gene expression profiles. Plant Cell  16: 2923–2939.  <ul class="find" data-citedArticleID="1062504" data-doi="10.1105/tpc.104.021725"><li><a href="http://dx.doi.org/10.1105/tpc.104.021725" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+gene+regulatory+network+model+for+cell-fate+determination+during+Arabidopsis+Thaliana+flower+development+that+is+robust+and+recovers+experimental+gene+expression+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+gene+regulatory+network+model+for+cell-fate+determination+during+Arabidopsis+Thaliana+flower+development+that+is+robust+and+recovers+experimental+gene+expression+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001672-Mendoza1" id="pone.0001672-Mendoza1"></a>Mendoza L, Thieffry D, Alvarez-Buylla ER (1999) Genetic control of flower morphogenesis in Arabidopsis Thaliana: a logical analysis. Bioinformatics  15: 593–606.  <ul class="find" data-citedArticleID="1062534" data-doi="10.1093/bioinformatics/15.7.593"><li><a href="http://dx.doi.org/10.1093/bioinformatics/15.7.593" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genetic+control+of+flower+morphogenesis+in+Arabidopsis+Thaliana%3A+a+logical+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genetic+control+of+flower+morphogenesis+in+Arabidopsis+Thaliana%3A+a+logical+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001672-Thum1" id="pone.0001672-Thum1"></a>Thum KE, Shasha DE, Lejay LV, Coruzzi GM (2003) Light- and carbonsignaling pathways. Modeling circuits of interactions. Plant Physiol  132: 440–452.  <ul class="find" data-citedArticleID="1062552" data-doi="10.1104/pp.103.022780"><li><a href="http://dx.doi.org/10.1104/pp.103.022780" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Light-+and+carbonsignaling+pathways.+Modeling+circuits+of+interactions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Light-+and+carbonsignaling+pathways.+Modeling+circuits+of+interactions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001672-Li2" id="pone.0001672-Li2"></a>Li S, Assmann SM, Albert R (2006) Predicting Essential Components of Signal Transduction Networks: A Dynamic Model of Guard Cell Abscisic Acid Signaling. PLOS Biol.  e312(10): 1732–1748.  <ul class="find" data-citedArticleID="1062528" data-doi="10.1371/journal.pbio.0040312"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0040312" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+Essential+Components+of+Signal+Transduction+Networks%3A+A+Dynamic+Model+of+Guard+Cell+Abscisic+Acid+Signaling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+Essential+Components+of+Signal+Transduction+Networks%3A+A+Dynamic+Model+of+Guard+Cell+Abscisic+Acid+Signaling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001672-Faure1" id="pone.0001672-Faure1"></a>Faure A, Naldi A, Chaouiya C, Thieffry D (2006) Dynamical analysis of a generic Boolean model for the control of the mammalian cell cycle. Bioinformatics  22(14): e124–e131.  <ul class="find" data-citedArticleID="1062506" data-doi="10.1093/bioinformatics/btl210"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl210" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dynamical+analysis+of+a+generic+Boolean+model+for+the+control+of+the+mammalian+cell+cycle." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dynamical+analysis+of+a+generic+Boolean+model+for+the+control+of+the+mammalian+cell+cycle.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001672-Sanchez1" id="pone.0001672-Sanchez1"></a>Sanchez L, Thieffry D (2001) A logical analysis of the drosophila gap-gene system. J Theor Biol  211: 115–141.  <ul class="find" data-citedArticleID="1062544" data-doi="10.1006/jtbi.2001.2335"><li><a href="http://dx.doi.org/10.1006/jtbi.2001.2335" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+logical+analysis+of+the+drosophila+gap-gene+system." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+logical+analysis+of+the+drosophila+gap-gene+system.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001672-Forsburg1" id="pone.0001672-Forsburg1"></a>Forsburg SL (1999) The best yeast? Trends in Genetics  15 (9): 340–344.  <ul class="find" data-citedArticleID="1062508" data-doi="10.1016/s0168-9525(99)01798-9"><li><a href="http://dx.doi.org/10.1016/s0168-9525(99)01798-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+best+yeast%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+best+yeast%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001672-Novak1" id="pone.0001672-Novak1"></a>Novak B, Tyson JJ (1997) Modeling the control of DNA replication in fission yeast. Cell biology. Proc Natl Acad Sci U S A  94: 9147–9152.  <ul class="find" data-citedArticleID="1062536" data-doi="10.1073/pnas.94.17.9147"><li><a href="http://dx.doi.org/10.1073/pnas.94.17.9147" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+the+control+of+DNA+replication+in+fission+yeast.+Cell+biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+the+control+of+DNA+replication+in+fission+yeast.+Cell+biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001672-Novak2" id="pone.0001672-Novak2"></a>Novak B, Pataki Z, Ciliberto A, Tyson JJ (2001) Mathematical model of the cell division cycle of fission yeast. Chaos  11(1): 277–286.  <ul class="find" data-citedArticleID="1062538" data-doi="10.1063/1.1345725"><li><a href="http://dx.doi.org/10.1063/1.1345725" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mathematical+model+of+the+cell+division+cycle+of+fission+yeast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mathematical+model+of+the+cell+division+cycle+of+fission+yeast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001672-Tyson3" id="pone.0001672-Tyson3"></a>Tyson JJ, Csikasz-Nagy A, Novak B (2002) The dynamics of the cell-cycle regulation. BioEssays  24: 1095–1109.  <ul class="find" data-citedArticleID="1062560" data-doi="10.1002/bies.10191"><li><a href="http://dx.doi.org/10.1002/bies.10191" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+dynamics+of+the+cell-cycle+regulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+dynamics+of+the+cell-cycle+regulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001672-Buck1" id="pone.0001672-Buck1"></a>Buck V, Ng SS, Ruiz-Garcia1 AB, Papadopoulou K, Bhatti S, et al.  (2003) Fkh2p and Sep1p regulate mitotic gene transcription in fission yeast J Cell Science  116: 4263–4275.  <ul class="find" data-citedArticleID="1062500" data-doi="10.1242/jcs.01473"><li><a href="http://dx.doi.org/10.1242/jcs.01473" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fkh2p+and+Sep1p+regulate+mitotic+gene+transcription+in+fission+yeast" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fkh2p+and+Sep1p+regulate+mitotic+gene+transcription+in+fission+yeast%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001672-Correabordes1" id="pone.0001672-Correabordes1"></a>Correabordes J, Nurse P (1995) P25(rum1) orders s-phase and mitosis by acting as an inhibitor of the p34(cdc2) mitotic kinase. Cell  83: 1001–1009.  <ul class="find" data-citedArticleID="1062502" data-doi="10.1016/0092-8674(95)90215-5"><li><a href="http://dx.doi.org/10.1016/0092-8674(95)90215-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=P25%28rum1%29+orders+s-phase+and+mitosis+by+acting+as+an+inhibitor+of+the+p34%28cdc2%29+mitotic+kinase." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22P25%28rum1%29+orders+s-phase+and+mitosis+by+acting+as+an+inhibitor+of+the+p34%28cdc2%29+mitotic+kinase.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001672-Jaspersen1" id="pone.0001672-Jaspersen1"></a>Jaspersen S, Charles J, Morgan D (1999) Inhibitory phosphorylation of the APC regulator Hct1 is controlled by the kinase Cdc28 and phosphatase Cdc14. Curr Biol  9: 227–236.  <ul class="find" data-citedArticleID="1062520" data-doi="10.1016/s0960-9822(99)80111-0"><li><a href="http://dx.doi.org/10.1016/s0960-9822(99)80111-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inhibitory+phosphorylation+of+the+APC+regulator+Hct1+is+controlled+by+the+kinase+Cdc28+and+phosphatase+Cdc14." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inhibitory+phosphorylation+of+the+APC+regulator+Hct1+is+controlled+by+the+kinase+Cdc28+and+phosphatase+Cdc14.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001672-Lundgren1" id="pone.0001672-Lundgren1"></a>Lundgren K, Walwortha N, Booherb R, Dembskia M, Kirschnerb M, et al.  (1991) Mik1 and wee1 cooperate in the inhibitory tyrosine phosphorylation of cdc2. Cell  64(6): 1111–1122.  <ul class="find" data-citedArticleID="1062530" data-doi="10.1016/0092-8674(91)90266-2"><li><a href="http://dx.doi.org/10.1016/0092-8674(91)90266-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mik1+and+wee1+cooperate+in+the+inhibitory+tyrosine+phosphorylation+of+cdc2." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mik1+and+wee1+cooperate+in+the+inhibitory+tyrosine+phosphorylation+of+cdc2.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001672-MartinCastellanos1" id="pone.0001672-MartinCastellanos1"></a>Martin-Castellanos C, Labib K, Moreno S (1996) B-type cyclins regulate G1 progression in fission yeast in opposition to the p25rum1 cdk inhibitor. J EMBO  15(4): 839–849.  <ul class="find" data-citedArticleID="1062532"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=B-type+cyclins+regulate+G1+progression+in+fission+yeast+in+opposition+to+the+p25rum1+cdk+inhibitor.&amp;auth=&amp;atitle=B-type+cyclins+regulate+G1+progression+in+fission+yeast+in+opposition+to+the+p25rum1+cdk+inhibitor." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=B-type+cyclins+regulate+G1+progression+in+fission+yeast+in+opposition+to+the+p25rum1+cdk+inhibitor." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22B-type+cyclins+regulate+G1+progression+in+fission+yeast+in+opposition+to+the+p25rum1+cdk+inhibitor.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001672-Russel1" id="pone.0001672-Russel1"></a>Russel P, Nurse P (1987) Negative regulation of mitosis by wee1[+], a gene encoding a protein kinase homologue. Cell  49: 559–567.  <ul class="find" data-citedArticleID="1062542" data-doi="10.1016/0092-8674(87)90458-2"><li><a href="http://dx.doi.org/10.1016/0092-8674(87)90458-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Negative+regulation+of+mitosis+by+wee1%5B%2B%5D%2C+a+gene+encoding+a+protein+kinase+homologue." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Negative+regulation+of+mitosis+by+wee1%5B%2B%5D%2C+a+gene+encoding+a+protein+kinase+homologue.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001672-Visintin1" id="pone.0001672-Visintin1"></a>Visintin R, Craig K, Hwang ES, Prinz S, Tyers M, et al.  (1998) The phosphatase Cdc14 triggers mitotic exit by reversal of Cdk-dependent phosphorylation. Mol Cell  2: 709–718.  <ul class="find" data-citedArticleID="1062562" data-doi="10.1016/s1097-2765(00)80286-5"><li><a href="http://dx.doi.org/10.1016/s1097-2765(00)80286-5" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+phosphatase+Cdc14+triggers+mitotic+exit+by+reversal+of+Cdk-dependent+phosphorylation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+phosphatase+Cdc14+triggers+mitotic+exit+by+reversal+of+Cdk-dependent+phosphorylation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001672-Yamaguchi1" id="pone.0001672-Yamaguchi1"></a>Yamaguchi S, Okayama H, Nurse P (2000) Fission yeast Fizzy-related protein srw1 is a G1-specific promoter of mitotic cyclin B degradation. J EMBO  19(15): 3968–3977.  <ul class="find" data-citedArticleID="1062564" data-doi="10.1093/emboj/19.15.3968"><li><a href="http://dx.doi.org/10.1093/emboj/19.15.3968" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fission+yeast+Fizzy-related+protein+srw1+is+a+G1-specific+promoter+of+mitotic+cyclin+B+degradation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fission+yeast+Fizzy-related+protein+srw1+is+a+G1-specific+promoter+of+mitotic+cyclin+B+degradation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001672-Simanis1" id="pone.0001672-Simanis1"></a>Simanis V (2003) Events at the end of mitosis in the budding and fission yeasts. J Cell Sci  116: 4263–4275.  <ul class="find" data-citedArticleID="1062546" data-doi="10.1242/jcs.00807"><li><a href="http://dx.doi.org/10.1242/jcs.00807" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Events+at+the+end+of+mitosis+in+the+budding+and+fission+yeasts." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Events+at+the+end+of+mitosis+in+the+budding+and+fission+yeasts.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001672-Alon1" id="pone.0001672-Alon1"></a>Alon U, Surette MG, Barkai N, Leibler S (1999) Robustness in bacterial chemotaxis. Nature  397: 168–171.  <ul class="find" data-citedArticleID="1062492" data-doi="10.1038/16483"><li><a href="http://dx.doi.org/10.1038/16483" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+in+bacterial+chemotaxis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+in+bacterial+chemotaxis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001672-Trautmann1" id="pone.0001672-Trautmann1"></a>Trautmann S, Wolfe BA, Jorgensen P, Tyers M, Gould KL, et al.  (2001) Fission yeast Clp1p phosphatase regulates G2/M transition and coordination of cytokinesis with cell cycle progression. Curr Biol  11(12): 931–940.  <ul class="find" data-citedArticleID="1062554" data-doi="10.1016/s0960-9822(01)00268-8"><li><a href="http://dx.doi.org/10.1016/s0960-9822(01)00268-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fission+yeast+Clp1p+phosphatase+regulates+G2%2FM+transition+and+coordination+of+cytokinesis+with+cell+cycle+progression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fission+yeast+Clp1p+phosphatase+regulates+G2%2FM+transition+and+coordination+of+cytokinesis+with+cell+cycle+progression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0001672-Batagelj1" id="pone.0001672-Batagelj1"></a>Batagelj V, Mrvar A (1998) Pajek-Program for Large Network Analysis. Connections 21(2): 47-57. Trautmann S, Wolfe BA, Jorgensen P, Tyers M, Gould KL et al (2001) Fission yeast Clp1p phosphatase regulates G2/M transition and coordination of cytokinesis with cell cycle progression. Curr Biol  11(12): 931–940.  <ul class="find" data-citedArticleID="1062494" data-doi="10.1016/s0960-9822(01)00268-8"><li><a href="http://dx.doi.org/10.1016/s0960-9822(01)00268-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pajek-Program+for+Large+Network+Analysis.+Connections+21%282%29%3A+47-57.+Trautmann+S%2C+Wolfe+BA%2C+Jorgensen+P%2C+Tyers+M%2C+Gould+KL+et+al+%282001%29+Fission+yeast+Clp1p+phosphatase+regulates+G2%2FM+transition+and+coordination+of+cytokinesis+with+cell+cycle+progression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pajek-Program+for+Large+Network+Analysis.+Connections+21%282%29%3A+47-57.+Trautmann+S%2C+Wolfe+BA%2C+Jorgensen+P%2C+Tyers+M%2C+Gould+KL+et+al+%282001%29+Fission+yeast+Clp1p+phosphatase+regulates+G2%2FM+transition+and+coordination+of+cytokinesis+with+cell+cycle+progression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.XML" value="95105"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.PDF" value="361058"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t001.PNG_L" value="212037"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t001.PNG_M" value="119347"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t001.PNG_S" value="13114"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t001.TIF" value="1035204"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t001.PNG_I" value="36415"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g001.PNG_L" value="69528"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g001.PNG_M" value="107677"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g001.PNG_S" value="15162"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g001.TIF" value="313360"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g001.PNG_I" value="64301"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.e001.PNG" value="16126"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.e001.TIF" value="32024"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t002.PNG_L" value="179216"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t002.PNG_M" value="69531"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t002.PNG_S" value="9858"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t002.TIF" value="812924"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t002.PNG_I" value="21000"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t003.PNG_L" value="87674"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t003.PNG_M" value="56735"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t003.PNG_S" value="12072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t003.TIF" value="571378"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t003.PNG_I" value="17683"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g002.PNG_L" value="711389"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g002.PNG_M" value="226591"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g002.PNG_S" value="17183"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g002.TIF" value="1239598"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g002.PNG_I" value="76359"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g003.PNG_L" value="161397"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g003.PNG_M" value="181626"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g003.PNG_S" value="17693"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g003.TIF" value="298450"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.g003.PNG_I" value="64986"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t004.PNG_L" value="28033"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t004.PNG_M" value="35856"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t004.PNG_S" value="9224"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t004.TIF" value="127404"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001672.t004.PNG_I" value="11995"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001672&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001672" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001672&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001672&volume=&issue=&title=Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast&author_name=Maria%20I.%20Davidich%2C%20Stefan%20Bornholdt&start_page=1&end_page=8" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001672" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672&amp;t=Boolean%20Network%20Model%20Predicts%20Cell%20Cycle%20Sequence%20of%20Fission%20Yeast" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672&title=Boolean%20Network%20Model%20Predicts%20Cell%20Cycle%20Sequence%20of%20Fission%20Yeast&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672&amp;title=Boolean%20Network%20Model%20Predicts%20Cell%20Cycle%20Sequence%20of%20Fission%20Yeast" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001672&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Boolean Network Model Predicts Cell Cycle Sequence of Fission Yeast';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001672';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Boolean%20Network%20Model%20Predicts%20Cell%20Cycle%20Sequence%20of%20Fission%20Yeast http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001672" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001672" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cell+cycle+and+cell+division%22" title="Search for articles in the subject area:'Cell cycle and cell division'"><div class="flagText">Cell cycle and cell division</div></a>
+              <div data-categoryid="17353" data-articleid="26170"
+                   data-categoryname="Cell cycle and cell division"
+                   class="flagImage" title="Flag 'Cell cycle and cell division' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Circuit+models%22" title="Search for articles in the subject area:'Circuit models'"><div class="flagText">Circuit models</div></a>
+              <div data-categoryid="35933" data-articleid="26170"
+                   data-categoryname="Circuit models"
+                   class="flagImage" title="Flag 'Circuit models' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Differential+equations%22" title="Search for articles in the subject area:'Differential equations'"><div class="flagText">Differential equations</div></a>
+              <div data-categoryid="35491" data-articleid="26170"
+                   data-categoryname="Differential equations"
+                   class="flagImage" title="Flag 'Differential equations' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulation%22" title="Search for articles in the subject area:'Gene regulation'"><div class="flagText">Gene regulation</div></a>
+              <div data-categoryid="17553" data-articleid="26170"
+                   data-categoryname="Gene regulation"
+                   class="flagImage" title="Flag 'Gene regulation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+networks%22" title="Search for articles in the subject area:'Genetic networks'"><div class="flagText">Genetic networks</div></a>
+              <div data-categoryid="40201" data-articleid="26170"
+                   data-categoryname="Genetic networks"
+                   class="flagImage" title="Flag 'Genetic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+interaction+networks%22" title="Search for articles in the subject area:'Protein interaction networks'"><div class="flagText">Protein interaction networks</div></a>
+              <div data-categoryid="31803" data-articleid="26170"
+                   data-categoryname="Protein interaction networks"
+                   class="flagImage" title="Flag 'Protein interaction networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Saccharomyces+cerevisiae%22" title="Search for articles in the subject area:'Saccharomyces cerevisiae'"><div class="flagText">Saccharomyces cerevisiae</div></a>
+              <div data-categoryid="43143" data-articleid="26170"
+                   data-categoryname="Saccharomyces cerevisiae"
+                   class="flagImage" title="Flag 'Saccharomyces cerevisiae' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Schizosaccharomyces+pombe%22" title="Search for articles in the subject area:'Schizosaccharomyces pombe'"><div class="flagText">Schizosaccharomyces pombe</div></a>
+              <div data-categoryid="33499" data-articleid="26170"
+                   data-categoryname="Schizosaccharomyces pombe"
+                   class="flagImage" title="Flag 'Schizosaccharomyces pombe' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=2788'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=9191'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3544&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=43787">A good paper.</a><br>Posted by stevenwatterson</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,1094 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001717"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001717" />
+
+    <meta name="citation_title" content="A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks"/>
+    <meta itemprop="name" content="A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks"/>
+
+      <meta name="citation_author" content="Daniel C. Jupiter"/>
+            <meta name="citation_author_institution" content="Department of Systems Biology and Translational Medicine, Texas A&M Health Science Center College of Medicine, Temple, Texas, United States of America"/>
+      <meta name="citation_author" content="Vincent VanBuren"/>
+            <meta name="citation_author_institution" content="Department of Systems Biology and Translational Medicine, Texas A&M Health Science Center College of Medicine, Temple, Texas, United States of America"/>
+
+    <meta name="citation_date" content="2008/3/5"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001717.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1717"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Finding Groups in Data.; citation_author=PJ Kaufman; citation_author=L Rousseeuw; citation_journal_title=Wiley; citation_number=1; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=Biclustering algorithms for biological data analysis: a survey.; citation_author=SC Madeira; citation_author=AL Oliveira; citation_journal_title=IEEE/ACM Trans Comput Biol Bioinform; citation_volume=1; citation_number=2; citation_pages=24-45; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=‘Gene shaving’ as a method for identifying distinct sets of genes with similar expression patterns.; citation_author=T Hastie; citation_author=R Tibshirani; citation_author=MB Eisen; citation_author=A Alizadeh; citation_author=R Levy; citation_journal_title=Genome Biol; citation_volume=1; citation_number=3; citation_pages=RESEARCH0003; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Cluster analysis and display of genome-wide expression patterns.; citation_author=MB Eisen; citation_author=PT Spellman; citation_author=PO Brown; citation_author=D Botstein; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=95; citation_number=4; citation_pages=14863-14868; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Cytoscape: a software environment for integrated models of biomolecular interaction networks.; citation_author=P Shannon; citation_author=A Markiel; citation_author=O Ozier; citation_author=NS Baliga; citation_author=JT Wang; citation_journal_title=Genome Res; citation_volume=13; citation_number=5; citation_pages=2498-2504; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Computational representation of developmental genetic regulatory networks.; citation_author=WJ Longabaugh; citation_author=EH Davidson; citation_author=H Bolouri; citation_journal_title=Dev Biol; citation_volume=283; citation_number=6; citation_pages=1-16; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Inferring quantitative models of regulatory networks from expression data.; citation_author=I Nachman; citation_author=A Regev; citation_author=N Friedman; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=7; citation_pages=i248-56; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Combining location and expression data for principled discovery of genetic regulatory network models.; citation_author=AJ Hartemink; citation_author=DK Gifford; citation_author=TS Jaakkola; citation_author=RA Young; citation_journal_title=Pac Symp Biocomput; citation_number=8; citation_pages=437-449; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=A Bayesian approach to reconstructing genetic regulatory networks with hidden factors.; citation_author=MJ Beal; citation_author=F Falciani; citation_author=Z Ghahramani; citation_author=C Rangel; citation_author=DL Wild; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=9; citation_pages=349-356; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Probabilistic inference of transcription factor concentrations and gene-specific regulatory activities.; citation_author=G Sanguinetti; citation_author=ND Lawrence; citation_author=M Rattray; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=10; citation_pages=2775-2781; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Bayesian model-based inference of transcription factor activity.; citation_author=S Rogers; citation_author=R Khanin; citation_author=M Girolami; citation_journal_title=BMC Bioinformatics; citation_volume=8; citation_number=11; citation_pages=S2; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Sensitivity and specificity of inferring genetic regulatory interactions from microarray experiments with dynamic Bayesian networks.; citation_author=D Husmeier; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=12; citation_pages=2271-2282; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Gene ontology: tool for the unification of biology. The Gene Ontology Consortium.; citation_author=M Ashburner; citation_author=CA Ball; citation_author=JA Blake; citation_author=D Botstein; citation_author=H Butler; citation_journal_title=Nat Genet; citation_volume=25; citation_number=13; citation_pages=25-29; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=NCBI GEO: mining tens of millions of expression profiles–database and tools update.; citation_author=T Barrett; citation_author=DB Troup; citation_author=SE Wilhite; citation_author=P Ledoux; citation_author=D Rudnev; citation_journal_title=Nucleic Acids Res; citation_volume=35; citation_number=14; citation_pages=D760-5; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Gene Expression Omnibus: NCBI gene expression and hybridization array data repository.; citation_author=R Edgar; citation_author=M Domrachev; citation_author=AE Lash; citation_journal_title=Nucleic Acids Res; citation_volume=30; citation_number=15; citation_pages=207-210; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Entrez Gene: gene-centered information at NCBI.; citation_author=D Maglott; citation_author=J Ostell; citation_author=KD Pruitt; citation_author=T Tatusova; citation_journal_title=Nucleic Acids Res; citation_volume=35; citation_number=16; citation_pages=D26-31; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Evolving gene/transcript definitions significantly alter the interpretation of GeneChip data.; citation_author=M Dai; citation_author=P Wang; citation_author=AD Boyd; citation_author=G Kostov; citation_author=B Athey; citation_journal_title=Nucleic Acids Res; citation_volume=33; citation_number=17; citation_pages=e175; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Exploration, normalization, and summaries of high density oligonucleotide array probe level data.; citation_author=RA Irizarry; citation_author=B Hobbs; citation_author=F Collin; citation_author=YD Beazer-Barclay; citation_author=KJ Antonellis; citation_journal_title=Biostatistics; citation_volume=4; citation_number=18; citation_pages=249-264; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Bioinformatics and Computational Biology Solutions Using R and Bioconductor.; citation_author=R Gentleman; citation_author=V Carey; citation_author=W Huber; citation_author=R Irizarry aSD; citation_journal_title=Springer Verlag; citation_number=19; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Enrichment or depletion of a GO category within a class of genes: which test?; citation_author=I Rivals; citation_author=L Personnaz; citation_author=L Taing; citation_author=MC Potier; citation_journal_title=Bioinformatics; citation_volume=23; citation_number=20; citation_pages=401-407; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Bioconductor: open software development for computational biology and bioinformatics.; citation_author=RC Gentleman; citation_author=VJ Carey; citation_author=DM Bates; citation_author=B Bolstad; citation_author=M Dettling; citation_journal_title=Genome Biol; citation_volume=5; citation_number=21; citation_pages=R80; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The Hand1 and Hand2 transcription factors regulate expansion of the embryonic cardiac ventricles in a gene dosage-dependent manner.; citation_author=DG McFadden; citation_author=AC Barbosa; citation_author=JA Richardson; citation_author=MD Schneider; citation_author=D Srivastava; citation_journal_title=Development; citation_volume=132; citation_number=22; citation_pages=189-201; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Two modes by which Lefty proteins inhibit nodal signaling.; citation_author=C Chen; citation_author=MM Shen; citation_journal_title=Curr Biol; citation_volume=14; citation_number=23; citation_pages=618-624; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=BMP induction of cardiogenesis in P19 cells requires prior cell-cell interaction(s).; citation_author=JC Angello; citation_author=S Kaestner; citation_author=RE Welikson; citation_author=JN Buskin; citation_author=SD Hauschka; citation_journal_title=Dev Dyn; citation_volume=235; citation_number=24; citation_pages=2122-2133; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Foxh1 is essential for development of the anterior heart field.; citation_author=I von Both; citation_author=C Silvestri; citation_author=T Erdemir; citation_author=H Lickert; citation_author=JR Walls; citation_journal_title=Dev Cell; citation_volume=7; citation_number=25; citation_pages=331-345; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Assessment and disease comparisons of hybrid developmental defects.; citation_author=AR Duselis; citation_author=PB Vrana; citation_journal_title=Hum Mol Genet; citation_volume=16; citation_number=26; citation_pages=808-819; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Two-step regulation of left-right asymmetric expression of Pitx2: initiation by nodal signaling and maintenance by Nkx2.; citation_author=H Shiratori; citation_author=R Sakuma; citation_author=M Watanabe; citation_author=H Hashiguchi; citation_author=K Mochida; citation_journal_title=Mol Cell; citation_volume=7; citation_number=27; citation_pages=137-149; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Integrated biclustering of heterogeneous genome-wide datasets for the inference of global regulatory networks.; citation_author=DJ Reiss; citation_author=NS Baliga; citation_author=R Bonneau; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=28; citation_pages=280; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Co-regulation of mouse genes predicts function.; citation_author=JB Weitzman; citation_journal_title=J Biol; citation_volume=3; citation_number=29; citation_pages=19; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A gene-coexpression network for global discovery of conserved genetic modules.; citation_author=JM Stuart; citation_author=E Segal; citation_author=D Koller; citation_author=SK Kim; citation_journal_title=Science; citation_volume=302; citation_number=30; citation_pages=249-255; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Approaches for extracting practical information from gene co-expression networks in plant biology.; citation_author=K Aoki; citation_author=Y Ogata; citation_author=D Shibata; citation_journal_title=Plant Cell Physiol; citation_volume=48; citation_number=31; citation_pages=381-390; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Social Network Analysis: Methods and Applications.; citation_author=S Wasserman; citation_author=K Faust; citation_number=32; citation_pages=857; citation_date=1994; citation_publisher=Cambridge University Press; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks"/>
+    <meta name="twitter:description" content="BackgroundAlthough the use of microarray technology has seen exponential growth, analysis of microarray data remains a challenge to many investigators. One difficulty lies in the interpretation of a list of differentially expressed genes, or in how to plan new experiments given that knowledge. Clustering methods can be used to identify groups of genes with similar expression patterns, and genes with unknown function can be provisionally annotated based on the concept of &ldquo;guilt by association&rdquo;, where function is tentatively inferred from the known functions of genes with similar expression patterns. These methods frequently suffer from two limitations: (1) visualization usually only gives access to group membership, rather than specific information about nearest neighbors, and (2) the resolution or quality of the relationships are not easily inferred.Methodology/Principal FindingsWe have addressed these issues by improving the precision of similarity detection over that of a single experiment and by creating a tool to visualize tractable association networks: we (1) performed meta-analysis computation of correlation coefficients for all gene pairs in a heterogeneous data set collected from 2,145 publicly available micorarray samples in mouse, (2) filtered the resulting distribution of over 130 million correlation coefficients to build new, more tractable distributions from the strongest correlations, and (3) designed and implemented a new Web based tool (StarNet, http://vanburenlab.medicine.tamhsc.edu/starnet.html) for visualization of sub-networks of the correlation coefficients built according to user specified parameters.Conclusions/SignificanceCorrelations were calculated across a heterogeneous collection of publicly available microarray data. Users can access this analysis using a new freely available Web-based application for visualizing tractable correlation networks that are flexibly specified by the user. This new resource enables rapid hypothesis development for transcription regulatory relationships."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001717.g003"/>
+
+  <meta property="og:title" content="A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=3139'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=4125'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=716&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001717">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001717" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001717&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Daniel C. Jupiter, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Systems Biology and Translational Medicine, Texas A&M Health Science Center College of Medicine, Temple, Texas, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Vincent VanBuren
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p>*E-mail: <a href="mailto:vanburen@tamu.edu">vanburen@tamu.edu</a></p>
+
+                <p>Affiliation:
+                  Department of Systems Biology and Translational Medicine, Texas A&M Health Science Center College of Medicine, Temple, Texas, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 05, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001717</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001717-g001" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001717-t001" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001717-g002" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001717-g003" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001717">Reader Comments (3)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001717" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Although the use of microarray technology has seen exponential growth, analysis of microarray data remains a challenge to many investigators. One difficulty lies in the interpretation of a list of differentially expressed genes, or in how to plan new experiments given that knowledge. Clustering methods can be used to identify groups of genes with similar expression patterns, and genes with unknown function can be provisionally annotated based on the concept of “guilt by association”, where function is tentatively inferred from the known functions of genes with similar expression patterns. These methods frequently suffer from two limitations: (1) visualization usually only gives access to group membership, rather than specific information about nearest neighbors, and (2) the resolution or quality of the relationships are not easily inferred.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We have addressed these issues by improving the precision of similarity detection over that of a single experiment and by creating a tool to visualize tractable association networks: we (1) performed meta-analysis computation of correlation coefficients for all gene pairs in a heterogeneous data set collected from 2,145 publicly available micorarray samples in mouse, (2) filtered the resulting distribution of over 130 million correlation coefficients to build new, more tractable distributions from the strongest correlations, and (3) designed and implemented a new Web based tool (StarNet, <a href="http://vanburenlab.medicine.tamhsc.edu/starnet.html">http://vanburenlab.medicine.tamhsc.edu/s​tarnet.html</a>) for visualization of sub-networks of the correlation coefficients built according to user specified parameters.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>Correlations were calculated across a heterogeneous collection of publicly available microarray data. Users can access this analysis using a new freely available Web-based application for visualizing tractable correlation networks that are flexibly specified by the user. This new resource enables rapid hypothesis development for transcription regulatory relationships.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Jupiter DC, VanBuren V (2008) A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks. PLoS ONE 3(3):
+          e1717.
+            doi:10.1371/journal.pone.0001717</p><p><strong>Academic Editor: </strong>Raya Khanin, University of Glasgow, United Kingdom</p><p><strong>Received:</strong> November 7, 2007; <strong>Accepted:</strong> February 5, 2008; <strong>Published:</strong> March 5, 2008</p><p><strong>Copyright:</strong> © 2008 Jupiter, VanBuren. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was funded by a Scientist Development Grant from the American Heart Association (Grant ID: 0630263N), and by start-up funds from the Department of Systems Biology and Translational Medicine and the Dean of the College of Medicine, Texas A &amp; M Health Science Center. The project funders had no role in the design and conduct of the study, no role in the collection, analysis, and interpretation of the data, and no role in the preparation, review, or approval of the manuscript.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Several approaches to microarray data analysis make use of clustering techniques <a href="#pone.0001717-Kaufman1">[1]</a>–<a href="#pone.0001717-Eisen1">[4]</a> to suggest functional roles for previously uncharacterized genes. Clustering approaches, however, normally result in a graphical display of groupings that typically lack specific information about the correlation of expression patterns between two selected genes. Thus while group membership can be tentatively established, the topology of the group, or the interactions between its members are not necessarily well elucidated.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Synthesis and visualization of publicly available data remains a challenge for biologists. Available microarray data is thus typically not exploited beyond the scope of the original experiment. Visualization platforms such as Cytoscape <a href="#pone.0001717-Shannon1">[5]</a> or BioTapestry <a href="#pone.0001717-Longabaugh1">[6]</a> have provided versatile solutions for viewing large networks, including association and interaction networks, but such platforms expect a network provided by the user, and do not learn or reconstruct the networks in and of themselves.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Dynamic Bayesian networks offer a viable approach for the discovery of gene regulatory network topology <a href="#pone.0001717-Nachman1">[7]</a>–<a href="#pone.0001717-Husmeier1">[12]</a>. However, these methods are often computationally intensive, heuristic, and limited to the study of small networks usually derived from time series data. Our approach to addressing these issues focuses on visualizing association networks local to a given gene of interest. Using the Affymetrix GeneChip Mouse Genome 430 2.0 Array platform, we <strong>(1)</strong> selected samples from a wide variety of tissues and experimental conditions to build a table of correlation coefficients from all pair-wise comparisons of genes represented on the array, <strong>(2)</strong> selected a subset of those samples in order to examine the differences in network topology which arise in a smaller set of related regulatory states in cardiac tissues and early developmental states, relative to the average regulatory state represented by the full cohort of arrays, <strong>(3)</strong> built a Web based application for user specified network construction and viewing, and <strong>(4)</strong> provide assessment of the resultant networks by drawing networks of known interactions involving the list of genes in the correlation network, and by determining Gene Ontology (GO) <a href="#pone.0001717-Ashburner1">[13]</a> annotation terms that are enriched in the correlation network as compared with the entire array platform. All data used in our analyses were retrieved from the Gene Expression Omnibus <a href="#pone.0001717-Barrett1">[14]</a>. <a href="#pone-0001717-g001"><strong>Fig. 1</strong></a> shows an overview of the project.</p>
+<div class="figure" id="pone-0001717-g001"><div class="img"><a name="pone-0001717-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Analysis pipeline.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>2145 array samples were selected for the Affymetrix whole genome mouse 430 2.0 array platform. Data were normalized and scaled using justRMALite. The resulting distribution of over 130 million Pearson correlation coefficients was filtered to produce various distributions of the strongest relationships. Correlation data and Entrez Gene annotations were used to populate a new database. StarNet was developed to allow users to make database queries to create and draw correlation networks local to their gene of interest on-the-fly, and to provide supporting information about genes in those networks.</p>
+<span>doi:10.1371/journal.pone.0001717.g001</span></div><a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>We present a user-directed approach to network elucidation, and provide an intuitive Web-based interface (StarNet, <a href="http://vanburenlab.medicine.tamhsc.edu/starnet.html">http://vanburenlab.medicine.tamhsc.edu/s​tarnet.html</a>) for visual exploration of correlation networks radiating from a selected gene. In short, there are two main parts to the work described here: (1) construction of a database by combining annotations and known interactions from Entrez Gene with our meta-analysis computation of correlation coefficients and data partitioning, and (2) development of a Web-based front end (StarNet) that interrogates the database, constructs networks for visualization, and performs some analyses on those networks to provide a quick assessment of their utility. StarNet results may suggest putative interactions, either in biochemical pathways or transcriptional regulatory networks, thus providing new hypotheses for additional experiments. The results provided by StarNet may also be viewed as the first step in a data analysis pipeline, where the putative networks produced by StarNet, for example, may be studied further using the tools of Bayesian network analysis.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>Data Preparation</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>We selected 2,145 sample hybridizations performed on the Affymetrix GeneChip Mouse Genome 430 2.0 Array which are available from the Gene Expression Omnibus (GEO) <a href="#pone.0001717-Barrett1">[14]</a>, <a href="#pone.0001717-Edgar1">[15]</a> for which raw data was available from GEO. Data from these samples, which we have dubbed the “full cohort”, cover a wide range of tissues and experimental conditions. Of these hybridizations, 239 were from experiments related to cardiac development, cardiac tissues in adult mice, or early development (the “cardiac cohort”). A complete list of the experimental datasets used is available at <a href="http://www.vanburenlab.tamhsc.edu/starnet_doc.html">http://www.vanburenlab.tamhsc.edu/starne​t_doc.html</a>.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Features on the array were mapped to Entrez Gene <a href="#pone.0001717-Maglott1">[16]</a> IDs using Version 9 of the mapping provided by Dai and colleagues <a href="#pone.0001717-Dai1">[17]</a>. Their mapping yields 16,297 genes on the array. The arrays within the full and cardiac cohorts were normalized separately, using the justRMALite <a href="#pone.0001717-Irizarry1">[18]</a> package within the BioConductor <a href="#pone.0001717-Gentleman1">[19]</a> suite of tools. This procedure performs quantile normalization, positive match only adjustment, and Tukey median polish.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>Pearson correlation coefficients were calculated for all pairwise comparisons of genes on the array using Octave. This yielded 132,787,956 coefficients for each cohort.</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>Several subsets of the collection of correlation coefficients were built. First, we selected the 20,000 (20K) largest positive correlation coefficients. This procedure was repeated for 40,000 (40K) and 100,000 (100K) coefficients. The 20K, 40K, and 100K sub-distributions were also formed for the largest negative coefficients. We further considered the union of positive and negative “extreme tails”, for each of the three sizes. This procedure was executed for both the full and cardiac cohorts, yielding a total of 18 different sub-distributions.</p>
+<a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"></a><p>To guarantee that each gene on the array is represented in our distributions, a “genecentric” distribution was built. The ten largest positive correlations to each gene were selected, with the proviso that the p-value of the correlation was less than .05. This was repeated for negative correlations, and again the union of positive and negative correlations was considered. This procedure was carried out for both full and cardiac cohorts, thus obtaining an additional six distributions.</p>
+<a id="article1.body1.sec2.sec1.p6" name="article1.body1.sec2.sec1.p6"></a><p>We built two further classes of “specialty” distributions, each a variant on the genecentric distribution. First, the genecentric construction was repeated, but constrained to those genes whose GO <a href="#pone.0001717-Ashburner1">[13]</a> annotation contains the term “transcription”. Next, the same procedure was repeated for those genes GO-annotated with either of the terms “transcription” or “signal”. This yielded an additional 12 distributions.</p>
+
+
+<h4>Database</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Both sets of correlation coefficients were loaded into a MySQL database, and the partitioning of the set of correlation coefficients was executed using MySQL database calls scripted with Perl.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>The database was also populated with Entrez Gene data and Gene Reference Into Function (RIF) files available at NCBI's FTP site (<a href="http://ftp://ftp.ncbi.nlm.nih.gov/gene/">ftp://ftp.ncbi.nlm.nih.gov/gene/</a>; data was retrieved from NCBI on April 26, 2007), which we filtered on their taxonomic ID for mouse entries; Gene RIF interaction data are used in constructing graphs of known interactions in StarNet.</p>
+
+
+<h4>Network Construction</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>The network construction algorithms were implemented in Perl. The algorithms allow a variety of choices for defining network topology. For details see the user manual at <a href="http://vanburenlab.tamhsc.edu/starnet_doc.html">http://vanburenlab.tamhsc.edu/starnet_do​c.html</a>. The relevant parameters (e.g., which type of network to build, which distribution to use) chosen by the user on the submission page are passed to the network building script, and reflected in the script's output.</p>
+
+
+<h4>Visualization</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>The CGI script that takes user input from the StarNet submission page and produces the results pages was written in Perl. Graphs are drawn using AT &amp; T's Graphviz package (<a href="http://www.graphviz.org">http://www.graphviz.org</a>). Determination of whether genes in the graph are GO-annotated is achieved by a search against our MySQL database. GO term enrichment in the network is also determined using calls to our MySQL database. The correlation coefficients and counts of array samples, which are needed to determine confidence intervals for correlation coefficients, are written to file by the network construction procedure, and later read by the visualization script. Edges (correlations) are color coded such that darker edges represent stronger correlations. Positive correlations are drawn as shades of blue, and negative as shades of red. Note that the correlation scales were determined on a per network basis. That is, for each network the positive (and/or negative) scales are redrawn, with the scale drawn by equally partitioning between the minimum and maximum positive (and/or negative) correlations within that network. Data used in building graphs of known interactions comes from Gene RIF files available at NCBI's FTP site.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>For further details regarding scales, procedures used to build graphs of known interactions, and other details of the visualization script, see the white paper and user manual available at <a href="http://vanburenlab.tamhsc.edu/starnet_doc.html">http://vanburenlab.tamhsc.edu/starnet_do​c.html</a>.</p>
+
+
+<h4>Web Site</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>StarNet takes a user-specified gene as input, as well as the parameters indicated below. Using the distributions described above, a network is then drawn centered about the specified gene. The gene of choice is level 0; those genes to which it is directly connected by correlations from the distribution of choice, and using the graphing methodology of choice, are level 1, etc. Two graphs are produced, one for the cardiac cohort and one for the full cohort. In addition to the correlation graphs we provide <strong>(1)</strong> lists of genes in the graph, hyperlinked to Entrez, <strong>(2)</strong> lists of the edges in the graph, with 95% and 99% confidence intervals for the corresponding correlation coefficients, <strong>(3)</strong> a list of known interactions involving the genes in the graphs, <strong>(4)</strong> a list of genes annotated with the GO term specified by the user, <strong>(5)</strong> a list of GO terms enriched in the graph, hyperlinked to AmiGO, and <strong>(6)</strong> graphs of known interactions involving genes in the networks which StarNet has produced. Additionally, the cardiac and full cohort graphs can be expanded for closer examination, and the nodes in these expanded graphs are hyperlinked to the corresponding entries in Entrez Gene.</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p>To use StarNet (available at <a href="http://vanburenlab.tamhsc.edu/starnet.html">http://vanburenlab.tamhsc.edu/starnet.ht​ml</a>) the user enters a gene of interest and specifies parameters describing the network to be built and the appearance of the resultant graph. The user submits a gene by entering either the gene's Entrez Gene ID or its gene symbol; a symbol lookup utility is provided. Parameters include the distribution to use (as described above); whether to draw positive, negative, or both positive and negative correlations; the number of levels to draw the network; a parameter specifying network topology; and a GO term for which to search, where those genes annotated with that term will be highlighted in the network and listed. Additionally, there are several parameters to specify aesthetic features of the drawn networks, including alternative color schemes, which may be required by color-blind individuals.</p>
+<a id="article1.body1.sec2.sec5.p3" name="article1.body1.sec2.sec5.p3"></a><p>For further details on and explanation of parameter choices, in particular for choices of network topology, see the user manual available at <a href="http://vanburenlab.tamhsc.edu/starnet_doc.html">http://vanburenlab.tamhsc.edu/starnet_do​c.html</a>.</p>
+
+
+<h4>Statistical Analysis</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>Pearson correlation coefficients between genes on the array were computed using Octave (full cohort: n = 2,145, cardiac cohort: n = 239). A two-tailed t-test was used to compute p-values for each coefficient. After using the Fisher z-transformation to normalize the correlation coefficients, confidence intervals in the normalized setting were computed, and the inverse of the Fisher z-transform applied to yield confidence intervals in our original variables.</p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>Enrichment of GO terms was evaluated using the hypergeometric test, following the recommendations of Rivals and colleagues <a href="#pone.0001717-Rivals1">[20]</a> and Gentleman and colleagues <a href="#pone.0001717-Gentleman2">[21]</a>. Hypergeometric distribution computations were implemented in Perl. To compute the factorials involved in this distribution, we computed the natural log of the gamma function, using a slight modification of code provided at <a href="http://www.perlmonks.org">www.perlmonks.org</a>.</p>
+<a id="article1.body1.sec2.sec6.p3" name="article1.body1.sec2.sec6.p3"></a><p>For each of our distributions we computed the mean, standard deviation, and skew. Skew was computed without bias correction. We ran several tests for normality on the distributions: Kolomogorov-Smirnov, Lilliefors, and Jarque-Bera. All were run at the 5% significance level. The Kolmogorov-Smirnov test was run using the sample mean and standard deviation as the parameters for the normal to which to compare our empirical distribution. As the sub-distributions were all found to be non-Normal, we used the Mann-Whitney rank sum test to compare respective sub-distributions from the cardiac and full cohorts. All tests were performed using MATLAB.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>StarNet</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>The main contribution of this work is the creation of StarNet, a new freely available Web-based tool that facilitates the reconstruction of transcription regulatory networks via rapid hypothesis development and providing provisional gene groups for focused modeling efforts. A brief description of the tool's features and usage, along with links to supporting documentation, are given in the <a href="#s2">Methods</a>. Below we describe some features of the sub-distributions that StarNet calls on to construct networks, and we present a sample analysis to show a representative example of StarNet's utility in developing hypotheses about regulatory and pathway interactions with a gene of interest. This demonstration is conducted with <em>Hand1</em>, a well-characterized gene, to show that StarNet is capable of generating networks around a gene of interest that are highly consistent with the known characteristics of that gene.</p>
+
+
+<h4>Distributions and data quality</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>The genecentric distribution and the distribution of the 100,000 (100K) largest correlations (see <a href="#s2">Methods</a>) are bimodal in both the cardiac and the full cohort, with one positive mode and one negative mode. Separately examining the positive coefficients and negative coefficients in each sub-distribution reveals that the positive (resp. negative) coefficients are not distributed normally, and are instead skewed to the more extreme values (<a href="#pone-0001717-t001"><strong>Table 1</strong></a>).</p>
+<div class="figure" id="pone-0001717-t001"><div class="img"><a name="pone-0001717-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Sub-distribution statistics.</span></strong></p><span>doi:10.1371/journal.pone.0001717.t001</span></div><a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>The mean of the 100K most positive correlations in the cardiac cohort (.9263) is statistically different from the mean of the 100K most positive correlations in the full cohort (.8957) with p&lt;1e-16 (Mann-Whitney rank sum test). The same is true of the means of the 100K most negative correlations in cardiac and full cohorts (p&lt;1e-16), as well as for both positive and negative genecentric distributions (p&lt;1e-16). The correlations in the cardiac cohorts show a general trend of being more extreme than those in the full cohort (<a href="#pone-0001717-g002"><strong>Fig. 2a</strong></a>).</p>
+<div class="figure" id="pone-0001717-g002"><div class="img"><a name="pone-0001717-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Selected distributions used by StarNet.</span></strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>a: The cardiac cohort (dark blue) and full cohort (light blue) Genecentric distributions. b: The largest positive correlations in the cardiac cohort. The highest 335 of these associations have a Pearson correlation of 1 (to 16 decimal places), and these form a notable spike at the tail of the distribution (arrow). c: The 335 associations indicated in panel b are composed of 80 genes in the 22 groups of genes shown here. d: The genomic structure of the Pcdhgb1 family of genes (drawn with the UCSC Genome Browser).</p>
+<span>doi:10.1371/journal.pone.0001717.g002</span></div><a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>The full cohort represents a large number of regulatory states, from a variety of tissues, whereas the cardiac cohort represents a relatively fewer number of related regulatory states. The bimodal distributions from the full cohort thus represent an average state consisting of coregulatory and correlative relationships that are relatively weaker on average than those of the cardiac distributions. There are two main factors that contribute to this observed difference between the cardiac and full cohort sub-distributions: <strong>(1)</strong> co-regulation is context-specific, meaning that the transcription activity of two genes may be tightly co-regulated in one tissue or milieu, and weakly co-regulated in others; and <strong>(2)</strong> conditioning the data on a ‘cardiac cohort’, or on any sub-population of tissue types, has a tendency to strengthen measured correlations because of the narrowed range of phenotypes produced by gene activity in those sub-populations. As conditioning increases the average correlation, many gene pairs thus affected that are also highly correlated in other tissues are thus not necessarily specifically corregulated under conditioning. The measured differences between the cardiac and full cohort sub-distributions validate our reasoning for doing separate analyses of the full and cardiac cohorts, and these separate analyses will facilitate future inquiry into the relative contributions of context-specific co-regulation and spurious correlation to the measured differences between the distributions.</p>
+<a id="article1.body1.sec3.sec2.p4" name="article1.body1.sec3.sec2.p4"></a><p>At the positive tail of both the cardiac and full cohort highest correlations, there is a spike of 335 correlations equal to 1 (to a precision of 16 decimal places, <a href="#pone-0001717-g002"><strong>Fig. 2b and 2c</strong></a>). The 80 genes represented by these correlations are distributed into 18 pairs of genes, and one group each of 3 genes, 8 genes, 11 genes and 22 genes, respectively. In seven of the pairs, one of the two gene IDs in the pair was replaced by the other by Entrez Gene, or one of the gene IDs was discontinued. In nine other pairs, as well as the group of three genes, Blast 2 sequences (bl2seq) reveals greater than 90% sequence similarity between the transcripts of the genes within the group, most often at the 3′ ends of both genes, from which Affymetrix's probesets are taken. Two of the pairs cannot be explained using Entrez Gene or overall sequence similarity, but the annotation of Dai and colleagues <a href="#pone.0001717-Dai1">[17]</a> reveal that the two features in each of these pairs are represented by exactly the same probesets. The remaining three groups are composed of genes that have alternative transcription start sites (families <em>Pcdhga</em>, <em>Ugt1a</em> and <em>Pcdha</em>, respectively). <a href="#pone-0001717-g002"><strong>Fig. 2d</strong></a> shows the gene structure for the protocadherin family <em>Pcdhga</em> represented in the group of twenty-two; each of the genes in our grouping appears in this structure, and all share a common 3′ end. Similar results hold for the group of eight and the group of eleven, although in the latter case there is one gene (<em>Pcdha1</em>) in the group that is not in the same locus, but does have 97% sequence similarity with some of the members of the group. Edges in our networks with a correlation of 1 are thus connecting genes that are effectively technical replicates. These results assert the robustness of measuring correlations across different experimental conditions in experiments conducted by different investigators, and demonstrate the generally high reproducibility of measurements made with this Affymetrix platform.</p>
+
+
+<h4>An example analysis with StarNet: Hand1</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>As a representative example, below we analyze <em>Hand1</em> with the freely accessible Web-based tool StarNet. We selected <em>Hand1</em> because its role in cardiac development is well established. The analysis below is intended to illuminate the strengths and weaknesses of StarNet, and is not an attempt to present new results. Analysis was performed with the default settings in StarNet, which includes interrogating the genecentric distribution, and networks are drawn with the highest 5 correlations from the gene of interest (level 1) and the highest 5 correlations for each of those genes (level 2). The genecentric distribution was chosen as a default because this distribution has complete coverage of the array platform. The other parameters were chosen because our testing experience has shown that these parameters produce informative networks that are easily visualized. The StarNet analysis results discussed below may be viewed at <a href="http://vanburenlab.tamhsc.edu/Hand1/result.html">http://vanburenlab.tamhsc.edu/Hand1/resu​lt.html</a>. Alternatively, these results may also be recreated by typing ‘Hand1’ into the ‘Gene Symbol/Entrez ID’ field of the StarNet interface, and clicking ‘Submit’. With the present implementation, a new analysis takes about two minutes with the default settings in StarNet.</p>
+<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p><em>Hand1</em> is implicated in left ventricle formation, and is downregulated in mice lacking <em>Nkx2-5</em> <a href="#pone.0001717-McFadden1">[22]</a>. In the cardiac cohort network for <em>Hand1</em> drawn with the default parameters in StarNet, we find 7 known DNA-binding genes (<em>Snai2, Hoxb6, Twist2, Hoxa1, Prrx2, Hoxd1, and Hoxd8</em>), and 4 genes known to be involved in organ morphogenesis (<em>Hoxb6, Hoxd1, Hoxd8,</em> and <em>Gpc3</em>), not including <em>Hand1</em> itself in either case (<a href="#pone-0001717-g003"><strong>Fig. 3</strong></a>).</p>
+<div class="figure" id="pone-0001717-g003"><div class="img"><a name="pone-0001717-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001717" data-uri="info:doi/10.1371/journal.pone.0001717.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001717.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001717.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001717.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001717.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Representative graphical output from StarNet (textual output not shown).</span></strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>a: Full cohort correlation network with <em>Hand1</em> as the central node. b: Cardiac cohort correlation network with <em>Hand1</em> as the central node. c: Known associations involving genes from a (which appear in blue text). d: Known associations involving genes from B (which appear in blue text). In a and b, red text indicates genes with annotation that include “transcription”, and line color represents correlation strength as indicated by the scale bars. In c and d, black edges represent previously known protein-protein interactions, and red arrows represent previously known protein-&gt;DNA interactions. Known interactions for all genes in each correlation network are determined by searching Gene RIF interactions supplied by Entrez Gene.</p>
+<span>doi:10.1371/journal.pone.0001717.g003</span></div><a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"></a><p><em>Cfc1, Msx1, Foxh1, Phlda2</em>, and <em>BC030046</em> all appear as immediate neighbors of <em>Hand1</em> in the full cohort network drawn with StarNet using the default parameters (<a href="#pone-0001717-g003"><strong>Fig. 3</strong></a>). Cfc1 is a Nodal co-receptor, has been shown to control <em>Lefty</em> expression in chicks, and has been shown to play a critical role in normal and abnormal cardiovascular development in humans <a href="#pone.0001717-Chen1">[23]</a>. The homeobox <em>Msx1</em> is involved in early neural development and Msx1 interacts with BMP and Smad family members <a href="#pone.0001717-Angello1">[24]</a>. Foxh1 is known to interact with Nkx2-5, and is essential for anterior heart field development <a href="#pone.0001717-vonBoth1">[25]</a>. Deletion of <em>Phlda2</em> causes placentomegaly and mice that lack <em>Hand1</em> die at embryonic day 8.5 from placental and extra-embryonic abnormalities <a href="#pone.0001717-McFadden1">[22]</a>, <a href="#pone.0001717-Duselis1">[26]</a>. <em>BC030046</em> is an uncharacterized cDNA sequence derived from preimplantation embryo libraries. <em>Cfc1, Msx1, Foxh1</em>, and <em>Phlda</em> are thus functionally related to <em>Hand1</em>, while the function of embryo-expressed <em>BC030046</em> is unknown. The <em>Hand1</em> full cohort network is enriched for the GO term, ‘DNA-dependent regulation of transcription’ (<em>Hand1, Foxh1 , Msx1 , Nr4a3 , Mef2d, Etv2, Mixl1, Lin28, Pitx2, Tead2, Asb4, Gli3, Cbx2, and Msx2</em>, unadjusted p-value = 0.00000004, hypergeometric test), and most of the genes in the second level of the full cohort network have been implicated in development or heart development (<em>Dll3, Pitx2, Lin28, Igfbp1, Nr4a3, Msi1, Mef2d, Etv2, Mesp1, Mixl1, Tead2, Igf2, Mest, Gli3, Cbx2</em> (15 out of 22 genes in the second level)). In particular, <em>Pitx2</em> expression is initiated by Nodal, and is left-side expressed in the lateral plate and later in the primordial visceral organs; maintenance of this asymmetrical expression requires <em>Nkx2-5</em> <a href="#pone.0001717-Shiratori1">[27]</a>.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>We have noted that known markers for cardiac development appear together more frequently in full cohort networks than in cardiac cohort networks. In the full cohort, where the network is constructed from a more general milieu of associations, genes specifically active in embryonic stages are prominently associated, although it is with relatively smaller correlations than in the cardiac network, on average. Upon examining a finer resolution of associations in the cardiac/development milieu alone (i.e. upon conditioning the measured associations to a narrower range of tissue types), we find that the prominence of correlated genes that are known markers for embryonic or cardiac tissue types in the full cohort networks is frequently displaced by other genes that are more highly correlated within the narrower milieu of the cardiac cohort. Higher correlations between expressed genes are an expected result of conditioning on a narrower field of tissue types. It is also expected that a systematic comparison of the high ranking correlations from each of the cohorts, where networks are built about selected genes implicated in cardiac development, will reveal insights into previously uncharacterized features of cardiac transcriptional regulatory networks.</p>
+
+<h4>Future directions</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Correlation, while indicating relationships, does not imply causality. For this reason, the networks built by StarNet should not be viewed as directional, or as indicating that any given gene in the graph is a direct influence on any other. Important relationships are captured by correlation, however, and may thus suggest further experimentation or modeling. Recent work has indicated the utility of correlation as a measure of gene co-expression relationships. For example, Reiss and colleagues <a href="#pone.0001717-Reiss1">[28]</a> discuss co-expression (but emphasize the importance of co-regulation), noting that correlative relationships change depending on the milieu. These issues have also been discussed by other groups <a href="#pone.0001717-Weitzman1">[29]</a>–<a href="#pone.0001717-Aoki1">[31]</a>, where again the distinction between co-regulation and correlation is made, with co-expression recognized as an important analytical tool. Assertions about causality can be formed using other methodologies such as Bayesian networks and structural equation modeling. Gene lists for networks produced by StarNet can be used as starting material for these methods.</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>The full cohort and cardiac cohort networks given here as examples of StarNet's analysis are not immediately amenable to quantitative comparisons. One obvious obstacle to comparison is that the networks do not have any nodes in common besides the central node. Many networks drawn with StarNet do have several nodes in common, but the common nodes are frequently a minority of the total network nodes. The networks are constructed with arbitrary cutoffs for the highest correlations with a given node, so many biologically important associations may be missing from a particular network. One approach to comparing these networks would then be to create a ‘super-network’ for each cohort, where all the unique nodes from the full and cardiac network are combined, and a completely connected network is created from the original distribution (full or cardiac) of correlation coefficients. These completely connected networks can be analyzed using the tools of social network analysis <a href="#pone.0001717-Wasserman1">[32]</a>. This may be achieved by trimming the completely connected networks according to specified rules. For example, if the correlation between gene X and gene Y is lower than the product of the correlations (X, Z) and (Z, Y), then this suggests that any influence between genes X and Y occurs through the intermediate gene Z. This implies that the edge between X and Y should be trimmed from the network. Upon trimming each network in this manner, it is then straightforward to compute metrics such as <em>betweeness centrality</em> or <em>closeness centrality</em> and compare them between the two networks. Such quantitative comparisons between networks remain to be developed in future work.</p>
+<a id="article1.body1.sec4.sec1.p3" name="article1.body1.sec4.sec1.p3"></a><p>The methodology and algorithms developed to create StarNet may be easily applied to other organisms, other platforms, and any subset of the arrays may be selected as a cohort. Future efforts will expand the utility of StarNet in these areas, and consider comparisons of more than two cohorts.</p>
+<a id="article1.body1.sec4.sec1.p4" name="article1.body1.sec4.sec1.p4"></a><p>StarNet adds a useful tool to the repertoire of the biomedical scientist. It is easy to use, and the results are readily interpretable. It can be used in conjunction with the other tools at the biologist's disposal, either as a tool for generating hypotheses for new experimental investigations, or as the first step towards reconstructing and modeling transcriptional regulatory networks.</p>
+
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Ben Bolstad for his help in implementing justRMALite. Cynthia Meininger, David Zawieja, Harris Granger, Hung-Chung Huang, Tetsuya Tanaka, and James Littlejohn provided valuable feedback on the development of the Web interface.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: VV DJ. Performed the experiments: VV DJ. Analyzed the data: DJ. Contributed reagents/materials/analysis tools: VV DJ. Wrote the paper: VV DJ. Other: Developed the web site: VV.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001717-Kaufman1" id="pone.0001717-Kaufman1"></a>Kaufman PJ, Rousseeuw L (1990) Finding Groups in Data. Wiley.   <ul class="find" data-citedArticleID="1066752" data-doi="10.1002/9780470316801"><li><a href="http://dx.doi.org/10.1002/9780470316801" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Finding+Groups+in+Data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Finding+Groups+in+Data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001717-Madeira1" id="pone.0001717-Madeira1"></a>Madeira SC, Oliveira AL (2004) Biclustering algorithms for biological data analysis: a survey. IEEE/ACM Trans Comput Biol Bioinform  1: 24–45.  <ul class="find" data-citedArticleID="1066756" data-doi="10.1109/tcbb.2004.2"><li><a href="http://dx.doi.org/10.1109/tcbb.2004.2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Biclustering+algorithms+for+biological+data+analysis%3A+a+survey." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Biclustering+algorithms+for+biological+data+analysis%3A+a+survey.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001717-Hastie1" id="pone.0001717-Hastie1"></a>Hastie T, Tibshirani R, Eisen MB, Alizadeh A, Levy R, et al.  (2000) ‘Gene shaving’ as a method for identifying distinct sets of genes with similar expression patterns. Genome Biol  1: RESEARCH0003.  <ul class="find" data-citedArticleID="1066746"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=%3FGene+shaving%3F+as+a+method+for+identifying+distinct+sets+of+genes+with+similar+expression+patterns.&amp;auth=&amp;atitle=%3FGene+shaving%3F+as+a+method+for+identifying+distinct+sets+of+genes+with+similar+expression+patterns." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=%E2%80%98Gene+shaving%E2%80%99+as+a+method+for+identifying+distinct+sets+of+genes+with+similar+expression+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22%E2%80%98Gene+shaving%E2%80%99+as+a+method+for+identifying+distinct+sets+of+genes+with+similar+expression+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001717-Eisen1" id="pone.0001717-Eisen1"></a>Eisen MB, Spellman PT, Brown PO, Botstein D (1998) Cluster analysis and display of genome-wide expression patterns. Proc Natl Acad Sci U S A  95: 14863–14868.  <ul class="find" data-citedArticleID="1066738" data-doi="10.1073/pnas.95.25.14863"><li><a href="http://dx.doi.org/10.1073/pnas.95.25.14863" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cluster+analysis+and+display+of+genome-wide+expression+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cluster+analysis+and+display+of+genome-wide+expression+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001717-Shannon1" id="pone.0001717-Shannon1"></a>Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, et al.  (2003) Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res  13: 2498–2504.  <ul class="find" data-citedArticleID="1066772" data-doi="10.1101/gr.1239303"><li><a href="http://dx.doi.org/10.1101/gr.1239303" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cytoscape%3A+a+software+environment+for+integrated+models+of+biomolecular+interaction+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cytoscape%3A+a+software+environment+for+integrated+models+of+biomolecular+interaction+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001717-Longabaugh1" id="pone.0001717-Longabaugh1"></a>Longabaugh WJ, Davidson EH, Bolouri H (2005) Computational representation of developmental genetic regulatory networks. Dev Biol  283: 1–16.  <ul class="find" data-citedArticleID="1066754" data-doi="10.1016/j.ydbio.2005.04.023"><li><a href="http://dx.doi.org/10.1016/j.ydbio.2005.04.023" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+representation+of+developmental+genetic+regulatory+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+representation+of+developmental+genetic+regulatory+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001717-Nachman1" id="pone.0001717-Nachman1"></a>Nachman I, Regev A, Friedman N (2004) Inferring quantitative models of regulatory networks from expression data. Bioinformatics  20: Suppl 1i248–56.  <ul class="find" data-citedArticleID="1066762" data-doi="10.1093/bioinformatics/bth941"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth941" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inferring+quantitative+models+of+regulatory+networks+from+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inferring+quantitative+models+of+regulatory+networks+from+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001717-Hartemink1" id="pone.0001717-Hartemink1"></a>Hartemink AJ, Gifford DK, Jaakkola TS, Young RA (2002) Combining location and expression data for principled discovery of genetic regulatory network models. Pac Symp Biocomput 437–449.  <ul class="find" data-citedArticleID="1066744" data-doi="10.1142/9789812799623_0041"><li><a href="http://dx.doi.org/10.1142/9789812799623_0041" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Combining+location+and+expression+data+for+principled+discovery+of+genetic+regulatory+network+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Combining+location+and+expression+data+for+principled+discovery+of+genetic+regulatory+network+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001717-Beal1" id="pone.0001717-Beal1"></a>Beal MJ, Falciani F, Ghahramani Z, Rangel C, Wild DL (2005) A Bayesian approach to reconstructing genetic regulatory networks with hidden factors. Bioinformatics  21: 349–356.  <ul class="find" data-citedArticleID="1066728" data-doi="10.1093/bioinformatics/bti014"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti014" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Bayesian+approach+to+reconstructing+genetic+regulatory+networks+with+hidden+factors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Bayesian+approach+to+reconstructing+genetic+regulatory+networks+with+hidden+factors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001717-Sanguinetti1" id="pone.0001717-Sanguinetti1"></a>Sanguinetti G, Lawrence ND, Rattray M (2006) Probabilistic inference of transcription factor concentrations and gene-specific regulatory activities. Bioinformatics  22: 2775–2781.  <ul class="find" data-citedArticleID="1066770" data-doi="10.1093/bioinformatics/btl473"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl473" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Probabilistic+inference+of+transcription+factor+concentrations+and+gene-specific+regulatory+activities." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Probabilistic+inference+of+transcription+factor+concentrations+and+gene-specific+regulatory+activities.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001717-Rogers1" id="pone.0001717-Rogers1"></a>Rogers S, Khanin R, Girolami M (2007) Bayesian model-based inference of transcription factor activity. BMC Bioinformatics  8: Suppl 2S2.  <ul class="find" data-citedArticleID="1066768" data-doi="10.1186/1471-2105-8-s2-s2"><li><a href="http://dx.doi.org/10.1186/1471-2105-8-s2-s2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bayesian+model-based+inference+of+transcription+factor+activity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bayesian+model-based+inference+of+transcription+factor+activity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001717-Husmeier1" id="pone.0001717-Husmeier1"></a>Husmeier D (2003) Sensitivity and specificity of inferring genetic regulatory interactions from microarray experiments with dynamic Bayesian networks. Bioinformatics  19: 2271–2282.  <ul class="find" data-citedArticleID="1066748" data-doi="10.1093/bioinformatics/btg313"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg313" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sensitivity+and+specificity+of+inferring+genetic+regulatory+interactions+from+microarray+experiments+with+dynamic+Bayesian+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sensitivity+and+specificity+of+inferring+genetic+regulatory+interactions+from+microarray+experiments+with+dynamic+Bayesian+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001717-Ashburner1" id="pone.0001717-Ashburner1"></a>Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, et al.  (2000) Gene ontology: tool for the unification of biology. The Gene Ontology Consortium. Nat Genet  25: 25–29.  <ul class="find" data-citedArticleID="1066724"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium.&amp;auth=&amp;atitle=Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+ontology%3A+tool+for+the+unification+of+biology.+The+Gene+Ontology+Consortium.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001717-Barrett1" id="pone.0001717-Barrett1"></a>Barrett T, Troup DB, Wilhite SE, Ledoux P, Rudnev D, et al.  (2007) NCBI GEO: mining tens of millions of expression profiles–database and tools update. Nucleic Acids Res  35: D760–5.  <ul class="find" data-citedArticleID="1066726" data-doi="10.1093/nar/gkl887"><li><a href="http://dx.doi.org/10.1093/nar/gkl887" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=NCBI+GEO%3A+mining+tens+of+millions+of+expression+profiles%E2%80%93database+and+tools+update." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22NCBI+GEO%3A+mining+tens+of+millions+of+expression+profiles%E2%80%93database+and+tools+update.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001717-Edgar1" id="pone.0001717-Edgar1"></a>Edgar R, Domrachev M, Lash AE (2002) Gene Expression Omnibus: NCBI gene expression and hybridization array data repository. Nucleic Acids Res  30: 207–210.  <ul class="find" data-citedArticleID="1066736" data-doi="10.1093/nar/30.1.207"><li><a href="http://dx.doi.org/10.1093/nar/30.1.207" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+Expression+Omnibus%3A+NCBI+gene+expression+and+hybridization+array+data+repository." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+Expression+Omnibus%3A+NCBI+gene+expression+and+hybridization+array+data+repository.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001717-Maglott1" id="pone.0001717-Maglott1"></a>Maglott D, Ostell J, Pruitt KD, Tatusova T (2007) Entrez Gene: gene-centered information at NCBI. Nucleic Acids Res  35: D26–31.  <ul class="find" data-citedArticleID="1066758" data-doi="10.1093/nar/gkl993"><li><a href="http://dx.doi.org/10.1093/nar/gkl993" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Entrez+Gene%3A+gene-centered+information+at+NCBI." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Entrez+Gene%3A+gene-centered+information+at+NCBI.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001717-Dai1" id="pone.0001717-Dai1"></a>Dai M, Wang P, Boyd AD, Kostov G, Athey B, et al.  (2005) Evolving gene/transcript definitions significantly alter the interpretation of GeneChip data. Nucleic Acids Res  33: e175.  <ul class="find" data-citedArticleID="1066732" data-doi="10.1093/nar/gni179"><li><a href="http://dx.doi.org/10.1093/nar/gni179" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolving+gene%2Ftranscript+definitions+significantly+alter+the+interpretation+of+GeneChip+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolving+gene%2Ftranscript+definitions+significantly+alter+the+interpretation+of+GeneChip+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001717-Irizarry1" id="pone.0001717-Irizarry1"></a>Irizarry RA, Hobbs B, Collin F, Beazer-Barclay YD, Antonellis KJ, et al.  (2003) Exploration, normalization, and summaries of high density oligonucleotide array probe level data. Biostatistics  4: 249–264.  <ul class="find" data-citedArticleID="1066750" data-doi="10.1093/biostatistics/4.2.249"><li><a href="http://dx.doi.org/10.1093/biostatistics/4.2.249" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Exploration%2C+normalization%2C+and+summaries+of+high+density+oligonucleotide+array+probe+level+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Exploration%2C+normalization%2C+and+summaries+of+high+density+oligonucleotide+array+probe+level+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001717-Gentleman1" id="pone.0001717-Gentleman1"></a>Gentleman R, Carey V, Huber W, Irizarry aSD R (2005) Bioinformatics and Computational Biology Solutions Using R and Bioconductor. Springer Verlag.   <ul class="find" data-citedArticleID="1066740" data-doi="10.1007/0-387-29362-0"><li><a href="http://dx.doi.org/10.1007/0-387-29362-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bioinformatics+and+Computational+Biology+Solutions+Using+R+and+Bioconductor." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bioinformatics+and+Computational+Biology+Solutions+Using+R+and+Bioconductor.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001717-Rivals1" id="pone.0001717-Rivals1"></a>Rivals I, Personnaz L, Taing L, Potier MC (2007) Enrichment or depletion of a GO category within a class of genes: which test? Bioinformatics  23: 401–407.  <ul class="find" data-citedArticleID="1066766" data-doi="10.1093/bioinformatics/btl633"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl633" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Enrichment+or+depletion+of+a+GO+category+within+a+class+of+genes%3A+which+test%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Enrichment+or+depletion+of+a+GO+category+within+a+class+of+genes%3A+which+test%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001717-Gentleman2" id="pone.0001717-Gentleman2"></a>Gentleman RC, Carey VJ, Bates DM, Bolstad B, Dettling M, et al.  (2004) Bioconductor: open software development for computational biology and bioinformatics. Genome Biol  5: R80.  <ul class="find" data-citedArticleID="1066742" data-doi="10.1186/gb-2004-5-10-r80"><li><a href="http://dx.doi.org/10.1186/gb-2004-5-10-r80" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bioconductor%3A+open+software+development+for+computational+biology+and+bioinformatics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bioconductor%3A+open+software+development+for+computational+biology+and+bioinformatics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001717-McFadden1" id="pone.0001717-McFadden1"></a>McFadden DG, Barbosa AC, Richardson JA, Schneider MD, Srivastava D, et al.  (2005) The Hand1 and Hand2 transcription factors regulate expansion of the embryonic cardiac ventricles in a gene dosage-dependent manner. Development  132: 189–201.  <ul class="find" data-citedArticleID="1066760" data-doi="10.1242/dev.01562"><li><a href="http://dx.doi.org/10.1242/dev.01562" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Hand1+and+Hand2+transcription+factors+regulate+expansion+of+the+embryonic+cardiac+ventricles+in+a+gene+dosage-dependent+manner." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Hand1+and+Hand2+transcription+factors+regulate+expansion+of+the+embryonic+cardiac+ventricles+in+a+gene+dosage-dependent+manner.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001717-Chen1" id="pone.0001717-Chen1"></a>Chen C, Shen MM (2004) Two modes by which Lefty proteins inhibit nodal signaling. Curr Biol  14: 618–624.  <ul class="find" data-citedArticleID="1066730" data-doi="10.1016/j.cub.2004.02.042"><li><a href="http://dx.doi.org/10.1016/j.cub.2004.02.042" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Two+modes+by+which+Lefty+proteins+inhibit+nodal+signaling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Two+modes+by+which+Lefty+proteins+inhibit+nodal+signaling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001717-Angello1" id="pone.0001717-Angello1"></a>Angello JC, Kaestner S, Welikson RE, Buskin JN, Hauschka SD (2006) BMP induction of cardiogenesis in P19 cells requires prior cell-cell interaction(s). Dev Dyn  235: 2122–2133.  <ul class="find" data-citedArticleID="1066720" data-doi="10.1002/dvdy.20863"><li><a href="http://dx.doi.org/10.1002/dvdy.20863" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=BMP+induction+of+cardiogenesis+in+P19+cells+requires+prior+cell-cell+interaction%28s%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22BMP+induction+of+cardiogenesis+in+P19+cells+requires+prior+cell-cell+interaction%28s%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001717-vonBoth1" id="pone.0001717-vonBoth1"></a>von Both I, Silvestri C, Erdemir T, Lickert H, Walls JR, et al.  (2004) Foxh1 is essential for development of the anterior heart field. Dev Cell  7: 331–345.  <ul class="find" data-citedArticleID="1066782" data-doi="10.1016/j.devcel.2004.07.023"><li><a href="http://dx.doi.org/10.1016/j.devcel.2004.07.023" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Foxh1+is+essential+for+development+of+the+anterior+heart+field." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Foxh1+is+essential+for+development+of+the+anterior+heart+field.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001717-Duselis1" id="pone.0001717-Duselis1"></a>Duselis AR, Vrana PB (2007) Assessment and disease comparisons of hybrid developmental defects. Hum Mol Genet  16: 808–819.  <ul class="find" data-citedArticleID="1066734" data-doi="10.1093/hmg/ddm025"><li><a href="http://dx.doi.org/10.1093/hmg/ddm025" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assessment+and+disease+comparisons+of+hybrid+developmental+defects." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assessment+and+disease+comparisons+of+hybrid+developmental+defects.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001717-Shiratori1" id="pone.0001717-Shiratori1"></a>Shiratori H, Sakuma R, Watanabe M, Hashiguchi H, Mochida K, et al.  (2001) Two-step regulation of left-right asymmetric expression of Pitx2: initiation by nodal signaling and maintenance by Nkx2. Mol Cell  7: 137–149.  <ul class="find" data-citedArticleID="1066774" data-doi="10.1016/s1097-2765(01)00162-9"><li><a href="http://dx.doi.org/10.1016/s1097-2765(01)00162-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Two-step+regulation+of+left-right+asymmetric+expression+of+Pitx2%3A+initiation+by+nodal+signaling+and+maintenance+by+Nkx2." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Two-step+regulation+of+left-right+asymmetric+expression+of+Pitx2%3A+initiation+by+nodal+signaling+and+maintenance+by+Nkx2.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001717-Reiss1" id="pone.0001717-Reiss1"></a>Reiss DJ, Baliga NS, Bonneau R (2006) Integrated biclustering of heterogeneous genome-wide datasets for the inference of global regulatory networks. BMC Bioinformatics  7: 280.  <ul class="find" data-citedArticleID="1066764"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Integrated+biclustering+of+heterogeneous+genome-wide+datasets+for+the+inference+of+global+regulatory+networks.&amp;auth=&amp;atitle=Integrated+biclustering+of+heterogeneous+genome-wide+datasets+for+the+inference+of+global+regulatory+networks." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Integrated+biclustering+of+heterogeneous+genome-wide+datasets+for+the+inference+of+global+regulatory+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Integrated+biclustering+of+heterogeneous+genome-wide+datasets+for+the+inference+of+global+regulatory+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001717-Weitzman1" id="pone.0001717-Weitzman1"></a>Weitzman JB (2004) Co-regulation of mouse genes predicts function. J Biol  3: 19.  <ul class="find" data-citedArticleID="1066780"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Co-regulation+of+mouse+genes+predicts+function.&amp;auth=&amp;atitle=Co-regulation+of+mouse+genes+predicts+function." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Co-regulation+of+mouse+genes+predicts+function." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Co-regulation+of+mouse+genes+predicts+function.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001717-Stuart1" id="pone.0001717-Stuart1"></a>Stuart JM, Segal E, Koller D, Kim SK (2003) A gene-coexpression network for global discovery of conserved genetic modules. Science  302: 249–255.  <ul class="find" data-citedArticleID="1066776" data-doi="10.1126/science.1087447"><li><a href="http://dx.doi.org/10.1126/science.1087447" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+gene-coexpression+network+for+global+discovery+of+conserved+genetic+modules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+gene-coexpression+network+for+global+discovery+of+conserved+genetic+modules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001717-Aoki1" id="pone.0001717-Aoki1"></a>Aoki K, Ogata Y, Shibata D (2007) Approaches for extracting practical information from gene co-expression networks in plant biology. Plant Cell Physiol  48: 381–390.  <ul class="find" data-citedArticleID="1066722" data-doi="10.1093/pcp/pcm013"><li><a href="http://dx.doi.org/10.1093/pcp/pcm013" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Approaches+for+extracting+practical+information+from+gene+co-expression+networks+in+plant+biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Approaches+for+extracting+practical+information+from+gene+co-expression+networks+in+plant+biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001717-Wasserman1" id="pone.0001717-Wasserman1"></a>Wasserman S, Faust K (1994) Social Network Analysis: Methods and Applications. Cambridge, UK: Cambridge University Press.   <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.XML" value="73482"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.PDF" value="325396"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g001.PNG_L" value="286095"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g001.PNG_M" value="71772"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g001.PNG_S" value="9296"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g001.TIF" value="716636"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g001.PNG_I" value="38533"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.t001.PNG_L" value="156260"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.t001.PNG_M" value="87338"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.t001.PNG_S" value="11286"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.t001.TIF" value="759368"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.t001.PNG_I" value="25946"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g002.PNG_L" value="4447153"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g002.PNG_M" value="206124"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g002.PNG_S" value="10605"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g002.TIF" value="7470732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g002.PNG_I" value="67565"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g003.PNG_L" value="2007345"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g003.PNG_M" value="131875"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g003.PNG_S" value="11973"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g003.TIF" value="3731686"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001717.g003.PNG_I" value="54662"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001717&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001717" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001717&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001717&volume=&issue=&title=A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks&author_name=Daniel%20C.%20Jupiter%2C%20Vincent%20VanBuren&start_page=1&end_page=7" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001717" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717&amp;t=A%20Visual%20Data%20Mining%20Tool%20that%20Facilitates%20Reconstruction%20of%20Transcription%20Regulatory%20Networks" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717&title=A%20Visual%20Data%20Mining%20Tool%20that%20Facilitates%20Reconstruction%20of%20Transcription%20Regulatory%20Networks&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717&amp;title=A%20Visual%20Data%20Mining%20Tool%20that%20Facilitates%20Reconstruction%20of%20Transcription%20Regulatory%20Networks" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001717&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'A Visual Data Mining Tool that Facilitates Reconstruction of Transcription Regulatory Networks';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001717';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20A%20Visual%20Data%20Mining%20Tool%20that%20Facilitates%20Reconstruction%20of%20Transcription%20Regulatory%20Networks http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001717" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001717" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22DNA+transcription%22" title="Search for articles in the subject area:'DNA transcription'"><div class="flagText">DNA transcription</div></a>
+              <div data-categoryid="20231" data-articleid="26260"
+                   data-categoryname="DNA transcription"
+                   class="flagImage" title="Flag 'DNA transcription' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Data+visualization%22" title="Search for articles in the subject area:'Data visualization'"><div class="flagText">Data visualization</div></a>
+              <div data-categoryid="8897" data-articleid="26260"
+                   data-categoryname="Data visualization"
+                   class="flagImage" title="Flag 'Data visualization' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="26260"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulation%22" title="Search for articles in the subject area:'Gene regulation'"><div class="flagText">Gene regulation</div></a>
+              <div data-categoryid="17553" data-articleid="26260"
+                   data-categoryname="Gene regulation"
+                   class="flagImage" title="Flag 'Gene regulation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+networks%22" title="Search for articles in the subject area:'Genetic networks'"><div class="flagText">Genetic networks</div></a>
+              <div data-categoryid="40201" data-articleid="26260"
+                   data-categoryname="Genetic networks"
+                   class="flagImage" title="Flag 'Genetic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Graphs%22" title="Search for articles in the subject area:'Graphs'"><div class="flagText">Graphs</div></a>
+              <div data-categoryid="19267" data-articleid="26260"
+                   data-categoryname="Graphs"
+                   class="flagImage" title="Flag 'Graphs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Microarrays%22" title="Search for articles in the subject area:'Microarrays'"><div class="flagText">Microarrays</div></a>
+              <div data-categoryid="17255" data-articleid="26260"
+                   data-categoryname="Microarrays"
+                   class="flagImage" title="Flag 'Microarrays' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Topology%22" title="Search for articles in the subject area:'Topology'"><div class="flagText">Topology</div></a>
+              <div data-categoryid="32019" data-articleid="26260"
+                   data-categoryname="Topology"
+                   class="flagImage" title="Flag 'Topology' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=4659'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6834'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=6803&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=4277">Responses to all referee comments</a><br>Posted by VanBuren</p>
+      <p><a href="/annotation/listThread.action?root=18671">Referee comments: Referee 3</a><br>Posted by PLoS_ONE_Group</p>
+      <p><a href="/annotation/listThread.action?root=15661">Referee comments: Referee 2 (Gabor Balazsi)</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

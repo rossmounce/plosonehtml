@@ -1,0 +1,1448 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001951"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001951" />
+
+    <meta name="citation_title" content="An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients"/>
+    <meta itemprop="name" content="An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients"/>
+
+      <meta name="citation_author" content="Gurinder Singh Atwal"/>
+            <meta name="citation_author_institution" content="The Institute for Advanced Study, Princeton, New Jersey, United States of America"/>
+      <meta name="citation_author" content="Raúl Rabadán"/>
+            <meta name="citation_author_institution" content="The Institute for Advanced Study, Princeton, New Jersey, United States of America"/>
+      <meta name="citation_author" content="Guillermina Lozano"/>
+            <meta name="citation_author_institution" content="The University of Texas, M.D. Anderson Cancer Center, Houston, Texas, United States of America"/>
+      <meta name="citation_author" content="Louise C. Strong"/>
+            <meta name="citation_author_institution" content="The University of Texas, M.D. Anderson Cancer Center, Houston, Texas, United States of America"/>
+      <meta name="citation_author" content="Mariëlle W. G. Ruijs"/>
+            <meta name="citation_author_institution" content="Family Cancer Clinic, The Netherlands Cancer Institute, Amsterdam, The Netherlands"/>
+            <meta name="citation_author_institution" content="Department of Clinical Genetics and Human Genetics, VU University Medical Center, Amsterdam, The Netherlands"/>
+      <meta name="citation_author" content="Marjanka K. Schmidt"/>
+            <meta name="citation_author_institution" content="Department of Epidemiology, The Netherlands Cancer Institute, Amsterdam, The Netherlands"/>
+      <meta name="citation_author" content="Laura J. van't Veer"/>
+            <meta name="citation_author_institution" content="Family Cancer Clinic, The Netherlands Cancer Institute, Amsterdam, The Netherlands"/>
+      <meta name="citation_author" content="Heli Nevanlinna"/>
+            <meta name="citation_author_institution" content="Department of Obstetrics and Gynaecology, Helsinki University Central Hospital, Helsinki, Finland"/>
+      <meta name="citation_author" content="Johanna Tommiska"/>
+            <meta name="citation_author_institution" content="Department of Obstetrics and Gynaecology, Helsinki University Central Hospital, Helsinki, Finland"/>
+      <meta name="citation_author" content="Kristiina Aittomäki"/>
+            <meta name="citation_author_institution" content="Department of Clinical Genetics, Helsinki University Central Hospital, Helsinki, Finland"/>
+      <meta name="citation_author" content="Gaelle Bougeard"/>
+            <meta name="citation_author_institution" content="Inserm U614 and Department of Genetics, Rouen University Hospital, Institute for Biomedical Research, Rouen, France"/>
+      <meta name="citation_author" content="Thierry Frebourg"/>
+            <meta name="citation_author_institution" content="Inserm U614 and Department of Genetics, Rouen University Hospital, Institute for Biomedical Research, Rouen, France"/>
+      <meta name="citation_author" content="Arnold J. Levine"/>
+            <meta name="citation_author_institution" content="The Institute for Advanced Study, Princeton, New Jersey, United States of America"/>
+            <meta name="citation_author_institution" content="The Cancer Institute of New Jersey, New Brunswick, New Jersey, United States of America"/>
+      <meta name="citation_author" content="Gareth L. Bond"/>
+            <meta name="citation_author_institution" content="The Institute for Advanced Study, Princeton, New Jersey, United States of America"/>
+
+    <meta name="citation_date" content="2008/4/9"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001951.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1951"/>
+    <meta name="citation_issue" content="4"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Improving cancer therapy by non-genotoxic activation of p53.; citation_author=S Lain; citation_author=D Lane; citation_journal_title=Eur J Cancer; citation_volume=39; citation_number=1; citation_pages=1053-1060; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Germ-line mutations of the p53 tumor suppressor gene in patients with high risk for cancer inactivate the p53 protein.; citation_author=JE Garber; citation_author=SH Friend; citation_author=LC Strong; citation_author=AF Patenaude; citation_author=ET Juengst; citation_journal_title=Journal of the National Cancer Institute; citation_volume=84; citation_number=2; citation_pages=1156-1160; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Gain of function of a p53 hot spot mutation in a mouse model of Li-Fraumeni syndrome.; citation_author=GA Lang; citation_author=T Iwakuma; citation_author=YA Suh; citation_author=G Liu; citation_author=VA Rao; citation_journal_title=Cell; citation_volume=119; citation_number=3; citation_pages=861-872; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Germ line p53 mutations in a familial syndrome of breast cancer, sarcomas, and other neoplasms.; citation_author=FP Li; citation_author=LC Strong; citation_author=JF Fraumeni; citation_author=CE Nelson; citation_author=DH Kim; citation_journal_title=Science; citation_volume=250; citation_number=4; citation_pages=1233-1238; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=Mutant p53 gain of function in two mouse models of Li-Fraumeni syndrome.; citation_author=KP Olive; citation_author=DA Tuveson; citation_author=ZC Ruhe; citation_author=B Yin; citation_author=NA Willis; citation_journal_title=Cell; citation_volume=119; citation_number=5; citation_pages=847-860; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A single nucleotide polymorphism in the MDM2 promoter attenuates the p53 tumor suppressor pathway and accelerates tumor formation in humans.; citation_author=GL Bond; citation_author=W Hu; citation_author=EE Bond; citation_author=H Robins; citation_author=SG Lutzker; citation_journal_title=Cell; citation_volume=119; citation_number=6; citation_pages=591-602; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Impact of the MDM2 SNP309 and p53 Arg72Pro polymorphism on age of tumour onset in Li-Fraumeni syndrome.; citation_author=G Bougeard; citation_author=S Baert-Desurmont; citation_author=I Tournier; citation_author=S Vasseur; citation_author=C Martin; citation_journal_title=J Med Genet; citation_volume=43; citation_number=7; citation_pages=531-533; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The single-nucleotide polymorphism 309 in the MDM2 gene contributes to the Li-Fraumeni syndrome and related phenotypes.; citation_author=MW Ruijs; citation_author=MK Schmidt; citation_author=H Nevanlinna; citation_author=J Tommiska; citation_author=K Aittomaki; citation_journal_title=Eur J Hum Genet; citation_volume=15; citation_number=8; citation_pages=110-114; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Younger age of cancer initiation is associated with shorter telomere length in Li-Fraumeni syndrome.; citation_author=U Tabori; citation_author=S Nanda; citation_author=H Druker; citation_author=J Lees; citation_author=D Malkin; citation_journal_title=Cancer Res; citation_volume=67; citation_number=9; citation_pages=1415-1418; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=A chromatin-associated and transcriptionally inactive p53-Mdm2 complex occurs in mdm2 SNP309 homozygous cells.; citation_author=NC Arva; citation_author=TR Gopen; citation_author=KE Talbott; citation_author=LE Campbell; citation_author=A Chicas; citation_journal_title=J Biol Chem; citation_volume=280; citation_number=10; citation_pages=26776-26787; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MDM2 SNP309 Polymorphism as Risk Factor for Susceptibility and Poor Prognosis in Renal Cell Carcinoma.; citation_author=H Hirata; citation_author=Y Hinoda; citation_author=N Kikuno; citation_author=K Kawamoto; citation_author=Y Suehiro; citation_journal_title=Clin Cancer Res; citation_volume=13; citation_number=11; citation_pages=4123-4129; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=The role of P53 and MDM2 polymorphisms in the risk of esophageal squamous cell carcinoma.; citation_author=Y Hong; citation_author=X Miao; citation_author=X Zhang; citation_author=F Ding; citation_author=A Luo; citation_journal_title=Cancer Res; citation_volume=65; citation_number=12; citation_pages=9582-9587; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MDM2 is a central node in the p53 pathway: 12 years and counting.; citation_author=GL Bond; citation_author=W Hu; citation_author=AJ Levine; citation_journal_title=Curr Cancer Drug Targets; citation_volume=5; citation_number=13; citation_pages=3-8; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A single nucleotide polymorphism in the MDM2 gene: from a molecular and cellular explanation to clinical effect.; citation_author=GL Bond; citation_author=W Hu; citation_author=A Levine; citation_journal_title=Cancer Res; citation_volume=65; citation_number=14; citation_pages=5481-5484; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=The MDM2 promoter polymorphism SNP309T–>G and the risk of uterine leiomyosarcoma, colorectal cancer, and squamous cell carcinoma of the head and neck.; citation_author=P Alhopuro; citation_author=SK Ylisaukko-Oja; citation_author=WJ Koskinen; citation_author=P Bono; citation_author=J Arola; citation_journal_title=J Med Genet; citation_volume=42; citation_number=15; citation_pages=694-698; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=MDM2 SNP309 Accelerates Tumor Formation in a Gender-Specific and Hormone-Dependent Manner.; citation_author=GL Bond; citation_author=KM Hirshfield; citation_author=T Kirchhoff; citation_author=G Alexe; citation_author=EE Bond; citation_journal_title=Cancer Res; citation_volume=66; citation_number=16; citation_pages=5104-5110; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A single nucleotide polymorphism in the p53 pathway interacts with gender, environmental stresses and tumor genetics to influence cancer in humans.; citation_author=GL Bond; citation_author=AJ Levine; citation_journal_title=Oncogene; citation_volume=26; citation_number=17; citation_pages=1317-1323; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=MDM2 SNP309 accelerates colorectal tumour formation in women.; citation_author=GL Bond; citation_author=C Menin; citation_author=R Bertorelle; citation_author=P Alhopuro; citation_author=LA Aaltonen; citation_journal_title=J Med Genet; citation_volume=43; citation_number=18; citation_pages=950-952; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Association of a functional polymorphism in the promoter of the MDM2 gene with risk of nonsmall cell lung cancer.; citation_author=H Lind; citation_author=S Zienolddiny; citation_author=PO Ekstrom; citation_author=V Skaug; citation_author=A Haugen; citation_journal_title=Int J Cancer; citation_volume=119; citation_number=19; citation_pages=718-721; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A Single Nucleotide Polymorphism in the MDM2 Gene Disrupts the Oscillation of p53 and MDM2 Levels in Cells.; citation_author=W Hu; citation_author=Z Feng; citation_author=L Ma; citation_author=J Wagner; citation_author=JJ Rice; citation_journal_title=Cancer Res; citation_volume=67; citation_number=20; citation_pages=2757-2765; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=P53 germline mutations in childhood cancers and cancer risk for carrier individuals.; citation_author=A Chompret; citation_author=L Brugieres; citation_author=M Ronsin; citation_author=M Gardes; citation_author=F Dessarps-Freichey; citation_journal_title=Br J Cancer; citation_volume=82; citation_number=21; citation_pages=1932-1937; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Germline p53 mutations in a cohort with childhood sarcoma: sex differences in cancer risk.; citation_author=SJ Hwang; citation_author=G Lozano; citation_author=CI Amos; citation_author=LC Strong; citation_journal_title=Am J Hum Genet; citation_volume=72; citation_number=22; citation_pages=975-983; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Applications of neural networks for gene finding.; citation_author=A Sherriff; citation_author=J Ott; citation_journal_title=Adv Genet; citation_volume=42; citation_number=23; citation_pages=287-297; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Classification methods for confronting heterogeneity.; citation_author=MA Province; citation_author=WD Shannon; citation_author=DC Rao; citation_journal_title=Adv Genet; citation_volume=42; citation_number=24; citation_pages=273-286; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=A combinatorial partitioning method to identify multilocus genotypic partitions that predict quantitative trait variation.; citation_author=MR Nelson; citation_author=SL Kardia; citation_author=RE Ferrell; citation_author=CF Sing; citation_journal_title=Genome Res; citation_volume=11; citation_number=25; citation_pages=458-470; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Multifactor-dimensionality reduction reveals high-order interactions among estrogen-metabolism genes in sporadic breast cancer.; citation_author=MD Ritchie; citation_author=LW Hahn; citation_author=N Roodi; citation_author=LR Bailey; citation_author=WD Dupont; citation_journal_title=Am J Hum Genet; citation_volume=69; citation_number=26; citation_pages=138-147; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=A unified stepwise regression procedure for evaluating the relative effects of polymorphisms within a gene using case/control or family data: application to HLA in type 1 diabetes.; citation_author=HJ Cordell; citation_author=DG Clayton; citation_journal_title=Am J Hum Genet; citation_volume=70; citation_number=27; citation_pages=124-141; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Automated detection of informative combined effects in genetic association studies of complex traits.; citation_author=N Tahri-Daizadeh; citation_author=DA Tregouet; citation_author=V Nicaud; citation_author=N Manuel; citation_author=F Cambien; citation_journal_title=Genome Res; citation_volume=13; citation_number=28; citation_pages=1952-1960; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Estimating mutual information and multi–information in large networks.; citation_author=N Slonim; citation_author=GS Atwal; citation_author=G Tkacik; citation_author=W Bialek; citation_number=29; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Relative performance of mutual information estimation methods for quantifying the dependence among short and noisy data.; citation_author=S Khan; citation_author=S Bandyopadhyay; citation_author=AR Ganguly; citation_author=S Saigal; citation_author=DJ Erickson; citation_number=30; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Synergy in a neural code.; citation_author=N Brenner; citation_author=SP Strong; citation_author=R Koberle; citation_author=W Bialek; citation_author=RR de Ruyter van Steveninck; citation_journal_title=Neural Comput; citation_volume=12; citation_number=31; citation_pages=1531-1552; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Synergy and redundancy among brain cells of behaving monkeys.; citation_author=I Gat; citation_author=N Tishby; citation_journal_title=Neural Information Processing Systems; citation_number=32; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Estrogen levels in childhood determined by an ultrasensitive recombinant cell bioassay.; citation_author=KO Klein; citation_author=J Baron; citation_author=MJ Colli; citation_author=DP McDonnell; citation_author=GB Cutler; citation_journal_title=J Clin Invest; citation_volume=94; citation_number=33; citation_pages=2475-2480; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=A new recombinant cell bioassay for ultrasensitive determination of serum estrogenic bioactivity in children.; citation_author=F Paris; citation_author=N Servant; citation_author=B Terouanne; citation_author=P Balaguer; citation_author=JC Nicolas; citation_journal_title=J Clin Endocrinol Metab; citation_volume=87; citation_number=34; citation_pages=791-797; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Tamoxifen and contralateral breast cancer in BRCA1 and BRCA2 carriers: an update.; citation_author=J Gronwald; citation_author=N Tung; citation_author=WD Foulkes; citation_author=K Offit; citation_author=R Gershoni; citation_journal_title=Int J Cancer; citation_volume=118; citation_number=35; citation_pages=2281-2284; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Tamoxifen and risk of contralateral breast cancer in BRCA1 and BRCA2 mutation carriers: a case-control study. Hereditary Breast Cancer Clinical Study Group.; citation_author=SA Narod; citation_author=JS Brunet; citation_author=P Ghadirian; citation_author=M Robson; citation_author=K Heimdal; citation_journal_title=Lancet; citation_volume=356; citation_number=36; citation_pages=1876-1881; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Breast cancer risk after bilateral prophylactic oophorectomy in BRCA1 mutation carriers.; citation_author=TR Rebbeck; citation_author=AM Levin; citation_author=A Eisen; citation_author=C Snyder; citation_author=P Watson; citation_journal_title=J Natl Cancer Inst; citation_volume=91; citation_number=37; citation_pages=1475-1479; citation_date=1999; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients"/>
+    <meta name="twitter:description" content="Germline genetics, gender and hormonal-signaling pathways are all well described modifiers of cancer risk and progression. Although an improved understanding of how germline genetic variants interact with other cancer risk factors may allow better prevention and treatment of human cancer, measuring and quantifying these interactions is challenging. In other areas of research, Information Theory has been used to quantitatively describe similar multivariate interactions. We implemented a novel information-theoretic analysis to measure the joint effect of a high frequency germline genetic variant of the p53 tumor suppressor pathway (MDM2 SNP309 T/G) and gender on clinical cancer phenotypes. This analysis quantitatively describes synergistic interactions among gender, the MDM2 SNP309 locus, and the age of onset of tumorigenesis in p53 mutation carriers. These results offer a molecular and genetic basis for the observed sexual dimorphism of cancer risk in p53 mutation carriers and a model is proposed that suggests a novel cancer prevention strategy for p53 mutation carriers."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001951.g002"/>
+
+  <meta property="og:title" content="An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=4424'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=9009'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=4197&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001951">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001951" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001951&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Gurinder Singh Atwal
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Gurinder Singh Atwal, Gareth L. Bond</p>
+
+              
+              
+
+                <p>Affiliation:
+                  The Institute for Advanced Study, Princeton, New Jersey, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Raúl Rabadán, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  The Institute for Advanced Study, Princeton, New Jersey, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Guillermina Lozano, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  The University of Texas, M.D. Anderson Cancer Center, Houston, Texas, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Louise C. Strong, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  The University of Texas, M.D. Anderson Cancer Center, Houston, Texas, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Mariëlle W. G. Ruijs, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Family Cancer Clinic, The Netherlands Cancer Institute, Amsterdam, The Netherlands, 
+                  Department of Clinical Genetics and Human Genetics, VU University Medical Center, Amsterdam, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Marjanka K. Schmidt, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Epidemiology, The Netherlands Cancer Institute, Amsterdam, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Laura J. van't Veer, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Family Cancer Clinic, The Netherlands Cancer Institute, Amsterdam, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Heli Nevanlinna, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Obstetrics and Gynaecology, Helsinki University Central Hospital, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Johanna Tommiska, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Obstetrics and Gynaecology, Helsinki University Central Hospital, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Kristiina Aittomäki, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Clinical Genetics, Helsinki University Central Hospital, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Gaelle Bougeard, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Inserm U614 and Department of Genetics, Rouen University Hospital, Institute for Biomedical Research, Rouen, France
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Thierry Frebourg, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Inserm U614 and Department of Genetics, Rouen University Hospital, Institute for Biomedical Research, Rouen, France
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Arnold J. Levine, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  The Institute for Advanced Study, Princeton, New Jersey, United States of America, 
+                  The Cancer Institute of New Jersey, New Brunswick, New Jersey, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Gareth L. Bond
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Gurinder Singh Atwal, Gareth L. Bond</p>
+
+              
+              <p><span class="email">* E-mail:</span> <a href="mailto:gareth.bond@ndm.ox.ac.uk">gareth.bond@ndm.ox.ac.uk</a></p>
+
+                <p>Affiliation:
+                  The Institute for Advanced Study, Princeton, New Jersey, United States of America
+                </p>
+
+                <p>
+                    Current address: The Ludwig Institute for Cancer Research, Old Road Campus Research Building Division (ORCRB), University of Oxford, Oxford, United Kingdom
+                </p>
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: April 09, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001951</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001951-t001" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001951-g001" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001951-t002" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001951-g002" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001951">Reader Comments (2)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001951" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Germline genetics, gender and hormonal-signaling pathways are all well described modifiers of cancer risk and progression. Although an improved understanding of how germline genetic variants interact with other cancer risk factors may allow better prevention and treatment of human cancer, measuring and quantifying these interactions is challenging. In other areas of research, Information Theory has been used to quantitatively describe similar multivariate interactions. We implemented a novel information-theoretic analysis to measure the joint effect of a high frequency germline genetic variant of the p53 tumor suppressor pathway (MDM2 SNP309 T/G) and gender on clinical cancer phenotypes. This analysis quantitatively describes synergistic interactions among gender, the MDM2 SNP309 locus, and the age of onset of tumorigenesis in p53 mutation carriers. These results offer a molecular and genetic basis for the observed sexual dimorphism of cancer risk in p53 mutation carriers and a model is proposed that suggests a novel cancer prevention strategy for p53 mutation carriers.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Atwal GS, Rabadán R, Lozano G, Strong LC, Ruijs MWG, et al.  (2008) An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients. PLoS ONE 3(4):
+          e1951.
+            doi:10.1371/journal.pone.0001951</p><p><strong>Editor: </strong>Juha Klefstrom, University of Helsinki, Finland</p><p><strong>Received:</strong> October 3, 2007; <strong>Accepted:</strong> February 26, 2008; <strong>Published:</strong> April 9, 2008</p><p><strong>Copyright:</strong> © 2008 Bond et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>Support of this work comes from the Breast Cancer Research Foundation, The Simons Foundation, the Leon Levy Foundation and the French National Cancer Institute. Further support of this work comes from a Cancer Center Support Grant, CA16672, and a NIH Grant to Louise Strong, P01 CA034936.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The p53 stress response pathway functions as a critical tumor suppressor pathway, as demonstrated by the observation that the p53 gene is one of the most commonly mutated genes in human tumors <a href="#pone.0001951-Lain1">[1]</a>. Furthermore, both mice and humans harboring a germ-line inactivating mutation in just one allele of the p53 gene develop tumors early in life and at very high frequencies <a href="#pone.0001951-Garber1">[2]</a>-<a href="#pone.0001951-Olive1">[5]</a>. Humans harboring a germ-line inactivating p53 mutation make up 50% of the members of the Li-Fraumeni cancer predisposition syndrome. The age of onset of tumor formation in human p53 mutation carriers has been shown to be modified in four independent studies by a high frequency single nucleotide polymorphism in the promoter of the Mdm2 oncogene (MDM2 SNP309, T/G) <a href="#pone.0001951-Bond1">[6]</a>-<a href="#pone.0001951-Tabori1">[9]</a>. The G-allele of SNP309 increases the DNA binding affinity of the transcriptional activator Sp1, which results in higher levels of MDM2 mRNA and protein in human cells and tissues <a href="#pone.0001951-Bond1">[6]</a>, <a href="#pone.0001951-Arva1">[10]</a>-<a href="#pone.0001951-Hong1">[12]</a>. Higher levels of MDM2 lead to the attenuation of the p53 pathway, in concordance with the role of MDM2 as a key negative regulator of p53 <a href="#pone.0001951-Bond2">[13]</a>. In p53 mutation carriers, it was shown in three independent reports that individuals with the G-allele of SNP309 are diagnosed with cancer on average seven to fifteen years earlier than those p53 mutation carriers homozygous for the T-allele (<a href="#pone-0001951-t001">Table 1</a>) <a href="#pone.0001951-Bond1">[6]</a>-<a href="#pone.0001951-Ruijs1">[8]</a>. It was proposed that the high levels of MDM2 resulting from the G-allele of SNP309, together with the mutant p53 allele, produce a severely weakened p53 tumor suppressor pathway and result in a higher mutation rate, poorer DNA repair processes, and reduced apoptosis, leading to faster and more frequent tumor formation <a href="#pone.0001951-Bond3">[14]</a>.</p>
+<div class="figure" id="pone-0001951-t001"><div class="img"><a name="pone-0001951-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Characteristics of three patient populations used to define MDM2 SNP309 as a modifier of tumorgenisis in p53-mutation carriers.</span></strong></p><span>doi:10.1371/journal.pone.0001951.t001</span></div><a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Recently, studies with sporadic cancers (162 Ashkenazi Jewish lymphoma patients, 969 Finnish and 164 Italian colorectal cancer patients, 105 German sarcoma patients, 341 Norwegian non-small cell lung cancer patients and 658 Ashkenazi Jewish breast cancer patients) have demonstrated that the effects of the G-allele of MDM2 SNP309 locus on tumorigenesis can be modified by two additional variables; namely gender and the primarily female-specific hormone, estrogen <a href="#pone.0001951-Alhopuro1">[15]</a>-<a href="#pone.0001951-Lind1">[19]</a>. Specifically, the G-allele of MDM2 SNP309 was shown to accelerate tumorigenesis and increase cancer risk in women and not in men for colorectal cancer, diffuse large B-cell lymphoma, lung cancer and for highly estrogen receptor positive (&gt;50% of tumor cells), but not for estrogen receptor negative, invasive ductal carcinoma of the breast<a href="#pone.0001951-Bond4">[16]</a>, <a href="#pone.0001951-Bond6">[18]</a>, <a href="#pone.0001951-Lind1">[19]</a>. This was shown to result in the enrichment of individuals with the G-allele in pre-menopausal women with these cancers, when compared to either post-menopausal women or men with the same cancers. Recently, Hu et al. provided evidence for a possible molecular mechanism for how the G-allele of SNP309 could accelerate tumor formation in this gender-specific and estrogen dependent manner, by demonstrating that the primarily female-specific hormone, estrogen, preferentially stimulated transcription of the MDM2 gene with the G-allele of SNP309 <a href="#pone.0001951-Hu1">[20]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Interestingly, two independent studies have also defined gender to be a modifying factor of cancer risk in p53 mutation carriers <a href="#pone.0001951-Chompret1">[21]</a>, <a href="#pone.0001951-Hwang1">[22]</a>. Specifically, female p53 mutation carriers were shown to be at greater risk for developing cancer than their male counterparts. For example, by 20, 30, 40, and 50 years of age, the female carriers showed respective cumulative risks of 18%, 49%, 77% and 93% for developing a first cancer, while the male carriers showed risks of 10%, 21%, 33% and 68% <a href="#pone.0001951-Hwang1">[22]</a>. The increased risk in female carriers could not be explained by the high incidence of gender-specific cancers, as the differences remained after the exclusion of cases of breast, ovarian, and prostate cancers. Although the possible involvement of estrogen in increasing cancer risk in female carriers was discussed, this hypothesis remains untested.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>It is intriguing to hypothesize that the SNP309 locus could contribute to the increased cancer risk observed in female carriers though the preferential estrogen-dependent stimulation of MDM2 transcription from the G-allele of SNP309. If true, estrogen manipulation could be incorporated in prevention strategies for p53-mutation carriers with the G-allele of MDM2 SNP309. Such patients have limited cancer prevention strategies. In this report, the hypothesis that the primarily female specific hormone, estrogen, could affect tumorigenesis in p53-mutation carriers is tested though exploring possible interactions between MDM2 SNP309 locus and gender upon the age-dependent tumor incidence.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>There has been increasing interest in the development of statistical tools to uncover such interactions, as between genotype and gender, and their effect upon complex phenotypes, such as age-dependent tumor incidence. Recent methods, both parametric and non-parametric, include neural networks <a href="#pone.0001951-Sherriff1">[23]</a>, recursive partitioning methods <a href="#pone.0001951-Province1">[24]</a>, combinatorial partitioning methods <a href="#pone.0001951-Nelson1">[25]</a>, multifactor-dimensionality reduction <a href="#pone.0001951-Ritchie1">[26]</a> and multi-locus regression <a href="#pone.0001951-Cordell1">[27]</a>, <a href="#pone.0001951-TahriDaizadeh1">[28]</a>. These methods are tailored to address specific questions about the nature of multi-locus interactions and invoke different assumptions about the underlying model generating these data. Here we employ a novel information-theoretic framework to address the specific question of whether gender and the MDM2 SNP309 locus interact synergistically or redundantly with respect to the age of tumor incidence in p53 mutation carriers. The optimal properties of information-theoretic terms in assessing variability and correlation between multiple variables are familiar to the machine learning and statistics communities but perhaps not well known in fields of epidemiology and medical statistics. An additional advantage in the context of this present study is that the principles of information theory allow us to study complex phenotypes expressed as real numbers (i.e. age of onset of cancer as opposed to the binary case/control scenario) by defining the optimal partitioning, or binning, of the continuous phenotype data.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>p53 Mutation Carriers (M.D. Anderson Cancer Center)</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>88 individuals who are members of Li-Fraumeni syndrome (LFS) families (34 total) with known germline mutations in one allele of p53 were previously genotyped for MDM2 SNP309 <a href="#pone.0001951-Bond1">[6]</a>. 66 of these have been diagnosed with at least one cancer. Of the LFS families included in this study, 12 were ascertained through systematic studies of sequential childhood soft tissue sarcoma (7 families) and osteosarcoma (5 families) patients. The remaining families consisted of patients referred to M. D. Anderson for research or clinical studies with a personal or family history of cancers of the type found in LFS. The largest family contributes 14 samples to this study; 16 families contribute a single individual.</p>
+
+
+<h4>p53 Mutation Carriers (French LFS Network)</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Sixty-one affected or unaffected germ-line p53 mutation carriers, from 41 unrelated LFS families were previously genotyped for MDM2 SNP309 <a href="#pone.0001951-Bougeard1">[7]</a>. Clinical characteristics of the families and description of the mutations were available upon request. Forty-one affected germ-line p53 mutation carriers were incorporated into this study. The largest family contributes 3 affected individuals to this study; 27 families contribute a single affected individual.</p>
+
+
+<h4>p53 Mutation Carriers (Dutch/Finnish Study)</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>One hundred and eight patients from 87 LFS or LFS-like families were previously screened for p53 mutations and genotyped for MDM2 SNP309 <a href="#pone.0001951-Ruijs1">[8]</a>. Ninety-seven were screened at the Family Cancer Clinic of the Netherlands Cancer Institute and 11 at the Helsinki University Central Hospital. Thirty-six affected individuals from 19 families carried known germline mutations in the p53 gene and were incorporated into this study.</p>
+
+
+<h4>Information-Theoretic Analysis</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>Given a variable, say <em>X</em>, which can exist in one of <em>K<sub>X</sub></em> states, and its set of associated probabilities {<em>p(X = x<sub>1</sub>),p(X = x<sub>2</sub>)…p(X = x<sub>K</sub>)</em>}, then Shannon's entropy <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.e001&amp;representation=PNG" class="inline-graphic"></span> provides a general non-parametric measure of the variability, or information content, of <em>X</em>. This measure of information content is the only quantity that satisfies certain reasonable criteria such as <em>H[X]</em> ought to be an increasing function of <em>K<sub>X</sub></em> if all the probabilities are equal. The joint entropy for two variables measured together,say <em>X</em> and <em>Y</em>, can also be appropriately defined, <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.e002&amp;representation=PNG" class="inline-graphic"></span> where <em>p</em>(<em>x<sub>i</sub></em>,<em>y<sub>j</sub></em>) is the probability for the two events <em>X = x<sub>i</sub></em> and <em>Y = y<sub>j</sub></em> co-occurring. It can be shown that the following inequality for the joint entropy must always apply, <em>H</em>[<em>X</em>,<em>Y</em>]≤<em>H</em>[<em>X</em>]+<em>H</em>[<em>Y</em>], with equality if and only if <em>X</em> and <em>Y</em> are independent variables <em>p</em>(<em>x<sub>i</sub></em>,<em>y<sub>j</sub></em>) = <em>p</em>(<em>x<sub>i</sub></em>)<em>p</em>(<em>y<sub>j</sub></em>), i.e. the joint entropy will always be less than the sum of the individual entropies if there is any dependence, or correlation, between the two variables. The measure of statistical dependency between two variables, <em>X</em> and <em>Y</em>, is then simply captured by the reduction in total entropy when the two variables are measured together, i.e. Shannon's mutual information <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.e003&amp;representation=PNG" class="inline-graphic"></span>. Note that this does not invoke any of the linear (Gaussian) assumptions required by other measures such as Pearson's correlation. This definition can also be equivalently written as <em>I</em>[<em>X</em>;<em>Y</em>] = <em>H</em>[<em>X</em>]−<em>H</em>[<em>X</em>∥<em>Y</em>] = <em>H</em>[<em>Y</em>]−<em>H</em>[<em>Y</em>∥<em>X</em>], where the conditional entropy <em>H</em>[<em>X</em>∥<em>Y</em>] is defined as <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.e004&amp;representation=PNG" class="inline-graphic"></span>, making it evident that <em>I[X;Y]</em> can be interpreted as the reduction of the variability of <em>X</em> due to knowledge of <em>Y</em>, and vice versa.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>Data analysis using discrete versions of information-theoretic expressions, as defined in the previous paragraph, requires creating bins that discretize continuous values. For example, the real number representing the age of diagnosis of cancer has to binned into one of several groups, essentially a task in data compression. We can draw upon information theory and note that the least biased partitioning of any dataset is given by the principle of maximum entropy, i.e., partitioning into equally populated bins or quantiles. In this case any information-theoretic expression calculated from the binned data has the important and desirable property that it is invariant to invertible coordinate transformations, e.g. multiplying all the ages by a constant factor should not affect the mutual information with the SNP variable. A common problem with quantizing real numbers into bins is deciding how many bins to use, and to this end we again appeal to information theory. A sensible criterion can be gleaned from the observation that if we try to measure the mutual information between two finitely-sampled independent distributions then employing too many bins will over-fit the data, giving rise to a non-zero value of mutual information, even when extrapolated to the infinite sample limit <a href="#pone.0001951-Slonim1">[29]</a>. On the other hand, compressing the data into too few bins over-smoothes the data, and potentially loses important structure in these data. Thus there ought to be an optimal trade-off between over-fitting and information compression. We determined that the optimal number of bins in our dataset were three, and to establish this, the mutual information values were first calculated with randomly shuffled data, to destroy any correlation, and it was observed that when the number of bins was increased from three to four and higher, the extrapolated mutual information values was no longer zero within error bars. Thus by restricting the number of bins we implicitly incorporate a sample-size dependent penalty for over-fitting of the data. Further explicit details on this and other possible methods of estimating mutual information are given in <a href="#pone.0001951-Slonim1">[29]</a>, <a href="#pone.0001951-Khan1">[30]</a></p>
+
+
+<h4>Synergistic Information</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>These information-theoretic concepts can be extended to naturally probe questions of statistical dependencies amongst more than two variables. In particular, levels of synergy and redundancy amongst three variables can be quantified in a principled manner, and have recently been formulated in the context of analyzing correlations between neurons <a href="#pone.0001951-Slonim1">[29]</a>, <a href="#pone.0001951-Khan1">[30]</a>. If we use the definition of synergy between two variables <em>X,Y</em> with respect to a third variable <em>Z</em>, as how much extra information <em>X</em> and <em>Y</em> together provide about <em>Z</em> than by <em>X</em> and <em>Y</em> separately, then we are immediately lead to the natural formulation of synergistic information as <em>S(X,Y;Z) = I(X,Y;Z)-I(X;Z)-I(Y;Z)</em> where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.e005&amp;representation=PNG" class="inline-graphic"></span>. The synergistic information thus reveals how much of the variability of <em>Z</em> is reduced by knowing both <em>X</em> and <em>Y</em> together than knowing them separately and thus rigorously quantifies the non-independent effects of both <em>X</em> and <em>Y</em> on <em>Z</em>. This mathematical formulation of synergy can be generalized naturally to more than three variables.</p>
+
+
+<h4>Statistical Analysis</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>It may not be clear how to accurately interpret information-theoretic values determined from empirical distributions, especially as statistical fluctuations grow with decreasing sample size. Furthermore, due to the concavity of Shannon's entropy, finite sampling induces a negative bias in the empirical entropy and a positive bias in the empirical mutual information <a href="#pone.0001951-Slonim1">[29]</a>. These problems necessitate generation of p-values to the calculated information-theoretic values against a specified null hypothesis. In the case of mutual information, the null hypothesis was that no statistical dependence existed between a single variable (either SNP or gender) and age of diagnosis, i.e., the joint probability is simply a product of the marginals, <em>p(variable,age) = p(variable)p(age)</em>. In the case of synergistic information, the null hypothesis was that no correlation existed between two variables and age of diagnosis while preserving the correlation between the two variables, i.e. <em>p(SNP,gender,age) = p(SNP,gender)p(age)</em>, <em>p(SNP,age) = p(SNP)p(age)</em> and <em>p(gender,age) = p(gender)p(age)</em>. The p-values were determined by a Monte Carlo permutation test. A minimum number of 10<sup>6</sup> permutations were required to generate a confidence interval range of less than 0.005 at p-value 0.05.</p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>A two-sided Mann-Whitney test was employed to determine the statistical significance of the difference in the median age of tumor diagnosis between the groups with and without the G-allele of SNP309. Strictly speaking, the Mann-Whitney test is a non-parametric assessment of whether two sets of data are drawn from the same distribution, but if the two sets of data have roughly the same shape then it is justified to interpret the results of the test as a statement on whether the median in the two groups are statistically not different. A permutation test was employed to determine the significance of the difference in the average age of tumor diagnosis between the two groups <a href="#pone.0001951-Bond1">[6]</a>. Both a Kolmogorov-Smirnov test and a Cramer-Smirnov-Von Mises test were utilized to determine the significance of the difference in the distributions of age of diagnosis between the groups with and without the G-allele of SNP309. By employing all of these tests for significance, many of the assumptions inherent in any one test are eliminated.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>To test the effects of, and the interactions between, gender and the alleles at the MDM2 SNP309 locus gene upon tumorigenesis in p53 mutation carriers, all 144 p53 mutation carriers, who were genotyped at the MDM2 SNP309 locus previously <a href="#pone.0001951-Bond1">[6]</a>-<a href="#pone.0001951-Ruijs1">[8]</a>, were studied (<a href="#pone-0001951-t001">Table 1</a>). Collectively, when the 144 individuals were separated into the different genotypes of the SNP309 locus, individuals who carried the G-allele in either the heterozygous or homozygous state (n = 81), showed a very significant 11-year earlier average age of first tumor onset compared to individuals T/T (n = 63) in genotype (T/T individuals, average is 33 years of age versus 22 years of age in G/G and T/G individuals, p = 0.0006, Mann Whitney Test). A significant earlier average age of first tumor onset among G-allele carriers was also seen in both females and males. Males who carried the G-allele in either the heterozygous or homozygous state (n = 35), showed a significant 12-year earlier average age of first tumor onset compared to males T/T (n = 23) in genotype (p = 0.0436, Mann Whitney Test). Females who carried the G-allele in either the heterozygous or homozygous state (n = 46), showed a significant 10-year earlier average age of first tumor onset compared to females T/T (n = 40) in genotype (p = 0.0223, Mann Whitney Test).</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>In order to directly compare the age dependent incidence of cancer between males and females, individuals who developed primarily gender-specific cancers (breast and prostate cancer) were excluded from this analysis, leaving STS, osteosarcomas and leukemias as the major tumor types analyzed in both genders (<a href="#pone-0001951-g001">Figure 1A and B</a>). Of the remaining 101 individuals, 57 individuals were male and 44 were female (<a href="#pone-0001951-t001">Table 1</a>). The mutual information shared between gender, the G and T alleles of MDM2 SNP309 and the age of first tumor diagnosis were calculated and the results are presented in <a href="#pone-0001951-g001">Figure 1C</a>. As expected from the previously published analyses of these populations <a href="#pone.0001951-Bond1">[6]</a>-<a href="#pone.0001951-Ruijs1">[8]</a>, the MDM2 SNP309 locus affects the age of tumor diagnosis in a significant manner as demonstrated by a significant level of mutual information (0.10 bits, p = 0.007, Permutation Test). In contrast to what was expected from the previous assessments of overall cancer risk in p53 mutation carriers <a href="#pone.0001951-Chompret1">[21]</a>, <a href="#pone.0001951-Hwang1">[22]</a>, gender alone did not show a significant level of mutual information with the age of first tumor diagnosis (0.002 bits, p = 0.9, Permutation Test). Indeed, when the 101 individuals were separated into the different genotypes of the SNP309 locus, individuals who carried the G-allele in either the heterozygous or homozygous state, showed a very significant 12-year earlier average age, and 17-year median age of first tumor onset compared to individuals T/T in genotype (T/T individuals, average is 30 years of age, ranging 1 to 71 years, versus 18 years of age in G/G and T/G individuals, ranging from 1 to 59 years, <a href="#pone-0001951-g001">Figure 1D</a> and <a href="#pone-0001951-t002">Table 2</a>). Statistical significance of this 12-year earlier average age, and 17-year earlier median age of tumor onset was measured using a permutation test and a Mann-Whitney test (see <a href="#s2">Materials and Methods</a>, p = 0.0008 and p = 0.0015, <a href="#pone-0001951-t002">Table 2</a>). Furthermore, the significance of the difference in the distributions of the ages of tumor diagnosis between G-allele carriers and individuals T/T in genotype, as seen in <a href="#pone-0001951-g001">Figure 1D</a>, was measured using two approaches: the Kolmogorv-Smirnov Test and the Cramer-Smirnov-Von Mises Test. Both tests supported the significance of these differences by yielding p-values 0.0091 and 0.0046, respectively (<a href="#pone-0001951-t002">Table 2</a>). In contrast, when the 101 individuals were separated based on gender alone, no significant differences in the average age of tumor onset were seen. Specifically, female p53-mutation carriers were diagnosed on average at 23 years of age (ranging from 1 to 71 years of age) compared to the male carriers who were diagnosed on average at 24 years of age (ranging from 1 to 59 years of age, <a href="#pone-0001951-g001">Figure 1E</a> and <a href="#pone-0001951-t002">Table 2</a>).</p>
+<div class="figure" id="pone-0001951-g001"><div class="img"><a name="pone-0001951-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>An information-theoretic analysis reveals a significant level of mutual information between the MDM2 SNP309 locus, but not gender, and the age of tumor onset.</span></strong></p><a id="article1.body1.sec3.fig1.caption1.p1" name="article1.body1.sec3.fig1.caption1.p1"></a><p>In order to compare the age dependent incidence of cancer between males and females, individuals who developed primarily gender-specific cancers were excluded from this analysis, leaving STS, osteosarcomas and leukemmias as the major tumor types analyzed as depicted in the pie charts for both males (A) and females (B). (C) The bar graph depicts the bits of mutual information between the MDM2 SNP309 locus and the age of tumor onset, gender and the age of tumor onset and lastly between all three variables. The associated p-values are depicted below. (D) The cumulative incidence of tumor diagnosis for both the individuals T/T in genotype (black squares) and T/G or G/G (SNP309) in genotype (grey diamonds) is plotted as a function of age. A square or a diamond represents at least one individual. (E) The cumulative incidence of tumor diagnosis for both males (black squares) and females (grey diamonds) is plotted as a function of age.</p>
+<span>doi:10.1371/journal.pone.0001951.g001</span></div><div class="figure" id="pone-0001951-t002"><div class="img"><a name="pone-0001951-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>The effect of the MDM2 SNP309 locus and gender on the age of diagnosis in p53 mutation carriers.</span></strong></p><span>doi:10.1371/journal.pone.0001951.t002</span></div><a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>As mentioned above, one advantage of an information-theoretic analysis of interactions is that non-additive interactions can be detected and quantified. Interestingly, this analysis revealed that the MDM2 SNP309 locus and gender taken together interact to affect the age of tumor diagnosis in a non-additive, synergistic manner, as demonstrated by the measured 0.06 bits of significant synergistic information (p = 0.05, Permutation Test). This suggests that the well-defined modifying effect of the MDM2 SNP309 locus upon the age of first tumor onset in p53-mutation carriers (<a href="#pone-0001951-t001">Table 1</a>) could be significantly different between the genders. To test this, the interaction of the alleles of MDM2 SNP309 with the age of tumor diagnosis was measured for both genders by calculating their respective mutual informations. Interestingly, by this measure, the MDM2 SNP309 locus only significantly interacts with the age of tumor diagnosis in female carriers and not in male carriers. Specifically, in female carriers, the MDM2 SNP309 locus and the age of tumor diagnosis share a significant 0.2 bits of mutual information (p = 0.014, <a href="#pone-0001951-g002">Figure 2A</a>). However, in male carriers, the 0.114 bits of mutual information measured does not reach significance with a p-value of 0.06.</p>
+<div class="figure" id="pone-0001951-g002"><div class="img"><a name="pone-0001951-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001951" data-uri="info:doi/10.1371/journal.pone.0001951.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001951.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001951.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001951.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001951.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>The G-Allele of SNP309 Associates with an Accelerated Age of Diagnosis of Non-Gender Specific Tumors in Female but not in Male p53 Mutation Carriers.</span></strong></p><a id="article1.body1.sec3.fig2.caption1.p1" name="article1.body1.sec3.fig2.caption1.p1"></a><p>(A) The bar graph depicts the bits of mutual information between the MDM2 SNP309 locus and the age of tumor onset in females and in males. The associated p-values are depicted below. The MDM2 SNP309 locus and the age of tumor diagnosis share significant mutual information only in females and not in males. Statistical significance is represented by the black labeling of the bar graph and the p-values depicted below. The cumulative incidence of all non-gender specific tumor types for both the individuals T/T in genotype (black squares) and T/G or G/G in genotype (grey diamonds) is plotted as a function of age for females (B) and males (C). A square or a diamond represents at least one individual.</p>
+<span>doi:10.1371/journal.pone.0001951.g002</span></div><a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>When separated into the different genotypes of the SNP309 locus, the 23 females who carried the G-allele in either the heterozygous or homozygous state, show a significant 16-year earlier average age, and 23-year median age of tumor onset compared to the 21 females T/T in genotype (T/T females, 31 years of age, ranging 2 to 71 years, versus 15 years of age in G/G and T/G females, ranging from 1 to 54 years, p = 0.007 and p = 0.0037, <a href="#pone-0001951-g002">Figure 2B</a> and <a href="#pone-0001951-t002">Table 2</a>). Their respective distributions of the ages of tumor diagnosis also significantly differ, as measured by the Kolmogorov-Smirnov Test and Cramer-Smirnov-Von Mises Test (p = 0.0275 and 0.0077, <a href="#pone-0001951-t002">Table 2</a>). As predicted by the information-theoretic analysis the differences between the male G-allele carriers and the males T/T in genotype are much weaker. When separated into the different genotypes of the SNP309 locus, males who carried the G-allele in either the heterozygous or homozygous state, showed a significant 10-year earlier average age of tumor onset compared to males T/T in genotype (T/T males, 30 years of age, ranging 1 to 55 years, versus 20 years of age in G/G and T/G females, ranging from 1 to 54 years, p = 0.0285, <a href="#pone-0001951-g002">Figure 2C</a> and <a href="#pone-0001951-t002">Table 2</a>). However, the measured significance of the differences in the medians and distributions in males were just boarder-line significant with p-values of 0.0672, 0.0478 and 0.0469 respectively (<a href="#pone-0001951-t002">Table 2</a>). Thus the p-values calculated in several different ways were 5-10 fold weaker for the impact of the G-allele upon the age of onset of first tumors in males than females.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>In this report, the statistical dependencies of the MDM2 SNP309 locus and gender upon the age of first tumor onset in p53 mutation carriers were determined using a novel quantitative information-theoretic approach. The three patient populations that were originally used to define MDM2 SNP309 as a modifier of tumorigenesis in p53 mutation carriers were analyzed (<a href="#pone-0001951-t001">Table 1</a>). The analysis revealed a significant level of mutual information between the MDM2 SNP309 locus and the age of first tumor onset, but not between gender and the age of tumor onset (<a href="#pone-0001951-g001">Figure 1</a>). The information-theoretic approach allowed for the probing of statistical dependencies among all three variables (the alleles of MDM2 SNP309, gender and the age of first tumor onset). Interestingly, the MDM2 SNP309 locus and gender taken together were shown to interact and affect the age of non-gender specific tumor diagnosis in a non-additive, synergistic manner (Synergistic Information = 0.06 bits; p = 0.05). In females, the MDM2 SNP309 locus and the age of tumor diagnosis share significant mutual information whereas, in males, the level of mutual information measured did not quite reach significance (<a href="#pone-0001951-g002">Figure 2</a>). In other words, the analysis of the three variables in this study revealed that gender does in fact play a role in age-dependent incidence but only when information is also provided about the allelic form of the MDM2 SNP309 locus. This is likely due to the observation that only the G-allele at MDM2 SNP309 is stimulated to produce more MDM2 mRNA and protein in the presence of estrogen <a href="#pone.0001951-Hu1">[20]</a>. Standard statistical tests measuring the significance of the differences both in the mean and median ages of first tumor onset and in the distributions of the ages of tumor diagnosis between G-allele carriers and individuals T/T in genotype validated these observations (<a href="#pone-0001951-t002">Table 2</a>).</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>As mentioned above, the information-theoretic approach can probe questions of statistical dependencies among more than two variables and can quantify levels of synergy and redundancy. Large-scale genetic and epidemiological studies increasingly have acknowledged that variables interact in a non-additive manner with respect to risk of disease, i.e. the variables do not act independently of each other. Highlighting these dependencies is critical in understanding how disease risk can be modified subtly by a hidden variable and can explain why different epidemiological studies can report different conclusions based on viewing a single variable <a href="#pone.0001951-Bond5">[17]</a>. Furthermore, the identification and quantification of synergistic interactions also can shine a light on new biological mechanisms, such as cross talk between two signaling pathways. However, as yet, there has been no rigorous definition and thus, no quantification of such synergistic interactions. Information theory and the methods detailed here form a natural framework to address these issues of statistical dependencies among variables while invoking no parametric assumptions.</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>In conclusion, the information-theoretic analysis of the statistical dependencies of the MDM2 SNP309 locus and gender upon the age of tumor onset in p53 mutation carriers suggests that the G-allele of SNP309 functions primarily in female p53 mutation carriers to accelerate tumor formation, thereby providing a potential genetic basis for observed sexual dimorphism in cancer risk <a href="#pone.0001951-Chompret1">[21]</a>, <a href="#pone.0001951-Hwang1">[22]</a>. These observations in conjunction with the observations that both pre-pubescent and post-pubescent females have higher levels of estrogen <a href="#pone.0001951-Klein1">[33]</a>, <a href="#pone.0001951-Paris1">[34]</a>, and that estrogen has been shown to preferentially stimulate the transcription of <em>MDM2</em> from the G-allele <a href="#pone.0001951-Hu1">[20]</a>, provide a reasonable hypothesis; the G-allele of the MDM2 SNP309 locus could contribute to the increased cancer risk observed in female p53 mutation carriers through the preferential estrogen-dependent stimulation of transcription of the MDM2 gene. If true, this model predicts that estrogen reduction or withdrawal from G-allele MDM2 SNP309 patients could be incorporated in prevention strategies for p53-germlinc carriers, for whom cancer prevention strategies are limited, much as they have been successfully implemented for BRCA-mutation carriers  <a href="#pone.0001951-Gronwald1">[35]</a>-<a href="#pone.0001951-Rebbeck1">[37]</a>.</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Timothy R. Rebbeck for his critical reading, and Suzanne Christen for her help in preparation, of this manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: AL GB GA. Performed the experiments: GL Lv LS HN GB GA MR MS JT KA GB TF. Analyzed the data: GB GA. Contributed reagents/materials/analysis tools: GL Lv LS RR HN GB GA MR MS JT KA GB TF. Wrote the paper: AL GB GA.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001951-Lain1" id="pone.0001951-Lain1"></a>Lain S, Lane D (2003) Improving cancer therapy by non-genotoxic activation of p53. Eur J Cancer  39: 1053–1060.  <ul class="find" data-citedArticleID="1087862" data-doi="10.1016/s0959-8049(03)00063-7"><li><a href="http://dx.doi.org/10.1016/s0959-8049(03)00063-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Improving+cancer+therapy+by+non-genotoxic+activation+of+p53." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Improving+cancer+therapy+by+non-genotoxic+activation+of+p53.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001951-Garber1" id="pone.0001951-Garber1"></a>Garber JE, Friend SH, Strong LC, Patenaude AF, Juengst ET, et al.  (1992) Germ-line mutations of the p53 tumor suppressor gene in patients with high risk for cancer inactivate the p53 protein. Journal of the National Cancer Institute  84: 1156–1160.  <ul class="find" data-citedArticleID="1087844" data-doi="10.1093/jnci/84.15.1156"><li><a href="http://dx.doi.org/10.1093/jnci/84.15.1156" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Germ-line+mutations+of+the+p53+tumor+suppressor+gene+in+patients+with+high+risk+for+cancer+inactivate+the+p53+protein." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Germ-line+mutations+of+the+p53+tumor+suppressor+gene+in+patients+with+high+risk+for+cancer+inactivate+the+p53+protein.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001951-Lang1" id="pone.0001951-Lang1"></a>Lang GA, Iwakuma T, Suh YA, Liu G, Rao VA, et al.  (2004) Gain of function of a p53 hot spot mutation in a mouse model of Li-Fraumeni syndrome. Cell  119: 861–872.  <ul class="find" data-citedArticleID="1087864" data-doi="10.1016/j.cell.2004.11.006"><li><a href="http://dx.doi.org/10.1016/j.cell.2004.11.006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gain+of+function+of+a+p53+hot+spot+mutation+in+a+mouse+model+of+Li-Fraumeni+syndrome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gain+of+function+of+a+p53+hot+spot+mutation+in+a+mouse+model+of+Li-Fraumeni+syndrome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001951-Li1" id="pone.0001951-Li1"></a>Li FP, Strong LC, Fraumeni JF Jr, Nelson CE, Kim DH, et al.  (1990) Germ line p53 mutations in a familial syndrome of breast cancer, sarcomas, and other neoplasms. Science  250: 1233–1238.  <ul class="find" data-citedArticleID="1087866" data-doi="10.1126/science.1978757"><li><a href="http://dx.doi.org/10.1126/science.1978757" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Germ+line+p53+mutations+in+a+familial+syndrome+of+breast+cancer%2C+sarcomas%2C+and+other+neoplasms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Germ+line+p53+mutations+in+a+familial+syndrome+of+breast+cancer%2C+sarcomas%2C+and+other+neoplasms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001951-Olive1" id="pone.0001951-Olive1"></a>Olive KP, Tuveson DA, Ruhe ZC, Yin B, Willis NA, et al.  (2004) Mutant p53 gain of function in two mouse models of Li-Fraumeni syndrome. Cell  119: 847–860.  <ul class="find" data-citedArticleID="1087874" data-doi="10.1016/j.cell.2004.11.004"><li><a href="http://dx.doi.org/10.1016/j.cell.2004.11.004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mutant+p53+gain+of+function+in+two+mouse+models+of+Li-Fraumeni+syndrome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mutant+p53+gain+of+function+in+two+mouse+models+of+Li-Fraumeni+syndrome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001951-Bond1" id="pone.0001951-Bond1"></a>Bond GL, Hu W, Bond EE, Robins H, Lutzker SG, et al.  (2004) A single nucleotide polymorphism in the MDM2 promoter attenuates the p53 tumor suppressor pathway and accelerates tumor formation in humans. Cell  119: 591–602.  <ul class="find" data-citedArticleID="1087824" data-doi="10.1016/j.cell.2004.11.022"><li><a href="http://dx.doi.org/10.1016/j.cell.2004.11.022" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+single+nucleotide+polymorphism+in+the+MDM2+promoter+attenuates+the+p53+tumor+suppressor+pathway+and+accelerates+tumor+formation+in+humans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+single+nucleotide+polymorphism+in+the+MDM2+promoter+attenuates+the+p53+tumor+suppressor+pathway+and+accelerates+tumor+formation+in+humans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001951-Bougeard1" id="pone.0001951-Bougeard1"></a>Bougeard G, Baert-Desurmont S, Tournier I, Vasseur S, Martin C, et al.  (2006) Impact of the MDM2 SNP309 and p53 Arg72Pro polymorphism on age of tumour onset in Li-Fraumeni syndrome. J Med Genet  43: 531–533.  <ul class="find" data-citedArticleID="1087836" data-doi="10.1136/jmg.2005.037952"><li><a href="http://dx.doi.org/10.1136/jmg.2005.037952" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Impact+of+the+MDM2+SNP309+and+p53+Arg72Pro+polymorphism+on+age+of+tumour+onset+in+Li-Fraumeni+syndrome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Impact+of+the+MDM2+SNP309+and+p53+Arg72Pro+polymorphism+on+age+of+tumour+onset+in+Li-Fraumeni+syndrome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001951-Ruijs1" id="pone.0001951-Ruijs1"></a>Ruijs MW, Schmidt MK, Nevanlinna H, Tommiska J, Aittomaki K, et al.  (2007) The single-nucleotide polymorphism 309 in the MDM2 gene contributes to the Li-Fraumeni syndrome and related phenotypes. Eur J Hum Genet  15: 110–114.  <ul class="find" data-citedArticleID="1087884" data-doi="10.1038/sj.ejhg.5201715"><li><a href="http://dx.doi.org/10.1038/sj.ejhg.5201715" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+single-nucleotide+polymorphism+309+in+the+MDM2+gene+contributes+to+the+Li-Fraumeni+syndrome+and+related+phenotypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+single-nucleotide+polymorphism+309+in+the+MDM2+gene+contributes+to+the+Li-Fraumeni+syndrome+and+related+phenotypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001951-Tabori1" id="pone.0001951-Tabori1"></a>Tabori U, Nanda S, Druker H, Lees J, Malkin D (2007) Younger age of cancer initiation is associated with shorter telomere length in Li-Fraumeni syndrome. Cancer Res  67: 1415–1418.  <ul class="find" data-citedArticleID="1087890" data-doi="10.1158/0008-5472.can-06-3682"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-06-3682" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Younger+age+of+cancer+initiation+is+associated+with+shorter+telomere+length+in+Li-Fraumeni+syndrome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Younger+age+of+cancer+initiation+is+associated+with+shorter+telomere+length+in+Li-Fraumeni+syndrome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001951-Arva1" id="pone.0001951-Arva1"></a>Arva NC, Gopen TR, Talbott KE, Campbell LE, Chicas A, et al.  (2005) A chromatin-associated and transcriptionally inactive p53-Mdm2 complex occurs in mdm2 SNP309 homozygous cells. J Biol Chem  280: 26776–26787.  <ul class="find" data-citedArticleID="1087822" data-doi="10.1074/jbc.m505203200"><li><a href="http://dx.doi.org/10.1074/jbc.m505203200" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+chromatin-associated+and+transcriptionally+inactive+p53-Mdm2+complex+occurs+in+mdm2+SNP309+homozygous+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+chromatin-associated+and+transcriptionally+inactive+p53-Mdm2+complex+occurs+in+mdm2+SNP309+homozygous+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001951-Hirata1" id="pone.0001951-Hirata1"></a>Hirata H, Hinoda Y, Kikuno N, Kawamoto K, Suehiro Y, et al.  (2007) MDM2 SNP309 Polymorphism as Risk Factor for Susceptibility and Poor Prognosis in Renal Cell Carcinoma. Clin Cancer Res  13: 4123–4129.  <ul class="find" data-citedArticleID="1087850" data-doi="10.1158/1078-0432.ccr-07-0609"><li><a href="http://dx.doi.org/10.1158/1078-0432.ccr-07-0609" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MDM2+SNP309+Polymorphism+as+Risk+Factor+for+Susceptibility+and+Poor+Prognosis+in+Renal+Cell+Carcinoma." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MDM2+SNP309+Polymorphism+as+Risk+Factor+for+Susceptibility+and+Poor+Prognosis+in+Renal+Cell+Carcinoma.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001951-Hong1" id="pone.0001951-Hong1"></a>Hong Y, Miao X, Zhang X, Ding F, Luo A, et al.  (2005) The role of P53 and MDM2 polymorphisms in the risk of esophageal squamous cell carcinoma. Cancer Res  65: 9582–9587.  <ul class="find" data-citedArticleID="1087852" data-doi="10.1158/0008-5472.can-05-1460"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-05-1460" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+role+of+P53+and+MDM2+polymorphisms+in+the+risk+of+esophageal+squamous+cell+carcinoma." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+role+of+P53+and+MDM2+polymorphisms+in+the+risk+of+esophageal+squamous+cell+carcinoma.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001951-Bond2" id="pone.0001951-Bond2"></a>Bond GL, Hu W, Levine AJ (2005) MDM2 is a central node in the p53 pathway: 12 years and counting. Curr Cancer Drug Targets  5: 3–8.  <ul class="find" data-citedArticleID="1087826" data-doi="10.2174/1568009053332627"><li><a href="http://dx.doi.org/10.2174/1568009053332627" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MDM2+is+a+central+node+in+the+p53+pathway%3A+12+years+and+counting." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MDM2+is+a+central+node+in+the+p53+pathway%3A+12+years+and+counting.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001951-Bond3" id="pone.0001951-Bond3"></a>Bond GL, Hu W, Levine A (2005) A single nucleotide polymorphism in the MDM2 gene: from a molecular and cellular explanation to clinical effect. Cancer Res  65: 5481–5484.  <ul class="find" data-citedArticleID="1087828" data-doi="10.1158/0008-5472.can-05-0825"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-05-0825" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+single+nucleotide+polymorphism+in+the+MDM2+gene%3A+from+a+molecular+and+cellular+explanation+to+clinical+effect." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+single+nucleotide+polymorphism+in+the+MDM2+gene%3A+from+a+molecular+and+cellular+explanation+to+clinical+effect.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001951-Alhopuro1" id="pone.0001951-Alhopuro1"></a>Alhopuro P, Ylisaukko-Oja SK, Koskinen WJ, Bono P, Arola J, et al.  (2005) The MDM2 promoter polymorphism SNP309T–&gt;G and the risk of uterine leiomyosarcoma, colorectal cancer, and squamous cell carcinoma of the head and neck. J Med Genet  42: 694–698.  <ul class="find" data-citedArticleID="1087820" data-doi="10.1136/jmg.2005.031260"><li><a href="http://dx.doi.org/10.1136/jmg.2005.031260" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+MDM2+promoter+polymorphism+SNP309T%E2%80%93%26gt%3BG+and+the+risk+of+uterine+leiomyosarcoma%2C+colorectal+cancer%2C+and+squamous+cell+carcinoma+of+the+head+and+neck." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+MDM2+promoter+polymorphism+SNP309T%E2%80%93%26gt%3BG+and+the+risk+of+uterine+leiomyosarcoma%2C+colorectal+cancer%2C+and+squamous+cell+carcinoma+of+the+head+and+neck.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001951-Bond4" id="pone.0001951-Bond4"></a>Bond GL, Hirshfield KM, Kirchhoff T, Alexe G, Bond EE, et al.  (2006) MDM2 SNP309 Accelerates Tumor Formation in a Gender-Specific and Hormone-Dependent Manner. Cancer Res  66: 5104–5110.  <ul class="find" data-citedArticleID="1087830" data-doi="10.1158/0008-5472.can-06-0180"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-06-0180" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MDM2+SNP309+Accelerates+Tumor+Formation+in+a+Gender-Specific+and+Hormone-Dependent+Manner." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MDM2+SNP309+Accelerates+Tumor+Formation+in+a+Gender-Specific+and+Hormone-Dependent+Manner.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001951-Bond5" id="pone.0001951-Bond5"></a>Bond GL, Levine AJ (2007) A single nucleotide polymorphism in the p53 pathway interacts with gender, environmental stresses and tumor genetics to influence cancer in humans. Oncogene  26: 1317–1323.  <ul class="find" data-citedArticleID="1087832" data-doi="10.1038/sj.onc.1210199"><li><a href="http://dx.doi.org/10.1038/sj.onc.1210199" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+single+nucleotide+polymorphism+in+the+p53+pathway+interacts+with+gender%2C+environmental+stresses+and+tumor+genetics+to+influence+cancer+in+humans." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+single+nucleotide+polymorphism+in+the+p53+pathway+interacts+with+gender%2C+environmental+stresses+and+tumor+genetics+to+influence+cancer+in+humans.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001951-Bond6" id="pone.0001951-Bond6"></a>Bond GL, Menin C, Bertorelle R, Alhopuro P, Aaltonen LA, et al.  (2006) MDM2 SNP309 accelerates colorectal tumour formation in women. J Med Genet  43: 950–952.  <ul class="find" data-citedArticleID="1087834" data-doi="10.1136/jmg.2006.043539"><li><a href="http://dx.doi.org/10.1136/jmg.2006.043539" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MDM2+SNP309+accelerates+colorectal+tumour+formation+in+women." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MDM2+SNP309+accelerates+colorectal+tumour+formation+in+women.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001951-Lind1" id="pone.0001951-Lind1"></a>Lind H, Zienolddiny S, Ekstrom PO, Skaug V, Haugen A (2006) Association of a functional polymorphism in the promoter of the MDM2 gene with risk of nonsmall cell lung cancer. Int J Cancer  119: 718–721.  <ul class="find" data-citedArticleID="1087868" data-doi="10.1002/ijc.21872"><li><a href="http://dx.doi.org/10.1002/ijc.21872" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Association+of+a+functional+polymorphism+in+the+promoter+of+the+MDM2+gene+with+risk+of+nonsmall+cell+lung+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Association+of+a+functional+polymorphism+in+the+promoter+of+the+MDM2+gene+with+risk+of+nonsmall+cell+lung+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001951-Hu1" id="pone.0001951-Hu1"></a>Hu W, Feng Z, Ma L, Wagner J, Rice JJ, et al.  (2007) A Single Nucleotide Polymorphism in the MDM2 Gene Disrupts the Oscillation of p53 and MDM2 Levels in Cells. Cancer Res  67: 2757–2765.  <ul class="find" data-citedArticleID="1087854" data-doi="10.1158/0008-5472.can-06-2656"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-06-2656" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Single+Nucleotide+Polymorphism+in+the+MDM2+Gene+Disrupts+the+Oscillation+of+p53+and+MDM2+Levels+in+Cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Single+Nucleotide+Polymorphism+in+the+MDM2+Gene+Disrupts+the+Oscillation+of+p53+and+MDM2+Levels+in+Cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001951-Chompret1" id="pone.0001951-Chompret1"></a>Chompret A, Brugieres L, Ronsin M, Gardes M, Dessarps-Freichey F, et al.  (2000) P53 germline mutations in childhood cancers and cancer risk for carrier individuals. Br J Cancer  82: 1932–1937.  <ul class="find" data-citedArticleID="1087840"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=P53+germline+mutations+in+childhood+cancers+and+cancer+risk+for+carrier+individuals.&amp;auth=&amp;atitle=P53+germline+mutations+in+childhood+cancers+and+cancer+risk+for+carrier+individuals." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=P53+germline+mutations+in+childhood+cancers+and+cancer+risk+for+carrier+individuals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22P53+germline+mutations+in+childhood+cancers+and+cancer+risk+for+carrier+individuals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001951-Hwang1" id="pone.0001951-Hwang1"></a>Hwang SJ, Lozano G, Amos CI, Strong LC (2003) Germline p53 mutations in a cohort with childhood sarcoma: sex differences in cancer risk. Am J Hum Genet  72: 975–983.  <ul class="find" data-citedArticleID="1087856" data-doi="10.1086/374567"><li><a href="http://dx.doi.org/10.1086/374567" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Germline+p53+mutations+in+a+cohort+with+childhood+sarcoma%3A+sex+differences+in+cancer+risk." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Germline+p53+mutations+in+a+cohort+with+childhood+sarcoma%3A+sex+differences+in+cancer+risk.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001951-Sherriff1" id="pone.0001951-Sherriff1"></a>Sherriff A, Ott J (2001) Applications of neural networks for gene finding. Adv Genet  42: 287–297.  <ul class="find" data-citedArticleID="1087886" data-doi="10.1016/s0065-2660(01)42029-3"><li><a href="http://dx.doi.org/10.1016/s0065-2660(01)42029-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Applications+of+neural+networks+for+gene+finding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Applications+of+neural+networks+for+gene+finding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001951-Province1" id="pone.0001951-Province1"></a>Province MA, Shannon WD, Rao DC (2001) Classification methods for confronting heterogeneity. Adv Genet  42: 273–286.  <ul class="find" data-citedArticleID="1087878" data-doi="10.1016/s0065-2660(01)42028-1"><li><a href="http://dx.doi.org/10.1016/s0065-2660(01)42028-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Classification+methods+for+confronting+heterogeneity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Classification+methods+for+confronting+heterogeneity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001951-Nelson1" id="pone.0001951-Nelson1"></a>Nelson MR, Kardia SL, Ferrell RE, Sing CF (2001) A combinatorial partitioning method to identify multilocus genotypic partitions that predict quantitative trait variation. Genome Res  11: 458–470.  <ul class="find" data-citedArticleID="1087872" data-doi="10.1101/gr.172901"><li><a href="http://dx.doi.org/10.1101/gr.172901" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+combinatorial+partitioning+method+to+identify+multilocus+genotypic+partitions+that+predict+quantitative+trait+variation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+combinatorial+partitioning+method+to+identify+multilocus+genotypic+partitions+that+predict+quantitative+trait+variation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001951-Ritchie1" id="pone.0001951-Ritchie1"></a>Ritchie MD, Hahn LW, Roodi N, Bailey LR, Dupont WD, et al.  (2001) Multifactor-dimensionality reduction reveals high-order interactions among estrogen-metabolism genes in sporadic breast cancer. Am J Hum Genet  69: 138–147.  <ul class="find" data-citedArticleID="1087882" data-doi="10.1086/321276"><li><a href="http://dx.doi.org/10.1086/321276" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Multifactor-dimensionality+reduction+reveals+high-order+interactions+among+estrogen-metabolism+genes+in+sporadic+breast+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Multifactor-dimensionality+reduction+reveals+high-order+interactions+among+estrogen-metabolism+genes+in+sporadic+breast+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001951-Cordell1" id="pone.0001951-Cordell1"></a>Cordell HJ, Clayton DG (2002) A unified stepwise regression procedure for evaluating the relative effects of polymorphisms within a gene using case/control or family data: application to HLA in type 1 diabetes. Am J Hum Genet  70: 124–141.  <ul class="find" data-citedArticleID="1087842" data-doi="10.1086/338007"><li><a href="http://dx.doi.org/10.1086/338007" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+unified+stepwise+regression+procedure+for+evaluating+the+relative+effects+of+polymorphisms+within+a+gene+using+case%2Fcontrol+or+family+data%3A+application+to+HLA+in+type+1+diabetes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+unified+stepwise+regression+procedure+for+evaluating+the+relative+effects+of+polymorphisms+within+a+gene+using+case%2Fcontrol+or+family+data%3A+application+to+HLA+in+type+1+diabetes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001951-TahriDaizadeh1" id="pone.0001951-TahriDaizadeh1"></a>Tahri-Daizadeh N, Tregouet DA, Nicaud V, Manuel N, Cambien F, et al.  (2003) Automated detection of informative combined effects in genetic association studies of complex traits. Genome Res  13: 1952–1960.  <ul class="find" data-citedArticleID="1087892"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Automated+detection+of+informative+combined+effects+in+genetic+association+studies+of+complex+traits.&amp;auth=&amp;atitle=Automated+detection+of+informative+combined+effects+in+genetic+association+studies+of+complex+traits." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automated+detection+of+informative+combined+effects+in+genetic+association+studies+of+complex+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automated+detection+of+informative+combined+effects+in+genetic+association+studies+of+complex+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001951-Slonim1" id="pone.0001951-Slonim1"></a>Slonim N, Atwal GS, Tkacik G, Bialek W (2005) Estimating mutual information and multi–information in large networks.   arXiv:cs.IT/0502017.  <ul class="find-nolinks"></ul></li><li><span class="label">30.
+              </span><a name="pone.0001951-Khan1" id="pone.0001951-Khan1"></a>Khan S, Bandyopadhyay S, Ganguly AR, Saigal S, Erickson DJ, et al.  (2007) Relative performance of mutual information estimation methods for quantifying the dependence among short and noisy data.   Phys. Rev. E 76, 026209.  <ul class="find-nolinks"></ul></li><li><span class="label">31.
+              </span><a name="pone.0001951-Brenner1" id="pone.0001951-Brenner1"></a>Brenner N, Strong SP, Koberle R, Bialek W, de Ruyter van Steveninck RR (2000) Synergy in a neural code. Neural Comput  12: 1531–1552.  <ul class="find" data-citedArticleID="1087838" data-doi="10.1162/089976600300015259"><li><a href="http://dx.doi.org/10.1162/089976600300015259" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Synergy+in+a+neural+code." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Synergy+in+a+neural+code.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001951-Gat1" id="pone.0001951-Gat1"></a>Gat I, Tishby N (1999) Synergy and redundancy among brain cells of behaving monkeys. Neural Information Processing Systems.   <ul class="find" data-citedArticleID="1087846"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Synergy+and+redundancy+among+brain+cells+of+behaving+monkeys.&amp;auth=&amp;atitle=Synergy+and+redundancy+among+brain+cells+of+behaving+monkeys." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Synergy+and+redundancy+among+brain+cells+of+behaving+monkeys." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Synergy+and+redundancy+among+brain+cells+of+behaving+monkeys.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001951-Klein1" id="pone.0001951-Klein1"></a>Klein KO, Baron J, Colli MJ, McDonnell DP, Cutler GB Jr (1994) Estrogen levels in childhood determined by an ultrasensitive recombinant cell bioassay. J Clin Invest  94: 2475–2480.  <ul class="find" data-citedArticleID="1087860" data-doi="10.1172/jci117616"><li><a href="http://dx.doi.org/10.1172/jci117616" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estrogen+levels+in+childhood+determined+by+an+ultrasensitive+recombinant+cell+bioassay." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estrogen+levels+in+childhood+determined+by+an+ultrasensitive+recombinant+cell+bioassay.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001951-Paris1" id="pone.0001951-Paris1"></a>Paris F, Servant N, Terouanne B, Balaguer P, Nicolas JC, et al.  (2002) A new recombinant cell bioassay for ultrasensitive determination of serum estrogenic bioactivity in children. J Clin Endocrinol Metab  87: 791–797.  <ul class="find" data-citedArticleID="1087876" data-doi="10.1210/jcem.87.2.8269"><li><a href="http://dx.doi.org/10.1210/jcem.87.2.8269" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+new+recombinant+cell+bioassay+for+ultrasensitive+determination+of+serum+estrogenic+bioactivity+in+children." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+new+recombinant+cell+bioassay+for+ultrasensitive+determination+of+serum+estrogenic+bioactivity+in+children.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001951-Gronwald1" id="pone.0001951-Gronwald1"></a>Gronwald J, Tung N, Foulkes WD, Offit K, Gershoni R, et al.  (2006) Tamoxifen and contralateral breast cancer in BRCA1 and BRCA2 carriers: an update. Int J Cancer  118: 2281–2284.  <ul class="find" data-citedArticleID="1087848" data-doi="10.1002/ijc.21536"><li><a href="http://dx.doi.org/10.1002/ijc.21536" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Tamoxifen+and+contralateral+breast+cancer+in+BRCA1+and+BRCA2+carriers%3A+an+update." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Tamoxifen+and+contralateral+breast+cancer+in+BRCA1+and+BRCA2+carriers%3A+an+update.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001951-Narod1" id="pone.0001951-Narod1"></a>Narod SA, Brunet JS, Ghadirian P, Robson M, Heimdal K, et al.  (2000) Tamoxifen and risk of contralateral breast cancer in BRCA1 and BRCA2 mutation carriers: a case-control study. Hereditary Breast Cancer Clinical Study Group. Lancet  356: 1876–1881.  <ul class="find" data-citedArticleID="1087870" data-doi="10.1016/s0140-6736(00)03258-x"><li><a href="http://dx.doi.org/10.1016/s0140-6736(00)03258-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Tamoxifen+and+risk+of+contralateral+breast+cancer+in+BRCA1+and+BRCA2+mutation+carriers%3A+a+case-control+study.+Hereditary+Breast+Cancer+Clinical+Study+Group." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Tamoxifen+and+risk+of+contralateral+breast+cancer+in+BRCA1+and+BRCA2+mutation+carriers%3A+a+case-control+study.+Hereditary+Breast+Cancer+Clinical+Study+Group.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001951-Rebbeck1" id="pone.0001951-Rebbeck1"></a>Rebbeck TR, Levin AM, Eisen A, Snyder C, Watson P, et al.  (1999) Breast cancer risk after bilateral prophylactic oophorectomy in BRCA1 mutation carriers. J Natl Cancer Inst  91: 1475–1479.  <ul class="find" data-citedArticleID="1087880" data-doi="10.1093/jnci/91.17.1475"><li><a href="http://dx.doi.org/10.1093/jnci/91.17.1475" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Breast+cancer+risk+after+bilateral+prophylactic+oophorectomy+in+BRCA1+mutation+carriers." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Breast+cancer+risk+after+bilateral+prophylactic+oophorectomy+in+BRCA1+mutation+carriers.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.XML" value="86409"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.PDF" value="199833"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t001.PNG_L" value="89926"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t001.PNG_M" value="50639"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t001.PNG_S" value="9144"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t001.TIF" value="410086"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t001.PNG_I" value="15650"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e001.PNG" value="9809"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e001.TIF" value="25668"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e002.PNG" value="11145"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e002.TIF" value="26960"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e003.PNG" value="13546"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e003.TIF" value="30064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e004.PNG" value="11245"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e004.TIF" value="27136"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e005.PNG" value="13364"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.e005.TIF" value="29472"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g001.PNG_L" value="1120611"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g001.PNG_M" value="78007"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g001.PNG_S" value="8924"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g001.TIF" value="2357688"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g001.PNG_I" value="27341"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t002.PNG_L" value="92509"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t002.PNG_M" value="53698"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t002.PNG_S" value="9906"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t002.TIF" value="483640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.t002.PNG_I" value="16725"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g002.PNG_L" value="758415"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g002.PNG_M" value="51162"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g002.PNG_S" value="7442"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g002.TIF" value="1828214"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001951.g002.PNG_I" value="18350"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001951&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001951" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001951&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001951&volume=&issue=&title=An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients&author_name=Gurinder%20Singh%20Atwal%2C%20Ra%C3%BAl%20Rabad%C3%A1n%2C%20Guillermina%20Lozano%2C%20Louise%20C.%20Strong%2C%20Mari%C3%ABlle%20W.%20G.%20Ruijs%2C%20Marjanka%20K.%20Schmidt%2C%20Laura%20J.%20van't%20Veer%2C%20Heli%20Nevanlinna%2C%20Johanna%20Tommiska%2C%20Kristiina%20Aittom%C3%A4ki%2C%20Gaelle%20Bougeard%2C%20Thierry%20Frebourg%2C%20Arnold%20J.%20Levine%2C%20Gareth%20L.%20Bond&start_page=1&end_page=7" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001951" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951&amp;t=An%20Information-Theoretic%20Analysis%20of%20Genetics%2C%20Gender%20and%20Age%20in%20Cancer%20Patients" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951&title=An%20Information-Theoretic%20Analysis%20of%20Genetics%2C%20Gender%20and%20Age%20in%20Cancer%20Patients&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951&amp;title=An%20Information-Theoretic%20Analysis%20of%20Genetics%2C%20Gender%20and%20Age%20in%20Cancer%20Patients" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001951&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'An Information-Theoretic Analysis of Genetics, Gender and Age in Cancer Patients';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001951';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20An%20Information-Theoretic%20Analysis%20of%20Genetics%2C%20Gender%20and%20Age%20in%20Cancer%20Patients http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001951" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001951" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cancer+detection+and+diagnosis%22" title="Search for articles in the subject area:'Cancer detection and diagnosis'"><div class="flagText">Cancer detection and diagnosis</div></a>
+              <div data-categoryid="18761" data-articleid="26726"
+                   data-categoryname="Cancer detection and diagnosis"
+                   class="flagImage" title="Flag 'Cancer detection and diagnosis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cancer+risk+factors%22" title="Search for articles in the subject area:'Cancer risk factors'"><div class="flagText">Cancer risk factors</div></a>
+              <div data-categoryid="41075" data-articleid="26726"
+                   data-categoryname="Cancer risk factors"
+                   class="flagImage" title="Flag 'Cancer risk factors' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Entropy%22" title="Search for articles in the subject area:'Entropy'"><div class="flagText">Entropy</div></a>
+              <div data-categoryid="21749" data-articleid="26726"
+                   data-categoryname="Entropy"
+                   class="flagImage" title="Flag 'Entropy' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Estrogens%22" title="Search for articles in the subject area:'Estrogens'"><div class="flagText">Estrogens</div></a>
+              <div data-categoryid="23261" data-articleid="26726"
+                   data-categoryname="Estrogens"
+                   class="flagImage" title="Flag 'Estrogens' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+loci%22" title="Search for articles in the subject area:'Genetic loci'"><div class="flagText">Genetic loci</div></a>
+              <div data-categoryid="17713" data-articleid="26726"
+                   data-categoryname="Genetic loci"
+                   class="flagImage" title="Flag 'Genetic loci' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mutation%22" title="Search for articles in the subject area:'Mutation'"><div class="flagText">Mutation</div></a>
+              <div data-categoryid="31809" data-articleid="26726"
+                   data-categoryname="Mutation"
+                   class="flagImage" title="Flag 'Mutation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Permutation%22" title="Search for articles in the subject area:'Permutation'"><div class="flagText">Permutation</div></a>
+              <div data-categoryid="33641" data-articleid="26726"
+                   data-categoryname="Permutation"
+                   class="flagImage" title="Flag 'Permutation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Variant+genotypes%22" title="Search for articles in the subject area:'Variant genotypes'"><div class="flagText">Variant genotypes</div></a>
+              <div data-categoryid="40547" data-articleid="26726"
+                   data-categoryname="Variant genotypes"
+                   class="flagImage" title="Flag 'Variant genotypes' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=5131'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=811'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=4041&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=18877">Referee Comments: Referee 3</a><br>Posted by PLoS_ONE_Group</p>
+      <p><a href="/annotation/listThread.action?root=13383">Referee Comments: Referee 2</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

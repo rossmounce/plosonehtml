@@ -1,0 +1,1282 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Automated 3D Phenotype Analysis Using Data Mining</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001742"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001742" />
+
+    <meta name="citation_title" content="Automated 3D Phenotype Analysis Using Data Mining"/>
+    <meta itemprop="name" content="Automated 3D Phenotype Analysis Using Data Mining"/>
+
+      <meta name="citation_author" content="Ilya Plyusnin"/>
+            <meta name="citation_author_institution" content="Institute of Biotechnology, University of Helsinki, Helsinki, Finland"/>
+      <meta name="citation_author" content="Alistair R. Evans"/>
+            <meta name="citation_author_institution" content="Institute of Biotechnology, University of Helsinki, Helsinki, Finland"/>
+      <meta name="citation_author" content="Aleksis Karme"/>
+            <meta name="citation_author_institution" content="Department of Geology, University of Helsinki, Helsinki, Finland"/>
+      <meta name="citation_author" content="Aristides Gionis"/>
+            <meta name="citation_author_institution" content="Yahoo! Research Barcelona, Barcelona, Catalunya, Spain"/>
+      <meta name="citation_author" content="Jukka Jernvall"/>
+            <meta name="citation_author_institution" content="Institute of Biotechnology, University of Helsinki, Helsinki, Finland"/>
+
+    <meta name="citation_date" content="2008/3/5"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001742.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1742"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Shape-based retrieval and analysis of 3D models.; citation_author=T Funkhouser; citation_author=M Kazhdan; citation_author=P Min; citation_author=P Shilane; citation_journal_title=Communications of the ACM; citation_volume=48; citation_number=1; citation_pages=58-64; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=The Digital Michelangelo Project: 3D scanning of large statues.; citation_author=M Levoy; citation_author=K Pulli; citation_author=B Curless; citation_author=S Rusinkiewicz; citation_author=D Koller; citation_journal_title=Proc Siggraph; citation_volume=2000; citation_number=2; citation_pages=131-144; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Managing digital libraries for computer-aided design.; citation_author=WC Regli; citation_author=VA Cicirello; citation_journal_title=Computer-Aided Design; citation_volume=32; citation_number=3; citation_pages=119-132; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The Protein Data Bank.; citation_author=HM Berman; citation_author=J Westbrook; citation_author=Z Feng; citation_author=G Gilliland; citation_author=TN Bhat; citation_journal_title=Nucleic Acids Research; citation_volume=28; citation_number=4; citation_pages=235-242; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=A survey of content based 3D shape retrieval methods.; citation_author=JWH Tangelder; citation_author=RC Veltkamp; citation_journal_title=Proc Shape Modeling International; citation_volume=2004; citation_number=5; citation_pages=145-156; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The functional adaptations of primate molar teeth.; citation_author=RF Kay; citation_journal_title=Am J Phys Anthropol; citation_volume=43; citation_number=6; citation_pages=195-215; citation_date=1975; " />
+      <meta name="citation_reference" content="citation_title=Evolution and mammalian dental morphology.; citation_author=PM Butler; citation_journal_title=Journal De Biologie Buccale; citation_volume=11; citation_number=7; citation_pages=285-302; citation_date=1983; " />
+      <meta name="citation_reference" content="citation_title=Dental Functional Morphology.; citation_author=PW Lucas; citation_number=8; citation_date=2004; citation_publisher=Cambridge University Press; " />
+      <meta name="citation_reference" content="citation_title=Molar tooth diversity, disparity, and ecology in Cenozoic ungulate radiations.; citation_author=J Jernvall; citation_author=JP Hunter; citation_author=M Fortelius; citation_journal_title=Science; citation_volume=274; citation_number=9; citation_pages=1489-1492; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Teeth.; citation_author=S Hillson; citation_number=10; citation_date=2005; citation_publisher=Cambridge University Press; " />
+      <meta name="citation_reference" content="citation_title=Evolution of mammalian teeth, to and from the triangular type.; citation_author=HF Osborn; citation_number=11; citation_date=1907; citation_publisher=Macmillan; " />
+      <meta name="citation_reference" content="citation_title=Dental evidence for the diet of Australopithecus.; citation_author=RF Kay; citation_journal_title=Ann Rev Anthropol; citation_volume=14; citation_number=12; citation_pages=315-341; citation_date=1985; " />
+      <meta name="citation_reference" content="citation_title=Molar morphology and food texture among small-bodied insectivorous mammals.; citation_author=SG Strait; citation_journal_title=J Mammal; citation_volume=74; citation_number=13; citation_pages=391-402; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Geometric morphometrics: ten years of progress following the ‘revolution’.; citation_author=DC Adams; citation_author=FJ Rohlf; citation_author=DE Slice; citation_journal_title=Ital J Zool; citation_volume=71; citation_number=14; citation_pages=5-16; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Confocal imaging, visualization and 3-D surface measurement of small mammalian teeth.; citation_author=AR Evans; citation_author=IS Harper; citation_author=GD Sanson; citation_journal_title=J Microsc; citation_volume=204; citation_number=15; citation_pages=108-118; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Laser confocal microscopy and geographic information systems in the study of dental morphology.; citation_author=J Jernvall; citation_author=L Selänne; citation_journal_title=Palaeontologia Electronica; citation_volume=2; citation_number=16; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Contour mapping as a new method for interpreting diet from tooth morphology.; citation_author=DNO Reed; citation_journal_title=Am J Phys Anthropol Suppl; citation_volume=24; citation_number=17; citation_pages=113-124; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Modeling primate occlusal topography using geographic information systems technology.; citation_author=LF Zuccotti; citation_author=MD Williamson; citation_author=WF Limp; citation_author=PS Ungar; citation_journal_title=Am J Phys Anthropol; citation_volume=107; citation_number=18; citation_pages=137-142; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=High-level similarity of dentitions in carnivorans and rodents.; citation_author=AR Evans; citation_author=GP Wilson; citation_author=M Fortelius; citation_author=J Jernvall; citation_journal_title=Nature; citation_volume=445; citation_number=19; citation_pages=78-81; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Dental topography and diets of Australopithecus afarensis and early Homo.; citation_author=P Ungar; citation_journal_title=J Human Evol; citation_volume=46; citation_number=20; citation_pages=605-622; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Principles of Data Mining.; citation_author=D Hand; citation_author=H Mannila; citation_author=P Smyth; citation_number=21; citation_date=2001; citation_publisher=MIT Press; " />
+      <meta name="citation_reference" content="citation_title=PaleoView3D: an interactive database of mammals from the Paleocene/Eocene boundary.; citation_author=S Strait; citation_author=N Smith; citation_journal_title=J Vert Paleontol; citation_volume=26; citation_number=22; citation_pages=129A; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Shape-searching in dental morphology using the MorphoBrowser.; citation_author=G Evans; citation_author=M Fortelius; citation_author=J Jernvall; citation_author=I Pljusnin; citation_author=A Evans; citation_journal_title=J Vert Paleontol; citation_volume=26; citation_number=23; citation_pages=59A; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=MorphoBrowser – a new database for surfing the dental morphospace.; citation_author=G Evans; citation_author=AR Evans; citation_author=I Pljusnin; citation_author=M Fortelius; citation_author=J Jernvall; citation_journal_title=Integrative and Comparative Biology; citation_volume=45; citation_number=24; citation_pages=1129-1129; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Walker's Mammals of the World.; citation_author=MR Nowak; citation_number=25; citation_date=1999; citation_publisher=Johns Hopkins University Press; " />
+      <meta name="citation_reference" content="citation_title=Shape distributions.; citation_author=R Osada; citation_author=T Funkhouser; citation_author=B Chazelle; citation_author=D Dobkin; citation_journal_title=ACM Transactions on Graphics; citation_volume=21; citation_number=26; citation_pages=807-832; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Data Mining: Practical machine learning tools and techniques.; citation_author=IH Witten; citation_author=E Frank; citation_number=27; citation_date=2005; citation_publisher=Morgan Kaufmann; " />
+      <meta name="citation_reference" content="citation_title=Estimating Continuous Distributions in Bayesian Classifiers.; citation_author=HG John; citation_author=P Langley; citation_number=28; citation_pages=338-345; citation_date=1995; citation_publisher=Morgan Kaufmann; " />
+      <meta name="citation_reference" content="citation_title=Instance-based learning algorithms.; citation_author=DW Aha; citation_author=D Kibler; citation_author=MK Albert; citation_journal_title=Machine Learning; citation_volume=6; citation_number=29; citation_pages=37-66; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=C4.5: Programs for Machine Learning.; citation_author=R Quinlan; citation_number=30; citation_date=1993; citation_publisher=Morgan Kaufmann; " />
+      <meta name="citation_reference" content="citation_title=Geometric analysis of shell coiling: general problems.; citation_author=DM Raup; citation_journal_title=J Paleontol; citation_volume=40; citation_number=31; citation_pages=1178-1190; citation_date=1966; " />
+      <meta name="citation_reference" content="citation_title=How different types of pattern formation mechanisms affect the evolution of form and development.; citation_author=I Salazar-Ciudad; citation_author=J Jernvall; citation_journal_title=Evolution and Development; citation_volume=6; citation_number=32; citation_pages=6-16; citation_date=2004; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Automated 3D Phenotype Analysis Using Data Mining"/>
+    <meta name="twitter:description" content="The ability to analyze and classify three-dimensional (3D) biological morphology has lagged behind the analysis of other biological data types such as gene sequences. Here, we introduce the techniques of data mining to the study of 3D biological shapes to bring the analyses of phenomes closer to the efficiency of studying genomes. We compiled five training sets of highly variable morphologies of mammalian teeth from the MorphoBrowser database. Samples were labeled either by dietary class or by conventional dental types (e.g. carnassial, selenodont). We automatically extracted a multitude of topological attributes using Geographic Information Systems (GIS)-like procedures that were then used in several combinations of feature selection schemes and probabilistic classification models to build and optimize classifiers for predicting the labels of the training sets. In terms of classification accuracy, computational time and size of the feature sets used, non-repeated best-first search combined with 1-nearest neighbor classifier was the best approach. However, several other classification models combined with the same searching scheme proved practical. The current study represents a first step in the automatic analysis of 3D phenotypes, which will be increasingly valuable with the future increase in 3D morphology and phenomics databases."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001742.g002"/>
+
+  <meta property="og:title" content="Automated 3D Phenotype Analysis Using Data Mining" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=6722'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=6192'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=6337&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001742">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001742" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001742&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Automated 3D Phenotype Analysis Using Data Mining
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ilya Plyusnin
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:ipljusni@cc.hut.fi">ipljusni@cc.hut.fi</a></p>
+
+                <p>Affiliation:
+                  Institute of Biotechnology, University of Helsinki, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Alistair R. Evans, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute of Biotechnology, University of Helsinki, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Aleksis Karme, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Geology, University of Helsinki, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Aristides Gionis, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Yahoo! Research Barcelona, Barcelona, Catalunya, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jukka Jernvall
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute of Biotechnology, University of Helsinki, Helsinki, Finland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 05, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001742</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001742-g001" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-g002" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-t001" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-t002" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-t003" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-t004" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-t005" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t005" title="Table 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001742-t006" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t006" title="Table 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001742">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001742" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>The ability to analyze and classify three-dimensional (3D) biological morphology has lagged behind the analysis of other biological data types such as gene sequences. Here, we introduce the techniques of data mining to the study of 3D biological shapes to bring the analyses of phenomes closer to the efficiency of studying genomes. We compiled five training sets of highly variable morphologies of mammalian teeth from the MorphoBrowser database. Samples were labeled either by dietary class or by conventional dental types (e.g. carnassial, selenodont). We automatically extracted a multitude of topological attributes using Geographic Information Systems (GIS)-like procedures that were then used in several combinations of feature selection schemes and probabilistic classification models to build and optimize classifiers for predicting the labels of the training sets. In terms of classification accuracy, computational time and size of the feature sets used, non-repeated best-first search combined with 1-nearest neighbor classifier was the best approach. However, several other classification models combined with the same searching scheme proved practical. The current study represents a first step in the automatic analysis of 3D phenotypes, which will be increasingly valuable with the future increase in 3D morphology and phenomics databases.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Plyusnin I, Evans AR, Karme A, Gionis A, Jernvall J (2008) Automated 3D Phenotype Analysis Using Data Mining. PLoS ONE 3(3):
+          e1742.
+            doi:10.1371/journal.pone.0001742</p><p><strong>Academic Editor: </strong>Justin O. Borevitz, University of Chicago, United States of America</p><p><strong>Received:</strong> December 13, 2007; <strong>Accepted:</strong> January 29, 2008; <strong>Published:</strong> March 5, 2008</p><p><strong>Copyright:</strong> © 2008 Plyusnin et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This study was supported by the Academy of Finland.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Statistical analysis of shape is a fundamental problem that is frequently encountered in biology. In paleontology, the bulk of information about the prehistoric world is deduced from the shape of fossils, whereas in developmental genetics the phenotypic significance of genes and pathways is often inferred from shape abnormalities. Automatic detection of phenotypic features is hindered by the facts that 3D morphology is difficult to measure and that the theory behind the analysis of complex structures such as 3D surfaces or density maps is more or less in its infancy <a href="#pone.0001742-Funkhouser1">[1]</a>. This makes shape an unfavorable source of information when compared to other variables that can be assessed through linear or sequential measurements (e.g. gene sequences). However, progress in 3D data acquisition technologies suggests that in the near future highly accurate and relatively inexpensive scanners will be widely available, which will inevitably lead to the accumulation of large amounts of 3D morphological data. To make effective use of these data there will be a need for fast automated methods for conducting searches and building descriptive and predictive models on selected data sets.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Unlike morphological data, other types of 3D data have been deposited in databases for some time, with examples ranging from 3D statue scans <a href="#pone.0001742-Levoy1">[2]</a> to 3D CAD models <a href="#pone.0001742-Regli1">[3]</a> and biomolecular structures <a href="#pone.0001742-Berman1">[4]</a>. 3D data repositories have facilitated interest in analysis and retrieval by content of 3D shapes eventually leading to experimental implementations of several search engines <a href="#pone.0001742-Tangelder1">[5]</a>. However, these studies have not addressed the domain of biological 3D phenotypes, which presents a distinct case with its own problems and objectives. In this paper we propose a method for automated analysis and searching of 3D morphologies. In our method we combine data mining with the latest advances in dental shape research.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>We selected mammalian teeth as the morphological system to focus on because these structures have several attractive properties: in any given species tooth shape is generally very consistent and tightly regulated by genes, tooth shape is adaptive and correlates with the physical properties of key dietary sources <a href="#pone.0001742-Kay1">[6]</a>–<a href="#pone.0001742-Lucas1">[8]</a>, tooth shape displays great variation across taxa <a href="#pone.0001742-Jernvall1">[9]</a>–<a href="#pone.0001742-Osborn1">[11]</a>, and dentitions are a classic example of the study of phenotypes with a long tradition of often experience-based visual classification schemes.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Statistical analysis of dental shape carried out until now can be coarsely grouped into three different approaches with the main difference being the type of model used to represent the shape of analyzed samples. In the most traditional approach, samples are compared by taking sets of linear measurements of defined local structures present on the surface of a tooth crown (e.g. shearing quotient <a href="#pone.0001742-Kay2">[12]</a>, <a href="#pone.0001742-Strait1">[13]</a>). Another approach, termed geometric morphometric analysis, employs a shape model that consists of a finite set of surface points defined by local geometrical patterns <a href="#pone.0001742-Adams1">[14]</a>. These points are called landmarks and must be detected and measured from all objects that are compared. After detection, landmark sets are analyzed in a sequence of well-developed procedures. To eliminate non-shape variation, landmarks are superimposed by recursively minimizing a given scoring function such as the mean square distance between the corresponding points. After this, shape differences can be described directly by the distances between corresponding points or by partial warp scores measured by non-linearly transforming (warping) all landmark sets to a reference set. Both of these approaches place strict limitations on shape variability, since a given set of local structures or landmarks must be detected on all samples. Partly in response to these limitations, some researchers have recently adopted a set of tools, termed Geographic Information Systems (GIS), originally designed for landscape analysis. From a 2.5 dimensional surface model, termed a Digital Elevation Model (DEM), GIS can measure relief, surface orientation, drainage areas and other topological attributes. If one switches landscape data with dental shape data, the obtained parameters can be grouped into shape vectors which represent morphologies in subsequent analyses <a href="#pone.0001742-Evans1">[15]</a>–<a href="#pone.0001742-Ungar1">[20]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Our objective was to design an automated method for building descriptive and/or predictive models given a set of 3D morphologies, and to use these models for searching 3D databases (<a href="#pone-0001742-g001">Fig. 1</a>). Since this immediately implied the use of a shape model that can be automatically constructed from any 3D object, we used the GIS approach for extracting topological attributes. Next, we applied feature selection algorithms from machine learning <a href="#pone.0001742-Hand1">[21]</a> to pick feature combinations that performed best at different tasks. We applied this approach to two different problems: the dietary prediction problem where the objective was to find combinations of dental features that worked best for distinguishing the teeth of animals in different dietary classes, and the morphotype prediction problem where the features were selected to discriminate between conventional dental types (carnassial, dilambdodont/tribosphenic, selenodont, lophodont and bunodont; <a href="#pone-0001742-g002">Fig. 2</a>). Both problems were evaluated on a data set of single teeth and a data set of tooth rows, and the dietary prediction problem was additionally evaluated on the mixed set of single teeth and tooth rows. Altogether this yielded five different cases.</p>
+<div class="figure" id="pone-0001742-g001"><div class="img"><a name="pone-0001742-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Outline of procedures for data mining of morphology.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>(a) Seven main steps from 3D data acquisition and processing, feature extraction, data mining procedures (classifiers and feature selection) to possible applications of the method. (b–d) illustrations of feature extraction methods. (b) Section areas and section convolutions. (i) Tooth (upper molar of <em>Rhinolophus blasii</em>) is divided into 10 equal sections perpendicular to the z-axis. Upper and lower bounds (relative to the z<sub>Apex</sub>) for every second section are given along the z-axis. (ii) Occlusal view with every second section highlighted in red, with areas and convolutions for each section. (c) Orientation patch count (OPC). (i) Surface of the tooth (upper molar of <em>Felis silvestris</em>) is grouped into surface vertices according to their orientation in the xy-plane (ii). (iii) Vertices are further grouped according to their 4-cell connectivity followed by (iv) exclusion of small patches. (v) The resulting OPC value is the final number of patches. (d) The effect of surface folding and elongation on surface relief. Relief is calculated by dividing the 3D surface area by its 2D projected area. A flat, unspecialized surface (i) has a relief of 1. If the surface is folded (ii), such as in <em>Otomys irroratus</em>, or elongated (iii), such as in <em>Felis silvestris</em>, its relief increases.</p>
+<span>doi:10.1371/journal.pone.0001742.g001</span></div><div class="figure" id="pone-0001742-g002"><div class="img"><a name="pone-0001742-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Dental types illustrated by samples from <em>tooth-morph</em> and <em>toothrow-morph</em> sets.</span></strong></p><a id="article1.body1.sec1.fig2.caption1.p1" name="article1.body1.sec1.fig2.caption1.p1"></a><p>Dental types: Car, carnassials; Dil-Trib, dilambdodont and tribosphenic; Sel, selenodont; Loph, lophodont; Bun, bunodont; CarTr, carnassial tooth row; SelTr, selenodont tooth row; LophTr, lophodont tooth row; BunTr, bunodont tooth row. Sample morphologies: Car, <em>Canis lupus</em> u-p4; Dil-Trib, <em>Rhinolophus blasii</em> u-m2; Sel, <em>Alcelaphus buselaphus</em> u-m2; Loph, <em>Berylmys bowersi</em> u-m1; Bun, <em>Pongo pygmaeus</em> u-m2; CarTr, <em>Canis lupus</em> u-p2m12; SelTr, <em>Alcelaphus buselaphus</em> u-tr; LophTr, <em>Berylmys bowersi</em> u-m1-3; BunTr, <em>Pongo pygmaeus</em> u-tr. u, upper; m, molar; p, premolar. Upper right teeth and tooth rows; anterior to the right.</p>
+<span>doi:10.1371/journal.pone.0001742.g002</span></div><a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>We compiled five training sets of DEMs interpolated from 3D surface scans of upper cheek teeth of different mammalian species: <em>tooth-diet</em>, a set of 42 single teeth labeled by four dietary categories; <em>tooth-morph</em>, a set of 52 single teeth labeled by five dental types; <em>toothrow-diet</em>, a set of 36 tooth rows labeled by four dietary categories; <em>toothrow-morph</em>, a set of 36 tooth rows labeled by five dental types, and <em>mixed-diet</em>, the union of the <em>tooth-diet</em> and <em>toothrow-diet</em> sets. Compositions of the training sets are given in <a href="#pone.0001742.s001">Table S1</a>. Each DEM was mapped to a set of 100 topological features using MatLab procedures. We then coupled three different feature selection schemes (rank search, bidirectional best-first search and repeated bidirectional best-first search) with seven different classification models (three basic types: naive Bayes, decision tree and k-nearest neighbor) to perform a variety of data mining searches (<a href="#pone-0001742-g001">Fig. 1</a>). Under a 10-fold cross validation scheme, each search yielded a feature combination that is a local minimum for predicting dietary or dental type category under the classifier used for guiding the search. This combination of 21 data mining searches was performed on all training sets, with the exception of <em>mixed-diet</em> set for which we did not perform the repeated searches.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>Using the classifiers obtained by the data mining, we constructed ‘ToothKit’, a stand-alone Java application for working with unannotated data sets of 3D morphologies. The application calculates the topological attributes for a new morphology and then classifies it according to one of the classifiers or finds other morphologies in a data set that are most ‘similar’ to the given morphology according to the selected classifier (see <a href="#s3">Discussion</a>). This can be seen as a proof of concept to automatic phenotype analyzers for large 3D data sets.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>Our results showed that for all five training sets the same basic set of features combined with an appropriate feature selection schemes yielded accurate classifiers in a very short time. In practice, this demonstrates that relationships between shape and categorical factors of interest can be extrapolated from a given training set to new data in an automated fashion. Search results (<a href="#pone.0001742.s002">Table S2</a>) were used to compare efficiency and accuracy of the examined searching options.</p>
+
+<h4>Comparing feature selection schemes</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Feature selection schemes were compared by averaging cross validation error rates (CVER), sizes of feature sets found and searching times across the classification models (<a href="#pone.0001742.s002">Table S2</a>). The search based on feature ranking had consistently lower performance than the best-first searches. When averaged across classifiers it was 8%, 7%, 11%, 6% and 6% less accurate than the best-first search, for the <em>tooth-diet</em>, <em>toothrow-diet</em>, <em>mixed-diet</em>, <em>tooth-morph</em> and <em>toothrow-morph</em> training sets respectively.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Repeating the best-first search from 50 random subsets improved performance only slightly: by 4%, 7%, 1% and 3% for the <em>tooth-diet</em>, <em>toothrow-diet</em>, <em>tooth-morph</em> and <em>toothrow-morph</em> training sets respectively. As expected, a best-first search initiated from an empty subset found on average the smallest subsets. Subsets found by repeatedly initiating a best-first search from random starting points were about two to three times larger and those found by rank search from two to four times larger.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>The linear rank search was the fastest, with average searching times 14, 10, 34, 18 and 9 sec for the <em>tooth-diet</em>, <em>toothrow-diet</em>, <em>mixed-diet</em>, <em>tooth-morph</em> and <em>toothrow-morph</em> training sets respectively. Best-first search was at most twice as slow, with corresponding times being 23, 18, 72, 29 and 16 sec. Repeated best-first search was from 700 to 2500 times slower with average searching times ranging from two to six hours.</p>
+
+
+<h4>Comparing classification models</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>1-NN (1-nearest neighbor) was consistently the best classifier for all five problems indicating the mosaic-like partition of the underlying feature space. Performances of other NN models varied across different problems from as good as 1-NN to several times less accurate. Differences between the best generative (naive Bays with multivariate kernel (NB-N) and normal (NB-K)) and the best non generative (C4.5 decision tree and NN) models were 5%, 8%, 12%, 5% and 4% for <em>tooth-diet</em>, <em>toothrow-diet</em>, <em>mixed-diet</em>, <em>tooth-morph</em> and <em>toothrow-morph</em> training sets respectively.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Accuracy (accuracy = 1–CVER) of the best classifiers was at least 85% for all five training sets. Best classifier for <em>toothrow-morph</em> training set was 97% accurate, for <em>tooth-morph</em> training set 94% accurate and for <em>tooth-diet</em>, <em>toothrow-diet</em> and <em>mixed-diet</em> training sets 93%, 91% and 85% accurate respectively. Performance on samples outside the training sets can be evaluated using the ToothKit software that is supplied with the best generative and non generative classifiers that are asterisked in <a href="#pone.0001742.s002">Table S2</a> (see ToothKit).</p>
+
+
+<h4>Comparing features</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>We were also interested in which features were used by different classification tasks. We assumed that this is best revealed by the probability distribution of features in the selected subsets averaged across all subsets selected for a given classification task. The probability distribution of a feature in a set is its frequency in that set (0 or 1) normalized by the length of the set. The top ten features ranked by their mean probability are given in <a href="#pone-0001742-t001">Tables 1</a>–<a href="#pone-0001742-t002"></a><a href="#pone-0001742-t003"></a><a href="#pone-0001742-t004"></a><a href="#pone-0001742-t005">5</a> and the number of matches between top ten features of different training sets are given in <a href="#pone-0001742-t006">Table 6</a>.</p>
+<div class="figure" id="pone-0001742-t001"><div class="img"><a name="pone-0001742-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Features used in the tooth-diet training set.</span></strong></p><span>doi:10.1371/journal.pone.0001742.t001</span></div><div class="figure" id="pone-0001742-t002"><div class="img"><a name="pone-0001742-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Features used in the toothrow-diet training set.</span></strong></p><span>doi:10.1371/journal.pone.0001742.t002</span></div><div class="figure" id="pone-0001742-t003"><div class="img"><a name="pone-0001742-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Features used in the mixed-diet training set.</span></strong></p><span>doi:10.1371/journal.pone.0001742.t003</span></div><div class="figure" id="pone-0001742-t004"><div class="img"><a name="pone-0001742-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Features used in the tooth-morph training set.</span></strong></p><span>doi:10.1371/journal.pone.0001742.t004</span></div><div class="figure" id="pone-0001742-t005"><div class="img"><a name="pone-0001742-t005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t005.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 5.  <span>Features used in the toothrow-morph training set.</span></strong></p><span>doi:10.1371/journal.pone.0001742.t005</span></div><div class="figure" id="pone-0001742-t006"><div class="img"><a name="pone-0001742-t006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001742" data-uri="info:doi/10.1371/journal.pone.0001742.t006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.t006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001742.t006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001742.t006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001742.t006.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 6.  <span>Overlap of features in the five training sets.</span></strong></p><span>doi:10.1371/journal.pone.0001742.t006</span></div><a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>The top ten feature sets were distinct for each of the five classification problems with only partial overlaps. There were no common features between <em>tooth-diet</em> and <em>toothrow-diet</em> top tens, but, quite expectedly, 4 and 3 common features between top tens of these sets and the mixed set respectively. This appears to be good evidence of the repeatability of feature selection. Top ten features for dietary prediction and dental type prediction had several matches. This is particularly the case for the <em>mixed-diet</em> problem (<a href="#pone-0001742-t003">Table 3</a>) where half of the top ten features matched those of the <em>tooth-morph</em> problem (<a href="#pone-0001742-t004">Table 4</a>). Of the 50 features in the top ten sets 31 were unique, indicating a wide exploitation of the underlying feature pool.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Here, we have demonstrated how the analysis of 3D phenotypes can be automated: the researcher selects phenotypes for the training set, converts them to DEMs, labels samples by the categorical variable of interest, extracts features, runs feature selection and applies the obtained classifiers to new samples. Notably, most of these steps are automated, where only the selection and labeling of the training set need to be carried out by the investigator. The selection of samples can be further facilitated by gathering 3D phenotypes into databases, which has already started to happen <a href="#pone.0001742-Strait2">[22]</a>–<a href="#pone.0001742-Evans4">[24]</a> (also see <a href="http://www.digimorph.org/">http://www.digimorph.org/</a>).</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>A couple of the features show distinctly higher occurrences in the training sets. D2dist mean (mean distance between two randomly selected points; see <a href="#s4">Methods</a>) is by far the most frequent for the tooth-diet problem (and most frequent for the mixed-diet problem), which appears to indicate some differentiation in this feature with diet. For the toothrow-diet, a measure of MROPC (orientation patch count; see <a href="#s4">Methods</a>) is the highest, which follows earlier findings of a correlation between OPC and diet <a href="#pone.0001742-Evans2">[19]</a>. The most frequent features for the other problems are a mixture of MROPC, section areas and section convolutions. The surface relief feature has the lowest frequency of the four basic types of feature extraction. Overall, it seems that no single feature is outstandingly useful in the classification problems, and it is the combination of features that is the most important in categorizing the morphologies.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Comparisons of feature selection schemes, classification models and features revealed several important aspects. Compared to feature ranking, direct evaluation of feature subsets produced clearly better classifiers at a moderate cost of approximately doubling the searching time. Repeating the best-first search, on the other hand, does not appear beneficial as a thousand-fold increase in computation time is traded for only a moderate improvement in accuracy. NN models were consistently the best for all five problems, and were on average two times better than the generative NB models. However, in terms of absolute accuracies both NB and Tree/NN models performed well for all but the mixed set, with CVER ranging from 7% to 15% and from 3% to 9% respectively. Presumably due to its large size, <em>mixed-diet</em> was a difficult set for both NB and tree/NN models, with the best classifiers scoring 27% and 15% respectively. A comparison of features used by different classification tasks showed that the designed feature pool was exploited to large extent (31 of the 50 top ten features were unique) and that, in spite of partial overlaps, different problems favored different features.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>There are at least two straight-forward applications for the classifiers we obtained. First, the classification model can be used to extrapolate relationships between shape and the variable of interest from the training set to new instances. This has immediate applications in paleontology where classifiers built on extant species can be used to reconstruct diet and other variables for extinct species. Moreover, such reconstructions will be objective as they will not include subjective assessments beyond the selection of the training sets. Another application is developmental biology where one central aim is to link abnormal shapes to underlying developmental mechanisms, and our approach can be used together with forward genetics to screen new phenotypes for which the underlying development is not yet known.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>Second, using these classifiers we can implement retrieval by content for unannotated databases of 3D phenotypes, i.e. finding the <em>k</em> morphologies in the database that are most similar to either a specific query or specific query morphology <a href="#pone.0001742-Hand1">[21]</a>. Examples of such queries include: searching for extant dental morphologies that are most likely to be specialized in the same diet as a given extinct sample; finding mutant phenotypes that are most likely to be linked to a particular mutation; or simply finding the morphologies that are most similar in shape to a given query morphology. These types of queries are based on the measure of similarity, and classification can be used to define that measure <a href="#pone.0001742-Hand1">[21]</a>. We can return all objects that are predicted to be in the same category as the query morphology, or we can extend this approach by defining similarity as a function of posterior probabilities. For example<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.e001&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br>where <em>dm</em> is the database morphology, <em>qm</em> the query morphology, and <em>dist</em> the posterior distribution assigned by the employed classifier. To illustrate this idea, ToothKit implements a search function that allows the user to search a disk using any of the classifiers supplied with the program and the similarity measure as defined in the above equation. Preliminary tests using <em>tooth-morph</em> and <em>toothrow-morph</em> classifiers suggest that these searching schemes return morphologies that are considered relevant in terms of general shape similarity. In future studies, performance can be assessed more formally by precision-recall and other measurements.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>Whereas our study brings automated approaches into the domain of biological shape analysis, it obviously does not provide a foolproof technique for all morphologies or classification tasks. Biological 3D objects, which vary greatly among species and from individual to individual, are especially challenging for statistical comparison and major advances in theory of this field are needed before any two 3D surfaces or solids can be compared within a universal framework. However, this study does demonstrate that for a limited domain of 3D shapes it is possible, and actually quite straightforward, to define a set of features that will provide a basis for automated statistical analysis. In addition to teeth, GIS-like feature extraction is applicable to many other objects that approximate 2.5D surfaces, both biological [turtle shells, beetle carapaces, mollusk shells, faces, bird beaks, insect eyes, skin wrinkling, joint surfaces, fish body shapes and footprints] and non-biological (land forms). Whereas many of the features used on teeth to build classifiers may be applicable to other shapes, it remains to be seen how successful these features would be at classifying diverse biological shapes. Interestingly the D2 shape function (the mean distance between two random surface points), which was successfully incorporated into several classifiers, was adapted from a general purpose comparison approach designed to discriminate between 3D objects that have nothing to do with teeth (such as CAD models for cars). This suggests that features do not have to be system-specific. On the other hand, the frequently used features in classifications may be helpful in identifying functionally significant aspect of morphology. For example, the OPC was previously suspected to be informative in distinguishing diet <a href="#pone.0001742-Evans2">[19]</a>, which is now supported by our analysis.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>Yet another consideration is the efficiency of automated 3D analysis in comparison to trained persons. Our informal tests suggest that expert opinion (with over 20 years' experience) is at least as accurate as our automated routines. However, expert opinions do not provide implicit probabilities and are limited to a small set of (traditional) classification problems. Additionally, with an increasing number of teeth, the automated routines becomes more efficient, especially if we consider that each new classification problem would require manual reinspection of each specimen by a person. Therefore, we envision that these new types of morphological analyses promise not only informative ways for classifying morphologies, but may also be useful in exploring classic questions of morphospace occupation, and tempo and mode in morphological evolution (e.g. <a href="#pone.0001742-Jernvall1">[9]</a>, <a href="#pone.0001742-Raup1">[31]</a>, <a href="#pone.0001742-SalazarCiudad1">[32]</a>).</p>
+<a id="article1.body1.sec3.p8" name="article1.body1.sec3.p8"></a><p>When implemented in conjunction with a 3D morphological database, this approach has the potential to boost the application of 3D shape analysis, since even non-experts will gain the ability to build “on the fly” descriptive/predictive models from arbitrary sets of 3D scans. Advances along these lines will push the development of 3D morphology analysis towards the ease of the current sequence analysis.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Methods"></a><h3>Methods</h3>
+<h4>Classifying samples</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>For <em>tooth-diet</em> and <em>toothrow-diet</em> sets, morphologies were labeled according to the dietary preferences of the corresponding species (estimated from the literature <a href="#pone.0001742-Nowak1">[25]</a>): vertebrates (V), invertebrates (I), grass/foliage (G–F), and seeds/fruits/succulent plant tissue (S-F-SPT). In <em>tooth-morph</em> samples were labeled by conventional dental types <a href="#pone.0001742-Hillson1">[10]</a>, <a href="#pone.0001742-Osborn1">[11]</a>: carnassials (Car), dilambdodont and tribosphenic (Dil-Trib), selenodont (Sel), lophodont (Loph), and bunodont (Bun). For <em>toothrow-morph</em>, samples were labeled by the dominant dental type: carnassial tooth row (CarTr), selenodont tooth row (SelTr), lophodont tooth row (LophTr), and bunodont tooth row (BunTr). The test sets were comprised of teeth from members of the Orders Artiodactyla, Carnivora, Chiroptera, Perissodactyla, Primates and Rodentia (see <a href="#pone.0001742.s001">Table S1</a> for full species list).</p>
+
+
+<h4>Digitizing morphologies</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>In the following text we use a Cartesian coordinate system, with x standing for buccal to lingual, y for posterior to anterior and z for cervical to occlusal vectors. A<sub>proj</sub> refers to the xy-projection area of the morphology.</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>Samples were scanned using Nextec Hawk 3D laser scanner and Roland Dr Picza needle scanner at between 10 and 50 µm resolution, depending on the size of the sample. Scans were added for interactive viewing in our online database MorphoBrowser (see <a href="http://morphobrowser.biocenter.helsinki.fi/">http://morphobrowser.biocenter.helsinki.​fi/</a>). Before scanning, teeth were oriented manually to maximize crown-base projection in the xy-plane. Scanning produced unordered point cloud files that were further processed to digital elevation models (DEMs). A 2D outline of the single tooth/tooth row was selected to separate the analyzed surface from the background of the maxilla bone and the fixative material. This was done by picking a sequence of boundary points using Surfer Version 8 software. Boundary points were then used to delete the background part of the point cloud in Matlab Version 7. The remaining surface points were interpolated to DEM using triangle-based cubic interpolation implemented in Matlab <em>griddata</em> function. Artifacts in concave regions of the surface boundary produced during surface interpolations based on convex hulls were deleted using boundary points. The total resolution of DEMs (number of rows×number of columns) was set to be approximately 10 000 points for single teeth and 50&nbsp;000 points for tooth rows by setting digital grid resolution as a function of the dimensions of the point cloud's bounding box:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.e002&amp;representation=PNG" class="inline-graphic"><span class="note">(2)</span></span><br>where <em>delta x</em> and <em>delta y</em> are the point cloud's bounding box dimensions in the xy-plane, <em>N</em> is 10&nbsp;000 or 50&nbsp;000 depending on the sample, and <em>res</em> is the resolution of the digital grid.</p>
+<a id="article1.body1.sec4.sec2.p3" name="article1.body1.sec4.sec2.p3"></a><p>Pilot studies using various resolutions were undertaken to find a middle resolution that was not so low as few of the major features were not present (such as cusps and crests), but not so high as to either give greater emphasis to very small features or to slow down scan processing. For other data types (e.g. skin wrinkling or joint surface shape), other resolutions may be more applicable.</p>
+
+
+<h4>Feature extraction</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>To extract features we implemented five Matlab procedures with each procedure designated to a particular feature type. The exact definition of a feature could be modified by varying values of input parameters. Using these, we extracted 100 features (for the full list of feature names and IDs see <a href="#pone.0001742.s003">Table S3</a>). Procedures were designed to yield features invariant to translation, scale, reflection, and rotation in the xy-plane.</p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>The initial set for this study was chosen after experimentation with a larger number of different features. In these pilot studies, several of the features were not found to be informative for the classification tasks and so were excluded from the current study, with the most informative ones being retained. For different types of data or classification tasks, these rejected features could be tested; however, we believe that much of the variation in 2.5D shapes will be captured by the features used here.</p>
+
+
+<h4>Section area and convolution (features 1–10 and 11–20 respectively)</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>Section areas were calculated by slicing the tooth in the xy-plane along the z axis. Starting from the maximum z value z<sub>Apex</sub> and ending at the point<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.e003&amp;representation=PNG" class="inline-graphic"><span class="note">(3)</span></span><br>morphologies were divided into 10 main sections, and the area of each main section was calculated as the mean of 5 subsections (<a href="#pone-0001742-g001">Fig. 1<em>B</em></a>). Returned values were normalized by the xy-projection area.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>For each section we also calculated convolution as defined by<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001742.e004&amp;representation=PNG" class="inline-graphic"><span class="note">(4)</span></span><br>where P<sub>Section</sub> is the summed perimeter, and A<sub>Section </sub>the summed area, of all 2D objects in a given section. Convolutions of the main sections were averaged in the same fashion as the area.</p>
+<a id="article1.body1.sec4.sec4.p3" name="article1.body1.sec4.sec4.p3"></a><p>These features are referred using “<em>sectionAreas</em> -<em>p1</em> -<em>p2</em> -<em>p3</em>” or “<em>sectionConv -p1 -p2 -p3</em>” syntax, where the name of the procedure is followed by the number of main sections (<em>p1</em>), the number of subsections (<em>p2</em>) and the index of the section examined (<em>p3</em>).</p>
+
+
+<h4>Maximum of Rotated Orientation Patch Count (MROPC, features 21–97)</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>OPC is a measure of surface discontinuity that is quantified as the number of surface patches with different orientations in the xy-plane (<a href="#pone-0001742-g001">Fig. 1<em>C</em></a>). This measure has been shown to correlate with the amount of mechanical processing of food required in both carnivorans and rodents <a href="#pone.0001742-Evans2">[19]</a>. OPC was calculated in four steps. First, surface normals were calculated for all surface vertices. Second, surface vertices were divided into a given number of orientation classes (<em>noc</em>) based on the angle between the xy-component of the corresponding normal and the reference vector. Third, vertices belonging to the same orientation class were clustered into patches according to 4-cell connectivity. Finally, patches smaller then a threshold value of <em>minps</em>*<em>A<sub>proj</sub></em> were discarded, where minps is the minimum patch size, and the number of the remaining patches was returned as the OPC.</p>
+<a id="article1.body1.sec4.sec5.p2" name="article1.body1.sec4.sec5.p2"></a><p>To improve invariance against rotation in the xy-plane several OPC values were calculated by iteratively shifting the reference vector counterclockwise. The reference vector, which initially points along the x-axis, was iteratively shifted by 9 degrees (the <em>da</em> parameter) counterclockwise until it was shifted to the next orientation class as defined by the reference vector's initial direction. Examinations of the variance for <em>mixed-diet</em> showed that the maximum value from this rotation series is less affected by rotation (data not shown), hence we used the Maximum of Rotated Orientation Patch Count (MROPC).</p>
+<a id="article1.body1.sec4.sec5.p3" name="article1.body1.sec4.sec5.p3"></a><p>We covered a wide range of MROPC definitions by iterating <em>noc</em> from 4 to 10 and <em>minps</em> through values 0.001, 0.002, 0.004, 0.006, 0.008, 0.01, 0.02, 0.04, 0.06, 0.08 and 0.1, producing 7×11 = 77 variations. These features are referred using “<em>MROPC-noc-mips-da</em>” syntax.</p>
+<a id="article1.body1.sec4.sec5.p4" name="article1.body1.sec4.sec5.p4"></a><p>In this study, the <em>da</em> variable is constant and is merely shown to make feature definition transparent. The parameters <em>minps</em> and <em>noc</em> have a crucial effect on the type of patches that are counted. For a surface with large spatial variance, patch count will grow as a function of <em>noc</em> since <em>noc</em> defines the angular resolution at which neighboring patches can be discriminated. The rate of change for the patch count relative to <em>noc</em> is thus dependent on the spatial variance of the surface at different scales. This can explain why several MRPOC measures are selected: they capture the rate of change or the boundary resolution beyond which no change occurs. <em>minps</em> values, on the other hand, affect the type of patches that the patch count represents: for small values, any patches are counted, whereas for larger values, only large and probably flat ones are. However, we have not investigated in detail the behavior of MROPC as a function of its parameters.</p>
+<a id="article1.body1.sec4.sec5.p5" name="article1.body1.sec4.sec5.p5"></a><p>Note that even though MROPC are more numerous than other descriptors, this does not produce bias towards selecting this feature type. Best first search feature selection algorithm examines all features during each selection step, and thus is not biased by the share number of any particular type. On the other hand, numerous combinations are more likely to produce informative features than less numerous, so one can expect that the selected MROPC are better “tuned” than the other types.</p>
+
+
+<h4>Surface relief (feature 98)</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>Surface relief is defined as the 3D surface area divided by the xy-projection area (<a href="#pone-0001742-g001">Fig. 1<em>D</em></a>). This measure is assumed to have functional significance, since it describes the amount of deviation from an unspecialized flat surface. Relief has been shown to vary with dietary adaptation in hominid apes <a href="#pone.0001742-Ungar1">[20]</a>. This feature is referred as <em>relief</em>.</p>
+
+
+<h4>D2dist (features 99 and 100)</h4>
+<a id="article1.body1.sec4.sec7.p1" name="article1.body1.sec4.sec7.p1"></a><p>These features comprise the mean and standard deviation of the distribution of D2 shape function. D2 measures the distance between two surface points chosen randomly with respect to the xy-plane. This measure was adapted from the work of Osada and coworkers, who proposed this method for comparing arbitrary 3D polygonal models <a href="#pone.0001742-Osada1">[26]</a>. They found that the dissimilarities between distributions of shape functions (particularly D2) provide a robust measure for discriminating between classes of objects (e.g., cars versus airplanes) in a moderately-sized database, despite the presence of arbitrary translations, rotations, scales, mirrors and model degeneracies.</p>
+<a id="article1.body1.sec4.sec7.p2" name="article1.body1.sec4.sec7.p2"></a><p>In order to apply this method to dental DEMs we made several adjustments. First, points were sampled randomly with respect to the xy-plane instead of the object surface. Second, instead of representing D2 distributions with a piecewise linear function, distributions were represented only by their mean and standard deviation values. Third, linear distances were normalized by the square root of <em>A<sub>proj</sub></em>.</p>
+<a id="article1.body1.sec4.sec7.p3" name="article1.body1.sec4.sec7.p3"></a><p>These features are referred using “<em>D2dist-n-s</em>” syntax, where <em>n</em> is the size of the sample taken to estimate the distribution and <em>s</em> is the type of statistic calculated (mean or s.d.).</p>
+
+
+<h4>Data mining tools</h4>
+<a id="article1.body1.sec4.sec8.p1" name="article1.body1.sec4.sec8.p1"></a><p>To perform data mining we used algorithms for probabilistic classification, model validation and feature selection, implemented in an open source WEKA library <a href="#pone.0001742-Witten1">[27]</a>. All data mining was performed using WEKA classes running on Java Platform (Standard Edition, Version 6), Microsoft Windows XP, on a PC with a 1.70 GHz CPU.</p>
+
+
+<h4>Classification models</h4>
+<a id="article1.body1.sec4.sec9.p1" name="article1.body1.sec4.sec9.p1"></a><p>We used three types of probabilistic classification models: naive Bayes <a href="#pone.0001742-John1">[28]</a>, decision tree and k-nearest neighbor <a href="#pone.0001742-Aha1">[29]</a>. Naive Bayes classifiers were built using <em>weka.classifiers.bayes.NaiveBayes</em>, with both normal and kernel density functions. Decision trees were built using C4.5 algorithm <a href="#pone.0001742-Quinlan1">[30]</a> implemented in <em>weka.classifiers.trees.J48.</em> To construct k-nearest neighbor models we used <em>weka.classifiers.lazy.Ibk.</em> Number of neighbors was set to 1, 3, 5 and 7, with neighborhood defined by Euclidean distance.</p>
+
+
+<h4>Validating classifiers</h4>
+<a id="article1.body1.sec4.sec10.p1" name="article1.body1.sec4.sec10.p1"></a><p>Cross validation is a measure of model accuracy and its robustness against random changes in the relative composition of the training data and the data for which an inference is made <a href="#pone.0001742-Hand1">[21]</a>. In this work we coupled 10-fold cross validation, implemented in <em>weka.attributeSelection.WrapperSubsetEva​l</em>, with the seven classification models described above.</p>
+
+
+<h4>Feature selection</h4>
+<a id="article1.body1.sec4.sec11.p1" name="article1.body1.sec4.sec11.p1"></a><p>In machine learning it is well recognized that the exact feature combination used for a particular classification task is generally the single most influential factor affecting classification accuracy <a href="#pone.0001742-Hand1">[21]</a>. In this work we compared the performance of three feature selection schemes: (1) rank search, (2) bidirectional best-first search and (3) repeated bidirectional best-first search. The first scheme ranks attributes according to their information gain, and then examines the cross validation error rate of incrementally increasing sets of attributes starting from the most informative (i.e. the best attribute, the best attribute and the second best, etc.). The second scheme was a conventional bidirectional best-first search initiated from an empty subset. The third option was a bidirectional best-first search repeatedly initiated from 50 subsets of random size and composition.</p>
+<a id="article1.body1.sec4.sec11.p2" name="article1.body1.sec4.sec11.p2"></a><p>For the evaluation of feature subsets all searches used 10-fold cross validation combined with one of the seven classifiers. We used rank search <em>weka.attributeSelection.RankSearch</em> coupled to information gain measure <em>weak.attribureSelection.InfoGainAttribut​eEval</em> and the best-first search <em>weka.attributeSelection.BestFirst</em>.</p>
+
+
+<h4>ToothKit</h4>
+<a id="article1.body1.sec4.sec12.p1" name="article1.body1.sec4.sec12.p1"></a><p>In this freeware Java program we implemented some of the major functionalities discussed above: converting *.stl, *.obj, *.dxf and *.wrl polygon meshes into DEMs, feature extraction, classification and retrieval by content. ToothKit is supplied with trained classifiers asterisked in <a href="#pone.0001742.s002">Table S2</a>. ToothKit is available from <a href="http://www.biocenter.helsinki.fi/bi/evodevo/toothkit/index.html">http://www.biocenter.helsinki.fi/bi/evod​evo/toothkit/index.html</a>.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001742"></div><a name="pone.0001742.s001" id="pone.0001742.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001742.s001">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Composition of the training sets.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001742.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.24 MB DOC)</p>
+<a name="pone.0001742.s002" id="pone.0001742.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001742.s002">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Comparing feature selection schemes and classification models.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001742.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.11 MB DOC)</p>
+<a name="pone.0001742.s003" id="pone.0001742.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001742.s003">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Feature names and IDs.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001742.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.09 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We would like to thank Mikael Fortelius for providing ungulate tooth casts and Olavi Grönwall (Naturhistoriska riksmuseet, Stockholm), Rob Asher (Museum für Naturkunde, Berlin) and Martti Hildén and Ilpo Hanski (Finnish Museum of Natural History) for specimen loans. The 3D scans used in this study are deposited in the MorphoBrowser database in the Institute of Biotechnology, University of Helsinki at <a href="http://morphobrowser.biocenter.helsinki.fi/">http://morphobrowser.biocenter.helsinki.​fi/</a>.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: JJ AE IP AG. Performed the experiments: IP. Analyzed the data: IP. Contributed reagents/materials/analysis tools: AE AK IP. Wrote the paper: JJ AE IP AG.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001742-Funkhouser1" id="pone.0001742-Funkhouser1"></a>Funkhouser T, Kazhdan M, Min P, Shilane P (2005) Shape-based retrieval and analysis of 3D models. Communications of the ACM  48: 58–64.  <ul class="find" data-citedArticleID="1069100" data-doi="10.1145/1064830.1064859"><li><a href="http://dx.doi.org/10.1145/1064830.1064859" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Shape-based+retrieval+and+analysis+of+3D+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Shape-based+retrieval+and+analysis+of+3D+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001742-Levoy1" id="pone.0001742-Levoy1"></a>Levoy M, Pulli K, Curless B, Rusinkiewicz S, Koller D, et al.  (2000) The Digital Michelangelo Project: 3D scanning of large statues. Proc Siggraph  2000: 131–144.  <ul class="find" data-citedArticleID="1069116" data-doi="10.1145/344779.344849"><li><a href="http://dx.doi.org/10.1145/344779.344849" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Digital+Michelangelo+Project%3A+3D+scanning+of+large+statues." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Digital+Michelangelo+Project%3A+3D+scanning+of+large+statues.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001742-Regli1" id="pone.0001742-Regli1"></a>Regli WC, Cicirello VA (2000) Managing digital libraries for computer-aided design. Computer-Aided Design  32: 119–132.  <ul class="find" data-citedArticleID="1069132" data-doi="10.1016/s0010-4485(99)00095-0"><li><a href="http://dx.doi.org/10.1016/s0010-4485(99)00095-0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Managing+digital+libraries+for+computer-aided+design." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Managing+digital+libraries+for+computer-aided+design.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001742-Berman1" id="pone.0001742-Berman1"></a>Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, et al.  (2000) The Protein Data Bank. Nucleic Acids Research  28: 235–242.  <ul class="find" data-citedArticleID="1069088" data-doi="10.1093/nar/28.1.235"><li><a href="http://dx.doi.org/10.1093/nar/28.1.235" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Protein+Data+Bank." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Protein+Data+Bank.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001742-Tangelder1" id="pone.0001742-Tangelder1"></a>Tangelder JWH, Veltkamp RC (2004) A survey of content based 3D shape retrieval methods. Proc Shape Modeling International  2004: 145–156.  <ul class="find" data-citedArticleID="1069140" data-doi="10.1109/smi.2004.1314502"><li><a href="http://dx.doi.org/10.1109/smi.2004.1314502" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+survey+of+content+based+3D+shape+retrieval+methods." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+survey+of+content+based+3D+shape+retrieval+methods.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001742-Kay1" id="pone.0001742-Kay1"></a>Kay RF (1975) The functional adaptations of primate molar teeth. Am J Phys Anthropol  43: 195–215.  <ul class="find" data-citedArticleID="1069112" data-doi="10.1002/ajpa.1330430207"><li><a href="http://dx.doi.org/10.1002/ajpa.1330430207" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+functional+adaptations+of+primate+molar+teeth." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+functional+adaptations+of+primate+molar+teeth.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001742-Butler1" id="pone.0001742-Butler1"></a>Butler PM (1983) Evolution and mammalian dental morphology. Journal De Biologie Buccale  11: 285–302.  <ul class="find" data-citedArticleID="1069090"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Evolution+and+mammalian+dental+morphology.&amp;auth=&amp;atitle=Evolution+and+mammalian+dental+morphology." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+and+mammalian+dental+morphology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+and+mammalian+dental+morphology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001742-Lucas1" id="pone.0001742-Lucas1"></a>Lucas PW (2004) Dental Functional Morphology. Cambridge: Cambridge University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">9.
+              </span><a name="pone.0001742-Jernvall1" id="pone.0001742-Jernvall1"></a>Jernvall J, Hunter JP, Fortelius M (1996) Molar tooth diversity, disparity, and ecology in Cenozoic ungulate radiations. Science  274: 1489–1492.  <ul class="find" data-citedArticleID="1069106" data-doi="10.1126/science.274.5292.1489"><li><a href="http://dx.doi.org/10.1126/science.274.5292.1489" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Molar+tooth+diversity%2C+disparity%2C+and+ecology+in+Cenozoic+ungulate+radiations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Molar+tooth+diversity%2C+disparity%2C+and+ecology+in+Cenozoic+ungulate+radiations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001742-Hillson1" id="pone.0001742-Hillson1"></a>Hillson S (2005) Teeth. Cambridge: Cambridge University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">11.
+              </span><a name="pone.0001742-Osborn1" id="pone.0001742-Osborn1"></a>Osborn HF (1907) Evolution of mammalian teeth, to and from the triangular type. New York: Macmillan.   <ul class="find-nolinks"></ul></li><li><span class="label">12.
+              </span><a name="pone.0001742-Kay2" id="pone.0001742-Kay2"></a>Kay RF (1985) Dental evidence for the diet of <em>Australopithecus</em>. Ann Rev Anthropol  14: 315–341.  <ul class="find" data-citedArticleID="1069114" data-doi="10.1146/annurev.an.14.100185.001531"><li><a href="http://dx.doi.org/10.1146/annurev.an.14.100185.001531" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dental+evidence+for+the+diet+of+Australopithecus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dental+evidence+for+the+diet+of+Australopithecus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001742-Strait1" id="pone.0001742-Strait1"></a>Strait SG (1993) Molar morphology and food texture among small-bodied insectivorous mammals. J Mammal  74: 391–402.  <ul class="find" data-citedArticleID="1069136" data-doi="10.2307/1382395"><li><a href="http://dx.doi.org/10.2307/1382395" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Molar+morphology+and+food+texture+among+small-bodied+insectivorous+mammals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Molar+morphology+and+food+texture+among+small-bodied+insectivorous+mammals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001742-Adams1" id="pone.0001742-Adams1"></a>Adams DC, Rohlf FJ, Slice DE (2002) Geometric morphometrics: ten years of progress following the ‘revolution’. Ital J Zool  71: 5–16.  <ul class="find" data-citedArticleID="1069084" data-doi="10.1080/11250000409356545"><li><a href="http://dx.doi.org/10.1080/11250000409356545" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Geometric+morphometrics%3A+ten+years+of+progress+following+the+%E2%80%98revolution%E2%80%99." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Geometric+morphometrics%3A+ten+years+of+progress+following+the+%E2%80%98revolution%E2%80%99.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001742-Evans1" id="pone.0001742-Evans1"></a>Evans AR, Harper IS, Sanson GD (2001) Confocal imaging, visualization and 3-D surface measurement of small mammalian teeth. J Microsc  204: 108–118.  <ul class="find" data-citedArticleID="1069092" data-doi="10.1046/j.1365-2818.2001.00939.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2818.2001.00939.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Confocal+imaging%2C+visualization+and+3-D+surface+measurement+of+small+mammalian+teeth." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Confocal+imaging%2C+visualization+and+3-D+surface+measurement+of+small+mammalian+teeth.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001742-Jernvall2" id="pone.0001742-Jernvall2"></a>Jernvall J, Selänne L (1999) Laser confocal microscopy and geographic information systems in the study of dental morphology. Palaeontologia Electronica  2:   <ul class="find" data-citedArticleID="1069108"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Laser+confocal+microscopy+and+geographic+information+systems+in+the+study+of+dental+morphology.&amp;auth=&amp;atitle=Laser+confocal+microscopy+and+geographic+information+systems+in+the+study+of+dental+morphology." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Laser+confocal+microscopy+and+geographic+information+systems+in+the+study+of+dental+morphology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Laser+confocal+microscopy+and+geographic+information+systems+in+the+study+of+dental+morphology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001742-Reed1" id="pone.0001742-Reed1"></a>Reed DNO (1997) Contour mapping as a new method for interpreting diet from tooth morphology. Am J Phys Anthropol Suppl  24: 113–124.  <ul class="find" data-citedArticleID="1069130"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Contour+mapping+as+a+new+method+for+interpreting+diet+from+tooth+morphology.&amp;auth=&amp;atitle=Contour+mapping+as+a+new+method+for+interpreting+diet+from+tooth+morphology." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Contour+mapping+as+a+new+method+for+interpreting+diet+from+tooth+morphology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Contour+mapping+as+a+new+method+for+interpreting+diet+from+tooth+morphology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001742-Zuccotti1" id="pone.0001742-Zuccotti1"></a>Zuccotti LF, Williamson MD, Limp WF, Ungar PS (1998) Modeling primate occlusal topography using geographic information systems technology. Am J Phys Anthropol  107: 137–142.  <ul class="find" data-citedArticleID="1069146" data-doi="10.1002/(sici)1096-8644(199809)107:1<137::aid-ajpa11&gt;3.0.co;2-1"><li><a href="http://dx.doi.org/10.1002/(sici)1096-8644(199809)107:1<137::aid-ajpa11&gt;3.0.co;2-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+primate+occlusal+topography+using+geographic+information+systems+technology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+primate+occlusal+topography+using+geographic+information+systems+technology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001742-Evans2" id="pone.0001742-Evans2"></a>Evans AR, Wilson GP, Fortelius M, Jernvall J (2007) High-level similarity of dentitions in carnivorans and rodents. Nature  445: 78–81.  <ul class="find" data-citedArticleID="1069094" data-doi="10.1038/nature05433"><li><a href="http://dx.doi.org/10.1038/nature05433" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High-level+similarity+of+dentitions+in+carnivorans+and+rodents." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High-level+similarity+of+dentitions+in+carnivorans+and+rodents.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001742-Ungar1" id="pone.0001742-Ungar1"></a>Ungar P (2004) Dental topography and diets of <em>Australopithecus afarensis</em> and early <em>Homo</em>. J Human Evol  46: 605–622.  <ul class="find" data-citedArticleID="1069142" data-doi="10.1016/j.jhevol.2004.03.004"><li><a href="http://dx.doi.org/10.1016/j.jhevol.2004.03.004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dental+topography+and+diets+of+Australopithecus+afarensis+and+early+Homo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dental+topography+and+diets+of+Australopithecus+afarensis+and+early+Homo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001742-Hand1" id="pone.0001742-Hand1"></a>Hand D, Mannila H, Smyth P (2001) Principles of Data Mining. Cambridge: MIT Press.   <ul class="find-nolinks"></ul></li><li><span class="label">22.
+              </span><a name="pone.0001742-Strait2" id="pone.0001742-Strait2"></a>Strait S, Smith N (2006) PaleoView3D: an interactive database of mammals from the Paleocene/Eocene boundary. J Vert Paleontol  26: 129A.  <ul class="find" data-citedArticleID="1069138"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=PaleoView3D%3A+an+interactive+database+of+mammals+from+the+Paleocene%2FEocene+boundary.&amp;auth=&amp;atitle=PaleoView3D%3A+an+interactive+database+of+mammals+from+the+Paleocene%2FEocene+boundary." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PaleoView3D%3A+an+interactive+database+of+mammals+from+the+Paleocene%2FEocene+boundary." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PaleoView3D%3A+an+interactive+database+of+mammals+from+the+Paleocene%2FEocene+boundary.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001742-Evans3" id="pone.0001742-Evans3"></a>Evans G, Fortelius M, Jernvall J, Pljusnin I, Evans A (2006) Shape-searching in dental morphology using the MorphoBrowser. J Vert Paleontol  26: 59A.  <ul class="find" data-citedArticleID="1069096"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Shape-searching+in+dental+morphology+using+the+MorphoBrowser.&amp;auth=&amp;atitle=Shape-searching+in+dental+morphology+using+the+MorphoBrowser." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Shape-searching+in+dental+morphology+using+the+MorphoBrowser." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Shape-searching+in+dental+morphology+using+the+MorphoBrowser.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001742-Evans4" id="pone.0001742-Evans4"></a>Evans G, Evans AR, Pljusnin I, Fortelius M, Jernvall J (2005) MorphoBrowser – a new database for surfing the dental morphospace. Integrative and Comparative Biology  45: 1129–1129.  <ul class="find" data-citedArticleID="1069098"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=MorphoBrowser+%3F+a+new+database+for+surfing+the+dental+morphospace.&amp;auth=&amp;atitle=MorphoBrowser+%3F+a+new+database+for+surfing+the+dental+morphospace." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MorphoBrowser+%E2%80%93+a+new+database+for+surfing+the+dental+morphospace." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MorphoBrowser+%E2%80%93+a+new+database+for+surfing+the+dental+morphospace.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001742-Nowak1" id="pone.0001742-Nowak1"></a>Nowak MR (1999) Walker's Mammals of the World. Baltimore: Johns Hopkins University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">26.
+              </span><a name="pone.0001742-Osada1" id="pone.0001742-Osada1"></a>Osada R, Funkhouser T, Chazelle B, Dobkin D (2002) Shape distributions. ACM Transactions on Graphics  21: 807–832.  <ul class="find" data-citedArticleID="1069122" data-doi="10.1145/571647.571648"><li><a href="http://dx.doi.org/10.1145/571647.571648" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Shape+distributions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Shape+distributions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001742-Witten1" id="pone.0001742-Witten1"></a>Witten IH, Frank E (2005) Data Mining: Practical machine learning tools and techniques. San Francisco: Morgan Kaufmann.   <ul class="find-nolinks"></ul></li><li><span class="label">28.
+              </span><a name="pone.0001742-John1" id="pone.0001742-John1"></a>John HG, Langley P (1995) Estimating Continuous Distributions in Bayesian Classifiers. Eleventh Conference on Uncertainty in Artificial Intelligence. San Mateo: Morgan Kaufmann. pp. 338–345.  <ul class="find-nolinks"></ul></li><li><span class="label">29.
+              </span><a name="pone.0001742-Aha1" id="pone.0001742-Aha1"></a>Aha DW, Kibler D, Albert MK (1991) Instance-based learning algorithms. Machine Learning  6: 37–66.  <ul class="find" data-citedArticleID="1069086" data-doi="10.1007/bf00153759"><li><a href="http://dx.doi.org/10.1007/bf00153759" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Instance-based+learning+algorithms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Instance-based+learning+algorithms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001742-Quinlan1" id="pone.0001742-Quinlan1"></a>Quinlan R (1993) C4.5: Programs for Machine Learning. San Mateo: Morgan Kaufmann.   <ul class="find-nolinks"></ul></li><li><span class="label">31.
+              </span><a name="pone.0001742-Raup1" id="pone.0001742-Raup1"></a>Raup DM (1966) Geometric analysis of shell coiling: general problems. J Paleontol  40: 1178–1190.  <ul class="find" data-citedArticleID="1069128"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Geometric+analysis+of+shell+coiling%3A+general+problems.&amp;auth=&amp;atitle=Geometric+analysis+of+shell+coiling%3A+general+problems." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Geometric+analysis+of+shell+coiling%3A+general+problems." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Geometric+analysis+of+shell+coiling%3A+general+problems.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001742-SalazarCiudad1" id="pone.0001742-SalazarCiudad1"></a>Salazar-Ciudad I, Jernvall J (2004) How different types of pattern formation mechanisms affect the evolution of form and development. Evolution and Development  6: 6–16.  <ul class="find" data-citedArticleID="1069134" data-doi="10.1111/j.1525-142x.2004.04002.x"><li><a href="http://dx.doi.org/10.1111/j.1525-142x.2004.04002.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=How+different+types+of+pattern+formation+mechanisms+affect+the+evolution+of+form+and+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22How+different+types+of+pattern+formation+mechanisms+affect+the+evolution+of+form+and+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.XML" value="90321"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.PDF" value="583777"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g001.PNG_L" value="1145540"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g001.PNG_M" value="227062"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g001.PNG_S" value="15985"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g001.TIF" value="1864880"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g001.PNG_I" value="87536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g002.PNG_L" value="742648"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g002.PNG_M" value="219557"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g002.PNG_S" value="8053"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g002.TIF" value="1118664"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.g002.PNG_I" value="76105"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t001.PNG_L" value="89020"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t001.PNG_M" value="119945"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t001.PNG_S" value="16199"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t001.TIF" value="440098"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t001.PNG_I" value="41381"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t002.PNG_L" value="79311"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t002.PNG_M" value="106480"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t002.PNG_S" value="15325"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t002.TIF" value="395072"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t002.PNG_I" value="35700"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t003.PNG_L" value="77504"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t003.PNG_M" value="104664"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t003.PNG_S" value="15365"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t003.TIF" value="394766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t003.PNG_I" value="35059"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t004.PNG_L" value="78670"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t004.PNG_M" value="107301"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t004.PNG_S" value="15636"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t004.TIF" value="399734"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t004.PNG_I" value="36129"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t005.PNG_L" value="80797"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t005.PNG_M" value="105766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t005.PNG_S" value="15399"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t005.TIF" value="407136"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t006.PNG_L" value="54373"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t006.PNG_M" value="72354"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t006.PNG_S" value="12956"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t006.TIF" value="310324"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.t006.PNG_I" value="24565"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e001.PNG" value="12170"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e001.TIF" value="28568"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e002.PNG" value="7963"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e002.TIF" value="23840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e003.PNG" value="7794"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e003.TIF" value="23708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e004.PNG" value="9147"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.e004.TIF" value="24876"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.s001.DOC" value="243200"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.s002.DOC" value="111104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001742.s003.DOC" value="86016"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001742&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001742" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001742&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001742&volume=&issue=&title=Automated 3D Phenotype Analysis Using Data Mining&author_name=Ilya%20Plyusnin%2C%20Alistair%20R.%20Evans%2C%20Aleksis%20Karme%2C%20Aristides%20Gionis%2C%20Jukka%20Jernvall&start_page=1&end_page=9" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001742" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742&amp;t=Automated%203D%20Phenotype%20Analysis%20Using%20Data%20Mining" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742&title=Automated%203D%20Phenotype%20Analysis%20Using%20Data%20Mining&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742&amp;title=Automated%203D%20Phenotype%20Analysis%20Using%20Data%20Mining" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001742&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Automated 3D Phenotype Analysis Using Data Mining';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001742';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Automated%203D%20Phenotype%20Analysis%20Using%20Data%20Mining http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001742" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001742" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Convolution%22" title="Search for articles in the subject area:'Convolution'"><div class="flagText">Convolution</div></a>
+              <div data-categoryid="17913" data-articleid="26308"
+                   data-categoryname="Convolution"
+                   class="flagImage" title="Flag 'Convolution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Data+mining%22" title="Search for articles in the subject area:'Data mining'"><div class="flagText">Data mining</div></a>
+              <div data-categoryid="24055" data-articleid="26308"
+                   data-categoryname="Data mining"
+                   class="flagImage" title="Flag 'Data mining' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Database+searching%22" title="Search for articles in the subject area:'Database searching'"><div class="flagText">Database searching</div></a>
+              <div data-categoryid="32021" data-articleid="26308"
+                   data-categoryname="Database searching"
+                   class="flagImage" title="Flag 'Database searching' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Dentition%22" title="Search for articles in the subject area:'Dentition'"><div class="flagText">Dentition</div></a>
+              <div data-categoryid="48571" data-articleid="26308"
+                   data-categoryname="Dentition"
+                   class="flagImage" title="Flag 'Dentition' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phenotypes%22" title="Search for articles in the subject area:'Phenotypes'"><div class="flagText">Phenotypes</div></a>
+              <div data-categoryid="40235" data-articleid="26308"
+                   data-categoryname="Phenotypes"
+                   class="flagImage" title="Flag 'Phenotypes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Probability+distribution%22" title="Search for articles in the subject area:'Probability distribution'"><div class="flagText">Probability distribution</div></a>
+              <div data-categoryid="32037" data-articleid="26308"
+                   data-categoryname="Probability distribution"
+                   class="flagImage" title="Flag 'Probability distribution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Teeth%22" title="Search for articles in the subject area:'Teeth'"><div class="flagText">Teeth</div></a>
+              <div data-categoryid="47241" data-articleid="26308"
+                   data-categoryname="Teeth"
+                   class="flagImage" title="Flag 'Teeth' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Topology%22" title="Search for articles in the subject area:'Topology'"><div class="flagText">Topology</div></a>
+              <div data-categoryid="32019" data-articleid="26308"
+                   data-categoryname="Topology"
+                   class="flagImage" title="Flag 'Topology' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=7219'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6355'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=5368&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=1425">Referee comments: Referee 1 (Jake Byrnes)</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

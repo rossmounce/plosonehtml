@@ -1,0 +1,1405 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000881"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000881" />
+
+    <meta name="citation_title" content="Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis"/>
+    <meta itemprop="name" content="Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis"/>
+
+      <meta name="citation_author" content="Ketki D. Verkhedkar"/>
+            <meta name="citation_author_institution" content="Molecular Biophysics Unit, Indian Institute of Science, Bangalore, India"/>
+      <meta name="citation_author" content="Karthik Raman"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Supercomputer Education and Research Centre, Indian Institute of Science, Bangalore, India"/>
+      <meta name="citation_author" content="Nagasuma R. Chandra"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Supercomputer Education and Research Centre, Indian Institute of Science, Bangalore, India"/>
+      <meta name="citation_author" content="Saraswathi Vishveshwara"/>
+            <meta name="citation_author_institution" content="Molecular Biophysics Unit, Indian Institute of Science, Bangalore, India"/>
+
+    <meta name="citation_date" content="2007/9/12"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000881.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e881"/>
+    <meta name="citation_issue" content="9"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=A comprehensive analysis of protein–protein interactions in Saccharomyces cerevisiae.; citation_author=P Uetz; citation_author=L Giot; citation_author=G Cagney; citation_author=TA Mansfield; citation_author=RS Judson; citation_journal_title=Nature; citation_volume=403; citation_number=1; citation_pages=623-627; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Lethality and centrality in protein networks.; citation_author=J Jeong; citation_author=SP Mason; citation_author=A-L Barabási; citation_author=ZN Oltvai; citation_journal_title=Nature; citation_volume=411; citation_number=2; citation_pages=41-42; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Network motifs in the transcriptional regulation network of Escherichia coli.; citation_author=SS Shen-Orr; citation_author=R Milo; citation_author=S Mangan; citation_author=U Alon; citation_journal_title=Nat Genet; citation_volume=31; citation_number=3; citation_pages=64-68; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Genomic analysis of regulatory network dynamics reveals large topological changes.; citation_author=NM Luscombe; citation_author=MM Babu; citation_author=H Yu; citation_author=M Snyder; citation_author=SA Teichmann; citation_author=M Gerstein; citation_journal_title=Nature; citation_volume=431; citation_number=4; citation_pages=308-312; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The Escherichia coli MG1655 in silico metabolic genotype: Its definition, characteristics, and capabilities.; citation_author=JS Edwards; citation_author=BO Palsson; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=97; citation_number=5; citation_pages=5528-5533; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Genome-scale reconstruction of the metabolic network in Staphylococcus aureus N315: An initial draft to the two-dimensional annotation.; citation_author=SA Becker; citation_author=BO Palsson; citation_journal_title=BMC Microbiology; citation_volume=5; citation_number=6; citation_pages=8; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Preferential attachment in the protein network evolution.; citation_author=E Eisenberg; citation_author=EY Levanon; citation_journal_title=Phys Rev Lett; citation_volume=91; citation_number=7; citation_pages=138701; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Comparative interactomics analysis of protein family interaction networks using PSIMAP (protein structural interactome map).; citation_author=D Park; citation_author=S Lee; citation_author=D Bolser; citation_author=M Schroeder; citation_author=M Lappe; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=8; citation_pages=3234-3240; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Functional evolution of the yeast protein interaction network.; citation_author=V Kunin; citation_author=JB Pereira-Leal; citation_author=CA Ouzounis; citation_journal_title=Mol Biol Evol; citation_volume=21; citation_number=9; citation_pages=1171-6; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Stable evolutionary signal in a yeast protein interaction network.; citation_author=S Wuchty; citation_author=AL Barabasi; citation_author=MT Ferdig; citation_journal_title=BMC Evol Biol; citation_volume=6; citation_number=10; citation_pages=8; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Comparison of protein interaction networks reveals species conservation and divergence.; citation_author=Z Liang; citation_author=M Xu; citation_author=M Teng; citation_author=L Niu; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=11; citation_pages=457; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Massive gene decay in the leprosy bacillus.; citation_author=ST Cole; citation_author=K Eiglmeier; citation_author=J Parkhill; citation_author=KD James; citation_author=NR Thomson; citation_journal_title=Nature; citation_volume=409; citation_number=12; citation_pages=1007-1011; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The large scale organization of metabolic networks.; citation_author=H Jeong; citation_author=B Tombor; citation_author=R Albert; citation_author=ZN Oltvai; citation_author=AL Barabási; citation_journal_title=Nature; citation_volume=407; citation_number=13; citation_pages=651-654; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Topological properties of citation and metabolic networks.; citation_author=S Bilke; citation_author=C Peterson; citation_journal_title=Phys Rev E; citation_volume=64; citation_number=14; citation_pages=036106; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Scale free networks in biology: new insights into the fundamentals of evolution?; citation_author=YI Wolf; citation_author=G Karev; citation_author=EV Koonin; citation_journal_title=Bioessays; citation_volume=24; citation_number=15; citation_pages=105-109; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Reconstruction of metabolic networks from genome data and analysis of their global structure for various organisms.; citation_author=HW Ma; citation_author=AP Zeng; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=16; citation_pages=270-277; citation_date=2003a; " />
+      <meta name="citation_reference" content="citation_title=The connectivity structure, giant strong component and centrality of metabolic networks.; citation_author=HW Ma; citation_author=AP Zeng; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=17; citation_pages=1423-1430; citation_date=2003b; " />
+      <meta name="citation_reference" content="citation_title=The small world inside large metabolic networks.; citation_author=A Wagner; citation_author=DA Fell; citation_journal_title=Proc R Soc Lond B; citation_volume=268; citation_number=18; citation_pages=1803-1810; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Graph-based analysis of metabolic networks.; citation_author=J van Helden; citation_author=L Wernisch; citation_author=D Gilbert; citation_author=S Wodak; citation_number=19; citation_pages=245-274; citation_date=2002; citation_publisher=Springer Verlag; " />
+      <meta name="citation_reference" content="citation_title=The small world of metabolism.; citation_author=DA Fell; citation_author=A Wagner; citation_journal_title=Nat Biotechnol; citation_volume=18; citation_number=20; citation_pages=1121-1122; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Hierarchical organization of modularity in metabolic networks.; citation_author=E Ravasz; citation_author=AL Somera; citation_author=DA Mongru; citation_author=ZN Oltvai; citation_author=AL Barabási; citation_journal_title=Science; citation_volume=297; citation_number=21; citation_pages=1551-1555; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Evidence for dynamically organized modularity in the yeast protein–protein interaction network.; citation_author=J-DJ Han; citation_author=N Bertin; citation_author=T Hao; citation_author=DS Goldberg; citation_author=GF Berriz; citation_journal_title=Nature; citation_volume=430; citation_number=22; citation_pages=88-93; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Protein structure: Insights from graph theory.; citation_author=S Vishveshwara; citation_author=KV Brinda; citation_author=N Kannan; citation_journal_title=J Th Comp Chem; citation_volume=1; citation_number=23; citation_pages=187-211; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=A network representation of protein structures: Implications to protein stability.; citation_author=KV Brinda; citation_author=S Vishveshwara; citation_journal_title=Biophysical Journal; citation_volume=89; citation_number=24; citation_pages=4159-4170; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Identification of domains and domain interface residues in multidomain proteins from graph spectral method.; citation_author=RK Sistla; citation_author=KV Brinda; citation_author=S Vishveshwara; citation_journal_title=Proteins: Struct Funct Bioinfo; citation_volume=59; citation_number=25; citation_pages=616-626; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A graph spectral analysis of the structural similarity network of protein chains.; citation_author=O Krishnadev; citation_author=KV Brinda; citation_author=S Vishveshwara; citation_journal_title=Proteins: Struct Funct Bioinfo; citation_volume=61; citation_number=26; citation_pages=152-163; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Topological structure analysis of the protein-protein interaction network in budding yeast.; citation_author=D Bu; citation_author=Y Zhao; citation_author=L Cai; citation_author=H Xue; citation_author=X Zhu; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=27; citation_pages=2443-2450; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Functional clustering of yeast proteins from the protein-protein interaction network.; citation_author=TZ Sen; citation_author=A Kloczkowski; citation_author=RL Jernigan; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=28; citation_pages=355; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Good publication practice as a prerequisite for comparable enzyme data?; citation_author=C Kettner; citation_journal_title=In Silico Biology; citation_volume=7; citation_number=29; citation_pages=07; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Hierarchical modularity of nested bow-ties in metabolic networks.; citation_author=J Zhao; citation_author=H Yu; citation_author=J-H Luo; citation_author=Z-W Cao; citation_author=Y-X Li; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=30; citation_pages=386; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Observing local and global properties of metabolic pathways: ‘load points’ and ‘choke points’ in the metabolic networks.; citation_author=SA Rahman; citation_author=D Schomburg; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=31; citation_pages=1767-1774; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Genome-Scale Analysis of Mannheimia succiniciproducens Metabolism.; citation_author=TY Kim; citation_author=HU Kim; citation_author=JM Park; citation_author=H Song; citation_author=JS Kim; citation_journal_title=Biotechnology and Bioengineering; citation_number=32; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Validation of metabolic pathway databases based on chemical substructure search.; citation_author=L Felix; citation_author=G Valiente; citation_journal_title=Biomol Eng; citation_number=33; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=LIGAND: database of chemical compounds and reactions in biological pathways.; citation_author=S Goto; citation_author=Y Okuno; citation_author=M Hattori; citation_author=T Nishioka; citation_author=M Kanehisa; citation_journal_title=Nucleic Acids Res; citation_volume=30; citation_number=34; citation_pages=402-404; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=An open graph visualization system and its applications to software engineering.; citation_author=ER Gansner; citation_author=SC North; citation_journal_title=Softw Pract Exper; citation_volume=30; citation_number=35; citation_pages=1203-1233; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Subnetwork hierarchies of biochemical pathways.; citation_author=P Holme; citation_author=M Huss; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=36; citation_pages=532-538; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Hierarchical thinking in network biology: the unbiased modularization of biochemical networks.; citation_author=JA Papin; citation_author=JL Reed; citation_author=BO Palsson; citation_journal_title=Trends Biochem Sci; citation_volume=29; citation_number=37; citation_pages=641-647; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Functional cartography of complex metabolic networks.; citation_author=R Guimera; citation_author=LA Nunes Amaral; citation_journal_title=Nature; citation_volume=433; citation_number=38; citation_pages=895-900; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Mycolic acids: Structure, biosynthesis and physiological functions.; citation_author=CE Barry; citation_author=RE Lee; citation_author=K Mdluli; citation_author=AE Simpson; citation_author=BG Schroeder; citation_journal_title=Prog Lipid Res; citation_volume=37; citation_number=39; citation_pages=143-179; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Pathway to synthesis and processing of mycolic acids in Mycobacterium tuberculosis.; citation_author=K Takayama; citation_author=C Wang; citation_author=GS Besra; citation_journal_title=Clin Microbiol Rev; citation_volume=18; citation_number=40; citation_pages=81-101; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Flux balance analysis of mycolic acid pathway: Targets for anti-tubercular drugs.; citation_author=K Raman; citation_author=P Rajagopalan; citation_author=N Chandra; citation_journal_title=PLoS Comput Biol; citation_volume=1; citation_number=41; citation_pages=e46; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Error and attack tolerance of complex networks.; citation_author=R Albert; citation_author=H Jeong; citation_author=AL Barabási; citation_journal_title=Nature; citation_volume=406; citation_number=42; citation_pages=378-382; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_author=AL Barabási; citation_number=43; citation_pages=304; citation_date=2002; citation_publisher=Perseus Publishing; " />
+      <meta name="citation_reference" content="citation_title=Conservation of protein interaction network in evolution.; citation_author=J Park; citation_author=D Bolser; citation_journal_title=Genome Informatics; citation_volume=12; citation_number=44; citation_pages=135-140; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Genes required for mycobacterial growth defined by high density mutagenesis.; citation_author=CM Sassetti; citation_author=DH Boyd; citation_author=EJ Rubin; citation_journal_title=Mol Microbiol; citation_volume=48; citation_number=45; citation_pages=77-84; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Identification of side-chain clusters in protein structures by a graph spectral method.; citation_author=N Kannan; citation_author=S Vishveshwara; citation_journal_title=J Mol Biol; citation_volume=292; citation_number=46; citation_pages=441-464; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=An r-dimensional quadratic placement algorithm.; citation_author=KM Hall; citation_journal_title=Manag Sci; citation_volume=17; citation_number=47; citation_pages=219-229; citation_date=1970; " />
+      <meta name="citation_reference" content="citation_title=Backbone cluster identification in proteins by a graph theoretical method.; citation_author=SM Patra; citation_author=S Vishveshwara; citation_journal_title=Biophys Chem; citation_volume=84; citation_number=48; citation_pages=13-25; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Algorithm 97: shortest path.; citation_author=RW Floyd; citation_journal_title=Comm ACM; citation_volume=5; citation_number=49; citation_pages=345; citation_date=1962; " />
+      <meta name="citation_reference" content="citation_author=J Gross; citation_author=J Yellen; citation_number=50; citation_date=1999; citation_publisher=CRC press; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis"/>
+    <meta name="twitter:description" content="BackgroundSeveral types of networks, such as transcriptional, metabolic or protein-protein interaction networks of various organisms have been constructed, that have provided a variety of insights into metabolism and regulation. Here, we seek to exploit the reaction-based networks of three organisms for comparative genomics. We use concepts from spectral graph theory to systematically determine how differences in basic metabolism of organisms are reflected at the systems level and in the overall topological structures of their metabolic networks.Methodology/Principal FindingsMetabolome-based reaction networks of Mycobacterium tuberculosis, Mycobacterium leprae and Escherichia coli have been constructed based on the KEGG LIGAND database, followed by graph spectral analysis of the network to identify hubs as well as the sub-clustering of reactions. The shortest and alternate paths in the reaction networks have also been examined. Sub-cluster profiling demonstrates that reactions of the mycolic acid pathway in mycobacteria form a tightly connected sub-cluster. Identification of hubs reveals reactions involving glutamate to be central to mycobacterial metabolism, and pyruvate to be at the centre of the E. coli metabolome. The analysis of shortest paths between reactions has revealed several paths that are shorter than well established pathways.ConclusionsWe conclude that severe downsizing of the leprae genome has not significantly altered the global structure of its reaction network but has reduced the total number of alternate paths between its reactions while keeping the shortest paths between them intact. The hubs in the mycobacterial networks that are absent in the human metabolome can be explored as potential drug targets. This work demonstrates the usefulness of constructing metabolome based networks of organisms and the feasibility of their analyses through graph spectral methods. The insights obtained from such studies provide a broad overview of the similarities and differences between organisms, taking comparative genomics studies to a higher dimension."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000881.g003"/>
+
+  <meta property="og:title" content="Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=7497'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=6663'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1328&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000881">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000881" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000881&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Metabolome Based Reaction Graphs of <i>M. tuberculosis</i> and <i>M. leprae</i>: A Comparative Network Analysis
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ketki D. Verkhedkar, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Molecular Biophysics Unit, Indian Institute of Science, Bangalore, India
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Karthik Raman, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Supercomputer Education and Research Centre, Indian Institute of Science, Bangalore, India
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Nagasuma R. Chandra, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Supercomputer Education and Research Centre, Indian Institute of Science, Bangalore, India
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Saraswathi Vishveshwara
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:sv@mbu.iisc.ernet.in">sv@mbu.iisc.ernet.in</a></p>
+
+                <p>Affiliation:
+                  Molecular Biophysics Unit, Indian Institute of Science, Bangalore, India
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: September 12, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000881</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000881-t001" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000881-g001" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000881-g002" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000881-g003" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000881-t002" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000881-t003" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000881-t004" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000881">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000881" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Several types of networks, such as transcriptional, metabolic or protein-protein interaction networks of various organisms have been constructed, that have provided a variety of insights into metabolism and regulation. Here, we seek to exploit the reaction-based networks of three organisms for comparative genomics. We use concepts from spectral graph theory to systematically determine how differences in basic metabolism of organisms are reflected at the systems level and in the overall topological structures of their metabolic networks.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>Metabolome-based reaction networks of <em>Mycobacterium tuberculosis</em>, <em>Mycobacterium leprae</em> and <em>Escherichia coli</em> have been constructed based on the KEGG LIGAND database, followed by graph spectral analysis of the network to identify hubs as well as the sub-clustering of reactions. The shortest and alternate paths in the reaction networks have also been examined. Sub-cluster profiling demonstrates that reactions of the mycolic acid pathway in mycobacteria form a tightly connected sub-cluster. Identification of hubs reveals reactions involving glutamate to be central to mycobacterial metabolism, and pyruvate to be at the centre of the <em>E. coli</em> metabolome. The analysis of shortest paths between reactions has revealed several paths that are shorter than well established pathways.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>We conclude that severe downsizing of the leprae genome has not significantly altered the global structure of its reaction network but has reduced the total number of alternate paths between its reactions while keeping the shortest paths between them intact. The hubs in the mycobacterial networks that are absent in the human metabolome can be explored as potential drug targets. This work demonstrates the usefulness of constructing metabolome based networks of organisms and the feasibility of their analyses through graph spectral methods. The insights obtained from such studies provide a broad overview of the similarities and differences between organisms, taking comparative genomics studies to a higher dimension.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Verkhedkar KD, Raman K, Chandra NR, Vishveshwara S (2007) Metabolome Based Reaction Graphs of <em>M. tuberculosis</em> and <em>M. leprae</em>: A Comparative Network Analysis. PLoS ONE 2(9):
+          e881.
+            doi:10.1371/journal.pone.0000881</p><p><strong>Academic Editor: </strong>Emmanouil Dermitzakis, The Wellcome Trust Sanger Institute, United Kingdom</p><p><strong>Received:</strong> January 5, 2007; <strong>Accepted:</strong> August 14, 2007; <strong>Published:</strong> September 12, 2007</p><p><strong>Copyright:</strong> © 2007 Verkhedkar et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>Support was obtained from the computational genomics initiative at IISc, funded by Department of Biotechnology, India. This support was an academic research grant from an Indian Government agency, and no financial claims are associated with it.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Recent advances in high throughput technologies and network theory have made it possible to reconstruct and analyse large genome-scale networks of organisms <em>in silico.</em> Several types of networks reflecting different aspects of metabolism and regulation in organisms have been reconstructed. The transcriptional networks based on microarray data, protein-protein interaction networks based on high-throughput yeast two-hybrid type of experiments and metabolic networks based on reaction annotation of the individual proteins coded by the genome are some examples. Several of these studies have focused on elucidating the general principles underlying the structure and organisation of metabolic networks of a large number of organisms. For example, a protein–protein interaction network of <em>Saccharomyces cerevisiae</em> constructed based on systematic two-hybrid analyses <a href="#pone.0000881-Uetz1">[1]</a> indicates that highly connected proteins with a central role in the network's architecture are three times more likely to be essential than proteins with only a small number of links to other proteins <a href="#pone.0000881-Jeong1">[2]</a>. Similarly, a transcriptional regulatory network of <em>Escherichia coli</em>, has been reconstructed <a href="#pone.0000881-ShenOrr1">[3]</a> based on the RegulonDB database as well as published literature, and has been used to identify important structural network motifs and their role in network function. The dynamics of the <em>Saccharomyces cerevisiae</em> biological network has been investigated computationally, with the integration of transcriptional regulatory information and gene-expression data for multiple conditions <a href="#pone.0000881-Luscombe1">[4]</a>. Metabolic networks have also been constructed for a number of genomes such as <em>E. coli</em> <a href="#pone.0000881-Edwards1">[5]</a> and <em>Staphylococcus aureus</em> <a href="#pone.0000881-Becker1">[6]</a> which have been used to study the metabolic capabilities of organisms and gene essentiality through flux balance analyses. Protein-protein interaction networks have been previously used for comparative genomics <a href="#pone.0000881-Eisenberg1">[7]</a>, <a href="#pone.0000881-Park1">[8]</a>, <a href="#pone.0000881-Kunin1">[9]</a>, <a href="#pone.0000881-Wuchty1">[10]</a>, <a href="#pone.0000881-Liang1">[11]</a>. Here, we seek to exploit the reaction-based networks of three organisms for comparative genomics. We use concepts from spectral graph theory to systematically determine how differences in the basic metabolism of various organisms are reflected at the systems level.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>In the present study, we have constructed and characterised the metabolic networks of two closely related organisms: <em>Mycobacterium tuberculosis</em> and <em>Mycobacterium leprae</em>, which are obligate intracellular pathogens <a href="#pone.0000881-Cole1">[12]</a>. A broad comparison with the network of <em>E. coli</em> has also been presented. Both the mycobacteria are important pathogens and hence of interest. Additionally, their comparison is of particular interest given that the genome sequencing of <em>M. leprae</em> has revealed massive gene decay as compared to other mycobacteria. Despite having genomes of comparable sizes the leprae genome codes for only 1406 proteins in comparison to the 3989 proteins in <em>M. tuberculosis</em>, leading to the consideration of the leprae genome as a ‘minimal genome’. The elimination of many important metabolic activities in this organism is thought to result in severe metabolic streamlining <a href="#pone.0000881-Cole1">[12]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Various concepts from graph theory <a href="#pone.0000881-Jeong2">[13]</a>, <a href="#pone.0000881-Bilke1">[14]</a>, <a href="#pone.0000881-Wolf1">[15]</a>, <a href="#pone.0000881-Ma1">[16]</a>, <a href="#pone.0000881-Ma2">[17]</a> have previously been used to construct and analyse metabolic networks for several fully sequenced organisms. Representing metabolic networks as graphs makes them amenable to various analyses, such as the detection of shortest and alternate paths. Such analyses have also resulted in the identification of the highly connected giant strong components of the networks, as well as metabolites central to the network. Graph spectral analysis can be carried out to obtain information on central hubs as well as the sub-clustering and organisation of the metabolic network.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>We represent the metabolic networks of these organisms in the form of a reaction based graph with the biochemical reactions as the nodes and an edge existing between the nodes if they share at least one metabolite. Such a representation is essential to ascertain the importance of different biochemical reactions in the metabolic networks of these organisms. Alternative representations have been previously used for representing metabolite networks. One is a substrate graph, wherein all substrates are represented by nodes, with edges between them indicating their participation in the same reaction <a href="#pone.0000881-Wagner1">[18]</a>. In another representation, the metabolic network is built up of nodes, the substrates, which are connected to one another through links, which are the actual metabolic reactions. The physical entity of the link is the temporary educt–educt complex itself, in which enzymes provide the catalytic scaffolds for the reactions yielding products, which in turn can become educts for subsequent reactions <a href="#pone.0000881-Jeong2">[13]</a>. Metabolic networks may also be represented as a directed bipartite graph, with two types of nodes indicating reactions and metabolites separately, with edges from metabolites directed towards the reaction they are substrates of and edges from reactions directed towards their products <a href="#pone.0000881-vanHelden1">[19]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Further, in our representation of the network, we have chosen to leave out the links generated by currency metabolites. These metabolites are ubiquitously present in metabolic networks and although these substrates are necessary for a given reaction to take place, they cannot be considered as valid intermediates for path finding or establishing biologically meaningful network connections. Currency metabolites have been excluded from metabolic networks in previous studies such as <a href="#pone.0000881-Ma2">[17]</a>.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>Besides characterising the constructed networks for their various graph properties, we have systematically determined if the differences observed between these organisms at the genomic level reflect on the overall topology and characteristics of their metabolic networks. To compare features of the metabolic networks of mycobacteria with those of a more standard and well studied organism, we have also constructed and characterised the metabolic network of <em>E. coli</em>.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>Metabolic networks have properties similar to other real world networks, such as social networks and the World Wide Web. Particularly, they have been shown to be scale-free, with a non-random power-law distribution of node connectivity (number of interactions of each metabolite) and distinguished by the presence of ‘hubs’, a few highly connected nodes that are essential to the integrity and robustness of the network <a href="#pone.0000881-Jeong2">[13]</a>. These networks are also small-world networks, characterised by a low average path length between nodes <a href="#pone.0000881-Jeong2">[13]</a>, <a href="#pone.0000881-Ma2">[17]</a>, <a href="#pone.0000881-Wagner1">[18]</a>, <a href="#pone.0000881-Fell1">[20]</a>. Recent studies have revealed metabolic networks to be modular in nature, comprising several small, functional modules that combine together in a hierarchical manner to form larger, less cohesive units <a href="#pone.0000881-Ravasz1">[21]</a>, <a href="#pone.0000881-Han1">[22]</a>.</p>
+<a id="article1.body1.sec1.p8" name="article1.body1.sec1.p8"></a><p>In this work, we have studied the topological organisation of the constructed metabolic networks by using concepts from spectral graph theory. The graph spectral method has been applied earlier by our group in the identification of side chain and backbone clusters in proteins and to identify amino acid residues important for protein structure, folding, stability, function and dynamics <a href="#pone.0000881-Vishveshwara1">[23]</a>, <a href="#pone.0000881-Brinda1">[24]</a>. It has also been used to successfully identify domains in multi-domain proteins <a href="#pone.0000881-Sistla1">[25]</a> and to detect clusters of structurally similar proteins in protein chain universe graphs <a href="#pone.0000881-Krishnadev1">[26]</a>. Bu and co-workers <a href="#pone.0000881-Bu1">[27]</a> have applied spectral analysis to study the topological structure of the protein interaction network in yeast. Jernigan and co-workers <a href="#pone.0000881-Sen1">[28]</a> have used spectral graph theory for analysing the functional clustering of the yeast protein–protein interaction network. Here, we explore the applications of the spectral method in analysing the topological organisation of large reaction networks. We show that this method is useful for identifying sub-clusters of reactions in the networks by a simple one step numerical computation.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results and Discussion"></a><h3>Results and Discussion</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>Several pathway databases have recently become available, with curated information on biochemical reactions. Most databases are incomplete, with missing information on various biochemical reactions. A study undertaken recently by Kettner <a href="#pone.0000881-Kettner1">[29]</a> illustrates the poor quality in well-known databases such as BRENDA even for pathways such as glycolysis. They conclude from their study that the difficulty in curation and enhancing quality in databases was largely due to both incomplete descriptions of material and methods in the papers and difficulties considering method-dependent results, since extraction of kinetic data from literature is necessarily carried out manually. They suggest that it might be useful to establish a deposition system to which authors can submit their data to ensure maximal accuracy and accessibility and to replace possibly the traditional retrospective process of manual data extraction. The situation is a bit better when it comes to reaction annotation without the quantitative data, for obvious reasons. At this point of time, there does not appear to be an automated method for detecting and correcting errors. Although highly desirable, availability of a comprehensive accurate database, hence may be quite a while away. We have used KEGG as our primary source of data, since it was the largest available curated database, particularly for mycobacteria. A major problem we observed was in describing the reversibility of the reactions, which we have corrected manually to the extent possible. Although there are omissions and errors in detail in the database, on the whole, most of the reactions and proteins are annotated correctly, from the manual checks we performed. Hence, the KEGG serves as a good starting point for systems biology studies. KEGG has also been extensively used by several groups previously for systems analyses <a href="#pone.0000881-Ma1">[16]</a>, <a href="#pone.0000881-Ma2">[17]</a>, <a href="#pone.0000881-Zhao1">[30]</a>, <a href="#pone.0000881-Rahman1">[31]</a> and even genome-scale metabolic reconstructions <a href="#pone.0000881-Kim1">[32]</a>. Felix and Valiente have performed an exhaustive validation of a substantial portion of the KEGG LIGAND database <a href="#pone.0000881-Felix1">[33]</a>, concluding that over 90% of the reactions in the KEGG are consistent.</p>
+<a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>The reaction networks of <em>M. tuberculosis</em> H37Rv, <em>M. leprae</em> and <em>E. coli</em> K-12 MG1655 were reconstructed from a dataset primarily obtained from the KEGG LIGAND database <a href="#pone.0000881-Goto1">[34]</a>. We used reaction files containing compound IDs, so that there was no discrepancy in the reactions, based on the usage of synonymous compound names. Details of the total numbers of reactions, metabolites and enzymes comprising the networks of these organisms have been summarised in <a href="#pone-0000881-t001">Table 1</a>. The total size of the networks in the three organisms is roughly of the same order, making their comparison quite meaningful. The networks essentially capture the core metabolic processes, such as the metabolism of carbohydrates, nucleic acids, amino acids and lipids, in the three organisms. Sequence analyses of the genomes have indicated that they share similarity among a number of individual genes/proteins, leading to several similar reactions in the three networks. However, the precise connections with which the reactions are associated have not been analysed previously in a comparative context. Graphs presented here are amenable to such comparative analysis, providing a handle to understand the similarities and the differences between a given pair of organisms from a systems perspective. Analysis of the various network properties, clustering patterns, shortest and alternate paths, that aid in this process are elaborated below.</p>
+<div class="figure" id="pone-0000881-t001"><div class="img"><a name="pone-0000881-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Network properties of the reconstructed metabolic networks of <em>M. tuberculosis</em>, <em>M. leprae</em> and <em>E. coli</em> and the corresponding random networks.</span></strong></p><span>doi:10.1371/journal.pone.0000881.t001</span></div>
+<h4>Analysis of network parameters</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Analysis of various network parameters such as the degree distribution, clustering coefficient, average path length and size of the largest cluster of the reaction networks of all three organisms revealed them to have a similar overall topology with comparable graph properties (<a href="#pone-0000881-t001">Table 1</a>). The degree distributions of the nodes in the reaction networks of all three organisms exhibit a power law behaviour as shown in <a href="#pone-0000881-g001">Figures 1A−C</a>. Hence, the reaction networks of these organisms are scale-free in nature, consisting of a few ‘hubs’ that are highly connected and hold together numerous nodes having a small degree. The log-log plots of the degree distributions (<a href="#pone-0000881-g001">Figures 1D–F</a>) for the three networks also are characteristic of a power law behaviour, with the degree exponent γ~1.4. This result differs from the results of Wagner and Fell <a href="#pone.0000881-Wagner1">[18]</a> who did not obtain a clear power-law degree distribution for a reaction based graph of the metabolic network of <em>E. coli.</em> This was perhaps due to the reduced dataset used in their study. The clustering coefficients of the reaction networks of the three organisms are of the same order of 10<sup>−2</sup>, indicating that these networks are quite sparse and have approximately the same density of connections between nodes despite a difference in their overall sizes. Further, it implies that the observed connections may have evolved to suit a particular metabolic requirement and are far from random. The average path length of the three networks are also comparable, with the networks of <em>M. tuberculosis</em> and <em>M. leprae</em> having average path lengths of 5.58 and 5.48 respectively, while the reaction network of <em>E. coli</em> has a slightly smaller average path length of 4.94. The small values of the average path length in these organisms imply a small-world character, where the distance between any two reactions in the network is smaller than what is expected from traditional biochemical pathways, as will be shown later.</p>
+<div class="figure" id="pone-0000881-g001"><div class="img"><a name="pone-0000881-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>A–C: Plots of the degree distributions of nodes in the reaction networks of <em>M. tuberculosis</em>, <em>M. leprae</em> and <em>E. coli.</em></span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>D–F: Log-log plots of the degree distribution function <em>P(k)</em> versus the degree <em>k</em>. <em>P(k)</em> defines the probability of a given node making exactly <em>k</em> connections in the network. The fit to the curve shows a power law behaviour and has an exponent of ~1.4 for all three networks. G–I: Representative degree distributions of nodes in random networks generated with the same total number of nodes and edges as the reaction networks of <em>M. tuberculosis</em>, <em>M. leprae</em> and <em>E. coli.</em></p>
+<span>doi:10.1371/journal.pone.0000881.g001</span></div>
+
+<h4>Clustering patterns</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>The largest clusters (giant components) in the networks of <em>M. tuberculosis</em>, <em>M. leprae</em> and <em>E. coli</em> were obtained by the depth-first-search method and comprised 73–76% of the total number of biochemical reactions in their metabolome; while 8–10% of the total reactions form other clusters in their respective networks. It is therefore interesting to note that the size of the giant component in the reaction networks of these organisms is conserved and is unaffected by the metabolic streamlining of the leprae bacillus. It is also unaffected by differences that exist between the metabolism of <em>E. coli</em> and the mycobacterial organisms. <a href="#pone-0000881-g002">Figures 2A–C</a> are representations of the clusters obtained in the reaction networks of the three organisms. Graphviz <a href="#pone.0000881-Gansner1">[35]</a> was used for the generation of the cluster diagrams. Clustering analysis of the three networks by the depth-first-search method also revealed several ‘orphan’ reactions that were completely unconnected in their respective networks. Some of these were reactions that involved only currency metabolites and hence were unconnected with the rest of the network due to our elimination of interactions mediated by the currency metabolites. Other orphans represented reactions which were either inaccurately curated in the database and did not occur in the metabolism of these organisms or whose links with the rest of the metabolome have not been determined to date. A few examples of orphan reactions are shown below:</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p><strong>R00004 (EC 3.6.1.1.) Pyrophosphate+H2O→2 Orthophosphate</strong></p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p><strong>R00281 (EC 1.6.99.3) Acceptor+NADH→Reduced-acceptor+NAD+</strong></p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>As an extreme example, we even have:</p>
+<a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p><strong>R02501 (EC 1.14.14.1) Testosterone+H++Oxygen+NADPH→19-Hydroxyt​estosterone+NADP<sup>+</sup></strong></p>
+<div class="figure" id="pone-0000881-g002"><div class="img"><a name="pone-0000881-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Clusters in the reaction networks of <em>M. tuberculosis</em> (A), <em>M. leprae</em> (B) and <em>E. coli</em> (C).</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>The giant component in the networks comprises 73–76% of the total number of nodes, while 8–10% of the total nodes form other clusters in the networks. The orphan nodes have been eliminated for better visualisation.</p>
+<span>doi:10.1371/journal.pone.0000881.g002</span></div><a id="article1.body1.sec2.sec2.p6" name="article1.body1.sec2.sec2.p6"></a><p>Such information on orphan reactions can be used to improve the curation of the database and the annotation of the genome itself.</p>
+<a id="article1.body1.sec2.sec2.p7" name="article1.body1.sec2.sec2.p7"></a><p>We compared the network properties of the three reaction networks with those of random graphs comprising the same total number of vertices (V) and connecting edges (E) as the corresponding reaction network, using the Erdős-Rényi model (see <a href="#pone-0000881-t001">Table 1</a>). It was observed that for the given probability of connections, the nodes of the random network formed a single connected cluster comprising almost 100% of the nodes. Further, the degree distributions of the nodes of the random networks having the same total number of (V, E) as that of the <em>M. tuberculosis</em>, <em>M. leprae</em> and <em>E. coli</em> reaction networks followed a Poisson distribution, with an average scale of 7.40, 6.42 and 9.76 connections per node respectively. Moreover, the highest degree of connections in these networks was significantly lower with values of 22, 21 and 27 as compared to the highest degree in the reaction networks of <em>M. tuberculosis</em> (72), <em>M. leprae</em> (50) and <em>E. coli</em> (96) respectively.</p>
+
+
+<h4>Analyses of sub-clusters in the giant component</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>Metabolic networks are highly integrated and complex in nature. Hence, a rational reduction of these networks to their basic structural and functional units is essential to gain a deeper understanding of their design principles and functioning. Several studies have been carried out to detect modularity in metabolic networks <a href="#pone.0000881-Ravasz1">[21]</a>, <a href="#pone.0000881-Han1">[22]</a>, <a href="#pone.0000881-Holme1">[36]</a>, <a href="#pone.0000881-Papin1">[37]</a>. Guimera &amp; Nunes Amaral <a href="#pone.0000881-Guimera1">[38]</a> have shown that metabolites in the cell group together to form functional modules with typically 80% of the nodes in the network only connected to other nodes within their respective modules. To determine if this modularity of metabolic networks is also reflected at the level of the constituent biochemical reactions, we carried out analyses to detect sub-clusters of reactions in the giant component by graph spectral analysis.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>As mentioned in the methods section, the 2evc plots of the Laplacian matrix of the graph provide the sub-cluster information. The 2evc plots constructed for the reaction networks of <em>M. tuberculosis</em> and <em>M. leprae</em> comprised numerous plateau regions which represented sub-clusters of reactions in the giant component of these networks (<a href="#pone-0000881-g003">Figures 3A,B</a>). A few examples of the sub-clusters obtained in the giant component of <em>M. tuberculosis</em> have been shown in <a href="#pone-0000881-t002">Table 2</a>.</p>
+<div class="figure" id="pone-0000881-g003"><div class="img"><a name="pone-0000881-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>2evc plots for the giant components of the reaction networks of <em>M. tuberculosis</em> (A), <em>M. leprae</em> (B) and <em>E. coli</em> (C).</span></strong></p><a id="article1.body1.sec2.sec3.fig1.caption1.p1" name="article1.body1.sec2.sec3.fig1.caption1.p1"></a><p>Plateaus represent sub-clusters of reactions. The giant component in the reaction network of <em>E. coli</em> does not resolve into sub-clusters as indicated by the single plateau in plot C. Arrows indicate plateaus representing the sub-cluster of mycolic acid pathway reactions in the mycobacterial networks.</p>
+<span>doi:10.1371/journal.pone.0000881.g003</span></div><div class="figure" id="pone-0000881-t002"><div class="img"><a name="pone-0000881-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Examples of sub-clusters in the giant component of the metabolic network of <em>M. tuberculosis</em>.</span></strong></p><span>doi:10.1371/journal.pone.0000881.t002</span></div><a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>It is observed that reactions belonging to fatty acid biosynthesis and the FAS-II cycle of the mycolic acid pathway in <em>M. tuberculosis</em> form distinct, tightly connected sub-clusters. This may be due to the iterative nature of these cycles where the metabolite passes through several cycles of the same reactions consecutively in order to obtain a product of the requisite carbon chain length. Hence, the reactions within these pathways are more tightly connected with each other than to the other reactions in the metabolome. The mycolic acid pathway <a href="#pone.0000881-Barry1">[39]</a>, <a href="#pone.0000881-Takayama1">[40]</a>, <a href="#pone.0000881-Raman1">[41]</a> is a critical pathway in <em>M. tuberculosis</em> and is important for its survival and pathogenicity. The other sub-clusters obtained are less specific and contain reactions belonging to different pathways identified in the KEGG. For example, cluster 1 in <a href="#pone-0000881-t002">Table 2</a> comprises reactions involved in purine metabolism as well in pantothenate and coenzyme-A biosynthesis. Further, reactions occurring in a particular pathway are not contained in a single cluster but different reactions from the same pathway are observed in different sub-clusters. For example, reactions involved in purine metabolism occur in both clusters 1 and 2.</p>
+<a id="article1.body1.sec2.sec3.p4" name="article1.body1.sec2.sec3.p4"></a><p>The reaction network of <em>M. leprae</em> comprised sub-clusters that were fewer in number and smaller in size than those obtained in <em>M. tuberculosis.</em> This is because the metabolome of <em>M. leprae</em> comprises fewer reactions than that of <em>M. tuberculosis.</em> Analysis of these sub-clusters revealed them to be similar in nature to those of <em>M. tuberculosis</em>, with reactions of the FAS-II cycle of the mycolic acid pathway forming closely related sub-clusters while the other sub-clusters were less specific in nature. Therefore, the overall topological structure and nature of the giant component is conserved between the two mycobacteria, indicating that the large scale downsizing of the <em>M. leprae</em> metabolome has not significantly altered the global structure of its core reaction network. Interestingly, unlike the mycobacterial networks, the giant component in the reaction network of <em>E. coli</em> did not resolve into constituent sub-clusters (<a href="#pone-0000881-g003">Figure 3C</a>), implying that reactions occurring in the metabolome of <em>E. coli</em> are more strongly interconnected across various biochemical pathways. Thus, differences can be seen to exist in the finer grouping of biochemical reactions within the giant components of the reaction networks of the mycobacteria and <em>E. coli</em>.</p>
+<a id="article1.body1.sec2.sec3.p5" name="article1.body1.sec2.sec3.p5"></a><p>Lastly, from the analyses of sub-clusters in the giant components of the three reaction networks, it can be seen that functional modules are less well defined at the level of biochemical reactions, with the reactions forming a single, large, connected cluster ensuring free flow of metabolites between them. However, it is important to note that similar to other studies, our model also is limited by the assumption of constitutive expression of all enzymes catalysing these reactions, i.e. the temporal expression of the enzymes on account of regulation is ignored. This may affect the clustering of biochemical reactions.</p>
+
+
+<h4>Identification of hubs in the reaction networks</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>Metabolic networks are scale-free networks characterised by the presence of hubs that are highly connected nodes serving to hold together numerous smaller nodes having a lower degree <a href="#pone.0000881-Jeong2">[13]</a>. With a large number of links, hubs in metabolic networks integrate all substrates in the cell into a single, complex web of biochemical interactions. Hubs are essential to the integrity and robustness of the network against random attacks <a href="#pone.0000881-Albert1">[42]</a>, <a href="#pone.0000881-Barabsi1">[43]</a>. They are also responsible for the small-world behaviour of networks as any two nodes in the network can be reached by a relatively short distance by traversing a hub <a href="#pone.0000881-Barabsi1">[43]</a>. Furthermore, in biological networks, the hubs are thought to be functionally important and phylogenetically oldest <a href="#pone.0000881-Wagner1">[18]</a>, <a href="#pone.0000881-Fell1">[20]</a>, <a href="#pone.0000881-Ravasz1">[21]</a>, <a href="#pone.0000881-Park2">[44]</a>. To identify highly connected reactions essential and central to the metabolism of the three organisms under study, we elucidated the hubs in their reaction networks by graph spectral analysis as well as by degree analysis.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>As mentioned in the methods section, the largest vector component of the highest eigenvalue of the Laplacian matrix of the graph corresponds to the node with high degree as well as low eccentricity. Two parameters, degree and eccentricity, are involved in the identification of graph spectral (GS) hubs. In a graph representing a scale-free network, the highest vector component would therefore correspond to a hub with high degree and also closest to the geometric centre of the network. Alternatively, hubs can be ranked based on their connectivity alone (degree hubs). Thus, hubs obtained from graph spectral analysis may differ from the degree hubs. However, a comparison of the ranks of GS hubs and degree hubs did not show any significant difference (Supplementary <a href="#pone.0000881.s001">Table S1</a>). This is perhaps due to the topology of the network.</p>
+<a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>However, when the reactions corresponding to the hubs were examined in detail, we find discrimination between the two sets of hubs. It was observed that the top 50 degree hubs in the reaction networks of the three organisms comprised reactions involving the metabolite L-glutamate as well as reactions involving pyruvate. However, the top 50 GS hubs of <em>M. tuberculosis</em> and <em>M. leprae</em> exclusively comprised reactions involving L-glutamate while the top GS hubs in <em>E. coli</em> only consisted of reactions involving pyruvate (see Supplementary <a href="#pone.0000881.s002">Table S2</a>). The difference in the degree and GS hubs suggests that the most highly connected reactions are not necessarily the most central reactions in the metabolome of the organism (by centrality, we mean that node which has the least eccentricity; eccentricity is the distance between a node and the node farthest from it). Furthermore, reactions (and metabolites) forming the centres of reaction networks are not common across all organisms but are specific to the metabolism of each organism. Previous studies by Ma &amp; Zeng <a href="#pone.0000881-Ma2">[17]</a> on a substrate based metabolic network of <em>E. coli</em> have shown pyruvate to be central to the metabolism of this organism; our results corroborate their observation. By constructing a reaction based graph of the metabolic network, we have elucidated specific reactions involving pyruvate that form the centre of the <em>E. coli</em> metabolome. Moreover, our method of identifying hubs central to the network by graph spectral analysis is simpler and more advantageous as it uses a single numerical computation that takes into account both the degree and eccentricity of the hub in the overall network.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p>The quality of the initial database used to reconstruct the network would affect the results obtained in this analysis. An incomplete database may lead to several false positives in the identification of hubs in the network. To determine the reliability of the identified hubs, we randomly knocked out half the nodes in the original reaction networks of the three organisms to generate highly reduced networks that simulate an incompletely curated database. This exercise was repeated 30 times for each organism and it was observed that reactions involving L-glutamate comprised a majority of the top 20 GS hubs in the reduced <em>M. tuberculosis</em> and <em>M. leprae</em> networks 83% and 67% of the time respectively. Similarly reactions involving pyruvate formed the majority of the top 20 GS hubs in the reduced <em>E. coli</em> network 67% of the time. Hence, we believe that the results of our analysis presented here are fairly reliable.</p>
+
+
+<h4>Identification of mycobacterial hubs absent in the human metabolome</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Hubs are essential to the integrity of the network. They make the network vulnerable to targeted attacks on them, because once the highly connected hubs are attacked, the network starts disintegrating <a href="#pone.0000881-Albert1">[42]</a>, <a href="#pone.0000881-Barabsi1">[43]</a>. This property makes the hubs ideal drug targets; by targeting a drug against a suitable hub or group of hubs, it is possible to break down the cellular network of an organism completely, which would result in the death of the organism. Further, targeting hubs that are unique to the pathogen and absent in humans would minimise side-effects of the drug in the host. We analysed the GS hubs in <em>M. tuberculosis</em> and <em>M. leprae</em> to identify highly connected reactions that are central to the metabolism of these organisms but absent in humans (as detailed in the <a href="#s3">Methods</a> section). The enzymes catalysing these reactions can be explored further as potential drug targets in the field of knowledge-based, rational drug design. The top fifteen ‘unique’ hubs obtained in <em>M. tuberculosis</em> (<a href="#pone-0000881-t003">Table 3</a>) mainly comprise reactions involved in nitrogen metabolism and in the biosynthesis of essential amino acids that are not synthesised in humans. It is particularly interesting to note that the first reaction of the FAS-I cycle of the mycolic acid pathway unique to mycobacteria ranks as the 38<sup>th</sup> unique hub in mycobacterium. Thus, the enzyme acyl carrier protein-fatty acid synthase (ACP-FAS) involved in this reaction can be explored as a potential target for drugs against mycobacteria. Independent studies by Sassetti and co-workers <a href="#pone.0000881-Sassetti1">[45]</a> and Raman and co-workers <a href="#pone.0000881-Raman1">[41]</a> have also identified the FAS enzyme as one of the putative anti-tubercular drug targets. Sassetti and co-workers performed a high throughput Transposon Site Hybridisation Mutagenesis study to identify essential genes in <em>M. tuberculosis</em> while Raman and co-workers performed a flux balance analysis of the mycolic acid pathway in <em>M. tuberculosis</em>, followed by <em>in silico</em> gene deletions to identify essential genes/putative drug targets. The list of the top hubs unique to <em>M. leprae</em> is similar and has not been tabulated separately.</p>
+<div class="figure" id="pone-0000881-t003"><div class="img"><a name="pone-0000881-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Top fifteen hubs in <em>M. tuberculosis</em> that are absent in the metabolome of humans.</span></strong></p><span>doi:10.1371/journal.pone.0000881.t003</span></div>
+
+<h4>Analysis of shortest paths</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>Metabolic networks are small-world networks characterised by a small average path length between the nodes. Thus, in the metabolic network of most organisms, on an average, any metabolite can be converted to any other metabolite by rather small number of biochemical reactions <a href="#pone.0000881-Jeong2">[13]</a>. Besides analysing the reaction networks of the three organisms under study to determine their average path lengths as described in a previous section, we have also elucidated the actual steps in the shortest path between any two nodes in their networks. We compared the shortest paths obtained in these organisms across six different metabolic pathways: (a) glycolysis, (b) citric acid cycle, (c) pentose phosphate pathway, (d) phenylalanine, tyrosine and tryptophan biosynthesis, (e) valine, leucine and isoleucine biosynthesis and (f) folate biosynthesis and observed that a majority of the paths obtained between reactions from these pathways were the same in all three organisms. Hence, the streamlining of the <em>M. leprae</em> metabolome has not significantly altered the shortest routes that exist between reactions in its core metabolism. Further, the shortest paths between reactions of the above pathways are also unaffected by the significant differences in the metabolism of mycobacteria and <em>E. coli.</em></p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>As predicted from the low values of the average path length for these reaction networks, the paths obtained in this analysis are shorter than the traditionally annotated biochemical pathways. For example, the conversion of pyruvate to oxalosuccinate by the experimentally determined citric acid cycle requires a minimum of four steps (pyruvate→oxaloacetate→citrate→isocitrat​e→oxalosuccinate)while the shortest path obtained between them by our analysis comprised only three consecutive steps:</p>
+<a id="article1.body1.sec2.sec6.p3" name="article1.body1.sec2.sec6.p3"></a><p>Steps in terms of RIDs:</p>
+<a id="article1.body1.sec2.sec6.p4" name="article1.body1.sec2.sec6.p4"></a><p><strong>R00344F→R00355B→R00268b</strong></p>
+<a id="article1.body1.sec2.sec6.p5" name="article1.body1.sec2.sec6.p5"></a><p><strong>R00344 (EC 6.4.1.1) ATP+Pyruvate+HCO3−→ADP+Orthophosphate+Ox​aloacetate</strong></p>
+<a id="article1.body1.sec2.sec6.p6" name="article1.body1.sec2.sec6.p6"></a><p><strong>R00355 (EC 2.6.1.1) Oxaloacetate+L-Glutamate→L-Aspartate+2-O​xoglutarate</strong></p>
+<a id="article1.body1.sec2.sec6.p7" name="article1.body1.sec2.sec6.p7"></a><p><strong>R00268 (EC 1.1.1.42) 2-Oxoglutarate+CO2→Oxalosuccinate</strong></p>
+<a id="article1.body1.sec2.sec6.p8" name="article1.body1.sec2.sec6.p8"></a><p>Hence, it can be inferred that the traditionally annotated pathways are not the shortest possible routes for the conversion of one metabolite into another. They are therefore a result of several constraints imposed within the cell, such as intracellular compartmentalisation and thermodynamic constraints. Whether the shortest pathways predicted here are really feasible pathways or not should be evaluated in the context of the constraints in the cell.</p>
+<a id="article1.body1.sec2.sec6.p9" name="article1.body1.sec2.sec6.p9"></a><p>Interestingly, our analysis also revealed shortest paths in which one or more reactions in the path produce metabolites that are utilised by reactions other than those that would be involved in the commonly accepted notion of the steps of a given pathway. Though such paths do not represent an ideal shortest path comprising consecutive steps between a pair of reactions (as in the above example), it provides important information regarding the interaction of reactions from different biochemical pathways. For example, the set of reactions obtained as the shortest path between reaction R00959 (the 1<sup>st</sup> reaction) and R00658 (the 8<sup>th</sup> reaction) in the glycolytic pathway are indicated in <a href="#pone-0000881-t004">Table 4</a>.</p>
+<div class="figure" id="pone-0000881-t004"><div class="img"><a name="pone-0000881-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000881" data-uri="info:doi/10.1371/journal.pone.0000881.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000881.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000881.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000881.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Shortest path between steps in glycolytic pathway.</span></strong></p><span>doi:10.1371/journal.pone.0000881.t004</span></div><a id="article1.body1.sec2.sec6.p10" name="article1.body1.sec2.sec6.p10"></a><p>The path comprises reactions from different metabolic pathways – reaction R02740 occurs in the glycolysis and pentose phosphate pathways, reaction R01830 occurs in the pentose phosphate pathway and reaction R01826 occurs in the phenylalanine, tyrosine and tryptophan biosynthetic pathway. Further, in reaction R01826 phosphoenolpyruvate produced in the glycolytic pathway reacts with D-erythrose-4-phosphate produced in the pentose phosphate pathway to yield 2-dehydro-3-deoxy-D-arabino-heptonate-7-​phosphate,a precursor for tryptophan biosynthesis. It is clear that the flux through each of these reactions will influence the direction of metabolites into specific biochemical pathways. For example, the phosphoenolpyruvate produced in reaction R00658 can either be converted into pyruvate by the glycolytic route or be diverted into tryptophan biosynthesis.</p>
+<a id="article1.body1.sec2.sec6.p11" name="article1.body1.sec2.sec6.p11"></a><p>The results of this analysis are also likely to be useful for metabolic engineering. A systematic study of shortest paths between all reaction pairs in the metabolome of an organism can reveal paths that are shorter than traditionally annotated biochemical pathways. Understanding of such paths can have implications in the production of industrially important secondary metabolites and for the manipulation of particular reaction fluxes to direct intermediates into specific metabolic pathways for obtaining larger quantities of the desired product.</p>
+
+
+<h4>Analysis of alternate paths</h4>
+<a id="article1.body1.sec2.sec7.p1" name="article1.body1.sec2.sec7.p1"></a><p>We have extensively analysed the number of alternate paths, that exist between reaction pairs in the metabolomes of the three organisms (for this, all 312 reactions common to the three organisms were considered). It was observed that <em>E. coli</em> contained the most number of alternate paths between a given pair of reactions, followed by <em>M. tuberculosis</em>, while the leprae bacillus had the least number of alternate paths of the three organisms. This is due not only to the differing sizes of the networks of the three organisms, but also to the difference in the degree distributions. Though this result is not surprising in itself, it is interesting to note that the reductive evolution of the <em>M. leprae</em> metabolome has led to a loss of multiple paths between reactions pairs in the core metabolic pathways, while keeping the shortest possible route between them intact. This is possibly because only the core of the metabolome has been conserved; the alternate routes (in <em>M. tuberculosis</em>) add to the redundancy. Similarly, mycobacteria and <em>E. coli</em> have evolved to have differing number of alternate paths between reactions while keeping the shortest paths between the reactions conserved.</p>
+
+
+<h4>Conclusions</h4>
+<a id="article1.body1.sec2.sec8.p1" name="article1.body1.sec2.sec8.p1"></a><p>The results presented in this work show that the reaction networks of <em>M. tuberculosis</em>, <em>M. leprae</em> and <em>E. coli</em> are scale-free, small-world networks that differ significantly from random networks. The networks of the three organisms have similar network properties despite a difference in the overall sizes of their metabolomes.</p>
+<a id="article1.body1.sec2.sec8.p2" name="article1.body1.sec2.sec8.p2"></a><p>Graph spectral theory serves as a tool useful for analysing the topological structure and organisation of large complex networks. This technique yields information about the sub-clustering of nodes in the network and identifies the cluster centres by a single numeric computation. Analysis of sub-clusters of the mycobacterial reaction networks detected by this method suggests that modularity of metabolic networks is possibly less well-defined at the level of biochemical reactions; clusters have been discerned well from metabolite networks <a href="#pone.0000881-Ravasz1">[21]</a>. It was observed that the top 50 GS hubs of <em>M. tuberculosis</em> and <em>M. leprae</em> exclusively comprised reactions involving L-glutamate while the top GS hubs in <em>E. coli</em> only consisted of reactions involving pyruvate. We showed that the most highly connected biochemical reactions in the reaction network of an organism are not necessarily the reactions most central to the metabolism of that organism. Moreover, the reactions and metabolites forming the centre of the metabolic networks are not common across all organisms, but are specific to the metabolism of each organism.</p>
+<a id="article1.body1.sec2.sec8.p3" name="article1.body1.sec2.sec8.p3"></a><p>A systematic comparison of the topological properties of the mycobacterial metabolic networks reveals that massive gene decay in <em>M. leprae</em> does not significantly affect the global structure of its metabolic network. We showed that the most highly connected reactions central to the metabolism of both organisms as well as the finer grouping of reactions within the giant component of their networks are essentially conserved and differ from that of <em>E. coli</em>. Additionally, we have determined that metabolic streamlining in the leprae bacillus has led to the preservation of the shortest paths between reactions in its core metabolome while reducing the total number of alternate paths that exist between them. The results obtained in this work are also useful likely to find applications in rational drug design and metabolic engineering.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Methods"></a><h3>Methods</h3>
+<h4>Dataset</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>We used the KEGG LIGAND database to reconstruct the reaction networks of <em>M. tuberculosis</em> H37Rv, <em>M. leprae</em> and <em>E. coli</em> K-12 MG1655 from genome data. A list of the metabolic pathways and their constituent biochemical reactions in these organisms were downloaded as flat files. These files contain information about the reactants, products, reversibility and steady state stoichiometries of the biochemical reactions. We corrected these files for several mistakes such as incomplete reactions and inconsistencies in reaction reversibility and direction. Polymerisation reactions were eliminated from these files and not included in the network construction. The KEGG database does not contain complete information on the mycolic acid pathway (MAP), which is unique to mycobacteria and essential for their pathogenicity and survival. Hence, to obtain more complete and organism-specific models of the reaction networks of <em>M. tuberculosis</em> and <em>M. leprae,</em> we integrated the model of the MAP developed by Raman and co-workers <a href="#pone.0000881-Raman1">[41]</a> into the corrected flat files of these organisms. The MAP model was integrated <em>in toto</em> for <em>M. tuberculosis,</em> while 13 reactions involved in extending the products of the FAS–II cycle of MAP into methoxy-mycolates were not included in the <em>M. leprae</em> model as methoxy-mycolates are absent in the leprae cell wall <a href="#pone.0000881-Cole1">[12]</a>.</p>
+
+
+<h4>Metabolic network reconstruction</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>The metabolic networks of the three organisms were constructed as follows. Each biochemical reaction in the metabolome of the organism is a node, and nodes representing reactions that share a common metabolite as a substrate in one reaction and a product in the other are connected by an edge. Thus, only reactions which exhibit such a consecutive dependence on each other with respect to a metabolite are connected to each other. All edges have an equal weight of 1. In order to make the network amenable to numerical analysis, it is represented in the form of an adjacency or reaction-interaction matrix (RIM), which is an <em>n</em>×<em>n</em> matrix; <em>n</em> being the number of nodes (biochemical reactions) in the graph. The elements [<em>A</em>]<em>ij</em> of the RIM have values according to the following rules:</p>
+<a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>[<em>A</em>]<em>ij</em> = 1 if reactions <em>i</em> and <em>j</em> exhibit a consecutive dependence through a metabolite</p>
+<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p> = 0 if the reactions do not exhibit such a dependence, or if <em>i</em> = <em>j</em></p>
+<a id="article1.body1.sec3.sec2.p4" name="article1.body1.sec3.sec2.p4"></a><p>To construct the RIM, the set of reactions in the flat file representing the metabolome of each organism was first mathematically represented as a stoichiometric matrix, <strong>S</strong><em><sub>m</sub></em><sub>×<em>n</em></sub>, with every metabolite being represented by a row (<em>m</em> metabolites) and every reaction by a column (<em>n</em> reactions). The entries in each column correspond to the stoichiometric coefficients of the metabolites (negative for reactants and positive for products) for each reaction. The <em>i<sup>th</sup></em> row of the matrix defines the participation of a particular metabolite across all metabolic reactions, and the <em>j<sup>th</sup></em> column provides the stoichiometry of all metabolites in that reaction. In order to account for the reversibility of biochemical reactions, each reversible reaction was split up into two irreversible reactions with opposite signs of the stoichiometric coefficients in the stoichiometric matrix. Further, to remove interactions between reactions by virtue of ubiquitously present ‘currency metabolites’ such as ATP, ADP, NADP, H<sub>2</sub>O, CO<sub>2</sub>, Coenzyme-A etc., matrix rows representing currency metabolites were discarded. The complete list of currency metabolites discarded is given in Supplementary <a href="#pone.0000881.s003">Text S1</a>.</p>
+<a id="article1.body1.sec3.sec2.p5" name="article1.body1.sec3.sec2.p5"></a><p>To derive the RIM from the stoichiometric matrix, consecutive dependences between pairs of reactions were determined. This was done by comparing the signs of the stoichiometric coefficients of each metabolite participating in the reactions between the two columns representing the reaction pair in the stoichiometric matrix. A (+,−) or (−,+) relationship between the coefficients in row <em>m</em> of the stoichiometric matrix compared across column <em>i</em> and <em>j</em> indicated a consecutive dependence between the <em>i<sup>th</sup></em> and <em>j<sup>th</sup></em> reaction with respect to metabolite <em>m</em> and the element [A]<em>ij</em> in the corresponding RIM was assigned the value 1. The RIMs thus constructed are symmetric and served as the primary input for the various analyses carried out in this study. The construction of the stoichiometric matrix and the corresponding RIM for 4 hypothetical reactions R1–R4 has been pictorially represented in Supplementary <a href="#pone.0000881.s004">Figure S1</a>.</p>
+
+
+<h4>Graph Spectral Analysis</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>Graph spectral theory is a sub-field of graph theory that deals with the analysis of the spectra (eigenvalues and eigenvector components) of nodes in the graph. Such an analysis provides information on the overall structure and topology of the graph. To obtain the eigenvalue spectra of the graph, the adjacency matrix of the graph is converted to a Laplacian matrix (<strong>L</strong>), by the equation:<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.e001&amp;representation=PNG" class="inline-graphic"></span><br>where <strong>D</strong>, the degree matrix of the graph, is a diagonal matrix in which the <em>i<sup>th</sup></em> element on the diagonal is equal to the number of connections that the <em>i<sup>th</sup></em> node makes in the graph. Diagonalisation of the Laplacian matrix yields the spectra of the graph comprising the eigenvalues and their corresponding eigenvector components. Analysis of the vector components of the lower and higher eigenvalues yields information about the clustering of nodes in the graph and the connectivity of each node in the graph <a href="#pone.0000881-Vishveshwara1">[23]</a>, <a href="#pone.0000881-Kannan1">[46]</a>. Specifically, the vector components of the second lowest eigenvalue carry information about the clusters present in the graph with all nodes of a given cluster having the <em>same</em> value of the vector component <a href="#pone.0000881-Hall1">[47]</a>. In a completely connected graph, where all nodes belong to a single cluster, the vector components of the second lowest eigenvalue provide sub-cluster information where the nodes within a sub-cluster have similar vector component values. A sub-cluster is a set of nodes within a cluster that make significantly more connections among themselves than with the other nodes in the cluster. A plot of the sorted vector components of the second lowest eigenvalue (2evc) versus the node number clearly reveals the sub-cluster information, with the nodes belonging to a sub-cluster forming distinct plateaus on the curve and the nodes connecting the sub-clusters having vector component values in between the plateaus. Identification of sub-clusters by the graph spectral method has been applied successfully in various studies such as the identification of domains in multi-domain proteins <a href="#pone.0000881-Sistla1">[25]</a> and to detect clusters of structurally similar proteins in protein chain universe graphs <a href="#pone.0000881-Krishnadev1">[26]</a>. The vector components of the top eigenvalues contain information regarding the branching of nodes in the graph and the nodes forming the cluster centres <a href="#pone.0000881-Vishveshwara1">[23]</a>, <a href="#pone.0000881-Patra1">[48]</a>. The largest vector component of the highest eigenvalue corresponds to the node with the highest degree in the graph. However, in case there are many nodes with degenerate highest degree, the one which is closest to the geometric centre of the graph, takes up the highest vector component value. Similarly, the second largest vector component of the highest eigenvalue corresponds to the node with next highest degree and next lowest eccentricity in the graph and so on. Eccentricity, <em>E(v)</em>, of a vertex <em>v</em> in a graph <strong>G</strong> is the distance from <em>v</em> to the vertex farthest from <em>v</em> in G, i.e.<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000881.e002&amp;representation=PNG" class="inline-graphic"></span><br>where <em>d</em>(<em>v</em>,<em>v<sub>i</sub></em>) represents the length of the shortest path between <em>v</em> and <em>v<sub>i</sub></em>.</p>
+
+
+<h4>Identification of mycobacterial hubs absent in the human metabolome</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>To identify hubs in the reaction networks of <em>M. tuberculosis</em> and <em>M. leprae</em> that were absent in the metabolism of humans, we first obtained a comprehensive list of biochemical reactions occurring in the metabolome of <em>Homo sapiens</em> from the KEGG database. Each reaction in this database is identified with a unique reaction-id (RID) that is common across all organisms in the database. Further, each RID is associated with the E.C. number of the enzyme catalysing the reaction which is further linked with the RIDs of the other reactions catalysed by the enzyme. For each reaction in the list of hubs for the two organisms, we obtained the E.C. number and associated RIDs of its corresponding enzyme. These RIDs, including the RID of the primary hub reaction were compared with the list of RIDs of reactions occurring in humans. An absence of all the RIDs in humans implied that the particular enzyme did not function in the metabolome of humans and the primary hub reaction was then classified as a hub ‘unique’ to the mycobacterium. However, since the data on the metabolism of humans was obtained from the KEGG database, it is important to note that the verity of the unique hub depends on the quality of the database.</p>
+
+
+<h4>Analysis of shortest and alternate paths</h4>
+<a id="article1.body1.sec3.sec5.p1" name="article1.body1.sec3.sec5.p1"></a><p>The shortest paths in the network and the steps involved were identified using the Floyd-Warshall algorithm <a href="#pone.0000881-Floyd1">[49]</a>. For the analysis of alternate paths, the adjacency matrix was used as the primary input. The total number of alternate paths between any two nodes in the network was determined by using classical algorithms that count paths based on powers of matrices <a href="#pone.0000881-Gross1">[50]</a>. Essentially, by this method, the value of the element [<em>A</em>]<em>ij</em> of the matrix [<em>A</em>] obtained by raising the adjacency matrix to the power <em>n</em> is equal to the total number of paths of path length <em>n</em> that exist between node <em>i</em> and node <em>j</em> in the graph.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000881"></div><a name="pone.0000881.s001" id="pone.0000881.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000881.s001">Table S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material1.caption1.p1" name="article1.body1.sec4.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Comparison of top 50 graph spectral and degree hubs in mycobacteria</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000881.s001</p><a id="article1.body1.sec4.supplementary-material1.caption1.p2" name="article1.body1.sec4.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.03 MB XLS)</p>
+<a name="pone.0000881.s002" id="pone.0000881.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000881.s002">Table S2. </a></strong></p><a id="article1.body1.sec4.supplementary-material2.caption1.p1" name="article1.body1.sec4.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Reactions corresponding to the top 20 GS and degree hubs in the three organisms</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000881.s002</p><a id="article1.body1.sec4.supplementary-material2.caption1.p2" name="article1.body1.sec4.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.01 MB TXT)</p>
+<a name="pone.0000881.s003" id="pone.0000881.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000881.s003">Text S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material3.caption1.p1" name="article1.body1.sec4.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Currency metabolites in the three organisms</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000881.s003</p><a id="article1.body1.sec4.supplementary-material3.caption1.p2" name="article1.body1.sec4.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.01 MB TXT)</p>
+<a name="pone.0000881.s004" id="pone.0000881.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000881.s004">Figure S1. </a></strong></p><a id="article1.body1.sec4.supplementary-material4.caption1.p1" name="article1.body1.sec4.supplementary-material4.caption1.p1"></a><p class="preSiDOI">Construction of stoichiometric matrix and reaction influence matrix for a hypothetical set of reactions</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000881.s004</p><a id="article1.body1.sec4.supplementary-material4.caption1.p2" name="article1.body1.sec4.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Professor N. V. Joshi, Centre for Ecological Sciences, Indian Institute of Science for his critical comments on the work. The computational facilities provided by the Supercomputer Education and Research Centre and Distributed Information Centre of Indian Institute of Science are gratefully acknowledged.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: KR NC SV KV. Performed the experiments: KR KV. Analyzed the data: KR NC SV KV. Wrote the paper: KR NC SV KV.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000881-Uetz1" id="pone.0000881-Uetz1"></a>Uetz P, Giot L, Cagney G, Mansfield TA, Judson RS, et al.  (2000) A comprehensive analysis of protein–protein interactions in <em>Saccharomyces cerevisiae</em>. Nature  403: 623–627.  <ul class="find" data-citedArticleID="991092" data-doi="10.1038/35001009"><li><a href="http://dx.doi.org/10.1038/35001009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comprehensive+analysis+of+protein%E2%80%93protein+interactions+in+Saccharomyces+cerevisiae." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comprehensive+analysis+of+protein%E2%80%93protein+interactions+in+Saccharomyces+cerevisiae.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000881-Jeong1" id="pone.0000881-Jeong1"></a>Jeong J, Mason SP, Barabási A-L, Oltvai ZN (2001) Lethality and centrality in protein networks. Nature  411: 41–42.  <ul class="find" data-citedArticleID="991046" data-doi="10.1038/35075138"><li><a href="http://dx.doi.org/10.1038/35075138" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Lethality+and+centrality+in+protein+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Lethality+and+centrality+in+protein+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000881-ShenOrr1" id="pone.0000881-ShenOrr1"></a>Shen-Orr SS, Milo R, Mangan S, Alon U (2002) Network motifs in the transcriptional regulation network of <em>Escherichia coli</em>. Nat Genet  31: 64–68.  <ul class="find" data-citedArticleID="991086" data-doi="10.1038/ng881"><li><a href="http://dx.doi.org/10.1038/ng881" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Network+motifs+in+the+transcriptional+regulation+network+of+Escherichia+coli." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Network+motifs+in+the+transcriptional+regulation+network+of+Escherichia+coli.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000881-Luscombe1" id="pone.0000881-Luscombe1"></a>Luscombe NM, Babu MM, Yu H, Snyder M, Teichmann SA, Gerstein M (2004) Genomic analysis of regulatory network dynamics reveals large topological changes. Nature  431: 308–312.  <ul class="find" data-citedArticleID="991062" data-doi="10.1038/nature02782"><li><a href="http://dx.doi.org/10.1038/nature02782" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+analysis+of+regulatory+network+dynamics+reveals+large+topological+changes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+analysis+of+regulatory+network+dynamics+reveals+large+topological+changes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000881-Edwards1" id="pone.0000881-Edwards1"></a>Edwards JS, Palsson BO (2000) The <em>Escherichia coli</em> MG1655 <em>in silico</em> metabolic genotype: Its definition, characteristics, and capabilities. Proc Natl Acad Sci U S A  97: 5528–5533.  <ul class="find" data-citedArticleID="991022" data-doi="10.1073/pnas.97.10.5528"><li><a href="http://dx.doi.org/10.1073/pnas.97.10.5528" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Escherichia+coli+MG1655+in+silico+metabolic+genotype%3A+Its+definition%2C+characteristics%2C+and+capabilities." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Escherichia+coli+MG1655+in+silico+metabolic+genotype%3A+Its+definition%2C+characteristics%2C+and+capabilities.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000881-Becker1" id="pone.0000881-Becker1"></a>Becker SA, Palsson BO (2005) Genome-scale reconstruction of the metabolic network in <em>Staphylococcus aureus</em> N315: An initial draft to the two-dimensional annotation. BMC Microbiology  5: 8.  <ul class="find" data-citedArticleID="991012"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Genome-scale+reconstruction+of+the+metabolic+network+in+Staphylococcus+aureus+N315%3A+An+initial+draft+to+the+two-dimensional+annotation.&amp;auth=&amp;atitle=Genome-scale+reconstruction+of+the+metabolic+network+in+Staphylococcus+aureus+N315%3A+An+initial+draft+to+the+two-dimensional+annotation." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-scale+reconstruction+of+the+metabolic+network+in+Staphylococcus+aureus+N315%3A+An+initial+draft+to+the+two-dimensional+annotation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-scale+reconstruction+of+the+metabolic+network+in+Staphylococcus+aureus+N315%3A+An+initial+draft+to+the+two-dimensional+annotation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000881-Eisenberg1" id="pone.0000881-Eisenberg1"></a>Eisenberg E, Levanon EY (2003) Preferential attachment in the protein network evolution. Phys Rev Lett  91: 138701.  <ul class="find" data-citedArticleID="991024" data-doi="10.1103/physrevlett.91.138701"><li><a href="http://dx.doi.org/10.1103/physrevlett.91.138701" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Preferential+attachment+in+the+protein+network+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Preferential+attachment+in+the+protein+network+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000881-Park1" id="pone.0000881-Park1"></a>Park D, Lee S, Bolser D, Schroeder M, Lappe M, et al.  (2004) Comparative interactomics analysis of protein family interaction networks using PSIMAP (protein structural interactome map). Bioinformatics  21: 3234–3240.  <ul class="find" data-citedArticleID="991070" data-doi="10.1093/bioinformatics/bti512"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti512" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+interactomics+analysis+of+protein+family+interaction+networks+using+PSIMAP+%28protein+structural+interactome+map%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+interactomics+analysis+of+protein+family+interaction+networks+using+PSIMAP+%28protein+structural+interactome+map%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000881-Kunin1" id="pone.0000881-Kunin1"></a>Kunin V, Pereira-Leal JB, Ouzounis CA (2004) Functional evolution of the yeast protein interaction network. Mol Biol Evol  21: 1171–6.  <ul class="find" data-citedArticleID="991058" data-doi="10.1093/molbev/msh085"><li><a href="http://dx.doi.org/10.1093/molbev/msh085" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+evolution+of+the+yeast+protein+interaction+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+evolution+of+the+yeast+protein+interaction+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000881-Wuchty1" id="pone.0000881-Wuchty1"></a>Wuchty S, Barabasi AL, Ferdig MT (2006) Stable evolutionary signal in a yeast protein interaction network. BMC Evol Biol  6: 8.  <ul class="find" data-citedArticleID="991100" data-doi="10.1186/1471-2148-6-8"><li><a href="http://dx.doi.org/10.1186/1471-2148-6-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stable+evolutionary+signal+in+a+yeast+protein+interaction+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stable+evolutionary+signal+in+a+yeast+protein+interaction+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000881-Liang1" id="pone.0000881-Liang1"></a>Liang Z, Xu M, Teng M, Niu L (2006) Comparison of protein interaction networks reveals species conservation and divergence. BMC Bioinformatics  7: 457.  <ul class="find" data-citedArticleID="991060" data-doi="10.1093/bioinformatics/btl287"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl287" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparison+of+protein+interaction+networks+reveals+species+conservation+and+divergence." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparison+of+protein+interaction+networks+reveals+species+conservation+and+divergence.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000881-Cole1" id="pone.0000881-Cole1"></a>Cole ST, Eiglmeier K, Parkhill J, James KD, Thomson NR, et al.  (2001) Massive gene decay in the leprosy bacillus. Nature  409: 1007–1011.  <ul class="find" data-citedArticleID="991020" data-doi="10.1038/35059006"><li><a href="http://dx.doi.org/10.1038/35059006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Massive+gene+decay+in+the+leprosy+bacillus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Massive+gene+decay+in+the+leprosy+bacillus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000881-Jeong2" id="pone.0000881-Jeong2"></a>Jeong H, Tombor B, Albert R, Oltvai ZN, Barabási AL (2000) The large scale organization of metabolic networks. Nature  407: 651–654.  <ul class="find" data-citedArticleID="991048" data-doi="10.1038/35036627"><li><a href="http://dx.doi.org/10.1038/35036627" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+large+scale+organization+of+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+large+scale+organization+of+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000881-Bilke1" id="pone.0000881-Bilke1"></a>Bilke S, Peterson C (2001) Topological properties of citation and metabolic networks. Phys Rev E  64: 036106.  <ul class="find" data-citedArticleID="991014" data-doi="10.1103/physreve.64.036106"><li><a href="http://dx.doi.org/10.1103/physreve.64.036106" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Topological+properties+of+citation+and+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Topological+properties+of+citation+and+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000881-Wolf1" id="pone.0000881-Wolf1"></a>Wolf YI, Karev G, Koonin EV (2002) Scale free networks in biology: new insights into the fundamentals of evolution? Bioessays  24: 105–109.  <ul class="find" data-citedArticleID="991098" data-doi="10.1002/bies.10059"><li><a href="http://dx.doi.org/10.1002/bies.10059" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Scale+free+networks+in+biology%3A+new+insights+into+the+fundamentals+of+evolution%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Scale+free+networks+in+biology%3A+new+insights+into+the+fundamentals+of+evolution%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000881-Ma1" id="pone.0000881-Ma1"></a>Ma HW, Zeng AP (2003a) Reconstruction of metabolic networks from genome data and analysis of their global structure for various organisms. Bioinformatics  19: 270–277.  <ul class="find" data-citedArticleID="991064" data-doi="10.1093/bioinformatics/19.2.270"><li><a href="http://dx.doi.org/10.1093/bioinformatics/19.2.270" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reconstruction+of+metabolic+networks+from+genome+data+and+analysis+of+their+global+structure+for+various+organisms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reconstruction+of+metabolic+networks+from+genome+data+and+analysis+of+their+global+structure+for+various+organisms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000881-Ma2" id="pone.0000881-Ma2"></a>Ma HW, Zeng AP (2003b) The connectivity structure, giant strong component and centrality of metabolic networks. Bioinformatics  19: 1423–1430.  <ul class="find" data-citedArticleID="991066" data-doi="10.1093/bioinformatics/btg177"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg177" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+connectivity+structure%2C+giant+strong+component+and+centrality+of+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+connectivity+structure%2C+giant+strong+component+and+centrality+of+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000881-Wagner1" id="pone.0000881-Wagner1"></a>Wagner A, Fell DA (2001) The small world inside large metabolic networks. Proc R Soc Lond B  268: 1803–1810.  <ul class="find" data-citedArticleID="991096" data-doi="10.1098/rspb.2001.1711"><li><a href="http://dx.doi.org/10.1098/rspb.2001.1711" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+small+world+inside+large+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+small+world+inside+large+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000881-vanHelden1" id="pone.0000881-vanHelden1"></a>van Helden J, Wernisch L, Gilbert D, Wodak S (2002)  Graph-based analysis of metabolic networks. In: Mewes HW, Seidel H, Weiss B, editors. Bioinformatics and Genome Analysis, volume 38 of Ernst Schering Research Foundation Workshop. Springer Verlag. pp. 245–274.  <ul class="find-nolinks"></ul></li><li><span class="label">20.
+              </span><a name="pone.0000881-Fell1" id="pone.0000881-Fell1"></a>Fell DA, Wagner A (2000) The small world of metabolism. Nat Biotechnol  18: 1121–1122.  <ul class="find" data-citedArticleID="991028" data-doi="10.1038/81025"><li><a href="http://dx.doi.org/10.1038/81025" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+small+world+of+metabolism." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+small+world+of+metabolism.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000881-Ravasz1" id="pone.0000881-Ravasz1"></a>Ravasz E, Somera AL, Mongru DA, Oltvai ZN, Barabási AL (2002) Hierarchical organization of modularity in metabolic networks. Science  297: 1551–1555.  <ul class="find" data-citedArticleID="991080" data-doi="10.1126/science.1073374"><li><a href="http://dx.doi.org/10.1126/science.1073374" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Hierarchical+organization+of+modularity+in+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Hierarchical+organization+of+modularity+in+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000881-Han1" id="pone.0000881-Han1"></a>Han J-DJ, Bertin N, Hao T, Goldberg DS, Berriz GF, et al.  (2004) Evidence for dynamically organized modularity in the yeast protein–protein interaction network. Nature  430: 88–93.  <ul class="find" data-citedArticleID="991042" data-doi="10.1038/nature02555"><li><a href="http://dx.doi.org/10.1038/nature02555" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evidence+for+dynamically+organized+modularity+in+the+yeast+protein%E2%80%93protein+interaction+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evidence+for+dynamically+organized+modularity+in+the+yeast+protein%E2%80%93protein+interaction+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000881-Vishveshwara1" id="pone.0000881-Vishveshwara1"></a>Vishveshwara S, Brinda KV, Kannan N (2002) Protein structure: Insights from graph theory. J Th Comp Chem  1: 187–211.  <ul class="find" data-citedArticleID="991094" data-doi="10.1142/s0219633602000117"><li><a href="http://dx.doi.org/10.1142/s0219633602000117" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Protein+structure%3A+Insights+from+graph+theory." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Protein+structure%3A+Insights+from+graph+theory.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000881-Brinda1" id="pone.0000881-Brinda1"></a>Brinda KV, Vishveshwara S (2005) A network representation of protein structures: Implications to protein stability. Biophysical Journal  89: 4159–4170.  <ul class="find" data-citedArticleID="991016" data-doi="10.1529/biophysj.105.064485"><li><a href="http://dx.doi.org/10.1529/biophysj.105.064485" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+network+representation+of+protein+structures%3A+Implications+to+protein+stability." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+network+representation+of+protein+structures%3A+Implications+to+protein+stability.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000881-Sistla1" id="pone.0000881-Sistla1"></a>Sistla RK, Brinda KV, Vishveshwara S (2005) Identification of domains and domain interface residues in multidomain proteins from graph spectral method. Proteins: Struct Funct Bioinfo  59: 616–626.  <ul class="find" data-citedArticleID="991088" data-doi="10.1002/prot.20444"><li><a href="http://dx.doi.org/10.1002/prot.20444" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+domains+and+domain+interface+residues+in+multidomain+proteins+from+graph+spectral+method." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+domains+and+domain+interface+residues+in+multidomain+proteins+from+graph+spectral+method.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000881-Krishnadev1" id="pone.0000881-Krishnadev1"></a>Krishnadev O, Brinda KV, Vishveshwara S (2005) A graph spectral analysis of the structural similarity network of protein chains. Proteins: Struct Funct Bioinfo  61: 152–163.  <ul class="find" data-citedArticleID="991056" data-doi="10.1002/prot.20532"><li><a href="http://dx.doi.org/10.1002/prot.20532" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+graph+spectral+analysis+of+the+structural+similarity+network+of+protein+chains." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+graph+spectral+analysis+of+the+structural+similarity+network+of+protein+chains.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000881-Bu1" id="pone.0000881-Bu1"></a>Bu D, Zhao Y, Cai L, Xue H, Zhu X, et al.  (2003) Topological structure analysis of the protein-protein interaction network in budding yeast. Nucleic Acids Res  31: 2443–2450.  <ul class="find" data-citedArticleID="991018" data-doi="10.1093/nar/gkg340"><li><a href="http://dx.doi.org/10.1093/nar/gkg340" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Topological+structure+analysis+of+the+protein-protein+interaction+network+in+budding+yeast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Topological+structure+analysis+of+the+protein-protein+interaction+network+in+budding+yeast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000881-Sen1" id="pone.0000881-Sen1"></a>Sen TZ, Kloczkowski A, Jernigan RL (2006) Functional clustering of yeast proteins from the protein-protein interaction network. BMC Bioinformatics  7: 355.  <ul class="find" data-citedArticleID="991084" data-doi="10.1186/1471-2105-7-355"><li><a href="http://dx.doi.org/10.1186/1471-2105-7-355" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+clustering+of+yeast+proteins+from+the+protein-protein+interaction+network." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+clustering+of+yeast+proteins+from+the+protein-protein+interaction+network.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000881-Kettner1" id="pone.0000881-Kettner1"></a>Kettner C (2007) Good publication practice as a prerequisite for comparable enzyme data? In Silico Biology  7(S1): 07.  <ul class="find" data-citedArticleID="991052"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Good+publication+practice+as+a+prerequisite+for+comparable+enzyme+data%3F&amp;auth=&amp;atitle=Good+publication+practice+as+a+prerequisite+for+comparable+enzyme+data%3F" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Good+publication+practice+as+a+prerequisite+for+comparable+enzyme+data%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Good+publication+practice+as+a+prerequisite+for+comparable+enzyme+data%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000881-Zhao1" id="pone.0000881-Zhao1"></a>Zhao J, Yu H, Luo J-H, Cao Z-W, Li Y-X (2006) Hierarchical modularity of nested bow-ties in metabolic networks. BMC Bioinformatics  7: 386.  <ul class="find" data-citedArticleID="991102"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Hierarchical+modularity+of+nested+bow-ties+in+metabolic+networks.&amp;auth=&amp;atitle=Hierarchical+modularity+of+nested+bow-ties+in+metabolic+networks." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Hierarchical+modularity+of+nested+bow-ties+in+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Hierarchical+modularity+of+nested+bow-ties+in+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000881-Rahman1" id="pone.0000881-Rahman1"></a>Rahman SA, Schomburg D (2006) Observing local and global properties of metabolic pathways: ‘load points’ and ‘choke points’ in the metabolic networks. Bioinformatics  22: 1767–1774.  <ul class="find" data-citedArticleID="991076" data-doi="10.1093/bioinformatics/btl181"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl181" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Observing+local+and+global+properties+of+metabolic+pathways%3A+%E2%80%98load+points%E2%80%99+and+%E2%80%98choke+points%E2%80%99+in+the+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Observing+local+and+global+properties+of+metabolic+pathways%3A+%E2%80%98load+points%E2%80%99+and+%E2%80%98choke+points%E2%80%99+in+the+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000881-Kim1" id="pone.0000881-Kim1"></a>Kim TY, Kim HU, Park JM, Song H, Kim JS, et al.  (2007) Genome-Scale Analysis of <em>Mannheimia succiniciproducens</em> Metabolism. Biotechnology and Bioengineering.   <em>In Press</em> (DOI: 10.1002/bit. 21433).  <ul class="find" data-citedArticleID="991054" data-doi="10.1002/bit.21433"><li><a href="http://dx.doi.org/10.1002/bit.21433" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-Scale+Analysis+of+Mannheimia+succiniciproducens+Metabolism." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-Scale+Analysis+of+Mannheimia+succiniciproducens+Metabolism.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000881-Felix1" id="pone.0000881-Felix1"></a>Felix L, Valiente G (2007) Validation of metabolic pathway databases based on chemical substructure search. Biomol Eng.   <em>In Press</em> (DOI:10.1016/j.bioeng.2007.02.008).  <ul class="find" data-citedArticleID="991026" data-doi="10.1016/j.bioeng.2007.02.008"><li><a href="http://dx.doi.org/10.1016/j.bioeng.2007.02.008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Validation+of+metabolic+pathway+databases+based+on+chemical+substructure+search." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Validation+of+metabolic+pathway+databases+based+on+chemical+substructure+search.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000881-Goto1" id="pone.0000881-Goto1"></a>Goto S, Okuno Y, Hattori M, Nishioka T, Kanehisa M (2002) LIGAND: database of chemical compounds and reactions in biological pathways. Nucleic Acids Res  30: 402–404.  <ul class="find" data-citedArticleID="991034" data-doi="10.1093/nar/30.1.402"><li><a href="http://dx.doi.org/10.1093/nar/30.1.402" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=LIGAND%3A+database+of+chemical+compounds+and+reactions+in+biological+pathways." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22LIGAND%3A+database+of+chemical+compounds+and+reactions+in+biological+pathways.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000881-Gansner1" id="pone.0000881-Gansner1"></a>Gansner ER, North SC (2000) An open graph visualization system and its applications to software engineering. Softw Pract Exper  30: 1203–1233.  <ul class="find" data-citedArticleID="991032" data-doi="10.1002/1097-024x(200009)30:11<1203::aid-spe338&gt;3.3.co;2-e"><li><a href="http://dx.doi.org/10.1002/1097-024x(200009)30:11<1203::aid-spe338&gt;3.3.co;2-e" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+open+graph+visualization+system+and+its+applications+to+software+engineering." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+open+graph+visualization+system+and+its+applications+to+software+engineering.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000881-Holme1" id="pone.0000881-Holme1"></a>Holme P, Huss M (2003) Subnetwork hierarchies of biochemical pathways. Bioinformatics  19: 532–538.  <ul class="find" data-citedArticleID="991044" data-doi="10.1093/bioinformatics/btg033"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg033" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Subnetwork+hierarchies+of+biochemical+pathways." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Subnetwork+hierarchies+of+biochemical+pathways.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000881-Papin1" id="pone.0000881-Papin1"></a>Papin JA, Reed JL, Palsson BO (2004) Hierarchical thinking in network biology: the unbiased modularization of biochemical networks. Trends Biochem Sci  29: 641–647.  <ul class="find" data-citedArticleID="991068" data-doi="10.1016/j.tibs.2004.10.001"><li><a href="http://dx.doi.org/10.1016/j.tibs.2004.10.001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Hierarchical+thinking+in+network+biology%3A+the+unbiased+modularization+of+biochemical+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Hierarchical+thinking+in+network+biology%3A+the+unbiased+modularization+of+biochemical+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000881-Guimera1" id="pone.0000881-Guimera1"></a>Guimera R, Nunes Amaral LA (2005) Functional cartography of complex metabolic networks. Nature  433: 895–900.  <ul class="find" data-citedArticleID="991038" data-doi="10.1038/nature03288"><li><a href="http://dx.doi.org/10.1038/nature03288" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+cartography+of+complex+metabolic+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+cartography+of+complex+metabolic+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000881-Barry1" id="pone.0000881-Barry1"></a>Barry CE III, Lee RE, Mdluli K, Simpson AE, Schroeder BG, et al.  (1998) Mycolic acids: Structure, biosynthesis and physiological functions. Prog Lipid Res  37: 143–179.  <ul class="find" data-citedArticleID="991010" data-doi="10.1016/s0163-7827(98)00008-3"><li><a href="http://dx.doi.org/10.1016/s0163-7827(98)00008-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mycolic+acids%3A+Structure%2C+biosynthesis+and+physiological+functions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mycolic+acids%3A+Structure%2C+biosynthesis+and+physiological+functions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000881-Takayama1" id="pone.0000881-Takayama1"></a>Takayama K, Wang C, Besra GS (2005) Pathway to synthesis and processing of mycolic acids in Mycobacterium tuberculosis. Clin Microbiol Rev  18: 81–101.  <ul class="find" data-citedArticleID="991090" data-doi="10.1128/cmr.18.1.81-101.2005"><li><a href="http://dx.doi.org/10.1128/cmr.18.1.81-101.2005" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Pathway+to+synthesis+and+processing+of+mycolic+acids+in+Mycobacterium+tuberculosis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Pathway+to+synthesis+and+processing+of+mycolic+acids+in+Mycobacterium+tuberculosis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000881-Raman1" id="pone.0000881-Raman1"></a>Raman K, Rajagopalan P, Chandra N (2005) Flux balance analysis of mycolic acid pathway: Targets for anti-tubercular drugs. PLoS Comput Biol  1: e46.  <ul class="find" data-citedArticleID="991078" data-doi="10.1371/journal.pcbi.0010046.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0010046.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Flux+balance+analysis+of+mycolic+acid+pathway%3A+Targets+for+anti-tubercular+drugs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Flux+balance+analysis+of+mycolic+acid+pathway%3A+Targets+for+anti-tubercular+drugs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0000881-Albert1" id="pone.0000881-Albert1"></a>Albert R, Jeong H, Barabási AL (2000) Error and attack tolerance of complex networks. Nature  406: 378–382.  <ul class="find" data-citedArticleID="991006" data-doi="10.1038/35019019"><li><a href="http://dx.doi.org/10.1038/35019019" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Error+and+attack+tolerance+of+complex+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Error+and+attack+tolerance+of+complex+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0000881-Barabsi1" id="pone.0000881-Barabsi1"></a>Barabási AL (2002) Linked: The new science of networks. Cambridge, Massachusetts: Perseus Publishing.   <ul class="find-nolinks"></ul></li><li><span class="label">44.
+              </span><a name="pone.0000881-Park2" id="pone.0000881-Park2"></a>Park J, Bolser D (2001) Conservation of protein interaction network in evolution. Genome Informatics  12: 135–140.  <ul class="find" data-citedArticleID="991072"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Conservation+of+protein+interaction+network+in+evolution.&amp;auth=&amp;atitle=Conservation+of+protein+interaction+network+in+evolution." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Conservation+of+protein+interaction+network+in+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Conservation+of+protein+interaction+network+in+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0000881-Sassetti1" id="pone.0000881-Sassetti1"></a>Sassetti CM, Boyd DH, Rubin EJ (2003) Genes required for mycobacterial growth defined by high density mutagenesis. Mol Microbiol  48: 77–84.  <ul class="find" data-citedArticleID="991082" data-doi="10.1046/j.1365-2958.2003.03425.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2958.2003.03425.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genes+required+for+mycobacterial+growth+defined+by+high+density+mutagenesis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genes+required+for+mycobacterial+growth+defined+by+high+density+mutagenesis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0000881-Kannan1" id="pone.0000881-Kannan1"></a>Kannan N, Vishveshwara S (1999) Identification of side-chain clusters in protein structures by a graph spectral method. J Mol Biol  292: 441–464.  <ul class="find" data-citedArticleID="991050" data-doi="10.1006/jmbi.1999.3058"><li><a href="http://dx.doi.org/10.1006/jmbi.1999.3058" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+side-chain+clusters+in+protein+structures+by+a+graph+spectral+method." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+side-chain+clusters+in+protein+structures+by+a+graph+spectral+method.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0000881-Hall1" id="pone.0000881-Hall1"></a>Hall KM (1970) An r-dimensional quadratic placement algorithm. Manag Sci  17: 219–229.  <ul class="find" data-citedArticleID="991040" data-doi="10.1287/mnsc.17.3.219"><li><a href="http://dx.doi.org/10.1287/mnsc.17.3.219" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+r-dimensional+quadratic+placement+algorithm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+r-dimensional+quadratic+placement+algorithm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0000881-Patra1" id="pone.0000881-Patra1"></a>Patra SM, Vishveshwara S (2000) Backbone cluster identification in proteins by a graph theoretical method. Biophys Chem  84: 13–25.  <ul class="find" data-citedArticleID="991074" data-doi="10.1016/s0301-4622(99)00134-9"><li><a href="http://dx.doi.org/10.1016/s0301-4622(99)00134-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Backbone+cluster+identification+in+proteins+by+a+graph+theoretical+method." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Backbone+cluster+identification+in+proteins+by+a+graph+theoretical+method.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">49.
+              </span><a name="pone.0000881-Floyd1" id="pone.0000881-Floyd1"></a>Floyd RW (1962) Algorithm 97: shortest path. Comm ACM  5: 345.  <ul class="find" data-citedArticleID="991030" data-doi="10.1145/367766.368168"><li><a href="http://dx.doi.org/10.1145/367766.368168" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Algorithm+97%3A+shortest+path." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Algorithm+97%3A+shortest+path.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">50.
+              </span><a name="pone.0000881-Gross1" id="pone.0000881-Gross1"></a>Gross J, Yellen J (1999) Discrete mathematics and its applications. London: CRC press.   <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.XML" value="137423"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.PDF" value="460776"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t001.PNG_L" value="212387"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t001.PNG_M" value="118769"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t001.PNG_S" value="13502"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t001.TIF" value="1003504"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t001.PNG_I" value="35940"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g001.PNG_L" value="889154"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g001.PNG_M" value="90274"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g001.PNG_S" value="8149"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g001.TIF" value="1537340"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g001.PNG_I" value="30862"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g002.PNG_L" value="2980097"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g002.PNG_M" value="323352"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g002.PNG_S" value="17861"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g002.TIF" value="4531084"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g002.PNG_I" value="151179"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g003.PNG_L" value="329228"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g003.PNG_M" value="101602"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g003.PNG_S" value="8408"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g003.TIF" value="649784"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.g003.PNG_I" value="31931"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t002.PNG_L" value="471031"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t002.PNG_M" value="140012"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t002.PNG_S" value="17679"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t002.TIF" value="2215358"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t002.PNG_I" value="81083"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t003.PNG_L" value="268831"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t003.PNG_M" value="97467"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t003.PNG_S" value="11302"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t003.TIF" value="1164592"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t003.PNG_I" value="29117"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t004.PNG_L" value="97533"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t004.PNG_M" value="57452"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t004.PNG_S" value="8567"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t004.TIF" value="421268"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.t004.PNG_I" value="17453"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.e001.PNG" value="5828"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.e001.TIF" value="21804"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.e002.PNG" value="8246"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.e002.TIF" value="24168"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.s001.XLS" value="25600"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.s002.TXT" value="9884"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.s003.TXT" value="5412"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000881.s004.DOC" value="34816"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000881&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000881" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000881&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000881&volume=&issue=&title=Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis&author_name=Ketki%20D.%20Verkhedkar%2C%20Karthik%20Raman%2C%20Nagasuma%20R.%20Chandra%2C%20Saraswathi%20Vishveshwara&start_page=1&end_page=13" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000881" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881&amp;t=Metabolome%20Based%20Reaction%20Graphs%20of%20M.%20tuberculosis%20and%20M.%20leprae%3A%20A%20Comparative%20Network%20Analysis" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881&title=Metabolome%20Based%20Reaction%20Graphs%20of%20M.%20tuberculosis%20and%20M.%20leprae%3A%20A%20Comparative%20Network%20Analysis&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881&amp;title=Metabolome%20Based%20Reaction%20Graphs%20of%20M.%20tuberculosis%20and%20M.%20leprae%3A%20A%20Comparative%20Network%20Analysis" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000881&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Metabolome Based Reaction Graphs of M. tuberculosis and M. leprae: A Comparative Network Analysis';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000881';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Metabolome%20Based%20Reaction%20Graphs%20of%20M.%20tuberculosis%20and%20M.%20leprae%3A%20A%20Comparative%20Network%20Analysis http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000881" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000881" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Drug+metabolism%22" title="Search for articles in the subject area:'Drug metabolism'"><div class="flagText">Drug metabolism</div></a>
+              <div data-categoryid="18167" data-articleid="24600"
+                   data-categoryname="Drug metabolism"
+                   class="flagImage" title="Flag 'Drug metabolism' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Enzyme+metabolism%22" title="Search for articles in the subject area:'Enzyme metabolism'"><div class="flagText">Enzyme metabolism</div></a>
+              <div data-categoryid="20267" data-articleid="24600"
+                   data-categoryname="Enzyme metabolism"
+                   class="flagImage" title="Flag 'Enzyme metabolism' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Graphs%22" title="Search for articles in the subject area:'Graphs'"><div class="flagText">Graphs</div></a>
+              <div data-categoryid="19267" data-articleid="24600"
+                   data-categoryname="Graphs"
+                   class="flagImage" title="Flag 'Graphs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Metabolic+networks%22" title="Search for articles in the subject area:'Metabolic networks'"><div class="flagText">Metabolic networks</div></a>
+              <div data-categoryid="21289" data-articleid="24600"
+                   data-categoryname="Metabolic networks"
+                   class="flagImage" title="Flag 'Metabolic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Metabolic+pathways%22" title="Search for articles in the subject area:'Metabolic pathways'"><div class="flagText">Metabolic pathways</div></a>
+              <div data-categoryid="20601" data-articleid="24600"
+                   data-categoryname="Metabolic pathways"
+                   class="flagImage" title="Flag 'Metabolic pathways' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mycobacterium+leprae%22" title="Search for articles in the subject area:'Mycobacterium leprae'"><div class="flagText">Mycobacterium leprae</div></a>
+              <div data-categoryid="44351" data-articleid="24600"
+                   data-categoryname="Mycobacterium leprae"
+                   class="flagImage" title="Flag 'Mycobacterium leprae' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mycobacterium+tuberculosis%22" title="Search for articles in the subject area:'Mycobacterium tuberculosis'"><div class="flagText">Mycobacterium tuberculosis</div></a>
+              <div data-categoryid="42725" data-articleid="24600"
+                   data-categoryname="Mycobacterium tuberculosis"
+                   class="flagImage" title="Flag 'Mycobacterium tuberculosis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+metabolism%22" title="Search for articles in the subject area:'Protein metabolism'"><div class="flagText">Protein metabolism</div></a>
+              <div data-categoryid="19757" data-articleid="24600"
+                   data-categoryname="Protein metabolism"
+                   class="flagImage" title="Flag 'Protein metabolism' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=6050'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6523'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=3071&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=5449">Mycobacterial Metabolomics - good and worthwhile</a><br>Posted by NiyazAhmed</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

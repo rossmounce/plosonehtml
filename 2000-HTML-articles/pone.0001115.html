@@ -1,0 +1,1364 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001115"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001115" />
+
+    <meta name="citation_title" content="Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes"/>
+    <meta itemprop="name" content="Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes"/>
+
+      <meta name="citation_author" content="Stein Aerts"/>
+            <meta name="citation_author_institution" content="Laboratory of Neurogenetics, Department of Molecular and Developmental Genetics, Vlaams Instituut voor Biotechnologie (VIB), Leuven, Belgium"/>
+            <meta name="citation_author_institution" content="Department of Human Genetics, K.U. Leuven School of Medicine, Leuven, Belgium"/>
+      <meta name="citation_author" content="Jacques van Helden"/>
+            <meta name="citation_author_institution" content="Service de Conformation des Macromolécules Biologiques et de Bioinformatique, Département de Biologie Moléculaire, Université Libre de Bruxelles, Bruxelles, Belgium"/>
+      <meta name="citation_author" content="Olivier Sand"/>
+            <meta name="citation_author_institution" content="Service de Conformation des Macromolécules Biologiques et de Bioinformatique, Département de Biologie Moléculaire, Université Libre de Bruxelles, Bruxelles, Belgium"/>
+      <meta name="citation_author" content="Bassem A. Hassan"/>
+            <meta name="citation_author_institution" content="Laboratory of Neurogenetics, Department of Molecular and Developmental Genetics, Vlaams Instituut voor Biotechnologie (VIB), Leuven, Belgium"/>
+            <meta name="citation_author_institution" content="Department of Human Genetics, K.U. Leuven School of Medicine, Leuven, Belgium"/>
+
+    <meta name="citation_date" content="2007/11/7"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001115.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1115"/>
+    <meta name="citation_issue" content="11"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_author=EH Davidson; citation_number=1; citation_pages=261; citation_date=2001; citation_publisher=Academic Press; " />
+      <meta name="citation_reference" content="citation_title=EGF receptor signaling triggers recruitment of Drosophila sense organ precursors by stimulating proneural gene autoregulation.; citation_author=PI zur Lage; citation_author=LM Powell; citation_author=DR Prentice; citation_author=P McLaughlin; citation_author=AP Jarman; citation_journal_title=Dev Cell; citation_volume=7; citation_number=2; citation_pages=687-696; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Transcriptional regulation of atonal during development of the Drosophila peripheral nervous system.; citation_author=Y Sun; citation_author=LY Jan; citation_author=YN Jan; citation_journal_title=Development; citation_volume=125; citation_number=3; citation_pages=3731-3740; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Atonal regulates neurite arborization but does not act as a proneural gene in the Drosophila brain.; citation_author=BA Hassan; citation_author=NA Bermingham; citation_author=Y He; citation_author=Y Sun; citation_author=YN Jan; citation_journal_title=Neuron; citation_volume=25; citation_number=4; citation_pages=549-561; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide computational prediction of transcriptional regulatory modules reveals new insights into human gene expression.; citation_author=M Blanchette; citation_author=AR Bataille; citation_author=X Chen; citation_author=C Poitras; citation_author=J Laganiere; citation_journal_title=Genome Res; citation_volume=16; citation_number=5; citation_pages=656-668; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Identifying transcriptional targets.; citation_author=NV Taverner; citation_author=JC Smith; citation_author=FC Wardle; citation_journal_title=Genome Biol; citation_volume=5; citation_number=6; citation_pages=210; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Applied bioinformatics for the identification of regulatory elements.; citation_author=WW Wasserman; citation_author=A Sandelin; citation_journal_title=Nat Rev Genet; citation_volume=5; citation_number=7; citation_pages=276-287; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide analysis of clustered Dorsal binding sites identifies putative target genes in the Drosophila embryo.; citation_author=M Markstein; citation_author=P Markstein; citation_author=V Markstein; citation_author=SM Levine; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=99; citation_number=8; citation_pages=763-768; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The role of binding site cluster strength in Bicoid-dependent patterning in Drosophila.; citation_author=A Ochoa-Espinosa; citation_author=G Yucel; citation_author=L Kaplan; citation_author=A Pare; citation_author=N Pura; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=102; citation_number=9; citation_pages=4960-4965; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=SCORE: a computational approach to the identification of cis-regulatory modules and target genes in whole-genome sequence data. Site clustering.; citation_author=M Rebeiz; citation_author=LN Reeves; citation_author=WJ Posakony; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=99; citation_number=10; citation_pages=9888-9893; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Transcriptional control in the segmentation gene network of Drosophila.; citation_author=DM Schroeder; citation_author=M Pearce; citation_author=J Fak; citation_author=H Fan; citation_author=U Unnerstall; citation_journal_title=PLoS Biol; citation_volume=2; citation_number=11; citation_pages=E271; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Computation-based discovery of related transcriptional regulatory modules and motifs using an experimentally validated combinatorial model.; citation_author=MS Halfon; citation_author=Y Grad; citation_author=GM Church; citation_author=AM Michelson; citation_journal_title=Genome Res; citation_volume=12; citation_number=12; citation_pages=1019-1028; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Computational identification of developmental enhancers: conservation and function of transcription factor binding-site clusters in Drosophila.; citation_author=PB Berman; citation_author=DB Pfeiffer; citation_author=RT Laverty; citation_author=LS Salzberg; citation_author=MG Rubin; citation_journal_title=Genome Biol; citation_volume=5; citation_number=13; citation_pages=R61; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=What is a hidden Markov model?; citation_author=SR Eddy; citation_journal_title=Nat Biotechnol; citation_volume=22; citation_number=14; citation_pages=1315-1316; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Cluster-Buster: Finding dense clusters of motifs in DNA sequences.; citation_author=CM Frith; citation_author=CM Li; citation_author=Z Weng; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=15; citation_pages=3666-3668; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Computational detection of genomic cis-regulatory modules applied to body patterning in the early Drosophila embryo.; citation_author=N Rajewsky; citation_author=M Vergassola; citation_author=U Gaul; citation_author=ED Siggia; citation_journal_title=BMC Bioinformatics; citation_volume=3; citation_number=16; citation_pages=30; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Toucan: deciphering the cis-regulatory logic of coregulated genes.; citation_author=S Aerts; citation_author=G Thijs; citation_author=B Coessens; citation_author=M Staes; citation_author=Y Moreau; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=17; citation_pages=1753-1764; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Conservation of regulatory elements between two species of Drosophila.; citation_author=E Emberly; citation_author=N Rajewsky; citation_author=DE Siggia; citation_journal_title=BMC Bioinformatics; citation_volume=4; citation_number=18; citation_pages=57; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Cross-species comparison significantly improves genome-wide prediction of cis-regulatory modules in Drosophila.; citation_author=S Sinha; citation_author=MD Schroeder; citation_author=U Unnerstall; citation_author=U Gaul; citation_author=ED Siggia; citation_journal_title=BMC Bioinformatics; citation_volume=5; citation_number=19; citation_pages=129; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Drosophila DNase I footprint database: a systematic genome annotation of transcription factor binding sites in the fruitfly, Drosophila.; citation_author=MC Bergman; citation_author=WJ Carlson; citation_author=ES Celniker; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=20; citation_pages=1747-1749; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Evolution of genes and genomes on the Drosophila phylogeny.; citation_journal_title=Nature; citation_number=21; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Discovery of functional elements in 12 Drosophila genomes using evolutionary signatures.; citation_author=A Stark; citation_author=MF Lin; citation_author=P Kheradpour; citation_author=J Pederson; citation_author=L Parts; citation_journal_title=Nature; citation_number=22; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Homotypic regulatory clusters in Drosophila.; citation_author=AP Lifanov; citation_author=VJ Makeev; citation_author=AG Nazina; citation_author=DA Papatsenko; citation_journal_title=Genome Res; citation_volume=13; citation_number=23; citation_pages=579-588; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Identification of functional clusters of transcription factor binding motifs in genome sequences: the MSCAN algorithm.; citation_author=O Johansson; citation_author=W Alkema; citation_author=WW Wasserman; citation_author=J Lagergren; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=24; citation_pages=i169-76; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Searching for statistically significant regulatory modules.; citation_author=TL Bailey; citation_author=WS Noble; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=25; citation_pages=II16-II25; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A discriminative model for identifying spatial cis-regulatory modules.; citation_author=E Segal; citation_author=R Sharan; citation_journal_title=J Comput Biol; citation_volume=12; citation_number=26; citation_pages=822-834; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Expression-guided in silico evaluation of candidate cis regulatory codes for Drosophila muscle founder cells.; citation_author=AA Philippakis; citation_author=BW Busser; citation_author=SS Gisselbrecht; citation_author=FS He; citation_author=B Estrada; citation_journal_title=PLoS Comput Biol; citation_volume=2; citation_number=27; citation_pages=e53; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A systematic model to predict transcriptional regulatory mechanisms based on overrepresentation of transcription factor binding profiles.; citation_author=LW Chang; citation_author=R Nagarajan; citation_author=JA Magee; citation_author=J Milbrandt; citation_author=GD Stormo; citation_journal_title=Genome Res; citation_volume=16; citation_number=28; citation_pages=405-413; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Using hexamers to predict cis-regulatory motifs in Drosophila.; citation_author=BY Chan; citation_author=D Kibler; citation_journal_title=BMC Bioinformatics; citation_volume=6; citation_number=29; citation_pages=262; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Gene prioritization through genomic data fusion.; citation_author=S Aerts; citation_author=D Lambrechts; citation_author=S Maity; citation_author=P Van Loo; citation_author=B Coessens; citation_journal_title=Nat Biotechnol; citation_volume=24; citation_number=30; citation_pages=537-544; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=REDfly: a Regulatory Element Database for Drosophila.; citation_author=SM Gallo; citation_author=L Li; citation_author=Z Hu; citation_author=MS Halfon; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=31; citation_pages=381-383; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Large-scale turnover of functional transcription factor binding sites in Drosophila.; citation_author=AM Moses; citation_author=DA Pollard; citation_author=DA Nix; citation_author=VN Iyer; citation_author=XY Li; citation_journal_title=PLoS Comput Biol; citation_volume=2; citation_number=32; citation_pages=e130; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A gene-coexpression network for global discovery of conserved genetic modules.; citation_author=JM Stuart; citation_author=E Segal; citation_author=D Koller; citation_author=SK Kim; citation_journal_title=Science; citation_volume=302; citation_number=33; citation_pages=249-255; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Whole-genome discovery of transcription factor binding sites by network-level conservation.; citation_author=M Pritsker; citation_author=YC Liu; citation_author=MA Beer; citation_author=S Tavazoie; citation_journal_title=Genome Res; citation_volume=14; citation_number=34; citation_pages=99-108; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The UCSC Genome Browser Database.; citation_author=D Karolchik; citation_author=R Baertsch; citation_author=M Diekhans; citation_author=TS Furey; citation_author=A Hinrichs; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=35; citation_pages=51-54; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=LAGAN and Multi-LAGAN: efficient tools for large-scale multiple alignment of genomic DNA.; citation_author=M Brudno; citation_author=CB Do; citation_author=GM Cooper; citation_author=MF Kim; citation_author=E Davydov; citation_journal_title=Genome Res; citation_volume=13; citation_number=36; citation_pages=721-731; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Phylogenetic hidden Markov models.; citation_author=A Siepel; citation_author=D Haussler; citation_number=37; citation_date=2005; citation_publisher=Springer; " />
+      <meta name="citation_reference" content="citation_title=A Gibbs sampling method to detect overrepresented motifs in the upstream regions of coexpressed genes.; citation_author=G Thijs; citation_author=K Marchal; citation_author=M Lescot; citation_author=S Rombauts; citation_author=B De Moor; citation_journal_title=J Comput Biol; citation_volume=9; citation_number=38; citation_pages=447-464; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Extracting regulatory sites from the upstream region of yeast genes by computational analysis of oligonucleotide frequencies.; citation_author=J van Helden; citation_author=B Andre; citation_author=J Collado-Vides; citation_journal_title=J Mol Biol; citation_volume=281; citation_number=39; citation_pages=827-842; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Assessing computational tools for the discovery of transcription factor binding sites.; citation_author=M Tompa; citation_author=N Li; citation_author=TL Bailey; citation_author=GM Church; citation_author=B De Moor; citation_journal_title=Nat Biotechnol; citation_volume=23; citation_number=40; citation_pages=137-144; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=PhyloGibbs: a Gibbs sampling motif finder that incorporates phylogeny.; citation_author=R Siddharthan; citation_author=DE Siggia; citation_author=Ev Nimwegen; citation_journal_title=PLoS Comput Biol; citation_volume=1; citation_number=41; citation_pages=e67; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Direct control of neurogenesis by selector factors in the fly eye: regulation of atonal by Ey and So.; citation_author=T Zhang; citation_author=S Ranade; citation_author=CQ Cai; citation_author=C Clouser; citation_author=F Pignoni; citation_journal_title=Development; citation_volume=133; citation_number=42; citation_pages=4881-4889; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide identification of direct targets of the Drosophila retinal determination protein Eyeless.; citation_author=JE Ostrin; citation_author=Y Li; citation_author=K Hoffman; citation_author=J Liu; citation_author=K Wang; citation_journal_title=Genome Res; citation_volume=16; citation_number=43; citation_pages=466-476; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=FlyTF: a systematic review of site-specific transcription factors in the fruit fly Drosophila melanogaster.; citation_author=B Adryan; citation_author=SA Teichmann; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=44; citation_pages=1532-1533; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=ORegAnno: an open access database and curation system for literature-derived promoters, transcription factor binding sites and regulatory variation.; citation_author=SB Montgomery; citation_author=OL Griffith; citation_author=MC Sleumer; citation_author=CM Bergman; citation_author=M Bilenky; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=45; citation_pages=637-640; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Finding cis-regulatory elements using comparative genomics: some lessons from ENCODE data.; citation_author=DC King; citation_author=J Taylor; citation_author=Y Zhang; citation_author=Y Cheng; citation_author=HA Lawson; citation_journal_title=Genome Res; citation_volume=17; citation_number=46; citation_pages=775-786; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Identifying DNA and protein patterns with statistically significant alignments of multiple sequences.; citation_author=GZ Hertz; citation_author=GD Stormo; citation_journal_title=Bioinformatics; citation_volume=15; citation_number=47; citation_pages=563-577; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=The UCSC Table Browser data retrieval tool.; citation_author=D Karolchik; citation_author=AS Hinrichs; citation_author=TS Furey; citation_author=KM Roskin; citation_author=CW Sugnet; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=48; citation_pages=D493-6; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The human genome browser at UCSC.; citation_author=WJ Kent; citation_author=CW Sugnet; citation_author=TS Furey; citation_author=KM Roskin; citation_author=TH Pringle; citation_journal_title=Genome Res; citation_volume=12; citation_number=49; citation_pages=996-1006; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=GO::TermFinder–open source software for accessing Gene Ontology information and finding significantly enriched Gene Ontology terms.; citation_author=IE Boyle; citation_author=S Weng; citation_author=J Gollub; citation_author=H Jin; citation_author=D Botstein; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=50; citation_pages=3710-3715; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=REPuter: the manifold applications of repeat analysis on a genomic scale.; citation_author=S Kurtz; citation_author=JV Choudhuri; citation_author=E Ohlebusch; citation_author=C Schleiermacher; citation_author=J Stoye; citation_journal_title=Nucleic Acids Res; citation_volume=29; citation_number=51; citation_pages=4633-4642; citation_date=2001; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes"/>
+    <meta name="twitter:description" content="Networks of regulatory relations between transcription factors (TF) and their target genes (TG)- implemented through TF binding sites (TFBS)- are key features of biology. An idealized approach to solving such networks consists of starting from a consensus TFBS or a position weight matrix (PWM) to generate a high accuracy list of candidate TGs for biological validation. Developing and evaluating such approaches remains a formidable challenge in regulatory bioinformatics. We perform a benchmark study on 34 Drosophila TFs to assess existing TFBS and cis-regulatory module (CRM) detection methods, with a strong focus on the use of multiple genomes. Particularly, for CRM-modelling we investigate the addition of orthologous sites to a known PWM to construct phyloPWMs and we assess the added value of phylogenentic footprinting to predict contextual motifs around known TFBSs. For CRM-prediction, we compare motif conservation with network-level conservation approaches across multiple genomes. Choosing the optimal training and scoring strategies strongly enhances the performance of TG prediction for more than half of the tested TFs. Finally, we analyse a 35th TF, namely Eyeless, and find a significant overlap between predicted TGs and candidate TGs identified by microarray expression studies. In summary we identify several ways to optimize TF-specific TG predictions, some of which can be applied to all TFs, and others that can be applied only to particular TFs. The ability to model known TF-TG relations, together with the use of multiple genomes, results in a significant step forward in solving the architecture of gene regulatory networks."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001115.g005"/>
+
+  <meta property="og:title" content="Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=3751'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=1157'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=8778&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001115">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001115" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001115&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Stein Aerts
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:stein.aerts@med.kuleuven.be">stein.aerts@med.kuleuven.be</a> (SA); <a href="mailto:bassem.hassan@med.kuleuven.be">bassem.hassan@med.kuleuven.be</a> (BH)</p>
+
+                <p>Affiliations:
+                  Laboratory of Neurogenetics, Department of Molecular and Developmental Genetics, Vlaams Instituut voor Biotechnologie (VIB), Leuven, Belgium, 
+                  Department of Human Genetics, K.U. Leuven School of Medicine, Leuven, Belgium
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jacques van Helden, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Service de Conformation des Macromolécules Biologiques et de Bioinformatique, Département de Biologie Moléculaire, Université Libre de Bruxelles, Bruxelles, Belgium
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Olivier Sand, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Service de Conformation des Macromolécules Biologiques et de Bioinformatique, Département de Biologie Moléculaire, Université Libre de Bruxelles, Bruxelles, Belgium
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Bassem A. Hassan
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:stein.aerts@med.kuleuven.be">stein.aerts@med.kuleuven.be</a> (SA); <a href="mailto:bassem.hassan@med.kuleuven.be">bassem.hassan@med.kuleuven.be</a> (BH)</p>
+
+                <p>Affiliations:
+                  Laboratory of Neurogenetics, Department of Molecular and Developmental Genetics, Vlaams Instituut voor Biotechnologie (VIB), Leuven, Belgium, 
+                  Department of Human Genetics, K.U. Leuven School of Medicine, Leuven, Belgium
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: November 07, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0001115</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001115-g001" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001115-g002" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001115-g003" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001115-g004" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001115-g005" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001115-t001" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001115">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001115" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Networks of regulatory relations between transcription factors (TF) and their target genes (TG)- implemented through TF binding sites (TFBS)- are key features of biology. An idealized approach to solving such networks consists of starting from a consensus TFBS or a position weight matrix (PWM) to generate a high accuracy list of candidate TGs for biological validation. Developing and evaluating such approaches remains a formidable challenge in regulatory bioinformatics. We perform a benchmark study on 34 <em>Drosophila</em> TFs to assess existing TFBS and <em>cis</em>-regulatory module (CRM) detection methods, with a strong focus on the use of multiple genomes. Particularly, for CRM-modelling we investigate the addition of orthologous sites to a known PWM to construct <em>phyloPWMs</em> and we assess the added value of phylogenentic footprinting to predict contextual motifs around known TFBSs. For CRM-prediction, we compare motif conservation with network-level conservation approaches across multiple genomes. Choosing the optimal training and scoring strategies strongly enhances the performance of TG prediction for more than half of the tested TFs. Finally, we analyse a 35<sup>th</sup> TF, namely Eyeless, and find a significant overlap between predicted TGs and candidate TGs identified by microarray expression studies. In summary we identify several ways to optimize TF-specific TG predictions, some of which can be applied to all TFs, and others that can be applied only to particular TFs. The ability to model known TF-TG relations, together with the use of multiple genomes, results in a significant step forward in solving the architecture of gene regulatory networks.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Aerts S, van Helden J, Sand O, Hassan BA (2007) Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes. PLoS ONE 2(11):
+          e1115.
+            doi:10.1371/journal.pone.0001115</p><p><strong>Academic Editor: </strong>Guillaume Bourque, Genome Institute of Singapore, Singapore</p><p><strong>Received:</strong> July 19, 2007; <strong>Accepted:</strong> September 2, 2007; <strong>Published:</strong> November 7, 2007</p><p><strong>Copyright:</strong> © 2007 Aerts et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This research was funded by an FWO (Fund for Scientific Research, Flanders) postdoctoral fellowship (to SA) as well as VIB, a Concerted Research Action (GOA) grant and an Impuls grant from University of Leuven (to BAH). BioSapiens Network of excellence funded under the sixth Framework program of the European Communities (LSHG-CT-2003-503265 to JvH). Linux clusters were used from KUL and SMBCC, the latter funded by the Belgian Fonds de la Recherche Fondamentale Collective and the Fonds d'Encouragement à la Recherche.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The characterization and understanding of gene regulatory interaction networks that rigorously control the execution of genetic programs that make functional cells, tissues, and organisms is a key challenge for post-genome biology. Such regulatory interactions are formed by transcription factors (TFs) and their target genes (TGs) and are implemented via TF DNA-binding sites (TFBS) located in <em>cis</em>-regulatory modules (CRM) of TGs. A CRM is a promoter or enhancer sequence that contains TFBSs for one or more TFs and that controls a specific aspect of the expression pattern of the TG <a href="#pone.0001115-Davidson1">[1]</a>. A consequence of genetic pleiotropy- one gene, multiple functions- is that genes often have several distinct expression patterns regulated by several distinct CRMs per gene. For example, the expression of the <em>atonal</em> TF in <em>Drosophila melanogaster</em> (<em>Dmel</em>) in different tissues is regulated by discrete CRMs, some of which are also autoregulatory <a href="#pone.0001115-zurLage1">[2]</a>–<a href="#pone.0001115-Hassan1">[4]</a>. It is therefore not surprising that comparative genomics and computational CRM predictions <a href="#pone.0001115-Blanchette1">[5]</a> suggest large numbers of CRMs per genome, implying very large numbers of regulatory interactions. The vast majority of these interactions remain to be discovered. This complexity means that it will be practically impossible to understand the logic and organization of gene regulatory networks without the application of genome-wide, TF-specific computational TG discovery methods. Although genetic interaction, expression profiling and chromatin binding approaches can provide lists of candidate TGs, they each suffer from disadvantages such as high cost, technical limitations, inability to detect direct TGs, and prohibitive numbers of conditions to test <a href="#pone.0001115-Taverner1">[6]</a>. Therefore, experimental approaches would benefit greatly from being complemented by <em>in silico</em> TG discovery methods.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Ideally, computational approaches to mine entire genomes for TFBSs and CRMs would generate highly accurate lists of candidate TGs that can be taken directly to <em>in vivo</em> biological validation. Bioinformatics approaches have been developed to predict TFBSs for TFs that have a known consensus TFBS or position weight matrix (PWM). Unfortunately, this approach results in a 1000-fold excess of false predictions when applied on a genomic scale <a href="#pone.0001115-Wasserman1">[7]</a>. In a handful of cases, however, genome-scale scanning for TF-target interactions has been successful, particularly if the binding sites are evolutionarily conserved and if they occur in clusters. These can be either homotypic clusters with multiple TFBSs for one TF as is the case for <em>Drosophila</em> Dorsal <a href="#pone.0001115-Markstein1">[8]</a>, Bicoid <a href="#pone.0001115-OchoaEspinosa1">[9]</a> and Suppressor of Hairless <a href="#pone.0001115-Rebeiz1">[10]</a>, or heterotypic TFBS clusters for several very well characterized TFs <a href="#pone.0001115-Schroeder1">[11]</a>–<a href="#pone.0001115-Berman1">[13]</a>. The methods applied in these studies are often based on Hidden Markov Models (HMM) <a href="#pone.0001115-Eddy1">[14]</a>–<a href="#pone.0001115-Rajewsky1">[16]</a>. They take one motif or a set of motifs - in the form of PWMs - as input and identify confined regions in large DNA sequences that harbor significantly more motif instances than expected by chance or than given by a background model. Alternatively, predicted TFBSs can be filtered by their occurrence in conserved non-coding DNA stretches <a href="#pone.0001115-Aerts1">[17]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>There are a few reasons why such methods cannot be generalized. First, PWMs for most TFs are built from few instances and the minimal number of instances for a useful PWM is not known. Second, not all TFs regulate their TGs via homotypic TFBS clusters. Third, for most CRMs that contain heterotypic clusters the cooperating TFs, let alone their PWMs, are unknown. Fourth, several independent studies have found that sequence conservation <em>per se</em> is not sufficient to identify enhancers because many enhancers are functionally conserved without sharing high levels of sequence identity across a long DNA stretch <a href="#pone.0001115-Schroeder1">[11]</a>, <a href="#pone.0001115-Berman1">[13]</a>, <a href="#pone.0001115-Emberly1">[18]</a>. Based on this latter point, methods have been developed to search for conserved motif clusters across two genomes <a href="#pone.0001115-Berman1">[13]</a>, <a href="#pone.0001115-Sinha1">[19]</a>. However, these methods have not been assessed for their ability to score more than two genomes, nor for their performance on a wide range of TFs. Taken together, these limitations mean that it is currently unclear under what conditions, using which parameters and for which TFs genome-scale TG prediction is feasible.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>To investigate these issues we perform a benchmark study on genome-scale TG prediction for individual TFs. The benchmark consists of <em>in silico</em> validations on known TGs with identified TFBSs for 34 Drosophila TFs from the FlyReg database <a href="#pone.0001115-Bergman1">[20]</a>. The availability of the full genome sequences of twelve <em>Drosophila</em> species at a range of evolutionary distances from <em>D. melanogaster</em> provides the opportunity to study the evolution of genes <a href="#pone.0001115-Drosophila1">[21]</a> and the discovery and annotation of functional elements like protein-coding genes, miRNA genes, and regulatory motifs <a href="#pone.0001115-Stark1">[22]</a>. In our benchmark study, we take advantage of the multiple genomes in several ways. First, we compare the use of <em>Dmel</em> PWMs built from the known binding sites versus <em>phyloPWMs</em> built from orthologous binding sites from 10 other Drosophila species. Next, we exploit all <em>Drosophila</em> genomes to improve the prediction of homotypic TFBS clusters, either by applying motif conservation or network-level conservation filters. For TFs that show a low performance in this approach, we investigate the use of heterotypic enhancer models consisting of de novo discovered motifs by phylogenetic footprinting, also using all <em>Drosophila</em> genomes. Finally, we model the known TGs of a 35<sup>th</sup> TF not included in the initial assessment, namely the eye determination TF Eyeless (Ey). We find a significant overlap between predicted TGs and a list of candidate targets obtained from a recently published and biologically validated microarray experiment.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>An important conclusion of this study is that no general rule exists that applies to all, or even most, TFs. However, most TFs benefit greatly from the use of multiple genomes in enhancer scoring. Also, we find that by performing cross-validations, the optimal strategy and parameters can be determined for each TF. By training these parameters and through the extensive use of multiple genomes, combined with Gene Ontology filters or microarray data, we estimate that genome-wide discovery of TGs is feasible for about 50% of the TFs tested.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>Detecting homotypic enhancers using known PWMs while eliminating validation bias</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>The first, and most straightforward, strategy for motif-based TG prediction, is to use an existing consensus site or PWM for the TF under study. The genome-wide discovery of TGs through homotypic cluster prediction <a href="#pone.0001115-Lifanov1">[23]</a> was already shown to be feasible for a number of TFs, particularly Dorsal <a href="#pone.0001115-Markstein1">[8]</a>, Bicoid <a href="#pone.0001115-OchoaEspinosa1">[9]</a> and Suppressor of Hairless <a href="#pone.0001115-Rebeiz1">[10]</a>. Here, we test this strategy for all 34 TFs in our dataset (see <a href="#s4">Methods</a> and <a href="#pone.0001115.s004">Table S1</a>). We have chosen the Hidden Markov Model implementation of Cluster-Buster <a href="#pone.0001115-Frith1">[15]</a>, although other methods that take a PWM as input are available <a href="#pone.0001115-Rajewsky1">[16]</a>, <a href="#pone.0001115-Johansson1">[24]</a>, <a href="#pone.0001115-Bailey1">[25]</a>. Through leave-one-out cross-validation (LOOCV), we test whether a 1000 bp ‘positive’ sequence flanking one or more known binding sites can be discriminated from ‘negative sequences’ by the motif cluster score. As negative sequences we use 500 randomly selected proximal promoter sequences. In each run, the 501 sequences are ordered by descending score and the rank of the positive region is recorded (<a href="#pone-0001115-g001">Figure 1</a>). For one TF, this process is repeated <em>f</em> times, each time using a different target sequence as the positive region. The process is also repeated <em>t</em> times, once for each TF. This way, 166 rank positions (Σ<em>f<sub>i</sub>t<sub>i</sub></em>) are obtained. Rank positions are then plotted cumulatively to yield a special type of Receiver Operating Characteristic (ROC) curves. For different analysis methods or parameter settings, different curves are obtained that can be compared, as done previously for related and different problems <a href="#pone.0001115-Segal1">[26]</a>–<a href="#pone.0001115-Aerts2">[30]</a>. The area under this curve (AUC) is a measure of the overall detection performance integrating both sensitivity and specificity values. Using the approach outlined above, we first asked if searching for homotypic clusters of TFBSs is a generally applicable approach for detecting TGs. A PWM is built from all the TFBSs of a specific TF in the dataset, including the TFBSs present in the left-out region. As a negative control, we use scrambled PWMs. Compared to the negative control (<a href="#pone-0001115-g002">Figure 2</a>, black curve), the approach yields relatively strong average performance across the 34 TFs (<a href="#pone-0001115-g002">Figure 2</a>, grey curve). In other words, it is possible, at least to some extent, to distinguish the test sequence from other sequences when the footprints that are present in the test sequence are used to build the training PWM. Although this is the standard approach used in almost all studies, there is a serious problem with it: it introduces a strong bias because the TFBSs in the test region are contained within the training PWM. As such, this approach does not reflect the ‘real life’ situation in which biologists are attempting to discover novel TGs starting from known ones. To simulate a realistic situation, we excluded all TFBSs that are contained within the test sequence from the training PWM. The unbiased performance curve that is obtained when leaving-out the sites in the test regions is our baseline (<a href="#pone-0001115-g002">Figure 2</a>, blue curve). Whether low-complexity regions in test and negative sequences were masked or not did not influence this overall curve (data not shown), and different sets of negative sequences, for example known enhancers from REDfly <a href="#pone.0001115-Gallo1">[31]</a> or genomic flanking regions, also gave similar results (<a href="#pone.0001115.s001">Figure S1</a>). Not surprisingly, the AUC for this curve is smaller than for the biased curve, but it remains significantly larger than the negative control.</p>
+<div class="figure" id="pone-0001115-g001"><div class="img"><a name="pone-0001115-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>LOOCV assessment scheme.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>An enhancer model, consisting of one or more PWMs, is trained on known target regions of a TF, excluding the target region of the test TG (here TG4 is excluded). This left-out region, together with a set of negative sequences, is scored with the enhancer model. All 166 rank ratio's are plotted cumulatively.</p>
+<span>doi:10.1371/journal.pone.0001115.g001</span></div><div class="figure" id="pone-0001115-g002"><div class="img"><a name="pone-0001115-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>LOOCV performance for homotypic cluster detection on <em>Dmel.</em></span></strong></p><a id="article1.body1.sec2.sec1.fig2.caption1.p1" name="article1.body1.sec2.sec1.fig2.caption1.p1"></a><p>For each of the 34 TFs, target sequences are scored with Cluster-Buster, using a PWM built from all known binding sites (grey curve) or from all known binding sites except those located in the region being scored (blue curve). Scrambled PWMs are used as negative controls (black curve).</p>
+<span>doi:10.1371/journal.pone.0001115.g002</span></div><a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Next we examined the performance of unbiased homotypic cluster detection in detail. We find that 37 out of 166 test regions rank in the top 2% (10/501 scored sequences) representing 19 of 34 TFs. To investigate the performances of each individual TF in more detail, we plot ROC curves per TF and calculate AUC scores for each TF separately (<a href="#pone-0001115-g003">Figure 3C</a>, black bars). Amongst the high scoring TFs are Dorsal (AUC = 0.99) and Bicoid (AUC = 0.89) that were previously known to use homotypic clusters. In addition, the homotypic cluster approach to TG prediction works very well for Adh transcription factor 1 (0.95), Tinman (0.93), Trithorax-like (0.92), and Zeste (0.90). We could not find any obvious correlation between the performance and the size of the data set (<a href="#pone-0001115-g003">Figure 3C</a>). Amongst the high-performing TFs are both factors with large data sets (e.g., dl, Trl, bcd) and factors with small data sets (e.g., Adf1, tin, Dref). Similarly, amongst the low-performing TFs are factors with large (e.g., en, Ubx) and small (e.g., HLHm5, slbo, srp) datasets.</p>
+<div class="figure" id="pone-0001115-g003"><div class="img"><a name="pone-0001115-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Integrating HMM-based enhancer scoring across multiple genomes.</span></strong></p><a id="article1.body1.sec2.sec1.fig3.caption1.p1" name="article1.body1.sec2.sec1.fig3.caption1.p1"></a><p>(A) LOOCV performances of Cluster-Buster (red dashed curve) and STUBBMS (green curve) on two genomes (<em>Dmel</em> and <em>Dpse</em>), Cluster-Buster on all genomes using network-level conservation (NLC) (red curve), and Cluster-Buster combined with motif conservation (MC) (purple curve). The red dotted curve is the negative control. (B) Implementation of network-level conservation by integrating the Cluster-Buster scores on multiple genomes through order statistics. Rank ratios for orthologous sequences (both positive and negative) are obtained for each species separately and are integrated by the order statistics formula. <em>Dmel</em> sequences are finally ranked according to the integrated score. (C) LOOCV performances (AUC values in the y axis) for each TF (x axis), using the <em>Dmel</em> PWM or the phyloPWM. The first two bars represent the scoring on <em>Dmel</em> alone, the next two on all genomes with network-level conservation (NLC), and the last two on all genomes with motif conservation (MC). The TFs are sorted according to decreasing baseline performance (black).</p>
+<span>doi:10.1371/journal.pone.0001115.g003</span></div>
+
+<h4>Adding orthologous sites can improve the quality of sparse PWMs</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Given the availability of multiple <em>Drosophila</em> genomes, an interesting question is whether better PWMs can be built using sequences that are orthologous to the known TFBSs. The issue of phylogenetic conservation of TFBSs is paradoxical because on the one hand, TFBSs are known to have a high evolutionary turn-over rate <a href="#pone.0001115-Moses1">[32]</a>, while on the other hand many have been discovered by virtue of their evolutionary conservation. We asked if the addition of conserved sites- defined as aligned sites sharing more than 40%, 70%, 80%, or 90% identity between a given <em>Drosophila</em> species and <em>Dmel</em>- to the PWM improves the overall performance (see <a href="#s4">Methods</a>). <em>A priori</em> we expected the 70% identity cut-off to perform best because we calculated from all PWMs in the TRANSFAC library that the sites that make up a PWM have 72% identity on average. This cut-off allows one substitution in a 6 bp motif, two in a 8 bp motif, and three in a 10 bp motif. We expected that a less stringent cut-off (e.g., 40%) would allow too many negative sequences in the phyloPWM, and that a more stringent cut-off (e.g., 90%) would not introduce enough variability. To our surprise, we do not observe an increased average performance across all 34 TFs with any of these phyloPWMs (<a href="#pone-0001115-g004">Figure 4A</a>). This is not because we have too few conserved sites due to alignment errors <a href="#pone.0001115-Moses1">[32]</a> since the 70% phyloPWMs for example are built from 7.81 times more sites on average than the <em>Dmel</em> PWM (where the maximal number of orthologous sites would be 11 times the number of Dmel sites, for 11 genomes used). When looking at individual TFs, we find that only three TFs benefit from a phyloPWM with more than 10% performance increase, namely HLHm5, Scalloped, and Ventral Veins Lacking. <a href="#pone-0001115-g004">Figure 4B</a> shows the difference in AUC for each TF between the <em>Dmel</em>-PWM and the phyloPWM. PWMs built from fewer than 20 sites are found to be more susceptible to phylogenetic extension than PWMs built from more than 20 sites (<a href="#pone-0001115-g004">Figure 4B</a>). Note that the performance of a PWM with few sites can also decrease when adding orthologous sites. This is a first illustration of how the cross-validation assessment can assist in the selection of the most appropriate model, in this case the type of PWM, for each TF.</p>
+<div class="figure" id="pone-0001115-g004"><div class="img"><a name="pone-0001115-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Homotypic cluster detection with <em>phyloPWMs.</em></span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>(A) LOOCV performance for <em>Dmel</em> PWMs (blue curve), and phyloPWMs from all species tested (<em>Dmel, Dsim, Dsec, Dere, Dyak, Dana, Dpse, Dper, Dvir, Dmoj,</em> and <em>Dgri</em>). Orthologous sites were chosen based on a minimum of either 40% (green curve), 70% (red), 80% (brown), or 90% (orange) identity with the <em>Dmel</em> true binding site. (B) Differences between the AUC values obtained from a <em>Dmel</em> PWM and a phyloPWM, for each TF. TFs with differences above 0.05 are colored orange. PWMs with few sites (y-axis) have greater AUC differences than PWMs with many sites.</p>
+<span>doi:10.1371/journal.pone.0001115.g004</span></div>
+
+<h4>Different approaches for enhancer scoring using multiple genomes: network-level conservation versus motif conservation</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>Using multiple genomes in the training step to construct PWMs only sometimes improve detection of test TG enhancers. However, using sequence conservation between <em>Dmel</em> and <em>D. pseudoobscura (Dpse)</em> during enhancer scoring has been suggested as a useful filter <a href="#pone.0001115-Berman1">[13]</a>, <a href="#pone.0001115-Sinha1">[19]</a>. The program STUBBMS <a href="#pone.0001115-Sinha1">[19]</a> also implements a Hidden Markov Model like Cluster-Buster used above, but can score two genomes simultaneously given one or more PWMs as input. When we apply the program STUBBMS <a href="#pone.0001115-Sinha1">[19]</a> to the combined scoring of <em>Dmel</em> and <em>Dpse</em> regions we find a better performance than using Cluster-Buster on <em>Dmel</em> alone (<a href="#pone-0001115-g003">Figure 3A</a>). This suggests that the addition of a second genome improves enhancer scoring. However, STUBBMS is limited to only two genomes. To solve this we propose two new approaches. In the first approach we attempt to integrate HMM-based enhancer scoring with ranking across muliple genomes using the premise that orthologous enhancers can be functionally conserved without necessarily having high sequence identity <a href="#pone.0001115-Schroeder1">[11]</a>. To this end we scored each species separately with Cluster-Buster and used order statistics <a href="#pone.0001115-Aerts2">[30]</a>, <a href="#pone.0001115-Stuart1">[33]</a> to combine the species-specific rankings of all orthologous test regions into one overall rank (<a href="#pone-0001115-g003">Figure 3B</a> and Methods). This approach can be classified under the so-called network-level conservation approaches <a href="#pone.0001115-Pritsker1">[34]</a>. In our case, sequence alignment data are only used initially to search for the best orthologous match(es) in a given species to a <em>Dmel</em> 1 kb region. We assembled orthologous sequences from 10 other species by directly querying the net alignments of the UCSC Genome Browser database <a href="#pone.0001115-Karolchik1">[35]</a>. We also constructed a second series of sets using LAGAN <a href="#pone.0001115-Brudno1">[36]</a> aligments and these yielded similar performance results (data not shown).</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>We find that using order statistics to integrate information from all 11 species during enhancer scoring for homotypic clusters results in the best performance, with a significant improvement over <em>Dmel</em> alone, or any pairwise combination with <em>Dmel</em> (data shown for <em>Dmel</em>-<em>Dpse</em>). To ensure that the order statistics themselves do not bias the results, we combined the rankings obtained from scrambled PWMs. This did not result in an increased performance compared to scrambled PWMs from <em>Dmel</em> alone (<a href="#pone-0001115-g003">Figure 3A</a>, red dotted curve). Therefore, including all <em>Drosophila</em> genomes in the scoring step improves enhancer detection when searching for homotypic clusters.</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>In a second, more classical approach, we filtered the HMM-based motif cluster predictions based on sequence conservation of the predicted motifs themselves. Using the phastCons scores <a href="#pone.0001115-Siepel1">[37]</a> from the UCSC browser we masked all nucleotides with a conservation score below 0.90 before applying the HMM-scoring (thresholds of 0.5 and 0.7 gave similar results; data not shown). The resulting overall performance is better than the STUBB-MS performance on two genomes only (purple curve in <a href="#pone-0001115-g003">Figure 3B</a>), but slightly worse than the performance of the network-level conservation approach.</p>
+<a id="article1.body1.sec2.sec3.p4" name="article1.body1.sec2.sec3.p4"></a><p>Importantly, the ROC curves depict averages across 34 transcription factors. When looking at the performances of the individual TFs, it became clear that some factors benefit more from network-level conservation (e.g., tin, kr, twi, zen) and others are better suited for motif conservation applications (e.g., abd-A, Ubx, HLHm5, cad, gt). Again, we could not find any obvious correlation between the methods and the size of the starting data sets, neither in terms of target genes nor in terms of binding sites per TF. The TF-wise performances for each method, both for the Dmel PWM and the phyloPWM are presented in <a href="#pone-0001115-g003">Figure 3C</a>, together with the size of each data set. This is a second illustration of how the cross-validation assessment can assist in the selection of the most appropriate model, in this case the type of conservation filter.</p>
+
+
+<h4>Learning contextual motifs to construct heterotypic enhancer models</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>Using multiple genomes resulted in improved performance in homotypic cluster prediction for many TFs. However, it is known that many TFs operate in cooperation with other TFs that bind to different binding sites in the neighborhood, which is often a relatively small sequence window (e.g., 1 kb). To take the existence of such heterotypic motif clusters into account in our dataset of 166 enhancers, we added a pattern discovery step to identify a shared context between all regions targeted by the same TF, always excluding the left-out test region (<a href="#pone-0001115-g001">Figure 1</a>). The trained model consists of a set of motifs, represented by PWMs, used to score the left-out region. As for homotypic enhancer models, a large set of negative sequences are scored and the rank of the test region within this test set is plotted.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>First, we apply two traditional motif discovery methods, namely MotifSampler <a href="#pone.0001115-Thijs1">[38]</a> and oligo-analysis <a href="#pone.0001115-vanHelden1">[39]</a> to each <em>Dmel</em> training set. The number of motifs found by MotifSampler is a parameter of the method, and was set to 5. Oligo-analysis has the advantage that only significantly over-represented k-mers (where k is 6,7 or 8) are reported, yielding between zero and 18 motifs per regulon, with an average of 4.3 and a standard deviation of 4.17. Oligo-analysis gives slightly better results than MotifSampler in the high-specificity range in which we are interested. The reason why the performance for oligo-analysis decreases in the low-specificity range is our conservative approach that instructs Cluster-Buster to rank the left-out region last when oligo-analysis does not find any common motifs in the training set. Note that oligo-analysis yields over-represented DNA words, not PWMs, while Cluster-Buster requires PWMs as input for the scoring step. To solve this problem we transform each over-represented word into a pseudo-PWM (see <a href="#s4">Methods</a> and Supplementary <a href="#pone.0001115.s005">Note 1</a>). In agreement with published results <a href="#pone.0001115-Tompa1">[40]</a>, we observe that single species motif discovery results in unsatisfactory enhancer models that are not able to generalize (<a href="#pone-0001115-g005">Figure 5A</a>). We therefore reasoned that a multiple species motif discovery method might increase performance. We chose PhyloGibbs <a href="#pone.0001115-Siddharthan1">[41]</a> but other methods like PhyME, OrthoMEME, PhyloConn are also available. Similar to MotifSampler, the number of motifs found by PhyloGibbs is a parameter of the method and was set to 5. The performance of the resulting enhancer models (green curve in <a href="#pone-0001115-g005">Figure 5A</a>) is slightly better than those trained by oligo-analysis on <em>Dmel</em> alone, but remains unsatisfactory. When inspecting the predicted motifs by the pattern discovery methods, we observed that even the real motif can only be found in a limited number of cases, for example for 8 out of 34 factors when using PhyloGibbs (<a href="#pone.0001115.s002">Figure S2</a>), and for 14 out of 34 factors when using oligo-analysis (data not shown). To further improve the performance, we combined the known, experimentally determined, PWM with the <em>de novo</em> discovered PWMs in one enhancer model. The average performance of this hybrid model across all TFs is similar to that of the homotypic baseline model (<a href="#pone-0001115-g005">Figure 5A</a>, dashed green and orange curve for PhyloGibbs and oligo-analysis respectively). In an attempt to further increase the sensitivity and specificity, we combined the search for heterotypic clusters with our new method of scoring multiple genomes using network-level conservation. To do this we applied motif discovery with either PhyloGibbs or oligo-analysis. For PhyloGibbs we use the same PWMs for all species because each PWM was built from all species during the PhyloGibbs motif discovery step. For oligo-analysis, which works on single species, we discovered new motifs in each species separately and then scored each species with its own species-specific collection of pseudo-PWMs. The performance curves for the heterotypic models consisting of PhyloGibbs or oligo-analysis motifs, combined with the true PWM, and scored on all available species show significantly improved performance (<a href="#pone-0001115-g005">Figure 5B</a>). Of the 166 enhancers 49 (29.5%) and 54 (32.5%) rank within the top 2% for models from PhyloGibbs and oligo-analysis, respectively.</p>
+<div class="figure" id="pone-0001115-g005"><div class="img"><a name="pone-0001115-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>LOOCV performances for heterotypic CRM-models.</span></strong></p><a id="article1.body1.sec2.sec4.fig1.caption1.p1" name="article1.body1.sec2.sec4.fig1.caption1.p1"></a><p>(A) Heterotypic models consist of PWMs obtained by motif discovery on <em>Dmel</em> sequences using MotifSampler (brown curve) or oligo-analysis (orange curve) and on all species using PhyloGibbs (green curve). Models consisting of combined <em>de novo</em> PWMs with the true experimental PWM are shown for oligo-analysis (dashed orange) and PhyloGibbs (dashed green). Scoring is either done on <em>Dmel</em> alone (thin full lines) or on all species by network-level conservation (NLC) (thick lines and dashed lines). (B) In green and orange are LOOCV performances for scoring with heterotypic models (either species-specific for oligo-analysis or cross-species for PhyloGibbs) on all species including the <em>Dmel</em> PWM (cfr thick full lines in A). Scoring on all species is done by network-level conservation (NLC). In blue is the control, namely NLC using the <em>Dmel</em> PWM alone, without newly discovered motifs.</p>
+<span>doi:10.1371/journal.pone.0001115.g005</span></div><a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>We examined individual TF performances (<a href="#pone-0001115-g005">Figure 5B</a>) and compared them to the performances of the <em>Dmel</em> PWM with network conservation (i.e., the red bars in <a href="#pone-0001115-g003">Figure 3C</a>) because here the experimental PWM and the scoring method are the same. We find several factors, such as gt, kni, E(spl), tll, ftz, abd-a, and HLHm5 with significantly improved performances. This is the third illustration of how cross-validations can be used to identify the optimal enhancer model for each transcription factor.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p>When the optimal method is used for each TF, the AUC increases by more than 10% over the initial performance baseline for 25 out of the 34 TFs. The number of TFs for TG detection is highly performant (AUC&gt;0.9) increases from 5 to 19 out of 34 (<a href="#pone-0001115-g003">Figure 3C</a>, black bars and <a href="#pone-0001115-g005">Figure 5B</a>).</p>
+
+
+<h4>Genome-wide target gene prediction</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>The ultimate goal of computational target gene prediction is to obtain a high quality set of candidate targets by scanning one or more genomes. The cross-validations described above show promising results for a number of transcription factors. However, in practice several obstacles arise. The first obstacle in genome scanning is the definition of the search space and the association of a predicted regulatory region with a target gene. For the <em>Drosophila</em> genomes we chose to attribute a CRM to a gene when it either lies in an intron of that gene or within 5 kb upstream of that gene. Each sequence region of a gene (i.e., each intron and the upstream sequence) receives the maximal CRM score found within that region. For the network-level conservation approach, each region in the <em>Dmel</em> genome is associated with its orthologous region in another genome using UCSC's genome alignments. The top 100 scoring genes for each of the 34 TFs (using the optimal enhancer model for each TF), together with the locations of the predicted motif clusters, are presented on our website (<a href="http://med.kuleuven.be/cme-mg/lng/cisTarget">http://med.kuleuven.be/cme-mg/lng/cisTar​get</a>).</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p>The second, more problematic obstacle is the size of the test set that now consists of 93330 regions (all regions for all genes). Sensitivities of 50% will no longer be feasible because the top 10% regions represent more than 1000 genes, which is too large for biological validation and even for further filtering by functional annotations. On the other hand, we know from the LOOCV tests that even the top 1% (136 genes) could contain a few <em>bona fide</em> target genes, because about 10% of the targets (18 out of 166 for the phyloPWM with motif conservation) were found in the top 1% (i.e., top 5 out of 501 regions) in the LOOCV. We attempted to enrich for true targets within the top 100 genes by comparing over-represented Gene Ontology (GO) terms with the GO annotation of the TF itself. When the optimal model – based on the LOOCV results - is chosen for each TF, 15 TFs show a top 100 TG prediction with a significant enrichment of at least one biological process of the TF (see <a href="#pone-0001115-t001">Table 1</a>; the complete GO results for all TFs are available from our website). To test whether the selection of the optimal model is important for GO enrichment, we compared the optimal model to one reference model, namely the homotypic model using the <em>Dmel</em> PWM and network-level conservation. Indeed, by using the reference model instead of the optimal model for each TF, 8 factors loose the GO enrichment that was relevant for the TF, another three TFs have a p-value that is still significant but less than the optimal method, one TF has the same p-value and only 1 TF has a better p-value (data not shown).</p>
+<div class="figure" id="pone-0001115-t001"><div class="img"><a name="pone-0001115-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001115" data-uri="info:doi/10.1371/journal.pone.0001115.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001115.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001115.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001115.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001115.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Selection of GO-filtered genome-wide target gene predictions from our website.</span></strong></p><span>doi:10.1371/journal.pone.0001115.t001</span></div><a id="article1.body1.sec2.sec5.p3" name="article1.body1.sec2.sec5.p3"></a><p>Filtering based on functional annotation is however limited to the detection of genes with GO IDs. For genes without GO IDs computational predictions can be complemented with data from other sources, such as phenotypic data, protein-protein interaction or expression data. As an example we analyzed a regulon of the eye determination transcription factor Ey. Ey was not included in our earlier dataset because the FlyReg database only contains one target gene of Ey, namely <em>sine oculis</em> (<em>so</em>). However, recent studies have identified four more targets of Ey: <em>eya</em>, <em>shf</em>, <em>Optix</em>, and <em>atonal</em> <a href="#pone.0001115-Zhang1">[42]</a>. The first three were found by expression studies comparing wild type and ectopic Ey over-expression <a href="#pone.0001115-Ostrin1">[43]</a>. All five genes have identified Ey binding sites that have been validated through <em>in vitro</em> binding studies and <em>in vivo</em> reporter assays. Ostrin <em>et al.</em> conducted a microarray experiment and identified 188 potential TGs of Ey whose expression is independent of the function of the retinal differentiation TF <em>atonal</em>. The total of five target regions can now be subjected to cross-validation. The assessment suggests that the homotypic approach with multiple genomes performs best for Ey, although the differences between methods are small in the high specificity range in which we are interested (data not shown). Although Ostrin <em>et al</em>. used a phyloPWM in their study <a href="#pone.0001115-Ostrin1">[43]</a>, the cross-validation performances we observed for our phyloPWM were similar to the <em>Dmel</em> PWM. The homotypic model using the <em>Dmel</em> PWM and network-level conservation was applied to the full genome, ranking all 5 kb upstream regions and all introns. The top 100 scoring genes have “photoreceptor cell differentiation” over-represented with a p-value of 6.45e-06. The 9 photoreceptor differentiation genes in the top 100 are <em>bun, eya, fz, hth, lilli, mbl, Optix, pnt, and sdk</em>. It is important to note that neither GO:0048748, nor any other eye development GO term, is over-represented in the top100 candidate genes when the scoring is performed on <em>Dmel</em> alone.</p>
+<a id="article1.body1.sec2.sec5.p4" name="article1.body1.sec2.sec5.p4"></a><p>There are 9 genes in the top 100 genes that are also present in the set of 188 genes of Ostrin <em>et al</em>. To determine the significance of this result, the same procedure was repeated for 100 randomizations of the Ey PWM. The top 100 scoring genes from randomized PWMs contain 3.70±2.84 genes (95% confidence interval) in common with the Ostrin set of 188 genes. The maximal difference between the true ranking and the randomizations is obtained at a threshold of 171 genes (<a href="#pone.0001115.s003">Figure S3</a>). At this threshold, the randomized PWMs yield an overlap of 6.05±3.65 while the true PWM yields an overlap of 14 genes (p-value of 2.3288e-05). These 14 genes are <em>mspo, SK, so, toy, ey, CG17816, Optix, CG30492, CG32521, osp, Fas2, CG5888, Tie,</em> and <em>eya</em>.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Gene regulatory networks of TFs and their TGs play key roles in development, homeostasis and behavior. The relationship between a TF and its TGs is achieved through “DNA words”, usually 4–12 bp long, acting as binding sites for the TF in question. A collection of such motifs regulating a specific aspect of the expression of a gene defines a CRM. Therefore, to understand network organization, we need to understand the organizational logic of CRMs. Since most networks mediating a specific biological function consist of multiple TFs and their- sometimes overlapping- TGs, the capacity to detect TGs genome-wide and <em>in silico</em> with high accuracy would bring major advantages. In this respect, regulatory bioinformatics faces a few challenges. First, the organizational logic(s) of CRMs is not clear. Do most TFs regulate their TGs via multiple or single TFBSs? How conserved do such TFBSs need to be at the sequence level to be detectable? Can the contextual information around a given TFBS in a CRM be harnessed to improve TG detection? Does the availability of multiple related genomes foster or complicate CRM detection? And finally, do different TFs follow different logics? Developing and assessing methods that can address these issues is clearly a major goal of regulatory bioinformatics.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>To begin to address these issues we took advantage of the availability of 12 <em>Drosophila</em> genomes and the <em>Drosophila</em> database of TF-TG relations (FlyReg) to perform a benchmark study on genome-wide <em>in silico</em> TG prediction. <em>Drosophila</em> is ideally suited for such an approach not only because multiple genomes are now available, but also because a few regulatory networks, such as the segmentation network, have been well-established <em>in vivo</em> resulting in several deeply understood TF-TG relations. One challenging problem of target gene prediction is the mapping of an <em>in silico</em> predicted regulatory locus to the gene it potentially regulates. Indeed, several known enhancers are located one or several genes upstream of the actual target gene, for example the cluster of dorsal binding sites that regulates zen is located directly upstream of CG1162. To circumvent this problem in the benchmark analysis and to make direct comparisons at the sequence level possible, we added isolated regulatory regions to sets of negative sequences. This setup has the additional advantage that it requires less computational resources so that more parameters can be varied. We chose the same region size for each enhancer and each transcription factor to exclude confounding effects of the size when comparing across factors (Cluster-Buster can generate higher scores for larger regions). For the cross-validations we arbitrarily set this size to 1 kb. Such a choice is justified because the cross-validations are intended to compare relative performances rather than absolute performances. When a cross-validation procedure is applied on a single factor under study, the region size could be considered as an additional parameter. For the genome-wide scoring, the size of the motif clusters is determined by Cluster-Buster.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Cross-validation tests and subsequent genome-wide TG predictions result in both higher average performances across a data set of more than 30 TFs (of a total of approximately 700 TFs in the <em>Dmel</em> genome <a href="#pone.0001115-Adryan1">[44]</a>) as well as determination of the optimal parameters for each of the individual TFs. This is of particular value for molecular geneticists who are likely to be interested in one or a few TFs within a network and for whom average performance across a large dataset is not particularly useful. The difference between the two is highlighted by our finding that two different performance parameters result in highly similar average performance, but radically different single TF performance profiles. As a result of these advantages the number of factors for which TG detection becomes highly performant (AUC values above 0.90) is increased from 5/34 to 19/34.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>We attempted to address some of the questions facing regulatory bioinformatics. The major conclusions from our work are as follows. First, there is unlikely to be a single unifying CRM logic, at least at current levels of genome annotation resolution. We find that whereas some TFs perform optimally with single TFBS parameters (data not shown), others use clusters of homotypic TFBSs and still others use heterotypic TFBS clusters. Thus, a methodology that can determine the optimal approach per TF <em>a priori</em> is necessary for successful single TF based TG predictions. Second, the availability of multiple genomes is, in general, extremely useful for genome-wide TG prediction. One exception to this rule is that, contrary to conventional wisdom and several previous reports, additional genomes do not always result in better PWM building. The reason for this could be that PWMs that are built from sufficiently distinct binding sites (e.g., more than 20) already possess enough variation and do not benefit from the addition of more sites. A small amount of PWMs with very few, but highly conserved sites (e.g., HLHm5) do benefit from a phylogenetic extension.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>The availability of multiple genomes becomes especially useful in two other ways. First, it improves the training of a CRM model from a set of known target regions, to discover sites that are both conserved and shared across this set. We have assessed whether such <em>de novo</em> discovered motifs could contribute to a better enhancer model for the TF. Second, it improves the scoring of a CRM model by taking advantage of functional enhancer conservation or TFBS conservation. We found no obvious explanation (e.g., in terms of correlations with TF families, with the conservation of known sites, or with the size of the TG set) why some TFs perform better with network-level conservation and others with motif conservation. When more <em>cis</em>-regulatory data becomes available as validation sets, for example through open community based annotation <a href="#pone.0001115-Montgomery1">[45]</a>, a deeper investigation of this issue may become feasible.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>Although several of the tested variables, most importantly the integration of multiple genomes, can result in significantly enhanced TG prediction accuracy, more work is needed to improve on this performance because only a portion of the true target enhancers could be detected. Again, it can be expected that performances will increase further, when more knowledge about regulatory regions emerges. For example, King et al. found recently that in vertebrates some regulatory regions correlate well with phastCons conservation scores (used for our motif conservation), while other regulatory regions correlate better with alignment-based scores that are corrected for background neutral substitution rates<a href="#pone.0001115-King1">[46]</a>. However, even with more advanced interspecies comparisons, on a genomic scale the true positive TF-TG interactions are spread out across many other high-scoring interactions. At present it is difficult to determine for a certain TF whether the other high scoring genes are also <em>bona fide</em> TGs, false positive predictions, or- most likely- a mix of both. Several ways can be envisioned to further improve the performance. For example, enhancer predictions can be combined with other data types to filter the ranked enhancers, such as GO terms, as we have shown for the TFs in <a href="#pone-0001115-t001">Table 1</a>, and/or large scale expression data, as we tested for the eye determination TF Ey. The benchmark dataset can be used in the future to evaluate novel methods for <em>de novo</em> motif discovery, enhancer prediction, or target gene prioritization.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>In summary, we have tested several strategies and parameters for the computational prediction of TF-TG relations through TFBS and CRM detection. The selection of the best strategy for each individual TF, combined with the extensive use of multiple genomes during both the training and scoring of enhancer models results in a significant step forward in the bioinformatics to solving the architecture of gene regulatory networks.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Data</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Our dataset consists of 166 TF-target relations for 34 transcription factors, generated by selecting all known TFs from FlyReg <a href="#pone.0001115-Bergman1">[20]</a> that have minimally 3 distinct target genes (<a href="#pone.0001115.s004">Table S1</a>). Each TF-TG is represented by a test sequence, defined by selecting 1000 bp flanking sequence around only one of the TF-specific footprints around the TG. The ‘experimental’ PWMs are constructed by taking the best hit within each footprint after scoring with the corresponding matrices that were construced by Daniel Pollard using the MEME algorithm (<a href="http://rana.lbl.gov/dan/matrices.html">http://rana.lbl.gov/dan/matrices.html</a>). The scoring was done using Patser <a href="#pone.0001115-Hertz1">[47]</a>. PWM scrambling is done by permuting the columns of a matrix, thereby conserving the A/T en C/G composition. 500 negative sequences are selected ad random from all 1 kb proximal sequences from the UCSC Table Browser <a href="#pone.0001115-Karolchik2">[48]</a>. Other negative sets that we tested are all the REDfly <a href="#pone.0001115-Gallo1">[31]</a> enhancers with a maximal size of 1 kb (308 in total), extended in the genome to 1 kb, and 250 sequences of 1 kb surrounding a test sequence (125 on each side). Sets of orthologous sequences for positive and negative <em>Dmel</em> sequences are assembled using the liftOver utility of the UCSC Genome Browser <a href="#pone.0001115-Kent1">[49]</a>. Multiple output regions, due to homology to discontinuous regions, are all retained for training and scoring. Aligned sequences to <em>Dmel</em> TFBSs, used to build phyloPWMs, are also obtained through the UCSC liftOver utility. PhastCons conservation scores were downloaded from the UCSC download pages. Species and UCSC assemblies used throughout the analyses are <em>D. melanogaster</em> (dm2), <em>D. simulans</em> (DroSim1), <em>D. sechellia</em> (DroSec1), <em>D. yakuba</em> (DroYak1), <em>D. erecta</em> (DroEre2), <em>D. ananassae</em> (DroAna2), <em>D. pseudoobscura</em> (dp3), <em>D. persimilis</em> (DroPer1), <em>D. virilis</em> (DroVir2), <em>D. mojavensis</em> (DroMoj2), and <em>D. grimshawi</em> (DroGri1).</p>
+
+
+<h4>Cross-validation</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Methods for motif discovery, for CRM prediction, and for the use of multiple genomes are compared through leave-one-out cross-validation (LOOCV) (see <a href="#pone-0001115-g001">Figure 1</a>). For a regulon of <em>N</em> targets, an enhancer model is trained on <em>N</em>-1 positive regions of 1000 bp. The model is used to score the N<sup>th</sup> (left-out) target region and a set of negative sequences. All sequences are then ordered by descending score and the rank of the left-out region is recorded. For one TF, this process (training, scoring, ranking) is repeated N times, each time leaving out another target region. The process is also repeated for each TF. This way, a total of 166 rank positions are obtained. By ordering these, and plotting them cumulatively, a kind of Receiver Operating Characteristic (ROC) is obtained. For different analysis methods, different curves are obtained that can be compared. Also, the area under this curve (AUC) is a measure for the overall detection performance integrating sensitivity and specificity values.</p>
+
+
+<h4>Sequence scoring</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>The program Cluster-Buster <a href="#pone.0001115-Frith1">[15]</a> is used to score a sequence with a set of PWMs, using 1000 bp (the length of the test sequences) as range (-r option) for counting local nucleotide abundances. Order statistics are applied to integrate Cluster-Buster-based rankings on multiple genomes as described in <a href="#pone.0001115-Aerts2">[30]</a> and in <a href="#pone-0001115-g003">Figure 3B</a>. STUBBMS is used with windowsize and shiftsize 1000, to give one score to the 1 kb test sequence. Gene Ontology statistics on lists of top scoring genes were calculated with the Generic GO Term Finder at <a href="http://go.princeton.edu/cgi-bin/GOTermFinder">http://go.princeton.edu/cgi-bin/GOTermFi​nder</a> <a href="#pone.0001115-Boyle1">[50]</a>.</p>
+
+
+<h4>Pattern discovery</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>For each LOOCV run, the Gibbs sampling program MotifSampler <a href="#pone.0001115-Thijs1">[38]</a> was run 50 times for motifwidths 5, 6, 8, 10, 12, and 14, prior 0.2 and a 0<sup>th</sup> order backgroundmodel from the whole 1 kb dataset. Resulting motifs were clustered and ranked according to information content as done in <a href="#pone.0001115-Tompa1">[40]</a>.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>The program oligo-analysis <a href="#pone.0001115-vanHelden1">[39]</a> detects motifs in sequences by counting the occurrences of all oligonucleotides, and calculating their significance according to a background model, estimated by counting the occurrences of all oligonucleotides in all species-specific upstream sequences. Prior to their analysis, training sequences were purged with the program mkvtree <a href="#pone.0001115-Kurtz1">[51]</a> to discard internally repeated fragments. The genome-wide repetitive fragments were also masked for the pattern discovery step using UCSC Genome Browser RepeatMasker annotation (<a href="http://www.repeatmasker.org">http://www.repeatmasker.org</a>). Oligonucleotide occurrences of all sizes between 6 and 8 were counted on both strands, only considering the renewing occurrences (self-overlapping occurrences of a same word were discarded). The threshold of significance was set to 1, corresponding to an E-value of 1 false positive oligonucleotide per 10 training sets. Each run of oligo-analysis returns a set of over-represented oligonucleotides, which were used to construct a pseudo-PWM for each over-represented oligo with a value of 10 for the letters forming the word, and 0 for the other letters (see <a href="#pone.0001115.s005">Note S1</a>). To use oligo-analysis on multiple species, we detect over-represented words in each species separately, and use those to score the test regions of the respective species.</p>
+<a id="article1.body1.sec4.sec4.p3" name="article1.body1.sec4.sec4.p3"></a><p>The PhyloGibbs program allows detecting motifs that are both conserved and shared across co-regulated sequences <a href="#pone.0001115-Siddharthan1">[41]</a>. PhyloGibbs was run with parameters -D1 -m8 -z5 (5 motifs of width 8), -L“((DroGri1:0.7,(DroVir2:0.75,DroMoj2:0​.75):0.7):0.5,((DroPer1:0.95,Dp3:0.95):0​.7,(DroAna2:0.8,(DroEre1:0.82,(DroYak1:0​.85,(Dm2:0.9,(DroSec1:0.95,DroSim1:0.95)​:0.9):0.85):0.82):0.8):0.7):0.5)”and whole chr2L as background sequence. Resulting matrices were compared with FlyReg matrices using the Kullback-Leiber distance <a href="#pone.0001115-Aerts1">[17]</a>.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001115"></div><a name="pone.0001115.s001" id="pone.0001115.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001115.s001">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Leave-one-out cross-validation performance for different negative sets. The rank of the positive “test” region (1 kb) within a set of negative sequences (all 1 kb) is plotted cumulatively. As negative sequences were used 500 randomly selected proximal promoter sequences, upstream of the annotated transcription start site (black curve) or 308 REDfly enhancers of maximally 1 kb length (blue curve), then all genomically extended to 1 kb, or 250 flanking sequences around the positive region (green curve), or 500 randomly generated sequences of 1 kb using a 5th order Markov model trained on all Dmel upstream sequences.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001115.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.15 MB PDF)</p>
+<a name="pone.0001115.s002" id="pone.0001115.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001115.s002">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Cmparison of PhyloGibbs PWMs and real PWMs. All 166×5 motifs resulting from PhyloGibbs were compared to all 34 real PWMs, using the progam MotifComparison that implements the Kullback-Leiber distance between matrices <a href="#pone.0001115-Davidson1">[1]</a>. Left column are real PWMs, middle column are matching PhyloGibbs motifs, and right column is the distance between both. Only eight real PWMs could be matched below distance threshold 1.0.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001115.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.70 MB PDF)</p>
+<a name="pone.0001115.s003" id="pone.0001115.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001115.s003">Figure S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Overlap between Ey candidate targets obtained from microarray data and from genome-wide binding site prediction. At different cut-offs N (x-axis), the N top scoring Ey candidate targets, based on motif detection, are compared with the 188 Ey candidate targets obtained from gene expression studies <a href="#pone.0001115-Davidson1">[1]</a>. The same is done for each of 100 randomized rankings (obtained by using a randomized Ey PWM). (A) For each cut-off value, the number of genes in common between the two sets is plotted on the y-axis. The values for the true Ey PWM are in blue, while the mean values of the randomized PWMs are in black. A 95% confidence interval is plotted in red dashed lines. (B) A p-value for each cut-off value is plotted on the y-axis. The p-values are calculated using a normal distribution based on the mean and standard deviation from the randomized rankings. The optimal p-value is obtained by using a cut-off value of 171.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001115.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.08 MB PDF)</p>
+<a name="pone.0001115.s004" id="pone.0001115.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001115.s004">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">Dataset used in the study. 166 TF-target relations extracted from the FlyReg database <a href="#pone.0001115-Davidson1">[1]</a>. For all factors with at least three different target genes, one footprint was chosen. 1000 bp flanking this footprint is used as training or test sequence in the cross-validation.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001115.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.11 MB PDF)</p>
+<a name="pone.0001115.s005" id="pone.0001115.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001115.s005">Note S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">Linking oligo-analysis output with Cluster-Buster input.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001115.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(0.07 MB PDF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>SA acknowledges Denis Thieffry, Bernard Jacq, and Carl Herrman from IBDML for helpful discussions and Carl Herrman for mapping FlyReg matrices to footprints. We thank Yves Moreau for help with order statistics; Rachel Harte, Hiram Clawson and colleagues at UCSC for genome sequence data, tools, and helpful suggestions on their usage; Daniel Pollard for FlyReg weight matrices; Wouter Bossuyt for suggestions on the manuscript. Part of this work was performed during a research visit at the Developmental Biology Institute of Marseille Luminy (IBDML), Marseille, France.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SA. Performed the experiments: Jv SA OS. Analyzed the data: SA. Contributed reagents/materials/analysis tools: Jv OS. Wrote the paper: BH SA.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001115-Davidson1" id="pone.0001115-Davidson1"></a>Davidson EH (2001) Genomic Regulatory Systems. San Diego, USA: Academic Press.   <ul class="find-nolinks"></ul></li><li><span class="label">2.
+              </span><a name="pone.0001115-zurLage1" id="pone.0001115-zurLage1"></a>zur Lage PI, Powell LM, Prentice DR, McLaughlin P, Jarman AP (2004) EGF receptor signaling triggers recruitment of Drosophila sense organ precursors by stimulating proneural gene autoregulation. Dev Cell  7: 687–696.  <ul class="find" data-citedArticleID="1012470" data-doi="10.1016/j.devcel.2004.09.015"><li><a href="http://dx.doi.org/10.1016/j.devcel.2004.09.015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=EGF+receptor+signaling+triggers+recruitment+of+Drosophila+sense+organ+precursors+by+stimulating+proneural+gene+autoregulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22EGF+receptor+signaling+triggers+recruitment+of+Drosophila+sense+organ+precursors+by+stimulating+proneural+gene+autoregulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001115-Sun1" id="pone.0001115-Sun1"></a>Sun Y, Jan LY, Jan YN (1998) Transcriptional regulation of atonal during development of the Drosophila peripheral nervous system. Development  125: 3731–3740.  <ul class="find" data-citedArticleID="1012456"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Transcriptional+regulation+of+atonal+during+development+of+the+Drosophila+peripheral+nervous+system.&amp;auth=&amp;atitle=Transcriptional+regulation+of+atonal+during+development+of+the+Drosophila+peripheral+nervous+system." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcriptional+regulation+of+atonal+during+development+of+the+Drosophila+peripheral+nervous+system." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcriptional+regulation+of+atonal+during+development+of+the+Drosophila+peripheral+nervous+system.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001115-Hassan1" id="pone.0001115-Hassan1"></a>Hassan BA, Bermingham NA, He Y, Sun Y, Jan YN, et al.  (2000) Atonal regulates neurite arborization but does not act as a proneural gene in the Drosophila brain. Neuron  25: 549–561.  <ul class="find" data-citedArticleID="1012406" data-doi="10.1016/s0896-6273(00)81059-4"><li><a href="http://dx.doi.org/10.1016/s0896-6273(00)81059-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Atonal+regulates+neurite+arborization+but+does+not+act+as+a+proneural+gene+in+the+Drosophila+brain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Atonal+regulates+neurite+arborization+but+does+not+act+as+a+proneural+gene+in+the+Drosophila+brain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001115-Blanchette1" id="pone.0001115-Blanchette1"></a>Blanchette M, Bataille AR, Chen X, Poitras C, Laganiere J, et al.  (2006) Genome-wide computational prediction of transcriptional regulatory modules reveals new insights into human gene expression. Genome Res  16: 656–668.  <ul class="find" data-citedArticleID="1012382" data-doi="10.1101/gr.4866006"><li><a href="http://dx.doi.org/10.1101/gr.4866006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+computational+prediction+of+transcriptional+regulatory+modules+reveals+new+insights+into+human+gene+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+computational+prediction+of+transcriptional+regulatory+modules+reveals+new+insights+into+human+gene+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001115-Taverner1" id="pone.0001115-Taverner1"></a>Taverner NV, Smith JC, Wardle FC (2004) Identifying transcriptional targets. Genome Biol  5: 210.  <ul class="find" data-citedArticleID="1012458" data-doi="10.1186/gb-2004-5-3-210"><li><a href="http://dx.doi.org/10.1186/gb-2004-5-3-210" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifying+transcriptional+targets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifying+transcriptional+targets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001115-Wasserman1" id="pone.0001115-Wasserman1"></a>Wasserman WW, Sandelin A (2004) Applied bioinformatics for the identification of regulatory elements. Nat Rev Genet  5: 276–287.  <ul class="find" data-citedArticleID="1012464" data-doi="10.1038/nrg1315"><li><a href="http://dx.doi.org/10.1038/nrg1315" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Applied+bioinformatics+for+the+identification+of+regulatory+elements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Applied+bioinformatics+for+the+identification+of+regulatory+elements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001115-Markstein1" id="pone.0001115-Markstein1"></a>Markstein M, Markstein P, Markstein V, Levine SM (2002) Genome-wide analysis of clustered Dorsal binding sites identifies putative target genes in the Drosophila embryo. Proc Natl Acad Sci U S A  99: 763–768.  <ul class="find" data-citedArticleID="1012424" data-doi="10.1073/pnas.012591199"><li><a href="http://dx.doi.org/10.1073/pnas.012591199" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+analysis+of+clustered+Dorsal+binding+sites+identifies+putative+target+genes+in+the+Drosophila+embryo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+analysis+of+clustered+Dorsal+binding+sites+identifies+putative+target+genes+in+the+Drosophila+embryo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001115-OchoaEspinosa1" id="pone.0001115-OchoaEspinosa1"></a>Ochoa-Espinosa A, Yucel G, Kaplan L, Pare A, Pura N, et al.  (2005) The role of binding site cluster strength in Bicoid-dependent patterning in Drosophila. Proc Natl Acad Sci U S A  102: 4960–4965.  <ul class="find" data-citedArticleID="1012430" data-doi="10.1073/pnas.0500373102"><li><a href="http://dx.doi.org/10.1073/pnas.0500373102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+role+of+binding+site+cluster+strength+in+Bicoid-dependent+patterning+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+role+of+binding+site+cluster+strength+in+Bicoid-dependent+patterning+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001115-Rebeiz1" id="pone.0001115-Rebeiz1"></a>Rebeiz M, Reeves LN, Posakony WJ (2002) SCORE: a computational approach to the identification of cis-regulatory modules and target genes in whole-genome sequence data. Site clustering. Proc Natl Acad Sci U S A  99: 9888–9893.  <ul class="find" data-citedArticleID="1012440" data-doi="10.1073/pnas.152320899"><li><a href="http://dx.doi.org/10.1073/pnas.152320899" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SCORE%3A+a+computational+approach+to+the+identification+of+cis-regulatory+modules+and+target+genes+in+whole-genome+sequence+data.+Site+clustering." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SCORE%3A+a+computational+approach+to+the+identification+of+cis-regulatory+modules+and+target+genes+in+whole-genome+sequence+data.+Site+clustering.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001115-Schroeder1" id="pone.0001115-Schroeder1"></a>Schroeder DM, Pearce M, Fak J, Fan H, Unnerstall U, et al.  (2004) Transcriptional control in the segmentation gene network of Drosophila. PLoS Biol  2: E271.  <ul class="find" data-citedArticleID="1012442" data-doi="10.1371/journal.pbio.0020271"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0020271" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transcriptional+control+in+the+segmentation+gene+network+of+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transcriptional+control+in+the+segmentation+gene+network+of+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001115-Halfon1" id="pone.0001115-Halfon1"></a>Halfon MS, Grad Y, Church GM, Michelson AM (2002) Computation-based discovery of related transcriptional regulatory modules and motifs using an experimentally validated combinatorial model. Genome Res  12: 1019–1028.  <ul class="find" data-citedArticleID="1012404"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Computation-based+discovery+of+related+transcriptional+regulatory+modules+and+motifs+using+an+experimentally+validated+combinatorial+model.&amp;auth=&amp;atitle=Computation-based+discovery+of+related+transcriptional+regulatory+modules+and+motifs+using+an+experimentally+validated+combinatorial+model." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computation-based+discovery+of+related+transcriptional+regulatory+modules+and+motifs+using+an+experimentally+validated+combinatorial+model." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computation-based+discovery+of+related+transcriptional+regulatory+modules+and+motifs+using+an+experimentally+validated+combinatorial+model.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001115-Berman1" id="pone.0001115-Berman1"></a>Berman PB, Pfeiffer DB, Laverty RT, Salzberg LS, Rubin MG, et al.  (2004) Computational identification of developmental enhancers: conservation and function of transcription factor binding-site clusters in Drosophila. Genome Biol  5: R61.  <ul class="find" data-citedArticleID="1012380"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Computational+identification+of+developmental+enhancers%3A+conservation+and+function+of+transcription+factor+binding-site+clusters+in+Drosophila.&amp;auth=&amp;atitle=Computational+identification+of+developmental+enhancers%3A+conservation+and+function+of+transcription+factor+binding-site+clusters+in+Drosophila." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+identification+of+developmental+enhancers%3A+conservation+and+function+of+transcription+factor+binding-site+clusters+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+identification+of+developmental+enhancers%3A+conservation+and+function+of+transcription+factor+binding-site+clusters+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001115-Eddy1" id="pone.0001115-Eddy1"></a>Eddy SR (2004) What is a hidden Markov model? Nat Biotechnol  22: 1315–1316.  <ul class="find" data-citedArticleID="1012396" data-doi="10.1038/nbt1004-1315"><li><a href="http://dx.doi.org/10.1038/nbt1004-1315" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=What+is+a+hidden+Markov+model%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22What+is+a+hidden+Markov+model%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001115-Frith1" id="pone.0001115-Frith1"></a>Frith CM, Li CM, Weng Z (2003) Cluster-Buster: Finding dense clusters of motifs in DNA sequences. Nucleic Acids Res  31: 3666–3668.  <ul class="find" data-citedArticleID="1012400" data-doi="10.1093/nar/gkg540"><li><a href="http://dx.doi.org/10.1093/nar/gkg540" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cluster-Buster%3A+Finding+dense+clusters+of+motifs+in+DNA+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cluster-Buster%3A+Finding+dense+clusters+of+motifs+in+DNA+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001115-Rajewsky1" id="pone.0001115-Rajewsky1"></a>Rajewsky N, Vergassola M, Gaul U, Siggia ED (2002) Computational detection of genomic cis-regulatory modules applied to body patterning in the early Drosophila embryo. BMC Bioinformatics  3: 30.  <ul class="find" data-citedArticleID="1012438"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo.&amp;auth=&amp;atitle=Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+detection+of+genomic+cis-regulatory+modules+applied+to+body+patterning+in+the+early+Drosophila+embryo.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001115-Aerts1" id="pone.0001115-Aerts1"></a>Aerts S, Thijs G, Coessens B, Staes M, Moreau Y, et al.  (2003) Toucan: deciphering the cis-regulatory logic of coregulated genes. Nucleic Acids Res  31: 1753–1764.  <ul class="find" data-citedArticleID="1012372" data-doi="10.1093/nar/gkg268"><li><a href="http://dx.doi.org/10.1093/nar/gkg268" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Toucan%3A+deciphering+the+cis-regulatory+logic+of+coregulated+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Toucan%3A+deciphering+the+cis-regulatory+logic+of+coregulated+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001115-Emberly1" id="pone.0001115-Emberly1"></a>Emberly E, Rajewsky N, Siggia DE (2003) Conservation of regulatory elements between two species of Drosophila. BMC Bioinformatics  4: 57.  <ul class="find" data-citedArticleID="1012398" data-doi="10.1186/1471-2105-4-57"><li><a href="http://dx.doi.org/10.1186/1471-2105-4-57" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Conservation+of+regulatory+elements+between+two+species+of+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Conservation+of+regulatory+elements+between+two+species+of+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001115-Sinha1" id="pone.0001115-Sinha1"></a>Sinha S, Schroeder MD, Unnerstall U, Gaul U, Siggia ED (2004) Cross-species comparison significantly improves genome-wide prediction of cis-regulatory modules in Drosophila. BMC Bioinformatics  5: 129.  <ul class="find" data-citedArticleID="1012450"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Cross-species+comparison+significantly+improves+genome-wide+prediction+of+cis-regulatory+modules+in+Drosophila.&amp;auth=&amp;atitle=Cross-species+comparison+significantly+improves+genome-wide+prediction+of+cis-regulatory+modules+in+Drosophila." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cross-species+comparison+significantly+improves+genome-wide+prediction+of+cis-regulatory+modules+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cross-species+comparison+significantly+improves+genome-wide+prediction+of+cis-regulatory+modules+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001115-Bergman1" id="pone.0001115-Bergman1"></a>Bergman MC, Carlson WJ, Celniker ES (2005) Drosophila DNase I footprint database: a systematic genome annotation of transcription factor binding sites in the fruitfly, Drosophila. Bioinformatics  21: 1747–1749.  <ul class="find" data-citedArticleID="1012378" data-doi="10.1093/bioinformatics/bti173"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti173" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Drosophila+DNase+I+footprint+database%3A+a+systematic+genome+annotation+of+transcription+factor+binding+sites+in+the+fruitfly%2C+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Drosophila+DNase+I+footprint+database%3A+a+systematic+genome+annotation+of+transcription+factor+binding+sites+in+the+fruitfly%2C+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001115-Drosophila1" id="pone.0001115-Drosophila1"></a>Drosophila 12 Genomes Consortium (2007) Evolution of genes and genomes on the Drosophila phylogeny. Nature.   doi:10.1038/nature06341.  <ul class="find" data-citedArticleID="1012394"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Evolution+of+genes+and+genomes+on+the+Drosophila+phylogeny.&amp;auth=&amp;atitle=Evolution+of+genes+and+genomes+on+the+Drosophila+phylogeny." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+of+genes+and+genomes+on+the+Drosophila+phylogeny." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+of+genes+and+genomes+on+the+Drosophila+phylogeny.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001115-Stark1" id="pone.0001115-Stark1"></a>Stark A, Lin MF, Kheradpour P, Pederson J, Parts L, et al.  (2007) Discovery of functional elements in 12 Drosophila genomes using evolutionary signatures. Nature.   doi:10.1038/nature06340.  <ul class="find" data-citedArticleID="1012452"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Discovery+of+functional+elements+in+12+Drosophila+genomes+using+evolutionary+signatures.&amp;auth=&amp;atitle=Discovery+of+functional+elements+in+12+Drosophila+genomes+using+evolutionary+signatures." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Discovery+of+functional+elements+in+12+Drosophila+genomes+using+evolutionary+signatures." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Discovery+of+functional+elements+in+12+Drosophila+genomes+using+evolutionary+signatures.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001115-Lifanov1" id="pone.0001115-Lifanov1"></a>Lifanov AP, Makeev VJ, Nazina AG, Papatsenko DA (2003) Homotypic regulatory clusters in Drosophila. Genome Res  13: 579–588.  <ul class="find" data-citedArticleID="1012422" data-doi="10.1101/gr.668403"><li><a href="http://dx.doi.org/10.1101/gr.668403" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Homotypic+regulatory+clusters+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Homotypic+regulatory+clusters+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001115-Johansson1" id="pone.0001115-Johansson1"></a>Johansson O, Alkema W, Wasserman WW, Lagergren J (2003) Identification of functional clusters of transcription factor binding motifs in genome sequences: the MSCAN algorithm. Bioinformatics  19: Suppl 1i169–76.  <ul class="find" data-citedArticleID="1012410" data-doi="10.1093/bioinformatics/btg1021"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1021" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identification+of+functional+clusters+of+transcription+factor+binding+motifs+in+genome+sequences%3A+the+MSCAN+algorithm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identification+of+functional+clusters+of+transcription+factor+binding+motifs+in+genome+sequences%3A+the+MSCAN+algorithm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001115-Bailey1" id="pone.0001115-Bailey1"></a>Bailey TL, Noble WS (2003) Searching for statistically significant regulatory modules. Bioinformatics  19: Suppl 2II16–II25.  <ul class="find" data-citedArticleID="1012376" data-doi="10.1093/bioinformatics/btg1054"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg1054" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Searching+for+statistically+significant+regulatory+modules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Searching+for+statistically+significant+regulatory+modules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001115-Segal1" id="pone.0001115-Segal1"></a>Segal E, Sharan R (2005) A discriminative model for identifying spatial cis-regulatory modules. J Comput Biol  12: 822–834.  <ul class="find" data-citedArticleID="1012444" data-doi="10.1089/cmb.2005.12.822"><li><a href="http://dx.doi.org/10.1089/cmb.2005.12.822" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+discriminative+model+for+identifying+spatial+cis-regulatory+modules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+discriminative+model+for+identifying+spatial+cis-regulatory+modules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001115-Philippakis1" id="pone.0001115-Philippakis1"></a>Philippakis AA, Busser BW, Gisselbrecht SS, He FS, Estrada B, et al.  (2006) Expression-guided in silico evaluation of candidate cis regulatory codes for Drosophila muscle founder cells. PLoS Comput Biol  2: e53.  <ul class="find" data-citedArticleID="1012434" data-doi="10.1371/journal.pcbi.0020053"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020053" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Expression-guided+in+silico+evaluation+of+candidate+cis+regulatory+codes+for+Drosophila+muscle+founder+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Expression-guided+in+silico+evaluation+of+candidate+cis+regulatory+codes+for+Drosophila+muscle+founder+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001115-Chang1" id="pone.0001115-Chang1"></a>Chang LW, Nagarajan R, Magee JA, Milbrandt J, Stormo GD (2006) A systematic model to predict transcriptional regulatory mechanisms based on overrepresentation of transcription factor binding profiles. Genome Res  16: 405–413.  <ul class="find" data-citedArticleID="1012390" data-doi="10.1101/gr.4303406"><li><a href="http://dx.doi.org/10.1101/gr.4303406" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+systematic+model+to+predict+transcriptional+regulatory+mechanisms+based+on+overrepresentation+of+transcription+factor+binding+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+systematic+model+to+predict+transcriptional+regulatory+mechanisms+based+on+overrepresentation+of+transcription+factor+binding+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001115-Chan1" id="pone.0001115-Chan1"></a>Chan BY, Kibler D (2005) Using hexamers to predict cis-regulatory motifs in Drosophila. BMC Bioinformatics  6: 262.  <ul class="find" data-citedArticleID="1012388"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Using+hexamers+to+predict+cis-regulatory+motifs+in+Drosophila.&amp;auth=&amp;atitle=Using+hexamers+to+predict+cis-regulatory+motifs+in+Drosophila." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Using+hexamers+to+predict+cis-regulatory+motifs+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Using+hexamers+to+predict+cis-regulatory+motifs+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001115-Aerts2" id="pone.0001115-Aerts2"></a>Aerts S, Lambrechts D, Maity S, Van Loo P, Coessens B, et al.  (2006) Gene prioritization through genomic data fusion. Nat Biotechnol  24: 537–544.  <ul class="find" data-citedArticleID="1012374" data-doi="10.1038/nbt1203"><li><a href="http://dx.doi.org/10.1038/nbt1203" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+prioritization+through+genomic+data+fusion." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+prioritization+through+genomic+data+fusion.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001115-Gallo1" id="pone.0001115-Gallo1"></a>Gallo SM, Li L, Hu Z, Halfon MS (2006) REDfly: a Regulatory Element Database for Drosophila. Bioinformatics  22: 381–383.  <ul class="find" data-citedArticleID="1012402" data-doi="10.1093/bioinformatics/bti794"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti794" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=REDfly%3A+a+Regulatory+Element+Database+for+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22REDfly%3A+a+Regulatory+Element+Database+for+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001115-Moses1" id="pone.0001115-Moses1"></a>Moses AM, Pollard DA, Nix DA, Iyer VN, Li XY, et al.  (2006) Large-scale turnover of functional transcription factor binding sites in Drosophila. PLoS Comput Biol  2: e130.  <ul class="find" data-citedArticleID="1012428" data-doi="10.1371/journal.pcbi.0020130.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020130.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Large-scale+turnover+of+functional+transcription+factor+binding+sites+in+Drosophila." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Large-scale+turnover+of+functional+transcription+factor+binding+sites+in+Drosophila.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001115-Stuart1" id="pone.0001115-Stuart1"></a>Stuart JM, Segal E, Koller D, Kim SK (2003) A gene-coexpression network for global discovery of conserved genetic modules. Science  302: 249–255.  <ul class="find" data-citedArticleID="1012454" data-doi="10.1126/science.1087447"><li><a href="http://dx.doi.org/10.1126/science.1087447" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+gene-coexpression+network+for+global+discovery+of+conserved+genetic+modules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+gene-coexpression+network+for+global+discovery+of+conserved+genetic+modules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001115-Pritsker1" id="pone.0001115-Pritsker1"></a>Pritsker M, Liu YC, Beer MA, Tavazoie S (2004) Whole-genome discovery of transcription factor binding sites by network-level conservation. Genome Res  14: 99–108.  <ul class="find" data-citedArticleID="1012436" data-doi="10.1101/gr.1739204"><li><a href="http://dx.doi.org/10.1101/gr.1739204" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Whole-genome+discovery+of+transcription+factor+binding+sites+by+network-level+conservation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Whole-genome+discovery+of+transcription+factor+binding+sites+by+network-level+conservation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001115-Karolchik1" id="pone.0001115-Karolchik1"></a>Karolchik D, Baertsch R, Diekhans M, Furey TS, Hinrichs A, et al.  (2003) The UCSC Genome Browser Database. Nucleic Acids Res  31: 51–54.  <ul class="find" data-citedArticleID="1012412" data-doi="10.1093/nar/gkg129"><li><a href="http://dx.doi.org/10.1093/nar/gkg129" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+UCSC+Genome+Browser+Database." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+UCSC+Genome+Browser+Database.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0001115-Brudno1" id="pone.0001115-Brudno1"></a>Brudno M, Do CB, Cooper GM, Kim MF, Davydov E, et al.  (2003) LAGAN and Multi-LAGAN: efficient tools for large-scale multiple alignment of genomic DNA. Genome Res  13: 721–731.  <ul class="find" data-citedArticleID="1012386" data-doi="10.1101/gr.926603"><li><a href="http://dx.doi.org/10.1101/gr.926603" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=LAGAN+and+Multi-LAGAN%3A+efficient+tools+for+large-scale+multiple+alignment+of+genomic+DNA." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22LAGAN+and+Multi-LAGAN%3A+efficient+tools+for+large-scale+multiple+alignment+of+genomic+DNA.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0001115-Siepel1" id="pone.0001115-Siepel1"></a>Siepel A, Haussler D (2005)  Phylogenetic hidden Markov models. In: Nielsen R, editor. Statistical Methods in Molecular Evolution. New York: Springer.   <ul class="find-nolinks"></ul></li><li><span class="label">38.
+              </span><a name="pone.0001115-Thijs1" id="pone.0001115-Thijs1"></a>Thijs G, Marchal K, Lescot M, Rombauts S, De Moor B, et al.  (2002) A Gibbs sampling method to detect overrepresented motifs in the upstream regions of coexpressed genes. J Comput Biol  9: 447–464.  <ul class="find" data-citedArticleID="1012460" data-doi="10.1089/10665270252935566"><li><a href="http://dx.doi.org/10.1089/10665270252935566" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Gibbs+sampling+method+to+detect+overrepresented+motifs+in+the+upstream+regions+of+coexpressed+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Gibbs+sampling+method+to+detect+overrepresented+motifs+in+the+upstream+regions+of+coexpressed+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0001115-vanHelden1" id="pone.0001115-vanHelden1"></a>van Helden J, Andre B, Collado-Vides J (1998) Extracting regulatory sites from the upstream region of yeast genes by computational analysis of oligonucleotide frequencies. J Mol Biol  281: 827–842.  <ul class="find" data-citedArticleID="1012468" data-doi="10.1006/jmbi.1998.1947"><li><a href="http://dx.doi.org/10.1006/jmbi.1998.1947" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Extracting+regulatory+sites+from+the+upstream+region+of+yeast+genes+by+computational+analysis+of+oligonucleotide+frequencies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Extracting+regulatory+sites+from+the+upstream+region+of+yeast+genes+by+computational+analysis+of+oligonucleotide+frequencies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0001115-Tompa1" id="pone.0001115-Tompa1"></a>Tompa M, Li N, Bailey TL, Church GM, De Moor B, et al.  (2005) Assessing computational tools for the discovery of transcription factor binding sites. Nat Biotechnol  23: 137–144.  <ul class="find" data-citedArticleID="1012462" data-doi="10.1038/nbt1053"><li><a href="http://dx.doi.org/10.1038/nbt1053" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0001115-Siddharthan1" id="pone.0001115-Siddharthan1"></a>Siddharthan R, Siggia DE, Nimwegen Ev (2005) PhyloGibbs: a Gibbs sampling motif finder that incorporates phylogeny. PLoS Comput Biol  1: e67.  <ul class="find" data-citedArticleID="1012446" data-doi="10.1371/journal.pcbi.0010067.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0010067.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PhyloGibbs%3A+a+Gibbs+sampling+motif+finder+that+incorporates+phylogeny." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PhyloGibbs%3A+a+Gibbs+sampling+motif+finder+that+incorporates+phylogeny.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0001115-Zhang1" id="pone.0001115-Zhang1"></a>Zhang T, Ranade S, Cai CQ, Clouser C, Pignoni F (2006) Direct control of neurogenesis by selector factors in the fly eye: regulation of atonal by Ey and So. Development  133: 4881–4889.  <ul class="find" data-citedArticleID="1012466" data-doi="10.1242/dev.02669"><li><a href="http://dx.doi.org/10.1242/dev.02669" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Direct+control+of+neurogenesis+by+selector+factors+in+the+fly+eye%3A+regulation+of+atonal+by+Ey+and+So." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Direct+control+of+neurogenesis+by+selector+factors+in+the+fly+eye%3A+regulation+of+atonal+by+Ey+and+So.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0001115-Ostrin1" id="pone.0001115-Ostrin1"></a>Ostrin JE, Li Y, Hoffman K, Liu J, Wang K, et al.  (2006) Genome-wide identification of direct targets of the Drosophila retinal determination protein Eyeless. Genome Res  16: 466–476.  <ul class="find" data-citedArticleID="1012432" data-doi="10.1101/gr.4673006"><li><a href="http://dx.doi.org/10.1101/gr.4673006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+identification+of+direct+targets+of+the+Drosophila+retinal+determination+protein+Eyeless." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+identification+of+direct+targets+of+the+Drosophila+retinal+determination+protein+Eyeless.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0001115-Adryan1" id="pone.0001115-Adryan1"></a>Adryan B, Teichmann SA (2006) FlyTF: a systematic review of site-specific transcription factors in the fruit fly Drosophila melanogaster. Bioinformatics  22: 1532–1533.  <ul class="find" data-citedArticleID="1012370" data-doi="10.1093/bioinformatics/btl143"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl143" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=FlyTF%3A+a+systematic+review+of+site-specific+transcription+factors+in+the+fruit+fly+Drosophila+melanogaster." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22FlyTF%3A+a+systematic+review+of+site-specific+transcription+factors+in+the+fruit+fly+Drosophila+melanogaster.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0001115-Montgomery1" id="pone.0001115-Montgomery1"></a>Montgomery SB, Griffith OL, Sleumer MC, Bergman CM, Bilenky M, et al.  (2006) ORegAnno: an open access database and curation system for literature-derived promoters, transcription factor binding sites and regulatory variation. Bioinformatics  22: 637–640.  <ul class="find" data-citedArticleID="1012426" data-doi="10.1093/bioinformatics/btk027"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btk027" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ORegAnno%3A+an+open+access+database+and+curation+system+for+literature-derived+promoters%2C+transcription+factor+binding+sites+and+regulatory+variation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ORegAnno%3A+an+open+access+database+and+curation+system+for+literature-derived+promoters%2C+transcription+factor+binding+sites+and+regulatory+variation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0001115-King1" id="pone.0001115-King1"></a>King DC, Taylor J, Zhang Y, Cheng Y, Lawson HA, et al.  (2007) Finding cis-regulatory elements using comparative genomics: some lessons from ENCODE data. Genome Res  17: 775–786.  <ul class="find" data-citedArticleID="1012418" data-doi="10.1101/gr.5592107"><li><a href="http://dx.doi.org/10.1101/gr.5592107" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Finding+cis-regulatory+elements+using+comparative+genomics%3A+some+lessons+from+ENCODE+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Finding+cis-regulatory+elements+using+comparative+genomics%3A+some+lessons+from+ENCODE+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0001115-Hertz1" id="pone.0001115-Hertz1"></a>Hertz GZ, Stormo GD (1999) Identifying DNA and protein patterns with statistically significant alignments of multiple sequences. Bioinformatics  15: 563–577.  <ul class="find" data-citedArticleID="1012408" data-doi="10.1093/bioinformatics/15.7.563"><li><a href="http://dx.doi.org/10.1093/bioinformatics/15.7.563" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifying+DNA+and+protein+patterns+with+statistically+significant+alignments+of+multiple+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifying+DNA+and+protein+patterns+with+statistically+significant+alignments+of+multiple+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0001115-Karolchik2" id="pone.0001115-Karolchik2"></a>Karolchik D, Hinrichs AS, Furey TS, Roskin KM, Sugnet CW, et al.  (2004) The UCSC Table Browser data retrieval tool. Nucleic Acids Res  32: D493–6.  <ul class="find" data-citedArticleID="1012414" data-doi="10.1093/nar/gkh103"><li><a href="http://dx.doi.org/10.1093/nar/gkh103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+UCSC+Table+Browser+data+retrieval+tool." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+UCSC+Table+Browser+data+retrieval+tool.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">49.
+              </span><a name="pone.0001115-Kent1" id="pone.0001115-Kent1"></a>Kent WJ, Sugnet CW, Furey TS, Roskin KM, Pringle TH, et al.  (2002) The human genome browser at UCSC. Genome Res  12: 996–1006.  <ul class="find" data-citedArticleID="1012416" data-doi="10.1101/gr.229102"><li><a href="http://dx.doi.org/10.1101/gr.229102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+human+genome+browser+at+UCSC." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+human+genome+browser+at+UCSC.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">50.
+              </span><a name="pone.0001115-Boyle1" id="pone.0001115-Boyle1"></a>Boyle IE, Weng S, Gollub J, Jin H, Botstein D, et al.  (2004) GO::TermFinder–open source software for accessing Gene Ontology information and finding significantly enriched Gene Ontology terms. Bioinformatics  20: 3710–3715.  <ul class="find" data-citedArticleID="1012384" data-doi="10.1093/bioinformatics/bth456"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth456" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=GO%3A%3ATermFinder%E2%80%93open+source+software+for+accessing+Gene+Ontology+information+and+finding+significantly+enriched+Gene+Ontology+terms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22GO%3A%3ATermFinder%E2%80%93open+source+software+for+accessing+Gene+Ontology+information+and+finding+significantly+enriched+Gene+Ontology+terms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">51.
+              </span><a name="pone.0001115-Kurtz1" id="pone.0001115-Kurtz1"></a>Kurtz S, Choudhuri JV, Ohlebusch E, Schleiermacher C, Stoye J, et al.  (2001) REPuter: the manifold applications of repeat analysis on a genomic scale. Nucleic Acids Res  29: 4633–4642.  <ul class="find" data-citedArticleID="1012420" data-doi="10.1093/nar/29.22.4633"><li><a href="http://dx.doi.org/10.1093/nar/29.22.4633" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=REPuter%3A+the+manifold+applications+of+repeat+analysis+on+a+genomic+scale." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22REPuter%3A+the+manifold+applications+of+repeat+analysis+on+a+genomic+scale.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.XML" value="121110"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.PDF" value="561003"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g001.PNG_L" value="2581458"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g001.PNG_M" value="127838"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g001.PNG_S" value="8898"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g001.TIF" value="4467968"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g001.PNG_I" value="40639"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g002.PNG_L" value="571706"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g002.PNG_M" value="85878"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g002.PNG_S" value="11143"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g002.TIF" value="1330044"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g002.PNG_I" value="30503"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g003.PNG_L" value="782515"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g003.PNG_M" value="138232"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g003.PNG_S" value="11539"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g003.TIF" value="3569114"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g003.PNG_I" value="47951"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g004.PNG_L" value="583121"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g004.PNG_M" value="92789"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g004.PNG_S" value="12261"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g004.TIF" value="1218772"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g004.PNG_I" value="59144"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g005.PNG_L" value="591502"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g005.PNG_M" value="114695"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g005.PNG_S" value="10009"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g005.TIF" value="2525774"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.g005.PNG_I" value="40086"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.t001.PNG_L" value="426952"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.t001.PNG_M" value="242042"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.t001.PNG_S" value="20806"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.t001.TIF" value="1769222"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.t001.PNG_I" value="73434"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.s001.PDF" value="148577"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.s002.PDF" value="704529"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.s003.PDF" value="80219"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.s004.PDF" value="108350"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001115.s005.PDF" value="67568"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001115&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001115" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001115&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001115&volume=&issue=&title=Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes&author_name=Stein%20Aerts%2C%20Jacques%20van%20Helden%2C%20Olivier%20Sand%2C%20Bassem%20A.%20Hassan&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001115" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115&amp;t=Fine-Tuning%20Enhancer%20Models%20to%20Predict%20Transcriptional%20Targets%20across%20Multiple%20Genomes" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115&title=Fine-Tuning%20Enhancer%20Models%20to%20Predict%20Transcriptional%20Targets%20across%20Multiple%20Genomes&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115&amp;title=Fine-Tuning%20Enhancer%20Models%20to%20Predict%20Transcriptional%20Targets%20across%20Multiple%20Genomes" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001115&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Fine-Tuning Enhancer Models to Predict Transcriptional Targets across Multiple Genomes';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001115';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Fine-Tuning%20Enhancer%20Models%20to%20Predict%20Transcriptional%20Targets%20across%20Multiple%20Genomes http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001115" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001115" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Conservation+science%22" title="Search for articles in the subject area:'Conservation science'"><div class="flagText">Conservation science</div></a>
+              <div data-categoryid="40107" data-articleid="25064"
+                   data-categoryname="Conservation science"
+                   class="flagImage" title="Flag 'Conservation science' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Drosophila+melanogaster%22" title="Search for articles in the subject area:'Drosophila melanogaster'"><div class="flagText">Drosophila melanogaster</div></a>
+              <div data-categoryid="32461" data-articleid="25064"
+                   data-categoryname="Drosophila melanogaster"
+                   class="flagImage" title="Flag 'Drosophila melanogaster' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+targeting%22" title="Search for articles in the subject area:'Gene targeting'"><div class="flagText">Gene targeting</div></a>
+              <div data-categoryid="17701" data-articleid="25064"
+                   data-categoryname="Gene targeting"
+                   class="flagImage" title="Flag 'Gene targeting' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome+evolution%22" title="Search for articles in the subject area:'Genome evolution'"><div class="flagText">Genome evolution</div></a>
+              <div data-categoryid="17207" data-articleid="25064"
+                   data-categoryname="Genome evolution"
+                   class="flagImage" title="Flag 'Genome evolution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genomic+databases%22" title="Search for articles in the subject area:'Genomic databases'"><div class="flagText">Genomic databases</div></a>
+              <div data-categoryid="42727" data-articleid="25064"
+                   data-categoryname="Genomic databases"
+                   class="flagImage" title="Flag 'Genomic databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Invertebrate+genomics%22" title="Search for articles in the subject area:'Invertebrate genomics'"><div class="flagText">Invertebrate genomics</div></a>
+              <div data-categoryid="17221" data-articleid="25064"
+                   data-categoryname="Invertebrate genomics"
+                   class="flagImage" title="Flag 'Invertebrate genomics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Network+motifs%22" title="Search for articles in the subject area:'Network motifs'"><div class="flagText">Network motifs</div></a>
+              <div data-categoryid="18085" data-articleid="25064"
+                   data-categoryname="Network motifs"
+                   class="flagImage" title="Flag 'Network motifs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+motif+analysis%22" title="Search for articles in the subject area:'Sequence motif analysis'"><div class="flagText">Sequence motif analysis</div></a>
+              <div data-categoryid="19657" data-articleid="25064"
+                   data-categoryname="Sequence motif analysis"
+                   class="flagImage" title="Flag 'Sequence motif analysis' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=4636'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6487'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=1517&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=10093">Drosophila Genomics</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

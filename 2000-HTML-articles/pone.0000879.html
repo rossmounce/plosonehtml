@@ -1,0 +1,1142 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Dating Phylogenies with Hybrid Local Molecular Clocks</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000879"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000879" />
+
+    <meta name="citation_title" content="Dating Phylogenies with Hybrid Local Molecular Clocks"/>
+    <meta itemprop="name" content="Dating Phylogenies with Hybrid Local Molecular Clocks"/>
+
+      <meta name="citation_author" content="Stéphane Aris-Brosou"/>
+            <meta name="citation_author_institution" content="Department of Biology, University of Ottawa, Ontario, Canada"/>
+            <meta name="citation_author_institution" content="Department of Mathematics and Statistics, University of Ottawa, Ontario, Canada"/>
+
+    <meta name="citation_date" content="2007/9/12"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000879.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e879"/>
+    <meta name="citation_issue" content="9"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Evolutionary divergence and convergence in proteins. Evolving genes and proteins.; citation_author=E Zuckerkandl; citation_author=L Pauling; citation_author=V Bryson; citation_author=HJ Vogel; citation_number=1; citation_pages=97-166; citation_date=1965; citation_publisher=Academic Press; " />
+      <meta name="citation_reference" content="citation_title=Inferring phylogenies.; citation_author=J Felsenstein; citation_number=2; citation_date=2003; citation_publisher=Sinauer; " />
+      <meta name="citation_reference" content="citation_title=The modern molecular clock.; citation_author=L Bromham; citation_author=D Penny; citation_journal_title=Nat Rev Genet; citation_volume=4; citation_number=3; citation_pages=216-224; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Converting distance to time: application to human evolution.; citation_author=H Kishino; citation_author=M Hasegawa; citation_journal_title=Method Enzymol; citation_volume=183; citation_number=4; citation_pages=550-570; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=Estimating divergence dates from molecular sequences.; citation_author=A Rambaut; citation_author=L Bromham; citation_journal_title=Mol Biol Evol; citation_volume=15; citation_number=5; citation_pages=442-448; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Estimation of primate speciation dates using local molecular clocks.; citation_author=AD Yoder; citation_author=Z Yang; citation_journal_title=Mol Biol Evol; citation_volume=17; citation_number=6; citation_pages=1081-1090; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Comparison of likelihood and Bayesian methods for estimating divergence times using multiple gene loci and calibration points, with application to a radiation of cute-looking mouse lemur species.; citation_author=Z Yang; citation_author=AD Yoder; citation_journal_title=Syst Biol; citation_volume=52; citation_number=7; citation_pages=705-716; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A nonparametric approach to estimating divergence times in the absence of rate constancy.; citation_author=MJ Sanderson; citation_journal_title=Mol Biol Evol; citation_volume=14; citation_number=8; citation_pages=1218-1232; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Estimating absolute rates of molecular evolution and divergence times: a penalized likelihood approach.; citation_author=MJ Sanderson; citation_journal_title=Mol Biol Evol; citation_volume=19; citation_number=9; citation_pages=101-109; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The elements of statistical learning.; citation_author=T Hastie; citation_author=R Tibshirani; citation_author=JH Friedman; citation_number=10; citation_date=2001; citation_publisher=Springer-Verlag; " />
+      <meta name="citation_reference" content="citation_title=Estimating the rate of evolution of the rate of molecular evolution.; citation_author=JL Thorne; citation_author=H Kishino; citation_author=IS Painter; citation_journal_title=Mol Biol Evol; citation_volume=15; citation_number=11; citation_pages=1647-1657; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Accuracy of rate estimation using relaxed-clock models with a critical focus on the early metazoan radiation.; citation_author=SY Ho; citation_author=MJ Phillips; citation_author=AJ Drummond; citation_author=A Cooper; citation_journal_title=Mol Biol Evol; citation_volume=22; citation_number=12; citation_pages=1355-1363; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Relaxed phylogenetics and dating with confidence.; citation_author=AJ Drummond; citation_author=SY Ho; citation_author=MJ Phillips; citation_author=A Rambaut; citation_journal_title=PLoS Biol; citation_volume=4; citation_number=13; citation_pages=e88; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A compound Poisson process for relaxing the molecular clock.; citation_author=JP Huelsenbeck; citation_author=B Larget; citation_author=DL Swofford; citation_journal_title=Genetics; citation_volume=154; citation_number=14; citation_pages=1879-1892; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Identifiability of parameters in MCMC Bayesian inference of phylogeny.; citation_author=B Rannala; citation_journal_title=Syst Biol; citation_volume=51; citation_number=15; citation_pages=754-760; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Bayesian models of episodic evolution support a late precambrian explosive diversification of the metazoa.; citation_author=S Aris-Brosou; citation_author=Z Yang; citation_journal_title=Mol Biol Evol; citation_volume=20; citation_number=16; citation_pages=1947-1954; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Molecular dates for the “cambrian explosion”: the influence of prior assumptions.; citation_author=JJ Welch; citation_author=E Fontanillas; citation_author=L Bromham; citation_journal_title=Syst Biol; citation_volume=54; citation_number=17; citation_pages=672-678; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Dating dispersal and radiation in the Gymnosperm Gnetum (Gnetales)‚ clock calibration when outgroup relationships are uncertain.; citation_author=H Won; citation_author=S Renner; citation_journal_title=Syst Biol; citation_volume=55; citation_number=18; citation_pages=610-622; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A heuristic rate smoothing procedure for maximum likelihood estimation of species divergence times.; citation_author=Z Yang; citation_journal_title=Acta Zool Sinica; citation_volume=50; citation_number=19; citation_pages=645-656; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Computational molecular evolution.; citation_author=Z Yang; citation_number=20; citation_pages=xvi, 357; citation_date=2006; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=Likelihood.; citation_author=AW Edwards; citation_number=21; citation_date=1992; citation_publisher=John Hopkins University Press; " />
+      <meta name="citation_reference" content="citation_title=Performance of a divergence time estimation method under a probabilistic model of rate evolution.; citation_author=H Kishino; citation_author=JL Thorne; citation_author=WJ Bruno; citation_journal_title=Mol Biol Evol; citation_volume=18; citation_number=22; citation_pages=352-361; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=PAML: a program package for phylogenetic analysis by maximum likelihood.; citation_author=Z Yang; citation_journal_title=Comput Appl Biosci; citation_volume=13; citation_number=23; citation_pages=555-556; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=A K-means clustering algorithm.; citation_author=JA Hartigan; citation_author=MA Wong; citation_journal_title=Appl Stat; citation_volume=28; citation_number=24; citation_pages=100-108; citation_date=1979; " />
+      <meta name="citation_reference" content="citation_title=Finding groups in data : an introduction to cluster analysis.; citation_author=L Kaufman; citation_author=PJ Rousseeuw; citation_number=25; citation_pages=xiv, 342; citation_date=1990; citation_publisher=Wiley; " />
+      <meta name="citation_reference" content="citation_title=Estimating the number of clusters in a data set via the gap statistic.; citation_author=R Tibshirani; citation_author=G Walther; citation_author=T Hastie; citation_journal_title=J Roy Stat Soc B; citation_volume=63; citation_number=26; citation_pages=411-423; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Statistical inference for simultaneous clustering of gene expression data.; citation_author=KS Pollard; citation_author=MJ van der Laan; citation_journal_title=Math Biosci; citation_volume=176; citation_number=27; citation_pages=99-121; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=A new algorithm for hybrid hierarchical clustering with visualization and the bootstrap.; citation_author=M van der Laan; citation_author=KS Pollard; citation_journal_title=J Stat Plan Infer; citation_volume=117; citation_number=28; citation_pages=275-303; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Bayesian estimation of ancestral character states on phylogenies.; citation_author=M Pagel; citation_author=A Meade; citation_author=D Barker; citation_journal_title=Syst Biol; citation_volume=53; citation_number=29; citation_pages=673-684; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Repeated morphological evolution through cis-regulatory changes in a pleiotropic gene.; citation_author=B Prud'homme; citation_author=N Gompel; citation_author=A Rokas; citation_author=VA Kassner; citation_author=TM Williams; citation_journal_title=Nature; citation_volume=440; citation_number=30; citation_pages=1050-1053; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=MRBAYES 3: Bayesian phylogenetic inference under mixed models.; citation_author=F Ronquist; citation_author=JP Huelsenbeck; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=31; citation_pages=1572-1574; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A codon-based model of nucleotide substitution for protein-coding DNA sequences.; citation_author=N Goldman; citation_author=Z Yang; citation_journal_title=Mol Biol Evol; citation_volume=11; citation_number=32; citation_pages=725-736; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Testing the molecular clock: Molecular and paleontological estimates of divergence times in the Echinoidea (Echinodermata).; citation_author=AB Smith; citation_author=D Pisani; citation_author=JA Mackenzie-Dodds; citation_author=B Stockley; citation_author=BL Webster; citation_journal_title=Mol Biol Evol; citation_volume=23; citation_number=33; citation_pages=1832-1851; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Some probabilistic and statistical problems in the analysis of DNA sequences.; citation_author=S Tavare; citation_journal_title=Lectures on Mathematics in the Life Sciences; citation_volume=17; citation_number=34; citation_pages=57-86; citation_date=1986; " />
+      <meta name="citation_reference" content="citation_title=Maximum likelihood phylogenetic estimation from DNA sequences with variable rates over sites: approximate methods.; citation_author=Z Yang; citation_journal_title=J Mol Evol; citation_volume=39; citation_number=35; citation_pages=306-314; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Dating of the human-ape splitting by a molecular clock of mitochondrial DNA.; citation_author=M Hasegawa; citation_author=H Kishino; citation_author=T Yano; citation_journal_title=J Mol Evol; citation_volume=22; citation_number=36; citation_pages=160-174; citation_date=1985; " />
+      <meta name="citation_reference" content="citation_title=Nuclear gene sequences provide evidence for the monophyly of australidelphian marsupials.; citation_author=H Amrine-Madsen; citation_author=M Scally; citation_author=M Westerman; citation_author=MJ Stanhope; citation_author=C Krajewski; citation_journal_title=Mol Phylogenet Evol; citation_volume=28; citation_number=37; citation_pages=186-196; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Large-scale analyses of synonymous substitution rates can be sensitive to assumptions about the process of mutation.; citation_author=S Aris-Brosou; citation_author=JP Bielawski; citation_journal_title=Gene; citation_volume=378; citation_number=38; citation_pages=58-64; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Identifying sites under positive selection with uncertain parameter estimates.; citation_author=S Aris-Brosou; citation_journal_title=Genome; citation_volume=49; citation_number=39; citation_pages=767-776; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=r8s: inferring absolute rates of molecular evolution and divergence times in the absence of a molecular clock.; citation_author=MJ Sanderson; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=40; citation_pages=301-302; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Fossil evidence for an ancient divergence of lorises and galagos.; citation_author=ER Seiffert; citation_author=EL Simons; citation_author=Y Attia; citation_journal_title=Nature; citation_volume=422; citation_number=41; citation_pages=421-424; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Bayes empirical Bayes inference of amino acid sites under positive selection.; citation_author=Z Yang; citation_author=WS Wong; citation_author=R Nielsen; citation_journal_title=Mol Biol Evol; citation_volume=22; citation_number=42; citation_pages=1107-1118; citation_date=2005; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Dating Phylogenies with Hybrid Local Molecular Clocks"/>
+    <meta name="twitter:description" content="BackgroundBecause rates of evolution and species divergence times cannot be estimated directly from molecular data, all current dating methods require that specific assumptions be made before inferring any divergence time. These assumptions typically bear either on rates of molecular evolution (molecular clock hypothesis, local clocks models) or on both rates and times (penalized likelihood, Bayesian methods). However, most of these assumptions can affect estimated dates, oftentimes because they underestimate large amounts of rate change.Principal FindingsA significant modification to a recently proposed ad hoc rate-smoothing algorithm is described, in which local molecular clocks are automatically placed on a phylogeny. This modification makes use of hybrid approaches that borrow from recent theoretical developments in microarray data analysis. An ad hoc integration of phylogenetic uncertainty under these local clock models is also described. The performance and accuracy of the new methods are evaluated by reanalyzing three published data sets.ConclusionsIt is shown that the new maximum likelihood hybrid methods can perform better than penalized likelihood and almost as well as uncorrelated Bayesian models. However, the new methods still tend to underestimate the actual amount of rate change. This work demonstrates the difficulty of estimating divergence times using local molecular clocks."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000879.g002"/>
+
+  <meta property="og:title" content="Dating Phylogenies with Hybrid Local Molecular Clocks" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=9625'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=7370'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=2109&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000879">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000879" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000879&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Dating Phylogenies with Hybrid Local Molecular Clocks
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Stéphane Aris-Brosou
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:sarisbro@uottawa.ca">sarisbro@uottawa.ca</a></p>
+
+                <p>Affiliations:
+                  Department of Biology, University of Ottawa, Ontario, Canada, 
+                  Department of Mathematics and Statistics, University of Ottawa, Ontario, Canada
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: September 12, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000879</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000879-g001" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000879-t001" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000879-g002" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000879-t002" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000879-t003" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000879">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000879" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Because rates of evolution and species divergence times cannot be estimated directly from molecular data, all current dating methods require that specific assumptions be made before inferring any divergence time. These assumptions typically bear either on rates of molecular evolution (molecular clock hypothesis, local clocks models) or on both rates and times (penalized likelihood, Bayesian methods). However, most of these assumptions can affect estimated dates, oftentimes because they underestimate large amounts of rate change.</p>
+
+
+<h3>Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>A significant modification to a recently proposed ad hoc rate-smoothing algorithm is described, in which local molecular clocks are automatically placed on a phylogeny. This modification makes use of hybrid approaches that borrow from recent theoretical developments in microarray data analysis. An ad hoc integration of phylogenetic uncertainty under these local clock models is also described. The performance and accuracy of the new methods are evaluated by reanalyzing three published data sets.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>It is shown that the new maximum likelihood hybrid methods can perform better than penalized likelihood and almost as well as uncorrelated Bayesian models. However, the new methods still tend to underestimate the actual amount of rate change. This work demonstrates the difficulty of estimating divergence times using local molecular clocks.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Aris-Brosou S (2007) Dating Phylogenies with Hybrid Local Molecular Clocks. PLoS ONE 2(9):
+          e879.
+            doi:10.1371/journal.pone.0000879</p><p><strong>Academic Editor: </strong>Oliver Pybus, University of Oxford, United Kingdom</p><p><strong>Received:</strong> July 16, 2007; <strong>Accepted:</strong> August 23, 2007; <strong>Published:</strong> September 12, 2007</p><p><strong>Copyright:</strong> © 2007 Stephane Aris-Brosou. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported in part by the University of Ottawa and by a grant from the Natural Sciences and Engineering Research Council (DG 311625).</p><p><strong>Competing interests:</strong> The author has declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Estimating divergence times from molecular data is a special statistical endeavor, as the parameters of interest cannot be directly estimated from molecular sequences: only distances between pairs of sequences or site likelihood values can be estimated. Such distances are measured in terms of the expected number of changes per site along the molecule (DNA, RNA or protein). This is equivalent to taking the product of a rate of molecular evolution and of a time duration, two quantities of significant biological interest. Unfortunately, neither rates nor times are identifiable parameters. As a result, estimating divergence times demands that special assumptions be posited. To this end, four approaches are commonly used in a model-based framework.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Until recently, the approach of choice to estimating divergence times was to assume the molecular clock <a href="#pone.0000879-Zuckerkandl1">[1]</a>, i.e. that rates are constant over the entire history of the genes under study. Under this hypothesis, branch lengths are directly proportional to time, and the common evolutionary rate is determined by the placement of at least one fossil calibration point on the phylogeny. However, the development of specific hypothesis tests (e.g., ref. <a href="#pone.0000879-Felsenstein1">[2]</a>) showed that the molecular clock is too often untenable <a href="#pone.0000879-Bromham1">[3]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>A second approach to estimating times while relaxing the above assumption of the clock is to posit several local clocks. The incentive here is that the clock hypothesis is likely to hold for closely related species <a href="#pone.0000879-Kishino1">[4]</a>–<a href="#pone.0000879-Yoder1">[6]</a>. Local clock models were recently extended to incorporate multiple calibration points and multiple genes <a href="#pone.0000879-Yang1">[7]</a>. However, one important shortcoming of this approach is that the placement of the different local molecular clocks on the tree is left to the user's discretion. I show below how this can affect inference.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>A third and alternative approach, pioneered by Sanderson, is to consider that rates of evolution evolve from ancestral rates. This implies that rates of evolution are (auto-) correlated <a href="#pone.0000879-Sanderson1">[8]</a>. More recently, Sanderson <a href="#pone.0000879-Sanderson2">[9]</a> proposed to use an approach that maximizes a penalized likelihood <em>p</em>(<em>X</em>|<strong><em>r</em></strong>.<strong><em>t</em></strong>)–<em>λ</em> Φ(<strong><em>r</em></strong>), where <em>X</em> is the data alignment and <strong><em>r</em></strong>.<strong><em>t</em></strong> represents the branch lengths, i.e. the product of rates <strong><em>r</em></strong> and times <strong><em>t</em></strong>. The penalty function Φ(<strong><em>r</em></strong>) is chosen in such a way that it is large when rates vary rapidly over small regions of the tree; the smoothing parameter <em>λ</em> is estimated by cross-validation <a href="#pone.0000879-Hastie1">[10]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Expanding on this idea, Thorne and coworkers <a href="#pone.0000879-Thorne1">[11]</a> proposed a Bayesian approach for estimating divergence times. This fourth approach relies on prior models of speciation and of autocorrelated rate change. These prior models are in fact equivalent to a particular penalty function in Sanderson's approach <a href="#pone.0000879-Hastie1">[10]</a>, so that both of these approaches are often referred to as “regularization methods” in the literature of supervised learning. Although prior distributions and implementation details vary, the Bayesian approach and penalized likelihood both have in common to smooth or minimize rate variation over evolutionary time by means of an autocorrelated process. Because this can lead to inaccurate dates when rates vary extensively <a href="#pone.0000879-Ho1">[12]</a>, a class of prior models of uncorrelated rate change were recently described <a href="#pone.0000879-Drummond1">[13]</a>. A different Bayesian approach has also been described <a href="#pone.0000879-Huelsenbeck1">[14]</a>, where rate change events are modeled as point processes on a phylogeny. This approach does have the potential of accommodating rapid rate variation, but the specific model used in that study was shown to be overparameterized <a href="#pone.0000879-Rannala1">[15]</a>. Another potential issue, this time common to all Bayesian approaches, is the need to specify prior assumptions: some, such as prior distributions on the speciation process, are potentially overly informative <a href="#pone.0000879-ArisBrosou1">[16]</a>, <a href="#pone.0000879-Welch1">[17]</a>, while others, such as the root rate, can be difficult to set <a href="#pone.0000879-Won1">[18]</a>. Bayesian approaches can also be computationally demanding.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>An alternative to regularization methods is to reconsider local clocks. These models are expected to be able to accommodate high levels of rate heterogeneity, and therefore to perform better. However, as noted above, there are two difficulties with local clock models. First, the number of local clocks has to be chosen and second, local molecular clocks must be placed on a given phylogeny. Yang <a href="#pone.0000879-Yang2">[19]</a> suggested a clever hybrid algorithm to address the second difficulty. This approach, called ad hoc rate-smoothing (AHRS), involves three steps: (i) branch lengths are estimated for each gene on a pre-specified common gene tree without the restriction of the clock; (ii) first, initial branch-specific rates of evolution are approximated based on a parametric smoothing approach that minimizes rate variation; then, an ad hoc clustering algorithm is used to group these branch-specific rates into clusters that constitute the local clocks; (iii) divergence times are finally estimated by maximum likelihood following <a href="#pone.0000879-Yang1">[7]</a>. Note that step (ii) actually consists of two distinct stages. Confidence intervals can be obtained following standard asymptotic methods either based on a normal approximation of the likelihood surface or on the support curve <a href="#pone.0000879-Yang3">[20]</a>. While the AHRS algorithm makes it possible to place the local molecular clocks on a phylogeny, the number of clocks is still left to users' discretion–the first “difficulty” highlighted above.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>Here I present four new ad hoc methods that improve on Yang's AHRS algorithm. The methods described below essentially modify one or both stages of step (ii) of the original AHRS algorithm. The four new methods borrow from recent advancements in the field of statistical analysis of microarray data. As these new methods all rely on maximum likelihood estimation, they are apparently immune to the common criticisms that Bayesian approaches occasionally draw in particular with respect to the choice of a prior <a href="#pone.0000879-Felsenstein1">[2]</a>, <a href="#pone.0000879-Edwards1">[21]</a>, and that they are computationally efficient. I compare these methods with penalized likelihood <a href="#pone.0000879-Sanderson2">[9]</a> and with a Bayesian model of uncorrelated rate change <a href="#pone.0000879-Drummond1">[13]</a>, suggest a way to integrate phylogenetic uncertainty, and evaluate the performance and accuracy of these methods on three previously published data sets. The source code and precompiled binaries for common 64-bit architectures (x86, ultra-sparc and PPC) are available at <a href="http://aix1.uottawa.ca/%E2%88%BCsarisbro">http://aix1.uottawa.ca/~sarisbro</a>.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>First improvements with k-means and k-medoids</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>In the original AHRS algorithm, branch lengths are first estimated by maximum likelihood (ML) without assuming the clock–see step (i) above. The likelihood surface is then approximated by a multivariate normal distribution <em>N</em> (<strong><em>B</em></strong>,<strong><em>Σ</em></strong>) centered on the ML estimates (MLEs) <strong><em>B</em></strong> of the branch lengths. The variance-covariace matrix <strong><em>Σ</em></strong> is approximated by the diagonal variance matrix of the estimates of the branch lengths–note that these variances were previously estimated during the optimization in step (i). This approximation of <strong><em>Σ</em></strong> assumes that there is no correlation between these MLEs, which is computationally faster than the approximation based on the full Hessian matrix as e.g. in <a href="#pone.0000879-Thorne1">[11]</a>, <a href="#pone.0000879-Yang2">[19]</a>, <a href="#pone.0000879-Kishino2">[22]</a>. A Brownian motion model <a href="#pone.0000879-Thorne1">[11]</a>, <a href="#pone.0000879-Kishino2">[22]</a> is then used to estimate by ML the initial branch-specific rates at beginning of step (ii) as in <a href="#pone.0000879-Yang2">[19]</a>. Following this, the AHRS algorithm uses an ad hoc clustering scheme to group similar rates into local clocks. Briefly, the interval bounded by the smallest (<em>m</em>) and the largest (<em>M</em>) initial rate estimates is divided up into <em>k</em> groups; the coordinates of the cutoff points are solely a function of <em>m</em>, <em>M</em> and <em>k</em>. Here, I reused all these steps and modified the source code of PAML ver. 3.14 <a href="#pone.0000879-Yang4">[23]</a> to incorporate two true clustering schemes: the k-means algorithm <a href="#pone.0000879-Hartigan1">[24]</a> and the k-medoids algorithm <a href="#pone.0000879-Kaufman1">[25]</a>. The k-means algorithm was run with 1,000 random starts to find the solution with lowest within-cluster sums of squared dissimilarities. Unlike k-means, k-medoids minimizes a sum of dissimilarities and is therefore expected to be more robust. Both algorithms were used as implemented in R (cran.r-project.org, in the stat and cluster packages). R was called externally from PAML.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>The estimation of the number of clocks in a standard likelihood framework is not easy, as the models are generally not nested and are typically derived from the data. Instead, the number of clocks was in a first approach selected using an idea based on the gap statistic <a href="#pone.0000879-Tibshirani1">[26]</a>: if there were actually <em>k</em>* clocks on the tree, then for <em>k</em>&lt;<em>k</em>*, each partition calculated by the algorithm would contain a subset of the actual groups of branches, and the algorithm would not assign branches as it “should”. Therefore, the likelihood should increase substantially each time <em>k</em> is increased. Now for <em>k</em>&gt;<em>k</em>*, one of the calculated clusters would partition one or more of the actual groups, which should tend to provide smaller likelihood increases. Indeed, splitting a genuine group is not expected to increase the likelihood more than partitioning the union of two clearly separated groups. As a result, when the log-likelihood is plotted as a function of <em>k</em>, there should be a kink in the plot. A natural estimate of <em>k</em>* can be taken at this value, that is, at the largest gap in likelihood values between two consecutive values of <em>k</em>.</p>
+
+
+<h4>Automatic estimation of the number of clocks with silhouettes and HOPACH</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Our loose implementation of the gap statistic does not allow for a rigorous estimation of the number of local clocks. However, the k-medoids algorithm offers the possibility to select the number of clusters according to the Median Split Silhouette or MSS <a href="#pone.0000879-Pollard1">[27]</a>. Based on normalized differences of dissimilarities, silhouettes measure the homogeneity of each element when grouped in a cluster compared to the situation where this element is left out. The median of these measures taken over all elements and over all clusters is a measure of the homogeneity of each cluster, and therefore constitutes an objective function to find the most appropriate number of clusters.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>In cases where branch-specific rates of evolution vary rapidly, MSS may not be aggressive enough to find small clusters. A more recent method, the Hierarchical Ordered Partitioning and Collapsing Hybrid or HOPACH <a href="#pone.0000879-vanderLaan1">[28]</a> aims at finding such small clusters. Although HOPACH makes use of a partitioning method based on k-medoids, it is actually a hierarchical method. As such, it involves the construction of a tree of clusters where the “root” of the hierarchy contains all the elements (here, all the branch-specific rates) and where each leaf contains one single element. HOPACH is an iterative algorithm that starts with all the elements at the root node of the hierarchy, and that cycles through partitioning, ordering and collapsing as follows. At each level of the hierarchy, the partitioning step uses k-medoids and silhouettes to determine the clusters, which are then ordered according to the dissimilarity between their medoids or centers. Below root-level, pairs of clusters are collapsed if and only if doing so improves the median split silhouette. The algorithm stops when each node contains at most two elements, or when a maximum number of levels is reached, whichever comes first. Because the elements contained at each level of the hierarchy are labeled with integers, this upper bound is set to 16 levels in the current implementation of the R package hopach (ver. 1.4.0) to avoid overflows.</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>However, for identifiability reasons, we cannot afford as many local clocks as there are branches in the tree. Under the multiple gene models used here, where branch-specific rates are estimated separately and independently for each of the <em>g</em> genes <a href="#pone.0000879-Yang1">[7]</a>, there is a total of <em>kg</em> rate parameters when <em>k</em> local clocks are used. With <em>n</em> sequences and <em>c</em> calibration points, we want to estimate <em>n</em>–1–<em>c</em> divergence times, so that there is a total of <em>n</em>–1–<em>c</em>+<em>kg</em> parameters to estimate. The total number of identifiable parameters is (2<em>n</em>–3) <em>g</em>, so that <em>k</em>, the number of local clocks, should not exceed <em>U</em> = 2<em>n</em>–3–(<em>n</em>–1–<em>c</em>)/<em>g</em>. For this reason, the maximum number of clusters returned by MSS and HOPACH was limited to int(<em>U</em>), the integer part of <em>U</em>. Yet, even when <em>k</em>&lt;<em>U</em>, certain placements of the local clocks make it impossible to identify all model parameters–see <a href="#pone.0000879-Yoder1">[6]</a> for a practical example. To help guarantee against this serious issue, convergence of our procedures was checked by running each likelihood analysis a thousand times starting from random initial parameters.</p>
+
+
+<h4>Improved initial branch-specific rates</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>Like the original AHRS algorithm, the new ad hoc methods presented here all critically rely on the initial ML estimation of the branch-specific rates of evolution (step (i) of AHRS). These rates are the starting point of the clustering procedures used to determine both the placement and the number of local clocks over the tree. Instead of estimating these initial branch-specific rates with Brownian motion model, these initial rates were also obtained with a Bayesian procedure, before being clustered into local clocks. Here I used the Bayesian approach detailed below to determine these rates under an uncorrelated lognormal model of rate change <a href="#pone.0000879-Drummond1">[13]</a>.</p>
+
+
+<h4>Ad hoc integration of phylogenetic uncertainty</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>The objective here is not to implement a Bayesian version of local clock models, one that would integrate over tree topologies. However, I indicate two approximations for dealing with phylogenetic uncertainty with these models. The most appropriate ad hoc procedure would follow two steps. First, draw samples from the posterior distribution <em>p</em>(<em>τ</em> | <em>X</em>) = ∫<sub>Θ</sub> <em>p</em>(<em>τ</em>, <strong><em>θ</em></strong> | <em>X</em>) <em>d</em><strong><em>θ</em></strong> , where <em>X</em> represents the aligned data, <em>τ</em> is the tree topology and <strong><em>θ</em></strong> is a vector of nuisance parameters, typically the branch lengths and the parameters of the substitution model. The model should not enforce the clock. If the sampled trees are not rooted they should be rooted before moving on to the next step. Second, evaluate divergence times for all the samples drawn during the previous step. The “posterior” estimate of the divergence time at a given bipartition is then estimated as the average time estimated for each of the sampled trees, when this bipartition exists. The last restriction is equivalent to enforcing a number of monophyletic relationships. This second step is the most computationally demanding as it requires performing ML optimizations for each sample drawn from the Markov chain in step one. A similar two-step approach was previously used to infer the ancestral state of morphological characters in the presence of phylogenetic uncertainty <a href="#pone.0000879-Pagel1">[29]</a>–see <a href="#pone.0000879-Prudhomme1">[30]</a> for a recent application.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>Rather than following this direction here, I used an even more ad hoc but faster procedure. Trees were sampled from their posterior distribution with MrBayes ver. 3.1.2 <a href="#pone.0000879-Ronquist1">[31]</a> with tempering (four chains). Four such independent samplers were run for five million steps with thinning of 1,000 and a burn-in of a million. Divergence times were then estimated with the local clock models described above for each of the topologies contained in the 95% credibility set: the original AHRS, the k-means and the k-medoids algorithms (the number of clocks was estimated with the gap method for all these three), MSS and HOPACH. As above, the ML optimization procedures were repeated (only 20 times here) to check convergence and identifiability.</p>
+
+
+<h4>Data sets and models of evolution</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>I evaluated the performance of the new methods on three previously published data sets. The first one is a mouse lemur data set repeatedly used when developing dating methods <a href="#pone.0000879-Yang1">[7]</a>, <a href="#pone.0000879-Yang2">[19]</a>. This data set contains the concatenated sequences of two mitochondrial genes, COX-II and CYT-b, sampled over a total of 35 mammalian species. The objective of the original study <a href="#pone.0000879-Yang1">[7]</a> was to estimate divergence times of mouse lemurs (genus: Microcebus), the world's smallest primates, endemic to Madagascar. The data contained 604 codons and the analyses assumed the one-ratio model <a href="#pone.0000879-Goldman1">[32]</a>. All model parameters were estimated by ML, except equilibrium frequencies, calculated assuming the F3×4 model. Seven calibration points were used to estimate divergence times as in <a href="#pone.0000879-Yang2">[19]</a>–seeSupp orting Information <a href="#pone.0000879.s001">Figure S1</a>. This data set was used here to test whether the new clustering methods can improve on some of the shortcomings of the original AHRS method.</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p>The accuracy of the new methods was then evaluated by reanalyzing a sea urchin data set for which the fossil record is considered excellent <a href="#pone.0000879-Smith1">[33]</a>. This data set consists of three rRNA genes, one mitochondrial (16S large subunit) and two nuclear (18S small subunit and 28S large subunit) genes. I used the unpartitioned alignment of 3,331bp for 28 species as the original authors (see Table 2 in <a href="#pone.0000879-Smith1">[33]</a>). Because the GTR+Γ<sub>6</sub>+I substitution model <a href="#pone.0000879-Tavare1">[34]</a>, <a href="#pone.0000879-Yang5">[35]</a> used in <a href="#pone.0000879-Smith1">[33]</a> is not available in PAML's local clock implementation, I used HKY+Γ<sub>5</sub> <a href="#pone.0000879-Hasegawa1">[36]</a>; five rate categories were used for computational reasons. Unlike the quite unfavorable calibrating situation represented by the mouse lemur data, the four calibration points used by <a href="#pone.0000879-Smith1">[33]</a> and here are quite evenly distributed over the tree, and vary from 55 to 210 MY of age.</p>
+<a id="article1.body1.sec2.sec5.p3" name="article1.body1.sec2.sec5.p3"></a><p>A third data set was used to assess the impact of uncertainty over tree topologies when estimating species divergence times. I reused the alignment originally assembled by <a href="#pone.0000879-AmrineMadsen1">[37]</a> and reanalyzed by <a href="#pone.0000879-Drummond1">[13]</a>. The alignment contains five protein-coding genes (APOB, RAG1, IRBP, vWF, and BRCA1) for 24 taxa. All 3,772 positions were analyzed as one single partition. Four calibration points were used as in <a href="#pone.0000879-Drummond1">[13]</a>. The Bayesian model placed normal priors of variance 5 MY on the three internal nodes and constrained the root node around 145 MY with an exponential prior as in <a href="#pone.0000879-Drummond1">[13]</a>. The substitution model was again set to HKY+Γ<sub>5</sub>. This substitution model is slightly simpler than the one used by <a href="#pone.0000879-Drummond1">[13]</a>, as the dating approaches described here do not allow for invariant sites or more complicated models such as GTR.</p>
+
+
+<h4>Comparison with other dating approaches</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>The methods described above were compared with two existing dating methods: penalized likelihood and an uncorrelated Bayesian model of rate change. Simulations are often considered as an important step in checking the validity of a method, as they permit to check that a method returns the correct answer, at least under simple scenarios. However, because real sequence data rarely evolve following simple models and because a given simulation model can bias the results towards a particular direction <a href="#pone.0000879-ArisBrosou2">[38]</a>, <a href="#pone.0000879-ArisBrosou3">[39]</a>, I resorted to a different approach here, and used the data set from <a href="#pone.0000879-Smith1">[33]</a> for which the actual fossil record is unusually complete. For this specific data set, it was found <a href="#pone.0000879-Smith1">[33]</a> that the penalized likelihood approach <a href="#pone.0000879-Sanderson2">[9]</a> seemed to perform better than both nonparametric rate smoothing <a href="#pone.0000879-Sanderson1">[8]</a> and a Bayesian approach <a href="#pone.0000879-Thorne1">[11]</a>. As the objective here was not to reevaluate all existing dating methods against the ones presented here, I focused on the “best” method identified by <a href="#pone.0000879-Smith1">[33]</a>, namely, penalized likelihood (PL). I recalculated date estimates using PL with r8s ver.1.70 <a href="#pone.0000879-Sanderson3">[40]</a> following two approaches: PL<sup>(CV)</sup> and PL<sup>(SSD)</sup>, where CV and SSD stand for cross-validation and sum of the squared distances, respectively. The first, PL<sup>(CV)</sup>, used cross-validation <a href="#pone.0000879-Sanderson2">[9]</a>; this is usually the only method that can be used when the actual dates are unknown. The accuracy of PL<sup>(CV)</sup> was determined with the second approach: PL<sup>(SSD)</sup>. When the actual divergence times are known for all the nodes on the tree, as with the sea urchin data set, it is possible to select the smoothing parameter <em>λ</em> that best fits the actual fossil dates. To this effect, <em>λ</em> was varied from 0 to 10<sup>5</sup> by increments of 10. The “best fit” was quantitatively measured by the sum of the squared distances (SSD) between each time estimate and its corresponding fossil age. The minimum SSD corresponds to the set of ages that is closest to the actual fossil dates. Note that by taking the square of these distances, this criterion penalizes methods that have large discrepancies between time estimates and fossil ages. This SSD criterion made it possible to assess the performance of PL and of the new ad hoc methods. The number of clocks <em>k</em> under k-medoids was optimized in a similar way.</p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>The uncorrelated Bayesian model of rate change implemented in BEAST ver. 1.4.4 <a href="#pone.0000879-Drummond1">[13]</a> was used to estimate divergence times and to determine rates. The substitution models matched those used for the ML analyses. I assumed the uncorrelated lognormal (UCLN) prior model of rate change, and a Yule or “pure-birth” prior process to model speciation. For each data set, two samplers were run independently with BEAST, each for 50 million steps with a thinning of 1,000. Five million steps were discarded as burn-in. Convergence of the Bayesian analyses, including the MrBayes runs for the ad hoc integration of phylogeny, was checked with Tracer (tree.bio.ed.ac.uk /software/tracer).</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>Mouse lemur data: the benchmark data</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>The first important question is to what extent the number <em>k</em> of local clocks can affect the estimation of divergence times. The divergence time of some nodes can be relatively insensitive to <em>k</em>. For instance, with the k-means clustering algorithm, the estimated dates for the hominoid divergence (node 59 in <a href="#pone-0000879-t001">Table 1</a>) vary from 13.5 million years (MY) to 13 MY when the number of local clocks <em>k</em> is varied from one, which is the molecular clock assumption, to six. But the age of some other nodes can be more difficult to estimate. Such is the case with Microcebus diversification (node 45 in <a href="#pone-0000879-t001">Table 1</a>). <a href="#pone-0000879-g001">Figure 1</a> shows that irrespective of the clustering algorithm used, the age of this diversification varies between about 8 MY with two clocks, to an age less than half this figure with more than 15 clocks. It is therefore quite important to have a means of estimating the most appropriate number of clocks.</p>
+<div class="figure" id="pone-0000879-g001"><div class="img"><a name="pone-0000879-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Effect of the number of local clocks on the age of a node far from all calibration points.</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>Times were estimated using either the original AHRS algorithm or k-means and are given in million years ago (MYA). The focal node is the split at the origin of the mouse lemurs (genus Microcebus).</p>
+<span>doi:10.1371/journal.pone.0000879.g001</span></div><div class="figure" id="pone-0000879-t001"><div class="img"><a name="pone-0000879-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Maximum likelihood estimates of divergence times for the mouse lemur data under nucleotide and codon models.</span></strong></p><span>doi:10.1371/journal.pone.0000879.t001</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>A second point should be made here. <a href="#pone-0000879-g001">Figure 1</a> also shows that local molecular clocks can experience some identifiability issues for some placements of the clocks (e.g., at <em>k</em> = 9) and further difficulties when the number of clocks becomes too large (over 17 clocks in the case of this data set). A careful examination revealed that when the number of clocks increases, the ad hoc clustering algorithm used in AHRS eventually returns a number of empty clusters. This is because once the lower and upper bounds of the initial rates are estimated (during step (i) of AHRS), cluster boundaries are set deterministically, disregarding the distribution of these initial rates. Standard clustering algorithms such as k-means appear to resolve this problem (<a href="#pone-0000879-g001">Figure 1</a>), at least in this specific example.</p>
+<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>With a proper clustering algorithm, how difficult is it to find the appropriate number of clocks? Another important observation from <a href="#pone-0000879-g001">Figure 1</a> is that implementing two or three local clocks affects age estimates quite dramatically. These estimates range from 10.93 MY under a global clock to 7.5 MY with three local clocks. With more than three clocks, age estimates change less rapidly. <a href="#pone-0000879-g002">Figure 2</a> plots the log-likelihood under a codon model as a function of <em>k</em>. The application of the idea behind the gap statistic to this figure suggests that the appropriate number of clocks is three for this data set. As a more rigorous approach than our implementation of the gap statistic, HOPACH finds the same number of local clocks (<em>k</em>* = 3) and distributes them similarly to k-medoids over the phylogeny (Supporting Information <a href="#pone.0000879.s001">Figure S1</a>). The likelihood scores obtained under the codon model (<a href="#pone-0000879-t001">Table 1</a>) are slightly smaller than in <a href="#pone.0000879-Yang2">[19]</a> as our procedures consistently selected three local clocks instead of four <a href="#pone.0000879-Yang2">[19]</a>. Both k-medoids and HOPACH suggest similar age estimates (<a href="#pone-0000879-t001">Table 1</a>), with most notably a recent diversification (&lt;5 MY) of the genus Microcebus. MSS on the other hand suggests one additional clock, with a fragmented partition scheme over the phylogeny (Supporting Information <a href="#pone.0000879.s001">Figure S1</a>) and a dramatically different picture of the diversification of mouse lemurs, suggesting that these would date back to 12 MY ago (<a href="#pone-0000879-t001">Table 1</a>). Because of a recently found 38–42 MY fossil for the ancestor of loris and galago <a href="#pone.0000879-Seiffert1">[41]</a>, Yang suggested that an age of 5 MY is too young for the mouse lemur divergence, and found an age of 11.4 MY only after including the additional information about this extra fossil in the analysis <a href="#pone.0000879-Yang2">[19]</a>. Our MSS results under a codon model (divergence at 12.0 MY) may suggest that sufficient information exists in the data without this additional calibration point. However, this result is not confirmed by the use of MSS under a nucleotide model (F84+Γ<sub>5</sub>: divergence at 6.6 MY). This difference is likely to be due to the relative number of clocks estimated under each model for a given data set: under a codon substitution model, MSS has here the largest number of clocks (Supporting Information <a href="#pone.0000879.s001">Figure S1</a>), while under a nucleotide substitution model, it is HOPACH that has the largest <em>k</em>* (Supporting Information <a href="#pone.0000879.s002">Figure S2</a>). This raises the important question about the accuracy of these approaches.</p>
+<div class="figure" id="pone-0000879-g002"><div class="img"><a name="pone-0000879-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Maximum likelihood score as a function of the number of clocks.</span></strong></p><span>doi:10.1371/journal.pone.0000879.g002</span></div>
+
+<h4>Sea urchin data: accuracy against the fossil record</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>When only four calibration points are used, MSS had the second best accuracy (smallest SSD in <a href="#pone-0000879-t002">Table 2</a>; disregarding the last column for now). However, when all the fossil dates are considered, PL<sup>(SSD)</sup> and k-medoids optimized for <em>k</em> show that even MSS tends to underestimate rate change, and hence the number of clocks. This suggests that it might be difficult to accommodate in a statistically sound manner actual amounts of rate variation in real data with these maximum likelihood methods.</p>
+<div class="figure" id="pone-0000879-t002"><div class="img"><a name="pone-0000879-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Comparison of divergence times from fossils with those estimated from molecular data and four calibration points for the sea urchin data.</span></strong></p><span>doi:10.1371/journal.pone.0000879.t002</span></div><a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>One potential reason why rate change is underestimated might be because of the way initial branch-specific rates are estimated. Recall that these initial estimates come from an autocorrelated Brownian motion model (see above) that minimizes rate change over the tree. To test the impact of such a procedure on our hybrid local clock procedures, I first obtained branch-specific rates under an uncorrelated model of rate change, and then fed these rates to the hybrid methods. These initial rates were estimated with BEAST under the UCLN model by running two MCMC samplers independently. The two BEAST runs proved very similar, so their results were combined. The effective size of the samples taken from the target distribution was 51,300. The posterior mean rates over the maximum a posteriori tree were used as starting point under MSS (MSS+UCLN in <a href="#pone-0000879-t002">Table 2</a>). Posterior point estimates of divergence times (mean of the marginal distributions) are also reported in the last column of <a href="#pone-0000879-t002">Table 2</a>.</p>
+<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>SSD results show that for this data set, the use of Bayesian estimates of rates improves our MSS hybrid procedure. As expected, the SSD score obtained under MSS+UCLN (16,036) shows that this latter procedure still underestimates rate change, as k-medoids had a higher score (15,615) with <em>k</em> = 12. Finally, the UCLN results show that, quite as expected again, uncorrelated models of rate change performed better than any other approaches considered here.</p>
+
+
+<h4>Marsupial data: ad hoc dating with uncertain phylogenies</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>The analyses with the hybrid ML local clock models all assumed that the tree topology is known, which is not always a realistic assumption. To evaluate the impact of this assumption on date estimates, I reanalyzed the recently published marsupial data set. Date estimates were first obtained with BEAST. The effective size sampled from the target distribution of UCLN was 29,580. Point estimates of divergence times (mean of the marginal distributions) are reported in the first column of <a href="#pone-0000879-t003">Table 3</a>.</p>
+<div class="figure" id="pone-0000879-t003"><div class="img"><a name="pone-0000879-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000879" data-uri="info:doi/10.1371/journal.pone.0000879.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000879.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000879.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000879.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000879.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Effect of neglecting phylogenetic uncertainty on estimates of divergence times under local clock models for the marsupial data.</span></strong></p><span>doi:10.1371/journal.pone.0000879.t003</span></div><a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>I compared this uncorrelated Bayesian model with the local clock procedures with ad hoc integration of phylogenetic uncertainty. With MrBayes, the maximum a posteriori (MAP) tree had a posterior probability of .43, and the 95% credibility set included a total of nine tree topologies. The time estimates presented in <a href="#pone-0000879-t003">Table 3</a> represent average estimates, weighted by the posterior probability of the tree topologies. Credibility intervals for time estimates can easily be obtained when times are estimated for each sample drawn from the Markov chain, but not under this latter ad hoc implementation of integrated local clocks. For this reason, no standard errors can be reported in <a href="#pone-0000879-t003">Table 3</a>.</p>
+<a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"></a><p>How do these Bayesian time estimates compare with those based on ML local clock? Two conclusions can be drawn from <a href="#pone-0000879-t003">Table 3</a>. First, averaging over phylogenetic uncertainty had little impact on the estimates of divergence times, at least in this example: under a given method, only minor differences were found between estimates based on the MAP tree and ad hoc integration over the 95% credibility set of topologies. Second, the largest differences occur between MSS and HOPACH, the uncorrelated Bayesian approach giving somewhat intermediate results. This is in particular true for two splits, Dendrolagus/Phalanger and Phalanger/Vombatus, which can exhibit an age difference of up to 10 MY between the two methods. These two nodes have a posterior probability of one, so that phylogenetic uncertainty is not responsible for this difference in age estimates. SSD suggests that MSS give results that are the closest to UCLN.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>As always, it is advisable to use several methods to estimate a parameter of interest, such as divergence times between different species. Compared to regularization methods <a href="#pone.0000879-Sanderson2">[9]</a>, <a href="#pone.0000879-Thorne1">[11]</a>, local molecular clocks potentially have the advantage of accommodating rapid rate variation along lineages, without incurring the computational overhead of Bayesian uncorrelated methods <a href="#pone.0000879-Drummond1">[13]</a>. The methods presented here constitute a significant improvement of the AHRS algorithm for the automatic placement of local molecular clocks by providing researchers with a means to determine how many clocks should be used to analyze their data. The results presented here show that these ML local clocks, based on hybrid statistical approaches, constitute a computationally quick alternative to Bayesian methods, without requiring the setting of reasonable prior distributions. Our results also demonstrate that the choice of a specific algorithm can have a dramatic impact on date estimates.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>These hybrid methods however appear to present four potential limitations. The first one, common to both the original AHRS algorithm and these new hybrid methods, is the reliance on the initial estimation of approximate rates by ML in step (i) of the procedure <a href="#pone.0000879-Yang2">[19]</a>. I showed here that better initial estimates of these rates can help improve the accuracy of the divergence dates estimated. But because these improved estimates were based on an MCMC sampler, the speed advantage of the hybrid methods disappears. A second important limitation of these hybrid methods is their underestimating rate change. The underestimation of rate change is not a surprise, since this is precisely the idea driving the use of local clocks: reducing the extent of rate variation. Third, all possible placements of local clocks on a tree do not lead to identifiable parameters <a href="#pone.0000879-Yoder1">[6]</a>. In our implementation, this is still an important issue as no rigorous identifiability check is currently implemented. Finally, confidence intervals, not estimated here, are expected to be underestimated as uncertainty about model parameters is disregarded. Confidence intervals will also be difficult to obtain when the topology is integrated following the ad hoc procedure outlined above. Bayes empirical Bayes strategies, as recently employed to detect sites under adaptive evolution <a href="#pone.0000879-Yang6">[42]</a>, could prove valuable for these ad hoc dating methods. As noted in <a href="#pone.0000879-Yang3">[20]</a>, other limitations of the likelihood methods exist, in particular with respect to the incorporation of uncertainties about calibration points into an analysis; these limitations are however naturally dealt within a Bayesian framework <a href="#pone.0000879-Yang3">[20]</a>.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000879"></div><a name="pone.0000879.s001" id="pone.0000879.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000879.s001">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Maximum likelihood estimates of divergence times for the codon data partitioned according to the estimated local clock models. Times were estimated using (A) k-medoids with the gap statistic, (B) Median Silhouette Splits (MSS) and (C) Hierarchical Ordered Partitioning and Collapsing Hybrid (HOPACH) and are given in million years ago (MYA). Filled circles indicate the seven calibration points on the trees scaled to time (A–C); the other trees (D–F) are scaled to the expected number of substitutions per codon.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000879.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.45 MB PDF)</p>
+<a name="pone.0000879.s002" id="pone.0000879.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000879.s002">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Maximum likelihood estimates of divergence times for the nucleotide data partitioned according to the three codon positions and the estimated local clock models. Times were estimated using k-medoids with the gap statistic, Median Silhouette Splits (MSS) and Hierarchical Ordered Partitioning and Collapsing Hybrid (HOPACH) and are given in million years ago (MYA). Filled circles indicate the seven calibration points on the trees scaled to time (leftmost column); the other trees are scaled to the expected number of substitutions per nucleotide site for the partitions over the three codon positions.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000879.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.38 MB PDF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>Andrew Rambaut kindly provided the marsupial data. Hervé Philippe, Xuhua Xia, Oliver Pybus and two anonymous reviewers provided comments that improved this manuscript.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SA. Performed the experiments: SA. Analyzed the data: SA. Contributed reagents/materials/analysis tools: SA. Wrote the paper: SA.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000879-Zuckerkandl1" id="pone.0000879-Zuckerkandl1"></a>Zuckerkandl E, Pauling L, Bryson V, Vogel HJ (1965) Evolutionary divergence and convergence in proteins. Evolving genes and proteins. New York: Academic Press. pp. 97–166.  <ul class="find-nolinks"></ul></li><li><span class="label">2.
+              </span><a name="pone.0000879-Felsenstein1" id="pone.0000879-Felsenstein1"></a>Felsenstein J (2003) Inferring phylogenies. Sunderland, Massachusets: Sinauer.   <ul class="find-nolinks"></ul></li><li><span class="label">3.
+              </span><a name="pone.0000879-Bromham1" id="pone.0000879-Bromham1"></a>Bromham L, Penny D (2003) The modern molecular clock. Nat Rev Genet  4: 216–224.  <ul class="find" data-citedArticleID="990858" data-doi="10.1038/nrg1020"><li><a href="http://dx.doi.org/10.1038/nrg1020" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+modern+molecular+clock." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+modern+molecular+clock.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000879-Kishino1" id="pone.0000879-Kishino1"></a>Kishino H, Hasegawa M (1990) Converting distance to time: application to human evolution. Method Enzymol  183: 550–570.  <ul class="find" data-citedArticleID="990880" data-doi="10.1016/0076-6879(90)83036-9"><li><a href="http://dx.doi.org/10.1016/0076-6879(90)83036-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Converting+distance+to+time%3A+application+to+human+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Converting+distance+to+time%3A+application+to+human+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000879-Rambaut1" id="pone.0000879-Rambaut1"></a>Rambaut A, Bromham L (1998) Estimating divergence dates from molecular sequences. Mol Biol Evol  15: 442–448.  <ul class="find" data-citedArticleID="990890" data-doi="10.1093/oxfordjournals.molbev.a025940"><li><a href="http://dx.doi.org/10.1093/oxfordjournals.molbev.a025940" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+divergence+dates+from+molecular+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+divergence+dates+from+molecular+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000879-Yoder1" id="pone.0000879-Yoder1"></a>Yoder AD, Yang Z (2000) Estimation of primate speciation dates using local molecular clocks. Mol Biol Evol  17: 1081–1090.  <ul class="find" data-citedArticleID="990928" data-doi="10.1093/oxfordjournals.molbev.a026389"><li><a href="http://dx.doi.org/10.1093/oxfordjournals.molbev.a026389" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimation+of+primate+speciation+dates+using+local+molecular+clocks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimation+of+primate+speciation+dates+using+local+molecular+clocks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000879-Yang1" id="pone.0000879-Yang1"></a>Yang Z, Yoder AD (2003) Comparison of likelihood and Bayesian methods for estimating divergence times using multiple gene loci and calibration points, with application to a radiation of cute-looking mouse lemur species. Syst Biol  52: 705–716.  <ul class="find" data-citedArticleID="990916"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Comparison+of+likelihood+and+Bayesian+methods+for+estimating+divergence+times+using+multiple+gene+loci+and+calibration+points%2C+with+application+to+a+radiation+of+cute-looking+mouse+lemur+species.&amp;auth=&amp;atitle=Comparison+of+likelihood+and+Bayesian+methods+for+estimating+divergence+times+using+multiple+gene+loci+and+calibration+points%2C+with+application+to+a+radiation+of+cute-looking+mouse+lemur+species." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparison+of+likelihood+and+Bayesian+methods+for+estimating+divergence+times+using+multiple+gene+loci+and+calibration+points%2C+with+application+to+a+radiation+of+cute-looking+mouse+lemur+species." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparison+of+likelihood+and+Bayesian+methods+for+estimating+divergence+times+using+multiple+gene+loci+and+calibration+points%2C+with+application+to+a+radiation+of+cute-looking+mouse+lemur+species.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000879-Sanderson1" id="pone.0000879-Sanderson1"></a>Sanderson MJ (1997) A nonparametric approach to estimating divergence times in the absence of rate constancy. Mol Biol Evol  14: 1218–1232.  <ul class="find" data-citedArticleID="990896" data-doi="10.1093/oxfordjournals.molbev.a025731"><li><a href="http://dx.doi.org/10.1093/oxfordjournals.molbev.a025731" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+nonparametric+approach+to+estimating+divergence+times+in+the+absence+of+rate+constancy." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+nonparametric+approach+to+estimating+divergence+times+in+the+absence+of+rate+constancy.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000879-Sanderson2" id="pone.0000879-Sanderson2"></a>Sanderson MJ (2002) Estimating absolute rates of molecular evolution and divergence times: a penalized likelihood approach. Mol Biol Evol  19: 101–109.  <ul class="find" data-citedArticleID="990898" data-doi="10.1093/oxfordjournals.molbev.a003974"><li><a href="http://dx.doi.org/10.1093/oxfordjournals.molbev.a003974" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+absolute+rates+of+molecular+evolution+and+divergence+times%3A+a+penalized+likelihood+approach." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+absolute+rates+of+molecular+evolution+and+divergence+times%3A+a+penalized+likelihood+approach.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000879-Hastie1" id="pone.0000879-Hastie1"></a>Hastie T, Tibshirani R, Friedman JH (2001) The elements of statistical learning. New York: Springer-Verlag.   <ul class="find-nolinks"></ul></li><li><span class="label">11.
+              </span><a name="pone.0000879-Thorne1" id="pone.0000879-Thorne1"></a>Thorne JL, Kishino H, Painter IS (1998) Estimating the rate of evolution of the rate of molecular evolution. Mol Biol Evol  15: 1647–1657.  <ul class="find" data-citedArticleID="990908" data-doi="10.1093/oxfordjournals.molbev.a025892"><li><a href="http://dx.doi.org/10.1093/oxfordjournals.molbev.a025892" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+the+rate+of+evolution+of+the+rate+of+molecular+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+the+rate+of+evolution+of+the+rate+of+molecular+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000879-Ho1" id="pone.0000879-Ho1"></a>Ho SY, Phillips MJ, Drummond AJ, Cooper A (2005) Accuracy of rate estimation using relaxed-clock models with a critical focus on the early metazoan radiation. Mol Biol Evol  22: 1355–1363.  <ul class="find" data-citedArticleID="990874" data-doi="10.1093/molbev/msi125"><li><a href="http://dx.doi.org/10.1093/molbev/msi125" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Accuracy+of+rate+estimation+using+relaxed-clock+models+with+a+critical+focus+on+the+early+metazoan+radiation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Accuracy+of+rate+estimation+using+relaxed-clock+models+with+a+critical+focus+on+the+early+metazoan+radiation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000879-Drummond1" id="pone.0000879-Drummond1"></a>Drummond AJ, Ho SY, Phillips MJ, Rambaut A (2006) Relaxed phylogenetics and dating with confidence. PLoS Biol  4: e88.  <ul class="find" data-citedArticleID="990860" data-doi="10.1371/journal.pbio.0040088"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0040088" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Relaxed+phylogenetics+and+dating+with+confidence." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Relaxed+phylogenetics+and+dating+with+confidence.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000879-Huelsenbeck1" id="pone.0000879-Huelsenbeck1"></a>Huelsenbeck JP, Larget B, Swofford DL (2000) A compound Poisson process for relaxing the molecular clock. Genetics  154: 1879–1892.  <ul class="find" data-citedArticleID="990876"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+compound+Poisson+process+for+relaxing+the+molecular+clock.&amp;auth=&amp;atitle=A+compound+Poisson+process+for+relaxing+the+molecular+clock." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+compound+Poisson+process+for+relaxing+the+molecular+clock." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+compound+Poisson+process+for+relaxing+the+molecular+clock.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000879-Rannala1" id="pone.0000879-Rannala1"></a>Rannala B (2002) Identifiability of parameters in MCMC Bayesian inference of phylogeny. Syst Biol  51: 754–760.  <ul class="find" data-citedArticleID="990892"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Identifiability+of+parameters+in+MCMC+Bayesian+inference+of+phylogeny.&amp;auth=&amp;atitle=Identifiability+of+parameters+in+MCMC+Bayesian+inference+of+phylogeny." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifiability+of+parameters+in+MCMC+Bayesian+inference+of+phylogeny." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifiability+of+parameters+in+MCMC+Bayesian+inference+of+phylogeny.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000879-ArisBrosou1" id="pone.0000879-ArisBrosou1"></a>Aris-Brosou S, Yang Z (2003) Bayesian models of episodic evolution support a late precambrian explosive diversification of the metazoa. Mol Biol Evol  20: 1947–1954.  <ul class="find" data-citedArticleID="990852" data-doi="10.1093/molbev/msg226"><li><a href="http://dx.doi.org/10.1093/molbev/msg226" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bayesian+models+of+episodic+evolution+support+a+late+precambrian+explosive+diversification+of+the+metazoa." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bayesian+models+of+episodic+evolution+support+a+late+precambrian+explosive+diversification+of+the+metazoa.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000879-Welch1" id="pone.0000879-Welch1"></a>Welch JJ, Fontanillas E, Bromham L (2005) Molecular dates for the “cambrian explosion”: the influence of prior assumptions. Syst Biol  54: 672–678.  <ul class="find" data-citedArticleID="990912"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Molecular+dates+for+the+%26%23x201c%3Bcambrian+explosion%26%23x201d%3B%3A+the+influence+of+prior+assumptions.&amp;auth=&amp;atitle=Molecular+dates+for+the+%26%23x201c%3Bcambrian+explosion%26%23x201d%3B%3A+the+influence+of+prior+assumptions." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Molecular+dates+for+the+%26%23x201c%3Bcambrian+explosion%26%23x201d%3B%3A+the+influence+of+prior+assumptions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Molecular+dates+for+the+%26%23x201c%3Bcambrian+explosion%26%23x201d%3B%3A+the+influence+of+prior+assumptions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000879-Won1" id="pone.0000879-Won1"></a>Won H, Renner S (2006) Dating dispersal and radiation in the Gymnosperm Gnetum (Gnetales)‚ clock calibration when outgroup relationships are uncertain. Syst Biol  55: 610–622.  <ul class="find" data-citedArticleID="990914"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Dating+dispersal+and+radiation+in+the+Gymnosperm+Gnetum+%28Gnetales%29%26%23x201a%3B+clock+calibration+when+outgroup+relationships+are+uncertain.&amp;auth=&amp;atitle=Dating+dispersal+and+radiation+in+the+Gymnosperm+Gnetum+%28Gnetales%29%26%23x201a%3B+clock+calibration+when+outgroup+relationships+are+uncertain." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dating+dispersal+and+radiation+in+the+Gymnosperm+Gnetum+%28Gnetales%29%26%23x201a%3B+clock+calibration+when+outgroup+relationships+are+uncertain." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dating+dispersal+and+radiation+in+the+Gymnosperm+Gnetum+%28Gnetales%29%26%23x201a%3B+clock+calibration+when+outgroup+relationships+are+uncertain.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000879-Yang2" id="pone.0000879-Yang2"></a>Yang Z (2004) A heuristic rate smoothing procedure for maximum likelihood estimation of species divergence times. Acta Zool Sinica  50: 645–656.  <ul class="find" data-citedArticleID="990918"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+heuristic+rate+smoothing+procedure+for+maximum+likelihood+estimation+of+species+divergence+times.&amp;auth=&amp;atitle=A+heuristic+rate+smoothing+procedure+for+maximum+likelihood+estimation+of+species+divergence+times." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+heuristic+rate+smoothing+procedure+for+maximum+likelihood+estimation+of+species+divergence+times." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+heuristic+rate+smoothing+procedure+for+maximum+likelihood+estimation+of+species+divergence+times.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000879-Yang3" id="pone.0000879-Yang3"></a>Yang Z (2006) Computational molecular evolution. Oxford: Oxford University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">21.
+              </span><a name="pone.0000879-Edwards1" id="pone.0000879-Edwards1"></a>Edwards AW (1992) Likelihood. Baltimore and London: John Hopkins University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">22.
+              </span><a name="pone.0000879-Kishino2" id="pone.0000879-Kishino2"></a>Kishino H, Thorne JL, Bruno WJ (2001) Performance of a divergence time estimation method under a probabilistic model of rate evolution. Mol Biol Evol  18: 352–361.  <ul class="find" data-citedArticleID="990882" data-doi="10.1093/oxfordjournals.molbev.a003811"><li><a href="http://dx.doi.org/10.1093/oxfordjournals.molbev.a003811" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Performance+of+a+divergence+time+estimation+method+under+a+probabilistic+model+of+rate+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Performance+of+a+divergence+time+estimation+method+under+a+probabilistic+model+of+rate+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000879-Yang4" id="pone.0000879-Yang4"></a>Yang Z (1997) PAML: a program package for phylogenetic analysis by maximum likelihood. Comput Appl Biosci  13: 555–556.  <ul class="find" data-citedArticleID="990922" data-doi="10.1093/bioinformatics/13.5.555"><li><a href="http://dx.doi.org/10.1093/bioinformatics/13.5.555" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PAML%3A+a+program+package+for+phylogenetic+analysis+by+maximum+likelihood." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PAML%3A+a+program+package+for+phylogenetic+analysis+by+maximum+likelihood.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000879-Hartigan1" id="pone.0000879-Hartigan1"></a>Hartigan JA, Wong MA (1979) A K-means clustering algorithm. Appl Stat  28: 100–108.  <ul class="find" data-citedArticleID="990868" data-doi="10.2307/2346830"><li><a href="http://dx.doi.org/10.2307/2346830" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+K-means+clustering+algorithm." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+K-means+clustering+algorithm.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000879-Kaufman1" id="pone.0000879-Kaufman1"></a>Kaufman L, Rousseeuw PJ (1990) Finding groups in data : an introduction to cluster analysis. New York: Wiley.   <ul class="find-nolinks"></ul></li><li><span class="label">26.
+              </span><a name="pone.0000879-Tibshirani1" id="pone.0000879-Tibshirani1"></a>Tibshirani R, Walther G, Hastie T (2001) Estimating the number of clusters in a data set via the gap statistic. J Roy Stat Soc B  63: 411–423.  <ul class="find" data-citedArticleID="990910" data-doi="10.1111/1467-9868.00293"><li><a href="http://dx.doi.org/10.1111/1467-9868.00293" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimating+the+number+of+clusters+in+a+data+set+via+the+gap+statistic." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimating+the+number+of+clusters+in+a+data+set+via+the+gap+statistic.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000879-Pollard1" id="pone.0000879-Pollard1"></a>Pollard KS, van der Laan MJ (2002) Statistical inference for simultaneous clustering of gene expression data. Math Biosci  176: 99–121.  <ul class="find" data-citedArticleID="990886" data-doi="10.1016/s0025-5564(01)00116-x"><li><a href="http://dx.doi.org/10.1016/s0025-5564(01)00116-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+inference+for+simultaneous+clustering+of+gene+expression+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+inference+for+simultaneous+clustering+of+gene+expression+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000879-vanderLaan1" id="pone.0000879-vanderLaan1"></a>van der Laan M, Pollard KS (2003) A new algorithm for hybrid hierarchical clustering with visualization and the bootstrap. J Stat Plan Infer  117: 275–303.  <ul class="find" data-citedArticleID="990932" data-doi="10.1016/s0378-3758(02)00388-9"><li><a href="http://dx.doi.org/10.1016/s0378-3758(02)00388-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+new+algorithm+for+hybrid+hierarchical+clustering+with+visualization+and+the+bootstrap." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+new+algorithm+for+hybrid+hierarchical+clustering+with+visualization+and+the+bootstrap.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000879-Pagel1" id="pone.0000879-Pagel1"></a>Pagel M, Meade A, Barker D (2004) Bayesian estimation of ancestral character states on phylogenies. Syst Biol  53: 673–684.  <ul class="find" data-citedArticleID="990884"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Bayesian+estimation+of+ancestral+character+states+on+phylogenies.&amp;auth=&amp;atitle=Bayesian+estimation+of+ancestral+character+states+on+phylogenies." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bayesian+estimation+of+ancestral+character+states+on+phylogenies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bayesian+estimation+of+ancestral+character+states+on+phylogenies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000879-Prudhomme1" id="pone.0000879-Prudhomme1"></a>Prud'homme B, Gompel N, Rokas A, Kassner VA, Williams TM, et al.  (2006) Repeated morphological evolution through cis-regulatory changes in a pleiotropic gene. Nature  440: 1050–1053.  <ul class="find" data-citedArticleID="990888" data-doi="10.1038/nature04597"><li><a href="http://dx.doi.org/10.1038/nature04597" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Repeated+morphological+evolution+through+cis-regulatory+changes+in+a+pleiotropic+gene." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Repeated+morphological+evolution+through+cis-regulatory+changes+in+a+pleiotropic+gene.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000879-Ronquist1" id="pone.0000879-Ronquist1"></a>Ronquist F, Huelsenbeck JP (2003) MRBAYES 3: Bayesian phylogenetic inference under mixed models. Bioinformatics  19: 1572–1574.  <ul class="find" data-citedArticleID="990894" data-doi="10.1093/bioinformatics/btg180"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg180" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=MRBAYES+3%3A+Bayesian+phylogenetic+inference+under+mixed+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22MRBAYES+3%3A+Bayesian+phylogenetic+inference+under+mixed+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000879-Goldman1" id="pone.0000879-Goldman1"></a>Goldman N, Yang Z (1994) A codon-based model of nucleotide substitution for protein-coding DNA sequences. Mol Biol Evol  11: 725–736.  <ul class="find" data-citedArticleID="990866"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+codon-based+model+of+nucleotide+substitution+for+protein-coding+DNA+sequences.&amp;auth=&amp;atitle=A+codon-based+model+of+nucleotide+substitution+for+protein-coding+DNA+sequences." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+codon-based+model+of+nucleotide+substitution+for+protein-coding+DNA+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+codon-based+model+of+nucleotide+substitution+for+protein-coding+DNA+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000879-Smith1" id="pone.0000879-Smith1"></a>Smith AB, Pisani D, Mackenzie-Dodds JA, Stockley B, Webster BL, et al.  (2006) Testing the molecular clock: Molecular and paleontological estimates of divergence times in the Echinoidea (Echinodermata). Mol Biol Evol  23: 1832–1851.  <ul class="find" data-citedArticleID="990904" data-doi="10.1093/molbev/msl039"><li><a href="http://dx.doi.org/10.1093/molbev/msl039" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Testing+the+molecular+clock%3A+Molecular+and+paleontological+estimates+of+divergence+times+in+the+Echinoidea+%28Echinodermata%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Testing+the+molecular+clock%3A+Molecular+and+paleontological+estimates+of+divergence+times+in+the+Echinoidea+%28Echinodermata%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000879-Tavare1" id="pone.0000879-Tavare1"></a>Tavare S (1986) Some probabilistic and statistical problems in the analysis of DNA sequences. Lectures on Mathematics in the Life Sciences  17: 57–86.  <ul class="find" data-citedArticleID="990906"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Some+probabilistic+and+statistical+problems+in+the+analysis+of+DNA+sequences.&amp;auth=&amp;atitle=Some+probabilistic+and+statistical+problems+in+the+analysis+of+DNA+sequences." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Some+probabilistic+and+statistical+problems+in+the+analysis+of+DNA+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Some+probabilistic+and+statistical+problems+in+the+analysis+of+DNA+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000879-Yang5" id="pone.0000879-Yang5"></a>Yang Z (1994) Maximum likelihood phylogenetic estimation from DNA sequences with variable rates over sites: approximate methods. J Mol Evol  39: 306–314.  <ul class="find" data-citedArticleID="990924" data-doi="10.1007/bf00160154"><li><a href="http://dx.doi.org/10.1007/bf00160154" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Maximum+likelihood+phylogenetic+estimation+from+DNA+sequences+with+variable+rates+over+sites%3A+approximate+methods." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Maximum+likelihood+phylogenetic+estimation+from+DNA+sequences+with+variable+rates+over+sites%3A+approximate+methods.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000879-Hasegawa1" id="pone.0000879-Hasegawa1"></a>Hasegawa M, Kishino H, Yano T (1985) Dating of the human-ape splitting by a molecular clock of mitochondrial DNA. J Mol Evol  22: 160–174.  <ul class="find" data-citedArticleID="990870" data-doi="10.1007/bf02101694"><li><a href="http://dx.doi.org/10.1007/bf02101694" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dating+of+the+human-ape+splitting+by+a+molecular+clock+of+mitochondrial+DNA." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dating+of+the+human-ape+splitting+by+a+molecular+clock+of+mitochondrial+DNA.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000879-AmrineMadsen1" id="pone.0000879-AmrineMadsen1"></a>Amrine-Madsen H, Scally M, Westerman M, Stanhope MJ, Krajewski C, et al.  (2003) Nuclear gene sequences provide evidence for the monophyly of australidelphian marsupials. Mol Phylogenet Evol  28: 186–196.  <ul class="find" data-citedArticleID="990850" data-doi="10.1016/s1055-7903(03)00122-2"><li><a href="http://dx.doi.org/10.1016/s1055-7903(03)00122-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Nuclear+gene+sequences+provide+evidence+for+the+monophyly+of+australidelphian+marsupials." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Nuclear+gene+sequences+provide+evidence+for+the+monophyly+of+australidelphian+marsupials.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000879-ArisBrosou2" id="pone.0000879-ArisBrosou2"></a>Aris-Brosou S, Bielawski JP (2006) Large-scale analyses of synonymous substitution rates can be sensitive to assumptions about the process of mutation. Gene  378: 58–64.  <ul class="find" data-citedArticleID="990854" data-doi="10.1016/j.gene.2006.04.024"><li><a href="http://dx.doi.org/10.1016/j.gene.2006.04.024" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Large-scale+analyses+of+synonymous+substitution+rates+can+be+sensitive+to+assumptions+about+the+process+of+mutation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Large-scale+analyses+of+synonymous+substitution+rates+can+be+sensitive+to+assumptions+about+the+process+of+mutation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000879-ArisBrosou3" id="pone.0000879-ArisBrosou3"></a>Aris-Brosou S (2006) Identifying sites under positive selection with uncertain parameter estimates. Genome  49: 767–776.  <ul class="find" data-citedArticleID="990856" data-doi="10.1139/g06-038"><li><a href="http://dx.doi.org/10.1139/g06-038" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifying+sites+under+positive+selection+with+uncertain+parameter+estimates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifying+sites+under+positive+selection+with+uncertain+parameter+estimates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000879-Sanderson3" id="pone.0000879-Sanderson3"></a>Sanderson MJ (2003) r8s: inferring absolute rates of molecular evolution and divergence times in the absence of a molecular clock. Bioinformatics  19: 301–302.  <ul class="find" data-citedArticleID="990900" data-doi="10.1093/bioinformatics/19.2.301"><li><a href="http://dx.doi.org/10.1093/bioinformatics/19.2.301" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=r8s%3A+inferring+absolute+rates+of+molecular+evolution+and+divergence+times+in+the+absence+of+a+molecular+clock." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22r8s%3A+inferring+absolute+rates+of+molecular+evolution+and+divergence+times+in+the+absence+of+a+molecular+clock.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000879-Seiffert1" id="pone.0000879-Seiffert1"></a>Seiffert ER, Simons EL, Attia Y (2003) Fossil evidence for an ancient divergence of lorises and galagos. Nature  422: 421–424.  <ul class="find" data-citedArticleID="990902" data-doi="10.1038/nature01489"><li><a href="http://dx.doi.org/10.1038/nature01489" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Fossil+evidence+for+an+ancient+divergence+of+lorises+and+galagos." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Fossil+evidence+for+an+ancient+divergence+of+lorises+and+galagos.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0000879-Yang6" id="pone.0000879-Yang6"></a>Yang Z, Wong WS, Nielsen R (2005) Bayes empirical Bayes inference of amino acid sites under positive selection. Mol Biol Evol  22: 1107–1118.  <ul class="find" data-citedArticleID="990926" data-doi="10.1093/molbev/msi097"><li><a href="http://dx.doi.org/10.1093/molbev/msi097" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bayes+empirical+Bayes+inference+of+amino+acid+sites+under+positive+selection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bayes+empirical+Bayes+inference+of+amino+acid+sites+under+positive+selection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.XML" value="109105"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.PDF" value="177919"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g001.PNG_L" value="94517"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g001.PNG_M" value="62640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g001.PNG_S" value="6992"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g001.TIF" value="242556"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g001.PNG_I" value="22907"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t001.PNG_L" value="110093"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t001.PNG_M" value="63459"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t001.PNG_S" value="10240"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t001.TIF" value="578678"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t001.PNG_I" value="19181"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g002.PNG_L" value="132885"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g002.PNG_M" value="67585"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g002.PNG_S" value="6822"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g002.TIF" value="315926"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.g002.PNG_I" value="24120"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t002.PNG_L" value="241435"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t002.PNG_M" value="138835"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t002.PNG_S" value="17806"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t002.TIF" value="1227282"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t002.PNG_I" value="43956"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t003.PNG_L" value="232467"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t003.PNG_M" value="125284"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t003.PNG_S" value="12858"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t003.TIF" value="956472"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.t003.PNG_I" value="38426"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.s001.PDF" value="448158"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000879.s002.PDF" value="379370"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000879&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000879" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000879&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000879&volume=&issue=&title=Dating Phylogenies with Hybrid Local Molecular Clocks&author_name=St%C3%A9phane%20Aris-Brosou&start_page=1&end_page=8" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000879" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879&amp;t=Dating%20Phylogenies%20with%20Hybrid%20Local%20Molecular%20Clocks" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879&title=Dating%20Phylogenies%20with%20Hybrid%20Local%20Molecular%20Clocks&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879&amp;title=Dating%20Phylogenies%20with%20Hybrid%20Local%20Molecular%20Clocks" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000879&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Dating Phylogenies with Hybrid Local Molecular Clocks';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000879';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Dating%20Phylogenies%20with%20Hybrid%20Local%20Molecular%20Clocks http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000879" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000879" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Algorithms%22" title="Search for articles in the subject area:'Algorithms'"><div class="flagText">Algorithms</div></a>
+              <div data-categoryid="32621" data-articleid="24596"
+                   data-categoryname="Algorithms"
+                   class="flagImage" title="Flag 'Algorithms' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Bayes+theorem%22" title="Search for articles in the subject area:'Bayes theorem'"><div class="flagText">Bayes theorem</div></a>
+              <div data-categoryid="32251" data-articleid="24596"
+                   data-categoryname="Bayes theorem"
+                   class="flagImage" title="Flag 'Bayes theorem' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Codons%22" title="Search for articles in the subject area:'Codons'"><div class="flagText">Codons</div></a>
+              <div data-categoryid="18427" data-articleid="24596"
+                   data-categoryname="Codons"
+                   class="flagImage" title="Flag 'Codons' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Fossil+calibration%22" title="Search for articles in the subject area:'Fossil calibration'"><div class="flagText">Fossil calibration</div></a>
+              <div data-categoryid="33891" data-articleid="24596"
+                   data-categoryname="Fossil calibration"
+                   class="flagImage" title="Flag 'Fossil calibration' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Lemurs%22" title="Search for articles in the subject area:'Lemurs'"><div class="flagText">Lemurs</div></a>
+              <div data-categoryid="43189" data-articleid="24596"
+                   data-categoryname="Lemurs"
+                   class="flagImage" title="Flag 'Lemurs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetic+analysis%22" title="Search for articles in the subject area:'Phylogenetic analysis'"><div class="flagText">Phylogenetic analysis</div></a>
+              <div data-categoryid="17851" data-articleid="24596"
+                   data-categoryname="Phylogenetic analysis"
+                   class="flagImage" title="Flag 'Phylogenetic analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetics%22" title="Search for articles in the subject area:'Phylogenetics'"><div class="flagText">Phylogenetics</div></a>
+              <div data-categoryid="46093" data-articleid="24596"
+                   data-categoryname="Phylogenetics"
+                   class="flagImage" title="Flag 'Phylogenetics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Topology%22" title="Search for articles in the subject area:'Topology'"><div class="flagText">Topology</div></a>
+              <div data-categoryid="32019" data-articleid="24596"
+                   data-categoryname="Topology"
+                   class="flagImage" title="Flag 'Topology' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=8869'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=2566'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=1840&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

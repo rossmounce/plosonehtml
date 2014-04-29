@@ -1,0 +1,1207 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001623"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001623" />
+
+    <meta name="citation_title" content="Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites"/>
+    <meta itemprop="name" content="Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites"/>
+
+      <meta name="citation_author" content="Troels T. Marstrand"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Jes Frellsen"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Ida Moltke"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Martin Thiim"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Eivind Valen"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Dorota Retelska"/>
+            <meta name="citation_author_institution" content="Swiss Institute of Bioinformatics, Swiss Institute for Experimental Cancer Research (ISREC), Epalinges, Switzerland"/>
+      <meta name="citation_author" content="Anders Krogh"/>
+            <meta name="citation_author_institution" content="Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark"/>
+
+    <meta name="citation_date" content="2008/2/20"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001623.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1623"/>
+    <meta name="citation_issue" content="2"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=TRANSFAC and its module TRANSCompel: transcriptional gene regulation in eukaryotes.; citation_author=V Matys; citation_author=O Kel-Margoulis; citation_author=E Fricke; citation_author=I Liebich; citation_author=S Land; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=1; citation_pages=D108-110; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=JASPAR: an open-access database for eukaryotic transcription factor binding profiles.; citation_author=A Sandelin; citation_author=W Alkema; citation_author=P Engström; citation_author=W Wasserman; citation_author=B Lenhard; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=2; citation_pages=D91-94; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Applied bioinformatics for the identification of regulatory elements.; citation_author=W Wasserman; citation_author=A Sandelin; citation_journal_title=Nat Rev Genet; citation_volume=5; citation_number=3; citation_pages=276-287; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Unbiased mapping of transcription factor binding sites along human chromosomes 21 and 22 points to widespread regulation of noncoding RNAs.; citation_author=S Cawley; citation_author=S Bekiranov; citation_author=H Ng; citation_author=P Kapranov; citation_author=E Sekinger; citation_journal_title=Cell; citation_volume=116; citation_number=4; citation_pages=499-509; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Comparative genomics: genome-wide analysis in metazoan eukaryotes.; citation_author=A Ureta-Vidal; citation_author=L Ettwiller; citation_author=E Birney; citation_journal_title=Nat Rev Genet; citation_volume=4; citation_number=5; citation_pages=251-262; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=ConSite: web-based prediction of regulatory elements using cross-species comparison.; citation_author=A Sandelin; citation_author=W Wasserman; citation_author=B Lenhard; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=6; citation_pages=W249-252; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=rVista for comparative sequence-based discovery of functional transcription factor binding sites.; citation_author=G Loots; citation_author=I Ovcharenko; citation_author=L Pachter; citation_author=I Dubchak; citation_author=E Rubin; citation_journal_title=Genome Res; citation_volume=12; citation_number=7; citation_pages=832-839; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=CREME: Cis-Regulatory Module Explorer for the human genome.; citation_author=R Sharan; citation_author=A Ben-Hur; citation_author=G Loots; citation_author=I Ovcharenko; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=8; citation_pages=W253-256; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A genomic regulatory network for development.; citation_author=E Davidson; citation_author=J Rast; citation_author=P Oliveri; citation_author=A Ransick; citation_author=C Calestani; citation_journal_title=Science; citation_volume=295; citation_number=9; citation_pages=1669-1678; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Rank order metrics for quantifying the association of sequence features with gene regulation.; citation_author=N Clarke; citation_author=J Granek; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=10; citation_pages=212-218; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=oPOSSUM: integrated tools for analysis of regulatory motif over-representation.; citation_author=S Ho Sui; citation_author=D Fulton; citation_author=D Arenillas; citation_author=A Kwon; citation_author=W Wasserman; citation_journal_title=Nucleic Acids Res; citation_volume=35; citation_number=11; citation_pages=W245-252; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Toucan: deciphering the cis-regulatory logic of coregulated genes.; citation_author=S Aerts; citation_author=G Thijs; citation_author=B Coessens; citation_author=M Staes; citation_author=Y Moreau; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=12; citation_pages=1753-1764; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A systematic model to predict transcriptional regulatory mechanisms based on overrepresentation of transcription factor binding profiles.; citation_author=L Chang; citation_author=R Nagarajan; citation_author=J Magee; citation_author=J Milbrandt; citation_author=G Stormo; citation_journal_title=Genome Res; citation_volume=16; citation_number=13; citation_pages=405-413; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Chromatin insulators and boundaries: effects on transcription and nuclear organization.; citation_author=T Gerasimova; citation_author=V Corces; citation_journal_title=Annu Rev Genet; citation_volume=35; citation_number=14; citation_pages=193-208; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Epigenetic modulation of tumor suppressor CCAAT/enhancer binding protein alpha activity in lung cancer.; citation_author=Y Tada; citation_author=R Brena; citation_author=B Hackanson; citation_author=C Morrison; citation_author=G Otterson; citation_journal_title=J Natl Cancer Inst; citation_volume=98; citation_number=15; citation_pages=396-406; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Epigenetic reprogramming of OCT4 and NANOG regulatory regions by embryonal carcinoma cell extract.; citation_author=C Freberg; citation_author=J Dahl; citation_author=S Timoskainen; citation_author=P Collas; citation_journal_title=Mol Biol Cell; citation_volume=18; citation_number=16; citation_pages=1543-1553; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=PoSSuMsearch: Fast and Sensitive Matching of Position Specific Scoring Matrices using Enhanced Suffix Arrays.; citation_author=M Beckstette; citation_author=D Strothmann; citation_author=R Homann; citation_author=R Giergerich; citation_author=S Kurtz; citation_journal_title=German Conference on Bioinformatics; citation_number=17; citation_pages=53-66; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Application.; citation_author=T Kasai; citation_author=G Lee; citation_author=H Arimura; citation_author=S Arikawa; citation_author=K Park; citation_journal_title=Combinatorial Pattern Matching, 12th Annual Symposium, CPM 2001, Jerusalem, Israel, July 1–4, 2001 Proceedings; citation_number=18; citation_pages=181-192; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=R: A language and Enviroment for Statistical Computing.; citation_author=RDC Team; citation_number=19; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Assessing computational tools for the discovery of transcription factor binding sites.; citation_author=M Tompa; citation_author=N Li; citation_author=T Bailey; citation_author=G Church; citation_author=B De Moor; citation_journal_title=Nat Biotechnol; citation_volume=23; citation_number=20; citation_pages=137-144; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A global map of p53 transcription-factor binding sites in the human genome.; citation_author=CL Wei; citation_author=Q Wu; citation_author=VB Vega; citation_author=KP Chiu; citation_author=P Ng; citation_journal_title=Cell; citation_volume=124; citation_number=21; citation_pages=207-219; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=DBTSS: DataBase of human Transcriptional Start Sites and full-length cDNAs.; citation_author=Y Suzuki; citation_author=R Yamashita; citation_author=K Nakai; citation_author=S Sugano; citation_journal_title=Nucleic Acids Res; citation_volume=30; citation_number=22; citation_pages=328-331; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=JASPAR, the open access database of transcription factor-binding profiles: new content and tools in the 2008 update.; citation_author=JC Bryne; citation_author=E Valen; citation_author=MH Tang; citation_author=T Marstrand; citation_author=O Winther; citation_journal_title=Nucleic Acids Res; citation_number=23; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=A higher-order background model improves the detection of promoter regulatory elements by Gibbs sampling.; citation_author=G Thijs; citation_author=M Lescot; citation_author=K Marchal; citation_author=S Rombauts; citation_author=B De Moor; citation_journal_title=Bioinformatics; citation_volume=17; citation_number=24; citation_pages=1113-1122; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide analysis of mammalian promoter architecture and evolution.; citation_author=P Carninci; citation_author=A Sandelin; citation_author=B Lenhard; citation_author=S Katayama; citation_author=K Shimokawa; citation_journal_title=Nat Genet; citation_volume=38; citation_number=25; citation_pages=626-635; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=NestedMICA: sensitive inference of over-represented motifs in nucleic acid sequence.; citation_author=T Down; citation_author=T Hubbard; citation_journal_title=Nucleic Acids Res; citation_volume=33; citation_number=26; citation_pages=1445-1453; citation_date=2005; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites"/>
+    <meta name="twitter:description" content="BackgroundIn studies of gene regulation the efficient computational detection of over-represented transcription factor binding sites is an increasingly important aspect. Several published methods can be used for testing whether a set of hypothesised co-regulated genes share a common regulatory regime based on the occurrence of the modelled transcription factor binding sites. However there is little or no information available for guiding the end users choice of method. Furthermore it would be necessary to obtain several different software programs from various sources to make a well-founded choice.MethodologyWe introduce a software package, Asap, for fast searching with position weight matrices that include several standard methods for assessing over-representation. We have compared the ability of these methods to detect over-represented transcription factor binding sites in artificial promoter sequences. Controlling all aspects of our input data we are able to identify the optimal statistics across multiple threshold values and for sequence sets containing different distributions of transcription factor binding sites.ConclusionsWe show that our implementation is significantly faster than more na&iuml;ve scanning algorithms when searching with many weight matrices in large sequence sets. When comparing the various statistics, we show that those based on binomial over-representation and Fisher's exact test performs almost equally good and better than the others. An online server is available at http://servers.binf.ku.dk/asap/."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001623.g001"/>
+
+  <meta property="og:title" content="Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=8371'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=8868'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=509&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001623">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001623" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001623&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Troels T. Marstrand
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p>*E-mail: <a href="mailto:dolle@binf.ku.dk">dolle@binf.ku.dk</a></p>
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jes Frellsen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ida Moltke, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Martin Thiim, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Eivind Valen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Dorota Retelska, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Swiss Institute of Bioinformatics, Swiss Institute for Experimental Cancer Research (ISREC), Epalinges, Switzerland
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Anders Krogh
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Bioinformatics Centre, Department of Molecular Biology and Biotech Research and Innovation Centre (BRIC), University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: February 20, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001623</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001623-t001" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001623-g001" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001623-t002" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001623-t003" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001623-t004" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001623">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001623" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>In studies of gene regulation the efficient computational detection of over-represented transcription factor binding sites is an increasingly important aspect. Several published methods can be used for testing whether a set of hypothesised co-regulated genes share a common regulatory regime based on the occurrence of the modelled transcription factor binding sites. However there is little or no information available for guiding the end users choice of method. Furthermore it would be necessary to obtain several different software programs from various sources to make a well-founded choice.</p>
+
+
+<h3>Methodology</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>We introduce a software package, Asap, for fast searching with position weight matrices that include several standard methods for assessing over-representation. We have compared the ability of these methods to detect over-represented transcription factor binding sites in artificial promoter sequences. Controlling all aspects of our input data we are able to identify the optimal statistics across multiple threshold values and for sequence sets containing different distributions of transcription factor binding sites.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>We show that our implementation is significantly faster than more naïve scanning algorithms when searching with many weight matrices in large sequence sets. When comparing the various statistics, we show that those based on binomial over-representation and Fisher's exact test performs almost equally good and better than the others. An online server is available at <a href="http://servers.binf.ku.dk/asap/">http://servers.binf.ku.dk/asap/</a>.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Marstrand TT, Frellsen J, Moltke I, Thiim M, Valen E, et al.  (2008) Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites. PLoS ONE 3(2):
+          e1623.
+            doi:10.1371/journal.pone.0001623</p><p><strong>Academic Editor: </strong>Richard Copley, Wellcome Trust Centre for Human Genetics, United Kingdom</p><p><strong>Received:</strong> November 22, 2007; <strong>Accepted:</strong> January 21, 2008; <strong>Published:</strong> February 20, 2008</p><p><strong>Copyright:</strong> © 2008 Marstrand et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported by a grant from the Novo Nordisk Foundation. DR was supported by the SNSF grant PBLAA-109445. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Efficient identification of transcription factor binding sites is a crucial initial step in the study of gene regulation. We are often interested in identifying over-represented transcription factor binding sites (TFBSs) in some set of hypothesised co-regulated genes as this indicates that the set share a common regulatory mechanism. Modelling the binding of transacting proteins to cis-regulatory sequences by computational approaches is becoming increasingly important in hypothesis testing and generation.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>The binding preference of a known transcription factor can be described by the sequences to which it binds. Aligning the sequences and counting the nucleotides at each position in the alignment provides a <em>count matrix</em> similar to those found in databases as TRANSFAC <a href="#pone.0001623-Matys1">[1]</a> and JASPAR <a href="#pone.0001623-Sandelin1">[2]</a>. Log-transforming this <em>count matrix</em>, taking into account the background nucleotide distribution of the genomic region of interest, provides the position weight matrix (PWM). Various algorithms can then be used to scan a set of sequence with this PWM to identify likely binding sites. However, due to the short and degenerate nature of TFBSs a typical PWM will detect a hit every 500–5000 base-pair depending on parameter settings <a href="#pone.0001623-Wasserman1">[3]</a>; leading to a genome-wide number of predictions that are much higher than estimates from experimental data <a href="#pone.0001623-Cawley1">[4]</a>.Two different approaches are frequently employed to decrease the large number of presumably false positives. One is phylogenetic footprinting where conservation of the detected sites in orthologous promoters are used as evidence for functionality, see the review in <a href="#pone.0001623-UretaVidal1">[5]</a> and examples of tools in <a href="#pone.0001623-Sandelin2">[6]</a>–<a href="#pone.0001623-Sharan1">[8]</a>. A disadvantage of this method is its inability to detect species-specific regulatory mechanisms and the sensitivity to the alignment of the regulatory regions. The other approach is to ignore the mapping of the specific binding sites and calculate an over-representation statistic for the transcription factor to assess whether it is the likely cause of the observed co-regulation. Here we focus on a handful of methods for assessing over-representation.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>The assumption behind an over-representation statistics is that functional TFBSs will be over-represented in the set of co-regulated genes as compared to a background set <a href="#pone.0001623-Davidson1">[9]</a> (by the term co-regulated we refer to a set of genes hypothesized to be co-regulated either based on expression data or some other information). Several methods exist for assessing the significance of over-representation <a href="#pone.0001623-Clarke1">[10]</a>–<a href="#pone.0001623-Chang1">[13]</a>, but most of these methods are implemented in distinct tools for promoter analysis making a comparison between the different statistics cumbersome. However, these methods all rely on some comparison of the distribution of TFBSs, modelled by PWMs, between two sequence sets and they can therefore be implemented in a common framework. We here present such an implementation: A fast search algorithm coupled with an easily extendable framework for calculating the different test-statistics.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>When interested in finding a common regulatory regime for a set of co-regulated genes, the main objective is to find the representative regulators, whereas the mapping of their actual binding sites in the DNA sequences as a secondary objective that may require different statistics. Our goal is to systematically test various parameters on diverse but controlled sequence sets in order to establish a guideline for conducting optimal promoter analysis. In doing so, we focus on the hypothesis testing capability of the statistics rather than their ability to map the location of the actual TFBSs.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>An important caveat of this entire framework is that even if a TFBS is significantly over-represented it does not imply biological function directly as several epigenetic features may further modulate the transcriptional events <a href="#pone.0001623-Gerasimova1">[14]</a>–<a href="#pone.0001623-Freberg1">[16]</a>.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Materials and Methods"></a><h3>Materials and Methods</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>Computational identification of transcription factor binding sites consists of two parts: scoring and assessment. We will deal with each in turn.</p>
+
+<h4>Scoring</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Scoring is done using a PWM representing a specific TFBS. To take into account the base composition of the promoters a background model from a relevant set of sequences is estimated. The background model is usually a Markov model representing either the relative frequencies of the nucleotides A, C, G, and T (zeroth order); the 16 di-nucleotides (first order) or any word-length of nucleotides (n-th order). Often there is too little information in the original alignments to estimate anything but a zeroth order model for the transcription factor binding site, however it can be combined with a higher order background model to take into account dependencies in the nucleotide composition. Effectively the PWM is the log ratio of the conditional pattern probabilities and conditional background probabilities (see supplementary material, <a href="#pone.0001623.s001">text S1</a>)</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Having defined the PWM it becomes a matter of finding all sub-sequences of length W (the width of the PWM) scoring above a given threshold. These sub-sequences are considered the predicted binding sites for the transcription factor in question. If the sequence sets (positive and background set) are large, or if we wish to search with several PWMs, this can be a computationally taxing problem. We have implemented a C library using a data structure called enhanced suffix arrays (ESA). Using a modified version of the ESAsearch algorithm, introduced by Beckstette et al. <a href="#pone.0001623-Beckstette1">[17]</a>, we are able to solve the scoring problem with a speedup of as much as a factor 1000 compared to a naïve implementation (see supplementary material, <a href="#pone.0001623.s001">text S1</a>). The primary benefit of ESAsearch is that whenever two or more W-sub-sequences share a prefix the score for that prefix is only calculated once. Additionally, a look-ahead principle is used: The scoring of any given sub-sequence is stopped if the intermediate score of any of its prefixes plus the highest possible score for the rest of the sub-sequence is below the threshold. Combining these two principles are especially advantageous; when the scoring of a sub-sequence is stopped due to the look-ahead principle, ESAsearch also discards all other sub-sequences that share the prefix that led to the stop.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>Further speedup is achieved by utilizing the fact that TFBSs, and thus PWMs, are short. We can use this to impose an upper bound on the prefixes (currently set to 50) which efficiently speeds up the sorting when building the ESA by a factor two compared to the sophisticated <em>lcp</em> algorithm by T. Kasai et al. <a href="#pone.0001623-Kasai1">[18]</a> (see supplementary material, <a href="#pone.0001623.s001">text S1</a>).</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>A disadvantage of using an ESA is that the data structure uses nine times as much memory as the size of the input sequences. Since the building time is linear in the size of the input sequences, it is only advantageous when searching the sequence set with multiple PWMs (see <a href="#pone-0001623-t001">table 1</a> and supplementary material, <a href="#pone.0001623.s001">text S1</a>, for speed comparisons).</p>
+<div class="figure" id="pone-0001623-t001"><div class="img"><a name="pone-0001623-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Speed comparison to naïve search</span></strong></p><span>doi:10.1371/journal.pone.0001623.t001</span></div>
+
+<h4>Assessment</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>The strength of over-representation can be expressed by a test-statistic. Here we have implemented and rigorously tested the performance of several published methods that are used within the field: The binomial over-representation used by TOUCAN <a href="#pone.0001623-Aerts1">[12]</a>, the Fisher's exact test and z-score used by oPOSSUM <a href="#pone.0001623-Clarke1">[10]</a>, <a href="#pone.0001623-HoSui1">[11]</a>, the area under the ROC used by Clarke et al <a href="#pone.0001623-Clarke1">[10]</a>, the log-ranking employed by PAP <a href="#pone.0001623-Chang1">[13]</a>, and finally the Wilcoxon rank sum test. We include the Wilcoxon rank sum as it represents a formalized statistic in the same genre as those employed by <a href="#pone.0001623-Clarke1">[10]</a> and <a href="#pone.0001623-Chang1">[13]</a>. To the best of our knowledge no current tool uses Wilcoxon rank sum test for assessment of over-represented TFBSs.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>As the statistics are sensitive to the sequence lengths we concatenate the background sequences <em>after</em> searching for matches and then partition the concatenated sequences into sequences of equal length – the mean length of the positive sequences. By concatenating after all instances have been found, we avoid forming ‘new’ words in the boundaries of the sequences.</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>Finally our statistics module is interfaced to R <a href="#pone.0001623-Team1">[19]</a> using Rpy. This enables the user to take advantage of the rich statistical framework provided by R and easily extend the currently implemented methods.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>We test all implemented statistics on an artificial data set, somewhat similar to Tompa et al. <a href="#pone.0001623-Tompa1">[20]</a>, in order to control all variables. Originally these methods where tested on diverse data sets and a direct comparison based on the original literature is therefore impossible. However, we do acknowledge that our artificial data set may indeed promote some statistics compared to others. E.g. the ranking statistics, area under ROC and ln-rank, both rely on a sum of PWM scores within each sequence. Thus these statistics would benefit from several TFBSs in each positive sequence, and here we only place one. As we are aware that the artificial data set may not fully represent the complex structure of a true biological data set we also assess the different statistics on a ChIP data set from Wei et al. <a href="#pone.0001623-Wei1">[21]</a>.</p>
+
+<h4>Data</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>Our data set consists of 117 positive sequence sets from dbTSS <a href="#pone.0001623-Suzuki1">[22]</a>, each with a total 100 sequences. Each sequence in a specific sequence set have a probability of having an embedded site from a specific JASPAR CORE 2008 PWM <a href="#pone.0001623-Bryne1">[23]</a>. The probability is 100% for the performance test on the order of the background model, 50% for the tests of statistics across multiple thresholds and finally between 10–90% in the dilution test. Our background set consists of 1000 sequences also from dbTSS. For testing the speed of the implemented search algorithm we choose a set of ~31000 dbTSS sequences.</p>
+<a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>The data from Wei et al. <a href="#pone.0001623-Wei1">[21]</a> consists of DNA fragments from a p53 ChIP experiment that are converted into pair-ended di-tags (PETs) and mapped back to the human genome. Here we use all 323 PET tag clusters with 3 or more counts as our positive set.</p>
+
+
+<h4>Speed test</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>To test the speed of our implemented algorithm we partition the master file (the 31000 sequences) into several smaller ones. Using 50 randomly chosen PWMs with a threshold giving an expected match every 10000 base pair we compare our implementation to a naïve search. The results are given in <a href="#pone-0001623-t001">table 1</a>. The last column indicates the number of PWMs one would need to search with in order to ‘break-even’ with the naïve method when taking into account the building time of the enhanced suffix array, (see supplementary material, <a href="#pone.0001623.s001">text S1</a>, for a more detailed comparison). All tests were done on a 2.4 GHz Intel Pentium 4 processor with 1.5 GB of memory running Linux. We used the sum of user and sys times as reported by the Linux time command.</p>
+
+
+<h4>Background model order</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>It has been shown in <a href="#pone.0001623-Thijs1">[24]</a> that a high-order Markov chain is a better background model than the standard zeroth order. To find the appropriate order we scan all data sets with the respective PWM and record the number of true instances found in the positive sequences (all sequences have an embedded site) and the mean number of instances found in the background set. <a href="#pone-0001623-g001">Figure 1</a> shows a small increase in performance by order, and we decided to continue comparing order 0 and order 3.</p>
+<div class="figure" id="pone-0001623-g001"><div class="img"><a name="pone-0001623-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Performance of PWMs based on background model.</span></strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>Average number of false hits in the background sequences per hit in the positive sequences across 117 JASPAR CORE PWMs.</p>
+<span>doi:10.1371/journal.pone.0001623.g001</span></div><a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>Based on this we test all statistics with a sequence set with 50% chance of an embedded site with both zeroth order and third order background models. For each positive data set we calculate all over-representation statistics for all matrices and record if the true matrix was found (the one corresponding to the embedded sites) and the number of possibly false matrices, that is, other matrices also showing significant over-representation in the set. Thus we have an overall number of 117 true predictions and (117×138)–117 = 16029 possible false predictions. We use a p-value threshold of 0.05, a z-score threshold of 3, an area under the ROC above 0.5, and ln-rank score above 2 as suggested by the original papers. We do not correct for multiple testing. Results are summarized in <a href="#pone-0001623-t002">table 2</a>.</p>
+<div class="figure" id="pone-0001623-t002"><div class="img"><a name="pone-0001623-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Comparison of over-representation statistics based on background model.</span></strong></p><span>doi:10.1371/journal.pone.0001623.t002</span></div><a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"></a><p>The trend (previously observed in <a href="#pone.0001623-Thijs1">[24]</a>) of higher background giving higher performance is not present in our test. In fact only the poorly performing statistics seems to borrow strength from the higher order background, while the better performing statistics are hurt by the increase in background model. Thus we select zeroth order background models to further boost the better performing statistics. Also when testing across a series of thresholds (0.9, 0.8, 0.7, and 0.6) of each PWM specific scoring range ((max−min)*threshold+min) it is clear that the optimal statistic is the Fishers exact test, data not shown. Finally, in the dilution test it is evident that this statistic is also relatively robust with respect to the number of sites in the positive set never dropping below a sensitivity of 50% as shown in <a href="#pone-0001623-t003">table 3</a>.</p>
+<div class="figure" id="pone-0001623-t003"><div class="img"><a name="pone-0001623-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Dilution test using Fisher's exact test.</span></strong></p><span>doi:10.1371/journal.pone.0001623.t003</span></div>
+
+<h4>ChIP data</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>We partition the data from Wei et al. <a href="#pone.0001623-Wei1">[21]</a> into four groups based on the number of counts in the PET tag cluster. The first data set consists of all sequences with six counts, the next of all sequences with five or more counts, etc until all 323 sequences with 3 or more counts are included. Thus we successively weaken the p53 signal. For each of the four data sets we search with all the JASPAR 2008 CORE PWMs using a loose threshold of 0.8 of the maximum scoring range. We then rank the significance values from each statistic and record the rank of the PWM for p53, see <a href="#pone-0001623-t004">table 4</a>. As other transcription factors may be present in the positive set our major concern is the statistics ability to specify p53 as being the most significantly over-represented feature. The results correspond with our results obtained on the artificial data sets: the best performing statistics is the binomial over-representation and Fisher's exact test.</p>
+<div class="figure" id="pone-0001623-t004"><div class="img"><a name="pone-0001623-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001623" data-uri="info:doi/10.1371/journal.pone.0001623.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001623.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001623.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001623.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001623.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Rank of the p53 PWM on ChIP data</span></strong></p><span>doi:10.1371/journal.pone.0001623.t004</span></div>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>The apparently contradictive result that the zeroth order PWM performs better than the third order highlights some of the problems of over-representation statistics, or more generally PWM scoring. Confounding factors are numerous and include: the threshold value, PWM to PWM similarity, and the information content of the PWM.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>Firstly, calculating the threshold of the PWM based on the scoring range of the model it is clear that including a higher order background model will effectively lead to an altered scoring range and thus affect the absolute threshold value. In our specific case this affects the performance differences of over-representation statistics between the zeroth order and third order PWMs. Secondly, since transcription factors of similar function sometimes bind to similar sequence patterns they are not independent. In other words, if PWM <em>A</em> is very similar to PWM <em>B</em> both of them will likely be deemed significantly over-represented in the sequences with the embedded <em>A</em> sites and vice versa. Thirdly comparing performance across a set of different PWMs all with different information content is difficult. Obviously different information content leads to different binding affinities and how to interpret the p-values derived from low and high information content PWMs is not trivial. All these confounding effects influence the final value calculated by the over-representation statistics and influence our ability to compare the values obtained by different PWMs.</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>In reality the problem of promoter analysis is further complicated by different promoter architectures <a href="#pone.0001623-Carninci1">[25]</a>, and therefore sub-partitioning the sequences and background models as suggested by Down and Hubbard <a href="#pone.0001623-Down1">[26]</a> would be justified. However, this further limits the ability to compare the resulting over-representation without expert biological knowledge. Furthermore we have, in the current work, not considered the effect of overlapping and/or palindromic sites. Such sites will clearly affect the resulting test-statistics. However, further analyses are required to quantify the effects and find solutions to handle such sites intelligently.</p>
+<a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4"></a><p>Despite the severe difficulties related to promoter analysis in mammalian genomes, our analysis shows that over-represented transcription factors are detectable using current methods even for low sites to sequences ratios.</p>
+<a id="article1.body1.sec4.p5" name="article1.body1.sec4.p5"></a><p>As for the program package it can be easily extended to include various other types of genomic data. An obvious extension would be to include conservation tracks and other data tracks from the UCSC genome browser in a coherent manner.</p>
+<a id="article1.body1.sec4.p6" name="article1.body1.sec4.p6"></a><p>Here we focus on the usage of the program package within the field of promoter analysis, however, all patterns that can be represented by a PWM can potentially benefit from our framework. Our current implementation provides the community with a basic framework for fast searching with PWMs and integrated analyses of the results either through the current implemented methods or by use of the rich statistical framework provided by R. Finally our framework can be use directly from our web interface at: <a href="http://servers.binf.ku.dk/asap/">http://servers.binf.ku.dk/asap/</a></p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001623"></div><a name="pone.0001623.s001" id="pone.0001623.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001623.s001">Text S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Higher order background models and detailed speed comparison.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001623.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.07 MB PDF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>The authors would like to thank Lisbeth Carstensen for valuable discussions on the statistics, and Albin Sandelin for several helpful conversations. The presented framework as available at: <a href="http://asap.binf.ku.dk">http://asap.binf.ku.dk</a></p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: AK DR TM. Analyzed the data: TM. Contributed reagents/materials/analysis tools: TM EV JF IM MT. Wrote the paper: AK TM EV JF IM MT.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001623-Matys1" id="pone.0001623-Matys1"></a>Matys V, Kel-Margoulis O, Fricke E, Liebich I, Land S, et al.  (2006) TRANSFAC and its module TRANSCompel: transcriptional gene regulation in eukaryotes. Nucleic Acids Res  34: D108–110.  <ul class="find" data-citedArticleID="1058354" data-doi="10.1093/nar/gkj143"><li><a href="http://dx.doi.org/10.1093/nar/gkj143" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=TRANSFAC+and+its+module+TRANSCompel%3A+transcriptional+gene+regulation+in+eukaryotes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22TRANSFAC+and+its+module+TRANSCompel%3A+transcriptional+gene+regulation+in+eukaryotes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001623-Sandelin1" id="pone.0001623-Sandelin1"></a>Sandelin A, Alkema W, Engström P, Wasserman W, Lenhard B (2004) JASPAR: an open-access database for eukaryotic transcription factor binding profiles. Nucleic Acids Res  32: D91–94.  <ul class="find" data-citedArticleID="1058356" data-doi="10.1093/nar/gkh012"><li><a href="http://dx.doi.org/10.1093/nar/gkh012" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=JASPAR%3A+an+open-access+database+for+eukaryotic+transcription+factor+binding+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22JASPAR%3A+an+open-access+database+for+eukaryotic+transcription+factor+binding+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001623-Wasserman1" id="pone.0001623-Wasserman1"></a>Wasserman W, Sandelin A (2004) Applied bioinformatics for the identification of regulatory elements. Nat Rev Genet  5: 276–287.  <ul class="find" data-citedArticleID="1058374" data-doi="10.1038/nrg1315"><li><a href="http://dx.doi.org/10.1038/nrg1315" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Applied+bioinformatics+for+the+identification+of+regulatory+elements." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Applied+bioinformatics+for+the+identification+of+regulatory+elements.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001623-Cawley1" id="pone.0001623-Cawley1"></a>Cawley S, Bekiranov S, Ng H, Kapranov P, Sekinger E, et al.  (2004) Unbiased mapping of transcription factor binding sites along human chromosomes 21 and 22 points to widespread regulation of noncoding RNAs. Cell  116: 499–509.  <ul class="find" data-citedArticleID="1058334" data-doi="10.1016/s0092-8674(04)00127-8"><li><a href="http://dx.doi.org/10.1016/s0092-8674(04)00127-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Unbiased+mapping+of+transcription+factor+binding+sites+along+human+chromosomes+21+and+22+points+to+widespread+regulation+of+noncoding+RNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Unbiased+mapping+of+transcription+factor+binding+sites+along+human+chromosomes+21+and+22+points+to+widespread+regulation+of+noncoding+RNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001623-UretaVidal1" id="pone.0001623-UretaVidal1"></a>Ureta-Vidal A, Ettwiller L, Birney E (2003) Comparative genomics: genome-wide analysis in metazoan eukaryotes. Nat Rev Genet  4: 251–262.  <ul class="find" data-citedArticleID="1058372" data-doi="10.1038/nrg1043"><li><a href="http://dx.doi.org/10.1038/nrg1043" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+genomics%3A+genome-wide+analysis+in+metazoan+eukaryotes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+genomics%3A+genome-wide+analysis+in+metazoan+eukaryotes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001623-Sandelin2" id="pone.0001623-Sandelin2"></a>Sandelin A, Wasserman W, Lenhard B (2004) ConSite: web-based prediction of regulatory elements using cross-species comparison. Nucleic Acids Res  32: W249–252.  <ul class="find" data-citedArticleID="1058358" data-doi="10.1093/nar/gkh372"><li><a href="http://dx.doi.org/10.1093/nar/gkh372" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ConSite%3A+web-based+prediction+of+regulatory+elements+using+cross-species+comparison." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ConSite%3A+web-based+prediction+of+regulatory+elements+using+cross-species+comparison.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001623-Loots1" id="pone.0001623-Loots1"></a>Loots G, Ovcharenko I, Pachter L, Dubchak I, Rubin E (2002) rVista for comparative sequence-based discovery of functional transcription factor binding sites. Genome Res  12: 832–839.  <ul class="find" data-citedArticleID="1058352" data-doi="10.1101/gr.225502"><li><a href="http://dx.doi.org/10.1101/gr.225502" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=rVista+for+comparative+sequence-based+discovery+of+functional+transcription+factor+binding+sites." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22rVista+for+comparative+sequence-based+discovery+of+functional+transcription+factor+binding+sites.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001623-Sharan1" id="pone.0001623-Sharan1"></a>Sharan R, Ben-Hur A, Loots G, Ovcharenko I (2004) CREME: Cis-Regulatory Module Explorer for the human genome. Nucleic Acids Res  32: W253–256.  <ul class="find" data-citedArticleID="1058360" data-doi="10.1093/nar/gkh385"><li><a href="http://dx.doi.org/10.1093/nar/gkh385" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=CREME%3A+Cis-Regulatory+Module+Explorer+for+the+human+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22CREME%3A+Cis-Regulatory+Module+Explorer+for+the+human+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001623-Davidson1" id="pone.0001623-Davidson1"></a>Davidson E, Rast J, Oliveri P, Ransick A, Calestani C, et al.  (2002) A genomic regulatory network for development. Science  295: 1669–1678.  <ul class="find" data-citedArticleID="1058340" data-doi="10.1126/science.1069883"><li><a href="http://dx.doi.org/10.1126/science.1069883" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+genomic+regulatory+network+for+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+genomic+regulatory+network+for+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001623-Clarke1" id="pone.0001623-Clarke1"></a>Clarke N, Granek J (2003) Rank order metrics for quantifying the association of sequence features with gene regulation. Bioinformatics  19: 212–218.  <ul class="find" data-citedArticleID="1058338" data-doi="10.1093/bioinformatics/19.2.212"><li><a href="http://dx.doi.org/10.1093/bioinformatics/19.2.212" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Rank+order+metrics+for+quantifying+the+association+of+sequence+features+with+gene+regulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Rank+order+metrics+for+quantifying+the+association+of+sequence+features+with+gene+regulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001623-HoSui1" id="pone.0001623-HoSui1"></a>Ho Sui S, Fulton D, Arenillas D, Kwon A, Wasserman W (2007) oPOSSUM: integrated tools for analysis of regulatory motif over-representation. Nucleic Acids Res  35: W245–252.  <ul class="find" data-citedArticleID="1058348" data-doi="10.1093/nar/gkm427"><li><a href="http://dx.doi.org/10.1093/nar/gkm427" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=oPOSSUM%3A+integrated+tools+for+analysis+of+regulatory+motif+over-representation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22oPOSSUM%3A+integrated+tools+for+analysis+of+regulatory+motif+over-representation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001623-Aerts1" id="pone.0001623-Aerts1"></a>Aerts S, Thijs G, Coessens B, Staes M, Moreau Y, et al.  (2003) Toucan: deciphering the cis-regulatory logic of coregulated genes. Nucleic Acids Res  31: 1753–1764.  <ul class="find" data-citedArticleID="1058326" data-doi="10.1093/nar/gkg268"><li><a href="http://dx.doi.org/10.1093/nar/gkg268" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Toucan%3A+deciphering+the+cis-regulatory+logic+of+coregulated+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Toucan%3A+deciphering+the+cis-regulatory+logic+of+coregulated+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001623-Chang1" id="pone.0001623-Chang1"></a>Chang L, Nagarajan R, Magee J, Milbrandt J, Stormo G (2006) A systematic model to predict transcriptional regulatory mechanisms based on overrepresentation of transcription factor binding profiles. Genome Res  16: 405–413.  <ul class="find" data-citedArticleID="1058336" data-doi="10.1101/gr.4303406"><li><a href="http://dx.doi.org/10.1101/gr.4303406" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+systematic+model+to+predict+transcriptional+regulatory+mechanisms+based+on+overrepresentation+of+transcription+factor+binding+profiles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+systematic+model+to+predict+transcriptional+regulatory+mechanisms+based+on+overrepresentation+of+transcription+factor+binding+profiles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001623-Gerasimova1" id="pone.0001623-Gerasimova1"></a>Gerasimova T, Corces V (2001) Chromatin insulators and boundaries: effects on transcription and nuclear organization. Annu Rev Genet  35: 193–208.  <ul class="find" data-citedArticleID="1058346" data-doi="10.1146/annurev.genet.35.102401.090349"><li><a href="http://dx.doi.org/10.1146/annurev.genet.35.102401.090349" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Chromatin+insulators+and+boundaries%3A+effects+on+transcription+and+nuclear+organization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Chromatin+insulators+and+boundaries%3A+effects+on+transcription+and+nuclear+organization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001623-Tada1" id="pone.0001623-Tada1"></a>Tada Y, Brena R, Hackanson B, Morrison C, Otterson G, et al.  (2006) Epigenetic modulation of tumor suppressor CCAAT/enhancer binding protein alpha activity in lung cancer. J Natl Cancer Inst  98: 396–406.  <ul class="find" data-citedArticleID="1058364" data-doi="10.1093/jnci/djj093"><li><a href="http://dx.doi.org/10.1093/jnci/djj093" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Epigenetic+modulation+of+tumor+suppressor+CCAAT%2Fenhancer+binding+protein+alpha+activity+in+lung+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Epigenetic+modulation+of+tumor+suppressor+CCAAT%2Fenhancer+binding+protein+alpha+activity+in+lung+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001623-Freberg1" id="pone.0001623-Freberg1"></a>Freberg C, Dahl J, Timoskainen S, Collas P (2007) Epigenetic reprogramming of OCT4 and NANOG regulatory regions by embryonal carcinoma cell extract. Mol Biol Cell  18: 1543–1553.  <ul class="find" data-citedArticleID="1058344" data-doi="10.1091/mbc.e07-01-0029"><li><a href="http://dx.doi.org/10.1091/mbc.e07-01-0029" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Epigenetic+reprogramming+of+OCT4+and+NANOG+regulatory+regions+by+embryonal+carcinoma+cell+extract." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Epigenetic+reprogramming+of+OCT4+and+NANOG+regulatory+regions+by+embryonal+carcinoma+cell+extract.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001623-Beckstette1" id="pone.0001623-Beckstette1"></a>Beckstette M, Strothmann D, Homann R, Giergerich R, Kurtz S (2004) PoSSuMsearch: Fast and Sensitive Matching of Position Specific Scoring Matrices using Enhanced Suffix Arrays. German Conference on Bioinformatics 53–66.  <ul class="find" data-citedArticleID="1058328"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=PoSSuMsearch%3A+Fast+and+Sensitive+Matching+of+Position+Specific+Scoring+Matrices+using+Enhanced+Suffix+Arrays.&amp;auth=&amp;atitle=PoSSuMsearch%3A+Fast+and+Sensitive+Matching+of+Position+Specific+Scoring+Matrices+using+Enhanced+Suffix+Arrays." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=PoSSuMsearch%3A+Fast+and+Sensitive+Matching+of+Position+Specific+Scoring+Matrices+using+Enhanced+Suffix+Arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22PoSSuMsearch%3A+Fast+and+Sensitive+Matching+of+Position+Specific+Scoring+Matrices+using+Enhanced+Suffix+Arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001623-Kasai1" id="pone.0001623-Kasai1"></a>Kasai T, Lee G, Arimura H, Arikawa S, Park K (2001) Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Application. Combinatorial Pattern Matching, 12th Annual Symposium, CPM 2001, Jerusalem, Israel, July 1–4, 2001 Proceedings 181–192.  <ul class="find" data-citedArticleID="1058350" data-doi="10.1007/3-540-48194-x_17"><li><a href="http://dx.doi.org/10.1007/3-540-48194-x_17" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Linear-Time+Longest-Common-Prefix+Computation+in+Suffix+Arrays+and+Its+Application." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Linear-Time+Longest-Common-Prefix+Computation+in+Suffix+Arrays+and+Its+Application.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001623-Team1" id="pone.0001623-Team1"></a>Team RDC (2006) R: A language and Enviroment for Statistical Computing.  <ul class="find" data-citedArticleID="1058366"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=R%3A+A+language+and+Enviroment+for+Statistical+Computing.&amp;auth=&amp;atitle=R%3A+A+language+and+Enviroment+for+Statistical+Computing." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=R%3A+A+language+and+Enviroment+for+Statistical+Computing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22R%3A+A+language+and+Enviroment+for+Statistical+Computing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001623-Tompa1" id="pone.0001623-Tompa1"></a>Tompa M, Li N, Bailey T, Church G, De Moor B, et al.  (2005) Assessing computational tools for the discovery of transcription factor binding sites. Nat Biotechnol  23: 137–144.  <ul class="find" data-citedArticleID="1058370" data-doi="10.1038/nbt1053"><li><a href="http://dx.doi.org/10.1038/nbt1053" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Assessing+computational+tools+for+the+discovery+of+transcription+factor+binding+sites.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001623-Wei1" id="pone.0001623-Wei1"></a>Wei CL, Wu Q, Vega VB, Chiu KP, Ng P, et al.  (2006) A global map of p53 transcription-factor binding sites in the human genome. Cell  124: 207–219.  <ul class="find" data-citedArticleID="1058376" data-doi="10.1016/j.cell.2005.10.043"><li><a href="http://dx.doi.org/10.1016/j.cell.2005.10.043" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+global+map+of+p53+transcription-factor+binding+sites+in+the+human+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+global+map+of+p53+transcription-factor+binding+sites+in+the+human+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001623-Suzuki1" id="pone.0001623-Suzuki1"></a>Suzuki Y, Yamashita R, Nakai K, Sugano S (2002) DBTSS: DataBase of human Transcriptional Start Sites and full-length cDNAs. Nucleic Acids Res  30: 328–331.  <ul class="find" data-citedArticleID="1058362" data-doi="10.1093/nar/30.1.328"><li><a href="http://dx.doi.org/10.1093/nar/30.1.328" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=DBTSS%3A+DataBase+of+human+Transcriptional+Start+Sites+and+full-length+cDNAs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22DBTSS%3A+DataBase+of+human+Transcriptional+Start+Sites+and+full-length+cDNAs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001623-Bryne1" id="pone.0001623-Bryne1"></a>Bryne JC, Valen E, Tang MH, Marstrand T, Winther O, et al.  (2007) JASPAR, the open access database of transcription factor-binding profiles: new content and tools in the 2008 update. Nucleic Acids Res.   <ul class="find" data-citedArticleID="1058330" data-doi="10.1093/nar/gkm955"><li><a href="http://dx.doi.org/10.1093/nar/gkm955" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=JASPAR%2C+the+open+access+database+of+transcription+factor-binding+profiles%3A+new+content+and+tools+in+the+2008+update." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22JASPAR%2C+the+open+access+database+of+transcription+factor-binding+profiles%3A+new+content+and+tools+in+the+2008+update.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001623-Thijs1" id="pone.0001623-Thijs1"></a>Thijs G, Lescot M, Marchal K, Rombauts S, De Moor B, et al.  (2001) A higher-order background model improves the detection of promoter regulatory elements by Gibbs sampling. Bioinformatics  17: 1113–1122.  <ul class="find" data-citedArticleID="1058368" data-doi="10.1093/bioinformatics/17.12.1113"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.12.1113" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+higher-order+background+model+improves+the+detection+of+promoter+regulatory+elements+by+Gibbs+sampling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+higher-order+background+model+improves+the+detection+of+promoter+regulatory+elements+by+Gibbs+sampling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001623-Carninci1" id="pone.0001623-Carninci1"></a>Carninci P, Sandelin A, Lenhard B, Katayama S, Shimokawa K, et al.  (2006) Genome-wide analysis of mammalian promoter architecture and evolution. Nat Genet  38: 626–635.  <ul class="find" data-citedArticleID="1058332" data-doi="10.1038/ng1789"><li><a href="http://dx.doi.org/10.1038/ng1789" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+analysis+of+mammalian+promoter+architecture+and+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+analysis+of+mammalian+promoter+architecture+and+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001623-Down1" id="pone.0001623-Down1"></a>Down T, Hubbard T (2005) NestedMICA: sensitive inference of over-represented motifs in nucleic acid sequence. Nucleic Acids Res  33: 1445–1453.  <ul class="find" data-citedArticleID="1058342" data-doi="10.1093/nar/gki282"><li><a href="http://dx.doi.org/10.1093/nar/gki282" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=NestedMICA%3A+sensitive+inference+of+over-represented+motifs+in+nucleic+acid+sequence." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22NestedMICA%3A+sensitive+inference+of+over-represented+motifs+in+nucleic+acid+sequence.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.XML" value="66524"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.PDF" value="184270"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t001.PNG_L" value="62443"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t001.PNG_M" value="81199"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t001.PNG_S" value="13102"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t001.TIF" value="286972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t001.PNG_I" value="28694"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.g001.PNG_L" value="52664"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.g001.PNG_M" value="42758"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.g001.PNG_S" value="10874"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.g001.TIF" value="834084"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.g001.PNG_I" value="14509"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t002.PNG_L" value="124207"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t002.PNG_M" value="179734"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t002.PNG_S" value="23022"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t002.TIF" value="562648"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t002.PNG_I" value="60957"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t003.PNG_L" value="72580"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t003.PNG_M" value="102185"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t003.PNG_S" value="15362"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t003.TIF" value="310924"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t003.PNG_I" value="35413"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t004.PNG_L" value="55051"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t004.PNG_M" value="68237"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t004.PNG_S" value="12801"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t004.TIF" value="251778"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.t004.PNG_I" value="24049"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001623.s001.PDF" value="71539"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001623&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001623" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001623&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001623&volume=&issue=&title=Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites&author_name=Troels%20T.%20Marstrand%2C%20Jes%20Frellsen%2C%20Ida%20Moltke%2C%20Martin%20Thiim%2C%20Eivind%20Valen%2C%20Dorota%20Retelska%2C%20Anders%20Krogh&start_page=1&end_page=5" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001623" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623&amp;t=Asap%3A%20A%20Framework%20for%20Over-Representation%20Statistics%20for%20Transcription%20Factor%20Binding%20Sites" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623&title=Asap%3A%20A%20Framework%20for%20Over-Representation%20Statistics%20for%20Transcription%20Factor%20Binding%20Sites&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623&amp;title=Asap%3A%20A%20Framework%20for%20Over-Representation%20Statistics%20for%20Transcription%20Factor%20Binding%20Sites" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001623&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Asap: A Framework for Over-Representation Statistics for Transcription Factor Binding Sites';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001623';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Asap%3A%20A%20Framework%20for%20Over-Representation%20Statistics%20for%20Transcription%20Factor%20Binding%20Sites http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001623" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001623" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Binomials%22" title="Search for articles in the subject area:'Binomials'"><div class="flagText">Binomials</div></a>
+              <div data-categoryid="32283" data-articleid="26072"
+                   data-categoryname="Binomials"
+                   class="flagImage" title="Flag 'Binomials' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Computer+software%22" title="Search for articles in the subject area:'Computer software'"><div class="flagText">Computer software</div></a>
+              <div data-categoryid="2287" data-articleid="26072"
+                   data-categoryname="Computer software"
+                   class="flagImage" title="Flag 'Computer software' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22DNA+sequences%22" title="Search for articles in the subject area:'DNA sequences'"><div class="flagText">DNA sequences</div></a>
+              <div data-categoryid="32003" data-articleid="26072"
+                   data-categoryname="DNA sequences"
+                   class="flagImage" title="Flag 'DNA sequences' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+regulation%22" title="Search for articles in the subject area:'Gene regulation'"><div class="flagText">Gene regulation</div></a>
+              <div data-categoryid="17553" data-articleid="26072"
+                   data-categoryname="Gene regulation"
+                   class="flagImage" title="Flag 'Gene regulation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+alignment%22" title="Search for articles in the subject area:'Sequence alignment'"><div class="flagText">Sequence alignment</div></a>
+              <div data-categoryid="18051" data-articleid="26072"
+                   data-categoryname="Sequence alignment"
+                   class="flagImage" title="Flag 'Sequence alignment' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+databases%22" title="Search for articles in the subject area:'Sequence databases'"><div class="flagText">Sequence databases</div></a>
+              <div data-categoryid="42787" data-articleid="26072"
+                   data-categoryname="Sequence databases"
+                   class="flagImage" title="Flag 'Sequence databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Test+statistics%22" title="Search for articles in the subject area:'Test statistics'"><div class="flagText">Test statistics</div></a>
+              <div data-categoryid="35337" data-articleid="26072"
+                   data-categoryname="Test statistics"
+                   class="flagImage" title="Flag 'Test statistics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Transcription+factors%22" title="Search for articles in the subject area:'Transcription factors'"><div class="flagText">Transcription factors</div></a>
+              <div data-categoryid="17335" data-articleid="26072"
+                   data-categoryname="Transcription factors"
+                   class="flagImage" title="Flag 'Transcription factors' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=3644'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=8069'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=7599&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=14789">Possible misunderstanding</a><br>Posted by tmarstrand</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,1470 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000207"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000207" />
+
+    <meta name="citation_title" content="LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions"/>
+    <meta itemprop="name" content="LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions"/>
+
+      <meta name="citation_author" content="Wayne M. Getz"/>
+            <meta name="citation_author_institution" content="Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America"/>
+            <meta name="citation_author_institution" content="Mammal Research Institute, Department of Zoology and Entomology, University of Pretoria, Pretoria, South Africa"/>
+      <meta name="citation_author" content="Scott Fortmann-Roe"/>
+            <meta name="citation_author_institution" content="Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America"/>
+      <meta name="citation_author" content="Paul C. Cross"/>
+            <meta name="citation_author_institution" content="Northern Rocky Mountain Science Center, U.S. Geological Survey, Montana State University, Bozeman, Montana, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Ecology, Montana State University, Bozeman, Montana, United States of America"/>
+      <meta name="citation_author" content="Andrew J. Lyons"/>
+            <meta name="citation_author_institution" content="Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America"/>
+      <meta name="citation_author" content="Sadie J. Ryan"/>
+            <meta name="citation_author_institution" content="Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America"/>
+      <meta name="citation_author" content="Christopher C. Wilmers"/>
+            <meta name="citation_author_institution" content="Environmental Studies Department, University of California, Santa Cruz, California, United States of America"/>
+
+    <meta name="citation_date" content="2007/2/14"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000207.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e207"/>
+    <meta name="citation_issue" content="2"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Comparison of Accuracy Using a GPS and a Low-Cost DGPS.; citation_author=M Matosevic; citation_author=Z Salcic; citation_author=SA Berber; citation_journal_title=IEEE Transactions on Instrumentation and Measurement; citation_volume=55; citation_number=1; citation_pages=1677-1683; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Inching toward movement ecology.; citation_author=C Holden; citation_journal_title=Science; citation_volume=313; citation_number=2; citation_pages=779-782; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Territoriality and home range concepts as applied to mammals.; citation_author=WH Burt; citation_journal_title=J Mammalogy; citation_volume=24; citation_number=3; citation_pages=346-352; citation_date=1943; " />
+      <meta name="citation_reference" content="citation_author=JG Kie; citation_author=JA Baldwin; citation_author=CJ Evans; citation_number=4; citation_date=1994; citation_publisher=United States Forest Service Pacific Southwest Research Station; " />
+      <meta name="citation_reference" content="citation_title=Differences in home-range size computed in commonly used software programs.; citation_author=EJG Lawson; citation_author=AR Rodgers; citation_journal_title=Wildlife Society Bulletin; citation_volume=25; citation_number=5; citation_pages=721-729; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Eliminating autocorrelation reduces biological relevance of home range estimates.; citation_author=SR De Solla; citation_author=R Bonduriansky; citation_author=RJ Brooks; citation_journal_title=J. Animal Ecology; citation_volume=68; citation_number=6; citation_pages=221-234; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Measurement of non-circular home range.; citation_author=RI Jennrich; citation_author=FB Turner; citation_journal_title=J Theoretical Biology; citation_volume=22; citation_number=7; citation_pages=227-237; citation_date=1969; " />
+      <meta name="citation_reference" content="citation_title=The analysis of space use patterns.; citation_author=RG Ford; citation_author=DW Krumme; citation_journal_title=J Theoretical Biology; citation_volume=76; citation_number=8; citation_pages=125-157; citation_date=1979; " />
+      <meta name="citation_reference" content="citation_title=Population density and home range estimates for the Eastern Bristlebird at Jervis Bay, south-eastern Australia.; citation_author=J Baker; citation_journal_title=Corella; citation_volume=25; citation_number=9; citation_pages=62-67; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Quantifying home-range overlap: The importance of the utilization distribution.; citation_author=J Fieberg; citation_author=CO Kochanny; citation_journal_title=J Wildlife Management; citation_volume=69; citation_number=10; citation_pages=1346-1359; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Likelihood cross-validation versus least squares cross-validation for choosing the smoothing parameter in kernel home-range analysis.; citation_author=JS Horne; citation_author=EO Garton; citation_journal_title=J Wildlife Management; citation_volume=7; citation_number=11; citation_pages=641-648; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Model-supervised kernel smoothing for the estimation of spatial usage.; citation_author=J Matthiopoulos; citation_journal_title=Oikos; citation_volume=102; citation_number=12; citation_pages=367-377; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Analysis of resource selection using utilization distributions.; citation_author=JJ Millspaugh; citation_author=RM Nielson; citation_author=L McDonald; citation_author=JM Marzluff; citation_author=RA Gitzen; citation_journal_title=J Wildlife Management; citation_volume=70; citation_number=13; citation_pages=384-395; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_author=BW Silverman; citation_number=14; citation_pages=176 p; citation_date=1986; citation_publisher=Chapman and Hall; " />
+      <meta name="citation_reference" content="citation_title=A review of models of home range for animal movement.; citation_author=BJ Worton; citation_journal_title=Ecological Modelling,; citation_volume=38; citation_number=15; citation_pages=277-298; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=Kernel methods for estimating the utilization distribution in home-range studies.; citation_author=BJ Worton; citation_journal_title=Ecology; citation_volume=70; citation_number=16; citation_pages=164-168; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=A convex hull-based estimator of home range size.; citation_author=BJ Worton; citation_journal_title=Biometrics; citation_volume=51; citation_number=17; citation_pages=1206-1215; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=An evaluation of the accuracy of kernel density estimators for home range analysis.; citation_author=DE Seaman; citation_author=RA Powell; citation_journal_title=Ecology; citation_volume=77; citation_number=18; citation_pages=2075-2085; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=“Kernlab – An S4 Package for Kernel 
+                  Methods in R.”; citation_author=A Karatzoglou; citation_author=A Smola; citation_author=K Hornik; citation_author=A Zeileis; citation_journal_title=J Statistical Software; citation_volume=11; citation_number=19; citation_pages=1-20; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Density And Linkage Estimators Of Home Range: Nearest-Neighbor Clustering Defines Multinuclear Cores.; citation_author=RE Kenward; citation_author=RT Clarke; citation_author=KH Hodder; citation_author=SS Walls; citation_journal_title=Ecology; citation_volume=82; citation_number=20; citation_pages=1905-1920; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Effects of sampling regime on the mean and variance of home range size estimates.; citation_author=L Börger; citation_author=N Francon; citation_author=G De Michele; citation_author=A Gantz; citation_author=F Meschi; citation_journal_title=J Animal Ecology; citation_volume=75; citation_number=21; citation_pages=1393-1405; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Government programs for research and operational uses of commercial remote sensing data.; citation_author=RJ Birk; citation_author=T Stanley; citation_author=GI Snyderc; citation_author=TA Hennig; citation_author=MM Fladelande; citation_author=F Policelli; citation_journal_title=Remote Sensing of Environment; citation_volume=88; citation_number=22; citation_pages=3-16; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A local nearest-neighbor convex-hull construction of home ranges and utilization distributions.; citation_author=WM Getz; citation_author=CC Wilmers; citation_journal_title=Ecography; citation_volume=27; citation_number=23; citation_pages=489-505; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Range and habitat selection of African buffalo in South Africa.; citation_author=SJ Ryan; citation_author=C Knechtel; citation_author=WM Getz; citation_journal_title=J Wildlife Management; citation_volume=70; citation_number=24; citation_pages=764-776; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Defining herbivore assemblages in Kruger National Park: A correlative coherence approach.; citation_author=JV Redfern; citation_author=SJ Ryan; citation_author=WM Getz; citation_journal_title=Oecologia; citation_volume=146; citation_number=25; citation_pages=632-640; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Factors influencing female home range sizes in elk (Cervus elaphus) in North American landscapes.; citation_author=DP Anderson; citation_author=JD Forester; citation_author=MG Turner; citation_author=JL Frair; citation_author=EH Merrill; citation_journal_title=Landscape Ecology; citation_volume=20; citation_number=26; citation_pages=257-271; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Bias in species range estimates from minimum convex polygons: implications for conservation and options for improved planning.; citation_author=MA Burgman; citation_author=J Fox; citation_journal_title=Animal Conservation; citation_volume=6; citation_number=27; citation_pages=19-28; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Are kernels the mustard? Data from global positioning system (GPS) collars suggests problems for kernel home-range analyses with least-squares cross-validation.; citation_author=G Hemson; citation_author=P Johnson; citation_author=A South; citation_author=R Kenward; citation_author=R Ripley; citation_journal_title=Journal of Animal Ecology; citation_volume=74; citation_number=28; citation_pages=455-463; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_author=PN Hooge; citation_author=B Eichenlaub; citation_number=29; citation_date=1997; citation_publisher=Alaska Science Center - Biological Science Office, U.S. Geological Survey; " />
+      <meta name="citation_reference" content="citation_title=Boundary patrols and intergroup encounters in wild chimpanzees.; citation_author=DP Watts; citation_author=JC Mitani; citation_journal_title=Behaviour; citation_volume=138; citation_number=30; citation_pages=299-327; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Linear home ranges: effects of smoothing, sample size, and autocorrelation on kernel estimates.; citation_author=GM Blundell; citation_author=JAK Maier; citation_author=EM Debevec; citation_journal_title=Ecological Monographs; citation_volume=71; citation_number=31; citation_pages=469-489; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Elephants in space and time.; citation_author=SA Cushman; citation_author=M Chase; citation_author=C Griffin; citation_journal_title=Oikos; citation_volume=109; citation_number=32; citation_pages=331-341; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_author=B Efron; citation_author=RJ Tibshirani; citation_number=33; citation_pages=436 p; citation_date=1993; citation_publisher=Chapman & Hall; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions"/>
+    <meta name="twitter:description" content="Parametric kernel methods currently dominate the literature regarding the construction of animal home ranges (HRs) and utilization distributions (UDs). These methods frequently fail to capture the kinds of hard boundaries common to many natural systems. Recently a local convex hull (LoCoH) nonparametric kernel method, which generalizes the minimum convex polygon (MCP) method, was shown to be more appropriate than parametric kernel methods for constructing HRs and UDs, because of its ability to identify hard boundaries (e.g., rivers, cliff edges) and convergence to the true distribution as sample size increases. Here we extend the LoCoH in two ways: &ldquo;fixed sphere-of-influence,&rdquo; or r-LoCoH (kernels constructed from all points within a fixed radius r of each reference point), and an &ldquo;adaptive sphere-of-influence,&rdquo; or a-LoCoH (kernels constructed from all points within a radius a such that the distances of all points within the radius to the reference point sum to a value less than or equal to a), and compare them to the original &ldquo;fixed-number-of-points,&rdquo; or k-LoCoH (all kernels constructed from k-1 nearest neighbors of root points). We also compare these nonparametric LoCoH to parametric kernel methods using manufactured data and data collected from GPS collars on African buffalo in the Kruger National Park, South Africa. Our results demonstrate that LoCoH methods are superior to parametric kernel methods in estimating areas used by animals, excluding unused areas (holes) and, generally, in constructing UDs and HRs arising from the movement of animals influenced by hard boundaries and irregular structures (e.g., rocky outcrops). We also demonstrate that a-LoCoH is generally superior to k- and r-LoCoH (with software for all three methods available at http://locoh.cnr.berkeley.edu)."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000207.g008"/>
+
+  <meta property="og:title" content="LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=5132'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=7937'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=2561&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000207">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000207" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000207&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Wayne M. Getz
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:getz@nature.berkeley.edu">getz@nature.berkeley.edu</a>
+            </p>
+
+                <p>Affiliations:
+                  Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America, 
+                  Mammal Research Institute, Department of Zoology and Entomology, University of Pretoria, Pretoria, South Africa
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Scott Fortmann-Roe, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Paul C. Cross
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Paul C. Cross, Andrew J. Lyons, Sadie J. Ryan</p>
+
+              
+              
+
+                <p>Affiliations:
+                  Northern Rocky Mountain Science Center, U.S. Geological Survey, Montana State University, Bozeman, Montana, United States of America, 
+                  Department of Ecology, Montana State University, Bozeman, Montana, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Andrew J. Lyons
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Paul C. Cross, Andrew J. Lyons, Sadie J. Ryan</p>
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Sadie J. Ryan
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Paul C. Cross, Andrew J. Lyons, Sadie J. Ryan</p>
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Environmental Science, Policy and Management, University of California, Berkeley, California, United States of America
+                </p>
+
+                <p>
+                    Current address: Department of Anthropological Sciences, Stanford University, Stanford, California, United States of America
+                </p>
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Christopher C. Wilmers
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Environmental Studies Department, University of California, Santa Cruz, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: February 14, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000207</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000207-g001" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g002" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-t001" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g003" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g004" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-t002" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g005" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g006" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g007" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g007" title="Figure 7">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g007&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-g008" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g008" title="Figure 8">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g008&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000207-t003" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000207">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000207" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Parametric kernel methods currently dominate the literature regarding the construction of animal home ranges (HRs) and utilization distributions (UDs). These methods frequently fail to capture the kinds of hard boundaries common to many natural systems. Recently a local convex hull (LoCoH) nonparametric kernel method, which generalizes the minimum convex polygon (MCP) method, was shown to be more appropriate than parametric kernel methods for constructing HRs and UDs, because of its ability to identify hard boundaries (e.g., rivers, cliff edges) and convergence to the true distribution as sample size increases. Here we extend the LoCoH in two ways: “fixed sphere-of-influence,” or <em>r</em>-LoCoH (kernels constructed from all points within a fixed radius <em>r</em> of each reference point), and an “adaptive sphere-of-influence,” or <em>a</em>-LoCoH (kernels constructed from all points within a radius <em>a</em> such that the distances of all points within the radius to the reference point sum to a value less than or equal to <em>a</em>), and compare them to the original “fixed-number-of-points,” or <em>k</em>-LoCoH (all kernels constructed from <em>k</em>-1 nearest neighbors of root points). We also compare these nonparametric LoCoH to parametric kernel methods using manufactured data and data collected from GPS collars on African buffalo in the Kruger National Park, South Africa. Our results demonstrate that LoCoH methods are superior to parametric kernel methods in estimating areas used by animals, excluding unused areas (holes) and, generally, in constructing UDs and HRs arising from the movement of animals influenced by hard boundaries and irregular structures (e.g., rocky outcrops). We also demonstrate that <em>a</em>-LoCoH is generally superior to <em>k</em>- and <em>r</em>-LoCoH (with software for all three methods available at <a href="http://locoh.cnr.berkeley.edu">http://locoh.cnr.berkeley.edu</a>).</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Getz WM, Fortmann-Roe S, Cross PC, Lyons AJ, Ryan SJ, et al.  (2007) LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions. PLoS ONE 2(2):
+          e207.
+            doi:10.1371/journal.pone.0000207</p><p><strong>Academic Editor: </strong>Tim Coulson, Imperial College, United Kingdom</p><p><strong>Received:</strong> January 5, 2007; <strong>Accepted:</strong> January 18, 2007; <strong>Published:</strong> February 14, 2007</p><p><strong>Copyright:</strong> © 2007 Getz et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>NSF EID and James S McDonnell Foundation Grants to WMG. EPA STAR and NSF Bioinformatics Postdoctoral Grans to SJR.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Ecology is currently undergoing a revolution in terms of our ability to collect large sets of data with unprecedented precision on the position of individuals in the landscape (e.g. plus-minus several meters using current GPS technology <a href="#pone.0000207-Matosevic1">[1]</a>) at regularly spaced intervals of time. This revolution is leading to the emergence of movement ecology, a new subfield of ecology <a href="#pone.0000207-Holden1">[2]</a>. GPS position data is often used to construct home ranges (HRs) <a href="#pone.0000207-Burt1">[3]</a>–<a href="#pone.0000207-DeSolla1">[6]</a> or utilization distributions (UDs) <a href="#pone.0000207-Jennrich1">[7]</a>–<a href="#pone.0000207-Millspaugh1">[13]</a>, where the former are bounded areas used by animals for some defined purpose (e.g. foraging or seeking mates), while the latter are represented by isopleths demarcating regions in space with different probabilities or rates of usage by individuals.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Currently, the boundary of the HR is commonly delimited using the 95% isopleth of an unbounded UD, where the UD is typically constructed using the symmetric bivariate Gaussian (i.e. a parametric) kernel method <a href="#pone.0000207-Silverman1">[14]</a>–<a href="#pone.0000207-Karatzoglou1">[19]</a>, although other methods may be preferred when the UD is multimodal <a href="#pone.0000207-Kenward1">[20]</a>. For comparative and other reasons enumerated below, bounds on the innermost 95% of the data are also used to estimate the areas of HRs even for methods of construction that are able to produce HRs bounded by a 100% isopleth of a UD (e.g. the minimum convex polygon—MCP, bounded parametric kernel methods, our LoCoH methods). In the future, use of the 95% isopleth to bound HRs may change in view of Börger et al.'s <a href="#pone.0000207-Brger1">[21]</a> recent study in which they recommend estimating the area of HRs using isopleths in the 50–90% range. They demonstrate that using isopleths in this range produces area estimates that are less biased by sample size than when using isopleths above 90% or below 50% (the latter sometimes being used to estimate core areas of HR use).</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>The reasons for omitting outlying points in estimating the size of HRs are threefold: (1) locations based on relatively inaccurate triangulation of radio collars result in imprecise location estimates (this is philosophically consistent with the parametric kernel methods, such as the radially symmetric—i.e. one parameter—bivariate Gaussian or harmonic kernels, that associate a smooth distribution with each data point); (2) HR area estimates using MCP and parametric kernel construction methods are very sensitive to outlying points <a href="#pone.0000207-Brger1">[21]</a>; and (3) outlying points may well reflect exploratory animal movements rather than those necessary for survival and reproduction. The first of these three points is no longer relevant for methods applied to GPS data since these data are spatially precise <a href="#pone.0000207-Birk1">[22]</a>.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Here we describe extensions to a recently developed local convex hull (LoCoH) approach <a href="#pone.0000207-Getz1">[23]</a> that produces bounded HRs and has been shown to have superior convergence properties compared to the parametric kernel methods used in constructing HRs and UDs. This LoCoH method is both a generalization of the minimum convex polygon (MCP) method and essentially a non-parametric kernel method. LoCoH applies the MCP construction to a subset of data localized in space, and the local convex polygon (i.e. local hull) is constructed using the <em>k</em>-1 nearest neighbors of each data point, thereby producing a set of nonparametric kernels whose union is the UD. Thus LoCoH uses kernels with forms arising directly out of the data, unlike parametric kernels that have a form specified in most cases by a one parameter function (e.g. symmetric bivariate Gaussian centered on the data point with width parameter <em>h</em>), even though the union of these parametric kernels can produce rather irregular surfaces with multiple peaks.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>The advantage of LoCoH's direct use of data becomes evident when constructing UDs from data influenced by idiosyncratic geometries such as geomorphological boundaries and holes (e.g. lakes or rocky outcrops) associated with the space over which animals move <a href="#pone.0000207-Getz1">[23]</a>. In particular, as illustrated in examples considered here and elsewhere <a href="#pone.0000207-Getz1">[23]</a>, <a href="#pone.0000207-Ryan1">[24]</a>, LoCoH methods are more adept than parametric kernel methods at locating such geographical features as reserve boundaries, rivers, lakes, inhospitable terrain, and so on. Further, these features can be assessed automatically by linking LoCoH constructions with spectral images provided by new remote sensing technologies that have resolutions matching or exceeding those of the data (e.g. 1–10 m resolution SPOT imagery, Quickbird and Superbird images, IKONOS satellite imagery <a href="#pone.0000207-Birk1">[22]</a>). Statistical analyses can then be carried out to address ecological questions relating, among other things, to resource use <a href="#pone.0000207-Redfern1">[25]</a> or social behavior <a href="#pone.0000207-Anderson1">[26]</a>.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>In this paper, we present two modifications of the “fixed <em>k</em>” LoCoH method, which has been referred to as the <em>k</em>-NNCH (k-nearest neighbor convex hulls) because each local kernel is a <em>k</em>-point convex hull constructed from a root point and its <em>k</em>-1 nearest neighbors <a href="#pone.0000207-Getz1">[23]</a>. The first modification is a “fixed radius” <em>r</em>, or <em>r</em>-LoCoH, method in which all the points in a fixed “sphere of influence” of radius <em>r</em> around each root point are used to construct the local hulls. The second modification is an adaptive, or <em>a</em>-LoCoH, method in which all points within a variable sphere around a root point are used to construct the local hulls such that the sum of the distances between nearby points and the root point is less than or equal to <em>a</em>. Thus the adaptive method allows the number of points involved in the construction of the LoCoH kernels to increase with increasing density of data.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>After presenting a description of the methods and reviewing the MSHC approach (minimum spurious hole covering—see <a href="#pone.0000207-Getz1">[23]</a>) to selecting an appropriate value for <em>k</em>, <em>r</em>, or <em>a</em>, we compare the performance of parametric kernel and LoCoH methods in estimating UD isopleths from data generated from known distributions with challenging spatial features (e.g. narrow valleys or corridors). We then compare results obtained from the application of parametric and LoCoH kernel methods to both manufactured and real data, the latter from GPS collars placed on African buffalo in the Kruger National Park, South Africa. In particular, we demonstrate the superior performance of LoCoH compared with parametric kernel methods in the context of estimating the size of HRs and delineating geological and ecological features in home ranges.</p>
+<a id="article1.body1.sec1.p8" name="article1.body1.sec1.p8"></a><p>Finally, we note that links to software for the implementation of LoCoH using ArcView/ArcGIS, or in the R Statistical package Adehabitat, or as a web application can be found at <a href="http://locoh.cnr.berkeley.edu">http://locoh.cnr.berkeley.edu</a>.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>A. Constructions</h4>
+<h5>Fixed number of points: k-LoCoH.</h5><a id="article1.body1.sec2.sec1.sec1.p1" name="article1.body1.sec2.sec1.sec1.p1"></a><p>As elaborated in more detail in Getz and Wilmers <a href="#pone.0000207-Getz1">[23]</a>, the method begins by constructing the convex hull associated with each point (the root) and its <em>k</em>-1 nearest neighbors. The union of all these hulls is finite and can be used to represent the home range of the associated individual. (For a method based on α-hulls see Burgman and Fox <a href="#pone.0000207-Burgman1">[27]</a>. To obtain a UD, the hulls are ordered from the smallest to the largest, where the smallest hulls are indicative of frequently used areas. By progressively taking the union of these from the smallest upwards, until <em>x</em>% of points are included (with some rounding error), the boundaries of the resulting union represents the <em>x</em>% isopleth of the densest set of points in the UD. Depending on convention the HR can be defined as the area bounded by the 100% isopleth of the UD or, for purposes of comparison, the 95% isopleth which is the one most commonly used for UDs constructed from more traditional, particularly non-compact, kernels such as the symmetric bivariate Gaussian.</p>
+
+<h5>Fixed radius: r-LoCoH.</h5><a id="article1.body1.sec2.sec1.sec2.p1" name="article1.body1.sec2.sec1.sec2.p1"></a><p>Instead of choosing, as in the fixed <em>k</em> LoCoH, the <em>k</em>-1 nearest neighbors to each point, we use all points at distance <em>r</em> or closer to the root point to construct the local hull associated with the root and all points within a “sphere of influence” of radius <em>r</em>. Since all the local convex hulls now are approximately the same size, to construct the UD we sort these hulls from those containing the most points to those containing the fewest, with a size (area) sorting only being used to order hulls containing the same number of points. As before, we progressively take the union of hulls from most to fewest points and smallest to largest when they have the same number of points until <em>x</em>% of points (with some rounding error) are included. Also, as before, the boundaries of the resulting union represent the x% isopleth of the densest set of points in the HR.</p>
+<a id="article1.body1.sec2.sec1.sec2.p2" name="article1.body1.sec2.sec1.sec2.p2"></a><p>If <em>r</em> is sufficiently small so that some points have only one or no neighbors then in the one-neighbor case the point is connected to the construction by a line, while in the no-neighbors case the point is isolated from the construction. In both cases, the points do not contribute any area to the construction. If the proportion of such points is <em>p</em> then the area bounded by the construction is the 100(1−<em>p</em>)% isopleth. If construction of a 100% isopleth is needed, then the algorithm can be modified to include at least the two nearest neighbors irrespective of the value of <em>r</em>.</p>
+<a id="article1.body1.sec2.sec1.sec2.p3" name="article1.body1.sec2.sec1.sec2.p3"></a><p>The above method for constructing a fixed radius LoCoH is reminiscent of fixed kernel methods that use kernels with finite support, such as the uniform or Epanechnikov kernels <a href="#pone.0000207-Worton2">[16]</a>, except in LoCoH the elements are data dependent and hence variable in shape while the parametric kernels have the same repeated element associated with each point.</p>
+
+<h5>Adaptive or a-LoCoH method.</h5><a id="article1.body1.sec2.sec1.sec3.p1" name="article1.body1.sec2.sec1.sec3.p1"></a><p>The adaptive or <em>a</em>-LoCoH method uses all points within a variable sphere around a root point such that the sum of the distances between these points and the root point is less than or equal to <em>a</em>. Essentially, this method adjusts the radius of the circle that circumscribes each local convex hull, such that smaller convex hulls arise in high use areas, thereby providing more clearly defined isopleths in regions where data are more abundant. Thus, for example, the <em>a</em>-LoCoH method is particularly useful in defining UD boundaries that arise when an individual regularly visits the shore of a lake, the edge of a cliff, or the bank of a river. Also, provided the value <em>a</em> exceeds the sum of the two greatest distances between points in our data set, the construction will always produce the 100% isopleth while keeping the radius of LoCoH elements small in high density regions of the data. On the other hand, if <em>a</em> does not exceed the sum of the two greatest distances between points in our data set, then to obtain the 100% isopleth we need to specify that at least the two nearest neighbors are always included irrespective of the value of <em>a</em>.</p>
+
+<h5>Rules for selecting k, r or a.</h5><a id="article1.body1.sec2.sec1.sec4.p1" name="article1.body1.sec2.sec1.sec4.p1"></a><p>For relatively low values of <em>k</em>, <em>r</em>, or <em>a</em>, the resulting LoCoH construction from the union of the LoCoH elements associated with each data point may contain many unused areas (or holes) that disappear with increasing <em>k</em>, <em>r</em>, or <em>a</em>. For HRs with known topologies (i.e. where the number of holes that the UD should contain is known ahead of time) the “minimum spurious hole covering” (MSHC) rule <a href="#pone.0000207-Getz1">[23]</a> may be used to select the smallest value of <em>k</em>, <em>r</em>, or <em>a</em> that produces a covering that has the same topology as the given set (e.g. see <a href="#pone-0000207-g001">Figs. 1</a> and <a href="#pone-0000207-g002">2</a>). If the topology of the UD is not known, we can guess its genus (number of holes) by identifying relatively large physical features, such as lakes, mountain peaks, or inhospitable habitats. We expect these objects to produce real holes in the data that should be reflected in the UD construction. Of course, real holes at scales that are relatively small compared with the size of the home range may be missed. Differences between real and spurious holes in LoCoH constructions may be evident in plots of area covered by the UD against the value of the parameter <em>k</em>, <em>r</em>, or <em>a</em>: with increasing parameter values the estimated area may level off once all spurious holes are covered <a href="#pone.0000207-Getz1">[23]</a>–<a href="#pone.0000207-Ryan1">[24]</a>, but should increase again when one or more real holes becomes totally or partially spuriously covered. Identifying these plateaus in UD construction determines the value to use. We denote these values by <em>k</em>̂, <em>r</em>̂and <em>a</em>̂. Only experience with the method, however, will reveal appropriate methods for deciding when this leveling off has been achieved. While this MSHC rule is subjective, we show in this paper that the <em>a</em>-LoCoH method is remarkably robust to changes in the parameter <em>a</em>.</p>
+<div class="figure" id="pone-0000207-g001"><div class="img"><a name="pone-0000207-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1. </strong></p><a id="article1.body1.sec2.sec1.sec4.fig1.caption1.p1" name="article1.body1.sec2.sec1.sec4.fig1.caption1.p1"></a><p>The actual points used in the analysis, selected at random within boundaries defined in the methods to conform with the specified isopleth rules, are plotted here in the upper row for data sets A, B, and C. For each set, the 20% isopleth surrounds the densest aggregation of points that appear as relatively black areas in each of the plots. UDs constructed using the fixed kernel least-squares cross-validation method for these data are illustrations in the lower row (sizes have been adjusted to provide visual correspondence—where precise estimates of the fits are given in <a href="#pone-0000207-t001">Table 1</a>).</p>
+<span>doi:10.1371/journal.pone.0000207.g001</span></div><div class="figure" id="pone-0000207-g002"><div class="img"><a name="pone-0000207-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2. </strong></p><a id="article1.body1.sec2.sec1.sec4.fig2.caption1.p1" name="article1.body1.sec2.sec1.sec4.fig2.caption1.p1"></a><p>Kruger National Park, showing the location of the four collared buffalo used in the empirical data test of the study. The Satara and Lower Sabie regions are shown as insets 1 and 2, respectively.</p>
+<span>doi:10.1371/journal.pone.0000207.g002</span></div><div class="figure" id="pone-0000207-t001"><div class="img"><a name="pone-0000207-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Total Error, with Type I and Type II Errors in parentheses for manufactured data sets <strong>A</strong>–<strong>C</strong>, as a percentage of total home range size, is listed for estimates obtained using the three LoCoH methods (100% isopleths and optimal—that is error minimizing—values <em>k*</em>, <em>r*</em> and <em>a*</em>) and the Gaussian kernel (GK) method (95%, 99% and optimal isopleths).</span></strong></p><span>doi:10.1371/journal.pone.0000207.t001</span></div><a id="article1.body1.sec2.sec1.sec4.p2" name="article1.body1.sec2.sec1.sec4.p2"></a><p>For our manufactured data sets where the boundaries of the areas are known, or in cases of field data where the boundaries of particular holes are known, values of the parameters for <em>k</em>, <em>r</em>, and <em>a</em> can be obtained by minimizing the sum of Type I and II errors (Type I errors arise from excluding regions that are part of the HR while Type II errors arise from including regions that are not: see <a href="#pone.0000207-Getz1">[23]</a>) in terms of how well our LoCoH methods identify the boundaries of the areas in question. As a starting point for finding these optimal values, denoted by <em>k*</em>, <em>r*</em>, and <em>a*</em>, a set of heuristic values, denoted by <em>k</em>
+                  <sub>1</sub>, <em>r</em>
+                  <sub>1</sub>, and <em>a</em>
+                  <sub>1</sub> respectively, were selected using the following “rules of thumb:”</p>
+
+
+<ul class="bulletlist">
+
+<li>
+                        <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.e001&amp;representation=PNG" class="inline-graphic"></span> values (<em>n</em> is the number of points in the set)</li>
+
+<li>
+                        <em>r</em>
+                        <sub>1</sub> is half of the maximum nearest neighbor distance between points (i.e. the radius of a sphere that will allow all points to be joined to at least one additional point)</li>
+
+<li>
+                        <em>a</em>
+                        <sub>1</sub> is maximum distance between any two points in the data set.</li>
+
+</ul>
+<h5>Parametric kernel constructions.</h5><a id="article1.body1.sec2.sec1.sec5.p1" name="article1.body1.sec2.sec1.sec5.p1"></a><p>For purposes of comparison we constructed UDs using symmetric bivariate Gaussian kernels. Although we sought to use the optimized value for the width parameter, <em>h</em>, using the least-squares cross-validation (LSCV) method (see <a href="#pone.0000207-Seaman1">[18]</a>; but see <a href="#pone.0000207-Hemson1">[28]</a> for problems with this method), for one of the generated data sets and for the buffalo data, the method did not converge using either the R-Adehabitat toolbox or the Animal Movement Extension for ArcView 3.x <a href="#pone.0000207-Hooge1">[29]</a>. This is a common problem with the method so we used Silverman's ad-hoc method instead for generating the width parameter <em>h</em> 
+                  <a href="#pone.0000207-Silverman1">[14]</a>.</p>
+
+
+
+<h4>B. Data</h4>
+<h5>Manufactured Data.</h5><a id="article1.body1.sec2.sec2.sec1.p1" name="article1.body1.sec2.sec2.sec1.p1"></a><p>We manufactured three datasets (<a href="#pone-0000207-g001">Fig. 1 A–C</a>) with known 20% and 100% isopleths so that we could use these to compare the accuracy of our three methods.</p>
+<a id="article1.body1.sec2.sec2.sec1.p2" name="article1.body1.sec2.sec2.sec1.p2"></a><p>
+                  <span class="underline">Dataset A</span>: The 100% isopleth is constructed from a ring centered at the (<em>x,y</em>) = (20,0) with an inner radius of one and an outer radius of five. The ring contains 78% of the points and was connected by a corridor width of 14 and a height of 0.5 containing 2% of the points. This corridor connects to a circle located at (0, 0) with a radius of one that contains 20% of the highest density points in the construction. Thus this circle is also the 20% isopleth. We randomly distributed 1,000 points in the dataset according to the isopleth rules: 78% in the ring, 20% in the small dense circle and 2% in the connecting corridor. The area bounded by the densest 20% and the 100% isopleths is 3.1 and 85.3 units respectively.</p>
+<a id="article1.body1.sec2.sec2.sec1.p3" name="article1.body1.sec2.sec2.sec1.p3"></a><p>
+                  <span class="underline">Dataset B</span>: The polygon defined by joining lines to the ordered set of points (−10, 0), (−2, 2), (−7, 8), (0, 3), (2, 10), (2, 1), (10, −3), (2, −2), (2, −8), and (0, −3) is the 100% isopleth boundary for these data. The 20% densest point aggregation is within the triangle (2, −2), (2, −8), and (0, −3). A rectangular hole in the data set is bounded by the lower left corner of (−0.5, −1.5), and has a width and height of 1.5 and 3 respectively. We randomly distributed 1,002 points in the dataset concordant with the isopleth rules, but otherwise at random. The area bounded by the densest 20% and the 100% isopleths is 6.0 and 68.0 units respectively.</p>
+<a id="article1.body1.sec2.sec2.sec1.p4" name="article1.body1.sec2.sec2.sec1.p4"></a><p>
+                  <span class="underline">Dataset C</span>: The 100% isopleth was created from a circle centered at (0, 0) and radius 10, with two circular holes of radius 2.2 centered at (4, 4) and (−4, 4) and a triangular hole with vertices (−6.5, −3), (6.5, −3), and (0, −7). We constructed the 20% isopleth from a circle centered at (0, 0) with a radius of one. Lastly, we randomly distributed 1,002 points in the dataset concordant with the isopleth rules, but otherwise at random. The area bounded by the densest 20% and the 100% isopleths is 3.1 and 257.0 units respectively.</p>
+
+<h5>Buffalo data.</h5><a id="article1.body1.sec2.sec2.sec2.p1" name="article1.body1.sec2.sec2.sec2.p1"></a><p>We collected field data on African buffalo movements using VHF and GPS collars place on individuals from November 2000 to August 2006 in the Satara and Lower Sabie regions of the Kruger National Park. For the purposes of demonstrating the LoCoH methodology we restrict our analyses to GPS recordings of locations taken once an hour from four adult females over the following periods of times: female T13, July 15, 2005 to Oct 29, 2005; female T15, Sept 16, 2005 to Feb 16, 2006; female T7, Sept 15, 2005 to Jan 29, 2006; female T16, July 27, 2005 to October 8, 2005. These data were collected in decimal degrees and re-projected to Universal Transverse Mercator (UTM) [WGS84, Zone 36S] in ArcGIS 9. These data represent two buffalo at each of two sites in Kruger National Park: the first is the Satara region (T07 and T15) and the second is the Lower Sabie region (T13 and T16) (<a href="#pone-0000207-g002">Fig. 2</a>). In both regions, areas within the range of the buffalo are known to be physically inaccessible. A 7.7 km<sup>2</sup> fenced exclosure exists in the Satara region while a small ridge (~4.15 km<sup>2</sup>) that is too steep for the buffalo to climb exists within the Lower Sabie region. Both the exclosure and ridge serve as “known holes” that can be used to assess the performance of the methods, as discussed below.</p>
+
+
+
+<h4>C. Analysis</h4>
+<h5>Error analysis using manufactured data.</h5><a id="article1.body1.sec2.sec3.sec1.p1" name="article1.body1.sec2.sec3.sec1.p1"></a><p>For each of the datasets we constructed <em>k-</em>, <em>r-</em>, and <em>a-</em>LoCoH UDs over a range of parameter values. In every case, we calculated the Type I and Type II errors associated with the 20% and 100% isopleth constructions. We took the total error to be the sum of Type I and Type II errors for the isopleth in question; although for some applications, if the relative importance of Type I and II errors differs, a weighted sum can be used. Here we simply define the optimal <em>k</em>, <em>r</em>, or <em>a</em> to be the values that minimize the total error for the corresponding method. As discussed above, for the symmetric bivariate Gaussian kernel method we followed the convention of using the 95% isopleth to bound the UDs, but also included the 99% isopleth for purposes of comparison. We then identified the isopleth that minimized the total error.</p>
+<a id="article1.body1.sec2.sec3.sec1.p2" name="article1.body1.sec2.sec3.sec1.p2"></a><p>We constructed images of the resulting LoCoH UDs for our optimal parameter values, as well as half and twice the optimal values.</p>
+<a id="article1.body1.sec2.sec3.sec1.p3" name="article1.body1.sec2.sec3.sec1.p3"></a><p>Lastly, we examined how the total error of the UDs constructed using the different methods changed as we used different sample sizes. We generated random samples containing 1000, 800, 600, 400, and 200 points using the specifications and isopleth rules outlined earlier for each manufactured dataset. We repeated this process 15 times (this number is relatively low but suffices if we are generating estimates purely for comparative purposes among methods) as a way of generating error estimates (i.e. for a total of 75 samples per dataset). We located the optimal value of <em>k</em>, <em>r</em>, and <em>a</em> for each sample and plotted the resulting total error as a function of sample size.</p>
+
+<h5>Error analysis using Buffalo data.</h5><a id="article1.body1.sec2.sec3.sec2.p1" name="article1.body1.sec2.sec3.sec2.p1"></a><p>For purposes of comparison, we generated UDs for each of the four individuals using each of the 4 different methods. Since we were uncertain over what range of values we should explore the performance of our MSHC algorithm, we initially constructed UDs using our heuristic rules for selecting <em>k</em>
+                  <sub>1</sub>, <em>r</em>
+                  <sub>1</sub>, and <em>a</em>
+                  <sub>1</sub>. For the two data sets from Satara, for which the exclosure is precisely known, we then assessed to what extent the known holes were covered with these initial parameter guesses and used this information to locate the values of the parameters where the known holes were completely covered for the first time—that is the MSHC parameter values <em>k</em>̂, <em>r</em>̂, and <em>a</em>̂. For all three methods we always ensured that at least the two nearest neighbors were included: thus in all cases the 100% isopleth could be constructed. We then divided the intervals [0,<em>k</em>̂], [0,<em>r</em>̂], and [0,<em>a</em>̂] into 20 subsections and calculated the proportion of the known holes covered for each of the 20 parameter values in question with respect to the two data sets under consideration.</p>
+
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>Manufactured Data</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>For each of the three data sets we plot in <a href="#pone-0000207-g003">Figs 3A–C</a> the total errors associated with the <em>k</em>-LoCoH, <em>r</em>-LoCoH, and <em>a</em>-LoCoH constructions of home ranges (100% isopleth) and the 20% isopleths as a function of the parameters, <em>k</em>, <em>r</em> and <em>a</em> respectively. In the case of the home range constructions, the optimal value of <em>r</em> (i.e. the value that minimizes the total error associated with the <em>r</em>-LoCoH constructions) is evident from the graphs. For the <em>k</em>-LoCoH home range constructions, the optimum <em>k</em> is obvious for data set A, but less so for data sets B and C. On the other hand, the total error curves for the <em>a</em>-LoCoH home range construction become rather flat beyond small values of <em>a</em> and the optimum value is not that obvious from the graph (which is why, as we will see below, that this method is the most robust of the three LoCoH methods). For all the cases the value of the parameters that minimize total error for the HR are given in <a href="#pone-0000207-t001">Table 1</a> where, for purposes of comparison, the errors associated with the symmetric bivariate Gaussian kernel construction are listed for the 95% isopleths, the 99% isopleths, as well as the isopleth constructions that minimized the total error (to within a resolution of isopleths differing by ¼%). All three LoCoH methods have errors that are considerably lower than those of the symmetric bivariate Gaussian kernel (GK) constructions. In particular, the <em>a</em>-LoCoH estimates were either best (data sets A and C) or tied for best (data set B) with error levels between 8.6–8.8%, while the optimal GK estimate error levels where 20.9%, 22.2%, and 14.6% for data sets A–C respectively: that is, error rates of around 2–3 times those of the <em>a</em>-LoCoH constructions.</p>
+<div class="figure" id="pone-0000207-g003"><div class="img"><a name="pone-0000207-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3. </strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>Type I (dotted line), Type II (dashed line) and Total Error (solid line) (percentages) associated with the construction of 100% and 20% isopleths are plotted for the <em>k</em>-LoCoH, <em>r</em>-LoCoH, and <em>a</em>-LoCoH methods as a function of the parameters, <em>k</em>, <em>r</em> and <em>a</em> respectively for the three data sets (A, B, and C).</p>
+<span>doi:10.1371/journal.pone.0000207.g003</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>Also note in <a href="#pone-0000207-t001">Table 1</a> that the Type I and Type II errors associated with the three LoCoH methods are relatively similar, whereas this is not generally true for the symmetric bivariate Gaussian kernel method. In addition, the plots of error levels for the LoCoH constructions (<a href="#pone-0000207-g003">Fig. 3</a>) indicate that <em>a</em>-LoCoH constructions were less sensitive than the <em>k</em>- and <em>r</em>-LoCoH constructions to variation in the proportional changes to the values of the parameters around their optimal values. With regard to errors associated with estimating the construction of the 20% isopleth, the <em>r</em>-LoCoH method breaks down as soon as the value of <em>r</em> increase beyond a critical value (e.g. in datasets A and C around the radius of the core set of points in the data sets), while the <em>k</em>-LoCoH and <em>a</em>-LoCoH methods are more reliable, with the former actually performing better for data set B and the latter performing better for data sets A and C.</p>
+<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>For each of the three data sets, the errors of the LoCoH models are plotted as a function of sample size for the optimal (i.e. error minimizing) values of the parameters (<a href="#pone-0000207-g004">Figs. 4A–C</a>). For all values and all cases the errors decrease with sample size. For dataset A, <em>r</em>-LoCoH moves quickly from performing the best (but well within the error bars) for the smallest sample size to performing by far the worst for the largest sample size. <em>a</em>-LoCoH is consistently strong throughout this dataset. For dataset B, <em>k-</em> and <em>a-</em>LoCoH have nearly identical accuracy except for the smallest sample size where <em>a</em>-LoCoH obtains a smaller error. <em>r</em>-LoCoH lags behind across all sample sizes in this dataset. In dataset C, the three methods perform roughly equally (within the error bars) with <em>r</em>-LoCoH appearing to be slightly superior, followed by <em>a</em>-LoCoH, and lastly by <em>k</em>-LoCoH.</p>
+<div class="figure" id="pone-0000207-g004"><div class="img"><a name="pone-0000207-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4. </strong></p><a id="article1.body1.sec3.sec1.fig2.caption1.p1" name="article1.body1.sec3.sec1.fig2.caption1.p1"></a><p>The effect of sample size on the optimal (i.e. error minimizing) value of parameters, <em>k</em>, <em>r</em> and <em>a</em> and total errors associated with the construction of the 100% isopleth using the <em>k</em>-LoCoH (solid line), <em>r</em>-LoCoH (dashed line), and <em>a</em>-LoCoH (dotted line) methods respectively for the three data sets (A, B, and C). Mean and standard error for fifteen randomly generated datasets for each sample size are plotted.</p>
+<span>doi:10.1371/journal.pone.0000207.g004</span></div><a id="article1.body1.sec3.sec1.p4" name="article1.body1.sec3.sec1.p4"></a><p>The optimal value <em>k*</em> increased with sample size for all three data sets (<a href="#pone-0000207-t002">Table 2</a>) with the heuristic initial guess <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.e002&amp;representation=PNG" class="inline-graphic"></span> very close to the optimal value for all three sets of data when <em>n</em> = 200 but not as close when <em>n</em> = 1000: in the latter case a rule of <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.e003&amp;representation=PNG" class="inline-graphic"></span> works better than the heuristic rule. As expected, the optimal value of <em>r</em> decreased with increasing point density. The optimal value of <em>a</em> also decreased, but not strictly monotonically (<a href="#pone-0000207-t002">Table 2</a>). The heuristic rule for <em>r</em> produced a value <em>r</em>
+               <sub>1 </sub>that was generally lower than the optimal <em>r</em>* by factor of 1.5 to 3. On the other hand, the heuristic rule for <em>a</em> produced a value <em>a</em>
+               <sub>1 </sub>that was surprisingly close to a*, in some cases being very close, and others being too high or low by a factor of only 0.2.</p>
+<div class="figure" id="pone-0000207-t002"><div class="img"><a name="pone-0000207-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Comparison of our heuristic rules for choosing initial parameter values <em>k</em>
+                     <sub>1</sub>, <em>r</em>
+                     <sub>1</sub> and <em>a</em>
+                     <sub>1</sub> and optimal parameter values <em>k</em>*, <em>r</em>* and <em>a</em>* for the manufactured data.</span></strong></p><span>doi:10.1371/journal.pone.0000207.t002</span></div><a id="article1.body1.sec3.sec1.p5" name="article1.body1.sec3.sec1.p5"></a><p>In <a href="#pone-0000207-g005">Figs. 5</a>–<a href="#pone-0000207-g006"></a>
+               <a href="#pone-0000207-g007">7</a>, the UDs for the half-optimal, optimal, and twice-optimal parameter values are plotted for data sets A, B and C, respectively. These constructions illustrate that the <em>a</em>-LoCoH method is the least sensitive to changes in the value of the parameter <em>a</em>, <em>r</em>-LoCoH the most sensitive, and <em>k</em>-LoCoH is intermediate. Moreover, of the three methods, <em>k</em>-LoCoH is most likely to create spurious holes (Type I errors) at half the optimal <em>k</em> value, while <em>r</em>-LoCoH is most likely to fill in real holes (Type II errors).</p>
+<div class="figure" id="pone-0000207-g005"><div class="img"><a name="pone-0000207-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5. </strong></p><a id="article1.body1.sec3.sec1.fig3.caption1.p1" name="article1.body1.sec3.sec1.fig3.caption1.p1"></a><p>Illustrations of UDs constructed for data set A using <em>k</em>-LoCoH, <em>r</em>-LoCoH, and <em>a</em>-LoCoH methods with half, actual, and twice the optimal <em>k</em>, <em>r</em> and <em>a</em> parameter values. The darkest to lightest areas represent ascending decile areas from the 10<sup>th</sup> to 100<sup>th</sup> percentile isopleths.</p>
+<span>doi:10.1371/journal.pone.0000207.g005</span></div><div class="figure" id="pone-0000207-g006"><div class="img"><a name="pone-0000207-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6. </strong></p><a id="article1.body1.sec3.sec1.fig4.caption1.p1" name="article1.body1.sec3.sec1.fig4.caption1.p1"></a><p>Illustrations of UDs constructed for data set B using <em>k</em>-LoCoH, <em>r</em>-LoCoH, and <em>a</em>-LoCoH methods with half, actual, and twice the optimal <em>k</em>, <em>r</em> and <em>a</em> parameter values. The darkest to lightest areas represent ascending decile areas from the 10<sup>th</sup> to 100<sup>th</sup> percentile isopleths.</p>
+<span>doi:10.1371/journal.pone.0000207.g006</span></div><div class="figure" id="pone-0000207-g007"><div class="img"><a name="pone-0000207-g007" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g007&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g007"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g007&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g007/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g007/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g007/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g007/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g007.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g007/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g007/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g007.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 7. </strong></p><a id="article1.body1.sec3.sec1.fig5.caption1.p1" name="article1.body1.sec3.sec1.fig5.caption1.p1"></a><p>Illustrations of UDs constructed for data set B using <em>k</em>-LoCoH, <em>r</em>-LoCoH, and <em>a</em>-LoCoH methods with half, actual, and twice the optimal <em>k</em>, <em>r</em> and <em>a</em> parameter values. The darkest to lightest areas represent ascending decile areas from the 10<sup>th</sup> to 100<sup>th</sup> percentile isopleths.</p>
+<span>doi:10.1371/journal.pone.0000207.g007</span></div><a id="article1.body1.sec3.sec1.p6" name="article1.body1.sec3.sec1.p6"></a><p>For the sake of completeness and to permit visual comparisons, the fixed kernel least-square cross validation UDs (95<sup>th</sup> percentile) are plotted for data sets A, B, and C in <a href="#pone-0000207-g001">Fig. 1</a>, where we see that for all three sets of data, unlike the LoCoH method, the method fails to identify any of the holes.</p>
+
+
+<h4>Buffalo data</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>Silverman's parametric kernel method <a href="#pone.0000207-Silverman1">[14]</a> yielded considerably larger area estimates in three of the four cases than the MSHC <em>a</em>-LoCoH method (<a href="#pone-0000207-t003">Table 3</a>; <a href="#pone-0000207-g008">Fig. 8a</a>, T07: 244 vs. 173; <a href="#pone-0000207-g008">Fig. 8c</a>, T13: 142 vs. 95; <a href="#pone-0000207-g008">Fig. 8d</a>, T16: 84 vs. 55). Only in one case was the situation reversed (<a href="#pone-0000207-t003">Table 3</a>; <a href="#pone-0000207-g008">Fig. 8b</a>, T15: 121 vs. 153): this appears to be a function of the distribution of the data into a few high-density areas with a few oddly shaped sparse regions. Both the kernel method and the <em>a</em>-LoCoH method at the 95% isopleth exclude a number of these points, but the <em>a</em>-LoCoH method locally accommodates the denser areas, which, in this case, includes them. The kernel method, applying a constant function, drops all but the 95% densest areas according to a single metric.</p>
+<div class="figure" id="pone-0000207-g008"><div class="img"><a name="pone-0000207-g008" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g008&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.g008"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.g008&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g008/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g008/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g008/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g008/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g008.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.g008/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.g008/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.g008.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 8. </strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>Comparisons of UD constructions using an <em>a</em>-LoCoH estimators where the value of the parameter is <em>a</em>̂ obtained using the MSHC method (see text for details), and a parametric kernel, where the smoothing parameter <em>h</em> is calculated using the ad-hoc method of Silverman (1986). Panels: a. collar T07 and b. collar T15, both in the Satara Region; and c. collar T13 and d. collar T16. both in the Lower Sabie Region. Black circles are GPS collar locations and the hatched shape is the exclosure in a. and b. and the ridge area in c. and d. The left figure of each panel shows the 100% isopleth in light grey and the 95% isopleth in dark grey, using the <em>a</em>-LoCoH method. The right figure of each panel shows the 100% kernel in light grey and the 95% parametric kernel in dark grey.</p>
+<span>doi:10.1371/journal.pone.0000207.g008</span></div><div class="figure" id="pone-0000207-t003"><div class="img"><a name="pone-0000207-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000207" data-uri="info:doi/10.1371/journal.pone.0000207.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000207.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000207.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000207.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Comparison of the areas in km<sup>2</sup> estimated for the four buffalo GPS collar sets of data (<em>n</em> points) by the 95% and 100% isopleths for nonparametric (LoCoH) and parametric kernel<span class="xref"><sup>a</sup></span> methods.</span></strong></p><span>doi:10.1371/journal.pone.0000207.t003</span></div><a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>In the Satara area (<a href="#pone-0000207-g008">Figs. 8a and b</a>) the hashed object embedded in the UD is a large animal exclosure. In the Lower Sabie area, a ridge area that is too steep for buffalo is shown as a hashed object (<a href="#pone-0000207-g008">Figs. 8c and d</a>). Both the MSHC <em>a</em>-LoCoH and parametric kernel methods left at least half of the enclosure at Satara uncovered when the 95% isopleth was used as a boundary, but impressively so did the 100% isopleth boundary of the MSHC <em>a</em>-LoCoH. (<a href="#pone-0000207-g008">Figs. 8a–b</a>) (the 100% isopleth of the parametric kernel method covers the entire exclosure). The parametric kernel method failed to identify the ridge area embedded within the T13 data in Lower Sabie by completely covering the ridge, while the MSCH <em>a</em>-LoCoH 95% isopleth defined the left boundary of the ridge rather clearly and even left the ridge partially uncovered in the 100% isopleth construction (<a href="#pone-0000207-g008">Figs. 8c and d</a>). The MSHC <em>a</em>-LoCoH also covered less of the ridge in both the 95% and 100% isopleth constructions than the parametric kernel method did for its 95% isopleth construction.</p>
+<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>Note that the symmetric bivariate Gaussian kernel UDs have slightly jagged boundaries because they are generated from an underlying grid, while LoCoH UDs are generated directly from the polygonal elements.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>In statistics, nonparametric methods always require fewer assumptions than the corresponding parametric methods. In the case of UD constructions, both parametric and LoCoH kernel methods require common assumptions about data to avoid misinterpretations that come from bias with respect to the way the data are collected. By definition, however, parametric kernel methods always involve additional assumptions about the form of the distributions governing the data that nonparametric methods do not make. Thus, although traditional kernel methods can produce UDs and HRs that follow highly irregular data, they are still based upon parametric kernels that require the investigator to specify their functional form. LoCoH kernels, on the other hand, take their form directly from the data, thereby relieving the investigator of the burden and bias associated with choosing a functional form for the kernels. Further, parametric kernel UD constructions are almost always based on non-compact (i.e. unbounded) symmetric bivariate Gaussian kernels. This implies an ad-hoc decision must be made on which isopleth to use in HR constructions. Although, typically, the 95<sup>th</sup> percentile is used a 90<sup>th</sup> percentile boundary may decrease sample size bias <a href="#pone.0000207-Brger1">[21]</a> and handle poor convergence of area estimates with increasing sample size better. In the latter case, areas of the true home range are invariably omitted. Also, in some cases (as we mention in our methods section) the LSCV method for selecting the best value for the symmetric bivariate Gaussian smoothing or width parameter <em>h</em> does not converge and an ad-hoc method must be used to select its value.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>Even bounded parametric kernel methods (e.g. Epanechnichov kernels) will always overshoot the data by an amount equal to the value of the kernel radius parameter <em>h</em>, no matter how dense the data. On the other hand, LoCoH methods do not overshoot the data, since they use the data directly; and hence converge on true boundaries as the density of data increases <a href="#pone.0000207-Getz1">[23]</a>. The only errors that LoCoH makes are small: it locally approximates the actual boundary by fitting a line between the two points closest to the true boundary element in question. In essence, our analysis suggests that we should move beyond the assumption, implicit in parametric kernel methods, that all points are internal and recognize that many animals not only visit the boundaries of their range, but may even patrol them as a way of warding of competitors <a href="#pone.0000207-Watts1">[30]</a>.</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>In a previous publication, we demonstrated the superiority of <em>k</em>-LoCoH over symmetric bivariate Gaussian kernel methods <a href="#pone.0000207-Getz1">[23]</a>, whether fixed or adaptive and using Silvermen's ad-hoc or the least-squares-cross-validation algorithm <a href="#pone.0000207-Silverman1">[14]</a>, <a href="#pone.0000207-Seaman1">[18]</a>) for selecting the smoothing parameter, for identifying holes in UDs and estimating the areas of HRs. From the results presented here, it is clear that <em>a</em>-LoCoH is superior to both <em>r</em>-LoCoH and <em>k</em>-LoCoH. <em>A priori</em> it was not clear to us whether <em>k</em> or <em>r</em>-LoCoH would be the superior method, but with hindsight, <em>r</em>-LoCoH is generally the worst performer because it is essentially a non-parametric kernel method in which all elements are approximately the same size (determined by the value of <em>r</em>). On the other hand, the <em>k</em>-LoCoH method adapts the size of the kernel elements resulting in smaller kernels in regions with a higher density of locations. The <em>a</em>-LoCoH method also has this latter adaptive property; but additionally results in the construction of more robust UDs, because it is the method that is the most insensitive to suboptimal value choices for its kernel parameter (as illustrated in <a href="#pone-0000207-g005">Figs. 5</a>–<a href="#pone-0000207-g006"></a>
+            <a href="#pone-0000207-g007">7</a>). Further, for the datasets we analyzed, our heuristic rule for selecting <em>a</em>
+            <sub>1</sub> typically provided a value that was within 30% of the value <em>a</em>* while our heuristic rules for <em>r</em>
+            <sub>1</sub> and <em>k</em>
+            <sub>1</sub> fluctuated from almost the same to twice as large as the corresponding MSHC values in the case of <em>k</em>-LoCoH, and from 1/3 to 3 times less than corresponding MSHC values in the case of <em>r</em>-LoCoH. Thus, researchers should feel more confident using <em>a</em>
+            <sub>1</sub> than <em>r</em>
+            <sub>1</sub> or <em>k</em>
+            <sub>1</sub> when <em>a priori</em> information on holes is unavailable. Further this confidence in <em>a</em>
+            <sub>1</sub> over <em>r</em>
+            <sub>1</sub> or <em>k</em>
+            <sub>1</sub> still applies even if we modify our heuristic rules for selecting <em>r</em>
+            <sub>1</sub> and <em>k</em>
+            <sub>1</sub> to:</p>
+
+
+<ul class="bulletlist">
+
+<li>
+                  <em>r</em>
+                  <sub>1</sub> is the maximum of all the nearest neighbor distances associated with the data</li>
+
+<li>
+                  <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000207.e004&amp;representation=PNG" class="inline-graphic"></span> where <em>n</em> is the number of points in the set.</li>
+
+</ul><a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4"></a><p>In this modified case, both <em>r</em>
+            <sub>1</sub> and <em>k</em>
+            <sub>1</sub> would only be with 50% of <em>r</em>* and <em>k</em>* respectively. Further, it is not clear that these two rules would remain robust as sample size increase, while, from <a href="#pone-0000207-t002">Table 2</a>, our heuristic rule for <em>a</em> seems much less affected by changes to sample size than is the case for <em>r</em> and <em>k</em>. Thus our overall conclusion is that <em>a</em>-LoCoH is the best method unless some compelling reason exists to have all the kernels constructed either from the same number of points (<em>k</em>-LoCoH) or for all to be of similar size (<em>r</em>-LoCoH).</p>
+<a id="article1.body1.sec4.p5" name="article1.body1.sec4.p5"></a><p>There has been some confusion about the need for points to have a certain temporal properties. This issue has recently been clarified by Börger et al. <a href="#pone.0000207-Brger1">[21]</a>, and it is becoming clear that important biological information is contained in spatiotemporal autocorrelations of data points <a href="#pone.0000207-DeSolla1">[6]</a>, <a href="#pone.0000207-Blundell1">[31]</a>, <a href="#pone.0000207-Cushman1">[32]</a>. It is important to note, however, that an assumption necessary to ensure the construction of adequate unbiased UDs is that the data points have been collected suitably often to obtain a representative sample of points over time to cover all modes of behavior. If this is not the case, then we have to be careful how we interpret the resulting UDs. In particular, as the sampling intensity decreases, say to twice or four times a day, it becomes increasingly likely that sparse, but regular sampling may coincide with particular activities (e.g. sleeping, drinking, eating) and result in UDs biased towards these activities. Moreover, the scale at which the utilization can be interpreted will still depend on the frequency of data points, even for extremely regularly spaced points. For example, our buffalo data, collected at hourly was still too sparse relative to rate of movement of individuals with regard to identifying small physical obstacles on the landscape, including a small hill that we know is not utilized by buffalo in the Kruger National Park.</p>
+<a id="article1.body1.sec4.p6" name="article1.body1.sec4.p6"></a><p>As with any numerical method that draws directly upon data, LoCoH HR estimates and UD constructions are only as good as the data they rely upon to carry out the numerical computations. If these data are particularly noisy, then holes will be filled and sharp boundaries blurred. Fortunately, the resolution of GPS data is sufficient to accurately assess the location of sharp boundaries to within a couple of meters when information is collected at appropriately high frequencies (i.e. as they relate to the rate at which individuals move along the boundaries of their range). Assuming high quality data, the great advantage of LoCoH over parametric kernel methods is that LoCoH estimates convergence to true values with increasing sample size. This allows one to study the convergence properties by comparing estimates using a tenth, quarter, half, and all the data. If half the data, for example gives an estimate, within a desired tolerance of the estimate obtained by all the data (e.g. 1% or 0.1%), then one can be confident about the precision of the estimate. Of course, one can also carry out bootstrapping procedures to obtain standard errors <a href="#pone.0000207-Efron1">[33]</a>. In the end, if one is interested in detecting features in the environment that may influence the way animals utilize space, there is not substitute for using several different methods—both parametric and nonparametric—to construct maps overlaid on geographical and physical feature maps and visually comparing and inspecting the results to identify features that may be attracting, repealing, or excluding individuals.</p>
+<a id="article1.body1.sec4.p7" name="article1.body1.sec4.p7"></a><p>In summary, LoCoH methods are superior to bounded and, especially, unbounded parametric kernel methods for constructing UDs and HRs because they directly draw upon the actual spatial structure of data that may well be influenced by hard boundaries and irregular exclusionary areas in the environment. Also, our analysis indicates that the <em>a</em>-LoCoH nonparametric kernel method is generally superior to the other methods that we considered, both in constructing UDs and in estimating the size of HRs.</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Tabitha Graves and Shirli Bar-David for editorial comments; as well as Craig Hay, Justin Bowers, Julie Wolhuter, Robert Dugtig, Augusta Mabunda, Khutani Bulunga, and the veterinary staff at the Kruger National Park for their assistance with the field data collection.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: WG SF. Performed the experiments: SF AL. Analyzed the data: WG SF AL SR. Contributed reagents/materials/analysis tools: PC. Wrote the paper: WG PC SF SR CW.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000207-Matosevic1" id="pone.0000207-Matosevic1"></a>Matosevic M, Salcic Z, Berber SA (2006) Comparison of Accuracy Using a GPS and a Low-Cost DGPS. IEEE Transactions on Instrumentation and Measurement  55: 1677–1683.  <ul class="find" data-citedArticleID="929988" data-doi="10.1109/tim.2006.880918"><li><a href="http://dx.doi.org/10.1109/tim.2006.880918" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparison+of+Accuracy+Using+a+GPS+and+a+Low-Cost+DGPS." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparison+of+Accuracy+Using+a+GPS+and+a+Low-Cost+DGPS.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000207-Holden1" id="pone.0000207-Holden1"></a>Holden C (2006) Inching toward movement ecology. Science  313: 779–782.  <ul class="find" data-citedArticleID="929972" data-doi="10.1126/science.313.5788.779"><li><a href="http://dx.doi.org/10.1126/science.313.5788.779" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inching+toward+movement+ecology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inching+toward+movement+ecology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000207-Burt1" id="pone.0000207-Burt1"></a>Burt WH (1943) Territoriality and home range concepts as applied to mammals. J Mammalogy  24: 346–352.  <ul class="find" data-citedArticleID="929956" data-doi="10.2307/1374834"><li><a href="http://dx.doi.org/10.2307/1374834" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Territoriality+and+home+range+concepts+as+applied+to+mammals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Territoriality+and+home+range+concepts+as+applied+to+mammals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000207-Kie1" id="pone.0000207-Kie1"></a>Kie JG, Baldwin JA, Evans CJ (1994) CALHOME Home Range Analysis Program User's Manual. Fresno, California: United States Forest Service Pacific Southwest Research Station.   <ul class="find-nolinks"></ul></li><li><span class="label">5.
+              </span><a name="pone.0000207-Lawson1" id="pone.0000207-Lawson1"></a>Lawson EJG, Rodgers AR (1997) Differences in home-range size computed in commonly used software programs. Wildlife Society Bulletin  25: 721–729.  <ul class="find" data-citedArticleID="929986"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Differences+in+home-range+size+computed+in+commonly+used+software+programs.&amp;auth=&amp;atitle=Differences+in+home-range+size+computed+in+commonly+used+software+programs." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Differences+in+home-range+size+computed+in+commonly+used+software+programs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Differences+in+home-range+size+computed+in+commonly+used+software+programs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000207-DeSolla1" id="pone.0000207-DeSolla1"></a>De Solla SR, Bonduriansky R, Brooks RJ (1999) Eliminating autocorrelation reduces biological relevance of home range estimates. J. Animal Ecology  68: 221–234.  <ul class="find" data-citedArticleID="929960" data-doi="10.1046/j.1365-2656.1999.00279.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2656.1999.00279.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Eliminating+autocorrelation+reduces+biological+relevance+of+home+range+estimates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Eliminating+autocorrelation+reduces+biological+relevance+of+home+range+estimates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000207-Jennrich1" id="pone.0000207-Jennrich1"></a>Jennrich RI, Turner FB (1969) Measurement of non-circular home range. J Theoretical Biology  22: 227–237.  <ul class="find" data-citedArticleID="929978" data-doi="10.1016/0022-5193(69)90002-2"><li><a href="http://dx.doi.org/10.1016/0022-5193(69)90002-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Measurement+of+non-circular+home+range." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Measurement+of+non-circular+home+range.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000207-Ford1" id="pone.0000207-Ford1"></a>Ford RG, Krumme DW (1979) The analysis of space use patterns. J Theoretical Biology  76: 125–157.  <ul class="find" data-citedArticleID="929966" data-doi="10.1016/0022-5193(79)90366-7"><li><a href="http://dx.doi.org/10.1016/0022-5193(79)90366-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+analysis+of+space+use+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+analysis+of+space+use+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000207-Baker1" id="pone.0000207-Baker1"></a>Baker J (2001) Population density and home range estimates for the Eastern Bristlebird at Jervis Bay, south-eastern Australia. Corella  25: 62–67.  <ul class="find" data-citedArticleID="929946"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Population+density+and+home+range+estimates+for+the+Eastern+Bristlebird+at+Jervis+Bay%2C+south-eastern+Australia.&amp;auth=&amp;atitle=Population+density+and+home+range+estimates+for+the+Eastern+Bristlebird+at+Jervis+Bay%2C+south-eastern+Australia." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Population+density+and+home+range+estimates+for+the+Eastern+Bristlebird+at+Jervis+Bay%2C+south-eastern+Australia." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Population+density+and+home+range+estimates+for+the+Eastern+Bristlebird+at+Jervis+Bay%2C+south-eastern+Australia.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000207-Fieberg1" id="pone.0000207-Fieberg1"></a>Fieberg J, Kochanny CO (2005) Quantifying home-range overlap: The importance of the utilization distribution. J Wildlife Management  69: 1346–1359.  <ul class="find" data-citedArticleID="929964" data-doi="10.2193/0022-541x(2005)69[1346:qhotio]2.0.co;2"><li><a href="http://dx.doi.org/10.2193/0022-541x(2005)69[1346:qhotio]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantifying+home-range+overlap%3A+The+importance+of+the+utilization+distribution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantifying+home-range+overlap%3A+The+importance+of+the+utilization+distribution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000207-Horne1" id="pone.0000207-Horne1"></a>Horne JS, Garton EO (2006) Likelihood cross-validation versus least squares cross-validation for choosing the smoothing parameter in kernel home-range analysis. J Wildlife Management  7: 641–648.  <ul class="find" data-citedArticleID="929976" data-doi="10.2193/0022-541x(2006)70[641:lcvlsc]2.0.co;2"><li><a href="http://dx.doi.org/10.2193/0022-541x(2006)70[641:lcvlsc]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Likelihood+cross-validation+versus+least+squares+cross-validation+for+choosing+the+smoothing+parameter+in+kernel+home-range+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Likelihood+cross-validation+versus+least+squares+cross-validation+for+choosing+the+smoothing+parameter+in+kernel+home-range+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000207-Matthiopoulos1" id="pone.0000207-Matthiopoulos1"></a>Matthiopoulos J (2003) Model-supervised kernel smoothing for the estimation of spatial usage. Oikos  102: 367–377.  <ul class="find" data-citedArticleID="929990" data-doi="10.1034/j.1600-0706.2003.12528.x"><li><a href="http://dx.doi.org/10.1034/j.1600-0706.2003.12528.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Model-supervised+kernel+smoothing+for+the+estimation+of+spatial+usage." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Model-supervised+kernel+smoothing+for+the+estimation+of+spatial+usage.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000207-Millspaugh1" id="pone.0000207-Millspaugh1"></a>Millspaugh JJ, Nielson RM, McDonald L, Marzluff JM, Gitzen RA, et al.  (2006) Analysis of resource selection using utilization distributions. J Wildlife Management  70: 384–395.  <ul class="find" data-citedArticleID="929992" data-doi="10.2193/0022-541x(2006)70[384:aorsuu]2.0.co;2"><li><a href="http://dx.doi.org/10.2193/0022-541x(2006)70[384:aorsuu]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Analysis+of+resource+selection+using+utilization+distributions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Analysis+of+resource+selection+using+utilization+distributions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000207-Silverman1" id="pone.0000207-Silverman1"></a>Silverman BW (1986) Density estimation for statistics and data analysis. London: Chapman and Hall.   <ul class="find-nolinks"></ul></li><li><span class="label">15.
+              </span><a name="pone.0000207-Worton1" id="pone.0000207-Worton1"></a>Worton BJ (1987) A review of models of home range for animal movement. Ecological Modelling,  38: 277–298.  <ul class="find" data-citedArticleID="930004" data-doi="10.1016/0304-3800(87)90101-3"><li><a href="http://dx.doi.org/10.1016/0304-3800(87)90101-3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+review+of+models+of+home+range+for+animal+movement." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+review+of+models+of+home+range+for+animal+movement.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000207-Worton2" id="pone.0000207-Worton2"></a>Worton BJ (1989) Kernel methods for estimating the utilization distribution in home-range studies. Ecology  70: 164–168.  <ul class="find" data-citedArticleID="930006" data-doi="10.2307/1938423"><li><a href="http://dx.doi.org/10.2307/1938423" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Kernel+methods+for+estimating+the+utilization+distribution+in+home-range+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Kernel+methods+for+estimating+the+utilization+distribution+in+home-range+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000207-Worton3" id="pone.0000207-Worton3"></a>Worton BJ (1995) A convex hull-based estimator of home range size. Biometrics  51: 1206–1215.  <ul class="find" data-citedArticleID="930008" data-doi="10.2307/2533254"><li><a href="http://dx.doi.org/10.2307/2533254" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+convex+hull-based+estimator+of+home+range+size." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+convex+hull-based+estimator+of+home+range+size.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000207-Seaman1" id="pone.0000207-Seaman1"></a>Seaman DE, Powell RA (1996) An evaluation of the accuracy of kernel density estimators for home range analysis. Ecology  77: 2075–2085.  <ul class="find" data-citedArticleID="929998" data-doi="10.2307/2265701"><li><a href="http://dx.doi.org/10.2307/2265701" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+evaluation+of+the+accuracy+of+kernel+density+estimators+for+home+range+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+evaluation+of+the+accuracy+of+kernel+density+estimators+for+home+range+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000207-Karatzoglou1" id="pone.0000207-Karatzoglou1"></a>Karatzoglou A, Smola A, Hornik K, Zeileis A (2004) “Kernlab – An S4 Package for <strong>Kernel</strong> 
+                  <strong>Methods</strong> in <strong>R</strong>.” J Statistical Software  11: 1–20.  (URL <a href="http://www.jstatsoft.org/v11/i09">http://www.jstatsoft.org/v11/i09</a>.).  <ul class="find" data-citedArticleID="929980"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=%26%23x201c%3BKernlab+%26%23x2013%3B+An+S4+Package+for+KernelMethods+in+R.%26%23x201d%3B&amp;auth=&amp;atitle=%26%23x201c%3BKernlab+%26%23x2013%3B+An+S4+Package+for+KernelMethods+in+R.%26%23x201d%3B" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=%26%23x201c%3BKernlab+%26%23x2013%3B+An+S4+Package+for+KernelMethods+in+R.%26%23x201d%3B" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22%26%23x201c%3BKernlab+%26%23x2013%3B+An+S4+Package+for+KernelMethods+in+R.%26%23x201d%3B%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000207-Kenward1" id="pone.0000207-Kenward1"></a>Kenward RE, Clarke RT, Hodder KH, Walls SS (2001) Density And Linkage Estimators Of Home Range: Nearest-Neighbor Clustering Defines Multinuclear Cores. Ecology  82: 1905–1920.  <ul class="find" data-citedArticleID="929982" data-doi="10.2307/2680056"><li><a href="http://dx.doi.org/10.2307/2680056" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Density+And+Linkage+Estimators+Of+Home+Range%3A+Nearest-Neighbor+Clustering+Defines+Multinuclear+Cores." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Density+And+Linkage+Estimators+Of+Home+Range%3A+Nearest-Neighbor+Clustering+Defines+Multinuclear+Cores.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000207-Brger1" id="pone.0000207-Brger1"></a>Börger L, Francon N, De Michele G, Gantz A, Meschi F, et al.  (2006) Effects of sampling regime on the mean and variance of home range size estimates. J Animal Ecology  75: 1393–1405.  <ul class="find" data-citedArticleID="929952" data-doi="10.1111/j.1365-2656.2006.01164.x"><li><a href="http://dx.doi.org/10.1111/j.1365-2656.2006.01164.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effects+of+sampling+regime+on+the+mean+and+variance+of+home+range+size+estimates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effects+of+sampling+regime+on+the+mean+and+variance+of+home+range+size+estimates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000207-Birk1" id="pone.0000207-Birk1"></a>Birk RJ, Stanley T, Snyderc GI, Hennig TA, Fladelande MM, Policelli F (2003) Government programs for research and operational uses of commercial remote sensing data. Remote Sensing of Environment  88: 3–16.  <ul class="find" data-citedArticleID="929948" data-doi="10.1016/j.rse.2003.07.007"><li><a href="http://dx.doi.org/10.1016/j.rse.2003.07.007" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Government+programs+for+research+and+operational+uses+of+commercial+remote+sensing+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Government+programs+for+research+and+operational+uses+of+commercial+remote+sensing+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000207-Getz1" id="pone.0000207-Getz1"></a>Getz WM, Wilmers CC (2004) A local nearest-neighbor convex-hull construction of home ranges and utilization distributions. Ecography  27: 489–505.  <ul class="find" data-citedArticleID="929968" data-doi="10.1111/j.0906-7590.2004.03835.x"><li><a href="http://dx.doi.org/10.1111/j.0906-7590.2004.03835.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+local+nearest-neighbor+convex-hull+construction+of+home+ranges+and+utilization+distributions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+local+nearest-neighbor+convex-hull+construction+of+home+ranges+and+utilization+distributions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000207-Ryan1" id="pone.0000207-Ryan1"></a>Ryan SJ, Knechtel C, Getz WM (2006) Range and habitat selection of African buffalo in South Africa. J Wildlife Management  70: 764–776.  <ul class="find" data-citedArticleID="929996" data-doi="10.2193/0022-541x(2006)70[764:rahsoa]2.0.co;2"><li><a href="http://dx.doi.org/10.2193/0022-541x(2006)70[764:rahsoa]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Range+and+habitat+selection+of+African+buffalo+in+South+Africa." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Range+and+habitat+selection+of+African+buffalo+in+South+Africa.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000207-Redfern1" id="pone.0000207-Redfern1"></a>Redfern JV, Ryan SJ, Getz WM (2006) Defining herbivore assemblages in Kruger National Park: A correlative coherence approach. Oecologia  146: 632–640.  <ul class="find" data-citedArticleID="929994" data-doi="10.1007/s00442-005-0235-9"><li><a href="http://dx.doi.org/10.1007/s00442-005-0235-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Defining+herbivore+assemblages+in+Kruger+National+Park%3A+A+correlative+coherence+approach." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Defining+herbivore+assemblages+in+Kruger+National+Park%3A+A+correlative+coherence+approach.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000207-Anderson1" id="pone.0000207-Anderson1"></a>Anderson DP, Forester JD, Turner MG, Frair JL, Merrill EH, et al.  (2005) Factors influencing female home range sizes in elk (<em>Cervus elaphus</em>) in North American landscapes. Landscape Ecology  20: 257–271.  <ul class="find" data-citedArticleID="929944" data-doi="10.1007/s10980-005-0062-8"><li><a href="http://dx.doi.org/10.1007/s10980-005-0062-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Factors+influencing+female+home+range+sizes+in+elk+%28Cervus+elaphus%29+in+North+American+landscapes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Factors+influencing+female+home+range+sizes+in+elk+%28Cervus+elaphus%29+in+North+American+landscapes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000207-Burgman1" id="pone.0000207-Burgman1"></a>Burgman MA, Fox J (2003) Bias in species range estimates from minimum convex polygons: implications for conservation and options for improved planning. Animal Conservation  6: 19–28.  <ul class="find" data-citedArticleID="929954" data-doi="10.1017/s1367943003003044"><li><a href="http://dx.doi.org/10.1017/s1367943003003044" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bias+in+species+range+estimates+from+minimum+convex+polygons%3A+implications+for+conservation+and+options+for+improved+planning." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bias+in+species+range+estimates+from+minimum+convex+polygons%3A+implications+for+conservation+and+options+for+improved+planning.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000207-Hemson1" id="pone.0000207-Hemson1"></a>Hemson G, Johnson P, South A, Kenward R, Ripley R, et al.  (2005) Are kernels the mustard? Data from global positioning system (GPS) collars suggests problems for kernel home-range analyses with least-squares cross-validation. Journal of Animal Ecology  74: 455–463.  <ul class="find" data-citedArticleID="929970" data-doi="10.1111/j.1365-2656.2005.00944.x"><li><a href="http://dx.doi.org/10.1111/j.1365-2656.2005.00944.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Are+kernels+the+mustard%3F+Data+from+global+positioning+system+%28GPS%29+collars+suggests+problems+for+kernel+home-range+analyses+with+least-squares+cross-validation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Are+kernels+the+mustard%3F+Data+from+global+positioning+system+%28GPS%29+collars+suggests+problems+for+kernel+home-range+analyses+with+least-squares+cross-validation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000207-Hooge1" id="pone.0000207-Hooge1"></a>Hooge PN, Eichenlaub B (1997) Animal movement extension to ArcView. ver. 1. Anchorage, AK, USA: Alaska Science Center - Biological Science Office, U.S. Geological Survey.   <ul class="find-nolinks"></ul></li><li><span class="label">30.
+              </span><a name="pone.0000207-Watts1" id="pone.0000207-Watts1"></a>Watts DP, Mitani JC (2000) Boundary patrols and intergroup encounters in wild chimpanzees. Behaviour  138: 299–327.  <ul class="find" data-citedArticleID="930002" data-doi="10.1163/15685390152032488"><li><a href="http://dx.doi.org/10.1163/15685390152032488" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Boundary+patrols+and+intergroup+encounters+in+wild+chimpanzees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Boundary+patrols+and+intergroup+encounters+in+wild+chimpanzees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000207-Blundell1" id="pone.0000207-Blundell1"></a>Blundell GM, Maier JAK, Debevec EM (2001) Linear home ranges: effects of smoothing, sample size, and autocorrelation on kernel estimates. Ecological Monographs  71: 469–489.  <ul class="find" data-citedArticleID="929950" data-doi="10.2307/3100069"><li><a href="http://dx.doi.org/10.2307/3100069" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Linear+home+ranges%3A+effects+of+smoothing%2C+sample+size%2C+and+autocorrelation+on+kernel+estimates." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Linear+home+ranges%3A+effects+of+smoothing%2C+sample+size%2C+and+autocorrelation+on+kernel+estimates.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000207-Cushman1" id="pone.0000207-Cushman1"></a>Cushman SA, Chase M, Griffin C (2005) Elephants in space and time. Oikos  109: 331–341.  <ul class="find" data-citedArticleID="929958" data-doi="10.1111/j.0030-1299.2005.13538.x"><li><a href="http://dx.doi.org/10.1111/j.0030-1299.2005.13538.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Elephants+in+space+and+time." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Elephants+in+space+and+time.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000207-Efron1" id="pone.0000207-Efron1"></a>Efron B, Tibshirani RJ (1993) An introduction to the bootstrap. London: Chapman &amp; Hall.   <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.XML" value="125698"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.PDF" value="472625"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g001.PNG_L" value="2136381"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g001.PNG_M" value="63824"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g001.PNG_S" value="2748"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g001.TIF" value="1990398"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g001.PNG_I" value="20900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g002.PNG_L" value="216731"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g002.PNG_M" value="67859"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g002.PNG_S" value="3613"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g002.TIF" value="286314"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g002.PNG_I" value="35642"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t001.PNG_L" value="118365"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t001.PNG_M" value="43712"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t001.PNG_S" value="2854"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t001.TIF" value="590230"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t001.PNG_I" value="18482"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e001.PNG" value="1463"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e001.TIF" value="10168"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g003.PNG_L" value="3001821"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g003.PNG_M" value="103339"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g003.PNG_S" value="3300"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g003.TIF" value="3312934"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g003.PNG_I" value="33709"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g004.PNG_L" value="905257"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g004.PNG_M" value="29254"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g004.PNG_S" value="2024"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g004.TIF" value="1043182"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g004.PNG_I" value="10430"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e002.PNG" value="1974"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e002.TIF" value="11244"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e003.PNG" value="3874"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e003.TIF" value="13380"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t002.PNG_L" value="88766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t002.PNG_M" value="32230"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t002.PNG_S" value="2416"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t002.TIF" value="431730"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t002.PNG_I" value="15188"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g005.PNG_L" value="1978902"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g005.PNG_M" value="83134"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g005.PNG_S" value="3118"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g005.TIF" value="2328816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g005.PNG_I" value="27916"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g006.PNG_L" value="759814"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g006.PNG_M" value="101756"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g006.PNG_S" value="3348"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g006.TIF" value="797346"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g006.PNG_I" value="33534"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g007.PNG_L" value="1322040"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g007.PNG_M" value="158158"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g007.PNG_S" value="4309"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g007.TIF" value="1190610"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g007.PNG_I" value="50104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g008.PNG_L" value="807409"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g008.PNG_M" value="45050"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g008.PNG_S" value="2604"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g008.TIF" value="1060984"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.g008.PNG_I" value="17829"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t003.PNG_L" value="106528"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t003.PNG_M" value="39379"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t003.PNG_S" value="2632"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t003.TIF" value="524320"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.t003.PNG_I" value="16904"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e004.PNG" value="2385"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000207.e004.TIF" value="11592"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000207&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000207" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000207&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000207&volume=&issue=&title=LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions&author_name=Wayne%20M.%20Getz%2C%20Scott%20Fortmann-Roe%2C%20Paul%20C.%20Cross%2C%20Andrew%20J.%20Lyons%2C%20Sadie%20J.%20Ryan%2C%20Christopher%20C.%20Wilmers&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000207" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207&amp;t=LoCoH%3A%20Nonparameteric%20Kernel%20Methods%20for%20Constructing%20Home%20Ranges%20and%20Utilization%20Distributions" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207&title=LoCoH%3A%20Nonparameteric%20Kernel%20Methods%20for%20Constructing%20Home%20Ranges%20and%20Utilization%20Distributions&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207&amp;title=LoCoH%3A%20Nonparameteric%20Kernel%20Methods%20for%20Constructing%20Home%20Ranges%20and%20Utilization%20Distributions" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000207&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'LoCoH: Nonparameteric Kernel Methods for Constructing Home Ranges and Utilization Distributions';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000207';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20LoCoH%3A%20Nonparameteric%20Kernel%20Methods%20for%20Constructing%20Home%20Ranges%20and%20Utilization%20Distributions http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000207" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000207" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cliffs%22" title="Search for articles in the subject area:'Cliffs'"><div class="flagText">Cliffs</div></a>
+              <div data-categoryid="22495" data-articleid="23252"
+                   data-categoryname="Cliffs"
+                   class="flagImage" title="Flag 'Cliffs' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Kernel+functions%22" title="Search for articles in the subject area:'Kernel functions'"><div class="flagText">Kernel functions</div></a>
+              <div data-categoryid="36449" data-articleid="23252"
+                   data-categoryname="Kernel functions"
+                   class="flagImage" title="Flag 'Kernel functions' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Kernel+methods%22" title="Search for articles in the subject area:'Kernel methods'"><div class="flagText">Kernel methods</div></a>
+              <div data-categoryid="36465" data-articleid="23252"
+                   data-categoryname="Kernel methods"
+                   class="flagImage" title="Flag 'Kernel methods' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Lakes%22" title="Search for articles in the subject area:'Lakes'"><div class="flagText">Lakes</div></a>
+              <div data-categoryid="18741" data-articleid="23252"
+                   data-categoryname="Lakes"
+                   class="flagImage" title="Flag 'Lakes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Radii%22" title="Search for articles in the subject area:'Radii'"><div class="flagText">Radii</div></a>
+              <div data-categoryid="33457" data-articleid="23252"
+                   data-categoryname="Radii"
+                   class="flagImage" title="Flag 'Radii' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Remote+sensing+imagery%22" title="Search for articles in the subject area:'Remote sensing imagery'"><div class="flagText">Remote sensing imagery</div></a>
+              <div data-categoryid="37845" data-articleid="23252"
+                   data-categoryname="Remote sensing imagery"
+                   class="flagImage" title="Flag 'Remote sensing imagery' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Rivers%22" title="Search for articles in the subject area:'Rivers'"><div class="flagText">Rivers</div></a>
+              <div data-categoryid="34055" data-articleid="23252"
+                   data-categoryname="Rivers"
+                   class="flagImage" title="Flag 'Rivers' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Topology%22" title="Search for articles in the subject area:'Topology'"><div class="flagText">Topology</div></a>
+              <div data-categoryid="32019" data-articleid="23252"
+                   data-categoryname="Topology"
+                   class="flagImage" title="Flag 'Topology' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=2528'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6168'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=2519&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

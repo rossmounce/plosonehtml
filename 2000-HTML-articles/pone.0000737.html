@@ -1,0 +1,1234 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000737"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000737" />
+
+    <meta name="citation_title" content="ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data"/>
+    <meta itemprop="name" content="ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data"/>
+
+      <meta name="citation_author" content="Ramón Díaz-Uriarte"/>
+            <meta name="citation_author_institution" content="Structural Biology and Biocomputing Programme, Spanish National Cancer Center, Madrid, Spain"/>
+      <meta name="citation_author" content="Oscar M. Rueda"/>
+            <meta name="citation_author_institution" content="Structural Biology and Biocomputing Programme, Spanish National Cancer Center, Madrid, Spain"/>
+
+    <meta name="citation_date" content="2007/8/15"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000737.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e737"/>
+    <meta name="citation_issue" content="8"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Array comparative genomic hybridization and its applications in cancer.; citation_author=D Pinkel; citation_author=DG Albertson; citation_journal_title=Nat Genet; citation_number=1; citation_pages=S11-S17; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Recent advances in array comparative genomic hybridization technologies and their applications in human genetics.; citation_author=WW Lockwood; citation_author=R Chari; citation_author=B Chi; citation_author=WLa Lam; citation_journal_title=European Journal of Human Genetics; citation_volume=14; citation_number=2; citation_pages=139-148; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=High-resolution mapping of dna copy alterations in human chromosome 22 using high-density tiling oligonucleotide arrays.; citation_author=AE Urban; citation_author=JO Korbel; citation_author=R Selzer; citation_author=T Richmond; citation_author=A Hacker; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=103; citation_number=3; citation_pages=4534-4539; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Array comparative genomic hybridization identifies genetic subgroups in grade 4 human astrocytoma.; citation_author=A Misra; citation_author=M Pellarin; citation_author=J Nigro; citation_author=I Smirnov; citation_author=D Moore; citation_journal_title=Clin Cancer Res; citation_volume=11; citation_number=4; citation_pages=2907-2918; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=High-resolution characterization of the pancreatic adenocarcinoma genome.; citation_author=AJ Aguirre; citation_author=C Brennan; citation_author=G Bailey; citation_author=R Sinha; citation_author=B Feng; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=101; citation_number=5; citation_pages=9067-9072; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Large-scale copy number polymorphism in the human genome.; citation_author=J Sebat; citation_author=B Lakshmi; citation_author=J Troge; citation_author=J Alexander; citation_author=J Young; citation_journal_title=Science; citation_volume=305; citation_number=6; citation_pages=525-528; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Comparative genomic hybridization analysis of 38 breast cancer cell lines: a basis for interpreting complementary dna microarray data.; citation_author=F Forozan; citation_author=EH Mahlamki; citation_author=O Monni; citation_author=Y Chen; citation_author=R Veldman; citation_journal_title=Cancer Res; citation_volume=60; citation_number=7; citation_pages=4519-4525; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Detection of gene amplification by genomic hybridization to cdna microarrays.; citation_author=MA Heiskanen; citation_author=ML Bittner; citation_author=Y Chen; citation_author=J Khan; citation_author=KE Adler; citation_journal_title=Cancer Res; citation_volume=60; citation_number=8; citation_pages=799-802; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Genomic dna-chip hybridization reveals a higher incidence of genomic amplifications in pancreatic cancer than conventional comparative genomic hybridization and leads to the identification of novel candidate genes.; citation_author=K Holzmann; citation_author=H Kohlhammer; citation_author=C Schwaenen; citation_author=S Wessendorf; citation_author=HA Kestler; citation_journal_title=Cancer Res; citation_volume=64; citation_number=9; citation_pages=4428-4433; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Microarray analysis reveals a major direct role of dna copy number alteration in the transcriptional program of human breast tumors.; citation_author=JR Pollack; citation_author=T Srlie; citation_author=CM Perou; citation_author=CA Rees; citation_author=SS Jeffrey; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=99; citation_number=10; citation_pages=12963-12968; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Bac to the future! or oligonucleotides: a perspective for micro array comparative genomic hybridization (array cgh).; citation_author=B Ylstra; citation_author=P van den Ijssel; citation_author=B Carvalho; citation_author=RH Brakenhoff; citation_author=GA Meijer; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=11; citation_pages=445-450; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A comparison study: applying segmentation to array cgh data for downstream analyses.; citation_author=H Willenbrock; citation_author=J Fridlyand; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=12; citation_pages=4084-4091; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Comparative analysis of algorithms for identifying amplifications and deletions in array cgh data.; citation_author=WRR Lai; citation_author=MDD Johnson; citation_author=R Kucherlapati; citation_author=PJJ Park; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=13; citation_pages=3763-3770; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Capweb: a bioinformatics cgh array analysis platform.; citation_author=S Liva; citation_author=P Hupé; citation_author=P Neuvial; citation_author=I Brito; citation_author=E Viara; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=14; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Computational methods for the analysis of array comparative genomic hybridization.; citation_author=R Chari; citation_author=WW Lockwood; citation_author=WL Lam; citation_journal_title=Cancer Informatics; citation_volume=2; citation_number=15; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Hackers and Painters, O'Reilly, chapter The other road ahead.; citation_author=P Graham; citation_number=16; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Open source software for the analysis of microarray data.; citation_author=S Dudoit; citation_author=RC Gentleman; citation_author=J Quackenbush; citation_journal_title=Biotechniques; citation_number=17; citation_pages=45-51; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Supervised methods with genomic data: a review and cautionary view.; citation_author=R Díaz-Uriarte; citation_number=18; citation_pages=193-214; citation_date=2005; citation_publisher=Wiley, chapter 12; " />
+      <meta name="citation_reference" content="citation_title=Whole genome dna copy number changes identified by high density oligonucleotide arrays.; citation_author=J Huang; citation_author=W Wei; citation_author=J Zhang; citation_author=G Liu; citation_author=GR Bignell; citation_journal_title=Hum Genomics; citation_volume=1; citation_number=19; citation_pages=287-299; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Carat: a novel method for allelic detection of dna copy number changes using high density oligonucleotide arrays.; citation_author=J Huang; citation_author=W Wei; citation_author=J Chen; citation_author=J Zhang; citation_author=G Liu; citation_journal_title=BMC Bioinformatics; citation_volume=7; citation_number=20; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A forward-backward fragment assembling algorithm for the identification of genomic amplification and deletion breakpoints using high-density single nucleotide polymorphism (snp) array.; citation_author=T Yu; citation_author=H Ye; citation_author=W Sun; citation_author=KC Li; citation_author=Z Chen; citation_journal_title=BMC Bioinformatics; citation_volume=8; citation_number=21; citation_pages=145+; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=A robust algorithm for copy number detection using high-density oligonucleotide single nucleotide polymorphism genotyping arrays.; citation_author=Y Nannya; citation_author=M Sanada; citation_author=K Nakazaki; citation_author=N Hosoya; citation_author=L Wang; citation_journal_title=Cancer Res; citation_volume=65; citation_number=22; citation_pages=6071-6079; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=An integrated view of copy number and allelic alterations in the cancer genome using single nucleotide polymorphism arrays.; citation_author=X Zhao; citation_author=C Li; citation_author=JG Paez; citation_author=K Chin; citation_author=PA Jnne; citation_journal_title=Cancer Res; citation_volume=64; citation_number=23; citation_pages=3060-3071; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A statistical method to detect chromosomal regions with dna copy number alterations using snp-array-based cgh data.; citation_author=Y Lai; citation_author=H Zhao; citation_journal_title=Comput Biol Chem; citation_volume=29; citation_number=24; citation_pages=47-54; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Idconverter and idclight: conversion and annotation of gene and protein ids.; citation_author=A Alibés; citation_author=P Yankilevich; citation_author=A Cañada; citation_author=R Diaz-Uriarte; citation_journal_title=BMC Bioinformatics; citation_volume=8; citation_number=25; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=The free lunch is over: A fundamental turn toward concurrency in software.; citation_author=H Sutter; citation_journal_title=Dr Dobb's Journal; citation_volume=30; citation_number=26; citation_pages=202-210; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_author=EJ Kontoghiorghes; citation_number=27; citation_date=2006; citation_publisher=Chapman & Hall, CRC; " />
+      <meta name="citation_reference" content="citation_title=The impact of multicore on computational science software.; citation_author=J Dongarra; citation_author=D Gannon; citation_author=G Fox; citation_author=K Kenned; citation_journal_title=CTWatch Quarterly; citation_volume=3; citation_number=28; citation_pages=3-10; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=High performance computing and the implications of multi-core architectures.; citation_author=D Turek; citation_journal_title=CTWatch Quarterly; citation_volume=3; citation_number=29; citation_pages=31-33; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Scientific software development is not an oxymoron.; citation_author=SM Baxter; citation_author=SW Day; citation_author=JS Fetrow; citation_author=SJ Reisinger; citation_journal_title=PLoS Computational Biology; citation_volume=2; citation_number=30; citation_pages=e87+; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_author=KF Fogel; citation_number=31; citation_date=2005; citation_publisher=O'Reilly; " />
+      <meta name="citation_reference" content="citation_title=arraycghbase: an analysis platform for comparative genomic hybridization microarrays.; citation_author=B Menten; citation_author=F Pattyn; citation_author=K De Preter; citation_author=P Robbrecht; citation_author=E Michels; citation_journal_title=BMC Bioinformatics; citation_volume=6; citation_number=32; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Cghscan: finding variable regions using high-density microarray comparative genomic hybridization data.; citation_author=B Anderson; citation_author=M Gilson; citation_author=A Scott; citation_author=B Biehl; citation_author=J Glasner; citation_journal_title=BMC Genomics; citation_volume=7; citation_number=33; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=ISACGH: a web-based environment for the analysis of Array CGH and gene expression which includes functional profiling.; citation_author=L Conde; citation_author=D Montaner; citation_author=J Burguet-Castell; citation_author=J Tarraga; citation_author=I Medina; citation_journal_title=Nucl Acids Res; citation_volume=in press; citation_number=34; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=A robust algorithm for copy number detection using high-density oligonucleotide single nucleotide polymorphism genotyping arrays.; citation_author=Y Nannya; citation_author=M Sanada; citation_author=K Nakazaki; citation_author=N Hosoya; citation_author=L Wang; citation_journal_title=Cancer Res; citation_volume=65; citation_number=35; citation_pages=6071-6079; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=An integrated view of copy number and allelic alterations in the cancer genome using single nucleotide polymorphism arrays.; citation_author=X Zhao; citation_author=C Li; citation_author=JG Paez; citation_author=K Chin; citation_author=PA Jänne; citation_journal_title=Cancer Res; citation_volume=64; citation_number=36; citation_pages=3060-3071; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Cgh-explorer: a program for analysis of array-cgh data.; citation_author=OC Lingjaerde; citation_author=LO Baumbusch; citation_author=K Liestol; citation_author=IK Glad; citation_author=AL Borresen-Dale; citation_journal_title=Bioinformatics; citation_volume=21; citation_number=37; citation_pages=821-822; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Cghpro – a comprehensive data analysis tool for array cgh.; citation_author=W Chen; citation_author=F Erdogan; citation_author=HH Ropers; citation_author=S Lenzner; citation_author=R Ullmann; citation_journal_title=BMC Bioinformatics; citation_volume=6; citation_number=38; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Hidden markov models approach to the analysis of array cgh data.; citation_author=J Fridlyand; citation_author=AM Snijders; citation_author=D Pinkel; citation_author=DGa Albertson; citation_journal_title=Journal of Multivariate Analysis; citation_volume=90; citation_number=39; citation_pages=132-153; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Circular binary segmentation for the analysis of array-based dna copy number data.; citation_author=AB Olshen; citation_author=ES Venkatraman; citation_author=R Lucito; citation_author=M Wigler; citation_journal_title=Biostatistics; citation_volume=5; citation_number=40; citation_pages=557-572; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Biohmm: a heterogeneous hidden markov model for segmenting array cgh data.; citation_author=JC Marioni; citation_author=NP Thorne; citation_author=S Tavaré; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=41; citation_pages=1144-1146; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Sw-array: a dynamic programming solution for the identification of copy-number changes in genomic dna using array comparative genome hybridization data.; citation_author=TS Price; citation_author=R Regan; citation_author=R Mott; citation_author=A Hedman; citation_author=B Honey; citation_journal_title=Nucleic Acids Res; citation_volume=33; citation_number=42; citation_pages=3455-3464; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Analysis of array cgh data: from signal ratio to gain and loss of dna regions.; citation_author=P Hupé; citation_author=N Stransky; citation_author=JP Thiery; citation_author=F Radvanyi; citation_author=E Barillot; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=43; citation_pages=3413-3422; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Denoising array-based comparative genomic hybridization data using wavelets.; citation_author=L Hsu; citation_author=SG Self; citation_author=D Grove; citation_author=T Randolph; citation_author=K Wang; citation_journal_title=Biostatistics; citation_volume=6; citation_number=44; citation_pages=211-226; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A statistical approach for array cgh data analysis.; citation_author=F Picard; citation_author=S Robin; citation_author=M Lavielle; citation_author=C Vaisse; citation_author=JJ Daudin; citation_journal_title=BMC Bioinformatics; citation_volume=6; citation_number=45; citation_pages=27; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Flexible and accurate detection of genomic copy-number changes from acgh.; citation_author=OM Rueda; citation_author=R Diaz-Uriarte; citation_number=46; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_author=P Pacheco; citation_number=47; citation_date=1997; citation_publisher=Morgan Kaufman; " />
+      <meta name="citation_reference" content="citation_author=I Foster; citation_number=48; citation_date=1995; citation_publisher=Addison Wesley; " />
+      <meta name="citation_reference" content="citation_title=Concepts, techniques, and models of computer programming.; citation_author=P Van Roy; citation_author=S Haridi; citation_number=49; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A note on distributed computing.; citation_author=J Waldo; citation_author=G Wyant; citation_author=A Wollrath; citation_author=SC Kendall; citation_number=50; citation_pages=49-64; citation_date=1997; citation_publisher=Springer-Verlag; " />
+      <meta name="citation_reference" content="citation_author=C Hughes; citation_author=T Hughes; citation_number=51; citation_date=2003; citation_publisher=Addison Wesley; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data"/>
+    <meta name="twitter:description" content="
+Background
+Copy number alterations (CNAs) in genomic DNA have been associated with complex human diseases, including cancer. One of the most common techniques to detect CNAs is array-based comparative genomic hybridization (aCGH). The availability of aCGH platforms and the need for identification of CNAs has resulted in a wealth of methodological studies.
+
+Methodology/Principal Findings
+ADaCGH is an R package and a web-based application for the analysis of aCGH data. It implements eight methods for detection of CNAs, gains and losses of genomic DNA, including all of the best performing ones from two recent reviews (CBS, GLAD, CGHseg, HMM). For improved speed, we use parallel computing (via MPI). Additional information (GO terms, PubMed citations, KEGG and Reactome pathways) is available for individual genes, and for sets of genes with altered copy numbers.
+
+Conclusions/Significance
+ADaCGH represents a qualitative increase in the standards of these types of applications: a) all of the best performing algorithms are included, not just one or two; b) we do not limit ourselves to providing a thin layer of CGI on top of existing BioConductor packages, but instead carefully use parallelization, examining different schemes, and are able to achieve significant decreases in user waiting time (factors up to 45&times;); c) we have added functionality not currently available in some methods, to adapt to recent recommendations (e.g., merging of segmentation results in wavelet-based and CGHseg algorithms); d) we incorporate redundancy, fault-tolerance and checkpointing, which are unique among web-based, parallelized applications; e) all of the code is available under open source licenses, allowing to build upon, copy, and adapt our code for other software projects.
+"/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000737.g005"/>
+
+  <meta property="og:title" content="ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=1228'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=8667'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=9267&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000737">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000737" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000737&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ramón Díaz-Uriarte
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:rdiaz02@gmail.com">rdiaz02@gmail.com</a></p>
+
+                <p>Affiliation:
+                  Structural Biology and Biocomputing Programme, Spanish National Cancer Center, Madrid, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Oscar M. Rueda
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Structural Biology and Biocomputing Programme, Spanish National Cancer Center, Madrid, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: August 15, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000737</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000737-g001" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000737-g002" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000737-g003" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000737-g004" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000737-g005" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000737">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000737" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Copy number alterations (CNAs) in genomic DNA have been associated with complex human diseases, including cancer. One of the most common techniques to detect CNAs is array-based comparative genomic hybridization (aCGH). The availability of aCGH platforms and the need for identification of CNAs has resulted in a wealth of methodological studies.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>ADaCGH is an R package and a web-based application for the analysis of aCGH data. It implements eight methods for detection of CNAs, gains and losses of genomic DNA, including all of the best performing ones from two recent reviews (CBS, GLAD, CGHseg, HMM). For improved speed, we use parallel computing (via MPI). Additional information (GO terms, PubMed citations, KEGG and Reactome pathways) is available for individual genes, and for sets of genes with altered copy numbers.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>ADaCGH represents a qualitative increase in the standards of these types of applications: a) all of the best performing algorithms are included, not just one or two; b) we do not limit ourselves to providing a thin layer of CGI on top of existing BioConductor packages, but instead carefully use parallelization, examining different schemes, and are able to achieve significant decreases in user waiting time (factors up to 45×); c) we have added functionality not currently available in some methods, to adapt to recent recommendations (e.g., merging of segmentation results in wavelet-based and CGHseg algorithms); d) we incorporate redundancy, fault-tolerance and checkpointing, which are unique among web-based, parallelized applications; e) all of the code is available under open source licenses, allowing to build upon, copy, and adapt our code for other software projects.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Díaz-Uriarte R, Rueda OM (2007) ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data. PLoS ONE 2(8):
+          e737.
+            doi:10.1371/journal.pone.0000737</p><p><strong>Academic Editor: </strong>Xiaolin Wu, National Cancer Institute at Frederick, United States of America</p><p><strong>Received:</strong> May 7, 2007; <strong>Accepted:</strong> July 9, 2007; <strong>Published:</strong> August 15, 2007</p><p><strong>Copyright:</strong> © 2007 Diaz-Uriarte, Rueda. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>Funding provided by Fundacion de Investigacion Medica Mutua Madrilena and Project TIC2003-09331-C02-02 of the Spanish Ministry of Education and Science (MEC). The funders had no role in design and conduct of the study, in the collection, analysis, and interpretation of the data, or in the preparation, review, or approval of the manuscript. Funding used for salaries and equipment.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Copy number alterations (CNAs) in genomic DNA have been associated with complex human diseases, including cancer <a href="#pone.0000737-Pinkel1">[1]</a>–<a href="#pone.0000737-Forozan1">[7]</a>. For instance, amplification of oncogenes is one possible mechanism for tumor activation <a href="#pone.0000737-Heiskanen1">[8]</a>, <a href="#pone.0000737-Holzmann1">[9]</a>. Patient survival and metastasis development have been shown to be associated with certain CNAs <a href="#pone.0000737-Pinkel1">[1]</a>–<a href="#pone.0000737-Forozan1">[7]</a> and, by relating patterns of CNAs with survival, gene expression, and disease status, studies about copy number changes have been instrumental for identifying relevant genes for cancer development and patient classification <a href="#pone.0000737-Pinkel1">[1]</a>, <a href="#pone.0000737-Lockwood1">[2]</a>, <a href="#pone.0000737-Pollack1">[10]</a>. One of the most common techniques to detect CNAs is array-based comparative genomic hybridization (aCGH), a term that includes platforms such as ROMA, oaCGH (including Agilent, NimbleGen, and many non-commercial, in-house oligonucleotide arrays), BAC, and cDNA arrays <a href="#pone.0000737-Pinkel1">[1]</a>, <a href="#pone.0000737-Ylstra1">[11]</a> (see section “Program overview” for comments on Affymetrix SNP arrays). The availability of aCGH platforms and the need for identification of CNAs has resulted in a wealth of methodological studies (see reviews in <a href="#pone.0000737-Willenbrock1">[12]</a>, <a href="#pone.0000737-Lai1">[13]</a>). Associated with this statistical work, several tools have been developed for the analysis of aCGH data, but these tools fail minimal requirements for both end-users and bioinformaticians/biostatisticians. Thus, we have developed ADaCGH.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>An ideal tool for the analysis of aCGH data should allow the user to choose among several of the best performing algorithms (e.g., see comparative reviews of <a href="#pone.0000737-Willenbrock1">[12]</a>, <a href="#pone.0000737-Lai1">[13]</a>). For end-users, the suitability of web-based applications for aCGH data analysis has been emphasized before (e.g., <a href="#pone.0000737-Liva1">[14]</a>, <a href="#pone.0000737-Chari1">[15]</a>), and web-based tools do not require software installation by the user, nor concerns about hardware <a href="#pone.0000737-Graham1">[16]</a>. Moreover, web-based applications ease the linking of the results from aCGH analysis to external databases (e.g., Gene Ontology, PubMed) and, thus, ultimately, ease the biological interpretation of the results. Moreover, web-based applications can use parallel computing, leading to impressive decreases in users' waiting time. Finally, the source code of such a tool should be freely available under an open source license: it allows other researchers to extend the methods, provide improvements and bug fixes, and verify claims made by method developers, and ensures that the international research community remains the owner of the tools it needs to carry out its work <a href="#pone.0000737-Dudoit1">[17]</a>, <a href="#pone.0000737-DazUriarte1">[18]</a>.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>Program overview</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>ADaCGH is available both as a web-based application and as an R package. The statistical and graphical functionality is provided by the R package, which implements parallelized versions of all algorithms. Thus, both the R application and the web-based application can take advantage of multicore processors and clusters of workstations. ADaCGH uses eight algorithms for CNA detection, including the best performing ones from recent reviews <a href="#pone.0000737-Willenbrock1">[12]</a>, <a href="#pone.0000737-Lai1">[13]</a>. The web-based application is available at <a href="http://adacgh2.bioinfo.cnio.es">http://adacgh2.bioinfo.cnio.es</a>. The source code for both the web-based application and the R package are available from both Launchpad (<a href="http://launchpad.net/adacgh">http://launchpad.net/adacgh</a>) and Bioinformatics.org (<a href="http://bioinformatics.org/asterias/bzr/adacgh">http://bioinformatics.org/asterias/bzr/a​dacgh</a>). The R package is also available from CRAN (<a href="http://cran.r-project.org/src/contrib/Descriptions/ADaCGH.html">http://cran.r-project.org/src/contrib/De​scriptions/ADaCGH.html</a>). Documentation and examples for the web-based application are available from <a href="http://adacgh2.bioinfo.cnio.es/help/adacgh-help.html">http://adacgh2.bioinfo.cnio.es/help/adac​gh-help.html</a>. Documentation for the R functions are available as in any standard R package.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Input for the web-based application are text files with aCGH data and location information. The aCGH data are often log ratios from array-based CGH platforms (the base of the logarithm is not of great importance, but base 2 logs are often of simpler interpretation). Affymetrix SNP data can also be analyzed, but external preliminary steps are required, as is common with Affymetrix SNP data, that allow to go from the MM and PM data (and, possibly, information on GC content and fragment length) to numerical values that play a role similar to the log ratios of aCGH arrays (for examples see <a href="#pone.0000737-Huang1">[19]</a>–<a href="#pone.0000737-Lai2">[24]</a>). Further details are provided in the help page for the web-based application <a href="http://adacgh2.bioinfo.cnio.es/help/adacgh-help.html#input">http://adacgh2.bioinfo.cnio.es/help/adac​gh-help.html#input</a>.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>The output (oth the web-based and R-package versions) are text files with the segmentation results and figures. The figures allow for genome-wide views and chromosome-wide views, array-by-array views and collapsed views over arrays. Figures include clickable links to our application IDClight (<a href="http://idclight.bioinfo.cnio.es">http://idclight.bioinfo.cnio.es</a>) <a href="#pone.0000737-Alibs1">[25]</a> which provides additional information, including mapping between gene and protein identifiers, PubMed references, Gene Ontology terms, Kegg and Reactome pathways for genes. In addition, the web-based application allows for sending the sets of genes showing gain, loss, and CNA (gain or loss) to our tool PaLS (<a href="http://idclight.bioinfo.cnio.es">http://idclight.bioinfo.cnio.es</a>) to examine PubMed references, Gene Ontology terms, KEGG pathways or Reactome pathways that are common to a user-selected percentage of genes. When the arrays correspond to human samples, we provide links to the Toronto Database of Genomic Variants (<a href="http://projects.tcag.ca/variation/">http://projects.tcag.ca/variation/</a>) in the chromosome-wide plots.</p>
+
+
+<h4>Benchmarks</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Speedups achieved by parallelizing the R code are shown in <a href="#pone-0000737-g001">Figure 1</a> for four popular methods. The speedups range from 40× to 45× (GLAD, HMM), to 30× (BioHMM) and 15× (CBS).</p>
+<div class="figure" id="pone-0000737-g001"><div class="img"><a name="pone-0000737-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Effects of parallelization of the R code on the user wall time for several methods.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>Values shown are the mean of four replicates, obtained in an otherwise idle cluster with 30 nodes, each with two dual-core AMD Opteron 2.2 GHz CPUs and 6 GB RAM, running Debian GNU/Linux and a stock 2.6.8 kernel, with version 7.1.2 of LAM/MPI and version 2.1.4 (patched) of R. Numbers next to the lines (60, 30, 10) indicate the total number of Rslaves in the cluster (2 slaves per node, and a maximum of 30 nodes used).</p>
+<span>doi:10.1371/journal.pone.0000737.g001</span></div><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p><a href="#pone-0000737-g002">Figure 2</a> shows user wall time of the web-based application as a function of the number of simultaneous users using the application in that very moment. ADaCGH can handle a large number of simultaneous users as a result of both parallelization of the computations and load balancing of the non-parallelized code. Increasing the number of users from 1 to 5 has a minor effect in the mean user wall time. Increasing the number of users above 5, however, has a linear effect in the mean user wall time. This is the result of the limits we have set to prevent any one node from swapping to disk (swapping would occur if we run too many simultaneous process with a large memory consumption). Situations with 5 or more simultaneous users are unrealistic, since the average number of daily users of ADaCGH is less than 6. The above benchmarks, nevertheless, show that ADaCGH can handle even those high numbers of users, which makes it suitable for classroom and demonstration use.</p>
+<div class="figure" id="pone-0000737-g002"><div class="img"><a name="pone-0000737-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>User wall time of the web-based application as a function of simultaneous users.</span></strong></p><a id="article1.body1.sec2.sec2.fig2.caption1.p1" name="article1.body1.sec2.sec2.fig2.caption1.p1"></a><p>To increase the realism of simultaneous accesses, there is delay of 5 seconds between simultaneous accesses, as might be expected, for example, from a classroom demonstration (i.e., when simulating 20 simultaneous users, the cluster is actually receiving new connections over a 20 * 5 second period, with one new connection every 5 seconds). Values shown are the mean of several runs: 5 for 1 user, 5 for 5 users, 10 for 10 users, and 20 for 20 users. Hardware and software the same as in <a href="#pone-0000737-g001">Figure 1</a>.</p>
+<span>doi:10.1371/journal.pone.0000737.g002</span></div>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Our main foci when developing ADaCGH have been:</p>
+
+
+<ul class="bulletlist">
+
+<li>Implementing all of the best currently available algorithms/methods. Applications targeted to biomedical researchers should include several of the best methods to assure the user availability of choices and the possibility of using more than one method on the same data set.<br>We have implemented all of the best performing methods for the analysis of aCGH data, based on <a href="#pone.0000737-Willenbrock1">[12]</a>, <a href="#pone.0000737-Lai1">[13]</a>, plus several others that can be of interest. Moreover, we have extended some methods (e.g., using merging of segmentation results in both the wavelet-based smoothing and CGHseg) to accommodate the latest recommendations <a href="#pone.0000737-Willenbrock1">[12]</a> and needs in the field (e.g., mapping to gain/loss/no-change to allow interpretation based on type of alteration).</li>
+
+<li>Taking user waiting time seriously. For web-based applications it is not enough to simply provide a thin wrapper of CGI code that can never be faster than the original BioConductor package.<br>We have parallelized all of the algorithms, some of them in several different ways (e.g., at the arrays or at the arrays by chromosomes level). The major opportunities for significant performance gains and ability to handle large datasets lie in the increasing availability of multicore processors and clusters built with off-the-shelf components <a href="#pone.0000737-Sutter1">[26]</a>–<a href="#pone.0000737-Turek1">[29]</a>, as the rate of increase in processor speed has slowed down significantly in the last five years. In our application, parallelization's benefits are: a) significant decreases in user wall time; b) examples for parallelization of further algorithms; c) speed increases that will allow researchers to conduct comprehensive comparative studies among methods in reasonable time.</li>
+
+<li>Making the complete code (including algorithms and the web-based application) available as open source.<br>Our complete repositories are available. Licenses used are GNU GPL for the R package (required for compatibility with the R and BioConductor packages used) and the Affero Public license for the rest of the code. The later ensures that the research community remains the owner of the web-based and fault-tolerant logic, and that any modifications for usage in other web-based applications will also be owned by the research community. Moreover, we have tried to incorporate standard best practices in software development (see review and references in <a href="#pone.0000737-Baxter1">[30]</a>) and the usual open source development mode <a href="#pone.0000737-Fogel1">[31]</a> to allow for the building of a community of contributors. Finally, of the existing aCGH applications we are the only ones to provide extensive functional and regression testing.</li>
+
+<li>Providing an example that be used as a model for related projects, significantly decreasing development time of other applications.<br>We have avoided the usage of Python-specific web frameworks, so that the logic of the application can be translated to any other language. We have also avoided R-specific extensions as a server or web-based application, so the model can be imitated with other computational engines (e.g., code written in C).</li>
+
+</ul><a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Several tools are available for the analysis of aCGH data. The majority of the available ones are summarized in the recent paper by <a href="#pone.0000737-Chari1">[15]</a>. Since then, a few others have appeared: arrayCGHbase <a href="#pone.0000737-Menten1">[32]</a>, CGHScan <a href="#pone.0000737-Anderson1">[33]</a>, CAPweb <a href="#pone.0000737-Liva1">[14]</a>, and ISACGH <a href="#pone.0000737-Conde1">[34]</a>. Of those 29 applications, only seven (or eight) implement one of the methods with good performance in <a href="#pone.0000737-Willenbrock1">[12]</a>, <a href="#pone.0000737-Lai1">[13]</a>. The other 22 (or 21) provide no formal segmentation method, or implement approaches that are either ad-hoc (e.g., most of the simple thresholding methods) or have not been carefully compared with other methods. Thus, only a handful of the implemented methods are really of direct, immediate interest for end users. Of the remaining applications, three are BioConductor R packages (aCGH, DNAcopy, GLAD) that implement only a single method and are, of course, not web-based applications. These packages are extremely important for biostaticians and bioinformaticians (e.g., these three packages are used by ADaCGH) but are not particularly user-friendly. Of the remaining five, CNAG <a href="#pone.0000737-Nannya2">[35]</a> fits only one type of model (HMM) and only to oligo-based arrays. dCHIP <a href="#pone.0000737-Zhao2">[36]</a> implements a type of HMM that requires reference samples and, again, is only one specific type of model. CGHExplorer <a href="#pone.0000737-Lingjaerde1">[37]</a> implements only the ACE approach. CGHPRO <a href="#pone.0000737-Chen1">[38]</a> includes both the HMM of Fridlyand <a href="#pone.0000737-Fridlyand1">[39]</a> and CBS <a href="#pone.0000737-Olshen1">[40]</a>, by using the BioConductor packages aCGH and DNAcopy. Their program is tied to specific software (e.g., the user needs to install mysql) and databases (build from April 2003 of the UCSC Genome Browser). Moreover CGHPRO is bound in speed by the speed of the DNAcopy and aCGH BioConductor packages and incorporates none of the computational advantages of ADaCGH, and it is not web based. ISACGH <a href="#pone.0000737-Conde1">[34]</a> is a web-based application that includes GLAD and CBS but, as before, its speed is bound by the speed of the DNAcopy and GLAD BioConductor packages and incorporates none of the computational advantages of ADaCGH; moreover, the source code is not available. Finally, CAPweb <a href="#pone.0000737-Liva1">[14]</a> is tied to just one specific method (GLAD), again making it difficult to compare the outcome from several different well-performing algorithms, and does not provide complete source code.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>In summary, ADaCGH is a unique application from the end user's standpoint: all of the best performing algorithms are accessible and, as it uses parallelization, it provides much faster execution than the original R packages. ADaCGH is also a unique application for methodological reasons. It provides the complete source code of the only application that combines parallel computing with a web-based front end, including fault tolerance and checkpointing, and extensive functional and numerical testing. In conclusion, ADaCGH sets a much higher standard than any of the previous applications for the analysis of aCGH.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Methods"></a><h3>Methods</h3>
+<h4>Algorithms: implementation and additions</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Most of the segmentation algorithms included in ADaCGH are available, in sequential versions, from R or BioConductor packages. For Circular BinarySegmentation <a href="#pone.0000737-Olshen1">[40]</a> we use the BioConductor package “DNAcopy”; for the (homogeneous) Hidden Markov Models <a href="#pone.0000737-Fridlyand1">[39]</a>, aCGH; for the non–homogeneous Hidden Markov Models in <a href="#pone.0000737-Marioni1">[41]</a> we use BioHMM; PSW (SWARRAY in the original paper <a href="#pone.0000737-Price1">[42]</a>) uses the cgh package; kernel non-parametric smoothing in GLAD <a href="#pone.0000737-Hup1">[43]</a> uses the GLAD package. For wavelet-based smoothing <a href="#pone.0000737-Hsu1">[44]</a> we have used R code kindly provided by their authors, L. Hsu and D. Grove. The Gaussian process model in CGHseg <a href="#pone.0000737-Picard1">[45]</a> uses functions implemented in the package tilingArray; we have, however, implemented the original author's adaptive penalization approach (the tilingArray and snapCGH BioConductor packages use as possible penalization BIC or AIC, but not the adaptive one recommended by Picard et al. <a href="#pone.0000737-Picard1">[45]</a>). For Analysis of Copy Errors <a href="#pone.0000737-Lingjaerde1">[37]</a> we use C code written by us based on the original Java code, and called from R.</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>For merging segmentation results, to map the segmented output to “gain/loss/no-change” states, we use either the original procedure of the authors, as in GLAD, or the procedures examined in <a href="#pone.0000737-Willenbrock1">[12]</a> for CBS and HMM, implemented in the mergeLevels function of the aCGH package.</p>
+<a id="article1.body1.sec4.sec1.p3" name="article1.body1.sec4.sec1.p3"></a><p>For the wavelet-based approach <a href="#pone.0000737-Hsu1">[44]</a> we have adapted the mergeLevels approach. The original paper <a href="#pone.0000737-Hsu1">[44]</a> does not map the segmentation results to a set of ”gain/loss/no-change” levels. We have followed the same approach as in CBS, and use here the mergeLevels procedure. It must be emphasized that this is an experimental procedure, not described in the original paper. Moreover, the wavelet-smoothing procedure returns smoothed values that rarely fall into a set of categories, so applying mergeLevels here often leads to non-sense results. Thus, we apply mergeLevels after running the original clustering procedure of this method with a very small threshold for merging (currently set to 0.05, or five times smaller than the default of 0.25); some preliminary trials show that the final outcome from mergeLevels is not sensitive to small variations around this threshold.</p>
+<a id="article1.body1.sec4.sec1.p4" name="article1.body1.sec4.sec1.p4"></a><p>The original paper on CGHseg <a href="#pone.0000737-Picard1">[45]</a> includes no details on mapping the segmentation results to the ”gain/loss/no-change” levels. We thus use mergeLevels on the output. With this approach, CGHseg is one of the best overall performers (on par with Circular Binary Segmentation) in our comparison of several methods for aCGH analysis (see Supplementary Material to <a href="#pone.0000737-Rueda1">[46]</a>) using the complete simulated data set in <a href="#pone.0000737-Willenbrock1">[12]</a>. An alternative, naive mapping approach (setting the most abundant class to the “no-change” level, and all others to gain or loss depending on their mean), leads to much worse performance (see Supplementary Material of <a href="#pone.0000737-Rueda1">[46]</a> for details).</p>
+<a id="article1.body1.sec4.sec1.p5" name="article1.body1.sec4.sec1.p5"></a><p>For finding minimal common regions of gains and losses we use the procedure in <a href="#pone.0000737-Aguirre1">[5]</a> as implemented in the cghMCR BioConductor package.</p>
+<a id="article1.body1.sec4.sec1.p6" name="article1.body1.sec4.sec1.p6"></a><p>Where appropriate, we have re-written some of the above code for parallelization (see below). Parallelization uses the Rmpi (<a href="http://www.stats.uwo.ca/faculty/yu/Rmpi">http://www.stats.uwo.ca/faculty/yu/Rmpi</a>) and papply (<a href="http://ace.acadiau.ca/math/ACMMaC/software/papply/">http://ace.acadiau.ca/math/ACMMaC/softwa​re/papply/</a>) R packages by H. Yu and D. Currie, respectively.</p>
+<a id="article1.body1.sec4.sec1.p7" name="article1.body1.sec4.sec1.p7"></a><p>Clickable figures are generated from the R code with some additional calls to Python code. In the web-based application, Python is used for CGI, initial data validation, and to ensure proper seting-up and closing of the parallel infrastructure (booting and halting the LAM/MPI universes).</p>
+
+
+<h4>Algorithms: Parallelization</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Parallelization of algorithms has been carried out to maximize speed gains from the distribution of the computation (see <a href="#pone.0000737-Pacheco1">[47]</a>, <a href="#pone.0000737-Foster1">[48]</a> for general guidelines), while making further extensions and applications to other methods as easy as possible, requiring only writing some wrapper code to existing segmentation code. For the aCGH algorithms considered, there are embarrassingly parallelizable computations at the chromosome by array level. Alternatively, we might parallelize at the array level, looping (sequentially) over chromosomes, or parallelize at the chromosome level, looping (sequentially) over arrays, with the later option only being reasonable for the ACE algorithm. In contrast to parallelizing at the array level, parallelizing at the array by chromosome level can use all available CPUs when there are few arrays. However, parallelizing at the array by chromosome level might not always be appropriate: the tasks are of very uneven duration (e.g., segmenting chromosome 1 vs. segmenting chromosome 21), much more communication is needed between the master and the slaves and, when there is merging (as in CBS, HMM, BioHMM, and our implementations of CGHseg and wavelet smoothing) synchronization barriers are needed before merging can be performed (where the merging algorithm would be parallelized at the only possible level, which is array).</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>To choose the best parallelization scheme, we have examined the alternatives where this flexibility was easily available, taking into account different numbers of genes per array, different numbers of slaves per node, and different numbers of arrays. For HMM, BioHMM, and CBS we have compared parallelization at the array by chromosome vs. at the array level, and for ACE we have compared parallelization at the array by chromosome vs. at the chromosome level. Results are shown in <a href="#pone-0000737-g003">Figure 3</a>. In most cases, parallelization at the array level is better (it results in smaller users' wall time). Only for small number of arrays (i.e., when many of the CPUs are idle if parallelization is at the array level) can parallelization at the array by chromosome level perform better, as we would expect from the trade-offs involved (see above). We have used the results from this figure to automatically choose the parallelization level used in any given run. Of course, the optimal parallelization is strongly dependent on the underlying hardware, mainly CPU number and speed, number of cores, caches' sizes, and network speed.</p>
+<div class="figure" id="pone-0000737-g003"><div class="img"><a name="pone-0000737-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Comparing parallelization schemes.</span></strong></p><a id="article1.body1.sec4.sec2.fig1.caption1.p1" name="article1.body1.sec4.sec2.fig1.caption1.p1"></a><p>User wall time of the R code using parallelization over arrays by chromosomes or over array (all methods shown, except ACE) or chromosome (ACE). “Slaves: 2” or “Slaves: 4” indicates the number of slaves per node. The two timings shown were obtained from an otherwise idle cluster, with hardware and software as in previous figures.</p>
+<span>doi:10.1371/journal.pone.0000737.g003</span></div><a id="article1.body1.sec4.sec2.p3" name="article1.body1.sec4.sec2.p3"></a><p>For the current code, the execution of HMM, BioHMM, CBS, and ACE is parallelized at the array (chromosome if ACE) or array by chromosome level depending on the number of arrays. Following the main results with HMM and CBS, wavelet-based smoothing and CGHseg are parallelized at the array level. GLAD and PSW are parallelized at the array level as the code of the basic algorithms themselves would not allow for easily maintainable finer grained parallelization.</p>
+<a id="article1.body1.sec4.sec2.p4" name="article1.body1.sec4.sec2.p4"></a><p>An additional concern with multicore CPUs is, for each node, whether to use as many Rmpi slaves as cores (4 in our case) or as sockets (2 in our case), as the different cores share resources that different processors do not <a href="#pone.0000737-Dongarra1">[28]</a>. The results of <a href="#pone-0000737-g003">Figure 3</a> show that using 4 slaves per node rarely leads to performance increases but, because of increased memory usage, can prevent some processes from completing (e.g., BioHMM with 42325 genes and either 100 or 150 arrays).</p>
+<a id="article1.body1.sec4.sec2.p5" name="article1.body1.sec4.sec2.p5"></a><p>Figure creation in the web-based application is parallelized at the array level, by writing to a shared directory (accessed via NFS), except for the figures where all arrays are superimposed, where parallel execution is impossible.</p>
+
+
+<h4>Web-based application: Program logic</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>The main application components, their relationship, and some key hardware components are shown in <a href="#pone-0000737-g004">Figures 4</a> and <a href="#pone-0000737-g005">5</a>. Our installation of the web-based application runs on a cluster of 30 workstations with two dual-core AMD Opteron CPUs. The HTTP request from a user arrives at one of the two master nodes; currently, we are using Linux Virtual Server (<a href="http://www.linuxvirtualserver.org/">http://www.linuxvirtualserver.org/</a>) to provide load balancing of the web serving and redundancy (see below), but we have also used Pound (<a href="http://www.apsis.ch/pound/">http://www.apsis.ch/pound/</a>) and alternative mechanisms could be used. This request is sent to one of the server nodes. In there, this request returns a static HTML page, for simpler and faster execution, with the appropriate fields for file upload.</p>
+<div class="figure" id="pone-0000737-g004"><div class="img"><a name="pone-0000737-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Overview of the flow of information between the main components of the web-based application.</span></strong></p><span>doi:10.1371/journal.pone.0000737.g004</span></div><div class="figure" id="pone-0000737-g005"><div class="img"><a name="pone-0000737-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000737" data-uri="info:doi/10.1371/journal.pone.0000737.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000737.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000737.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000737.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000737.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Flow of information between application components: main mechanisms for crash recovery and fault tolerance.</span></strong></p><a id="article1.body1.sec4.sec3.fig2.caption1.p1" name="article1.body1.sec4.sec3.fig2.caption1.p1"></a><p>Black: execution flow. Gray: read (←) or write (→) to/from files/nodes/hardware elements.</p>
+<span>doi:10.1371/journal.pone.0000737.g005</span></div><a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>Upon hitting the “submit” button on the HTML page, a (Python) CGI is executed in the given server node. This CGI carries out basic data management and verification. Briefly, a temporary directory in a shared (via NFS) file system is created, the data files verified for basic correctness, and then stored in this temporary directory. This temporary directory has a name formed by 13 random digits plus the process ID plus the time of creation; this makes it virtually impossible that two runs of the application will write data to the same temporary directory. This CGI returns a (temporary) results HTML file to the user which is an autorefreshing HTML page (to prevent time-outs in the client-server connection) with the URL address. At the termination of the run, this temporary HTML file will be substituted by the final results file. The last job of this CGI is to spawn a Python program (identified as “runAndCheck.py” in the figures) that does the bulk of managing the MPI environment, launching R, and providing fault tolerance.</p>
+<a id="article1.body1.sec4.sec3.p3" name="article1.body1.sec4.sec3.p3"></a><p>This runAndCheck.py program carries out several major tasks. First, based upon the size of the uploaded files, it determines the parameters to use for the LAM/MPI universe (the number of Rslaves that will be spawned in each node, and the maximum number of ADaCGH processes that are allowed to run simultaneously at any time). Next, it determines if a new process can be run (by counting the number of lam daemons in the node); if it cannot run yet, it waits and checks again after a specified interval. Otherwise, a new LAM/MPI universe is booted, and an R process started. runAndCheck.py is also in charge of fault tolerance and crash recovery (see below). Eventually, upon either successful or unsuccessful termination, a results HTML file is constructed, and returned to the user; this file replaces the above temporary results file.</p>
+<a id="article1.body1.sec4.sec3.p4" name="article1.body1.sec4.sec3.p4"></a><p>A combination of R, Python, and Javascript code is involved in generating lists of genes for PaLS (e.g., the list of all genes that show gains in copy number) and providing figures with clickable links to our IDClight application <a href="#pone.0000737-Alibs1">[25]</a>.</p>
+<a id="article1.body1.sec4.sec3.p5" name="article1.body1.sec4.sec3.p5"></a><p>In addition to the above major programs (the CGI and runAndCheck.py), there is a cron job that executes periodically to verify which nodes (servers) are responding and can be used by LAM/MPI. If needed, the default LAM/MPI configuration files are modified adding or deleting entries for the corresponding nodes.</p>
+
+
+<h4>Fault tolerance and crash recovery</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>Partial failure is unavoidable in distributed applications <a href="#pone.0000737-VanRoy1">[49]</a>–<a href="#pone.0000737-Hughes1">[51]</a>. We use several layers to provide fault tolerance and crash recovery. Linux Virtual Server with heartbeat and mon (<a href="http://www.linuxvirtualserver.org/docs/ha/heartbeat_mon.html">http://www.linuxvirtualserver.org/docs/h​a/heartbeat_mon.html</a>) using two master nodes provides redundancy in case one of the master nodes fails, and monitors the server nodes so that no HTTP requests are sent to non-responding nodes. Results and temporary computations are stored in a shared storage space that uses RAID 50; this allows both access from nodes different from the one where computations started, and permits the cluster to continue working in case of failure of some of the disks.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>The above mechanisms, however, do not offer a way to continue an ongoing calculation in case of failure. Common sources of partial failure are a crash in one of the nodes that are running a slave MPI job, MPI (or Rmpi) errors, and network problems. These problems are particularly common (and difficult to correct via a specific, immediate, human intervention) in web-based applications that have to run unattended with, ideally, 100% availability. Moreover, any of these are recoverable errors and, thus, stopping the complete calculation and returning an error message to the user (forcing the user to relaunch the process) or, worse, halting indefinitely, are suboptimal ways of responding to the above errors.</p>
+<a id="article1.body1.sec4.sec4.p3" name="article1.body1.sec4.sec4.p3"></a><p>As illustrated in <a href="#pone-0000737-g005">Figure 5</a>, the web-based application incorporates a mechanism that, periodically, examines MPI and R logs and existing LAM/MPI daemons to determine if any of the above problems have occurred. If they have, a new LAM/MPI universe is booted (after determining which nodes are currently alive and can run MPI processes), and a new R process launched. To prevent carrying out again computationally costly calculations, the R code includes checkpoints so that calculations are not started from the beginning but only continued from the point they were stopped.</p>
+<a id="article1.body1.sec4.sec4.p4" name="article1.body1.sec4.sec4.p4"></a><p>The above mechanism of fault recovery is independent of another mechanism that checks for completion. Completion can either be successful or unsuccessful. The later can be caused by errors in our R code and, in such a case, we want to abort the calculation immediately, return a message to the user, and log the problem to allow us its prompt fixing. These errors are detected via monitorization of R logs and currently running R processes. In a similar way are handled fatal errors in libraries we depend upon, such as failures in optimization that are occasionally encountered with BioHMM.</p>
+
+
+<h4>Testing and bug tracking</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>ADaCGH includes a comprehensive test suite that uses FunkLoad (<a href="http://funkload.nuxeo.org">http://funkload.nuxeo.org</a>). These functional tests cover the user interface and the numerical output, including verification that our parallel implementations return the same values as the original sequential ones. All the tests can be run on demand, and whenever new changes are introduced in the software, thus ensuring appropriate quality control and regression testing. The tests are available under the “ADaCGH2” directory from the repositories (<a href="http://bioinformatics.org/asterias/bzr/Testing">http://bioinformatics.org/asterias/bzr/T​esting</a> or <a href="http://launchpad.net/functional-testing">http://launchpad.net/functional-testing</a>). In addition to the uses from its release date (November 2005) and the FunkLoad test suite, the code has undergone extensive usage from the benchmark results shown below. Bug-tracking is available from <a href="http://bioinformatics.org/asterias">http://bioinformatics.org/asterias</a>.</p>
+
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>A. Alibés and A. Cañada for their work on IDClight and PaLS. L. Hsu, and D. Grove for providing their wavelet-based smoothing code, T. Price for his SWARRAY code, and O. Lingjaerde for answers about his Java implementation of ACE. Bioinformatics.org and The Launchpad for project and repository hosting. An anonymous reviewer for comments on the ms.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: RD. Performed the experiments: RD. Analyzed the data: RD. Contributed reagents/materials/analysis tools: RD. Wrote the paper: RD OR. Other: Developed software: OR RD-U. Tested software: OR RD.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000737-Pinkel1" id="pone.0000737-Pinkel1"></a>Pinkel D, Albertson DG (2005) Array comparative genomic hybridization and its applications in cancer. Nat Genet 37 SupplS11–S17.  <ul class="find" data-citedArticleID="977442" data-doi="10.1038/ng1569"><li><a href="http://dx.doi.org/10.1038/ng1569" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Array+comparative+genomic+hybridization+and+its+applications+in+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Array+comparative+genomic+hybridization+and+its+applications+in+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000737-Lockwood1" id="pone.0000737-Lockwood1"></a>Lockwood WW, Chari R, Chi B, Lam WLa (2006) Recent advances in array comparative genomic hybridization technologies and their applications in human genetics. European Journal of Human Genetics  14: 139–148.  <ul class="find" data-citedArticleID="977356" data-doi="10.1038/sj.ejhg.5201531"><li><a href="http://dx.doi.org/10.1038/sj.ejhg.5201531" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Recent+advances+in+array+comparative+genomic+hybridization+technologies+and+their+applications+in+human+genetics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Recent+advances+in+array+comparative+genomic+hybridization+technologies+and+their+applications+in+human+genetics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000737-Urban1" id="pone.0000737-Urban1"></a>Urban AE, Korbel JO, Selzer R, Richmond T, Hacker A, et al.  (2006) High-resolution mapping of dna copy alterations in human chromosome 22 using high-density tiling oligonucleotide arrays. Proc Natl Acad Sci U S A  103: 4534–4539.  <ul class="find" data-citedArticleID="977388" data-doi="10.1073/pnas.0511340103"><li><a href="http://dx.doi.org/10.1073/pnas.0511340103" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High-resolution+mapping+of+dna+copy+alterations+in+human+chromosome+22+using+high-density+tiling+oligonucleotide+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High-resolution+mapping+of+dna+copy+alterations+in+human+chromosome+22+using+high-density+tiling+oligonucleotide+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000737-Misra1" id="pone.0000737-Misra1"></a>Misra A, Pellarin M, Nigro J, Smirnov I, Moore D, et al.  (2005) Array comparative genomic hybridization identifies genetic subgroups in grade 4 human astrocytoma. Clin Cancer Res  11: 2907–2918.  <ul class="find" data-citedArticleID="977408" data-doi="10.1158/1078-0432.ccr-04-0708"><li><a href="http://dx.doi.org/10.1158/1078-0432.ccr-04-0708" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Array+comparative+genomic+hybridization+identifies+genetic+subgroups+in+grade+4+human+astrocytoma." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Array+comparative+genomic+hybridization+identifies+genetic+subgroups+in+grade+4+human+astrocytoma.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000737-Aguirre1" id="pone.0000737-Aguirre1"></a>Aguirre AJ, Brennan C, Bailey G, Sinha R, Feng B, et al.  (2004) High-resolution characterization of the pancreatic adenocarcinoma genome. Proc Natl Acad Sci U S A  101: 9067–9072.  <ul class="find" data-citedArticleID="977432" data-doi="10.1073/pnas.0402932101"><li><a href="http://dx.doi.org/10.1073/pnas.0402932101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High-resolution+characterization+of+the+pancreatic+adenocarcinoma+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High-resolution+characterization+of+the+pancreatic+adenocarcinoma+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000737-Sebat1" id="pone.0000737-Sebat1"></a>Sebat J, Lakshmi B, Troge J, Alexander J, Young J, et al.  (2004) Large-scale copy number polymorphism in the human genome. Science  305: 525–528.  <ul class="find" data-citedArticleID="977372" data-doi="10.1126/science.1098918"><li><a href="http://dx.doi.org/10.1126/science.1098918" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Large-scale+copy+number+polymorphism+in+the+human+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Large-scale+copy+number+polymorphism+in+the+human+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000737-Forozan1" id="pone.0000737-Forozan1"></a>Forozan F, Mahlamki EH, Monni O, Chen Y, Veldman R, et al.  (2000) Comparative genomic hybridization analysis of 38 breast cancer cell lines: a basis for interpreting complementary dna microarray data. Cancer Res  60: 4519–4525.  <ul class="find" data-citedArticleID="977446"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Comparative+genomic+hybridization+analysis+of+38+breast+cancer+cell+lines%3A+a+basis+for+interpreting+complementary+dna+microarray+data.&amp;auth=&amp;atitle=Comparative+genomic+hybridization+analysis+of+38+breast+cancer+cell+lines%3A+a+basis+for+interpreting+complementary+dna+microarray+data." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+genomic+hybridization+analysis+of+38+breast+cancer+cell+lines%3A+a+basis+for+interpreting+complementary+dna+microarray+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+genomic+hybridization+analysis+of+38+breast+cancer+cell+lines%3A+a+basis+for+interpreting+complementary+dna+microarray+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000737-Heiskanen1" id="pone.0000737-Heiskanen1"></a>Heiskanen MA, Bittner ML, Chen Y, Khan J, Adler KE, et al.  (2000) Detection of gene amplification by genomic hybridization to cdna microarrays. Cancer Res  60: 799–802.  <ul class="find" data-citedArticleID="977364"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Detection+of+gene+amplification+by+genomic+hybridization+to+cdna+microarrays.&amp;auth=&amp;atitle=Detection+of+gene+amplification+by+genomic+hybridization+to+cdna+microarrays." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detection+of+gene+amplification+by+genomic+hybridization+to+cdna+microarrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detection+of+gene+amplification+by+genomic+hybridization+to+cdna+microarrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000737-Holzmann1" id="pone.0000737-Holzmann1"></a>Holzmann K, Kohlhammer H, Schwaenen C, Wessendorf S, Kestler HA, et al.  (2004) Genomic dna-chip hybridization reveals a higher incidence of genomic amplifications in pancreatic cancer than conventional comparative genomic hybridization and leads to the identification of novel candidate genes. Cancer Res  64: 4428–4433.  <ul class="find" data-citedArticleID="977444" data-doi="10.1158/0008-5472.can-04-0431"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-04-0431" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomic+dna-chip+hybridization+reveals+a+higher+incidence+of+genomic+amplifications+in+pancreatic+cancer+than+conventional+comparative+genomic+hybridization+and+leads+to+the+identification+of+novel+candidate+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomic+dna-chip+hybridization+reveals+a+higher+incidence+of+genomic+amplifications+in+pancreatic+cancer+than+conventional+comparative+genomic+hybridization+and+leads+to+the+identification+of+novel+candidate+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000737-Pollack1" id="pone.0000737-Pollack1"></a>Pollack JR, Srlie T, Perou CM, Rees CA, Jeffrey SS, et al.  (2002) Microarray analysis reveals a major direct role of dna copy number alteration in the transcriptional program of human breast tumors. Proc Natl Acad Sci U S A  99: 12963–12968.  <ul class="find" data-citedArticleID="977390" data-doi="10.1073/pnas.162471999"><li><a href="http://dx.doi.org/10.1073/pnas.162471999" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+analysis+reveals+a+major+direct+role+of+dna+copy+number+alteration+in+the+transcriptional+program+of+human+breast+tumors." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+analysis+reveals+a+major+direct+role+of+dna+copy+number+alteration+in+the+transcriptional+program+of+human+breast+tumors.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000737-Ylstra1" id="pone.0000737-Ylstra1"></a>Ylstra B, van den Ijssel P, Carvalho B, Brakenhoff RH, Meijer GA (2006) Bac to the future! or oligonucleotides: a perspective for micro array comparative genomic hybridization (array cgh). Nucleic Acids Res  34: 445–450.  <ul class="find" data-citedArticleID="977366" data-doi="10.1093/nar/gkj456"><li><a href="http://dx.doi.org/10.1093/nar/gkj456" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bac+to+the+future%21+or+oligonucleotides%3A+a+perspective+for+micro+array+comparative+genomic+hybridization+%28array+cgh%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bac+to+the+future%21+or+oligonucleotides%3A+a+perspective+for+micro+array+comparative+genomic+hybridization+%28array+cgh%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000737-Willenbrock1" id="pone.0000737-Willenbrock1"></a>Willenbrock H, Fridlyand J (2005) A comparison study: applying segmentation to array cgh data for downstream analyses. Bioinformatics  21: 4084–4091.  <ul class="find" data-citedArticleID="977410" data-doi="10.1093/bioinformatics/bti677"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti677" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comparison+study%3A+applying+segmentation+to+array+cgh+data+for+downstream+analyses." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comparison+study%3A+applying+segmentation+to+array+cgh+data+for+downstream+analyses.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000737-Lai1" id="pone.0000737-Lai1"></a>Lai WRR, Johnson MDD, Kucherlapati R, Park PJJ (2005) Comparative analysis of algorithms for identifying amplifications and deletions in array cgh data. Bioinformatics  21: 3763–3770.  <ul class="find" data-citedArticleID="977404" data-doi="10.1093/bioinformatics/bti611"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti611" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+analysis+of+algorithms+for+identifying+amplifications+and+deletions+in+array+cgh+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+analysis+of+algorithms+for+identifying+amplifications+and+deletions+in+array+cgh+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000737-Liva1" id="pone.0000737-Liva1"></a>Liva S, Hupé P, Neuvial P, Brito I, Viara E, et al.  (2006) Capweb: a bioinformatics cgh array analysis platform. Nucleic Acids Res  34:   <ul class="find" data-citedArticleID="977358" data-doi="10.1093/nar/gkl215"><li><a href="http://dx.doi.org/10.1093/nar/gkl215" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Capweb%3A+a+bioinformatics+cgh+array+analysis+platform." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Capweb%3A+a+bioinformatics+cgh+array+analysis+platform.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000737-Chari1" id="pone.0000737-Chari1"></a>Chari R, Lockwood WW, Lam WL (2006) Computational methods for the analysis of array comparative genomic hybridization. Cancer Informatics  2:   <ul class="find" data-citedArticleID="977380"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Computational+methods+for+the+analysis+of+array+comparative+genomic+hybridization.&amp;auth=&amp;atitle=Computational+methods+for+the+analysis+of+array+comparative+genomic+hybridization." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Computational+methods+for+the+analysis+of+array+comparative+genomic+hybridization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Computational+methods+for+the+analysis+of+array+comparative+genomic+hybridization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000737-Graham1" id="pone.0000737-Graham1"></a>Graham P (2004) Hackers and Painters, O'Reilly, chapter The other road ahead.   <ul class="find-nolinks"></ul></li><li><span class="label">17.
+              </span><a name="pone.0000737-Dudoit1" id="pone.0000737-Dudoit1"></a>Dudoit S, Gentleman RC, Quackenbush J (2003) Open source software for the analysis of microarray data. Biotechniques Suppl45–51.  <ul class="find" data-citedArticleID="977430"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Open+source+software+for+the+analysis+of+microarray+data.&amp;auth=&amp;atitle=Open+source+software+for+the+analysis+of+microarray+data." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Open+source+software+for+the+analysis+of+microarray+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Open+source+software+for+the+analysis+of+microarray+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000737-DazUriarte1" id="pone.0000737-DazUriarte1"></a>Díaz-Uriarte R (2005)  Supervised methods with genomic data: a review and cautionary view. In: Azuaje F, Dopazo J, editors. Data analysis and visualization in genomics and proteomics. New York: Wiley, chapter 12. pp. 193–214.  <ul class="find-nolinks"></ul></li><li><span class="label">19.
+              </span><a name="pone.0000737-Huang1" id="pone.0000737-Huang1"></a>Huang J, Wei W, Zhang J, Liu G, Bignell GR, et al.  (2004) Whole genome dna copy number changes identified by high density oligonucleotide arrays. Hum Genomics  1: 287–299.  <ul class="find" data-citedArticleID="977400" data-doi="10.1186/1479-7364-1-4-287"><li><a href="http://dx.doi.org/10.1186/1479-7364-1-4-287" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Whole+genome+dna+copy+number+changes+identified+by+high+density+oligonucleotide+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Whole+genome+dna+copy+number+changes+identified+by+high+density+oligonucleotide+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000737-Huang2" id="pone.0000737-Huang2"></a>Huang J, Wei W, Chen J, Zhang J, Liu G, et al.  (2006) Carat: a novel method for allelic detection of dna copy number changes using high density oligonucleotide arrays. BMC Bioinformatics  7:   <ul class="find" data-citedArticleID="977426"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Carat%3A+a+novel+method+for+allelic+detection+of+dna+copy+number+changes+using+high+density+oligonucleotide+arrays.&amp;auth=&amp;atitle=Carat%3A+a+novel+method+for+allelic+detection+of+dna+copy+number+changes+using+high+density+oligonucleotide+arrays." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Carat%3A+a+novel+method+for+allelic+detection+of+dna+copy+number+changes+using+high+density+oligonucleotide+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Carat%3A+a+novel+method+for+allelic+detection+of+dna+copy+number+changes+using+high+density+oligonucleotide+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000737-Yu1" id="pone.0000737-Yu1"></a>Yu T, Ye H, Sun W, Li KC, Chen Z, et al.  (2007) A forward-backward fragment assembling algorithm for the identification of genomic amplification and deletion breakpoints using high-density single nucleotide polymorphism (snp) array. BMC Bioinformatics  8: 145+.  <ul class="find" data-citedArticleID="977392" data-doi="10.1186/1471-2105-8-145"><li><a href="http://dx.doi.org/10.1186/1471-2105-8-145" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+forward-backward+fragment+assembling+algorithm+for+the+identification+of+genomic+amplification+and+deletion+breakpoints+using+high-density+single+nucleotide+polymorphism+%28snp%29+array." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+forward-backward+fragment+assembling+algorithm+for+the+identification+of+genomic+amplification+and+deletion+breakpoints+using+high-density+single+nucleotide+polymorphism+%28snp%29+array.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000737-Nannya1" id="pone.0000737-Nannya1"></a>Nannya Y, Sanada M, Nakazaki K, Hosoya N, Wang L, et al.  (2005) A robust algorithm for copy number detection using high-density oligonucleotide single nucleotide polymorphism genotyping arrays. Cancer Res  65: 6071–6079.  <ul class="find" data-citedArticleID="977386" data-doi="10.1158/0008-5472.can-05-0465"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-05-0465" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+robust+algorithm+for+copy+number+detection+using+high-density+oligonucleotide+single+nucleotide+polymorphism+genotyping+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+robust+algorithm+for+copy+number+detection+using+high-density+oligonucleotide+single+nucleotide+polymorphism+genotyping+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000737-Zhao1" id="pone.0000737-Zhao1"></a>Zhao X, Li C, Paez JG, Chin K, Jnne PA, et al.  (2004) An integrated view of copy number and allelic alterations in the cancer genome using single nucleotide polymorphism arrays. Cancer Res  64: 3060–3071.  <ul class="find" data-citedArticleID="977352" data-doi="10.1158/0008-5472.can-03-3308"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-03-3308" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+integrated+view+of+copy+number+and+allelic+alterations+in+the+cancer+genome+using+single+nucleotide+polymorphism+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+integrated+view+of+copy+number+and+allelic+alterations+in+the+cancer+genome+using+single+nucleotide+polymorphism+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000737-Lai2" id="pone.0000737-Lai2"></a>Lai Y, Zhao H (2005) A statistical method to detect chromosomal regions with dna copy number alterations using snp-array-based cgh data. Comput Biol Chem  29: 47–54.  <ul class="find" data-citedArticleID="977418" data-doi="10.1016/j.compbiolchem.2004.12.004"><li><a href="http://dx.doi.org/10.1016/j.compbiolchem.2004.12.004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+statistical+method+to+detect+chromosomal+regions+with+dna+copy+number+alterations+using+snp-array-based+cgh+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+statistical+method+to+detect+chromosomal+regions+with+dna+copy+number+alterations+using+snp-array-based+cgh+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000737-Alibs1" id="pone.0000737-Alibs1"></a>Alibés A, Yankilevich P, Cañada A, Diaz-Uriarte R (2007) Idconverter and idclight: conversion and annotation of gene and protein ids. BMC Bioinformatics  8:   <ul class="find" data-citedArticleID="977376" data-doi="10.1186/1471-2105-8-9"><li><a href="http://dx.doi.org/10.1186/1471-2105-8-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Idconverter+and+idclight%3A+conversion+and+annotation+of+gene+and+protein+ids." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Idconverter+and+idclight%3A+conversion+and+annotation+of+gene+and+protein+ids.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000737-Sutter1" id="pone.0000737-Sutter1"></a>Sutter H (2005) The free lunch is over: A fundamental turn toward concurrency in software. Dr Dobb's Journal  30: 202–210.  <ul class="find" data-citedArticleID="977354"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+free+lunch+is+over%3A+A+fundamental+turn+toward+concurrency+in+software.&amp;auth=&amp;atitle=The+free+lunch+is+over%3A+A+fundamental+turn+toward+concurrency+in+software." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+free+lunch+is+over%3A+A+fundamental+turn+toward+concurrency+in+software." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+free+lunch+is+over%3A+A+fundamental+turn+toward+concurrency+in+software.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000737-Kontoghiorghes1" id="pone.0000737-Kontoghiorghes1"></a>Kontoghiorghes EJ (2006) Handbook of Parallel Computing and Statistics. Boca Raton, FL: Chapman &amp; Hall, CRC.   <ul class="find-nolinks"></ul></li><li><span class="label">28.
+              </span><a name="pone.0000737-Dongarra1" id="pone.0000737-Dongarra1"></a>Dongarra J, Gannon D, Fox G, Kenned K (2007) The impact of multicore on computational science software. CTWatch Quarterly  3: 3–10.  <ul class="find" data-citedArticleID="977398"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+impact+of+multicore+on+computational+science+software.&amp;auth=&amp;atitle=The+impact+of+multicore+on+computational+science+software." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+impact+of+multicore+on+computational+science+software." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+impact+of+multicore+on+computational+science+software.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000737-Turek1" id="pone.0000737-Turek1"></a>Turek D (2007) High performance computing and the implications of multi-core architectures. CTWatch Quarterly  3: 31–33.  <ul class="find" data-citedArticleID="977428"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=High+performance+computing+and+the+implications+of+multi-core+architectures.&amp;auth=&amp;atitle=High+performance+computing+and+the+implications+of+multi-core+architectures." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High+performance+computing+and+the+implications+of+multi-core+architectures." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High+performance+computing+and+the+implications+of+multi-core+architectures.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000737-Baxter1" id="pone.0000737-Baxter1"></a>Baxter SM, Day SW, Fetrow JS, Reisinger SJ (2006) Scientific software development is not an oxymoron. PLoS Computational Biology  2: e87+.  <ul class="find" data-citedArticleID="977370" data-doi="10.1371/journal.pcbi.0020087"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020087" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Scientific+software+development+is+not+an+oxymoron." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Scientific+software+development+is+not+an+oxymoron.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000737-Fogel1" id="pone.0000737-Fogel1"></a>Fogel KF (2005) Producing open source software. Sebastopol, CA: O'Reilly.   <ul class="find-nolinks"></ul></li><li><span class="label">32.
+              </span><a name="pone.0000737-Menten1" id="pone.0000737-Menten1"></a>Menten B, Pattyn F, De Preter K, Robbrecht P, Michels E, et al.  (2005) arraycghbase: an analysis platform for comparative genomic hybridization microarrays. BMC Bioinformatics  6:   <ul class="find" data-citedArticleID="977414"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=arraycghbase%3A+an+analysis+platform+for+comparative+genomic+hybridization+microarrays.&amp;auth=&amp;atitle=arraycghbase%3A+an+analysis+platform+for+comparative+genomic+hybridization+microarrays." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=arraycghbase%3A+an+analysis+platform+for+comparative+genomic+hybridization+microarrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22arraycghbase%3A+an+analysis+platform+for+comparative+genomic+hybridization+microarrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000737-Anderson1" id="pone.0000737-Anderson1"></a>Anderson B, Gilson M, Scott A, Biehl B, Glasner J, et al.  (2006) Cghscan: finding variable regions using high-density microarray comparative genomic hybridization data. BMC Genomics  7:   <ul class="find" data-citedArticleID="977412"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Cghscan%3A+finding+variable+regions+using+high-density+microarray+comparative+genomic+hybridization+data.&amp;auth=&amp;atitle=Cghscan%3A+finding+variable+regions+using+high-density+microarray+comparative+genomic+hybridization+data." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cghscan%3A+finding+variable+regions+using+high-density+microarray+comparative+genomic+hybridization+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cghscan%3A+finding+variable+regions+using+high-density+microarray+comparative+genomic+hybridization+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000737-Conde1" id="pone.0000737-Conde1"></a>Conde L, Montaner D, Burguet-Castell J, Tarraga J, Medina I, et al.  (2007) ISACGH: a web-based environment for the analysis of Array CGH and gene expression which includes functional profiling. Nucl Acids Res  in press:   <ul class="find" data-citedArticleID="977394" data-doi="10.1093/nar/gkm257"><li><a href="http://dx.doi.org/10.1093/nar/gkm257" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ISACGH%3A+a+web-based+environment+for+the+analysis+of+Array+CGH+and+gene+expression+which+includes+functional+profiling." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ISACGH%3A+a+web-based+environment+for+the+analysis+of+Array+CGH+and+gene+expression+which+includes+functional+profiling.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000737-Nannya2" id="pone.0000737-Nannya2"></a>Nannya Y, Sanada M, Nakazaki K, Hosoya N, Wang L, et al.  (2005) A robust algorithm for copy number detection using high-density oligonucleotide single nucleotide polymorphism genotyping arrays. Cancer Res  65: 6071–6079.  <ul class="find" data-citedArticleID="977422" data-doi="10.1158/0008-5472.can-05-0465"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-05-0465" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+robust+algorithm+for+copy+number+detection+using+high-density+oligonucleotide+single+nucleotide+polymorphism+genotyping+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+robust+algorithm+for+copy+number+detection+using+high-density+oligonucleotide+single+nucleotide+polymorphism+genotyping+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000737-Zhao2" id="pone.0000737-Zhao2"></a>Zhao X, Li C, Paez JG, Chin K, Jänne PA, et al.  (2004) An integrated view of copy number and allelic alterations in the cancer genome using single nucleotide polymorphism arrays. Cancer Res  64: 3060–3071.  <ul class="find" data-citedArticleID="977374" data-doi="10.1158/0008-5472.can-03-3308"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-03-3308" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+integrated+view+of+copy+number+and+allelic+alterations+in+the+cancer+genome+using+single+nucleotide+polymorphism+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+integrated+view+of+copy+number+and+allelic+alterations+in+the+cancer+genome+using+single+nucleotide+polymorphism+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000737-Lingjaerde1" id="pone.0000737-Lingjaerde1"></a>Lingjaerde OC, Baumbusch LO, Liestol K, Glad IK, Borresen-Dale AL (2005) Cgh-explorer: a program for analysis of array-cgh data. Bioinformatics  21: 821–822.  <ul class="find" data-citedArticleID="977378" data-doi="10.1093/bioinformatics/bti113"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bti113" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cgh-explorer%3A+a+program+for+analysis+of+array-cgh+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cgh-explorer%3A+a+program+for+analysis+of+array-cgh+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000737-Chen1" id="pone.0000737-Chen1"></a>Chen W, Erdogan F, Ropers HH, Lenzner S, Ullmann R (2005) Cghpro – a comprehensive data analysis tool for array cgh. BMC Bioinformatics  6:   <ul class="find" data-citedArticleID="977406" data-doi="10.1186/1471-2105-6-85"><li><a href="http://dx.doi.org/10.1186/1471-2105-6-85" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cghpro+%E2%80%93+a+comprehensive+data+analysis+tool+for+array+cgh." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cghpro+%E2%80%93+a+comprehensive+data+analysis+tool+for+array+cgh.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000737-Fridlyand1" id="pone.0000737-Fridlyand1"></a>Fridlyand J, Snijders AM, Pinkel D, Albertson DGa (2004) Hidden markov models approach to the analysis of array cgh data. Journal of Multivariate Analysis  90: 132–153.  <ul class="find" data-citedArticleID="977384" data-doi="10.1016/j.jmva.2004.02.008"><li><a href="http://dx.doi.org/10.1016/j.jmva.2004.02.008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Hidden+markov+models+approach+to+the+analysis+of+array+cgh+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Hidden+markov+models+approach+to+the+analysis+of+array+cgh+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000737-Olshen1" id="pone.0000737-Olshen1"></a>Olshen AB, Venkatraman ES, Lucito R, Wigler M (2004) Circular binary segmentation for the analysis of array-based dna copy number data. Biostatistics  5: 557–572.  <ul class="find" data-citedArticleID="977402" data-doi="10.1093/biostatistics/kxh008"><li><a href="http://dx.doi.org/10.1093/biostatistics/kxh008" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Circular+binary+segmentation+for+the+analysis+of+array-based+dna+copy+number+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Circular+binary+segmentation+for+the+analysis+of+array-based+dna+copy+number+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000737-Marioni1" id="pone.0000737-Marioni1"></a>Marioni JC, Thorne NP, Tavaré S (2006) Biohmm: a heterogeneous hidden markov model for segmenting array cgh data. Bioinformatics  22: 1144–1146.  <ul class="find" data-citedArticleID="977348" data-doi="10.1093/bioinformatics/btl089"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl089" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Biohmm%3A+a+heterogeneous+hidden+markov+model+for+segmenting+array+cgh+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Biohmm%3A+a+heterogeneous+hidden+markov+model+for+segmenting+array+cgh+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0000737-Price1" id="pone.0000737-Price1"></a>Price TS, Regan R, Mott R, Hedman A, Honey B, et al.  (2005) Sw-array: a dynamic programming solution for the identification of copy-number changes in genomic dna using array comparative genome hybridization data. Nucleic Acids Res  33: 3455–3464.  <ul class="find" data-citedArticleID="977362" data-doi="10.1093/nar/gki643"><li><a href="http://dx.doi.org/10.1093/nar/gki643" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sw-array%3A+a+dynamic+programming+solution+for+the+identification+of+copy-number+changes+in+genomic+dna+using+array+comparative+genome+hybridization+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sw-array%3A+a+dynamic+programming+solution+for+the+identification+of+copy-number+changes+in+genomic+dna+using+array+comparative+genome+hybridization+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0000737-Hup1" id="pone.0000737-Hup1"></a>Hupé P, Stransky N, Thiery JP, Radvanyi F, Barillot E (2004) Analysis of array cgh data: from signal ratio to gain and loss of dna regions. Bioinformatics  20: 3413–3422.  <ul class="find" data-citedArticleID="977436" data-doi="10.1093/bioinformatics/bth418"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth418" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Analysis+of+array+cgh+data%3A+from+signal+ratio+to+gain+and+loss+of+dna+regions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Analysis+of+array+cgh+data%3A+from+signal+ratio+to+gain+and+loss+of+dna+regions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">44.
+              </span><a name="pone.0000737-Hsu1" id="pone.0000737-Hsu1"></a>Hsu L, Self SG, Grove D, Randolph T, Wang K, et al.  (2005) Denoising array-based comparative genomic hybridization data using wavelets. Biostatistics  6: 211–226.  <ul class="find" data-citedArticleID="977396" data-doi="10.1093/biostatistics/kxi004"><li><a href="http://dx.doi.org/10.1093/biostatistics/kxi004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Denoising+array-based+comparative+genomic+hybridization+data+using+wavelets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Denoising+array-based+comparative+genomic+hybridization+data+using+wavelets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0000737-Picard1" id="pone.0000737-Picard1"></a>Picard F, Robin S, Lavielle M, Vaisse C, Daudin JJ (2005) A statistical approach for array cgh data analysis. BMC Bioinformatics  6: 27.  <ul class="find" data-citedArticleID="977420" data-doi="10.1186/1471-2105-6-27"><li><a href="http://dx.doi.org/10.1186/1471-2105-6-27" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+statistical+approach+for+array+cgh+data+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+statistical+approach+for+array+cgh+data+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0000737-Rueda1" id="pone.0000737-Rueda1"></a>Rueda OM, Diaz-Uriarte R (2007) Flexible and accurate detection of genomic copy-number changes from acgh.  in review.  <ul class="find" data-citedArticleID="977350" data-doi="10.1371/journal.pcbi.0030122.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0030122.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Flexible+and+accurate+detection+of+genomic+copy-number+changes+from+acgh." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Flexible+and+accurate+detection+of+genomic+copy-number+changes+from+acgh.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0000737-Pacheco1" id="pone.0000737-Pacheco1"></a>Pacheco P (1997) Parallel Programming with MPI. San Francisco: Morgan Kaufman.   <ul class="find-nolinks"></ul></li><li><span class="label">48.
+              </span><a name="pone.0000737-Foster1" id="pone.0000737-Foster1"></a>Foster I (1995) Designing and building parallel programs. Boston: Addison Wesley.   <ul class="find-nolinks"></ul></li><li><span class="label">49.
+              </span><a name="pone.0000737-VanRoy1" id="pone.0000737-VanRoy1"></a>Van Roy P, Haridi S (2004) Concepts, techniques, and models of computer programming.   MIT Press.  <ul class="find-nolinks"></ul></li><li><span class="label">50.
+              </span><a name="pone.0000737-Waldo1" id="pone.0000737-Waldo1"></a>Waldo J, Wyant G, Wollrath A, Kendall SC (1997) A note on distributed computing. MOS '96: Selected Presentations and Invited Papers Second International Workshop on Mobile Object Systems - Towards the Programmable Internet. London, UK: Springer-Verlag. pp. 49–64.  <ul class="find-nolinks"></ul></li><li><span class="label">51.
+              </span><a name="pone.0000737-Hughes1" id="pone.0000737-Hughes1"></a>Hughes C, Hughes T (2003) Parallel and distributed programming using C++. Boston: Addison Wesley.   <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.XML" value="86572"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.PDF" value="284003"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g001.PNG_L" value="239866"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g001.PNG_M" value="254899"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g001.PNG_S" value="30509"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g001.TIF" value="723078"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g001.PNG_I" value="78611"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g002.PNG_L" value="84892"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g002.PNG_M" value="202297"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g002.PNG_S" value="42508"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g002.TIF" value="476280"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g002.PNG_I" value="112407"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g003.PNG_L" value="184724"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g003.PNG_M" value="318768"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g003.PNG_S" value="32665"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g003.TIF" value="868766"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g003.PNG_I" value="93065"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g004.PNG_L" value="58536"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g004.PNG_M" value="261141"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g004.PNG_S" value="16861"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g004.TIF" value="255888"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g004.PNG_I" value="40256"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g005.PNG_L" value="247851"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g005.PNG_M" value="291175"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g005.PNG_S" value="17012"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g005.TIF" value="544922"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000737.g005.PNG_I" value="40720"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000737&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000737" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000737&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000737&volume=&issue=&title=ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data&author_name=Ram%C3%B3n%20D%C3%ADaz-Uriarte%2C%20Oscar%20M.%20Rueda&start_page=1&end_page=10" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000737" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737&amp;t=ADaCGH%3A%20A%20Parallelized%20Web-Based%20Application%20and%20R%20Package%20for%20the%20Analysis%20of%20aCGH%20Data" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737&title=ADaCGH%3A%20A%20Parallelized%20Web-Based%20Application%20and%20R%20Package%20for%20the%20Analysis%20of%20aCGH%20Data&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737&amp;title=ADaCGH%3A%20A%20Parallelized%20Web-Based%20Application%20and%20R%20Package%20for%20the%20Analysis%20of%20aCGH%20Data" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000737&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'ADaCGH: A Parallelized Web-Based Application and R Package for the Analysis of aCGH Data';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000737';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20ADaCGH%3A%20A%20Parallelized%20Web-Based%20Application%20and%20R%20Package%20for%20the%20Analysis%20of%20aCGH%20Data http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000737" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000737" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Algorithms%22" title="Search for articles in the subject area:'Algorithms'"><div class="flagText">Algorithms</div></a>
+              <div data-categoryid="32621" data-articleid="24312"
+                   data-categoryname="Algorithms"
+                   class="flagImage" title="Flag 'Algorithms' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Computer+software%22" title="Search for articles in the subject area:'Computer software'"><div class="flagText">Computer software</div></a>
+              <div data-categoryid="2287" data-articleid="24312"
+                   data-categoryname="Computer software"
+                   class="flagImage" title="Flag 'Computer software' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Fault+tolerance%22" title="Search for articles in the subject area:'Fault tolerance'"><div class="flagText">Fault tolerance</div></a>
+              <div data-categoryid="37915" data-articleid="24312"
+                   data-categoryname="Fault tolerance"
+                   class="flagImage" title="Flag 'Fault tolerance' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome+analysis%22" title="Search for articles in the subject area:'Genome analysis'"><div class="flagText">Genome analysis</div></a>
+              <div data-categoryid="40539" data-articleid="24312"
+                   data-categoryname="Genome analysis"
+                   class="flagImage" title="Flag 'Genome analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genomic+databases%22" title="Search for articles in the subject area:'Genomic databases'"><div class="flagText">Genomic databases</div></a>
+              <div data-categoryid="42727" data-articleid="24312"
+                   data-categoryname="Genomic databases"
+                   class="flagImage" title="Flag 'Genomic databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Hidden+Markov+models%22" title="Search for articles in the subject area:'Hidden Markov models'"><div class="flagText">Hidden Markov models</div></a>
+              <div data-categoryid="33299" data-articleid="24312"
+                   data-categoryname="Hidden Markov models"
+                   class="flagImage" title="Flag 'Hidden Markov models' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Source+code%22" title="Search for articles in the subject area:'Source code'"><div class="flagText">Source code</div></a>
+              <div data-categoryid="24111" data-articleid="24312"
+                   data-categoryname="Source code"
+                   class="flagImage" title="Flag 'Source code' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Web-based+applications%22" title="Search for articles in the subject area:'Web-based applications'"><div class="flagText">Web-based applications</div></a>
+              <div data-categoryid="24337" data-articleid="24312"
+                   data-categoryname="Web-based applications"
+                   class="flagImage" title="Flag 'Web-based applications' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9280'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=2322'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=8895&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

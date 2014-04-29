@@ -1,0 +1,871 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Theory versus Data: How to Calculate R0?</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000282"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000282" />
+
+    <meta name="citation_title" content="Theory versus Data: How to Calculate R0?"/>
+    <meta itemprop="name" content="Theory versus Data: How to Calculate R0?"/>
+
+      <meta name="citation_author" content="Romulus Breban"/>
+            <meta name="citation_author_institution" content="The Semel Institute of Neuroscience and Human Behavior, David Geffen School of Medicine at University of California Los Angeles, Los Angeles, California, United States of America"/>
+      <meta name="citation_author" content="Raffaele Vardavas"/>
+            <meta name="citation_author_institution" content="The Semel Institute of Neuroscience and Human Behavior, David Geffen School of Medicine at University of California Los Angeles, Los Angeles, California, United States of America"/>
+      <meta name="citation_author" content="Sally Blower"/>
+            <meta name="citation_author_institution" content="The Semel Institute of Neuroscience and Human Behavior, David Geffen School of Medicine at University of California Los Angeles, Los Angeles, California, United States of America"/>
+
+    <meta name="citation_date" content="2007/3/14"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000282.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e282"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Transmission Dynamics of the Etiological Agent of SARS in Hong Kong: Impact of Public Health Interventions.; citation_author=M Lipsitch; citation_author=T Cohen; citation_author=B Cooper; citation_author=J Robins; citation_author=S Ma; citation_journal_title=Science; citation_volume=300; citation_number=1; citation_pages=1966-1970; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Transmission Dynamics of the Etiological Agent of SARS in Hong Kong: Impact of Public Health Interventions.; citation_author=S Riley; citation_author=C Fraser; citation_author=C Donnelly; citation_author=A Ghani; citation_author=L Abu-Raddad; citation_journal_title=Science; citation_volume=300; citation_number=2; citation_pages=1961-1966; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Could widespread use of combination antiretroviral therapy eradicate HIV epidemics?; citation_author=JX Velasco-Hernandez; citation_author=HB Gershengorn; citation_author=SM Blower; citation_journal_title=The Lancet Infectious Diseases; citation_volume=2; citation_number=3; citation_pages=487-493; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Modeling the emergence of the ‘hot zones’: tuberculosis and the amplification dynamics of drug resistance.; citation_author=S Blower; citation_author=T Chou; citation_journal_title=Nature Medicine; citation_volume=10; citation_number=4; citation_pages=1111-1116; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Emergency response to a smallpox attack: the case for mass vaccination.; citation_author=E Kaplan; citation_author=D Craft; citation_author=L Wein; citation_journal_title=Proceedings of the National Academy of Science U S A; citation_volume=99; citation_number=5; citation_pages=10935-10940; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_author=R Anderson; citation_author=R May; citation_number=6; citation_date=1992; citation_publisher=Oxford University Press; " />
+      <meta name="citation_reference" content="citation_title=Reproduction numbers and subthreshold endemic equilibria for compartmental models of disease transmission.; citation_author=P Van den Driessche; citation_author=J Watmough; citation_journal_title=Mathematical Biosciences; citation_volume=180; citation_number=7; citation_pages=29-48; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Individual-based perspectives on R0.; citation_author=M Keeling; citation_author=G Grenfell; citation_journal_title=Journal of Theoretical Biology; citation_volume=203; citation_number=8; citation_pages=51-61; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Parametrization of individual-based models: Comparisons with deterministic mean-field models.; citation_author=DM Green; citation_author=IZ Kiss; citation_author=RR Kao; citation_journal_title=Journal of Theoretical Biology; citation_volume=239; citation_number=9; citation_pages=289-297; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Linking population-level models with growing networks: a class of epidemic models.; citation_author=R Breban; citation_author=R Vardavas; citation_author=SM Blower; citation_journal_title=Physical Review E; citation_volume=72; citation_number=10; citation_pages=046110; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Comment on ‘Linking population-level models with growing networks: A class of epidemic models’.; citation_author=MCJ Bootsma; citation_author=O Diekmann; citation_journal_title=Physical Review E; citation_volume=74; citation_number=11; citation_pages=018101; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Reply to “Comment on ‘Linking population-level models with growing networks: A class of epidemic models’ ”.; citation_author=R Breban; citation_author=R Vardavas; citation_author=SM Blower; citation_journal_title=Physical Review E; citation_volume=74; citation_number=12; citation_pages=018102; citation_date=2006; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Theory versus Data: How to Calculate R0?"/>
+    <meta name="twitter:description" content="To predict the potential severity of outbreaks of infectious diseases such as SARS, HIV, TB and smallpox, a summary parameter, the basic reproduction number R0, is generally calculated from a population-level model. R0 specifies the average number of secondary infections caused by one infected individual during his/her entire infectious period at the start of an outbreak. R0 is used to assess the severity of the outbreak, as well as the strength of the medical and/or behavioral interventions necessary for control. Conventionally, it is assumed that if R0&gt;1 the outbreak generates an epidemic, and if R0&lt;1 the outbreak becomes extinct. Here, we use computational and analytical methods to calculate the average number of secondary infections and to show that it does not necessarily represent an epidemic threshold parameter (as it has been generally assumed). Previously we have constructed a new type of individual-level model (ILM) and linked it with a population-level model. Our ILM generates the same temporal incidence and prevalence patterns as the population-level model; we use our ILM to directly calculate the average number of secondary infections (i.e., R0). Surprisingly, we find that this value of R0 calculated from the ILM is very different from the epidemic threshold calculated from the population-level model. This occurs because many different individual-level processes can generate the same incidence and prevalence patterns. We show that obtaining R0 from empirical contact tracing data collected by epidemiologists and using this R0 as a threshold parameter for a population-level model could produce extremely misleading estimates of the infectiousness of the pathogen, the severity of an outbreak, and the strength of the medical and/or behavioral interventions necessary for control."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000282.g003"/>
+
+  <meta property="og:title" content="Theory versus Data: How to Calculate R0?" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=3910'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=9843'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=9728&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000282">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000282" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000282&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Theory versus Data: How to Calculate R<sub>0</sub>?
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Romulus Breban
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Romulus Breban, Raffaele Vardavas</p>
+
+              
+              
+
+                <p>Affiliation:
+                  The Semel Institute of Neuroscience and Human Behavior, David Geffen School of Medicine at University of California Los Angeles, Los Angeles, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Raffaele Vardavas
+              <span class="equal-contrib"
+                    title="These authors contributed equally to this work">equal contributor</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+                <p><span class="equal-contrib" title="These authors contributed equally to this work">equal contributor</span>
+                Contributed equally to this work with: Romulus Breban, Raffaele Vardavas</p>
+
+              
+              
+
+                <p>Affiliation:
+                  The Semel Institute of Neuroscience and Human Behavior, David Geffen School of Medicine at University of California Los Angeles, Los Angeles, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Sally Blower
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:sblower@mednet.ucla.edu">sblower@mednet.ucla.edu</a></p>
+
+                <p>Affiliation:
+                  The Semel Institute of Neuroscience and Human Behavior, David Geffen School of Medicine at University of California Los Angeles, Los Angeles, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 14, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000282</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000282-g001" data-doi="info:doi/10.1371/journal.pone.0000282" data-uri="info:doi/10.1371/journal.pone.0000282.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000282-g002" data-doi="info:doi/10.1371/journal.pone.0000282" data-uri="info:doi/10.1371/journal.pone.0000282.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000282-g003" data-doi="info:doi/10.1371/journal.pone.0000282" data-uri="info:doi/10.1371/journal.pone.0000282.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000282">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000282" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>To predict the potential severity of outbreaks of infectious diseases such as SARS, HIV, TB and smallpox, a summary parameter, the basic reproduction number R<sub>0</sub>, is generally calculated from a population-level model. R<sub>0</sub> specifies the average number of secondary infections caused by one infected individual during his/her entire infectious period at the start of an outbreak. R<sub>0</sub> is used to assess the severity of the outbreak, as well as the strength of the medical and/or behavioral interventions necessary for control. Conventionally, it is assumed that if R<sub>0</sub>&gt;1 the outbreak generates an epidemic, and if R<sub>0</sub>&lt;1 the outbreak becomes extinct. Here, we use computational and analytical methods to calculate the average number of secondary infections and to show that it does not necessarily represent an epidemic threshold parameter (as it has been generally assumed). Previously we have constructed a new type of individual-level model (ILM) and linked it with a population-level model. Our ILM generates the same temporal incidence and prevalence patterns as the population-level model; we use our ILM to directly calculate the average number of secondary infections (i.e., R<sub>0</sub>). Surprisingly, we find that this value of R<sub>0</sub> calculated from the ILM is very different from the epidemic threshold calculated from the population-level model. This occurs because many different individual-level processes can generate the same incidence and prevalence patterns. We show that obtaining R<sub>0</sub> from empirical contact tracing data collected by epidemiologists and using this R<sub>0</sub> as a threshold parameter for a population-level model could produce extremely misleading estimates of the infectiousness of the pathogen, the severity of an outbreak, and the strength of the medical and/or behavioral interventions necessary for control.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Breban R, Vardavas R, Blower S (2007) Theory versus Data: How to Calculate R<sub>0</sub>? PLoS ONE 2(3):
+          e282.
+            doi:10.1371/journal.pone.0000282</p><p><strong>Academic Editor: </strong>Matthew Baylis, University of Liverpool, United Kingdom</p><p><strong>Received:</strong> December 15, 2006; <strong>Accepted:</strong> February 9, 2007; <strong>Published:</strong> March 14, 2007</p><p><strong>Copyright:</strong> © 2007 Breban et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The authors gratefully acknowledge financial support from NIH (RO1 AI041935). The funders had no role in the study or in the preparation of the manuscript.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>In Epidemiology, it is essential to quantify the severity of actual (or potential) outbreaks of infectious diseases such as SARS <a href="#pone.0000282-Lipsitch1">[1]</a>, <a href="#pone.0000282-Riley1">[2]</a>, HIV <a href="#pone.0000282-VelascoHernandez1">[3]</a>, TB <a href="#pone.0000282-Blower1">[4]</a>, and smallpox <a href="#pone.0000282-Kaplan1">[5]</a>. The standard procedure is to calculate a parameter called <em>the basic reproduction number</em> (R<sub>0</sub>) that characterizes the potential of an outbreak to cause an epidemic. R<sub>0</sub> has been extensively used to assess transmissibility of pathogens, severity of outbreaks, and epidemiological control <a href="#pone.0000282-Lipsitch1">[1]</a>–<a href="#pone.0000282-Anderson1">[6]</a>. The established definition of R<sub>0</sub>, as phrased by Anderson and May <a href="#pone.0000282-Anderson1">[6]</a>, is “<em>the average number of secondary infections produced when one infected individual is introduced into a host population where everyone is susceptible</em>”. They have stated that “<em>If R<sub>0</sub> is greater than one then the outbreak will lead to an epidemic, and if R<sub>0</sub> is less than one then the outbreak will become extinct</em>” <a href="#pone.0000282-Anderson1">[6]</a>; thus they have assumed that R<sub>0</sub> is a threshold parameter that establishes whether an outbreak yields an epidemic or not. Here we establish that the average number of secondary infections (i.e., R<sub>0</sub>) is not always an epidemic threshold parameter.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Epidemiologists calculate R<sub>0</sub> using individual-level contact tracing data obtained at the onset of the epidemic. Once an individual is diagnosed, his/her contacts are traced and tested. R<sub>0</sub> is then computed by averaging over the number of secondary cases of many diagnosed individuals. This approach is based upon the definition of R<sub>0</sub>, but it does not ensure that the calculated R<sub>0</sub> is also an epidemic threshold parameter.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Another approach (which is more commonly used) is to obtain R<sub>0</sub> from population-level data, namely cumulative incidence data. Making certain individual-level modeling assumptions (e.g., the mass-action principle of infectious spread, time independent infection rates, etc.), theorists construct models (typically) based on Ordinary Differential Equations (ODEs) which describe the dynamics of the expected population size in different disease stages without tracking individuals. It is very important to note that the individual-level modeling assumptions cannot be verified using population-level data (i.e., they remain hypothetical). ODE models are formulated in terms of disease transmissibility and progression rates at the population level. These parameters are obtained by fitting the model to population-level data; their relation to the individual-level processes may be quite complex and is generally unknown. Bifurcation analysis of the ODE model yields a threshold parameter <a href="#pone.0000282-VandenDriessche1">[7]</a> that signals the epidemic as indicated by Anderson and May <a href="#pone.0000282-Anderson1">[6]</a> and is formulated in terms of the population-level parameters. This threshold parameter is not usually checked against the value of R<sub>0</sub> that has been calculated from contact tracing data.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>The individual-level and the population-level approaches may produce very different numbers as the first calculates the value of R<sub>0</sub>, whilst the second calculates the value of a threshold parameter. The question of whether the R<sub>0</sub> obtained by calculating the average number of secondary infections matches the threshold parameter obtained from fitting the epidemiological model to population-level data has been previously studied <a href="#pone.0000282-Keeling1">[8]</a>, <a href="#pone.0000282-Green1">[9]</a>. In these two papers, the authors show that R<sub>0</sub> values obtained from different individual-level models (ILMs) do not necessarily agree with those obtained from mean-field ODE models. However, in order to make this point, the modelers consider that the individual-level transmission dynamics occurs on a <em>social contact network</em> with a structure that is different from the all-to-all network assumed by ODE models. An infected individual can only infect his/her neighbors in the network which represent a small fraction of the total population. Thus, the R<sub>0</sub> mismatch can be attributed to the model mismatch. In contrast, in our ILMs, we preserve the assumption that the contact network is all-to-all. However, our research focuses on the <em>transmission network</em>. This network is embedded in the social contact network and forms in time during disease spreading by tracking who infected whom. We analyze two distinct ways in which the transmission network can be realized and directly compute R<sub>0</sub>. We thus discuss two distinct ILMs whose prevalence and incidence can be described by an ODE model with an established threshold parameter. We calculate their R<sub>0</sub> values through the definition and then compare these values with the epidemic threshold parameter. Our results address the question of whether or not an R<sub>0</sub> (i.e., an average number of secondary infections) can be assigned to an ODE model (which only provides a population-level description of disease propagation) without having any knowledge of the underlying disease transmission network.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>A simple ODE model is the Susceptible-Infected (<em>SI</em>) model given by <em>dS/dt = π-βIS/(S+I)</em> and <em>dI/dt =  βIS/(S+I)-μI</em>, where <em>β</em> and <em>μ</em> are the inflow and, respectively, the outflow of infectious individuals per infectious capita. We apply this model at disease invasion when virtually everyone is susceptible (i.e., <em>S/(S+I)</em> is approximately 1) and obtain <em>dI/dt = βI-μI</em>. The threshold parameter for the reduced model is <em>β/μ</em>; if <em>β/μ</em>&gt;1 an outbreak develops into an epidemic, if <em>β/μ</em>&lt;1 an outbreak goes extinct. It is important to note that <em>β</em> and <em>μ</em> are obtained from fitting the model to population-level data, with no clear association to the causal individual-level processes. An individual-level model that is compatible to these dynamics is a branching process; see <a href="#pone-0000282-g001">Fig. 1</a> and <a href="#pone.0000282.s001">Mathematical Details S1</a>. In this context, <em>β</em> is interpreted as the infection rate of an individual and <em>μ</em> is the recovery rate of an individual. In this branching process, an individual is expected to infect a number of <em>β/μ</em> secondary cases which represents the R<sub>0</sub> of this ILM. In this case, the average number of secondary infections R<sub>0</sub> = <em>β/μ</em> is also a threshold parameter of the population-level dynamics.</p>
+<div class="figure" id="pone-0000282-g001"><div class="img"><a name="pone-0000282-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000282" data-uri="info:doi/10.1371/journal.pone.0000282.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000282.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000282.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Schematics of a branching process.</span></strong></p><a id="article1.body1.sec2.fig1.caption1.p1" name="article1.body1.sec2.fig1.caption1.p1"></a><p>Two generations of infections are shown. Every horizontal bar segment represents the time interval that a specified individual remains infectious; these time intervals follow a negative exponential distribution with average <em>μ<sup>−1</sup></em>. The time intervals between infections for any given individual follow a negative exponential distribution with an average of <em>β<sup>−1</sup></em>.</p>
+<span>doi:10.1371/journal.pone.0000282.g001</span></div><a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>However, the branching process is not the only possible ILM that is compatible with the ODE model. Recently, we have shown that other plausible ILMs can be constructed <a href="#pone.0000282-Breban1">[10]</a> that yield the same ODE dynamics as the <em>SI</em> model at disease invasion. We have constructed a new class of ILMs <a href="#pone.0000282-Breban1">[10]</a>–<a href="#pone.0000282-Breban2">[12]</a>; see <a href="#pone-0000282-g002">Fig. 2</a> and <a href="#pone.0000282.s001">Mathematical Details S1</a>. Since, our example ILM generates the same prevalence and incidence as the <em>SI</em> ODE model (<a href="#pone-0000282-g003">Fig. 3A</a>) then it would be expected, on the basis of conventional wisdom, to generate the same R<sub>0</sub>. Starting from one infected individual, our simulations integrated the ILM and kept track of the number of secondary infections caused by each individual in the infectious and in the recovered pools. The dynamics were integrated to a certain final time and the collected data were stratified over the date of infection. R<sub>0</sub> was calculated using the average number of secondary cases generated by infectious individuals, according to the standard definition of Anderson and May <a href="#pone.0000282-Anderson1">[6]</a>. This procedure ensures that each individual included in the calculation of R<sub>0</sub> is no longer infectious and that there is no right censoring (See <a href="#pone.0000282.s001">Mathematical Details S1</a>). More importantly, it emulates the process of obtaining an R<sub>0</sub> value by real-world contact tracing data.</p>
+<div class="figure" id="pone-0000282-g002"><div class="img"><a name="pone-0000282-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000282" data-uri="info:doi/10.1371/journal.pone.0000282.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000282.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000282.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Schematics of our individual-level model (ILM).</span></strong></p><a id="article1.body1.sec2.fig2.caption1.p1" name="article1.body1.sec2.fig2.caption1.p1"></a><p>The model tracks individuals through growing a transmission network by using infection and removal rules <a href="#pone.0000282-Breban1">[10]</a>. Individuals are represented as the nodes of the network; two individuals a and b are connected by a directed link from b to a if b has infected a. In the Figure, a is a newly infected individual added to the growing transmission network. As an example of an infection rule, a node b is uniformly randomly chosen to be the infectious individual who has infected a. If a removal occurs, an individual c is randomly chosen from the infected group, and is removed. Under the assumption that the number of the secondary infections caused by c is a proxy for the progression of the disease, we choose that the probability that c is removed to be proportional to the number of secondary infections caused by c plus one; i.e., to be proportional to the total number of connections of c. The node c remains connected to the network, but can not cause any new infections; i.e., c becomes the same as node d who previously infected c. The rates of infections and removals per infectious capita are <em>β</em> and <em>μ</em>, respectively. The branching process presented in <a href="#pone-0000282-g001">Fig. 1</a> yields the same expected incidence as our ILM which is given by the <em>SI</em> ODE model.</p>
+<span>doi:10.1371/journal.pone.0000282.g002</span></div><div class="figure" id="pone-0000282-g003"><div class="img"><a name="pone-0000282-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000282" data-uri="info:doi/10.1371/journal.pone.0000282.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000282.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000282.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000282.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000282.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000282.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Comparison plots between our example ILM and branching process.</span></strong></p><a id="article1.body1.sec2.fig3.caption1.p1" name="article1.body1.sec2.fig3.caption1.p1"></a><p>A The average prevalence versus time. The open circles represent results for the branching process while the dots represent results for our ILM. We used <em>β</em>  = 0.015, <em>μ</em>  = 0.01, and we averaged over 1,000 stochastic realizations. On a logarithmic scale, the results fit very well with a straight line, with slope <em>(β−μ)</em> and intercept 0, that corresponds to the ODE solution <em>I(t) = I(</em>0<em>)exp[(β−μ)t]</em>, where <em>I(</em>0<em>) = </em>1. B The average number of secondary infections stratified versus the date of infection. The open circles represent results for the branching process while the dots represent results for our ILM. We used <em>β</em>  = 0.015, <em>μ</em>  = 0.01, and we averaged over 15,000 stochastic realizations. The R<sub>0</sub> of the branching process is 1.5, while the R<sub>0</sub> of our ILM is approximately 1.4.</p>
+<span>doi:10.1371/journal.pone.0000282.g003</span></div></div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>The results (black dots) of the simulation are presented in <a href="#pone-0000282-g003">Fig. 3</a>. For comparison with these results, we present the results (open circles) of a similar simulation for the branching process. The prevalence results for the branching process and the ILM agree very well; see <a href="#pone-0000282-g003">Fig. 3A</a>. For the branching process, R<sub>0</sub> yields the expected value that agrees with the threshold parameter of the <em>SI</em> ODE model; see <a href="#pone-0000282-g003">Fig. 3B</a>. Surprisingly, the graph of R<sub>0</sub> versus the date of infection plateaus at a lower value than that for the branching model. It is thus evident, as supported by our numerics, that two individual-level models having exactly the same expectations of the corresponding population-level variables (i.e., incidence and prevalence) may yield different R<sub>0</sub> values (as given by the definition). In the case of our second ILM (see <a href="#pone-0000282-g002">Fig. 2</a>), R<sub>0</sub> is not the threshold parameter of the <em>SI</em> ODE model.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>Our results have significant consequences for understanding the concept of R<sub>0</sub>. We explicitly show that certain population-level dynamics, theoretically specified by an ODE model, can be the result of many distinct ILMs. We further demonstrate that the R<sub>0</sub> obtained from the ILM, by applying the definition of Anderson and May <a href="#pone.0000282-Anderson1">[6]</a>, may be different from the epidemic threshold parameter provided by the ODE model. Therefore, population-level predictions based upon an ODE model that use the R<sub>0</sub> value found by contact tracing as a threshold parameter may be inaccurate.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>Our novel results have significant implications for understanding the dynamics of outbreaks of infectious diseases, particularly for the biological understanding of the transmission dynamics of the pathogen, estimating the severity of outbreaks, making health policy decisions, and designing epidemic control strategies. We have shown that the value of R<sub>0</sub> may not be an accurate measure of the severity of an outbreak since R<sub>0</sub> may fail to represent an epidemic threshold parameter. Thus, measuring R<sub>0</sub> through contact tracing (as generally occurs during an outbreak investigation), may not help in predicting the severity of the outbreak and may not be a useful measure for determining the strength of the necessary control interventions. Only an epidemic threshold parameter can be used to design control strategies. This parameter can be obtained through fitting an ODE model to population-level data as mentioned above and will signal epidemic growth whether or not it is equal to the average number of secondary infections. However, obtaining an R<sub>0</sub> value via contact tracing can be very useful in conjunction with population-level epidemic data to understand the possible transmission mechanisms of the epidemic at the individual level. We thus suggest that the role of R<sub>0</sub> should be more carefully considered, and that a reevaluation of the role of R<sub>0</sub> may lead to the development of more effective control strategies.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000282"></div><a name="pone.0000282.s001" id="pone.0000282.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000282.s001">Mathematical Details S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Here we give more details and references about the individual-level models presented in the main text. We also briefly discuss how the concept of right censoring manifests in our simulations.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000282.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.05 MB PDF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Virginie Supervie and Justin Okano for stimulating and helpful discussions during the course of this research. We also thank Tiffany Head for assistance with the figures.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Wrote the paper: SB RB RV. Other: Performed computer simulations: RB RV.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000282-Lipsitch1" id="pone.0000282-Lipsitch1"></a>Lipsitch M, Cohen T, Cooper B, Robins J, Ma S, et al.  (2003) Transmission Dynamics of the Etiological Agent of SARS in Hong Kong: Impact of Public Health Interventions. Science  300: 1966–1970.  <ul class="find" data-citedArticleID="936404" data-doi="10.1126/science.1086478"><li><a href="http://dx.doi.org/10.1126/science.1086478" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transmission+Dynamics+of+the+Etiological+Agent+of+SARS+in+Hong+Kong%3A+Impact+of+Public+Health+Interventions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transmission+Dynamics+of+the+Etiological+Agent+of+SARS+in+Hong+Kong%3A+Impact+of+Public+Health+Interventions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000282-Riley1" id="pone.0000282-Riley1"></a>Riley S, Fraser C, Donnelly C, Ghani A, Abu-Raddad L, et al.  (2003) Transmission Dynamics of the Etiological Agent of SARS in Hong Kong: Impact of Public Health Interventions. Science  300: 1961–1966.  <ul class="find" data-citedArticleID="936406" data-doi="10.1126/science.1086478"><li><a href="http://dx.doi.org/10.1126/science.1086478" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Transmission+Dynamics+of+the+Etiological+Agent+of+SARS+in+Hong+Kong%3A+Impact+of+Public+Health+Interventions." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Transmission+Dynamics+of+the+Etiological+Agent+of+SARS+in+Hong+Kong%3A+Impact+of+Public+Health+Interventions.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000282-VelascoHernandez1" id="pone.0000282-VelascoHernandez1"></a>Velasco-Hernandez JX, Gershengorn HB, Blower SM (2002) Could widespread use of combination antiretroviral therapy eradicate HIV epidemics? The Lancet Infectious Diseases  2: 487–493.  <ul class="find" data-citedArticleID="936410" data-doi="10.1016/s1473-3099(02)00346-8"><li><a href="http://dx.doi.org/10.1016/s1473-3099(02)00346-8" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Could+widespread+use+of+combination+antiretroviral+therapy+eradicate+HIV+epidemics%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Could+widespread+use+of+combination+antiretroviral+therapy+eradicate+HIV+epidemics%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000282-Blower1" id="pone.0000282-Blower1"></a>Blower S, Chou T (2004) Modeling the emergence of the ‘hot zones’: tuberculosis and the amplification dynamics of drug resistance. Nature Medicine  10: 1111–1116.  <ul class="find" data-citedArticleID="936390" data-doi="10.1038/nm1102"><li><a href="http://dx.doi.org/10.1038/nm1102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+the+emergence+of+the+%26%23x2018%3Bhot+zones%26%23x2019%3B%3A+tuberculosis+and+the+amplification+dynamics+of+drug+resistance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+the+emergence+of+the+%26%23x2018%3Bhot+zones%26%23x2019%3B%3A+tuberculosis+and+the+amplification+dynamics+of+drug+resistance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000282-Kaplan1" id="pone.0000282-Kaplan1"></a>Kaplan E, Craft D, Wein L (2002) Emergency response to a smallpox attack: the case for mass vaccination. Proceedings of the National Academy of Science U S A  99: 10935–10940.  <ul class="find" data-citedArticleID="936400" data-doi="10.1073/pnas.162282799"><li><a href="http://dx.doi.org/10.1073/pnas.162282799" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Emergency+response+to+a+smallpox+attack%3A+the+case+for+mass+vaccination." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Emergency+response+to+a+smallpox+attack%3A+the+case+for+mass+vaccination.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000282-Anderson1" id="pone.0000282-Anderson1"></a>Anderson R, May R (1992) Infectious Diseases of Humans. Oxford: Oxford University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">7.
+              </span><a name="pone.0000282-VandenDriessche1" id="pone.0000282-VandenDriessche1"></a>Van den Driessche P, Watmough J (2002) Reproduction numbers and subthreshold endemic equilibria for compartmental models of disease transmission. Mathematical Biosciences  180: 29–48.  <ul class="find" data-citedArticleID="936408" data-doi="10.1016/s0025-5564(02)00108-6"><li><a href="http://dx.doi.org/10.1016/s0025-5564(02)00108-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reproduction+numbers+and+subthreshold+endemic+equilibria+for+compartmental+models+of+disease+transmission." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reproduction+numbers+and+subthreshold+endemic+equilibria+for+compartmental+models+of+disease+transmission.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000282-Keeling1" id="pone.0000282-Keeling1"></a>Keeling M, Grenfell G (2000) Individual-based perspectives on R<sub>0</sub>. Journal of Theoretical Biology  203: 51–61.  <ul class="find" data-citedArticleID="936402" data-doi="10.1006/jtbi.1999.1064"><li><a href="http://dx.doi.org/10.1006/jtbi.1999.1064" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Individual-based+perspectives+on+R0." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Individual-based+perspectives+on+R0.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000282-Green1" id="pone.0000282-Green1"></a>Green DM, Kiss IZ, Kao RR (2006) Parametrization of individual-based models: Comparisons with deterministic mean-field models. Journal of Theoretical Biology  239: 289–297.  <ul class="find" data-citedArticleID="936398" data-doi="10.1016/j.jtbi.2005.07.018"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2005.07.018" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Parametrization+of+individual-based+models%3A+Comparisons+with+deterministic+mean-field+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Parametrization+of+individual-based+models%3A+Comparisons+with+deterministic+mean-field+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000282-Breban1" id="pone.0000282-Breban1"></a>Breban R, Vardavas R, Blower SM (2005) Linking population-level models with growing networks: a class of epidemic models. Physical Review E  72: 046110.  <ul class="find" data-citedArticleID="936394" data-doi="10.1103/physreve.72.046110"><li><a href="http://dx.doi.org/10.1103/physreve.72.046110" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Linking+population-level+models+with+growing+networks%3A+a+class+of+epidemic+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Linking+population-level+models+with+growing+networks%3A+a+class+of+epidemic+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000282-Bootsma1" id="pone.0000282-Bootsma1"></a>Bootsma MCJ, Diekmann O (2006) Comment on ‘Linking population-level models with growing networks: A class of epidemic models’. Physical Review E  74: 018101.  <ul class="find" data-citedArticleID="936392" data-doi="10.1103/physreve.74.018101"><li><a href="http://dx.doi.org/10.1103/physreve.74.018101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comment+on+%26%23x2018%3BLinking+population-level+models+with+growing+networks%3A+A+class+of+epidemic+models%26%23x2019%3B." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comment+on+%26%23x2018%3BLinking+population-level+models+with+growing+networks%3A+A+class+of+epidemic+models%26%23x2019%3B.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000282-Breban2" id="pone.0000282-Breban2"></a>Breban R, Vardavas R, Blower SM (2006) Reply to “Comment on ‘Linking population-level models with growing networks: A class of epidemic models’ ”. Physical Review E  74: 018102.  <ul class="find" data-citedArticleID="936396" data-doi="10.1103/physreve.74.018102"><li><a href="http://dx.doi.org/10.1103/physreve.74.018102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reply+to+%26%23x201c%3BComment+on+%26%23x2018%3BLinking+population-level+models+with+growing+networks%3A+A+class+of+epidemic+models%26%23x2019%3B+%26%23x201d%3B." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reply+to+%26%23x201c%3BComment+on+%26%23x2018%3BLinking+population-level+models+with+growing+networks%3A+A+class+of+epidemic+models%26%23x2019%3B+%26%23x201d%3B.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.XML" value="32995"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.PDF" value="106180"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g001.PNG_L" value="67347"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g001.PNG_M" value="10631"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g001.PNG_S" value="1679"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g001.TIF" value="112354"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g001.PNG_I" value="4701"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g002.PNG_L" value="41932"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g002.PNG_M" value="20626"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g002.PNG_S" value="3754"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g002.TIF" value="67622"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g002.PNG_I" value="23847"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g003.PNG_L" value="17359"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g003.PNG_M" value="17777"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g003.PNG_S" value="2600"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g003.TIF" value="33540"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.g003.PNG_I" value="18729"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000282.s001.PDF" value="52534"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000282&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000282" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000282&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000282&volume=&issue=&title=Theory versus Data: How to Calculate R0?&author_name=Romulus%20Breban%2C%20Raffaele%20Vardavas%2C%20Sally%20Blower&start_page=1&end_page=4" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000282" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282&amp;t=Theory%20versus%20Data%3A%20How%20to%20Calculate%20R0%3F" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282&title=Theory%20versus%20Data%3A%20How%20to%20Calculate%20R0%3F&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282&amp;title=Theory%20versus%20Data%3A%20How%20to%20Calculate%20R0%3F" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000282&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Theory versus Data: How to Calculate R0?';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000282';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Theory%20versus%20Data%3A%20How%20to%20Calculate%20R0%3F http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000282" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000282" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Disease+dynamics%22" title="Search for articles in the subject area:'Disease dynamics'"><div class="flagText">Disease dynamics</div></a>
+              <div data-categoryid="17459" data-articleid="23402"
+                   data-categoryname="Disease dynamics"
+                   class="flagImage" title="Flag 'Disease dynamics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Epidemiology%22" title="Search for articles in the subject area:'Epidemiology'"><div class="flagText">Epidemiology</div></a>
+              <div data-categoryid="2355" data-articleid="23402"
+                   data-categoryname="Epidemiology"
+                   class="flagImage" title="Flag 'Epidemiology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22HIV+epidemiology%22" title="Search for articles in the subject area:'HIV epidemiology'"><div class="flagText">HIV epidemiology</div></a>
+              <div data-categoryid="18935" data-articleid="23402"
+                   data-categoryname="HIV epidemiology"
+                   class="flagImage" title="Flag 'HIV epidemiology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Infectious+disease+control%22" title="Search for articles in the subject area:'Infectious disease control'"><div class="flagText">Infectious disease control</div></a>
+              <div data-categoryid="47603" data-articleid="23402"
+                   data-categoryname="Infectious disease control"
+                   class="flagImage" title="Flag 'Infectious disease control' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Infectious+disease+epidemiology%22" title="Search for articles in the subject area:'Infectious disease epidemiology'"><div class="flagText">Infectious disease epidemiology</div></a>
+              <div data-categoryid="17947" data-articleid="23402"
+                   data-categoryname="Infectious disease epidemiology"
+                   class="flagImage" title="Flag 'Infectious disease epidemiology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Infectious+diseases%22" title="Search for articles in the subject area:'Infectious diseases'"><div class="flagText">Infectious diseases</div></a>
+              <div data-categoryid="2603" data-articleid="23402"
+                   data-categoryname="Infectious diseases"
+                   class="flagImage" title="Flag 'Infectious diseases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Pathogens%22" title="Search for articles in the subject area:'Pathogens'"><div class="flagText">Pathogens</div></a>
+              <div data-categoryid="17239" data-articleid="23402"
+                   data-categoryname="Pathogens"
+                   class="flagImage" title="Flag 'Pathogens' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22SARS%22" title="Search for articles in the subject area:'SARS'"><div class="flagText">SARS</div></a>
+              <div data-categoryid="48745" data-articleid="23402"
+                   data-categoryname="SARS"
+                   class="flagImage" title="Flag 'SARS' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9691'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=3368'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=5937&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

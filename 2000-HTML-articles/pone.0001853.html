@@ -1,0 +1,1406 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001853"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001853" />
+
+    <meta name="citation_title" content="Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures"/>
+    <meta itemprop="name" content="Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures"/>
+
+      <meta name="citation_author" content="Claudia Lamina"/>
+            <meta name="citation_author_institution" content="Institute of Epidemiology, Helmholtz Zentrum München – German Research Center for Environmental Health, Neuherberg, Germany"/>
+      <meta name="citation_author" content="Friedhelm Bongardt"/>
+            <meta name="citation_author_institution" content="Institute for Medical Information Processing, Biometry and Epidemiology, Ludwig-Maximilian University, Munich, Germany"/>
+      <meta name="citation_author" content="Helmut Küchenhoff"/>
+            <meta name="citation_author_institution" content="Institute for Statistics, Stablab, Ludwig-Maximilians University, Munich, Germany"/>
+      <meta name="citation_author" content="Iris M. Heid"/>
+            <meta name="citation_author_institution" content="Institute of Epidemiology, Helmholtz Zentrum München – German Research Center for Environmental Health, Neuherberg, Germany"/>
+            <meta name="citation_author_institution" content="Institute for Medical Information Processing, Biometry and Epidemiology, Ludwig-Maximilian University, Munich, Germany"/>
+
+    <meta name="citation_date" content="2008/3/26"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001853.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1853"/>
+    <meta name="citation_issue" content="3"/>
+    <meta name="citation_volume" content="3"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=High-resolution haplotype structure in the human genome.; citation_author=MJ Daly; citation_author=JD Rioux; citation_author=SF Schaffner; citation_author=TJ Hudson; citation_author=ES Lander; citation_journal_title=Nat Genet; citation_volume=29; citation_number=1; citation_pages=229-232; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Haplotype tagging for the identification of common disease genes.; citation_author=GCL Johnson; citation_author=L Esposito; citation_author=BJ Barratt; citation_author=AN Smith; citation_author=J Heward; citation_journal_title=Nature Genetics; citation_volume=29; citation_number=2; citation_pages=233-237; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Haplotypes vs single marker linkage disequilibrium tests: what do we gain?; citation_author=J Akey; citation_author=L Jin; citation_author=M Xiong; citation_journal_title=Eur J Hum Genet; citation_volume=9; citation_number=3; citation_pages=291-300; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The role of haplotypes in candidate gene studies.; citation_author=AG Clark; citation_journal_title=Genet Epidemiol; citation_volume=27; citation_number=4; citation_pages=321-333; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=SNPing away at complex diseases: analysis of single-nucleotide polymorphisms around APOE in Alzheimer disease.; citation_author=ER Martin; citation_author=EH Lai; citation_author=JR Gilbert; citation_author=AR Rogala; citation_author=AJ Afshari; citation_journal_title=Am J Hum Genet; citation_volume=67; citation_number=5; citation_pages=383-394; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=On the advantage of haplotype analysis in the presence of multiple disease susceptibility alleles.; citation_author=RW Morris; citation_author=NL Kaplan; citation_journal_title=Genet Epidemiol; citation_volume=23; citation_number=6; citation_pages=221-233; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Maximum-likelihood estimation of molecular haplotype frequencies in a diploid population.; citation_author=L Excoffier; citation_author=M Slatkin; citation_journal_title=Mol Biol Evol; citation_volume=12; citation_number=7; citation_pages=921-927; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=A new statistical method for haplotype reconstruction from population data.; citation_author=M Stephens; citation_author=NJ Smith; citation_author=P Donnelly; citation_journal_title=Am J Hum Genet; citation_volume=68; citation_number=8; citation_pages=978-989; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=A comparison of bayesian methods for haplotype reconstruction from population genotype data.; citation_author=M Stephens; citation_author=P Donnelly; citation_journal_title=Am J Hum Genet; citation_volume=73; citation_number=9; citation_pages=1162-1169; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Bayesian haplotype inference for multiple linked single-nucleotide polymorphisms.; citation_author=T Niu; citation_author=ZS Qin; citation_author=X Xu; citation_author=JS Liu; citation_journal_title=Am J Hum Genet; citation_volume=70; citation_number=10; citation_pages=157-169; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Comparison of the accuracy of methods of computational haplotype inference using a large empirical dataset.; citation_author=RM Adkins; citation_journal_title=BMC Genet; citation_volume=5; citation_number=11; citation_pages=22; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Comparison of haplotype inference methods using genotypic data from unrelated individuals.; citation_author=H Xu; citation_author=X Wu; citation_author=MR Spitz; citation_author=S Shete; citation_journal_title=Hum Hered; citation_volume=58; citation_number=12; citation_pages=63-68; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Accuracy of haplotype frequency estimation for biallelic loci, via the expectation-maximization algorithm for unphased diploid genotype data.; citation_author=D Fallin; citation_author=NJ Schork; citation_journal_title=Am J Hum Genet; citation_volume=67; citation_number=13; citation_pages=947-959; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_author=RJ Carroll; citation_author=D Ruppert; citation_author=LA Stefanski; citation_number=14; citation_date=2006; citation_publisher=Chapman&Hall; " />
+      <meta name="citation_reference" content="citation_title=Exposure measurement error: Influence on exposure-disease relationships and methods of correction.; citation_author=D Thomas; citation_author=D Stram; citation_author=J Dwyer; citation_journal_title=Annu Rev Public Health; citation_volume=14; citation_number=15; citation_pages=69-93; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Testing association of statistically inferred haplotypes with discrete and continuous traits in samples of unrelated individuals.; citation_author=DV Zaykin; citation_author=PH Westfall; citation_author=SS Young; citation_author=MA Karnoub; citation_author=MJ Wagner; citation_journal_title=Hum Hered; citation_volume=53; citation_number=16; citation_pages=79-91; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Inference on haplotype effects in case-control studies using unphased genotype data.; citation_author=MP Epstein; citation_author=GA Satten; citation_journal_title=Am J Hum Genet; citation_volume=73; citation_number=17; citation_pages=1316-1329; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Analysis of case-control studies of genetic and environmental factors with missing genetic information and haplotype-phase ambiguity.; citation_author=C Spinka; citation_author=RJ Carroll; citation_author=N Chatterjee; citation_journal_title=Genet Epidemiol; citation_volume=29; citation_number=18; citation_pages=108-127; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Score tests for association between traits and haplotypes when linkage phase is ambiguous.; citation_author=DJ Schaid; citation_author=CM Rowland; citation_author=DE Tines; citation_author=RM Jacobson; citation_author=GA Poland; citation_journal_title=Am J Hum Genet; citation_volume=70; citation_number=19; citation_pages=425-434; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Estimation and tests of haplotype-environment interaction when linkage phase is ambiguous.; citation_author=SL Lake; citation_author=H Lyon; citation_author=K Tantisira; citation_author=EK Silverman; citation_author=ST Weiss; citation_journal_title=Hum Hered; citation_volume=55; citation_number=20; citation_pages=56-65; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Likelihood-based inference on haplotype effects in genetic association studies.; citation_author=DY Lin; citation_author=D Zeng; citation_journal_title=J Am Stat Assoc; citation_volume=101; citation_number=21; citation_pages=89-104; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_author=RJA Little; citation_author=DB Rubin; citation_number=22; citation_date=2002; citation_publisher=Wiley; " />
+      <meta name="citation_reference" content="citation_title=A General Method for Dealing with Misclassification in Regression: The Misclassification SIMEX.; citation_author=H Kuchenhoff; citation_author=SM Mwalili; citation_author=E Lesaffre; citation_journal_title=Biometrics; citation_volume=62; citation_number=23; citation_pages=85-96; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A simple correction for multiple testing for single-nucleotide polymorphisms in linkage disequilibrium with each other.; citation_author=DR Nyholt; citation_journal_title=Am J Hum Genet; citation_volume=74; citation_number=24; citation_pages=765-769; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Modeling and E-M estimation of haplotype-specific relative risks from genotype data for a case-control study of unrelated individuals.; citation_author=DO Stram; citation_author=PC Leigh; citation_author=P Bretsky; citation_author=M Freedman; citation_author=JN Hirschhorn; citation_journal_title=Hum Hered; citation_volume=55; citation_number=25; citation_pages=179-190; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=KORA-gen–resource for population genetics, controls and a broad spectrum of disease phenotypes.; citation_author=HE Wichmann; citation_author=C Gieger; citation_author=T Illig; citation_journal_title=Gesundheitswesen; citation_volume=67; citation_number=26; citation_pages=S26-S30; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=The endotoxin receptor TLR4 polymorphism is not associated with diabetes or components of the metabolic syndrome.; citation_author=T Illig; citation_author=F Bongardt; citation_author=A Schopfer; citation_author=R Holle; citation_author=S Muller; citation_journal_title=Diabetes; citation_volume=52; citation_number=27; citation_pages=2861-2864; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Significant association of the interleukin-6 gene polymorphisms C-174G and A-598G with type 2 diabetes.; citation_author=T Illig; citation_author=F Bongardt; citation_author=A Schopfer; citation_author=S Muller-Scholze; citation_author=W Rathmann; citation_journal_title=J Clin Endocrinol Metab; citation_volume=89; citation_number=28; citation_pages=5053-5058; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=A comparison of linkage disequilibrium measures for fine-scale mapping.; citation_author=B Devlin; citation_author=N Risch; citation_journal_title=Genomics; citation_volume=29; citation_number=29; citation_pages=311-322; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Matrix methods for estimating odds ratios with misclassified exposure data: extensions and comparisons.; citation_author=MJ Morrissey; citation_author=D Spiegelman; citation_journal_title=Biometrics; citation_volume=55; citation_number=30; citation_pages=338-344; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Are molecular haplotypes worth the time and expense? A cost-effective method for applying molecular haplotypes.; citation_author=MA Levenstien; citation_author=J Ott; citation_author=D Gordon; citation_journal_title=PLoS Genet; citation_volume=2; citation_number=31; citation_pages=e127; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A method for the assessment of disease associations with single-nucleotide polymorphism haplotypes and environmental variables in case-control studies.; citation_author=LP Zhao; citation_author=SS Li; citation_author=N Khalid; citation_journal_title=Am J Hum Genet; citation_volume=72; citation_number=32; citation_pages=1231-1250; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Genetic architecture of the APM1 gene and its influence on adiponectin plasma levels and parameters of the metabolic syndrome in 1,727 healthy caucasians.; citation_author=IM Heid; citation_author=SA Wagner; citation_author=H Gohlke; citation_author=B Iglseder; citation_author=JC Mueller; citation_journal_title=Diabetes; citation_volume=55; citation_number=33; citation_pages=375-384; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Accounting for haplotype uncertainty in matched association studies: a comparison of simple and flexible techniques.; citation_author=P Kraft; citation_author=DG Cox; citation_author=RA Paynter; citation_author=D Hunter; citation_author=I De Vivo; citation_journal_title=Genet Epidemiol; citation_volume=28; citation_number=34; citation_pages=261-272; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Evaluating associations of haplotypes with traits.; citation_author=DJ Schaid; citation_journal_title=Genet Epidemiol; citation_volume=27; citation_number=35; citation_pages=348-364; citation_date=2004; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures"/>
+    <meta name="twitter:description" content="BackgroundStatistically reconstructing haplotypes from single nucleotide polymorphism (SNP) genotypes, can lead to falsely classified haplotypes. This can be an issue when interpreting haplotype association results or when selecting subjects with certain haplotypes for subsequent functional studies. It was our aim to quantify haplotype reconstruction error and to provide tools for it.Methods and ResultsBy numerous simulation scenarios, we systematically investigated several error measures, including discrepancy, error rate, and R2, and introduced the sensitivity and specificity to this context. We exemplified several measures in the KORA study, a large population-based study from Southern Germany. We find that the specificity is slightly reduced only for common haplotypes, while the sensitivity was decreased for some, but not all rare haplotypes. The overall error rate was generally increasing with increasing number of loci, increasing minor allele frequency of SNPs, decreasing correlation between the alleles and increasing ambiguity.ConclusionsWe conclude that, with the analytical approach presented here, haplotype-specific error measures can be computed to gain insight into the haplotype uncertainty. This method provides the information, if a specific risk haplotype can be expected to be reconstructed with rather no or high misclassification and thus on the magnitude of expected bias in association estimates. We also illustrate that sensitivity and specificity separate two dimensions of the haplotype reconstruction error, which completely describe the misclassification matrix and thus provide the prerequisite for methods accounting for misclassification."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001853.g006"/>
+
+  <meta property="og:title" content="Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=3632'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=1080'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=9162&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001853">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001853" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001853&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Claudia Lamina, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute of Epidemiology, Helmholtz Zentrum München – German Research Center for Environmental Health, Neuherberg, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Friedhelm Bongardt, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute for Medical Information Processing, Biometry and Epidemiology, Ludwig-Maximilian University, Munich, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Helmut Küchenhoff, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Institute for Statistics, Stablab, Ludwig-Maximilians University, Munich, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Iris M. Heid
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">* E-mail:</span> <a href="mailto:heid@helmholtz-muenchen.de">heid@helmholtz-muenchen.de</a></p>
+
+                <p>Affiliations:
+                  Institute of Epidemiology, Helmholtz Zentrum München – German Research Center for Environmental Health, Neuherberg, Germany, 
+                  Institute for Medical Information Processing, Biometry and Epidemiology, Ludwig-Maximilian University, Munich, Germany
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: March 26, 2008</li>
+    <li>DOI: 10.1371/journal.pone.0001853</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001853-t001" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-t002" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-g001" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-t003" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-g002" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-g003" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-t004" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-g004" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-g005" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001853-g006" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001853">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001853" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Statistically reconstructing haplotypes from single nucleotide polymorphism (SNP) genotypes, can lead to falsely classified haplotypes. This can be an issue when interpreting haplotype association results or when selecting subjects with certain haplotypes for subsequent functional studies. It was our aim to quantify haplotype reconstruction error and to provide tools for it.</p>
+
+
+<h3>Methods and Results</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>By numerous simulation scenarios, we systematically investigated several error measures, including discrepancy, error rate, and R<sup>2</sup>, and introduced the sensitivity and specificity to this context. We exemplified several measures in the KORA study, a large population-based study from Southern Germany. We find that the specificity is slightly reduced only for common haplotypes, while the sensitivity was decreased for some, but not all rare haplotypes. The overall error rate was generally increasing with increasing number of loci, increasing minor allele frequency of SNPs, decreasing correlation between the alleles and increasing ambiguity.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>We conclude that, with the analytical approach presented here, haplotype-specific error measures can be computed to gain insight into the haplotype uncertainty. This method provides the information, if a specific risk haplotype can be expected to be reconstructed with rather no or high misclassification and thus on the magnitude of expected bias in association estimates. We also illustrate that sensitivity and specificity separate two dimensions of the haplotype reconstruction error, which completely describe the misclassification matrix and thus provide the prerequisite for methods accounting for misclassification.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Lamina C, Bongardt F, Küchenhoff H, Heid IM (2008) Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures. PLoS ONE 3(3):
+          e1853.
+            doi:10.1371/journal.pone.0001853</p><p><strong>Editor: </strong>Vincent Macaulay, University of Glasgow, United Kingdom</p><p><strong>Received:</strong> October 30, 2007; <strong>Accepted:</strong> January 23, 2008; <strong>Published:</strong> March 26, 2008</p><p><strong>Copyright:</strong> © 2008 Lamina et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This work was supported by the DFG grant within the SFB-386 (‘Analysis of discrete structure’, project B10 ‘Genetic epidemiological methods: Analysis of haplotype risk structure’) and the NGFN grant PDN-S31T10.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Haplotypes have been the subject of considerable attention as they complement the information from the SNP (single nucleotide polymorphism) genotypes. When viewing the nucleotides of the two DNA strands as two long rows of code, we consider haplotypes to summarize the horizontal multi-locus information per strand while genotypes summarize the vertical information on a single locus across the two strands. There are several advantages of haplotypes: In regions of high linkage disequilibrium (LD), haplotype diversity is said to be limited resulting in only a few existing haplotypes and thus a gain in power for the analyses <a href="#pone.0001853-Daly1">[1]</a>, <a href="#pone.0001853-Johnson1">[2]</a>. Multilocus haplotypes may capture the LD information in a gene better than methods based on single loci <a href="#pone.0001853-Akey1">[3]</a>. Furthermore, latent functional loci may be identified by haplotypes as they serve as multiallelic markers. Finally, the haplotype may represent the biologically functional genetic unit rather than the genotypes <a href="#pone.0001853-Clark1">[4]</a>. Haplotypes can thus provide additional information with respect to association analysis and localization of complex disease genes <a href="#pone.0001853-Martin1">[5]</a>, especially in the presence of multiple susceptibility alleles <a href="#pone.0001853-Morris1">[6]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>One draw-back of haplotypes is the fact that experimental derivation of haplotypes is still not practical for the large number of individuals in epidemiological studies, but has to be inferred statistically. The most frequently used methods for haplotype reconstruction are based either on the maximum likelihood-based expectation-maximization (EM) algorithm <a href="#pone.0001853-Excoffier1">[7]</a> or on a Bayesian framework incorporating the coalescent model <a href="#pone.0001853-Stephens1">[8]</a>, <a href="#pone.0001853-Stephens2">[9]</a>. The performance of the various reconstruction methods have already been compared by some groups on real or simulated datasets <a href="#pone.0001853-Stephens1">[8]</a>–<a href="#pone.0001853-Xu1">[12]</a>. PHASE, for example, has been found to outperform other methods, if the data were generated by a coalescent model <a href="#pone.0001853-Stephens1">[8]</a>. But clearly all methods involve a certain amount of error in the reconstructed haplotypes.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Fallin and Schork <a href="#pone.0001853-Fallin1">[13]</a> investigated the haplotype error using the mean squared error (MSE), which was found to increase with increasing minor allele frequency (MAF), decreasing LD and increasing number of loci. However, the MSE summarizes the error in the estimated haplotype frequencies rather than the error in the individuals' haplotypes, which is of interest in haplotype association analyses. One commonly used error measure for the error in the individuals' haplotypes is the error rate of which some authors have described selected aspects <a href="#pone.0001853-Stephens1">[8]</a>, <a href="#pone.0001853-Niu1">[10]</a>–<a href="#pone.0001853-Xu1">[12]</a> . However, a systematic investigation of the error rate is still lacking. Furthermore, researchers are often interested in subjects carrying a specific haplotype and thus rather in the error in assigning this haplotype than in an error measure averaging across all haplotypes. Individual haplotypes are coded as trichotomous variables, which results in a straight-forward 3×3 misclassification problem. In association analysis models, misclassification in independent variables, in this case the haplotypes, are known to yield biased estimates <a href="#pone.0001853-Carroll1">[14]</a>, <a href="#pone.0001853-Thomas1">[15]</a>. The amount of bias depends on the magnitude of the error. If the corresponding 3×3 misclassification matrix is known, it completely describes the error mechanism and can be used for post-hoc adjustment of haplotype association analyses.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>There are methods available, which do not infer individual haplotypes but instead use estimates of the distribution of haplotypes given the observed genotypes to estimate risk parameters within a likelihood framework (<a href="#pone.0001853-Zaykin1">[16]</a>–<a href="#pone.0001853-Lin1">[21]</a>). However, these methods are often limited to specific study types or modelling techniques. Inferred individual haplotypes provide the advantage of being easily adapted into the framework of generalized linear models and can thus be analyzed with standard statistical software. For haplotypes that are fairly well reconstructed, the analysis of inferred haplotypes is unbiased and is more powerful than the analysis based on expected haplotype probabilities <a href="#pone.0001853-Little1">[22]</a>. For haplotypes with higher uncertainty in reconstruction, information of the misclassification probabilities can be used to correct association estimates, for example using the MC-SIMEX method <a href="#pone.0001853-Kuchenhoff1">[23]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>However, downstream association analyses are not the only reason for inferring haplotypes. Haplotypes can also be used to put up phylogenetic trees or for selection of certain subjects in a study. Researchers in the need to select study subjects with specific haplotypes for subsequent in-depth functional studies use the haplotype assignment to individuals and rely on sufficient assignment certainty for subject selection.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>For these reasons we think it is worthwhile to have a closer look at haplotype uncertainty with special emphasis on misclassification probabilities of individually inferred haplotypes.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>Therefore, we aimed at a general understanding of the magnitude of haplotype reconstruction error in a systematic approach by simulations and analytical derivations. We applied various simulation scenarios including scenarios based on realistic haplotype distributions from our epidemiological study at hand. We present a systematic overview of error measures with focus on haplotype-specific error measures posing a classical misclassification problem and present the sensitivity and specificity as two intuitive measures. We outline analytical and simulation approaches to quantify several error measures, describe the size and dependencies of these haplotype errors and show the impact on odds ratio estimates.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>Notation and Definitions</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>Let <em>L</em> be the <em>number of loci</em> and <em>N</em> the <em>number of individuals</em>. For each individual <em>i</em> = 1, …,<em>N</em>, the vector <em>G<sub>i</sub></em> = (<em>G<sub>i1</sub></em>,…,<em>G<sub>iL</sub></em>) denotes the subject's <em>genotypes</em> at the <em>L</em> loci, <em>l</em> = 1, …<em>L</em>, with <em>G<sub>il</sub></em> indicating the number of minor alleles at locus <em>l</em> for individual <em>i</em> and <em>G<sub>il</sub></em>Є{0,1,2}. Consequently, there are 3<em><sup>L</sup></em> possible values γ = (γ<em><sub>1</sub></em>,…,γ<em><sub>L</sub></em>) for <em>G<sub>i</sub></em>. There are <em>M</em> = 2<em><sup>L</sup></em> possible different haplotypes <em>h</em><sub>1</sub>, …, <em>h<sub>M</sub></em> in the population, the haplotypes of subject <em>i</em> can be written as a vector <em>H<sub>i</sub></em> = (<em>H<sub>i1</sub></em>,…,<em>H<sub>iM</sub></em>), with each <em>H<sub>im</sub></em> indicating <em>the true number of copies of the haplotype h<sub>m</sub></em> of subject <em>i</em>, <em>m</em> = 1, …, <em>M</em>, and <em>H<sub>im</sub></em>Є{0,1,2}. Due to the restriction <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e001&amp;representation=PNG" class="inline-graphic"></span> possible values η = (η<sub>1</sub>,…, η<em><sub>M</sub></em>) for <em>H<sub>i</sub></em>. <em>H<sub>i</sub></em> thus denotes the individual's haplotype pair (“diplotype”) and the various η reflect all possible pairs. The number of different pairs actually appearing in a sample is further restricted by the correlation between the alleles at the loci. The effective number of loci, <em>L<sub>eff</sub></em>, can be computed according to Nyholt <a href="#pone.0001853-Nyholt1">[24]</a> taking this correlation into account. Note that the term “allele” and “haplotype” is not used completely consistent in the literature. We define an <em>allele</em> to be one of the different values on one chromosome at a SNP locus and haplotypes to be the combination of the alleles across several loci. The diploid human beings thus exhibit two alleles (at one SNP locus) and two haplotypes (across several SNP loci).</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>When statistically reconstructing haplotypes from genotypes, the <em>reconstructed number of copies of each haplotype</em> in subject <em>i</em> is denoted as <em>H<sub>i</sub>*</em> = (<em>H<sub>i1</sub>*</em>,…,<em>H<sub>iM</sub>*</em>) being the vector of the expected values given the observed genotypes <em>G<sub>i</sub></em> as estimated by a reconstruction program: <em>H<sub>i</sub>*</em> = <em>E</em>(<em>H<sub>i</sub></em>|<em>G<sub>i</sub></em>). As an unambiguous decision for a haplotype pair is not always possible, the <em>H<sub>im</sub>*</em> move in a continuous space, <em>H<sub>im</sub>*</em> Є [0,2]. The <em>most probable or most likely number of haplotypes C<sub>im</sub>*</em> is derived by categorizing <em>H<sub>im</sub>*</em> into the most likely haplotype pair for each individual with <em>C<sub>im</sub>*</em> indicating <em>the observed number of copies of the haplotype h<sub>m</sub></em>, thus returning to the discrete space, <em>C<sub>im</sub>*</em>Є{0,1,2}. They are also often denoted as individually inferred haplotypes.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>Haplotypes can be inferred unambiguously (i.e. without error) for subjects being heterozygous in less than two loci. The <em>ambiguity fraction</em> is the number of subjects being heterozygous for at least two loci, <em>N<sub>amb</sub></em>, divided by <em>N</em>, which thus describes the proportion of the sample where haplotype reconstruction error might occur.</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>The <em>frequencies</em> of the haplotypes <em>h</em><sub>1</sub>,…, <em>h<sub>M</sub></em> in the sample are denoted as <em>f</em> = (<em>f</em><sub>1</sub>,…, <em>f<sub>M</sub></em>) with <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e002&amp;representation=PNG" class="inline-graphic"></span>. The sampling error for estimating the frequency is considered to be ignorable in large enough data sets. Analogously, the <em>frequencies of the reconstructed haplotypes H<sub>i</sub>*</em> are denoted as <em>f*</em> = (<em>f</em><sub>1</sub>*,…,<em>f<sub>M</sub></em>*).</p>
+
+
+<h4>Measures of the haplotype reconstruction error</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>The accuracy of haplotype reconstruction can be measured in different ways for different purposes. We propose a classification based on three characteristics: (1) The uncertainty across all haplotypes (1a, “overall error measure”), versus the error in a specific haplotype (1b, “haplotype-specific error measure”). (2) The uncertainty in a sample statistics (2a, i.e.: haplotype frequencies, <em>f</em>→<em>f*</em>) versus the uncertainty in individuals' haplotypes (2b). (3) To further differentiate 2b: The error made by using the expected number of haplotype copies, <em>H</em>→<em>H*</em> (3a), versus the error made by using the most probable haplotype, <em>H</em>→<em>C*</em> (3b). The measures are defined and related to the above stated classes in the following (for a summary, see <a href="#pone-0001853-t001">Table 1</a>):</p>
+<div class="figure" id="pone-0001853-t001"><div class="img"><a name="pone-0001853-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Classification of measures for the haplotype reconstruction error.</span></strong></p><span>doi:10.1371/journal.pone.0001853.t001</span></div><h5>Discrepancy.</h5><a id="article1.body1.sec2.sec2.sec1.p1" name="article1.body1.sec2.sec2.sec1.p1"></a><p>The discrepancy <em>D</em> is the average of the differences between true and reconstructed haplotype frequencies, providing an “overall measure” of the error <em>f</em>→<em>f</em>* based on the summary statistics <em>f</em> instead of the subjects' haplotypes (<em>class 1a</em>, <em>2a</em>):<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e003&amp;representation=PNG" class="inline-graphic"></span><br>A haplotype-specific discrepancy is given by <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e004&amp;representation=PNG" class="inline-graphic"></span> for <em>m</em> = 1,…, <em>M</em> (<em>class 1b</em>, <em>2a</em>). The discrepancy is close to the mean squared error (MSE) <a href="#pone.0001853-Adkins1">[11]</a>, <a href="#pone.0001853-Fallin1">[13]</a>, which is another way of averaging.</p>
+
+<h5>Error rate.</h5><a id="article1.body1.sec2.sec2.sec2.p1" name="article1.body1.sec2.sec2.sec2.p1"></a><p>The error rate among all individuals,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e005&amp;representation=PNG" class="inline-graphic"></span><br>is the proportion of subjects with falsely classified haplotypes. Another definition is the error rate restricted to the subjects with ambiguous reconstruction, <em>ER<sub>amb</sub></em>, where <em>N<sub>amb</sub></em> replaces the N in the denominator <a href="#pone.0001853-Stephens1">[8]</a>. <em>ER<sub>all</sub></em> and <em>ER<sub>amb</sub></em> are “overall measures” of the error <em>H</em>→<em>C</em>* (<em>class 1a</em>, <em>2b</em>, <em>3b</em>).</p>
+
+<h5>Proportion of explained variance, <em>R<sup>2</sup><sub>m</sub></em>.</h5><a id="article1.body1.sec2.sec2.sec3.p1" name="article1.body1.sec2.sec2.sec3.p1"></a><p><em>R<sub>m</sub><sup>2</sup></em>, defined as the squared correlation between <em>H<sub>im</sub></em> and <em>H<sub>im</sub>*</em> <a href="#pone.0001853-Stram1">[25]</a>, <em>m</em> = 1, …, <em>M</em>, is a haplotype-specific measure for the error <em>H</em>→<em>H*</em> (<em>class 1b</em>, <em>2b</em>, <em>3a</em>). It is computed as the ratio of the haplotype variance explained by the genotypes, Var(<em>H<sub>im</sub></em>*), to the variance of the <em>Bin</em>(2, <em>f<sub>m</sub></em>)-distributed (true haplotype frequency), 2<em>f̂</em> <em><sub>m</sub></em>*(1−<em>f̂</em> <em><sub>m</sub></em>*), assuming no error in the haplotype frequency from reconstruction (<em>f<sub>m</sub></em> = <em>f<sub>m</sub></em>*).</p>
+
+<h5>Sensitivity and specificity.</h5><a id="article1.body1.sec2.sec2.sec4.p1" name="article1.body1.sec2.sec2.sec4.p1"></a><p>In the context of haplotypes, sensitivity and specificity are defined as “the probability that a true carrier of a certain haplotype is classified as such” (<em>sensitivity</em>) and “the probability that a true non-carrier is classified as such” (<em>specificity</em>), respectively, for <em>m</em> = 1, ‥, <em>M</em>,<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e006&amp;representation=PNG" class="inline-graphic"></span><br>Thus, 1−<em>Sn<sub>m</sub></em> and 1−<em>Sp<sub>m</sub></em> measure the “haplotype-specific error” <em>H</em>→<em>C*</em> (<em>1b</em>,<em>2b</em>,<em>3b</em>).</p>
+
+<h5>Misclassification probabilities.</h5><a id="article1.body1.sec2.sec2.sec5.p1" name="article1.body1.sec2.sec2.sec5.p1"></a><p>The error resulting from the transition <em>H</em>→<em>C*</em> is a pure misclassification problem for a trichotomous variable, which is described by a 3×3 misclassification matrix consisting of the misclassification probabilities π<em><sub>kl</sub></em> = <em>P</em>(<em>C<sub>im</sub></em>* = <em>k</em>|<em>H<sub>im</sub></em> = <em>l</em>), <em>k</em>,<em>l</em> = 0,1,2. Assuming no genotyping error, the subjects truly having two copies of a haplotype (true homozygous) as well as subjects with two copies of a haplotype in the reconstruction (observed homozygous) have always homozygous genotypes for all loci. These haplotypes can be reconstructed unambiguously and the misclassification probabilities π<sub>20</sub>, π<em><sub>21</sub></em>, π<em><sub>02</sub></em>, and π<em><sub>12</sub></em> equal zero. The misclassification matrix is then completely determined by sensitivity, specificity and the true haplotype probabilities or the observed haplotype probabilities (see <a href="#pone-0001853-t002">Table 2</a>).</p>
+<div class="figure" id="pone-0001853-t002"><div class="img"><a name="pone-0001853-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Misclassification matrices for haplotype reconstruction error.</span></strong></p><span>doi:10.1371/journal.pone.0001853.t002</span></div>
+
+
+<h4>Data</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>SNP data on numerous genes in a subsample of the population-based KORA study were available as examples. This sample of 704 individuals aged 55 to 74 years was a subset of the fourth survey (S4) of the KORA (Cooperative Research in the Region of Augsburg) study from 1999–2001 <a href="#pone.0001853-Wichmann1">[26]</a>. Genotypes were obtained via mass spectrometry (MALDI-TOF MS). The 8 genes in this investigation had been discussed as possible risk factors for diabetes, but had shown no or only a small association <a href="#pone.0001853-Illig1">[27]</a>, <a href="#pone.0001853-Illig2">[28]</a> : <em>IL-18</em>, <em>IL-13</em>, <em>MIP1A</em> , <em>INS</em>, <em>IL-6</em>, <em>MCP1</em>, <em>TNFA</em>, and <em>CAPN10</em>. We reconstructed haplotypes by the EM algorithm and derived haplotype frequencies. Depending on the gene, 2–7 loci were involved. Additionally, haplotype frequencies were derived by PHASE, but the differences to EM-derived haplotype frequencies were very small and had no impact on our results, and thus results using PHASE-derived input haplotype frequencies are not reported here.</p>
+
+
+<h4>Simulations and analytical approach to quantify haplotype reconstruction error</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>In the simulations, true haplotype frequencies were taken as input parameters. For each simulation run, 1000 haplotypes were randomly drawn given the haplotype frequency distribution thus creating two copies of the haplotypes for 500 subjects assuming Hardy-Weinberg equilibrium. Genotypes were deduced and haplotypes were reconstructed from these genotypes using the EM as well as the PHASE algorithm. The reconstructed haplotypes were compared with the true haplotypes using the various error measures. For 100 simulations, the mean and the standard deviation of the error measures were computed. These mean error measures from the simulations were compared with analytical computations, which we derived (<a href="#pone.0001853.s001">Appendix S1</a>).</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>To derive the true haplotype frequencies as input parameters, different scenarios were implemented for the simulations and the analytical computations:</p>
+<a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p><em><span class="underline">Abstract scenarios</span></em> included three types: (<em>a</em>) A two-locus scenario varying the frequency <em>f<sub>1</sub></em> of haplotype <em>h<sub>1</sub></em>, while two other frequencies <em>f<sub>3</sub></em> and <em>f<sub>4</sub></em> are set at 0.1 and 0.05. (<em>b</em>) Another two-locus scenario varying the MAFs of locus 1 and locus 2, <em>MAF<sub>1</sub></em> and <em>MAF<sub>2</sub></em>, and the correlation r. With <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.e011&amp;representation=PNG" class="inline-graphic"></span> <a href="#pone.0001853-Devlin1">[29]</a>, the haplotype frequencies were derived as <em>f</em><sub>1</sub> = <em>D<sub>LD</sub></em>−<em>MAF</em><sub>1</sub>·<em>MAF</em><sub>2</sub>, <em>f</em><sub>2</sub> = −<em>D<sub>LD</sub></em>+(1−<em>MAF</em><sub>1</sub>)·<em>MAF</em><sub>2</sub>, <em>f</em><sub>3</sub> = −<em>D<sub>LD</sub></em>+<em>MAF</em><sub>1</sub>·(1−<em>MAF</em><sub>2</sub>), and <em>f</em><sub>4</sub> = <em>D<sub>LD</sub></em>−(1−<em>MAF</em><sub>1</sub>)·(1−<em>MAF</em><sub>2</sub>). (<em>c</em>) Various multi-locus scenarios assuming equal MAFs for 3–6 loci under the assumption of <em>r</em> = 0.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p><em><span class="underline">Real data scenarios</span></em> used the sets of haplotype frequencies as they were observed in the KORA data described above.</p>
+
+
+<h4>Impact of haplotype reconstruction error on odds ratio estimates</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>To evaluate the impact of haplotype misclassification on association estimates, we constructed a case-control study with 500 controls and 500 cases, with a given “true” Odds Ratio (OR) and frequency of the risk haplotype assuming a dominant genetic model. With these specifications, a simple 2×2 contingency table can be constructed. Via the matrix method <a href="#pone.0001853-Morrissey1">[30]</a>, we derived an analogous contingency table that could be expected to be observed under the given sensitivity and specificity specifications. From these, we can calculate the “observed” OR and compare it with the given OR.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>Discrepancy</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p><a href="#pone-0001853-g001">Figure 1A</a> illustrates that the discrepancy increases steadily with increasing frequency of one haplotype (other frequencies fixed, <em>abstract scenarios type a</em>) until it reaches a maximum of 0.00917 for <em>f<sub>1</sub></em> = 0.46, and then, for <em>f<sub>1</sub></em>&gt;0.61, it decreases monotonically. The discrepancies in <em>real data scenarios</em> (<a href="#pone-0001853-t003">Table 3</a>) show values below 0.005 indicating an average difference between true and reconstructed haplotype frequencies below 0.5%, except for <em>MCP1</em> and <em>CAPN10</em>. There is a small difference when comparing EM- or PHASE-derived haplotypes yielding a smaller discrepancy using the EM for <em>INS</em> and <em>MCP1</em>, and a smaller discrepancy using PHASE for <em>IL-6</em>.</p>
+<div class="figure" id="pone-0001853-g001"><div class="img"><a name="pone-0001853-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Discrepancy and error rate depending on haplotype frequency:</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>A) Discrepancy (from simulations) and error rate (analytically derived), B) ambiguity fraction and correlation coefficient r (Abstract type a scenarios: two loci varying frequency f<sub>1</sub> of haplotype h<sub>1</sub> = 00 with f<sub>3</sub>  = 0.1 and f<sub>4</sub>  = 0.05 for h<sub>3</sub> = 01 and h<sub>4</sub> = 11).</p>
+<span>doi:10.1371/journal.pone.0001853.g001</span></div><div class="figure" id="pone-0001853-t003"><div class="img"><a name="pone-0001853-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Discrepancy for real data scenarios.</span></strong></p><span>doi:10.1371/journal.pone.0001853.t003</span></div>
+
+<h4>Error rate</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>For the two-locus scenario varying one haplotype frequency (<em>abstract scenarios type a</em>), the error rate (see <a href="#pone-0001853-g001">Figure 1A</a>) reaches a maximum of 0.056 for <em>f<sub>1</sub></em> = 0.57 and is minimal for small <em>f<sub>1</sub></em> or for large <em>f<sub>1</sub></em>. To understand the location of this maximum, the ambiguity and the correlation coefficient <em>r</em> are displayed in <a href="#pone-0001853-g001">Figure 1B</a>: At the maximum, the alleles show zero correlation. It also becomes apparent that the correlation has a stronger influence on the error rate than the ambiguity in this 2-locus case.</p>
+<a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p><a href="#pone-0001853-g002">Figure 2</a> depicts the dependency of the error rate on the MAFs and r (<em>abstract scenario type b</em>): the smaller the MAF, the smaller the error. The error is minimal, when both MAFs are small. This is due to the fact that the ambiguity is smaller for lower MAF as there are fewer genotypes deviating from the wildtype and thus fewer heterozygotes. Furthermore, the error decreases for increasing <em>r</em>. Note that high correlation imposes strong restrictions on the possible MAF combinations, as the MAF of the second locus can only slightly deviate from the MAF of the first locus and thus the parameter space is reduced (<a href="#pone-0001853-g002">Figure 2D</a>). When <em>r</em> = 0, <em>ER<sub>amb</sub></em> is 0.5, which is like flipping a coin (<a href="#pone-0001853-g002">Figure 2A</a>) for assigning haplotypes to ambiguous subjects.</p>
+<div class="figure" id="pone-0001853-g002"><div class="img"><a name="pone-0001853-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Error rate for varying MAF and correlations for two loci:</span></strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>Analytically derived error rate for A) r  =  0, B) r  =  0.25, C) r  =  0.5, D) r  =  0.75 (Abstract type b scenarios)</p>
+<span>doi:10.1371/journal.pone.0001853.g002</span></div><a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>In <a href="#pone-0001853-g003">Figure 3A</a>, which depicts the multi-locus scenarios under no LD (<em>abstract scenarios type c</em>), it can be seen that the error rate increases with the number of loci. This is due to the fact that the probability of a subject being heterozygous in at least two loci increases with the number of loci involved, which is depicted by the increasing ambiguity fraction (<a href="#pone-0001853-g003">Figure 3C</a>). But this is not the sole reason as it can be seen that also <em>ER<sub>amb</sub></em> increases with the number of loci (<a href="#pone-0001853-g003">Figure 3B</a>): The number of haplotypes increases and thus the pool for misclassification enlarges. It can further be seen, that in the case of MAF = 0.5 when all alleles and consequently all haplotypes are equally frequent, the <em>ER<sub>amb</sub></em> is as large as when a die was rolled for haplotype assignment of ambiguous subjects. This is due to the fact that then the haploptype inference is guided by neither the correlation nor the haplotype frequency. When MAF&lt;0.5 and haplotypes occur with different frequencies, the reconstruction can improve by preferring haplotype pairs containing more frequent haplotypes. Note that <a href="#pone-0001853-g003">Figure 3</a> shows a worst-case scenario indicating the maximum possible error due to the no-LD assumption. As it is unreasonable to infer haplotypes in such a situation in the first place, these error rates remain unmatched in real data scenarios. It should further be noted that the error rate derived from simulations instead of using the analytical approach was practically the same, but slightly lower (data not shown).</p>
+<div class="figure" id="pone-0001853-g003"><div class="img"><a name="pone-0001853-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Error rate for varying number of loci and MAF under no correlation:</span></strong></p><a id="article1.body1.sec3.sec2.fig2.caption1.p1" name="article1.body1.sec3.sec2.fig2.caption1.p1"></a><p>A) ER<sub>all</sub> and B) ER<sub>amb</sub> and C) ambiguity analytically derived for abstract type c scenarios (2-6 loci, r = 0, equal MAF at each locus).</p>
+<span>doi:10.1371/journal.pone.0001853.g003</span></div><a id="article1.body1.sec3.sec2.p4" name="article1.body1.sec3.sec2.p4"></a><p><a href="#pone-0001853-t004">Table 4</a> shows that the error rates for real data scenarios vary substantially between genes: The error rate is large for genes with low LD between loci, which are the genes showing a small difference between the number of loci and the effective number of loci (e.g. for <em>MCP1</em>, <em>TNF</em>α, <em>CAPN10</em>). For most genes, the error rate is well below 1%, which indicates that for 99% of the subjects the haplotypes are perfectly reconstructed. In these real data scenarios, the error rate of PHASE-reconstructed haplotypes is very similar to EM-based haplotypes; the analytical approach yields similar results as the simulation approach, but slightly lower.</p>
+<div class="figure" id="pone-0001853-t004"><div class="img"><a name="pone-0001853-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Error rate for real data scenarios.</span></strong></p><span>doi:10.1371/journal.pone.0001853.t004</span></div>
+
+<h4>Haplotype-specific error measures: R<sup>2</sup>, sensitivity and specificity</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>We developed a star plot to summarize the haplotype-specific errors: <a href="#pone-0001853-g004">Figure 4</a> and <a href="#pone-0001853-g005">5</a> show star plots for three selected genes with &lt;5 loci and for the <em>CAPN10</em> gene involving 7 loci (<em>real data scenarios</em>). The measures were derived analytically (<a href="#pone.0001853.s001">Appendix S1</a> and <a href="#pone.0001853.s002">S2</a>), but were very similar in the simulations. Comparing <a href="#pone-0001853-g004">Figure 4</a> with <a href="#pone-0001853-t004">Table 4</a> shows that high R<sup>2</sup> appears together with high sensitivity, and that low error rate occurs with high R<sup>2</sup> and high sensitivity.</p>
+<div class="figure" id="pone-0001853-g004"><div class="img"><a name="pone-0001853-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Haplotype-specific error measures:</span></strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>Star plots for various genes displaying R<sup>2</sup>, sensitivity and specificity (analytically derived) as the length of the line for each common haplotype (frequency <sup>3</sup> 1%). A line reaching the circle indicates a value of 100% (no error). Haplotypes are labelled using 0/1 coding for major/minor allele and stating the haplotype frequency. Lines are sorted clockwise by haplotype frequency beginning at the top with the most frequent haplotype. The angle between lines is given by the number of possible haplotypes, i.e. 360°/2L, where L is the number of loci. The proportion without lines thus indicates the proportion of rare or non-existing haplotypes (&lt;1% frequency).</p>
+<span>doi:10.1371/journal.pone.0001853.g004</span></div><div class="figure" id="pone-0001853-g005"><div class="img"><a name="pone-0001853-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Haplotype-specific error measures:</span></strong></p><a id="article1.body1.sec3.sec3.fig2.caption1.p1" name="article1.body1.sec3.sec3.fig2.caption1.p1"></a><p>Star plots for the <em>CAPN10</em> displaying the R<sup>2</sup>, the sensitivity or the specificity as in <a href="#pone-0001853-g004">Figure 4</a>. The angle between lines is given by 360° divided by the number of frequent haplotypes (frequency <sup>3</sup> 1%) to accommodate for the large number of loci (L = 7).</p>
+<span>doi:10.1371/journal.pone.0001853.g005</span></div><a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>Furthermore, it can be seen that the specificity is reduced rather for common haplotypes (e.g. 98% for haplotype 000 for <em>TNF</em>α, 97% for 0000000 of <em>CAPN10</em>). On the other side, the sensitivity is reduced rather for rare haplotypes (e.g. 101 of <em>MCP1</em>). However, there are also rare haplotypes which show almost perfect sensitivity (e.g. 0010101 for <em>CAPN10</em>).</p>
+
+
+<h4>Impact of haplotype error on Odds Ratio estimates</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p><a href="#pone-0001853-g006">Figure 6</a> illustrates how the observed odds ratio (OR) for a specific risk haplotype decreases with decreasing sensitivity and specificity of reconstructing this risk haplotype, here shown for a given OR of 2 and frequency of risk haplotype of 0.2. Note the different scales for sensitivity and specificity. For example, if the risk haplotype is reconstructed with specificity 0.995 and sensitivity 0.500, an OR of 1.8 will be observed, although the true OR is 2.0. The same bias can be expected for a specificity of 0.960 and sensitivity 0.995. Therefore, only a very small decrease in specificity from 1 can result in the same bias as a high decrease in sensitivity.</p>
+<div class="figure" id="pone-0001853-g006"><div class="img"><a name="pone-0001853-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001853" data-uri="info:doi/10.1371/journal.pone.0001853.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001853.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001853.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001853.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001853.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>Impact of decreased sensitivity and specificity on a true odds ratio of 2.0 for a specific risk haplotype (f<sub>h</sub> = 0.2) in a case-control study (500 cases, 500 controls).</span></strong></p><a id="article1.body1.sec3.sec4.fig1.caption1.p1" name="article1.body1.sec3.sec4.fig1.caption1.p1"></a><p>The shades of grey code for the observed OR with contour lines given for specific observed ORs as derived by the matrix method.</p>
+<span>doi:10.1371/journal.pone.0001853.g006</span></div>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>We provide a classification of the various error measures of haplotype reconstruction error. We introduced sensitivity and specificity well-known from other areas of biomedical research to the context of haplotypes and present an analytical computational approach. We illustrated the quantity of the various error measures and their dependencies upon haplotype frequency, minor allele frequency, correlation, number of loci and ambiguity in a systematic way. Our data emphasize the dependence of the haplotype reconstruction error on the specific situation, the importance of haplotype-specific error measures and the possible impact on association analyses.</p>
+
+<h4>Overall error measure based on haplotype frequencies or on individuals' haplotypes (discrepancy versus error rate)</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>While the discrepancy measures the error in the haplotype frequencies, the error rate depicts the error in the individual's haplotype assignment. Both measures summarize across all the different haplotypes in the sample. Fallin and Schork <a href="#pone.0001853-Fallin1">[13]</a> stated that the discrepancy was small. This is supported by our data, as we observed discrepancies less than 0.005. However, we found that this observation of small discrepancies could not be transferred to individuals' haplotype error, for example the error rate.</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>The overall error rate is the most reported error measure <a href="#pone.0001853-Stephens1">[8]</a>–<a href="#pone.0001853-Xu1">[12]</a> and indicates the percentage of subjects with either of the two haplotypes wrongly assigned. Our data showed that the overall error rate depended heavily on the specific setting: The error rate was generally increasing with decreasing correlation between the alleles and increasing ambiguity fraction. The latter also explains the increasing error rate with increasing number of loci and increasing minor allele frequency due to the enlarging proportion of subjects with ambiguous genotypes (heterozygous genotypes for at least two loci). While the error rate was small - well below 1% - in some real data examples (e.g. <em>IL-18</em>, <em>INS</em>), which indicates that 99% of subjects have perfectly reconstructed haplotypes, it was substantial in others (<em>CAPN10</em>, <em>TNFA</em>) with error rate up to 12%.</p>
+
+
+<h4>Overall or haplotype specific error measures (error rate versus R<sup>2</sup> and misclassification probabilities)</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>The error rate is useful as a measure to summarize across all the different haplotypes in a sample. However, an investigator is usually interested in a specific risk haplotype and in how to interpret this haplotype's association estimate. Then the question arises whether this specific haplotype is reconstructed with great error, and the error rate averaging across all haplotypes is not of much help.</p>
+<a id="article1.body1.sec4.sec2.p2" name="article1.body1.sec4.sec2.p2"></a><p>A known haplotype-specific measure for haplotype reconstruction error is <em>R<sub>m</sub><sup>2</sup></em>, which indicates the proportion of haplotype variance explained by the genotypes. It captures the haplotype-specific error <em>H<sub>m</sub></em>→<em>H<sub>m</sub>*</em>, which is the error from using the individual's expected instead of the true number of copies of a haplotype. This is a very complex error model, as it moves from the discrete space {0,1,2} to the continuous space [0,2] with the distribution of <em>H<sub>m</sub>*</em> being three-modal at 0,1, and 2. This error measure can only be applied when using the expected number of haplotypes <em>H<sub>m</sub>*</em> as explaining variables in the haplotype association analysis.</p>
+<a id="article1.body1.sec4.sec2.p3" name="article1.body1.sec4.sec2.p3"></a><p>An alternative is a haplotype-specific measure for the error <em>H<sub>m</sub></em>→<em>C<sub>m</sub>*</em>, that is the error from using the individual's most likely number of copies of the haplotype instead of the true number of copies. This is an error model from the discrete space {0,1,2} into the discrete space {0,1,2} and thus a classical misclassification problem, which is represented by the 3×3 misclassification matrix. This is very appealing as the full concept of misclassification is then available. When the misclassification matrix is known, methods are available to account for the error, e.g. by means of the matrix method <a href="#pone.0001853-Morrissey1">[30]</a> or the MC-SIMEX <a href="#pone.0001853-Kuchenhoff1">[23]</a>.</p>
+
+
+<h4>Sensitivity and Specificity</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>As new notions of haplotype-specific error measures, we introduced the sensitivity and the specificity to the context of haplotypes and we illustrated that they complemented the R<sup>2</sup> and differentiated between two reasons for haplotype reconstruction error:</p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>Firstly, the specificity is an issue for common haplotypes: If the specificity is reduced, it is reduced rather for a common haplotype (<a href="#pone-0001853-g004">Figure 4</a> and <a href="#pone-0001853-g005">5</a>). This is plausible due to the fact that if any haplotype is misclassified, it is rather misclassified as a common haplotype by pure chance. Therefore, a common haplotype is more likely falsely assigned than a rare haplotype.</p>
+<a id="article1.body1.sec4.sec3.p3" name="article1.body1.sec4.sec3.p3"></a><p>Secondly, the sensitivity is an issue for rare haplotypes: If the sensitivity is reduced, it is reduced more likely for a rare haplotype. For example, the rather low sensitivity of the haplotype 101 of <em>MCP1</em> (<a href="#pone-0001853-g004">Figure 4</a>) was due to the fact, that this haplotype most likely paired with the most common haplotype 000 given Hardy-Weinberg equilibrium (haplotype pair 101/000) and that the alternative haplotype pair 001/100 contained two rather frequent haplotypes (001 and 100 with frequencies 5.4% and 17.5%). Thus, the haplotype pair 101/000 would often be falsely reconstructed as 001/100. Generally speaking, the haplotype pair containing a rare haplotype - and thus the rare haploptype itself - is more likely falsely classified. On the other side, there are also rare haplotypes that are perfectly reconstructed, which occurs when there is no likely alternative haplotype pair. For example, the haplotype 0010101 of <em>CAPN10</em> (<a href="#pone-0001853-g005">Figure 5</a>) showed almost 100% sensitivity: Besides the haplotype pair consisting of this rare haplotype and the most common haplotype, 0010101/0000000, an alternative would have been 0010001/0000100 or 0010000/0000101. However, for both alternatives, none of the two haplotypes did exist with frequency &gt;1%. Thus the probability of such a pair was negligible, the pair 0010101/0000000 was assigned with great certainty, and the rare haplotype 0010101 was very well reconstructed.</p>
+<a id="article1.body1.sec4.sec3.p4" name="article1.body1.sec4.sec3.p4"></a><p>We also illustrated that sensitivity and specificity completely describe the misclassification matrix (<a href="#pone-0001853-t002">Table 2</a>) and thus provide the prerequisite for methods accounting for misclassification.</p>
+
+
+<h4>Impact on Odds Ratio Estimates</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>We elucidated the magnitude of bias for a case-control study assuming a dominant model of the risk haplotype. The OR is substantially biased, if the haplotype is reconstructed with either small sensitivity and a specificity of 1, or a sensitivity of 1 and only a very small deviation with respect to the specificity, or with a reduction of both, sensitivity and specificity. In our real data examples, we observed a somewhat small specificity for the most common haplotype of <em>TNFA</em> and a small sensitivity for the rare <em>MCP1</em> haplotypes (<a href="#pone-0001853-g004">Figure 4</a>). For these haplotypes, one has to think about potentially biased estimates. For all other haplotypes, specificity is 100% and sensitivity so high, that a remarkable bias is not expected. If interest lies in a certain risk haplotype, for example haplotype 0010101 of <em>CAPN10</em> (<a href="#pone-0001853-g005">Figure 5</a>), one does not have to worry about biased estimates since it is reconstructed with certainty although it is rather rare.</p>
+
+
+<h4>Star plot for haplotype-specific error measures</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>The quantity of reconstruction error is hard to predict intuitively as the reconstruction depends on the full constellation of the other haplotypes. To better judge whether the haplotype association estimate is biased due to substantial reconstruction error, looking at the haplotype-specific error measures would greatly enhance the knowledge about the reliability of haplotype association estimates. We have thus developed a graphical tool to comprehensively display the haplotype-specific error measures R<sub>m</sub><sup>2</sup>, sensitivity or specificity, which is available as R-function in <a href="#pone.0001853.s002">Appendix S2</a>.</p>
+
+
+<h4>Computational considerations</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>The analytical derivations of error rate, sensitivity and specificity complement the computational formula of <em>R<sub>m</sub><sup>2</sup></em> <a href="#pone.0001853-Stram1">[25]</a>. The simulations validated the analytical approach also comparing EM- versus PHASE-reconstruction. It should be noted that the error measures in the simulations included the sampling error and were thus slightly higher than the analytically derived measures, but the difference was not substantial due to sufficient sample size. Comparing EM- with the PHASE-reconstruction, we found that both methods worked equally well when applying <em>real data scenarios</em>. The <em>abstract scenarios</em>, while being useful to make extreme examples and to understand mechanisms, included situations such as the no-LD scenario under which no haplotypes should be reconstructed in the first place.</p>
+
+
+<h4>Strengths and Limitations</h4>
+<a id="article1.body1.sec4.sec7.p1" name="article1.body1.sec4.sec7.p1"></a><p>We consider the classification and systematic investigation of error measures a useful guidance for researchers interested in haplotypes and haplotype association estimates. This was strengthened by applying both analytical and simulation approaches for numerous scenarios, by exemplifying the measures to real data and by utilizing the two main reconstruction methods. Finally, this is the first work investigating the sensitivity and specificity of haplotype reconstruction and illustrating their impact on haplotype association analyses.</p>
+<a id="article1.body1.sec4.sec7.p2" name="article1.body1.sec4.sec7.p2"></a><p>It might be considered a limitation that we used reconstructed haplotype frequencies from real data as “true” haplotype frequencies for our <em>real data scenarios</em>. However, this is an excellent procedure to yield near-realistic haplotype distributions; the discrepancy was rather small, so that reconstructed haplotype frequencies could be assumed to approximate the true frequencies fairly well. Due to the lack of a gold standard, we can only provide an estimation of expected haplotype misclassification based on the frequencies of observed haplotypes. Levenstien at al. <a href="#pone.0001853-Levenstien1">[31]</a> presented a method which uses molecular haplotypes on a subset of individuals to estimate haplotype misclassification and account the Likelihood Ratio test for it in the setting of case-control studies. However, due to the absence of high throughput procedures for molecular haplotyping, this method is too time- and money-consuming in most cases. Furthermore, even haplotypes assessed in the laboratory are subject to error and can thus also not be taken as a gold standard procedure.</p>
+<a id="article1.body1.sec4.sec7.p3" name="article1.body1.sec4.sec7.p3"></a><p>It might also be a limitation that we investigated an extensive, but not universal set of scenarios. For example, our scenarios were restricted to haplotypes across 2 to 7 loci, while in practice there are up to 20 loci. The restriction was made for the sake of limiting the complexity, hypothesizing that the general findings can be transferred to longer haplotypes. Finally, we assumed Hardy-Weinberg equilibrium (HWE) for the haplotype pairs and did not evaluate the impact of violation of this assumption as other work has already focused on this issue (e.g. <a href="#pone.0001853-Niu1">[10]</a>).</p>
+<a id="article1.body1.sec4.sec7.p4" name="article1.body1.sec4.sec7.p4"></a><p>It might be argued that inferring individual haplotypes at all is not an appropriate approach and thus there is no reason for looking at haplotype uncertainties. In the light of numerous methods, which have been developed to simultaneously estimate haplotype probabilities together with association estimates, this argument seems to have a big relevance. These methods do not infer individual haplotypes but use the expected values of haplotypes given the observed genotypes in association analysis within a likelihood framework <a href="#pone.0001853-Zaykin1">[16]</a>–<a href="#pone.0001853-Spinka1">[18]</a>, <a href="#pone.0001853-Lake1">[20]</a> or with estimating equations <a href="#pone.0001853-Zhao1">[32]</a>. These approaches involve a very complex error model from the true haplotype as a trichotomous variable into the continuous space of the expected number of haplotype copies. They are often limited to case-control studies, can not incorporate environmental variables or assume additive effects, which is often not the case <a href="#pone.0001853-Heid1">[33]</a>. Individually inferred haplotypes, on the contrary, can easily be incorporated into generalized linear models (GLM), which provides wide flexibility in the modelling of underlying inheritance assumptions, the study type, the type of outcome variable and gene-environment interactions. Due to the ease of computation in each standard statistical software, this method is quite popular in practice. Furthermore, if some haplotypes can be expected to be inferred correctly or with only small error with respect to sensitivity and specificity as in the example of the <em>CAPN10</em> haplotype mentioned, analyses based on individually inferred haplotype are most powerful. However, association estimates can be biased substantially, if high haplotype misclassification is involved <a href="#pone.0001853-Kraft1">[34]</a>, <a href="#pone.0001853-Schaid2">[35]</a>. In these cases, information of the misclassification probabilities can be used to correct association estimates (e.g. using the MC-SIMEX method <a href="#pone.0001853-Kuchenhoff1">[23]</a>) and still stay in the flexible GLM framework.</p>
+
+
+<h4>Summary and Conclusion</h4>
+<a id="article1.body1.sec4.sec8.p1" name="article1.body1.sec4.sec8.p1"></a><p>In this work, we provide a classification and systematic quantification of haplotype reconstruction error measures. Our results underscore the value of haplotype-specific error measures. We introduce the well-known and easily communicated concept of sensitivity and specificity to the context of haplotypes. We provide an analytical computational approach, and a graphical tool for a summary presentation, which allows to routinely quantify sensitivity and specificity next to haplotype frequencies and haplotype association estimates to provide a sense of certainty into the haplotype reconstruction, especially if interest lies in one specific risk haplotype.</p>
+<a id="article1.body1.sec4.sec8.p2" name="article1.body1.sec4.sec8.p2"></a><p>This has the advantage that then the misclassification matrix is known thus providing the necessary prerequisite for methods to account for misclassification for example via the Matrix Method or the MC-SIMEX. We conclude that haplotype association analyses can greatly benefit from quantifying haplotype-specific error on a routine basis.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001853"></div><a name="pone.0001853.s001" id="pone.0001853.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001853.s001">Appendix S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Analytical approach to quantify the error rate, sensitivity and specificity</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001853.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.12 MB DOC)</p>
+<a name="pone.0001853.s002" id="pone.0001853.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001853.s002">Appendix S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Function ‘Sensitivity’ calculates sensitivity, specificity and efficiency for each haplotype and Function ‘Starplot’ draws sensitivity, specificity or R-square-values for each haplotype (R-programs)</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001853.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.01 MB TXT)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank the KORA group for providing the study data, Prof. Dr. Dr. H.-E. Wichmann and T. Illig from the GSF-Institute of Epidemiology and Prof. Dr. F. Kronenberg from the Medical University Innsbruck, Division of Genetic Epidemiology for the SNP data and the support in the grant application.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: IH HK. Performed the experiments: CL FB. Analyzed the data: CL FB. Contributed reagents/materials/analysis tools: IH. Wrote the paper: IH CL. Other: Consulted in methodology and manuscript writing: HK. Wrote the grant for research position: IH.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001853-Daly1" id="pone.0001853-Daly1"></a>Daly MJ, Rioux JD, Schaffner SF, Hudson TJ, Lander ES (2001) High-resolution haplotype structure in the human genome. Nat Genet  29: 229–232.  <ul class="find" data-citedArticleID="1079602" data-doi="10.1038/ng1001-229"><li><a href="http://dx.doi.org/10.1038/ng1001-229" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=High-resolution+haplotype+structure+in+the+human+genome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22High-resolution+haplotype+structure+in+the+human+genome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001853-Johnson1" id="pone.0001853-Johnson1"></a>Johnson GCL, Esposito L, Barratt BJ, Smith AN, Heward J, et al.  (2001) Haplotype tagging for the identification of common disease genes. Nature Genetics  29: 233–237.  <ul class="find" data-citedArticleID="1079618"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Haplotype+tagging+for+the+identification+of+common+disease+genes.&amp;auth=&amp;atitle=Haplotype+tagging+for+the+identification+of+common+disease+genes." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Haplotype+tagging+for+the+identification+of+common+disease+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Haplotype+tagging+for+the+identification+of+common+disease+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001853-Akey1" id="pone.0001853-Akey1"></a>Akey J, Jin L, Xiong M (2001) Haplotypes vs single marker linkage disequilibrium tests: what do we gain? Eur J Hum Genet  9: 291–300.  <ul class="find" data-citedArticleID="1079596" data-doi="10.1038/sj.ejhg.5200619"><li><a href="http://dx.doi.org/10.1038/sj.ejhg.5200619" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Haplotypes+vs+single+marker+linkage+disequilibrium+tests%3A+what+do+we+gain%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Haplotypes+vs+single+marker+linkage+disequilibrium+tests%3A+what+do+we+gain%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0001853-Clark1" id="pone.0001853-Clark1"></a>Clark AG (2004) The role of haplotypes in candidate gene studies. Genet Epidemiol  27: 321–333.  <ul class="find" data-citedArticleID="1079600" data-doi="10.1002/gepi.20025"><li><a href="http://dx.doi.org/10.1002/gepi.20025" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+role+of+haplotypes+in+candidate+gene+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+role+of+haplotypes+in+candidate+gene+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001853-Martin1" id="pone.0001853-Martin1"></a>Martin ER, Lai EH, Gilbert JR, Rogala AR, Afshari AJ, et al.  (2000) SNPing away at complex diseases: analysis of single-nucleotide polymorphisms around APOE in Alzheimer disease. Am J Hum Genet  67: 383–394.  <ul class="find" data-citedArticleID="1079632" data-doi="10.1086/303003"><li><a href="http://dx.doi.org/10.1086/303003" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SNPing+away+at+complex+diseases%3A+analysis+of+single-nucleotide+polymorphisms+around+APOE+in+Alzheimer+disease." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SNPing+away+at+complex+diseases%3A+analysis+of+single-nucleotide+polymorphisms+around+APOE+in+Alzheimer+disease.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001853-Morris1" id="pone.0001853-Morris1"></a>Morris RW, Kaplan NL (2002) On the advantage of haplotype analysis in the presence of multiple disease susceptibility alleles. Genet Epidemiol  23: 221–233.  <ul class="find" data-citedArticleID="1079634" data-doi="10.1002/gepi.10200"><li><a href="http://dx.doi.org/10.1002/gepi.10200" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+the+advantage+of+haplotype+analysis+in+the+presence+of+multiple+disease+susceptibility+alleles." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+the+advantage+of+haplotype+analysis+in+the+presence+of+multiple+disease+susceptibility+alleles.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001853-Excoffier1" id="pone.0001853-Excoffier1"></a>Excoffier L, Slatkin M (1995) Maximum-likelihood estimation of molecular haplotype frequencies in a diploid population. Mol Biol Evol  12: 921–927.  <ul class="find" data-citedArticleID="1079608"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Maximum-likelihood+estimation+of+molecular+haplotype+frequencies+in+a+diploid+population.&amp;auth=&amp;atitle=Maximum-likelihood+estimation+of+molecular+haplotype+frequencies+in+a+diploid+population." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Maximum-likelihood+estimation+of+molecular+haplotype+frequencies+in+a+diploid+population." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Maximum-likelihood+estimation+of+molecular+haplotype+frequencies+in+a+diploid+population.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001853-Stephens1" id="pone.0001853-Stephens1"></a>Stephens M, Smith NJ, Donnelly P (2001) A new statistical method for haplotype reconstruction from population data. Am J Hum Genet  68: 978–989.  <ul class="find" data-citedArticleID="1079648" data-doi="10.1086/319501"><li><a href="http://dx.doi.org/10.1086/319501" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+new+statistical+method+for+haplotype+reconstruction+from+population+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+new+statistical+method+for+haplotype+reconstruction+from+population+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001853-Stephens2" id="pone.0001853-Stephens2"></a>Stephens M, Donnelly P (2003) A comparison of bayesian methods for haplotype reconstruction from population genotype data. Am J Hum Genet  73: 1162–1169.  <ul class="find" data-citedArticleID="1079650" data-doi="10.1086/379378"><li><a href="http://dx.doi.org/10.1086/379378" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comparison+of+bayesian+methods+for+haplotype+reconstruction+from+population+genotype+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comparison+of+bayesian+methods+for+haplotype+reconstruction+from+population+genotype+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001853-Niu1" id="pone.0001853-Niu1"></a>Niu T, Qin ZS, Xu X, Liu JS (2002) Bayesian haplotype inference for multiple linked single-nucleotide polymorphisms. Am J Hum Genet  70: 157–169.  <ul class="find" data-citedArticleID="1079638" data-doi="10.1086/338446"><li><a href="http://dx.doi.org/10.1086/338446" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Bayesian+haplotype+inference+for+multiple+linked+single-nucleotide+polymorphisms." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Bayesian+haplotype+inference+for+multiple+linked+single-nucleotide+polymorphisms.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001853-Adkins1" id="pone.0001853-Adkins1"></a>Adkins RM (2004) Comparison of the accuracy of methods of computational haplotype inference using a large empirical dataset. BMC Genet  5: 22.  <ul class="find" data-citedArticleID="1079594"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Comparison+of+the+accuracy+of+methods+of+computational+haplotype+inference+using+a+large+empirical+dataset.&amp;auth=&amp;atitle=Comparison+of+the+accuracy+of+methods+of+computational+haplotype+inference+using+a+large+empirical+dataset." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparison+of+the+accuracy+of+methods+of+computational+haplotype+inference+using+a+large+empirical+dataset." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparison+of+the+accuracy+of+methods+of+computational+haplotype+inference+using+a+large+empirical+dataset.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001853-Xu1" id="pone.0001853-Xu1"></a>Xu H, Wu X, Spitz MR, Shete S (2004) Comparison of haplotype inference methods using genotypic data from unrelated individuals. Hum Hered  58: 63–68.  <ul class="find" data-citedArticleID="1079658" data-doi="10.1159/000083026"><li><a href="http://dx.doi.org/10.1159/000083026" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparison+of+haplotype+inference+methods+using+genotypic+data+from+unrelated+individuals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparison+of+haplotype+inference+methods+using+genotypic+data+from+unrelated+individuals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001853-Fallin1" id="pone.0001853-Fallin1"></a>Fallin D, Schork NJ (2000) Accuracy of haplotype frequency estimation for biallelic loci, via the expectation-maximization algorithm for unphased diploid genotype data. Am J Hum Genet  67: 947–959.  <ul class="find" data-citedArticleID="1079610" data-doi="10.1086/303069"><li><a href="http://dx.doi.org/10.1086/303069" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Accuracy+of+haplotype+frequency+estimation+for+biallelic+loci%2C+via+the+expectation-maximization+algorithm+for+unphased+diploid+genotype+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Accuracy+of+haplotype+frequency+estimation+for+biallelic+loci%2C+via+the+expectation-maximization+algorithm+for+unphased+diploid+genotype+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001853-Carroll1" id="pone.0001853-Carroll1"></a>Carroll RJ, Ruppert D, Stefanski LA (2006) Measurement Error in Nonlinear Models. Chapman&amp;Hall.   <ul class="find-nolinks"></ul></li><li><span class="label">15.
+              </span><a name="pone.0001853-Thomas1" id="pone.0001853-Thomas1"></a>Thomas D, Stram D, Dwyer J (1993) Exposure measurement error: Influence on exposure-disease relationships and methods of correction. Annu Rev Public Health  14: 69–93.  <ul class="find" data-citedArticleID="1079654" data-doi="10.1146/annurev.pu.14.050193.000441"><li><a href="http://dx.doi.org/10.1146/annurev.pu.14.050193.000441" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Exposure+measurement+error%3A+Influence+on+exposure-disease+relationships+and+methods+of+correction." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Exposure+measurement+error%3A+Influence+on+exposure-disease+relationships+and+methods+of+correction.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001853-Zaykin1" id="pone.0001853-Zaykin1"></a>Zaykin DV, Westfall PH, Young SS, Karnoub MA, Wagner MJ, et al.  (2002) Testing association of statistically inferred haplotypes with discrete and continuous traits in samples of unrelated individuals. Hum Hered  53: 79–91.  <ul class="find" data-citedArticleID="1079660" data-doi="10.1159/000057986"><li><a href="http://dx.doi.org/10.1159/000057986" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Testing+association+of+statistically+inferred+haplotypes+with+discrete+and+continuous+traits+in+samples+of+unrelated+individuals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Testing+association+of+statistically+inferred+haplotypes+with+discrete+and+continuous+traits+in+samples+of+unrelated+individuals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001853-Epstein1" id="pone.0001853-Epstein1"></a>Epstein MP, Satten GA (2003) Inference on haplotype effects in case-control studies using unphased genotype data. Am J Hum Genet  73: 1316–1329.  <ul class="find" data-citedArticleID="1079606" data-doi="10.1086/380204"><li><a href="http://dx.doi.org/10.1086/380204" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inference+on+haplotype+effects+in+case-control+studies+using+unphased+genotype+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inference+on+haplotype+effects+in+case-control+studies+using+unphased+genotype+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001853-Spinka1" id="pone.0001853-Spinka1"></a>Spinka C, Carroll RJ, Chatterjee N (2005) Analysis of case-control studies of genetic and environmental factors with missing genetic information and haplotype-phase ambiguity. Genet Epidemiol  29: 108–127.  <ul class="find" data-citedArticleID="1079646" data-doi="10.1002/gepi.20085"><li><a href="http://dx.doi.org/10.1002/gepi.20085" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Analysis+of+case-control+studies+of+genetic+and+environmental+factors+with+missing+genetic+information+and+haplotype-phase+ambiguity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Analysis+of+case-control+studies+of+genetic+and+environmental+factors+with+missing+genetic+information+and+haplotype-phase+ambiguity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001853-Schaid1" id="pone.0001853-Schaid1"></a>Schaid DJ, Rowland CM, Tines DE, Jacobson RM, Poland GA (2002) Score tests for association between traits and haplotypes when linkage phase is ambiguous. Am J Hum Genet  70: 425–434.  <ul class="find" data-citedArticleID="1079642" data-doi="10.1086/338688"><li><a href="http://dx.doi.org/10.1086/338688" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Score+tests+for+association+between+traits+and+haplotypes+when+linkage+phase+is+ambiguous." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Score+tests+for+association+between+traits+and+haplotypes+when+linkage+phase+is+ambiguous.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001853-Lake1" id="pone.0001853-Lake1"></a>Lake SL, Lyon H, Tantisira K, Silverman EK, Weiss ST, et al.  (2003) Estimation and tests of haplotype-environment interaction when linkage phase is ambiguous. Hum Hered  55: 56–65.  <ul class="find" data-citedArticleID="1079624" data-doi="10.1159/000071811"><li><a href="http://dx.doi.org/10.1159/000071811" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Estimation+and+tests+of+haplotype-environment+interaction+when+linkage+phase+is+ambiguous." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Estimation+and+tests+of+haplotype-environment+interaction+when+linkage+phase+is+ambiguous.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001853-Lin1" id="pone.0001853-Lin1"></a>Lin DY, Zeng D (2006) Likelihood-based inference on haplotype effects in genetic association studies. J Am Stat Assoc  101: 89–104.  <ul class="find" data-citedArticleID="1079628" data-doi="10.1198/016214505000000808"><li><a href="http://dx.doi.org/10.1198/016214505000000808" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Likelihood-based+inference+on+haplotype+effects+in+genetic+association+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Likelihood-based+inference+on+haplotype+effects+in+genetic+association+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001853-Little1" id="pone.0001853-Little1"></a>Little RJA, Rubin DB (2002) Statistical Analysis with Missing Data. Wiley.   <ul class="find-nolinks"></ul></li><li><span class="label">23.
+              </span><a name="pone.0001853-Kuchenhoff1" id="pone.0001853-Kuchenhoff1"></a>Kuchenhoff H, Mwalili SM, Lesaffre E (2006) A General Method for Dealing with Misclassification in Regression: The Misclassification SIMEX. Biometrics  62: 85–96.  <ul class="find" data-citedArticleID="1079622" data-doi="10.1111/j.1541-0420.2005.00396.x"><li><a href="http://dx.doi.org/10.1111/j.1541-0420.2005.00396.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+General+Method+for+Dealing+with+Misclassification+in+Regression%3A+The+Misclassification+SIMEX." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+General+Method+for+Dealing+with+Misclassification+in+Regression%3A+The+Misclassification+SIMEX.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0001853-Nyholt1" id="pone.0001853-Nyholt1"></a>Nyholt DR (2004) A simple correction for multiple testing for single-nucleotide polymorphisms in linkage disequilibrium with each other. Am J Hum Genet  74: 765–769.  <ul class="find" data-citedArticleID="1079640" data-doi="10.1086/383251"><li><a href="http://dx.doi.org/10.1086/383251" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+simple+correction+for+multiple+testing+for+single-nucleotide+polymorphisms+in+linkage+disequilibrium+with+each+other." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+simple+correction+for+multiple+testing+for+single-nucleotide+polymorphisms+in+linkage+disequilibrium+with+each+other.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001853-Stram1" id="pone.0001853-Stram1"></a>Stram DO, Leigh PC, Bretsky P, Freedman M, Hirschhorn JN, et al.  (2003) Modeling and E-M estimation of haplotype-specific relative risks from genotype data for a case-control study of unrelated individuals. Hum Hered  55: 179–190.  <ul class="find" data-citedArticleID="1079652" data-doi="10.1159/000073202"><li><a href="http://dx.doi.org/10.1159/000073202" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+and+E-M+estimation+of+haplotype-specific+relative+risks+from+genotype+data+for+a+case-control+study+of+unrelated+individuals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+and+E-M+estimation+of+haplotype-specific+relative+risks+from+genotype+data+for+a+case-control+study+of+unrelated+individuals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001853-Wichmann1" id="pone.0001853-Wichmann1"></a>Wichmann HE, Gieger C, Illig T (2005) KORA-gen–resource for population genetics, controls and a broad spectrum of disease phenotypes. Gesundheitswesen  67: Suppl 1S26–S30.  <ul class="find" data-citedArticleID="1079656" data-doi="10.1055/s-2005-858226"><li><a href="http://dx.doi.org/10.1055/s-2005-858226" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=KORA-gen%E2%80%93resource+for+population+genetics%2C+controls+and+a+broad+spectrum+of+disease+phenotypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22KORA-gen%E2%80%93resource+for+population+genetics%2C+controls+and+a+broad+spectrum+of+disease+phenotypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0001853-Illig1" id="pone.0001853-Illig1"></a>Illig T, Bongardt F, Schopfer A, Holle R, Muller S, et al.  (2003) The endotoxin receptor TLR4 polymorphism is not associated with diabetes or components of the metabolic syndrome. Diabetes  52: 2861–2864.  <ul class="find" data-citedArticleID="1079614" data-doi="10.2337/diabetes.52.11.2861"><li><a href="http://dx.doi.org/10.2337/diabetes.52.11.2861" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+endotoxin+receptor+TLR4+polymorphism+is+not+associated+with+diabetes+or+components+of+the+metabolic+syndrome." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+endotoxin+receptor+TLR4+polymorphism+is+not+associated+with+diabetes+or+components+of+the+metabolic+syndrome.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001853-Illig2" id="pone.0001853-Illig2"></a>Illig T, Bongardt F, Schopfer A, Muller-Scholze S, Rathmann W, et al.  (2004) Significant association of the interleukin-6 gene polymorphisms C-174G and A-598G with type 2 diabetes. J Clin Endocrinol Metab  89: 5053–5058.  <ul class="find" data-citedArticleID="1079616" data-doi="10.1210/jc.2004-0355"><li><a href="http://dx.doi.org/10.1210/jc.2004-0355" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Significant+association+of+the+interleukin-6+gene+polymorphisms+C-174G+and+A-598G+with+type+2+diabetes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Significant+association+of+the+interleukin-6+gene+polymorphisms+C-174G+and+A-598G+with+type+2+diabetes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0001853-Devlin1" id="pone.0001853-Devlin1"></a>Devlin B, Risch N (1995) A comparison of linkage disequilibrium measures for fine-scale mapping. Genomics  29: 311–322.  <ul class="find" data-citedArticleID="1079604" data-doi="10.1006/geno.1995.9003"><li><a href="http://dx.doi.org/10.1006/geno.1995.9003" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comparison+of+linkage+disequilibrium+measures+for+fine-scale+mapping." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comparison+of+linkage+disequilibrium+measures+for+fine-scale+mapping.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0001853-Morrissey1" id="pone.0001853-Morrissey1"></a>Morrissey MJ, Spiegelman D (1999) Matrix methods for estimating odds ratios with misclassified exposure data: extensions and comparisons. Biometrics  55: 338–344.  <ul class="find" data-citedArticleID="1079636" data-doi="10.1111/j.0006-341x.1999.00338.x"><li><a href="http://dx.doi.org/10.1111/j.0006-341x.1999.00338.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Matrix+methods+for+estimating+odds+ratios+with+misclassified+exposure+data%3A+extensions+and+comparisons." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Matrix+methods+for+estimating+odds+ratios+with+misclassified+exposure+data%3A+extensions+and+comparisons.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0001853-Levenstien1" id="pone.0001853-Levenstien1"></a>Levenstien MA, Ott J, Gordon D (2006) Are molecular haplotypes worth the time and expense? A cost-effective method for applying molecular haplotypes. PLoS Genet  2: e127.  <ul class="find" data-citedArticleID="1079626" data-doi="10.1371/journal.pgen.0020127"><li><a href="http://dx.doi.org/10.1371/journal.pgen.0020127" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Are+molecular+haplotypes+worth+the+time+and+expense%3F+A+cost-effective+method+for+applying+molecular+haplotypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Are+molecular+haplotypes+worth+the+time+and+expense%3F+A+cost-effective+method+for+applying+molecular+haplotypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0001853-Zhao1" id="pone.0001853-Zhao1"></a>Zhao LP, Li SS, Khalid N (2003) A method for the assessment of disease associations with single-nucleotide polymorphism haplotypes and environmental variables in case-control studies. Am J Hum Genet  72: 1231–1250.  <ul class="find" data-citedArticleID="1079662" data-doi="10.1086/375140"><li><a href="http://dx.doi.org/10.1086/375140" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+method+for+the+assessment+of+disease+associations+with+single-nucleotide+polymorphism+haplotypes+and+environmental+variables+in+case-control+studies." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+method+for+the+assessment+of+disease+associations+with+single-nucleotide+polymorphism+haplotypes+and+environmental+variables+in+case-control+studies.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0001853-Heid1" id="pone.0001853-Heid1"></a>Heid IM, Wagner SA, Gohlke H, Iglseder B, Mueller JC, et al.  (2006) Genetic architecture of the APM1 gene and its influence on adiponectin plasma levels and parameters of the metabolic syndrome in 1,727 healthy caucasians. Diabetes  55: 375–384.  <ul class="find" data-citedArticleID="1079612" data-doi="10.2337/diabetes.55.02.06.db05-0747"><li><a href="http://dx.doi.org/10.2337/diabetes.55.02.06.db05-0747" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genetic+architecture+of+the+APM1+gene+and+its+influence+on+adiponectin+plasma+levels+and+parameters+of+the+metabolic+syndrome+in+1%2C727+healthy+caucasians." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genetic+architecture+of+the+APM1+gene+and+its+influence+on+adiponectin+plasma+levels+and+parameters+of+the+metabolic+syndrome+in+1%2C727+healthy+caucasians.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0001853-Kraft1" id="pone.0001853-Kraft1"></a>Kraft P, Cox DG, Paynter RA, Hunter D, De Vivo I (2005) Accounting for haplotype uncertainty in matched association studies: a comparison of simple and flexible techniques. Genet Epidemiol  28: 261–272.  <ul class="find" data-citedArticleID="1079620" data-doi="10.1002/gepi.20061"><li><a href="http://dx.doi.org/10.1002/gepi.20061" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Accounting+for+haplotype+uncertainty+in+matched+association+studies%3A+a+comparison+of+simple+and+flexible+techniques." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Accounting+for+haplotype+uncertainty+in+matched+association+studies%3A+a+comparison+of+simple+and+flexible+techniques.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0001853-Schaid2" id="pone.0001853-Schaid2"></a>Schaid DJ (2004) Evaluating associations of haplotypes with traits. Genet Epidemiol  27: 348–364.  <ul class="find" data-citedArticleID="1079644" data-doi="10.1002/gepi.20037"><li><a href="http://dx.doi.org/10.1002/gepi.20037" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evaluating+associations+of+haplotypes+with+traits." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evaluating+associations+of+haplotypes+with+traits.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.XML" value="107552"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.PDF" value="630195"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e001.PNG" value="10246"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e001.TIF" value="25728"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e002.PNG" value="10068"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e002.TIF" value="25736"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t001.PNG_L" value="88420"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t001.PNG_M" value="50409"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t001.PNG_S" value="8730"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t001.TIF" value="393064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t001.PNG_I" value="15168"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e003.PNG" value="10845"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e003.TIF" value="26612"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e004.PNG" value="8779"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e004.TIF" value="24700"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e005.PNG" value="12091"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e005.TIF" value="27708"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e006.PNG" value="10646"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e006.TIF" value="26760"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t002.PNG_L" value="174227"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t002.PNG_M" value="132818"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t002.PNG_S" value="20511"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t002.TIF" value="854462"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t002.PNG_I" value="100144"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e007.PNG" value="7285"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e007.TIF" value="23360"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e008.PNG" value="6866"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e008.TIF" value="22908"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e009.PNG" value="8909"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e009.TIF" value="24900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e010.PNG" value="8725"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e010.TIF" value="24696"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e011.PNG" value="9999"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.e011.TIF" value="26128"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g001.PNG_L" value="127167"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g001.PNG_M" value="20473"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g001.PNG_S" value="4323"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g001.TIF" value="251618"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g001.PNG_I" value="7886"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t003.PNG_L" value="82894"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t003.PNG_M" value="128030"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t003.PNG_S" value="16984"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t003.TIF" value="421908"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t003.PNG_I" value="44677"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g002.PNG_L" value="2707229"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g002.PNG_M" value="96141"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g002.PNG_S" value="11099"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g002.TIF" value="3583962"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g002.PNG_I" value="49755"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g003.PNG_L" value="167707"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g003.PNG_M" value="29326"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g003.PNG_S" value="4997"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g003.TIF" value="310460"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g003.PNG_I" value="10608"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t004.PNG_L" value="136168"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t004.PNG_M" value="92625"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t004.PNG_S" value="11037"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t004.TIF" value="654892"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.t004.PNG_I" value="28846"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g004.PNG_L" value="290832"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g004.PNG_M" value="50514"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g004.PNG_S" value="7342"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g004.TIF" value="559888"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g004.PNG_I" value="18905"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g005.PNG_L" value="337679"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g005.PNG_M" value="33520"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g005.PNG_S" value="4954"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g005.TIF" value="537034"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g005.PNG_I" value="12450"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g006.PNG_L" value="713212"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g006.PNG_M" value="55662"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g006.PNG_S" value="7607"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g006.TIF" value="702420"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.g006.PNG_I" value="19570"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.s001.DOC" value="117760"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0001853.s002.TXT" value="10859"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001853&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001853" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0001853&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0001853&volume=&issue=&title=Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures&author_name=Claudia%20Lamina%2C%20Friedhelm%20Bongardt%2C%20Helmut%20K%C3%BCchenhoff%2C%20Iris%20M.%20Heid&start_page=1&end_page=11" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0001853" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853&amp;t=Haplotype%20Reconstruction%20Error%20as%20a%20Classical%20Misclassification%20Problem%3A%20Introducing%20Sensitivity%20and%20Specificity%20as%20Error%20Measures" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853&title=Haplotype%20Reconstruction%20Error%20as%20a%20Classical%20Misclassification%20Problem%3A%20Introducing%20Sensitivity%20and%20Specificity%20as%20Error%20Measures&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853&amp;title=Haplotype%20Reconstruction%20Error%20as%20a%20Classical%20Misclassification%20Problem%3A%20Introducing%20Sensitivity%20and%20Specificity%20as%20Error%20Measures" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0001853&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Haplotype Reconstruction Error as a Classical Misclassification Problem: Introducing Sensitivity and Specificity as Error Measures';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0001853';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Haplotype%20Reconstruction%20Error%20as%20a%20Classical%20Misclassification%20Problem%3A%20Introducing%20Sensitivity%20and%20Specificity%20as%20Error%20Measures http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0001853" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0001853" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Case-control+studies%22" title="Search for articles in the subject area:'Case-control studies'"><div class="flagText">Case-control studies</div></a>
+              <div data-categoryid="19729" data-articleid="26530"
+                   data-categoryname="Case-control studies"
+                   class="flagImage" title="Flag 'Case-control studies' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Contingency+tables%22" title="Search for articles in the subject area:'Contingency tables'"><div class="flagText">Contingency tables</div></a>
+              <div data-categoryid="32439" data-articleid="26530"
+                   data-categoryname="Contingency tables"
+                   class="flagImage" title="Flag 'Contingency tables' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Generalized+linear+model%22" title="Search for articles in the subject area:'Generalized linear model'"><div class="flagText">Generalized linear model</div></a>
+              <div data-categoryid="33189" data-articleid="26530"
+                   data-categoryname="Generalized linear model"
+                   class="flagImage" title="Flag 'Generalized linear model' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+loci%22" title="Search for articles in the subject area:'Genetic loci'"><div class="flagText">Genetic loci</div></a>
+              <div data-categoryid="17713" data-articleid="26530"
+                   data-categoryname="Genetic loci"
+                   class="flagImage" title="Flag 'Genetic loci' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Germany%22" title="Search for articles in the subject area:'Germany'"><div class="flagText">Germany</div></a>
+              <div data-categoryid="40251" data-articleid="26530"
+                   data-categoryname="Germany"
+                   class="flagImage" title="Flag 'Germany' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Haplotypes%22" title="Search for articles in the subject area:'Haplotypes'"><div class="flagText">Haplotypes</div></a>
+              <div data-categoryid="32131" data-articleid="26530"
+                   data-categoryname="Haplotypes"
+                   class="flagImage" title="Flag 'Haplotypes' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Linkage+disequilibrium%22" title="Search for articles in the subject area:'Linkage disequilibrium'"><div class="flagText">Linkage disequilibrium</div></a>
+              <div data-categoryid="42897" data-articleid="26530"
+                   data-categoryname="Linkage disequilibrium"
+                   class="flagImage" title="Flag 'Linkage disequilibrium' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Variant+genotypes%22" title="Search for articles in the subject area:'Variant genotypes'"><div class="flagText">Variant genotypes</div></a>
+              <div data-categoryid="40547" data-articleid="26530"
+                   data-categoryname="Variant genotypes"
+                   class="flagImage" title="Flag 'Variant genotypes' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=1126'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=8675'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=478&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

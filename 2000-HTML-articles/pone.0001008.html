@@ -1,0 +1,848 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0001008"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0001008" />
+
+    <meta name="citation_title" content="Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels"/>
+    <meta itemprop="name" content="Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels"/>
+
+      <meta name="citation_author" content="Luis Santamaría"/>
+            <meta name="citation_author_institution" content="Mediterranean Institute for Advanced Studies (IMEDEA, CSIC-UIB), Esporles, Mallorca, Spain"/>
+      <meta name="citation_author" content="Javier Rodríguez-Pérez"/>
+            <meta name="citation_author_institution" content="Mediterranean Institute for Advanced Studies (IMEDEA, CSIC-UIB), Esporles, Mallorca, Spain"/>
+      <meta name="citation_author" content="Asier R. Larrinaga"/>
+            <meta name="citation_author_institution" content="Mediterranean Institute for Advanced Studies (IMEDEA, CSIC-UIB), Esporles, Mallorca, Spain"/>
+      <meta name="citation_author" content="Beatriz Pias"/>
+            <meta name="citation_author_institution" content="Área de Biodiversidad y Conservación, Universidad Rey Juan Carlos, Móstoles, Madrid, Spain"/>
+
+    <meta name="citation_date" content="2007/10/10"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0001008.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e1008"/>
+    <meta name="citation_issue" content="10"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Spatial patterns of seed dispersal, their determinants and consequences for recruitment.; citation_author=R Nathan; citation_author=HC Muller-Landau; citation_journal_title=TREE; citation_volume=15; citation_number=1; citation_pages=278-285; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The community-level consequences of seed dispersal patterns.; citation_author=JM Levine; citation_author=DJ Murrell; citation_journal_title=Annual Review of Ecology Evolution and Systematics; citation_volume=34; citation_number=2; citation_pages=549-574; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Population biology of plants.; citation_author=JL Harper; citation_number=3; citation_date=1977; citation_publisher=Academic press; " />
+      <meta name="citation_reference" content="citation_title=The population dynamic functions of seed dispersal.; citation_author=DL Venable; citation_author=JS Brown; citation_journal_title=Vegetatio; citation_volume=107/108; citation_number=4; citation_pages=31-55; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Dispersal mode, seed shadows and colonization patterns.; citation_author=MF Wilson; citation_journal_title=Vegetatio; citation_volume=107/108; citation_number=5; citation_pages=261-280; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Seed dispersal and spatial pattern in tropical trees.; citation_author=TG Seidler; citation_author=JB Plotkin; citation_journal_title=PLoS Biology; citation_volume=4; citation_number=6; citation_pages=e344; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Recruitment of a mast-fruiting, bird-dispersed tree: bridging frugivore activity and seedling establishment.; citation_author=CM Herrera; citation_author=P Jordano; citation_author=L López-Soria; citation_author=JA Amat; citation_journal_title=Ecol Monogr; citation_volume=64; citation_number=7; citation_pages=315-344; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Seed disperser effectiveness: The quantity component and patterns of seed rain for Prunus mahaleb.; citation_author=P Jordano; citation_author=EW Schupp; citation_journal_title=Ecol Monogr; citation_volume=70; citation_number=8; citation_pages=591-615; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Factors shaping the seedfall pattern of a bird-dispersed plant.; citation_author=JM Alcántara; citation_author=PJ Rey; citation_author=F Valera; citation_author=AM Sánchez-Lafuente; citation_journal_title=Ecology; citation_volume=81; citation_number=9; citation_pages=1937-1950; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Seed dispersal, seed predation, and seedling recruitment of a neotropical montane tree.; citation_author=DG Wenny; citation_journal_title=Ecol Monogr; citation_volume=70; citation_number=10; citation_pages=331-351; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Mechanistic analytical models for long-distance seed dispersal by wind.; citation_author=GG Katul; citation_author=A Porporato; citation_author=R Nathan; citation_author=M Siqueira; citation_author=MB Soons; citation_journal_title=Am Nat; citation_volume=166; citation_number=11; citation_pages=368-381; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Comparative seed shadows of bird-, monkey-, and wind-dispersed trees.; citation_author=CJ Clark; citation_author=JR Poulsen; citation_author=BM Bolker; citation_author=EF Connor; citation_author=VT Parker; citation_journal_title=Ecology; citation_volume=86; citation_number=12; citation_pages=2684-2694; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=The effects of plant distribution and frugivore density on the scale and shape of dispersal kernels.; citation_author=JM Morales; citation_author=TA Carlo; citation_journal_title=Ecology; citation_volume=87; citation_number=13; citation_pages=1489-1496; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Endozoochorous dispersal of aquatic plants: does seed gut passage affect plant performance?; citation_author=J Figuerola; citation_author=L Santamaría; citation_author=AJ Green; citation_author=I Luque; citation_author=R Alvarez; citation_journal_title=Am J Bot; citation_volume=92; citation_number=14; citation_pages=696-699; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=A genetic evaluation of seed dispersal in the neotropical tree Jacaranda copaia (Bignoniaceae).; citation_author=FA Jones; citation_author=J Chen; citation_author=GJ Weng; citation_author=SP Hubbell; citation_journal_title=Am Nat; citation_volume=166; citation_number=15; citation_pages=543-555; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Genetic evidence of frequent long-distance recruitment in a vertebrate-dispersed tree.; citation_author=BD Hardesty; citation_author=SP Hubbell; citation_author=E Bermingham; citation_journal_title=Ecol Letters; citation_volume=9; citation_number=16; citation_pages=516-525; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Avian seed disperal of three neotropical gap-dependent plants.; citation_author=KG Murray; citation_journal_title=Ecol Monogr; citation_volume=58; citation_number=17; citation_pages=271-298; citation_date=1988; " />
+      <meta name="citation_reference" content="citation_title=Effectiveness of three turacos as seed dispersers in a tropical montane forest.; citation_author=C Sun; citation_author=AR Ives; citation_author=HJ Kraeuter; citation_author=TC Maermond; citation_journal_title=Oecologia; citation_volume=112; citation_number=18; citation_pages=94-103; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Seed dispersal and movement patterns in two species of Ceratogymna hornbills in a West African tropical lowland forest.; citation_author=KM Holbrook; citation_author=TB Smith; citation_journal_title=Oecologia; citation_volume=125; citation_number=19; citation_pages=249-257; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Patterns of movement and seed dispersal of a tropical frugivore.; citation_author=DA Wescott; citation_author=DL Graham; citation_journal_title=Oecologia; citation_volume=102; citation_number=20; citation_pages=249-257; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Seed dispersal patterns produced by white-faced monkeys: implications for the dispersal limitation of neotropical tree species.; citation_author=EV Wehncke; citation_author=SP Hubbell; citation_author=RB Foster; citation_author=JW Dalling; citation_journal_title=J Ecol; citation_volume=91; citation_number=21; citation_pages=677-685; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Incorporating patterns of disperser behaviour into models of seed dispersal and its effects on estimated dispersal curves.; citation_author=DA Westcott; citation_author=J Bentrupperbäumer; citation_author=MG Bradford; citation_author=A McKeown; citation_journal_title=Oecologia; citation_volume=146; citation_number=22; citation_pages=57-67; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Using toucan-generated seed shadows to estimate seed dispersal in Amazonia Ecuador.; citation_author=KM Holbrook; citation_author=BA Loiselle; citation_number=23; citation_date=2006; citation_publisher=CABI Publishing; " />
+      <meta name="citation_reference" content="citation_title=Quantity, quality and the effectiveness of seed dispersal by animals.; citation_author=EW Schupp; citation_journal_title=Vegetatio; citation_volume=107/108; citation_number=24; citation_pages=15-29; citation_date=1993; " />
+      <meta name="citation_reference" content="citation_title=Effect of seed passage through vertebrate frugivores' guts on germination: a review.; citation_author=A Traveset; citation_journal_title=Pers Plant Ecol Evol Syst; citation_volume=1/2; citation_number=25; citation_pages=151-190; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=A meta-analysis of the effect of gut treatment on seed germination.; citation_author=A Traveset; citation_author=M Verdú; citation_number=26; citation_pages=339-350; citation_date=2002; citation_publisher=CAB International; " />
+      <meta name="citation_reference" content="citation_title=Early emergence enhances plant fitness: A phylogenetically controlled meta-analysis.; citation_author=M Verdú; citation_author=A Traveset; citation_journal_title=Ecology; citation_volume=86; citation_number=27; citation_pages=1385-1394; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Directed seed dispersal by bellbirds in a tropical cloud forest.; citation_author=DG Wenny; citation_author=DJ Levey; citation_journal_title=Proc Natl Acad Sci USA; citation_volume=95; citation_number=28; citation_pages=6204-6207; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Frugivore-generated seed shadows: A landscape view of demographic and genetic effects.; citation_author=P Jordano; citation_author=JA Godoy; citation_number=29; citation_pages=305-321; citation_date=2002; citation_publisher=CAB International; " />
+      <meta name="citation_reference" content="citation_title=An evaluation of a mammalian predator, Martes americana, as a disperser of seeds.; citation_author=JR Hickey; citation_author=RW Flynn; citation_author=SW Buskirk; citation_author=KG Gerow; citation_author=MF Wilson; citation_journal_title=Oikos; citation_volume=87; citation_number=30; citation_pages=499-508; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Implications of long-distance movements of frugivorous rain forest hornbills.; citation_author=KM Holbrook; citation_author=TB Smith; citation_author=BD Hardesty; citation_journal_title=Ecography; citation_volume=25; citation_number=31; citation_pages=745-749; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Disruption of a plant-lizard seed dispersal system and its ecological effects on a threatened endemic plant in the Balearic Islands.; citation_author=A Traveset; citation_author=N Riera; citation_journal_title=Conser Biol; citation_volume=19; citation_number=32; citation_pages=1-12; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Shrub spatial aggregation and consequences for reproductive success.; citation_author=T Reyes; citation_author=IP Francisco; citation_journal_title=Oecologia; citation_volume=136; citation_number=33; citation_pages=296-301; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Spatial pattern and neighbour effects on Helianthemum squamatum seedlings in a Mediterranean gypsum community.; citation_author=A Escudero; citation_author=RL Romao; citation_author=M de la Cruz; citation_author=FT Maestre; citation_journal_title=J Veg Science; citation_volume=16; citation_number=34; citation_pages=383-390; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Conflicting selection pressures on seed size: evolutionary ecology of fruit size in a bird-dispersed tree, Olea europaea.; citation_author=JM Alcántara; citation_author=PJ Rey; citation_journal_title=J Evol Biol; citation_volume=16; citation_number=35; citation_pages=1168-1176; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Seed and microsite limitation of recruitment in plant populations.; citation_author=O Eriksson; citation_author=J Ehrlén; citation_journal_title=Oecologia; citation_volume=91; citation_number=36; citation_pages=360-364; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Are long-distance dispersal events in plants usually caused by nonstandard means of dispersal?; citation_author=SI Higgins; citation_author=R Nathan; citation_author=ML Cain; citation_journal_title=Ecology; citation_volume=84; citation_number=37; citation_pages=1945-1956; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Patterns of movement and seed dispersal of a tropical frugivore.; citation_author=DA Westcott; citation_author=DL Graham; citation_journal_title=Oecologia; citation_volume=102; citation_number=38; citation_pages=249-257; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Dispersal of fleshy-fruited species: a matter of spatial scale?; citation_author=J Kollmann; citation_journal_title=Pers Plant Ecol Evol Syst; citation_volume=3; citation_number=39; citation_pages=29-51; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Spatial concordance between seed rain and seedling establishment in bird-dispersed trees: does scale matter?; citation_author=D García; citation_author=JR Obeso; citation_author=I Martínez; citation_journal_title=J Ecol; citation_volume=93; citation_number=40; citation_pages=693-704; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Small-scale environmental heterogeneity and spatiotemporal dynamics of seedling establishment in a semiarid degraded ecosystem.; citation_author=FT Maestre; citation_author=J Cortina; citation_author=S Bautista; citation_author=J Bellot; citation_author=R Vallejo; citation_journal_title=Ecosystems; citation_volume=6; citation_number=41; citation_pages=630-643; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Applying plant facilitation to forest restoration: a meta-analysis of the use of shrubs as nurse plants.; citation_author=L Gómez-Aparicio; citation_author=R Zamora; citation_author=JM Gomez; citation_author=JA Hodar; citation_author=J Castro; citation_journal_title=Ecol Appl; citation_volume=14; citation_number=42; citation_pages=1128-1138; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Consecuencias ecológicas, demográficas y genéticas de las interacciones planta-animal en dos especies de Daphne (Thymelaeaceae) [dissertation].; citation_author=J Rodríguez-Pérez; citation_number=43; citation_date=2006; citation_publisher=University of the Balearic Islands; " />
+      <meta name="citation_reference" content="citation_title=Fruit and nectar feeding by Podarcis lilfordi (Lacertidae) on Cabrera archipielago (Balearic islands).; citation_author=E Sáez; citation_author=A Traveset; citation_journal_title=Herpetological Review; citation_volume=26; citation_number=44; citation_pages=121-123; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Pollination of Euphorbia dendroides by lizards and insects: Spatio-temporal variation in patterns of flower visitation.; citation_author=A Traveset; citation_author=E Sáez; citation_journal_title=Oecologia; citation_volume=111; citation_number=45; citation_pages=241-248; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Breakage of mutualisms by exotic species: the case of Cneorum tricoccon L. in the Balearic Islands (Western Mediterranean Sea).; citation_author=N Riera; citation_author=A Traveset; citation_author=O García; citation_journal_title=J Biogeography; citation_volume=29; citation_number=46; citation_pages=713-719; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Lagartija balear–Podarcis lilfordi. Museo Nacional de Ciencias Naturales, Madrid.; citation_author=A Salvador; citation_number=47; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Effects of gut passage on seed germination: Do experiments answer the questions they ask?; citation_author=IA Samuels; citation_author=DJ Levey; citation_journal_title=Funct Ecol; citation_volume=19; citation_number=48; citation_pages=365-368; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Assessing the benefits of frugivory for seed germination: the importance of the deinhibition effect.; citation_author=AW Robertson; citation_author=A Trass; citation_author=JJ Ladley; citation_author=D Kelly; citation_journal_title=Funct Ecol; citation_volume=20; citation_number=49; citation_pages=58-66; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=SAS/STAT® software: User's guide.; citation_number=50; citation_date=2000; citation_publisher=SAS Institute; " />
+      <meta name="citation_reference" content="citation_title=Experimental Design and Data Analysis for Biologists.; citation_author=G Quinn; citation_author=M Keough; citation_number=51; citation_pages=556; citation_date=2002; citation_publisher=Cambridge university press; " />
+      <meta name="citation_reference" content="citation_title=S-Plus 2000. Guide to Statistics.; citation_author= Mathsoft; citation_number=52; citation_date=1999; citation_publisher=Mathsoft Inc; " />
+      <meta name="citation_reference" content="citation_title=HRT: Home Range Tools for ArcGIS®.; citation_author=AR Rodgers; citation_author=AP Carr; citation_author=L Smith; citation_author=JG Kie; citation_number=53; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Hawths Analysis tools.; citation_author=HL Beyer; citation_number=54; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Adaptive kernel density estimation [dissertation].; citation_author=SR Sain; citation_number=55; citation_date=1994; citation_publisher=Rice University; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001008" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels"/>
+    <meta name="twitter:description" content="For plants dispersed by frugivores, spatial patterns of recruitment are primarily influenced by the spatial arrangement and characteristics of parent plants, the digestive characteristics, feeding behaviour and movement patterns of animal dispersers, and the structure of the habitat matrix. We used an individual-based, spatially-explicit framework to characterize seed dispersal and seedling fate in an endangered, insular plant-disperser system: the endemic shrub Daphne rodriguezii and its exclusive disperser, the endemic lizard Podarcis lilfordi. Plant recruitment kernels were chiefly determined by the disperser's patterns of space utilization (i.e. the lizard's displacement kernels), the position of the various plant individuals in relation to them, and habitat structure (vegetation cover vs. bare soil). In contrast to our expectations, seed gut-passage rate and its effects on germination, and lizard speed-of-movement, habitat choice and activity rhythm were of minor importance. Predicted plant recruitment kernels were strongly anisotropic and fine-grained, preventing their description using one-dimensional, frequency-distance curves. We found a general trade-off between recruitment probability and dispersal distance; however, optimal recruitment sites were not necessarily associated to sites of maximal adult-plant density. Conservation efforts aimed at enhancing the regeneration of endangered plant-disperser systems may gain in efficacy by manipulating the spatial distribution of dispersers (e.g. through the creation of refuges and feeding sites) to create areas favourable to plant recruitment."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0001008.g004"/>
+
+  <meta property="og:title" content="Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0001008" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=1961'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=6310'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=3598&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0001008">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001008" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0001008&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Luis Santamaría
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:luis.santamaria@uib.es">luis.santamaria@uib.es</a></p>
+
+                <p>Affiliation:
+                  Mediterranean Institute for Advanced Studies (IMEDEA, CSIC-UIB), Esporles, Mallorca, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Javier Rodríguez-Pérez, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Mediterranean Institute for Advanced Studies (IMEDEA, CSIC-UIB), Esporles, Mallorca, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Asier R. Larrinaga, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Mediterranean Institute for Advanced Studies (IMEDEA, CSIC-UIB), Esporles, Mallorca, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Beatriz Pias
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Área de Biodiversidad y Conservación, Universidad Rey Juan Carlos, Móstoles, Madrid, Spain
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: October 10, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0001008</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0001008" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0001008" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001008" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0001008" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0001008-g001" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001008-g002" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001008-g003" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0001008-g004" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0001008">Reader Comments (2)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0001008" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>For plants dispersed by frugivores, spatial patterns of recruitment are primarily influenced by the spatial arrangement and characteristics of parent plants, the digestive characteristics, feeding behaviour and movement patterns of animal dispersers, and the structure of the habitat matrix. We used an individual-based, spatially-explicit framework to characterize seed dispersal and seedling fate in an endangered, insular plant-disperser system: the endemic shrub <em>Daphne rodriguezii</em> and its exclusive disperser, the endemic lizard <em>Podarcis lilfordi</em>. Plant recruitment kernels were chiefly determined by the disperser's patterns of space utilization (i.e. the lizard's displacement kernels), the position of the various plant individuals in relation to them, and habitat structure (vegetation cover vs. bare soil). In contrast to our expectations, seed gut-passage rate and its effects on germination, and lizard speed-of-movement, habitat choice and activity rhythm were of minor importance. Predicted plant recruitment kernels were strongly anisotropic and fine-grained, preventing their description using one-dimensional, frequency-distance curves. We found a general trade-off between recruitment probability and dispersal distance; however, optimal recruitment sites were not necessarily associated to sites of maximal adult-plant density. Conservation efforts aimed at enhancing the regeneration of endangered plant-disperser systems may gain in efficacy by manipulating the spatial distribution of dispersers (e.g. through the creation of refuges and feeding sites) to create areas favourable to plant recruitment.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Santamaría L, Rodríguez-Pérez J, Larrinaga AR, Pias B (2007) Predicting Spatial Patterns of Plant Recruitment Using Animal-Displacement Kernels. PLoS ONE 2(10):
+          e1008.
+            doi:10.1371/journal.pone.0001008</p><p><strong>Academic Editor: </strong>Michael Somers, University of Pretoria, South Africa</p><p><strong>Received:</strong> April 3, 2007; <strong>Accepted:</strong> August 7, 2007; <strong>Published:</strong> October 10, 2007</p><p><strong>Copyright:</strong> © 2007 Santamaria et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>Funding to LSG by the British Ecological Society (Small Ecological Project Grant no. 2272) and to JRP by the Spanish Ministry of Science and Technology (FP-2001-1819) is gratefully acknowledged.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The spatial distributions of dispersed seeds play a crucial role in determining the structure and dynamics of plant-populations <a href="#pone.0001008-Nathan1">[1]</a>, <a href="#pone.0001008-Levine1">[2]</a>. While it is generally acknowledged that the spatial distribution of seeds set the template on which subsequent demographic processes (predation, germination, competition and growth) take place, shaping the spatial pattern of adult plants <a href="#pone.0001008-Levine1">[2]</a>–<a href="#pone.0001008-Seidler1">[6]</a>, our knowledge of the factors that determine the observed patterns of seed deposition is still limited. For plants dispersed by frugivores (fruit-eating animals), these factors include the density, spatial arrangement and characteristics (e.g. fecundity, fruit size) of adult plants, the feeding behaviour and movement patterns of animal dispersers and the structure of the habitat matrix (which may determine the seed shadow and subsequently influences seed fate) <a href="#pone.0001008-Herrera1">[7]</a>–<a href="#pone.0001008-Wenny1">[10]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Most studies on seed shadows and plant recruitment patterns use seed traps and seedling surveys to estimate the relationship between seed (or seedling) density and distance from the seed source (the “dispersal kernel”) using various statistical models <a href="#pone.0001008-Katul1">[11]</a>–<a href="#pone.0001008-Morales1">[13]</a>. These models (hereafter referred to as “1D dispersal kernels”) are generally based on unimodal distributions with a peak close to the source and a long tail. Despite recent advances in the use of these techniques, they are constrained by two limitations. Firstly, in their analysis of seed-trap data, researches are generally compelled to assume that seeds originate from the closest seed source (i.e. the closest reproductive adult), therefore underestimating actual dispersal <a href="#pone.0001008-Figuerola1">[14]</a>–<a href="#pone.0001008-Hardesty1">[16]</a>. Secondly, 1D dispersal kernels have the underlying assumptions of isotropic dispersal and habitat homogeneity (across directions and distance), despite general acknowledgement that they rarely hold in reality. As a consequence, seed dispersal studies based on disperser ecology data (foraging behaviour, gut passage time and movement patterns) generally achieve different results from those based on seed-trap and seedling-distribution data <a href="#pone.0001008-Murray1">[17]</a>–<a href="#pone.0001008-Westcott1">[22]</a>. Although these differences often underscore the anisotropy and context-dependence of dispersal kernels <a href="#pone.0001008-Morales1">[13]</a>, we are not aware of any study that has attempted to generate spatially-explicit kernels based on animal movement data (but see <a href="#pone.0001008-Holbrook2">[23]</a> for an example of spatial heterogeneity generated by the overlap of isotropic kernels).</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>A second field of major advance in the ecology of frugivore-mediated dispersal concerns the quality components of dispersal, which include aspects influencing the subsequent fate of the deposited seeds <a href="#pone.0001008-Schupp1">[24]</a>. These include dispersal distance (which reduces density-dependence seedling mortality), differential dispersal into different microhabitats (which modulates seed germination and seedling survival) and the effect of gut passage on seed germination. While some of these factors have been extensively addressed in laboratory and field studies <a href="#pone.0001008-Traveset1">[25]</a>–<a href="#pone.0001008-Verd1">[27]</a>, we still lack data on the relationship between the spatial scales at which dispersal processes operate in natural ecosystems and its various effects on dispersal quality <a href="#pone.0001008-Wenny1">[10]</a>, <a href="#pone.0001008-Wenny2">[28]</a>. We aim at closing this knowledge gap by incorporating to our spatially-explicit analysis of seed dispersal several determinants of early seed fate, such as post-dispersal seed predation, seed germination and seedling establishment, to obtain “plant recruitment kernels”.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>The inherent difficulties to accurately characterizing individual seed-dispersal shadows and animal-disperser movements have strongly limited their empirical study. However, recent advancements in the use of molecular techniques <a href="#pone.0001008-Jordano2">[29]</a>, animal telemetry <a href="#pone.0001008-Murray1">[17]</a>, <a href="#pone.0001008-Holbrook1">[19]</a>, <a href="#pone.0001008-Westcott1">[22]</a>, <a href="#pone.0001008-Hickey1">[30]</a>, <a href="#pone.0001008-Holbrook3">[31]</a> and remote sensing (including accurate geo-referencing) have opened the way for the compilation of detailed data relating disperser movement and behaviour, habitat characteristics, and the resulting spatial patterns of plant recruitment. This framework is particularly important for the study of endangered plants affected by mutualism disruption <a href="#pone.0001008-Traveset3">[32]</a>, because the information relating seed-dispersal scale and frugivore behaviour may be used to quantify the effect of disperser loss (or its potential reintroduction) on the spatial patterns of plant recruitment and, through them, on plant population dynamics <a href="#pone.0001008-Reyes1">[33]</a>, <a href="#pone.0001008-Escudero1">[34]</a> .</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>In this paper, we use an individual-based, spatially-explicit framework to characterize seed dispersal and seedling fate in an endangered, insular plant-disperser system: the endemic shrub <em>Daphne rodriguezii</em> and its exclusive disperser, the endemic lizard <em>Podarcis lilfordi</em>. The following questions were addressed: (a) At what scale does seed dispersal by lizards operate? (b) Does spatial variation in dispersal result in spatial heterogeneity and/or in individual variation in plant recruitment? (c) What are the relative contributions of spatial effects, plant distribution and variation among individual dispersers (lizards) to plant recruitment kernels? (d) What are the relative contributions of disperser physiology (seed retention time, gut passage effects on germination) and disperser behaviour (home range, habitat use) to plant recruitment kernels?</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>To address these questions, we used a GIS platform to generate plant recruitment kernels that combine field and laboratory data on (1) the spatial distribution of plants and other habitat characteristics (presence of shrubs, absence of soil on rocky outcrops), (2) the retention time (gut passage rate) of seeds ingested by lizards and its effect on seed germination, (3) the movements, habitat use and daily activity rhythm of the disperser, and (4) the effect of habitat characteristics on post-dispersal seed predation, germination and seedling establishment.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>The study area showed a fine-grained habitat structure, with small patches (1 to 10 m) of vegetated areas (shrubs and pine forest: 54 and 5% of surface, respectively), bare soil (40%) and rocks (1%, including rock outcrops and stone walls). The area included 38 large reproductive adults of <em>D. rodriguezii</em> (<a href="#pone.0001008.s012">Figure S1</a>). All individuals sampled (incl. 29 seedlings, 27 saplings and 46 sub-adults) grew predominantly under shrubs (80%, as compared to 20% on bare soil), in a proportion significantly departing from the null expectation of proportionality to habitat cover (χ<sup>2</sup><sub>1</sub> = 39.2, <em>p</em>&lt;0.0001; no significant heterogeneity was detected among age classes).</p>
+<a id="article1.body1.sec2.p2" name="article1.body1.sec2.p2"></a><p>In the study area, the activity, behaviour and habitat choice of lizards did not vary significantly along the day, neither in the 15 min nor in the 45 min transects. The number of lizards observed in the quick (15 min) transects varied significantly among habitat types (χ<sup>2</sup><sub>1</sub> = 6.30, <em>p</em>&lt;0.043), but differences in lizard abundance between rocks, shrubs and bare soil (11%, 46% and 42% of observations, averaged across transects) matched habitat availability (1%, 59% and 40% of surface, respectively). Lizards observed during the slow (45 min) transects showed comparable patterns of habitat use (<a href="#pone.0001008.s013">Figure S2</a>; χ<sup>2</sup><sub>1</sub> = 7.93, <em>p</em>&lt;0.019) and were predominantly observed moving (66% of observations as compared to 32% on passive activities and 2% feeding; see <a href="#pone.0001008.s001">Tables S1</a> and <a href="#pone.0001008.s002">S2</a>, and <a href="#pone.0001008.s013">Figure S2</a> for details).</p>
+<a id="article1.body1.sec2.p3" name="article1.body1.sec2.p3"></a><p>In both experiments, virtually all ingested seeds were defecated intact (i.e. they were not digested, broken or crushed). Seed retention times were considerably long, with peak defecation at 48–72 hours after ingestion and maximal retention times of up to 670 hours (<a href="#pone-0001008-g001">Figure 1</a>). Seed retention time did not differ between the laboratory and the field experiment and was not affected by lizard sex or seed weight (<em>p</em>&lt;0.19, see <a href="#pone.0001008.s003">Tables S3</a> and <a href="#pone.0001008.s004">S4</a> for details).</p>
+<div class="figure" id="pone-0001008-g001"><div class="img"><a name="pone-0001008-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Two main determinants of seed dispersal by Balearic lizards: the retention time of seeds in the lizard's gut (left axis) and lizard movement over time (right axis).</span></strong></p><a id="article1.body1.sec2.fig1.caption1.p1" name="article1.body1.sec2.fig1.caption1.p1"></a><p>Seed retention time shows the relative frequency of defecation of previously ingested seeds (curve derived from a cumulative log-normal fit). Maximum dispersal distance shows the distance between successive relocations of lizards by telemetry and the centre of the lizard's displacement kernel (exponential fit). Seed retention time peaks at the same time (48–72 hours) at which maximum dispersal distance of lizards saturates. For both variables, mean values (±s.e.) per day are also represented; however, note that the displayed curves were fitted across all measured values (not shown for clarity).</p>
+<span>doi:10.1371/journal.pone.0001008.g001</span></div><a id="article1.body1.sec2.p4" name="article1.body1.sec2.p4"></a><p>In the field experiment, the germination probability of seeds ingested and subsequently defecated by lizards was comparable to that of depulped, uningested seeds (0.36±0.05 and 0.28±0.05 respectively, mean±se) but significantly higher (χ<sup>2</sup><sub>2</sub> = 49.31, <em>p</em>&lt;0.0001) than non-depulped, uningested seeds (0.01±0.01, mean±se). Comparable results were obtained in the laboratory experiment (which did not include non-depulped seeds). The germination probability of ingested seeds increased significantly with seed weight but this effect was reduced at increased retention times (see <a href="#pone.0001008.s005">Tables S5</a> and <a href="#pone.0001008.s006">S6</a>, and <a href="#pone.0001008.s014">Figure S3</a> for details). In contrast, seed germination rate was affected significantly by the factors included in the analyses neither in the laboratory (<a href="#pone.0001008.s007">Tables S7</a>, <a href="#pone.0001008.s008">S8</a>, <a href="#pone.0001008.s009">S9</a>) nor in the field experiment (z = 1.59, p = 0.11).</p>
+<a id="article1.body1.sec2.p5" name="article1.body1.sec2.p5"></a><p>Telemetry data show that, given their small body size (5–10 g) and locomotion method, lizards covered fairly large distances over short periods of time (up to 90 m within 24 h). The relationship between maximal distance and time was strongly non-linear (y = 0.042−0.010*t+0.0009*t<sup>2</sup>) and it did not vary among individual lizards (<em>p</em>&gt;0.25, <a href="#pone.0001008.s010">Table S10</a>). Lizards quickly reached the limits of their home ranges and, as a consequence, the maximal distance from the centre of these ranges quickly saturated over time (i.e. within 2 to 4 days; <a href="#pone-0001008-g001">Figure 1</a>). Therefore, the dispersal distance of any ingested seed will only increase with time up to 2–4 days (i.e. before the peak of the gut-passage curve). Over longer periods (i.e. at the tail of the gut-passage curve), seed shadows will depend on spatial patterns of visitation (displacement kernel and habitat use of the lizard) rather than on the direction or speed of the lizard movements.</p>
+<a id="article1.body1.sec2.p6" name="article1.body1.sec2.p6"></a><p>Lizard home ranges and displacement kernels were strongly anisotropic and varied largely in size and shape among different individuals (<a href="#pone-0001008-g002">Figure 2</a>, <a href="#pone.0001008.s015">Figure S4</a>). Plant recruitment kernels provided by the ten study lizards to each of the 38 plant individuals were also anisotropic and highly variable (<a href="#pone.0001008.s016">Figure S5</a>). Core dispersal areas were most often placed in areas of maximal lizard visitation, rather than centred on the mother plant (<a href="#pone-0001008-g003">Figure 3</a>). As a consequence, only a few curves were well-described by classical one-dimensional equations (e.g. only 42% and 16% respectively had r<sup>2</sup>&gt;0.50 and r<sup>2</sup>&gt;0.60; <a href="#pone.0001008.s011">Table S11</a>). In most cases, anisotropy of plant recruitment kernels resulted in a high scatter of the frequency-distance relationship, with frequencies peaking at a given distance in one direction but showing values close to zero in other directions (<a href="#pone-0001008-g003">Figure 3b</a>) or even showing several peaks corresponding to local areas of high dispersal and recruitment (<a href="#pone-0001008-g003">Figure 3c</a>).</p>
+<div class="figure" id="pone-0001008-g002"><div class="img"><a name="pone-0001008-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Plant recruitment kernels generated by each individual lizard.</span></strong></p><a id="article1.body1.sec2.fig2.caption1.p1" name="article1.body1.sec2.fig2.caption1.p1"></a><p>Probability of recruitment of each ingested seed (including post-dispersal seed predation, seedling emergence and survival) is showed as a colour gradient. The limit of the coloured area indicates the lizard home range.</p>
+<span>doi:10.1371/journal.pone.0001008.g002</span></div><div class="figure" id="pone-0001008-g003"><div class="img"><a name="pone-0001008-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Three types of relationship between dispersal curves and plant recruitment kernels found for the lizard-shrub study system.</span></strong></p><a id="article1.body1.sec2.fig3.caption1.p1" name="article1.body1.sec2.fig3.caption1.p1"></a><p>The three 1D curves and recruitment kernels are selected among those modelled for the 38 plants present in the study area. For each plant, we calculated the combined recruitment kernel provided by the 10 studied lizards (see <a href="#pone-0001008-g002">Figure 2</a>) and subsequently fitted a one-dimensional curve to a sample of 5000 points randomly selected from the modelled recruitment kernel. For a complete list of regression results of 1D fits for the 38 study plants (including individuals 9, 13 and 2, shown here), see <a href="#pone.0001008.s011">Table S11</a>.</p>
+<span>doi:10.1371/journal.pone.0001008.g003</span></div><a id="article1.body1.sec2.p7" name="article1.body1.sec2.p7"></a><p>Moreover, owing to the strong differences in seed germination and seedling survival between bare-soil and shrub-cover microhabitats (Traveset&amp;Riera 2005), plant recruitment kernels were fine grained (1–5 m), particularly outside core areas of maximal lizard visitation. A variance partitioning analysis based on the plant recruitment kernels provided by each individual lizard to each individual plant showed that mean dispersal distance from the mother plant was more strongly influenced by the lizard's displacement kernel than by the position of the mother plant (44% and 4% of variance respectively), while the specific interaction between both factors accounted for half of the variance (52% of variance). In contrast, dispersal quality (average probability of dispersal and establishment) was weakly influenced by the lizard's displacement kernel and the position of the mother plant (6% of variance for each of both factors) and it depended mostly on the specific interaction between both factors (88% of variance).</p>
+<a id="article1.body1.sec2.p8" name="article1.body1.sec2.p8"></a><p>As a consequence, individual plants showed considerable variation in recruitment probability per seed produced (average = 5.3*10<sup>−5</sup>, range = 2.2*10<sup>−5</sup>–1.9*10<sup>−7</sup>) and mean dispersal distance (average = 28.3 m, range = 15–52 m), i.e. in potential plant fitness (<a href="#pone-0001008-g004">Figure 4</a>, upper panel). This variation arises exclusively from the spatial position of the individual plants in relation to lizard territories. Spatial autocorrelation analysis showed significant effects at small and medium scales, with positive Moran's I-values at distances &lt;20 m and negative values at distances between 20 and 30 m (<a href="#pone-0001008-g004">Figure 4</a>, lower panels). The spatial pattern of recruitment for the complete study population is centred in the place of maximum lizard visitation, rather than close to the plant population core (i.e. the place with maximum plant density). This pattern also reflects the spatial effects on the contribution of plant individuals to population recruitment, with plants at the centre of the study area recruiting up to 100-fold more than plants in the periphery (and four-fold more than the population average). Recruitment probability (P) was inversely related to mean dispersal distance (D), following a power relationship (D = 1.62*P<sup>−0.22</sup>, r<sup>2</sup> = 0.67) with mean dispersal distances converging at 20–25 m for medium to high recruitment probabilities (<a href="#pone.0001008.s017">Figure S6</a>).</p>
+<div class="figure" id="pone-0001008-g004"><div class="img"><a name="pone-0001008-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0001008" data-uri="info:doi/10.1371/journal.pone.0001008.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0001008.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0001008.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0001008.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0001008.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Mean recruitment kernel of the study population, including the average probability of recruitment of each reproductive adult.</span></strong></p><a id="article1.body1.sec2.fig4.caption1.p1" name="article1.body1.sec2.fig4.caption1.p1"></a><p>Probability of recruitment of each seed produced by the study population (including post-dispersal seed predation, seedling emergence and survival) is showed as a colour gradient. Coloured dots indicate the position and average probability of recruitment (per seed produced) of 38 reproductive adults present in the study area. The lower panels show the isotropic spatial autocorrelation (Moran's I) of average plant recruitment. Since the data structure was strongly anisotropic, we also show anisotropic spatial autocorrelation at four directions from the centre of the recruitment kernel. Asterisks indicate distances at which Moran's I significantly departed from zero: * <em>p</em>&lt;0.05, ** <em>p</em>&lt;0.01.</p>
+<span>doi:10.1371/journal.pone.0001008.g004</span></div></div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Our study shows that, for the study system, plant recruitment kernels are chiefly determined by the disperserś patterns of space utilization (i.e. the lizardś home-ranges and displacement kernels), the position of the various plant individuals in relation to such patterns, and habitat structure (shrub cover vs. bare soil). In contrast to our expectations, seed gut-passage rate and its effects on germination, and lizard speed-of-movement, habitat choice and activity rhythm were of minor importance. Predicted plant recruitment kernels were strongly anisotropic and fine-grained, preventing their description using one-dimensional, frequency-distance curves. Traditionally used 1D-curves (e.g. exponential, lognormal and Weibull functions) fitted significantly the frequency-distance relationship, but provided highly inaccurate descriptions owing to the broad range of variability (i.e. the huge scatter of the datasets described by the curves) that arise from the strong anisotropy of the recruitment kernels.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Despite its strong dependence on the spatial context, dispersal characteristics showed a general scaling relationship, i.e. a non-linear trade-off between probability of recruitment and dispersal distance. The existence of a dispersal-establishment trade-off has been a key assumption of many models based on plant traits (e.g. those addressing the evolution of propagule size) <a href="#pone.0001008-Alcntara2">[35]</a> as well as a number of models addressing spatial limitations to plant recruitment <a href="#pone.0001008-Eriksson1">[36]</a>. Our model gives further support to this assumption, since the relationship arises in this case from the spatial variation in disperser use of space, i.e. it is independent from other causes traditionally used to justify it.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Our work complements previous work aimed at describing the dispersal curves of endozoochorously dispersed plants (largely in 1D, e.g. <a href="#pone.0001008-Westcott1">[22]</a>, <a href="#pone.0001008-Higgins1">[37]</a>; but also in 2D, <a href="#pone.0001008-Morales1">[13]</a>, <a href="#pone.0001008-Holbrook2">[23]</a>), while stressing the necessity to incorporate aspects of disperser behaviour and habitat structure that require the use of spatially-explicit predictions. It departs from previous models <a href="#pone.0001008-Morales1">[13]</a>, <a href="#pone.0001008-Westcott1">[22]</a>, <a href="#pone.0001008-Higgins1">[37]</a> on a key assumption derived from our results for this specific system: we based our predictions on animal displacement kernels, rather than animal speed of movement. This assumption was required by the nature of our own data, namely the combination of long gut-passage times of ingested seeds and the quick saturation of the disperser dispersal distance (resulting from their rapid speed of movement in relation to the home ranges). It is difficult to assess the generality of this pattern, although the stated conditions (long gut-passage time, rapid movements, relatively small home range) suggest that it is more likely to occur in small reptiles and mammals, and perhaps also in strongly-territorial passerines (should their high mobility compensate for their short gut-passage times).</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>A counterintuitive result of our empirical observations and experiments was the minor importance of seed gut-passage time, gut passage effects on germination, and disperser speed-of-movement, habitat choice, activity and defecation rhythm, for the predicted plant recruitment kernels–particularly since some of these factors have been generally regarded as major determinants of dispersal distance and quality <a href="#pone.0001008-Westcott1">[22]</a>, <a href="#pone.0001008-Higgins1">[37]</a>. In our specific study system, gut passage times were very long in relation to animal mobility within the home-ranges and it influenced seed germination only through its depulpation effect. The relative importance of all these factors is likely to differ in other endozoochorous dispersal systems in which the disperser shows quick directional movements and marked habitat preferences (e.g. passerine birds, cassowaries, emus; <a href="#pone.0001008-Murray1">[17]</a>–<a href="#pone.0001008-Holbrook1">[19]</a>, <a href="#pone.0001008-Westcott1">[22]</a>, <a href="#pone.0001008-Westcott2">[38]</a>. In all these systems, predictions based on animal movements (rather than home-ranges) and/or habitat use may be more adequate, and may result in predictions that are well-described by one-dimensional curves (<a href="#pone.0001008-Clark1">[12]</a>, but see <a href="#pone.0001008-Morales1">[13]</a>).</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>Our predictions indicate the existence of spatial variation in plant recruitment and dispersal distance (i.e. in potential plant fitness; <a href="#pone-0001008-g004">Figure 4</a>), arising exclusively from their spatial position in relation to lizard territories-rather than from individual variation in certain plant traits (such as fruit production; <a href="#pone.0001008-Morales1">[13]</a>). In evolutionary terms, such variation represents a form of spatial stochasticity that, through its strong effects on plant fitness, may contribute (together with temporal variation and gene-flow effects) to swamp small-scale local adaptation and is likely to interact with the evolution of plant traits that mediate dispersal and recruitment <a href="#pone.0001008-Kollmann1">[39]</a>, <a href="#pone.0001008-Garca1">[40]</a>. These results also indicate that optimal recruitment sites at a given time are not necessarily identical or even nearby sites of maximal adult-plant density, particularly in endozoochorously-dispersed plants (which is strongly directional).</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>Conservation efforts aimed at enhancing the regeneration of endangered plant populations in the Mediterranean basin, particularly at the micro-scale <a href="#pone.0001008-Maestre1">[41]</a>, <a href="#pone.0001008-GmezAparicio1">[42]</a>, may gain in efficacy by incorporating spatially explicit predictions of plant recruitment such as presented here. Future considerations concerning the reintroduction of Balearic lizards into existing populations of <em>Daphne rodriguezii</em> should also take into account the necessity of creating safe-sites for re-located individuals, and the bearing that the distribution of these sites may have for the conservation target (plant recruitment and population growth). The great promise offered by recent developments in remote sensing, geo-referencing, telemetry and spatially-explicit modelling suggest that this types of approaches are likely to become valuable tools for the study of the ecology and evolution of seed dispersal and the assessment of conservation projects in the future.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Study system</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>We studied the plant-disperser system formed by the endemic shrub <em>Daphne rodriguezii</em> Teixidor (Thymelaeaceae) and its exclusive seed disperser, the endemic lizard <em>Podarcis lilfordi</em> Günter (Lacertidae) <a href="#pone.0001008-Traveset3">[32]</a>, <a href="#pone.0001008-RodrguezPrez1">[43]</a>. We studied this simple dispersal system because both the quantitative and qualitative components of dispersal, and the spatial scale in which operates have proven effects on the spatial distribution and regeneration capacity of the plant population <a href="#pone.0001008-RodrguezPrez1">[43]</a>. <em>Podarcis lilfordi</em> is a small, diurnal lizard endemic of the Western Balearic Islands (Mallorca and Menorca) and closely related to the Eastern Balearic endemic lizard <em>P. pityusensis</em> (Eivissa and Formentera). Both species play an important role as pollinators and seed dispersers of many native plants <a href="#pone.0001008-Sez1">[44]</a>, with proven effects on their reproductive potential <a href="#pone.0001008-Traveset3">[32]</a>, <a href="#pone.0001008-Traveset4">[45]</a>, <a href="#pone.0001008-Riera1">[46]</a>. <em>Daphne rodriguezii</em> is a small evergreen shrub, endemic from the coastal scrubland of Eastern Menorca Island (Balearic Islands, Eastern Spain). Its fruits (orange-red drupes) develop in May-June and are quickly removed and consumed by <em>P. lilfordi</em> lizards at the only islet where the latter are still present (Colom Islet) <a href="#pone.0001008-Traveset3">[32]</a>. No other frugivores have been observed feeding on <em>D. rodriguezii</em> fruits, either at Colom Islet or at any of the populations at Menorca Island where lizards became extinct following to the introduction of exotic carnivores <a href="#pone.0001008-RodrguezPrez1">[43]</a>, <a href="#pone.0001008-Salvador1">[47]</a>. These observations have been confirmed by lizard-exclusion experiments carried out at Colom Islet <a href="#pone.0001008-RodrguezPrez1">[43]</a>.</p>
+
+
+<h4>Study site</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Field work took place in a survey carried at the Colom Islet, a small islet (surface&lt;55 ha.) located c. 250 m offshore of the Menorca Island (<a href="#pone.0001008.s012">Figure S1</a>), from June 14<sup>th</sup> to 21<sup>st</sup> 2005. It was concentrated within the short time window (c. three weeks) at which seed dispersal of <em>D. rodriguezii</em> by lizards take place <a href="#pone.0001008-Traveset3">[32]</a>. Our study site was located in a small peninsula (2.91 ha.; <a href="#pone.0001008.s012">Figure S1</a>) situated at the Southern tip of the islet (4°16′E, 39°57′N, 10 a.s.l.), covered by sclerophyllous garrige dominated by <em>Phyllirea media</em>, <em>Pistacia lentiscus</em> and <em>Erica multifolia</em>. Part of the study site was surrounded by a small stone-wall which, together with two large rocky outcrops, provided numerous refuge sites for the lizard population.</p>
+
+
+<h4>Habitat characteristics and plant distribution</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>Data on habitat structure were entered in a GIS platform (ArcGIS 9.0, ESRI®ArcMap™ 9.0). These included a digital elevation model, based on 1:1000 cartography, and a habitat structure map derived from a geo-referenced aerial photograph commercially available. Habitat structure was obtained using a supervised classification, with categories adjusted to match our field observations during the study period (sclerophyllous shrubs, bare soil, rock-outcrop and stone-wall). We also included in the database the position of every large reproductive (i.e. fruit-bearing) individual of <em>D. rodriguezii</em> found in the study area (only individuals separated by distances larger than 5 m were geo-referenced separately). During the survey, we assigned all individuals detected to four age classes (seedling, sapling, sub-adult and reproductive adult) and noted the microhabitat (under shrub vs. bare soil vs. rocks and walls) in which they were found.</p>
+
+
+<h4>Lizard activity and habitat use</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>Daily activity rhythm of, and habitat use by <em>P. lilfordi</em> was estimated using regular censuses of two fixed transects placed in the Eastern and Northern limits of our study site (65 and 120 m length, respectively), in order to avoid interfering with the movements of the individuals followed by telemetry (see below). Throughout the study period, both transects were censused always by the same observer three times a day during the lizard's activity period (morning: 10–12 h, midday: 13–16 h and afternoon: 17–20 h). The observer walked over the transect distance at a slow, approximately constant pace and, for each detected lizard, he recorded the time, habitat type (under shrub vs. bare soil vs. rock or stone wall) and behaviour. Behavioural categories were grouped as considered relevant for seed dispersal: moving vs. feeding vs. other categories (mostly passive in terms of displacement). To assess whether recording lizard observations at a low pace resulted in underestimates of lizard activity (i.e. the number of lizards detected per transect), we also made 28 quick transects (c. fifteen minutes, up to eight per day) recording only the microhabitat where each lizard was detected. Overall, we spend a total census time of 969 minutes.</p>
+
+
+<h4>Seed retention time</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>Seed retention time following ingestion by lizards was determined in laboratory (2004) and field conditions (2005). The laboratory experiment was carried out in more detail and was used also to assess the effect of gut passage on seed germination. The field experiment was used to assess whether differences in diet and activity of laboratory individuals may have resulted in an overestimation of seed retention time.</p>
+<a id="article1.body1.sec4.sec5.p2" name="article1.body1.sec4.sec5.p2"></a><p>For the laboratory experiment, we used 19 recently-captured lizards (ten males and nine females) maintained in the terraria of the Terrestrial Ecology Laboratory (IMEDEA). Lizards were captured at the Dragonera Islet (Mallorca Island) and individually kept in separate terraria (17×26×17 cm) with an artificial grass floor and a piece of brick as refuge. The spatial distribution of these terraria was assigned randomly and rearranged on daily basis. In the morning of June 14<sup>th</sup> 2004, <em>D. rodriguezii</em> fruits from 15 plants of Colom Islet (collected two days before and stored in the refrigerator) were force-fed to lizards (two to five fruits per lizard, depending on its body size). Fruits from each individual plant were randomly assigned to two individual lizards (generally one male and one female). After force feeding, lizards were fed with tomato and water <em>ad libitum</em> throughout the experiment. Terraria were checked three times a day: morning (9–10 a.m.), early afternoon (3–4 p.m.) and late afternoon (9–10 p.m.). The number of collections was reduced to twice a day (every eight hours; morning and afternoon) five days after initiating the experiment, and once a day (morning) 15 days after initiation. Defecated seeds were counted and stored dry for subsequently determination of their individual weight (±0.1 mg).</p>
+<a id="article1.body1.sec4.sec5.p3" name="article1.body1.sec4.sec5.p3"></a><p>The experiment was repeated in the field, using 30 individuals of <em>P. lilfordi</em> (most of them adult males; 4–9 g) captured at Colom Islet on June 15<sup>th</sup> 2005, using tomato baited pit-traps placed nearby the radio-tracking area. Captured lizards were placed in individual terraria in a quiet, shaded area and, after acclimating overnight, they were force-fed with fruits from 15 plants collected from a nearby population (Favàritx, mainland Menorca; at Colom Islet, most fruits had been already consumed by lizards). Fruit from each plant individual were assigned to two individual lizards. Terraria were checked every two hours during daytime (from 10:00 to 20:00 h) for depositions (as above). We did not check overnight, since lizards are not active during that period and therefore produce very few droppings (pers. obs.).</p>
+
+
+<h4>Seed germination</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>Seeds obtained from the retention time experiments (laboratory and field conditions) were sown in an experimental garden, under artificial shading and automatically watered (twice a day) at the onset of the wet, winter season (December 7<sup>th</sup> 2004 and November 11<sup>th</sup> 2005, respectively). Non-ingested depulped seeds from the same plant individuals (c. six seeds per plant = c. 90 seeds) were also sown as controls. (Seeds were depulped by gently scrubbing the fruit flesh using absorbent paper; hence, depulpation did not involve chemical or mechanical abrasion of the seed coat that could mimic the effect of the lizard digestive system.) Seeds were sown in germination trays (one seed per randomly-assigned, 4×4 cm pot) filled with horticultural mixture. In the field experiment, we also sowed non-depulped control seeds (i.e. intact fruits) to evaluate the germination potential of fruits directly fallen from the mother plant <a href="#pone.0001008-Samuels1">[48]</a>, <a href="#pone.0001008-Robertson1">[49]</a>. Seed germination was monitored once a week, until no new germination was recorded for at least four weeks (until August in both experiments). Seeds that failed to germinate during this period were considered as non-viable, since <em>D. rodriguezii</em> does not show seed dormancy <a href="#pone.0001008-Traveset3">[32]</a>.</p>
+
+
+<h4>Characterization of lizard movements by radio-telemetry</h4>
+<a id="article1.body1.sec4.sec7.p1" name="article1.body1.sec4.sec7.p1"></a><p>During the midday of June 14<sup>th</sup> 2005, pit-fall traps baited with tomato were set up throughout the study site. At each trap, the largest individual (mostly males) of <em>P. lilfordi</em> captured within a 30 min period was selected. Ten of these lizards (7.0–9.5 g±0.1 g) were tagged with radio-transmitters (weight: 0.35 g, operating life: up to 14 days; Biotrack®, Dorset, UK). Transmitters were dorsally attached to the lizard by means of a small back-pack placed over the shoulders and adhered to the back and chest. They were followed with radio-receptors TR-4 and hand-held ‘H’ antennas (Telonics®, Mesa, USA).</p>
+<a id="article1.body1.sec4.sec7.p2" name="article1.body1.sec4.sec7.p2"></a><p>Two radio-receptors were used to simultaneously measure the bearings of each radio-tagged lizard from two pairs of tracking stations (used alternately over time, to maximize signal reception), previously set and geo-referenced. The location of each radio-tagged lizard was checked every 30 to 60 minutes throughout the day, excluding the early afternoon period of low lizard activity (14:00 to 16:00 h) caused by high midday temperatures. Positions and associated errors (the latter using a subset of three-bearing locations) were calculated using LOAS® (Ecological Software Solutions).</p>
+
+
+<h4>Data analyses</h4>
+<a id="article1.body1.sec4.sec8.p1" name="article1.body1.sec4.sec8.p1"></a><p>Field and experimental data on lizard activity and habitat use, and germination probability (total seedling emergence at the end of the germination run) were assessed by fitting Generalized Linear Models (GLIM hereafter) using the GENMOD and GLIMMIX procedures of SAS 9.0 <a href="#pone.0001008-SAS1">[50]</a>. In all cases, we chose the link functions and error distributions that fitted best the data, i.e. we tried all combinations that met data requirements and chose those that maximized the model goodness-of-fit and minimized residualś overdispersion. Deviances from the models were scaled using the square-root of the ratio deviance/degrees of freedom, to correct for data over-dispersion. Significant differences between fixed factors were contrasted using likelihood-ratio statistics. Departing from full models with all relevant (fixed and random) independent variables, we progressively removed non-significant variables with <em>p</em>&gt;0.25 from the model <a href="#pone.0001008-Quinn1">[51]</a>; only results from these reduced models are reported hereafter. Details on model structures (full and reduced models), link functions and error distributions are provided in the Appendices (<a href="#pone.0001008.s001">Tables S1</a> to <a href="#pone.0001008.s006">S6</a>).</p>
+<a id="article1.body1.sec4.sec8.p2" name="article1.body1.sec4.sec8.p2"></a><p>Seed retention time (from ingestion to defecation) and seed germination rate (time in days from the start of the germination run to seedling emergence) were analyzed using failure-time analysis using S-Plus <a href="#pone.0001008-Mathsoft1">[52]</a>. A Cox-proportional hazard model was fitted to either retention time or germination time for each individual seed. For seed retention time, we evaluated separately the effect of lizard sex and type of experiment (laboratory vs. field), and the effect of seed weight (only lab-experiment data). For seed germination, we used separate analysis to evaluate the effect of treatment (ingested vs. control seeds) and retention time (fixed and random effects and continuous covariates as above). We only included germinated seeds in the model, to evaluate separately the effects on germination probability and germination rate.</p>
+<a id="article1.body1.sec4.sec8.p3" name="article1.body1.sec4.sec8.p3"></a><p>Lizard movements (i.e. subsequent telemetry localizations) were analyzed using the extension ‘Home Range Tools’ of ArcGis 9.0 <a href="#pone.0001008-Rodgers1">[53]</a> and Hawth's Analysis Tools 3.2 <a href="#pone.0001008-Beyer1">[54]</a>. Adaptive kernel density estimates were obtained using a least-squares cross-validation method to choose the smoothing parameter <em>h</em> <a href="#pone.0001008-Sain1">[55]</a>. Maximum dispersal distance to the first fix was calculated for each re-location, to evaluate whether potential seed dispersal distance increased continuously or it saturated over time. Net dispersal distance from the centre of the kernel was also calculated for each one of the locations, to evaluate whether observed home ranges were visited from the centre to the periphery following circadian rhythms. Before drawing a general relationship between these variables and time, a GLIM analysis (GENMOD procedure and GLIMMIX macro of SAS 9.0) was used to assess whether it varied among lizard individuals, using individual as random factor, and time and time<sup>2</sup> as continuous covariates (to account for potential non-linearity), a gamma error distribution and a power link function.</p>
+<a id="article1.body1.sec4.sec8.p4" name="article1.body1.sec4.sec8.p4"></a><p>Because maximum dispersal distance quickly saturated over time (see <a href="#s2">results</a>), we calculated the hypothetical plant recruitment kernels generated by each individual lizard (for a given, ingested seed) by combining kernel density estimates, habitat structure and the relative probabilities of surviving predation, germinating and establishing at the various microhabitats. The latter were derived from previously-published data from the same study area <a href="#pone.0001008-Traveset3">[32]</a>.</p>
+<a id="article1.body1.sec4.sec8.p5" name="article1.body1.sec4.sec8.p5"></a><p>We also calculated the combined recruitment kernel provided by our sample of 10 lizard individuals for each individual plant, and interpreted it as a surrogate of the plant's seed shadow. Because the probability of fruit consumption by a given individual lizard would vary depending on the plant's location, we used the density values of each lizard-individual displacement kernel at the plant's location as surrogate of visitation probability and weighted the plant recruitment kernels provided by each lizard using this probability before combining them. To evaluate the relative contributions of disperser displacement kernel, plant position and their interaction to dispersal quality and distance, we performed a variance partitioning analysis (Variance Components module of Statistica v6.0) using lizard and plant individual as independent, random factors and two surrogates derived from these plant recruitment kernels (dispersal quality: weighted average probability of dispersal and establishment; dispersal distance: average distance from the mother plant) as dependent variables. We also used a spatial autocorrelation analysis (Moran's I) to evaluate whether the position of the different plant individuals result in variation in the surrogates of dispersal quality and distance described above.</p>
+<a id="article1.body1.sec4.sec8.p6" name="article1.body1.sec4.sec8.p6"></a><p>Finally, we estimated the plant recruitment kernel for the complete study population of <em>D. rodriguezii</em> from the average of the recruitment kernels of all individual plants (i.e. the probability of seed dispersal at each point of the study area).</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0001008"></div><a name="pone.0001008.s001" id="pone.0001008.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s001">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Results of Generalized Linear Modelling of the number of lizards observed per 15 min transect.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0001008.s002" id="pone.0001008.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s002">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Results of Generalized Linear Modelling of the number of lizards per 45 min transect.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0001008.s003" id="pone.0001008.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s003">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Results of Cox-proportional hazard modelling of sex and type of experiment (laboratory vs. field) on seed retention time (gut passage rate of seeds ingested by lizards).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s004" id="pone.0001008.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s004">Table S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">Results of Cox-proportional hazard modelling of the effect of sex and seed weight on seed retention time (gut passage rate of seeds ingested by lizards) in the laboratory experiment.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s005" id="pone.0001008.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s005">Table S5. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">Results of General Linear Modelling of the effect of treatment (ingestion by lizards vs. uningested control) and seed weight on germination probability (number of seedlings emerged/number of seeds set to germinate) in the laboratory experiment.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s006" id="pone.0001008.s006"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s006">Table S6. </a></strong></p><a id="article1.body1.sec5.supplementary-material6.caption1.p1" name="article1.body1.sec5.supplementary-material6.caption1.p1"></a><p class="preSiDOI">Results of General Linear Modelling of the effect of sex, retention time and seed weight on germination probability in the laboratory experiment.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s006</p><a id="article1.body1.sec5.supplementary-material6.caption1.p2" name="article1.body1.sec5.supplementary-material6.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0001008.s007" id="pone.0001008.s007"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s007">Table S7. </a></strong></p><a id="article1.body1.sec5.supplementary-material7.caption1.p1" name="article1.body1.sec5.supplementary-material7.caption1.p1"></a><p class="preSiDOI">Results of Cox-proportional hazards modelling of the effect of the type of experiment (laboratory vs. field) and treatment on the germination rate of defecated seeds.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s007</p><a id="article1.body1.sec5.supplementary-material7.caption1.p2" name="article1.body1.sec5.supplementary-material7.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s008" id="pone.0001008.s008"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s008">Table S8. </a></strong></p><a id="article1.body1.sec5.supplementary-material8.caption1.p1" name="article1.body1.sec5.supplementary-material8.caption1.p1"></a><p class="preSiDOI">Results of Cox-proportional hazards modelling of the effect of treatment on germination rate in the laboratory experiment.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s008</p><a id="article1.body1.sec5.supplementary-material8.caption1.p2" name="article1.body1.sec5.supplementary-material8.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s009" id="pone.0001008.s009"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s009">Table S9. </a></strong></p><a id="article1.body1.sec5.supplementary-material9.caption1.p1" name="article1.body1.sec5.supplementary-material9.caption1.p1"></a><p class="preSiDOI">Summary of Cox-proportional hazard modelling of sex and seed weight on germination rate in the laboratory experiment.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s009</p><a id="article1.body1.sec5.supplementary-material9.caption1.p2" name="article1.body1.sec5.supplementary-material9.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s010" id="pone.0001008.s010"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s010">Table S10. </a></strong></p><a id="article1.body1.sec5.supplementary-material10.caption1.p1" name="article1.body1.sec5.supplementary-material10.caption1.p1"></a><p class="preSiDOI">Results of Generalized Linear Modelling of the effect of time on maximum displacement distance of radio-tracked lizards.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s010</p><a id="article1.body1.sec5.supplementary-material10.caption1.p2" name="article1.body1.sec5.supplementary-material10.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0001008.s011" id="pone.0001008.s011"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s011">Table S11. </a></strong></p><a id="article1.body1.sec5.supplementary-material11.caption1.p1" name="article1.body1.sec5.supplementary-material11.caption1.p1"></a><p class="preSiDOI">Parameters estimates and coefficient of determination of the best-fitting function relating recruitment probability to distance from source plant.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s011</p><a id="article1.body1.sec5.supplementary-material11.caption1.p2" name="article1.body1.sec5.supplementary-material11.caption1.p2"></a><p class="postSiDOI">(0.10 MB DOC)</p>
+<a name="pone.0001008.s012" id="pone.0001008.s012"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s012">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material12.caption1.p1" name="article1.body1.sec5.supplementary-material12.caption1.p1"></a><p class="preSiDOI">Study site at Colom Islet (west coast of Menorca Island). Different colours indicate the spatial distribution of the habitat types considered in this study. Circles show the location of reproductive individuals of D. rodriguezii</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s012</p><a id="article1.body1.sec5.supplementary-material12.caption1.p2" name="article1.body1.sec5.supplementary-material12.caption1.p2"></a><p class="postSiDOI">(4.62 MB TIF)</p>
+<a name="pone.0001008.s013" id="pone.0001008.s013"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s013">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material13.caption1.p1" name="article1.body1.sec5.supplementary-material13.caption1.p1"></a><p class="preSiDOI">Daily changes in activity, behaviour and habitat choice of lizards in the study area. Bars show the number of observations (average se) per transect (15 min transects for habitat use and 45 min transects for behaviour), grouped in three activity periods: morning (10–12 h), midday (13–16 h) and afternoon (17–20 h).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s013</p><a id="article1.body1.sec5.supplementary-material13.caption1.p2" name="article1.body1.sec5.supplementary-material13.caption1.p2"></a><p class="postSiDOI">(1.17 MB TIF)</p>
+<a name="pone.0001008.s014" id="pone.0001008.s014"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s014">Figure S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material14.caption1.p1" name="article1.body1.sec5.supplementary-material14.caption1.p1"></a><p class="preSiDOI">Effect of seed weight and retention time (during gut passage) on the germination percentage of seeds ingested and defecated by lizards. For simplicity, logistic fits representing expected values of germination probability are shown for three discrete values of retention time.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s014</p><a id="article1.body1.sec5.supplementary-material14.caption1.p2" name="article1.body1.sec5.supplementary-material14.caption1.p2"></a><p class="postSiDOI">(0.68 MB TIF)</p>
+<a name="pone.0001008.s015" id="pone.0001008.s015"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s015">Figure S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material15.caption1.p1" name="article1.body1.sec5.supplementary-material15.caption1.p1"></a><p class="preSiDOI">Home ranges and probability density function of the ten lizards followed by telemetry. Dots indicate individual re-locations.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s015</p><a id="article1.body1.sec5.supplementary-material15.caption1.p2" name="article1.body1.sec5.supplementary-material15.caption1.p2"></a><p class="postSiDOI">(6.89 MB TIF)</p>
+<a name="pone.0001008.s016" id="pone.0001008.s016"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s016">Figure S5. </a></strong></p><a id="article1.body1.sec5.supplementary-material16.caption1.p1" name="article1.body1.sec5.supplementary-material16.caption1.p1"></a><p class="preSiDOI">Plant recruitment kernels of the 38 reproductive adults of Daphne rodriguezii present in the study area. At each individual kernel, dots indicate the position of the reproductive plant individual.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s016</p><a id="article1.body1.sec5.supplementary-material16.caption1.p2" name="article1.body1.sec5.supplementary-material16.caption1.p2"></a><p class="postSiDOI">(6.67 MB TIF)</p>
+<a name="pone.0001008.s017" id="pone.0001008.s017"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0001008.s017">Figure S6. </a></strong></p><a id="article1.body1.sec5.supplementary-material17.caption1.p1" name="article1.body1.sec5.supplementary-material17.caption1.p1"></a><p class="preSiDOI">Relationship between recruitment probability and mean dispersal distance of seeds from the mother plant. Each point represents an individual plant.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0001008.s017</p><a id="article1.body1.sec5.supplementary-material17.caption1.p2" name="article1.body1.sec5.supplementary-material17.caption1.p2"></a><p class="postSiDOI">(0.78 MB TIF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>Technical assistance by J. Pericàs, C. Cimas and B. Padrón during the field and laboratory work is gratefully acknowledged. We are particularly grateful to the direction and personnel of the Parc Natural de ŚAlbufera des Grau, who provided us with housing, advice and technical support during the field work. We thank M.A. Rodriguez-Girones for mathematical and statistical advice and A. Traveset for comments and suggestions that clarified our thoughts and improved previous drafts of this manuscript. Field work and animal experimentation was done with permission by the Conselleria de Medi Ambient (Govern Balear) and the Consell de Menorca.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: LS JR AL. Performed the experiments: LS JR AL BP. Analyzed the data: LS JR AL. Wrote the paper: LS JR AL BP.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0001008-Nathan1" id="pone.0001008-Nathan1"></a>Nathan R, Muller-Landau HC (2000) Spatial patterns of seed dispersal, their determinants and consequences for recruitment. TREE  15: 278–285.  <ul class="find" data-citedArticleID="1003018" data-doi="10.1016/s0169-5347(00)01874-7"><li><a href="http://dx.doi.org/10.1016/s0169-5347(00)01874-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Spatial+patterns+of+seed+dispersal%2C+their+determinants+and+consequences+for+recruitment." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Spatial+patterns+of+seed+dispersal%2C+their+determinants+and+consequences+for+recruitment.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0001008-Levine1" id="pone.0001008-Levine1"></a>Levine JM, Murrell DJ (2003) The community-level consequences of seed dispersal patterns. Annual Review of Ecology Evolution and Systematics  34: 549–574.  <ul class="find" data-citedArticleID="1003008"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+community-level+consequences+of+seed+dispersal+patterns.&amp;auth=&amp;atitle=The+community-level+consequences+of+seed+dispersal+patterns." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+community-level+consequences+of+seed+dispersal+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+community-level+consequences+of+seed+dispersal+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0001008-Harper1" id="pone.0001008-Harper1"></a>Harper JL (1977) Population biology of plants. Academic press.   <ul class="find-nolinks"></ul></li><li><span class="label">4.
+              </span><a name="pone.0001008-Venable1" id="pone.0001008-Venable1"></a>Venable DL, Brown JS (1993) The population dynamic functions of seed dispersal. Vegetatio  107/108: 31–55.  <ul class="find" data-citedArticleID="1003056" data-doi="10.1007/978-94-011-1749-4_3"><li><a href="http://dx.doi.org/10.1007/978-94-011-1749-4_3" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+population+dynamic+functions+of+seed+dispersal." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+population+dynamic+functions+of+seed+dispersal.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0001008-Wilson1" id="pone.0001008-Wilson1"></a>Wilson MF (1993) Dispersal mode, seed shadows and colonization patterns. Vegetatio  107/108: 261–280.  <ul class="find" data-citedArticleID="1003072" data-doi="10.1007/978-94-011-1749-4_19"><li><a href="http://dx.doi.org/10.1007/978-94-011-1749-4_19" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Dispersal+mode%2C+seed+shadows+and+colonization+patterns." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Dispersal+mode%2C+seed+shadows+and+colonization+patterns.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0001008-Seidler1" id="pone.0001008-Seidler1"></a>Seidler TG, Plotkin JB (2006) Seed dispersal and spatial pattern in tropical trees. PLoS Biology  4: e344.  <ul class="find" data-citedArticleID="1003042" data-doi="10.1371/journal.pbio.0040344"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0040344" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Seed+dispersal+and+spatial+pattern+in+tropical+trees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Seed+dispersal+and+spatial+pattern+in+tropical+trees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0001008-Herrera1" id="pone.0001008-Herrera1"></a>Herrera CM, Jordano P, López-Soria L, Amat JA (1994) Recruitment of a mast-fruiting, bird-dispersed tree: bridging frugivore activity and seedling establishment. Ecol Monogr  64: 315–344.  <ul class="find" data-citedArticleID="1002986" data-doi="10.2307/2937165"><li><a href="http://dx.doi.org/10.2307/2937165" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Recruitment+of+a+mast-fruiting%2C+bird-dispersed+tree%3A+bridging+frugivore+activity+and+seedling+establishment." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Recruitment+of+a+mast-fruiting%2C+bird-dispersed+tree%3A+bridging+frugivore+activity+and+seedling+establishment.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0001008-Jordano1" id="pone.0001008-Jordano1"></a>Jordano P, Schupp EW (2000) Seed disperser effectiveness: The quantity component and patterns of seed rain for <em>Prunus mahaleb</em>. Ecol Monogr  70: 591–615.  <ul class="find" data-citedArticleID="1003000" data-doi="10.2307/2657187"><li><a href="http://dx.doi.org/10.2307/2657187" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Seed+disperser+effectiveness%3A+The+quantity+component+and+patterns+of+seed+rain+for+Prunus+mahaleb." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Seed+disperser+effectiveness%3A+The+quantity+component+and+patterns+of+seed+rain+for+Prunus+mahaleb.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0001008-Alcntara1" id="pone.0001008-Alcntara1"></a>Alcántara JM, Rey PJ, Valera F, Sánchez-Lafuente AM (2000) Factors shaping the seedfall pattern of a bird-dispersed plant. Ecology  81: 1937–1950.  <ul class="find" data-citedArticleID="1002964" data-doi="10.2307/177283"><li><a href="http://dx.doi.org/10.2307/177283" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Factors+shaping+the+seedfall+pattern+of+a+bird-dispersed+plant." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Factors+shaping+the+seedfall+pattern+of+a+bird-dispersed+plant.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0001008-Wenny1" id="pone.0001008-Wenny1"></a>Wenny DG (2000) Seed dispersal, seed predation, and seedling recruitment of a neotropical montane tree. Ecol Monogr  70: 331–351.  <ul class="find" data-citedArticleID="1003062" data-doi="10.2307/2657180"><li><a href="http://dx.doi.org/10.2307/2657180" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Seed+dispersal%2C+seed+predation%2C+and+seedling+recruitment+of+a+neotropical+montane+tree." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Seed+dispersal%2C+seed+predation%2C+and+seedling+recruitment+of+a+neotropical+montane+tree.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0001008-Katul1" id="pone.0001008-Katul1"></a>Katul GG, Porporato A, Nathan R, Siqueira M, Soons MB, et al.  (2005) Mechanistic analytical models for long-distance seed dispersal by wind. Am Nat  166: 368–381.  <ul class="find" data-citedArticleID="1003004" data-doi="10.1086/432589"><li><a href="http://dx.doi.org/10.1086/432589" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mechanistic+analytical+models+for+long-distance+seed+dispersal+by+wind." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mechanistic+analytical+models+for+long-distance+seed+dispersal+by+wind.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0001008-Clark1" id="pone.0001008-Clark1"></a>Clark CJ, Poulsen JR, Bolker BM, Connor EF, Parker VT (2005) Comparative seed shadows of bird-, monkey-, and wind-dispersed trees. Ecology  86: 2684–2694.  <ul class="find" data-citedArticleID="1002970" data-doi="10.1890/04-1325"><li><a href="http://dx.doi.org/10.1890/04-1325" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comparative+seed+shadows+of+bird-%2C+monkey-%2C+and+wind-dispersed+trees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comparative+seed+shadows+of+bird-%2C+monkey-%2C+and+wind-dispersed+trees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0001008-Morales1" id="pone.0001008-Morales1"></a>Morales JM, Carlo TA (2006) The effects of plant distribution and frugivore density on the scale and shape of dispersal kernels. Ecology  87: 1489–1496.  <ul class="find" data-citedArticleID="1003014" data-doi="10.1890/0012-9658(2006)87[1489:teopda]2.0.co;2"><li><a href="http://dx.doi.org/10.1890/0012-9658(2006)87[1489:teopda]2.0.co;2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+effects+of+plant+distribution+and+frugivore+density+on+the+scale+and+shape+of+dispersal+kernels." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+effects+of+plant+distribution+and+frugivore+density+on+the+scale+and+shape+of+dispersal+kernels.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0001008-Figuerola1" id="pone.0001008-Figuerola1"></a>Figuerola J, Santamaría L, Green AJ, Luque I, Alvarez R, et al.  (2005) Endozoochorous dispersal of aquatic plants: does seed gut passage affect plant performance? Am J Bot  92: 696–699.  <ul class="find" data-citedArticleID="1002976" data-doi="10.3732/ajb.92.4.696"><li><a href="http://dx.doi.org/10.3732/ajb.92.4.696" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Endozoochorous+dispersal+of+aquatic+plants%3A+does+seed+gut+passage+affect+plant+performance%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Endozoochorous+dispersal+of+aquatic+plants%3A+does+seed+gut+passage+affect+plant+performance%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0001008-Jones1" id="pone.0001008-Jones1"></a>Jones FA, Chen J, Weng GJ, Hubbell SP (2005) A genetic evaluation of seed dispersal in the neotropical tree <em>Jacaranda copaia</em> (Bignoniaceae). Am Nat  166: 543–555.  <ul class="find" data-citedArticleID="1002998" data-doi="10.1086/491661"><li><a href="http://dx.doi.org/10.1086/491661" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+genetic+evaluation+of+seed+dispersal+in+the+neotropical+tree+Jacaranda+copaia+%28Bignoniaceae%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+genetic+evaluation+of+seed+dispersal+in+the+neotropical+tree+Jacaranda+copaia+%28Bignoniaceae%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0001008-Hardesty1" id="pone.0001008-Hardesty1"></a>Hardesty BD, Hubbell SP, Bermingham E (2006) Genetic evidence of frequent long-distance recruitment in a vertebrate-dispersed tree. Ecol Letters  9: 516–525.  <ul class="find" data-citedArticleID="1002982" data-doi="10.1111/j.1461-0248.2006.00897.x"><li><a href="http://dx.doi.org/10.1111/j.1461-0248.2006.00897.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genetic+evidence+of+frequent+long-distance+recruitment+in+a+vertebrate-dispersed+tree." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genetic+evidence+of+frequent+long-distance+recruitment+in+a+vertebrate-dispersed+tree.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0001008-Murray1" id="pone.0001008-Murray1"></a>Murray KG (1988) Avian seed disperal of three neotropical gap-dependent plants. Ecol Monogr  58: 271–298.  <ul class="find" data-citedArticleID="1003016" data-doi="10.2307/1942541"><li><a href="http://dx.doi.org/10.2307/1942541" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Avian+seed+disperal+of+three+neotropical+gap-dependent+plants." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Avian+seed+disperal+of+three+neotropical+gap-dependent+plants.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0001008-Sun1" id="pone.0001008-Sun1"></a>Sun C, Ives AR, Kraeuter HJ, Maermond TC (1997) Effectiveness of three turacos as seed dispersers in a tropical montane forest. Oecologia  112: 94–103.  <ul class="find" data-citedArticleID="1003046" data-doi="10.1007/s004420050288"><li><a href="http://dx.doi.org/10.1007/s004420050288" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effectiveness+of+three+turacos+as+seed+dispersers+in+a+tropical+montane+forest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effectiveness+of+three+turacos+as+seed+dispersers+in+a+tropical+montane+forest.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0001008-Holbrook1" id="pone.0001008-Holbrook1"></a>Holbrook KM, Smith TB (2000) Seed dispersal and movement patterns in two species of <em>Ceratogymna</em> hornbills in a West African tropical lowland forest. Oecologia  125: 249–257.  <ul class="find" data-citedArticleID="1002992" data-doi="10.1007/s004420000445"><li><a href="http://dx.doi.org/10.1007/s004420000445" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Seed+dispersal+and+movement+patterns+in+two+species+of+Ceratogymna+hornbills+in+a+West+African+tropical+lowland+forest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Seed+dispersal+and+movement+patterns+in+two+species+of+Ceratogymna+hornbills+in+a+West+African+tropical+lowland+forest.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0001008-Wescott1" id="pone.0001008-Wescott1"></a>Wescott DA, Graham DL (2000) Patterns of movement and seed dispersal of a tropical frugivore. Oecologia  102: 249–257.  <ul class="find" data-citedArticleID="1003066" data-doi="10.1007/pl00008853"><li><a href="http://dx.doi.org/10.1007/pl00008853" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Patterns+of+movement+and+seed+dispersal+of+a+tropical+frugivore." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Patterns+of+movement+and+seed+dispersal+of+a+tropical+frugivore.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0001008-Wehncke1" id="pone.0001008-Wehncke1"></a>Wehncke EV, Hubbell SP, Foster RB, Dalling JW (2003) Seed dispersal patterns produced by white-faced monkeys: implications for the dispersal limitation of neotropical tree species. J Ecol  91: 677–685.  <ul class="find" data-citedArticleID="1003060" data-doi="10.1046/j.1365-2745.2003.00798.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2745.2003.00798.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Seed+dispersal+patterns+produced+by+white-faced+monkeys%3A+implications+for+the+dispersal+limitation+of+neotropical+tree+species." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Seed+dispersal+patterns+produced+by+white-faced+monkeys%3A+implications+for+the+dispersal+limitation+of+neotropical+tree+species.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0001008-Westcott1" id="pone.0001008-Westcott1"></a>Westcott DA, Bentrupperbäumer J, Bradford MG, McKeown A (2005) Incorporating patterns of disperser behaviour into models of seed dispersal and its effects on estimated dispersal curves. Oecologia  146: 57–67.  <ul class="find" data-citedArticleID="1003068" data-doi="10.1007/s00442-005-0178-1"><li><a href="http://dx.doi.org/10.1007/s00442-005-0178-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Incorporating+patterns+of+disperser+behaviour+into+models+of+seed+dispersal+and+its+effects+on+estimated+dispersal+curves." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Incorporating+patterns+of+disperser+behaviour+into+models+of+seed+dispersal+and+its+effects+on+estimated+dispersal+curves.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0001008-Holbrook2" id="pone.0001008-Holbrook2"></a>Holbrook KM, Loiselle BA (2006)  Using toucan-generated seed shadows to estimate seed dispersal in Amazonia Ecuador. In: Dennis A, Green R, Schupp EW, Westcott DA, editors. Seed dispersal. Theory and its implications in a changing world. CABI Publishing.   <ul class="find-nolinks"></ul></li><li><span class="label">24.
+              </span><a name="pone.0001008-Schupp1" id="pone.0001008-Schupp1"></a>Schupp EW (1993) Quantity, quality and the effectiveness of seed dispersal by animals. Vegetatio  107/108: 15–29.  <ul class="find" data-citedArticleID="1003040" data-doi="10.1007/978-94-011-1749-4_2"><li><a href="http://dx.doi.org/10.1007/978-94-011-1749-4_2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantity%2C+quality+and+the+effectiveness+of+seed+dispersal+by+animals." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantity%2C+quality+and+the+effectiveness+of+seed+dispersal+by+animals.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0001008-Traveset1" id="pone.0001008-Traveset1"></a>Traveset A (1998) Effect of seed passage through vertebrate frugivores' guts on germination: a review. Pers Plant Ecol Evol Syst  1/2: 151–190.  <ul class="find" data-citedArticleID="1003048" data-doi="10.1078/1433-8319-00057"><li><a href="http://dx.doi.org/10.1078/1433-8319-00057" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effect+of+seed+passage+through+vertebrate+frugivores%27+guts+on+germination%3A+a+review." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effect+of+seed+passage+through+vertebrate+frugivores%27+guts+on+germination%3A+a+review.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0001008-Traveset2" id="pone.0001008-Traveset2"></a>Traveset A, Verdú M (2002)  A meta-analysis of the effect of gut treatment on seed germination. In: Levey DJ, Silva WR, Galetti M, editors. Seed dispersal and frugivory: Ecology, evolution and conservation. Wallingford, , New York: CAB International. pp. 339–350.  <ul class="find-nolinks"></ul></li><li><span class="label">27.
+              </span><a name="pone.0001008-Verd1" id="pone.0001008-Verd1"></a>Verdú M, Traveset A (2005) Early emergence enhances plant fitness: A phylogenetically controlled meta-analysis. Ecology  86: 1385–1394.  <ul class="find" data-citedArticleID="1003058" data-doi="10.1890/04-1647"><li><a href="http://dx.doi.org/10.1890/04-1647" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Early+emergence+enhances+plant+fitness%3A+A+phylogenetically+controlled+meta-analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Early+emergence+enhances+plant+fitness%3A+A+phylogenetically+controlled+meta-analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0001008-Wenny2" id="pone.0001008-Wenny2"></a>Wenny DG, Levey DJ (1998) Directed seed dispersal by bellbirds in a tropical cloud forest. Proc Natl Acad Sci USA  95: 6204–6207.  <ul class="find" data-citedArticleID="1003064" data-doi="10.1073/pnas.95.11.6204"><li><a href="http://dx.doi.org/10.1073/pnas.95.11.6204" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Directed+seed+dispersal+by+bellbirds+in+a+tropical+cloud+forest." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                 

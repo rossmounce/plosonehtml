@@ -1,0 +1,1581 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000796"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000796" />
+
+    <meta name="citation_title" content="NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence"/>
+    <meta itemprop="name" content="NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence"/>
+
+      <meta name="citation_author" content="Morten Nielsen"/>
+            <meta name="citation_author_institution" content="Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark"/>
+      <meta name="citation_author" content="Claus Lundegaard"/>
+            <meta name="citation_author_institution" content="Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark"/>
+      <meta name="citation_author" content="Thomas Blicher"/>
+            <meta name="citation_author_institution" content="Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark"/>
+      <meta name="citation_author" content="Kasper Lamberth"/>
+            <meta name="citation_author_institution" content="Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Mikkel Harndahl"/>
+            <meta name="citation_author_institution" content="Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Sune Justesen"/>
+            <meta name="citation_author_institution" content="Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Gustav Røder"/>
+            <meta name="citation_author_institution" content="Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark"/>
+      <meta name="citation_author" content="Bjoern Peters"/>
+            <meta name="citation_author_institution" content="La Jolla Institute for Allergy and Immunology, San Diego, California, United States of America"/>
+      <meta name="citation_author" content="Alessandro Sette"/>
+            <meta name="citation_author_institution" content="La Jolla Institute for Allergy and Immunology, San Diego, California, United States of America"/>
+      <meta name="citation_author" content="Ole Lund"/>
+            <meta name="citation_author_institution" content="Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark"/>
+      <meta name="citation_author" content="Søren Buus"/>
+            <meta name="citation_author_institution" content="Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark"/>
+
+    <meta name="citation_date" content="2007/8/29"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000796.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e796"/>
+    <meta name="citation_issue" content="8"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Identifying cytotoxic T cell epitopes from genomic and proteomic information: “The human MHC project.”.; citation_author=SL Lauemoller; citation_author=C Kesmir; citation_author=SL Corbet; citation_author=A Fomsgaard; citation_author=A Holm; citation_journal_title=Rev Immunogenet; citation_volume=2; citation_number=1; citation_pages=477-491; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Immunodominance in major histocompatibility complex class I-restricted T lymphocyte responses.; citation_author=JW Yewdell; citation_author=JR Bennink; citation_journal_title=Annual Review of Immunology; citation_volume=17; citation_number=2; citation_pages=51-88; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Epitope-based vaccines: an update on epitope identification, vaccine design and delivery.; citation_author=A Sette; citation_author=J Fikes; citation_journal_title=Curr Opin Immunol; citation_volume=15; citation_number=3; citation_pages=461-470; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Nine major HLA class I supertypes account for the vast preponderance of HLA-A and –B polymorphism.; citation_author=A Sette; citation_author=J Sidney; citation_journal_title=Immunogenetics; citation_volume=50; citation_number=4; citation_pages=201-212; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Definition of supertypes for HLA molecules using clustering of specificity matrices.; citation_author=O Lund; citation_author=M Nielsen; citation_author=C Kesmir; citation_author=AG Petersen; citation_author=C Lundegaard; citation_journal_title=Immunogenetics; citation_volume=55; citation_number=5; citation_pages=797-810; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Cellular peptide composition governed by major histocompatibility complex class I molecules.; citation_author=K Falk; citation_author=O Rotzschke; citation_author=HG Rammensee; citation_journal_title=Nature; citation_volume=348; citation_number=6; citation_pages=248-251; citation_date=1990; " />
+      <meta name="citation_reference" content="citation_title=The relation between major histocompatibility complex (MHC) restriction and the capacity of Ia to bind immunogenic peptides.; citation_author=S Buus; citation_author=A Sette; citation_author=SM Colon; citation_author=C Miles; citation_author=HM Grey; citation_journal_title=Science; citation_volume=235; citation_number=7; citation_pages=1353-1358; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=Structural characteristics of an antigen required for its interaction with Ia and recognition by T cells.; citation_author=A Sette; citation_author=S Buus; citation_author=S Colon; citation_author=JA Smith; citation_author=C Miles; citation_journal_title=Nature; citation_volume=328; citation_number=8; citation_pages=395-399; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=Prediction of major histocompatibility complex binding regions of protein antigens by sequence pattern analysis.; citation_author=A Sette; citation_author=S Buus; citation_author=E Appella; citation_author=JA Smith; citation_author=R Chesnut; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=86; citation_number=9; citation_pages=3296-2300; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=Scheme for ranking potential HLA-A2 binding peptides based on independent binding of individual peptide side-chains.; citation_author=KC Parker; citation_author=MA Bednarek; citation_author=JE Coligan; citation_journal_title=J Immunol; citation_volume=152; citation_number=10; citation_pages=163-175; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=SYFPEITHI: database for MHC ligands and peptide motifs.; citation_author=H Rammensee; citation_author=J Bachmann; citation_author=NP Emmerich; citation_author=OA Bachor; citation_author=S Stevanovic; citation_journal_title=Immunogenetics; citation_volume=50; citation_number=11; citation_pages=213-219; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Improved prediction of MHC class I and class II epitopes using a novel Gibbs sampling approach.; citation_author=M Nielsen; citation_author=C Lundegaard; citation_author=P Worning; citation_author=CS Hvid; citation_author=K Lamberth; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=12; citation_pages=1388-1397; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Prediction of MHC class I binding peptides using profile motifs.; citation_author=PA Reche; citation_author=JP Glutting; citation_author=EL Reinherz; citation_journal_title=Hum Immunol; citation_volume=63; citation_number=13; citation_pages=701-709; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Prediction of MHC binding peptides using artificial neural networks.; citation_author=V Brusic; citation_author=G Rudy; citation_author=LC Harrison; citation_number=14; citation_pages=253-260; citation_date=1994; citation_publisher=IOS Press; " />
+      <meta name="citation_reference" content="citation_title=Reliable prediction of T-cell epitopes using neural networks with novel sequence representations.; citation_author=M Nielsen; citation_author=C Lundegaard; citation_author=P Worning; citation_author=SL Lauemoller; citation_author=K Lamberth; citation_journal_title=Protein Sci; citation_volume=12; citation_number=15; citation_pages=1007-1017; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Sensitive quantitative predictions of peptide-MHC binding by a ‘Query by Committee’ artificial neural network approach.; citation_author=S Buus; citation_author=SL Lauemoller; citation_author=P Worning; citation_author=C Kesmir; citation_author=T Frimurer; citation_journal_title=Tissue Antigens; citation_volume=62; citation_number=16; citation_pages=378-384; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Predicting peptides that bind to MHC molecules using supervised learning of hidden Markov models.; citation_author=H Mamitsuka; citation_journal_title=Proteins; citation_volume=33; citation_number=17; citation_pages=460-474; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Prediction of MHC class I binding peptides, using SVMHC.; citation_author=P Donnes; citation_author=A Elofsson; citation_journal_title=BMC Bioinformatics; citation_volume=3; citation_number=18; citation_pages=25; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Relating amino acid sequence to phenotype: analysis of peptide-binding data.; citation_author=MR Segal; citation_author=MP Cummings; citation_author=AE Hubbard; citation_journal_title=Biometrics; citation_volume=57; citation_number=19; citation_pages=632-642; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Modeling the MHC class I pathway by combining predictions of proteasomal cleavage, TAP transport and MHC class I binding.; citation_author=S Tenzer; citation_author=B Peters; citation_author=S Bulik; citation_author=O Schoor; citation_author=C Lemmel; citation_journal_title=Cell Mol Life Sci; citation_volume=62; citation_number=20; citation_pages=1025-1037; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Prediction of binding to MHC class I molecules.; citation_author=HP Adams; citation_author=JA Koziol; citation_journal_title=J Immunol Methods; citation_volume=185; citation_number=21; citation_pages=181-190; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Two complementary methods for predicting peptides binding major histocompatibility complex molecules.; citation_author=K Gulukota; citation_author=J Sidney; citation_author=A Sette; citation_author=C DeLisi; citation_journal_title=Journal of Molecular Biology; citation_volume=267; citation_number=22; citation_pages=1258-1267; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_author=P Baldi; citation_author=S Brunak; citation_number=23; citation_date=2001; citation_publisher=MIT Press; " />
+      <meta name="citation_reference" content="citation_title=A community resource benchmarking predictions of peptide binding to MHC-I molecules.; citation_author=B Peters; citation_author=HH Bui; citation_author=S Frankild; citation_author=M Nielson; citation_author=C Lundegaard; citation_journal_title=PLoS Comput Biol; citation_volume=2; citation_number=24; citation_pages=e65; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=IMGT, the international ImMunoGeneTics information system(R): a standardized approach for immunogenetics and immunoinformatics.; citation_author=MP Lefranc; citation_journal_title=Immunome Res; citation_volume=1; citation_number=25; citation_pages=3; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=SYFPEITHI: database for MHC ligands and peptide motifs.; citation_author=H Rammensee; citation_author=J Bachmann; citation_author=NP Emmerich; citation_author=OA Bachor; citation_author=S Stevanovic; citation_journal_title=Immunogenetics; citation_volume=50; citation_number=26; citation_pages=213-219; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=A roadmap for the immunomics of category A-C pathogens.; citation_author=A Sette; citation_author=W Fleri; citation_author=B Peters; citation_author=M Sathiamurthy; citation_author=HH Bui; citation_journal_title=Immunity; citation_volume=22; citation_number=27; citation_pages=155-161; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_author=GE Steven; citation_author=PP March; citation_author=DLinda Barber; citation_number=28; citation_date=2000; citation_publisher=Academic Press; " />
+      <meta name="citation_reference" content="citation_title=Toward the Quantitative Prediction of T-Cell Epitopes: CoMFA and CoMSIA Studies of Peptides with Affinity for the Class I MHC Molecule HLA-A*0201.; citation_author=IA Doytchinova; citation_author=DR Flower; citation_journal_title=J Med Chem; citation_volume=44; citation_number=29; citation_pages=3572-3581; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Ab initio prediction of peptide-MHC binding geometry for diverse class I MHC allotypes.; citation_author=AJ Bordner; citation_author=R Abagyan; citation_journal_title=Proteins; citation_volume=63; citation_number=30; citation_pages=512-526; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=DynaPred: A structure and sequence based method for the prediction of MHC class I binding peptide sequences and conformations.; citation_author=I Antes; citation_author=SW Siu; citation_author=T Lengauer; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=31; citation_pages=e16-24; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Structural prediction of peptides bound to MHC class I.; citation_author=T Fagerberg; citation_author=JC Cerottini; citation_author=O Michielin; citation_journal_title=J Mol Biol; citation_volume=356; citation_number=32; citation_pages=521-546; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=The Protein Data Bank.; citation_author=HM Berman; citation_author=T Battistuz; citation_author=TN Bhat; citation_author=WF Bluhm; citation_author=PE Bourne; citation_journal_title=Acta Crystallogr D Biol Crystallogr; citation_volume=58; citation_number=33; citation_pages=899-907; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Generation of tissue-specific and promiscuous HLA ligand databases using DNA microarrays and virtual HLA class II matrices.; citation_author=T Sturniolo; citation_author=E Bono; citation_author=J Ding; citation_author=L Raddrizzani; citation_author=O Tuereci; citation_journal_title=Nat Biotechnol; citation_volume=17; citation_number=34; citation_pages=555-561; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Prediction of promiscuous peptides that bind HLA class I molecules.; citation_author=V Brusic; citation_author=N Petrovsky; citation_author=G Zhang; citation_author=VB Bajic; citation_journal_title=Immunol Cell Biol; citation_volume=80; citation_number=35; citation_pages=280-285; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Improving MHC binding peptide prediction by incorporating binding data of auxiliary MHC molecules.; citation_author=S Zhu; citation_author=K Udaka; citation_author=J Sidney; citation_author=A Sette; citation_author=KF Aoki-Kinoshita; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=36; citation_pages=1648-1655; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Establishment of a quantitative ELISA capable of determining peptide-MHC class I interaction.; citation_author=C Sylvester-Hvid; citation_author=N Kristensen; citation_author=T Blicher; citation_author=H Ferré; citation_author=SL Lauemøller; citation_journal_title=Tissue Antigens; citation_volume=59; citation_number=37; citation_pages=251-258; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Numerical Recipies in C: The Art of Scientific Computing.; citation_author=WH Press; citation_author=BP Flannery; citation_author=SA Teukolsky; citation_author=WT Vetterling; citation_number=38; citation_date=1992; citation_publisher=Cambridge University Press; " />
+      <meta name="citation_reference" content="citation_title=Identifiying human MHC supertypes using bioinformatic methods.; citation_author=IA Doytchinova; citation_author=P Guan; citation_author=DR Flower; citation_journal_title=J Immunol; citation_volume=172; citation_number=39; citation_pages=4314-4323; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=The SWISS-PROT protein knowledgebase and its supplement TrEMBL in 2003.; citation_author=B Boeckmann; citation_author=A Bairoch; citation_author=R Apweiler; citation_author=MC Blatter; citation_author=A Estreicher; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=40; citation_pages=365-370; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=HIV Molecular Immunology 2001.; citation_author=BTM Korber; citation_author=C Brander; citation_author=BF Haynes; citation_author=R Koup; citation_author=C Kuiken; citation_number=41; citation_date=2001; citation_publisher=Los Alamos National Laboratory, Theoretical Biology and Biophysics; " />
+      <meta name="citation_reference" content="citation_title=Immune epitope mapping in the post-genomic era: lessons for vaccine development.; citation_author=A Sette; citation_author=B Peters; citation_journal_title=Curr Opin Immunol; citation_volume=19; citation_number=42; citation_pages=106-110; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=MHC ligands and Peptide Motifs.; citation_author=HG Rammensee; citation_author=J Bachmann; citation_author=S Stevanovic; citation_number=43; citation_date=1997; citation_publisher=Chapman&Hall; " />
+      <meta name="citation_reference" content="citation_title=Toward the Quantitative Prediction of T-Cell Epitopes: CoMFA and CoMSIA Studies of Peptides with Affinity for the Class I MHC Molecule HLA-A*0201.; citation_author=IA Doytchinova; citation_author=DR Flower; citation_journal_title=J Med Chem; citation_volume=44; citation_number=44; citation_pages=3572-3581; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Prediction of class I T-cell epitopes: evidence of presence of immunological hot spots inside antigens.; citation_author=KN Srinivasan; citation_author=GL Zhang; citation_author=AM Khan; citation_author=JT August; citation_author=V Brusic; citation_journal_title=Bioinformatics; citation_volume=20; citation_number=45; citation_pages=I297-I302; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Detailed characterization of the peptide binding specificity of five common Patr class I MHC molecules.; citation_author=J Sidney; citation_author=S Asabe; citation_author=B Peters; citation_author=KA Purton; citation_author=J Chung; citation_journal_title=Immunogenetics; citation_volume=58; citation_number=46; citation_pages=559-570; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Amino acid substitution matrices from protein blocks.; citation_author=S Henikoff; citation_author=JG Henikoff; citation_journal_title=Proc Natl Acad Sci USA; citation_volume=89; citation_number=47; citation_pages=10915-10919; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=The neighbor-joining method: a new method for reconstructing phylogenetic trees.; citation_author=N Saitou; citation_author=M Nei; citation_journal_title=Mol Biol Evol; citation_volume=4; citation_number=48; citation_pages=406-425; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=A Classification of Consensus Methods for Phylogenetics.; citation_author=M Janowitz; citation_author=FJ Lapointe; citation_author=FR McMorris; citation_author=B Mirkin; citation_author=FS Roberts; citation_journal_title=BioConsensus; citation_volume=61; citation_number=49; citation_pages=163-183; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Consensus n-trees.; citation_author=T Margush; citation_author=FR McMorris; citation_journal_title=B Math Biol; citation_volume=43; citation_number=50; citation_pages=239-244; citation_date=1981; " />
+      <meta name="citation_reference" content="citation_title=Selection of representative protein data sets.; citation_author=U Hobohm; citation_author=M Scharf; citation_author=R Schneider; citation_author=C Sander; citation_journal_title=Protein Sci; citation_volume=1; citation_number=51; citation_pages=409-417; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=On Information and Sufficiency.; citation_author=S Kullback; citation_author=RA Leibler; citation_journal_title=Annals of Math Stat; citation_volume=22; citation_number=52; citation_pages=76-86; citation_date=1951; " />
+      <meta name="citation_reference" content="citation_title=Sequence logos: a new way to display consensus sequences.; citation_author=TD Schneider; citation_author=RM Stephens; citation_journal_title=Nucleic Acids Res; citation_volume=18; citation_number=53; citation_pages=6097-6100; citation_date=1990; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence"/>
+    <meta name="twitter:description" content="BackgroundBinding of peptides to Major Histocompatibility Complex (MHC) molecules is the single most selective step in the recognition of pathogens by the cellular immune system. The human MHC class I system (HLA-I) is extremely polymorphic. The number of registered HLA-I molecules has now surpassed 1500. Characterizing the specificity of each separately would be a major undertaking.Principal FindingsHere, we have drawn on a large database of known peptide-HLA-I interactions to develop a bioinformatics method, which takes both peptide and HLA sequence information into account, and generates quantitative predictions of the affinity of any peptide-HLA-I interaction. Prospective experimental validation of peptides predicted to bind to previously untested HLA-I molecules, cross-validation, and retrospective prediction of known HIV immune epitopes and endogenous presented peptides, all successfully validate this method. We further demonstrate that the method can be applied to perform a clustering analysis of MHC specificities and suggest using this clustering to select particularly informative novel MHC molecules for future biochemical and functional analysis.ConclusionsEncompassing all HLA molecules, this high-throughput computational method lends itself to epitope searches that are not only genome- and pathogen-wide, but also HLA-wide. Thus, it offers a truly global analysis of immune responses supporting rational development of vaccines and immunotherapy. It also promises to provide new basic insights into HLA structure-function relationships. The method is available at http://www.cbs.dtu.dk/services/NetMHCpan."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000796.g004"/>
+
+  <meta property="og:title" content="NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=9902'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=2541'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=9388&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000796">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000796" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000796&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    <i>NetMHCpan</i>, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Morten Nielsen
+              <span class="corresponding">mail</span>, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:mniel@cbs.dtu.dk">mniel@cbs.dtu.dk</a></p>
+
+                <p>Affiliation:
+                  Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Claus Lundegaard, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Thomas Blicher, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Kasper Lamberth, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Mikkel Harndahl, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Sune Justesen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Gustav Røder, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Bjoern Peters, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  La Jolla Institute for Allergy and Immunology, San Diego, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Alessandro Sette, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  La Jolla Institute for Allergy and Immunology, San Diego, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Ole Lund, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Center for Biological Sequence Analysis, BioCentrum-DTU, Technical University of Denmark, Lyngby, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Søren Buus
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Experimental Immunology, Institute of Medical Microbiology and Immunology, University of Copenhagen, Copenhagen, Denmark
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: August 29, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000796</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000796-g001" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000796-g002" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000796-t001" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000796-t002" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000796-t003" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000796-g003" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000796-g004" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000796">Reader Comments (2)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000796" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>Binding of peptides to Major Histocompatibility Complex (MHC) molecules is the single most selective step in the recognition of pathogens by the cellular immune system. The human MHC class I system (HLA-I) is extremely polymorphic. The number of registered HLA-I molecules has now surpassed 1500. Characterizing the specificity of each separately would be a major undertaking.</p>
+
+
+<h3>Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>Here, we have drawn on a large database of known peptide-HLA-I interactions to develop a bioinformatics method, which takes both peptide and HLA sequence information into account, and generates quantitative predictions of the affinity of any peptide-HLA-I interaction. Prospective experimental validation of peptides predicted to bind to previously untested HLA-I molecules, cross-validation, and retrospective prediction of known HIV immune epitopes and endogenous presented peptides, all successfully validate this method. We further demonstrate that the method can be applied to perform a clustering analysis of MHC specificities and suggest using this clustering to select particularly informative novel MHC molecules for future biochemical and functional analysis.</p>
+
+
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>Encompassing all HLA molecules, this high-throughput computational method lends itself to epitope searches that are not only genome- and pathogen-wide, but also HLA-wide. Thus, it offers a truly global analysis of immune responses supporting rational development of vaccines and immunotherapy. It also promises to provide new basic insights into HLA structure-function relationships. The method is available at <a href="http://www.cbs.dtu.dk/services/NetMHCpan">http://www.cbs.dtu.dk/services/NetMHCpan</a>.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Nielsen M, Lundegaard C, Blicher T, Lamberth K, Harndahl M, et al.  (2007) <em>NetMHCpan</em>, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence. PLoS ONE 2(8):
+          e796.
+            doi:10.1371/journal.pone.0000796</p><p><strong>Academic Editor: </strong>Esper Kallas, Federal University of Sao Paulo, Brazil</p><p><strong>Received:</strong> May 14, 2007; <strong>Accepted:</strong> July 29, 2007; <strong>Published:</strong> August 29, 2007</p><p>This is an open-access article distributed under the terms of the Creative Commons Public Domain declaration which stipulates that, once placed in the public domain, this work may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose.</p><p><strong>Funding: </strong>This work was supported by the NIH (contracts HHSN266200400025C, HHSN266200400083C, and HHSN26620040006C) and sixth Framework program of the European commission (grant LSHB-CT-2003-503231).</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Proteins are essential immune target structures. Being extremely diverse, they constitute unique imprints of their source organisms and provide-even at the peptide level-sufficient target identification and discrimination (reviewed in <a href="#pone.0000796-Lauemoller1">[1]</a>). The cytotoxic T lymphocyte (CTL) arm of the T cell immune system represents a prime example of peptides being used as immune targets. CTL's are aimed at intracellular pathogens and obtain information on the intracellular environment of our cells through a series of cellular events involving HLA-I-mediated antigen processing and presentation of peptide epitopes derived from the intracellular protein metabolism, including that of intracellularly located pathogens (reviewed in <a href="#pone.0000796-Yewdell1">[2]</a>). A detailed description of how the immune system handles proteins and generates peptide could enable scientists and clinicians to analyze any protein of interest for the presence of potentially immunogenic CTL epitopes. Scanning entire proteomes computationally should further enable a rational approach to vaccine development, immunotherapy and diagnostics. Thus, candidate epitopes might be predicted from the various microbial genome projects, tumor vaccine candidates from mRNA expression profiling of tumors (“transcriptomes”) and auto-antigens from the human genome (reviewed in <a href="#pone.0000796-Lauemoller1">[1]</a>, <a href="#pone.0000796-Sette1">[3]</a>).</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>The single most selective event in antigen processing and presentation is that of peptide binding to HLA-I. It has been estimated that only 1 in 200 peptides will bind to a given MHC class I molecule with sufficient strength to elicit an immune response <a href="#pone.0000796-Yewdell1">[2]</a>. This makes it particularly important to establish accurate descriptions and predictions of peptide binding to HLA-I molecules <a href="#pone.0000796-Yewdell1">[2]</a>. It is not a simple task since the genes encoding HLA proteins are extremely polymorphic giving rise to many different peptide binding specificities being expressed in the human population. Sette and Sidney clustered HLA-I molecules into supertypes <a href="#pone.0000796-Sette2">[4]</a>, <a href="#pone.0000796-Lund1">[5]</a> according to peptide binding specificities. Although the HLA-I supertype concept does reduce the complexity of the HLA-I system, there is still an unmet need to increase the coverage of HLA-I specificities as most existing HLA-I molecules have no or poorly characterized supertype relationships. Furthermore, at the present rate of discovery of HLA specificities, it would be a very demanding task to keep up with the increasing number of registered HLA molecules. Clearly, there is a need for a more efficient approach to analyze HLA-I specificities.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>The analysis of HLA-I specificities have classically entailed the identification of peptide binding motifs (characterized primarily by the requirement for a few properly spaced and essential primary anchor residues) through pool sequencing of MHC eluted peptides <a href="#pone.0000796-Falk1">[6]</a> and/or the generation of a representative set of peptide binding data <a href="#pone.0000796-Buus1">[7]</a>, <a href="#pone.0000796-Sette3">[8]</a>. Once such information has been obtained, the next step has been to generate peptide-binding predictions using either simple motif searches strategies <a href="#pone.0000796-Sette3">[8]</a> or complete statistical matrices representing the frequency of each amino acid in each position <a href="#pone.0000796-Sette4">[9]</a>–<a href="#pone.0000796-Reche1">[13]</a>. More recently, the growing amount of peptide-binding data has supported the generation of more sophisticated data-driven bioinformatics approaches including artificial neural networks, hidden Markov models, and support vector machines <a href="#pone.0000796-Brusic1">[14]</a>–<a href="#pone.0000796-Tenzer1">[20]</a>. Artificial Neural Networks (ANN) are ideally suited to recognize non-linear patterns, which are believed to contribute to peptide-HLA-I interactions <a href="#pone.0000796-Nielsen2">[15]</a>, <a href="#pone.0000796-Buus2">[16]</a>, <a href="#pone.0000796-Adams1">[21]</a>, <a href="#pone.0000796-Gulukota1">[22]</a>. In an ANN, information is trained and distributed into a computer network with an input layer, hidden layers and an output layer all connected in a given structure through weighted connections <a href="#pone.0000796-Baldi1">[23]</a>. They are trained to recognize inputs (e.g. peptide sequences) associated with a given output (e.g. binding affinity). Once trained, the network should recognize the complicated input patterns compatible with binding. In a recent study, the ANN approach was found to be a highly efficient prediction mechanism for peptide-HLA-I interactions <a href="#pone.0000796-Peters1">[24]</a>.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>In general, HLA-I binding predictions depend on sufficient experimental data being available for the exact HLA-I molecule in question. Unfortunately, less than 10% of the 1500 <a href="#pone.0000796-Lefranc1">[25]</a> registered HLA-I proteins have been examined experimentally, and less than 5% have been characterized with more than 50 examples of peptide binders <a href="#pone.0000796-Rammensee2">[26]</a>, <a href="#pone.0000796-Sette5">[27]</a>. Furthermore, focus has been towards the most prevalent Caucasians HLA-I molecules, which are not necessarily those prevalent among other populations, which are in more urgent need of new vaccine initiatives. By way of example, only two of the six HLA-A alleles, which are found with phenotype frequencies above 10% in Sub-Saharan African populations, are found above the 2–4% level in Caucasians; only three out of seven HLA-A alleles, which are found with phenotype frequencies above 10% in South-East Asian populations, are found above the 1% level in Caucasians; only three out of five HLA-A alleles, which are found with phenotype frequencies above 10% in South-American populations, are found above the 1% level in Caucasians etc. <a href="#pone.0000796-Steven1">[28]</a>. To overcome this problem, several (frequently computer intensive) prediction algorithms have been proposed using the three dimensional structure of the MHC molecule, and empirical or semi-empirical force fields, to estimate the peptide-HLA-I binding affinity <a href="#pone.0000796-Doytchinova1">[29]</a>–<a href="#pone.0000796-Fagerberg1">[32]</a>. Obviously, to extend this approach beyond the 17 HLA-I molecules currently solved at the structural level requires some kind of structural modeling <a href="#pone.0000796-Berman1">[33]</a>. Searching for alternative solutions, we here propose a novel method, <em>NetMHCpan</em>, exploiting both peptide and primary HLA sequence as input information for ANN-driven predictions pooling all available data and at the same time incorporate all HLA specificities. The method is successfully demonstrated to predict the affinity of interaction of any peptide with any human HLA-A or HLA-B molecule i.e. the method is pan-specific. Where other groups earlier have suggested similar prediction strategies to span limited regions of the HLA diversity <a href="#pone.0000796-Sturniolo1">[34]</a>–<a href="#pone.0000796-Zhu1">[36]</a>, to the best of our knowledge, this is the largest database of HLA binding events ever used for this purpose, and the first report describing predictors applicable to a complete analysis of all HLA-A and -B specificities.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3><a id="article1.body1.sec2.p1" name="article1.body1.sec2.p1"></a><p>A large set of quantitative peptide-HLA binding data was used as input to train the <em>NetMHCpan</em> method. Both peptide and HLA primary sequences would subsequently be used as input for the method, and as output one should retrieve the predicted peptide-HLA-I binding affinity (for details see <a href="#s4">Materials and Methods</a>).</p>
+
+<h4>Experimental validation</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>A prospective validation was performed using <em>NetMHCpan</em> to identify peptides, which would bind to HLA molecules that specificity-wise were unknown to us. For each HLA molecule, the binding affinity was predicted for a set of 500,000 random nonameric peptides of pathogenic, or human, origin. Only peptides predicted to bind with an affinity stronger than 50 nM were selected, and from this set of predicted binders, a subset of 10–15 peptides with low mutual sequence similarity (i.e. avoiding redundancy) was selected. These peptides were then tested for binding to the relevant HLA molecule in an <em>in vitro</em> binding assay <a href="#pone.0000796-SylvesterHvid1">[37]</a>. More than 86% of the predictions were experimentally confirmed as binders with K<sub>D</sub> values below 500 nM (many peptides bound with affinities better than 5 nM, see <a href="#pone-0000796-g001">Figure 1</a>). Thus, the pan-specific prediction approach was capable of extracting HLA sequence information and correctly relating this to peptide binding even in the absence of any data for the specific query HLA molecule.</p>
+<div class="figure" id="pone-0000796-g001"><div class="img"><a name="pone-0000796-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Prospective validation using hitherto uncharacterized HLA molecules.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>The upper figure gives the IC50 binding values for the sets of peptides identified by the <em>NetMHCpan</em> method to bind two hitherto uncharacterized HLA-A*8001, and HLA-A*7401 molecules. The peptides were selected as described in the text. 86% of the tested peptides bind stronger than 500 nM. The lower figure shows a Kullback-Leibler <a href="#pone.0000796-Kullback1">[52]</a> logo visualization of the HLA binding motifs as predicted by the <em>NetMHCpan</em> method. Peptide binders used to generate the logos for each HLA molecule were selected from a pool of 500,000 random natural nonamers using the <em>NetMHCpan</em> method with a binding threshold of 500 nM. The logos were generated with the logo program of Schneider and Stephens <a href="#pone.0000796-Schneider1">[53]</a>. Note that the binding motifs visualized in the logo plot are estimated from a set of approximately 5000 predicted binders, whereas the validated peptides only make up of the top 0.2%.</p>
+<span>doi:10.1371/journal.pone.0000796.g001</span></div>
+
+<h4>Leave-one-out validation</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>The ultimate validation of the predictive performance of the pan-specific approach is obtained by using the NetMHCpan method to identify peptide binders for MHC molecules that are specificity-wise unknown. This we have shown above for two alleles HLA. As another evaluation of the predictive performance of the pan-specific approach we performed a simulated “blind” leave-one-out validation. Here, we trained networks using all data for the relevant loci, HLA-A or -B, except the data for the molecule in question (i.e. a “leave-one-out” validation, here after refereed to as <em>Pan</em>). This was done for all HLA molecules represented in the data set. Thus, in this evaluation, no peptide-HLA binding data from the validation set was included in the training of the pan-specific predictor. For comparison, predictions were also trained solely on peptide binding data (i.e. without considering HLA sequence information) and using conventional cross-validation (see <a href="#s4">Materials and Methods</a>). For each allele under consideration, we trained three such conventional single allele cross-validated networks based on different sets of peptide binding data: (1) data from the exact HLA molecule in question (<em>Self</em>), (2) data from the most closely related HLA molecule as identified by similarity between the HLA sequences (<em>Neighbor</em>), and (3) data from a previously selected representative of the HLA supertype <a href="#pone.0000796-Lund1">[5]</a> (<em>Supertype</em>; clearly this comparison cannot include the representative itself). This leave-one-out experiment thus constitutes a highly rigorous validation of the pan-specific method. By performing the leave-one-out experiment of all 42 alleles included in the benchmark data set, we can validate the performance of the <em>NetMHCpan</em> method on 42 alleles with uncharacterized binding specificity.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Some highlights of the “leave-one-out” analysis are shown in <a href="#pone-0000796-t001">Table 1</a> (the complete data is given in <a href="#pone.0000796.s001">Table S1</a>). Perhaps not surprising, <em>Self</em> often performed better than <em>Pan</em>. However, it is noteworthy that all alleles, where <em>Pan</em> performed best, were characterized by very little data (57 to 141 peptide data points) being available. More pertinent for this work, however, <em>Pan</em> had a significantly higher predictive performance than both the <em>Neighbor and Supertype</em> methods (p&lt;0.005 in both cases). Plotting the <em>Pan</em> performance against the distance between the query HLA and its nearest neighbor (as determined from the similarity between the two HLA sequences), it became apparent that the <em>Pan</em> predictor performed better when the query HLA molecule was represented by closely related HLA molecules (see <a href="#pone-0000796-g002">Figure 2</a> and <a href="#pone.0000796.s002">Table S2</a>).</p>
+<div class="figure" id="pone-0000796-g002"><div class="img"><a name="pone-0000796-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Predictive performance of the <em>NetMHCpan</em> method as a function of the distance to its nearest neighbor HLA allele.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>The nearest neighbor distance is estimated from the alignment score of the HLA pseudo sequences using the relation <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.e001&amp;representation=PNG" class="inline-graphic"></span>, where s(A,B) is the BLOSUM50 alignment score <a href="#pone.0000796-Henikoff1">[47]</a> between the pseudo sequences for alleles A and B, respectively. HLA-A alleles are shown as solid circles. HLA-B alleles are shown as +. The Pearson correlation coefficient between the pseudo sequence distance and the predictive performance for the 42 HLA alleles included in the plot is 0.67. Note, that the distance measure inherently assumes that all residues are equally important and independent of the pseudo sequence context. While this assumption is obviously inconsistent with the reality of primary anchors, it meets another essential requirement; it is simple and unbiased.</p>
+<span>doi:10.1371/journal.pone.0000796.g002</span></div><div class="figure" id="pone-0000796-t001"><div class="img"><a name="pone-0000796-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Comparison of various validated predictors of peptide-HLA binding.</span></strong></p><span>doi:10.1371/journal.pone.0000796.t001</span></div><a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>Examples of how HLA molecules, which are sparsely populated in terms of available peptide binding data, can be represented by related and well-populated HLA molecules is provided in <a href="#pone-0000796-t001">Table 1A</a>. Here, the performances of <em>Pan</em> are much better than those of the corresponding <em>Self</em>. In agreement, there are very few peptide binding data points (between 51 and 141 data point) for these HLA-A molecules, however, in total there are more than 11,000 data points for closely related HLA-A*02xx molecules. How sparsely populated HLA molecules cannot serve as HLA representatives is demonstrated in <a href="#pone-0000796-t001">Table 1B</a>. For HLA-A*2601 the <em>Pan</em> method has a much lower performance than the <em>Self</em>-method, whereas the converse is true for the closely related HLA-A*2602. This is in agreement with the fact that HLA*2601 is well populated with peptide binding data, whereas HLA-A*2602 is not. There is thus sufficient HLA-A*2601 data to represent HLA-A*2602, but not vice versa. A similar phenomenon can be observed for HLA-B*5801 vs. HLA-B*5701 and HLA-B*4001 versus HLA-B*4402. As shown in <a href="#pone-0000796-t001">Table 1C</a>, the HLA-B*2705 <em>Self</em>-performance is excellent, whereas the <em>Pan</em>, as well as <em>Neighbor</em>, performances are appalling. This is in agreement with the amount of data available; there are 1251 self-data points, but no clear representative of HLA-B*2705 (the difference in HLA sequence to the nearest neighbor is very high, see <a href="#pone-0000796-g002">Figure 2</a> and <a href="#pone.0000796.s002">Table S2</a>). Similar, although less dramatic, observations are made for HLA-A*0101, and HLA-B*0702. Finally, HLA-A*6801 provides an example of how the <em>Pan</em>-networks avoids completely misleading <em>Neighbor</em> predictions (see <a href="#pone.0000796.s001">Table S1</a>). For HLA-A*6801, the nearest neighbor is HLA-A*6802, however, using the HLA-A*6802 predictor as HLA-A*6801 representative had a very poor predictive performance of −0.04. In contrast, the predictive performance of the <em>Pan</em>-networks for HLA-A*6801 is 0.62.</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>A summary of the leave-one-out experiment is given in <a href="#pone-0000796-t001">Table 1D</a>. For the HLA-A locus molecules, the <em>Pan</em> approach performed slightly better than <em>Self</em> and much better than <em>Neighbor</em> or <em>Supertype</em> (P&lt;0.001), thus providing strong unbiased overall support for the pan-specific approach. For the HLA-B locus molecules, the <em>Pan</em> approach performed slightly poorer than <em>Self</em>, but still significantly better than both the <em>Neighbor</em>, and <em>Supertype</em> approaches (P&lt;0.005). The performance difference between HLA-A and -B locus molecules is most likely the result of the more limited amount of available HLA-B data trying to cover an even greater span of sequence and binding motif diversities (i.e. see <a href="#pone-0000796-g002">Figure 2</a>, and the fact that 7 HLA-B supertypes are defined as compared to 5 for the HLA-A locus).</p>
+
+
+<h4>The final NetMHCpan predictors</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>Often small data sets contain a strong bias for both the negative and positive data since the data was selected to fit some predicted binding motif. One way to lower a potential bias in the negative data set is to add random data with assumed weak binding affinity values <a href="#pone.0000796-Donnes1">[18]</a>. For HLA it is a reasonable assumption that randomly chosen peptides will be non-binders, and the ANN methodology is reasonably robust against the occasional error introduced. Thus, for the remaining work, we added 100 random peptides to all data sets. This did indeed improve all the predictions that depended upon sparsely populated HLA representatives (e.g. <em>Pan</em> predictions for HLA-A*2601 and HLA-B*5801). The predictive performance for the leave-one-out pan-specific predictors trained including added random negative data is shown in <a href="#pone-0000796-t002">Table 2</a>.</p>
+<div class="figure" id="pone-0000796-t002"><div class="img"><a name="pone-0000796-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Performance for the different alleles in terms of the Pearsons correlation for the “leave-one-out” experiment with added random negatives.</span></strong></p><span>doi:10.1371/journal.pone.0000796.t002</span></div><a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>The final HLA-A and HLA-B pan-specific ANNs were trained on the complete datasets in a fivefold cross-validated manner on the <em>complete</em> data set abandoning the leave-one-out approach (see <a href="#s4">Materials and Methods</a>). The Pearson correlation <a href="#pone.0000796-Press1">[38]</a> for each HLA molecule was compared to that of the corresponding <em>Self</em>-networks. As illustrated in <a href="#pone-0000796-t003">Table 3</a>, the two approaches had comparable predictive performance. As the pan-specific neural network method demonstrates ability to encompass all HLA-A and HLA-B molecules, we denote the final pan-specific methods, <em>NetMHC-panA</em>, and <em>NetMHCpanB</em>, respectively.</p>
+<div class="figure" id="pone-0000796-t003"><div class="img"><a name="pone-0000796-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Performance of the pan-specific binding predictors.</span></strong></p><span>doi:10.1371/journal.pone.0000796.t003</span></div><a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>We can estimate the sensitivity and specificity of the <em>NetMHCpan</em> method from the predictions of the 37,384 peptide data included in the benchmark. For a classification threshold of 500 nM, we find that the method has a specificity of 0.95, and a sensitivity of 0.74. Further, we find that 83% of the predicted binders are indeed experimentally verified binders. A complete table describing the relation between sensitivity and specificity is given in <a href="#pone.0000796.s003">Table S3</a>.</p>
+
+
+<h4>Identification of HLA supertypes</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>The pan-specific approach relies on the ability of the neural networks to capture general features of the relationship between peptides and HLA sequences, and interpret these in terms of binding affinity. Having demonstrated the predictive strength of the approach to identify the binding motif of uncharacterized HLA molecules, we now used the pan-specific ANNs to cluster HLA molecules according to predicted peptide binding specificity. Pruned HLA distance trees were calculated as described in <a href="#s4">Materials and Methods</a>. <a href="#pone-0000796-g003">Figure 3A</a> depicts a tree including 36 representatives of the currently known HLA-A molecules, and <a href="#pone-0000796-g003">Figure 3B</a> a tree including 51 representatives of the known HLA-B molecules. The overall structure of the two new trees is in accordance with the supertype clustering proposed earlier by Sette and Sidney <a href="#pone.0000796-Sette2">[4]</a> and later extended by Lund et al, <a href="#pone.0000796-Lund1">[5]</a> according to which the HLA-A locus consists of five major supertypes A1, A2, A3, A24, and A26, and the HLA-B locus of seven major supertypes, B7, B8, B27, B39, B44, B58, and B62. However, the present analysis includes all known polymorphic HLA-A and -B molecules and suggests the existence of novel HLA supertypes, such as B51/B55, B35 (both split from B7), and A33, with specificities different from those described by previously defined HLA supertypes. Note also the assignment of the A*3001 molecule in the HLA-A tree. The A*3001 molecule has been variously clustered; by some to A3 <a href="#pone.0000796-Doytchinova2">[39]</a>, by others to A24 <a href="#pone.0000796-Sette2">[4]</a>, and recently to A1 <a href="#pone.0000796-Lund1">[5]</a>. By the present analysis, it should belong to the A3 supertype. Reassuringly, this has subsequently been confirmed experimentally (Lamberth et al, manuscript in preparation).</p>
+<div class="figure" id="pone-0000796-g003"><div class="img"><a name="pone-0000796-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>HLA clustering from <em>NetMHCpan</em> predictions.</span></strong></p><a id="article1.body1.sec2.sec4.fig1.caption1.p1" name="article1.body1.sec2.sec4.fig1.caption1.p1"></a><p>The left hand panel shows the clustering for 36 representative HLA-A alleles, and the right hand panel the clustering for 51 representatives HLA-B alleles. The trees are generated using the neighbor-joining algorithm from HLA distance matrices as described in the text. The 12 common supertypes are highlighted in full line circles. The proposed novel (sub)-supertypes are highlighted in dotted circles.</p>
+<span>doi:10.1371/journal.pone.0000796.g003</span></div>
+
+<h4>Identifying endogenously presented peptides</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>The NetMHCpan method was further validated using a large set of HLA ligand data. Nonamer HLA ligand data restricted to HLA-A and HLA-B alleles not included in the training data of the <em>NetMHCpan</em> method were downloaded from the SYFPEITHI database <a href="#pone.0000796-Rammensee1">[11]</a>. This set consists of 326 MHC ligands restricted to 43 different HLA-A and HLA-B alleles. For every peptide, the source protein was found in the SwissProt database <a href="#pone.0000796-Boeckmann1">[40]</a>. If more than one source protein was possible, the longest protein was chosen. All nonameric peptides contained in the source protein sequences, except the annotated HLA ligand were taken as negative peptides. For each protein-HLA ligand pair the predictive performance was estimated as the percent rank of the HLA ligand among all nonamer peptides in the protein sequence. Performing this ranks calculation for all the 326 HLA ligands, we find a median rank of 1.4%. For half of the protein sequences, the HLA ligand is thus found within the top 1.4% highest scoring peptides. In a protein of size 300 amino acids, the HLA ligand will thus on average be ranked 4. The mean rank is 4.4%. These results demonstrate the predictive power of the pan-specific method to perform accurate predictions also for HLA alleles <em>not</em> included in the training.</p>
+
+
+<h4>Predicting known HIV immunogens</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>As a final independent validation of the <em>NetMHC</em> approach, we analyzed all CTL nonamer epitopes reported with full HLA annotation in the Los Alamos HIV database (www.hiv.lanl.gov)<a href="#pone.0000796-Korber1">[41]</a>. This dataset contains 182 epitopes covering 49 HLA molecules (8 of these are of unknown HLA supertype assignment). The peptide-HLA binding affinity was predicted with <em>NetMHCpanA</em> or-<em>panB</em> using the annotated HLA molecule, and, when possible, with NetMHC (a previously reported HLA prediction tool available as <a href="http://www.cbs.dtu.dk/services/NetMHC">www.cbs.dtu.dk/services/NetMHC</a>) using the supertype representative. At a binding threshold of 500 nM, NetMHC identified 41% of the known epitopes, whereas the <em>NetMHCpanA</em> and -<em>panB</em> identified 52% (both approaches rejecting &gt;98% of a random collection of nonamer peptides). Thus, the pan-specific approach recognized about 25% more known epitopes than an HLA supertype based approach.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Predictions of T cell epitopes have the potential to provide important information for rational research and development of vaccines and immunotherapies (reviewed in <a href="#pone.0000796-Lauemoller1">[1]</a>, <a href="#pone.0000796-Sette6">[42]</a>). Being computational, these tools enable a rapid and complete genomics analysis of all available pathogen isolates. Unfortunately, at this time they only cover a few of the many HLA specificities found in human populations. The method proposed here offers a complete incorporation of all human HLA specificities thereby covering a significant aspect of human immune diversity. Several groups have tried to develop methods for predicting which peptides will bind to a given HLA molecule <a href="#pone.0000796-Parker1">[10]</a>, <a href="#pone.0000796-Brusic1">[14]</a>–<a href="#pone.0000796-Tenzer1">[20]</a>, <a href="#pone.0000796-Rammensee3">[43]</a>, <a href="#pone.0000796-Doytchinova3">[44]</a>. All such efforts have faced the problems of the limited amounts (or lack) of data available for most of the different HLA molecules present in the human population. Here, we report a pan-specific approach overcoming the problems of lacking specific binding data during the methods development. The major advantage of the pan-specific approach is that it predicts the binding of any peptide to any present and future HLA molecule, even in absence of data specific for the query HLA molecule, whereas conventional data-driven prediction approaches are restricted to predict the binding of peptides solely to the particular HLA molecules included in the training. In the past, others have proposed to similar strategies to span limited regions of the HLA diversity <a href="#pone.0000796-Sturniolo1">[34]</a>–<a href="#pone.0000796-Zhu1">[36]</a>. However, this is to our knowledge the first time data sets of this size have been available to do a complete analysis of all HLA-A and -B specificities.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>The large-scale leave-one-out experiment, covering 42 distinct HLA-A and HLA-B alleles, provided unbiased support of the validity of the pan-specific ANN approach. It suggests that a pan-specific approach-given that there is sufficient and representative data available-is preferable to conventional approaches using single-allele specific prediction methods as defined by nearest <em>Neighbor</em> or <em>Supertype</em> representation. The pan-specific method is even preferable to conventional <em>Self</em> single-allele approach in cases where only limited data is available (e.g. 5 out of 6 HLA-A2 molecules with only few peptide data). It stresses the importance of the availability of large and representative HLA binding data, and it suggests that the development of the next generations of improved pan-specific predictors can be optimized through targeted selection of peptides and HLA molecules for future data inclusion.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>The HLA supertype concept proposed by Sette and co-workers <a href="#pone.0000796-Sette2">[4]</a> suggested an approach to reduce the complexity of the polymorphism of the HLA. Several groups have developed methods for prediction of “promiscuous” HLA binders within known HLA supertypes <a href="#pone.0000796-Brusic2">[35]</a>, <a href="#pone.0000796-Zhu1">[36]</a>, <a href="#pone.0000796-Srinivasan1">[45]</a>. However, all these methods require prior knowledge about the HLA supertype relationship, which for most HLA molecules remain undefined. Further, even if the supertype relationship is known, peptides identified to bind to a representative HLA molecule within a supertype might not bind to one or several of the other members of the same supertype. At the population level, the pan-specific approach promises an alternative strategy to handle HLA polymorphism and improve coverage in vaccine design. Rather than including one or more peptides restricted to each of the HLA supertypes, one could use the pan-specific HLA predictors in conjunction with the HLA frequency distribution within an ethnic population in question to select epitopes that will provide the broadest possible population coverage. A computer simulation of such a strategy for HIV specific CTL epitope identification suggest that coverage could be improved from some 90% for a supertype representation strategy to almost 100% for a pan-specific strategy (data not shown). At the individual level, it is obvious that the ability to handle any HLA molecule that a given patient might have irrespective of the availability of specific data for a particular HLA haplotype in question is an enabling technology for individualized immunotherapy and diagnostics.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>It is implicitly clear that the pan-specific approach relies on the ability of the neural networks to capture general features of the relationship between peptides and HLA sequences, and interpret these in term of binding affinity. Using a polymorphism-based definition of the pseudo sequence (see <a href="#s4">Materials and Methods</a>), we were able to generate pan-specific predictors of comparable predictive performance to that of predictors defined using the structure-based definition (data not shown). This supports our contention that the pan-specific approach amounts to a virtually complete analysis of the structure-function relationship of the polymorphic HLA system. It remains to be seen whether a deconvolution of the pan-specific ANN can unlock such information.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>Intriguingly, our pan-specific predictors were able to predict peptide binders of closely related primate MHC class I molecules. For six of the most common Chimpanzee alleles represented in the Immune Epitope Database <a href="#pone.0000796-Sette5">[27]</a>, more than 55% of the experimentally verified nonamer peptide binders could be predicted while maintaining a specificity of &gt;95% (data not shown). This suggests that the specificity of closely related primate MHC molecules overlaps extensively with that of HLA molecules as earlier proposed by Sidney and co-workers<a href="#pone.0000796-Sidney1">[46]</a>. We are currently investigating whether the pan-specific predictors can be used to identify peptide binders for, and perhaps even identify supertype relationships of, non-human primate MHC molecules (Nielsen et al., manuscript in preparation).</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>The current versions the <em>NetMHCpanA</em> and -<em>panB</em> are publicly available at <a href="http://www.cbs.dtu.dk/services/NetMHCpan">www.cbs.dtu.dk/services/NetMHCpan</a>. We will continuously update this service as more data become available. In the future, we expect to expand it to cover HLA-C, HLA class II, as well as non-human MHC molecules.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Source data</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Nonameric peptide-HLA binding data was obtained from two sources: peptide-HLA binding data recently published by Sette and coworkers <a href="#pone.0000796-Peters1">[24]</a>, and data recently deposited at the IEDB by Buus and coworkers. In total, the data set consisted of 37,384 unique peptide-HLA interactions covering 24 HLA-A alleles and 18 HLA-B alleles (26503 and 10881 for the A and B alleles, respectively). Some 2600 peptide-HLA interactions were present multiple times and the average IC50 value was assigned as the peptide affinity. The majority of the peptides present in both dataset have very similar binding affinities, and 97.5% of those peptides share annotated binding affinities within a 1.5 fold range. Only less than 1% of the peptides differ with more than 10 folds in annotated binding affinity, and the two data sets are thus highly consistent. The number of peptide data for each of the 42 alleles is listed in <a href="#pone.0000796.s004">Table S4</a>.</p>
+
+
+<h4>HLA pseudo sequence</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>The HLA sequence was encoded in terms of a pseudo-sequence consisting of amino acid residues in contact with the peptide. The contact residues are defined as being within 4.0 Å of the peptide in any of a representative set of HLA-A and -B structures with nonamer peptides. Only polymorphic residues from A, B, and C alleles were included giving rise to a pseudo-sequence consisting of 34 amino acid residues. Notice that due to multiple possible conformations, the central peptide residues could choose to interact with different subsets of residues in the binding groove. All such residues were included in the pseudo-sequence. The interaction map between the peptide and HLA sequence is given in <a href="#pone-0000796-g004">Figure 4</a>.</p>
+<div class="figure" id="pone-0000796-g004"><div class="img"><a name="pone-0000796-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000796" data-uri="info:doi/10.1371/journal.pone.0000796.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000796.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000796.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000796.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000796.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Definition of the HLA pseudo sequence.</span></strong></p><a id="article1.body1.sec4.sec2.fig1.caption1.p1" name="article1.body1.sec4.sec2.fig1.caption1.p1"></a><p>The upper part of the figure shows the residues of the HLA sequence estimated to be in contact with the peptide in the binding cleft. The columns give the HLA residue numbering according the IMGT nomenclature. The rows demonstrate the interactions with the nine peptides positions. Squares in grey outline the peptide positions estimated to have contact the corresponding HLA residue. The lower part of the figure shows the amino acid polymorphism at each position in the pseudo sequence, both those that are common for HLA-A and –B, and those that are unique for the HLA-A and HLA-B loci, respectively (as of February 2007).</p>
+<span>doi:10.1371/journal.pone.0000796.g004</span></div>
+
+<h4>Neural network training</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>Artificial neural networks were trained to quantitatively predict peptide-HLA binding. As input data, we used both peptide sequences and HLA primary sequence information, and as output data we used experimentally determined affinity data. The peptide data was obtained as described above. The primary HLA sequence information was obtained from the Anthony Nolan database (<a href="http://www.anthonynolan.org.uk/HIG/">http://www.anthonynolan.org.uk/HIG/</a>) and reduced to the 34 amino acid pseudo-sequence as described previously. The data was randomly split into five subsets, and five individual networks were trained each using 4/5 of the data to update the network weights and 1/5 to decide when to terminate the training (i.e. a five-fold cross-validation). Architectures with hidden neurons in the range 22 to 86 were tested, and the network with the highest prediction performance (lowest square error) on the test set was selected. The neural network architecture used was a conventional feed-forward network with one hidden layer and a single neuron output layer. A back-propagation procedure was used to update the weights in the network. For each data point, the input to the neural network is a sequence consisting of 43 peptide-HLA residues (9 from the peptide and 34 from the HLA), and as output the corresponding binding affinity was used. The binding affinity was log-transformed into the range between 0 and 1 as described by<a href="#pone.0000796-Nielsen2">[15]</a>. The input sequences were presented to the neural network in three distinct manners: a) conventional sparse encoding (i.e. is encoded by 19 zeros and a one), b) Blosum encoding, where each amino acid was encoded by the BLOSUM50 matrix score vector <a href="#pone.0000796-Henikoff1">[47]</a>, and c) a mixture of the two, where the peptide was sparse encoded and the HLA pseudo sequence was Blosum encoded.</p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>To estimate the predictive performance of the method, the leave-one-out experiment was conducted as briefly described here. Representing each HLA locus molecule, we trained a neural network ensemble using all available data for the relevant locus, excluding all data specific for the HLA allele in question. The network training was performed in a fivefold cross-validated manner as describe above resulting in an ensembles of in total 15 neural networks. The predicted affinity was then determined as the average of the 15 predictions in the neural network ensembles. In this benchmark calculation, the data for the allelic molecule in question was not involved in the training (and testing) of the method, and the performance was thus truly an unbiased test benchmark evaluation.</p>
+<a id="article1.body1.sec4.sec3.p3" name="article1.body1.sec4.sec3.p3"></a><p>For the final NetMHCpan method, a conventional five-fold cross-validated training was performed. The pool of unique peptides was randomly split into five groups with all HLA binding data for a given peptide placed in the same group (in this way, no peptide can belong to more one group). The networks were trained as described above adapting the three different sequences encoding schemes, using 4/5 of the data to update the network weights and 1/5 to determine when to terminate the training.</p>
+
+
+<h4>HLA distance trees</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>HLA distance trees were derived from correlations between predicted binding affinities. For each antigen, the binding affinity was predicted for a set of 10.000 random natural peptides using the NetMHCpan method. Next, the distance between any two alleles was defined, as D = 1-P<sub>corr</sub>, where P<sub>corr</sub> is the Pearson correlation between two sets of predicted binding affinities. In this measure, two molecules that share a similar binding specificity will have a distance close to 0 whereas two molecules with unrelated binding specificities would have a distance close to 1. The HLA allele distance matrixes were calculated for 390 HLA-A alleles, and for 711 HLA-B alleles , and used the neighbor algorithm from the PHYLIP package, which implements the neighbor-joining algorithm of Saitou and Nei <a href="#pone.0000796-Saitou1">[48]</a> to generate a HLA allele distance tree. To estimate the significance of the HLA distance tree, 100 such distance trees were generated using the bootstrap method <a href="#pone.0000796-Press1">[38]</a>. The set of input trees were summarized in the form of a “greedy” consensus tree using proprietary software <a href="#pone.0000796-Janowitz1">[49]</a>. A greedy consensus tree uses a majority rule consensus tree to which all compatible bipartitions with frequencies below 50% have been added in order of descending frequency <a href="#pone.0000796-Margush1">[50]</a>.</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>In order to visualize the HLA distance tree, only a subset of the leaves in the tree was displayed. The subset was selected in a Hobohm 1 like manner, where the alleles were clustered at a 0.95 distance level, and only a single allele from each cluster selected for display <a href="#pone.0000796-Hobohm1">[51]</a>.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000796"></div><a name="pone.0000796.s001" id="pone.0000796.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000796.s001">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Performance for the different alleles in terms of the Pearsons correlation for the “leave-one-out” experiment. Predictors of HLA-A and HLA-B locus molecules (without random negatives). (A) shows the performance for the 24 HLA-A alleles, and (B) the performance for the 18 HLA-B alleles. The first column gives the allele name, the following columns the performance of the Pan, Self, Neighbor, and Supertype methods, respectively, as explained in the text. After the Neighbor and Supertype performance values is shown the neighbor allele name and supertype association, respectively. Note, that the supertype performance is only stated for the non-supertype representing alleles. The final column gives the number of peptide data for each allele.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000796.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.11 MB DOC)</p>
+<a name="pone.0000796.s002" id="pone.0000796.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000796.s002">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Nearest neighbor identification for the 24 HLA-A and 18 HLA-B alleles. HLA-A and HLA-B allele nearest neighbor identification. (A) gives the nearest neighbor identification for the HLA-A alleles, (B) gives the nearest neighbor identification for the HLA-B alleles. The first column gives the allele name, the second column gives the Pan (leave-one-out pan-specific neural network) performance in terms of the Pearson correlation coefficient. The third and fourth columns give the allele name of the nearest neighbor and distance as determined from alignment of the pseudo sequences, the fifth column gives the predictive performance of the Neighbor method in terms of the Pearson correlation coefficient. Finally, the last column gives the number of data point available for the neighbor allele.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000796.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.08 MB DOC)</p>
+<a name="pone.0000796.s003" id="pone.0000796.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000796.s003">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Sensitivity and specificity relations for the NetMHCpan method. The table displays the sensitivity and specificity values at a classification threshold of 500 nM for the NetMHCpan method as estimated from the cross validated predictive performance for the 37,384 peptide data included in the benchmark data set. The number of binding peptides is 9665.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000796.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.04 MB DOC)</p>
+<a name="pone.0000796.s004" id="pone.0000796.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000796.s004">Table S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">The source data. The number of peptide binding data for each of the 24 HLA-A and 18 HLA-B molecules.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000796.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(0.05 MB DOC)</p>
+</div>
+
+
+
+<div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: SB MN. Performed the experiments: MN Cl KL MH SJ GR. Analyzed the data: MN KL MH SJ GR. Contributed reagents/materials/analysis tools: AS SB MN BP Cl TB. Wrote the paper: SB OL MN BP Cl TB.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000796-Lauemoller1" id="pone.0000796-Lauemoller1"></a>Lauemoller SL, Kesmir C, Corbet SL, Fomsgaard A, Holm A, et al.  (2000) Identifying cytotoxic T cell epitopes from genomic and proteomic information: “The human MHC project.”. Rev Immunogenet  2: 477–491.  <ul class="find" data-citedArticleID="983076"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Identifying+cytotoxic+T+cell+epitopes+from+genomic+and+proteomic+information%3A+%26%23x201c%3BThe+human+MHC+project.%26%23x201d%3B.&amp;auth=&amp;atitle=Identifying+cytotoxic+T+cell+epitopes+from+genomic+and+proteomic+information%3A+%26%23x201c%3BThe+human+MHC+project.%26%23x201d%3B." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifying+cytotoxic+T+cell+epitopes+from+genomic+and+proteomic+information%3A+%26%23x201c%3BThe+human+MHC+project.%26%23x201d%3B." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifying+cytotoxic+T+cell+epitopes+from+genomic+and+proteomic+information%3A+%26%23x201c%3BThe+human+MHC+project.%26%23x201d%3B.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000796-Yewdell1" id="pone.0000796-Yewdell1"></a>Yewdell JW, Bennink JR (1999) Immunodominance in major histocompatibility complex class I-restricted T lymphocyte responses. Annual Review of Immunology  17: 51–88.  <ul class="find" data-citedArticleID="983134" data-doi="10.1146/annurev.immunol.17.1.51"><li><a href="http://dx.doi.org/10.1146/annurev.immunol.17.1.51" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Immunodominance+in+major+histocompatibility+complex+class+I-restricted+T+lymphocyte+responses." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Immunodominance+in+major+histocompatibility+complex+class+I-restricted+T+lymphocyte+responses.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000796-Sette1" id="pone.0000796-Sette1"></a>Sette A, Fikes J (2003) Epitope-based vaccines: an update on epitope identification, vaccine design and delivery. Curr Opin Immunol  15: 461–470.  <ul class="find" data-citedArticleID="983110" data-doi="10.1016/s0952-7915(03)00083-9"><li><a href="http://dx.doi.org/10.1016/s0952-7915(03)00083-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Epitope-based+vaccines%3A+an+update+on+epitope+identification%2C+vaccine+design+and+delivery." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Epitope-based+vaccines%3A+an+update+on+epitope+identification%2C+vaccine+design+and+delivery.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000796-Sette2" id="pone.0000796-Sette2"></a>Sette A, Sidney J (1999) Nine major HLA class I supertypes account for the vast preponderance of HLA-A and –B polymorphism. Immunogenetics  50: 201–212.  <ul class="find" data-citedArticleID="983112" data-doi="10.1007/s002510050594"><li><a href="http://dx.doi.org/10.1007/s002510050594" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Nine+major+HLA+class+I+supertypes+account+for+the+vast+preponderance+of+HLA-A+and+%26%23x2013%3BB+polymorphism." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Nine+major+HLA+class+I+supertypes+account+for+the+vast+preponderance+of+HLA-A+and+%26%23x2013%3BB+polymorphism.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000796-Lund1" id="pone.0000796-Lund1"></a>Lund O, Nielsen M, Kesmir C, Petersen AG, Lundegaard C, et al.  (2004) Definition of supertypes for HLA molecules using clustering of specificity matrices. Immunogenetics  55: 797–810.  <ul class="find" data-citedArticleID="983080" data-doi="10.1007/s00251-004-0647-4"><li><a href="http://dx.doi.org/10.1007/s00251-004-0647-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Definition+of+supertypes+for+HLA+molecules+using+clustering+of+specificity+matrices." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Definition+of+supertypes+for+HLA+molecules+using+clustering+of+specificity+matrices.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000796-Falk1" id="pone.0000796-Falk1"></a>Falk K, Rotzschke O, Rammensee HG (1990) Cellular peptide composition governed by major histocompatibility complex class I molecules. Nature  348: 248–251.  <ul class="find" data-citedArticleID="983062" data-doi="10.1038/348248a0"><li><a href="http://dx.doi.org/10.1038/348248a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cellular+peptide+composition+governed+by+major+histocompatibility+complex+class+I+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cellular+peptide+composition+governed+by+major+histocompatibility+complex+class+I+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000796-Buus1" id="pone.0000796-Buus1"></a>Buus S, Sette A, Colon SM, Miles C, Grey HM (1987) The relation between major histocompatibility complex (MHC) restriction and the capacity of Ia to bind immunogenic peptides. Science  235: 1353–1358.  <ul class="find" data-citedArticleID="983048" data-doi="10.1126/science.2435001"><li><a href="http://dx.doi.org/10.1126/science.2435001" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+relation+between+major+histocompatibility+complex+%28MHC%29+restriction+and+the+capacity+of+Ia+to+bind+immunogenic+peptides." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+relation+between+major+histocompatibility+complex+%28MHC%29+restriction+and+the+capacity+of+Ia+to+bind+immunogenic+peptides.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000796-Sette3" id="pone.0000796-Sette3"></a>Sette A, Buus S, Colon S, Smith JA, Miles C, et al.  (1987) Structural characteristics of an antigen required for its interaction with Ia and recognition by T cells. Nature  328: 395–399.  <ul class="find" data-citedArticleID="983114" data-doi="10.1038/328395a0"><li><a href="http://dx.doi.org/10.1038/328395a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Structural+characteristics+of+an+antigen+required+for+its+interaction+with+Ia+and+recognition+by+T+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Structural+characteristics+of+an+antigen+required+for+its+interaction+with+Ia+and+recognition+by+T+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000796-Sette4" id="pone.0000796-Sette4"></a>Sette A, Buus S, Appella E, Smith JA, Chesnut R, et al.  (1989) Prediction of major histocompatibility complex binding regions of protein antigens by sequence pattern analysis. Proc Natl Acad Sci U S A  86: 3296–2300.  <ul class="find" data-citedArticleID="983116" data-doi="10.1073/pnas.86.9.3296"><li><a href="http://dx.doi.org/10.1073/pnas.86.9.3296" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+major+histocompatibility+complex+binding+regions+of+protein+antigens+by+sequence+pattern+analysis." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+major+histocompatibility+complex+binding+regions+of+protein+antigens+by+sequence+pattern+analysis.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000796-Parker1" id="pone.0000796-Parker1"></a>Parker KC, Bednarek MA, Coligan JE (1994) Scheme for ranking potential HLA-A2 binding peptides based on independent binding of individual peptide side-chains. J Immunol  152: 163–175.  <ul class="find" data-citedArticleID="983090"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Scheme+for+ranking+potential+HLA-A2+binding+peptides+based+on+independent+binding+of+individual+peptide+side-chains.&amp;auth=&amp;atitle=Scheme+for+ranking+potential+HLA-A2+binding+peptides+based+on+independent+binding+of+individual+peptide+side-chains." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Scheme+for+ranking+potential+HLA-A2+binding+peptides+based+on+independent+binding+of+individual+peptide+side-chains." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Scheme+for+ranking+potential+HLA-A2+binding+peptides+based+on+independent+binding+of+individual+peptide+side-chains.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000796-Rammensee1" id="pone.0000796-Rammensee1"></a>Rammensee H, Bachmann J, Emmerich NP, Bachor OA, Stevanovic S (1999) SYFPEITHI: database for MHC ligands and peptide motifs. Immunogenetics  50: 213–219.  <ul class="find" data-citedArticleID="983096" data-doi="10.1007/s002510050595"><li><a href="http://dx.doi.org/10.1007/s002510050595" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SYFPEITHI%3A+database+for+MHC+ligands+and+peptide+motifs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SYFPEITHI%3A+database+for+MHC+ligands+and+peptide+motifs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000796-Nielsen1" id="pone.0000796-Nielsen1"></a>Nielsen M, Lundegaard C, Worning P, Hvid CS, Lamberth K, et al.  (2004) Improved prediction of MHC class I and class II epitopes using a novel Gibbs sampling approach. Bioinformatics  20: 1388–1397.  <ul class="find" data-citedArticleID="983086" data-doi="10.1093/bioinformatics/bth100"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Improved+prediction+of+MHC+class+I+and+class+II+epitopes+using+a+novel+Gibbs+sampling+approach." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Improved+prediction+of+MHC+class+I+and+class+II+epitopes+using+a+novel+Gibbs+sampling+approach.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000796-Reche1" id="pone.0000796-Reche1"></a>Reche PA, Glutting JP, Reinherz EL (2002) Prediction of MHC class I binding peptides using profile motifs. Hum Immunol  63: 701–709.  <ul class="find" data-citedArticleID="983102" data-doi="10.1016/s0198-8859(02)00432-9"><li><a href="http://dx.doi.org/10.1016/s0198-8859(02)00432-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+MHC+class+I+binding+peptides+using+profile+motifs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+MHC+class+I+binding+peptides+using+profile+motifs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000796-Brusic1" id="pone.0000796-Brusic1"></a>Brusic V, Rudy G, Harrison LC (1994)  Prediction of MHC binding peptides using artificial neural networks. In: Stonier RJ aYX, editor. Complex systems: mechanism of adaptation. Amsterdam: IOS Press. pp. 253–260.  <ul class="find-nolinks"></ul></li><li><span class="label">15.
+              </span><a name="pone.0000796-Nielsen2" id="pone.0000796-Nielsen2"></a>Nielsen M, Lundegaard C, Worning P, Lauemoller SL, Lamberth K, et al.  (2003) Reliable prediction of T-cell epitopes using neural networks with novel sequence representations. Protein Sci  12: 1007–1017.  <ul class="find" data-citedArticleID="983088" data-doi="10.1110/ps.0239403"><li><a href="http://dx.doi.org/10.1110/ps.0239403" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Reliable+prediction+of+T-cell+epitopes+using+neural+networks+with+novel+sequence+representations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Reliable+prediction+of+T-cell+epitopes+using+neural+networks+with+novel+sequence+representations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000796-Buus2" id="pone.0000796-Buus2"></a>Buus S, Lauemoller SL, Worning P, Kesmir C, Frimurer T, et al.  (2003) Sensitive quantitative predictions of peptide-MHC binding by a ‘Query by Committee’ artificial neural network approach. Tissue Antigens  62: 378–384.  <ul class="find" data-citedArticleID="983050" data-doi="10.1034/j.1399-0039.2003.00112.x"><li><a href="http://dx.doi.org/10.1034/j.1399-0039.2003.00112.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sensitive+quantitative+predictions+of+peptide-MHC+binding+by+a+%26%23x2018%3BQuery+by+Committee%26%23x2019%3B+artificial+neural+network+approach." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sensitive+quantitative+predictions+of+peptide-MHC+binding+by+a+%26%23x2018%3BQuery+by+Committee%26%23x2019%3B+artificial+neural+network+approach.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000796-Mamitsuka1" id="pone.0000796-Mamitsuka1"></a>Mamitsuka H (1998) Predicting peptides that bind to MHC molecules using supervised learning of hidden Markov models. Proteins  33: 460–474.  <ul class="find" data-citedArticleID="983082" data-doi="10.1002/(sici)1097-0134(19981201)33:4<460::aid-prot2&gt;3.0.co;2-m"><li><a href="http://dx.doi.org/10.1002/(sici)1097-0134(19981201)33:4<460::aid-prot2&gt;3.0.co;2-m" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Predicting+peptides+that+bind+to+MHC+molecules+using+supervised+learning+of+hidden+Markov+models." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Predicting+peptides+that+bind+to+MHC+molecules+using+supervised+learning+of+hidden+Markov+models.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000796-Donnes1" id="pone.0000796-Donnes1"></a>Donnes P, Elofsson A (2002) Prediction of MHC class I binding peptides, using SVMHC. BMC Bioinformatics  3: 25.  <ul class="find" data-citedArticleID="983052" data-doi="10.1186/1471-2105-3-25"><li><a href="http://dx.doi.org/10.1186/1471-2105-3-25" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+MHC+class+I+binding+peptides%2C+using+SVMHC." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+MHC+class+I+binding+peptides%2C+using+SVMHC.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000796-Segal1" id="pone.0000796-Segal1"></a>Segal MR, Cummings MP, Hubbard AE (2001) Relating amino acid sequence to phenotype: analysis of peptide-binding data. Biometrics  57: 632–642.  <ul class="find" data-citedArticleID="983108" data-doi="10.1111/j.0006-341x.2001.00632.x"><li><a href="http://dx.doi.org/10.1111/j.0006-341x.2001.00632.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Relating+amino+acid+sequence+to+phenotype%3A+analysis+of+peptide-binding+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Relating+amino+acid+sequence+to+phenotype%3A+analysis+of+peptide-binding+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000796-Tenzer1" id="pone.0000796-Tenzer1"></a>Tenzer S, Peters B, Bulik S, Schoor O, Lemmel C, et al.  (2005) Modeling the MHC class I pathway by combining predictions of proteasomal cleavage, TAP transport and MHC class I binding. Cell Mol Life Sci  62: 1025–1037.  <ul class="find" data-citedArticleID="983132" data-doi="10.1007/s00018-005-4528-2"><li><a href="http://dx.doi.org/10.1007/s00018-005-4528-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Modeling+the+MHC+class+I+pathway+by+combining+predictions+of+proteasomal+cleavage%2C+TAP+transport+and+MHC+class+I+binding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Modeling+the+MHC+class+I+pathway+by+combining+predictions+of+proteasomal+cleavage%2C+TAP+transport+and+MHC+class+I+binding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000796-Adams1" id="pone.0000796-Adams1"></a>Adams HP, Koziol JA (1995) Prediction of binding to MHC class I molecules. J Immunol Methods  185: 181–190.  <ul class="find" data-citedArticleID="983032" data-doi="10.1016/0022-1759(95)00111-m"><li><a href="http://dx.doi.org/10.1016/0022-1759(95)00111-m" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+binding+to+MHC+class+I+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+binding+to+MHC+class+I+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000796-Gulukota1" id="pone.0000796-Gulukota1"></a>Gulukota K, Sidney J, Sette A, DeLisi C (1997) Two complementary methods for predicting peptides binding major histocompatibility complex molecules. Journal of Molecular Biology  267: 1258–1267.  <ul class="find" data-citedArticleID="983064" data-doi="10.1006/jmbi.1997.0937"><li><a href="http://dx.doi.org/10.1006/jmbi.1997.0937" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Two+complementary+methods+for+predicting+peptides+binding+major+histocompatibility+complex+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Two+complementary+methods+for+predicting+peptides+binding+major+histocompatibility+complex+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000796-Baldi1" id="pone.0000796-Baldi1"></a>Baldi P, Brunak S (2001) Bioinformatics: The Machine Learning Approach, 2nd edition. Cambridge, Mass.: MIT Press.   <ul class="find-nolinks"></ul></li><li><span class="label">24.
+              </span><a name="pone.0000796-Peters1" id="pone.0000796-Peters1"></a>Peters B, Bui HH, Frankild S, Nielson M, Lundegaard C, et al.  (2006) A community resource benchmarking predictions of peptide binding to MHC-I molecules. PLoS Comput Biol  2: e65.  <ul class="find" data-citedArticleID="983092" data-doi="10.1371/journal.pcbi.0020065.eor"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0020065.eor" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+community+resource+benchmarking+predictions+of+peptide+binding+to+MHC-I+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+community+resource+benchmarking+predictions+of+peptide+binding+to+MHC-I+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000796-Lefranc1" id="pone.0000796-Lefranc1"></a>Lefranc MP (2005) IMGT, the international ImMunoGeneTics information system(R): a standardized approach for immunogenetics and immunoinformatics. Immunome Res  1: 3.  <ul class="find" data-citedArticleID="983078" data-doi="10.1007/978-1-60327-118-9_2"><li><a href="http://dx.doi.org/10.1007/978-1-60327-118-9_2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=IMGT%2C+the+international+ImMunoGeneTics+information+system%28R%29%3A+a+standardized+approach+for+immunogenetics+and+immunoinformatics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22IMGT%2C+the+international+ImMunoGeneTics+information+system%28R%29%3A+a+standardized+approach+for+immunogenetics+and+immunoinformatics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000796-Rammensee2" id="pone.0000796-Rammensee2"></a>Rammensee H, Bachmann J, Emmerich NP, Bachor OA, Stevanovic S (1999) SYFPEITHI: database for MHC ligands and peptide motifs. Immunogenetics  50: 213–219.  <ul class="find" data-citedArticleID="983098" data-doi="10.1007/s002510050595"><li><a href="http://dx.doi.org/10.1007/s002510050595" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=SYFPEITHI%3A+database+for+MHC+ligands+and+peptide+motifs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22SYFPEITHI%3A+database+for+MHC+ligands+and+peptide+motifs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000796-Sette5" id="pone.0000796-Sette5"></a>Sette A, Fleri W, Peters B, Sathiamurthy M, Bui HH, et al.  (2005) A roadmap for the immunomics of category A-C pathogens. Immunity  22: 155–161.  <ul class="find" data-citedArticleID="983118" data-doi="10.1016/j.immuni.2005.01.009"><li><a href="http://dx.doi.org/10.1016/j.immuni.2005.01.009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+roadmap+for+the+immunomics+of+category+A-C+pathogens." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+roadmap+for+the+immunomics+of+category+A-C+pathogens.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000796-Steven1" id="pone.0000796-Steven1"></a>Steven GE, March PP, Barber DLinda (2000) The HLA Facts book. San Diego: Academic Press.   <ul class="find-nolinks"></ul></li><li><span class="label">29.
+              </span><a name="pone.0000796-Doytchinova1" id="pone.0000796-Doytchinova1"></a>Doytchinova IA, Flower DR (2001) Toward the Quantitative Prediction of T-Cell Epitopes: CoMFA and CoMSIA Studies of Peptides with Affinity for the Class I MHC Molecule HLA-A*0201. J Med Chem  44: 3572–3581.  <ul class="find" data-citedArticleID="983054" data-doi="10.1021/jm010021j"><li><a href="http://dx.doi.org/10.1021/jm010021j" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Toward+the+Quantitative+Prediction+of+T-Cell+Epitopes%3A+CoMFA+and+CoMSIA+Studies+of+Peptides+with+Affinity+for+the+Class+I+MHC+Molecule+HLA-A*0201." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Toward+the+Quantitative+Prediction+of+T-Cell+Epitopes%3A+CoMFA+and+CoMSIA+Studies+of+Peptides+with+Affinity+for+the+Class+I+MHC+Molecule+HLA-A*0201.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000796-Bordner1" id="pone.0000796-Bordner1"></a>Bordner AJ, Abagyan R (2006) Ab initio prediction of peptide-MHC binding geometry for diverse class I MHC allotypes. Proteins  63: 512–526.  <ul class="find" data-citedArticleID="983042" data-doi="10.1002/prot.20831"><li><a href="http://dx.doi.org/10.1002/prot.20831" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Ab+initio+prediction+of+peptide-MHC+binding+geometry+for+diverse+class+I+MHC+allotypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Ab+initio+prediction+of+peptide-MHC+binding+geometry+for+diverse+class+I+MHC+allotypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000796-Antes1" id="pone.0000796-Antes1"></a>Antes I, Siu SW, Lengauer T (2006) DynaPred: A structure and sequence based method for the prediction of MHC class I binding peptide sequences and conformations. Bioinformatics  22: e16–24.  <ul class="find" data-citedArticleID="983034" data-doi="10.1093/bioinformatics/btl216"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl216" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=DynaPred%3A+A+structure+and+sequence+based+method+for+the+prediction+of+MHC+class+I+binding+peptide+sequences+and+conformations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22DynaPred%3A+A+structure+and+sequence+based+method+for+the+prediction+of+MHC+class+I+binding+peptide+sequences+and+conformations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000796-Fagerberg1" id="pone.0000796-Fagerberg1"></a>Fagerberg T, Cerottini JC, Michielin O (2006) Structural prediction of peptides bound to MHC class I. J Mol Biol  356: 521–546.  <ul class="find" data-citedArticleID="983060" data-doi="10.1016/j.jmb.2005.11.059"><li><a href="http://dx.doi.org/10.1016/j.jmb.2005.11.059" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Structural+prediction+of+peptides+bound+to+MHC+class+I." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Structural+prediction+of+peptides+bound+to+MHC+class+I.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000796-Berman1" id="pone.0000796-Berman1"></a>Berman HM, Battistuz T, Bhat TN, Bluhm WF, Bourne PE, et al.  (2002) The Protein Data Bank. Acta Crystallogr D Biol Crystallogr  58: 899–907.  <ul class="find" data-citedArticleID="983038" data-doi="10.1107/s0907444902003451"><li><a href="http://dx.doi.org/10.1107/s0907444902003451" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Protein+Data+Bank." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Protein+Data+Bank.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000796-Sturniolo1" id="pone.0000796-Sturniolo1"></a>Sturniolo T, Bono E, Ding J, Raddrizzani L, Tuereci O, et al.  (1999) Generation of tissue-specific and promiscuous HLA ligand databases using DNA microarrays and virtual HLA class II matrices. Nat Biotechnol  17: 555–561.  <ul class="find" data-citedArticleID="983128"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Generation+of+tissue-specific+and+promiscuous+HLA+ligand+databases+using+DNA+microarrays+and+virtual+HLA+class+II+matrices.&amp;auth=&amp;atitle=Generation+of+tissue-specific+and+promiscuous+HLA+ligand+databases+using+DNA+microarrays+and+virtual+HLA+class+II+matrices." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Generation+of+tissue-specific+and+promiscuous+HLA+ligand+databases+using+DNA+microarrays+and+virtual+HLA+class+II+matrices." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Generation+of+tissue-specific+and+promiscuous+HLA+ligand+databases+using+DNA+microarrays+and+virtual+HLA+class+II+matrices.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000796-Brusic2" id="pone.0000796-Brusic2"></a>Brusic V, Petrovsky N, Zhang G, Bajic VB (2002) Prediction of promiscuous peptides that bind HLA class I molecules. Immunol Cell Biol  80: 280–285.  <ul class="find" data-citedArticleID="983046" data-doi="10.1046/j.1440-1711.2002.01088.x"><li><a href="http://dx.doi.org/10.1046/j.1440-1711.2002.01088.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+promiscuous+peptides+that+bind+HLA+class+I+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+promiscuous+peptides+that+bind+HLA+class+I+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000796-Zhu1" id="pone.0000796-Zhu1"></a>Zhu S, Udaka K, Sidney J, Sette A, Aoki-Kinoshita KF, et al.  (2006) Improving MHC binding peptide prediction by incorporating binding data of auxiliary MHC molecules. Bioinformatics  22: 1648–1655.  <ul class="find" data-citedArticleID="983136" data-doi="10.1093/bioinformatics/btl141"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl141" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Improving+MHC+binding+peptide+prediction+by+incorporating+binding+data+of+auxiliary+MHC+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Improving+MHC+binding+peptide+prediction+by+incorporating+binding+data+of+auxiliary+MHC+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000796-SylvesterHvid1" id="pone.0000796-SylvesterHvid1"></a>Sylvester-Hvid C, Kristensen N, Blicher T, Ferré H, Lauemøller SL, et al.  (2002) Establishment of a quantitative ELISA capable of determining peptide-MHC class I interaction. Tissue Antigens  59: 251–258.  <ul class="find" data-citedArticleID="983130" data-doi="10.1034/j.1399-0039.2002.590402.x"><li><a href="http://dx.doi.org/10.1034/j.1399-0039.2002.590402.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Establishment+of+a+quantitative+ELISA+capable+of+determining+peptide-MHC+class+I+interaction." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Establishment+of+a+quantitative+ELISA+capable+of+determining+peptide-MHC+class+I+interaction.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000796-Press1" id="pone.0000796-Press1"></a>Press WH, Flannery BP, Teukolsky SA, Vetterling WT (1992) Numerical Recipies in C: The Art of Scientific Computing. Cambridge: Cambridge University Press.   <ul class="find-nolinks"></ul></li><li><span class="label">39.
+              </span><a name="pone.0000796-Doytchinova2" id="pone.0000796-Doytchinova2"></a>Doytchinova IA, Guan P, Flower DR (2004) Identifiying human MHC supertypes using bioinformatic methods. J Immunol  172: 4314–4323.  <ul class="find" data-citedArticleID="983056"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Identifiying+human+MHC+supertypes+using+bioinformatic+methods.&amp;auth=&amp;atitle=Identifiying+human+MHC+supertypes+using+bioinformatic+methods." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Identifiying+human+MHC+supertypes+using+bioinformatic+methods." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Identifiying+human+MHC+supertypes+using+bioinformatic+methods.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000796-Boeckmann1" id="pone.0000796-Boeckmann1"></a>Boeckmann B, Bairoch A, Apweiler R, Blatter MC, Estreicher A, et al.  (2003) The SWISS-PROT protein knowledgebase and its supplement TrEMBL in 2003. Nucleic Acids Res  31: 365–370.  <ul class="find" data-citedArticleID="983040" data-doi="10.1093/nar/gkg095"><li><a href="http://dx.doi.org/10.1093/nar/gkg095" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+SWISS-PROT+protein+knowledgebase+and+its+supplement+TrEMBL+in+2003." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+SWISS-PROT+protein+knowledgebase+and+its+supplement+TrEMBL+in+2003.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000796-Korber1" id="pone.0000796-Korber1"></a>Korber BTM, Brander C, Haynes BF, Koup R, Kuiken C, et al.  (2001) HIV Molecular Immunology 2001. Los Alamos, New Mexico: Los Alamos National Laboratory, Theoretical Biology and Biophysics.   <ul class="find-nolinks"></ul></li><li><span class="label">42.
+              </span><a name="pone.0000796-Sette6" id="pone.0000796-Sette6"></a>Sette A, Peters B (2007) Immune epitope mapping in the post-genomic era: lessons for vaccine development. Curr Opin Immunol  19: 106–110.  <ul class="find" data-citedArticleID="983120" data-doi="10.1016/j.coi.2006.11.002"><li><a href="http://dx.doi.org/10.1016/j.coi.2006.11.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Immune+epitope+mapping+in+the+post-genomic+era%3A+lessons+for+vaccine+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Immune+epitope+mapping+in+the+post-genomic+era%3A+lessons+for+vaccine+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">43.
+              </span><a name="pone.0000796-Rammensee3" id="pone.0000796-Rammensee3"></a>Rammensee HG, Bachmann J, Stevanovic S (1997) MHC ligands and Peptide Motifs. New York: Chapman&amp;Hall.   <ul class="find-nolinks"></ul></li><li><span class="label">44.
+              </span><a name="pone.0000796-Doytchinova3" id="pone.0000796-Doytchinova3"></a>Doytchinova IA, Flower DR (2001) Toward the Quantitative Prediction of T-Cell Epitopes: CoMFA and CoMSIA Studies of Peptides with Affinity for the Class I MHC Molecule HLA-A*0201. J Med Chem  44: 3572–3581.  <ul class="find" data-citedArticleID="983058" data-doi="10.1021/jm010021j"><li><a href="http://dx.doi.org/10.1021/jm010021j" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Toward+the+Quantitative+Prediction+of+T-Cell+Epitopes%3A+CoMFA+and+CoMSIA+Studies+of+Peptides+with+Affinity+for+the+Class+I+MHC+Molecule+HLA-A*0201." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Toward+the+Quantitative+Prediction+of+T-Cell+Epitopes%3A+CoMFA+and+CoMSIA+Studies+of+Peptides+with+Affinity+for+the+Class+I+MHC+Molecule+HLA-A*0201.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0000796-Srinivasan1" id="pone.0000796-Srinivasan1"></a>Srinivasan KN, Zhang GL, Khan AM, August JT, Brusic V (2004) Prediction of class I T-cell epitopes: evidence of presence of immunological hot spots inside antigens. Bioinformatics  20: Suppl 1I297–I302.  <ul class="find" data-citedArticleID="983124" data-doi="10.1093/bioinformatics/bth943"><li><a href="http://dx.doi.org/10.1093/bioinformatics/bth943" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+class+I+T-cell+epitopes%3A+evidence+of+presence+of+immunological+hot+spots+inside+antigens." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+class+I+T-cell+epitopes%3A+evidence+of+presence+of+immunological+hot+spots+inside+antigens.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0000796-Sidney1" id="pone.0000796-Sidney1"></a>Sidney J, Asabe S, Peters B, Purton KA, Chung J, et al.  (2006) Detailed characterization of the peptide binding specificity of five common Patr class I MHC molecules. Immunogenetics  58: 559–570.  <ul class="find" data-citedArticleID="983122" data-doi="10.1007/s00251-006-0131-4"><li><a href="http://dx.doi.org/10.1007/s00251-006-0131-4" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detailed+characterization+of+the+peptide+binding+specificity+of+five+common+Patr+class+I+MHC+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detailed+characterization+of+the+peptide+binding+specificity+of+five+common+Patr+class+I+MHC+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0000796-Henikoff1" id="pone.0000796-Henikoff1"></a>Henikoff S, Henikoff JG (1992) Amino acid substitution matrices from protein blocks. Proc Natl Acad Sci USA  89: 10915–10919.  <ul class="find" data-citedArticleID="983066" data-doi="10.1073/pnas.89.22.10915"><li><a href="http://dx.doi.org/10.1073/pnas.89.22.10915" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Amino+acid+substitution+matrices+from+protein+blocks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Amino+acid+substitution+matrices+from+protein+blocks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">48.
+              </span><a name="pone.0000796-Saitou1" id="pone.0000796-Saitou1"></a>Saitou N, Nei M (1987) The neighbor-joining method: a new method for reconstructing phylogenetic trees. Mol Biol Evol  4: 406–425.  <ul class="find" data-citedArticleID="983104"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+neighbor-joining+method%3A+a+new+method+for+reconstructing+phylogenetic+trees.&amp;auth=&amp;atitle=The+neighbor-joining+method%3A+a+new+method+for+reconstructing+phylogenetic+trees." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+neighbor-joining+method%3A+a+new+method+for+reconstructing+phylogenetic+trees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+neighbor-joining+method%3A+a+new+method+for+reconstructing+phylogenetic+trees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">49.
+              </span><a name="pone.0000796-Janowitz1" id="pone.0000796-Janowitz1"></a>Janowitz M, Lapointe FJ, McMorris FR, Mirkin B, Roberts FS (2003) A Classification of Consensus Methods for Phylogenetics. BioConsensus  61: 163–183.  <ul class="find" data-citedArticleID="983070"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+Classification+of+Consensus+Methods+for+Phylogenetics.&amp;auth=&amp;atitle=A+Classification+of+Consensus+Methods+for+Phylogenetics." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+Classification+of+Consensus+Methods+for+Phylogenetics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+Classification+of+Consensus+Methods+for+Phylogenetics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">50.
+              </span><a name="pone.0000796-Margush1" id="pone.0000796-Margush1"></a>Margush T, McMorris FR (1981) Consensus n-trees. B Math Biol  43: 239–244.  <ul class="find" data-citedArticleID="983084" data-doi="10.1016/s0092-8240(81)90019-7"><li><a href="http://dx.doi.org/10.1016/s0092-8240(81)90019-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Consensus+n-trees." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Consensus+n-trees.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">51.
+              </span><a name="pone.0000796-Hobohm1" id="pone.0000796-Hobohm1"></a>Hobohm U, Scharf M, Schneider R, Sander C (1992) Selection of representative protein data sets. Protein Sci  1: 409–417.  <ul class="find" data-citedArticleID="983068" data-doi="10.1002/pro.5560010313"><li><a href="http://dx.doi.org/10.1002/pro.5560010313" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Selection+of+representative+protein+data+sets." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Selection+of+representative+protein+data+sets.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">52.
+              </span><a name="pone.0000796-Kullback1" id="pone.0000796-Kullback1"></a>Kullback S, Leibler RA (1951) On Information and Sufficiency. Annals of Math Stat  22: 76–86.  <ul class="find" data-citedArticleID="983074" data-doi="10.1214/aoms/1177729694"><li><a href="http://dx.doi.org/10.1214/aoms/1177729694" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+Information+and+Sufficiency." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+Information+and+Sufficiency.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">53.
+              </span><a name="pone.0000796-Schneider1" id="pone.0000796-Schneider1"></a>Schneider TD, Stephens RM (1990) Sequence logos: a new way to display consensus sequences. Nucleic Acids Res  18: 6097–6100.  <ul class="find" data-citedArticleID="983106" data-doi="10.1093/nar/18.20.6097"><li><a href="http://dx.doi.org/10.1093/nar/18.20.6097" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Sequence+logos%3A+a+new+way+to+display+consensus+sequences." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Sequence+logos%3A+a+new+way+to+display+consensus+sequences.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.XML" value="134425"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.PDF" value="557759"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g001.PNG_L" value="116023"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g001.PNG_M" value="138871"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g001.PNG_S" value="14972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g001.TIF" value="334568"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g001.PNG_I" value="90017"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.e001.PNG" value="9500"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.e001.TIF" value="25268"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g002.PNG_L" value="294383"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g002.PNG_M" value="97212"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g002.PNG_S" value="9098"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g002.TIF" value="939702"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g002.PNG_I" value="32642"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t001.PNG_L" value="326069"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t001.PNG_M" value="144092"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t001.PNG_S" value="23867"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t001.TIF" value="1431222"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t001.PNG_I" value="204242"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t002.PNG_L" value="401255"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t002.PNG_M" value="125468"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t002.PNG_S" value="30271"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t002.TIF" value="1760640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t002.PNG_I" value="263267"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t003.PNG_L" value="65852"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t003.PNG_M" value="87822"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t003.PNG_S" value="11554"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t003.TIF" value="263978"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.t003.PNG_I" value="30957"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g003.PNG_L" value="590287"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g003.PNG_M" value="149739"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g003.PNG_S" value="9217"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g003.TIF" value="742184"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g003.PNG_I" value="50671"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g004.PNG_L" value="384356"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g004.PNG_M" value="170002"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g004.PNG_S" value="14455"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g004.TIF" value="1397984"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.g004.PNG_I" value="64968"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.s001.DOC" value="112128"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.s002.DOC" value="82944"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.s003.DOC" value="35840"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000796.s004.DOC" value="53248"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000796&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000796" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000796&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000796&volume=&issue=&title=NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence&author_name=Morten%20Nielsen%2C%20Claus%20Lundegaard%2C%20Thomas%20Blicher%2C%20Kasper%20Lamberth%2C%20Mikkel%20Harndahl%2C%20Sune%20Justesen%2C%20Gustav%20R%C3%B8der%2C%20Bjoern%20Peters%2C%20Alessandro%20Sette%2C%20Ole%20Lund%2C%20S%C3%B8ren%20Buus&start_page=1&end_page=10" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000796" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796&amp;t=NetMHCpan%2C%20a%20Method%20for%20Quantitative%20Predictions%20of%20Peptide%20Binding%20to%20Any%20HLA-A%20and%20-B%20Locus%20Protein%20of%20Known%20Sequence" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796&title=NetMHCpan%2C%20a%20Method%20for%20Quantitative%20Predictions%20of%20Peptide%20Binding%20to%20Any%20HLA-A%20and%20-B%20Locus%20Protein%20of%20Known%20Sequence&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796&amp;title=NetMHCpan%2C%20a%20Method%20for%20Quantitative%20Predictions%20of%20Peptide%20Binding%20to%20Any%20HLA-A%20and%20-B%20Locus%20Protein%20of%20Known%20Sequence" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000796&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'NetMHCpan, a Method for Quantitative Predictions of Peptide Binding to Any HLA-A and -B Locus Protein of Known Sequence';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000796';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20NetMHCpan%2C%20a%20Method%20for%20Quantitative%20Predictions%20of%20Peptide%20Binding%20to%20Any%20HLA-A%20and%20-B%20Locus%20Protein%20of%20Known%20Sequence http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000796" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000796" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Alleles%22" title="Search for articles in the subject area:'Alleles'"><div class="flagText">Alleles</div></a>
+              <div data-categoryid="46071" data-articleid="24430"
+                   data-categoryname="Alleles"
+                   class="flagImage" title="Flag 'Alleles' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Artificial+neural+networks%22" title="Search for articles in the subject area:'Artificial neural networks'"><div class="flagText">Artificial neural networks</div></a>
+              <div data-categoryid="51893" data-articleid="24430"
+                   data-categoryname="Artificial neural networks"
+                   class="flagImage" title="Flag 'Artificial neural networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Binders%22" title="Search for articles in the subject area:'Binders'"><div class="flagText">Binders</div></a>
+              <div data-categoryid="22201" data-articleid="24430"
+                   data-categoryname="Binders"
+                   class="flagImage" title="Flag 'Binders' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Neural+networks%22" title="Search for articles in the subject area:'Neural networks'"><div class="flagText">Neural networks</div></a>
+              <div data-categoryid="1931" data-articleid="24430"
+                   data-categoryname="Neural networks"
+                   class="flagImage" title="Flag 'Neural networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Peptides%22" title="Search for articles in the subject area:'Peptides'"><div class="flagText">Peptides</div></a>
+              <div data-categoryid="17847" data-articleid="24430"
+                   data-categoryname="Peptides"
+                   class="flagImage" title="Flag 'Peptides' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetic+analysis%22" title="Search for articles in the subject area:'Phylogenetic analysis'"><div class="flagText">Phylogenetic analysis</div></a>
+              <div data-categoryid="17851" data-articleid="24430"
+                   data-categoryname="Phylogenetic analysis"
+                   class="flagImage" title="Flag 'Phylogenetic analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+databases%22" title="Search for articles in the subject area:'Sequence databases'"><div class="flagText">Sequence databases</div></a>
+              <div data-categoryid="42787" data-articleid="24430"
+                   data-categoryname="Sequence databases"
+                   class="flagImage" title="Flag 'Sequence databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+motif+analysis%22" title="Search for articles in the subject area:'Sequence motif analysis'"><div class="flagText">Sequence motif analysis</div></a>
+              <div data-categoryid="19657" data-articleid="24430"
+                   data-categoryname="Sequence motif analysis"
+                   class="flagImage" title="Flag 'Sequence motif analysis' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=2822'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=9103'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=1672&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=3417">SciVee vidoe</a><br>Posted by mniel</p>
+      <p><a href="/annotation/listThread.action?root=19657">Referee Comments: Referee 3</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

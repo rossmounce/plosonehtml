@@ -1,0 +1,1458 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000383"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000383" />
+
+    <meta name="citation_title" content="Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes"/>
+    <meta itemprop="name" content="Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes"/>
+
+      <meta name="citation_author" content="Feng Chen"/>
+            <meta name="citation_author_institution" content="Department of Chemistry, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"/>
+            <meta name="citation_author_institution" content="Genomics Institute, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"/>
+      <meta name="citation_author" content="Aaron J. Mackey"/>
+            <meta name="citation_author_institution" content="Department of Biology, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"/>
+            <meta name="citation_author_institution" content="Genomics Institute, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"/>
+      <meta name="citation_author" content="Jeroen K. Vermunt"/>
+            <meta name="citation_author_institution" content="Department of Methodology and Statistics, Tilburg University, The Netherlands"/>
+      <meta name="citation_author" content="David S. Roos"/>
+            <meta name="citation_author_institution" content="Department of Biology, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"/>
+            <meta name="citation_author_institution" content="Genomics Institute, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"/>
+
+    <meta name="citation_date" content="2007/4/18"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000383.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e383"/>
+    <meta name="citation_issue" content="4"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Distinguishing homologous from analogous proteins.; citation_author=WM Fitch; citation_journal_title=Syst Zool; citation_volume=19; citation_number=1; citation_pages=99-113; citation_date=1970; " />
+      <meta name="citation_reference" content="citation_title=Homology, a personal view on some of the problems.; citation_author=WM Fitch; citation_journal_title=Trends Genet; citation_volume=16; citation_number=2; citation_pages=227-231; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The multiplicity of domains in proteins.; citation_author=RF Doolittle; citation_journal_title=Annu Rev Biochem; citation_volume=64; citation_number=3; citation_pages=287-314; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Orthologs, paralogs, and evolutionary genomics.; citation_author=EV Koonin; citation_journal_title=Annu Rev Genet; citation_volume=39; citation_number=4; citation_pages=309-338; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Automatic clustering of orthologs and in-paralogs from pairwise species comparisons.; citation_author=M Remm; citation_author=CE Storm; citation_author=EL Sonnhammer; citation_journal_title=J Mol Biol; citation_volume=314; citation_number=5; citation_pages=1041-1052; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Orthology, paralogy and proposed classification for paralog subtypes.; citation_author=EL Sonnhammer; citation_author=EV Koonin; citation_journal_title=Trends Genet; citation_volume=18; citation_number=6; citation_pages=619-620; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=RIO: analyzing proteomes by automated phylogenomics using resampled inference of orthologs.; citation_author=CM Zmasek; citation_author=SR Eddy; citation_journal_title=BMC Bioinformatics; citation_volume=3; citation_number=7; citation_pages=14; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Automated ortholog inference from phylogenetic trees and calculation of orthology reliability.; citation_author=CE Storm; citation_author=EL Sonnhammer; citation_journal_title=Bioinformatics; citation_volume=18; citation_number=8; citation_pages=92-99; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Comprehensive analysis of orthologous protein domains using the HOPS database.; citation_author=CE Storm; citation_author=EL Sonnhammer; citation_journal_title=Genome Res; citation_volume=13; citation_number=9; citation_pages=2353-2362; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Detecting putative orthologs.; citation_author=DP Wall; citation_author=HB Fraser; citation_author=AE Hirsh; citation_journal_title=Bioinformatics; citation_volume=19; citation_number=10; citation_pages=1710-1711; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Roundup: a multi-genome repository of orthologs and evolutionary distances.; citation_author=TF Deluca; citation_author=IH Wu; citation_author=J Pu; citation_author=T Monaghan; citation_author=L Peshkin; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=11; citation_pages=2044-2046; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=A genomic perspective on protein families.; citation_author=RL Tatusov; citation_author=EV Koonin; citation_author=DJ Lipman; citation_journal_title=Science; citation_volume=278; citation_number=12; citation_pages=631-637; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=The COG database: a tool for genome-scale analysis of protein functions and evolution.; citation_author=RL Tatusov; citation_author=MY Galperin; citation_author=DA Natale; citation_author=EV Koonin; citation_journal_title=Nucleic Acids Res; citation_volume=28; citation_number=13; citation_pages=33-36; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=The COG database: new developments in phylogenetic classification of proteins from complete genomes.; citation_author=RL Tatusov; citation_author=DA Natale; citation_author=IV Garkavtsev; citation_author=TA Tatusova; citation_author=UT Shankavaram; citation_journal_title=Nucleic Acids Res; citation_volume=29; citation_number=14; citation_pages=22-28; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The COG database: an updated version includes eukaryotes.; citation_author=RL Tatusov; citation_author=ND Fedorova; citation_author=JD Jackson; citation_author=AR Jacobs; citation_author=B Kiryutin; citation_journal_title=BMC Bioinformatics; citation_volume=4; citation_number=15; citation_pages=41; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Inparanoid: a comprehensive database of eukaryotic orthologs.; citation_author=KP O'Brien; citation_author=M Remm; citation_author=EL Sonnhammer; citation_journal_title=Nucleic Acids Res 33 Database Issue; citation_number=16; citation_pages=D476-480; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Gene families: the taxonomy of protein paralogs and chimeras.; citation_author=S Henikoff; citation_author=EA Greene; citation_author=S Pietrokovski; citation_author=P Bork; citation_author=TK Attwood; citation_journal_title=Science; citation_volume=278; citation_number=17; citation_pages=609-614; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=OrthoMCL: identification of ortholog groups for eukaryotic genomes.; citation_author=L Li; citation_author=CJ Stoeckert; citation_author=DS Roos; citation_journal_title=Genome Res; citation_volume=13; citation_number=18; citation_pages=2178-2189; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_author=S Van Dongen; citation_number=19; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=OrthoMCL-DB: querying a comprehensive multi-species collection of ortholog groups.; citation_author=F Chen; citation_author=AJ Mackey; citation_author=CJ Stoeckert; citation_author=DS Roos; citation_journal_title=Nucleic Acids Res; citation_volume=34; citation_number=20; citation_pages=D363-368; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Systematic identification of functional orthologs based on protein network comparison.; citation_author=S Bandyopadhyay; citation_author=R Sharan; citation_author=T Ideker; citation_journal_title=Genome Res; citation_volume=16; citation_number=21; citation_pages=428-435; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Benchmarking ortholog identification methods using functional genomics data.; citation_author=T Hulsen; citation_author=MA Huynen; citation_author=J de Vlieg; citation_author=PM Groenen; citation_journal_title=Genome Biol; citation_volume=7; citation_number=22; citation_pages=R31; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Evaluation of diagnostic tests without gold standards.; citation_author=SL Hui; citation_author=XH Zhou; citation_journal_title=Stat Methods Med Res; citation_volume=7; citation_number=23; citation_pages=354-370; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=Latent class models.; citation_author=J Magidson; citation_author=JK Vermunt; citation_number=24; citation_pages=175-198; citation_date=2004; citation_publisher=Sage Publications, Inc; " />
+      <meta name="citation_reference" content="citation_title=Gapped BLAST and PSI-BLAST: a new generation of protein database search programs.; citation_author=SF Altschul; citation_author=TL Madden; citation_author=AA Schaffer; citation_author=J Zhang; citation_author=Z Zhang; citation_journal_title=Nucleic Acids Res; citation_volume=25; citation_number=25; citation_pages=3389-3402; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=An efficient algorithm for large-scale detection of protein families.; citation_author=AJ Enright; citation_author=S Van Dongen; citation_author=CA Ouzounis; citation_journal_title=Nucleic Acids Res; citation_volume=30; citation_number=26; citation_pages=1575-1584; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_author=JK Vermunt; citation_author=J Magidson; citation_number=27; citation_date=2005; citation_publisher=Statistical Innovations Inc; " />
+      <meta name="citation_reference" content="citation_author=JK Vermunt; citation_author=J Magidson; citation_number=28; citation_date=2005; citation_publisher=Statistical Innovations Inc; " />
+      <meta name="citation_reference" content="citation_title=Random effects models in latent class analysis for evaluating accuracy of diagnostic tests.; citation_author=Y Qu; citation_author=M Tan; citation_author=MH Kutner; citation_journal_title=Biometrics; citation_volume=52; citation_number=29; citation_pages=797-810; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=A biomedical application of latent class models with random effects.; citation_author=A Hadgu; citation_author=Y Qu; citation_journal_title=Appl Statist; citation_volume=47; citation_number=30; citation_pages=603-616; citation_date=1998; " />
+      <meta name="citation_reference" content="citation_title=A simple algorithm to infer gene duplication and speciation events on a gene tree.; citation_author=CM Zmasek; citation_author=SR Eddy; citation_journal_title=Bioinformatics; citation_volume=17; citation_number=31; citation_pages=821-828; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=The closest BLAST hit is often not the nearest neighbor.; citation_author=LB Koski; citation_author=GB Golding; citation_journal_title=J Mol Evol; citation_volume=52; citation_number=32; citation_pages=540-542; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice.; citation_author=JD Thompson; citation_author=DG Higgins; citation_author=TJ Gibson; citation_journal_title=Nucleic Acids Res; citation_volume=22; citation_number=33; citation_pages=4673-4680; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Cross-referencing eukaryotic genomes: TIGR Orthologous Gene Alignments (TOGA).; citation_author=Y Lee; citation_author=R Sultana; citation_author=G Pertea; citation_author=J Cho; citation_author=S Karamycheva; citation_journal_title=Genome Res; citation_volume=12; citation_number=34; citation_pages=493-502; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Whole genome protein domain analysis using a new method for domain clustering.; citation_author=J Gouzy; citation_author=F Corpet; citation_author=D Kahn; citation_journal_title=Computers and Chemistry; citation_volume=23; citation_number=35; citation_pages=333-340; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Annotation transfer for genomics: measuring functional divergence in multi-domain proteins.; citation_author=H Hegyi; citation_author=M Gerstein; citation_journal_title=Genome Res; citation_volume=11; citation_number=36; citation_pages=1632-1640; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Automatic clustering of orthologs and inparalogs shared by multiple proteomes.; citation_author=A Alexeyenko; citation_author=I Tamas; citation_author=G Liu; citation_author=EL Sonnhammer; citation_journal_title=Bioinformatics; citation_volume=22; citation_number=37; citation_pages=e9-e15; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Creating a honey bee consensus gene set.; citation_author=CG Elsik; citation_author=AJ Mackey; citation_author=JT Reese; citation_author=NV Milshina; citation_author=DS Roos; citation_journal_title=Genome Biol; citation_volume=8; citation_number=38; citation_pages=R13; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=A comprehensive evolutionary classification of proteins encoded in complete eukaryotic genomes.; citation_author=EV Koonin; citation_author=ND Fedorova; citation_author=JD Jackson; citation_author=AR Jacobs; citation_author=DM Krylov; citation_journal_title=Genome Biol; citation_volume=5; citation_number=39; citation_pages=R7; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=BioLayout–an automatic graph layout algorithm for similarity visualization.; citation_author=AJ Enright; citation_author=CA Ouzounis; citation_journal_title=Bioinformatics; citation_volume=17; citation_number=40; citation_pages=853-854; citation_date=2001; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes"/>
+    <meta name="twitter:description" content="Orthology detection is critically important for accurate functional annotation, and has been widely used to facilitate studies on comparative and evolutionary genomics. Although various methods are now available, there has been no comprehensive analysis of performance, due to the lack of a genomic-scale &lsquo;gold standard&rsquo; orthology dataset. Even in the absence of such datasets, the comparison of results from alternative methodologies contains useful information, as agreement enhances confidence and disagreement indicates possible errors. Latent Class Analysis (LCA) is a statistical technique that can exploit this information to reasonably infer sensitivities and specificities, and is applied here to evaluate the performance of various orthology detection methods on a eukaryotic dataset. Overall, we observe a trade-off between sensitivity and specificity in orthology detection, with BLAST-based methods characterized by high sensitivity, and tree-based methods by high specificity.&nbsp;Two algorithms exhibit the best overall balance, with both sensitivity and specificity&gt;80%: INPARANOID identifies orthologs across two species while OrthoMCL clusters orthologs from multiple species. Among methods that permit clustering of ortholog groups spanning multiple genomes, the (automated) OrthoMCL algorithm exhibits better within-group consistency with respect to protein function and domain architecture than the (manually curated) KOG database, and the homolog clustering algorithm TribeMCL as well. By way of using LCA, we are also able to comprehensively assess similarities and statistical dependence between various strategies, and evaluate the effects of parameter settings on performance. In summary, we present a comprehensive evaluation of orthology detection on a divergent set of eukaryotic genomes, thus providing insights and guides for method selection, tuning and development for different applications. Many biological questions have been addressed by multiple tests yielding binary (yes/no) outcomes but no clear definition of truth, making LCA an attractive approach for computational biology."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000383.g006"/>
+
+  <meta property="og:title" content="Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=9823'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=2617'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1367&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000383">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000383" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000383&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Feng Chen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Department of Chemistry, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America, 
+                  Genomics Institute, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Aaron J. Mackey, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Department of Biology, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America, 
+                  Genomics Institute, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+                </p>
+
+                <p>
+                    Current address: Informatics, GlaxoSmithKline, Collegeville, Pennsylvania, United States of America
+                </p>
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Jeroen K. Vermunt, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Methodology and Statistics, Tilburg University, The Netherlands
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            David S. Roos
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:droos@sas.upenn.edu">droos@sas.upenn.edu</a></p>
+
+                <p>Affiliations:
+                  Department of Biology, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America, 
+                  Genomics Institute, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: April 18, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000383</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000383-g001" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-t001" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-g002" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-t002" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t002" title="Table 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-g003" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-g004" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-t003" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t003" title="Table 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-t004" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t004" title="Table 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-g005" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000383-g006" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000383">Reader Comments (2)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000383" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Orthology detection is critically important for accurate functional annotation, and has been widely used to facilitate studies on comparative and evolutionary genomics. Although various methods are now available, there has been no comprehensive analysis of performance, due to the lack of a genomic-scale ‘gold standard’ orthology dataset. Even in the absence of such datasets, the comparison of results from alternative methodologies contains useful information, as agreement enhances confidence and disagreement indicates possible errors. Latent Class Analysis (LCA) is a statistical technique that can exploit this information to reasonably infer sensitivities and specificities, and is applied here to evaluate the performance of various orthology detection methods on a eukaryotic dataset. Overall, we observe a trade-off between sensitivity and specificity in orthology detection, with BLAST-based methods characterized by high sensitivity, and tree-based methods by high specificity.&nbsp;Two algorithms exhibit the best overall balance, with both sensitivity and specificity&gt;80%: INPARANOID identifies orthologs across two species while OrthoMCL clusters orthologs from multiple species. Among methods that permit clustering of ortholog groups spanning multiple genomes, the (automated) OrthoMCL algorithm exhibits better within-group consistency with respect to protein function and domain architecture than the (manually curated) KOG database, and the homolog clustering algorithm TribeMCL as well. By way of using LCA, we are also able to comprehensively assess similarities and statistical dependence between various strategies, and evaluate the effects of parameter settings on performance. In summary, we present a comprehensive evaluation of orthology detection on a divergent set of eukaryotic genomes, thus providing insights and guides for method selection, tuning and development for different applications. Many biological questions have been addressed by multiple tests yielding binary (yes/no) outcomes but no clear definition of truth, making LCA an attractive approach for computational biology.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Chen F, Mackey AJ, Vermunt JK, Roos DS (2007) Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes. PLoS ONE 2(4):
+          e383.
+            doi:10.1371/journal.pone.0000383</p><p><strong>Academic Editor: </strong>Cecile Fairhead, Pasteur Institute, France</p><p><strong>Received:</strong> March 6, 2007; <strong>Accepted:</strong> March 13, 2007; <strong>Published:</strong> April 18, 2007</p><p><strong>Copyright:</strong> © 2007 Chen et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>This research was supported by grants from the NIH, and implementation by a Bioinformatics Resource Center contract from NIAID; DSR is a Senior Scholar in Global Infectious Diseases of the Ellison Medical Foundation.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>The rapid growth in the availability of genome sequence data, from an ever-increasing range of relatively obscure species, places a premium on the automated identification of orthologs to facilitate functional annotation, and studies on comparative and evolutionary genomics. Homologous proteins share a common ancestry, and may be characterized as either orthologs (which evolve by speciation only) or paralogs (which arise by gene duplication) <a href="#pone.0000383-Fitch1">[1]</a>, <a href="#pone.0000383-Fitch2">[2]</a>. Orthologs typically retain similar domain architecture and occupy the same functional niche following speciation, while (functionally redundant) paralogs are likely to diverge with new functions through point mutations and domain recombinations <a href="#pone.0000383-Doolittle1">[3]</a>, <a href="#pone.0000383-Koonin1">[4]</a>.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>The concepts of orthology and paralogy are well-established in classical and molecular systematics <a href="#pone.0000383-Fitch1">[1]</a>, and have been extended to describe more complicated situations associated with extensive gene duplications commonly observed in eukaryotic species <a href="#pone.0000383-Koonin1">[4]</a>–<a href="#pone.0000383-Sonnhammer1">[6]</a>. In- and out-paralogs are analogous to the phylogenetic concepts in- and out-groups, denoting genes duplicated subsequent or prior to speciation, respectively. Recent duplications yield in-paralogs that may exhibit a many-to-one or many-to-many ortholog relationship with genes in the other species (termed co-orthologs).</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Several strategies have been employed to distinguish probable (co-)orthologs from paralogs, as summarized in <a href="#pone-0000383-t001">Table 1</a>: phylogeny-based methods include RIO (Resampled Inference of Orthology) <a href="#pone.0000383-Zmasek1">[7]</a> and Orthostrapper/HOPS (Hierarchical grouping of Orthologous and Paralogous Sequences) <a href="#pone.0000383-Storm1">[8]</a>, <a href="#pone.0000383-Storm2">[9]</a>; methods based on evolutionary distance metrics include RSD (Reciprocal Smallest Distance) <a href="#pone.0000383-Wall1">[10]</a>, <a href="#pone.0000383-Deluca1">[11]</a>; BLAST-based methods include Reciprocal Best Hit (RBH), COG (Cluster of Orthologous Groups) <a href="#pone.0000383-Tatusov1">[12]</a>–<a href="#pone.0000383-Tatusov4">[15]</a>/KOG (euKaryotic Orthologous Groups) <a href="#pone.0000383-Tatusov4">[15]</a>, and Inparanoid <a href="#pone.0000383-Remm1">[5]</a>, <a href="#pone.0000383-OBrien1">[16]</a>. The problem of orthology detection is particularly acute for eukaryotic genomes, because of their large size, the difficulty of defining accurate gene models, the complexity of protein domain architectures, and rampant gene duplications <a href="#pone.0000383-Doolittle1">[3]</a>, <a href="#pone.0000383-Henikoff1">[17]</a>. To address these difficulties, we previously developed the OrthoMCL algorithm <a href="#pone.0000383-Li1">[18]</a>, which improves on RBH by (<em>i</em>) recognizing co-ortholog relationships (<a href="#pone-0000383-g001">Figure 1</a>), (<em>ii</em>) using a normalization step to correct for systematic biases when comparing specific pairs of genomes, and (<em>iii</em>) using a Markov graph clustering (MCL) algorithm <a href="#pone.0000383-VanDongen1">[19]</a> to define ortholog groups. OrthoMCL and Inparanoid exhibit similar performance when comparing two species, but the former is extensible to cluster orthologs across multiple species. Analysis of independently assigned EC number annotations suggests a high degree of reliability <a href="#pone.0000383-Li1">[18]</a>, and orthology predictions for 55 genomes are available at OrthoMCL-DB <a href="#pone.0000383-Chen1">[20]</a>.</p>
+<div class="figure" id="pone-0000383-g001"><div class="img"><a name="pone-0000383-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>OrthoMCL graph construction between two species, including the establishment of co-ortholog relationships.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>Solid lines connecting A1 and B1 represent putative ortholog relationships identified by the ‘reciprocal best hit’ (RBH) rule. Dotted lines (e.g. those connecting A1 with A2 and A3, or B1 with B2) represent putative in-paralog relationships within each species, identified using the ‘reciprocal better hit’ rule. Putative co-ortholog relationships, indicated by dashed gray lines, connect in-paralogs across species boundaries (e.g. A3 and B2).</p>
+<span>doi:10.1371/journal.pone.0000383.g001</span></div><div class="figure" id="pone-0000383-t001"><div class="img"><a name="pone-0000383-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Various orthology/homology detection methods under study</span></strong></p><span>doi:10.1371/journal.pone.0000383.t001</span></div><a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Despite the many ortholog identification methods now available, no comprehensive statistical comparison has yet been reported, in part because the lack of a genomic-scale error-free ‘gold standard’ dataset makes it difficult to analyze performance. Functional genomics data are often used as a surrogate for true orthology, both for ortholog assignment (i.e. functional orthologs) <a href="#pone.0000383-Bandyopadhyay1">[21]</a> and performance assessment <a href="#pone.0000383-Li1">[18]</a>, and have been used to benchmark a small selection of orthology detection methods, and transfer of functional annotations <a href="#pone.0000383-Hulsen1">[22]</a>. Such data are likely to result in many errors, however, especially when applied across large evolutionary distances <a href="#pone.0000383-Koonin1">[4]</a>.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Even in the absence of a reliable gold-standard, the comparison of results from alternative methodologies contains useful information, as agreement enhances confidence (provided that the methods employed are independent), and disagreement indicates possible errors (either false positives or false negatives). Latent Class Analysis (LCA) is a statistical technique that can exploit this information, and has been widely applied to multivariate categorical data in research of medical diagnostics, marketing, sociology, etc <a href="#pone.0000383-Hui1">[23]</a>, <a href="#pone.0000383-Magidson1">[24]</a>. For example, when no single, reliable diagnostic test is available for determining the status (latent class) of individuals with respect to a certain disease, LCA can be used to estimate the accuracy (sensitivity and specificity) of multiple diagnostics.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>We have applied LCA to the evaluation and optimization of a comprehensive set of orthology detection methods, providing a guide for selecting methods and appropriate parameters. This study also provides an analysis of similarities and statistical dependence between these methodologies. Two widely used ortholog grouping methods – the manually curated KOG database and the automated OrthoMCL algorithm – are further compared with respect to the consistency of clustering, protein function, and protein domain architecture. To illustrate the relationships between orthology and homology detection methods, some other methods BLASTP <a href="#pone.0000383-Altschul1">[25]</a>, SBH (Single-way or One-way Best Hit) and TribeMCL <a href="#pone.0000383-Enright1">[26]</a> were also included in the analysis.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>Agreement and disagreement between orthology detection methods: input for Latent Class Analysis</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>A direct comparison of ortholog prediction methods requires a unified dataset, which is difficult to generate due to differences in the data types employed (see <a href="#pone-0000383-t001">Table 1</a>), and differences in the data sources used by published analyses (see <a href="#s4">Methods</a>). Because KOG groups depend on manual curation, and are therefore not easily updated or recompiled, BLASTP, SBH, RBH, RSD, Inparanoid, OrthoMCL, and TribeMCL analyses were based on the KOG sequence dataset. RIO and Orthostrapper make predictions based on Pfam domains rather than full-length protein sequences; hence proteins lacking Pfam domains were excluded. After mapping Pfam domains to the KOG sequence set, the net result was a dataset containing 27,562 protein sequences from six eukaryotic genomes (<em>Arabidopsis thaliana, Caenorhabditis elegans, Drosophila melanogaster, Homo sapiens, Saccharomyces cerevisiae</em>, and <em>Schizosaccharomyces pombe</em>), representing 1708 Pfam protein families.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>Cross-species homologous protein pairs (defined as belonging to the same Pfam families) were examined in LCA analysis. Whether or not a given pair of proteins is truly orthologous is unknown (a latent class), but each of the methods under consideration makes a yes/no prediction as to orthology, yielding a pattern comprised of 1's and 0's representing the predictions from all methods. For methods that do not explicitly make predictions for protein pairs, orthology is defined based on clustering into the same groups (for KOG, OrthoMCL, TribeMCL) or sharing of at least one orthologous domain (for Orthostrapper, RIO). The results for a large set of cross-species homologous protein pairs may be summarized as a frequency table (<a href="#pone-0000383-g002">Figure 2</a>). Given such data, the likelihood function for a Latent Class model can be expressed in terms of the overall orthology probability, and the false positive (FP) and false negative (FN) error rates for each method (see <a href="#s4">Methods</a>). A maximum likelihood estimate of these model parameters is used to represent performance evaluation. In order to avoid biasing the analysis in favor of large protein families, only one cross-species protein pair was sampled from each Pfam family, with 100 replicates of each experiment (see <a href="#s4">Methods and Discussion</a>).</p>
+<div class="figure" id="pone-0000383-g002"><div class="img"><a name="pone-0000383-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Agreement/disagreement between prediction results of seven orthology detection methods.</span></strong></p><a id="article1.body1.sec2.sec1.fig1.caption1.p1" name="article1.body1.sec2.sec1.fig1.caption1.p1"></a><p>Average counts of protein pairs identified in 100 sampling replicates are shown (top; note log scale), for each of the 128 (2<sup>7</sup>) possible orthology prediction patterns indicated by filled and empty boxes (bottom), representing positive and negative orthology predictions, respectively.</p>
+<span>doi:10.1371/journal.pone.0000383.g002</span></div><a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p><a href="#pone-0000383-g002">Figure 2</a> presents the pattern of agreement and disagreement in orthology calls (shaded boxes), and the average frequency with which each pattern is observed in 100 experimental replicates (specific numbers for one experiment are provided in <a href="#pone.0000383.s001">Figure S1</a>). The most abundant pattern (first column) represents all sampled protein pairs that no method considers to be orthologs. Similarly, many protein pairs are recognized as orthologs by all methods (right-most column). Other common patterns include protein pairs considered to be orthologs by all methods except RIO, reflecting its possibly high FN rate (next-to-last column), and protein pairs considered to be orthologs by KOG only (column 8), reflecting its possibly high FP rate, as discussed below.</p>
+
+
+<h4>Similarities and statistical dependence between orthology detection methods</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>In order to assess similarities and dependence between various methods, Jaccard similarity coefficients, mutual information scores, and Pearson correlation coefficients were calculated for all pairwise comparisons between the seven orthology and three homology identification procedures under consideration. Mutual information (<a href="#pone-0000383-t002">Table 2, top</a>) and Pearson coefficients (<a href="#pone.0000383.s006">Table S1, bottom</a>) are commonly used to measure overall/marginal dependence. As indicated in both measurements, many pairs of methods are significantly correlated (top 10 are highlighted by underlining): for example, the best BLAST hit (SBH) rule shows a relatively high degree of correlation with most other BLAST-based methods. Such marginal dependencies are largely due to the overlap of positive predictions, measured by Jaccard coefficient (<a href="#pone-0000383-t002">Table 2, bottom</a>; defined as the fraction of positive protein pairs identified by either method that are recognized by both).</p>
+<div class="figure" id="pone-0000383-t002"><div class="img"><a name="pone-0000383-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t002.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 2.  <span>Overall dependence and similarity between methods</span></strong></p><span>doi:10.1371/journal.pone.0000383.t002</span></div><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>The basic latent class model 2LC (see <a href="#s4">Methods</a>) assumes independence between methods conditionally on the latent orthology status, commonly referred to as the local independence assumption <a href="#pone.0000383-Magidson1">[24]</a>. This assumption may be violated, however, when two methods make similar errors, i.e. if they yield the same false positive or false negative predictions of orthology. Bivariate residual (BVR) statistics <a href="#pone.0000383-Vermunt1">[27]</a>, <a href="#pone.0000383-Vermunt2">[28]</a> are used to identify possible conditional dependencies among orthology detection methods, as shown in <a href="#pone-0000383-g003">Figure 3</a>. Each BVR corresponds to a Pearson chi-square statistic, comparing observed and expected cross-classification frequency tables for a pair of methods. Although it is only strictly appropriate to compare methods intended to predict orthology, homology detection methods (BLASTP, SBH, TribeMCL) have also been included in the LCA analysis for the sake of illustration.</p>
+<div class="figure" id="pone-0000383-g003"><div class="img"><a name="pone-0000383-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>False positive and false negative rates for multiple orthology/homology detection methods.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>Shaded diamonds present bivariate residual (BVR) statistics calculated based on the orthology data (see <a href="#pone-0000383-g002">Figure 2</a>) and the 2LC model, showing conditional dependence between the ten methods under study. For benchmarking purpose, the CFactor 2LC model is applied to all orthology detection methods to correct for these dependencies (see <a href="#pone.0000383.s002">Figure S2</a>). FP and FN estimates for each method and the overall orthology probability (estimated to be 0.48) are calculated based on the average frequency table from 100 sampling replicates. Those replicates exhibiting a good fit to the CFactor 2LC model (L-square&lt;170) are plotted as colored circles (for illustrative purposes only; FP and FN rates in the table are based on all replicates).</p>
+<span>doi:10.1371/journal.pone.0000383.g003</span></div><a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>As indicated in <a href="#pone-0000383-g003">Figure 3</a> (shaded diamonds), orthology detection methods exhibit various degrees of conditional dependence with each other, particularly when they employ similar strategies. For example, the phylogeny-based methods RIO and Orthostrapper – both of which use the neighbor-joining algorithm for tree construction and calculate confidence based on bootstrapping – show a high level of dependence (BVR = 46.4; <em>p</em>&lt;10<sup>−3</sup>). A lower degree of dependence (<em>p</em>&lt;0.05) is also observed for most pairwise comparisons between BLAST-based orthology detection methods (RBH, Inparanoid, OrthoMCL, KOG), all of which rely on RBH as their first step. Interestingly, RBH and KOG exhibit extremely low conditional dependence, probably because numerous non-RBH BLAST hits were included during KOG clustering, diluting the dependence signal. RSD and RBH display a high degree of dependence, despite using slightly different measures of sequence similarity, because both are based on a similar rationale of reciprocally identifying the most similar proteins across two genomes. Extremely high dependence is observed between the homology detection methods BLASTP and TribeMCL. The dependence between homology and orthology detection methods is generally very low, except that KOG exhibits much higher dependence with homology detection methods than orthology detection methods, indicating that KOG prediction is very much like a homolog clustering.</p>
+<a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>Because the conditional dependencies observed between ortholog identification methods could compromise the fit of the basic 2LC model to our orthology data, the CFactor 2LC model (similar to <a href="#pone.0000383-Qu1">[29]</a>, <a href="#pone.0000383-Hadgu1">[30]</a>; see <a href="#s4">Methods</a>) was employed. In this approach, a continuous latent factor with test- and class-specific effects is added to the 2LC model, supposedly to account for any effect which may contribute to the above cross-method conditional dependencies. BVR statistics under this model are provided in <a href="#pone.0000383.s002">Figure S2</a>; when compared with the 2LC model, most of the dependencies between methods disappear. The better fit to our data is also revealed by a significant decrease in L-square statistics <a href="#pone.0000383-Vermunt1">[27]</a>, <a href="#pone.0000383-Vermunt2">[28]</a> (2LC model: 533.7; CFactor 2LC model: 104.8).</p>
+<a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p>Applying the CFactor 2LC model to the average frequency table generated from the 100 sampling replicates described above yields FP and FN estimates for each ortholog prediction method under investigation, as listed in <a href="#pone-0000383-g003">Figure 3</a>. The model is also applied to frequency tables obtained from individual replicates, as illustrated by colored dots in <a href="#pone-0000383-g003">Figure 3</a>. Bold dots (with outlines) provide LCA results for methods that make explicit orthology predictions (RIO, Orthostrapper, RSD, RBH, Inparanoid, OrthoMCL, KOG; see <a href="#pone-0000383-t001">Table 1</a>). Fainter dots (not outlined) represent methods for which LCA is not suitable (SBH, BLASTP, TribeMCL), with error rates calculated as rescaled average posteriors based on estimated model parameters.</p>
+
+
+<h4>Performance of orthology detection methods</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>From the data presented in <a href="#pone-0000383-g003">Figure 3</a>, it is clear that most methods trade off sensitivity (1-FN) versus specificity (1-FP). For example, orthology detection methods based on phylogeny (RIO, Orthostrapper) or evolutionary distance (RSD) exhibit low FP error rates (1–7%), but high FN error rates (24–64%). This agrees well with anecdotal experience, where it is often impossible to build a reliable tree – but whenever practical, tree-based methods provide an excellent basis for inferring orthology. Conversely, using homology methods (BLASTP, TribeMCL) to infer orthology results in high FP error rates (50–56%) and low FN error rates (4–5%). This is also in accord with anecdotal experience: BLASTP hits typically include true orthologs but also many false positive results. Between these two extremes, BLAST-based orthology prediction methods exhibit a range of FP and FN rates. Although no single ortholog identification method performs perfectly (both FP and FN = 0), two methods display FP and FN&lt;20%, and these may therefore be considered the best performing algorithms: Inparanoid and OrthoMCL.</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>As noted above, phylogeny-based methods all exhibit a very low FP error rate, because of the stringent criteria used to predict orthology based on phylogenetic trees. However, they display quite different FN error rates (64% for RIO vs. 24% for Orthostrapper), due to their different specific strategies in ortholog identification. RIO seeks to reconcile a gene tree with a fixed species tree, assigning orthology based on inferred speciation/duplication events <a href="#pone.0000383-Zmasek2">[31]</a>. Orthostrapper uses a heuristic orthology assignment algorithm different from the classical tree reconciliation strategy, organizing species into evolutionarily distinct groups instead of a fixed species tree <a href="#pone.0000383-Storm1">[8]</a>, <a href="#pone.0000383-Storm2">[9]</a>. This simplification appears to greatly improve the sensitivity of phylogeny-based methods, without dramatically affecting specificity.</p>
+<a id="article1.body1.sec2.sec3.p3" name="article1.body1.sec2.sec3.p3"></a><p>The reciprocal best BLAST hit strategy (RBH), used as first step for most BLAST-based orthology detection methods, displays a low FP error rate (8%), but its inability to recognize many-to-many or many-to-one co-ortholog relationships results in a high FN error rate (30%), as previously expected <a href="#pone.0000383-Koonin1">[4]</a>. LCA analysis clearly displays improved specificity along the path from BLASTP (FP = 50%) to SBH (25%) to RBH (8%). This improvement comes at a cost of (more modest) reductions in sensitivity, however: FN = 4% for BLASTP, 9% for SBH, and 30% for RBH. The relatively high FP rate observed for SBH might be expected, as one-way best hits are frequently not the nearest neighbor <a href="#pone.0000383-Koski1">[32]</a>.</p>
+<a id="article1.body1.sec2.sec3.p4" name="article1.body1.sec2.sec3.p4"></a><p>Several BLAST-based methods have sought to improve upon the trade-offs between sensitivity and specificity. By recognizing co-orthologs, Inparanoid reduces the high FN rate of RBH to 17%. Ortholog clustering across multiple genomes provides a further reduction: to 7% for OrthoMCL, and 1% for KOG. Clustering across multiple genomes inevitably bears a cost in terms of increased FP rates, however: 16% for OrthoMCL, and 36% for KOG. Among all the methods under investigation, KOG displays the best sensitivity (FN = 1%), probably the benefit of extensive manual curation, but at a cost of low specificity (FP = 36%), consistent with the high degree of conditional dependence observed between KOG and homology detection methods (BLAST, TribeMCL).</p>
+<a id="article1.body1.sec2.sec3.p5" name="article1.body1.sec2.sec3.p5"></a><p>RSD and RBH are based on a similar concept: reciprocal identification of the most similar proteins between two genomes, and display the highest level of conditional dependence among orthology detection methods (<a href="#pone-0000383-g003">Figure 3</a>). To test whether observed differences in performance (FN = 30%, FP = 8% for RBH; vs FN = 44%, FP = 3% for RSD) might be attributable to the alternative methods used for alignment (local BLAST <a href="#pone.0000383-Altschul1">[25]</a> vs global ClustalW <a href="#pone.0000383-Thompson1">[33]</a>), RBH and RSD analyses are simulated using identical Pfam alignments (see <a href="#s4">Methods</a>). Pfam_RBH and Pfam_RSD yield virtually identical results (FP = 11% vs. 12%; FN = 36% vs. 39%). Further analysis indicates that the performance of RBH is also affected by the definition of ‘best-hit’: the KOG BLAST analysis used for this study defines E-values&lt;10<sup>−99</sup> = 0, producing many ties and resulting in a relatively low FN (and high FP) rate. Increasing stringency by using the best similarity score (less ties) increases FN to 38% and reduces FP to 4% (<a href="#pone.0000383.s007">Table S2</a>), close to the values observed for RSD. The divergence threshold parameter used by RSD has no significant effect on performance (<a href="#pone.0000383.s008">Table S3</a>).</p>
+
+
+<h4>The effect of parameter alteration on orthology detection performance</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>The perspectives on benchmarking of orthology detection methods provided by LCA suggest that this approach may also be useful for evaluating user-configurable parameters associated with the various methods under study. The following parameters are evaluated: orthology bootstrap cutoff is varied for phylogeny-based methods (RIO, Orthostrapper), BLAST E-value or score cutoff is varied for BLAST-based methods (RBH, Inparanoid, OrthoMCL, etc.), and the MCL inflation index is varied for Markov clustering methods (OrthoMCL, TribeMCL). For each of these methods, only the result generated from default settings (see <a href="#s4">Methods</a>) is modeled using LCA; for non-default results, error rates are calculated as rescaled average posteriors based on the estimated model parameters.</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2"></a><p>In phylogeny reconstruction, bootstrapping analysis is used to evaluate tree reliability by resampling columns in a multiple sequence alignment. For orthology detection methods, bootstrap values are calculated as the percentage of bootstrapped trees in which two sequences are identified as orthologs, i.e. a confidence measure for orthology prediction. <a href="#pone-0000383-g004">Figure 4A</a> illustrates how the FP and FN error rates of RIO and Orthostrapper vary according to the orthology bootstrap cutoff. This analysis indicates that selecting bootstrap cutoff values lower than the recommended default setting of 50% results in considerable enhancement of sensitivity, with little reduction of specificity (especially for RIO). Orthostrapper differs from RIO primarily in terms of the FN error rate, probably due to the reduction of a multilevel species tree to simpler phylogenetic groupings.</p>
+<div class="figure" id="pone-0000383-g004"><div class="img"><a name="pone-0000383-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>The effects of parameter alteration on orthology detection performance.</span></strong></p><a id="article1.body1.sec2.sec4.fig1.caption1.p1" name="article1.body1.sec2.sec4.fig1.caption1.p1"></a><p><em>Panel A:</em> Phylogeny-based methods. Varying the orthology bootstrap cutoff indicates that the cross-over point where FP = FN occurs at a lower cutoff than the suggested default (50%; gray bar). <em>Panel B:</em> BLAST-based methods. The effect of changing E-value cutoff for various methods (the bit score cutoff used by Inparanoid is transformed into E-value cutoff) is shown. Single data point is provided for KOG, which could not be readily rerun under diverse conditions. <em>Panel C:</em> Markov clustering methods. The effect of varying the MCL inflation index is shown. The inflation index of 1 corresponds to single-linkage (SL) clustering. In panels A–C, FP and FN error rates are represented by solid and dashed lines, respectively. <em>Panel D:</em> An ROC curve representing the range of FP and FN error rates observed in panels A &amp; B. Default or recommended settings for each method are indicated by circles.</p>
+<span>doi:10.1371/journal.pone.0000383.g004</span></div><a id="article1.body1.sec2.sec4.p3" name="article1.body1.sec2.sec4.p3"></a><p>For BLAST-based methods, reducing the E-value cutoff improves specificity and decreases sensitivity (lower FP, higher FN), as shown in <a href="#pone-0000383-g004">Figure 4B</a>. Homology detection methods (BLASTP, TribeMCL) are more sensitive to the E-value cutoff than orthology detection methods in FP rate – especially at high E-values, where ortholog protein pairs are rare. For example, changing the E-value cutoff from 0.1 to 0 reduces FP rates by 57% for BLASTP, but only 5% for RBH.</p>
+<a id="article1.body1.sec2.sec4.p4" name="article1.body1.sec2.sec4.p4"></a><p>As graph-based clustering algorithms, both OrthoMCL and TribeMCL apply Markov clustering to identify groups from an all-against-all protein similarity graph. Accurate identification of clusters should eliminate incorrect edges, such as those introduced due to protein domain fusion or other rearrangements. Increasing the inflation index parameter increases cluster tightness, thus reducing FP while raising FN, as shown in <a href="#pone-0000383-g004">Figure 4C</a>. The MCL inflation index has only a modest effect on performance of OrthoMCL, as previously described <a href="#pone.0000383-Li1">[18]</a>. For example, increasing the inflation index from 0 (single-linkage clustering) to 5 reduces FP by 10% for OrthoMCL but 32% for TribeMCL. The greater impact on TribeMCL is attributable to its denser protein connectivity graph, incorporating edges between all homologs defined by BLAST hits, while the OrthoMCL graph only contains edges representing (co-)ortholog and in-paralog relationships (<a href="#pone-0000383-g001">Figure 1</a>).</p>
+<a id="article1.body1.sec2.sec4.p5" name="article1.body1.sec2.sec4.p5"></a><p>The effect of altering orthology bootstrap and BLAST similarity cut-offs is best illustrated by an ROC (Receiver Operating Characteristic) curve, as shown in <a href="#pone-0000383-g004">Figure 4D</a>. The sensitivity/specificity trade-off is readily seen in this figure, although the entire range cannot be explored for all methods using standard parameters. It is interesting to note that for phylogeny-based methods, the recommended parameter settings (indicated by circles) sacrifice sensitivity in favor of high specificity, a consequence of arbitrarily imposing a relatively high bootstrap cutoff of 50%. In contrast, the KOG method sacrifices specificity for sensitivity (only a single value is shown for KOG, as this manually curated method is not readily repeated using different parameter settings).</p>
+
+
+<h4>Comparison of ortholog/homolog groupings</h4>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a><p>Only three of the methods under investigation (KOG, OrthoMCL, TribeMCL) permit clustering proteins from multiple species, rather than simply making pairwise predictions for proteins from two species. As shown in <a href="#pone-0000383-t003">Table 3</a>, from the entire dataset of 112,920 sequences, KOG clusters 88,613 proteins (78%) into 10,058 groups (average 8.8 proteins/group); TribeMCL clusters 83,219 proteins (74%) into 8143 groups (average size 10.2); and OrthoMCL clusters 78,998 proteins (70%) into 13,323 groups (average size 5.9). Thus, in terms of inclusiveness, KOG&gt;TribeMCL&gt;OrthoMCL, while in terms of cluster tightness, OrthoMCL&gt;KOG&gt;TribeMCL. Not surprisingly, there is considerable overlap in which proteins are grouped by these methods; 76,114 (67%) proteins are grouped by all three methods. When comparing the two methods that explicitly define ortholog groups (KOG &amp; OrthoMCL), the vast majority of the extra 3265 (13,323–10,058) OrthoMCL groups contain≤4 sequences, from 1–2 species (see <a href="#pone.0000383.s004">Figure S4</a> for a distribution of group sizes using each method, by # species and # sequences).</p>
+<div class="figure" id="pone-0000383-t003"><div class="img"><a name="pone-0000383-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t003.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 3.  <span>Comparison of proteome clusterings by OrthoMCL, KOG, and TribeMCL<span class="xref"><sup>a</sup></span></span></strong></p><span>doi:10.1371/journal.pone.0000383.t003</span></div><a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2"></a><p><a href="#pone-0000383-t003">Table 3</a> also presents further analysis of the relationship and coherence of KOG, OrthoMCL, and TribeMCL clusterings. Comparing the two ortholog groupings (KOG &amp; OrthoMCL; top row), of the 78,329 sequences grouped by both methods, 90–95% are grouped coherently (right-most column), i.e. KOG and OrthoMCL groups are either identical or one is completely contained within the other. 5158 identical groups represent 51% of KOG groups and 38% of OrthoMCL groups, and include 28% of all proteins recognized by both. 35% of KOG groups contain 52% of the OrthoMCL groups, while only 3% of OrthoMCL groups contain 5% of KOG groups, i.e. KOG groups generally encompass OrthoMCL groups, rather than the reverse (note that in a previous analysis, OrthoMCL groups were found to generally encompass EGO groups <a href="#pone.0000383-Li1">[18]</a>, <a href="#pone.0000383-Lee1">[34]</a>). A similar trend is also observed when comparing OrthoMCL &amp; TribeMCL, but not KOG &amp; TribeMCL, as shown in <a href="#pone-0000383-t003">Table 3</a>. Only 84 OrthoMCL groups are split into two (or more) groups by KOG; these are often attributable to functionally distinct proteins that are not distinguishable by sequence similarity (e.g. RNA polymerases I and III), or fusion proteins (e.g. in the case of bifunctional ATP sulfurylases - adenosine 5′-phosphosulfate kinases, these related enzymes were manually split into individual monofunctional groups and a separate bifunctional group during curation of the KOG database).</p>
+
+
+<h4>Consistency of protein function and domain architecture in ortholog/homolog groupings</h4>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a><p>As described above, OrthoMCL and KOG are very consistent in their grouping of proteins from a multi-species dataset, although the former is fully automated, while the latter requires manual curation. In general, differences are attributable to the tendency of KOG to incorporate into larger groups proteins that are either excluded or grouped separately by OrthoMCL – but which of these clusterings is more accurate? By definition, orthologs arise through speciation, and are likely to retain similar sequence, domain architecture, and function; indeed, such conservation provides one motivation for identifying ortholog groups, in order to facilitate the annotation of unknown protein sequences. In contrast, paralogs arise by duplication; because of their functional redundancy, they are more likely to have point mutation and even domain rearrangements to evolve new functions. The consistency of protein function and domain architecture within ortholog/homolog groups therefore provides a useful measure for assessing the accuracy of ortholog groupings.</p>
+<a id="article1.body1.sec2.sec6.p2" name="article1.body1.sec2.sec6.p2"></a><p>Enzyme commission (EC) numbers are among the most widely and consistently applied forms of curated functional annotation for proteins. In order to investigate the accuracy with which ortholog identification algorithms cluster EC-annotated proteins, protein sequences and EC numbers were extracted from the ENZYME database, and mapped to the dataset used for ortholog analysis (see <a href="#s4">Methods</a>). Complete (4-digit) EC numbers are identified for a total of 4,739 sequences in the dataset, &gt;95% of which are clustered into groups by OrthoMCL, KOG and TribeMCL. Groups containing two or more EC-annotated sequences (defined as enzyme groups) are used to assess functional consistency, by examining the percentage of enzyme groups for which all EC annotations are identical or consistent.</p>
+<a id="article1.body1.sec2.sec6.p3" name="article1.body1.sec2.sec6.p3"></a><p>As shown in <a href="#pone-0000383-t004">Table 4</a>, OrthoMCL recognizes more enzyme groups, containing fewer proteins, than either KOG or TribeMCL, due to the different tightness of these clusterings. As a consequence, OrthoMCL exhibits the highest consistency in EC number annotation: 89% of enzyme groups, vs. 83% for KOG, and 75% for TribeMCL. Of 4125 EC-annotated sequences in OrthoMCL enzyme groups, 3531 (86%) are clustered into consistent groups (vs. 77% for KOG and 54% for TribeMCL). From another point of view, these statistics indicate that OrthoMCL exhibits the greatest potential for accurate functional annotation of unknown protein sequences.</p>
+<div class="figure" id="pone-0000383-t004"><div class="img"><a name="pone-0000383-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.t004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.t004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.t004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.t004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.t004.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 4.  <span>Consistency of three clustering methods with EC assignments</span></strong></p><span>doi:10.1371/journal.pone.0000383.t004</span></div><a id="article1.body1.sec2.sec6.p4" name="article1.body1.sec2.sec6.p4"></a><p>Several strategies can be employed to define protein domain architecture, often motivated by the desire to identify specific domains that are structurally (SCOP, CATH) and/or functionally (Pfam) conserved. In order to incorporate regions that may not be structurally or functionally significant, we applied MKDOM2 <a href="#pone.0000383-Gouzy1">[35]</a>, which decomposes all protein sequences into domains based on successive iterations of PSI-BLAST searches. After excluding domains that are present in only one sequence in the entire dataset, a ‘Domain Content Similarity’ (DCS) Jaccard coefficient is defined as the number of domains present in both of two sequences, divided by the number of domains present in either (for a group of sequences, DCS refers to the average of all pairwise comparisons).</p>
+<a id="article1.body1.sec2.sec6.p5" name="article1.body1.sec2.sec6.p5"></a><p>A large amount of groups (33~47%) identified by OrthoMCL, KOG or TribeMCL exhibit DCS = 1 (see <a href="#pone.0000383.s005">Figure S5</a>), i.e. they share all of the same domains (ignoring domain order, length, or repetition). Considering those groups that are not identical between OrthoMCL and KOG, the average DCS is significantly higher for OrthoMCL, as shown in <a href="#pone-0000383-g005">Figure 5</a>: 4-fold more OrthoMCL groups exhibit DCS = 1, and for those groups with non-identical domain architectures, the peak is shifted to the right from KOG (DCS = 0.3–0.4) to OrthoMCL (0.5–0.6). This partly explains OrthoMCL's better consistency in protein function, as higher similarity in protein domain architecture results in higher similarity in function <a href="#pone.0000383-Hegyi1">[36]</a>. As might be expected from the overall comparison of OrthoMCL vs KOG consistency (<a href="#pone-0000383-t003">Table 3</a>), the more consistent OrthoMCL groups are also smaller in size, as indicated by shading in <a href="#pone-0000383-g005">Figure 5</a>. Smaller groups with more consistent DCS are less likely to include out-paralog evolutionary relationships.</p>
+<div class="figure" id="pone-0000383-g005"><div class="img"><a name="pone-0000383-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Comparison of protein domain content similarity for OrthoMCL and KOG groups.</span></strong></p><a id="article1.body1.sec2.sec6.fig1.caption1.p1" name="article1.body1.sec2.sec6.fig1.caption1.p1"></a><p>The distribution of Domain Content Similarity (DCS) values for non-identical KOG and OrthoMCL groups is shown. Shading is used to represent group size (number of taxa). In general, OrthoMCL groups are smaller, and exhibit more consistency in protein domain architecture.</p>
+<span>doi:10.1371/journal.pone.0000383.g005</span></div><a id="article1.body1.sec2.sec6.p6" name="article1.body1.sec2.sec6.p6"></a><p>In summary, OrthoMCL yields more, smaller protein groups than other methods, and is more effective in separating ancestral duplications (out-paralogs). These groups are more consistent with respect to both EC number annotation and protein domain architecture, and are therefore more likely to accurately reflect protein evolution and function. For example, group KOG1158 includes some proteins annotated with EC 1.1.1.205 (IMP dehydrogenase), and others annotated as EC 1.7.1.7 (GMP reductase). OrthoMCL successfully clusters these proteins into two groups with consistent EC numbers (<a href="#pone-0000383-g006">Figure 6A</a>) and domain architectures (<a href="#pone-0000383-g006">Figure 6B</a>). Both enzymes share two protein domains, but IMP dehydrogenase also includes a long N-terminal extension, incorporating several additional domains.</p>
+<div class="figure" id="pone-0000383-g006"><div class="img"><a name="pone-0000383-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000383" data-uri="info:doi/10.1371/journal.pone.0000383.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000383.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000383.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000383.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>Example of KOG vs OrthoMCL clustering.</span></strong></p><a id="article1.body1.sec2.sec6.fig2.caption1.p1" name="article1.body1.sec2.sec6.fig2.caption1.p1"></a><p>Group KOG2550 is split by OrthoMCL into two groups that are more consistent with respect to both EC annotation and protein domain architecture. <em>Panel A:</em> Edge lengths in these two BioLayout graphs <a href="#pone.0000383-Enright2">[40]</a> indicate BLAST similarity relationships, and node colors represent different OrthoMCL groups (note that one protein, shown in gray, is not clustered by OrthoMCL). OrthoMCL uses normalized BLAST scores <a href="#pone.0000383-Li1">[18]</a>, and clustering is based on the identification of (co-)orthologs and in-paralogs (<a href="#pone-0000383-g001">Figure 1</a>), rather than simply homologs defined by BLAST. <em>Panel B:</em> Colored vertical bars correspond to OrthoMCL groups; colored horizontal bars indicate conserved domains assigned by MKDOM2 <a href="#pone.0000383-Gouzy1">[35]</a>.</p>
+<span>doi:10.1371/journal.pone.0000383.g006</span></div>
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3>
+<h4>Performance of orthology detection methods</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>Ortholog identification is critically important for many applications, ranging from genome annotation to comparative genomics to evolutionary biology. We have therefore sought to develop a platform for comparing available ortholog identification methods. In the absence of a genomic-scale orthology dataset suitable for benchmarking performance, the statistical technique of Latent Class Analysis allows false positive and false negative rates to be inferred from data on agreement and disagreement (<a href="#pone-0000383-g002">Figure 2</a>). Applying this approach to a variety of ortholog identification methods (<a href="#pone-0000383-t001">Table 1</a>) demonstrates a clear trade-off between sensitivity and specificity, both with respect to the methods themselves (<a href="#pone-0000383-g003">Figure 3</a>) and the parameters selected (<a href="#pone-0000383-g004">Figure 4</a>).</p>
+<a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>As described above (and in accord with anecdotal experience), phylogeny-based methods typically exhibit high false negative rates, while simple BLAST-based homology detection methods exhibit high false positive rates. A similar trade-off between specificity and sensitivity has recently been described based on the use of functional genomics data to benchmark human-mouse orthology predictions <a href="#pone.0000383-Hulsen1">[22]</a>. Of the ten methods studied in our analysis, only four (RBH, Inparanoid, OrthoMCL and KOG) were included in that study: rankings in sensitivity (approximated indirectly as raw numbers of ortholog predictions) and specificity (inferred indirectly based on functional similarity score) partly agree with the present report. However, it should be noted that different types of functional genomics data yield different results, and that such evidence is often inadequate to the challenge of making comparisons over larger evolutionary distances, e.g. <em>H. sapiens</em> to <em>C. elegans</em> <a href="#pone.0000383-Hulsen1">[22]</a>.</p>
+<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p><a href="#pone-0000383-t001">Table 1</a> and <a href="#pone-0000383-g003">Figures 3</a>–<a href="#pone-0000383-g004">4</a> provide a helpful framework for selecting suitable methods for various applications. For example, KOG provides a low false negative rate (but high frequency of false positives), while RIO offers the reverse. KOG is therefore suitable for applications requiring high sensitivity, such as the identification of all candidate genes that might encode a specific enzyme, while RIO is more appropriate for applications requiring high specificity, such as the identification of groups suitable for phylogenetic analysis, or for comparative biochemical studies of enzyme function. Overall, Inparanoid and OrthoMCL exhibit the best balance of sensitivity and specificity.</p>
+<a id="article1.body1.sec3.sec1.p4" name="article1.body1.sec3.sec1.p4"></a><p>Other factors may also affect the selection of ortholog identification strategies. For example, RIO and Orthostrapper are based on analysis of aligned Pfam domains. These methods calculate evolutionary distances and reconstruct phylogenies, incurring a relatively high computational cost. All of the other methods considered here are based on BLAST comparison of full-length protein sequences, and are therefore relatively fast. The KOG method, however, relies on manual curation to break apart inappropriately combined groups – a labor-intensive task that precludes automated incorporation of emerging genome sequences.</p>
+<a id="article1.body1.sec3.sec1.p5" name="article1.body1.sec3.sec1.p5"></a><p>These methods also differ in their ability to group protein sequences from multiple species – a particularly important consideration for such applications as functional genome annotation and phyletic pattern analysis. KOG, OrthoMCL and TribeMCL assemble protein groups from multiple species – the former by merging ‘triangles’ of reciprocal best hits based on shared edges (followed by a variety of heuristic steps designed to improve sensitivity), while the latter two use a Markov clustering algorithm to form groups from a complex graph defined by pairwise sequence similarity scores. Other methods are designed for two-species datasets, although a recent report (MultiParanoid <a href="#pone.0000383-Alexeyenko1">[37]</a>) employs a single linkage clustering on Inparanoid results from all possible bi-species comparisons to group proteins across multi-species dataset (in order to prevent the inclusion of out-paralogs, MultiParanoid is only employed for closely related species). Similar strategies could be applied to other methods as well, although the false positives inevitably brought about by single-linkage clustering make it hard to apply to large number of species.</p>
+<a id="article1.body1.sec3.sec1.p6" name="article1.body1.sec3.sec1.p6"></a><p>Groupings formed by three multi-species clustering algorithms are compared in <a href="#pone-0000383-t003">Table 3</a>. In general, KOG and TribeMCL are more inclusive than OrthoMCL, leading to lower group consistency in terms of both protein function (<a href="#pone-0000383-t004">Table 4</a> &amp; <a href="#pone-0000383-g006">Figure 6A</a>) and domain architecture (<a href="#pone-0000383-g005">Figures 5</a> &amp; <a href="#pone-0000383-g006">6B</a>). The inclusive nature of TribeMCL is attributable to its use of sequence similarity scores alone to assign groupings (i.e., this method is intended to identify homologs, in contrast to KOG and OrthoMCL, which purport to identify orthologs only). KOG's inclusive nature is due to a variety of factors, including the requirement for three species (forming a triangle of reciprocal best hits) during the construction of initial seed groups, the use of a high BLAST E-value cutoff (10 for KOG, vs 10<sup>−5</sup> for OrthoMCL), and permissive rules for adding individual sequences to the initial seeds. By way of example (<a href="#pone-0000383-g006">Figure 6</a>), GMP reductases cannot nucleate a KOG seed group because they are only found in two species in the KOG dataset (<em>H. sapiens</em> and <em>C. elegans</em>). They are therefore inappropriately grouped with IMP dehydrogenases in KOG2550 due to sequence similarity, but properly separated by OrthoMCL.</p>
+
+
+<h4>Challenges in using LCA for benchmarking orthology detection</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>As noted above, LCA provides a useful framework for benchmarking ortholog assignment methods, but such application is not trivial and we have encountered several challenges. LCA compares various methods with each other, allowing error rates to be inferred in the absence of a gold standard. Because error rates estimated in this way may be affected by other methods included in the analysis, we considered which (and how many) methods should be included, the (in)dependence between these methods, and the robustness of the final result obtained.</p>
+<a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>In order to provide the most comprehensive and accurate analysis possible, seven orthology detection methods are included, representing complementary strategies based on phylogenetic reconstruction, evolutionary distances, or BLAST-based sequence similarity. Jackknife analysis of these results shows little systematic change when any one or two methods are removed from the analysis (<a href="#pone.0000383.s003">Figure S3</a>). The most significant change observed is an apparent improvement in the performance of RBH and RSD when any highly-specific, relatively independent method (RIO, Orthostrapper, Inparanoid, OrthoMCL) is excluded (<a href="#pone.0000383.s003">Figure S3B</a>). Exclusion of individual methods also results in a slight increase in both FP and FN rate estimation for Orthostrapper and RIO, suggesting that the performance of these methods may be slightly overestimated. Overall, while the specific false positive and false negative values estimated by LCA depends on the particular collection of methods examined, this analysis confirms the value of incorporating a wide range of methods in the benchmarking framework, the overall robustness of this analysis, and the utility of LCA as a method for evaluating performance.</p>
+<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a><p>Orthology detection methods all tend to rely on a similar set of concepts for identifying protein pairs across species boundaries (<a href="#pone-0000383-t001">Table 1</a>), making cross-method conditional dependence a potential complication (<a href="#pone-0000383-g003">Figure 3</a>). Such local dependence is a common problem confronting the use of LCA in many fields, but methods have been developed to modify basic latent class model by adding an extra latent variable <a href="#pone.0000383-Qu1">[29]</a>, <a href="#pone.0000383-Hadgu1">[30]</a>. The application of such model accurately models conditional dependencies between orthology detection methods (<a href="#pone.0000383.s002">Figure S2</a>), and results in a better fit to our orthology data (i.e. improvement in performance estimation).</p>
+<a id="article1.body1.sec3.sec2.p4" name="article1.body1.sec3.sec2.p4"></a><p>One significant feature of this LCA application is the consideration of relationships between subjects (“Are two proteins orthologs of each other?”), rather than individual subjects themselves (e.g. “Does a patient have a specific disease?”). Instead of considering all possible pairwise relationships between all proteins in the entire dataset, the frequency table used for LCA input includes only cross-species homologous protein pairs, as orthology can only occur between homologs from different species. Recognizing that orthology detection performance may vary from one protein family to another, a sampling strategy (with replicates) was devised to weight all families equally (see <a href="#s4">Methods</a>), to prevent the skewing of relationship data in favor of large protein families. Sensitivity and specificity results estimated in this report therefore represent an average over all families.</p>
+
+
+<h4>Applications of LCA in Computational Biology</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>LCA methodology is well suited to many biomedical problems, where the inability to define a gold standard or unequivocally recognize truth is a common limitation. This report describes one of the first applications of LCA to computational biology, but the emergence of genomic-scale datasets suggests many other potential applications. For example, numerous computational methods have been devised to predict potential protein-protein interactions, but high-throughput experimental methods typically exhibit a high false positive rate, precluding the development of a well-validated dataset.</p>
+<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>In addition to its utility for evaluating test performance, LCA may also be employed as a clustering algorithm, based on the posterior probability of subject membership in each latent class. For example, LCA has been widely used to classify disease status or subtypes, based on various types of symptoms or diagnostic tests. In computational biology, we have exploited LCA as a gene model combiner, integrating diverse lines of evidence to significantly improve eukaryotic gene model predictions <a href="#pone.0000383-Elsik1">[38]</a>. Since available orthology detection strategies display a trade-off of sensitivity and specificity – without any method achieving optimal performance in both – it should be possible to employ a similar clustering strategy for merging ortholog predictions from multiple methods, improving on the performance of any individual one. Although this strategy would undoubtedly be impractical for general application (due to intensive computing requirements), it might be quite useful to generate a close-to-gold-standard genomic-scale orthology dataset, establishing a benchmark for future analyses, and guiding computational and biochemical investigation of ortholog structural and functional properties.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Orthology detection</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>The KOG database represents a manually curated grouping of orthologs based on 112,920 protein/domain sequences from seven eukaryotic genomes: <em>Caenorhabditis elegans, Drosophila melanogaster, Homo sapiens, Arabidopsis thaliana, Saccharomyces cerevisiae, Schizosaccharomyces pombe</em> and <em>Encephalitozoon cuniculi</em>. The protein sequence dataset used in KOG construction was compiled as of July 1, 2002 <a href="#pone.0000383-Koonin2">[39]</a>. In order to facilitate the comparison and evaluation of multiple ortholog identification methods, this dataset was employed for all analyses (except as otherwise noted). Sources for all ortholog identification algorithms are as follows:</p>
+<h5>KOG:.</h5><a id="article1.body1.sec4.sec1.sec1.p1" name="article1.body1.sec4.sec1.sec1.p1"></a><p>Ortholog grouping data and protein sequence data for the seven eukaryotic genomes noted above were downloaded from the KOG database (<a href="http://www.ncbi.nlm.nih.gov/COG/new/">http://www.ncbi.nlm.nih.gov/COG/new/</a>).</p>
+
+<h5>BLASTP:.</h5><a id="article1.body1.sec4.sec1.sec2.p1" name="article1.body1.sec4.sec1.sec2.p1"></a><p>The BLAST result file was also downloaded from the KOG database. <em>Default settings for LCA:</em> E-value cutoff = 10<sup>−5</sup>.</p>
+
+<h5>OrthoMCL:.</h5><a id="article1.body1.sec4.sec1.sec3.p1" name="article1.body1.sec4.sec1.sec3.p1"></a><p>Program v1.4 was downloaded from <a href="http://orthomcl.cbil.upenn.edu">http://orthomcl.cbil.upenn.edu</a> (MCL v02-063 was downloaded from <a href="http://micans.org/mcl/">http://micans.org/mcl/</a>) and applied to the KOG dataset using the above KOG BLAST result file. <em>Default settings for LCA:</em> BLAST E-value cutoff = 10<sup>−5</sup>; MCL inflation index = 1.5.</p>
+
+<h5>SBH, RBH:.</h5><a id="article1.body1.sec4.sec1.sec4.p1" name="article1.body1.sec4.sec1.sec4.p1"></a><p>RBH results were obtained from the OrthoMCL output; SBH results were obtained by modifying the OrthoMCL script. ‘Best-hit’ is defined as the hit (or multiple hits tied) with the highest E-value. <em>Default settings for LCA:</em> BLAST E-value cutoff 10<sup>−5</sup>.</p>
+
+<h5>Inparanoid:.</h5><a id="article1.body1.sec4.sec1.sec5.p1" name="article1.body1.sec4.sec1.sec5.p1"></a><p>Program v1.35 was downloaded from <a href="http://inparanoid.cgb.ki.se">http://inparanoid.cgb.ki.se</a> and applied to all pairwise species proteomes extracted from the KOG dataset (without the use of outgroup species). <em>Default settings for LCA:</em> BLAST bit score cutoff = 50 bits.</p>
+
+<h5>TribeMCL:.</h5><a id="article1.body1.sec4.sec1.sec6.p1" name="article1.body1.sec4.sec1.sec6.p1"></a><p>Program v1.6 and MCL v02-063 were downloaded from <a href="http://micans.org/mcl/">http://micans.org/mcl/</a>. The KOG BLAST result file was used for TribeMCL clustering. <em>Default settings for LCA:</em> BLAST E-value cutoff = 10<sup>−10</sup>; MCL inflation index = 1.1.</p>
+
+<h5>RSD:.</h5><a id="article1.body1.sec4.sec1.sec7.p1" name="article1.body1.sec4.sec1.sec7.p1"></a><p>Program was downloaded from <a href="http://rodeo.med.harvard.edu/tools/roundup/and">http://rodeo.med.harvard.edu/tools/round​up/and</a> applied to all pairwise species proteomes extracted from the KOG dataset (using the KOG BLAST result file). <em>Default settings for LCA:</em> BLAST E-value cutoff = 10<sup>−5</sup>; divergence cutoff = 0.8.</p>
+
+<h5>Orthostrapper:.</h5><a id="article1.body1.sec4.sec1.sec8.p1" name="article1.body1.sec4.sec1.sec8.p1"></a><p>Predictions on domain sequences of Pfam 7.2 were downloaded from the HOPS database at <a href="ftp://ftp.cgb.ki.se/pub/data/HOPS/">ftp://ftp.cgb.ki.se/pub/data/HOPS/</a>. <em>Default settings for LCA:</em> Orthology bootstrap cutoff = 50.</p>
+
+<h5>RIO:.</h5><a id="article1.body1.sec4.sec1.sec9.p1" name="article1.body1.sec4.sec1.sec9.p1"></a><p>Program v1.1 was downloaded from <a href="http://www.rio.wustl.edu">http://www.rio.wustl.edu</a> and applied to domain sequences in Pfam 14.0. Pre-calculated data on evolutionary distance between domain sequences was kindly provided by the authors. <em>Default settings for LCA:</em> Orthology bootstrap cutoff = 50.</p>
+
+<h5>Pfam_RSD:.</h5><a id="article1.body1.sec4.sec1.sec10.p1" name="article1.body1.sec4.sec1.sec10.p1"></a><p>The RSD strategy was applied to Pfam 14.0, using pairwise distances extracted from the RIO dataset. Reciprocal smallest distance pairs of domain sequences were identified (without using divergence cutoff) for each Pfam domain and each pairwise species comparison.</p>
+
+<h5>Pfam_RBH:.</h5><a id="article1.body1.sec4.sec1.sec11.p1" name="article1.body1.sec4.sec1.sec11.p1"></a><p>The RBH strategy was applied to Pfam 14.0. For each cross-species pair of sequences belonging to the same domain, the original Pfam alignment was trimmed to the first and last conserved columns, and the resulting alignment was used to calculate a similarity score (Scoring matrix: BLOSUM62; Gap Open Penalty: 11; Gap Extension Penalty: 1). Reciprocal best hit pairs of domain sequences (for each Pfam domain and each pairwise species comparison) were identified based on similarity scores.</p>
+
+
+
+<h4>Frequency tables</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Large protein families may bias the assessment of orthology detection performance, by drastically amplifying the number of cross-species homologous protein pairs relative to small protein families. In order to avoid this problem, a sampling strategy was therefore devised to consider only one protein pair, from one species pair, from each Pfam family, chosen at random except for the exclusion of <em>S. cerevisiae</em> and <em>S. pombe</em> pairs (which are not distinguishable in the Orthostrapper/HOPS predictions <a href="#pone.0000383-Storm2">[9]</a>), and pairs including <em>E. cuniculi</em> (absent from the Orthostrapper/HOPS dataset <a href="#pone.0000383-Storm2">[9]</a>). As a further restriction, no protein pair was selected more than once in any given sampling (even if present in more than one Pfam families).</p>
+
+
+<h4>Latent class models and analysis</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>In orthology detection, both the prediction results <em>X<sub>i</sub></em> (<em>i = 1,…,n</em>, representing different methods) and the true status of orthology <em>Y</em> (latent class) are binary: 1 for orthology, 0 for non-orthology. For a given homologous protein pair, the result of all these methods is represented as a pattern <em>X</em> (<em>X<sub>1</sub> X<sub>2</sub> … X<sub>n</sub></em>). The probability of observing a specific pattern <em>x</em> can be expressed using <em>2n+1</em> parameters: the prevalence rate of orthology <em>θ</em> among homologous protein pairs, the FP rate <em>α<sub>i</sub></em> and the FN rate <em>β<sub>i</sub></em> for each method, according to the following formula.<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.e001&amp;representation=PNG" class="inline-graphic"><span class="note">1</span></span><br></p>
+<a id="article1.body1.sec4.sec3.p2" name="article1.body1.sec4.sec3.p2"></a><p>For a set of homologous protein pairs, a frequency table can be compiled, listing the counts of pairs for all the 2<sup>n</sup> possible patterns as <em>f(X)</em>. The likelihood function of the latent class model given this data can be expressed as<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000383.e002&amp;representation=PNG" class="inline-graphic"><span class="note">2</span></span><br></p>
+<a id="article1.body1.sec4.sec3.p3" name="article1.body1.sec4.sec3.p3"></a><p>Finally the ML (Maximum Likelihood) estimate of these parameters can be obtained by using Latent GOLD software <a href="#pone.0000383-Vermunt1">[27]</a>. This model is a basic 2LC model (i.e. containing 2 latent classes), assuming conditional independence. Once the model parameters are estimated, the probability of observing each prediction pattern can be calculated according to formula 1, above.</p>
+<a id="article1.body1.sec4.sec3.p4" name="article1.body1.sec4.sec3.p4"></a><p>In order to account for the conditional dependencies observed between orthology detection methods, an extra latent variable is added to the above basic model <a href="#pone.0000383-Qu1">[29]</a>, <a href="#pone.0000383-Hadgu1">[30]</a>. In such models, the outcome of a test is assumed to be governed by two factors: the latent class of orthology status (true or false), and a second latent variable which summarizes the attributes of the subject (here, the homologous protein pair) and the test (here, the orthology detection method) that are not explained by the latent class of orthology status alone. Generally, the second latent variable is in the form of standard normal distribution, and a probit model is used in describing the conditional probability. Thus, such models are also called latent class models with random effects or a continuous factor (a CFactor 2LC model). Given both of these latent variables, the responses of different tests then are assumed to be independent, so the formulas describing this model are similar to those used for the basic model. For a detailed description please refer to <a href="#pone.0000383-Qu1">[29]</a> or Latent GOLD technical guide <a href="#pone.0000383-Vermunt2">[28]</a>.</p>
+<a id="article1.body1.sec4.sec3.p5" name="article1.body1.sec4.sec3.p5"></a><p>Latent GOLD software version 4.0 was used to perform all LCA analysis in this paper. For the 2LC model, Latent GOLD uses a frequency table file as input, and performs ML estimation of model parameters, by: <em>(i)</em> selecting “Cluster Model” with 2 clusters (i.e. two latent classes representing “orthology” and “non-orthology” respectively), <em>(ii)</em> setting orthology detection methods as “Indicators”, <em>(iii)</em> setting the counts of protein pairs for various prediction patterns in frequency tables as “Case Weight”, and <em>(iv)</em> setting 100 random sets as “Start values”, and 250 iterations per set, in ML estimation. The CFactor 2LC model is run similarly, except that a continuous factor (CFactor) is added with “Cluster Dependent” (i.e. latent class dependent) and “Unequal” (i.e. test dependent) effects. The output of this analysis includes estimated values for model parameters, as well as BVR statistics.</p>
+<a id="article1.body1.sec4.sec3.p6" name="article1.body1.sec4.sec3.p6"></a><p>BVR statistics calculated under the 2LC model may be regarded as a measurement of conditional dependence. For the purpose of illustrating the relationship between orthology and homology detection methods, both kinds of methods were considered. For evaluating orthology performance, only the seven orthology detection methods (using default parameter settings) were included under the CFactor 2LC model, composing the benchmarking framework. Homology detection methods do not purport to detect orthology, and are therefore inappropriate for inclusion. These methods, as well as orthology detection methods under non-default parameter settings, can be set in LatentGOLD software as “Inactive Covariates” (i.e. they do not play a role in LCA analysis), and their error rates are obtained by rescaling average posteriors to sum to 1 within classes.</p>
+
+
+<h4>Consistency analysis in protein function and domain architecture</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>EC annotated sequences were obtained from SWISSPROT ENZYME database at <a href="http://us.expasy.org/enzyme/">http://us.expasy.org/enzyme/</a>, and mapped to KOG sequence dataset based on exact matches. Only ortholog groups containing at least two sequences for which EC annotation is available were examined, and groups were considered to be consistent if all EC annotations are identical or consistent (i.e. where one enzyme's EC number(s) are contained within the set of EC numbers used to describe the other multifunctional enzyme).</p>
+<a id="article1.body1.sec4.sec4.p2" name="article1.body1.sec4.sec4.p2"></a><p>MKDOM2 program was downloaded from <a href="http://prodom.prabi.fr/prodom/xdom/and">http://prodom.prabi.fr/prodom/xdom/and</a> run against the complete KOG sequence dataset using default settings.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000383"></div><a name="pone.0000383.s001" id="pone.0000383.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s001">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Frequency table from one sampling replicate. Last column lists the number of protein pairs observed for each orthology prediction pattern. Note that 50% (64) of the 2ˆ7 = 128 possible patterns are not observed in this replicate (the rows are not shown).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(4.01 MB TIF)</p>
+<a name="pone.0000383.s002" id="pone.0000383.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s002">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Bivariate residual statistics (BVR) calculated based on the CFactor 2LC latent class model. Note that most conditional dependencies decrease significantly in comparison with BVR statistics based on the 2LC model (<a href="#pone-0000383-g003">Figure 3</a>), indicating that they are effectively modeled by the extra latent variable added in the CFactor 2LC model.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.42 MB TIF)</p>
+<a name="pone.0000383.s003" id="pone.0000383.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s003">Figure S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Jackknife analysis of orthology detection performance based on LCA. Panel A: Removal of any one or two orthology detection methods from the LCA benchmarking framework (medium- and small-sized circles, respectively) has relatively little impact on performance. Large circles indicate performance assessment when all methods are included (see <a href="#pone-0000383-g003">Figure 3</a>). Note that the overall trend of orthology detection performance is maintained in jackknife analysis. Panel B: Data extracted from panel A to indicate specific effects of (one-) method removal. Data points indicate changes in the estimation of FP &amp; FN error rates for each method (outer circle), with respect to the original benchmarking result, following removal of other methods (inner circle). Most changes observed on these error rates are ≤0.1 (indicating the relative robustness in estimation), but systematic changes of some methods indicate possible errors: RBH's lower FN rates when some methods are removed suggest possible underestimation of sensitivity; phylogeny-based methods RIO and Orthostrapper are concentrated in the upper right quadrant, suggesting possible overestimation of performance.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(2.72 MB TIF)</p>
+<a name="pone.0000383.s004" id="pone.0000383.s004"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s004">Figure S4. </a></strong></p><a id="article1.body1.sec5.supplementary-material4.caption1.p1" name="article1.body1.sec5.supplementary-material4.caption1.p1"></a><p class="preSiDOI">Size distribution of KOG, OrthoMCL and TribeMCL groups (with respect to # sequences and # species). When compared with KOG and TribeMCL, the majority of extra groups identified by OrthoMCL contain≤4 sequences, from 1–2 species.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s004</p><a id="article1.body1.sec5.supplementary-material4.caption1.p2" name="article1.body1.sec5.supplementary-material4.caption1.p2"></a><p class="postSiDOI">(2.05 MB TIF)</p>
+<a name="pone.0000383.s005" id="pone.0000383.s005"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s005">Figure S5. </a></strong></p><a id="article1.body1.sec5.supplementary-material5.caption1.p1" name="article1.body1.sec5.supplementary-material5.caption1.p1"></a><p class="preSiDOI">Domain structure consistency of OrthoMCL, KOG and TribeMCL groups. DCS (Domain Content Similarity) is defined as a Jaccard coefficient: the fraction of MKDOM2 domains found in either of two sequences that are present in both; DCS for a group of sequences is calculated as the average of all pairwise comparisons of sequences. (Note that the effects of domain repeat, order and length are not considered under this simple definition. In addition, due to the difficulties of accurately predicting gene models, e.g. start codon positions and intron/exon structures, orphan domains appearing only once in the entire dataset are excluded.) Groups from all three methods display a similar distribution in DCS value, with OrthoMCL exhibiting better consistency than KOG (average DCS is 0.73 for OrthoMCL vs 0.65 for KOG). The stringent BLAST E-value cutoff (10ˆ-10) used in TribeMCL clustering results in a high average DCS (0.74).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s005</p><a id="article1.body1.sec5.supplementary-material5.caption1.p2" name="article1.body1.sec5.supplementary-material5.caption1.p2"></a><p class="postSiDOI">(1.14 MB TIF)</p>
+<a name="pone.0000383.s006" id="pone.0000383.s006"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s006">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material6.caption1.p1" name="article1.body1.sec5.supplementary-material6.caption1.p1"></a><p class="preSiDOI">Marginal dependence between various orthology/homology detection methods.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s006</p><a id="article1.body1.sec5.supplementary-material6.caption1.p2" name="article1.body1.sec5.supplementary-material6.caption1.p2"></a><p class="postSiDOI">(0.05 MB DOC)</p>
+<a name="pone.0000383.s007" id="pone.0000383.s007"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s007">Table S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material7.caption1.p1" name="article1.body1.sec5.supplementary-material7.caption1.p1"></a><p class="preSiDOI">The performance of Reciprocal Best Hit (RBH) depends on the definition of ‘best-hit’.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s007</p><a id="article1.body1.sec5.supplementary-material7.caption1.p2" name="article1.body1.sec5.supplementary-material7.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+<a name="pone.0000383.s008" id="pone.0000383.s008"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000383.s008">Table S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material8.caption1.p1" name="article1.body1.sec5.supplementary-material8.caption1.p1"></a><p class="preSiDOI">RSD performance varies according to divergence cutoff.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000383.s008</p><a id="article1.body1.sec5.supplementary-material8.caption1.p2" name="article1.body1.sec5.supplementary-material8.caption1.p2"></a><p class="postSiDOI">(0.03 MB DOC)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We thank Drs. Li Li, Jeffery Saven, Christian Stockert, Shailesh Date and members of the Roos group for helpful discussions and comments.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: DR FC AM JV. Performed the experiments: FC. Analyzed the data: FC. Wrote the paper: DR FC JV.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000383-Fitch1" id="pone.0000383-Fitch1"></a>Fitch WM (1970) Distinguishing homologous from analogous proteins. Syst Zool  19: 99–113.  <ul class="find" data-citedArticleID="945606" data-doi="10.2307/2412448"><li><a href="http://dx.doi.org/10.2307/2412448" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Distinguishing+homologous+from+analogous+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Distinguishing+homologous+from+analogous+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000383-Fitch2" id="pone.0000383-Fitch2"></a>Fitch WM (2000) Homology, a personal view on some of the problems. Trends Genet  16: 227–231.  <ul class="find" data-citedArticleID="945608" data-doi="10.1016/s0168-9525(00)02005-9"><li><a href="http://dx.doi.org/10.1016/s0168-9525(00)02005-9" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Homology%2C+a+personal+view+on+some+of+the+problems." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Homology%2C+a+personal+view+on+some+of+the+problems.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000383-Doolittle1" id="pone.0000383-Doolittle1"></a>Doolittle RF (1995) The multiplicity of domains in proteins. Annu Rev Biochem  64: 287–314.  <ul class="find" data-citedArticleID="945598" data-doi="10.1146/annurev.bi.64.070195.001443"><li><a href="http://dx.doi.org/10.1146/annurev.bi.64.070195.001443" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+multiplicity+of+domains+in+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+multiplicity+of+domains+in+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000383-Koonin1" id="pone.0000383-Koonin1"></a>Koonin EV (2005) Orthologs, paralogs, and evolutionary genomics. Annu Rev Genet  39: 309–338.  <ul class="find" data-citedArticleID="945622" data-doi="10.1146/annurev.genet.39.073003.114725"><li><a href="http://dx.doi.org/10.1146/annurev.genet.39.073003.114725" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Orthologs%2C+paralogs%2C+and+evolutionary+genomics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Orthologs%2C+paralogs%2C+and+evolutionary+genomics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000383-Remm1" id="pone.0000383-Remm1"></a>Remm M, Storm CE, Sonnhammer EL (2001) Automatic clustering of orthologs and in-paralogs from pairwise species comparisons. J Mol Biol  314: 1041–1052.  <ul class="find" data-citedArticleID="945638" data-doi="10.1006/jmbi.2000.5197"><li><a href="http://dx.doi.org/10.1006/jmbi.2000.5197" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automatic+clustering+of+orthologs+and+in-paralogs+from+pairwise+species+comparisons." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automatic+clustering+of+orthologs+and+in-paralogs+from+pairwise+species+comparisons.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000383-Sonnhammer1" id="pone.0000383-Sonnhammer1"></a>Sonnhammer EL, Koonin EV (2002) Orthology, paralogy and proposed classification for paralog subtypes. Trends Genet  18: 619–620.  <ul class="find" data-citedArticleID="945640" data-doi="10.1016/s0168-9525(02)02793-2"><li><a href="http://dx.doi.org/10.1016/s0168-9525(02)02793-2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Orthology%2C+paralogy+and+proposed+classification+for+paralog+subtypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Orthology%2C+paralogy+and+proposed+classification+for+paralog+subtypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000383-Zmasek1" id="pone.0000383-Zmasek1"></a>Zmasek CM, Eddy SR (2002) RIO: analyzing proteomes by automated phylogenomics using resampled inference of orthologs. BMC Bioinformatics  3: 14.  <ul class="find" data-citedArticleID="945664"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=RIO%3A+analyzing+proteomes+by+automated+phylogenomics+using+resampled+inference+of+orthologs.&amp;auth=&amp;atitle=RIO%3A+analyzing+proteomes+by+automated+phylogenomics+using+resampled+inference+of+orthologs." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=RIO%3A+analyzing+proteomes+by+automated+phylogenomics+using+resampled+inference+of+orthologs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22RIO%3A+analyzing+proteomes+by+automated+phylogenomics+using+resampled+inference+of+orthologs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000383-Storm1" id="pone.0000383-Storm1"></a>Storm CE, Sonnhammer EL (2002) Automated ortholog inference from phylogenetic trees and calculation of orthology reliability. Bioinformatics  18: 92–99.  <ul class="find" data-citedArticleID="945642" data-doi="10.1093/bioinformatics/18.1.92"><li><a href="http://dx.doi.org/10.1093/bioinformatics/18.1.92" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automated+ortholog+inference+from+phylogenetic+trees+and+calculation+of+orthology+reliability." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automated+ortholog+inference+from+phylogenetic+trees+and+calculation+of+orthology+reliability.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000383-Storm2" id="pone.0000383-Storm2"></a>Storm CE, Sonnhammer EL (2003) Comprehensive analysis of orthologous protein domains using the HOPS database. Genome Res  13: 2353–2362.  <ul class="find" data-citedArticleID="945644" data-doi="10.1101/gr1305203"><li><a href="http://dx.doi.org/10.1101/gr1305203" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Comprehensive+analysis+of+orthologous+protein+domains+using+the+HOPS+database." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Comprehensive+analysis+of+orthologous+protein+domains+using+the+HOPS+database.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000383-Wall1" id="pone.0000383-Wall1"></a>Wall DP, Fraser HB, Hirsh AE (2003) Detecting putative orthologs. Bioinformatics  19: 1710–1711.  <ul class="find" data-citedArticleID="945662" data-doi="10.1093/bioinformatics/btg213"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btg213" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detecting+putative+orthologs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detecting+putative+orthologs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000383-Deluca1" id="pone.0000383-Deluca1"></a>Deluca TF, Wu IH, Pu J, Monaghan T, Peshkin L, et al.  (2006) Roundup: a multi-genome repository of orthologs and evolutionary distances. Bioinformatics  22: 2044–2046.  <ul class="find" data-citedArticleID="945596" data-doi="10.1093/bioinformatics/btl286"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl286" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Roundup%3A+a+multi-genome+repository+of+orthologs+and+evolutionary+distances." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Roundup%3A+a+multi-genome+repository+of+orthologs+and+evolutionary+distances.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000383-Tatusov1" id="pone.0000383-Tatusov1"></a>Tatusov RL, Koonin EV, Lipman DJ (1997) A genomic perspective on protein families. Science  278: 631–637.  <ul class="find" data-citedArticleID="945646" data-doi="10.1126/science.278.5338.631"><li><a href="http://dx.doi.org/10.1126/science.278.5338.631" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+genomic+perspective+on+protein+families." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+genomic+perspective+on+protein+families.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000383-Tatusov2" id="pone.0000383-Tatusov2"></a>Tatusov RL, Galperin MY, Natale DA, Koonin EV (2000) The COG database: a tool for genome-scale analysis of protein functions and evolution. Nucleic Acids Res  28: 33–36.  <ul class="find" data-citedArticleID="945648" data-doi="10.1093/nar/28.1.33"><li><a href="http://dx.doi.org/10.1093/nar/28.1.33" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+COG+database%3A+a+tool+for+genome-scale+analysis+of+protein+functions+and+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+COG+database%3A+a+tool+for+genome-scale+analysis+of+protein+functions+and+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000383-Tatusov3" id="pone.0000383-Tatusov3"></a>Tatusov RL, Natale DA, Garkavtsev IV, Tatusova TA, Shankavaram UT, et al.  (2001) The COG database: new developments in phylogenetic classification of proteins from complete genomes. Nucleic Acids Res  29: 22–28.  <ul class="find" data-citedArticleID="945650" data-doi="10.1093/nar/29.1.22"><li><a href="http://dx.doi.org/10.1093/nar/29.1.22" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+COG+database%3A+new+developments+in+phylogenetic+classification+of+proteins+from+complete+genomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+COG+database%3A+new+developments+in+phylogenetic+classification+of+proteins+from+complete+genomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000383-Tatusov4" id="pone.0000383-Tatusov4"></a>Tatusov RL, Fedorova ND, Jackson JD, Jacobs AR, Kiryutin B, et al.  (2003) The COG database: an updated version includes eukaryotes. BMC Bioinformatics  4: 41.  <ul class="find" data-citedArticleID="945652"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+COG+database%3A+an+updated+version+includes+eukaryotes.&amp;auth=&amp;atitle=The+COG+database%3A+an+updated+version+includes+eukaryotes." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+COG+database%3A+an+updated+version+includes+eukaryotes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+COG+database%3A+an+updated+version+includes+eukaryotes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000383-OBrien1" id="pone.0000383-OBrien1"></a>O'Brien KP, Remm M, Sonnhammer EL (2005) Inparanoid: a comprehensive database of eukaryotic orthologs. Nucleic Acids Res 33 Database Issue D476–480.  <ul class="find" data-citedArticleID="945634" data-doi="10.1093/nar/gki107"><li><a href="http://dx.doi.org/10.1093/nar/gki107" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inparanoid%3A+a+comprehensive+database+of+eukaryotic+orthologs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inparanoid%3A+a+comprehensive+database+of+eukaryotic+orthologs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000383-Henikoff1" id="pone.0000383-Henikoff1"></a>Henikoff S, Greene EA, Pietrokovski S, Bork P, Attwood TK, et al.  (1997) Gene families: the taxonomy of protein paralogs and chimeras. Science  278: 609–614.  <ul class="find" data-citedArticleID="945616" data-doi="10.1126/science.278.5338.609"><li><a href="http://dx.doi.org/10.1126/science.278.5338.609" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+families%3A+the+taxonomy+of+protein+paralogs+and+chimeras." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+families%3A+the+taxonomy+of+protein+paralogs+and+chimeras.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000383-Li1" id="pone.0000383-Li1"></a>Li L, Stoeckert CJ Jr, Roos DS (2003) OrthoMCL: identification of ortholog groups for eukaryotic genomes. Genome Res  13: 2178–2189.  <ul class="find" data-citedArticleID="945630" data-doi="10.1101/gr.1224503"><li><a href="http://dx.doi.org/10.1101/gr.1224503" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=OrthoMCL%3A+identification+of+ortholog+groups+for+eukaryotic+genomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22OrthoMCL%3A+identification+of+ortholog+groups+for+eukaryotic+genomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000383-VanDongen1" id="pone.0000383-VanDongen1"></a>Van Dongen S (2000) Graph clustering by flow simulation.   [Ph.D. thesis]: University of Utrecht, The Netherlands. <ul class="find-nolinks"></ul></li><li><span class="label">20.
+              </span><a name="pone.0000383-Chen1" id="pone.0000383-Chen1"></a>Chen F, Mackey AJ, Stoeckert CJ Jr, Roos DS (2006) OrthoMCL-DB: querying a comprehensive multi-species collection of ortholog groups. Nucleic Acids Res  34: D363–368.  <ul class="find" data-citedArticleID="945594" data-doi="10.1093/nar/gkj123"><li><a href="http://dx.doi.org/10.1093/nar/gkj123" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=OrthoMCL-DB%3A+querying+a+comprehensive+multi-species+collection+of+ortholog+groups." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22OrthoMCL-DB%3A+querying+a+comprehensive+multi-species+collection+of+ortholog+groups.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000383-Bandyopadhyay1" id="pone.0000383-Bandyopadhyay1"></a>Bandyopadhyay S, Sharan R, Ideker T (2006) Systematic identification of functional orthologs based on protein network comparison. Genome Res  16: 428–435.  <ul class="find" data-citedArticleID="945592" data-doi="10.1101/gr.4526006"><li><a href="http://dx.doi.org/10.1101/gr.4526006" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+identification+of+functional+orthologs+based+on+protein+network+comparison." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+identification+of+functional+orthologs+based+on+protein+network+comparison.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000383-Hulsen1" id="pone.0000383-Hulsen1"></a>Hulsen T, Huynen MA, de Vlieg J, Groenen PM (2006) Benchmarking ortholog identification methods using functional genomics data. Genome Biol  7: R31.  <ul class="find" data-citedArticleID="945620" data-doi="10.1186/gb-2006-7-4-r31"><li><a href="http://dx.doi.org/10.1186/gb-2006-7-4-r31" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Benchmarking+ortholog+identification+methods+using+functional+genomics+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Benchmarking+ortholog+identification+methods+using+functional+genomics+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000383-Hui1" id="pone.0000383-Hui1"></a>Hui SL, Zhou XH (1998) Evaluation of diagnostic tests without gold standards. Stat Methods Med Res  7: 354–370.  <ul class="find" data-citedArticleID="945618" data-doi="10.1191/096228098671192352"><li><a href="http://dx.doi.org/10.1191/096228098671192352" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evaluation+of+diagnostic+tests+without+gold+standards." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evaluation+of+diagnostic+tests+without+gold+standards.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000383-Magidson1" id="pone.0000383-Magidson1"></a>Magidson J, Vermunt JK (2004)  Latent class models. In: Kaplan DW, editor. Sage Publications, Inc. pp. 175–198.  The Sage Handbook of Quantitative Methodology for the Social Sciences:.  <ul class="find-nolinks"></ul></li><li><span class="label">25.
+              </span><a name="pone.0000383-Altschul1" id="pone.0000383-Altschul1"></a>Altschul SF, Madden TL, Schaffer AA, Zhang J, Zhang Z, et al.  (1997) Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic Acids Res  25: 3389–3402.  <ul class="find" data-citedArticleID="945590" data-doi="10.1093/nar/25.17.3389"><li><a href="http://dx.doi.org/10.1093/nar/25.17.3389" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gapped+BLAST+and+PSI-BLAST%3A+a+new+generation+of+protein+database+search+programs." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gapped+BLAST+and+PSI-BLAST%3A+a+new+generation+of+protein+database+search+programs.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000383-Enright1" id="pone.0000383-Enright1"></a>Enright AJ, Van Dongen S, Ouzounis CA (2002) An efficient algorithm for large-scale detection of protein families. Nucleic Acids Res  30: 1575–1584.  <ul class="find" data-citedArticleID="945602" data-doi="10.1093/nar/30.7.1575"><li><a href="http://dx.doi.org/10.1093/nar/30.7.1575" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+efficient+algorithm+for+large-scale+detection+of+protein+families." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+efficient+algorithm+for+large-scale+detection+of+protein+families.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000383-Vermunt1" id="pone.0000383-Vermunt1"></a>Vermunt JK, Magidson J (2005) Latent GOLD 4.0 User's Guide. Belmont, Massachusetts: Statistical Innovations Inc.   <ul class="find-nolinks"></ul></li><li><span class="label">28.
+              </span><a name="pone.0000383-Vermunt2" id="pone.0000383-Vermunt2"></a>Vermunt JK, Magidson J (2005) Technical Guide for Latent GOLD 4.0: Basic and Advanced. Belmont, Massachusetts: Statistical Innovations Inc.   <ul class="find-nolinks"></ul></li><li><span class="label">29.
+              </span><a name="pone.0000383-Qu1" id="pone.0000383-Qu1"></a>Qu Y, Tan M, Kutner MH (1996) Random effects models in latent class analysis for evaluating accuracy of diagnostic tests. Biometrics  52: 797–810.  <ul class="find" data-citedArticleID="945636" data-doi="10.2307/2533043"><li><a href="http://dx.doi.org/10.2307/2533043" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Random+effects+models+in+latent+class+analysis+for+evaluating+accuracy+of+diagnostic+tests." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Random+effects+models+in+latent+class+analysis+for+evaluating+accuracy+of+diagnostic+tests.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000383-Hadgu1" id="pone.0000383-Hadgu1"></a>Hadgu A, Qu Y (1998) A biomedical application of latent class models with random effects. Appl Statist  47: 603–616.  <ul class="find" data-citedArticleID="945612" data-doi="10.1111/1467-9876.00131"><li><a href="http://dx.doi.org/10.1111/1467-9876.00131" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+biomedical+application+of+latent+class+models+with+random+effects." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+biomedical+application+of+latent+class+models+with+random+effects.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000383-Zmasek2" id="pone.0000383-Zmasek2"></a>Zmasek CM, Eddy SR (2001) A simple algorithm to infer gene duplication and speciation events on a gene tree. Bioinformatics  17: 821–828.  <ul class="find" data-citedArticleID="945666" data-doi="10.1093/bioinformatics/17.9.821"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.9.821" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+simple+algorithm+to+infer+gene+duplication+and+speciation+events+on+a+gene+tree." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+simple+algorithm+to+infer+gene+duplication+and+speciation+events+on+a+gene+tree.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000383-Koski1" id="pone.0000383-Koski1"></a>Koski LB, Golding GB (2001) The closest BLAST hit is often not the nearest neighbor. J Mol Evol  52: 540–542.  <ul class="find" data-citedArticleID="945626" data-doi="10.1007/s002390010184"><li><a href="http://dx.doi.org/10.1007/s002390010184" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+closest+BLAST+hit+is+often+not+the+nearest+neighbor." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+closest+BLAST+hit+is+often+not+the+nearest+neighbor.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000383-Thompson1" id="pone.0000383-Thompson1"></a>Thompson JD, Higgins DG, Gibson TJ (1994) CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice. Nucleic Acids Res  22: 4673–4680.  <ul class="find" data-citedArticleID="945654" data-doi="10.1093/nar/22.22.4673"><li><a href="http://dx.doi.org/10.1093/nar/22.22.4673" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=CLUSTAL+W%3A+improving+the+sensitivity+of+progressive+multiple+sequence+alignment+through+sequence+weighting%2C+position-specific+gap+penalties+and+weight+matrix+choice." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22CLUSTAL+W%3A+improving+the+sensitivity+of+progressive+multiple+sequence+alignment+through+sequence+weighting%2C+position-specific+gap+penalties+and+weight+matrix+choice.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000383-Lee1" id="pone.0000383-Lee1"></a>Lee Y, Sultana R, Pertea G, Cho J, Karamycheva S, et al.  (2002) Cross-referencing eukaryotic genomes: TIGR Orthologous Gene Alignments (TOGA). Genome Res  12: 493–502.  <ul class="find" data-citedArticleID="945628" data-doi="10.1101/gr.212002"><li><a href="http://dx.doi.org/10.1101/gr.212002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Cross-referencing+eukaryotic+genomes%3A+TIGR+Orthologous+Gene+Alignments+%28TOGA%29." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Cross-referencing+eukaryotic+genomes%3A+TIGR+Orthologous+Gene+Alignments+%28TOGA%29.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000383-Gouzy1" id="pone.0000383-Gouzy1"></a>Gouzy J, Corpet F, Kahn D (1999) Whole genome protein domain analysis using a new method for domain clustering. Computers and Chemistry  23: 333–340.  <ul class="find" data-citedArticleID="945610" data-doi="10.1016/s0097-8485(99)00011-x"><li><a href="http://dx.doi.org/10.1016/s0097-8485(99)00011-x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Whole+genome+protein+domain+analysis+using+a+new+method+for+domain+clustering." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Whole+genome+protein+domain+analysis+using+a+new+method+for+domain+clustering.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000383-Hegyi1" id="pone.0000383-Hegyi1"></a>Hegyi H, Gerstein M (2001) Annotation transfer for genomics: measuring functional divergence in multi-domain proteins. Genome Res  11: 1632–1640.  <ul class="find" data-citedArticleID="945614" data-doi="10.1101/gr."><li><a href="http://dx.doi.org/10.1101/gr." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Annotation+transfer+for+genomics%3A+measuring+functional+divergence+in+multi-domain+proteins." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Annotation+transfer+for+genomics%3A+measuring+functional+divergence+in+multi-domain+proteins.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000383-Alexeyenko1" id="pone.0000383-Alexeyenko1"></a>Alexeyenko A, Tamas I, Liu G, Sonnhammer EL (2006) Automatic clustering of orthologs and inparalogs shared by multiple proteomes. Bioinformatics  22: e9–e15.  <ul class="find" data-citedArticleID="945588" data-doi="10.1093/bioinformatics/btl213"><li><a href="http://dx.doi.org/10.1093/bioinformatics/btl213" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automatic+clustering+of+orthologs+and+inparalogs+shared+by+multiple+proteomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automatic+clustering+of+orthologs+and+inparalogs+shared+by+multiple+proteomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000383-Elsik1" id="pone.0000383-Elsik1"></a>Elsik CG, Mackey AJ, Reese JT, Milshina NV, Roos DS, et al.  (2007) Creating a honey bee consensus gene set. Genome Biol  8: R13.  <ul class="find" data-citedArticleID="945600" data-doi="10.1186/gb-2007-8-1-r13"><li><a href="http://dx.doi.org/10.1186/gb-2007-8-1-r13" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Creating+a+honey+bee+consensus+gene+set." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Creating+a+honey+bee+consensus+gene+set.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000383-Koonin2" id="pone.0000383-Koonin2"></a>Koonin EV, Fedorova ND, Jackson JD, Jacobs AR, Krylov DM, et al.  (2004) A comprehensive evolutionary classification of proteins encoded in complete eukaryotic genomes. Genome Biol  5: R7.  <ul class="find" data-citedArticleID="945624"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=A+comprehensive+evolutionary+classification+of+proteins+encoded+in+complete+eukaryotic+genomes.&amp;auth=&amp;atitle=A+comprehensive+evolutionary+classification+of+proteins+encoded+in+complete+eukaryotic+genomes." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+comprehensive+evolutionary+classification+of+proteins+encoded+in+complete+eukaryotic+genomes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+comprehensive+evolutionary+classification+of+proteins+encoded+in+complete+eukaryotic+genomes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000383-Enright2" id="pone.0000383-Enright2"></a>Enright AJ, Ouzounis CA (2001) BioLayout–an automatic graph layout algorithm for similarity visualization. Bioinformatics  17: 853–854.  <ul class="find" data-citedArticleID="945604" data-doi="10.1093/bioinformatics/17.9.853"><li><a href="http://dx.doi.org/10.1093/bioinformatics/17.9.853" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=BioLayout%26%23x2013%3Ban+automatic+graph+layout+algorithm+for+similarity+visualization." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22BioLayout%26%23x2013%3Ban+automatic+graph+layout+algorithm+for+similarity+visualization.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.XML" value="139234"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.PDF" value="491401"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g001.PNG_L" value="246796"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g001.PNG_M" value="53540"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g001.PNG_S" value="2447"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g001.TIF" value="386856"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g001.PNG_I" value="24320"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t001.PNG_L" value="194837"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t001.PNG_M" value="71871"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t001.PNG_S" value="3153"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t001.TIF" value="841550"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t001.PNG_I" value="30349"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g002.PNG_L" value="215878"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g002.PNG_M" value="30292"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g002.PNG_S" value="2222"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g002.TIF" value="1405104"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g002.PNG_I" value="19597"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t002.PNG_L" value="175691"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t002.PNG_M" value="64635"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t002.PNG_S" value="3042"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t002.TIF" value="764740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t002.PNG_I" value="28369"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e003.PNG" value="2176"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e003.TIF" value="23696"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e004.PNG" value="2920"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e004.TIF" value="24780"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g003.PNG_L" value="929350"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g003.PNG_M" value="147902"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g003.PNG_S" value="5371"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g003.TIF" value="1491806"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g003.PNG_I" value="62856"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g004.PNG_L" value="976584"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g004.PNG_M" value="65322"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g004.PNG_S" value="3021"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g004.TIF" value="1710116"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g004.PNG_I" value="35170"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t003.PNG_L" value="218036"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t003.PNG_M" value="76965"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t003.PNG_S" value="3322"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t003.TIF" value="969196"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t003.PNG_I" value="32305"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t004.PNG_L" value="123999"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t004.PNG_M" value="47950"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t004.PNG_S" value="2442"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t004.TIF" value="519700"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.t004.PNG_I" value="19360"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g005.PNG_L" value="98868"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g005.PNG_M" value="23812"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g005.PNG_S" value="2268"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g005.TIF" value="270972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g005.PNG_I" value="11932"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g006.PNG_L" value="1102469"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g006.PNG_M" value="58830"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g006.PNG_S" value="2875"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g006.TIF" value="1728970"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.g006.PNG_I" value="26479"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e001.PNG" value="11732"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e001.TIF" value="33700"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e002.PNG" value="6139"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.e002.TIF" value="27584"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s001.TIF" value="4008666"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s002.TIF" value="247686"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s003.TIF" value="2717244"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s004.TIF" value="2051156"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s005.TIF" value="1141022"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s006.DOC" value="50176"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s007.DOC" value="27648"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000383.s008.DOC" value="27136"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000383&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000383" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000383&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000383&volume=&issue=&title=Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes&author_name=Feng%20Chen%2C%20Aaron%20J.%20Mackey%2C%20Jeroen%20K.%20Vermunt%2C%20David%20S.%20Roos&start_page=1&end_page=12" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000383" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383&amp;t=Assessing%20Performance%20of%20Orthology%20Detection%20Strategies%20Applied%20to%20Eukaryotic%20Genomes" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383&title=Assessing%20Performance%20of%20Orthology%20Detection%20Strategies%20Applied%20to%20Eukaryotic%20Genomes&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383&amp;title=Assessing%20Performance%20of%20Orthology%20Detection%20Strategies%20Applied%20to%20Eukaryotic%20Genomes" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000383&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Assessing Performance of Orthology Detection Strategies Applied to Eukaryotic Genomes';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000383';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Assessing%20Performance%20of%20Orthology%20Detection%20Strategies%20Applied%20to%20Eukaryotic%20Genomes http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000383" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000383" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22BLAST+algorithm%22" title="Search for articles in the subject area:'BLAST algorithm'"><div class="flagText">BLAST algorithm</div></a>
+              <div data-categoryid="31827" data-articleid="23604"
+                   data-categoryname="BLAST algorithm"
+                   class="flagImage" title="Flag 'BLAST algorithm' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Functional+genomics%22" title="Search for articles in the subject area:'Functional genomics'"><div class="flagText">Functional genomics</div></a>
+              <div data-categoryid="17853" data-articleid="23604"
+                   data-categoryname="Functional genomics"
+                   class="flagImage" title="Flag 'Functional genomics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome+evolution%22" title="Search for articles in the subject area:'Genome evolution'"><div class="flagText">Genome evolution</div></a>
+              <div data-categoryid="17207" data-articleid="23604"
+                   data-categoryname="Genome evolution"
+                   class="flagImage" title="Flag 'Genome evolution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genomic+databases%22" title="Search for articles in the subject area:'Genomic databases'"><div class="flagText">Genomic databases</div></a>
+              <div data-categoryid="42727" data-articleid="23604"
+                   data-categoryname="Genomic databases"
+                   class="flagImage" title="Flag 'Genomic databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetic+analysis%22" title="Search for articles in the subject area:'Phylogenetic analysis'"><div class="flagText">Phylogenetic analysis</div></a>
+              <div data-categoryid="17851" data-articleid="23604"
+                   data-categoryname="Phylogenetic analysis"
+                   class="flagImage" title="Flag 'Phylogenetic analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phylogenetics%22" title="Search for articles in the subject area:'Phylogenetics'"><div class="flagText">Phylogenetics</div></a>
+              <div data-categoryid="46093" data-articleid="23604"
+                   data-categoryname="Phylogenetics"
+                   class="flagImage" title="Flag 'Phylogenetics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+databases%22" title="Search for articles in the subject area:'Sequence databases'"><div class="flagText">Sequence databases</div></a>
+              <div data-categoryid="42787" data-articleid="23604"
+                   data-categoryname="Sequence databases"
+                   class="flagImage" title="Flag 'Sequence databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Species+delimitation%22" title="Search for articles in the subject area:'Species delimitation'"><div class="flagText">Species delimitation</div></a>
+              <div data-categoryid="39023" data-articleid="23604"
+                   data-categoryname="Species delimitation"
+                   class="flagImage" title="Flag 'Species delimitation' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=4912'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=276'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=329&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=43175">Excellent resource</a><br>Posted by jstajich</p>
+      <p><a href="/annotation/listThread.action?root=7429">Manual trackback</a><br>Posted by pedrobeltrao</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

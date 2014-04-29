@@ -1,0 +1,1168 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000421"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000421" />
+
+    <meta name="citation_title" content="Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis"/>
+    <meta itemprop="name" content="Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis"/>
+
+      <meta name="citation_author" content="Michael P. Cusack"/>
+            <meta name="citation_author_institution" content="Buck Institute for Age Research, Novato, California, United States of America"/>
+      <meta name="citation_author" content="Boris Thibert"/>
+            <meta name="citation_author_institution" content="Laboratoire de Modélisation et Calcul (LMC-IMAG), Grenoble, France"/>
+      <meta name="citation_author" content="Dale E. Bredesen"/>
+            <meta name="citation_author_institution" content="Buck Institute for Age Research, Novato, California, United States of America"/>
+            <meta name="citation_author_institution" content="University of California San Francisco, San Francisco, California, United States of America"/>
+      <meta name="citation_author" content="Gabriel del Rio"/>
+            <meta name="citation_author_institution" content="Universidad Nacional Autónoma de México/Instituto de Fisiología Celular, Departamento de Bioquímica, Mexico City, Mexico"/>
+
+    <meta name="citation_date" content="2007/5/9"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000421.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e421"/>
+    <meta name="citation_issue" content="5"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Protein function in the post-genomic era; citation_author=D Eisenberg; citation_author=EM Marcotte; citation_author=I Xenarios; citation_author=TO Yeates; citation_journal_title=Nature,; citation_volume=405; citation_number=1; citation_pages=823-826; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=From structure to function: approaches and limitations; citation_author=JM Thornton; citation_author=AE Todd; citation_author=D Milburn; citation_author=N Borkakoti; citation_author=CA Orengo; citation_journal_title=Nat Struct Biol,; citation_number=2; citation_pages=991-994; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Automatic methods for predicting functionally important residues; citation_author=A del Sol Mesa; citation_author=F Pazos; citation_author=A Valencia; citation_journal_title=J Mol Biol,; citation_volume=326; citation_number=3; citation_pages=1289-1302; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Practical limits of function prediction; citation_author=D Devos; citation_author=A Valencia; citation_journal_title=Proteins,; citation_volume=41; citation_number=4; citation_pages=98-107; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Prediction of functionally important residues based solely on the computed energetics of protein structure; citation_author=AH Elcock; citation_journal_title=J Mol Biol,; citation_volume=312; citation_number=5; citation_pages=885-896; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Locating and characterizing binding sites on proteins; citation_author=C Mattos; citation_author=D Ringe; citation_journal_title=Nat Biotechnol,; citation_volume=14; citation_number=6; citation_pages=595-599; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=A perspective on enzyme catalysis; citation_author=SJ Benkovic; citation_author=S Hammes-Schiffer; citation_journal_title=Science,; citation_volume=301; citation_number=7; citation_pages=1196-1202; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=The protein data bank Acta Crystallogr D Biol Crystallogr,; citation_author=HM Berman; citation_author=T Battistuz; citation_author=TN Bhat; citation_author=WF Bluhm; citation_author=PE Bourne; citation_volume=58; citation_number=8; citation_pages=899-907; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Network analysis of protein structures identifies functional residues; citation_author=G Amitai; citation_author=A Shemesh; citation_author=E Sitbon; citation_author=M Shklar; citation_author=D Netanely; citation_journal_title=J. Mol. Biol.; citation_volume=344; citation_number=9; citation_pages=1135-1146; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Small-world network approach to identify key residues in protein-protein interaction.; citation_author=A del Sol; citation_author=P O'Meara; citation_journal_title=Proteins,; citation_volume=58; citation_number=10; citation_pages=672-682; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Improved prediction of critical residues for protein function based on network and phylogenetic analyses.; citation_author=B Thibert; citation_author=DE Bredesen; citation_author=G del Rio; citation_journal_title=BMC Bioinformatics; citation_volume=6; citation_number=11; citation_pages=203; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Exploring dynamics of protein structure determination and homology-based prediction to estimate the number of superfamilies and folds.; citation_author=RI Sadreyev; citation_author=NV Grishin; citation_journal_title=BMC Structural Biology; citation_volume=6; citation_number=12; citation_pages=6; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=CASTp: computed atlas of surface topography of proteins with structural and topographical mapping of functionally annotated residues; citation_author=J Dundas; citation_author=Z Ouyang; citation_author=J Tseng; citation_author=A Binkowski; citation_author=Y Turpaz; citation_journal_title=Nucleic Acids. Res.; citation_volume=34; citation_number=13; citation_pages=W116-W118; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=ConSurf: identification of functional regions in proteins by surface-mapping of phylogenetic information; citation_author=F Glaser; citation_author=T Pupko; citation_author=I Paz; citation_author=RE Bell; citation_author=D Bechor-Shental; citation_journal_title=Bioinformatics,; citation_volume=19; citation_number=14; citation_pages=163-164; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Inference of protein function from protein structure; citation_author=D Pal; citation_author=D Eisenberg; citation_journal_title=Structure; citation_volume=13; citation_number=15; citation_pages=121-130; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Effective function annotation through catalytic residue conservation; citation_author=RA George; citation_author=RV Spriggs; citation_author=GJ Bartlett; citation_author=A Gutteridge; citation_author=MW MacArthur; citation_journal_title=Proc. Natl. Acad. Sci. USA; citation_volume=102; citation_number=16; citation_pages=12296-12298; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Automated prediction of protein function and detection of functional sites from structure; citation_author=F Pazos; citation_author=MJ Sternberg; citation_journal_title=Proc. Natl. Acad. Sci. USA; citation_volume=101; citation_number=17; citation_pages=14754-14759; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Small-world view of the amino acids that play a key role in protein folding.; citation_author=M Vendruscolo; citation_author=NV Dokholyan; citation_author=E Paci; citation_author=M Karplus; citation_journal_title=Phys Rev E Stat Nonlin Soft Matter Phys.; citation_volume=65; citation_number=18; citation_pages=061910-1-061910-4; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=JavaParty-transparent remote objects in Java Concurrency: Practice and Experience,; citation_author=M Phillippsen; citation_author=Z M; citation_volume=9; citation_number=19; citation_pages=1225-1242; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=New tools provide new insights in NMR studies of protein dynamics.; citation_author=A Mittermaier; citation_author=LE Lay; citation_journal_title=Science; citation_volume=312; citation_number=20; citation_pages=224-228; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=ElNémo: a normal mode web server for protein movement analysis and the generation of templates for molecular replacement.; citation_author=K Suhre; citation_author=Y-H Sanejouand; citation_journal_title=Nucl.Acids Res.; citation_volume=32; citation_number=21; citation_pages=W610-W614; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Functional significance of conserved amino acid residues.; citation_author=AR Poteete; citation_author=D Renell; citation_author=SE Bouvier; citation_journal_title=Proteins: structure, function and genetics; citation_volume=13; citation_number=22; citation_pages=38-40; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Structural proteomics of an archaeon; citation_author=D Christendat; citation_author=A Yee; citation_author=A Dharamsi; citation_author=Y Kluger; citation_author=A Savchenko; citation_journal_title=Nat Struct Biol,; citation_volume=7; citation_number=23; citation_pages=903-909; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Systematic mutation of bacteriophage T4 lysozyme; citation_author=D Rennell; citation_author=SE Bouvier; citation_author=LW Hardy; citation_author=RA Poteete; citation_journal_title=J Mol Biol; citation_volume=222; citation_number=24; citation_pages=67-88; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=A database of protein structure families with common folding motifs.”.; citation_author=L Holm; citation_author=C Ouzounis; citation_author=C Sander; citation_author=G Tuparev; citation_author=G Vriend; citation_journal_title=Protein Science; citation_volume=1; citation_number=25; citation_pages=1691-1698; citation_date=1992; " />
+      <meta name="citation_reference" content="citation_title=Amino acid sequence determinants of β-lactamase structure and activity.; citation_author=W Huang; citation_author=J Petrosino; citation_author=M Hirsch; citation_author=PS Shenkin; citation_author=T Palzkill; citation_journal_title=J. Mol. Biol.; citation_volume=258; citation_number=26; citation_pages=688-703; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Complete mutagenesis of the HIV-1 protease.; citation_author=DD Loeb; citation_author=R Swanstrom; citation_author=L Everitt; citation_author=M Manchester; citation_author=S Stamper; citation_journal_title=Nature; citation_volume=340; citation_number=27; citation_pages=397-400; citation_date=1989; " />
+      <meta name="citation_reference" content="citation_title=Graph algorithms.; citation_author=MA Weiss; citation_number=28; citation_pages=291-352; citation_date=1999; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis"/>
+    <meta name="twitter:description" content="Despite the increasing number of published protein structures, and the fact that each protein's function relies on its three-dimensional structure, there is limited access to automatic programs used for the identification of critical residues from the protein structure, compared with those based on protein sequence. Here we present a new algorithm based on network analysis applied exclusively on protein structures to identify critical residues. Our results show that this method identifies critical residues for protein function with high reliability and improves automatic sequence-based approaches and previous network-based approaches. The reliability of the method depends on the conformational diversity screened for the protein of interest. We have designed a web site to give access to this software at http://bis.ifc.unam.mx/jamming/. In summary, a new method is presented that relates critical residues for protein function with the most traversed residues in networks derived from protein structures. A unique feature of the method is the inclusion of the conformational diversity of proteins in the prediction, thus reproducing a basic feature of the structure/function relationship of proteins."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000421.g004"/>
+
+  <meta property="og:title" content="Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=8094'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=1549'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=3736&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000421">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000421" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000421&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Michael P. Cusack, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Buck Institute for Age Research, Novato, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Boris Thibert, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Laboratoire de Modélisation et Calcul (LMC-IMAG), Grenoble, France
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Dale E. Bredesen, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Buck Institute for Age Research, Novato, California, United States of America, 
+                  University of California San Francisco, San Francisco, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Gabriel del Rio
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:gdelrio@ifc.unam.mx">gdelrio@ifc.unam.mx</a></p>
+
+                <p>Affiliation:
+                  Universidad Nacional Autónoma de México/Instituto de Fisiología Celular, Departamento de Bioquímica, Mexico City, Mexico
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: May 09, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000421</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000421-t001" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000421-g001" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000421-g002" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000421-g003" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000421-g004" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000421">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000421" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Despite the increasing number of published protein structures, and the fact that each protein's function relies on its three-dimensional structure, there is limited access to automatic programs used for the identification of critical residues from the protein structure, compared with those based on protein sequence. Here we present a new algorithm based on network analysis applied exclusively on protein structures to identify critical residues. Our results show that this method identifies critical residues for protein function with high reliability and improves automatic sequence-based approaches and previous network-based approaches. The reliability of the method depends on the conformational diversity screened for the protein of interest. We have designed a web site to give access to this software at <a href="http://bis.ifc.unam.mx/jamming/">http://bis.ifc.unam.mx/jamming/</a>. In summary, a new method is presented that relates critical residues for protein function with the most traversed residues in networks derived from protein structures. A unique feature of the method is the inclusion of the conformational diversity of proteins in the prediction, thus reproducing a basic feature of the structure/function relationship of proteins.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Cusack MP, Thibert B, Bredesen DE, del Rio G (2007) Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis. PLoS ONE 2(5):
+          e421.
+            doi:10.1371/journal.pone.0000421</p><p><strong>Academic Editor: </strong>Richard Copley, Wellcome Trust Centre for Human Genetics, United Kingdom</p><p><strong>Received:</strong> February 20, 2007; <strong>Accepted:</strong> April 10, 2007; <strong>Published:</strong> May 9, 2007</p><p><strong>Copyright:</strong> © 2007 Cusack et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The first author, Michael P. Cusack, was supported by a grant from the Glenn Foundation that supports students during summer research. This work was supported in part by three grants to the corresponding author, Gabriel del Rio, CoNaCyT SEP-2004-C01-47399/A-1, PAPIIT IN210705-3 and Macroproyecto UNAM Tecnologias para la Universidad de la Informacion y la Computacion.</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Deciphering protein function is one of the most active areas of research in biology involving both experimental and theoretical approaches <a href="#pone.0000421-Eisenberg1">[1]</a>, <a href="#pone.0000421-Thornton1">[2]</a>. In that endeavor, identification of the critical residues for protein function constitutes a central area of research <a href="#pone.0000421-delSolMesa1">[3]</a>, <a href="#pone.0000421-Devos1">[4]</a>, <a href="#pone.0000421-Elcock1">[5]</a>. For instance, identification of critical residues in proteins is important for both protein function modulation (e.g., drug design <a href="#pone.0000421-Mattos1">[6]</a>) and protein classification <a href="#pone.0000421-Devos1">[4]</a>. To this end, protein sequences constitute the first and most abundant source of data to infer protein function and hence most computational methods designed to identify critical residues are based on the analysis of protein sequences. However, protein function results from the three-dimensional structure adopted by the protein sequence and hence a protein's three-dimensional structure may be more appropriate to identify critical residues <a href="#pone.0000421-Benkovic1">[7]</a>. In that sense, a residue critical for a protein structure is as well critical for the protein function. Hence, referring to critical residues for protein function includes both types of residues: residues critical for protein structure and/or residues critical for its biological function (e.g., catalysis, binding).</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>With the increased capacity to determine the three-dimensional structures of proteins there has come an exponential growth in the public database of protein structures <a href="#pone.0000421-Berman1">[8]</a>. With this accumulation of data, new algorithms for predicting critical residues from protein's structure have emerged <a href="#pone.0000421-Amitai1">[9]</a>–<a href="#pone.0000421-Thibert1">[11]</a>. These new methods are especially important because protein structures sometimes are the only data source to predict critical residues, since at least 25% of the known proteins do not show significant sequence similarity with any other proteins <a href="#pone.0000421-delSolMesa1">[3]</a>, <a href="#pone.0000421-Sadreyev1">[12]</a>. However, either few of these new algorithms based on protein structure are available <a href="#pone.0000421-Dundas1">[13]</a>–<a href="#pone.0000421-Pal1">[15]</a> or these use sequence analysis as part of their approach <a href="#pone.0000421-Dundas1">[13]</a>–<a href="#pone.0000421-Pazos1">[17]</a>. Thus, in order to assist in the identification of critical residues considering this new trend on protein databases, it is important to develop structure-based methods that are at least as reliable as sequence-based methods and available for the scientific community to use.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>We have recently described a method that uses only the protein structure to identify critical residues for protein function, based on the centrality measurement closeness centrality <a href="#pone.0000421-Thibert1">[11]</a>. Our method is based on tracing shortest paths while traversing all the nodes in the net, so we refer to it as the Minimum Interacting Networks (MIN) method. Using a single structure for a given protein, MIN method detects critical residues with high sensitivity, and complements the predictions derived from sequence analysis approaches <a href="#pone.0000421-Thibert1">[11]</a>. Alternatively, the centrality measurement called betweeness has been reported to be useful to identify critical residues for protein folding <a href="#pone.0000421-Vendruscolo1">[18]</a> or protein-protein interactions <a href="#pone.0000421-delSol1">[10]</a>. In any of these studies <a href="#pone.0000421-delSol1">[10]</a>, <a href="#pone.0000421-Thibert1">[11]</a>, <a href="#pone.0000421-Vendruscolo1">[18]</a>, the methods require the users to either provide the expected number of critical residues (however, most commonly there is no a priori knowledge to determine this number) or to use a statistical approach that depends on the amount of structural data available. In order for structure-based approaches to be used in a systematic fashion, these limitations need to be improved. In the current work, we report a highly specific method based on betweeness to identify critical residues, which sensitivity relays on the number and diversity of conformations provided (see <a href="#s4">Methods</a>). In order to deal with the analysis of multiple protein structures, we describe an implementation that takes advantage of the multitask capacity embedded in Java™, that is, parallel processing and distributed computing <a href="#pone.0000421-Phillippsen1">[19]</a> to give access to this software to the scientific community. We refer to this software as JAMMING (JAva-based Multi-threaded MIN-GUI).</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>First, we describe the method and its overall reliability to identifying known critical residues for protein function. Then, we show that including multiple structures of a protein of interest may be used to improve the reliability of our method and makes it more reliable than other automatic methods based on either protein sequence or protein structure. Our results indicate that JAMMING may be used to identify critical residues for protein function that are either critical for keeping the protein structure and/or for its biological function (e.g., catalysis, protein interactions).</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Results"></a><h3>Results</h3>
+<h4>Algorithm</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>The underlying idea of JAMMING is that residues central for residue-residue contacts should be critical for protein function. Hence, our method is divided into three steps:</p>
+
+
+<ol class="order">
+
+<li>Building networks from protein structures.</li>
+
+<li>Tracing the shortest path connecting every pair of residues in the network derived in step 1.</li>
+
+<li>Find the residues with the largest dynamic connectivity (dk).</li>
+
+</ol><a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>The results of each step (1 through 3) constitute the input for the next step. Additionally, in order to allow for JAMMING calculations to be executed at the same time either in multiple machines (JavaParty implementation) or through a web interface (Servlet implementation), the three steps were embedded in independent remote objects or Java™'s thread. Briefly, JavaParty <a href="#pone.0000421-Phillippsen1">[19]</a> provides a framework that allows multi-threaded Java™ programs to be distributed on environments such as clusters based on the Remote Method Invocation (RMI) protocol using the Remote class that is a simple wrapper of the Thread class from the Java Standard Edition.</p>
+
+
+<h4>Implementation</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Here, we report the training of our method with the dynamic connectivity (dk) as a centrality measurement (see <a href="#s4">Methods</a>). Briefly, dk estimates the frequency of a node to be traversed in connecting the whole network through shortest paths. Thus, a node with a large dk value is a highly traversed one. To determine the best protocol to build a network derived from a protein structure, we built 21 different types of networks using different criteria (see <a href="#pone-0000421-t001">Table 1</a>). In order to evaluate the best network, we used two sets of proteins (total 131 proteins, see <a href="#s4">Methods</a>) and evaluated the sensitivity, specificity and error of the predictions based on the dk value to identify critical residues.</p>
+<div class="figure" id="pone-0000421-t001"><div class="img"><a name="pone-0000421-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>Parameter sets used to generate networks from the protein structures in the T4L-TEM-HIVP and FSSP128 sets.</span></strong></p><span>doi:10.1371/journal.pone.0000421.t001</span></div><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>We plotted the frequency of the dk values in order to identify the most traversed residues from the networks derived from the protein three-dimensional structure. Such distribution showed a tendency to separate highly traversed residues (see <a href="#pone-0000421-g001">Fig. 1</a> for an example) that we used to define an automatic procedure to isolate them (see <a href="#s4">Methods</a>). In this case, the most traversed residues in the network are also the less frequent.</p>
+<div class="figure" id="pone-0000421-g001"><div class="img"><a name="pone-0000421-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Distribution of the dynamic connectivity in a protein-derived network.</span></strong></p><a id="article1.body1.sec2.sec2.fig1.caption1.p1" name="article1.body1.sec2.sec2.fig1.caption1.p1"></a><p>The dynamic connectivity (df) observed in the T4 lysozyme protein (2LZM) is plotted against the probability of finding residues with such dk (P(dk)). In this type of plot, multiple residues are represented in a single dk value.</p>
+<span>doi:10.1371/journal.pone.0000421.g001</span></div><a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>We are interested in identifying critical residues with the highest specificity and lowest error values, even if the sensitivity is low. As we will show below, the sensitivity of our method relays on the number of structures analyzed, so a method with high specificity in a single structure is desirable. We show for the T4L-TEM1-HIV1P set, that building networks pairing every residue (disregarding charge or any other criterion) rendered the best values for error and specificity (see <a href="#pone-0000421-g002">Fig. 2</a> and <a href="#pone-0000421-t001">Table 1</a>). This trend was observed for all of the distances tested, but the complete data are only shown for the 0–3 Angstrom or 0–5 Angstrom distances. Additionally, networks built pairing residues 4 Å, 6 Å, 7 Å or 8 Å apart or closer rendered higher sensitivity values but lower specificity values than those at 5 Å.</p>
+<div class="figure" id="pone-0000421-g002"><div class="img"><a name="pone-0000421-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Sensitivity vs. Specificity of JAMMING in the T4L-TEM-HIVP set.</span></strong></p><a id="article1.body1.sec2.sec2.fig2.caption1.p1" name="article1.body1.sec2.sec2.fig2.caption1.p1"></a><p>The average sensitivity (axis labeled &lt;Sensitivity&gt;) and average specificity (axis labeled &lt;Specificity&gt;) over all the 3 proteins included in the T4L-TEM-HIVP set are presented for the predictions performed by JAMMING. Every point corresponds to a different network model according to <a href="#pone-0000421-t001">Table 1</a>: D<sub>criterion</sub> = once is an empty symbol, D<sub>criterion</sub> = average is a filled symbol, pairing hydrophobic residues is represented by a square, pairing complementary charged residues is represented by a triangle, pairing complementary charged residues and hydrophobic residues is represented by a rhombi and pairing every residue at the specified D<sub>criterion</sub> is represented as a circle. The labels (e.g., 0-5) on each symbol in the graph, indicate the minimum and maximum distance used to establish the connections among the residues (see <a href="#s4">Methods</a> and <a href="#pone-0000421-t001">table 1</a>). For instance, a 0-5 labeling an empty circle corresponds to the sensitivity and specificity obtained from networks derived from the T4L-TEM-HIVP set where any two residues were paired (symbol is a circle) if at least one atom between these residues (D<sub>criterion</sub> = once, represented by an empty symbol) is within 0-5 <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e001&amp;representation=PNG" class="inline-graphic"></span> distance (label 0-5).</p>
+<span>doi:10.1371/journal.pone.0000421.g002</span></div><a id="article1.body1.sec2.sec2.p4" name="article1.body1.sec2.sec2.p4"></a><p>To extend these studies to a larger dataset, we used the FSSP128 set, where some of the critical residues are known. A similar set of proteins has been previously used to evaluate the predictive value of functionally important residue predictions <a href="#pone.0000421-delSolMesa1">[3]</a>. We observed that networks built pairing residues at 5 Å apart or closer also rendered a high specificity in the predictions (see <a href="#pone-0000421-g003">Fig. 3</a>). The FSSP128 set includes as critical residues those in the SITE annotations of the PDB file. These annotations include mainly either residues observed in the structure to interact with a ligand or highly conserved residues, but do not include all possible critical residues. Alternatively, the T4L-TEM1-HIV1P set does include every critical residue for each protein. Thus, it is not surprising that the average sensitivity value for the FSSP128 set is larger than that observed for the T4L-TEM1-HIV1P set.</p>
+<div class="figure" id="pone-0000421-g003"><div class="img"><a name="pone-0000421-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Sensitivity vs. Specificity of JAMMING in the FSSP128 dataset.</span></strong></p><a id="article1.body1.sec2.sec2.fig3.caption1.p1" name="article1.body1.sec2.sec2.fig3.caption1.p1"></a><p>The average sensitivity (axis labeled &lt;Sensitivity&gt;) and average specificity (axis labeled &lt;Specificity&gt;) over all the FSSP128 set are presented for the predictions performed by JAMMING. Every point corresponds to a different network model according to <a href="#pone-0000421-t001">Table 1:</a> D<sub>criterion</sub> = once is an empty symbol, D<sub>criterion</sub> = average is a filled symbol, pairing hydrophobic residues is represented by a square, pairing complementary charged residues is represented by a triangle, pairing complementary charged residues and hydrophobic residues is represented by a rhombus and pairing every residue at the specified D<sub>criterion</sub> is represented as a circle. For simplicity, only the results for distance separations of 0-3 <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e002&amp;representation=PNG" class="inline-graphic"></span>, 0-4 <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e003&amp;representation=PNG" class="inline-graphic"></span>, 0-5 <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e004&amp;representation=PNG" class="inline-graphic"></span> and 0-6 <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e005&amp;representation=PNG" class="inline-graphic"></span> are presented. For instance, a 0-4 labeling an filled circle corresponds to the sensitivity and specificity obtained from networks derived from the FSSP128 set where any two residues were paired (symbol is a circle) if on average every atom between these residues (D<sub>criterion</sub> = average, represented by a filled symbol) is within 0-4 <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e006&amp;representation=PNG" class="inline-graphic"></span> distance (label 0-4).</p>
+<span>doi:10.1371/journal.pone.0000421.g003</span></div><a id="article1.body1.sec2.sec2.p5" name="article1.body1.sec2.sec2.p5"></a><p>As with other centrality measurements <a href="#pone.0000421-Thibert1">[11]</a>, we noticed that the most traversed residues lay on both the protein's core and surface (see <a href="#pone.0000421.s002">Fig. S1</a> and <a href="#pone.0000421.s003">S2</a>), but with a trend to be on the protein's core. Specifically, in the FSSP128 set 85.8% of the predicted critical residues are buried within the protein core and 14.2% are exposed; these percentages are obtained by considering as part of the protein's core those residues with a relative surface area of 50% or less (see <a href="#pone.0000421.s001">Fig. S1</a> for details). This trend is complementary to sequence-conserved residues as we noted previously for another centrality measurements <a href="#pone.0000421-Thibert1">[11]</a>. Furthermore, in the T4L-HIV-TEM1 set we observed again that most of the predicted critical resides by JAMMING have a role on structure (85%) but some have a catalytic role (15%) (see <a href="#pone.0000421.s001">Table S1</a>).</p>
+
+
+<h4>Improving sensitivity by including multiple protein structures</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>Considering that proteins are not static molecules, it is accepted that an ensemble of protein structures accomplishes protein function <a href="#pone.0000421-Mittermaier1">[20]</a>. Thus, in order to identify most of the critical residues for protein function (to improve the sensibility of our method) is important to include in the analysis several protein structures. Normal mode analysis is a powerful method for predicting as much as half of the possible movements of proteins with only two normal modes <a href="#pone.0000421-Suhre1">[21]</a>. Thus, we would expect that using multiple conformations that represent most of the conformational diversity of a protein could improve the sensibility of our approach. In that case, our goal is to produce a method capable of reproducing at least the reliability of automatic sequence-based approaches. For example, we have previously evaluated two automatic methods based on sequence analysis, and biased them providing the correct number of critical residues to be predicted. In that case, these methods achieved an average error of 44% (sensibility 76% and specificity 67%) using the T4L-TEM1-HIV1P set <a href="#pone.0000421-Thibert1">[11]</a>. However, in the most common scenario where no information is available about the number of critical residues for a protein, following the common assumption that critical residues are the most conserved ones <a href="#pone.0000421-Poteete1">[22]</a>, the average error value increases for this same set to 49.6% (sensibility 53.3% and specificity 83.3%). As we have shown above, considering a single protein structure does not render this level of reliability (see <a href="#pone-0000421-g002">Fig. 2</a>). In <a href="#pone-0000421-g004">Fig. 4</a> we show for this same set of proteins that using multiple structures for a given protein may improve the reliability of our method to an average error value of 48.4% (sensitivity 67.6% and specificity 63.9%). Another important implication from our results is that the number of structures included in the analysis does not determine the reliability of the predictions, but the conformational diversity sampled by the structures (i.e., using the lowest-frequency modes).</p>
+<div class="figure" id="pone-0000421-g004"><div class="img"><a name="pone-0000421-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000421" data-uri="info:doi/10.1371/journal.pone.0000421.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000421.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000421.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000421.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Sensitivity vs. Specificity of JAMMING using multiple protein structures.</span></strong></p><a id="article1.body1.sec2.sec3.fig1.caption1.p1" name="article1.body1.sec2.sec3.fig1.caption1.p1"></a><p>The average sensitivity (axis labeled &lt;Sensitivity&gt;) and average specificity (axis labeled &lt;Specificity&gt;) over all the 3 proteins included in the T4L-TEM-HIVP set and its normal mode perturbed models are presented. The triangles represent the data including 2 low-frequency modes (modes 10 and 11, see <a href="#s4">Methods</a> section); the squares represent the 2 lowest-frequency modes (modes 30 and 31, see <a href="#s4">Methods</a>); the circles represent the data including 5 normal modes. Each mode was used to generate 10 perturbed models from the initial PDB structure (see <a href="#s4">Methods</a> section), so the average values in this plot represent 44 (triangles), 44 (squares) and 165 (circles) protein structures. For comparison, the sensitivity and specificity obtained using a single protein structure for each protein in this set is represented in an empty rhomb.</p>
+<span>doi:10.1371/journal.pone.0000421.g004</span></div>
+
+<h4>Web site deployment and software distribution</h4>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a><p>In order to provide public access to JAMMING, we developed a web site using the Java™'s servlet technology. The servlet (master program) may render requests to a group of registered machines (workers). Yet, the current servlet implementation only deploys the requests to a single computer. Alternatively, we have made available a command-line version of our program through our web site that is ready to be used in a cluster environment as well as a GUI to be run on a single computer. As noted above, sometimes it is important to include multiple structures for a given protein to have a good reliability in the predictions. So, it is important to keep in mind that running multiple analyses in a single CPU may not be feasible, depending on the specifications of the hardware, so it is usually convenient to have the chance to use multiple processors.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>The accumulated information on protein structures and community efforts such as the structural genomics initiative <a href="#pone.0000421-Christendat1">[23]</a> may lead to a better understanding of protein functions beyond what sequence analysis is rendering nowadays <a href="#pone.0000421-Eisenberg1">[1]</a>. One important step towards that goal is the identification of critical residues for protein function. Here we present the implementation of an algorithm written in the Java™ programming language aimed to detect critical residues from protein structures. Our implementation, dubbed JAMMING, is based on the identification of the most traversed residues from protein structure-derived networks.</p>
+<a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>We trained JAMMING with different types of protein structure-derived networks and found that pairing every residue at 5 Å apart or closer rendered the most reliable predictions on average. Our results show that pairing residues that display complementary physicochemical properties does not improve the identification of critical residues, indicating that the optimization of our network model does not require residue-type discrimination. It is important to note that our previous work using closeness centrality to identify critical residues from protein structures <a href="#pone.0000421-Thibert1">[11]</a> employed the same criteria for building networks as the one described here. We suggested then <a href="#pone.0000421-Thibert1">[11]</a> that our approach for building networks offered an improved reliability (sensitivity 70%, specificity 70%) over that described by Amitai and colleagues <a href="#pone.0000421-Amitai1">[9]</a> (sensitivity 40%, specificity 10%) that uses the same centrality measurement, closeness centrality, to identify critical residues.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>Previous studies have indicated that critical residues tend to be buried in the protein's core <a href="#pone.0000421-Rennell1">[24]</a>, while few critical residues are on the protein's surface, such as active site residues. Our results are consistent with this notion: most critical residues detected by JAMMING (~85%) lay on the protein's core. To explain our results in terms of network connectivity, lets assume that proteins adopt a three-dimensional structure where all residues are regularly packed; in this case, it is likely that the most traversed residues will always be in the protein's core. However, we observe that the most traversed residues lie on both the protein's core and protein's surface (see <a href="#pone.0000421.s002">Figs. S1</a> and <a href="#pone.0000421.s003">S2</a> and <a href="#pone.0000421.s001">Table S1</a>). This suggests that the three-dimensional structures of proteins do not necessarily feature regular packing. In other words, if proteins will have regularly distributed connections on the three-dimensional space (such as equally dense polymers), the most central residues will always be on the protein's core. In agreement with this observation, it has previously been reported that protein structure-derived networks present a non-regular distribution referred to as the small-world phenomena <a href="#pone.0000421-Vendruscolo1">[18]</a>. We do not know yet, however, whether the three-dimensional localization of the most traversed residues depend on the small-world character observed in the packing of protein structures or any other topological property.</p>
+<a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>Other approaches to identify critical residues with different basis than ours <a href="#pone.0000421-delSolMesa1">[3]</a>, <a href="#pone.0000421-Devos1">[4]</a>, <a href="#pone.0000421-Elcock1">[5]</a>, <a href="#pone.0000421-Amitai1">[9]</a>, <a href="#pone.0000421-Dundas1">[13]</a>, <a href="#pone.0000421-George1">[16]</a>, <a href="#pone.0000421-Pazos1">[17]</a> may be combined to improve the predictive capacity of these methods. For instance, we have shown that closeness-centrality could be as accurate and complementary to sequence-based detection of critical residues, provided that the correct number of critical residues is previously known <a href="#pone.0000421-Thibert1">[11]</a>. However, the exact number of critical residues for a given protein is not commonly known, thus limiting the usefulness of these approaches.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>On the other hand, JAMMING is shown to improve the reliability of automatic sequence-based approaches by considering multiple normal mode perturbed models of a given protein. In that sense, JAMMING may be especially useful in cases where there are a limited number of sequences to perform a sequence analysis.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>When using our approach to analyze other protein structures, we noticed that some structures only hold as central residues those in the protein's core (data not shown), but including multiple structures of a protein always render critical residues on the protein's surface as well. So, as a general approach, the researcher may choose first to identify critical residues based exclusively on a protein structure provided that the specificity of the method is quite good in that condition, and depending on the goal of the researcher it may be useful to run JAMMING using multiple protein structures.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>So far, we have described the reliability of JAMMING in average terms. Now, we will describe some specific predictions obtained with it (see <a href="#pone.0000421.s001">Table S1</a>). Our goal is dual: i) to highlight predictions not attainable from the sequence and ii) to describe the usefulness of our method to identify residues involved in binding (i.e., active sites, protein-protein interfaces).</p>
+<a id="article1.body1.sec3.p8" name="article1.body1.sec3.p8"></a><p>The Arg145 residue in the bacteriophage T4 lysozyme was identified by our method to be critical for the protein function, yet this residue is not conserved <a href="#pone.0000421-Rennell1">[24]</a>. From the three-dimensional structure of the bacteriophage T4 lysozyme it has been observed that Arg145 forms part of a buried salt bridge with the catalytic residue Glu11 <a href="#pone.0000421-Rennell1">[24]</a>, suggesting a role in stabilizing the conformation of this catalytic residue. Interestingly, mutations on Arg145 do not indicate a stringent requirement for this salt bridge, since Arg145 can be replaced without deleterious effects for the protein function with uncharged residues <a href="#pone.0000421-Rennell1">[24]</a>. On the other hand, most substitutions of this residue abolished the activity of the lysozyme indicating a critical role for the function of the enzyme <a href="#pone.0000421-Rennell1">[24]</a>. Thus, sequence analysis revealed that Arg145 can be replaced by non-conservative amino acids during the evolution of this enzyme (Arg145 is aligned with Cys, Val, Gln, Glu, Lys, Ile, Asp, Pro and Thr, based on the alignment reported for the lysozyme at the Dali server <a href="#pone.0000421-Holm1">[25]</a>), and yet our method identified this residue as critical for the protein function. These data indicates that in the bacteriophage T4 lysozyme, position 145 plays an important role for the protein function and an Arginine residue is adequate for it, yet in other lysozymes different residues may accomplish that function. In this example we can appreciate how our method complements sequence analysis.</p>
+<a id="article1.body1.sec3.p9" name="article1.body1.sec3.p9"></a><p>Now we will analyze a couple of residues involved in binding sites. As we have shown <a href="#pone.0000421-Thibert1">[11]</a>, conserved residues tend to be on the protein surface, thus sequence analysis in combination with structure analysis may render a good prediction of binding sites <a href="#pone.0000421-Glaser1">[14]</a>. However, having the ability to identify binding sites based exclusively on protein structure may be important when few homologue sequences are available for a given protein, such as in the case of viral proteins or proteins with new folds, for instance. The proteins analyzed here all have many homologue sequences, but these serve to exemplify the usefulness of our approach in the identification of binding sites based only on protein structure.</p>
+<a id="article1.body1.sec3.p10" name="article1.body1.sec3.p10"></a><p>One of these residues is Thr71 in the TEM-1 beta-lactamase. This residue is not conserved among the class A beta-lactamases (enzymes capable of hydrolyzing beta-lactam antibiotics mostly encoded in plasmid in Gram(+) and Gram(−) bacteria), but it is conserved among the TEM1 beta-lactamases (the most common plasmid-mediated beta-lactamase). This conservation pattern suggests a possible role in specificity. Random mutagenesis at this position supports this notion <a href="#pone.0000421-Huang1">[26]</a>. This level of prediction can be achieved mainly because of the large number and diversity of protein sequences available for this protein family. On the other hand, our method used only one three-dimensional structure of the TEM1 beta-lactamase to identify this surface-exposed residue as critical. That is, JAMMING may be useful in identifying residues critical for the distinctive function of proteins even when few homologue sequences are known.</p>
+<a id="article1.body1.sec3.p11" name="article1.body1.sec3.p11"></a><p>Another residue involved in binding is Leu24 from the HIV-1 protease. This is a conserved residue and it is located in the interface of the protease homodimer. Interestingly, our method predicted this residue as critical for the protein function considering only the monomer of the protease. In agreement, mutagenesis of Leu24 showed small tolerance to substitutions at this position <a href="#pone.0000421-Loeb1">[27]</a>. Thus, for the Thr71 in the TEM-1 beta-lactamase and Leu24 in the HIV-1 protease, JAMMING used only the structural information of a protein without any knowledge about its interactions, indicating that the protein structure holds information about its function that is identifiable by our procedure.</p>
+<a id="article1.body1.sec3.p12" name="article1.body1.sec3.p12"></a><p>The ability to identify critical residues for protein structure/function represents a basic tool for many important areas in bioinformatics, including protein structure prediction, protein function design or functional classification, among others. In many of these areas, a program capable to be run in a systematic fashion is desirable. JAMMING is the first available software of its class that may be used to complement other approaches or be used where others are limited (<em>e.g</em>., proteins with known structure but limited sequence information).</p>
+<a id="article1.body1.sec3.p13" name="article1.body1.sec3.p13"></a><p>In summary, JAMMING is a multi-threaded Java™ implementation of a new approach aimed at detecting critical residues from protein structures. Our method is suitable to be executed in multiple machines or on a single one. JAMMING is available at <a href="http://bis.ifc.unam.mx/jamming/">http://bis.ifc.unam.mx/jamming/</a>.</p>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Methods"></a><h3>Methods</h3>
+<h4>Systems</h4>
+<a id="article1.body1.sec4.sec1.p1" name="article1.body1.sec4.sec1.p1"></a><p>Three Linux boxes (RedHat 7.2) with 2 Pentium III processors each were used to run the described calculations. These boxes were configured as a cluster with the Rocks framework (<a href="http://www.rocksclusters.org">http://www.rocksclusters.org</a>). Additionally, 1 Linux and 1 MacOS×computers were used to test our implementation in a heterogeneous computer system (see Implementation below). This was distributed using the JavaParty framework (<a href="http://www.ipd.uka.de/JavaParty/">http://www.ipd.uka.de/JavaParty/</a>).</p>
+<a id="article1.body1.sec4.sec1.p2" name="article1.body1.sec4.sec1.p2"></a><p>All of the procedures described in this work were coded in the Java™ programming language (<a href="http://java.sun.com">http://java.sun.com</a>). Two types of implementations were developed in this work. The first one was developed to test JAMMING when multiple protein structures are being analyzed. This program may be executed on a cluster of computers using the JavaParty framework. Also, this program may be executed in a single computer without the JavaParty framework. In both cases we used Java's Threads allowing to switch from one to another without major modification on the code (see below) The second implementation was a Java™'s servlet that provides a web interface to access JAMMING for single protein structure analysis. The WebMol Applet (<a href="http://www.cmpharm.ucsf.edu/">http://www.cmpharm.ucsf.edu/</a>~walther/webmol.html) was adapted to graphically display the results of the predictions by the servlet. Only protein atoms are considered in this version of the program.</p>
+
+
+<h4>Data</h4>
+<a id="article1.body1.sec4.sec2.p1" name="article1.body1.sec4.sec2.p1"></a><p>Two protein data sets were used to test our method: the T4L-TEM-HIVP set and the FSSP128 set. Briefly, the T4L-HIV-TEM1 set includes three enzymes that have been extensively characterized structurally and functionally (TEM1 beta-lactamase (PDB code 1BTL), HIV-1 protease (PDB code 1HIV) and T4 lysozyme (PDB code 2LZM)). The FSSP128 set includes 128 other proteins for which there is a partial annotation regarding the critical residues (single chained FSSP protein entries with SITE annotations). The 128 PDB names used in this set are: 1a3c, 1a6q, 1a7j, 1aac, 1ac5, 1ah7, 1ak1, 1ako, 1amj, 1an8, 1apq, 1arv, 1atg, 1auz, 1ayl, 1ayx, 1az9, 1b64, 1bag, 1bdb, 1bea, 1bfd, 1bia, 1bif, 1bix, 1bk0, 1bli, 1bn5, 1bor, 1boy, 1bp1, 1bqk, 1brt, 1btl, 1c25, 1ca1, 1cby, 1cex, 1cfb, 1chc, 1chd, 1csh, 1ctn, 1ctt, 1cvl, 1dmr, 1drw, 1dxy, 1ecl, 1eh2, 1emn, 1esl, 1eut, 1far, 1fnc, 1gca, 1htn, 1hyt, 1iba, 1ido, 1iow, 1iyu, 1kcw, 1kpf, 1lam, 1lay, 1lbu, 1lgr, 1lml, 1lox, 1mfs, 1mla, 1mrp, 1mup, 1nif, 1opc, 1pda, 1pdc, 1pfo, 1phd, 1phm, 1pii, 1pkp, 1poa, 1poc, 1rfs, 1rie, 1rkd, 1rlw, 1skf, 1snc, 1sra, 1thx, 1uch, 1uox, 1ush, 1whi, 1wod, 1xbd, 1xpa, 1ytw, 2abk, 2adr, 2af8, 2cba, 2cmd, 2dkb, 2dri, 2fha, 2fua, 2liv, 2mcm, 2mnr, 2rn2, 2sas, 2vil, 3dfr, 3dni, 3ebx, 3gcb, 3pte, 3ssi, 3tgl, 4enl, 4icb, 4pah, 5eat and 7rsa.</p>
+
+
+<h4>Building networks from protein structures</h4>
+<a id="article1.body1.sec4.sec3.p1" name="article1.body1.sec4.sec3.p1"></a><p>Networks were derived from protein structures by a distance criterion. That is, two residues were considered neighbors and consequently paired in the network if they were within a given distance from each other. Two different distance criteria were used: a) two residues were considered neighbors if any of their atoms were within the specified distance, and b) two residues were considered neighbors if their centers of mass were within the specified distance. Additionally, four filters were used to define neighbors, that is, given that the distance criteria were satisfied, the residues being paired were considered neighbors if: i) the two residues were polar or charged and had complementary charges (Asp, Glu, Asn, Gln, Tyr, Phe were paired with Arg, Lys, His, Asn, Gln), ii) the two residues had complementary charges or both were hydrophobic (Asp, Glu, Asn, Gln, Tyr, Phe, Ala, Leu, Ile, Val, Trp, Ser, Thr, Cys, Met were paired with Arg, Lys, His, Asn, Gln, Ala, Leu, Ile, Val, Trp, Ser, Thr, Cys, Met), iii) the two residues were hydrophobic (Ala, Leu, Ile, Val, Trp, Ser, Thr, Cys, Met were paired with Ala, Leu, Ile, Val, Trp, Ser, Thr, Cys, Met), or iv) any two residues were paired. Therefore, different types of networks were built specifying 7 separation distances, 2 distance criteria and four pairing criteria (see <a href="#pone-0000421-t001">Table 1</a> for a list of different parameters used to build networks). The networks built had amino acid residues as nodes and their interactions as links. Links were labeled with identical weight and were bidirectional.</p>
+
+
+<h4>Finding the central residues from protein-derived networks</h4>
+<a id="article1.body1.sec4.sec4.p1" name="article1.body1.sec4.sec4.p1"></a><p>In order to find the central residues from protein structure-derived networks, every pair of residues were connected through a shortest path. We used the Dijkstra's algorithm for tracing such shortest paths <a href="#pone.0000421-Weiss1">[28]</a>. By counting how many times every residue is traversed in connecting every pair of residues in the graph we define the node's dynamic connectivity, dk. Betweeness and dk are related: betweeness = dk/(N(N-1)), where N is the number of nodes in the graph. We referred to dynamic connectivity of a residue, as opposed to a static connectivity named the node's degree (i.e., number of direct neighbors to a node). By looking at the frequency of dk values in protein structures (dk vs. the probability of such dynamic connectivity, P(dk); P(dk) is obtained by counting the number of times a given dk value is present in the graph divided by N) we define the most traversed residues as those with the largest dynamic connectivity values having the same smallest P(dk) value in the distribution. For instance, in <a href="#pone-0000421-g001">figure 1</a> we can graphically identify the most traversed residues as those presenting the largest dk values on the right-lower corner. Note that a single dk value includes multiple residues with the same dk value.</p>
+
+
+<h4>Estimating the reliability of the predictions</h4>
+<a id="article1.body1.sec4.sec5.p1" name="article1.body1.sec4.sec5.p1"></a><p>Two measurements, sensitivity and specificity, were used to account for the reliability of the method tested, as described in <a href="#pone.0000421-Thibert1">[11]</a>. To estimate these parameters, we first count the number of experimentally determined critical residues (E), the number of non-critical residues (NE = (protein sequence's length)-E), the number of total predicted critical residues (P), the number of truly predicted critical residues (TP) and the number of false predicted critical residues (FP = P-TP). Hence, Sensitivity is defined as Se = TP/E and Specificity as Sp = (NE-FP)/NE. E values were those experimentally determined and annotated as a SITE for the T4L-TEM-HIVP set and FSSP128 set respectively. From these parameters we evaluated the error (how far form perfection is the method) associated with a predictive method <a href="#pone.0000421-Thibert1">[11]</a>: <a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000421.e007&amp;representation=PNG" class="inline-graphic"></span><br></p>
+
+
+<h4>Normal mode perturbed models generation</h4>
+<a id="article1.body1.sec4.sec6.p1" name="article1.body1.sec4.sec6.p1"></a><p>The <em>ElNemo</em> web service to compute the normal modes of the T4L-TEM-HIVP set was used <a href="#pone.0000421-Suhre1">[21]</a>. Briefly, 25 normal modes were calculated, starting from the non-trivial mode 7, and for each 11 PDB models were obtained. These include the reference structure and 10 models were generated using a range of amplitude values (−100 to 100, with increments of 20). The atoms in the protein were grouped by the ‘rotation-translation-block’ approximation. The cutoff distance for elastic interactions was set to 8 Angstroms.</p>
+
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000421"></div><a name="pone.0000421.s001" id="pone.0000421.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000421.s001">Table S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Predicted critical residues and their annotated function in the T4L-HIV-TEM1 set.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000421.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.12 MB DOC)</p>
+<a name="pone.0000421.s002" id="pone.0000421.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000421.s002">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Relationship between the surface area and dk centrality measurement for the FSSP128 set of proteins</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000421.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.25 MB TIF)</p>
+<a name="pone.0000421.s003" id="pone.0000421.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000421.s003">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Structural location of the most traversed residues</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000421.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.31 MB TIF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We are greatly appreciated with the IT department of the Instituto de Fisiologia Celular at the Universidad Nacional Autónoma de México for their technical support on this work.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: Gd. Performed the experiments: Gd MC BT. Analyzed the data: Gd DB MC BT. Contributed reagents/materials/analysis tools: Gd DB. Wrote the paper: Gd DB.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000421-Eisenberg1" id="pone.0000421-Eisenberg1"></a>Eisenberg D, Marcotte EM, Xenarios I, Yeates TO (2000) Protein function in the post-genomic era Nature,  405: 823–826.  <ul class="find" data-citedArticleID="948966" data-doi="10.1038/35015694"><li><a href="http://dx.doi.org/10.1038/35015694" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Protein+function+in+the+post-genomic+era" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Protein+function+in+the+post-genomic+era%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000421-Thornton1" id="pone.0000421-Thornton1"></a>Thornton JM, Todd AE, Milburn D, Borkakoti N, Orengo CA (2000) From structure to function: approaches and limitations Nat Struct Biol, 7 Suppl991–994.  <ul class="find" data-citedArticleID="949000" data-doi="10.1038/80784"><li><a href="http://dx.doi.org/10.1038/80784" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=From+structure+to+function%3A+approaches+and+limitations" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22From+structure+to+function%3A+approaches+and+limitations%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000421-delSolMesa1" id="pone.0000421-delSolMesa1"></a>del Sol Mesa A, Pazos F, Valencia A (2003) Automatic methods for predicting functionally important residues J Mol Biol,  326: 1289–1302.  <ul class="find" data-citedArticleID="949008" data-doi="10.1016/j.jmb.2008.03.009"><li><a href="http://dx.doi.org/10.1016/j.jmb.2008.03.009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automatic+methods+for+predicting+functionally+important+residues" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automatic+methods+for+predicting+functionally+important+residues%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000421-Devos1" id="pone.0000421-Devos1"></a>Devos D, Valencia A (2000) Practical limits of function prediction Proteins,  41: 98–107.  <ul class="find" data-citedArticleID="948962" data-doi="10.1002/1097-0134(20001001)41:1<98::aid-prot120&gt;3.3.co;2-j"><li><a href="http://dx.doi.org/10.1002/1097-0134(20001001)41:1<98::aid-prot120&gt;3.3.co;2-j" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Practical+limits+of+function+prediction" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Practical+limits+of+function+prediction%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000421-Elcock1" id="pone.0000421-Elcock1"></a>Elcock AH (2001) Prediction of functionally important residues based solely on the computed energetics of protein structure J Mol Biol,  312: 885–896.  <ul class="find" data-citedArticleID="948968" data-doi="10.1006/jmbi.2001.5009"><li><a href="http://dx.doi.org/10.1006/jmbi.2001.5009" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+functionally+important+residues+based+solely+on+the+computed+energetics+of+protein+structure" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+functionally+important+residues+based+solely+on+the+computed+energetics+of+protein+structure%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000421-Mattos1" id="pone.0000421-Mattos1"></a>Mattos C, Ringe D (1996) Locating and characterizing binding sites on proteins Nat Biotechnol,  14: 595–599.  <ul class="find" data-citedArticleID="948980" data-doi="10.1038/nbt0596-595"><li><a href="http://dx.doi.org/10.1038/nbt0596-595" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Locating+and+characterizing+binding+sites+on+proteins" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Locating+and+characterizing+binding+sites+on+proteins%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000421-Benkovic1" id="pone.0000421-Benkovic1"></a>Benkovic SJ, Hammes-Schiffer S (2003) A perspective on enzyme catalysis Science,  301: 1196–1202.  <ul class="find" data-citedArticleID="948956" data-doi="10.1126/science.1085515"><li><a href="http://dx.doi.org/10.1126/science.1085515" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+perspective+on+enzyme+catalysis" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+perspective+on+enzyme+catalysis%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000421-Berman1" id="pone.0000421-Berman1"></a>Berman HM, Battistuz T, Bhat TN, Bluhm WF, Bourne PE, et al.  (2002) The protein data bank Acta Crystallogr D Biol Crystallogr, 58: 899–907.  <ul class="find" data-citedArticleID="948958" data-doi="10.1107/s0907444902003451"><li><a href="http://dx.doi.org/10.1107/s0907444902003451" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+protein+data+bank+Acta+Crystallogr+D+Biol+Crystallogr%2C" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+protein+data+bank+Acta+Crystallogr+D+Biol+Crystallogr%2C%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000421-Amitai1" id="pone.0000421-Amitai1"></a>Amitai G, Shemesh A, Sitbon E, Shklar M, Netanely D, et al.  (2004) Network analysis of protein structures identifies functional residues J. Mol. Biol.  344: 1135–1146.  <ul class="find" data-citedArticleID="948954" data-doi="10.1016/j.jmb.2004.10.055"><li><a href="http://dx.doi.org/10.1016/j.jmb.2004.10.055" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Network+analysis+of+protein+structures+identifies+functional+residues" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Network+analysis+of+protein+structures+identifies+functional+residues%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000421-delSol1" id="pone.0000421-delSol1"></a>del Sol A, O'Meara P (2005) Small-world network approach to identify key residues in protein-protein interaction. Proteins,  58: 672–682.  <ul class="find" data-citedArticleID="949006" data-doi="10.1002/prot.20348"><li><a href="http://dx.doi.org/10.1002/prot.20348" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Small-world+network+approach+to+identify+key+residues+in+protein-protein+interaction." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Small-world+network+approach+to+identify+key+residues+in+protein-protein+interaction.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000421-Thibert1" id="pone.0000421-Thibert1"></a>Thibert B, Bredesen DE, del Rio G (2005) Improved prediction of critical residues for protein function based on network and phylogenetic analyses. BMC Bioinformatics  6: 203.  <ul class="find" data-citedArticleID="948998"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Improved+prediction+of+critical+residues+for+protein+function+based+on+network+and+phylogenetic+analyses.&amp;auth=&amp;atitle=Improved+prediction+of+critical+residues+for+protein+function+based+on+network+and+phylogenetic+analyses." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Improved+prediction+of+critical+residues+for+protein+function+based+on+network+and+phylogenetic+analyses." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Improved+prediction+of+critical+residues+for+protein+function+based+on+network+and+phylogenetic+analyses.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000421-Sadreyev1" id="pone.0000421-Sadreyev1"></a>Sadreyev RI, Grishin NV (2006) Exploring dynamics of protein structure determination and homology-based prediction to estimate the number of superfamilies and folds. BMC Structural Biology  6: 6.  <ul class="find" data-citedArticleID="948994"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Exploring+dynamics+of+protein+structure+determination+and+homology-based+prediction+to+estimate+the+number+of+superfamilies+and+folds.&amp;auth=&amp;atitle=Exploring+dynamics+of+protein+structure+determination+and+homology-based+prediction+to+estimate+the+number+of+superfamilies+and+folds." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Exploring+dynamics+of+protein+structure+determination+and+homology-based+prediction+to+estimate+the+number+of+superfamilies+and+folds." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Exploring+dynamics+of+protein+structure+determination+and+homology-based+prediction+to+estimate+the+number+of+superfamilies+and+folds.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000421-Dundas1" id="pone.0000421-Dundas1"></a>Dundas J, Ouyang Z, Tseng J, Binkowski A, Turpaz Y, et al.  (2006) CASTp: computed atlas of surface topography of proteins with structural and topographical mapping of functionally annotated residues Nucleic Acids. Res.  34: W116–W118.  <ul class="find" data-citedArticleID="948964" data-doi="10.1093/nar/gkl282"><li><a href="http://dx.doi.org/10.1093/nar/gkl282" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=CASTp%3A+computed+atlas+of+surface+topography+of+proteins+with+structural+and+topographical+mapping+of+functionally+annotated+residues" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22CASTp%3A+computed+atlas+of+surface+topography+of+proteins+with+structural+and+topographical+mapping+of+functionally+annotated+residues%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000421-Glaser1" id="pone.0000421-Glaser1"></a>Glaser F, Pupko T, Paz I, Bell RE, Bechor-Shental D, et al.  (2003) ConSurf: identification of functional regions in proteins by surface-mapping of phylogenetic information Bioinformatics,  19: 163–164.  <ul class="find" data-citedArticleID="948972" data-doi="10.1093/bioinformatics/19.1.163"><li><a href="http://dx.doi.org/10.1093/bioinformatics/19.1.163" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ConSurf%3A+identification+of+functional+regions+in+proteins+by+surface-mapping+of+phylogenetic+information" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ConSurf%3A+identification+of+functional+regions+in+proteins+by+surface-mapping+of+phylogenetic+information%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000421-Pal1" id="pone.0000421-Pal1"></a>Pal D, Eisenberg D (2005) Inference of protein function from protein structure Structure  13: 121–130.  <ul class="find" data-citedArticleID="948984" data-doi="10.1016/j.str.2004.10.015"><li><a href="http://dx.doi.org/10.1016/j.str.2004.10.015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Inference+of+protein+function+from+protein+structure" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Inference+of+protein+function+from+protein+structure%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000421-George1" id="pone.0000421-George1"></a>George RA, Spriggs RV, Bartlett GJ, Gutteridge A, MacArthur MW, et al.  (2005) Effective function annotation through catalytic residue conservation Proc. Natl. Acad. Sci. USA  102: 12296–12298.  <ul class="find" data-citedArticleID="948970" data-doi="10.1073/pnas.0504833102"><li><a href="http://dx.doi.org/10.1073/pnas.0504833102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Effective+function+annotation+through+catalytic+residue+conservation" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Effective+function+annotation+through+catalytic+residue+conservation%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000421-Pazos1" id="pone.0000421-Pazos1"></a>Pazos F, Sternberg MJ (2004) Automated prediction of protein function and detection of functional sites from structure Proc. Natl. Acad. Sci. USA  101: 14754–14759.  <ul class="find" data-citedArticleID="948986" data-doi="10.1073/pnas.0404569101"><li><a href="http://dx.doi.org/10.1073/pnas.0404569101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Automated+prediction+of+protein+function+and+detection+of+functional+sites+from+structure" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Automated+prediction+of+protein+function+and+detection+of+functional+sites+from+structure%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000421-Vendruscolo1" id="pone.0000421-Vendruscolo1"></a>Vendruscolo M, Dokholyan NV, Paci E, Karplus M (2002) Small-world view of the amino acids that play a key role in protein folding. Phys Rev E Stat Nonlin Soft Matter Phys.  65: 061910-1–061910-4.  <ul class="find" data-citedArticleID="949002" data-doi="10.1103/physreve.65.061910"><li><a href="http://dx.doi.org/10.1103/physreve.65.061910" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Small-world+view+of+the+amino+acids+that+play+a+key+role+in+protein+folding." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Small-world+view+of+the+amino+acids+that+play+a+key+role+in+protein+folding.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000421-Phillippsen1" id="pone.0000421-Phillippsen1"></a>Phillippsen M, M Z (1997) JavaParty-transparent remote objects in Java Concurrency: Practice and Experience, 9: 1225–1242.  <ul class="find" data-citedArticleID="948988" data-doi="10.1002/(sici)1096-9128(199711)9:11<1225::aid-cpe332&gt;3.0.co;2-f"><li><a href="http://dx.doi.org/10.1002/(sici)1096-9128(199711)9:11<1225::aid-cpe332&gt;3.0.co;2-f" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=JavaParty-transparent+remote+objects+in+Java+Concurrency%3A+Practice+and+Experience%2C" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22JavaParty-transparent+remote+objects+in+Java+Concurrency%3A+Practice+and+Experience%2C%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000421-Mittermaier1" id="pone.0000421-Mittermaier1"></a>Mittermaier A, Lay LE (2006) New tools provide new insights in NMR studies of protein dynamics. Science  312: 224–228.  <ul class="find" data-citedArticleID="948982" data-doi="10.1126/science.1124964"><li><a href="http://dx.doi.org/10.1126/science.1124964" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=New+tools+provide+new+insights+in+NMR+studies+of+protein+dynamics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22New+tools+provide+new+insights+in+NMR+studies+of+protein+dynamics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000421-Suhre1" id="pone.0000421-Suhre1"></a>Suhre K, Sanejouand Y-H (2004) ElNémo: a normal mode web server for protein movement analysis and the generation of templates for molecular replacement. Nucl.Acids Res.  32: W610–W614.  <ul class="find" data-citedArticleID="948996" data-doi="10.1093/nar/gkh368"><li><a href="http://dx.doi.org/10.1093/nar/gkh368" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ElN%26%23xe9%3Bmo%3A+a+normal+mode+web+server+for+protein+movement+analysis+and+the+generation+of+templates+for+molecular+replacement." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ElN%26%23xe9%3Bmo%3A+a+normal+mode+web+server+for+protein+movement+analysis+and+the+generation+of+templates+for+molecular+replacement.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000421-Poteete1" id="pone.0000421-Poteete1"></a>Poteete AR, Renell D, Bouvier SE (1992) Functional significance of conserved amino acid residues. Proteins: structure, function and genetics  13: 38–40.  <ul class="find" data-citedArticleID="948990" data-doi="10.1002/prot.340130104"><li><a href="http://dx.doi.org/10.1002/prot.340130104" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Functional+significance+of+conserved+amino+acid+residues." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Functional+significance+of+conserved+amino+acid+residues.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000421-Christendat1" id="pone.0000421-Christendat1"></a>Christendat D, Yee A, Dharamsi A, Kluger Y, Savchenko A, et al.  (2000) Structural proteomics of an archaeon Nat Struct Biol,  7: 903–909.  <ul class="find" data-citedArticleID="948960" data-doi="10.1038/82823"><li><a href="http://dx.doi.org/10.1038/82823" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Structural+proteomics+of+an+archaeon" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Structural+proteomics+of+an+archaeon%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000421-Rennell1" id="pone.0000421-Rennell1"></a>Rennell D, Bouvier SE, Hardy LW, Poteete RA (1991) Systematic mutation of bacteriophage T4 lysozyme J Mol Biol  222: 67–88.  <ul class="find" data-citedArticleID="948992" data-doi="10.1016/0022-2836(91)90738-r"><li><a href="http://dx.doi.org/10.1016/0022-2836(91)90738-r" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Systematic+mutation+of+bacteriophage+T4+lysozyme" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Systematic+mutation+of+bacteriophage+T4+lysozyme%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000421-Holm1" id="pone.0000421-Holm1"></a>Holm L, Ouzounis C, Sander C, Tuparev G, Vriend G (1992) A database of protein structure families with common folding motifs.”. Protein Science  1: 1691–1698.  <ul class="find" data-citedArticleID="948974" data-doi="10.1002/pro.5560011217"><li><a href="http://dx.doi.org/10.1002/pro.5560011217" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+database+of+protein+structure+families+with+common+folding+motifs.%26%23x201d%3B." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+database+of+protein+structure+families+with+common+folding+motifs.%26%23x201d%3B.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000421-Huang1" id="pone.0000421-Huang1"></a>Huang W, Petrosino J, Hirsch M, Shenkin PS, Palzkill T (1996) Amino acid sequence determinants of β-lactamase structure and activity. J. Mol. Biol.  258: 688–703.  <ul class="find" data-citedArticleID="948976" data-doi="10.1006/jmbi.1996.0279"><li><a href="http://dx.doi.org/10.1006/jmbi.1996.0279" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Amino+acid+sequence+determinants+of+%26%23x3b2%3B-lactamase+structure+and+activity." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Amino+acid+sequence+determinants+of+%26%23x3b2%3B-lactamase+structure+and+activity.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000421-Loeb1" id="pone.0000421-Loeb1"></a>Loeb DD, Swanstrom R, Everitt L, Manchester M, Stamper S, et al.  (1989) Complete mutagenesis of the HIV-1 protease. Nature  340: 397–400.  <ul class="find" data-citedArticleID="948978" data-doi="10.1038/340397a0"><li><a href="http://dx.doi.org/10.1038/340397a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Complete+mutagenesis+of+the+HIV-1+protease." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Complete+mutagenesis+of+the+HIV-1+protease.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000421-Weiss1" id="pone.0000421-Weiss1"></a>Weiss MA (1999)  Graph algorithms. In: Hartman S, editor. Data structures &amp; algorithm analysis in Java™. pp. 291–352.  (Berkeley, California, Addison-Wesley),.  <ul class="find-nolinks"></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.XML" value="78718"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.PDF" value="182254"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.t001.PNG_L" value="181069"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.t001.PNG_M" value="88085"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.t001.PNG_S" value="8252"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.t001.TIF" value="920094"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.t001.PNG_I" value="94413"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g001.PNG_L" value="8774"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g001.PNG_M" value="16131"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g001.PNG_S" value="1694"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g001.TIF" value="31474"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g001.PNG_I" value="7357"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e001.PNG" value="371"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e001.TIF" value="20896"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g002.PNG_L" value="72649"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g002.PNG_M" value="35718"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g002.PNG_S" value="2391"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g002.TIF" value="162160"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g002.PNG_I" value="14801"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e002.PNG" value="385"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e002.TIF" value="20900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e003.PNG" value="385"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e003.TIF" value="20900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e004.PNG" value="385"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e004.TIF" value="20900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e005.PNG" value="385"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e005.TIF" value="20900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e006.PNG" value="385"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e006.TIF" value="20900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g003.PNG_L" value="29828"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g003.PNG_M" value="18773"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g003.PNG_S" value="2449"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g003.TIF" value="68884"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g003.PNG_I" value="8769"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g004.PNG_L" value="19640"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g004.PNG_M" value="10898"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g004.PNG_S" value="1913"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g004.TIF" value="58852"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.g004.PNG_I" value="5341"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e007.PNG" value="3332"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.e007.TIF" value="25032"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.s001.DOC" value="115712"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.s002.TIF" value="228879"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000421.s003.TIF" value="294954"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000421&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000421" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000421&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000421&volume=&issue=&title=Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis&author_name=Michael%20P.%20Cusack%2C%20Boris%20Thibert%2C%20Dale%20E.%20Bredesen%2C%20Gabriel%20del%20Rio&start_page=1&end_page=7" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000421" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421&amp;t=Efficient%20Identification%20of%20Critical%20Residues%20Based%20Only%20on%20Protein%20Structure%20by%20Network%20Analysis" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421&title=Efficient%20Identification%20of%20Critical%20Residues%20Based%20Only%20on%20Protein%20Structure%20by%20Network%20Analysis&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421&amp;title=Efficient%20Identification%20of%20Critical%20Residues%20Based%20Only%20on%20Protein%20Structure%20by%20Network%20Analysis" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000421&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Efficient Identification of Critical Residues Based Only on Protein Structure by Network Analysis';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000421';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Efficient%20Identification%20of%20Critical%20Residues%20Based%20Only%20on%20Protein%20Structure%20by%20Network%20Analysis http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000421" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000421" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Centrality%22" title="Search for articles in the subject area:'Centrality'"><div class="flagText">Centrality</div></a>
+              <div data-categoryid="22735" data-articleid="23680"
+                   data-categoryname="Centrality"
+                   class="flagImage" title="Flag 'Centrality' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Computer+software%22" title="Search for articles in the subject area:'Computer software'"><div class="flagText">Computer software</div></a>
+              <div data-categoryid="2287" data-articleid="23680"
+                   data-categoryname="Computer software"
+                   class="flagImage" title="Flag 'Computer software' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+structure%22" title="Search for articles in the subject area:'Protein structure'"><div class="flagText">Protein structure</div></a>
+              <div data-categoryid="31877" data-articleid="23680"
+                   data-categoryname="Protein structure"
+                   class="flagImage" title="Flag 'Protein structure' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+structure+databases%22" title="Search for articles in the subject area:'Protein structure databases'"><div class="flagText">Protein structure databases</div></a>
+              <div data-categoryid="33455" data-articleid="23680"
+                   data-categoryname="Protein structure databases"
+                   class="flagImage" title="Flag 'Protein structure databases' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+structure+networks%22" title="Search for articles in the subject area:'Protein structure networks'"><div class="flagText">Protein structure networks</div></a>
+              <div data-categoryid="18043" data-articleid="23680"
+                   data-categoryname="Protein structure networks"
+                   class="flagImage" title="Flag 'Protein structure networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Protein+structure+prediction%22" title="Search for articles in the subject area:'Protein structure prediction'"><div class="flagText">Protein structure prediction</div></a>
+              <div data-categoryid="33203" data-articleid="23680"
+                   data-categoryname="Protein structure prediction"
+                   class="flagImage" title="Flag 'Protein structure prediction' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Sequence+analysis%22" title="Search for articles in the subject area:'Sequence analysis'"><div class="flagText">Sequence analysis</div></a>
+              <div data-categoryid="47475" data-articleid="23680"
+                   data-categoryname="Sequence analysis"
+                   class="flagImage" title="Flag 'Sequence analysis' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Structural+proteins%22" title="Search for articles in the subject area:'Structural proteins'"><div class="flagText">Structural proteins</div></a>
+              <div data-categoryid="19563" data-articleid="23680"
+                   data-categoryname="Structural proteins"
+                   class="flagImage" title="Flag 'Structural proteins' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=9018'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6157'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=6624&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

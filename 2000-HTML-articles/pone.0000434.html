@@ -1,0 +1,1314 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000434"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000434" />
+
+    <meta name="citation_title" content="Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics"/>
+    <meta itemprop="name" content="Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics"/>
+
+      <meta name="citation_author" content="Kunihiko Kaneko"/>
+            <meta name="citation_author_institution" content="Department of Pure and Applied Sciences, University of Tokyo, Tokyo Japan"/>
+            <meta name="citation_author_institution" content="Complex Systems Biology Project, Exploratory Research for Advanced Technology (ERATO), Japan Science and Technology Agency (JST), Tokyo, Japan"/>
+
+    <meta name="citation_date" content="2007/5/9"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000434.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e434"/>
+    <meta name="citation_issue" content="5"/>
+    <meta name="citation_volume" content="2"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Robustness in simple biochemical networks.; citation_author=N Barkai; citation_author=S Leibler; citation_journal_title=Nature; citation_number=1; citation_pages=913-917; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Robustness in bacterial chemotaxis,; citation_author=U Alon; citation_author=MG Surette; citation_author=N Barkai; citation_author=S Leibler; citation_journal_title=Nature; citation_number=2; citation_pages=168-171; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Robustness against mutations in genetic networks of yeast.; citation_author=A Wagner; citation_journal_title=Nature Genetics,; citation_number=3; citation_pages=355-361; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Robustness can Evolve Gradually in Complex Regulatory Gene Networks with Varying Topology.; citation_author=S Ciliberti; citation_author=OC Martin; citation_author=A Wagner; citation_journal_title=PLOS Computational Biology,; citation_number=4; citation_pages=e15; citation_date=2007; " />
+      <meta name="citation_reference" content="citation_title=Evolution and detection of genetic robustness.; citation_author=JAGM de Visser; citation_journal_title=Evolution; citation_number=5; citation_pages=1959-1972; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Non-genetic individuality: chance in the single cell.; citation_author=JL Spudich; citation_author=DE Koshland; citation_journal_title=Nature; citation_volume=262; citation_number=6; citation_pages=467-471; citation_date=1976; " />
+      <meta name="citation_reference" content="citation_title=Stochastic Gene Expression in a Single Cell; citation_author=MB Elowitz; citation_author=AJ Levine; citation_author=ED Siggia; citation_author=PS Swain; citation_journal_title=Science; citation_number=7; citation_pages=1183; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Noise-based switches and amplifiers for gene expression.; citation_author=J Hasty; citation_author=J Pradines; citation_author=M Dolnik; citation_author=JJ Collins; citation_journal_title=Proc. Natl. Acad. Sci. USA; citation_volume=97; citation_number=8; citation_pages=2075-2080; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Ubiquity of Log-normal Distributions in Intra-cellular Reaction Dynamics.; citation_author=C Furusawa; citation_author=T Suzuki; citation_author=A Kashiwagi; citation_author=T Yomo; citation_author=K Kaneko; citation_journal_title=BIOPHYSICS; citation_volume=1; citation_number=9; citation_pages=25-31; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Noise in protein expression scales with natural protein abundance.; citation_author=A Bar-Even; citation_journal_title=Nature Genetics; citation_volume=38; citation_number=10; citation_pages=636-643; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Stochasticity in gene expression: from theories to phenotypes.; citation_author=M Kaern; citation_author=TC Elston; citation_author=WJ Blake; citation_author=JJ Collins; citation_journal_title=Nat. Rev. Genet.; citation_volume=6; citation_number=11; citation_pages=451-464; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Single-molecule analysis of chemotactic signaling in Dictyostelium cells.; citation_author=M Ueda; citation_author=Y Sako; citation_author=T Tanaka; citation_author=P Devreotes; citation_author=T Yanagida; citation_journal_title=Science; citation_volume=294; citation_number=12; citation_pages=864-867; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Adaptive response of a gene network to environmental changes by attractor selection.; citation_author=A Kashiwagi; citation_author=I Urabe; citation_author=K Kaneko; citation_author=T Yomo; citation_journal_title=Plos One,; citation_volume=1; citation_number=13; citation_pages=e49; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=An autoregulatory circuit for long-range self-organization in Dictyostelium cell populations.; citation_author=S Sawai; citation_author=PA Thomason; citation_author=EC Cox; citation_journal_title=Nature; citation_number=14; citation_pages=323-326; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Isologous diversification for robust development of cell society.; citation_author=K Kaneko; citation_author=T Yomo; citation_journal_title=J. Theor. Biol; citation_number=15; citation_pages=243-256; citation_date=1999; " />
+      <meta name="citation_reference" content="citation_title=Life: An Introduction to Complex Systems Biology, Springer; citation_author=K Kaneko; citation_number=16; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=On the Relation between Fluctuation and Response in Biological Systems.; citation_author=K Sato; citation_author=Y Ito; citation_author=T Yomo; citation_author=K Kaneko; citation_journal_title=Proc. Nat. Acad. Sci. USA; citation_volume=100; citation_number=17; citation_pages=14086-14090; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=An evolutionary relationship between genetic variation and phenotypic fluctuation; citation_author=K Kaneko; citation_author=C Furusawa; citation_journal_title=J. Theo. Biol; citation_number=18; citation_pages=78-86; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Plasticity, Evolvability, and Modularity in RNA.; citation_author=LW Ancel; citation_author=W Fontana; citation_journal_title=J. Experimental Zoology; citation_number=19; citation_pages=242-283; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The Plausbility of Life, Yale Univ. Press; citation_author=MW Kirschner; citation_author=JC Gerhart; citation_number=20; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Factors of Evolution: The theory of Stabilizing Selection (Univ. of Chicago Press, Chicago) (reprinted 1986); citation_author=II Schmalhausen; citation_number=21; citation_date=1949; " />
+      <meta name="citation_reference" content="citation_title=The Strategy of the Genes, Allen & Unwin, London; citation_author=CH Waddington; citation_number=22; citation_date=1957; " />
+      <meta name="citation_reference" content="citation_title=A population Genetic Theory of Canalization, Evolution; citation_author=GP Wagner; citation_author=G Booth; citation_author=H Bagheri-Chaichian; citation_number=23; citation_pages=329-347; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Waddington's canalization revisited: Developmental stability and evolution.; citation_author=ML Siegal; citation_author=A Bergman; citation_journal_title=Proc Nat. Acad. Sci. USA; citation_number=24; citation_pages=10528-10532; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=The Genetical Theory of Natural Selection, Oxford Univ. Press; citation_author=RA Fisher; citation_number=25; citation_date=1930; " />
+      <meta name="citation_reference" content="citation_title=Foundations of mathematical genetics, Cambridge University Press; citation_author=AWF Edwards; citation_number=26; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Evolutionary Biology (Second edition), Sinauer Associates Inc., Sunderland; citation_author=DJ Futuyma; citation_number=27; citation_date=1986; " />
+      <meta name="citation_reference" content="citation_title=The Hypercycle, Springer; citation_author=M Eigen; citation_author=P Schuster; citation_number=28; citation_date=1979; " />
+      <meta name="citation_reference" content="citation_title=The logical analysis of continuous, non-linear biochemical control networks.; citation_author=L Glass; citation_author=SA Kauffman; citation_journal_title=J. Theor. Biol; citation_number=29; citation_pages=103-129; citation_date=1973; " />
+      <meta name="citation_reference" content="citation_title=A connectionist model of development.; citation_author=E Mjolsness; citation_author=DH Sharp; citation_author=J Reisnitz; citation_journal_title=J. Theor. Biol; citation_number=30; citation_pages=429-453; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=Gene networks capable of pattern formation: from induction to reaction-diffusion.; citation_author=I Salazar-Ciudad; citation_author=J Garcia-Fernandez; citation_author=RV Sole; citation_journal_title=J. Theor. Biol; citation_number=31; citation_pages=587-603; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Phenotypic and dynamical transitions in model genetic networks I.; citation_author=I Salazar-Ciudad; citation_author=SA Newman; citation_author=RV Sole; citation_journal_title=Evolution & Development; citation_volume=3; citation_number=32; citation_pages=84; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Magic number 7±2 in networks of threshold dynamics.; citation_author=S Ishihara; citation_author=K Kaneko; citation_journal_title=Phys. Rev. Lett; citation_number=33; citation_pages=058102; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Signal Transduction (Academic Press Inc.); citation_author=BD Gomperts; citation_author=IM Kramer; citation_author=PER Tatham; citation_number=34; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Introduction to the theory of neural computation (Addison-Wesley); citation_author=J Hertz; citation_author=A Krogh; citation_author=RG Palmer; citation_number=35; citation_date=1991; " />
+      <meta name="citation_reference" content="citation_title=Plasticity of the cis-Regulatory Input Function of a Gene.; citation_author=AE Mayo; citation_author=Y Setty; citation_author=S Shavit; citation_author=A Zaslaver; citation_author=U Alon; citation_journal_title=PLOS Biology; citation_number=36; citation_pages=555-561; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Spin Glass Theory and Beyond (World Sci. Pub.); citation_number=37; citation_date=1987; " />
+      <meta name="citation_reference" content="citation_title=The yeast cell-cycle network is robustly designed. ; citation_author=F Li; citation_author=T Long; citation_author=Y Lu; citation_author=Q Ouyang; citation_author=C Tang; citation_journal_title=Proc. Nat. Acad. Sci. USA; citation_number=38; citation_pages=10040; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Noninteracting local-structure model of folding and unfolding transition in globular proteins. I. Formulation.; citation_author=H Abe; citation_author=N Go.; citation_journal_title=Biopolymers; citation_number=39; citation_pages=1013; citation_date=1980; " />
+      <meta name="citation_reference" content="citation_title=Toward an Outline of the Topography of a Realistic Protein-Folding Funnel.; citation_author=JNJN Onuchic; citation_author=PG Wolynes; citation_author=Z Luthey-Schulten; citation_author=ND Socci; citation_journal_title=Proc. Nat. Acad. Sci. USA; citation_number=40; citation_pages=3626; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Evolution of the folding ability of proteins through functional selection.; citation_author=S Saito; citation_author=M Sasai; citation_author=T Yomo; citation_journal_title=Proc Nat. Acad. Sci. USA; citation_number=41; citation_pages=11324-11328; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_author=H Nishimori; citation_number=42; citation_date=2001; citation_publisher=Oxford Univ. Press; " />
+      <meta name="citation_reference" content="citation_title=Developmental Plasticity and Evolution,; citation_author=MJ West-Eberhard; citation_number=43; citation_date=2003; citation_publisher=Oxford Univ. Press; " />
+      <meta name="citation_reference" content="citation_title=Undermining the Baldwin expediting effect: does phenotypic plasticity accelerate evolution?; citation_author=LW Ancel; citation_journal_title=Theor Popul Biol; citation_number=44; citation_pages=307-19; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Developmental phenotypic plasticity: where ecology and evolution meet molecular biology.; citation_author=HS Callahan; citation_author=M Pigliucci; citation_author=CD Schlichting; citation_journal_title=Bioessays; citation_volume=19; citation_number=45; citation_pages=519-525; citation_date=1997; " />
+      <meta name="citation_reference" content="citation_title=Laws in Darwinian Evolutionary Theory, Physics of Life Reviews; citation_author=P Ao; citation_number=46; citation_pages=117-156; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Statistical Physics II: (English translation; Springer); citation_author=R Kubo; citation_author=M Toda; citation_author=N Hashitsume; citation_number=47; citation_date=1985; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics"/>
+    <meta name="twitter:description" content="Phenotype of biological systems needs to be robust against mutation in order to sustain themselves between generations. On the other hand, phenotype of an individual also needs to be robust against fluctuations of both internal and external origins that are encountered during growth and development. Is there a relationship between these two types of robustness, one during a single generation and the other during evolution? Could stochasticity in gene expression have any relevance to the evolution of these types of robustness? Robustness can be defined by the sharpness of the distribution of phenotype; the variance of phenotype distribution due to genetic variation gives a measure of &lsquo;genetic robustness&rsquo;, while that of isogenic individuals gives a measure of &lsquo;developmental robustness&rsquo;. Through simulations of a simple stochastic gene expression network that undergoes mutation and selection, we show that in order for the network to acquire both types of robustness, the phenotypic variance induced by mutations must be smaller than that observed in an isogenic population. As the latter originates from noise in gene expression, this signifies that the genetic robustness evolves only when the noise strength in gene expression is larger than some threshold. In such a case, the two variances decrease throughout the evolutionary time course, indicating increase in robustness. The results reveal how noise that cells encounter during growth and development shapes networks' robustness to stochasticity in gene expression, which in turn shapes networks' robustness to mutation. The necessary condition for evolution of robustness, as well as the relationship between genetic and developmental robustness, is derived quantitatively through the variance of phenotypic fluctuations, which are directly measurable experimentally."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000434.g008"/>
+
+  <meta property="og:title" content="Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=1017'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=2053'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1051&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000434">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000434" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000434&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Kunihiko Kaneko
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:kaneko@complex.c.u-tokyo.ac.jp">kaneko@complex.c.u-tokyo.ac.jp</a></p>
+
+                <p>Affiliations:
+                  Department of Pure and Applied Sciences, University of Tokyo, Tokyo Japan, 
+                  Complex Systems Biology Project, Exploratory Research for Advanced Technology (ERATO), Japan Science and Technology Agency (JST), Tokyo, Japan
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: May 09, 2007</li>
+    <li>DOI: 10.1371/journal.pone.0000434</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000434-g001" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g002" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g003" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g004" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g005" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g006" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g007" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g007" title="Figure 7">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g007&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000434-g008" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g008" title="Figure 8">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g008&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000434">Reader Comments (1)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000434" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2><a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a><p>Phenotype of biological systems needs to be robust against mutation in order to sustain themselves between generations. On the other hand, phenotype of an individual also needs to be robust against fluctuations of both internal and external origins that are encountered during growth and development. Is there a relationship between these two types of robustness, one during a single generation and the other during evolution? Could stochasticity in gene expression have any relevance to the evolution of these types of robustness? Robustness can be defined by the sharpness of the distribution of phenotype; the variance of phenotype distribution due to genetic variation gives a measure of ‘genetic robustness’, while that of isogenic individuals gives a measure of ‘developmental robustness’. Through simulations of a simple stochastic gene expression network that undergoes mutation and selection, we show that in order for the network to acquire both types of robustness, the phenotypic variance induced by mutations must be smaller than that observed in an isogenic population. As the latter originates from noise in gene expression, this signifies that the genetic robustness evolves only when the noise strength in gene expression is larger than some threshold. In such a case, the two variances decrease throughout the evolutionary time course, indicating increase in robustness. The results reveal how noise that cells encounter during growth and development shapes networks' robustness to stochasticity in gene expression, which in turn shapes networks' robustness to mutation. The necessary condition for evolution of robustness, as well as the relationship between genetic and developmental robustness, is derived quantitatively through the variance of phenotypic fluctuations, which are directly measurable experimentally.</p>
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Kaneko K (2007) Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics. PLoS ONE 2(5):
+          e434.
+            doi:10.1371/journal.pone.0000434</p><p><strong>Academic Editor: </strong>Enrico Scalas, University of East Piedmont, Italy</p><p><strong>Received:</strong> March 12, 2007; <strong>Accepted:</strong> April 17, 2007; <strong>Published:</strong> May 9, 2007</p><p><strong>Copyright:</strong> © 2007 Kunihiko Kaneko. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>The author has no support or funding to report.</p><p><strong>Competing interests:</strong> The author has declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Robustness is ability to function against changes in the parameter of a system<a href="#pone.0000434-Barkai1">[1]</a>, <a href="#pone.0000434-Alon1">[2]</a>, <a href="#pone.0000434-Wagner1">[3]</a>, <a href="#pone.0000434-Ciliberti1">[4]</a>, <a href="#pone.0000434-deVisser1">[5]</a>. In a biological system, the changes have two distinct origins, genetic and epigenetic. The former concerns with genetic robustness, i.e., rigidity of phenotype against mutation, which is necessary to maintain a high fitness state. The latter concerns with fluctuation in number of molecules and external environment.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Indeed, phenotype of isogenic individual organisms is not necessarily identical. Chemotaxis<a href="#pone.0000434-Spudich1">[6]</a>, enzyme activities, and protein abundance<a href="#pone.0000434-Elowitz1">[7]</a>, <a href="#pone.0000434-Hasty1">[8]</a>, <a href="#pone.0000434-Furusawa1">[9]</a>, <a href="#pone.0000434-BarEven1">[10]</a>, <a href="#pone.0000434-Kaern1">[11]</a> differ even among those sharing the same genotype. Recent studies on stochastic gene expression elucidated the sources of fluctuations <a href="#pone.0000434-Elowitz1">[7]</a>. The question most often asked is how some biological functions are robust to phenotypic noise<a href="#pone.0000434-Kaern1">[11]</a>, <a href="#pone.0000434-Ueda1">[12]</a>, while there may also be positive roles of fluctuations in cell differentiation, pattern formation, and adaptation<a href="#pone.0000434-Kashiwagi1">[13]</a>, <a href="#pone.0000434-Sawai1">[14]</a>, <a href="#pone.0000434-Kaneko1">[15]</a>, <a href="#pone.0000434-Kaneko2">[16]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Noise, in general, can be an obstacle in tuning a system to the fittest state and maintaining it there. Phenotype of an organism is often reproducible even under fluctuating environment or under molecular fluctuations<a href="#pone.0000434-Alon1">[2]</a>. Therefore, phenotype that is concerned with fitness is expected to keep some robustness against such stochasticity in gene expression, i.e., robustness in ‘developmental’ dynamics to noise. Phenotype having a higher fitness is maintained under noise. How is such “developmental robustness” achieved through evolution? In the evolutionary context, on the other hand, another type of robustness, robustness to mutation need to be considered. When genetic changes occur, gene expression dynamics are perturbed so that phenotype with a high fitness may no longer be maintained. The “genetic robustness” concerns with the stability of a high-fitness state against mutation.</p>
+<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>Whether these two types of robustness emerge under natural selection have long been debated in the context of developmental dynamics and evolution theory<a href="#pone.0000434-Wagner1">[3]</a>, <a href="#pone.0000434-deVisser1">[5]</a>, <a href="#pone.0000434-Sato1">[17]</a>, <a href="#pone.0000434-Kaneko3">[18]</a>, <a href="#pone.0000434-Ancel1">[19]</a>, <a href="#pone.0000434-Kirschner1">[20]</a>, since the proposition of stabilization selection by Schmalhausen<a href="#pone.0000434-Schmalhausen1">[21]</a> and canalization by Waddington<a href="#pone.0000434-Waddington1">[22]</a>, <a href="#pone.0000434-Wagner2">[23]</a>, <a href="#pone.0000434-Siegal1">[24]</a>. Are developmental robustness to noise and genetic robustness to mutation related? Is phenotypic noise relevant to attain robustness to mutation? In the present paper, we answer these questions quantitatively with the help of dynamical network model of gene expression.</p>
+<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a><p>Under the presence of noise in gene expression, phenotype as well as fitness, of isogenic organisms is distributed, usually following a bell-shaped probability function. When the phenotype is less robust to noise, this distribution is broader. Hence, the variance of this distribution, i.e., variance of isogenic phenotypic fluctuation denoted as <em>V<sub>ip</sub></em>, gives an index for robustness to noise in developmental dynamics. On the other hand, robustness to mutation is measured from the fitness distribution over individuals with different genotypes. An index for it is given by variance of phenotypic fluctuation arising from diversity of genotypes in a population<a href="#pone.0000434-Fisher1">[25]</a>, <a href="#pone.0000434-Edwards1">[26]</a>, <a href="#pone.0000434-Futuyma1">[27]</a>, denoted here as <em>V<sub>g</sub></em>. This variance <em>V<sub>g</sub></em> increases as the fraction of low-fitness mutants increases.</p>
+<a id="article1.body1.sec1.p6" name="article1.body1.sec1.p6"></a><p>Here we show that evolution to increase both types of robustness is possible only when the inequality <em>V<sub>ip</sub></em>≥<em>V<sub>g</sub></em> is satisfied. Since the isogenic phenotypic fluctuation <em>V<sub>ip</sub></em> increases with noise, this means that evolution of robustness is possible only when the amplitude of phenotypic noise is larger than some critical value as derived by <em>V<sub>ip</sub></em>≥<em>V<sub>g</sub></em>, implying a positive role of noise to evolution. We demonstrate that both the two variances <em>V<sub>ip</sub></em> and <em>V<sub>g</sub></em> decrease in the course of evolution, while keeping the proportionality between the two. This proportionality is consistent with an observation in a bacterial evolution experiment <a href="#pone.0000434-Kaneko2">[16]</a>, <a href="#pone.0000434-Sato1">[17]</a>, <a href="#pone.0000434-Kaneko3">[18]</a>.</p>
+<a id="article1.body1.sec1.p7" name="article1.body1.sec1.p7"></a><p>We explain the origin of the critical noise strength, by noting that smooth dynamical behavior free from a rugged potential landscape evolves as a result of phenotypic noise. When the noise amplitude is smaller than the threshold, we observe that low-fitness mutants are accumulated, so that robustness to mutation is not achieved. Generality and relevance of our results to biological evolution are briefly discussed.</p>
+
+<h4>Theoretical Framework on Genetic-Phenotypic Relationship</h4>
+<a id="article1.body1.sec1.sec1.p1" name="article1.body1.sec1.sec1.p1"></a><p>In natural population, both the phenotype and genotype differ among individuals. Let us consider population distribution <em>P</em>(<em>x, a</em>) where <em>x</em> is a variable characterizing a phenotype and <em>a</em> is that for the corresponding genotype<a href="#pone.0000434-Kaneko3">[18]</a>. Here the phenotype <em>x</em> is responsible for the fitness of an individual, and the selection depending on <em>x</em> is considered as an evolutionary process. Since the phenotype differs even among isogenic individuals, the distribution <em>P</em>(<em>x</em>; <em>a</em> = <em>a</em><sub>0</sub>) for a fixed genotype <em>a</em><sub>0</sub> has some variance. This isogenic phenotypic variance <em>V<sub>ip</sub></em>, defined as the variance over clones, is written as <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e001&amp;representation=PNG" class="inline-graphic"></span>, where <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e002&amp;representation=PNG" class="inline-graphic"></span> is the average phenotype of a clonal population sharing the genotype <em>a</em>, namely <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e003&amp;representation=PNG" class="inline-graphic"></span>. This variation of phenotype is a result of noise through the developmental process to shape the phenotype. If this variance is smaller, the phenotype is less influenced by noise, and thus <em>V<sub>ip</sub></em> works as a measure of robustness of the phenotype against noise.</p>
+<a id="article1.body1.sec1.sec1.p2" name="article1.body1.sec1.sec1.p2"></a><p>On the other hand, the standard evolutionary genetics <a href="#pone.0000434-Fisher1">[25]</a>, <a href="#pone.0000434-Edwards1">[26]</a>, <a href="#pone.0000434-Futuyma1">[27]</a> mainly studies the phenotypic variance due to genetic variation. It measures phenotypic variability due to diversity in genotypes in a population. This phenotypic variance by genetic variance, which is termed <em>V<sub>g</sub></em> here, is then defined as the variance of the average <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e004&amp;representation=PNG" class="inline-graphic"></span>, over genetically heterogeneous individuals. It is given by <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e005&amp;representation=PNG" class="inline-graphic"></span>, where <em>P</em>(<em>a</em>) is the distribution of the genotype <em>a</em> and &lt;<em>x̅</em> &gt; is the average of <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e006&amp;representation=PNG" class="inline-graphic"></span> over genotypes <em>a</em>. While <em>V<sub>ip</sub></em> is defined as variance over clones, i.e., individuals with the same genotype, <em>V<sub>g</sub></em> comes from those with different genotypes. As <em>V<sub>g</sub></em> is smaller, the phenotypic change by genetic variation is smaller. Hence <em>V<sub>g</sub></em> gives a measure of robustness of the phenotype against mutation.</p>
+<a id="article1.body1.sec1.sec1.p3" name="article1.body1.sec1.sec1.p3"></a><p>We have previously derived an inequality <em>V<sub>ip</sub>&gt;V<sub>g</sub></em> between the two variances, by assuming evolutionary stability of the population distribution <em>P</em>(<em>x, a</em>), that is preservation of single-peakedness through the course of evolution <a href="#pone.0000434-Kaneko3">[18]</a> (see Supporting <a href="#pone.0000434.s001">Text S1</a>). Indeed the single-peaked distribution collapses as <em>V<sub>ip</sub></em> approaches <em>V<sub>g</sub></em>, where the distribution is extended to very low values of <em>x</em> (fitness). In other words, error catastrophe occurs at <em>V<sub>g</sub>≈V<sub>ip</sub></em>; (Here error catastrophe means accumulation of low-fitness mutants in the population after generations, and the term is used here by extending its original meaning by Eigen<a href="#pone.0000434-Eigen1">[28]</a>). For each course of evolution under a fixed mutation rate, the proportionality between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em> is derived, since the genetic variance increases roughly proportionally to the mutation rate<a href="#pone.0000434-Kaneko3">[18]</a>.</p>
+<a id="article1.body1.sec1.sec1.p4" name="article1.body1.sec1.sec1.p4"></a><p>Note, however, that the derivation of these relationships (<em>V<sub>ip</sub></em>≥<em>V<sub>g</sub></em>, error catastrophe at <em>V<sub>g</sub>≈V<sub>ip</sub></em>, and proportionality between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em> for a given course of evolution) is based on the existence of two-variable distribution function <em>P</em>(<em>x = phenotype, a = gene</em>), and the postulate that single-peaked distribution is maintained throughout evolution, which is not trivial. Hence the above relationships need to be examined by some models for evolution. In addition, <em>why does the population distribution extend to low-fitness values when the phenotypic fluctuation V<sub>ip</sub> is smaller than V<sub>g</sub></em>? Or, put it another way, why do systems with small phenotypic noise run into “error catastrophe”? In fact, the emergence of error catastrophe as a result of decreasing isogenic phenotypic fluctuation below <em>V<sub>g</sub></em> may look rather counter-intuitive, since in general one expects fluctuation to perturb a system from the fittest state. The necessity of fluctuation for evolution to increase robustness to noise and to mutation needs theoretical examination.</p>
+
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Methods"></a><h3>Methods</h3>
+<h4>Model</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>To study the proposed relationships, we need to consider seriously how the phenotype is shaped through complex “developmental process”. In the present paper, we use the term ‘development’, in a broad sense, including a process in uni-cellular organisms to reach cell division. It is a dynamical process to shape a phenotype at a ’matured’ state (where fitness is defined) from a given initial state. In general, this dynamic process is complex so that the process may not reach the identical phenotype due to the noise through this developmental process. This leads to the isogenic variance of the phenotype <em>V<sub>ip</sub></em>. On the other hand, the equation governing the developmental process is varied as a result of mutation. The phenotype variance over a population with distributed genotypes gives <em>V<sub>g</sub></em>.</p>
+<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a><p>We consider a simple model to satisfy the requirement on ‘development’ above. It consists of a complex dynamic process to reach a target phenotype under a noise which may alter the final phenotypic state. We do not choose a biologically realistic model that describes a specific developmental process, but instead take a model as simple as possible, to satisfy a minimal requirement for our study. Here we take a simplified model, borrowed from a gene regulatory network, where expression of a gene activates or inhibits expression of other genes under noise. These interactions between genes are determined by the network. The expression profile changes in time, and eventually reaches a stationary pattern. This gene expression pattern determines fitness. Selection occurs after introduction of mutation at each generation in the gene network. Among the mutated networks, we select a network with a higher fitness value. Since there is a noise term in the gene expression dynamics, fitness fluctuates even among the individuals with an identical gene network, which leads to the isogenic fluctuation <em>V<sub>ip</sub></em>. On the other hand, the expression pattern varies by mutation in the network, and gives rise to variation in the average fitness, resulting in <em>V<sub>g</sub></em>.</p>
+<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a><p>This simplified gene expression follows a typical switch-like dynamics with a sigmoid input-output behavior <a href="#pone.0000434-Glass1">[29]</a>, <a href="#pone.0000434-Mjolsness1">[30]</a>, <a href="#pone.0000434-SalazarCiudad1">[31]</a>, <a href="#pone.0000434-SalazarCiudad2">[32]</a>, <a href="#pone.0000434-Ishihara1">[33]</a> widely applied in models of signal transduction<a href="#pone.0000434-Gomperts1">[34]</a> and neural networks<a href="#pone.0000434-Hertz1">[35]</a> (For a related evolution model with discrete states, see e.g., <a href="#pone.0000434-Siegal1">[24]</a>). The dynamics of a gene expression level <em>x<sub>i</sub></em> is described by<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e007&amp;representation=PNG" class="inline-graphic"><span class="note">(1)</span></span><br>where <em>J<sub>ij</sub></em> = −1,1,0, and η(<em>t</em>) is Gaussian white noise given by &lt;η(<em>t</em>)η(<em>t</em>′)&gt; = <em>δ</em>(<em>t</em>−<em>t</em>′). <em>M</em> is the total number of genes, and <em>k</em> is the number of output genes that are responsible for fitness to be determined. The value of <em>σ</em> represents noise strength that determines stochasticity in gene expression (For simplicity we mainly consider the case that the noise amplitude is independent of <em>x<sub>i</sub></em>, while inclusion of such <em>x</em>-dependence of noise amplitude does not alter the conclusion to be discussed). By following a sigmoid function <em>tanh</em>, <em>x<sub>i</sub></em> has a tendency to approach either 1 or −1, which is regarded as “on” or “off” of gene expression. Even though <em>x</em> is defined over [−∞, ∞], it is attracted to the range [−1,1] (or slightly above or below the range due to the noise term). We consider a developmental process leading to a matured phenotype from a fixed initial state, which is given by (−1,−1,…,−1); i.e., all genes are off, unless noted otherwise. (This specific choice of initial condition is not important).</p>
+<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a><p>Let us define a fitness function so that gene expression levels (<em>x<sub>i</sub></em>) for genes <em>i</em> = 1,2,…,<em>k</em>(&lt;<em>M</em>) would reach an “on” state, i.e., <em>x<sub>i</sub></em>&gt;0. The fitness is maximum if all <em>k</em> genes are on after a transient time span <em>T<sub>ini</sub></em>, and minimum if all are off. To be specific, we define the fitness function by<a name="" id=""></a><span class="equation"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e008&amp;representation=PNG" class="inline-graphic"><span class="note">(2)</span></span><br>where <em>S</em>(<em>x</em>) = 1 for <em>x</em>&gt;0, and 0 otherwise, […]<em><sub>temp</sub></em> is time average between <em>t = T<sub>ini</sub></em> and <em>t = T<sub>f</sub></em> (The time average here is not important, because the gene expressions <em>x<sub>i</sub></em> are fixed after some time, in most cases). Adoption of the value (<em>S</em>(<em>x<sub>j</sub></em>)−1) after initial time <em>T<sub>ini</sub></em> leads to the same result (. The fitness function takes the maximum value <em>F</em> = 0 when the selected pattern of gene expression (<em>x<sub>i</sub></em>; <em>i</em> = 1,2,…,<em>k</em>) is always “on” and takes the minimum (<em>F = −k</em>) when all <em>k</em> genes are always off. Note that fitness is calculated only after time <em>T<sub>ini</sub></em>, which is chosen sufficiently large so that the temporal average can be computed after the gene expression dynamics has fallen on an attractor. This initial time can be considered as the time required for developmental dynamics.</p>
+<a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"></a><p>As the model contains a noise term, fitness fluctuates at each run, which leads to the distribution in <em>F</em>, even for the same network. Hence we obtain the distribution <em>p</em>(<em>F</em>; <em>g</em>), for a given network “g”, whose variance gives isogenic phenotypic fluctuation. At each generation, we compute the fitness <em>F</em> over <em>L</em> runs, to obtain the average fitness value <em>F̅</em> of a given network.</p>
+<a id="article1.body1.sec2.sec1.p6" name="article1.body1.sec2.sec1.p6"></a><p>Now we consider the evolutionary process of the network. Since the network is governed by <em>J<sub>ij</sub></em> which determines the ‘rule’ of the dynamics, it is natural to treat <em>J<sub>ij</sub></em> as a measure of genotype. Individuals with different genotype have a different set of <em>J<sub>ij</sub></em> At each generation there are <em>N</em> individuals with different sets of <em>J<sub>ij</sub></em> For each individual network, we compute the average fitness <em>F̅</em>. Then we select the top <em>N<sub>s</sub></em>(&lt;<em>N</em>) networks that have higher fitness values. (The value <em>N/N<sub>s</sub></em> corresponds to the selective pressure. As it is larger, the evolution speed increases. However, specific choice of this value itself is not important to the result to be discussed).</p>
+<a id="article1.body1.sec2.sec1.p7" name="article1.body1.sec2.sec1.p7"></a><p>At each generation, mutation changes the network, i.e., changes <em>J<sub>ij</sub></em> at a given mutation rate <em>µ</em>. We rewire the network at a given rate so that changes in <em>J<sub>ij</sub></em> produce <em>N</em> new networks. (In most simulations, only a single path, i.e., a single pair of <em>i, j</em> is changed. The mutation rate can be lowered by changing a path only for some probability. Although it is important to the evolution speed and the error catastrophe point to be discussed, the conclusion to be discussed is not altered by specific choice of <em>µ</em>.)</p>
+<a id="article1.body1.sec2.sec1.p8" name="article1.body1.sec2.sec1.p8"></a><p>Here we make <em>N/N<sub>s</sub></em> mutants from each of the top <em>N<sub>s</sub></em> networks, so that there will be <em>N</em> networks again for the next generation. From this population of networks we repeat the process of the developmental dynamics, fitness calculation, selection, and mutation (Instead of this simple genetic algorithm, we can also assume that the number of offspring increases with the fitness. This choice does not alter the conclusion to be presented).</p>
+<a id="article1.body1.sec2.sec1.p9" name="article1.body1.sec2.sec1.p9"></a><p>Simulations start from a population of random networks with a given fraction of paths (for example, 50% of <em>J<sub>ij</sub></em> are nonzero). At each generation, the <em>N</em> individuals have slightly different networks <em>J<sub>ij</sub></em>, so that the values of <em>F̅</em> are different. We denote the fitness distribution over individuals with different genotype as <em>P</em>(<em>F̅</em> ). On the other hand, the fitness distribution for an identical network (“g”) is computed to obtain <em>p</em>(<em>F; g</em>).</p>
+
+
+<h4>Remark:</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>Developmental dynamics and selection process in our model are too simple. Still, this model is relevant to examine general statement on phenotypic fluctuations, as the model at least captures complex dynamics giving rise to a phenotype, stochasticity in dynamics, mutation, and selection according to a given phenotype. Indeed, real gene expression dynamics depend on environmental conditions, and the fitness is defined as expression patterns to adapt each environmental condition. We have also carried out some simulations by imposing such fitness but the results to be discussed (with regards to <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em>) are invariant.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3><a id="article1.body1.sec3.p1" name="article1.body1.sec3.p1"></a><p>Let us first see how the evolutionary process changes as a function of the noise strength <em>σ</em>. After generations, the peak position in <em>P</em>(<em>F̅</em>) increases, so that the top of <em>F̅</em> in the population approaches the highest value 0. Indeed, in all cases, the top group quickly evolves to the highest fitness state <em>F̅</em> = 0 (see <a href="#pone-0000434-g001">Fig. 1a</a>; even for <em>σ</em> = 0.2, the highest fittest value approaches 0 after a few hundred more generations.). The time necessary for the system to reach this state becomes shorter as the phenotypic noise decreases (see <a href="#pone-0000434-g002">Fig. 2</a>). On the other hand, the time evolution of the distribution function <em>P</em>(<em>F̅</em>) depends drastically on the noise strength <em>σ</em>. When <em>σ</em> is small, the distribution is broad and the existing individual with the lowest <em>F̅</em> remains at the low fitness state, while for large <em>σ</em>, even the individuals with the lowest fitness approach <em>F̅</em> = 0 (see <a href="#pone-0000434-g001">Fig. 1b</a> and <a href="#pone-0000434-g003">Fig. 3</a>). There is a threshold noise <em>σ<sub>c</sub></em>(≈0.02), below which the distribution <em>P</em>(<em>F̅</em>) is broadened, as is discernible in the data of the variance of the distribution, <em>V<sub>g</sub></em> in <a href="#pone-0000434-g002">Fig. 2</a>. Here, the top individuals reach the highest fitness, leaving others at the very low fitness state. As a result, the average fitness over all individuals, <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e009&amp;representation=PNG" class="inline-graphic"></span> is low. &lt;<em>F̅</em>&gt; and the lowest fitness over individuals <em>F̅</em><em><sub>min</sub></em>, after a sufficiently large number of generations, are plotted against <em>σ</em> in <a href="#pone-0000434-g002">Fig. 2</a>. The abrupt decrease in fitness suggests threshold noise <em>σ<sub>c</sub></em>, below which low-fitness mutants always remain in the distribution. For <em>σ&gt;σ<sub>c</sub></em>, the distribution <em>P</em>(<em>F̅</em>) takes a sharp peak at <em>F̅</em> ~0, where the variance is rather small. Distribution below and above <em>σ<sub>c</sub></em> are displayed in <a href="#pone-0000434-g003">Fig. 3</a>. (This type of transition is also observed by increasing the mutation rate, while fixing the noise strength at <em>σ&gt;σ<sub>c</sub></em>).</p>
+<div class="figure" id="pone-0000434-g001"><div class="img"><a name="pone-0000434-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Evolutionary time course of the fitness <em>F̅</em>.</span></strong></p><a id="article1.body1.sec3.fig1.caption1.p1" name="article1.body1.sec3.fig1.caption1.p1"></a><p>The highest (a) and the lowest (b) values of the fitness <em>F̅</em> among all individuals that have different genotypes (i,e., networks <em>J<sub>ij</sub></em>) at each generation are plotted. Plotted are for different values of noise strength, σ = 0.01,0.02,0.04,0.06,0.08,0.1, 0.2 with different color. Hereafter we mainly present the numerical results for <em>M</em> = 64 and <em>k</em> = 8. At each generation there are <em>N</em> individuals. <em>N<sub>s</sub></em> = <em>N</em>/4 networks with higher values of <em>F̅</em> are selected for the next generation, from which mutants with a change in a single element <em>J<sub>ij</sub></em> are generated. For the average of fitness, <em>L</em> runs are carried out for each. Unless otherwise mentioned, we choose <em>N</em> = <em>L</em> = 300, while the conclusion to be shown does not change as long as they are sufficiently large. (We have also carried out the selection process by <em>F</em> instead of <em>F̅</em>, but the conclusion is not altered if <em>N</em> is chosen to be sufficiently large.) Throughout the paper, we use <em>β</em> = 7.</p>
+<span>doi:10.1371/journal.pone.0000434.g001</span></div><div class="figure" id="pone-0000434-g002"><div class="img"><a name="pone-0000434-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Average fitness &lt;<em>F̅</em>&gt;, lowest average fitness <em>F̅</em><sub>min</sub>, evolution speed, and variance of the fitness <em>V<sub>g</sub></em> are plotted against the noise strength <em>σ.</em></span></strong></p><a id="article1.body1.sec3.fig2.caption1.p1" name="article1.body1.sec3.fig2.caption1.p1"></a><p>&lt;<em>F̅</em>&gt;, the average of the average fitness <em>F̅</em> over all individuals is computed for 100–200 generations (red cross, from the simulation with population of 100 individuals, and purple square from 300 individuals). The minimal fitness is computed from the time average of the least fit network present at each generation (green, from 100 population, and light blue from 300). The evolution speed is plotted, measured as the inverse of the time required for the top individual to reach the maximal fitness 0. <em>V<sub>g</sub></em> is computed as the variance of the distribution <em>P</em>(<em>F̅</em>) at 200th generation.</p>
+<span>doi:10.1371/journal.pone.0000434.g002</span></div><div class="figure" id="pone-0000434-g003"><div class="img"><a name="pone-0000434-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Distribution P(<em>F̅</em>) after 200 generations, for population of 1000 individuals.</span></strong></p><a id="article1.body1.sec3.fig3.caption1.p1" name="article1.body1.sec3.fig3.caption1.p1"></a><p>Inset is the magnification for −0.2&lt;<em>F̅</em>&lt;0. For high <em>σ</em> (red, with <em>σ</em> = 0.1), the distribution is concentrated at <em>F̅</em> = 0, while for low <em>σ</em> (green, with <em>σ</em> = 0.006), the distribution is extended to large negative values, even after a large number of generations.</p>
+<span>doi:10.1371/journal.pone.0000434.g003</span></div><a id="article1.body1.sec3.p2" name="article1.body1.sec3.p2"></a><p>Let us study the relationship between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em> Here <em>V<sub>ip</sub></em> is defined as variance from the distribution <em>p</em>(<em>F; genotype</em>), i.e., over individuals with the same genotype. As the distribution <em>p</em> depends on each individual with different genotype, the variance changes accordingly. Naturally, the top individual has a smaller variance, and the individual with lower fitness has a larger variance. As a measure of <em>V<sub>ip</sub></em>, we used either the average of the variance over all individuals or the variance of phenotype from a gene network that is located closest to the peak in the distribution <em>P</em>(<em>F̅</em>). Both estimates of <em>V<sub>ip</sub></em> do not differ much, and the following conclusion is drawn in both cases. <em>V<sub>g</sub></em>, on the other hand, is simply the variance of the distribution <em>P</em>(<em>F̅</em>), i.e., over individuals having different genotypes present.</p>
+<a id="article1.body1.sec3.p3" name="article1.body1.sec3.p3"></a><p>The relationship between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em> thus evaluated is plotted in <a href="#pone-0000434-g004">Fig. 4</a>. We find that both the variances decrease through the evolutionary time course when <em>σ&gt;σ<sub>c</sub></em>, where we note:</p>
+<div class="figure" id="pone-0000434-g004"><div class="img"><a name="pone-0000434-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Relationship between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub>. </em><em>V<sub>g</sub></em> is computed from <em>P</em>(<em>F̅</em>) at each generation, and <em>V<sub>ip</sub></em> by averaging the variance of <em>p</em>(<em>F; gene</em>) over all existing individuals.</span></strong></p><a id="article1.body1.sec3.fig4.caption1.p1" name="article1.body1.sec3.fig4.caption1.p1"></a><p>(We also checked by using the variance for such gene network that gives the peak fitness value in <em>P</em>(<em>F̅</em>), but the overall relationship is not altered). Plotted points are over 200 generations. For <em>σ</em>&gt;<em>σ<sub>c</sub></em>≈.02, both decrease with generations.</p>
+<span>doi:10.1371/journal.pone.0000434.g004</span></div><a id="article1.body1.sec3.p4" name="article1.body1.sec3.p4"></a><p>(i) <em>V<sub>ip</sub></em>&gt;<em>V<sub>g</sub></em> for <em>σ&gt;σ<sub>c</sub></em>.</p>
+<a id="article1.body1.sec3.p5" name="article1.body1.sec3.p5"></a><p>(ii) <em>V<sub>g</sub></em>∝<em>V<sub>ip</sub></em> during the evolutionary time course under a fixed noise strength <em>σ</em>(&gt;<em>σ<sub>c</sub></em>) and a fixed mutation rate. As <em>σ</em> is lowered toward <em>σ<sub>c</sub></em>, <em>V<sub>g</sub></em> increases so that it approaches <em>V<sub>ip</sub></em>.</p>
+<a id="article1.body1.sec3.p6" name="article1.body1.sec3.p6"></a><p>(iii) <em>V<sub>g</sub></em>≈<em>V<sub>ip</sub></em> at <em>σ≈σ<sub>c</sub></em>, where error catastrophe occurs.</p>
+<a id="article1.body1.sec3.p7" name="article1.body1.sec3.p7"></a><p>In other words, the fittest networks maintaining a sharp distribution around the peak dominate only when <em>V<sub>ip</sub></em>&gt;<em>V<sub>g</sub></em> is satisfied. As <em>σ</em> is decreased to <em>σ<sub>c</sub></em>, <em>V<sub>ip</sub></em> approaches <em>V<sub>g</sub></em>, error catastrophe occurs and a considerable fraction of low-fitness mutants accumulates. Hence, the relationships proposed theoretically assuming evolutionary stability of a two-variable distribution function <em>P</em>(<em>x = phenotype, a = genotype</em>) is confirmed. Here, without introducing phenomenological assumptions, the three relationships are observed in a general stochastic gene-network model.</p>
+<a id="article1.body1.sec3.p8" name="article1.body1.sec3.p8"></a><p>Why didn't the system maintain the highest fitness state under small phenotypic noise <em>σ&lt;σ<sub>c</sub></em>? To study the difference in dynamics evolved for different values of <em>σ</em>, we choose the top individual (network) that has evolved at <em>σ</em> = <em>σ</em><sub>0</sub>, and place it under a different noise strength <em>σ</em> = <em>σ</em>′. In <a href="#pone-0000434-g005">Fig. 5</a>, we have plotted the fraction of runs giving rise to <em>F</em> = 0 under such circumstance. As shown, the successful fraction decreases when <em>σ</em>′ goes beyond <em>σ</em><sub>0</sub>. In other words, the network evolved under a given noise strength successfully reaches the target gene expression up to that critical noise level, while it begins to fail doing so at a higher noise strength. Accordingly, the distribution <em>p</em>(<em>F; gene</em>) extends to lower values in fitness, when a network evolved under small phenotypic noise is developed under a higher noise level. On the other hand, the network evolved under high level noise maintains a high fitness value, even when the noise is lowered.</p>
+<div class="figure" id="pone-0000434-g005"><div class="img"><a name="pone-0000434-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Dependence of the fraction of the runs that reach the target expression pattern. Networks that had the top fitness value under noise <em>σ</em> were simulated at a different noise <em>σ′.</em></span></strong></p><a id="article1.body1.sec3.fig5.caption1.p1" name="article1.body1.sec3.fig5.caption1.p1"></a><p>We first generate a network as a result of evolution over 200 generations under the noise strength <em>σ</em>, and select such network <em>J<sub>ij</sub></em> that has the top fitness value. Then we simulate this network under new noise strength <em>σ</em>′ from the initial condition −1,−1,…,−1 over 10000 runs, to check how many of them reach the target pattern (i.e., <em>x<sub>i</sub></em>&gt;0 for <em>i</em> = 1 to 8). Plotted is the fraction of such runs against the noise strength <em>σ</em>′. Different color corresponds to the value of the original noise strength <em>σ</em> used for the evolution of the network.</p>
+<span>doi:10.1371/journal.pone.0000434.g005</span></div><a id="article1.body1.sec3.p9" name="article1.body1.sec3.p9"></a><p>Next we study the basin structure of attractors in the present system. Note that an orbit of the network with the highest fitness, starting from the prescribed initial condition, is within the basin of attraction for an attractor corresponding to the target state (<em>x<sub>i</sub></em>&gt;0 for <em>i</em> = 1,…,<em>k</em>). Hence the basin of attraction for this target attractor is expected to be larger for the dynamics evolved under higher level noise. We have simulated the dynamics (1) for the evolved fittest network under zero noise, starting from a variety of initial conditions over the entire phase space, and measured the distribution of <em>F</em> at each attractor. The distribution is shown in <a href="#pone-0000434-g006">Fig. 6</a> (Due to the symmetry against <em>x<sub>j</sub></em> = 1↔<em>x<sub>j</sub></em> = −1 in the model, the distribution is symmetric around <em>F</em> = −<em>k</em>/2 when all initial conditions are taken. In fact, by starting from <em>x<sub>i</sub></em> = 1 for all <em>i</em>, the orbit reaches an attractor <em>x<sub>j</sub></em>&lt;0 for <em>j</em> = 1,…,<em>k</em>, resulting in <em>F</em> = −<em>k</em>). For the network evolved under <em>σ&gt;σ<sub>c</sub></em>, the distribution has a sharp peak at <em>F</em> = 0 (and <em>F</em> = −<em>k</em> due to the symmetry), with more than 40% attraction to each. On the other hand, for the networks evolved under <em>σ&lt;σ<sub>c</sub></em>, the peak height at <em>F</em>~0 is very small, i.e., the basin for the attractor with <em>F</em> = 0 is tiny. There exist many small peaks corresponding to attractors with −<em>k</em>&lt;<em>F</em>&lt;0, having similar sizes of basin volumes. In fact, the basin volumes for attractors with −<em>k</em>&lt;<em>F</em>&lt;0 grow as <em>σ</em> is decreased, and are dominant for <em>σ&lt;σ<sub>c.</sub></em></p>
+<div class="figure" id="pone-0000434-g006"><div class="img"><a name="pone-0000434-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>Distribution of the fitness value when the initial condition for <em>x<sub>j</sub></em> is not fixed at −1, but is distributed over [−1,1]</span></strong></p><a id="article1.body1.sec3.fig6.caption1.p1" name="article1.body1.sec3.fig6.caption1.p1"></a><p>. We choose the evolved network as in <a href="#pone-0000434-g005">Fig. 5</a>, and for each network we take 10000 initial conditions, and simulated the dynamics (1) without noise to measure the fitness value <em>F</em> after the system reached an attractor (as the temporal average 400&lt;<em>t</em>&lt;500). The histogram is plotted with a bin size 0.1.</p>
+<span>doi:10.1371/journal.pone.0000434.g006</span></div>
+<h4>Dynamic Origin of Robust Evolution</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>The difference in the basin structure suggested by <a href="#pone-0000434-g006">Fig. 6</a> is schematically displayed in <a href="#pone-0000434-g007">Fig. 7</a>. For the network evolved under <em>σ&gt;σ<sub>c</sub></em> there is a large, smooth attraction to the target state, while for the dynamics evolved under <em>σ&lt;σ<sub>c</sub></em>, the phase space is split into small basins. Let us consider the distance between the basin boundaries from a “target orbit” starting from −1,…,−1 and reaching <em>x<sub>i</sub></em>&gt;0 (for 1≤<em>i</em>≤<em>k</em>) which is defined by Δ here. The distance Δ remains small for the dynamics evolved under a low noise strength <em>σ&lt;σ<sub>c</sub></em>, and increases for those evolved under a higher noise. It is interesting to note that evolution influences the basin structure globally over the phase space, although the fitness condition is applied locally to an orbit starting from a specific initial condition.</p>
+<div class="figure" id="pone-0000434-g007"><div class="img"><a name="pone-0000434-g007" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g007&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g007"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g007&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g007/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g007/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g007/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g007/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g007.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g007/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g007/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g007.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 7.  <span>Schematic representation of the basin structure, represented as a process of climbing down a potential landscape.</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>Δ is the magnitude of perturbation to jump over the barrier to a different attractor from the target. Smooth landscape is evolved under high level noise (above), and rugged landscape is evolved under low level noise (below).</p>
+<span>doi:10.1371/journal.pone.0000434.g007</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>The results in <a href="#pone-0000434-g005">Fig. 5</a> and <a href="#pone-0000434-g006">Fig. 6</a> imply that the gene regulation networks that operate and evolve under noisy environment exhibit qualitatively different dynamics compared to those subjected to low level noise. In our model, the fitness of an individual changes when its gene expression <em>x<sub>j</sub></em> for <em>j</em> = 1,…,<em>k</em> changes its sign. Recall that the fixed point solution <em>x<sub>i</sub></em> = <em>tanh</em>(Σ<em><sub>j</sub>J<sub>ij</sub>x<sub>j</sub></em>) changes its sign when Σ<em><sub>j</sub>J<sub>ij</sub>x<sub>j</sub></em> in the sigmoid function changes its sign. This change may occur during the developmental dynamics by noise, and we call such points in the phase space ‘turning points’. When an orbit of eq.(1) passes over turning points, <em>x<sub>j</sub></em> takes a negative value for some <em>j</em> (for 1≤<em>i</em>≤<em>k</em>) at the attractor (see <a href="#pone-0000434-g008">Fig. 8</a> for schematic representation). Since there are many variables for gene expression and the values of <em>J<sub>ij</sub></em> are distributed over −1 and 1, the term <em>tanh</em>(Σ<em><sub>j</sub>J<sub>ij</sub>x<sub>j</sub></em>) changes its sign at several points in the phase space {<em>x<sub>j</sub></em>} generally. Hence there can be many turning points in the phase space. The fittest network with <em>F̅</em>≈0 chooses such orbits having no turning points within the noise range from the original orbit. An orbit from the fittest individual evolved under low-level noise encounters many turning points when subjected to noisy environment.</p>
+<div class="figure" id="pone-0000434-g008"><div class="img"><a name="pone-0000434-g008" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g008&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000434" data-uri="info:doi/10.1371/journal.pone.0000434.g008"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.g008&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g008/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g008/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g008/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g008/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g008.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000434.g008/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000434.g008/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000434.g008.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 8.  <span>Schematic representation of an orbit in the phase space.</span></strong></p><a id="article1.body1.sec3.sec1.fig2.caption1.p1" name="article1.body1.sec3.sec1.fig2.caption1.p1"></a><p>The solid curve is an original orbit from the initial condition (I) to the target attractor (T). Dashed curves are orbits perturbed by noise. When orbits encounter turning points, they escape the original basin of attraction and may be caught in another attractor. Mutations, on the other hand, are able to move the position of turning points.</p>
+<span>doi:10.1371/journal.pone.0000434.g008</span></div><a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>The average distance between the turning points and an orbit that has reached the target gene expression pattern is estimated by the distance Δ defined above. Recall that the distance Δ is small for the dynamics evolved under a low noise strength. Such dynamics, if perturbed by a higher level of noise, are easily caught in the turning points, which explains the behavior shown in <a href="#pone-0000434-g005">Fig. 5</a>.</p>
+<a id="article1.body1.sec3.sec1.p4" name="article1.body1.sec3.sec1.p4"></a><p>Let us now discuss the relationship between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em>. Noise disturbs an orbit so that it may go across the basin boundary (turning points) with some probability. We denote the standard deviation of the location of the orbit due to noise as <em>δ<sub>p</sub></em>, which is proportional to the noise strength <em>σ</em>. Since the distance between the orbit and the basin boundary is deviated by <em>δ<sub>p</sub></em>, and the fitness value drops when the orbit crosses the basin boundary, the variance <em>V<sub>ip</sub></em> is estimated to be proportional to (<em>δ<sub>p</sub></em>/Δ)<sup>2</sup>.</p>
+<a id="article1.body1.sec3.sec1.p5" name="article1.body1.sec3.sec1.p5"></a><p>Next, we discuss how the mutation in the network influences the dynamics. When the network is altered, i.e., a path is added or removed as a result of mutation in <em>J<sub>ij</sub></em>, there exists a variation of the order of <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000434.e010&amp;representation=PNG" class="inline-graphic"></span> in the threshold function term in eq.(1). This leads to a deviation of the location of turning points (or basin boundary). We denote this deviation as <em>δ<sub>g</sub></em>, which increases with the mutation rate. The variance <em>V<sub>g</sub></em> is estimated to be proportional to (<em>δ<sub>g</sub></em>/Δ)<sup>2</sup>, with the same proportion coefficient as that between <em>V<sub>ip</sub></em> and (<em>δ<sub>g</sub></em>/Δ)<sup>2</sup>.</p>
+<a id="article1.body1.sec3.sec1.p6" name="article1.body1.sec3.sec1.p6"></a><p>Under the presence of noise, there is a selective pressure to avoid the turning points (basin boundaries) that exist within the distance <em>δ<sub>p</sub></em> from the “target” orbit. This leads to an increase in Δ. However, if <em>δ<sub>p</sub></em> is larger than <em>δ<sub>p</sub></em>, the memory of this distance between the target and the boundaries will not be propagated to the next generation, due to large perturbation to the original network by the mutation. Hence increase in Δ (i.e., increase in robustness) is expected only if <em>δ<sub>p</sub>&gt;δ<sub>g</sub></em>. Since <em>δ<sub>p</sub></em> and <em>δ<sub>g</sub></em> increase with the noise strength <em>σ</em> and the mutation rate <em>µ</em> respectively, there exists a critical noise strength <em>σ<sub>c</sub></em> beyond which this inequality is satisfied. From the relationship between <em>δ<sub>p,g</sub></em> and <em>V<sub>ip,g</sub></em>, the condition for robust evolution is rewritten as <em>V<sub>ip</sub>&gt;V<sub>g</sub></em>.</p>
+<a id="article1.body1.sec3.sec1.p7" name="article1.body1.sec3.sec1.p7"></a><p>When the condition <em>V<sub>ip</sub>&gt;V<sub>g</sub></em> (i.e., <em>σ&gt;σ<sub>c</sub></em>) is satisfied, the system increases Δ during evolution. We have computed the temporal evolution of basin distribution. With generations, the distribution evolves from the pattern at a low level noise in <a href="#pone-0000434-g007">Fig. 7</a>, to that at large <em>σ</em> characterized by enhanced peak at <em>F</em> = 0. Accordingly Δ increases with generations. Recall that <em>V<sub>ip</sub></em>~(<em>δ<sub>p</sub></em>/Δ)<sup>2</sup>, and <em>V<sub>g</sub></em>~(<em>δ<sub>g</sub></em>/Δ)<sup>2</sup>, both variances decrease with generations, while <em>V<sub>ip</sub>/V<sub>g</sub></em> is kept constant.</p>
+
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>We have demonstrated the inequality and proportionality between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em>, through numerical evolution experiment of a gene network. As phenotypic noise is decreased and the inequality <em>V<sub>ip</sub>&gt;V<sub>g</sub></em> is broken, low-fitness mutants are no longer eliminated. This is because the mutants fail to reach the target gene expression pattern, by crossing the boundary of the basin of attraction to the target. When the amplitude of the noise is larger, on the other hand, the networks of the dynamics with a large basin volume for the target attractor are selected and thus mutants with lower fitness are removed successively through the selection process. Hence noise increases developmental robustness through evolution, together with genetic robustness.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>Although we used a specific example to demonstrate the relationship between <em>V<sub>ip</sub></em> and <em>V<sub>g</sub></em> and the error catastrophe, we expect this relationship to be generally applicable to systems satisfying the following conditions:</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>(i) Fitness is determined through developmental dynamics.</p>
+<a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4"></a><p>(ii) Developmental dynamics is sufficiently complex so that its orbit, when deviated by noise, may fail to reach the state with the highest fitness.</p>
+<a id="article1.body1.sec4.p5" name="article1.body1.sec4.p5"></a><p>(iii) There is effective equivalence between mutation and noise in the developmental dynamics with regards to phenotype change.</p>
+<a id="article1.body1.sec4.p6" name="article1.body1.sec4.p6"></a><p>Note that the present system as well as the previous cell model<a href="#pone.0000434-Kaneko3">[18]</a> satisfies these conditions. The condition (i) is straightforward in our model, and the condition (ii) is satisfied because of the complex dynamics having many turning points in the phase space. Noise in developmental dynamics sometimes perturbs an orbit to cross the basin boundary so as to escape from attraction to the target gene expression pattern, while a mutation in the network may also induce such failure, by shifting basin boundaries. Hence the condition (iii) is satisfied.</p>
+<a id="article1.body1.sec4.p7" name="article1.body1.sec4.p7"></a><p>When developmental process fails due to phenotypic noise, the fitness function takes a low value. Evolution under noise acts to prevent such failure within the range of noise. On the other hand, due to the condition (iii), mutation may also lead to such lethality. When the effect of mutation goes beyond the range given by the phenotypic noise, mutants with very low fitness values begin to accumulate. Hence there appears a threshold level of phenotypic noise below which low-fitness (or deleterious) mutants accumulate (or threshold mutation rate beyond which such mutants accumulate). In this sense, we expect that for robust evolution, the inequality <em>V<sub>g</sub>&lt;V<sub>ip</sub></em> must be satisfied in order for the low-fitness mutants to be eliminated. Violation of the inequality leads to accumulation of low-fitness (or deleterious) mutants, a phenomenon known as error catastrophe<a href="#pone.0000434-Eigen1">[28]</a>. Only under the presence of noise in the developmental process, systems acquire robustness through evolution. In other words, developmental robustness to stochasticity in gene expression implies genetic robustness to mutation. Quantitative analyses of stochasticity in protein abundance during the laboratory evolution of bacteria are possible <a href="#pone.0000434-Sato1">[17]</a>, <a href="#pone.0000434-Mayo1">[36]</a>. By carefully measuring the variation <em>V<sub>g</sub></em> of given phenotype in mutants, and comparing it with that of isogenic bacteria, <em>V<sub>ip</sub></em>, one can examine the validity of our conclusion between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em>.</p>
+<a id="article1.body1.sec4.p8" name="article1.body1.sec4.p8"></a><p>It is worthwhile to mention that in a class of theoretical models, fitness landscape is given as an explicit continuous function of a gene sequence (e.g., energy function in a spin glass<a href="#pone.0000434-Mezard1">[37]</a>), where a minute change in sequence does not lead to a drastic change in fitness. On the other hand, in a system satisfying (i) and (ii), a small change in genotype (e.g., a single change in the network path) may result in a large drop in fitness, since fitness is determined after the developmental dynamics. Indeed, there may appear mutants with very low fitness values from an individual with a high fitness value, only by a single change of a path in the network. Such deleterious mutations are also observed in nature<a href="#pone.0000434-Futuyma1">[27]</a>.</p>
+<a id="article1.body1.sec4.p9" name="article1.body1.sec4.p9"></a><p>It is interesting to note that a larger basin of attraction to a target attractor (with the highest fitness value) is formed through a mutation and selection process. As a result, dynamics over the entire phase space are simplified to those having only a few attractors, even though the fitness function is given locally without scanning over the entire phase space. When the time-course is represented as a motion along a potential surface, our results suggest that the potential landscape becomes smoother and simpler through evolution, and loses ruggedness after generations. Indeed, existence of such global attraction in an actual gene network has recently been reported in yeast cell-cycle<a href="#pone.0000434-Li1">[38]</a>.</p>
+<a id="article1.body1.sec4.p10" name="article1.body1.sec4.p10"></a><p>Such smooth landscape was also studied in protein folding<a href="#pone.0000434-Abe1">[39]</a>, <a href="#pone.0000434-Onuchic1">[40]</a>. Saito et al.<a href="#pone.0000434-Saito1">[41]</a> observed an evolutionary process from a rugged to the so-called funnel-like landscape in an interacting spin system abstracting protein folding dynamics. Under a general framework of statistical mechanics<a href="#pone.0000434-Nishimori1">[42]</a>, a relationship between the degree of variance in coupling coefficients <em>J<sub>ij</sub></em> between spins (corresponding to <em>V<sub>g</sub></em>) and the temperature (i.e., phenotypic noise for spin <em>x<sub>i</sub></em>, corresponding to <em>V<sub>ip</sub></em>) is formulated. Such relationship may be relevant to understand the relationships between <em>V<sub>g</sub></em> and <em>V<sub>ip</sub></em> in our study.</p>
+<a id="article1.body1.sec4.p11" name="article1.body1.sec4.p11"></a><p>According to established Fisher's theorem on natural selection, evolution speed of phenotype is proportional to the phenotypic variance by genetic variation, <em>V<sub>g</sub></em> <a href="#pone.0000434-Fisher1">[25]</a>, <a href="#pone.0000434-Edwards1">[26]</a>, <a href="#pone.0000434-Futuyma1">[27]</a>. The demonstrated proportionality between <em>V<sub>ip</sub></em> and <em>V<sub>g</sub></em> then suggests that the evolution speed is proportional to the isogenic phenotypic fluctuation, as is also supported by an experiment on bacterial evolution in a laboratory<a href="#pone.0000434-Sato1">[17]</a> and confirmed by simulations of a reaction network model of a growing cell<a href="#pone.0000434-Kaneko3">[18]</a>.</p>
+<a id="article1.body1.sec4.p12" name="article1.body1.sec4.p12"></a><p>Isogenic phenotypic fluctuation is related to phenotypic plasticity, which is a degree of phenotype change in a different environment. Positive roles of phenotypic plasticity in evolution have been discussed<a href="#pone.0000434-Kirschner1">[20]</a>, <a href="#pone.0000434-WestEberhard1">[43]</a>, <a href="#pone.0000434-Ancel2">[44]</a>, <a href="#pone.0000434-Callahan1">[45]</a>. Since susceptibility to the environmental change and the phenotypic fluctuation are positively correlated according to the fluctuation-response relationship[16,46.47], our present results on the relationship between phenotypic fluctuations and evolution imply, inevitably, a relationship between phenotypic plasticity and evolution akin to genetic assimilation proposed by Waddington<a href="#pone.0000434-Waddington1">[22]</a>.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000434"></div><a name="pone.0000434.s001" id="pone.0000434.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000434.s001">Text S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Derivation of General Relationship on Fluctuations. Mathematical derivation on general relationships on phenotypic variances is presented.</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000434.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.05 MB PDF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>I would like to thank Chikara Furusawa, Koichi Fujimoto, Masashi Tachikawa, Shuji Ishihara, Katsuhiko Sato, Tetsuya Yomo, Philippe Marcq, Uri Alon, and Satoshi Sawai for stimulating discussion.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: KK. Performed the experiments: KK. Analyzed the data: KK. Contributed reagents/materials/analysis tools: KK. Wrote the paper: KK.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000434-Barkai1" id="pone.0000434-Barkai1"></a>Barkai N, Leibler S (1997) Robustness in simple biochemical networks. Nature 913–917.  <ul class="find" data-citedArticleID="950516" data-doi="10.1038/43199"><li><a href="http://dx.doi.org/10.1038/43199" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+in+simple+biochemical+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+in+simple+biochemical+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000434-Alon1" id="pone.0000434-Alon1"></a>Alon U, Surette MG, Barkai N, Leibler S (1999) Robustness in bacterial chemotaxis, Nature 168–171.  <ul class="find" data-citedArticleID="950506" data-doi="10.1038/16483"><li><a href="http://dx.doi.org/10.1038/16483" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+in+bacterial+chemotaxis%2C" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+in+bacterial+chemotaxis%2C%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000434-Wagner1" id="pone.0000434-Wagner1"></a>Wagner A (2000) Robustness against mutations in genetic networks of yeast. Nature Genetics, 355–361.  <ul class="find" data-citedArticleID="950590"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Robustness+against+mutations+in+genetic+networks+of+yeast.&amp;auth=&amp;atitle=Robustness+against+mutations+in+genetic+networks+of+yeast." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+against+mutations+in+genetic+networks+of+yeast." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+against+mutations+in+genetic+networks+of+yeast.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000434-Ciliberti1" id="pone.0000434-Ciliberti1"></a>Ciliberti S, Martin OC, Wagner A (2007) Robustness can Evolve Gradually in Complex Regulatory Gene Networks with Varying Topology. PLOS Computational Biology, e15.  <ul class="find" data-citedArticleID="950520" data-doi="10.1371/journal.pcbi.0030015"><li><a href="http://dx.doi.org/10.1371/journal.pcbi.0030015" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Robustness+can+Evolve+Gradually+in+Complex+Regulatory+Gene+Networks+with+Varying+Topology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Robustness+can+Evolve+Gradually+in+Complex+Regulatory+Gene+Networks+with+Varying+Topology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000434-deVisser1" id="pone.0000434-deVisser1"></a>de Visser JAGM, et al.  (2003) Evolution and detection of genetic robustness. <em>Evolution</em> 1959–1972.  <ul class="find" data-citedArticleID="950596" data-doi="10.1111/j.0014-3820.2003.tb00377.x"><li><a href="http://dx.doi.org/10.1111/j.0014-3820.2003.tb00377.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+and+detection+of+genetic+robustness." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+and+detection+of+genetic+robustness.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000434-Spudich1" id="pone.0000434-Spudich1"></a>Spudich JL, Koshland DE Jr (1976) Non-genetic individuality: chance in the single cell. <em>Nature</em>  262: 467–471.  <ul class="find" data-citedArticleID="950584" data-doi="10.1038/262467a0"><li><a href="http://dx.doi.org/10.1038/262467a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Non-genetic+individuality%3A+chance+in+the+single+cell." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Non-genetic+individuality%3A+chance+in+the+single+cell.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000434-Elowitz1" id="pone.0000434-Elowitz1"></a>Elowitz MB, Levine AJ, Siggia ED, Swain PS (2002) Stochastic Gene Expression in a Single Cell <em>Science</em> 1183.  <ul class="find" data-citedArticleID="950526" data-doi="10.1126/science.1070919"><li><a href="http://dx.doi.org/10.1126/science.1070919" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stochastic+Gene+Expression+in+a+Single+Cell" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stochastic+Gene+Expression+in+a+Single+Cell%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000434-Hasty1" id="pone.0000434-Hasty1"></a>Hasty J, Pradines J, Dolnik M, Collins JJ (2000) Noise-based switches and amplifiers for gene expression. <em>Proc. Natl. Acad. Sci. USA</em>  97: 2075–2080.  <ul class="find" data-citedArticleID="950538" data-doi="10.1073/pnas.040411297"><li><a href="http://dx.doi.org/10.1073/pnas.040411297" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Noise-based+switches+and+amplifiers+for+gene+expression." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Noise-based+switches+and+amplifiers+for+gene+expression.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000434-Furusawa1" id="pone.0000434-Furusawa1"></a>Furusawa C, Suzuki T, Kashiwagi A, Yomo T, Kaneko K (2005) Ubiquity of Log-normal Distributions in Intra-cellular Reaction Dynamics. <em>BIOPHYSICS</em>  1: 25–31.  <ul class="find" data-citedArticleID="950530" data-doi="10.2142/biophysics.1.25"><li><a href="http://dx.doi.org/10.2142/biophysics.1.25" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Ubiquity+of+Log-normal+Distributions+in+Intra-cellular+Reaction+Dynamics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Ubiquity+of+Log-normal+Distributions+in+Intra-cellular+Reaction+Dynamics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000434-BarEven1" id="pone.0000434-BarEven1"></a>Bar-Even A, et al.  (2006) Noise in protein expression scales with natural protein abundance. Nature Genetics  38: 636–643.  <ul class="find" data-citedArticleID="950514" data-doi="10.1038/ng1807"><li><a href="http://dx.doi.org/10.1038/ng1807" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Noise+in+protein+expression+scales+with+natural+protein+abundance." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Noise+in+protein+expression+scales+with+natural+protein+abundance.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000434-Kaern1" id="pone.0000434-Kaern1"></a>Kaern M, Elston TC, Blake WJ, Collins JJ (2005) Stochasticity in gene expression: from theories to phenotypes. Nat. Rev. Genet.  6: 451–464.  <ul class="find" data-citedArticleID="950544" data-doi="10.1038/nrg1615"><li><a href="http://dx.doi.org/10.1038/nrg1615" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stochasticity+in+gene+expression%3A+from+theories+to+phenotypes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stochasticity+in+gene+expression%3A+from+theories+to+phenotypes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000434-Ueda1" id="pone.0000434-Ueda1"></a>Ueda M, Sako Y, Tanaka T, Devreotes P, Yanagida T (2001) Single-molecule analysis of chemotactic signaling in Dictyostelium cells. <em>Science</em>  294: 864–867.  <ul class="find" data-citedArticleID="950586" data-doi="10.1126/science.1063951"><li><a href="http://dx.doi.org/10.1126/science.1063951" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Single-molecule+analysis+of+chemotactic+signaling+in+Dictyostelium+cells." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Single-molecule+analysis+of+chemotactic+signaling+in+Dictyostelium+cells.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000434-Kashiwagi1" id="pone.0000434-Kashiwagi1"></a>Kashiwagi A, Urabe I, Kaneko K, Yomo T (2006) Adaptive response of a gene network to environmental changes by attractor selection. Plos One,  1: e49.  <ul class="find" data-citedArticleID="950552" data-doi="10.1371/journal.pone.0000049"><li><a href="http://dx.doi.org/10.1371/journal.pone.0000049" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Adaptive+response+of+a+gene+network+to+environmental+changes+by+attractor+selection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Adaptive+response+of+a+gene+network+to+environmental+changes+by+attractor+selection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000434-Sawai1" id="pone.0000434-Sawai1"></a>Sawai S, Thomason PA, Cox EC (2005) An autoregulatory circuit for long-range self-organization in Dictyostelium cell populations. <em>Nature</em> 323–326.  <ul class="find" data-citedArticleID="950578" data-doi="10.1038/nature03228"><li><a href="http://dx.doi.org/10.1038/nature03228" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+autoregulatory+circuit+for+long-range+self-organization+in+Dictyostelium+cell+populations." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+autoregulatory+circuit+for+long-range+self-organization+in+Dictyostelium+cell+populations.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000434-Kaneko1" id="pone.0000434-Kaneko1"></a>Kaneko K, Yomo T (1999) Isologous diversification for robust development of cell society. <em>J. Theor. Biol</em> 243–256.  <ul class="find" data-citedArticleID="950546" data-doi="10.1006/jtbi.1999.0952"><li><a href="http://dx.doi.org/10.1006/jtbi.1999.0952" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Isologous+diversification+for+robust+development+of+cell+society." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Isologous+diversification+for+robust+development+of+cell+society.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">16.
+              </span><a name="pone.0000434-Kaneko2" id="pone.0000434-Kaneko2"></a>Kaneko K (2006) <em>Life: An Introduction to Complex Systems Biology</em>, Springer  <ul class="find" data-citedArticleID="950548" data-doi="10.1007/978-3-540-32667-0_2"><li><a href="http://dx.doi.org/10.1007/978-3-540-32667-0_2" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Life%3A+An+Introduction+to+Complex+Systems+Biology%2C+Springer" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Life%3A+An+Introduction+to+Complex+Systems+Biology%2C+Springer%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">17.
+              </span><a name="pone.0000434-Sato1" id="pone.0000434-Sato1"></a>Sato K, Ito Y, Yomo T, Kaneko K (2003) On the Relation between Fluctuation and Response in Biological Systems. <em>Proc. Nat. Acad. Sci. USA</em>  100: 14086–14090.  <ul class="find" data-citedArticleID="950576" data-doi="10.1073/pnas.2334996100"><li><a href="http://dx.doi.org/10.1073/pnas.2334996100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=On+the+Relation+between+Fluctuation+and+Response+in+Biological+Systems." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22On+the+Relation+between+Fluctuation+and+Response+in+Biological+Systems.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000434-Kaneko3" id="pone.0000434-Kaneko3"></a>Kaneko K, Furusawa C (2006) An evolutionary relationship between genetic variation and phenotypic fluctuation <em>J. Theo. Biol</em> 78–86.  <ul class="find" data-citedArticleID="950550" data-doi="10.1016/j.jtbi.2005.08.029"><li><a href="http://dx.doi.org/10.1016/j.jtbi.2005.08.029" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+evolutionary+relationship+between+genetic+variation+and+phenotypic+fluctuation" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+evolutionary+relationship+between+genetic+variation+and+phenotypic+fluctuation%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000434-Ancel1" id="pone.0000434-Ancel1"></a>Ancel LW, Fontana W (2002) Plasticity, Evolvability, and Modularity in RNA. <em>J. Experimental Zoology</em> 242–283.  <ul class="find" data-citedArticleID="950508" data-doi="10.1002/1097-010x(20001015)288:3<242::aid-jez5&gt;3.0.co;2-o"><li><a href="http://dx.doi.org/10.1002/1097-010x(20001015)288:3<242::aid-jez5&gt;3.0.co;2-o" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Plasticity%2C+Evolvability%2C+and+Modularity+in+RNA." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Plasticity%2C+Evolvability%2C+and+Modularity+in+RNA.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000434-Kirschner1" id="pone.0000434-Kirschner1"></a>Kirschner MW, Gerhart JC (2005) <em>The Plausbility of Life</em>, Yale Univ. Press  <ul class="find" data-citedArticleID="950554"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+Plausbility+of+Life%2C+Yale+Univ.+Press&amp;auth=&amp;atitle=The+Plausbility+of+Life%2C+Yale+Univ.+Press" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Plausbility+of+Life%2C+Yale+Univ.+Press" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Plausbility+of+Life%2C+Yale+Univ.+Press%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000434-Schmalhausen1" id="pone.0000434-Schmalhausen1"></a>Schmalhausen II (1949) <em>Factors of Evolution: The theory of Stabilizing Selection</em> (Univ. of Chicago Press, Chicago) (reprinted 1986)  <ul class="find" data-citedArticleID="950580"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Factors+of+Evolution%3A+The+theory+of+Stabilizing+Selection+%28Univ.+of+Chicago+Press%2C+Chicago%29+%28reprinted+1986%29&amp;auth=&amp;atitle=Factors+of+Evolution%3A+The+theory+of+Stabilizing+Selection+%28Univ.+of+Chicago+Press%2C+Chicago%29+%28reprinted+1986%29" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Factors+of+Evolution%3A+The+theory+of+Stabilizing+Selection+%28Univ.+of+Chicago+Press%2C+Chicago%29+%28reprinted+1986%29" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Factors+of+Evolution%3A+The+theory+of+Stabilizing+Selection+%28Univ.+of+Chicago+Press%2C+Chicago%29+%28reprinted+1986%29%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000434-Waddington1" id="pone.0000434-Waddington1"></a>Waddington CH (1957) <em>The Strategy of the Genes</em>, Allen &amp; Unwin, London  <ul class="find" data-citedArticleID="950588"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=The+Strategy+of+the+Genes%2C+Allen+%26amp%3B+Unwin%2C+London&amp;auth=&amp;atitle=The+Strategy+of+the+Genes%2C+Allen+%26amp%3B+Unwin%2C+London" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Strategy+of+the+Genes%2C+Allen+%26amp%3B+Unwin%2C+London" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Strategy+of+the+Genes%2C+Allen+%26amp%3B+Unwin%2C+London%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000434-Wagner2" id="pone.0000434-Wagner2"></a>Wagner GP, Booth G, Bagheri-Chaichian H (1997) A population Genetic Theory of Canalization, Evolution329–347.  <ul class="find" data-citedArticleID="950592" data-doi="10.2307/2411105"><li><a href="http://dx.doi.org/10.2307/2411105" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+population+Genetic+Theory+of+Canalization%2C+Evolution" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+population+Genetic+Theory+of+Canalization%2C+Evolution%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000434-Siegal1" id="pone.0000434-Siegal1"></a>Siegal ML, Bergman A (2002) Waddington's canalization revisited: Developmental stability and evolution. Proc Nat. Acad. Sci. USA 10528–10532.  <ul class="find" data-citedArticleID="950582" data-doi="10.1073/pnas.102303999"><li><a href="http://dx.doi.org/10.1073/pnas.102303999" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Waddington%27s+canalization+revisited%3A+Developmental+stability+and+evolution." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Waddington%27s+canalization+revisited%3A+Developmental+stability+and+evolution.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000434-Fisher1" id="pone.0000434-Fisher1"></a>Fisher RA (1930)  (1958) <em>The Genetical Theory of Natural Selection</em>, Oxford Univ. Press  <ul class="find" data-citedArticleID="950528" data-doi="10.2307/2570330"><li><a href="http://dx.doi.org/10.2307/2570330" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Genetical+Theory+of+Natural+Selection%2C+Oxford+Univ.+Press" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Genetical+Theory+of+Natural+Selection%2C+Oxford+Univ.+Press%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">26.
+              </span><a name="pone.0000434-Edwards1" id="pone.0000434-Edwards1"></a>Edwards AWF (2000) <em>Foundations of mathematical genetics</em>, Cambridge University Press  <ul class="find" data-citedArticleID="950522" data-doi="10.1046/j.1365-2540.2000.0724c.x"><li><a href="http://dx.doi.org/10.1046/j.1365-2540.2000.0724c.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Foundations+of+mathematical+genetics%2C+Cambridge+University+Press" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Foundations+of+mathematical+genetics%2C+Cambridge+University+Press%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">27.
+              </span><a name="pone.0000434-Futuyma1" id="pone.0000434-Futuyma1"></a>Futuyma DJ (1986) <em>Evolutionary Biology</em> (Second edition), Sinauer Associates Inc., Sunderland  <ul class="find" data-citedArticleID="950532" data-doi="10.1046/j.1420-9101.1988.1010089.x"><li><a href="http://dx.doi.org/10.1046/j.1420-9101.1988.1010089.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolutionary+Biology+%28Second+edition%29%2C+Sinauer+Associates+Inc.%2C+Sunderland" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolutionary+Biology+%28Second+edition%29%2C+Sinauer+Associates+Inc.%2C+Sunderland%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000434-Eigen1" id="pone.0000434-Eigen1"></a>Eigen M, Schuster P (1979) <em>The Hypercycle</em>, Springer  <ul class="find" data-citedArticleID="950524" data-doi="10.1007/978-3-642-67247-7"><li><a href="http://dx.doi.org/10.1007/978-3-642-67247-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+Hypercycle%2C+Springer" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+Hypercycle%2C+Springer%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">29.
+              </span><a name="pone.0000434-Glass1" id="pone.0000434-Glass1"></a>Glass L, Kauffman SA (1973) The logical analysis of continuous, non-linear biochemical control networks. J. Theor. Biol 103–129.  <ul class="find" data-citedArticleID="950534" data-doi="10.1016/0022-5193(73)90208-7"><li><a href="http://dx.doi.org/10.1016/0022-5193(73)90208-7" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+logical+analysis+of+continuous%2C+non-linear+biochemical+control+networks." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+logical+analysis+of+continuous%2C+non-linear+biochemical+control+networks.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">30.
+              </span><a name="pone.0000434-Mjolsness1" id="pone.0000434-Mjolsness1"></a>Mjolsness E, Sharp DH, Reisnitz J (1991) A connectionist model of development. <em>J. Theor. Biol</em> 429–453.  <ul class="find" data-citedArticleID="950564" data-doi="10.1016/s0022-5193(05)80391-1"><li><a href="http://dx.doi.org/10.1016/s0022-5193(05)80391-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+connectionist+model+of+development." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+connectionist+model+of+development.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">31.
+              </span><a name="pone.0000434-SalazarCiudad1" id="pone.0000434-SalazarCiudad1"></a>Salazar-Ciudad I, Garcia-Fernandez J, Sole RV (2000) Gene networks capable of pattern formation: from induction to reaction-diffusion. <em>J. Theor. Biol</em> 587–603.  <ul class="find" data-citedArticleID="950572" data-doi="10.1006/jtbi.2000.2092"><li><a href="http://dx.doi.org/10.1006/jtbi.2000.2092" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Gene+networks+capable+of+pattern+formation%3A+from+induction+to+reaction-diffusion." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Gene+networks+capable+of+pattern+formation%3A+from+induction+to+reaction-diffusion.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">32.
+              </span><a name="pone.0000434-SalazarCiudad2" id="pone.0000434-SalazarCiudad2"></a>Salazar-Ciudad I, Newman SA, Sole RV (2001) Phenotypic and dynamical transitions in model genetic networks I. Evolution &amp; Development  3: 84.  <ul class="find" data-citedArticleID="950574" data-doi="10.1046/j.1525-142x.2001.003002084.x"><li><a href="http://dx.doi.org/10.1046/j.1525-142x.2001.003002084.x" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Phenotypic+and+dynamical+transitions+in+model+genetic+networks+I." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Phenotypic+and+dynamical+transitions+in+model+genetic+networks+I.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">33.
+              </span><a name="pone.0000434-Ishihara1" id="pone.0000434-Ishihara1"></a>Ishihara S, Kaneko K (2004) Magic number 7±2 in networks of threshold dynamics. <em>Phys. Rev. Lett</em> 058102.  <ul class="find" data-citedArticleID="950542" data-doi="10.1103/physrevlett.94.058102"><li><a href="http://dx.doi.org/10.1103/physrevlett.94.058102" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Magic+number+7%26%23xb1%3B2+in+networks+of+threshold+dynamics." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Magic+number+7%26%23xb1%3B2+in+networks+of+threshold+dynamics.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">34.
+              </span><a name="pone.0000434-Gomperts1" id="pone.0000434-Gomperts1"></a>Gomperts BD, Kramer IM, Tatham PER (2002) <em>Signal Transduction</em> (Academic Press Inc.)  <ul class="find" data-citedArticleID="950536" data-doi="10.1016/b978-012289631-6/50021-1"><li><a href="http://dx.doi.org/10.1016/b978-012289631-6/50021-1" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Signal+Transduction+%28Academic+Press+Inc.%29" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Signal+Transduction+%28Academic+Press+Inc.%29%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">35.
+              </span><a name="pone.0000434-Hertz1" id="pone.0000434-Hertz1"></a>Hertz J, Krogh A, Palmer RG (1991) <em>Introduction to the theory of neural computation</em> (Addison-Wesley)  <ul class="find" data-citedArticleID="950540" data-doi="10.1063/1.2810360"><li><a href="http://dx.doi.org/10.1063/1.2810360" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Introduction+to+the+theory+of+neural+computation+%28Addison-Wesley%29" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Introduction+to+the+theory+of+neural+computation+%28Addison-Wesley%29%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">36.
+              </span><a name="pone.0000434-Mayo1" id="pone.0000434-Mayo1"></a>Mayo AE, Setty Y, Shavit S, Zaslaver A, Alon U (2006) Plasticity of the cis-Regulatory Input Function of a Gene. PLOS Biology 555–561.  <ul class="find" data-citedArticleID="950560" data-doi="10.1371/journal.pbio.0040045"><li><a href="http://dx.doi.org/10.1371/journal.pbio.0040045" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Plasticity+of+the+cis-Regulatory+Input+Function+of+a+Gene." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Plasticity+of+the+cis-Regulatory+Input+Function+of+a+Gene.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">37.
+              </span><a name="pone.0000434-Mezard1" id="pone.0000434-Mezard1"></a> Mezard M, Parisi G, Virasoro MA, editors.  (1987) <em>Spin Glass Theory and Beyond</em> (World Sci. Pub.)  <ul class="find" data-citedArticleID="950562" data-doi="10.1063/1.2811676"><li><a href="http://dx.doi.org/10.1063/1.2811676" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Spin+Glass+Theory+and+Beyond+%28World+Sci.+Pub.%29" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Spin+Glass+Theory+and+Beyond+%28World+Sci.+Pub.%29%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">38.
+              </span><a name="pone.0000434-Li1" id="pone.0000434-Li1"></a>Li F, Long T, Lu Y, Ouyang Q, Tang C (2004) The yeast cell-cycle network is robustly designed.  Proc. Nat. Acad. Sci. USA 10040.  <ul class="find" data-citedArticleID="950558" data-doi="10.1073/pnas.0305937101"><li><a href="http://dx.doi.org/10.1073/pnas.0305937101" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=The+yeast+cell-cycle+network+is+robustly+designed.+" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22The+yeast+cell-cycle+network+is+robustly+designed.+%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">39.
+              </span><a name="pone.0000434-Abe1" id="pone.0000434-Abe1"></a>Abe H, Go. N (1980) Noninteracting local-structure model of folding and unfolding transition in globular proteins. I. Formulation. Biopolymers 1013.  <ul class="find" data-citedArticleID="950504" data-doi="10.1002/bip.1981.360200511"><li><a href="http://dx.doi.org/10.1002/bip.1981.360200511" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Noninteracting+local-structure+model+of+folding+and+unfolding+transition+in+globular+proteins.+I.+Formulation." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Noninteracting+local-structure+model+of+folding+and+unfolding+transition+in+globular+proteins.+I.+Formulation.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">40.
+              </span><a name="pone.0000434-Onuchic1" id="pone.0000434-Onuchic1"></a>Onuchic JNJN, Wolynes PG, Luthey-Schulten Z, Socci ND (1995) Toward an Outline of the Topography of a Realistic Protein-Folding Funnel. Proc. Nat. Acad. Sci. USA 3626.  <ul class="find" data-citedArticleID="950568" data-doi="10.1073/pnas.92.8.3626"><li><a href="http://dx.doi.org/10.1073/pnas.92.8.3626" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Toward+an+Outline+of+the+Topography+of+a+Realistic+Protein-Folding+Funnel." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Toward+an+Outline+of+the+Topography+of+a+Realistic+Protein-Folding+Funnel.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">41.
+              </span><a name="pone.0000434-Saito1" id="pone.0000434-Saito1"></a>Saito S, Sasai M, Yomo T (1997) Evolution of the folding ability of proteins through functional selection. Proc Nat. Acad. Sci. USA 11324–11328.  <ul class="find" data-citedArticleID="950570" data-doi="10.1073/pnas.94.21.11324"><li><a href="http://dx.doi.org/10.1073/pnas.94.21.11324" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Evolution+of+the+folding+ability+of+proteins+through+functional+selection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Evolution+of+the+folding+ability+of+proteins+through+functional+selection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">42.
+              </span><a name="pone.0000434-Nishimori1" id="pone.0000434-Nishimori1"></a>Nishimori H (2001) <em>Statistical Physics of Spin Glasses and Information Processing: An Introduction</em>,. Oxford Univ. Press.   <ul class="find-nolinks"></ul></li><li><span class="label">43.
+              </span><a name="pone.0000434-WestEberhard1" id="pone.0000434-WestEberhard1"></a>West-Eberhard MJ (2003) <em>Developmental Plasticity and Evolution</em>,. Oxford Univ. Press.   <ul class="find-nolinks"></ul></li><li><span class="label">44.
+              </span><a name="pone.0000434-Ancel2" id="pone.0000434-Ancel2"></a>Ancel LW (2000) Undermining the Baldwin expediting effect: does phenotypic plasticity accelerate evolution? <em>Theor Popul Biol</em> 307–19.  <ul class="find" data-citedArticleID="950510" data-doi="10.1006/tpbi.2000.1484"><li><a href="http://dx.doi.org/10.1006/tpbi.2000.1484" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Undermining+the+Baldwin+expediting+effect%3A+does+phenotypic+plasticity+accelerate+evolution%3F" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Undermining+the+Baldwin+expediting+effect%3A+does+phenotypic+plasticity+accelerate+evolution%3F%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">45.
+              </span><a name="pone.0000434-Callahan1" id="pone.0000434-Callahan1"></a>Callahan HS, Pigliucci M, Schlichting CD (1997) Developmental phenotypic plasticity: where ecology and evolution meet molecular biology. <em>Bioessays</em>  19: 519–525.  <ul class="find" data-citedArticleID="950518" data-doi="10.1002/bies.950190611"><li><a href="http://dx.doi.org/10.1002/bies.950190611" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Developmental+phenotypic+plasticity%3A+where+ecology+and+evolution+meet+molecular+biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Developmental+phenotypic+plasticity%3A+where+ecology+and+evolution+meet+molecular+biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">46.
+              </span><a name="pone.0000434-Ao1" id="pone.0000434-Ao1"></a>Ao P (2005) Laws in Darwinian Evolutionary Theory, Physics of Life Reviews117–156.  <ul class="find" data-citedArticleID="950512" data-doi="10.1016/j.plrev.2005.03.002"><li><a href="http://dx.doi.org/10.1016/j.plrev.2005.03.002" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Laws+in+Darwinian+Evolutionary+Theory%2C+Physics+of+Life+Reviews" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Laws+in+Darwinian+Evolutionary+Theory%2C+Physics+of+Life+Reviews%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">47.
+              </span><a name="pone.0000434-Kubo1" id="pone.0000434-Kubo1"></a>Kubo R, Toda M, Hashitsume N (1985) <em>Statistical Physics II</em>: (English translation; Springer)  <ul class="find" data-citedArticleID="950556" data-doi="10.1007/978-3-642-96701-6"><li><a href="http://dx.doi.org/10.1007/978-3-642-96701-6" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Statistical+Physics+II%3A+%28English+translation%3B+Springer%29" target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Statistical+Physics+II%3A+%28English+translation%3B+Springer%29%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.XML" value="93692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.PDF" value="222194"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e001.PNG" value="3562"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e001.TIF" value="25348"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e002.PNG" value="466"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e002.TIF" value="20984"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e003.PNG" value="2332"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e003.TIF" value="23972"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e004.PNG" value="817"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e004.TIF" value="21540"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e005.PNG" value="3268"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e005.TIF" value="25032"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e006.PNG" value="821"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e006.TIF" value="21520"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e007.PNG" value="4953"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e007.TIF" value="26776"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e008.PNG" value="7610"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e008.TIF" value="28740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e009.PNG" value="2389"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e009.TIF" value="23900"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g001.PNG_L" value="164579"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g001.PNG_M" value="99114"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g001.PNG_S" value="6337"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g001.TIF" value="360976"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g001.PNG_I" value="81662"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g002.PNG_L" value="53447"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g002.PNG_M" value="70557"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g002.PNG_S" value="3246"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g002.TIF" value="122332"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g002.PNG_I" value="28537"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g003.PNG_L" value="24481"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g003.PNG_M" value="67167"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g003.PNG_S" value="2789"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g003.TIF" value="119694"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g003.PNG_I" value="27069"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g004.PNG_L" value="126151"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g004.PNG_M" value="138105"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g004.PNG_S" value="4084"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g004.TIF" value="214692"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g004.PNG_I" value="54269"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g005.PNG_L" value="27774"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g005.PNG_M" value="51652"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g005.PNG_S" value="2776"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g005.TIF" value="134226"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g005.PNG_I" value="21812"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g006.PNG_L" value="55324"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g006.PNG_M" value="50837"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g006.PNG_S" value="2623"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g006.TIF" value="151830"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g006.PNG_I" value="21443"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g007.PNG_L" value="22926"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g007.PNG_M" value="29054"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g007.PNG_S" value="2107"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g007.TIF" value="42346"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g007.PNG_I" value="13055"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g008.PNG_L" value="35705"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g008.PNG_M" value="25897"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g008.PNG_S" value="2307"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g008.TIF" value="66874"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.g008.PNG_I" value="16861"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e010.PNG" value="1492"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.e010.TIF" value="22628"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000434.s001.PDF" value="48972"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000434&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000434" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000434&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000434&volume=&issue=&title=Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics&author_name=Kunihiko%20Kaneko&start_page=1&end_page=8" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000434" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434&amp;t=Evolution%20of%20Robustness%20to%20Noise%20and%20Mutation%20in%20Gene%20Expression%20Dynamics" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434&title=Evolution%20of%20Robustness%20to%20Noise%20and%20Mutation%20in%20Gene%20Expression%20Dynamics&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434&amp;title=Evolution%20of%20Robustness%20to%20Noise%20and%20Mutation%20in%20Gene%20Expression%20Dynamics" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000434&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Evolution of Robustness to Noise and Mutation in Gene Expression Dynamics';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000434';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Evolution%20of%20Robustness%20to%20Noise%20and%20Mutation%20in%20Gene%20Expression%20Dynamics http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000434" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000434" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Bacterial+evolution%22" title="Search for articles in the subject area:'Bacterial evolution'"><div class="flagText">Bacterial evolution</div></a>
+              <div data-categoryid="19721" data-articleid="23706"
+                   data-categoryname="Bacterial evolution"
+                   class="flagImage" title="Flag 'Bacterial evolution' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Evolutionary+developmental+biology%22" title="Search for articles in the subject area:'Evolutionary developmental biology'"><div class="flagText">Evolutionary developmental biology</div></a>
+              <div data-categoryid="34445" data-articleid="23706"
+                   data-categoryname="Evolutionary developmental biology"
+                   class="flagImage" title="Flag 'Evolutionary developmental biology' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Evolutionary+genetics%22" title="Search for articles in the subject area:'Evolutionary genetics'"><div class="flagText">Evolutionary genetics</div></a>
+              <div data-categoryid="17209" data-articleid="23706"
+                   data-categoryname="Evolutionary genetics"
+                   class="flagImage" title="Flag 'Evolutionary genetics' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="23706"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genetic+networks%22" title="Search for articles in the subject area:'Genetic networks'"><div class="flagText">Genetic networks</div></a>
+              <div data-categoryid="31807" data-articleid="23706"
+                   data-categoryname="Genetic networks"
+                   class="flagImage" title="Flag 'Genetic networks' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Mutation%22" title="Search for articles in the subject area:'Mutation'"><div class="flagText">Mutation</div></a>
+              <div data-categoryid="31809" data-articleid="23706"
+                   data-categoryname="Mutation"
+                   class="flagImage" title="Flag 'Mutation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Natural+selection%22" title="Search for articles in the subject area:'Natural selection'"><div class="flagText">Natural selection</div></a>
+              <div data-categoryid="34433" data-articleid="23706"
+                   data-categoryname="Natural selection"
+                   class="flagImage" title="Flag 'Natural selection' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Phenotypes%22" title="Search for articles in the subject area:'Phenotypes'"><div class="flagText">Phenotypes</div></a>
+              <div data-categoryid="40235" data-articleid="23706"
+                   data-categoryname="Phenotypes"
+                   class="flagImage" title="Flag 'Phenotypes' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=5232'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=6726'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=9550&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+<div class="block sidebar-comments">
+    <div class="header">
+        <h3>Comments</h3>
+    </div>
+      <p><a href="/annotation/listThread.action?root=18907">Updated Text S1</a><br>Posted by PLoS_ONE_Group</p>
+</div>
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>

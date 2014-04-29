@@ -1,0 +1,1222 @@
+
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+  <title>PLOS ONE: Probe Selection and Expression Index Computation of Affymetrix Exon Arrays</title>
+
+
+<link rel="stylesheet" type="text/css"  href="/css/global-min.css?v=izteQ6tu7kgsJZW_xmrYizvKiHM" />
+
+
+    <!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css"  href="/css/lte_ie7-min.css?v=3bykQUyQmReeuobVyPozcJ9LxRc" />
+    <![endif]-->
+
+
+<link rel="stylesheet" type="text/css"  href="/css/jquery-ui-min.css?v=eXDHTEJM0lIAmDe5k0I0Ad4nxNo" />
+
+
+<link rel="stylesheet" type="text/css"  href="/css/journal.css?v=T7ZVxJfgk9jNxLAJ2qHz1vZpgYU" />
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print-min.css?v=T5lb0B3q6EXBsuDluc5V5w+AkRc" />
+
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/js/www.plosone.org/24557.css" type="text/css"/>
+
+  <!--chartbeat -->
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <script>document.documentElement.className += ' js';</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+  <meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+  <meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+  <meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+  <meta name="searchHost" content="http://api.plos.org/search" />
+  <meta name="termsHost" content="http://api.plos.org/terms" />
+  <meta name="solrApiKey" content="plos"/>
+  <meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
+  <meta name="currentJournal" content="PLoSONE" />
+  <meta name="almRequestBatchSize" content="" />
+
+  <meta name="citation_publisher" content="Public Library of Science"/>
+  <meta name="citation_doi" content="10.1371/journal.pone.0000088"/>
+  <meta name="dc.identifier" content="10.1371/journal.pone.0000088" />
+
+    <meta name="citation_title" content="Probe Selection and Expression Index Computation of Affymetrix Exon Arrays"/>
+    <meta itemprop="name" content="Probe Selection and Expression Index Computation of Affymetrix Exon Arrays"/>
+
+      <meta name="citation_author" content="Yi Xing"/>
+            <meta name="citation_author_institution" content="Department of Statistics, Stanford University, Stanford, California, United States of America"/>
+            <meta name="citation_author_institution" content="Department of Internal Medicine, Roy J. and Lucille A. Carver College of Medicine, University of Iowa, Iowa City, Iowa, United States of America"/>
+      <meta name="citation_author" content="Karen Kapur"/>
+            <meta name="citation_author_institution" content="Department of Statistics, Stanford University, Stanford, California, United States of America"/>
+      <meta name="citation_author" content="Wing Hung Wong"/>
+            <meta name="citation_author_institution" content="Department of Statistics, Stanford University, Stanford, California, United States of America"/>
+
+    <meta name="citation_date" content="2006/12/20"/>
+
+  <meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0000088.pdf" />
+
+      <meta name="citation_journal_title" content="PLOS ONE" />
+    <meta name="citation_firstpage" content="e88"/>
+    <meta name="citation_issue" content="1"/>
+    <meta name="citation_volume" content="1"/>
+    <meta name="citation_issn" content="1932-6203"/>
+
+    <meta name="citation_journal_abbrev" content="PLoS ONE" />
+
+      <meta name="citation_reference" content="citation_title=Microarray data analysis: from disarray to consolidation and consensus.; citation_author=DB Allison; citation_author=X Cui; citation_author=GP Page; citation_author=M Sabripour; citation_journal_title=Nat Rev Genet; citation_volume=7; citation_number=1; citation_pages=55-65; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Quantitative monitoring of gene expression patterns with a complementary DNA microarray.; citation_author=M Schena; citation_author=D Shalon; citation_author=RW Davis; citation_author=PO Brown; citation_journal_title=Science; citation_volume=270; citation_number=2; citation_pages=467-470; citation_date=1995; " />
+      <meta name="citation_reference" content="citation_title=Parallel human genome analysis: microarray-based expression monitoring of 1000 genes.; citation_author=M Schena; citation_author=D Shalon; citation_author=R Heller; citation_author=A Chai; citation_author=PO Brown; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=93; citation_number=3; citation_pages=10614-10619; citation_date=1996; " />
+      <meta name="citation_reference" content="citation_title=Microarray platforms–comparisons and contrasts.; citation_author=G Hardiman; citation_journal_title=Pharmacogenomics; citation_volume=5; citation_number=4; citation_pages=487-502; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Applications of DNA microarrays in biology.; citation_author=RB Stoughton; citation_journal_title=Annu Rev Biochem; citation_volume=74; citation_number=5; citation_pages=53-82; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_title=Model-based analysis of oligonucleotide arrays: expression index computation and outlier detection.; citation_author=C Li; citation_author=WH Wong; citation_journal_title=Proc Natl Acad Sci U S A; citation_volume=98; citation_number=6; citation_pages=31-36; citation_date=2001; " />
+      <meta name="citation_reference" content="citation_title=Alternative splicing: new insights from global analyses.; citation_author=BJ Blencowe; citation_journal_title=Cell; citation_volume=126; citation_number=7; citation_pages=37-47; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=Mechanisms of alternative pre-messenger RNA splicing.; citation_author=DL Black; citation_journal_title=Annu Rev Biochem; citation_volume=72; citation_number=8; citation_pages=291-336; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=A genomic view of alternative splicing.; citation_author=B Modrek; citation_author=C Lee; citation_journal_title=Nat Genet; citation_volume=30; citation_number=9; citation_pages=13-19; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Analysis of alternative splicing with microarrays: successes and challenges.; citation_author=C Lee; citation_author=M Roy; citation_journal_title=Genome Biol; citation_volume=5; citation_number=10; citation_pages=231; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Genomewide analysis of mRNA processing in yeast using splicing-specific microarrays.; citation_author=TA Clark; citation_author=CW Sugnet; citation_author=M Ares; citation_journal_title=Science; citation_volume=296; citation_number=11; citation_pages=907-910; citation_date=2002; " />
+      <meta name="citation_reference" content="citation_title=Genome-wide survey of human alternative pre-mRNA splicing with exon junction microarrays.; citation_author=JM Johnson; citation_author=J Castle; citation_author=P Garrett-Engele; citation_author=Z Kan; citation_author=PM Loerch; citation_journal_title=Science; citation_volume=302; citation_number=12; citation_pages=2141-2144; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Detecting tissue-specific regulation of alternative splicing as a qualitative change in microarray data.; citation_author=K Le; citation_author=K Mitsouras; citation_author=M Roy; citation_author=Q Wang; citation_author=Q Xu; citation_journal_title=Nucleic Acids Res; citation_volume=32; citation_number=13; citation_pages=e180; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Revealing global regulatory features of mammalian alternative splicing using a quantitative microarray platform.; citation_author=Q Pan; citation_author=O Shai; citation_author=C Misquitta; citation_author=W Zhang; citation_author=AL Saltzman; citation_journal_title=Mol Cell; citation_volume=16; citation_number=14; citation_pages=929-941; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_number=15; " />
+      <meta name="citation_reference" content="citation_number=16; " />
+      <meta name="citation_reference" content="citation_title=Two-dimensional transcriptome profiling: identification of messenger RNA isoform signatures in prostate cancer from archived paraffin-embedded cancer specimens.; citation_author=HR Li; citation_author=J Wang-Rodriguez; citation_author=TM Nair; citation_author=JM Yeakley; citation_author=YS Kwon; citation_journal_title=Cancer Res; citation_volume=66; citation_number=17; citation_pages=4079-4088; citation_date=2006; " />
+      <meta name="citation_reference" content="citation_title=ASAP: the Alternative Splicing Annotation Project.; citation_author=C Lee; citation_author=L Atanelov; citation_author=B Modrek; citation_author=Y Xing; citation_journal_title=Nucleic Acids Res; citation_volume=31; citation_number=18; citation_pages=101-105; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=An essential role for HLA-DM in antigen presentation by class II major histocompatibility molecules.; citation_author=P Morris; citation_author=J Shaman; citation_author=M Attaya; citation_author=M Amaya; citation_author=S Goodman; citation_journal_title=Nature; citation_volume=368; citation_number=19; citation_pages=551-554; citation_date=1994; " />
+      <meta name="citation_reference" content="citation_title=Consequences of regulated pre-mRNA splicing in the immune system.; citation_author=KW Lynch; citation_journal_title=Nat Rev Immunol; citation_volume=4; citation_number=20; citation_pages=931-940; citation_date=2004; " />
+      <meta name="citation_reference" content="citation_title=Single molecule profiling of alternative pre-mRNA splicing.; citation_author=J Zhu; citation_author=J Shendure; citation_author=RD Mitra; citation_author=GM Church; citation_journal_title=Science; citation_volume=301; citation_number=21; citation_pages=836-838; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Prediction of the coding sequences of unidentified human genes. XVIII. The complete sequences of 100 new cDNA clones from brain which code for large proteins in vitro.; citation_author=T Nagase; citation_author=R Kikuno; citation_author=M Nakayama; citation_author=M Hirosawa; citation_author=O Ohara; citation_journal_title=DNA Res; citation_volume=7; citation_number=22; citation_pages=273-281; citation_date=2000; " />
+      <meta name="citation_reference" content="citation_title=Exploration, normalization, and summaries of high density oligonucleotide array probe level data.; citation_author=RA Irizarry; citation_author=B Hobbs; citation_author=F Collin; citation_author=YD Beazer-Barclay; citation_author=KJ Antonellis; citation_journal_title=Biostatistics; citation_volume=4; citation_number=23; citation_pages=249-264; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Stochastic models inspired by hybridization theory for short oligonucleotide arrays.; citation_author=Z Wu; citation_author=RA Irizarry; citation_journal_title=J Comput Biol; citation_volume=12; citation_number=24; citation_pages=882-893; citation_date=2005; " />
+      <meta name="citation_reference" content="citation_number=25; " />
+      <meta name="citation_reference" content="citation_number=26; " />
+      <meta name="citation_reference" content="citation_title=Expressed sequence tags: clean before using. Correspondence re: Z. Wang et al., computational analysis and experimental validation of tumor-associated alternative RNA splicing in human cancer.; citation_author=R Sorek; citation_author=O Basechess; citation_author=HM Safer; citation_journal_title=Cancer Res.; citation_volume=63; citation_number=27; citation_pages=655-657; citation_date=2003; " />
+      <meta name="citation_reference" content="citation_title=Strengths and weaknesses of EST-based prediction of tissue-specific alternative splicing.; citation_author=S Gupta; citation_author=D Zink; citation_author=B Korn; citation_author=M Vingron; citation_author=SA Haas; citation_journal_title=BMC Genomics; citation_volume=5; citation_number=28; citation_pages=72; citation_date=2004; " />
+
+  <link rel="canonical" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@plosone"/>
+    <meta name="twitter:title" content="Probe Selection and Expression Index Computation of Affymetrix Exon Arrays"/>
+    <meta name="twitter:description" content="BackgroundThere is great current interest in developing microarray platforms for measuring mRNA abundance at both gene level and exon level. The Affymetrix Exon Array is a new high-density gene expression microarray platform, with over six million probes targeting all annotated and predicted exons in a genome. An important question for the analysis of exon array data is how to compute overall gene expression indexes. Because of the complexity of the design of exon array probes, this problem is different in nature from summarizing gene-level expression from traditional 3&prime; expression arrays.Methodology/Principal FindingsIn this manuscript, we use exon array data from 11 human tissues to study methods for computing gene-level expression. We showed that for most genes there is a subset of exon array probes having highly correlated intensities across multiple samples. We suggest that these probes could be used as reliable indicators of overall gene expression levels. We developed a probe selection algorithm to select such a subset of highly correlated probes for each gene, and computed gene expression indexes using the selected probes.Conclusions/SignificanceOur results demonstrate that probe selection improves gene expression estimates from exon arrays. The selected probes can be used in future analyses of other exon array datasets to compute gene expression indexes."/>
+      <meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0000088.g006"/>
+
+  <meta property="og:title" content="Probe Selection and Expression Index Computation of Affymetrix Exon Arrays" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" />
+
+ <!--end articleInfoX-->
+
+  <link rel="pingback" href="http://www.plosone.org/pingback" />
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+  <link rel="home" title="home" href="/"/>
+  <link rel="alternate" type="application/rss+xml"
+        title="PLOS ONE: New Articles"
+        href="http://www.plosone.org/article/feed"/>
+</head>
+<body>
+
+  <div id="page-wrap">
+    <div id="topbanner" class="cf">
+
+<!-- Div for the ad at the top of journal home page-->
+<div class="center">
+  <div class="title">Advertisement</div>
+  <iframe id='a3ac9da4' name='a3ac9da4'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=345&amp;cb=2509'
+    frameborder='0' scrolling='no' width='730' height='90'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a3ac9da4&amp;cb=4721'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=345&amp;cb=1103&amp;n=a3ac9da4'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+</div>    </div>
+
+    <div id="pagehdr-wrap">
+      <div id="pagehdr">
+        <div id="user" class="nav">
+          <ul>
+            <li><a href="http://www.plos.org">plos.org</a></li>
+            <li><a href="https://register.plos.org/ambra-registration/register.action">create account</a></li>
+            <li class="btn-style"><a
+              href="/user/secure/secureRedirect.action?goTo=%2Farticle%2FfetchArticle.action%3FarticleURI%3Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0000088">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/images/logo.png" alt="PLOS ONE"></a>
+        </div>
+
+<div id="nav-main" class="nav">
+  <ul>
+        <li id="mn-01"><a href="/taxonomy" class="areas-link">Subject Areas</a></li>
+    <li id="mn-02"><a href="javascript:void(0);">For Authors</a>
+      <div class="submenu" style="width: 540px; margin-left: -300px;">
+        <div class="block">
+          <div class="submit-script">
+            <h3>Submit your Manuscript</h3>
+            <ul>
+              <li>Fair, rigorous peer review</li>
+              <li>Broad scope and wide reach</li>
+            </ul>
+            <a href="/static/submissionInstructions" class="btn">get started</a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/static/publish">Why Publish with PLOS ONE</a></li>
+            <li><a href="/static/publication">Publication Criteria</a></li>
+            <li><a href="/static/editorial">Editorial Policies</a></li>
+            <li><a href="/static/guidelines">Preparing A Manuscript</a></li>
+            <li><a href="/static/figureGuidelines">Figure and Table Guidelines</a></li>
+          <li><a href="/static/supportingInformation">Supporting Information Guidelines</a></li>
+            <li><a href="/static/submissionInstructions">Submitting a Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <li id="mn-03"><a href="javascript:void(0);">About Us</a>
+      <div class="submenu" style="width:248px; margin-left:-30px;">
+        <div class="menu">
+          <ul>
+            <li><a href="/static/information">Journal Information</a></li>
+            <li><a href="/static/edboard">Editorial Board</a></li>
+            <li><a href="/static/reviewerGuidelines">Reviewer Guidelines</a></li>
+            <li><a href="/static/almInfo">Article-Level Metrics</a></li>
+            <li><a href="/static/license">Open-Access License</a></li>
+            <li><a href="/static/downloads">Media Downloads</a></li>
+            <li><a href="/static/commentGuidelines">Guidelines for Comments</a></li>
+            <li><a href="/static/corrections">Corrections</a></li>
+            <li><a href="/static/help">Help Using this Site</a></li>
+            <li><a href="/static/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+<div id="db">
+  <form name="searchForm" action="/search/simple?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000088" method="get" >
+<input type="hidden" name="from" value="globalSimpleSearch" id="from"/><input type="hidden" name="filterJournals" value="PLoSONE" id="filterJournals"/>    <fieldset>
+      <legend>Search</legend>
+      <label for="search">Search</label>
+      <div class="wrap">
+        <input id="search" type="text" name="query" placeholder="Search">
+        <input type="image" alt="SEARCH" src="/images/icon.search.gif">
+      </div>
+    </fieldset>
+  </form>
+    <a id="advSearch" href="/search/advanced?noSearchFlag=true&amp;query=&amp;articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000088&filterJournals=PLoSONE">advanced search</a>
+</div></div>
+
+      </div>
+      <!-- pagehdr-->
+    </div>
+    <!-- pagehdr-wrap -->
+
+  <!--body and html tags gets closed in global_footer.ftl-->
+<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div id="pagebdy-wrap">
+  <div id="pagebdy">
+
+    <div id="article-block" class="cf">
+
+<div class="article-meta cf">
+  <ul id="almSignPost" style="display: none;"></ul>
+  <div class="article-type">
+    <span class="type oa">Open Access</span>
+      <span class="type pr">Peer-Reviewed</span>
+  </div>
+</div>
+
+<div class="header" id="hdr-article">
+
+<div class="article-kicker">
+      <span id="article-type-heading">
+        Research Article
+      </span>
+</div>  <h1 property="dc:title" datatype="" rel="dc:type" href="http://purl.org/dc/dcmitype/Text">
+    Probe Selection and Expression Index Computation of Affymetrix Exon Arrays
+  </h1>
+
+  <ul class="authors">
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Yi Xing, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliations:
+                  Department of Statistics, Stanford University, Stanford, California, United States of America, 
+                  Department of Internal Medicine, Roy J. and Lucille A. Carver College of Medicine, University of Iowa, Iowa City, Iowa, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Karen Kapur, 
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              
+
+                <p>Affiliation:
+                  Department of Statistics, Stanford University, Stanford, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+      <li>
+
+
+        <span rel="dc:creator" class="author">
+          <span class="person" property="foaf:name" typeof="foaf:Person">
+            Wing Hung Wong
+              <span class="corresponding">mail</span>
+          </span>
+        </span>
+
+          <div class="author_meta">
+            <div class="author_inner">
+
+
+              
+              <p><span class="email">*</span>To whom correspondence should be addressed. E-mail: <a href="mailto:whwong@stanford.edu">whwong@stanford.edu</a>
+            </p>
+
+                <p>Affiliation:
+                  Department of Statistics, Stanford University, Stanford, California, United States of America
+                </p>
+
+
+              <span class="close">X</span>
+
+            </div>
+          </div>
+      </li>
+  </ul>
+  <ul class="date-doi-line">
+    <li>Published: December 20, 2006</li>
+    <li>DOI: 10.1371/journal.pone.0000088</li>
+  </ul>
+
+
+</div><!--end header-->
+<div class="main cf" id="pjax-container">
+  
+
+<div class="nav items-5" id="nav-article">
+  <ul>
+  <li>
+        <span class="active" name="article">Article</span>
+  </li>
+  <li>
+      <a href="/article/authors/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" name="authors">About the Authors</a>
+  </li>
+  <li>
+      <a href="/article/metrics/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" name="metrics">Metrics</a>
+  </li>
+  <li>
+      <a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" name="comments">Comments</a>
+  </li>
+  <li>
+      <a href="/article/related/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" name="related">Related Content</a>
+  </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  var selected_tab = "article";
+</script>
+  <div id="figure-thmbs" class="carousel cf">
+    <div class="wrapper">
+      <div class="slider">
+              <div class="item">
+                <a href="#pone-0000088-g001" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g001" title="Figure 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000088-g002" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g002" title="Figure 2">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g002&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000088-g003" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g003" title="Figure 3">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g003&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000088-g004" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g004" title="Figure 4">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g004&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000088-g005" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g005" title="Figure 5">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g005&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000088-g006" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g006" title="Figure 6">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g006&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#pone-0000088-t001" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.t001" title="Table 1">
+                  <span class="thmb-wrap">
+                    <img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.t001&representation=PNG_I" alt="">
+                  </span>
+                </a>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-col">
+    <div class="nav" id="nav-article-page">
+      <ul>
+        <li class="nav-col-comments"><a href="/article/comments/info%3Adoi%2F10.1371%2Fjournal.pone.0000088">Reader Comments (0)</a></li>
+          <li id="nav-figures"><a data-doi="info:doi/10.1371/journal.pone.0000088" >Figures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+
+
+
+
+
+
+
+<div class="abstract"><a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a><h2>Abstract</h2>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1"></a><p>There is great current interest in developing microarray platforms for measuring mRNA abundance at both gene level and exon level. The Affymetrix Exon Array is a new high-density gene expression microarray platform, with over six million probes targeting all annotated and predicted exons in a genome. An important question for the analysis of exon array data is how to compute overall gene expression indexes. Because of the complexity of the design of exon array probes, this problem is different in nature from summarizing gene-level expression from traditional 3′ expression arrays.</p>
+
+
+<h3>Methodology/Principal Findings</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1"></a><p>In this manuscript, we use exon array data from 11 human tissues to study methods for computing gene-level expression. We showed that for most genes there is a subset of exon array probes having highly correlated intensities across multiple samples. We suggest that these probes could be used as reliable indicators of overall gene expression levels. We developed a probe selection algorithm to select such a subset of highly correlated probes for each gene, and computed gene expression indexes using the selected probes.</p>
+
+
+<h3>Conclusions/Significance</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1"></a><p>Our results demonstrate that probe selection improves gene expression estimates from exon arrays. The selected probes can be used in future analyses of other exon array datasets to compute gene expression indexes.</p>
+
+</div>
+
+
+<div class="articleinfo"><p><strong>Citation: </strong>Xing Y, Kapur K, Wong WH (2006) Probe Selection and Expression Index Computation of Affymetrix Exon Arrays. PLoS ONE 1(1):
+          e88.
+            doi:10.1371/journal.pone.0000088</p><p><strong>Academic Editor: </strong>Janet Kelso, Max Planck Institute for Evolutionary Anthropology, Germany</p><p><strong>Received:</strong> September 11, 2006; <strong>Accepted:</strong> October 23, 2006; <strong>Published:</strong> December 20, 2006</p><p><strong>Copyright:</strong> © 2006 Xing et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Funding: </strong>NIH HG02341, NSF DMS0505732</p><p><strong>Competing interests:</strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div id="section1" class="section"><a id="s1" name="s1" toc="s1" title="Introduction"></a><h3>Introduction</h3><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a><p>Microarrays have become one of the most popular technologies for profiling gene expression since its invention more than a decade ago <a href="#pone.0000088-Allison1">[1]</a>–<a href="#pone.0000088-Schena2">[3]</a>. Expression microarrays use probes targeting specific genes based on nucleotide sequence complementarity to quantitatively measure mRNA levels for tens of thousands of genes. A variety of gene expression microarray platforms are used today, including spotted cDNA arrays, Affymetrix GeneChip arrays, Agilent ink-jet arrays and Illumina long-oligonucleotide bead-based arrays <a href="#pone.0000088-Hardiman1">[4]</a>, <a href="#pone.0000088-Stoughton1">[5]</a>. These microarray platforms differ in their probe design, hybridization protocol, labeling and production methods <a href="#pone.0000088-Hardiman1">[4]</a>, <a href="#pone.0000088-Stoughton1">[5]</a>. Despite their differences, traditional gene expression microarray platforms share a common goal–obtaining a single value for each gene representing its overall mRNA abundance in a given sample. For example, the traditional Affymetrix GeneChips use one or more probesets consisting of 11 perfect-match (PM) and 11 mismatch (MM) probes targeting the 3′ end of the mRNA sequence. The signals from multiple probes are summarized into a single value as the gene expression index <a href="#pone.0000088-Li1">[6]</a>. Throughout this manuscript we will refer to the traditional Affymetrix GeneChips, such as the Affymetrix human U133-PLUS2 arrays as the 3′ expression arrays.</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a><p>Recently, global analyses of mammalian transcriptomes suggest that alternative splicing is an important and prevalent form of transcript variation in many species <a href="#pone.0000088-Blencowe1">[7]</a>. Alternative splicing refers to the production of multiple transcript isoforms from a single gene, due to variations in pre-mRNA splicing <a href="#pone.0000088-Black1">[8]</a>. Genome-wide analyses of expressed sequences indicate that 40–60% of human genes have multiple splice forms <a href="#pone.0000088-Modrek1">[9]</a>. Since alternative splicing has been largely ignored throughout the probe design of traditional expression microarrays, these findings have motivated the development of a new generation of microarray platforms, which use probes targeting individual exons to interrogate pre-mRNA splicing at the genomic scale <a href="#pone.0000088-Lee1">[10]</a>–<a href="#pone.0000088-Pan1">[14]</a>.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a><p>Last year, Affymetrix released ‘exon arrays’, a high-density microarray platform with a total of ~6.5 million probes targeting all the annotated and predicted exons in the genome. Exon arrays differ significantly from 3′ expression arrays in the number and placement of the oligonucleotide probes. In the 3′ expression arrays a probeset consisting of 11 probes is selected from the 3′ end of the mRNA sequence. In contrast, in exon arrays 4 probes are selected from each putative exonic region (<a href="#pone-0000088-g001">Figure 1</a>, modified from Affymetrix Exon Array design datasheet <a href="#pone.0000088-1">[15]</a>). Many genes have more than a hundred probes on the exon array. Exon array probesets are classified based on the level of annotational confidence. Briefly, probes targeting exons with RefSeq mRNA evidence are regarded as the most confident and are referred to as “core probes”. Probes targeting exons with EST evidence are referred to as “extended probes”. Probes targeting putative computational exon predictions have the least confidence and are referred to as “full probes”. For further details, see the Affymetrix technical documentation for Exon Array probe annotations <a href="#pone.0000088-2">[16]</a>.</p>
+<div class="figure" id="pone-0000088-g001"><div class="img"><a name="pone-0000088-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g001.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 1.  <span>Probe design of exon arrays.</span></strong></p><a id="article1.body1.sec1.fig1.caption1.p1" name="article1.body1.sec1.fig1.caption1.p1"></a><p>(<strong>A</strong>) Exon-intron structure of a gene.</p>
+<a id="article1.body1.sec1.fig1.caption1.p2" name="article1.body1.sec1.fig1.caption1.p2"></a><p>Black boxes represent exons. Gray boxes represent introns. Introns are not drawn to scale.</p>
+<a id="article1.body1.sec1.fig1.caption1.p3" name="article1.body1.sec1.fig1.caption1.p3"></a><p>(<strong>B</strong>) Probe design of exon arrays.</p>
+<a id="article1.body1.sec1.fig1.caption1.p4" name="article1.body1.sec1.fig1.caption1.p4"></a><p>Exon arrays have four probes targeting each exon of the gene.</p>
+<a id="article1.body1.sec1.fig1.caption1.p5" name="article1.body1.sec1.fig1.caption1.p5"></a><p>(<strong>C</strong>) Probe design of 3′ expression arrays.</p>
+<a id="article1.body1.sec1.fig1.caption1.p6" name="article1.body1.sec1.fig1.caption1.p6"></a><p>Probes on 3′ expression arrays target 3′ end of the mRNA sequence.</p>
+<span>doi:10.1371/journal.pone.0000088.g001</span></div><a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a><p>An important question for the analysis of exon array data is how to compute overall gene expression indexes. In the context of exon array analyses, we define the overall gene expression index as the total abundance of all molecules transcribed from a single gene, including various alternative splice forms, alternative 5′ transcripts, alternative poly A transcripts, etc. The whole-transcriptome amplification protocol and probe design of exon arrays allow a more precise monitoring of such overall gene expression indexes. The gene-level expression estimates from Exon Arrays can be used in standard high-level analyses of microarrays (such as clustering). They also provide the basis for subsequent analyses of RNA alternative splicing <a href="#pone.0000088-Li2">[17]</a>. However, because of the complexity of the design of exon array probes, this problem is different in nature from summarizing gene-level expression from traditional 3′ expression arrays. In this manuscript, we present our probe-level analysis of the exon array data, and describe a probe selection strategy for computing gene expression indexes from Exon Arrays.</p>
+</div>
+
+<div id="section2" class="section"><a id="s2" name="s2" toc="s2" title="Materials and Methods"></a><h3>Materials and Methods</h3>
+<h4>Processing of probe-level data</h4>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a><p>We downloaded the public Human Exon 1.0 ST Array tissue panel dataset (<a href="http://www.affymetrix.com/support/technical/sample_data/exon_array_data.affx">http://www.affymetrix.com/support/techni​cal/sample_data/exon_array_data.affx</a>) consisting of 11 human tissues (breast, cerebellum, heart, kidney, liver, muscle, pancreas, prostate, spleen, testes, and thyroid) each with three replicates. We normalized the data by sketch normalization using the Affymetrix Exon Array Computational Tool (ExACT) (<a href="http://www.affymetrix.com/products/software/specific/exact.affx">http://www.affymetrix.com/products/softw​are/specific/exact.affx</a>). For each gene (referred to as a ‘transcript cluster’ on the exon array platform), we calculated the Pearson correlation coefficient of the signal intensities of all possible pairs of probes across the 11 tissues (a total of 33 samples). We visualized the correlation matrix of the probe intensities as a heatmap using R (<a href="http:///www.r-project.org">http:///www.r-project.org</a>).</p>
+
+
+<h4>Probe selection algorithm</h4>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a><p>In this section, we describe an algorithm to automatically select a subset of core probes for each gene as the reliable indicators of overall gene expression. Although alternative splicing is prevalent in the human genome and occurs in nearly three quarters of multi-exon human genes, within each gene the majority of exons are still constitutively spliced <a href="#pone.0000088-Lee2">[18]</a>. We reason that the majority of probes targeting those constitutive exons show correlated intensities across various human tissues, and reflect the overall mRNA abundance of the gene. Therefore, our algorithm seeks to identify the largest subset of highly correlated probes.</p>
+<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a><p>Because the traditional Affymetrix GeneChips had 11 perfect-match probes in each probeset of a gene, we decided to select at least 11 probes for each gene on the exon array. If a gene had less than 11 core probes, we skipped probe selection and simply used all the core probes for computing gene expression indexes. The probe selection procedure is summarized below. Briefly, we calculated the Pearson correlation coefficient of the signal intensities of all probe pairs across the 11 tissues (a total of 33 samples). Using (1-Pearson correlation coefficient) as the distance metric, we performed average-linkage hierarchical clustering for all core probes. Next, we cut the clustering dendrogram at different heights <em>h</em> = (0.1, 0.2, 0.3…1.0), and calculated the size of the biggest subcluster under each cutoff, excluding probes from probesets with only one probe in the biggest subcluster. We chose a cutoff to achieve a balance between the size of the biggest subcluster and the average correlation within the biggest subcluster.</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3"></a><p>Exon Array probe selection algorithm:</p>
+
+
+<ol class="alpha-lower">
+
+<li>If the number of core probes is less than 11 for a transcript cluster, we select all the core probes.</li>
+
+<li>If the number of core probes is greater than 11:</li>
+
+<li>
+
+<ol class="alpha-lower">
+
+<li>We apply hierarchical clustering to the 11-tissue data for all core probes (distance metric: 1-Pearson correlation; average linkage clustering). We cut the clustering dendrogram at various heights <em>h</em> = (0.1, 0.2, 0.3…1.0) and calculate the size (<em>S</em>) of the biggest subcluster at each cutoff, excluding probesets with only 1 probe in the biggest cluster. A small <em>h</em> means that we cut the clustering dendrogram near its bottom, while a large <em>h</em> means that we cut the clustering dendrogram near its top. We choose the smallest <em>h</em> (<em>h</em>
+                           <sub>0</sub>) with the corresponding <em>S</em> (<em>S</em>
+                           <sub>0</sub>)&gt; = 11.</li>
+
+<li>If <em>h</em>
+                           <sub>0</sub>&gt; = 0.5, we choose <em>h<sub>final</sub>
+                           </em> = <em>h</em>
+                           <sub>0</sub>.</li>
+
+<li>If <em>h</em>
+                           <sub>0</sub>&lt; = 0.4, we choose the <em>h<sub>final</sub>
+                           </em> from <em>h</em>
+                           <sub>0</sub>, <em>h</em>
+                           <sub>0</sub>+0.1…0.4 to maximize <span class="inline-formula"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.e001&amp;representation=PNG" class="inline-graphic"></span>. Intuitively, this means if we want to increase the tree cutoff by 0.1, the size of the biggest subcluster needs to increase by at least 50%. We chose this number (50%) from our empirical analysis of exon array data in a number of genes.</li>
+
+<li>Cut the clustering dendrogram at <em>h<sub>final</sub>
+                           </em>, and select probes in the biggest subcluster, excluding probesets with only one core probe in the biggest subcluster.</li>
+
+</ol></li>
+
+</ol>
+
+<h4>Gene expression index computation</h4>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a><p>We computed the gene expression indexes for each gene across the 11 human tissues (a total of 33 samples), by fitting the probe level data to the Li-Wong model <a href="#pone.0000088-Li1">[6]</a>, implemented in the affy package of Bioconductor (<a href="http://www.bioconductor.org/">http://www.bioconductor.org/</a>).</p>
+<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a><p>We compiled a list of genes differentially expressed between liver and muscle based on 3′ expression array data. We downloaded the Affymetrix human U133-PLUS2 array dataset on the same tissue samples (<a href="http://www.affymetrix.com/support/technical/sample_data/exon_array_data.affx">http://www.affymetrix.com/support/techni​cal/sample_data/exon_array_data.affx</a>). We normalized the data (quantile-normalization) and computed the gene expression indexes (Li-Wong model <a href="#pone.0000088-Li1">[6]</a>) using dChip (<a href="http://biosun1.harvard.edu/complab/dchip/">http://biosun1.harvard.edu/complab/dchip​/</a>). To select differentially expressed genes, we required a probeset to have a fold change of at least 5, and an absolute difference in gene expression indexes of at least 200. We matched human U133-PLUS2 probesets and human Exon Array transcript clusters using the mapping provided by Affymetrix.</p>
+
+</div>
+
+<div id="section3" class="section"><a id="s3" name="s3" toc="s3" title="Results"></a><h3>Results</h3>
+<h4>Visualization of the probe-level data</h4>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a><p>Our heatmap visualization of the probe-level data reveals interesting patterns. <a href="#pone-0000088-g002">Figure 2</a> shows the heatmap plotted for two human genes, each with well-annotated gene structure and/or patterns of alternative splicing. Each cell of the heatmap reflects the Pearson correlation coefficient of two probes' intensities in 33 samples. In <a href="#pone-0000088-g002">Figure 2A</a>, we visualize the entire correlation matrix for all probes belonging to the gene HLA-DMB (transcript cluster 2950263), including 24 core probes and 28 extended probes. HLA-DMB has six exons and plays an important role in class II antigen presentation <a href="#pone.0000088-Morris1">[19]</a>. From the heatmap, it is apparent that about half of the probes of HLA-DMB are highly correlated with each other across the 11 human tissues (top right corner of the correlation matrix), while the remaining probes are very poorly correlated with other probes of this gene. It is interesting to note that the vast majority of core probes are located in the top right corner of the heatmap, suggesting that their intensities change coordinately across different samples. In contrast, most of the extended probes show poor correlation with each other and with the core probes, suggesting that they are mostly reflecting background noise and are poor indicators of overall gene expression. This is a typical pattern (i.e. core probes tend to be correlated) for the majority of genes on the exon array. In addition, core probes usually have much stronger signals than extended and full probes, consistent with the design that core probes target high-confidence exons in the genome. Taken together, these data suggest that extended and full probes are usually poor indicators of overall gene expression.</p>
+<div class="figure" id="pone-0000088-g002"><div class="img"><a name="pone-0000088-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g002&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g002"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g002&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g002/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g002/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g002/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g002/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g002.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g002/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g002/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g002.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 2.  <span>Heatmap visualization of exon array pairwise probe correlations.</span></strong></p><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a><p>(<strong>A</strong>) Heatmap visualization of probe intensities of HLA-DMB (transcript cluster 2950263).</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p2" name="article1.body1.sec3.sec1.fig1.caption1.p2"></a><p>Each cell of the heatmap shows the correlation of two probes in 11 tissues.</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p3" name="article1.body1.sec3.sec1.fig1.caption1.p3"></a><p>The top color bar indicates the probe type.</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p4" name="article1.body1.sec3.sec1.fig1.caption1.p4"></a><p>Core probes are colored in red.</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p5" name="article1.body1.sec3.sec1.fig1.caption1.p5"></a><p>Extended probes are colored in blue.</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p6" name="article1.body1.sec3.sec1.fig1.caption1.p6"></a><p>The signal intensities of core probes usually have a high correlation (the top right corner of the heatmap).</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p7" name="article1.body1.sec3.sec1.fig1.caption1.p7"></a><p>(<strong>B</strong>) Heatmap visualization of probe intensities of core probes in CD44 (transcript cluster 3326635).</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p8" name="article1.body1.sec3.sec1.fig1.caption1.p8"></a><p>Probes targeting the 5′ and 3′ regions (constitutive exons) of CD44 show highly correlated signals in 11 tissues (the top right corner of the heatmap).</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p9" name="article1.body1.sec3.sec1.fig1.caption1.p9"></a><p>(<strong>C</strong>) Heatmap visualization of probe intensities of core probes in CD44 (transcript cluster 3326635).</p>
+<a id="article1.body1.sec3.sec1.fig1.caption1.p10" name="article1.body1.sec3.sec1.fig1.caption1.p10"></a><p>Probes are ordered from top to bottom based on their genomic coordinates (5′ to 3′).</p>
+<span>doi:10.1371/journal.pone.0000088.g002</span></div><a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a><p>Can we simply take all the core probes of a gene to compute its expression indexes? The answer is no. Some core probes have low affinity and their intensities are largely saturated by background noise. Some core probes cross-hybridize to other gene targets. Some core probes target alternatively spliced regions of the genes. These probes are not good indicators of overall gene expression. To illustrate such effects, <a href="#pone-0000088-g002">Figure 2B</a> shows the correlation matrix of core probes of CD44 (transcript cluster 3326635). CD44 has 20 exons and its alternative splicing pattern has been well characterized <a href="#pone.0000088-Lynch1">[20]</a>, <a href="#pone.0000088-Zhu1">[21]</a>. The exons in the 5′ and 3′ regions of CD44 are constitutively spliced, while ten exons in the middle of the gene undergo extensive alternative splicing in various tissues and cancers. The heatmap (see <a href="#pone-0000088-g002">Figure 2B</a>) indicates a large group of probes with highly correlated intensities (the top right corner of the heatmap). There is a second group of correlated probes (between the center and the bottom left corner of the heatmap) with weaker correlation with the first group. Checking the exon array probe annotation through the Integrated Genome Browser (<a href="http://www.affymetrix.com/support/developer/tools/download_igb.affx">http://www.affymetrix.com/support/develo​per/tools/download_igb.affx</a>), we saw that the first group had probes targeting constitutively exons at the 5′ and 3′ regions of CD44, while the second group had probes targeting the alternative exons in the middle of CD44 transcripts (also see <a href="#pone-0000088-g002">Figure 2C</a>, in which CD44 probes were ordered based on their genomic coordinates). In addition, a few core probes (at the bottom left corner of the heatmap) are poorly correlated with all other core probes. Based on the probe-level data and our knowledge of CD44 alternative splicing, probes in the top right corner of the heatmap should be used for summarizing overall gene expression indexes.</p>
+<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a><p>Our exploration of the probe-level exon array data indicates the existence of a subset of exon array probes with highly correlated signals in multiple human tissues. These probes tend to have the highest annotational confidence (i.e. core probes) and target the constitutive exons of a gene.</p>
+
+
+<h4>Probe selection using the human tissue-panel dataset</h4>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a><p>We used our probe selection algorithm (see <a href="#s2">Materials and Methods</a>) to select probes from the 11-tissue exon array data. For the reasons stated in the previous section, we applied our probe selection algorithm to core probes of each gene. Using this procedure, we selected 44 core probes for CD44 (42% of its core probes), at the tree cutoff (<em>h<sub>final</sub>
+               </em>) of 0.1 (see <a href="#pone-0000088-g003">Figure 3</a>). These 44 core probes targeted the constitutive exons at the 5′ and 3′ ends of the CD44 transcripts. Core probes targeting middle exons of CD44 were not selected.</p>
+<div class="figure" id="pone-0000088-g003"><div class="img"><a name="pone-0000088-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g003&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g003"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g003&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g003/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g003/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g003/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g003/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g003.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g003/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g003/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g003.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 3.  <span>Hierarchical clustering of probe intensities of CD44 core probes.</span></strong></p><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a><p>Core probes of CD44 are clustered by average linkage hierarchical clustering based on their intensities in 11 tissues (a total of 33 samples).</p>
+<a id="article1.body1.sec3.sec2.fig1.caption1.p2" name="article1.body1.sec3.sec2.fig1.caption1.p2"></a><p>The distance metric is (1-Pearson correlation coefficient).</p>
+<a id="article1.body1.sec3.sec2.fig1.caption1.p3" name="article1.body1.sec3.sec2.fig1.caption1.p3"></a><p>A total of 44 core probes are selected when we cut the clustering dendrogram at <em>h</em> = 0.1 (indicated by the dashed horizontal line).</p>
+<span>doi:10.1371/journal.pone.0000088.g003</span></div><a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a><p>We applied our probe selection algorithm to 17056 transcript clusters with at least 11 core probes on the human Exon Array. Over the entire dataset, we selected 47.1% of core probes. On average, we selected 26.5 core probes for each transcript cluster. Considering the number of probes for each gene on the traditional Affymetrix GeneChips (typically 11 perfect-match probes), the selected exon array probes using our algorithm should be sufficient for computing gene expression indexes.</p>
+
+
+<h4>Effects of probe selection on gene expression index estimation</h4>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a><p>We computed the gene expression indexes for each gene across the 11 human tissues (a total of 33 samples), by fitting the probe level data to the Li-Wong model <a href="#pone.0000088-Li1">[6]</a> implemented in the <em>affy</em> package of Bioconductor (<a href="http://www.bioconductor.org/">http://www.bioconductor.org/</a>). We used probe level data from three different sets of probes: all probes, all core probes, or selected core probes. Our analysis shows that including all the probes to compute the gene expression indexes often results in low gene expression estimates across all the samples. This is due to the fact that the vast majority of extended and full probes don't target real exons and have very weak signals on the arrays. To examine the effect of our probe selection, we compared the gene expression indexes computed from all core probes and selected core probes. <a href="#pone-0000088-g004">Figure 4</a> shows two typical effects of probe selection. In many transcript clusters such as 2899110 (HFE, a gene important in iron metabolism) shown in <a href="#pone-0000088-g004">Figure 4A</a>, probe selection increased the absolute values of gene expression indexes (green rectangles vs red triangles) in each sample. This was expected, because high-affinity probes were less affected by background noise and were more likely to show correlated intensities. Therefore, such probes were more likely to be selected by our probe selection algorithm, increasing the estimated gene expression indexes. Interestingly, in some genes probe selection altered relative gene expression levels among tissues. <a href="#pone-0000088-g004">Figure 4B</a> shows the gene expression indexes computed for beta-spectrin 4 (SPTBN4, transcript cluster 3833500), a gene known to be overexpressed in brain and cerebellum <a href="#pone.0000088-Nagase1">[22]</a>. The gene expression indexes computed from the selected probes strengthened the pattern of over-expression in cerebellum samples.</p>
+<div class="figure" id="pone-0000088-g004"><div class="img"><a name="pone-0000088-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g004&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g004"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g004&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g004/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g004/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g004/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g004/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g004.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g004/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g004/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g004.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 4.  <span>Gene expression indexes computed using all probes, all core probes, and selected core probes.</span></strong></p><a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a><p>(<strong>A</strong>) Gene expression indexes of transcript cluster 2899110 (HFE) are computed using all probes (black circles), all core probes (red triangles) and selected probes (green rectangles).</p>
+<a id="article1.body1.sec3.sec3.fig1.caption1.p2" name="article1.body1.sec3.sec3.fig1.caption1.p2"></a><p>Probe selection increases the gene expression indexes computed for all the samples.</p>
+<a id="article1.body1.sec3.sec3.fig1.caption1.p3" name="article1.body1.sec3.sec3.fig1.caption1.p3"></a><p>The relative expression levels in different tissues remain unaltered.</p>
+<a id="article1.body1.sec3.sec3.fig1.caption1.p4" name="article1.body1.sec3.sec3.fig1.caption1.p4"></a><p>(<strong>B</strong>) Gene expression indexes of transcript cluster 3833500 (SPTBN4, a gene known to be overexpressed in brain and cerebellum).</p>
+<a id="article1.body1.sec3.sec3.fig1.caption1.p5" name="article1.body1.sec3.sec3.fig1.caption1.p5"></a><p>Probe selection strengthens the pattern of overexpression in cerebellum (sample #4, #5 and #6).</p>
+<span>doi:10.1371/journal.pone.0000088.g004</span></div><a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a><p>To assess the second effect systematically, we compiled a list of genes differentially expressed between liver and muscle based on 3′ expression array data (see <a href="#s2">Materials and Methods</a>). Although false positives may be present, the majority of genes in this list should be truly differentially expressed between these two tissues. For 438 transcript clusters overexpressed in liver relative to muscle, we used the exon array data to calculate the average gene expression fold change in three liver samples over three muscle samples. A scatter plot of the fold change shows that our probe selection procedure increased the absolute fold change between liver and muscle (<a href="#pone-0000088-g005">Figure 5A</a>), especially for genes whose original fold change values (without probe selection) were low (<a href="#pone-0000088-g005">Figure 5B</a>). We observed the same trend when we analyzed 500 transcript clusters overexpressed in muscle relative to liver (<a href="#pone-0000088-g005">Figure 5C and 5D</a>). We repeated our analysis in a pairwise comparison of cerebellum and heart samples, and observed a similar trend (data not shown). Therefore, our analysis suggests that we can detect differential gene expression more sensitively using the selected probes from the exon arrays.</p>
+<div class="figure" id="pone-0000088-g005"><div class="img"><a name="pone-0000088-g005" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g005&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g005"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g005&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g005/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g005/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g005/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g005/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g005.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g005/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g005/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g005.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 5.  <span>Effects of probe selection on genes differentially expressed between liver and muscle.</span></strong></p><a id="article1.body1.sec3.sec3.fig2.caption1.p1" name="article1.body1.sec3.sec3.fig2.caption1.p1"></a><p>(<strong>A</strong>) 438 transcript clusters were defined as overexpressed in liver relative to muscle, based on 3′ expression array data (see <a href="#s2">Materials and Methods</a>).</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p2" name="article1.body1.sec3.sec3.fig2.caption1.p2"></a><p>Using gene expression indexes computed from all core probes or the selected core probes, we calculated the average gene expression fold change in three liver samples over three muscle samples.</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p3" name="article1.body1.sec3.sec3.fig2.caption1.p3"></a><p>The X-axis shows the fold change using all core probes, and the Y-axis shows the fold change using selected core probes.</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p4" name="article1.body1.sec3.sec3.fig2.caption1.p4"></a><p>The red line indicates the 45-degree line (Y = X).</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p5" name="article1.body1.sec3.sec3.fig2.caption1.p5"></a><p>(<strong>B</strong>) A magnification of (A) when the fold change computed from all core probes was less than 6.</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p6" name="article1.body1.sec3.sec3.fig2.caption1.p6"></a><p>(<strong>C</strong>) 500 transcript clusters were defined as overexpressed in muscle relative to liver, based on 3′ expression array data (see <a href="#s2">Materials and Methods</a>).</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p7" name="article1.body1.sec3.sec3.fig2.caption1.p7"></a><p>Using gene expression indexes computed from all core probes or the selected core probes, we calculated the average gene expression fold change in three muscle samples over three liver samples.</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p8" name="article1.body1.sec3.sec3.fig2.caption1.p8"></a><p>The X-axis shows the fold change using all core probes, and the Y-axis shows the fold change using selected core probes.</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p9" name="article1.body1.sec3.sec3.fig2.caption1.p9"></a><p>The red line indicates the 45-degree line (Y = X).</p>
+<a id="article1.body1.sec3.sec3.fig2.caption1.p10" name="article1.body1.sec3.sec3.fig2.caption1.p10"></a><p>(<strong>D</strong>) A magnification of (C) when the fold change computed from all core probes was less than 6.</p>
+<span>doi:10.1371/journal.pone.0000088.g005</span></div>
+
+<h4>Probe selection is more reliable when gene expression levels are high</h4>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a><p>The reliability of probe selection was affected by gene expression levels in these 11 tissues. For 11485 genes, we selected the probes by cutting the clustering dendrogram near its bottom (<em>h_final</em>&lt; = 0.4, see the definition of <em>h_final</em> in <a href="#s2">Materials and Methods</a>). These genes tend to have high expression levels in some of the 11 tissues (see <a href="#pone-0000088-t001">Table 1</a>). In contrast, for 5571 genes whose <em>h_final</em>&gt; = 0.5, their expression levels in the 11 tissues were much lower (see <a href="#pone-0000088-t001">Table 1</a>). We further grouped 17056 transcript clusters into ten distinct bins according to the height where we cut the clustering dendrogram (<em>h_final</em>). The values of <em>h_final</em> were negatively correlated with gene expression levels in the 11 tissues (see <a href="#pone-0000088-g006">Figure 6</a>). Our analysis suggests that the result of probe selection was less reliable for lowly expressed genes in the 11 tissues, since we had to cut near the top of the clustering dendrogram to obtain enough selected probes. One explanation is that the signals of most probes of lowly expressed genes are saturated by background or random noise on the arrays, making it difficult to obtain a large group of probes with coordinated changes. For such genes, running probe selection on data from more diverse (e.g. embryonic) cell types (where the genes might be highly expressed) will improve the reliability and reproducibility of selected probes.</p>
+<div class="figure" id="pone-0000088-g006"><div class="img"><a name="pone-0000088-g006" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g006&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.g006"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.g006&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g006/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g006/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g006/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g006/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g006.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.g006/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.g006/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.g006.TIF"></span>)
+                </a></li></ul></div><p><strong>Figure 6.  <span>The impact of gene expression levels on probe selection.</span></strong></p><a id="article1.body1.sec3.sec4.fig1.caption1.p1" name="article1.body1.sec3.sec4.fig1.caption1.p1"></a><p>We grouped 17056 transcript clusters into ten distinct bins according to the height where we cut the clustering dendrogram (<em>h_final</em>).</p>
+<a id="article1.body1.sec3.sec4.fig1.caption1.p2" name="article1.body1.sec3.sec4.fig1.caption1.p2"></a><p>For each transcript cluster, we calculated its peak gene expression index in the 11 tissues using selected probes.</p>
+<a id="article1.body1.sec3.sec4.fig1.caption1.p3" name="article1.body1.sec3.sec4.fig1.caption1.p3"></a><p>Then we took an average for each bin.</p>
+<a id="article1.body1.sec3.sec4.fig1.caption1.p4" name="article1.body1.sec3.sec4.fig1.caption1.p4"></a><p>The values of tree cutoff (X-axis) were negatively correlated with average peak gene expression levels in the 11 tissues (Y-axis).</p>
+<span>doi:10.1371/journal.pone.0000088.g006</span></div><div class="figure" id="pone-0000088-t001"><div class="img"><a name="pone-0000088-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0000088" data-uri="info:doi/10.1371/journal.pone.0000088.t001"><img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0000088.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"></a></div><div class="figure-inline-download">
+            Download:
+            <ul><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.t001/powerpoint">
+                    PPT
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.t001/powerpoint">
+                  PowerPoint slide
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.t001/largerimage">
+                    PNG
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.t001/largerimage">
+                  larger image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.t001.PNG_L"></span>)
+                </a></li><li><div class="icon"><a href="/article/info:doi/10.1371/journal.pone.0000088.t001/originalimage">
+                    TIFF
+                  </a></div><a href="/article/info:doi/10.1371/journal.pone.0000088.t001/originalimage">
+                  original image
+                  (<span id="info:doi/10.1371/journal.pone.0000088.t001.TIF"></span>)
+                </a></li></ul></div><p><strong>Table 1.  <span>The impact of gene expression levels on probe selection</span></strong></p><span>doi:10.1371/journal.pone.0000088.t001</span></div>
+</div>
+
+<div id="section4" class="section"><a id="s4" name="s4" toc="s4" title="Discussion"></a><h3>Discussion</h3><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a><p>It has been widely realized that not all probes on the microarray are good indicators of overall gene expression <a href="#pone.0000088-Li1">[6]</a>, <a href="#pone.0000088-Irizarry1">[23]</a>. Selecting good probes for robust estimates of gene expression indexes is a common practice in the analysis of oligonucleotide microarray data <a href="#pone.0000088-Li1">[6]</a>, <a href="#pone.0000088-Irizarry1">[23]</a>–<a href="#pone.0000088-3">[25]</a>. For example, dChip uses a model-based approach to detect one or several outlier probes from the 3′ expression arrays, and excludes those outlier probes from subsequent analyses <a href="#pone.0000088-Li1">[6]</a>. Such a simple probe selection strategy, however, might be insufficient for the analysis of exon array data, considering the huge increase in the number of probes, as well as the complexity of these probes' target regions (high-confidence exons, exons only supported by ESTs, computationally predicted exons, etc). Our analysis of the exon array probe level data demonstrates that most extended and full probes have weak signals and are poor indicators of overall gene expression. Even within the core probes, there are probes that cross-hybridize or target alternatively spliced regions of a gene. Sometimes more than half of the core probes are not reliable indicators of overall gene expression (e.g. in the example of CD44, see <a href="#pone-0000088-g002">Figure 2B</a>). A new strategy of probe selection is needed for exon array data analysis.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2"></a><p>In this manuscript, we propose a novel probe selection algorithm for the Affymetrix Exon Arrays. We used our method to choose a subset of highly correlated core probes from a public exon array dataset on 11 human tissues. Our analysis of differentially expressed genes among human tissues suggests that probe selection enables a more sensitive detection of gene expression differences. This effect is most prominent when the estimated fold change based on all core probes is low (see <a href="#pone-0000088-g005">Figure 5B and 5D</a>).</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3"></a><p>We want to emphasize that our probe selection algorithm is a general method that can be adjusted in many flexible ways. For example, for genes with low expression levels in the 11 tissues, our probe selection produced less reliable results. For such genes, it is favorable to run the probe selection algorithm on a larger dataset including samples from other tissues or developmental stages. Another possible adjustment is to consider other types of probes (extended and full probes) in our probe selection procedure. This will be particularly useful if we want to calculate gene expression indexes for poorly annotated or computationally predicted genes on the exon array (which lack core probes). It's also possible to use a model-based approach to iteratively select probes until we reach a fixed number (e.g. 11), such as the IterPLIER algorithm proposed by Affymetrix <a href="#pone.0000088-4">[26]</a>. Finally, it will be valuable to have a probe selection tool that integrates microarray data and sequence data (such as ESTs). However, this is a non-trivial problem, because sequence data such as ESTs contain various artifacts <a href="#pone.0000088-Modrek1">[9]</a>, <a href="#pone.0000088-Sorek1">[27]</a> and are poor indicators of differential splicing <a href="#pone.0000088-Gupta1">[28]</a>.</p>
+<a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4"></a><p>Our selected probes can assist future analyses of other exon array datasets. For 11485 genes, we selected probes from the bottom of the clustering dendrogram from the 11-tissue dataset (see <a href="#pone-0000088-t001">Table 1</a>). These selected probes may already be reliable enough for inference of gene-level expression in new experiments. Probe selection on the remaining genes may await data from more diverse (e.g. embryonic) cell types. In fact, by combining the Affymetrix tissue-panel data with our in-house exon array data on human embryonic stem cells, we could achieve reliable probe selection for 14077 transcript clusters (data not shown). For investigators with a large set of exon arrays, an alternative is to use our algorithm to detect reliable probes based on their own data. It's also possible to combine their own data with other public data (such as the Affymetrix tissue panel) before running probe selection. The gene expression indexes computed from selected probes can be used in standard high-level analyses of expression data, such as clustering, differential expression detection, etc. They also provide a more accurate “baseline” for subsequent analysis of RNA alternative splicing from Exon Arrays.</p>
+</div>
+
+<div id="section5" class="section"><a id="s5" name="s5" toc="s5" title="Supporting Information"></a><h3>Supporting Information</h3><div class="figshare_widget" doi="10.1371/journal.pone.0000088"></div><a name="pone.0000088.s001" id="pone.0000088.s001"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000088.s001">Figure S1. </a></strong></p><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1"></a><p class="preSiDOI">Heatmap visualization (high-resolution) of probe intensities of HLA-DMB (transcript cluster 2950263). Each cell of the heatmap shows the correlation of two probes in 11 tissues. The top color bar indicates the probe type. Core probes are colored in red. Extended probes are colored in blue. The signal intensities of core probes usually have a high correlation (the top right corner of the heatmap).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000088.s001</p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2"></a><p class="postSiDOI">(0.09 MB PDF)</p>
+<a name="pone.0000088.s002" id="pone.0000088.s002"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000088.s002">Figure S2. </a></strong></p><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1"></a><p class="preSiDOI">Heatmap visualization (high-resolution) of probe intensities of core probes in CD44 (transcript cluster 3326635). Probes targeting the 5' and 3' regions (constitutive exons) of CD44 show highly correlated signals in 11 tissues (the top right corner of the heatmap).</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000088.s002</p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2"></a><p class="postSiDOI">(0.28 MB PDF)</p>
+<a name="pone.0000088.s003" id="pone.0000088.s003"></a><p class="siTitle"><strong><a href="/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0000088.s003">Figure S3. </a></strong></p><a id="article1.body1.sec5.supplementary-material3.caption1.p1" name="article1.body1.sec5.supplementary-material3.caption1.p1"></a><p class="preSiDOI">Heatmap visualization (high-resolution) of probe intensities of core probes in CD44 (transcript cluster 3326635). Probes are ordered from top to bottom based on their genomic coordinates (5' to 3').</p>
+<p class="siDoi">doi:10.1371/journal.pone.0000088.s003</p><a id="article1.body1.sec5.supplementary-material3.caption1.p2" name="article1.body1.sec5.supplementary-material3.caption1.p2"></a><p class="postSiDOI">(0.05 MB PDF)</p>
+</div>
+
+
+
+
+
+<div><a id="ack" name="ack" toc="ack" title="Acknowledgments"></a><h3>Acknowledgments</h3>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a><p>We want to thank Matthew Scott, Erik Miller, Eric Chiao, Quntian Wang, Hongkai Ji for discussions, and Byron Ellis for computer assistance.</p>
+</div><div class="contributions"><a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"></a><h3>Author Contributions</h3><p>Conceived and designed the experiments: YX WW. Performed the experiments: YX KK. Analyzed the data: YX WW KK. Wrote the paper: YX WW.</p></div><div><a id="references" name="references" toc="references" title="References"></a><h3>References</h3><ol class="references"><li><span class="label">1.
+              </span><a name="pone.0000088-Allison1" id="pone.0000088-Allison1"></a>Allison DB, Cui X, Page GP, Sabripour M (2006) Microarray data analysis: from disarray to consolidation and consensus. Nat Rev Genet  7: 55–65.  <ul class="find" data-citedArticleID="919968" data-doi="10.1038/nrg1749"><li><a href="http://dx.doi.org/10.1038/nrg1749" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+data+analysis%3A+from+disarray+to+consolidation+and+consensus." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+data+analysis%3A+from+disarray+to+consolidation+and+consensus.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">2.
+              </span><a name="pone.0000088-Schena1" id="pone.0000088-Schena1"></a>Schena M, Shalon D, Davis RW, Brown PO (1995) Quantitative monitoring of gene expression patterns with a complementary DNA microarray. Science  270: 467–470.  <ul class="find" data-citedArticleID="920004" data-doi="10.1126/science.270.5235.467"><li><a href="http://dx.doi.org/10.1126/science.270.5235.467" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Quantitative+monitoring+of+gene+expression+patterns+with+a+complementary+DNA+microarray." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Quantitative+monitoring+of+gene+expression+patterns+with+a+complementary+DNA+microarray.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">3.
+              </span><a name="pone.0000088-Schena2" id="pone.0000088-Schena2"></a>Schena M, Shalon D, Heller R, Chai A, Brown PO, et al.  (1996) Parallel human genome analysis: microarray-based expression monitoring of 1000 genes. Proc Natl Acad Sci U S A  93: 10614–10619.  <ul class="find" data-citedArticleID="920006" data-doi="10.1073/pnas.93.20.10614"><li><a href="http://dx.doi.org/10.1073/pnas.93.20.10614" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Parallel+human+genome+analysis%3A+microarray-based+expression+monitoring+of+1000+genes." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Parallel+human+genome+analysis%3A+microarray-based+expression+monitoring+of+1000+genes.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">4.
+              </span><a name="pone.0000088-Hardiman1" id="pone.0000088-Hardiman1"></a>Hardiman G (2004) Microarray platforms–comparisons and contrasts. Pharmacogenomics  5: 487–502.  <ul class="find" data-citedArticleID="919978" data-doi="10.1517/14622416.5.5.487"><li><a href="http://dx.doi.org/10.1517/14622416.5.5.487" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Microarray+platforms%26%23x2013%3Bcomparisons+and+contrasts." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Microarray+platforms%26%23x2013%3Bcomparisons+and+contrasts.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">5.
+              </span><a name="pone.0000088-Stoughton1" id="pone.0000088-Stoughton1"></a>Stoughton RB (2005) Applications of DNA microarrays in biology. Annu Rev Biochem  74: 53–82.  <ul class="find" data-citedArticleID="920010" data-doi="10.1146/annurev.biochem.74.082803.133212"><li><a href="http://dx.doi.org/10.1146/annurev.biochem.74.082803.133212" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Applications+of+DNA+microarrays+in+biology." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Applications+of+DNA+microarrays+in+biology.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">6.
+              </span><a name="pone.0000088-Li1" id="pone.0000088-Li1"></a>Li C, Wong WH (2001) Model-based analysis of oligonucleotide arrays: expression index computation and outlier detection. Proc Natl Acad Sci U S A  98: 31–36.  <ul class="find" data-citedArticleID="919990" data-doi="10.1073/pnas.98.1.31"><li><a href="http://dx.doi.org/10.1073/pnas.98.1.31" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Model-based+analysis+of+oligonucleotide+arrays%3A+expression+index+computation+and+outlier+detection." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Model-based+analysis+of+oligonucleotide+arrays%3A+expression+index+computation+and+outlier+detection.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">7.
+              </span><a name="pone.0000088-Blencowe1" id="pone.0000088-Blencowe1"></a>Blencowe BJ (2006) Alternative splicing: new insights from global analyses. Cell  126: 37–47.  <ul class="find" data-citedArticleID="919972" data-doi="10.1016/j.cell.2006.06.023"><li><a href="http://dx.doi.org/10.1016/j.cell.2006.06.023" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Alternative+splicing%3A+new+insights+from+global+analyses." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Alternative+splicing%3A+new+insights+from+global+analyses.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">8.
+              </span><a name="pone.0000088-Black1" id="pone.0000088-Black1"></a>Black DL (2003) Mechanisms of alternative pre-messenger RNA splicing. Annu Rev Biochem  72: 291–336.  <ul class="find" data-citedArticleID="919970"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Mechanisms+of+alternative+pre-messenger+RNA+splicing.&amp;auth=&amp;atitle=Mechanisms+of+alternative+pre-messenger+RNA+splicing." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Mechanisms+of+alternative+pre-messenger+RNA+splicing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Mechanisms+of+alternative+pre-messenger+RNA+splicing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">9.
+              </span><a name="pone.0000088-Modrek1" id="pone.0000088-Modrek1"></a>Modrek B, Lee C (2002) A genomic view of alternative splicing. Nat Genet  30: 13–19.  <ul class="find" data-citedArticleID="919996" data-doi="10.1038/ng0102-13"><li><a href="http://dx.doi.org/10.1038/ng0102-13" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=A+genomic+view+of+alternative+splicing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22A+genomic+view+of+alternative+splicing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">10.
+              </span><a name="pone.0000088-Lee1" id="pone.0000088-Lee1"></a>Lee C, Roy M (2004) Analysis of alternative splicing with microarrays: successes and challenges. Genome Biol  5: 231.  <ul class="find" data-citedArticleID="919986"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Analysis+of+alternative+splicing+with+microarrays%3A+successes+and+challenges.&amp;auth=&amp;atitle=Analysis+of+alternative+splicing+with+microarrays%3A+successes+and+challenges." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Analysis+of+alternative+splicing+with+microarrays%3A+successes+and+challenges." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Analysis+of+alternative+splicing+with+microarrays%3A+successes+and+challenges.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">11.
+              </span><a name="pone.0000088-Clark1" id="pone.0000088-Clark1"></a>Clark TA, Sugnet CW, Ares M Jr (2002) Genomewide analysis of mRNA processing in yeast using splicing-specific microarrays. Science  296: 907–910.  <ul class="find" data-citedArticleID="919974" data-doi="10.1126/science.1069415"><li><a href="http://dx.doi.org/10.1126/science.1069415" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genomewide+analysis+of+mRNA+processing+in+yeast+using+splicing-specific+microarrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genomewide+analysis+of+mRNA+processing+in+yeast+using+splicing-specific+microarrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">12.
+              </span><a name="pone.0000088-Johnson1" id="pone.0000088-Johnson1"></a>Johnson JM, Castle J, Garrett-Engele P, Kan Z, Loerch PM, et al.  (2003) Genome-wide survey of human alternative pre-mRNA splicing with exon junction microarrays. Science  302: 2141–2144.  <ul class="find" data-citedArticleID="919982" data-doi="10.1126/science.1090100"><li><a href="http://dx.doi.org/10.1126/science.1090100" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Genome-wide+survey+of+human+alternative+pre-mRNA+splicing+with+exon+junction+microarrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Genome-wide+survey+of+human+alternative+pre-mRNA+splicing+with+exon+junction+microarrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">13.
+              </span><a name="pone.0000088-Le1" id="pone.0000088-Le1"></a>Le K, Mitsouras K, Roy M, Wang Q, Xu Q, et al.  (2004) Detecting tissue-specific regulation of alternative splicing as a qualitative change in microarray data. Nucleic Acids Res  32: e180.  <ul class="find" data-citedArticleID="919984" data-doi="10.1093/nar/gnh173"><li><a href="http://dx.doi.org/10.1093/nar/gnh173" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Detecting+tissue-specific+regulation+of+alternative+splicing+as+a+qualitative+change+in+microarray+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Detecting+tissue-specific+regulation+of+alternative+splicing+as+a+qualitative+change+in+microarray+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">14.
+              </span><a name="pone.0000088-Pan1" id="pone.0000088-Pan1"></a>Pan Q, Shai O, Misquitta C, Zhang W, Saltzman AL, et al.  (2004) Revealing global regulatory features of mammalian alternative splicing using a quantitative microarray platform. Mol Cell  16: 929–941.  <ul class="find" data-citedArticleID="920002" data-doi="10.1016/j.molcel.2004.12.004"><li><a href="http://dx.doi.org/10.1016/j.molcel.2004.12.004" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Revealing+global+regulatory+features+of+mammalian+alternative+splicing+using+a+quantitative+microarray+platform." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Revealing+global+regulatory+features+of+mammalian+alternative+splicing+using+a+quantitative+microarray+platform.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">15.
+              </span><a name="pone.0000088-1" id="pone.0000088-1"></a>AffymetrixExon Array design datasheet.   
+                  <a href="http://www.affymetrix.com/support/technical/datasheets/exon_arraydesign_datasheet.pdf">http://www.affymetrix.com/support/techni​cal/datasheets/exon_arraydesign_datashee​t.pdf</a>
+               .  <ul class="find-nolinks"></ul></li><li><span class="label">16.
+              </span><a name="pone.0000088-2" id="pone.0000088-2"></a>AffymetrixExon Array probe annotations.   
+                  <a href="http://www.affymetrix.com/support/technical/whitepapers/exon_probeset_trans_clust_whitepaper.pdf">http://www.affymetrix.com/support/techni​cal/whitepapers/exon_probeset_trans_clus​t_whitepaper.pdf</a>
+               .  <ul class="find-nolinks"></ul></li><li><span class="label">17.
+              </span><a name="pone.0000088-Li2" id="pone.0000088-Li2"></a>Li HR, Wang-Rodriguez J, Nair TM, Yeakley JM, Kwon YS, et al.  (2006) Two-dimensional transcriptome profiling: identification of messenger RNA isoform signatures in prostate cancer from archived paraffin-embedded cancer specimens. Cancer Res  66: 4079–4088.  <ul class="find" data-citedArticleID="919992" data-doi="10.1158/0008-5472.can-05-4264"><li><a href="http://dx.doi.org/10.1158/0008-5472.can-05-4264" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Two-dimensional+transcriptome+profiling%3A+identification+of+messenger+RNA+isoform+signatures+in+prostate+cancer+from+archived+paraffin-embedded+cancer+specimens." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Two-dimensional+transcriptome+profiling%3A+identification+of+messenger+RNA+isoform+signatures+in+prostate+cancer+from+archived+paraffin-embedded+cancer+specimens.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">18.
+              </span><a name="pone.0000088-Lee2" id="pone.0000088-Lee2"></a>Lee C, Atanelov L, Modrek B, Xing Y (2003) ASAP: the Alternative Splicing Annotation Project. Nucleic Acids Res  31: 101–105.  <ul class="find" data-citedArticleID="919988" data-doi="10.1093/nar/gkg029"><li><a href="http://dx.doi.org/10.1093/nar/gkg029" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=ASAP%3A+the+Alternative+Splicing+Annotation+Project." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22ASAP%3A+the+Alternative+Splicing+Annotation+Project.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">19.
+              </span><a name="pone.0000088-Morris1" id="pone.0000088-Morris1"></a>Morris P, Shaman J, Attaya M, Amaya M, Goodman S, et al.  (1994) An essential role for HLA-DM in antigen presentation by class II major histocompatibility molecules. Nature  368: 551–554.  <ul class="find" data-citedArticleID="919998" data-doi="10.1038/368551a0"><li><a href="http://dx.doi.org/10.1038/368551a0" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=An+essential+role+for+HLA-DM+in+antigen+presentation+by+class+II+major+histocompatibility+molecules." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22An+essential+role+for+HLA-DM+in+antigen+presentation+by+class+II+major+histocompatibility+molecules.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">20.
+              </span><a name="pone.0000088-Lynch1" id="pone.0000088-Lynch1"></a>Lynch KW (2004) Consequences of regulated pre-mRNA splicing in the immune system. Nat Rev Immunol  4: 931–940.  <ul class="find" data-citedArticleID="919994" data-doi="10.1038/nri1497"><li><a href="http://dx.doi.org/10.1038/nri1497" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Consequences+of+regulated+pre-mRNA+splicing+in+the+immune+system." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Consequences+of+regulated+pre-mRNA+splicing+in+the+immune+system.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">21.
+              </span><a name="pone.0000088-Zhu1" id="pone.0000088-Zhu1"></a>Zhu J, Shendure J, Mitra RD, Church GM (2003) Single molecule profiling of alternative pre-mRNA splicing. Science  301: 836–838.  <ul class="find" data-citedArticleID="920014" data-doi="10.1126/science.1085792"><li><a href="http://dx.doi.org/10.1126/science.1085792" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Single+molecule+profiling+of+alternative+pre-mRNA+splicing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Single+molecule+profiling+of+alternative+pre-mRNA+splicing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">22.
+              </span><a name="pone.0000088-Nagase1" id="pone.0000088-Nagase1"></a>Nagase T, Kikuno R, Nakayama M, Hirosawa M, Ohara O (2000) Prediction of the coding sequences of unidentified human genes. XVIII. The complete sequences of 100 new cDNA clones from brain which code for large proteins in vitro. DNA Res  7: 273–281.  <ul class="find" data-citedArticleID="920000" data-doi="10.1093/dnares/7.2.143"><li><a href="http://dx.doi.org/10.1093/dnares/7.2.143" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Prediction+of+the+coding+sequences+of+unidentified+human+genes.+XVIII.+The+complete+sequences+of+100+new+cDNA+clones+from+brain+which+code+for+large+proteins+in+vitro." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Prediction+of+the+coding+sequences+of+unidentified+human+genes.+XVIII.+The+complete+sequences+of+100+new+cDNA+clones+from+brain+which+code+for+large+proteins+in+vitro.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">23.
+              </span><a name="pone.0000088-Irizarry1" id="pone.0000088-Irizarry1"></a>Irizarry RA, Hobbs B, Collin F, Beazer-Barclay YD, Antonellis KJ, et al.  (2003) Exploration, normalization, and summaries of high density oligonucleotide array probe level data. Biostatistics  4: 249–264.  <ul class="find" data-citedArticleID="919980" data-doi="10.1093/biostatistics/4.2.249"><li><a href="http://dx.doi.org/10.1093/biostatistics/4.2.249" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Exploration%2C+normalization%2C+and+summaries+of+high+density+oligonucleotide+array+probe+level+data." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Exploration%2C+normalization%2C+and+summaries+of+high+density+oligonucleotide+array+probe+level+data.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">24.
+              </span><a name="pone.0000088-Wu1" id="pone.0000088-Wu1"></a>Wu Z, Irizarry RA (2005) Stochastic models inspired by hybridization theory for short oligonucleotide arrays. J Comput Biol  12: 882–893.  <ul class="find" data-citedArticleID="920012" data-doi="10.1089/cmb.2005.12.882"><li><a href="http://dx.doi.org/10.1089/cmb.2005.12.882" target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Stochastic+models+inspired+by+hybridization+theory+for+short+oligonucleotide+arrays." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Stochastic+models+inspired+by+hybridization+theory+for+short+oligonucleotide+arrays.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">25.
+              </span><a name="pone.0000088-3" id="pone.0000088-3"></a>AffymetrixGuide to Probe Logarithmic Intensity Error (PLIER) Estimation.   
+                  <a href="http://www.affymetrix.com/support/technical/technotes/plier_technote.pdf">http://www.affymetrix.com/support/techni​cal/technotes/plier_technote.pdf</a>
+               .  <ul class="find-nolinks"></ul></li><li><span class="label">26.
+              </span><a name="pone.0000088-4" id="pone.0000088-4"></a>AffymetrixGene signal estimates from exon arrays.   
+                  <a href="http://www.affymetrix.com/support/technical/whitepapers/exon_gene_signal_estimate_whitepaper.pdf">http://www.affymetrix.com/support/techni​cal/whitepapers/exon_gene_signal_estimat​e_whitepaper.pdf</a>
+               .  <ul class="find-nolinks"></ul></li><li><span class="label">27.
+              </span><a name="pone.0000088-Sorek1" id="pone.0000088-Sorek1"></a>Sorek R, Basechess O, Safer HM (2003) Expressed sequence tags: clean before using. Correspondence re: Z. Wang et al., computational analysis and experimental validation of tumor-associated alternative RNA splicing in human cancer. Cancer Res.  63: 655–657.  2003. Cancer Res 63: 6996; author reply 6996–6997.  <ul class="find" data-citedArticleID="920008"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Expressed+sequence+tags%3A+clean+before+using.+Correspondence+re%3A+Z.+Wang+et+al.%2C+computational+analysis+and+experimental+validation+of+tumor-associated+alternative+RNA+splicing+in+human+cancer.&amp;auth=&amp;atitle=Expressed+sequence+tags%3A+clean+before+using.+Correspondence+re%3A+Z.+Wang+et+al.%2C+computational+analysis+and+experimental+validation+of+tumor-associated+alternative+RNA+splicing+in+human+cancer." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Expressed+sequence+tags%3A+clean+before+using.+Correspondence+re%3A+Z.+Wang+et+al.%2C+computational+analysis+and+experimental+validation+of+tumor-associated+alternative+RNA+splicing+in+human+cancer." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Expressed+sequence+tags%3A+clean+before+using.+Correspondence+re%3A+Z.+Wang+et+al.%2C+computational+analysis+and+experimental+validation+of+tumor-associated+alternative+RNA+splicing+in+human+cancer.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li><li><span class="label">28.
+              </span><a name="pone.0000088-Gupta1" id="pone.0000088-Gupta1"></a>Gupta S, Zink D, Korn B, Vingron M, Haas SA (2004) Strengths and weaknesses of EST-based prediction of tissue-specific alternative splicing. BMC Genomics  5: 72.  <ul class="find" data-citedArticleID="919976"><li><a href="http://www.crossref.org/guestquery/?auth2=&amp;atitle2=Strengths+and+weaknesses+of+EST-based+prediction+of+tissue-specific+alternative+splicing.&amp;auth=&amp;atitle=Strengths+and+weaknesses+of+EST-based+prediction+of+tissue-specific+alternative+splicing." target="_new" title="Go to article in CrossRef">
+                          View Article
+                        </a></li><li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Search&amp;doptcmdl=Citation&amp;defaultField=Title+Word&amp;term=Strengths+and+weaknesses+of+EST-based+prediction+of+tissue-specific+alternative+splicing." target="_new" title="Go to article in PubMed">
+                          PubMed/NCBI
+                        </a></li><li><a href="http://scholar.google.com/scholar?hl=en&amp;safe=off&amp;q=%22Strengths+and+weaknesses+of+EST-based+prediction+of+tissue-specific+alternative+splicing.%22" target="_new" title="Go to article in Google Scholar">
+                          Google Scholar
+                        </a></li></ul></li></ol></div>
+
+  </div>
+
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.XML" value="80056"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.PDF" value="444551"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g001.PNG_L" value="360805"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g001.PNG_M" value="30589"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g001.PNG_S" value="2189"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g001.TIF" value="558780"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g001.PNG_I" value="11917"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.e001.PNG" value="767"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.e001.TIF" value="6364"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g002.PNG_L" value="3113018"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g002.PNG_M" value="285464"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g002.PNG_S" value="7156"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g002.TIF" value="4554506"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g002.PNG_I" value="90486"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g003.PNG_L" value="855494"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g003.PNG_M" value="96430"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g003.PNG_S" value="3265"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g003.TIF" value="1314024"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g003.PNG_I" value="36740"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g004.PNG_L" value="659601"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g004.PNG_M" value="49462"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g004.PNG_S" value="3098"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g004.TIF" value="1161962"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g004.PNG_I" value="34998"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g005.PNG_L" value="844064"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g005.PNG_M" value="65463"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g005.PNG_S" value="3070"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g005.TIF" value="1440738"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g005.PNG_I" value="24860"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g006.PNG_L" value="1680060"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g006.PNG_M" value="161816"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g006.PNG_S" value="3701"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g006.TIF" value="1867514"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.g006.PNG_I" value="51345"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.t001.PNG_L" value="36751"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.t001.PNG_M" value="6305"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.t001.PNG_S" value="1396"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.t001.TIF" value="1958346"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.t001.PNG_I" value="3175"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.s001.PDF" value="94372"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.s002.PDF" value="283438"/>
+      <input type="hidden" class="assetSize" name="info:doi/10.1371/journal.pone.0000088.s003.PDF" value="53882"/>
+
+</div>
+<div class="sidebar">
+
+  <div class="article-actions cf">
+      <div class="download">
+        <span class="btn"><a href="/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000088&amp;representation=PDF" title="Download" target="_blank">Download PDF</a></span>
+      </div>
+      <div class="btn-reveal dropdown">
+        <div class="dropdown-icon">
+          <span class="btn">&nbsp;</span>
+        </div>
+
+        <div class="content">
+          <ul class="bullet">
+            <li><a href="/article/citationList.action?articleURI=info%3Adoi%2F10.1371%2Fjournal.pone.0000088" title="Download citations">Citation</a></li>
+            <li><a href="/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0000088&amp;representation=XML" title="Download article XML">XML</a></li>
+          </ul>
+        </div>
+      </div> <!-- end btn-reveal dropdown-->
+
+
+    <div class="btn-reveal flt-l">
+        <span class="btn">Print</span>
+        <div class="content">
+            <ul class="bullet">
+                <li id="print-article"><a href="#" onclick="if(typeof(_gaq) != 'undefined'){ _gaq.push(['_trackEvent','Article', 'Print', 'Click']); } window.print(); return false;" title="Print Article">Print article</a></li>
+                <li>
+                  <a href="https://www.odysseypress.com/onlinehost/reprint_order.php?type=A&page=0&journal=7&doi=10.1371/journal.pone.0000088&volume=&issue=&title=Probe Selection and Expression Index Computation of Affymetrix Exon Arrays&author_name=Yi%20Xing%2C%20Karen%20Kapur%2C%20Wing%20Hung%20Wong&start_page=1&end_page=9" title="Odyssey Press">EzReprint</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-reveal flt-r">
+        <span class="btn">Share</span>
+        <div class="content">
+            <ul class="social">
+                <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088" target="_blank" title="Submit to Reddit"><img src="/images/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088" target="_blank" title="Share on Google+"><img src="/images/icon.gplus.16.png" width="16" height="16" alt="Google+">Google+</a></li>
+
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.plosone.org%2Farticle%2Finfo%253Adoi%252F10.1371%252Fjournal.pone.0000088" target="_blank" title="Add to StumbleUpon"><img src="/images/icon.stumble.16.png" width="16" height="16" alt="StumbleUpon">StumbleUpon</a></li>
+
+                <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088&amp;t=Probe%20Selection%20and%20Expression%20Index%20Computation%20of%20Affymetrix%20Exon%20Arrays" target="_blank" title="Share on Facebook"><img src="/images/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+                <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088&title=Probe%20Selection%20and%20Expression%20Index%20Computation%20of%20Affymetrix%20Exon%20Arrays&summary=Checkout%20this%20article%20I%20found%20at%20PLOS" target="_blank" title="Add to LinkedIn"><img src="/images/icon.linkedin.16.png" width="16" height="16" alt="Mendeley">LinkedIn</a></li>
+
+                <li><a href="http://www.citeulike.org/posturl?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088&amp;title=Probe%20Selection%20and%20Expression%20Index%20Computation%20of%20Affymetrix%20Exon%20Arrays" target="_blank" title="Add to CiteULike"><img src="/images/icon.cul.16.png" width="16" height="16" alt="CiteULike">CiteULike</a></li>
+
+                <li><a href="http://www.mendeley.com/import/?url=http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088" target="_blank" title="Add to Mendeley"><img src="/images/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+                <li><a href="https://www.pubchase.com/library?add_aid=10.1371%2Fjournal.pone.0000088&amp;source=plos" target="_blank" title="Add to PubChase"><img src="/images/icon.pc.16.png" width="16" height="16" alt="PubChase">PubChase</a></li>
+
+
+                <script type="text/javascript">
+                    // replace tweet with one that's pre-shortened to 140 chars
+                    function truncateTweetText() {
+                        var twtTitle = 'Probe Selection and Expression Index Computation of Affymetrix Exon Arrays';
+                        var twtUrl = 'http://dx.plos.org/10.1371/journal.pone.0000088';
+                        // all URLs posted to twitter get auto-shortened to 20 chars.
+                        var maxLength = 140 - (20 + 1);
+                        // truncate the title to include space for twtTag and ellipsis (here, 10 = tag length + space + ellipsis)
+                        if (twtTitle.length > maxLength) { twtTitle = twtTitle.substr(0, (maxLength - 10)) + '...'; }
+                        // set the href to use the shortened tweet
+                        $('#twitter-share-link').prop('href', 'http://twitter.com/intent/tweet?text=' + encodeURIComponent('#PLOSONE: ' + twtTitle + ' ' + twtUrl));
+                    }
+                </script>
+                <li><a href="http://twitter.com/intent/tweet?text=#PLOSONE%3A%20Probe%20Selection%20and%20Expression%20Index%20Computation%20of%20Affymetrix%20Exon%20Arrays http%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pone.0000088" onclick="truncateTweetText();" target="_blank" title="Share on Twitter" id="twitter-share-link"><img src="/images/icon.twtr.16.png" width="16" height="16" alt="Twitter">Twitter</a></li>
+
+                <li><a href="/article/email/info%3Adoi%2F10.1371%2Fjournal.pone.0000088" title="Email this article"><img src="/images/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+            </ul>
+        </div>
+    </div><!--end btn-reveal flt-r-->
+</div><!-- end article-actions-->
+
+<!-- begin Crossmark -->
+
+<a id="open-crossmark" href="#" style="margin-top: -28px; display:block"><img style="border: 0; display: none;
+ padding: 10px 0 18px 0;"  id="crossmark-icon" src="/images/logo-crossmark-bw.png" /></a>
+<div id="crossmark-dialog" style="display: none;" title="">
+    <!-- the external CrossMark data is loaded inside this iframe -->
+    <iframe id="crossmark-dialog-frame" frameborder="0"></iframe>
+</div>
+
+<!-- end crossmark -->
+
+
+<div class="block" id="subject-area-sidebar-block">
+    <div class="header">
+        <h3>Subject Areas</h3><div title="More information" id="subject-area-sidebar-block-help-icon"><img align="right"
+                                                                                                           alt="info" src="/images/button_info.png"/><div id="subject-area-sidebar-block-help"><img align="right"
+                                                                                                                                                                                                    src="/images/button_info.png"/><p>
+        <b>We want your feedback.</b> Do these subject areas make sense for this article? If not, click the flag
+        next to the incorrect subject area and we will review it. Thanks for your help!
+    </p></div></div>
+    </div>
+
+
+    <ul id="subject-area-sidebar-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Alternative+splicing%22" title="Search for articles in the subject area:'Alternative splicing'"><div class="flagText">Alternative splicing</div></a>
+              <div data-categoryid="17931" data-articleid="23014"
+                   data-categoryname="Alternative splicing"
+                   class="flagImage" title="Flag 'Alternative splicing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Cerebellum%22" title="Search for articles in the subject area:'Cerebellum'"><div class="flagText">Cerebellum</div></a>
+              <div data-categoryid="47647" data-articleid="23014"
+                   data-categoryname="Cerebellum"
+                   class="flagImage" title="Flag 'Cerebellum' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+expression%22" title="Search for articles in the subject area:'Gene expression'"><div class="flagText">Gene expression</div></a>
+              <div data-categoryid="17515" data-articleid="23014"
+                   data-categoryname="Gene expression"
+                   class="flagImage" title="Flag 'Gene expression' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Gene+targeting%22" title="Search for articles in the subject area:'Gene targeting'"><div class="flagText">Gene targeting</div></a>
+              <div data-categoryid="47601" data-articleid="23014"
+                   data-categoryname="Gene targeting"
+                   class="flagImage" title="Flag 'Gene targeting' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genome+annotation%22" title="Search for articles in the subject area:'Genome annotation'"><div class="flagText">Genome annotation</div></a>
+              <div data-categoryid="40359" data-articleid="23014"
+                   data-categoryname="Genome annotation"
+                   class="flagImage" title="Flag 'Genome annotation' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Genomic+signal+processing%22" title="Search for articles in the subject area:'Genomic signal processing'"><div class="flagText">Genomic signal processing</div></a>
+              <div data-categoryid="18635" data-articleid="23014"
+                   data-categoryname="Genomic signal processing"
+                   class="flagImage" title="Flag 'Genomic signal processing' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Microarrays%22" title="Search for articles in the subject area:'Microarrays'"><div class="flagText">Microarrays</div></a>
+              <div data-categoryid="17255" data-articleid="23014"
+                   data-categoryname="Microarrays"
+                   class="flagImage" title="Flag 'Microarrays' as inappropriate"></div>
+          </li>
+          <li>
+              <a href="/search/advanced?unformattedQuery=subject%3A%22Muscle+tissue%22" title="Search for articles in the subject area:'Muscle tissue'"><div class="flagText">Muscle tissue</div></a>
+              <div data-categoryid="49177" data-articleid="23014"
+                   data-categoryname="Muscle tissue"
+                   class="flagImage" title="Flag 'Muscle tissue' as inappropriate"></div>
+          </li>
+    </ul>
+</div>
+
+<div class="ad">
+    <div class="title">Advertisement</div>
+
+
+
+
+
+
+  <iframe id='a0852f54' name='a0852f54'
+    src='http://ads.plos.org/www/delivery/afr.php?zoneid=381&amp;cb=8646'
+    frameborder='0' scrolling='no' width='160' height='600'>
+    <a href='http://ads.plos.org/www/delivery/ck.php?n=a0852f54&amp;cb=2675'
+      target='_top'><img src='http://ads.plos.org/www/delivery/avw.php?zoneid=381&amp;cb=2745&amp;n=a0852f54'
+      border='0' alt=''/>
+    </a>
+  </iframe>
+
+
+
+</div>
+
+<div id="twitter-alm-timeline" class="twitter-alm-timeline"></div>
+
+
+</div><!-- sidebar -->
+    </div>
+  </div>
+</div>
+<script src="http://wl.figshare.com/static/p_widget.js" type="text/javascript"></script><div id="pageftr">
+  <div class="ftr-cols cf">
+    <div class="col col-1">
+      <img src="/images/logo-plos-footer.png" alt="PLOS Logo" class="logo" />
+      <p><a href="/static/releaseNotes">Ambra 2.9.16</a> Managed Colocation provided <br />by <a href="http://www.isc.org/">Internet Systems Consortium</a>.<p>
+      <div class="nav nav-aux">
+        <a href="/static/privacy">Privacy Policy</a> |
+        <a href="/static/terms">Terms of Use</a> |
+        <a href="http://www.plos.org/advertise/">Advertise</a> |
+        <a href="http://www.plos.org/about/media-inquiries/">Media Inquiries</a>
+      </div>
+    </div>
+    <div class="col col-2">
+      <p><a href="http://www.plos.org/publications/journals/">Publications</a></p>
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.plosbiology.org">PLOS Biology</a></li>
+          <li><a href="http://www.plosmedicine.org">PLOS Medicine</a></li>
+          <li><a href="http://www.ploscompbiol.org">PLOS Computational Biology</a></li>
+          <li><a href="http://currents.plos.org">PLOS Currents</a></li>
+          <li><a href="http://www.plosgenetics.org">PLOS Genetics</a></li>
+          <li><a href="http://www.plospathogens.org">PLOS Pathogens</a></li>
+          <li><a href="http://www.plosone.org">PLOS ONE</a></li>
+          <li><a href="http://www.plosntds.org">PLOS Neglected Tropical Diseases</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="nav">
+        <p><a href="http://www.plos.org">plos.org</a></p>
+        <p><a href="http://blogs.plos.org">Blogs</a></p>
+        <p><a href="http://www.ploscollections.org">Collections</a></p>
+        <p><a href="/feedback/new">Send us feedback</a></p>
+
+        <p>California (US) corporation #C2354500, based in San Francisco</p>
+      </div>
+    </div>
+  </div>
+</div><!-- pageftr -->
+
+</div><!-- end page-wrap, this div is in header.ftl -->
+<script type="text/javascript" src="/javascript/jquery-1.8.1-min.js?v=Tm7VCOzZz3lE03ghpkS6SWkHbyI"></script>
+<script type="text/javascript" src="/javascript/ga-min.js?v=lNQ4gt8QcPDatjsdOFl_FGpPhLY"></script>
+<script type="text/javascript" src="/javascript/jquery.hoverIntent-min.js?v=mRiGNYY9cIXxVb8u0K_MdW7hHnc"></script>
+<script type="text/javascript" src="/javascript/jquery.placeholder-min.js?v=21Pn56Ur9h1N4K4VZDa0nqI3Pxo"></script>
+<script type="text/javascript" src="/javascript/jquery.jsonp-2.4.0-min.js?v=lqTpzoHfSq3I5Ygo01qq5WankEo"></script>
+<script type="text/javascript" src="/javascript/jquery-ui-1.9.2.custom-min.js?v=raSSlfNO0YsV5uUpAKmTB9n5VTc"></script>
+<script type="text/javascript" src="/javascript/jquery.tooltip-min.js?v=cw+6Smh+mdryIA25xvqIvHMrnZM"></script>
+<script type="text/javascript" src="/javascript/jquery.uniform-min.js?v=kYUAnX6W2W_2fK3RIuQ2m_YFG9U"></script>
+<script type="text/javascript" src="/javascript/jquery.pjax-min.js?v=939kLBjL5_YKbx71T1RHjYaD4l8"></script>
+<script type="text/javascript" src="/javascript/imagesloaded-min.js?v=XeuAp8Gc3mvQUo+wZCSF8ttPwvw"></script>
+<script type="text/javascript" src="/javascript/figviewer-min.js?v=yPUa0sUQ_iHkI+IRv2i9bjyZJFo"></script>
+<script type="text/javascript" src="/javascript/global-min.js?v=0Q3PwjeaWtXYDnqIsQvnL_ou0qs"></script>
+<script type="text/javascript" src="/javascript/jquery.touchswipe-min.js?v=huaek_e6HqTduvCNAN91dJolTyw"></script>
+<script type="text/javascript" src="/javascript/jquery.base64-min.js?v=VwV1zeVqKZj5FCAdlK0q5NRxbBg"></script>
+<script type="text/javascript" src="/javascript/alm-min.js?v=Y5gm6B0b4Kx2YHNObNrgEeBgXlY"></script>
+<script type="text/javascript" src="/javascript/taxonomy-browser-min.js?v=vBVMuDMYkGJCXIUxLe35GoyiJNw"></script>
+<script type="text/javascript" src="/javascript/jquery.filterize-min.js?v=j0ZKVnHyk2nhFy8eIuNJkp7xaM0"></script>
+<script type="text/javascript" src="/javascript/plosone-min.js?v=TK4H4arL_XBSwwJq+K1N3kqYfAI"></script>
+<script type="text/javascript" src="/javascript/twitter-min.js?v=xKgcxLsQFXy+at1ao1NVke8nFlM"></script>
+<script type="text/javascript" src="/javascript/crossmark.1.4-min.js?v=3FO4k0SjwTaGNnKGNSqthar1080"></script>
+<script type="text/javascript">
+  var _sf_async_config={uid:16579,domain:"plosone.org"};
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+          (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+              "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- <script type="application/javascript" src="http://crossmark.crossref.org/javascripts/v1.3/crossmark.min.js"></script> -->
+
+</body>
+</html>
