@@ -55,7 +55,9 @@ ls *.html | xargs grep -h -m1 'name=\"citation_author\"' | sed -E -e 's@<meta na
 script to extract figure captions for each HTML file, creating them as separate plaintext files within an articleID subfolder:
 ```
 #!/bin/bash
-# Extracting figure captions from fulltext PLOS ONE HTML
+# This script is available as a seperate stand-alone file in this repo as 'getcaptions.sh'
+# WHAT THIS SCRIPT AIMS TO DO:
+# Extract figure captions from standard fulltext PLOS ONE HTML
 
 for j in *.html
 	do
