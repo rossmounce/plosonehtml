@@ -21,14 +21,14 @@ http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000002
 http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0002000
 
 Eight numbers are not used by PLOS ONE, so I iterated to 0002008 to get 2000 articles:
-journal.pone.0000084
-journal.pone.0000951
-journal.pone.0000976
-journal.pone.0001140
-journal.pone.0001307
-journal.pone.0001432
-journal.pone.0001509
-journal.pone.0001726
+* journal.pone.0000084
+* journal.pone.0000951
+* journal.pone.0000976
+* journal.pone.0001140
+* journal.pone.0001307
+* journal.pone.0001432
+* journal.pone.0001509
+* journal.pone.0001726
 
 According to Cameron Neylon [here](http://blogs.plos.org/opens/2014/03/09/best-practice-enabling-content-mining/) PLOS requires a 30 second crawl delay between downloads, so one can implement this with wget -w 30
 ```
