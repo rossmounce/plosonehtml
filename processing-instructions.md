@@ -79,6 +79,9 @@ done
 
 For this particular dataset of 2000 PLOS ONE articles from ID 0000001 to 0002008, only 1949 of these appear to have figures. In these 1949 articles there are 9880 figures ( find . -type f | wc -l ) 
 
+Caption pone.0000001.cap.7 is a good example of a caption split into multiple (6) parts in the HTML.
+article1.body1.sec2.sec3.fig1.caption1.p1 to article1.body1.sec2.sec3.fig1.caption1.p6
+
 ## Searching parsed-out figure captions for phylogeny captions
 
 Still to be written properly but here's what I imagine I'll do:
