@@ -77,3 +77,17 @@ for j in *.html
 done
 ```
 
+## Searching parsed-out figure captions for phylogeny captions
+
+Still to be written properly but here's what I imagine I'll do:
+
+use grep -r
+
+then for all grep hits we know PLOS has regular URL structure, so can download (& then analyze) the corresponding figure image for each relevant figure caption
+e.g.
+
+../pone.0001234/pone.0001234.cap.1
+corresponds to
+http://www.plosone.org/article/info:doi/10.1371/journal.pone.0001234.g001/originalimage
+
+so just need to convert to that string format and wget
