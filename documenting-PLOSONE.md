@@ -34,18 +34,26 @@ Figure image as TIFF / 'original image' (largest in file size)
 http://www.plosone.org/article/info:doi/10.1371/journal.pone.0001234.g001/originalimage
 
 get unique number of figures in paper from HTML
+```
 grep '\.g[0-9][0-9][0-9].TIF' *.html | grep -v 'hidden' | wc
+```
 
 get all figure captions from each paper, one per line still HTMLized
+```
 egrep '<p><strong>Figure [0-9][0-9]?\.' FILE.html > captions.txt
+```
 
+```
 for i in (egrep '<p><strong>Figure [0-9][0-9]?\.' FILE.html | wc)
 	do
 	touch $filename_plaincaptions.txt
-	sed '$iq;d' captions.txt | awk -vRS="</span>" '/<span>/{gsub(/.*<span>|\n+/,"");print;exit}' >> $filename_plaincaptions.txt 	
+	sed '$iq;d' captions.txt | awk -vRS="</span>" '/<span>/{gsub(/.*<span>|\n+/,"");print;exit}' >> $filename_plaincaptions.txt 
+```
 
 get just text INSIDE span, i.e. the full plaintext of the figure caption
+```
 sed '1q;d' captions.txt | awk -vRS="</span>" '/<span>/{gsub(/.*<span>|\n+/,"");print;exit}'
+```
  
 
 
