@@ -77,6 +77,8 @@ for j in *.html
 done
 ```
 
+For this particular dataset of 2000 PLOS ONE articles from ID 0000001 to 0002008, only 1949 of these appear to have figures. In these 1949 articles there are 9880 figures ( find . -type f | wc -l ) 
+
 ## Searching parsed-out figure captions for phylogeny captions
 
 Still to be written properly but here's what I imagine I'll do:
