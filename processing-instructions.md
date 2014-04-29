@@ -20,7 +20,7 @@ http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000001
 http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000002
 http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0002000
 
-Eight numbers are not used by PLOS ONE, so I iterated to 0002008 to get 2000 articles:
+Eight numbers are not used by PLOS ONE in the range 1-2000, so I iterated to 0002008 to get 2000 articles:
 * journal.pone.0000084
 * journal.pone.0000951
 * journal.pone.0000976
