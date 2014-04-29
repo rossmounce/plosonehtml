@@ -82,6 +82,13 @@ For this particular dataset of 2000 PLOS ONE articles from ID 0000001 to 0002008
 Caption pone.0000001.cap.7 is a good example of a caption split into multiple (6) parts in the HTML.
 article1.body1.sec2.sec3.fig1.caption1.p1 to article1.body1.sec2.sec3.fig1.caption1.p6
 
+pone.0000082 figure 1 has an incredible 17 parts going up to article1.body1.sec3.sec1.fig1.caption1.p17
+
+Luckily in these instances my script fails nicely, and the above getcaptions.sh will parse out most of the figure up to and including .p8
+
+Thus is method will not parse out ALL text of ALL captions. But it will get ALL text from MOST captions, and in cases where it doesn't get ALL, it will parse out from line 1 of the figure caption upto 7 lines after (plenty enough!).
+
+
 ## Searching parsed-out figure captions for phylogeny captions
 
 Still to be written properly but here's what I imagine I'll do:
