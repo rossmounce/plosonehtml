@@ -52,3 +52,31 @@ ls *.html | xargs awk "FNR==19" | sed -E -e 's@<title>PLOS ONE:@@' -e 's@</title
 ls *.html | xargs grep -h -m1 'name=\"citation_author\"' | sed -E -e 's@<meta name="citation_author" content="@@' -e 's@"/>@@' -e 's@^[[:space:]]+@@g' > ../firstauthors.txt
 ```
 
+script to extract figure captions for each HTML file, creating them as separate plaintext files within an articleID subfolder:
+```
+#!/bin/bash
+# Extracting figure captions from fulltext PLOS ONE HTML
+
+for j in *.html
+	do
+	STEM=$(echo $j | cut -c 1-12)
+	echo "$STEM"
+	CAPNUM=$(egrep '<p><strong>Figure [0-9][0-9]?\.' $j | wc -l)
+	if [ $CAPNUM -eq 0 ]
+	then 
+	:
+	else
+		mkdir $STEM
+			for i in $(seq 1 $CAPNUM)
+			do
+			echo "$i"
+			cmd="awk '/<p><strong>Figure [0-9][0-9]?\./{x++}x==$i' $j | sed -n '/<p><strong>Figure/,/<span>doi:10.1371/p' | sed '/<span>doi:10.1371/d'  > ./$STEM/$STEM.cap.$i"
+			eval "$cmd"
+			echo "stage 1"
+			done
+			echo "stage 2"
+	fi
+	echo "stage 3"
+done
+```
+
