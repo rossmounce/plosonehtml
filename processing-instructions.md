@@ -4,7 +4,7 @@
 Ross Mounce, University of Bath
 
 ## Operating System and specific software tools used in this article
-Ubuntu Linux 14.04 LTS, *grep*, *tr*, *sed*, *wget*, *awk*
+Ubuntu Linux 14.04 LTS, *grep*, *tr*, *sed*, *wget*, *awk*, *mv*, *mmv*
 
 ## Aim:
 
